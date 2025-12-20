@@ -1,0 +1,112 @@
+name: Sync from Google Drive
+
+on:
+  schedule:
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install google-api-python-client google-auth
+
+      - name: Run sync script
+        id: sync
+        env:
+          GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
+          DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
+        run: |
+          python << 'EOF'
+          import os
+          import json
+          import io
+          from google.oauth2 import service_account
+          from googleapiclient.discovery import build
+          from googleapiclient.http import MediaIoBaseDownload
+
+          FOLDER_ID = os.environ['DRIVE_FOLDER_ID']
+          SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
+
+          creds_json = os.environ['GOOGLE_SERVICE_ACCOUNT']
+          creds_dict = json.loads(creds_json)
+          creds = service_account.Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
+          service = build('drive', 'v3', credentials=creds)
+
+          def list_files(folder_id):
+              results = service.files().list(
+                  q=f"'{folder_id}' in parents and trashed=false",
+                  fields="files(id, name, mimeType, modifiedTime)"
+              ).execute()
+              return results.get('files', [])
+
+          def download_file(file_id, file_name):
+              request = service.files().get_media(fileId=file_id)
+              fh = io.BytesIO()
+              downloader = MediaIoBaseDownload(fh, request)
+              done = False
+              while not done:
+                  status, done = downloader.next_chunk()
+              fh.seek(0)
+              return fh.read()
+
+          def sync_folder(folder_id, local_path='.'):
+              files = list_files(folder_id)
+              synced = []
+              
+              for file in files:
+                  file_name = file['name']
+                  file_id = file['id']
+                  mime_type = file['mimeType']
+                  local_file_path = os.path.join(local_path, file_name)
+                  
+                  if mime_type == 'application/vnd.google-apps.folder':
+                      os.makedirs(local_file_path, exist_ok=True)
+                      synced.extend(sync_folder(file_id, local_file_path))
+                  else:
+                      try:
+                          content = download_file(file_id, file_name)
+                          os.makedirs(os.path.dirname(local_file_path) if os.path.dirname(local_file_path) else '.', exist_ok=True)
+                          with open(local_file_path, 'wb') as f:
+                              f.write(content)
+                          synced.append(local_file_path)
+                          print(f"Downloaded: {local_file_path}")
+                      except Exception as e:
+                          print(f"Failed: {file_name} - {e}")
+              
+              return synced
+
+          print(f"Syncing from Google Drive folder: {FOLDER_ID}")
+          synced_files = sync_folder(FOLDER_ID)
+          
+          if synced_files:
+              print(f"Synced {len(synced_files)} file(s)")
+              with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:
+                  f.write("synced=true\n")
+          else:
+              print("No files to sync")
+              with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:
+                  f.write("synced=false\n")
+          EOF
+
+      - name: Commit and push changes
+        if: steps.sync.outputs.synced == 'true'
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Sync from Google Drive - $(date +'%Y-%m-%d %H:%M') UTC"
+          git push
