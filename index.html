@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jae's Foreign News Briefing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --bg-card-hover: #222230;
+            --accent-red: #ff3b3b;
+            --accent-orange: #ff8c42;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-green: #22c55e;
+            --accent-cyan: #06b6d4;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --text-muted: #666680;
+            --border-color: #2a2a3a;
+            --gradient-fire: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            --gradient-money: linear-gradient(135deg, #22c55e, #06b6d4);
+            --gradient-ai: linear-gradient(135deg, #a855f7, #4a9eff);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        .nav {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .nav-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-fire);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .nav-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 900;
+            background: var(--gradient-fire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--text-primary); }
+        .nav-links a.active { color: var(--accent-red); }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: var(--gradient-fire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        /* Latest Briefing */
+        .latest {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            background: var(--gradient-fire);
+        }
+
+        .section-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+        }
+
+        .view-all {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.2s;
+        }
+
+        .view-all:hover { gap: 0.75rem; }
+
+        /* Latest Card */
+        .latest-card {
+            background: var(--bg-card);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .latest-card:hover {
+            border-color: var(--accent-red);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(255, 59, 59, 0.15);
+        }
+
+        .latest-card-header {
+            background: linear-gradient(135deg, rgba(255, 59, 59, 0.1), rgba(255, 140, 66, 0.1));
+            padding: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .latest-date {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--bg-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .latest-date .live {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-red);
+            border-radius: 50%;
+            animation: blink 1.5s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .latest-card-header h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .latest-card-header p {
+            color: var(--text-secondary);
+        }
+
+        .latest-card-body {
+            padding: 2rem;
+        }
+
+        .latest-highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .highlight {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .highlight-category {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+        }
+
+        .highlight-category.top { color: var(--accent-red); }
+        .highlight-category.economy { color: var(--accent-green); }
+        .highlight-category.ai { color: var(--accent-purple); }
+
+        .highlight h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .highlight p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .latest-card-footer {
+            padding: 1.5rem 2rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .briefing-stats {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .briefing-stat {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .briefing-stat strong {
+            color: var(--text-primary);
+        }
+
+        .read-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--gradient-fire);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .read-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(255, 59, 59, 0.3);
+        }
+
+        /* Archive Section */
+        .archive {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem 4rem;
+        }
+
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .archive-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .archive-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+
+        .archive-card-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+        }
+
+        .archive-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .archive-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .archive-card-meta {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+        }
+
+        .footer p { margin-bottom: 0.5rem; }
+        .footer .heart { color: var(--accent-red); }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--text-primary); }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .latest-highlights { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero-stats { flex-wrap: wrap; gap: 2rem; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-content { flex-direction: column; gap: 1rem; }
+            .nav-links { gap: 1rem; }
+            .hero { padding: 3rem 1.5rem; }
+            .section-header { flex-direction: column; gap: 1rem; align-items: flex-start; }
+            .latest-card-footer { flex-direction: column; gap: 1rem; }
+            .briefing-stats { flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">📰</div>
+                <span class="nav-logo-text">Jae's Briefing</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">홈</a></li>
+                <li><a href="archive.html">아카이브</a></li>
+                <li><a href="about.html">소개</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Foreign News Briefing</h1>
+        <p>TechCrunch, CNBC, Bloomberg, Reuters 등 주요 외신에서 매일 엄선한 AI/기술, 경제, 반도체 뉴스</p>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">매체 모니터링</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">Daily</div>
+                <div class="stat-label">업데이트</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">Value Score</div>
+                <div class="stat-label">기반 큐레이션</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Briefing -->
+    <section class="latest">
+        <div class="section-header">
+            <div class="section-title">
+                <div class="section-icon">🔥</div>
+                <h2>최신 브리핑</h2>
+            </div>
+            <a href="archive.html" class="view-all">전체 보기 →</a>
+        </div>
+
+        <div class="latest-card">
+            <div class="latest-card-header">
+                <div class="latest-date">
+                    <span class="live"></span>
+                    2025-12-20 KST
+                </div>
+                <h3>TikTok 미국 매각 계약 체결, BOJ 30년 만에 최고 금리</h3>
+                <p>오늘의 주요 이슈: TikTok-Oracle 컨소시엄 거래, 일본은행 금리 인상, Micron 역대급 실적</p>
+            </div>
+
+            <div class="latest-card-body">
+                <div class="latest-highlights">
+                    <div class="highlight">
+                        <div class="highlight-category top">TOP 헤드라인</div>
+                        <h4>TikTok, Oracle 컨소시엄과 미국 사업 매각 계약 체결</h4>
+                        <p>2026년 1월 22일 신규 법인 설립 예정, 지분 구조 확정</p>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-category economy">경제/금융</div>
+                        <h4>일본은행, 기준금리 0.75%로 인상</h4>
+                        <p>1995년 이후 30년 만에 최고 수준, 10년물 국채 2% 돌파</p>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-category ai">AI/기술</div>
+                        <h4>Lovable $66억 밸류 시리즈 B 완료</h4>
+                        <p>Google, Nvidia 참여, 7월 대비 3.6배 상승</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="latest-card-footer">
+                <div class="briefing-stats">
+                    <span class="briefing-stat"><strong>16</strong> 기사</span>
+                    <span class="briefing-stat"><strong>5</strong> 섹션</span>
+                    <span class="briefing-stat"><strong>3</strong> Claude's Pick</span>
+                </div>
+                <a href="archive/2025-12-20.html" class="read-btn">
+                    브리핑 읽기 →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive Preview -->
+    <section class="archive">
+        <div class="section-header">
+            <div class="section-title">
+                <div class="section-icon" style="background: var(--gradient-ai);">📚</div>
+                <h2>지난 브리핑</h2>
+            </div>
+            <a href="archive.html" class="view-all">전체 보기 →</a>
+        </div>
+
+        <div class="archive-grid">
+            <a href="archive/2025-12-19.html" class="archive-card">
+                <div class="archive-card-date">2025-12-19 (목)</div>
+                <h4>Fed 금리 인하, Google Gemini 2.0 출시</h4>
+                <p>연준 0.25%p 인하, Google AI 에이전트 플랫폼 발표</p>
+                <div class="archive-card-meta">
+                    <span>14 기사</span>
+                    <span>4 섹션</span>
+                </div>
+            </a>
+
+            <a href="archive/2025-12-18.html" class="archive-card">
+                <div class="archive-card-date">2025-12-18 (수)</div>
+                <h4>Nvidia Blackwell 양산 개시, Tesla FSD 12.7</h4>
+                <p>TSMC 4nm 양산 돌입, 완전자율주행 업데이트</p>
+                <div class="archive-card-meta">
+                    <span>12 기사</span>
+                    <span>4 섹션</span>
+                </div>
+            </a>
+
+            <a href="archive/2025-12-17.html" class="archive-card">
+                <div class="archive-card-date">2025-12-17 (화)</div>
+                <h4>OpenAI o3 발표, Microsoft Copilot 업데이트</h4>
+                <p>새로운 추론 모델 공개, 엔터프라이즈 AI 기능 확대</p>
+                <div class="archive-card-meta">
+                    <span>15 기사</span>
+                    <span>5 섹션</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Curated by Claude with <span class="heart">♥</span></p>
+        <p style="font-size: 0.85rem;">Value Score 기반 뉴스 큐레이션 시스템</p>
+        <div class="footer-links">
+            <a href="https://github.com/hong4137">GitHub</a>
+            <a href="about.html">소개</a>
+            <a href="archive.html">아카이브</a>
+        </div>
+    </footer>
+</body>
+</html>

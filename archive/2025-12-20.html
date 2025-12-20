@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>외신 브리핑 | 2025-12-20</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --bg-card-hover: #222230;
+            --accent-red: #ff3b3b;
+            --accent-orange: #ff8c42;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-green: #22c55e;
+            --accent-cyan: #06b6d4;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --text-muted: #666680;
+            --border-color: #2a2a3a;
+            --gradient-fire: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            --gradient-money: linear-gradient(135deg, #22c55e, #06b6d4);
+            --gradient-ai: linear-gradient(135deg, #a855f7, #4a9eff);
+            --gradient-chip: linear-gradient(135deg, #ff8c42, #ffd700);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, transparent 100%);
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-fire);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .logo-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: var(--gradient-fire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-text span {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        .date-badge {
+            background: var(--bg-card);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid var(--border-color);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .date-badge .live {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--accent-red);
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: blink 1.5s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Section Headers */
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .section-icon.fire { background: var(--gradient-fire); }
+        .section-icon.money { background: var(--gradient-money); }
+        .section-icon.ai { background: var(--gradient-ai); }
+        .section-icon.chip { background: var(--gradient-chip); }
+        .section-icon.gem { background: linear-gradient(135deg, #ec4899, #8b5cf6); }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        /* Top Headlines - Hero Section */
+        .hero-section {
+            margin-bottom: 3rem;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .hero-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-fire);
+        }
+
+        .hero-card:hover {
+            transform: translateY(-4px);
+            background: var(--bg-card-hover);
+            border-color: var(--accent-red);
+        }
+
+        .hero-card.featured {
+            grid-row: span 2;
+        }
+
+        .hero-card.featured::before {
+            height: 6px;
+        }
+
+        .card-badges {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge.top {
+            background: var(--accent-red);
+            color: white;
+        }
+
+        .badge.cross {
+            background: var(--accent-orange);
+            color: white;
+        }
+
+        .badge.popular {
+            background: var(--accent-blue);
+            color: white;
+        }
+
+        .score-badge {
+            background: rgba(255, 215, 0, 0.15);
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .hero-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .hero-card.featured h3 {
+            font-size: 1.8rem;
+        }
+
+        .hero-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .key-points {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .key-point {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .key-point::before {
+            content: '→';
+            color: var(--accent-orange);
+            font-weight: bold;
+        }
+
+        .key-point strong {
+            color: var(--text-primary);
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .source {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .note {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 215, 0, 0.1);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            margin-top: 1rem;
+        }
+
+        /* Regular Cards Grid */
+        .cards-section {
+            margin-bottom: 3rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            background: var(--bg-card-hover);
+        }
+
+        .card.money::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-money);
+            border-radius: 16px 16px 0 0;
+        }
+
+        .card.ai::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-ai);
+            border-radius: 16px 16px 0 0;
+        }
+
+        .card.chip::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-chip);
+            border-radius: 16px 16px 0 0;
+        }
+
+        .card h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Claude's Pick Section */
+        .picks-section {
+            margin-bottom: 3rem;
+        }
+
+        .picks-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .pick-card {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1));
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .pick-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-purple);
+            box-shadow: 0 8px 32px rgba(168, 85, 247, 0.2);
+        }
+
+        .pick-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pick-card h4::before {
+            content: '💎';
+        }
+
+        .pick-card p {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        /* Market Table */
+        .market-section {
+            margin-bottom: 3rem;
+        }
+
+        .market-table {
+            width: 100%;
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .market-table th,
+        .market-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+        }
+
+        .market-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+        }
+
+        .market-table tr {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .market-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .market-table td {
+            font-size: 0.95rem;
+        }
+
+        .trend-up {
+            color: var(--accent-green);
+        }
+
+        .trend-down {
+            color: var(--accent-red);
+        }
+
+        .trend-icon {
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 2rem;
+        }
+
+        .footer span {
+            color: var(--accent-red);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-card, .card, .pick-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .hero-card:nth-child(1) { animation-delay: 0.1s; }
+        .hero-card:nth-child(2) { animation-delay: 0.2s; }
+        .hero-card:nth-child(3) { animation-delay: 0.3s; }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-card.featured {
+                grid-row: span 1;
+            }
+
+            .picks-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .hero-card {
+                padding: 1.5rem;
+            }
+
+            .hero-card.featured h3 {
+                font-size: 1.4rem;
+            }
+
+            .market-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">📰</div>
+                <div class="logo-text">
+                    <h1>외신 브리핑</h1>
+                    <span>Foreign News Briefing</span>
+                </div>
+            </div>
+            <div class="date-badge">
+                <span class="live"></span>
+                2025-12-20 KST
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- TOP Headlines -->
+        <section class="hero-section">
+            <div class="section-header">
+                <div class="section-icon fire">🔥</div>
+                <h2 class="section-title">TOP 헤드라인</h2>
+            </div>
+
+            <div class="hero-grid">
+                <!-- Featured Card -->
+                <article class="hero-card featured">
+                    <div class="card-badges">
+                        <span class="badge top">TOP</span>
+                        <span class="badge cross">교차보도 5+</span>
+                        <span class="badge score-badge">⭐ 10.0</span>
+                    </div>
+                    <h3>TikTok, 미국 매각 계약 체결 완료</h3>
+                    <p>TikTok CEO Shou Chew가 직원들에게 메모를 통해 Oracle, Silver Lake, MGX 컨소시엄과의 계약 체결을 공식 발표했다. 새로운 합작법인 "TikTok USDS Joint Venture LLC"가 2026년 1월 22일 설립될 예정이며, 미국 법인 가치는 약 $140억으로 평가된다.</p>
+                    
+                    <div class="key-points">
+                        <div class="key-point"><strong>지분 구조:</strong> Oracle·Silver Lake·MGX 각 15% (총 45%), ByteDance 19.9%</div>
+                        <div class="key-point"><strong>거버넌스:</strong> 미국인 과반수 7인 이사회 구성</div>
+                        <div class="key-point"><strong>데이터 보안:</strong> Oracle이 미국 사용자 데이터 저장 및 감독</div>
+                        <div class="key-point"><strong>알고리즘:</strong> 미국 데이터로 추천 알고리즘 재훈련 예정</div>
+                    </div>
+                    
+                    <div class="note">
+                        📌 중국 정부 최종 승인은 아직 미확정
+                    </div>
+                    
+                    <div class="card-footer">
+                        <span class="source">CNN, CNBC, Bloomberg, Axios, SCMP</span>
+                        <span class="date">2025-12-19</span>
+                    </div>
+                </article>
+
+                <!-- Side Cards -->
+                <article class="hero-card">
+                    <div class="card-badges">
+                        <span class="badge top">TOP</span>
+                        <span class="badge cross">교차보도 5+</span>
+                        <span class="badge score-badge">⭐ 10.0</span>
+                    </div>
+                    <h3>일본은행(BOJ), 30년 만에 최고 금리로 인상</h3>
+                    <p>일본은행이 기준금리를 25bp 인상해 0.75%로 결정. 1995년 이후 30년 만에 최고 수준이다.</p>
+                    
+                    <div class="key-points">
+                        <div class="key-point"><strong>결정:</strong> 만장일치 25bp 인상 (0.50% → 0.75%)</div>
+                        <div class="key-point"><strong>10년물 국채:</strong> 2% 돌파 (1999년 이후 최고)</div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <span class="source">Bloomberg, CNBC</span>
+                        <span class="date">2025-12-19</span>
+                    </div>
+                </article>
+
+                <article class="hero-card">
+                    <div class="card-badges">
+                        <span class="badge top">TOP</span>
+                        <span class="badge cross">교차보도 4+</span>
+                        <span class="badge score-badge">⭐ 9.5</span>
+                    </div>
+                    <h3>Micron, AI 메모리 수요 폭발로 역대급 실적</h3>
+                    <p>2분기 매출 가이던스 $187억 (예상 대비 +32%), HBM 수요가 폭발적으로 증가하면서 "완전 매진 상태 이상"</p>
+                    
+                    <div class="key-points">
+                        <div class="key-point"><strong>EPS 가이던스:</strong> $8.42 (예상 $4.78 대비 +76%)</div>
+                        <div class="key-point"><strong>HBM TAM:</strong> 2028년까지 $1,000억</div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <span class="source">CNBC</span>
+                        <span class="date">2025-12-18</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Economy/Finance Section -->
+        <section class="cards-section">
+            <div class="section-header">
+                <div class="section-icon money">💰</div>
+                <h2 class="section-title">경제/금융</h2>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card money">
+                    <div class="card-badges">
+                        <span class="badge top">TOP</span>
+                        <span class="badge cross">교차보도 5+</span>
+                        <span class="badge score-badge">⭐ 8.5</span>
+                    </div>
+                    <h4>Trump Media, 핵융합 기업 TAE와 $60억 합병 발표</h4>
+                    <p>Truth Social 운영사가 핵융합 기업 TAE Technologies와 $60억 규모 주식 합병 발표. 세계 최초 상장 핵융합 기업 중 하나가 된다. DJT 주가 발표 후 +33% 급등.</p>
+                    <div class="card-footer">
+                        <span class="source">CNBC, CNN, Bloomberg</span>
+                        <span class="date">2025-12-18</span>
+                    </div>
+                </article>
+
+                <article class="card money">
+                    <div class="card-badges">
+                        <span class="badge cross">교차보도 4+</span>
+                        <span class="badge score-badge">⭐ 8.0</span>
+                    </div>
+                    <h4>Amazon, OpenAI에 $100억 투자 협상 중</h4>
+                    <p>Amazon이 OpenAI에 최소 $100억 투자를 논의 중. Trainium 칩 사용 계약도 포함될 전망. 성사 시 OpenAI 기업가치 $5,000억 상회 예상.</p>
+                    <div class="card-footer">
+                        <span class="source">CNBC, Bloomberg</span>
+                        <span class="date">2025-12-17</span>
+                    </div>
+                </article>
+
+                <article class="card money">
+                    <div class="card-badges">
+                        <span class="badge cross">교차보도 4+</span>
+                        <span class="badge score-badge">⭐ 8.0</span>
+                    </div>
+                    <h4>Waymo, $150억 펀딩 협상 - 밸류 $1,000억</h4>
+                    <p>Alphabet의 자율주행 Waymo가 $150억 규모 펀딩 논의 중. 2024년 10월 $450억 밸류에이션의 2배 이상. 2027년부터 Alphabet 재무에 "의미 있는" 기여 전망.</p>
+                    <div class="card-footer">
+                        <span class="source">Bloomberg, CNBC</span>
+                        <span class="date">2025-12-16</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- AI/Tech Section -->
+        <section class="cards-section">
+            <div class="section-header">
+                <div class="section-icon ai">🤖</div>
+                <h2 class="section-title">AI/기술</h2>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card ai">
+                    <div class="card-badges">
+                        <span class="badge top">TOP</span>
+                        <span class="badge cross">교차보도 5+</span>
+                        <span class="badge score-badge">⭐ 9.0</span>
+                    </div>
+                    <h4>Lovable, $66억 밸류에이션으로 $3.3억 시리즈 B</h4>
+                    <p>스웨덴 바이브 코딩 스타트업이 Google CapitalG와 Nvidia NVentures 투자로 7월 대비 밸류에이션 3.6배 상승. ARR $2억 달성 (8개월 만에 2배).</p>
+                    <div class="card-footer">
+                        <span class="source">TechCrunch, CNBC</span>
+                        <span class="date">2025-12-18</span>
+                    </div>
+                </article>
+
+                <article class="card ai">
+                    <div class="card-badges">
+                        <span class="badge popular">인기</span>
+                        <span class="badge score-badge">⭐ 7.5</span>
+                    </div>
+                    <h4>Google, 20% AI 엔지니어 채용이 '부메랑' 재입사자</h4>
+                    <p>2025년 채용한 AI 소프트웨어 엔지니어 중 20%가 전직 직원. AI 인재 전쟁 격화 속 재영입 전략 부상. Meta는 일부 사례에서 $1억 사인 보너스 제안.</p>
+                    <div class="card-footer">
+                        <span class="source">CNBC</span>
+                        <span class="date">2025-12-19</span>
+                    </div>
+                </article>
+
+                <article class="card ai">
+                    <div class="card-badges">
+                        <span class="badge popular">인기</span>
+                        <span class="badge score-badge">⭐ 7.0</span>
+                    </div>
+                    <h4>Google, 바이브 코딩 툴 Opal을 Gemini에 통합</h4>
+                    <p>자연어로 앱을 만들 수 있는 Opal을 Gemini 웹앱에 통합. 코드 작성 없이 대화형 프롬프트로 맞춤형 AI 미니앱(Gems) 제작 가능.</p>
+                    <div class="card-footer">
+                        <span class="source">TechCrunch, Euronews</span>
+                        <span class="date">2025-12-17</span>
+                    </div>
+                </article>
+
+                <article class="card ai">
+                    <div class="card-badges">
+                        <span class="badge popular">인기</span>
+                        <span class="badge cross">교차보도 3+</span>
+                        <span class="badge score-badge">⭐ 7.5</span>
+                    </div>
+                    <h4>FTC, Instacart AI 가격 책정 도구 조사 착수</h4>
+                    <p>FTC가 Eversight AI 가격 책정 소프트웨어 조사 착수. 같은 상품, 같은 매장에서 고객별 최대 23% 가격 차이 발생. 연간 추가 비용 고객당 $1,200 이상.</p>
+                    <div class="card-footer">
+                        <span class="source">TechCrunch, CNBC</span>
+                        <span class="date">2025-12-17</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Semiconductor Section -->
+        <section class="cards-section">
+            <div class="section-header">
+                <div class="section-icon chip">🔬</div>
+                <h2 class="section-title">반도체</h2>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card chip">
+                    <div class="card-badges">
+                        <span class="badge popular">인기</span>
+                        <span class="badge score-badge">⭐ 6.5</span>
+                    </div>
+                    <h4>TSMC, 일본 2공장에서 더 첨단 칩 생산 검토</h4>
+                    <p>구마모토 2공장에서 당초 계획보다 더 첨단인 4nm 칩 생산 검토. AI 수요 급증 vs 성숙 공정 수요 부진이 배경.</p>
+                    <div class="card-footer">
+                        <span class="source">Nikkei Asia</span>
+                        <span class="date">2025-12-11</span>
+                    </div>
+                </article>
+
+                <article class="card chip">
+                    <div class="card-badges">
+                        <span class="badge popular">인기</span>
+                        <span class="badge score-badge">⭐ 7.0</span>
+                    </div>
+                    <h4>Apple, AI 수장 교체 - Amar Subramanya 영입</h4>
+                    <p>John Giannandrea 교체, Microsoft/Google 16년 경력 Amar Subramanya 영입. Apple Intelligence 부진이 배경. 차기 Siri는 Google Gemini 기반 개발 중.</p>
+                    <div class="card-footer">
+                        <span class="source">TechCrunch</span>
+                        <span class="date">2025-12-01</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="picks-section">
+            <div class="section-header">
+                <div class="section-icon gem">💎</div>
+                <h2 class="section-title">Claude's Pick (숨은 보석)</h2>
+            </div>
+
+            <div class="picks-grid">
+                <article class="pick-card">
+                    <h4>DeepMind, 영국에 최초 '자동화 연구소' 설립</h4>
+                    <p>AI와 로봇을 활용해 실험을 자동 수행하는 연구소를 2026년 영국에 설립. 초전도체 및 반도체 신소재 개발에 초점.</p>
+                    <div class="card-footer">
+                        <span class="source">CNBC</span>
+                        <span class="date">2025-12-11</span>
+                    </div>
+                </article>
+
+                <article class="pick-card">
+                    <h4>Big Tech 인도 투자 러시 - 48시간 내 $500억+</h4>
+                    <p>Microsoft($175억)와 Amazon($350억)이 이틀 만에 인도에 $500억 이상 투자 약속. 인도는 AI 애플리케이션 개발의 핵심 허브로 부상.</p>
+                    <div class="card-footer">
+                        <span class="source">CNBC</span>
+                        <span class="date">2025-12-11</span>
+                    </div>
+                </article>
+
+                <article class="pick-card">
+                    <h4>Instacart, FTC와 별도로 $6,000만 합의</h4>
+                    <p>기만적 구독 마케팅 및 숨겨진 배달비 관련 합의. AI 가격 조사와 별개 건으로 "무료 배달" 광고에도 서비스 수수료 부과 관행 문제.</p>
+                    <div class="card-footer">
+                        <span class="source">CNBC</span>
+                        <span class="date">2025-12-18</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Market Table -->
+        <section class="market-section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #4a9eff, #22c55e);">📊</div>
+                <h2 class="section-title">주간 시장 동향</h2>
+            </div>
+
+            <table class="market-table">
+                <thead>
+                    <tr>
+                        <th>지표</th>
+                        <th>동향</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S&P 500</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> 월간 하락</td>
+                        <td>7개월 랠리 종료 위기</td>
+                    </tr>
+                    <tr>
+                        <td>일본 10년물</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> 2% 돌파</td>
+                        <td>1999년 이후 최고</td>
+                    </tr>
+                    <tr>
+                        <td>USD/JPY</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> 156엔대</td>
+                        <td>BOJ 인상에도 엔화 약세</td>
+                    </tr>
+                    <tr>
+                        <td>DJT</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> +33%</td>
+                        <td>TAE 합병 발표 영향</td>
+                    </tr>
+                    <tr>
+                        <td>Micron</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> +10%</td>
+                        <td>실적 가이던스 서프라이즈</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>⏱️ 생성: 2025-12-20 KST | 대상 매체: TechCrunch, CNBC, Bloomberg, Reuters 등</p>
+        <p style="margin-top: 0.5rem;">Made with <span>♥</span> by Claude</p>
+    </footer>
+
+    <script>
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add intersection observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card, .pick-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

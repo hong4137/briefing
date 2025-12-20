@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개 | Jae's Foreign News Briefing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-orange: #ff8c42;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-green: #22c55e;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --text-muted: #666680;
+            --border-color: #2a2a3a;
+            --gradient-fire: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            --gradient-ai: linear-gradient(135deg, #a855f7, #4a9eff);
+            --gradient-money: linear-gradient(135deg, #22c55e, #06b6d4);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        .nav {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .nav-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-fire);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .nav-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 900;
+            background: var(--gradient-fire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--text-primary); }
+        .nav-links a.active { color: var(--accent-red); }
+
+        /* Content */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            background: var(--gradient-fire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        .content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .content strong {
+            color: var(--text-primary);
+        }
+
+        /* Feature Cards */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-icon.fire { background: var(--gradient-fire); }
+        .feature-icon.ai { background: var(--gradient-ai); }
+        .feature-icon.money { background: var(--gradient-money); }
+        .feature-icon.gold { background: linear-gradient(135deg, #ffd700, #ff8c42); }
+
+        .feature h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        /* Score Table */
+        .score-table {
+            width: 100%;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .score-table th,
+        .score-table td {
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .score-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .score-table td {
+            border-top: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+
+        .score-table code {
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--bg-secondary);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+        }
+
+        /* Media List */
+        .media-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin: 1rem 0;
+        }
+
+        .media-tag {
+            background: var(--bg-card);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-content { flex-direction: column; gap: 1rem; }
+            .features { grid-template-columns: 1fr; }
+            .content { padding: 2rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">📰</div>
+                <span class="nav-logo-text">Jae's Briefing</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="archive.html">아카이브</a></li>
+                <li><a href="about.html" class="active">소개</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>📰 Foreign News Briefing</h1>
+        
+        <p>
+            매일 주요 외신에서 <strong>AI/기술, 경제/금융, 반도체</strong> 분야의 핵심 뉴스를 
+            선별하여 한국어로 브리핑합니다. 단순히 최신 기사를 나열하는 것이 아니라, 
+            <strong>Value Score 시스템</strong>을 통해 정말 중요한 뉴스만 골라냅니다.
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon fire">🔥</div>
+                <h3>면 배치 기반 선별</h3>
+                <p>각 매체 홈페이지의 TOP Headlines, Most Popular 위치를 분석합니다.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon ai">🔄</div>
+                <h3>교차 보도 분석</h3>
+                <p>여러 매체가 동시에 다루는 이슈에 가중치를 부여합니다.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon money">💎</div>
+                <h3>Claude's Pick</h3>
+                <p>메인 뉴스에서 놓칠 수 있는 '숨은 보석' 기사를 발굴합니다.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon gold">⏰</div>
+                <h3>KST 기준 타임라인</h3>
+                <p>모든 시간을 한국시각으로 변환하여 표시합니다.</p>
+            </div>
+        </div>
+
+        <h2>Value Score 시스템</h2>
+        
+        <p>
+            뉴스의 중요도를 객관적으로 평가하기 위해 자체 개발한 스코어링 시스템입니다. 
+            단순 조회수나 좋아요가 아닌, <strong>편집자의 판단(면 배치)</strong>을 핵심 지표로 삼습니다.
+        </p>
+
+        <table class="score-table">
+            <thead>
+                <tr>
+                    <th>지표</th>
+                    <th>설명</th>
+                    <th>점수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>🔥 TOP Headlines</td>
+                    <td>매체 홈페이지 메인 헤드라인</td>
+                    <td><code>+8</code></td>
+                </tr>
+                <tr>
+                    <td>📈 Most Popular</td>
+                    <td>인기 기사 / Most Read 섹션</td>
+                    <td><code>+5</code></td>
+                </tr>
+                <tr>
+                    <td>🔄 교차 보도</td>
+                    <td>2개 이상 매체가 동일 주제 보도</td>
+                    <td><code>최대 +2.0</code></td>
+                </tr>
+                <tr>
+                    <td>⭐ 매체 가중치</td>
+                    <td>심층 매체 (Economist, MIT Tech Review)</td>
+                    <td><code>×1.2</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="font-size: 0.9rem; color: var(--text-muted);">
+            Value Score = (면 배치 × 매체가중치) + 교차보도 보너스 | 기준: 3.0 이상만 브리핑 포함
+        </p>
+
+        <h2>대상 매체</h2>
+        
+        <p>AI/기술, 경제/비즈니스, 국제정세 분야의 신뢰도 높은 10개 매체를 모니터링합니다.</p>
+
+        <div class="media-list">
+            <span class="media-tag">TechCrunch</span>
+            <span class="media-tag">MIT Tech Review</span>
+            <span class="media-tag">The Verge</span>
+            <span class="media-tag">Wired</span>
+            <span class="media-tag">Ars Technica</span>
+            <span class="media-tag">CNBC</span>
+            <span class="media-tag">WSJ</span>
+            <span class="media-tag">Nikkei Asia</span>
+            <span class="media-tag">BBC</span>
+            <span class="media-tag">The Economist</span>
+        </div>
+
+        <h2>Claude's Pick이란?</h2>
+
+        <p>
+            TOP 헤드라인에 오르지 않았지만, <strong>투자자 관점에서 의미 있는 변화</strong>, 
+            <strong>신생 기업의 첫 등장</strong>, <strong>규제/정책 변화의 초기 신호</strong> 등 
+            장기적으로 중요할 수 있는 기사를 별도로 선별합니다.
+        </p>
+
+        <p>
+            선정 기준: Signal 유형 2개 이상 충족 + 관심사 1개 이상 매칭
+        </p>
+
+        <h2>만든 이</h2>
+
+        <p>
+            이 브리핑은 <strong>Claude (Anthropic)</strong>와 함께 만들었습니다. 
+            뉴스 수집, Value Score 계산, 한국어 요약, HTML 생성까지 AI와 협업하여 
+            매일 브리핑을 발행합니다.
+        </p>
+
+        <p>
+            문의 및 피드백: <a href="https://github.com/hong4137" style="color: var(--accent-blue);">GitHub @hong4137</a>
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Curated by Claude with ♥</p>
+    </footer>
+</body>
+</html>
