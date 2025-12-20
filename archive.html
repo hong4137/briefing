@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아카이브 | Jae's Foreign News Briefing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --bg-card-hover: #222230;
+            --accent-red: #ff3b3b;
+            --accent-orange: #ff8c42;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-green: #22c55e;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --text-muted: #666680;
+            --border-color: #2a2a3a;
+            --gradient-fire: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            --gradient-ai: linear-gradient(135deg, #a855f7, #4a9eff);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        .nav {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .nav-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-fire);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .nav-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 900;
+            background: var(--gradient-fire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--text-primary); }
+        .nav-links a.active { color: var(--accent-red); }
+
+        /* Page Header */
+        .page-header {
+            padding: 3rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+        }
+
+        .page-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            color: var(--text-secondary);
+        }
+
+        /* Archive Container */
+        .archive-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Month Section */
+        .month-section {
+            margin-bottom: 3rem;
+        }
+
+        .month-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .month-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--gradient-ai);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .month-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+        }
+
+        /* Archive List */
+        .archive-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .archive-item {
+            display: flex;
+            align-items: center;
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .archive-item:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent-blue);
+            transform: translateX(4px);
+        }
+
+        .archive-item-date {
+            flex-shrink: 0;
+            width: 100px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-blue);
+        }
+
+        .archive-item-day {
+            flex-shrink: 0;
+            width: 40px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .archive-item-content {
+            flex: 1;
+            margin: 0 1.5rem;
+        }
+
+        .archive-item-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .archive-item-summary {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .archive-item-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .archive-item-arrow {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            transition: transform 0.2s;
+        }
+
+        .archive-item:hover .archive-item-arrow {
+            transform: translateX(4px);
+            color: var(--accent-blue);
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-content { flex-direction: column; gap: 1rem; }
+            .archive-item { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+            .archive-item-date { width: auto; }
+            .archive-item-content { margin: 0; }
+            .archive-item-meta { margin-top: 0.5rem; }
+            .archive-item-arrow { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">📰</div>
+                <span class="nav-logo-text">Jae's Briefing</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="archive.html" class="active">아카이브</a></li>
+                <li><a href="about.html">소개</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>📚 아카이브</h1>
+        <p>지난 외신 브리핑 모아보기</p>
+    </div>
+
+    <!-- Archive List -->
+    <div class="archive-container" id="archive-container">
+        <div class="loading">브리핑을 불러오는 중...</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Curated by Claude with ♥</p>
+    </footer>
+
+    <script>
+        async function loadArchive() {
+            try {
+                const response = await fetch('briefings.json');
+                const data = await response.json();
+                
+                if (data.briefings.length === 0) {
+                    document.getElementById('archive-container').innerHTML = 
+                        '<div class="empty-state">아직 브리핑이 없습니다.</div>';
+                    return;
+                }
+
+                // Group by month
+                const grouped = {};
+                data.briefings.forEach(b => {
+                    const [year, month] = b.date.split('-');
+                    const key = `${year}-${month}`;
+                    if (!grouped[key]) {
+                        grouped[key] = {
+                            label: `${year}년 ${parseInt(month)}월`,
+                            items: []
+                        };
+                    }
+                    grouped[key].items.push(b);
+                });
+
+                // Render
+                const html = Object.entries(grouped).map(([key, group]) => `
+                    <section class="month-section">
+                        <div class="month-header">
+                            <div class="month-icon">📅</div>
+                            <h2>${group.label}</h2>
+                        </div>
+
+                        <div class="archive-list">
+                            ${group.items.map(b => `
+                                <a href="archive/${b.date}.html" class="archive-item">
+                                    <span class="archive-item-date">${b.date.substring(5)}</span>
+                                    <span class="archive-item-day">(${b.day})</span>
+                                    <div class="archive-item-content">
+                                        <div class="archive-item-title">${b.title}</div>
+                                        <div class="archive-item-summary">${b.summary}</div>
+                                    </div>
+                                    <div class="archive-item-meta">
+                                        <span>${b.stats.articles} 기사</span>
+                                        <span>${b.stats.sections} 섹션</span>
+                                    </div>
+                                    <span class="archive-item-arrow">→</span>
+                                </a>
+                            `).join('')}
+                        </div>
+                    </section>
+                `).join('');
+
+                document.getElementById('archive-container').innerHTML = html;
+
+            } catch (error) {
+                console.error('Error loading archive:', error);
+                document.getElementById('archive-container').innerHTML = 
+                    '<div class="empty-state">아카이브를 불러올 수 없습니다.</div>';
+            }
+        }
+
+        loadArchive();
+    </script>
+</body>
+</html>
