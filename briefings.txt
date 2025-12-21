@@ -30,6 +30,25 @@
         "sections": 5,
         "picks": 3
       }
+    },
+    {
+      "date": "2025-12-20",
+      "day": "금",
+      "title": "외신 브리핑 서비스 런칭",
+      "summary": "Jae's Briefing 서비스 첫 발행",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "외신 브리핑 서비스 시작",
+          "summary": "Value Score 기반 뉴스 큐레이션 서비스 런칭",
+          "url": "https://hong4137.github.io/briefing/archive/2025-12-20.html"
+        }
+      ],
+      "stats": {
+        "articles": 10,
+        "sections": 4,
+        "picks": 3
+      }
     }
   ]
 }
