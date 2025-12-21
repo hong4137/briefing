@@ -125,6 +125,10 @@ jobs:
             mv briefings.txt briefings.json
             echo "Renamed: briefings.txt -> briefings.json"
           fi
+          
+      - name: Generate List JSON
+        if: steps.sync.outputs.synced == 'true'
+        run: python scripts/generate_list.py
 
       - name: Commit and push changes
         if: steps.sync.outputs.synced == 'true'
