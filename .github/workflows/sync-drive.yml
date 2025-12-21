@@ -8,7 +8,7 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -66,13 +66,13 @@ jobs:
           def sync_folder(folder_id, local_path='.'):
               files = list_files(folder_id)
               synced = []
-              
+
               for file in files:
                   file_name = file['name']
                   file_id = file['id']
                   mime_type = file['mimeType']
                   local_file_path = os.path.join(local_path, file_name)
-                  
+
                   if mime_type == 'application/vnd.google-apps.folder':
                       os.makedirs(local_file_path, exist_ok=True)
                       synced.extend(sync_folder(file_id, local_file_path))
@@ -86,12 +86,12 @@ jobs:
                           print(f"Downloaded: {local_file_path}")
                       except Exception as e:
                           print(f"Failed: {file_name} - {e}")
-              
+
               return synced
 
           print(f"Syncing from Google Drive folder: {FOLDER_ID}")
           synced_files = sync_folder(FOLDER_ID)
-          
+
           if synced_files:
               print(f"Synced {len(synced_files)} file(s)")
               with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:
@@ -101,6 +101,19 @@ jobs:
               with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:
                   f.write("synced=false\n")
           EOF
+
+      - name: Rename .txt to .html in archive folder
+        if: steps.sync.outputs.synced == 'true'
+        run: |
+          if [ -d "archive" ]; then
+            for f in archive/*.txt; do
+              if [ -f "$f" ]; then
+                newname="${f%.txt}.html"
+                mv "$f" "$newname"
+                echo "Renamed: $f -> $newname"
+              fi
+            done
+          fi
 
       - name: Commit and push changes
         if: steps.sync.outputs.synced == 'true'
