@@ -5,6 +5,9 @@ on:
     - cron: '0 23 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -113,6 +116,14 @@ jobs:
                 echo "Renamed: $f -> $newname"
               fi
             done
+          fi
+
+      - name: Rename briefings.txt to briefings.json
+        if: steps.sync.outputs.synced == 'true'
+        run: |
+          if [ -f "briefings.txt" ]; then
+            mv briefings.txt briefings.json
+            echo "Renamed: briefings.txt -> briefings.json"
           fi
 
       - name: Commit and push changes
