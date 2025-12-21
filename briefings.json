@@ -34,19 +34,31 @@
     {
       "date": "2025-12-20",
       "day": "금",
-      "title": "외신 브리핑 서비스 런칭",
-      "summary": "Jae's Briefing 서비스 첫 발행",
+      "title": "연준 금리 25bp 인하, 2026년 인하 전망 대폭 축소",
+      "summary": "연준 금리 0.25%p 인하하며 2026년 금리 인하 전망 4회→2회로 축소, Lovable $66억 밸류에이션 달성, Big Tech 인도 투자 러시",
       "highlights": [
         {
           "category": "top",
-          "title": "외신 브리핑 서비스 시작",
-          "summary": "Value Score 기반 뉴스 큐레이션 서비스 런칭",
-          "url": "https://hong4137.github.io/briefing/archive/2025-12-20.html"
+          "title": "연준, 금리 25bp 인하 결정",
+          "summary": "2026년 인하 전망 4회→2회 축소, 시장 급락",
+          "url": "https://www.cnbc.com/2024/12/18/fed-meeting-today-interest-rate-decision.html"
+        },
+        {
+          "category": "ai",
+          "title": "Lovable, $66억 밸류에이션으로 $3.3억 시리즈 B",
+          "summary": "Google CapitalG, Nvidia NVentures 투자, ARR $2억 달성",
+          "url": "https://techcrunch.com/2024/12/18/lovable-series-b-funding/"
+        },
+        {
+          "category": "economy",
+          "title": "Big Tech 인도 투자 러시 - 48시간 내 $500억+",
+          "summary": "Microsoft $175억, Amazon $350억 인도 투자 약속",
+          "url": "https://www.cnbc.com/2024/12/11/big-tech-india-investment.html"
         }
       ],
       "stats": {
-        "articles": 10,
-        "sections": 4,
+        "articles": 15,
+        "sections": 5,
         "picks": 3
       }
     }
