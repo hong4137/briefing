@@ -61,6 +61,37 @@
         "sections": 5,
         "picks": 3
       }
+    },
+    {
+      "date": "2025-12-19",
+      "day": "금",
+      "title": "Waymo $150억 펀딩 협상, $1,000억 밸류에이션 목표",
+      "summary": "Waymo가 $150억 이상 펀딩을 협상 중이며 밸류에이션 $1,000억 돌파 예상, Apple AI 수장 교체로 Siri 2026 출시 압박, 중국 GPU MetaX IPO 700% 급등",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "Waymo, $150억 펀딩 협상",
+          "summary": "$1,000억 밸류에이션 목표, 2024년 대비 2배 이상",
+          "url": "https://www.cnbc.com/2025/12/16/alphabet-owned-waymo-in-talks-to-raise-15-billion-in-funding.html"
+        },
+        {
+          "category": "ai",
+          "title": "Apple AI 수장 교체, Siri 2026 연기",
+          "summary": "John Giannandrea 교체, Google/MS 출신 영입",
+          "url": "https://www.cnbc.com/2025/12/17/apple-ai-delay-siri.html"
+        },
+        {
+          "category": "semiconductor",
+          "title": "중국 MetaX IPO 첫날 700% 급등",
+          "summary": "Nvidia 대안 개발 열기, Moore Threads도 400% 상승",
+          "url": "https://www.cnbc.com/2025/12/17/metax-moore-threads-chinese-rivals-nvidia-ai-chips.html"
+        }
+      ],
+      "stats": {
+        "articles": 11,
+        "sections": 5,
+        "picks": 3
+      }
     }
   ]
 }

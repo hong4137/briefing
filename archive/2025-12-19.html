@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>외신 브리핑 | 2025-12-19</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --bg-card-hover: #222230;
+            --accent-red: #ff3b3b;
+            --accent-orange: #ff8c42;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-green: #22c55e;
+            --accent-cyan: #06b6d4;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --text-muted: #666680;
+            --border-color: #2a2a3a;
+            --gradient-fire: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            --gradient-money: linear-gradient(135deg, #22c55e, #06b6d4);
+            --gradient-ai: linear-gradient(135deg, #a855f7, #4a9eff);
+            --gradient-chip: linear-gradient(135deg, #ff8c42, #ffd700);
+            --gradient-gem: linear-gradient(135deg, #ec4899, #8b5cf6);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; min-height: 100vh; }
+        .nav { background: var(--bg-secondary); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(20px); }
+        .nav-content { max-width: 1400px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+        .nav-logo-icon { width: 40px; height: 40px; background: var(--gradient-fire); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+        .nav-logo-text { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 900; background: var(--gradient-fire); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--text-primary); }
+        .header { padding: 3rem 2rem; text-align: center; background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); }
+        .date-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--bg-card); padding: 0.5rem 1rem; border-radius: 50px; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; margin-bottom: 1rem; border: 1px solid var(--border-color); }
+        .header h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .header p { color: var(--text-secondary); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+        .section-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--border-color); }
+        .section-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
+        .section-icon.fire { background: var(--gradient-fire); }
+        .section-icon.money { background: var(--gradient-money); }
+        .section-icon.ai { background: var(--gradient-ai); }
+        .section-icon.chip { background: var(--gradient-chip); }
+        .section-icon.gem { background: var(--gradient-gem); }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; }
+        .cards-section { margin-bottom: 3rem; }
+        .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1.5rem; }
+        .card { background: var(--bg-card); border-radius: 16px; padding: 1.5rem; border: 1px solid var(--border-color); transition: all 0.3s ease; }
+        .card:hover { background: var(--bg-card-hover); border-color: var(--accent-blue); transform: translateY(-2px); }
+        .card-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+        .badge { padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        .badge.top { background: rgba(255, 59, 59, 0.2); color: var(--accent-red); }
+        .badge.cross { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
+        .badge.score-badge { background: rgba(255, 215, 0, 0.2); color: var(--accent-gold); }
+        .card h4 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; line-height: 1.4; }
+        .card p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; }
+        .card-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid var(--border-color); flex-wrap: wrap; gap: 0.5rem; }
+        .source { font-size: 0.8rem; color: var(--text-muted); }
+        .source-link { font-size: 0.8rem; color: var(--accent-blue); text-decoration: none; font-weight: 500; }
+        .source-link:hover { text-decoration: underline; }
+        .hero-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 1.5rem; margin-bottom: 3rem; }
+        .hero-card { background: var(--bg-card); border-radius: 20px; padding: 2rem; border: 1px solid var(--border-color); transition: all 0.3s ease; position: relative; overflow: hidden; }
+        .hero-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--gradient-fire); }
+        .hero-card:hover { border-color: var(--accent-red); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(255, 59, 59, 0.15); }
+        .hero-card.featured { grid-row: span 2; }
+        .hero-card h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.3; }
+        .hero-card.featured h3 { font-size: 1.8rem; }
+        .key-points { margin: 1.5rem 0; }
+        .key-point { padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; margin-bottom: 0.5rem; font-size: 0.9rem; }
+        .picks-section { margin-bottom: 3rem; }
+        .picks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .pick-card { background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1)); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(168, 85, 247, 0.3); transition: all 0.3s ease; }
+        .pick-card:hover { transform: translateY(-2px); border-color: var(--accent-purple); box-shadow: 0 8px 32px rgba(168, 85, 247, 0.2); }
+        .pick-card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
+        .pick-card h4::before { content: '💎 '; }
+        .pick-card p { color: var(--text-secondary); font-size: 0.85rem; }
+        .pick-reason { margin-top: 0.75rem; padding: 0.5rem; background: rgba(168, 85, 247, 0.15); border-radius: 8px; font-size: 0.75rem; color: var(--accent-purple); }
+        .footer { text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border-color); margin-top: 2rem; }
+        .footer span { color: var(--accent-red); }
+        @media (max-width: 1024px) { .hero-grid { grid-template-columns: 1fr; } .hero-card.featured { grid-row: span 1; } .picks-grid { grid-template-columns: 1fr; } .cards-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { .nav-content { flex-direction: column; gap: 1rem; } .container { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav class="nav"><div class="nav-content"><a href="../index.html" class="nav-logo"><div class="nav-logo-icon">📰</div><span class="nav-logo-text">Jae's Briefing</span></a><ul class="nav-links"><li><a href="../index.html">홈</a></li><li><a href="../archive.html">아카이브</a></li></ul></div></nav>
+    <header class="header"><div class="date-badge">2025-12-19 (금) KST</div><h1>외신 브리핑</h1><p>Value Score 기반 뉴스 큐레이션 | 총 11건</p></header>
+    <main class="container">
+        <section class="cards-section"><div class="section-header"><div class="section-icon fire">🔥</div><h2 class="section-title">TOP Headlines</h2></div>
+            <div class="hero-grid">
+                <article class="hero-card featured"><div class="card-badges"><span class="badge top">TOP</span><span class="badge cross">교차보도 5+</span><span class="badge score-badge">⭐ 9.5</span></div><h3>Waymo, $150억 펀딩 협상 - $1,000억 밸류에이션 목표</h3><p>Alphabet의 자율주행 자회사 Waymo가 모회사 주도로 $150억 이상 펀딩을 협상 중입니다. 밸류에이션은 최대 $1,100억까지 논의되며, 2024년 10월 $450억 대비 2배 이상 상승합니다.</p><div class="key-points"><div class="key-point">• 주간 유료 라이드 45만 건 돌파, 2025년 총 2,000만 트립 예상</div><div class="key-point">• 2026년 런던 진출 예정, 11개 추가 도시 서비스 확대</div><div class="key-point">• Tesla 로보택시와 경쟁 본격화</div></div><div class="card-footer"><span class="source">Bloomberg, CNBC, The Information</span><a href="https://www.cnbc.com/2025/12/16/alphabet-owned-waymo-in-talks-to-raise-15-billion-in-funding.html" target="_blank" rel="noopener" class="source-link">원문 →</a></div></article>
+                <article class="hero-card"><div class="card-badges"><span class="badge top">TOP</span><span class="badge score-badge">⭐ 9.0</span></div><h3>Apple, AI 수장 교체 - Siri 2026 출시 압박</h3><p>Apple이 AI 총괄 John Giannandrea를 교체하고 Google/Microsoft 16년 경력의 Amar Subramanya를 영입했습니다. Apple Intelligence 부진으로 차세대 Siri는 2026년으로 연기되었습니다.</p><div class="card-footer"><span class="source">CNBC, TechCrunch</span><a href="https://www.cnbc.com/2025/12/17/apple-ai-delay-siri.html" target="_blank" rel="noopener" class="source-link">원문 →</a></div></article>
+                <article class="hero-card"><div class="card-badges"><span class="badge top">TOP</span><span class="badge score-badge">⭐ 8.5</span></div><h3>MetaX, 상하이 IPO 첫날 700% 급등</h3><p>중국 GPU 제조사 MetaX가 상하이 증시 데뷔에서 700% 급등했습니다. 2주 전 Moore Threads도 400% 상승하며 중국의 Nvidia 대안 칩 개발 열기를 보여줍니다.</p><div class="card-footer"><span class="source">CNBC</span><a href="https://www.cnbc.com/2025/12/17/metax-moore-threads-chinese-rivals-nvidia-ai-chips.html" target="_blank" rel="noopener" class="source-link">원문 →</a></div></article>
+            </div>
+        </section>
+        <section class="cards-section"><div class="section-header"><div class="section-icon money">💰</div><h2 class="section-title">경제/금융</h2></div>
+            <div class="cards-grid">
+                <article class="card"><div class="card-badges"><span class="badge score-badge">⭐ 8.0</span></div><h4>OpenAI, Amazon $100억 투자 협상 중</h4><p>OpenAI가 Amazon과 $100억 이상 투자를 협상 중입니다. 이는 Amazon의 AI 컴퓨팅 칩 접근권도 포함될 수 있습니다. OpenAI는 현재 연간 매출 $200억 런레이트를 기록 중입니다.</p><div class="card-footer"><span class="source">CNBC</span><a href="https://www.cnbc.com/2025/12/17/openai-amazon-investment.html" target="_blank" rel="noopener" class="source-link">원문 →</a></div></article>
+                <article class="card"><div class="card-badges"><span class="badge score-badge">⭐ 7.5</span></div><h4>SoftBank, AI 투자 우려로 일본 기술주 하락 주도</h4><p>AI 투자 지속 가능성에 대한 우려가 아시아로 확산되며 SoftBank가 일본 기술주 하락을 주도했습니다. Oracle의 부채 문제도 AI 인프라 투자에 대한 우려를 가중시켰습니다.</p><div class="card-footer"><span class="source">CNBC</span><a href="https://www.cnbc.com/2025/12/18/softbank-japan-tech-stocks.html" target="_blank" rel="noopener" class="source-link">원문 →</a></div></article>
+            </div>
+        </section>
+        <section class="cards-section"><div class="section-header"><div class="section-icon ai">🤖</div><h2 class="section-title">AI/기술</h2></div>
+            <div class="cards-grid">
+                <article class="card"><div class="card-badges"><span class="badge top">TOP</span><span class="badge score-badge">⭐ 8.5</span></div><h4>Amazon AI 수장 Rohit Prasad 퇴임, Peter DeSantis AGI 총괄</h4><p>Amazon의 AI 총괄 Rohit Prasad가 퇴임하고 Peter DeSantis가 'AGI' 그룹을 이끌게 됩니다. Alexa AI 개편 이후 Amazon의 AI 전략 재편을 보여줍니다.</p><div class="card-footer"><span class="source">CNBC</span><a href="https://www.cnbc.com/2025/12/17/amazon-ai-rohit-prasad-peter-desantis.html" target="_blank" rel="noopener" class="source-link">원문 →</a></div></article>
+                <article class="card"><div class="card-badges"><span class="badge cross">교차보도 3+</span><span class="badge score-badge">⭐ 8.0</span></div><h4>FTC, Instacart AI 가격 책정 도구 조사 착수</h4><p>FTC가 Instacart의 Eversight AI 가격 책정 도구를 조사합니다. 같은 상품, 같은 매장에서 고객별 최대 23% 가격 차이가 발생, 연간 추가 비용 $1,200 이상으로 추정됩니다.</p><div class="card-footer"><span class="source">TechCrunch, CNBC</span><a href="https://www.cnbc.com/2025/12/17/instacart-ftc-ai-pricing.html" target="_blank" rel="noopener" class="source-link">원문 →</a></div></article>
+                <article class="card"><div class="card-badges"><span class="badge score-badge">⭐ 7.5</span></div><h4>Coinbase, 예측 시장 등 원스톱 트레이딩 앱 확장</h4><p>Coinbase가 예측 시장과 추가 트레이딩 도구를 도입하며 원스톱 트레이딩 앱으로 확장합니다. 암호화폐 거래소를 넘어 종합 금융 플랫폼으로의 전환을 시도합니다.</p><div class="card-footer"><span class="source">CNBC</span><a href="https://www.cnbc.com/2025/12/17/coinbase-prediction-markets.html" target="_blank" rel="noopener" class="source-link">원문 →</a></div></article>
+            </div>
+        </section>
+        <section class="cards-section"><div class="section-header"><div class="section-icon chip">💾</div><h2 class="section-title">반도체</h2></div>
+            <div class="cards-grid">
+                <article class="card"><div class="card-badges"><span class="badge score-badge">⭐ 7.5</span></div><h4>중국 GPU 스타트업 IPO 열풍 - Nvidia 대안 개발 가속</h4><p>MetaX와 Moore Threads의 IPO 성공으로 중국 GPU 스타트업 투자가 급증하고 있습니다. 미국 수출 규제 속에서 자국 반도체 생태계 구축에 대한 기대가 반영되었습니다.</p><div class="card-footer"><span class="source">CNBC</span><a href="https://www.cnbc.com/2025/12/17/metax-moore-threads-chinese-rivals-nvidia-ai-chips.html" target="_blank" rel="noopener" class="source-link">원문 →</a></div></article>
+            </div>
+        </section>
+        <section class="picks-section"><div class="section-header"><div class="section-icon gem">💎</div><h2 class="section-title">Claude's Pick</h2></div><p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">48시간 내 숨은 보석 기사 | Signal 2개 이상 + 관심사 매칭</p>
+            <div class="picks-grid">
+                <article class="pick-card"><h4>Tesla 자율주행, 텍사스에서 세이프티 드라이버 없이 테스트 시작</h4><p>Elon Musk가 Tesla가 텍사스에서 세이프티 드라이버 없이 완전 자율주행 테스트를 시작했다고 발표했습니다. Waymo를 빠르게 추격 중입니다.</p><div class="pick-reason">🎯 자율주행 경쟁 가속화 신호</div></article>
+                <article class="pick-card"><h4>Cramer: Oracle 부채 문제가 AI 프로젝트에 영향</h4><p>Jim Cramer가 Oracle의 부채 수준이 AI 인프라 투자 프로젝트에 부담이 될 수 있다고 경고했습니다. AI 투자 지속 가능성에 대한 시장 우려가 커지고 있습니다.</p><div class="pick-reason">🎯 AI 인프라 투자 리스크 신호</div></article>
+                <article class="pick-card"><h4>California 법원, Tesla Autopilot 기만적 마케팅 판결</h4><p>California 법원이 Tesla의 Autopilot 마케팅이 기만적이었다고 판결했습니다. 자율주행 기술에 대한 규제 강화 신호입니다.</p><div class="pick-reason">🎯 자율주행 규제 변화</div></article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"><p>⏱️ 생성: 2025-12-19 KST | 대상 매체: TechCrunch, CNBC, Bloomberg 등</p><p style="margin-top: 0.5rem;">Made with <span>♥</span> by Claude</p></footer>
+</body>
+</html>
