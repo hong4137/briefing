@@ -2,7 +2,8 @@ name: Sync from Google Drive
 
 on:
   schedule:
-    - cron: '0 23 * * *'
+    # 한국 시간 10시, 11시, 13시에 실행 (UTC 1, 2, 4시)
+    - cron: '0 1,2,4 * * *'
   workflow_dispatch:
 
 permissions:
