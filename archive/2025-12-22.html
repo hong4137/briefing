@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>외신 브리핑 - 2025년 12월 22일</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --border-color: #2a2a3a;
+            --text-primary: #e0e0e8;
+            --text-secondary: #a0a0b0;
+            --text-tertiary: #707080;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 3rem 0 2rem;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+        
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #4a9eff, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header .date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            letter-spacing: 2px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 3rem 0 1.5rem;
+        }
+        
+        .section-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+        
+        .article-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+        
+        .article-card:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+        
+        .article-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+        
+        .article-subtitle {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+        
+        .badge {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+        
+        .badge-top {
+            background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            color: white;
+        }
+        
+        .badge-score {
+            background: linear-gradient(135deg, #ffd700, #ff8c42);
+            color: #1a1a24;
+            font-weight: 600;
+        }
+        
+        .badge-cross {
+            background: linear-gradient(135deg, #22c55e, #06b6d4);
+            color: white;
+        }
+        
+        .source-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .source-link:hover {
+            text-decoration: underline;
+        }
+        
+        .date-badge {
+            color: var(--text-tertiary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+        }
+        
+        .market-section {
+            margin-bottom: 3rem;
+        }
+        
+        .market-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        
+        .market-table th,
+        .market-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .market-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .market-table td {
+            font-size: 0.95rem;
+        }
+        
+        .market-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .trend-up {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+        
+        .trend-down {
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+        
+        .trend-icon {
+            margin-right: 0.5rem;
+        }
+        
+        .picks-section {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.1));
+            border: 2px solid rgba(236, 72, 153, 0.3);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-top: 3rem;
+        }
+        
+        .picks-intro {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        .pick-reason {
+            margin-top: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid var(--accent-purple);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .article-card {
+                padding: 1.5rem;
+            }
+            
+            .market-table th,
+            .market-table td {
+                padding: 0.75rem 1rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>외신 브리핑</h1>
+            <p class="date">2025년 12월 22일 일요일</p>
+        </header>
+
+        <!-- TOP Headlines -->
+        <section>
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff3b3b, #ff8c42);">🔥</div>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">OpenAI, $830B 밸류에이션으로 $100B 추가 투자 유치 추진</h3>
+                <p class="article-subtitle">ChatGPT 제작사, 내년 1분기까지 자금 조달 목표... 국부 펀드 투자 검토 중</p>
+                <div class="article-meta">
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 3개 매체</span>
+                    <a href="https://techcrunch.com/2025/12/19/openai-is-reportedly-trying-to-raise-100b-at-an-830b-valuation/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/19 14:32 KST</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">뉴욕주, AI 안전 규제법 RAISE Act 서명... 미국 두 번째</h3>
+                <p class="article-subtitle">대형 AI 개발사에 안전 프로토콜 공개 및 72시간 내 사고 보고 의무화... 위반 시 최대 $3M 벌금</p>
+                <div class="article-meta">
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <a href="https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/20 19:20 KST</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Nvidia 주가, 강세 전망 지속... 애널리스트들 목표가 상향</h3>
+                <p class="article-subtitle">Blackwell Ultra, Rubin 출시 예정... CPX 칩이 2027년 $13B 매출 기대, 2026-27 EPS 상향 조정</p>
+                <div class="article-meta">
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <a href="https://www.cnbc.com/2025/12/21/three-top-wall-street-analysts-stay-bullish-on-nvidia-stock-heres-why.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="date-badge">📅 12/21 09:00 KST</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI/기술 -->
+        <section>
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #a855f7, #4a9eff);">🤖</div>
+                <h2 class="section-title">AI/기술</h2>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Google, Gemini Deep Research 에이전트 공개</h3>
+                <p class="article-subtitle">Gemini 3 Pro 기반 연구 에이전트... Interactions API로 개발자에게 개방, Search/Finance/NotebookLM 통합 예정</p>
+                <div class="article-meta">
+                    <span class="badge badge-cross">🔄 2개 매체</span>
+                    <a href="https://techcrunch.com/2025/12/11/google-launched-its-deepest-ai-research-agent-yet-on-the-same-day-openai-dropped-gpt-5-2/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/11 05:18 KST</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Harness, AI DevOps 자동화로 $5.5B 밸류에이션 달성</h3>
+                <p class="article-subtitle">$240M Series E 투자 유치... 2025년 ARR $250M+ 전망, 코드 후속 작업 자동화에 집중</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/11/harness-hits-5-5b-valuation-with-240m-to-automate-ais-after-code-gap/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/11 05:18 KST</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Resolve AI, $1B 밸류에이션으로 Series A 투자 유치</h3>
+                <p class="article-subtitle">전직 Splunk 임원들의 자율 SRE 스타트업... ARR $4M, Lightspeed Venture 주도</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/19 13:58 KST</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Lovable, 'vibe-coding' 스타트업 $6.6B 밸류로 $330M 투자 유치</h3>
+                <p class="article-subtitle">자연어로 앱 개발하는 플랫폼... AI 코딩 도구 시장 경쟁 가열</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/18/vibe-coding-startup-lovable-raises-330m-at-a-6-6b-valuation/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/18 22:00 KST</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">OpenAI, ChatGPT 개인화 설정 추가... 감정 표현 조절 가능</h3>
+                <p class="article-subtitle">warmth, enthusiasm, emoji 사용량 직접 조정... "중독성" 우려에 대응</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/20 14:00 KST</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Luma AI, Ray3 Modify 모델 공개... 시작/종료 프레임으로 영상 생성</h3>
+                <p class="article-subtitle">$900M 투자 직후 신모델 발표... 배우 연기 보존하며 AI로 장면 변환</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/18/luma-releases-a-new-ai-model-that-lets-users-generate-a-video-from-a-start-and-end-frame/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/18 22:00 KST</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 경제/투자 -->
+        <section>
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #22c55e, #06b6d4);">💰</div>
+                <h2 class="section-title">경제/투자</h2>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">VC 투자자들, 2026년에도 AI에 집중 베팅</h3>
+                <p class="article-subtitle">Index, Greylock, Felicis의 투자자들... 챗앱, 코딩앱, 고객 서비스 AI가 주목 분야</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/19/where-are-investors-placing-their-bets-next-year-ai-ai-ai/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/19 23:00 KST</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">AWS, Nova 2 AI 모델 및 Nova Forge 서비스 출시</h3>
+                <p class="article-subtitle">4개 신규 모델 발표... $100K/년에 커스텀 AI 모델 훈련 가능한 Nova Forge 공개</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/02/aws-launches-new-nova-ai-models-and-a-service-that-gives-customers-more-control/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/02 22:00 KST</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Amazon, Trainium3 칩 공식 출시... Trainium4는 Nvidia 호환</h3>
+                <p class="article-subtitle">3nm 공정, 4배 성능 향상... Trainium4는 NVLink Fusion 지원으로 Nvidia GPU와 연동</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/02/amazon-releases-an-impressive-new-ai-chip-and-teases-a-nvidia-friendly-roadmap/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/02 22:00 KST</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 주간 시장 동향 -->
+        <section class="market-section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #4a9eff, #22c55e);">📊</div>
+                <h2 class="section-title">주간 시장 동향</h2>
+            </div>
+
+            <table class="market-table">
+                <thead>
+                    <tr>
+                        <th>지표</th>
+                        <th>동향</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S&P 500</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> -0.5%</td>
+                        <td>12월 약세, 7개월 랠리 종료 위기</td>
+                    </tr>
+                    <tr>
+                        <td>Nasdaq</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> -1.2%</td>
+                        <td>기술주 밸류에이션 우려 지속</td>
+                    </tr>
+                    <tr>
+                        <td>Dow</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> +0.8%</td>
+                        <td>산업주 로테이션 진행</td>
+                    </tr>
+                    <tr>
+                        <td>Nvidia</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> P/E 25x (2026)</td>
+                        <td>Blackwell/Rubin 로드맵 긍정적</td>
+                    </tr>
+                    <tr>
+                        <td>Micron</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> +15%</td>
+                        <td>HBM 시장 2028년 $100B 전망</td>
+                    </tr>
+                    <tr>
+                        <td>Oracle</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> -11%</td>
+                        <td>실망스러운 실적 및 지출 증가</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="picks-section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">💎</div>
+                <h2 class="section-title">Claude's Pick</h2>
+            </div>
+            <p class="picks-intro">48시간 내 숨은 보석 기사 | Signal 2개 이상 + 관심사 매칭</p>
+
+            <div class="article-card">
+                <h3 class="article-title">Yann LeCun, $5B+ 밸류로 'world model' 스타트업 설립</h3>
+                <p class="article-subtitle">Meta AI Chief Scientist, 독립 스타트업 창업... 세계 모델 기반 차세대 AI 연구</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/19/yann-lecun-confirms-his-new-world-model-startup-reportedly-seeks-5b-valuation/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/19 22:00 KST</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> AI 거장의 첫 독립 창업 + 세계 모델 시장 재정의 신호 | AI 인프라 관심사
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Known, 음성 AI 데이팅 앱으로 주목... 26분 온보딩 세션</h3>
+                <p class="article-subtitle">AI 음성 대화로 사용자 심층 파악... 평균 온보딩 26분, 최장 1시간 38분 기록</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/19/known-uses-voice-ai-to-help-you-go-on-more-in-person-dates/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/19 18:23 KST</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 음성 AI 새로운 UX 패턴 + 투자자 관심 | 데이터/자동화 관심사
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Simular, Mac/Windows AI 에이전트로 $21.5M 투자 유치</h3>
+                <p class="article-subtitle">브라우저 대신 PC 자체를 제어하는 에이전트... MS Windows 365 프로그램 선정</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/02/simular-releases-mac-os-ai-agent-raises-21-5m-from-felicis-with-windows-coming-soon/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="date-badge">📅 12/02 17:00 KST</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 새로운 에이전트 접근법 + MS 파트너십 | AI 인프라 관심사
+                </div>
+            </div>
+        </section>
+
+        <footer style="margin-top: 4rem; padding: 2rem 0; border-top: 2px solid var(--border-color); text-align: center; color: var(--text-tertiary); font-size: 0.9rem;">
+            <p>외신 브리핑 by Claude | Value Score 기반 자동 선별</p>
+            <p style="margin-top: 0.5rem;">TOP=8, 인기=5, 교차보도 최대 +2 | 기준 점수 3.0 이상</p>
+        </footer>
+    </div>
+</body>
+</html>
