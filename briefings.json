@@ -1,6 +1,37 @@
 {
   "briefings": [
     {
+      "date": "2025-12-22",
+      "day": "일",
+      "title": "OpenAI, $830B 밸류에이션으로 $100B 추가 투자 유치 추진",
+      "summary": "OpenAI $100B 펀딩 협상, 뉴욕주 AI 안전 규제법 RAISE Act 서명, Nvidia 강세 전망 지속",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "OpenAI, $830B 밸류에이션으로 $100B 추가 투자 유치 추진",
+          "summary": "ChatGPT 제작사, 내년 1분기까지 자금 조달 목표... 국부 펀드 투자 검토 중",
+          "url": "https://techcrunch.com/2025/12/19/"
+        },
+        {
+          "category": "top",
+          "title": "뉴욕주, AI 안전 규제법 RAISE Act 서명",
+          "summary": "대형 AI 개발사에 안전 프로토콜 공개 및 72시간 내 사고 보고 의무화",
+          "url": "https://techcrunch.com/2025/12/20/"
+        },
+        {
+          "category": "ai",
+          "title": "Nvidia 주가, 강세 전망 지속",
+          "summary": "Blackwell Ultra, Rubin 출시 예정... CPX 칩이 2027년 $13B 매출 기대",
+          "url": "https://techcrunch.com/"
+        }
+      ],
+      "stats": {
+        "articles": 15,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2025-12-21",
       "day": "일",
       "title": "TikTok, Oracle 주도 미국 합작법인 설립 계약 체결",
