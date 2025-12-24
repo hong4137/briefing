@@ -1,29 +1,32 @@
 {
   "briefings": [
     {
+      "date": "2025-12-24",
+      "day": "화",
+      "title": "ServiceNow $77.5억 Armis 인수, 美 3분기 GDP 4.3% 성장",
+      "summary": "ServiceNow 역대 최대 M&A, Alphabet Intersect Power 인수, Nvidia 중국 H200 출하 계획, FDA 위고비 알약 승인, 美 GDP 2년 최고치",
+      "highlights": [
+        "ServiceNow $77.5억 Armis 인수 - AI 시대 사이버보안 강화",
+        "Alphabet $47.5억 Intersect Power 인수 - 데이터센터 전력 확보",
+        "Nvidia 2월 중순 중국 H200 칩 출하 목표",
+        "FDA 최초 경구용 GLP-1 비만 치료제 승인",
+        "美 3분기 GDP 4.3% 성장, 2년 만에 최고치"
+      ],
+      "stats": {
+        "articles": 14,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2025-12-22",
       "day": "일",
       "title": "OpenAI, $830B 밸류에이션으로 $100B 추가 투자 유치 추진",
       "summary": "OpenAI $100B 펀딩 협상, 뉴욕주 AI 안전 규제법 RAISE Act 서명, Nvidia 강세 전망 지속",
       "highlights": [
-        {
-          "category": "top",
-          "title": "OpenAI, $830B 밸류에이션으로 $100B 추가 투자 유치 추진",
-          "summary": "ChatGPT 제작사, 내년 1분기까지 자금 조달 목표... 국부 펀드 투자 검토 중",
-          "url": "https://techcrunch.com/2025/12/19/"
-        },
-        {
-          "category": "top",
-          "title": "뉴욕주, AI 안전 규제법 RAISE Act 서명",
-          "summary": "대형 AI 개발사에 안전 프로토콜 공개 및 72시간 내 사고 보고 의무화",
-          "url": "https://techcrunch.com/2025/12/20/"
-        },
-        {
-          "category": "ai",
-          "title": "Nvidia 주가, 강세 전망 지속",
-          "summary": "Blackwell Ultra, Rubin 출시 예정... CPX 칩이 2027년 $13B 매출 기대",
-          "url": "https://techcrunch.com/"
-        }
+        "OpenAI $830B 밸류에이션으로 $100B 추가 투자 협상 중",
+        "뉴욕주 AI 안전 규제법 RAISE Act 서명",
+        "Cursor, Graphite 인수로 코딩 생태계 확장"
       ],
       "stats": {
         "articles": 15,
@@ -37,24 +40,9 @@
       "title": "TikTok, Oracle 주도 미국 합작법인 설립 계약 체결",
       "summary": "TikTok-Oracle 딜 타결, Yann LeCun의 World Model 스타트업 AMI Labs 출범, Cursor의 Graphite 인수로 AI 코딩 생태계 재편",
       "highlights": [
-        {
-          "category": "top",
-          "title": "TikTok, Oracle 주도 미국 합작법인 설립",
-          "summary": "2026년 1월 22일 거래 완료 예정, Oracle·Silver Lake·MGX 각 15% 지분",
-          "url": "https://www.cnbc.com/2025/12/19/oracle-stock-tiktok-us-trump-china.html"
-        },
-        {
-          "category": "ai",
-          "title": "Yann LeCun, AMI Labs 공식 출범",
-          "summary": "€30억 가치평가 목표, LLM 한계 넘는 World Model AI 개발",
-          "url": "https://techcrunch.com/2025/12/19/yann-lecun-confirms-his-new-world-model-startup-reportedly-seeks-5b-valuation/"
-        },
-        {
-          "category": "ai",
-          "title": "Cursor, Graphite 인수로 코드 리뷰 통합",
-          "summary": "$2.9억 이상 가치평가, AI 코드 작성-리뷰 엔드투엔드 플랫폼",
-          "url": "https://techcrunch.com/2025/12/19/cursor-continues-acquisition-spree-with-graphite-deal/"
-        }
+        "TikTok, Oracle 주도 미국 합작법인 설립 계약 체결",
+        "Yann LeCun, World Model 스타트업 AMI Labs 출범 ($5B+ 밸류에이션)",
+        "Cursor, Graphite 인수로 코딩 생태계 확장"
       ],
       "stats": {
         "articles": 12,
@@ -68,24 +56,9 @@
       "title": "연준 금리 25bp 인하, 2026년 인하 전망 대폭 축소",
       "summary": "연준 금리 0.25%p 인하하며 2026년 금리 인하 전망 4회→2회로 축소, Lovable $66억 밸류에이션 달성, Big Tech 인도 투자 러시",
       "highlights": [
-        {
-          "category": "top",
-          "title": "연준, 금리 25bp 인하 결정",
-          "summary": "2026년 인하 전망 4회→2회 축소, 시장 급락",
-          "url": "https://www.cnbc.com/2024/12/18/fed-meeting-today-interest-rate-decision.html"
-        },
-        {
-          "category": "ai",
-          "title": "Lovable, $66억 밸류에이션으로 $3.3억 시리즈 B",
-          "summary": "Google CapitalG, Nvidia NVentures 투자, ARR $2억 달성",
-          "url": "https://techcrunch.com/2024/12/18/lovable-series-b-funding/"
-        },
-        {
-          "category": "economy",
-          "title": "Big Tech 인도 투자 러시 - 48시간 내 $500억+",
-          "summary": "Microsoft $175억, Amazon $350억 인도 투자 약속",
-          "url": "https://www.cnbc.com/2024/12/11/big-tech-india-investment.html"
-        }
+        "연준 금리 25bp 인하, 2026년 인하 전망 4회→2회 축소",
+        "Lovable $66억 밸류에이션으로 $3.3억 시리즈B",
+        "Big Tech 인도 AI 투자 확대"
       ],
       "stats": {
         "articles": 15,
@@ -97,26 +70,11 @@
       "date": "2025-12-19",
       "day": "금",
       "title": "Waymo $150억 펀딩 협상, $1,000억 밸류에이션 목표",
-      "summary": "Waymo가 $150억 이상 펀딩을 협상 중이며 밸류에이션 $1,000억 돌파 예상, Apple AI 수장 교체로 Siri 2026 출시 압박, 중국 GPU MetaX IPO 700% 급등",
+      "summary": "Waymo가 $150억 이상 펀딩을 협상 중이며 밸류에이션 $1,000억 돌파 예상, Apple AI 수장 교체로 Siri 2026 출시 임박, 중국 GPU MetaX IPO 700% 급등",
       "highlights": [
-        {
-          "category": "top",
-          "title": "Waymo, $150억 펀딩 협상",
-          "summary": "$1,000억 밸류에이션 목표, 2024년 대비 2배 이상",
-          "url": "https://www.cnbc.com/2025/12/16/alphabet-owned-waymo-in-talks-to-raise-15-billion-in-funding.html"
-        },
-        {
-          "category": "ai",
-          "title": "Apple AI 수장 교체, Siri 2026 연기",
-          "summary": "John Giannandrea 교체, Google/MS 출신 영입",
-          "url": "https://www.cnbc.com/2025/12/17/apple-ai-delay-siri.html"
-        },
-        {
-          "category": "semiconductor",
-          "title": "중국 MetaX IPO 첫날 700% 급등",
-          "summary": "Nvidia 대안 개발 열기, Moore Threads도 400% 상승",
-          "url": "https://www.cnbc.com/2025/12/17/metax-moore-threads-chinese-rivals-nvidia-ai-chips.html"
-        }
+        "Waymo $150억 펀딩 협상, $1,000억 밸류에이션 목표",
+        "Apple AI 수장 교체, Siri 2026 출시 임박",
+        "중국 GPU 기업 MetaX, 상하이 IPO서 700% 급등"
       ],
       "stats": {
         "articles": 11,

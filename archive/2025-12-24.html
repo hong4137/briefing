@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceNow $77.5억 Armis 인수, 美 3분기 GDP 4.3% 성장 | 외신 브리핑</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a25;
+            --text-primary: #e8e8ed;
+            --text-secondary: #9898a8;
+            --text-muted: #6a6a78;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-green: #22c55e;
+            --accent-orange: #f97316;
+            --accent-red: #ef4444;
+            --accent-cyan: #06b6d4;
+            --border-color: #2a2a35;
+            --gradient-1: linear-gradient(135deg, #4a9eff 0%, #a855f7 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: var(--gradient-1);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        .stat-item span {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+        
+        section {
+            margin-bottom: 45px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .section-icon {
+            font-size: 1.4rem;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        
+        .article {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+        
+        .article:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+        
+        .article-header {
+            margin-bottom: 12px;
+        }
+        
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+        
+        .article-title-en {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+        
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+        
+        .source-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .source-link:hover {
+            text-decoration: underline;
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .badge-top {
+            background: rgba(239, 68, 68, 0.15);
+            color: var(--accent-red);
+        }
+        
+        .badge-popular {
+            background: rgba(249, 115, 22, 0.15);
+            color: var(--accent-orange);
+        }
+        
+        .badge-cross {
+            background: rgba(34, 197, 94, 0.15);
+            color: var(--accent-green);
+        }
+        
+        .badge-score {
+            background: rgba(74, 158, 255, 0.15);
+            color: var(--accent-blue);
+        }
+        
+        .time-stamp {
+            color: var(--text-muted);
+        }
+        
+        .picks-section {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(74, 158, 255, 0.1) 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 50px;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+        
+        .picks-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .picks-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--accent-purple);
+            margin-bottom: 8px;
+        }
+        
+        .picks-subtitle {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        .pick-item {
+            background: var(--bg-secondary);
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 14px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .pick-reason {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px dashed var(--border-color);
+            font-size: 0.8rem;
+            color: var(--accent-purple);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 50px;
+        }
+        
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        .footer-heart {
+            color: var(--accent-red);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .stats-bar {
+                gap: 15px;
+            }
+            
+            .article {
+                padding: 18px;
+            }
+            
+            .article-meta {
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date-badge">2025년 12월 24일 화요일</div>
+            <h1>오늘의 외신 브리핑</h1>
+            <p class="subtitle">Value Score 3.0 이상 기사만 선별 | AI/기술, 경제, 국제 뉴스</p>
+            <div class="stats-bar">
+                <div class="stat-item">📰 기사 <span>14</span>건</div>
+                <div class="stat-item">📂 섹션 <span>5</span>개</div>
+                <div class="stat-item">🎯 Pick <span>3</span>건</div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section-header">
+                <span class="section-icon">🤖</span>
+                <h2 class="section-title">AI / 기술</h2>
+            </div>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">ServiceNow, 사이버보안 스타트업 Armis $77.5억 인수</h3>
+                    <p class="article-title-en">ServiceNow acquiring cybersecurity startup Armis for nearly $8 billion</p>
+                </div>
+                <p class="article-summary">ServiceNow가 사이버보안 스타트업 Armis를 $77.5억에 전액 현금 인수하며 역대 최대 규모 M&A 단행. AI 시대의 사이버 위험 대응 강화 목적. Armis는 ARR $3.4억 달성, 전년 대비 50%+ 성장. ServiceNow의 2025년 인수 행보 지속 (Moveworks $28.5억, Veza 인수).</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/23/servicenow-armis-cybersecurity-acquisition.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 4개 매체</span>
+                    <span class="badge badge-score">Score: 10.0</span>
+                    <span class="time-stamp">📅 12/24 03:00 KST</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">Alphabet, 데이터센터 에너지 기업 Intersect Power $47.5억 인수</h3>
+                    <p class="article-title-en">Alphabet to buy Intersect Power to bypass energy grid bottlenecks</p>
+                </div>
+                <p class="article-summary">Alphabet이 데이터센터·에너지 인프라 기업 Intersect Power를 $47.5억(현금) + 부채 인수로 매입. AI 데이터센터 확장을 위한 전력 확보 전략. 수 기가와트 규모의 에너지·데이터센터 프로젝트 포함. 2026년 상반기 거래 완료 예정.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/22/alphabet-to-buy-intersect-power-to-bypass-energy-grid-bottlenecks/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 5개 매체</span>
+                    <span class="badge badge-score">Score: 10.0</span>
+                    <span class="time-stamp">📅 12/23 05:00 KST</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">Nvidia, 2월 중순 중국에 H200 칩 출하 목표</h3>
+                    <p class="article-title-en">Nvidia aims to begin H200 chip shipments to China by mid-February</p>
+                </div>
+                <p class="article-summary">Nvidia가 중국 고객들에게 춘절 전(2월 중순) H200 AI 칩 출하 계획 통보. 초기 물량 4만~8만 개 칩(5,000~10,000 모듈). 트럼프 행정부의 25% 수수료 조건부 수출 허용 결정에 따른 조치. 단, 베이징 정부 승인 필요.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/22/nvidia-aims-to-begin-h200-chip-shipments-to-china-by-mid-february-.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 6개 매체</span>
+                    <span class="badge badge-score">Score: 10.0</span>
+                    <span class="time-stamp">📅 12/23 08:00 KST</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">ChatGPT, 스포티파이 래핑 스타일 연말 리뷰 출시</h3>
+                    <p class="article-title-en">ChatGPT launches a year-end review like Spotify Wrapped</p>
+                </div>
+                <p class="article-summary">OpenAI가 ChatGPT 사용자를 위한 연말 리뷰 기능 출시. 스포티파이 래핑과 유사하게 개인별 사용 패턴, 주요 대화 주제 등 시각화. ChatGPT 사용자 경험 개인화 강화 전략의 일환.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/22/chatgpt-launches-a-year-end-review-like-spotify-wrapped/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="badge badge-score">Score: 5.0</span>
+                    <span class="time-stamp">📅 12/23 10:00 KST</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">OpenAI, AI 브라우저의 프롬프트 인젝션 취약점 경고</h3>
+                    <p class="article-title-en">OpenAI says AI browsers may always be vulnerable to prompt injection attacks</p>
+                </div>
+                <p class="article-summary">OpenAI가 AI 브라우저의 프롬프트 인젝션 공격 취약성이 근본적으로 해결 불가능할 수 있다고 경고. AI 에이전트가 웹을 탐색할 때 악의적 명령어에 노출될 위험성 지적.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-score">Score: 5.0</span>
+                    <span class="time-stamp">📅 12/23 KST</span>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <span class="section-icon">💊</span>
+                <h2 class="section-title">헬스케어 / 바이오</h2>
+            </div>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">FDA, 최초의 경구용 GLP-1 비만 치료제 '위고비 알약' 승인</h3>
+                    <p class="article-title-en">FDA approves first GLP-1 pill for obesity from Wegovy maker Novo Nordisk</p>
+                </div>
+                <p class="article-summary">FDA가 노보노디스크의 위고비 알약(세마글루타이드 25mg)을 최초의 경구용 GLP-1 비만 치료제로 승인. 64주 임상에서 평균 16.6% 체중 감량 효과. 2026년 1월 초 미국 출시 예정. 시작 용량 1.5mg은 월 $149에 제공. 주사제와 유사한 효과로 GLP-1 시장 경쟁 가속화 전망.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/22/fda-approves-first-glp-1-pill-for-obesity-from-novo-nordisk.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 8개 매체</span>
+                    <span class="badge badge-score">Score: 10.0</span>
+                    <span class="time-stamp">📅 12/23 08:00 KST</span>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <span class="section-icon">📈</span>
+                <h2 class="section-title">경제 / 시장</h2>
+            </div>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">美 3분기 GDP 4.3% 성장, 2년 만에 최고치</h3>
+                    <p class="article-title-en">US economy grew 4.3% in Q3, fastest pace in two years</p>
+                </div>
+                <p class="article-summary">미국 3분기 GDP가 연율 4.3% 성장(예상 3.3% 상회). 소비자 지출 3.5% 증가가 견인. 정부 셧다운으로 지연됐던 보고서 공개. 연준 금리 정책 경로에 영향 줄 수 있는 강력한 경제 신호.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/23/us-economy-grows-by-4point3percent-in-third-quarter-much-more-than-expected-delayed-report-shows.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 7개 매체</span>
+                    <span class="badge badge-score">Score: 10.0</span>
+                    <span class="time-stamp">📅 12/24 01:30 KST</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">S&P 500 사상 최고치 경신, AI 관련주 견인</h3>
+                    <p class="article-title-en">S&P 500 rises to a record close, lifted by tech shares</p>
+                </div>
+                <p class="article-summary">S&P 500이 6,909.79로 사상 최고 종가 기록. Nvidia, Broadcom 등 AI 관련주가 상승 견인. GDP 호조에도 불구 연준 금리 인하 기대 유지. 4거래일 연속 상승.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/22/stock-market-today-live-updates.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-score">Score: 8.0</span>
+                    <span class="time-stamp">📅 12/24 06:00 KST</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">2026년 AI 산업, 효율성과 비용 절감에 집중 전망</h3>
+                    <p class="article-title-en">The next AI pivot will be toward efficiency and lowering costs</p>
+                </div>
+                <p class="article-summary">전 페이스북 CPO 크리스 켈리, AI 산업이 효율성과 비용 절감으로 전환할 것으로 전망. 데이터센터 시장 2025년 $610억+ 인프라 딜. "인간 뇌는 20와트로 작동, 기가와트 규모 전력은 불필요"라며 효율화 필요성 강조.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/23/ai-cost-efficiency-facebook-privacy.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="badge badge-score">Score: 5.0</span>
+                    <span class="time-stamp">📅 12/24 01:30 KST</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">AI 인프라 주식, 2025년 Nvidia보다 높은 수익률 기록</h3>
+                    <p class="article-title-en">AI infrastructure stocks Lumentum, Celestica, Seagate beat Nvidia in 2025</p>
+                </div>
+                <p class="article-summary">AI 데이터센터 관련 기업들이 2025년 Nvidia를 상회하는 주가 상승 기록. Lumentum +375%, Seagate +229%. Big Tech의 $3,800억 데이터센터 투자가 공급망 전체에 수혜. 메모리, 스토리지, 광통신 부품 수요 급증.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/24/ai-infrastructure-stocks-lumentum-celestica-seagate-beat-nvidia-2025.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="badge badge-score">Score: 5.0</span>
+                    <span class="time-stamp">📅 12/24 14:00 KST</span>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <span class="section-icon">💼</span>
+                <h2 class="section-title">스타트업 / VC</h2>
+            </div>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">Lovable, $66억 밸류에이션으로 $3.3억 시리즈 B 투자 유치</h3>
+                    <p class="article-title-en">Vibe-coding startup Lovable raises $330M at a $6.6B valuation</p>
+                </div>
+                <p class="article-summary">스웨덴 바이브코딩 스타트업 Lovable이 $3.3억 시리즈 B 투자 유치. 5개월 만에 밸류에이션 3.6배 상승($18억→$66억). CapitalG, Menlo Ventures 리드. 텍스트 프롬프트로 앱 제작하는 "바이브코딩" 도구. 8개월 만에 ARR $1억, 4개월 후 $2억 달성.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/18/vibe-coding-startup-lovable-raises-330m-at-a-6-6b-valuation/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 5개 매체</span>
+                    <span class="badge badge-score">Score: 10.0</span>
+                    <span class="time-stamp">📅 12/19 KST</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3 class="article-title">저자들, 6개 주요 AI 기업에 새로운 소송 제기</h3>
+                    <p class="article-title-en">John Carreyrou and other authors bring new lawsuit against six major AI companies</p>
+                </div>
+                <p class="article-summary">Bad Blood 저자 존 카레이루 등이 6개 주요 AI 기업을 상대로 저작권 침해 소송 제기. AI 모델 학습에 저작물 무단 사용 주장. AI 기업들의 저작권 분쟁 확대 추세.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/23/john-carreyrou-and-other-authors-bring-new-lawsuit-against-six-major-ai-companies/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-score">Score: 5.0</span>
+                    <span class="time-stamp">📅 12/24 KST</span>
+                </div>
+            </article>
+        </section>
+
+        <div class="picks-section">
+            <div class="picks-header">
+                <h2 class="picks-title">🎯 Claude's Pick</h2>
+                <p class="picks-subtitle">48시간 내 숨은 보석 기사 | Signal 2개 이상 + 관심사 매칭</p>
+            </div>
+
+            <div class="pick-item">
+                <div class="article-header">
+                    <h3 class="article-title">Google, 2025년 채용한 AI 소프트웨어 엔지니어 20%가 복귀 직원</h3>
+                    <p class="article-title-en">Google's boomerang year: 20% of AI software engineers hired in 2025 were ex-employees</p>
+                </div>
+                <p class="article-summary">Google이 2025년 AI 소프트웨어 엔지니어 신규 채용의 20%를 '부메랑' 직원(퇴사 후 복귀)으로 충원. Noam Shazeer, Daniel De Freitas 등 핵심 인재 복귀. Meta, OpenAI와의 AI 인재 전쟁 격화 속 인재 확보 전략 변화.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/19/google-boomerang-year-20percent-ai-software-devs-hired-2025-ex-employees.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="time-stamp">📅 12/20 KST</span>
+                </div>
+                <p class="pick-reason">✨ 선정 이유: AI 인재 시장 변화 신호 + 빅테크 인재 전략 트렌드 | AI 인프라 관심사</p>
+            </div>
+
+            <div class="pick-item">
+                <div class="article-header">
+                    <h3 class="article-title">AI 기술 발전, 연준 통화정책에 영향 미칠 수 있어</h3>
+                    <p class="article-title-en">AI's machine learning may net productivity gains and influence Fed</p>
+                </div>
+                <p class="article-summary">리치몬드 연은 이코노미스트 연구에 따르면, AI가 완전 발전 시 노동생산성 3~4배 증가, 노동자 23% 일자리 상실 가능. 향후 10년간 연간 7%대 생산성 증가 전망. 연준의 이중책무(고용·물가)에 영향 줄 수 있는 중요 변수로 부상.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/23/ais-machine-learning-may-net-productivity-gains-and-influence-fed.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="time-stamp">📅 12/24 KST</span>
+                </div>
+                <p class="pick-reason">✨ 선정 이유: AI의 거시경제 영향 분석 + 정책 변화 초기 신호 | 투자 관점 의미 있는 변화</p>
+            </div>
+
+            <div class="pick-item">
+                <div class="article-header">
+                    <h3 class="article-title">2025년 AI로 인한 해고 5만 건 돌파</h3>
+                    <p class="article-title-en">AI was behind over 50,000 layoffs in 2025 — here are the top firms to cite it for job cuts</p>
+                </div>
+                <p class="article-summary">2025년 AI를 해고 사유로 명시한 기업 증가. Amazon 1.4만 명 감원, CrowdStrike 500명(5%), Workday 1,750명(8.5%) 등. MIT 연구: AI가 미국 노동시장 11.7% 대체 가능, $1.2조 임금 절감 효과. 2025년 총 해고 117만 건(2020년 이후 최다).</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="time-stamp">📅 12/22 KST</span>
+                </div>
+                <p class="pick-reason">✨ 선정 이유: AI 노동시장 충격 데이터 + 트렌드 분석 | 데이터/자동화 관심사</p>
+            </div>
+        </div>
+
+        <footer>
+            <p class="footer-text">
+                Curated by Claude with <span class="footer-heart">❤️</span><br>
+                Value Score 기반 뉴스 큐레이션 시스템
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
