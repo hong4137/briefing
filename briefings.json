@@ -1,86 +1,39 @@
-{
-  "briefings": [
-    {
-      "date": "2025-12-24",
-      "day": "화",
-      "title": "ServiceNow $77.5억 Armis 인수, 美 3분기 GDP 4.3% 성장",
-      "summary": "ServiceNow 역대 최대 M&A, Alphabet Intersect Power 인수, Nvidia 중국 H200 출하 계획, FDA 위고비 알약 승인, 美 GDP 2년 최고치",
-      "highlights": [
-        "ServiceNow $77.5억 Armis 인수 - AI 시대 사이버보안 강화",
-        "Alphabet $47.5억 Intersect Power 인수 - 데이터센터 전력 확보",
-        "Nvidia 2월 중순 중국 H200 칩 출하 목표",
-        "FDA 최초 경구용 GLP-1 비만 치료제 승인",
-        "美 3분기 GDP 4.3% 성장, 2년 만에 최고치"
-      ],
-      "stats": {
-        "articles": 14,
-        "sections": 5,
-        "picks": 3
-      }
-    },
-    {
-      "date": "2025-12-22",
-      "day": "일",
-      "title": "OpenAI, $830B 밸류에이션으로 $100B 추가 투자 유치 추진",
-      "summary": "OpenAI $100B 펀딩 협상, 뉴욕주 AI 안전 규제법 RAISE Act 서명, Nvidia 강세 전망 지속",
-      "highlights": [
-        "OpenAI $830B 밸류에이션으로 $100B 추가 투자 협상 중",
-        "뉴욕주 AI 안전 규제법 RAISE Act 서명",
-        "Cursor, Graphite 인수로 코딩 생태계 확장"
-      ],
-      "stats": {
-        "articles": 15,
-        "sections": 6,
-        "picks": 3
-      }
-    },
-    {
-      "date": "2025-12-21",
-      "day": "일",
-      "title": "TikTok, Oracle 주도 미국 합작법인 설립 계약 체결",
-      "summary": "TikTok-Oracle 딜 타결, Yann LeCun의 World Model 스타트업 AMI Labs 출범, Cursor의 Graphite 인수로 AI 코딩 생태계 재편",
-      "highlights": [
-        "TikTok, Oracle 주도 미국 합작법인 설립 계약 체결",
-        "Yann LeCun, World Model 스타트업 AMI Labs 출범 ($5B+ 밸류에이션)",
-        "Cursor, Graphite 인수로 코딩 생태계 확장"
-      ],
-      "stats": {
-        "articles": 12,
-        "sections": 5,
-        "picks": 3
-      }
-    },
-    {
-      "date": "2025-12-20",
-      "day": "금",
-      "title": "연준 금리 25bp 인하, 2026년 인하 전망 대폭 축소",
-      "summary": "연준 금리 0.25%p 인하하며 2026년 금리 인하 전망 4회→2회로 축소, Lovable $66억 밸류에이션 달성, Big Tech 인도 투자 러시",
-      "highlights": [
-        "연준 금리 25bp 인하, 2026년 인하 전망 4회→2회 축소",
-        "Lovable $66억 밸류에이션으로 $3.3억 시리즈B",
-        "Big Tech 인도 AI 투자 확대"
-      ],
-      "stats": {
-        "articles": 15,
-        "sections": 5,
-        "picks": 3
-      }
-    },
-    {
-      "date": "2025-12-19",
-      "day": "금",
-      "title": "Waymo $150억 펀딩 협상, $1,000억 밸류에이션 목표",
-      "summary": "Waymo가 $150억 이상 펀딩을 협상 중이며 밸류에이션 $1,000억 돌파 예상, Apple AI 수장 교체로 Siri 2026 출시 임박, 중국 GPU MetaX IPO 700% 급등",
-      "highlights": [
-        "Waymo $150억 펀딩 협상, $1,000억 밸류에이션 목표",
-        "Apple AI 수장 교체, Siri 2026 출시 임박",
-        "중국 GPU 기업 MetaX, 상하이 IPO서 700% 급등"
-      ],
-      "stats": {
-        "articles": 11,
-        "sections": 5,
-        "picks": 3
-      }
-    }
-  ]
-}
+2025-12-25
+Nvidia $200억 Groq 인수, AI 칩 시장 판도 변화
+Nvidia 역대 최대 M&A로 추론 칩 시장 지배력 강화, Waymo SF 정전 대응 소프트웨어 업데이트 발표, AI 인프라주 2025년 Nvidia 상회 수익률 기록
+12 기사 | 5 섹션 | 3 Claude's Pick
+
+===
+
+2025-12-24
+ServiceNow $77.5억 Armis 인수, 美 3분기 GDP 4.3% 성장
+ServiceNow 역대 최대 M&A, Alphabet Intersect Power 인수, Nvidia 중국 H200 출하 계획, FDA 위고비 알약 승인, 美 GDP 2년 최고치
+14 기사 | 5 섹션 | 3 Claude's Pick
+
+===
+
+2025-12-22
+OpenAI, $830B 밸류에이션으로 $100B 추가 투자 유치 추진
+OpenAI $100B 펀딩 협상, 뉴욕주 AI 안전 규제법 RAISE Act 서명, Nvidia 강세 전망 지속
+15 기사 | 6 섹션 | 3 Claude's Pick
+
+===
+
+2025-12-21
+TikTok, Oracle 주도 미국 합작법인 설립 계약 체결
+TikTok-Oracle 딜 타결, Yann LeCun의 World Model 스타트업 AMI Labs 출범, Cursor의 Graphite 인수로 AI 코딩 생태계 재편
+12 기사 | 5 섹션 | 3 Claude's Pick
+
+===
+
+2025-12-20
+연준 금리 25bp 인하, 2026년 인하 전망 대폭 축소
+연준 금리 0.25%p 인하하며 2026년 금리 인하 전망 4회→2회로 축소, Lovable $66억 밸류에이션 달성, Big Tech 인도 투자 러시
+15 기사 | 5 섹션 | 3 Claude's Pick
+
+===
+
+2025-12-19
+Waymo $150억 펀딩 협상, $1,000억 밸류에이션 목표
+Waymo가 $150억 이상 펀딩을 협상 중이며 밸류에이션 $1,000억 돌파 예상, Apple AI 수장 교체로 Siri 2026 출시 임박, 중국 GPU MetaX IPO 700% 급등
+11 기사 | 5 섹션 | 3 Claude's Pick
