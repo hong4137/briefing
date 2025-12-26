@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nvidia $200억 Groq 인수, 中 EUV 장비 개발, Netflix-WB $830억 합병</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-orange: #ff8c42;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --border-color: #2a2a3a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .date-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff, #a0a0b0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .article-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-blue);
+        }
+
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .article-title-kr {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+        }
+
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .source-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .source-link:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-top {
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+            color: white;
+        }
+
+        .badge-popular {
+            background: linear-gradient(135deg, var(--accent-green), #06b6d4);
+            color: white;
+        }
+
+        .badge-cross {
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+            color: white;
+        }
+
+        .score {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        /* Market Section */
+        .market-section {
+            margin-bottom: 3rem;
+        }
+
+        .market-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .market-table th,
+        .market-table td {
+            padding: 1rem 1.25rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .market-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .market-table td {
+            font-size: 0.95rem;
+        }
+
+        .market-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .trend-up {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .trend-down {
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+
+        .trend-neutral {
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        /* Claude's Pick */
+        .claude-pick {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(74, 158, 255, 0.1));
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+
+        .pick-reason {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: var(--accent-purple);
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem 1rem;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .section-title {
+                font-size: 1.25rem;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .market-table th,
+            .market-table td {
+                padding: 0.75rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date-badge">2025년 12월 26일 금요일 | KST 11:30</div>
+            <h1>Foreign News Briefing</h1>
+            <p class="subtitle">Value Score 3.0 이상 기사 선별 | 3중 신호 분석</p>
+        </header>
+
+        <!-- TOP Headlines -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff3b3b, #ff8c42);">🔥</div>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title">Nvidia to License Groq Technology, Hire Executives in $20B Deal</h3>
+                <p class="article-title-kr">Nvidia, AI 칩 스타트업 Groq 기술 라이선스 $200억 규모 딜</p>
+                <p class="article-summary">Nvidia가 AI 추론 전문 스타트업 Groq과 비독점 기술 라이선스 계약을 체결하고, CEO Jonathan Ross를 포함한 핵심 인력을 영입한다. Groq의 LPU(Language Processing Unit)는 LLM을 10배 빠르게 구동하며 에너지 효율도 10배 높다고 주장. AI 추론 시장 지배력 강화 포석.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/24/nvidia-acquires-ai-chip-challenger-groq-for-20b-report-says/" class="source-link" target="_blank">TechCrunch</a>
+                    <span>📅 12/25 06:03 KST</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 5개 매체</span>
+                    <span class="score">Score: 11.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Netflix to Acquire Warner Bros. for $82.7B Enterprise Value</h3>
+                <p class="article-title-kr">Netflix, Warner Bros. $830억 기업가치로 인수 합의</p>
+                <p class="article-summary">Netflix가 Warner Bros. Discovery의 스튜디오와 HBO Max를 $720억 지분 가치로 인수하기로 합의. Harry Potter, Game of Thrones, DC Universe 등 프랜차이즈 확보. Paramount Skydance의 $300억 대항 입찰에도 WBD 이사회는 Netflix 안을 권고.</p>
+                <div class="article-meta">
+                    <a href="https://about.netflix.com/en/news/netflix-to-acquire-warner-bros" class="source-link" target="_blank">Netflix</a>
+                    <span>📅 12/05 22:00 KST</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 8개 매체</span>
+                    <span class="score">Score: 12.0</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Disney Signs $1B Deal with OpenAI, Brings Characters to Sora</h3>
+                <p class="article-title-kr">디즈니, OpenAI에 $10억 투자 + Sora에 캐릭터 라이선스</p>
+                <p class="article-summary">Disney가 OpenAI에 $10억 지분 투자하고 200개 이상의 Disney, Marvel, Pixar, Star Wars 캐릭터를 Sora에 라이선스. 미키마우스, 다스베이더, 아이언맨 등 포함. 3년 계약 중 첫 1년은 독점. AI와 콘텐츠 업계의 역사적 협력 사례.</p>
+                <div class="article-meta">
+                    <a href="https://thewaltdisneycompany.com/disney-openai-sora-agreement/" class="source-link" target="_blank">Disney</a>
+                    <span>📅 12/11 22:00 KST</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 7개 매체</span>
+                    <span class="score">Score: 11.0</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 반도체/하드웨어 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff8c42, #ffd700);">💾</div>
+                <h2 class="section-title">반도체/하드웨어</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title">China Builds Prototype EUV Lithography Machine in Shenzhen Lab</h3>
+                <p class="article-title-kr">中, 선전 비밀연구소에서 EUV 리소그래피 프로토타입 개발</p>
+                <p class="article-summary">Reuters 특종: 중국이 선전 고보안 연구소에서 EUV 리소그래피 장비 프로토타입을 완성하고 테스트 중. ASML 출신 엔지니어들이 역설계로 개발. 화웨이가 조율 역할. 2028년 칩 생산 목표, 현실적으로는 2030년 전망. 반도체 기술 냉전의 게임체인저 가능성.</p>
+                <div class="article-meta">
+                    <a href="https://asiatimes.com/2025/12/made-in-china-euv-machine-targets-ai-chip-output-by-2028/" class="source-link" target="_blank">Asia Times</a>
+                    <span>📅 12/18 Reuters</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 6개 매체</span>
+                    <span class="score">Score: 10.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Databricks Raises $4B at $134B Valuation, AI Revenue Hits $1B</h3>
+                <p class="article-title-kr">Databricks, $1,340억 기업가치로 $40억 투자 유치</p>
+                <p class="article-summary">데이터 인텔리전스 기업 Databricks가 Series L에서 $40억 투자 유치, 기업가치 $1,340억 달성. 3개월 전 $1,000억에서 34% 상승. 매출 런레이트 $48억(YoY 55%↑), AI 제품 매출만 $10억 돌파. IPO 대신 프라이빗 유지 전략.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/16/databricks-raises-4b-at-134b-valuation-as-its-ai-business-heats-up/" class="source-link" target="_blank">TechCrunch</a>
+                    <span>📅 12/16 23:39 KST</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="badge badge-cross">🔄 5개 매체</span>
+                    <span class="score">Score: 9.0</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- AI/기술 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #a855f7, #4a9eff);">🤖</div>
+                <h2 class="section-title">AI/기술</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title">OpenAI Launches New Image Generation Model After 'Code Red'</h3>
+                <p class="article-title-kr">OpenAI, '코드 레드' 대응 새 이미지 생성 모델 출시</p>
+                <p class="article-summary">OpenAI가 Google의 Gemini 3 Pro와 경쟁하기 위해 새로운 이미지 생성 모델을 출시. GPT-5.2 Codex도 공개하며 코딩 벤치마크에서 최고 성능 기록. AI 경쟁이 '코드 레드' 수준으로 격화.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/16/openai-continues-on-its-code-red-warpath-with-new-image-generation-model/" class="source-link" target="_blank">TechCrunch</a>
+                    <span>📅 12/26 05:00 KST</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 7.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">AI Market Could Splinter in 2026: Monetizers vs Manufacturers</h3>
+                <p class="article-title-kr">2026년 AI 시장 분화 전망: 수익화 기업 vs 인프라 기업</p>
+                <p class="article-summary">2025년 4분기 기술주 롤러코스터 장세가 AI 투자 분화의 신호. 투자자들이 '누가 돈을 쓰는지'와 '누가 돈을 버는지' 구분하기 시작. AI 인프라 기업(Nvidia, Broadcom)이 유리할 전망. Big Tech의 자산 집약적 모델 변화에 주목.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/25/how-the-ai-market-could-splinter-in-2026-.html" class="source-link" target="_blank">CNBC</a>
+                    <span>📅 12/25 KST</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 6.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Meta's AI Glasses Now Help You Hear Conversations Better</h3>
+                <p class="article-title-kr">Meta AI 안경, 대화 청취 보조 기능 추가</p>
+                <p class="article-summary">Meta의 Ray-Ban AI 스마트 안경에 'Conversation Focus' 기능 추가. AI가 주변 소음을 필터링하고 대화 상대의 음성을 증폭. 청각 보조 웨어러블 시장 진출 신호.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/16/metas-ai-glasses-can-now-help-you-hear-conversations-better/" class="source-link" target="_blank">TechCrunch</a>
+                    <span>📅 12/26 05:00 KST</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 5.5</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 경제/비즈니스 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #22c55e, #06b6d4);">💰</div>
+                <h2 class="section-title">경제/비즈니스</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title">Luminar Files for Bankruptcy After Doomed Volvo Deal</h3>
+                <p class="article-title-kr">라이다 업체 Luminar 파산 신청, Volvo 딜 실패 여파</p>
+                <p class="article-summary">자율주행 라이다 선두 업체 Luminar가 파산 신청. Volvo와의 대규모 공급 계약이 기대에 미치지 못하며 재정난 심화. 자율주행 센서 시장의 구조조정 신호.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/16/how-luminars-doomed-volvo-deal-helped-drag-the-company-into-bankruptcy/" class="source-link" target="_blank">TechCrunch</a>
+                    <span>📅 12/26 05:00 KST</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 6.0</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Ford Pivots to Hybrids and Energy Storage Business</h3>
+                <p class="article-title-kr">Ford, 대형 EV 포기하고 하이브리드+에너지 저장 사업 전환</p>
+                <p class="article-summary">Ford가 순수 전기 대형차 전략에서 후퇴, 차세대 F-150 Lightning에 가솔린 발전기 탑재 예정. 동시에 EV 배터리를 활용한 데이터센터/그리드용 에너지 저장 사업 시작. EV 시장 현실 반영.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/15/fords-next-f-150-lightning-will-have-a-gas-generator-as-it-pivots-away-from-large-evs/" class="source-link" target="_blank">TechCrunch</a>
+                    <span>📅 12/15 KST</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 5.5</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 주간 시장 동향 -->
+        <section class="market-section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #4a9eff, #22c55e);">📊</div>
+                <h2 class="section-title">시장 동향 (12/24 종가)</h2>
+            </div>
+
+            <table class="market-table">
+                <thead>
+                    <tr>
+                        <th>지표</th>
+                        <th>동향</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S&P 500</td>
+                        <td class="trend-up">📈 6,932 (+0.32%)</td>
+                        <td>사상 최고치 경신, 5연속 상승</td>
+                    </tr>
+                    <tr>
+                        <td>Nasdaq</td>
+                        <td class="trend-up">📈 23,613 (+0.22%)</td>
+                        <td>기술주 랠리 지속</td>
+                    </tr>
+                    <tr>
+                        <td>Dow Jones</td>
+                        <td class="trend-up">📈 48,731 (+0.60%)</td>
+                        <td>사상 최고치, Nike 주도</td>
+                    </tr>
+                    <tr>
+                        <td>VIX</td>
+                        <td class="trend-down">🔻 13.47 (-3.79%)</td>
+                        <td>공포지수 1년 최저 수준</td>
+                    </tr>
+                    <tr>
+                        <td>Gold</td>
+                        <td class="trend-up">📈 $4,500+</td>
+                        <td>사상 최고가 돌파, 1979년 이후 최고 연간 수익</td>
+                    </tr>
+                    <tr>
+                        <td>Bitcoin</td>
+                        <td class="trend-down">🔻 ~$90,000</td>
+                        <td>$125K 고점 후 조정, 변동성 지속</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">💎</div>
+                <h2 class="section-title">Claude's Pick</h2>
+            </div>
+
+            <article class="article-card claude-pick">
+                <h3 class="article-title">China's EUV Breakthrough: The 'Silicon Curtain' Begins</h3>
+                <p class="article-title-kr">중국 EUV 돌파구: '실리콘 커튼' 시대의 시작</p>
+                <p class="article-summary">중국의 EUV 리소그래피 프로토타입 개발은 단순한 기술적 이정표가 아닌, 글로벌 반도체 시장의 구조적 재편 신호. ASML 출신 엔지니어 영입($70만 사인온 보너스), 화웨이 중심 3,000명+ 연구진 동원은 '중국판 맨해튼 프로젝트' 수준. 2028-2030년 상용화 시 미국 반도체 제재의 근본적 효과 약화 가능.</p>
+                <div class="article-meta">
+                    <a href="https://www.eetimes.com/china-euv-breakthrough-and-the-rise-of-the-silicon-curtain/" class="source-link" target="_blank">EE Times</a>
+                    <span>📅 12/24 KST</span>
+                </div>
+                <p class="pick-reason">💡 <strong>선정 이유</strong>: 신흥 기술 첫 등장 + 지정학적 파급력 | 반도체 공급망 재편 핵심 신호</p>
+            </article>
+
+            <article class="article-card claude-pick">
+                <h3 class="article-title">2026 AI Market Split: Who's Spending vs Who's Making Money</h3>
+                <p class="article-title-kr">2026년 AI 시장 분화: 지출자 vs 수익자 구분 시작</p>
+                <p class="article-summary">AI 투자 열풍 속 투자자들이 '모두가 이기는' 시대 종료를 예감. 사업 모델 없는 스타트업, 인프라 투자 중인 Big Tech, 인프라 수혜 기업(Nvidia, Broadcom) 세 캠프로 분화. 자산 집약적으로 변모한 Big Tech의 리스크 프로파일 변화와 ROI 증명 압박 가중.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/25/how-the-ai-market-could-splinter-in-2026-.html" class="source-link" target="_blank">CNBC</a>
+                    <span>📅 12/25 KST</span>
+                </div>
+                <p class="pick-reason">💡 <strong>선정 이유</strong>: 시장 규모 재평가 첫 신호 | 투자 관점 의미있는 변화</p>
+            </article>
+        </section>
+
+        <footer>
+            <p>Generated by Claude | 3중 신호 시스템 (RSS + 홈페이지 TOP + 랭킹 섹션)</p>
+            <p style="margin-top: 0.5rem;">© 2025 Foreign News Briefing</p>
+        </footer>
+    </div>
+</body>
+</html>

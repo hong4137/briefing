@@ -1,39 +1,47 @@
-2025-12-25
-Nvidia $200억 Groq 인수, AI 칩 시장 판도 변화
-Nvidia 역대 최대 M&A로 추론 칩 시장 지배력 강화, Waymo SF 정전 대응 소프트웨어 업데이트 발표, AI 인프라주 2025년 Nvidia 상회 수익률 기록
-12 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-24
-ServiceNow $77.5억 Armis 인수, 美 3분기 GDP 4.3% 성장
-ServiceNow 역대 최대 M&A, Alphabet Intersect Power 인수, Nvidia 중국 H200 출하 계획, FDA 위고비 알약 승인, 美 GDP 2년 최고치
-14 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-22
-OpenAI, $830B 밸류에이션으로 $100B 추가 투자 유치 추진
-OpenAI $100B 펀딩 협상, 뉴욕주 AI 안전 규제법 RAISE Act 서명, Nvidia 강세 전망 지속
-15 기사 | 6 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-21
-TikTok, Oracle 주도 미국 합작법인 설립 계약 체결
-TikTok-Oracle 딜 타결, Yann LeCun의 World Model 스타트업 AMI Labs 출범, Cursor의 Graphite 인수로 AI 코딩 생태계 재편
-12 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-20
-연준 금리 25bp 인하, 2026년 인하 전망 대폭 축소
-연준 금리 0.25%p 인하하며 2026년 금리 인하 전망 4회→2회로 축소, Lovable $66억 밸류에이션 달성, Big Tech 인도 투자 러시
-15 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-19
-Waymo $150억 펀딩 협상, $1,000억 밸류에이션 목표
-Waymo가 $150억 이상 펀딩을 협상 중이며 밸류에이션 $1,000억 돌파 예상, Apple AI 수장 교체로 Siri 2026 출시 임박, 중국 GPU MetaX IPO 700% 급등
-11 기사 | 5 섹션 | 3 Claude's Pick
+{
+  "briefings": [
+    {
+      "date": "2025-12-26",
+      "day": "금",
+      "title": "Nvidia $200억 Groq 인수, 中 EUV 장비 개발, Netflix-WB $830억 합병",
+      "summary": "Nvidia가 AI 칩 스타트업 Groq과 $200억 규모 기술 라이선스 계약 체결. 중국이 선전 비밀연구소에서 EUV 리소그래피 프로토타입 완성. Netflix가 Warner Bros.를 $830억에 인수 합의.",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "Nvidia to License Groq Technology in $20B Deal",
+          "summary": "Nvidia가 AI 추론 전문 스타트업 Groq과 비독점 기술 라이선스 계약 체결, CEO 포함 핵심 인력 영입",
+          "url": "https://techcrunch.com/2025/12/24/nvidia-acquires-ai-chip-challenger-groq-for-20b-report-says/"
+        },
+        {
+          "category": "top",
+          "title": "Netflix to Acquire Warner Bros. for $82.7B",
+          "summary": "Netflix가 WBD 스튜디오와 HBO Max를 $720억 지분가치로 인수, Harry Potter, DC Universe 등 확보",
+          "url": "https://about.netflix.com/en/news/netflix-to-acquire-warner-bros"
+        },
+        {
+          "category": "top",
+          "title": "Disney Signs $1B Deal with OpenAI for Sora",
+          "summary": "Disney가 OpenAI에 $10억 투자, 200+ 캐릭터를 Sora에 라이선스 (미키마우스, 다스베이더 등)",
+          "url": "https://thewaltdisneycompany.com/disney-openai-sora-agreement/"
+        },
+        {
+          "category": "semiconductor",
+          "title": "China Builds Prototype EUV Lithography Machine",
+          "summary": "중국이 선전 고보안 연구소에서 EUV 장비 프로토타입 완성, ASML 출신 엔지니어 역설계로 개발",
+          "url": "https://asiatimes.com/2025/12/made-in-china-euv-machine-targets-ai-chip-output-by-2028/"
+        },
+        {
+          "category": "ai",
+          "title": "Databricks Raises $4B at $134B Valuation",
+          "summary": "데이터 인텔리전스 기업 Databricks Series L 투자 유치, AI 제품 매출 $10억 돌파",
+          "url": "https://techcrunch.com/2025/12/16/databricks-raises-4b-at-134b-valuation-as-its-ai-business-heats-up/"
+        }
+      ],
+      "stats": {
+        "articles": 12,
+        "sections": 5,
+        "picks": 2
+      }
+    }
+  ]
+}
