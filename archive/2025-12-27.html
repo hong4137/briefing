@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nvidia-Groq $200억 딜, 中 하드테크 펀드 출범 | 외신 브리핑</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-orange: #ff8c42;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --border-color: #2a2a3a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .date-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #fff, #a0a0b0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .article-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-blue);
+        }
+        
+        .article-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        
+        .article-title-kr {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+        
+        .source-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .source-link:hover {
+            text-decoration: underline;
+        }
+        
+        .badge {
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .badge-top {
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+            color: white;
+        }
+        
+        .badge-popular {
+            background: var(--accent-green);
+            color: white;
+        }
+        
+        .badge-cross {
+            background: var(--accent-purple);
+            color: white;
+        }
+        
+        .badge-score {
+            background: var(--accent-gold);
+            color: #000;
+        }
+        
+        .time-stamp {
+            color: var(--text-secondary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+        }
+        
+        /* Market Section */
+        .market-section {
+            margin-bottom: 3rem;
+        }
+        
+        .market-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        
+        .market-table th,
+        .market-table td {
+            padding: 1rem 1.25rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .market-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .market-table td {
+            font-size: 0.95rem;
+        }
+        
+        .market-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .trend-up {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+        
+        .trend-down {
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+        
+        .trend-icon {
+            margin-right: 0.5rem;
+        }
+        
+        /* Claude's Pick */
+        .claude-pick {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1));
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+        
+        .pick-reason {
+            background: var(--bg-secondary);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .pick-reason strong {
+            color: var(--accent-purple);
+        }
+        
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 640px) {
+            .container {
+                padding: 1.5rem 1rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.25rem;
+            }
+            
+            .article-title {
+                font-size: 1.05rem;
+            }
+            
+            .article-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .market-table th,
+            .market-table td {
+                padding: 0.75rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date-badge">📅 2025년 12월 27일 토요일</div>
+            <h1>Foreign News Briefing</h1>
+            <p class="subtitle">Value Score 3.0 이상 기사 선별 | 3중 신호 기반</p>
+        </header>
+
+        <!-- TOP Headlines -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff3b3b, #ff8c42);">🔥</div>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+            
+            <article class="article-card">
+                <h3 class="article-title">Nvidia Licenses Groq Technology in $20B Deal, Hires CEO</h3>
+                <p class="article-title-kr">엔비디아, Groq 기술 라이선스 $200억 딜… CEO 영입까지</p>
+                <p class="article-summary">엔비디아가 AI 추론 칩 스타트업 Groq와 비독점 기술 라이선스 계약을 체결하고, 창업자 겸 CEO 조나단 로스(구글 TPU 개발자)를 비롯한 핵심 인력을 영입. 추론(inference) 시장 지배력 강화 포석으로, 빅테크의 인재·기술 흡수 전략이 가속화되는 양상.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/26/5-things-to-know-before-the-stock-market-opens.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="time-stamp">📅 12/26</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 5개 매체</span>
+                    <span class="badge badge-score">Score: 12.0</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">China Launches $21B+ Venture Funds for "Hard Technology"</h3>
+                <p class="article-title-kr">중국, $210억 규모 '하드테크' 벤처펀드 3개 출범</p>
+                <p class="article-summary">중국이 반도체, 양자기술, 바이오의약, 뇌-컴퓨터 인터페이스, 항공우주 등 핵심 하드테크 분야에 투자하는 3개 국가 벤처펀드 공식 출범. 각 펀드 규모 500억 위안(약 $71억) 이상으로, 5억 위안 미만 초기 스타트업에 집중 투자 예정.</p>
+                <div class="article-meta">
+                    <a href="https://www.bloomberg.com/news/articles/2025-12-26/china-starts-state-backed-venture-funds-to-support-tech-startups" class="source-link" target="_blank">Bloomberg</a>
+                    <span class="time-stamp">📅 12/26</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 3개 매체</span>
+                    <span class="badge badge-score">Score: 10.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Big Tech Pledges $67.5B for AI in India</h3>
+                <p class="article-title-kr">아마존·MS·구글, 인도에 $675억 AI 투자 공약</p>
+                <p class="article-summary">아마존, 마이크로소프트, 구글이 10월 이후 인도에 총 $675억 투자를 공약. 80%는 12월에 발표되었으며, 대부분 AI 데이터센터 구축에 투입될 예정. 실리콘밸리 AI 인프라 경쟁이 인도로 확산 중.</p>
+                <div class="article-meta">
+                    <a href="https://www.washingtonpost.com/world/2025/12/26/india-ai-google-microsoft-amazon/" class="source-link" target="_blank">Washington Post</a>
+                    <span class="time-stamp">📅 12/26</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-score">Score: 9.5</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- AI/기술 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #a855f7, #4a9eff);">🤖</div>
+                <h2 class="section-title">AI/기술</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title">Google's 2025 AI Breakthroughs: Gemini 3 and Beyond</h3>
+                <p class="article-title-kr">구글 2025년 AI 성과 총정리: Gemini 3, 로보틱스, 날씨예측</p>
+                <p class="article-summary">구글이 2025년 주요 연구 성과 발표. Gemini 2.5(3월) → Gemini 3(11월) → Gemini 3 Flash(12월)로 모델 진화, TPU Ironwood 출시, WeatherNext 2 예보 모델, Gemini Robotics 등 로보틱스 분야 진출 확대.</p>
+                <div class="article-meta">
+                    <a href="https://blog.google/technology/ai/2025-research-breakthroughs/" class="source-link" target="_blank">Google Blog</a>
+                    <span class="time-stamp">📅 12/24</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="badge badge-score">Score: 7.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">China's Quantum Computer Hits Fault-Tolerant Threshold</h3>
+                <p class="article-title-kr">중국 양자컴퓨터, 구글에 이어 세계 두 번째 오류허용 임계점 돌파</p>
+                <p class="article-summary">중국과기대 판젠웨이 팀의 '주충지 3.2' 초전도 양자컴퓨터가 오류정정 임계점 통과. 마이크로파 기반 제어로 구글보다 효율적인 방식 채택. 대규모 양자컴퓨터 구축에 더 효율적 경로 제시.</p>
+                <div class="article-meta">
+                    <a href="https://www.scmp.com/news/china/science/article/3337742/chinas-new-quantum-computer-hits-stability-milestone-beating-google-efficiency" class="source-link" target="_blank">SCMP</a>
+                    <span class="time-stamp">📅 12/26</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="badge badge-score">Score: 7.0</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">AI Market Set to Splinter in 2026: Monetizers vs Manufacturers</h3>
+                <p class="article-title-kr">2026년 AI 시장 분화 전망: 수익화 vs 인프라 투자 기업</p>
+                <p class="article-summary">Blue Whale Growth Fund CIO, AI 기업을 '수익화 기업', 'AI 지출 기업', 'AI 인프라 수혜 기업' 3개 그룹으로 분류. 빅테크가 자산 중심 기업으로 변모하면서 밸류에이션 재평가 필요성 제기. AI 벤처 투자는 2025년 3분기까지 $1,765억 기록.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/25/how-the-ai-market-could-splinter-in-2026-.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="time-stamp">📅 12/25</span>
+                    <span class="badge badge-score">Score: 6.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Amazon's Panos Panay: End of Smartphone Era, Rise of Ambient AI</h3>
+                <p class="article-title-kr">아마존 임원 "스마트폰 시대 끝, 앰비언트 AI 시대 온다"</p>
+                <p class="article-summary">아마존 디바이스 수석부사장 파노스 파나이, Fortune Brainstorm AI에서 Z세대의 '둠스크롤링' 피로감이 앰비언트 인텔리전스 시대를 열 것이라 전망. 기술이 배경으로 사라지고 자연스러운 상호작용이 대세가 될 것.</p>
+                <div class="article-meta">
+                    <a href="https://fortune.com/2025/12/25/amazon-alexa-doom-scrolling-end-of-gen-z-think-differently/" class="source-link" target="_blank">Fortune</a>
+                    <span class="time-stamp">📅 12/25</span>
+                    <span class="badge badge-score">Score: 5.5</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 반도체 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff8c42, #ffd700);">💾</div>
+                <h2 class="section-title">반도체</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title">Samsung, SK Hynix Raise HBM3E Prices by 20% for 2026</h3>
+                <p class="article-title-kr">삼성·SK하이닉스, HBM3E 가격 20% 인상 예고</p>
+                <p class="article-summary">DigiTimes 보도에 따르면 삼성전자와 SK하이닉스가 2026년 납품분 5세대 HBM3E 칩 가격을 약 20% 인상 예정. Micron, SanDisk 주가 상승. AI 메모리 수요 폭증에 따른 공급 타이트 지속.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/26/stock-market-today-live-updates.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="time-stamp">📅 12/26</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 3개 매체</span>
+                    <span class="badge badge-score">Score: 9.0</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Micron: Memory Markets Remain Tight Past 2026</h3>
+                <p class="article-title-kr">마이크론 CEO "메모리 시장 2026년 이후에도 타이트"</p>
+                <p class="article-summary">Micron이 Q1 실적에서 매출 $136억(전년比 +56%), EPS $4.60(+175%) 기록. CEO는 메모리 시장이 2026년 이후에도 공급 부족 상태 유지 전망. HBM 시장 2028년까지 연 40% 성장, $1000억 규모 예상.</p>
+                <div class="article-meta">
+                    <a href="https://www.fool.com/investing/2025/12/24/nvidia-up-31-in-2025-semiconductor-stock-buy-2026/" class="source-link" target="_blank">Motley Fool</a>
+                    <span class="time-stamp">📅 12/24</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="badge badge-score">Score: 8.0</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Intel's Long Road: 18A Process and Foundry Ambitions</h3>
+                <p class="article-title-kr">인텔, 2025년 주가 급등에도 파운드리 도전 과제 산적</p>
+                <p class="article-summary">인텔이 미 정부 $90억 투자 확보 후 주가 급등. 18A 공정으로 Panther Lake(PC)와 Clearwater Forest(데이터센터) 칩 생산 예정. 애플의 18AP 공정 사용 루머도. 12~18개월 내 14A 대형 고객 확보가 관건.</p>
+                <div class="article-meta">
+                    <a href="https://finance.yahoo.com/news/intel-stock-soared-in-2025-but-the-chipmaker-still-has-a-long-road-ahead-140004121.html" class="source-link" target="_blank">Yahoo Finance</a>
+                    <span class="time-stamp">📅 12/26</span>
+                    <span class="badge badge-score">Score: 6.0</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">CES 2026 Preview: Intel Panther Lake, Qualcomm X2 Elite</h3>
+                <p class="article-title-kr">CES 2026 프리뷰: 인텔 Panther Lake, 퀄컴 X2 Elite 공개 예정</p>
+                <p class="article-summary">인텔이 CES 2026에서 18A 공정 기반 Panther Lake "Core Ultra Series 3" CPU 공식 출시 예정. 퀄컴은 18코어 Snapdragon X2 Elite Extreme 공개. Xe3 내장 그래픽 성능 대폭 향상 기대.</p>
+                <div class="article-meta">
+                    <a href="https://www.trendforce.com/news/2025/12/26/news-ces-2026-preview-intels-panther-lake-launch-and-qualcomms-snapdragon-x2-elite/" class="source-link" target="_blank">TrendForce</a>
+                    <span class="time-stamp">📅 12/26</span>
+                    <span class="badge badge-score">Score: 5.5</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 경제/금융 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #22c55e, #06b6d4);">💰</div>
+                <h2 class="section-title">경제/금융</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title">S&P 500 Hits Record, Posts Weekly Gains in Santa Rally</h3>
+                <p class="article-title-kr">S&P 500 사상 최고치 경신, 산타랠리 주간 +1.4%</p>
+                <p class="article-summary">S&P 500이 금요일 장중 사상 최고치(6,945.77) 경신 후 6,929.94로 마감. 주간 +1.4% 상승으로 5주 중 4번째 상승 기록. 나스닥 2025년 +20% 이상 상승. 산타랠리 기간(12월 마지막 5일 + 1월 첫 2일) 평균 +1.3% 상승 기대.</p>
+                <div class="article-meta">
+                    <a href="https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-steady-as-wall-street-looks-to-keep-santa-claus-rally-going-020345228.html" class="source-link" target="_blank">Yahoo Finance</a>
+                    <span class="time-stamp">📅 12/27</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-score">Score: 8.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Gold Hits Record Above $4,550, Silver Soars 150% YTD</h3>
+                <p class="article-title-kr">금 $4,550 돌파 사상 최고, 은 연초대비 +150% 급등</p>
+                <p class="article-summary">금 선물이 $4,550 돌파하며 2025년 50번 이상 사상 최고치 경신. 은도 온스당 $75 돌파, 연초 대비 +150% 급등. 비트코인이 $87,000대에서 횡보하는 동안 귀금속이 압도적 수익률 기록.</p>
+                <div class="article-meta">
+                    <a href="https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-steady-as-wall-street-looks-to-keep-santa-claus-rally-going-020345228.html" class="source-link" target="_blank">Yahoo Finance</a>
+                    <span class="time-stamp">📅 12/27</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="badge badge-score">Score: 7.0</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">China Pledges Tech Breakthroughs Amid Tepid Industrial Growth</h3>
+                <p class="article-title-kr">중국, 산업 성장 부진 속 기술혁신 투자 확대 공약</p>
+                <p class="article-summary">중국 공업부, 2025년 대기업 산업생산 +5.9% 성장 전망(2024년 5.8%와 유사). 하드테크 펀드 출범과 함께 AI 중소기업 지원 확대, '인볼루션(과잉경쟁)' 억제 공약. 내수 부진이 성장 제한 요인.</p>
+                <div class="article-meta">
+                    <a href="https://money.usnews.com/investing/news/articles/2025-12-26/china-expects-industrial-output-to-have-grown-5-9-in-2025" class="source-link" target="_blank">Reuters</a>
+                    <span class="time-stamp">📅 12/26</span>
+                    <span class="badge badge-score">Score: 6.0</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 주간 시장 동향 -->
+        <section class="market-section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #4a9eff, #22c55e);">📊</div>
+                <h2 class="section-title">주간 시장 동향</h2>
+            </div>
+
+            <table class="market-table">
+                <thead>
+                    <tr>
+                        <th>지표</th>
+                        <th>동향</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S&P 500</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> 6,929.94</td>
+                        <td>주간 +1.4%, 사상 최고치 경신</td>
+                    </tr>
+                    <tr>
+                        <td>Nasdaq</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> 23,593</td>
+                        <td>YTD +20% 이상 상승</td>
+                    </tr>
+                    <tr>
+                        <td>Dow Jones</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> 48,711</td>
+                        <td>주간 +1% 이상 상승</td>
+                    </tr>
+                    <tr>
+                        <td>USD/KRW</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> 1,447원</td>
+                        <td>주중 1,484→1,432 변동폭 확대</td>
+                    </tr>
+                    <tr>
+                        <td>Gold</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> $4,550+</td>
+                        <td>사상 최고치, YTD +70%</td>
+                    </tr>
+                    <tr>
+                        <td>Silver</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> $75+</td>
+                        <td>40년래 최고 상승률, YTD +150%</td>
+                    </tr>
+                    <tr>
+                        <td>Bitcoin</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> $87,000</td>
+                        <td>3개월 연속 하락 위기</td>
+                    </tr>
+                    <tr>
+                        <td>Micron</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> YTD +229%</td>
+                        <td>HBM 가격 20% 인상 소식에 상승</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">💎</div>
+                <h2 class="section-title">Claude's Pick</h2>
+            </div>
+
+            <article class="article-card claude-pick">
+                <h3 class="article-title">China Creates EUV Prototype Despite Western Sanctions</h3>
+                <p class="article-title-kr">중국, 서방 제재에도 EUV 시제품 개발 성공</p>
+                <p class="article-summary">중국 연구진이 선전 연구소에서 EUV 리소그래피 장비 시제품 완성. ASML 출신 엔지니어들이 역설계로 개발. 2019년 네덜란드 EUV 판매 금지 이후에도 부품 해외 조달, DUV 업그레이드 등으로 제재 우회. 아직 실용화까지 수년 필요하나 대만 '실리콘 실드' 위협 가시화.</p>
+                <div class="article-meta">
+                    <a href="https://www.aei.org/articles/china-taiwan-update-december-23-2025/" class="source-link" target="_blank">AEI / Reuters</a>
+                    <span class="time-stamp">📅 12/23</span>
+                    <span class="badge badge-score">Score: 5.0</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 규제 우회 초기 신호 + 대기업 조용한 움직임 | 반도체 공급망 재편 시사점
+                </div>
+            </article>
+
+            <article class="article-card claude-pick">
+                <h3 class="article-title">NIST Launches $90M AI Centers for Manufacturing and Critical Infrastructure</h3>
+                <p class="article-title-kr">미국 NIST, AI 제조·핵심 인프라 센터에 $9000만 투자</p>
+                <p class="article-summary">NIST가 MITRE와 협력해 AI 기반 제조 혁신 및 사이버보안 강화를 위한 2개 센터 설립. 5년간 최대 $7000만 추가 투자 예정. '미국 AI 행동계획' 일환으로 AI 칩 공급망 및 보안 위협 대응 목표.</p>
+                <div class="article-meta">
+                    <a href="https://www.nist.gov/news-events/news/2025/12/nist-launches-centers-ai-manufacturing-and-critical-infrastructure" class="source-link" target="_blank">NIST</a>
+                    <span class="time-stamp">📅 12/23</span>
+                    <span class="badge badge-score">Score: 4.5</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 규제/정책 초기 신호 + 시장 규모 예측 첫 등장 | AI 인프라 정책 방향성
+                </div>
+            </article>
+
+            <article class="article-card claude-pick">
+                <h3 class="article-title">Waymo's 2026: Critical Year for Robotaxi Viability</h3>
+                <p class="article-title-kr">웨이모, 2026년 로보택시 수익성 증명의 해</p>
+                <p class="article-summary">웨이모가 확장을 앞두고 2026년이 로보택시 서비스의 실현 가능성과 수익성을 입증할 결정적 해가 될 전망. 자율주행 상용화의 분수령이 될 수 있음.</p>
+                <div class="article-meta">
+                    <a href="https://www.bloomberg.com/news/newsletters/2025-12-26/waymo-expansion-seeks-to-make-robotaxis-relevant" class="source-link" target="_blank">Bloomberg</a>
+                    <span class="time-stamp">📅 12/26</span>
+                    <span class="badge badge-score">Score: 4.0</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 시장 규모 예측 재평가 | 자율주행 상용화 임계점
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Generated by Claude | 3중 신호 시스템 (RSS + 홈페이지 TOP + 랭킹 섹션)</p>
+            <p style="margin-top: 0.5rem;">© 2025 Foreign News Briefing</p>
+        </footer>
+    </div>
+</body>
+</html>
