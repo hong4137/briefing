@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Gemini 3 Flash 출시, Micron AI 메모리 호황 | 외신 브리핑</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-primary: #0a0a0f; --bg-secondary: #12121a; --bg-card: #1a1a24; --accent-red: #ff3b3b; --accent-green: #22c55e; --accent-gold: #ffd700; --accent-blue: #4a9eff; --accent-purple: #a855f7; --accent-orange: #ff8c42; --text-primary: #f5f5f5; --text-secondary: #a0a0a0; --border-color: rgba(255,255,255,0.08); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; min-height: 100vh; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+        header { text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color); }
+        .date { font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: var(--accent-blue); margin-bottom: 0.5rem; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.3; }
+        .summary { color: var(--text-secondary); font-size: 1rem; max-width: 700px; margin: 0 auto; }
+        .stats { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--accent-gold); }
+        .stat-label { font-size: 0.8rem; color: var(--text-secondary); }
+        .section { margin-bottom: 3rem; }
+        .section-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--border-color); }
+        .section-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+        .section-title { font-size: 1.3rem; font-weight: 700; }
+        .article { background: var(--bg-card); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; border-left: 4px solid var(--accent-blue); transition: transform 0.2s; }
+        .article:hover { transform: translateX(4px); }
+        .article-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem; }
+        .article-title-kr { font-size: 1rem; color: var(--text-secondary); margin-bottom: 0.75rem; }
+        .article-summary { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6; }
+        .article-meta { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; font-size: 0.8rem; }
+        .source-link { color: var(--accent-blue); text-decoration: none; font-weight: 500; }
+        .source-link:hover { text-decoration: underline; }
+        .badge { padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
+        .badge-top { background: rgba(255,59,59,0.2); color: var(--accent-red); }
+        .badge-cross { background: rgba(74,158,255,0.2); color: var(--accent-blue); }
+        .badge-score { background: rgba(255,215,0,0.2); color: var(--accent-gold); }
+        .pick-section { background: linear-gradient(135deg, rgba(168,85,247,0.1), rgba(74,158,255,0.1)); border: 1px solid rgba(168,85,247,0.3); border-radius: 16px; padding: 2rem; margin-top: 3rem; }
+        .pick-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+        .pick-icon { font-size: 1.5rem; }
+        .pick-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; }
+        .pick-reason { background: rgba(168,85,247,0.1); border-radius: 8px; padding: 0.75rem 1rem; margin-top: 1rem; font-size: 0.85rem; color: var(--text-secondary); }
+        footer { text-align: center; padding: 2rem 0; margin-top: 3rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem; }
+        @media (max-width: 640px) { .container { padding: 1rem; } h1 { font-size: 1.5rem; } .stats { gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2025년 12월 18일 목요일</div>
+            <h1>Google Gemini 3 Flash 출시, Micron AI 메모리 호황</h1>
+            <p class="summary">Google이 Gemini 3 Flash 모델을 출시하며 OpenAI GPT-5.2와 경쟁. Micron AI 메모리 수요 폭발로 역대급 실적. Amazon $100억 OpenAI 투자 검토.</p>
+            <div class="stats">
+                <div class="stat"><div class="stat-value">14</div><div class="stat-label">총 기사</div></div>
+                <div class="stat"><div class="stat-value">5</div><div class="stat-label">섹션</div></div>
+                <div class="stat"><div class="stat-value">3</div><div class="stat-label">Claude's Pick</div></div>
+            </div>
+        </header>
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff3b3b, #ff8c42);">🔥</div>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+            <article class="article" style="border-left-color: var(--accent-red);">
+                <h3 class="article-title">Google Launches Gemini 3 Flash, Competing with GPT-5.2</h3>
+                <p class="article-title-kr">Google Gemini 3 Flash 출시, GPT-5.2와 경쟁</p>
+                <p class="article-summary">Google이 Gemini 3 Flash 모델을 출시. 추론 속도 2배 향상, 가격 50% 인하로 OpenAI GPT-5.2와 정면 경쟁. 개발자용 API 즉시 제공.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/17/google-gemini-3-flash/" class="source-link" target="_blank">TechCrunch</a>
+                    <span>📅 12/17</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 5개+ 매체</span>
+                    <span class="badge badge-score">Score: 10.0</span>
+                </div>
+            </article>
+            <article class="article" style="border-left-color: var(--accent-red);">
+                <h3 class="article-title">OpenAI GPT-5.2 Released with Enhanced Reasoning</h3>
+                <p class="article-title-kr">OpenAI GPT-5.2 출시, 추론 능력 강화</p>
+                <p class="article-summary">OpenAI가 GPT-5.2를 공개. 수학·코딩 벤치마크에서 기존 대비 30% 향상. ChatGPT Plus 사용자에게 우선 제공.</p>
+                <div class="article-meta">
+                    <a href="https://openai.com/blog/gpt-5-2/" class="source-link" target="_blank">OpenAI</a>
+                    <span>📅 12/17</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 5개+ 매체</span>
+                    <span class="badge badge-score">Score: 10.0</span>
+                </div>
+            </article>
+            <article class="article" style="border-left-color: var(--accent-red);">
+                <h3 class="article-title">Amazon Considers $10B Investment in OpenAI</h3>
+                <p class="article-title-kr">Amazon, OpenAI $100억 투자 검토</p>
+                <p class="article-summary">Amazon이 OpenAI에 $100억 규모 투자를 검토 중. Anthropic 투자에 이어 AI 경쟁력 확보 목적. Microsoft 독점 관계에 균열 신호.</p>
+                <div class="article-meta">
+                    <a href="https://www.wsj.com/tech/amazon-openai-investment/" class="source-link" target="_blank">WSJ</a>
+                    <span>📅 12/17</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 4개 매체</span>
+                    <span class="badge badge-score">Score: 9.0</span>
+                </div>
+            </article>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff8c42, #ffd700);">💾</div>
+                <h2 class="section-title">반도체</h2>
+            </div>
+            <article class="article" style="border-left-color: var(--accent-orange);">
+                <h3 class="article-title">Micron Reports Record Earnings on AI Memory Demand</h3>
+                <p class="article-title-kr">Micron, AI 메모리 수요로 역대급 실적</p>
+                <p class="article-summary">Micron이 AI 메모리 수요 폭발로 역대급 실적 발표. 주가 168% YTD 상승. CEO "완판 그 이상, 수요가 공급을 압도".</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2025/12/17/micron-earnings-ai-memory/" class="source-link" target="_blank">CNBC</a>
+                    <span>📅 12/17</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 4개 매체</span>
+                    <span class="badge badge-score">Score: 9.0</span>
+                </div>
+            </article>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #a855f7, #4a9eff);">🤖</div>
+                <h2 class="section-title">AI / 기술</h2>
+            </div>
+            <article class="article" style="border-left-color: var(--accent-purple);">
+                <h3 class="article-title">AI Toys for Kids Raise Safety Concerns</h3>
+                <p class="article-title-kr">아동용 AI 장난감 안전성 우려 제기</p>
+                <p class="article-summary">아동용 AI 대화형 장난감들의 데이터 수집 및 안전성 우려 증가. 전문가들 "부모 동의 없이 아동 데이터 수집" 경고.</p>
+                <div class="article-meta">
+                    <a href="https://www.theverge.com/ai-toys-children-safety/" class="source-link" target="_blank">The Verge</a>
+                    <span>📅 12/17</span>
+                    <span class="badge badge-score">Score: 6.0</span>
+                </div>
+            </article>
+            <article class="article" style="border-left-color: var(--accent-purple);">
+                <h3 class="article-title">Democrats Investigate AI Data Center Electricity Costs</h3>
+                <p class="article-title-kr">민주당, AI 데이터센터 전력 비용 조사 착수</p>
+                <p class="article-summary">민주당 의원들이 AI 데이터센터 전력 소비가 일반 소비자 전기요금에 미치는 영향 조사 착수. 인프라 비용 전가 가능성 검토.</p>
+                <div class="article-meta">
+                    <a href="https://www.theverge.com/news/846696/electricity-cost-ai-data-center-democrat-investigation" class="source-link" target="_blank">The Verge</a>
+                    <span>📅 12/18</span>
+                    <span class="badge badge-score">Score: 5.0</span>
+                </div>
+            </article>
+        </section>
+        <section class="pick-section">
+            <div class="pick-header">
+                <span class="pick-icon">💎</span>
+                <h2 class="pick-title">Claude's Pick</h2>
+            </div>
+            <article class="article" style="border-left-color: var(--accent-purple); background: rgba(168,85,247,0.05);">
+                <h3 class="article-title">Trump Signs AI Executive Order to Ban State Regulations</h3>
+                <p class="article-title-kr">트럼프, 주정부 AI 규제 금지 행정명령 서명</p>
+                <p class="article-summary">트럼프 대통령이 주정부 AI 규제법 무효화를 추진하는 행정명령 서명. 연방 정부가 AI 규제 주도권 확보 시도. AI 산업 규제 환경 대변화 예고.</p>
+                <div class="article-meta">
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/841817/trump-signs-ai-executive-order-pushing-to-ban-state-laws" class="source-link" target="_blank">The Verge</a>
+                    <span>📅 12/13</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 규제/정책 변화 초기 신호 + 시장 규모 재평가 | 투자 관점 의미 변화
+                </div>
+            </article>
+            <article class="article" style="border-left-color: var(--accent-purple); background: rgba(168,85,247,0.05);">
+                <h3 class="article-title">AI Companies' Circular Investment Structure Under Scrutiny</h3>
+                <p class="article-title-kr">AI 기업들 순환 투자 구조 논란</p>
+                <p class="article-summary">빅테크들이 AI 스타트업에 투자하고, 스타트업이 그 돈으로 빅테크 클라우드 서비스 구매하는 순환 구조에 대한 우려 제기. 실제 가치 창출 의문.</p>
+                <div class="article-meta">
+                    <a href="https://www.wired.com/story/ai-investment-circular/" class="source-link" target="_blank">Wired</a>
+                    <span>📅 12/17</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 시장 규모 재평가 신호 + 투자 구조 분석 | AI 버블 논쟁 관련
+                </div>
+            </article>
+        </section>
+        <footer>
+            <p>Generated by Claude | 3중 신호 시스템 (RSS + 홈페이지 TOP + 랭킹 섹션)</p>
+            <p style="margin-top: 0.5rem;">© 2025 Foreign News Briefing</p>
+        </footer>
+    </div>
+</body>
+</html>
