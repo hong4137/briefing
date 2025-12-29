@@ -1,67 +1,148 @@
-2025-12-28
-Nvidia-Groq 라이선싱 딜, 삼성 HBM4 공급 확정
-Nvidia가 Groq과 기술 라이선싱 계약 체결 및 CEO 영입. 삼성전자 HBM4 Nvidia 공급 확정. S&P 500 사상 최고치 경신.
-14 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-27
-Nvidia-Groq $200억 딜, 中 하드테크 펀드 출범
-Nvidia가 AI 추론 칩 스타트업 Groq 기술 라이선스 계약 및 CEO 영입. 중국 $210억 하드테크 펀드 3개 출범. 빅테크 인도 AI $675억 투자.
-15 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-26
-Nvidia $200억 Groq 인수, 中 EUV 장비 개발
-Nvidia가 Groq $200억 인수 추진. 중국 자체 EUV 리소그래피 장비 개발 보도. NIST AI 제조·인프라 센터 출범.
-12 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-25
-Nvidia $200억 Groq 인수, AI 칩 시장 판도 변화
-Nvidia 역대 최대 M&A로 추론 칩 시장 지배력 강화. Waymo SF 정전 대응 발표. AI 인프라주 2025년 Nvidia 상회 수익률.
-12 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-24
-ServiceNow $77.5억 Armis 인수, 美 3분기 GDP 4.3% 성장
-ServiceNow 역대 최대 M&A, Alphabet Intersect Power 인수, Nvidia 중국 H200 출하 계획, FDA 위고비 알약 승인, 美 GDP 2년 최고치
-14 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-22
-OpenAI $830B 투자 유치, 뉴욕주 AI 규제법 서명
-OpenAI $100B 펀딩 협상, 뉴욕주 AI 안전 규제법 RAISE Act 서명, Nvidia Blackwell/Rubin 로드맵 공개
-15 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-21
-TikTok-Oracle 합작법인, AMI Labs 출범
-TikTok-Oracle 딜 타결, Yann LeCun의 World Model 스타트업 AMI Labs 출범, Cursor의 Graphite 인수로 AI 코딩 생태계 재편
-12 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-20
-연준 금리 인하, BOJ 30년 최고 금리
-연준 금리 0.25%p 인하하며 2026년 금리 인하 전망 4회→2회로 축소. 일본은행 30년 만에 최고 금리 0.75%로 인상. Lovable $66억 밸류에이션 달성.
-15 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-19
-Waymo $150억 펀딩, MetaX IPO 700% 급등
-Waymo가 $150억 이상 펀딩을 협상 중이며 밸류에이션 $1,000억 돌파 예상. Apple AI 수장 교체로 Siri 2026 출시 압박. 중국 GPU MetaX IPO 700% 급등.
-11 기사 | 5 섹션 | 3 Claude's Pick
-
-===
-
-2025-12-18
-Google Gemini 3 Flash 출시, Micron AI 메모리 호황
-Google Gemini 3 Flash 출시로 OpenAI GPT-5.2와 경쟁. Micron AI 메모리 수요 폭발로 역대급 실적. Amazon $100억 OpenAI 투자 검토.
-14 기사 | 5 섹션 | 3 Claude's Pick
+{
+  "briefings": [
+    {
+      "date": "2025-12-29",
+      "day": "월",
+      "title": "Nvidia $200억 Groq 라이선스 딜, Disney-OpenAI $10억 투자",
+      "summary": "Nvidia가 Groq 기술 $200억에 라이선스하며 AI 추론 시장 강화. Disney가 OpenAI에 $10억 투자하고 200개 캐릭터 Sora 라이선스. Databricks $1,340억 밸류에이션으로 $40억 투자 유치.",
+      "highlights": [
+        "Nvidia, Groq 기술 $200억에 라이선스 - 사상 최대 규모 딜",
+        "Disney-OpenAI $10억 투자 및 200+ 캐릭터 Sora 라이선스",
+        "Databricks, $1,340억 밸류에이션으로 $40억 Series L"
+      ],
+      "stats": {
+        "articles": 12,
+        "sections": 5,
+        "picks": 2
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "day": "일",
+      "title": "Nvidia-Groq 라이선싱 딜, 삼성 HBM4 공급 확정",
+      "summary": "Nvidia가 Groq 기술 라이선싱 및 핵심 인력 영입. 삼성전자 HBM4 Nvidia Rubin용 공급 승인. S&P 500·다우 사상 최고치 경신으로 산타 랠리 진입.",
+      "highlights": [
+        "Nvidia, Groq 기술 라이선싱 및 핵심 인력 영입",
+        "삼성전자 HBM4 Nvidia Rubin용 공급 승인",
+        "S&P 500·다우 사상 최고치 경신"
+      ],
+      "stats": {
+        "articles": 14,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "day": "토",
+      "title": "Nvidia-Groq 딜 후속, 中 $210억 하드테크 펀드, HBM 20% 인상",
+      "summary": "Nvidia-Groq $200억 기술 라이선스 딜 공식 확인. 중국이 반도체·양자기술 등 하드테크 분야에 $210억 규모 3개 국가 벤처펀드 출범. 삼성·SK하이닉스 2026년 HBM3E 가격 20% 인상 예고.",
+      "highlights": [
+        "Nvidia-Groq $200억 기술 라이선스 딜 공식 확인",
+        "중국 $210억 규모 하드테크 국가 펀드 출범",
+        "삼성·SK하이닉스 HBM3E 20% 인상 예고"
+      ],
+      "stats": {
+        "articles": 12,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2025-12-26",
+      "day": "목",
+      "title": "Nvidia $200억 Groq 인수, 中 EUV 장비 개발 착수",
+      "summary": "Nvidia가 AI 추론칩 스타트업 Groq를 $200억에 인수 협의 중. 중국이 SMEE 주도로 2027년까지 EUV 장비 자체 개발 착수. S&P 500 사상 최고치 경신.",
+      "highlights": [
+        "Nvidia, Groq $200억 인수 협의 - 역대 최대 규모",
+        "중국 SMEE, 2027년까지 EUV 장비 자체 개발 목표",
+        "S&P 500 사상 최고치 경신"
+      ],
+      "stats": {
+        "articles": 13,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2025-12-24",
+      "day": "화",
+      "title": "ServiceNow $77.5억 Armis 인수, 美 3분기 GDP 4.3% 성장",
+      "summary": "ServiceNow 역대 최대 M&A, Alphabet Intersect Power 인수, Nvidia 중국 H200 출하 계획, FDA 위고비 알약 승인, 美 GDP 2년 최고치",
+      "highlights": [
+        "ServiceNow $77.5억 Armis 인수 - AI 시대 사이버보안 강화",
+        "Alphabet $47.5억 Intersect Power 인수 - 데이터센터 전력 확보",
+        "美 3분기 GDP 4.3% 성장, 2년 만에 최고치"
+      ],
+      "stats": {
+        "articles": 14,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2025-12-22",
+      "day": "일",
+      "title": "OpenAI $830B 투자 유치, 뉴욕주 AI 규제법 서명",
+      "summary": "OpenAI $100B 펀딩 협상, 뉴욕주 AI 안전 규제법 RAISE Act 서명, Nvidia 강세 전망 지속",
+      "highlights": [
+        "OpenAI $830B 밸류에이션으로 $100B 추가 투자 협상 중",
+        "뉴욕주 AI 안전 규제법 RAISE Act 서명",
+        "Cursor, Graphite 인수로 코딩 생태계 확장"
+      ],
+      "stats": {
+        "articles": 15,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2025-12-21",
+      "day": "일",
+      "title": "TikTok-Oracle 합작법인, AMI Labs 출범",
+      "summary": "TikTok-Oracle 딜 타결, Yann LeCun의 World Model 스타트업 AMI Labs 출범, Cursor의 Graphite 인수로 AI 코딩 생태계 재편",
+      "highlights": [
+        "TikTok, Oracle 주도 미국 합작법인 설립 계약 체결",
+        "Yann LeCun, World Model 스타트업 AMI Labs 출범",
+        "Cursor, Graphite 인수로 코딩 생태계 확장"
+      ],
+      "stats": {
+        "articles": 12,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "day": "금",
+      "title": "외신 브리핑 서비스 런칭",
+      "summary": "Jae's Briefing 서비스 첫 발행. Value Score 기반 뉴스 큐레이션 서비스 런칭.",
+      "highlights": [
+        "외신 브리핑 서비스 시작",
+        "Value Score 기반 뉴스 큐레이션",
+        "다크 테마 HTML 브리핑 발행"
+      ],
+      "stats": {
+        "articles": 10,
+        "sections": 4,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2025-12-19",
+      "day": "금",
+      "title": "Waymo $150억 펀딩, MetaX IPO 700% 급등",
+      "summary": "Waymo가 $150억 이상 펀딩을 협상 중이며 밸류에이션 $1,000억 돌파 예상, Apple AI 수장 교체로 Siri 2026 출시 임박, 중국 GPU MetaX IPO 700% 급등",
+      "highlights": [
+        "Waymo $150억 펀딩 협상, $1,000억 밸류에이션 목표",
+        "Apple AI 수장 교체, Siri 2026 출시 임박",
+        "중국 GPU 기업 MetaX, 상하이 IPO서 700% 급등"
+      ],
+      "stats": {
+        "articles": 11,
+        "sections": 5,
+        "picks": 3
+      }
+    }
+  ]
+}
