@@ -32,34 +32,34 @@
       }
     },
     {
-      "date": "2024-12-30",
-      "day": "월",
-      "title": "2024 마지막 거래일, S&P 500 연간 +23% 마감",
-      "summary": "2024년 마지막 거래일, S&P 500 연간 23.3% 상승 마감. TikTok 대법원 심리 1월 10일 확정. 비트코인 $93K 조정, 원화 역대 최약세.",
+      "date": "2025-12-30",
+      "day": "화",
+      "title": "Meta Manus 인수, SoftBank $410억 OpenAI 투자 완료",
+      "summary": "Meta가 AI 에이전트 Manus 인수. SoftBank $410억 OpenAI 투자 완료. Nvidia AI21 Labs $30억 인수 협의. 중국 칩메이커 국산 장비 50% 의무화.",
       "highlights": [
         {
           "category": "top",
-          "title": "S&P 500 +23% YTD",
-          "summary": "S&P 500 연간 +23.3%, 2년 연속 +50% (1997-98 이후 최고)",
-          "url": "https://www.cnbc.com/markets/"
+          "title": "Meta Acquires Manus",
+          "summary": "Meta, 중국 창업자 설립 AI 에이전트 스타트업 Manus 인수",
+          "url": "https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/"
         },
         {
           "category": "top",
-          "title": "TikTok Supreme Court",
-          "summary": "TikTok 대법원 심리 1월 10일 확정, 1억 7천만 사용자 운명",
-          "url": "https://www.reuters.com/technology/"
+          "title": "SoftBank $41B OpenAI Investment",
+          "summary": "SoftBank, OpenAI $410억 투자 완료 - AI 베팅 심화",
+          "url": "https://www.reuters.com/business/media-telecom/softbank-has-fully-funded-its-40-billion-investment-openai-cnbc-reports-2025-12-30/"
         },
         {
           "category": "top",
-          "title": "iRobot Bankruptcy Risk",
-          "summary": "iRobot 파산 위기 심화, Amazon 인수 무산 후 재정 악화",
-          "url": "https://techcrunch.com/"
+          "title": "Nvidia AI21 Labs $3B Deal",
+          "summary": "Nvidia, 이스라엘 AI21 Labs $30억 인수 협의 진행",
+          "url": "https://www.reuters.com/business/nvidia-advanced-talks-buy-israels-ai21-labs-up-3-billion-report-says-2025-12-30/"
         }
       ],
       "stats": {
-        "articles": 10,
+        "articles": 15,
         "sections": 5,
-        "picks": 3
+        "picks": 2
       }
     },
     {

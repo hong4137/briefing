@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Manus 인수, SoftBank $410억 OpenAI 투자 완료 | 외신 브리핑</title>
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent-blue: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-yellow: #d29922;
+            --accent-red: #f85149;
+            --accent-purple: #a371f7;
+            --border-color: #30363d;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        
+        .date { color: var(--accent-blue); font-size: 0.95rem; margin-bottom: 10px; }
+        
+        h1 { font-size: 1.8rem; font-weight: 600; margin-bottom: 15px; line-height: 1.3; }
+        
+        .subtitle { color: var(--text-secondary); font-size: 1rem; }
+        
+        .section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .news-item {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .news-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .news-item:first-child { padding-top: 0; }
+        
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .news-title { font-weight: 600; font-size: 1.05rem; flex: 1; }
+        
+        .news-content { color: var(--text-secondary); font-size: 0.95rem; }
+        
+        .news-meta { color: var(--text-secondary); font-size: 0.8rem; margin-top: 8px; }
+        
+        .badge {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        
+        .badge-score { background: var(--accent-purple); color: white; }
+        .badge-top { background: var(--accent-yellow); color: #000; }
+        .badge-hot { background: var(--accent-red); color: white; }
+        .badge-cross { background: var(--accent-blue); color: white; }
+        
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .market-item {
+            background: var(--bg-tertiary);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .market-label { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 5px; }
+        .market-value { font-size: 1.2rem; font-weight: 600; }
+        .market-change { font-size: 0.85rem; margin-top: 3px; }
+        
+        .positive { color: var(--accent-green); }
+        .negative { color: var(--accent-red); }
+        
+        .picks-section {
+            background: linear-gradient(135deg, #1a1f35 0%, #0d1117 100%);
+            border: 1px solid var(--accent-purple);
+        }
+        
+        .pick-item {
+            background: var(--bg-tertiary);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+        
+        .pick-item:last-child { margin-bottom: 0; }
+        
+        .pick-number {
+            display: inline-block;
+            background: var(--accent-purple);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        
+        .pick-title { font-weight: 600; margin-bottom: 8px; }
+        .pick-reason { color: var(--text-secondary); font-size: 0.9rem; }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            h1 { font-size: 1.5rem; }
+            .section { padding: 18px; }
+            .market-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="date">2025년 12월 30일 화요일</div>
+        <h1>Meta Manus 인수, SoftBank $410억 OpenAI 투자 완료</h1>
+        <p class="subtitle">Nvidia AI21 Labs $30억 인수 협의 | ByteDance 2026년 Nvidia 칩 $140억 구매 | 중국 칩메이커 국산 장비 50% 의무화</p>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">📊 시장 동향</h2>
+        <div class="market-grid">
+            <div class="market-item">
+                <div class="market-label">S&P 500</div>
+                <div class="market-value">6,896.24</div>
+                <div class="market-change negative">-0.14% (3연속 하락)</div>
+            </div>
+            <div class="market-item">
+                <div class="market-label">Nasdaq</div>
+                <div class="market-value">23,419.08</div>
+                <div class="market-change negative">-0.24%</div>
+            </div>
+            <div class="market-item">
+                <div class="market-label">Dow Jones</div>
+                <div class="market-value">48,367.06</div>
+                <div class="market-change negative">-0.20%</div>
+            </div>
+            <div class="market-item">
+                <div class="market-label">USD/KRW</div>
+                <div class="market-value">1,470원</div>
+                <div class="market-change negative">고환율 지속</div>
+            </div>
+            <div class="market-item">
+                <div class="market-label">Gold</div>
+                <div class="market-value">$4,500+</div>
+                <div class="market-change positive">사상 최고가 부근</div>
+            </div>
+            <div class="market-item">
+                <div class="market-label">2025 YTD</div>
+                <div class="market-value">S&P +17%</div>
+                <div class="market-change positive">3년 연속 두 자릿수</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">🔥 TOP Headlines</h2>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">Meta, AI 에이전트 스타트업 Manus 인수</span>
+                <span class="badge badge-cross">🔄 3개 매체</span>
+            </div>
+            <div class="news-content">
+                Meta가 중국 창업자 설립 AI 에이전트 스타트업 Manus를 인수. Manus는 자율적으로 작업을 수행하는 AI 에이전트 기술로 주목받아온 스타트업. Meta의 AI 역량 강화 전략 가속화.
+            </div>
+            <div class="news-meta">— TechCrunch, BBC, Reuters | 📅 12/30 | Score: 10.5</div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">SoftBank, OpenAI $410억 투자 완료</span>
+                <span class="badge badge-top">🔥 TOP</span>
+            </div>
+            <div class="news-content">
+                SoftBank가 OpenAI에 대한 $410억(약 60조원) 투자를 완료하며 AI 베팅 심화. OpenAI는 이로써 $3,000억 밸류에이션 달성. AI 인프라 지출 경쟁 가속화.
+            </div>
+            <div class="news-meta">— Reuters | 📅 12/30 | Score: 9.0</div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">Nvidia, 이스라엘 AI21 Labs $30억 인수 협의</span>
+                <span class="badge badge-score">8.5</span>
+            </div>
+            <div class="news-content">
+                Nvidia가 이스라엘 AI 스타트업 AI21 Labs를 최대 $30억에 인수하기 위한 협의 진행 중. Groq 딜에 이은 연속적인 AI 스타트업 인수 전략. AI 소프트웨어 역량 강화 목적.
+            </div>
+            <div class="news-meta">— Reuters | 📅 12/30 | Score: 8.5</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">💾 반도체</h2>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">ByteDance, 2026년 Nvidia 칩 $140억 구매 계획</span>
+                <span class="badge badge-score">8.0</span>
+            </div>
+            <div class="news-content">
+                TikTok 모회사 ByteDance가 2026년 Nvidia AI 칩에 약 $140억(약 20조원)을 지출할 계획. 중국 빅테크의 AI 인프라 투자 규모가 미국 빅테크에 필적.
+            </div>
+            <div class="news-meta">— Reuters (SCMP 인용) | 📅 12/30 | Score: 8.0</div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">중국, 칩메이커에 국산 장비 50% 의무화</span>
+                <span class="badge badge-hot">🔥 Exclusive</span>
+            </div>
+            <div class="news-content">
+                중국 정부가 반도체 제조업체에 국산 장비 50% 사용 의무화 규정 시행. 미국 수출 규제에 대응한 자급자족 전략 가속화. SMEE, Naura 등 국내 장비업체 수혜 전망.
+            </div>
+            <div class="news-meta">— Reuters Exclusive | 📅 12/30 | Score: 8.0</div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">중국 CXMT, $42억 상하이 IPO 추진</span>
+            </div>
+            <div class="news-content">
+                중국 메모리 칩메이커 CXMT(창신메모리)가 DRAM 생산 확대를 위해 $42억 규모 상하이 IPO 추진. 삼성, SK하이닉스에 도전하는 중국 메모리 산업 성장.
+            </div>
+            <div class="news-meta">— Reuters | 📅 12/30</div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">미국, 삼성·SK하이닉스 중국향 장비 수출 2026년 승인</span>
+            </div>
+            <div class="news-content">
+                미국 정부가 삼성전자와 SK하이닉스의 중국 공장향 반도체 장비 수출을 2026년에도 승인. 한국 기업들의 중국 공장 운영 지속 가능.
+            </div>
+            <div class="news-meta">— Reuters | 📅 12/30</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">🤖 AI / 기술</h2>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">SoftBank, DigitalBridge $40억에 인수 - AI 인프라 확대</span>
+                <span class="badge badge-score">7.5</span>
+            </div>
+            <div class="news-content">
+                SoftBank가 데이터센터 투자사 DigitalBridge를 $40억에 인수 협의. AI 인프라 확대 전략의 일환. OpenAI 투자와 함께 AI 생태계 전방위 투자.
+            </div>
+            <div class="news-meta">— Reuters | 📅 12/29 | Score: 7.5</div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">Nvidia, Intel 지분 $50억 인수 완료</span>
+            </div>
+            <div class="news-content">
+                Nvidia가 9월 계약에 따라 Intel 지분 $50억 규모 인수 완료. Intel 파운드리 사업 활용 여부 주목. 반도체 업계 경쟁 구도 재편 신호.
+            </div>
+            <div class="news-meta">— Reuters | 📅 12/29</div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">xAI, AI 연산력 확대 위해 3번째 건물 매입</span>
+            </div>
+            <div class="news-content">
+                Elon Musk의 xAI가 AI 컴퓨팅 파워 확대를 위해 세 번째 건물 매입. OpenAI, Anthropic과의 AI 경쟁에서 인프라 규모 확대 중.
+            </div>
+            <div class="news-meta">— Reuters | 📅 12/30</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">🌏 글로벌 / 규제</h2>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">중국, AI 아동 보호 규제 강화</span>
+            </div>
+            <div class="news-content">
+                중국 정부가 AI 기업들에 대한 아동 보호 규제 강화 조치 발표. AI 서비스의 미성년자 접근 제한 및 콘텐츠 필터링 강화 의무화.
+            </div>
+            <div class="news-meta">— BBC Tech | 📅 12/30</div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">FCC, 스마트홈 보안 인증 프로그램 좌초 위기</span>
+            </div>
+            <div class="news-content">
+                미국 FCC의 Cyber Trust Mark(스마트홈 보안 인증) 프로그램이 수석 관리자 사퇴로 좌초 위기. 중국 연계 논란 후 조사 중 발생.
+            </div>
+            <div class="news-meta">— The Verge | 📅 12/30</div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">중국 AI 스타트업 MiniMax, 홍콩 IPO 추진</span>
+            </div>
+            <div class="news-content">
+                중국 AI 스타트업 MiniMax가 최대 $5.39억 규모 홍콩 IPO 추진. 연말 중국 AI 기업들의 IPO 러시 진행 중.
+            </div>
+            <div class="news-meta">— Reuters | 📅 12/30</div>
+        </div>
+    </section>
+
+    <section class="section picks-section">
+        <h2 class="section-title">✨ Claude's Pick</h2>
+        <div class="pick-item">
+            <div class="pick-title">
+                <span class="pick-number">1</span>
+                2025년 AI '현실 점검'의 해 - 버블 우려와 실질 가치 논쟁
+            </div>
+            <div class="pick-reason">
+                TechCrunch "2025 was the year AI got a vibe check" 분석. OpenAI $3,000억, SSI/TML $20억 시드 라운드 등 천문학적 투자에도 MIT 조사 95% 기업이 AI ROI 미확보. 2026년 기업들의 AI 투자 집중화·공급업체 통합 예상. AI 스타트업 옥석 가리기 본격화.
+            </div>
+        </div>
+        <div class="pick-item">
+            <div class="pick-title">
+                <span class="pick-number">2</span>
+                Kioxia, 올해 540% 급등으로 세계 최고 수익률 - AI 메모리 수요 증명
+            </div>
+            <div class="pick-reason">
+                일본 메모리 칩메이커 Kioxia가 AI 데이터 저장 수요 폭증으로 MSCI World Index 내 최고 수익률 기록. Apple, Microsoft 주요 고객. NAND 플래시 메모리가 AI 인프라의 핵심 병목으로 부상. 삼성·SK하이닉스 경쟁 심화 예고.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Jae's Briefing • AI-curated news with Value Score algorithm</p>
+        <p style="margin-top: 8px;">⚠️ 48시간 규칙 적용 | RSS + 홈페이지 3중 신호 기반</p>
+    </footer>
+</body>
+</html>
