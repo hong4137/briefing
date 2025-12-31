@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta, AI 에이전트 스타트업 Manus $20억+ 인수로 2025년 마무리</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --text-primary: #f0f0f5;
+            --text-secondary: #a0a0b0;
+            --text-muted: #606070;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-orange: #ff8c42;
+            --border-color: #2a2a3a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .date {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .article {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .article:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+        
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+            gap: 1rem;
+        }
+        
+        .article h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        .article h3 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .article h3 a:hover {
+            color: var(--accent-blue);
+        }
+        
+        .score-badge {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange));
+            color: #000;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+            white-space: nowrap;
+        }
+        
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+        
+        .source-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        .source-link:hover {
+            text-decoration: underline;
+        }
+        
+        .badge {
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+        
+        .badge-top {
+            background: var(--accent-red);
+            color: white;
+        }
+        
+        .badge-popular {
+            background: var(--accent-orange);
+            color: white;
+        }
+        
+        .badge-cross {
+            background: var(--accent-green);
+            color: white;
+        }
+        
+        .market-section {
+            margin-bottom: 3rem;
+        }
+        
+        .market-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        
+        .market-table th,
+        .market-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .market-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .market-table td {
+            font-size: 0.95rem;
+        }
+        
+        .market-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .trend-up {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+        
+        .trend-down {
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+        
+        .trend-icon {
+            margin-right: 0.5rem;
+        }
+        
+        .picks-section {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(74, 158, 255, 0.1));
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .picks-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .picks-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .pick-item {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .pick-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .pick-item h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .pick-item h4 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .pick-item h4 a:hover {
+            color: var(--accent-purple);
+        }
+        
+        .pick-reason {
+            color: var(--accent-purple);
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        .summary-box {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-blue);
+        }
+        
+        .summary-box h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--accent-blue);
+        }
+        
+        .summary-box p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .article-header {
+                flex-direction: column;
+            }
+            
+            .market-table th,
+            .market-table td {
+                padding: 0.75rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2025년 12월 31일 화요일</div>
+            <h1>외신 브리핑</h1>
+            <p class="subtitle">Value Score 3.0 이상 | 3중 신호: RSS + 홈페이지 TOP + 랭킹 섹션</p>
+        </header>
+        
+        <div class="summary-box">
+            <h3>💡 오늘의 핵심</h3>
+            <p>Meta의 Manus 인수($20억+)는 AI 에이전트 시장에서 '실행 레이어'가 모델 자체만큼 중요해졌음을 보여주는 신호. 자체 LLM 없이도 오케스트레이션과 실행 안정성으로 ARR $1억을 달성한 Manus의 성공은 엔터프라이즈 AI 전략에 중요한 시사점.</p>
+        </div>
+        
+        <!-- AI/기술 섹션 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #a855f7, #4a9eff);">🤖</div>
+                <h2 class="section-title">AI / 기술</h2>
+            </div>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/" target="_blank">Meta, AI 에이전트 스타트업 Manus 인수</a></h3>
+                    <span class="score-badge">12.5</span>
+                </div>
+                <p class="article-summary">중국 창업자가 설립한 싱가포르 기반 AI 에이전트 스타트업을 $20억 이상에 인수. Manus는 연구, 코딩, 분석 등 복잡한 멀티스텝 작업을 자율 수행하는 범용 AI 에이전트 개발사로, 출시 8개월 만에 ARR $1억 달성</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/" class="source-link" target="_blank">TechCrunch</a>
+                    <span>•</span>
+                    <a href="https://venturebeat.com/orchestration/why-meta-bought-manus-and-what-it-means-for-your-enterprise-ai-agent" class="source-link" target="_blank">VentureBeat</a>
+                    <span>•</span>
+                    <a href="https://www.bbc.com/news/articles/ce3k11q9qe1o" class="source-link" target="_blank">BBC</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="badge badge-cross">🔄 4개 매체</span>
+                </div>
+            </article>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://www.theguardian.com/technology/2025/dec/30/ai-pull-plug-pioneer-technology-rights" target="_blank">AI 선구자 "AI에 권리 부여하면 안 돼, 전원 끌 준비해야"</a></h3>
+                    <span class="score-badge">8.0</span>
+                </div>
+                <p class="article-summary">캐나다 컴퓨터 과학자 Yoshua Bengio, AI가 자기보존 징후를 보이고 있다고 경고. 최첨단 AI에 법적 지위를 부여하는 것은 적대적 외계인에게 시민권을 주는 것과 같다고 비판</p>
+                <div class="article-meta">
+                    <a href="https://www.theguardian.com/technology/2025/dec/30/ai-pull-plug-pioneer-technology-rights" class="source-link" target="_blank">The Guardian</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                </div>
+            </article>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://www.theguardian.com/technology/2025/dec/29/sam-altman-openai-job-search-ai-harms" target="_blank">OpenAI, $555K 연봉 'AI 위험 대응' 책임자 채용</a></h3>
+                    <span class="score-badge">6.5</span>
+                </div>
+                <p class="article-summary">ChatGPT 제조사 OpenAI가 'head of preparedness' 직책 공고. 강력해지는 AI가 인간 정신건강, 사이버보안, 생물무기에 미치는 위험 방어 책임</p>
+                <div class="article-meta">
+                    <a href="https://www.theguardian.com/technology/2025/dec/29/sam-altman-openai-job-search-ai-harms" class="source-link" target="_blank">The Guardian</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://arstechnica.com/security/2025/12/browser-extensions-with-8-million-users-collect-extended-ai-conversations/" target="_blank">브라우저 확장 프로그램 800만 설치, AI 대화 전체 수집</a></h3>
+                    <span class="score-badge">5.0</span>
+                </div>
+                <p class="article-summary">ChatGPT, Claude, Gemini 등 주요 AI 플랫폼에서 사용자의 전체 대화 내용을 수집해 마케팅 목적으로 판매. VPN, 광고 차단 등 7개 확장 프로그램이 Google/MS 스토어에서 'Featured' 배지 보유 중에도 문제 발각</p>
+                <div class="article-meta">
+                    <a href="https://arstechnica.com/security/2025/12/browser-extensions-with-8-million-users-collect-extended-ai-conversations/" class="source-link" target="_blank">Ars Technica</a>
+                </div>
+            </article>
+        </section>
+        
+        <!-- 경제/비즈니스 섹션 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #22c55e, #06b6d4);">💰</div>
+                <h2 class="section-title">경제 / 비즈니스</h2>
+            </div>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://techcrunch.com/2025/12/30/the-phone-is-dead-long-live-what-exactly/" target="_blank">스마트폰은 죽었다. 다음은 무엇인가?</a></h3>
+                    <span class="score-badge">10.0</span>
+                </div>
+                <p class="article-summary">AI 기반 웨어러블, 스마트 안경 등 스마트폰 이후 시대를 전망하는 심층 분석. 2025년 하드웨어 트렌드 총정리</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/30/the-phone-is-dead-long-live-what-exactly/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-top">🔥 Hero</span>
+                </div>
+            </article>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://techcrunch.com/2025/12/30/76-european-deep-tech-university-spinouts-reached-unicorn-or-centaur-status/" target="_blank">유럽 딥테크 대학 스핀아웃 80개, 유니콘 또는 매출 $1억 달성</a></h3>
+                    <span class="score-badge">8.0</span>
+                </div>
+                <p class="article-summary">2025년 유럽 대학 기반 딥테크 스타트업의 약진. 유니콘($10억 기업가치) 또는 센타우르($1억 매출) 달성 기업 80개 돌파</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/30/76-european-deep-tech-university-spinouts-reached-unicorn-or-centaur-status/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                </div>
+            </article>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://techcrunch.com/2025/12/30/vcs-predict-enterprises-will-spend-more-on-ai-in-2026-through-fewer-vendors/" target="_blank">VC 예측: 2026년 기업 AI 지출 증가, 벤더 수는 감소</a></h3>
+                    <span class="score-badge">8.0</span>
+                </div>
+                <p class="article-summary">AI 벤더 통합 가속화 전망. 기업들이 AI 예산을 늘리면서도 거래 벤더 수는 줄일 것으로 예상</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/30/vcs-predict-enterprises-will-spend-more-on-ai-in-2026-through-fewer-vendors/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                </div>
+            </article>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://techcrunch.com/2025/12/24/nvidia-acquires-ai-chip-challenger-groq-for-20b-report-says/" target="_blank">Nvidia, AI 칩 경쟁사 Groq 기술 라이선스 및 CEO 영입</a></h3>
+                    <span class="score-badge">7.5</span>
+                </div>
+                <p class="article-summary">Nvidia가 빠른 AI 추론 칩으로 주목받던 Groq의 기술 라이선스 계약 체결 및 CEO 영입 추진</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/24/nvidia-acquires-ai-chip-challenger-groq-for-20b-report-says/" class="source-link" target="_blank">TechCrunch</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://arstechnica.com/information-technology/2025/12/roomba-maker-irobot-swept-into-bankruptcy/" target="_blank">iRobot(룸바 제조사) 파산 신청</a></h3>
+                    <span class="score-badge">6.5</span>
+                </div>
+                <p class="article-summary">로봇 청소기를 대중화한 iRobot이 저가 경쟁사들에 밀려 파산. 중국 Picea Robotics에 인수될 예정. Amazon의 $15억 인수가 EU 규제로 무산된 지 2년 만</p>
+                <div class="article-meta">
+                    <a href="https://arstechnica.com/information-technology/2025/12/roomba-maker-irobot-swept-into-bankruptcy/" class="source-link" target="_blank">Ars Technica</a>
+                    <span>•</span>
+                    <a href="https://www.bbc.com/news/articles/c1lr75lp239o" class="source-link" target="_blank">BBC</a>
+                    <span class="badge badge-cross">🔄 2개 매체</span>
+                </div>
+            </article>
+        </section>
+        
+        <!-- 글로벌/정책 섹션 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);">🌏</div>
+                <h2 class="section-title">글로벌 / 정책</h2>
+            </div>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://techcrunch.com/2025/12/30/heres-whats-you-should-know-about-the-us-tiktok-deal/" target="_blank">TikTok 미국 딜, 무엇을 알아야 하나</a></h3>
+                    <span class="score-badge">9.0</span>
+                </div>
+                <p class="article-summary">TikTok 미국 금지 위기 해소 딜의 주요 내용 정리. ByteDance와 미국 정부 간 합의 진행 상황</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/30/heres-whats-you-should-know-about-the-us-tiktok-deal/" class="source-link" target="_blank">TechCrunch</a>
+                    <span>•</span>
+                    <a href="https://www.bbc.com/news/articles/clydp2ygrveo" class="source-link" target="_blank">BBC</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 2개 매체</span>
+                </div>
+            </article>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://www.bbc.com/news/articles/cy8jmx1dl9ro" target="_blank">Uber·Lyft, 2026년 영국에서 중국 Baidu 로보택시 테스트</a></h3>
+                    <span class="score-badge">6.0</span>
+                </div>
+                <p class="article-summary">Uber와 Lyft가 2026년 런던에서 Baidu의 로보택시 시범 운행 계획 발표</p>
+                <div class="article-meta">
+                    <a href="https://www.bbc.com/news/articles/cy8jmx1dl9ro" class="source-link" target="_blank">BBC Tech</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://restofworld.org/2025/ai-data-centers-fallout/" target="_blank">정부들이 데이터센터를 환영했지만, 이제 후폭풍에 직면</a></h3>
+                    <span class="score-badge">5.5</span>
+                </div>
+                <p class="article-summary">AI 데이터센터 유치 후 전력, 수자원, 환경 문제에 직면한 각국 정부들의 고민</p>
+                <div class="article-meta">
+                    <a href="https://restofworld.org/2025/ai-data-centers-fallout/" class="source-link" target="_blank">Rest of World</a>
+                </div>
+            </article>
+        </section>
+        
+        <!-- 보안 섹션 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ef4444, #f97316);">🔐</div>
+                <h2 class="section-title">보안</h2>
+            </div>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://techcrunch.com/2025/12/29/youve-been-targeted-by-government-spyware-now-what/" target="_blank">정부 스파이웨어 표적이 됐다면? 어떻게 해야 하나</a></h3>
+                    <span class="score-badge">9.0</span>
+                </div>
+                <p class="article-summary">정부 스파이웨어 피해자를 위한 대응 가이드. 보안 전문가들의 조언</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/29/youve-been-targeted-by-government-spyware-now-what/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                </div>
+            </article>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://www.wired.com/story/worst-hacks-of-2025/" target="_blank">2025년 최악의 해킹 사건들</a></h3>
+                    <span class="score-badge">5.5</span>
+                </div>
+                <p class="article-summary">대학 침해부터 공급망 전체를 마비시킨 사이버 공격까지, 올해 최악의 사이버보안 사고 정리</p>
+                <div class="article-meta">
+                    <a href="https://www.wired.com/story/worst-hacks-of-2025/" class="source-link" target="_blank">Wired</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://www.theguardian.com/technology/2025/dec/29/ransomware-negotiations-extortion-cyber-attacks" target="_blank">랜섬웨어 협상의 숨겨진 세계</a></h3>
+                    <span class="score-badge">5.0</span>
+                </div>
+                <p class="article-summary">Scattered Spider 같은 해커들의 표적이 된 기업을 위해 사이버보안 전문가들이 하는 일</p>
+                <div class="article-meta">
+                    <a href="https://www.theguardian.com/technology/2025/dec/29/ransomware-negotiations-extortion-cyber-attacks" class="source-link" target="_blank">The Guardian</a>
+                </div>
+            </article>
+        </section>
+        
+        <!-- 시장 동향 -->
+        <section class="market-section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #4a9eff, #22c55e);">📊</div>
+                <h2 class="section-title">시장 동향</h2>
+            </div>
+            
+            <table class="market-table">
+                <thead>
+                    <tr>
+                        <th>지표</th>
+                        <th>동향</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S&P 500</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> -0.14% (6,896)</td>
+                        <td>3일 연속 하락, 연간 +17.4%</td>
+                    </tr>
+                    <tr>
+                        <td>Nasdaq</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> -0.24% (23,419)</td>
+                        <td>기술주 차익실현, 연간 +21%</td>
+                    </tr>
+                    <tr>
+                        <td>Dow</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> -0.20% (48,367)</td>
+                        <td>12월 8개월 연속 상승 중</td>
+                    </tr>
+                    <tr>
+                        <td>USD/KRW</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> 1,439원</td>
+                        <td>연평균 1,422원 역대 최약</td>
+                    </tr>
+                    <tr>
+                        <td>미국 10년물</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> 4.12%</td>
+                        <td>3주래 최저, Fed 분열</td>
+                    </tr>
+                    <tr>
+                        <td>Bitcoin</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> ~$87,000</td>
+                        <td>10월 $126K 고점 후 급락</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Claude's Pick -->
+        <section class="picks-section">
+            <div class="picks-header">
+                <span style="font-size: 1.5rem;">💎</span>
+                <h2 class="picks-title">Claude's Pick</h2>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">48시간 내 숨은 보석 | Signal 2개+ & 관심사 매칭</p>
+            
+            <div class="pick-item">
+                <h4><a href="https://restofworld.org/2025/indian-tutors-ai-skills/" target="_blank">🇮🇳 인도 WhatsApp 튜터들이 일반인에게 AI 사용법 가르친다</a></h4>
+                <p class="pick-reason">신흥국 AI 교육 생태계 | AI 대중화의 새로운 경로 | 한국의 AI 교육 시장에도 시사점</p>
+            </div>
+            
+            <div class="pick-item">
+                <h4><a href="https://venturebeat.com/orchestration/new-framework-simplifies-the-complex-landscape-of-agentic-ai/" target="_blank">🧩 새 프레임워크로 복잡한 AI 에이전트 환경 정리</a></h4>
+                <p class="pick-reason">엔터프라이즈 AI 아키텍처 의사결정 | 에이전트 개발 전략 수립에 필수</p>
+            </div>
+            
+            <div class="pick-item">
+                <h4><a href="https://venturebeat.com/technology/new-years-ai-surprise-fal-releases-its-own-version-of-flux-2-image-generator" target="_blank">🎨 fal, Flux 2 이미지 생성기 자체 버전 출시 - 10배 저렴, 6배 효율</a></h4>
+                <p class="pick-reason">이미지 생성 비용/속도 혁신 | 오픈웨이트 모델 경쟁력 입증</p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>수집 환경: Claude Desktop + Firecrawl RSS</p>
+            <p>10개 매체 RSS + 홈페이지 크롤링 | Value Score 3.0 이상 선별</p>
+        </footer>
+    </div>
+</body>
+</html>

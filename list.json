@@ -1,7 +1,12 @@
 [
   {
+    "date": "2025-12-31",
+    "title": "Meta, AI 에이전트 스타트업 Manus $20억+ 인수로 2025년 마무리",
+    "link": "https://hong4137.github.io/briefing/archive/2025-12-31.html"
+  },
+  {
     "date": "2025-12-29",
-    "title": "Nvidia, Groq $200억 라이선스 딜로 AI 추론 시장 강화 | 외신 브리핑",
+    "title": "AI 대부 힌튼 \"AI 위험, 2년 전보다 더 걱정\" 경고",
     "link": "https://hong4137.github.io/briefing/archive/2025-12-29.html"
   },
   {
@@ -53,5 +58,10 @@
     "date": "2025-12-18",
     "title": "Google Gemini 3 Flash 출시, Micron AI 메모리 호황 | 외신 브리핑",
     "link": "https://hong4137.github.io/briefing/archive/2025-12-18.html"
+  },
+  {
+    "date": "2024-12-30",
+    "title": "2024 마지막 거래일, S&P 500 연간 +23% 마감",
+    "link": "https://hong4137.github.io/briefing/archive/2024-12-30.html"
   }
 ]
