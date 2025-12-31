@@ -3,265 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nvidia-Groq 라이선싱 딜, 삼성 HBM4 공급 확정 | 외신 브리핑</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <title>S&P 500 사상 최고치, 산타 랠리 진입 | 삼성 HBM4 Nvidia 공급 승인</title>
     <style>
         :root {
-            --bg-primary: #0a0a0f;
-            --bg-secondary: #12121a;
-            --bg-card: #1a1a24;
-            --accent-red: #ff3b3b;
-            --accent-green: #22c55e;
-            --accent-gold: #ffd700;
-            --accent-blue: #4a9eff;
-            --accent-purple: #a855f7;
-            --accent-orange: #ff8c42;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border-color: rgba(255,255,255,0.08);
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent-blue: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-yellow: #d29922;
+            --accent-red: #f85149;
+            --accent-purple: #a371f7;
+            --border-color: #30363d;
         }
+        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; min-height: 100vh; }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-        header { text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color); }
-        .date { font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: var(--accent-blue); margin-bottom: 0.5rem; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.3; }
-        .summary { color: var(--text-secondary); font-size: 1rem; max-width: 700px; margin: 0 auto; }
-        .stats { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap; }
-        .stat { text-align: center; }
-        .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--accent-gold); }
-        .stat-label { font-size: 0.8rem; color: var(--text-secondary); }
-        .section { margin-bottom: 3rem; }
-        .section-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--border-color); }
-        .section-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
-        .section-title { font-size: 1.3rem; font-weight: 700; }
-        .article { background: var(--bg-card); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; border-left: 4px solid var(--accent-blue); transition: transform 0.2s; }
-        .article:hover { transform: translateX(4px); }
-        .article-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem; }
-        .article-title-kr { font-size: 1rem; color: var(--text-secondary); margin-bottom: 0.75rem; }
-        .article-summary { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6; }
-        .article-meta { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; font-size: 0.8rem; }
-        .source-link { color: var(--accent-blue); text-decoration: none; font-weight: 500; }
-        .source-link:hover { text-decoration: underline; }
-        .badge { padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
-        .badge-top { background: rgba(255,59,59,0.2); color: var(--accent-red); }
-        .badge-cross { background: rgba(74,158,255,0.2); color: var(--accent-blue); }
-        .badge-score { background: rgba(255,215,0,0.2); color: var(--accent-gold); }
-        .pick-section { background: linear-gradient(135deg, rgba(168,85,247,0.1), rgba(74,158,255,0.1)); border: 1px solid rgba(168,85,247,0.3); border-radius: 16px; padding: 2rem; margin-top: 3rem; }
-        .pick-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
-        .pick-icon { font-size: 1.5rem; }
-        .pick-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; }
-        .pick-reason { background: rgba(168,85,247,0.1); border-radius: 8px; padding: 0.75rem 1rem; margin-top: 1rem; font-size: 0.85rem; color: var(--text-secondary); }
-        .market-section { margin-top: 3rem; }
-        .market-table { width: 100%; border-collapse: collapse; background: var(--bg-card); border-radius: 12px; overflow: hidden; }
-        .market-table th, .market-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
-        .market-table th { background: var(--bg-secondary); font-weight: 600; color: var(--text-secondary); font-size: 0.85rem; }
-        .trend-up { color: var(--accent-green); }
-        .trend-down { color: var(--accent-red); }
-        footer { text-align: center; padding: 2rem 0; margin-top: 3rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem; }
-        @media (max-width: 640px) { .container { padding: 1rem; } h1 { font-size: 1.5rem; } .stats { gap: 1rem; } }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        
+        .date { color: var(--accent-blue); font-size: 0.95rem; margin-bottom: 10px; }
+        
+        h1 { font-size: 1.8rem; font-weight: 600; margin-bottom: 15px; line-height: 1.3; }
+        
+        .subtitle { color: var(--text-secondary); font-size: 1rem; }
+        
+        .section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .news-item {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .news-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .news-item:first-child { padding-top: 0; }
+        
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .news-title { font-weight: 600; font-size: 1.05rem; flex: 1; }
+        
+        .news-content { color: var(--text-secondary); font-size: 0.95rem; }
+        
+        .badge {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        
+        .badge-score { background: var(--accent-purple); color: white; }
+        .badge-top { background: var(--accent-yellow); color: #000; }
+        .badge-hot { background: var(--accent-red); color: white; }
+        
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .market-item {
+            background: var(--bg-tertiary);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .market-label { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 5px; }
+        .market-value { font-size: 1.2rem; font-weight: 600; }
+        .market-change { font-size: 0.85rem; margin-top: 3px; }
+        
+        .positive { color: var(--accent-green); }
+        .negative { color: var(--accent-red); }
+        
+        .picks-section {
+            background: linear-gradient(135deg, #1a1f35 0%, #0d1117 100%);
+            border: 1px solid var(--accent-purple);
+        }
+        
+        .pick-item {
+            background: var(--bg-tertiary);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+        
+        .pick-item:last-child { margin-bottom: 0; }
+        
+        .pick-number {
+            display: inline-block;
+            background: var(--accent-purple);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        
+        .pick-title { font-weight: 600; margin-bottom: 8px; }
+        .pick-reason { color: var(--text-secondary); font-size: 0.9rem; }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            h1 { font-size: 1.5rem; }
+            .section { padding: 18px; }
+            .market-grid { grid-template-columns: 1fr 1fr; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="date">2025년 12월 28일 일요일</div>
-            <h1>Nvidia-Groq 라이선싱 딜, 삼성 HBM4 공급 확정</h1>
-            <p class="summary">Nvidia가 Groq 기술 라이선싱 및 핵심 인력 영입. 삼성전자 HBM4 Nvidia Rubin용 공급 승인. S&P 500·다우 사상 최고치 경신으로 산타 랠리 진입.</p>
-            <div class="stats">
-                <div class="stat"><div class="stat-value">15</div><div class="stat-label">총 기사</div></div>
-                <div class="stat"><div class="stat-value">5</div><div class="stat-label">섹션</div></div>
-                <div class="stat"><div class="stat-value">2</div><div class="stat-label">Claude's Pick</div></div>
-            </div>
-        </header>
+    <header>
+        <div class="date">2025년 12월 28일 일요일</div>
+        <h1>S&P 500 사상 최고치, 산타 랠리 진입 | 삼성 HBM4 Nvidia 공급 승인</h1>
+        <p class="subtitle">Nvidia-Groq $200억 딜 분석 | 일본 반도체·AI 예산 4배 증액 | 금 $4,550 돌파</p>
+    </header>
 
-        <!-- TOP Headlines -->
-        <section class="section">
-            <div class="section-header">
-                <div class="section-icon" style="background: linear-gradient(135deg, #ff3b3b, #ff8c42);">🔥</div>
-                <h2 class="section-title">TOP Headlines</h2>
+    <section class="section">
+        <h2 class="section-title">📊 시장 동향</h2>
+        <div class="market-grid">
+            <div class="market-item">
+                <div class="market-label">S&P 500</div>
+                <div class="market-value">6,929.94</div>
+                <div class="market-change positive">장중 6,945.77 사상 최고</div>
             </div>
-            <article class="article" style="border-left-color: var(--accent-red);">
-                <h3 class="article-title">Nvidia to License Groq's Chip Technology, Hire Executives</h3>
-                <p class="article-title-kr">Nvidia, Groq 칩 기술 라이선싱 및 핵심 인력 영입</p>
-                <p class="article-summary">Nvidia가 AI 칩 스타트업 Groq과 비독점적 라이선싱 계약을 체결하고 CEO Jonathan Ross 등 핵심 임원진을 영입. CNBC는 $200억 규모 거래로 보도했으나 Nvidia는 인수가 아닌 라이선싱이라고 해명. Groq의 LPU 기술은 LLM 추론 속도 10배 향상 및 에너지 90% 절감 주장.</p>
-                <div class="article-meta">
-                    <a href="https://techcrunch.com/2025/12/24/nvidia-acquires-ai-chip-challenger-groq-for-20b-report-says/" class="source-link" target="_blank">TechCrunch</a>
-                    <span>📅 12/24 KST</span>
-                    <span class="badge badge-top">🔥 TOP</span>
-                    <span class="badge badge-cross">🔄 5개 매체</span>
-                    <span class="badge badge-score">Score: 11.5</span>
-                </div>
-            </article>
-            <article class="article" style="border-left-color: var(--accent-red);">
-                <h3 class="article-title">Samsung Wins Nvidia HBM4 Approval for Rubin AI Processors</h3>
-                <p class="article-title-kr">삼성, Nvidia Rubin용 HBM4 공급 승인 획득</p>
-                <p class="article-summary">삼성전자가 Nvidia의 차세대 Rubin AI 프로세서용 HBM4 메모리 칩 테스트를 통과. 2026년 2월 양산 시작 예정. SK하이닉스와 함께 HBM4 공급 경쟁 본격화. Morgan Stanley는 삼성 메모리 이익이 2026년 300% 이상 증가할 것으로 전망.</p>
-                <div class="article-meta">
-                    <a href="https://finance.yahoo.com/news/samsung-supply-nvidia-advanced-hbm4-121700238.html" class="source-link" target="_blank">Yahoo Finance</a>
-                    <span>📅 12/26 KST</span>
-                    <span class="badge badge-top">🔥 TOP</span>
-                    <span class="badge badge-cross">🔄 4개 매체</span>
-                    <span class="badge badge-score">Score: 10.5</span>
-                </div>
-            </article>
-            <article class="article" style="border-left-color: var(--accent-red);">
-                <h3 class="article-title">S&P 500 Hits Record, Weekly Gains 1.4% as Santa Rally Begins</h3>
-                <p class="article-title-kr">S&P 500 사상 최고치, 주간 1.4% 상승으로 산타 랠리 진입</p>
-                <p class="article-summary">S&P 500이 6,945.77로 사상 최고치 장중 기록. 다우·나스닥도 강세. 12월 24일~1월 5일 산타 랠리 기간 진입. 금은 $4,550 돌파하며 역대 최고가.</p>
-                <div class="article-meta">
-                    <a href="https://www.cnbc.com/2025/12/26/stock-market-today-live-updates.html" class="source-link" target="_blank">CNBC</a>
-                    <span>📅 12/27 KST</span>
-                    <span class="badge badge-top">🔥 TOP</span>
-                    <span class="badge badge-score">Score: 9.0</span>
-                </div>
-            </article>
-        </section>
-
-        <!-- 반도체 -->
-        <section class="section">
-            <div class="section-header">
-                <div class="section-icon" style="background: linear-gradient(135deg, #ff8c42, #ffd700);">💾</div>
-                <h2 class="section-title">반도체</h2>
+            <div class="market-item">
+                <div class="market-label">Nasdaq</div>
+                <div class="market-value">23,593.10</div>
+                <div class="market-change positive">주간 +1.4%</div>
             </div>
-            <article class="article" style="border-left-color: var(--accent-orange);">
-                <h3 class="article-title">Samsung, SK Hynix Begin HBM4 Mass Production February 2026</h3>
-                <p class="article-title-kr">삼성·SK하이닉스, 2026년 2월 HBM4 양산 시작</p>
-                <p class="article-summary">삼성전자와 SK하이닉스가 Nvidia Rubin AI 가속기용 HBM4 메모리를 2026년 2월부터 동시 양산 예정. 두 기업 모두 Nvidia에 유상 샘플 납품 완료.</p>
-                <div class="article-meta">
-                    <a href="https://www.trendforce.com/news/2025/12/16/news-sk-hynix-samsung-reportedly-deliver-paid-hbm4-samples-to-nvidia-ahead-of-1q26-contract-finalization/" class="source-link" target="_blank">TrendForce</a>
-                    <span>📅 12/16</span>
-                    <span class="badge badge-cross">🔄 3개 매체</span>
-                    <span class="badge badge-score">Score: 8.0</span>
-                </div>
-            </article>
-            <article class="article" style="border-left-color: var(--accent-orange);">
-                <h3 class="article-title">Japan Quadruples Chips and AI Budget to $7.9B</h3>
-                <p class="article-title-kr">일본, 반도체·AI 예산 4배 증액해 $79억으로</p>
-                <p class="article-summary">일본 경제산업성이 차세대 반도체 및 AI 개발 지원 예산을 약 1.23조엔($79억)으로 4배 증액. 다카이치 사나에 총리 내각 승인.</p>
-                <div class="article-meta">
-                    <a href="https://www.bloomberg.com/news/articles/2025-12-26/japan-to-quadruple-spending-support-for-chips-ai-in-budget" class="source-link" target="_blank">Bloomberg</a>
-                    <span>📅 12/26</span>
-                    <span class="badge badge-score">Score: 6.5</span>
-                </div>
-            </article>
-        </section>
-
-        <!-- AI/기술 -->
-        <section class="section">
-            <div class="section-header">
-                <div class="section-icon" style="background: linear-gradient(135deg, #a855f7, #4a9eff);">🤖</div>
-                <h2 class="section-title">AI / 기술</h2>
+            <div class="market-item">
+                <div class="market-label">Dow Jones</div>
+                <div class="market-value">48,710.97</div>
+                <div class="market-change positive">YTD +14.5%</div>
             </div>
-            <article class="article" style="border-left-color: var(--accent-purple);">
-                <h3 class="article-title">China Issues Draft Rules for Human-Like AI Systems</h3>
-                <p class="article-title-kr">중국, 인간형 AI 시스템 규제 초안 발표</p>
-                <p class="article-summary">중국 사이버공간관리국이 인간형 AI 서비스 제공자에게 윤리성·보안·투명성 확보 의무화 규정 초안 발표. 로그인 시 및 2시간마다 AI임을 고지해야 함.</p>
-                <div class="article-meta">
-                    <a href="https://www.bloomberg.com/news/articles/2025-12-27/china-issues-draft-rules-to-govern-use-of-human-like-ai-systems" class="source-link" target="_blank">Bloomberg</a>
-                    <span>📅 12/27</span>
-                    <span class="badge badge-score">Score: 6.0</span>
-                </div>
-            </article>
-            <article class="article" style="border-left-color: var(--accent-purple);">
-                <h3 class="article-title">China's Core AI Industry Exceeds 1 Trillion Yuan in 2025</h3>
-                <p class="article-title-kr">중국 핵심 AI 산업 규모 2025년 1조 위안 돌파</p>
-                <p class="article-summary">중국 공업정보화부가 2025년 핵심 AI 산업 규모가 1조 위안($1,420억)을 넘어섰다고 발표. DeepSeek 이후 AI 투자 급증.</p>
-                <div class="article-meta">
-                    <a href="https://www.chinadaily.com.cn/a/202512/26/WS694e3800a310d6866eb30a77.html" class="source-link" target="_blank">China Daily</a>
-                    <span>📅 12/26</span>
-                    <span class="badge badge-score">Score: 5.5</span>
-                </div>
-            </article>
-        </section>
-
-        <!-- 경제/금융 -->
-        <section class="section">
-            <div class="section-header">
-                <div class="section-icon" style="background: linear-gradient(135deg, #22c55e, #06b6d4);">💰</div>
-                <h2 class="section-title">경제 / 금융</h2>
+            <div class="market-item">
+                <div class="market-label">USD/KRW</div>
+                <div class="market-value">1,447원</div>
+                <div class="market-change positive">1,480원대에서 회복</div>
             </div>
-            <article class="article" style="border-left-color: var(--accent-green);">
-                <h3 class="article-title">Gold Hits $4,550, Silver Sets 18th Record of Year</h3>
-                <p class="article-title-kr">금 $4,550 돌파, 은 올해 18번째 최고가</p>
-                <p class="article-summary">금 선물이 $4,579.60로 역대 최고가 기록. 은도 $77.40으로 신고가. 연준 금리 인하 기대와 안전자산 수요 증가가 원인.</p>
-                <div class="article-meta">
-                    <a href="https://www.cnbc.com/2025/12/26/stock-market-today-live-updates.html" class="source-link" target="_blank">CNBC</a>
-                    <span>📅 12/27</span>
-                    <span class="badge badge-score">Score: 6.0</span>
-                </div>
-            </article>
-            <article class="article" style="border-left-color: var(--accent-green);">
-                <h3 class="article-title">Korean Won Recovers to 1,433 per Dollar on Policy Support</h3>
-                <p class="article-title-kr">원화 1,433원대 회복, 정책 지원 효과</p>
-                <p class="article-summary">원/달러 환율이 1,433원대로 회복. 국민연금 외환 헤지 및 한은 $650억 통화스와프 연장이 효과. 12월 23일 1,480원대까지 상승했던 원화 안정세.</p>
-                <div class="article-meta">
-                    <a href="https://tradingeconomics.com/south-korea/currency" class="source-link" target="_blank">Trading Economics</a>
-                    <span>📅 12/27</span>
-                    <span class="badge badge-score">Score: 5.0</span>
-                </div>
-            </article>
-        </section>
-
-        <!-- Claude's Pick -->
-        <section class="pick-section">
-            <div class="pick-header">
-                <span class="pick-icon">💎</span>
-                <h2 class="pick-title">Claude's Pick</h2>
+            <div class="market-item">
+                <div class="market-label">Gold</div>
+                <div class="market-value">$4,550+</div>
+                <div class="market-change positive">올해 54번째 최고가</div>
             </div>
-            <article class="article" style="border-left-color: var(--accent-purple); background: rgba(168,85,247,0.05);">
-                <h3 class="article-title">US-Led 'Pax Silica' Tech Alliance Includes Korea, Snubs India</h3>
-                <p class="article-title-kr">미국 주도 'Pax Silica' 기술 동맹, 한국 포함·인도 배제</p>
-                <p class="article-summary">미국이 주도하는 새로운 반도체·AI 공급망 동맹 'Pax Silica'에 한국이 핵심 파트너로 포함. 반면 인도는 인프라 문제로 배제되어 파장.</p>
-                <div class="article-meta">
-                    <a href="https://asiatimes.com/2025/12/why-the-us-led-pax-silica-tech-alliance-snubbed-india/" class="source-link" target="_blank">Asia Times</a>
-                    <span>📅 12/26</span>
-                </div>
-                <div class="pick-reason">
-                    <strong>선정 이유:</strong> 규제/정책 초기 신호 + 시장 규모 재평가 | 한국 반도체 위상 강화 신호
-                </div>
-            </article>
-            <article class="article" style="border-left-color: var(--accent-purple); background: rgba(168,85,247,0.05);">
-                <h3 class="article-title">ASPI Report: China Leads in 66 of 74 Critical Technologies</h3>
-                <p class="article-title-kr">ASPI 보고서: 중국, 74개 핵심 기술 중 66개 선두</p>
-                <p class="article-summary">호주전략정책연구소(ASPI) 보고서에 따르면 중국이 첨단제조, 에너지, 바이오 등 74개 핵심 기술 중 66개에서 미국을 앞서고 있음. AI와 반도체 분야에서도 격차 축소 중.</p>
-                <div class="article-meta">
-                    <a href="https://www.aspi.org.au/report/critical-technology-tracker" class="source-link" target="_blank">ASPI</a>
-                    <span>📅 12/25</span>
-                </div>
-                <div class="pick-reason">
-                    <strong>선정 이유:</strong> 시장 규모 예측 첫 등장 + 대기업 조용한 움직임 | 기술 패권 경쟁 현황
-                </div>
-            </article>
-        </section>
-
-        <!-- 주간 시장 동향 -->
-        <section class="market-section">
-            <div class="section-header">
-                <div class="section-icon" style="background: linear-gradient(135deg, #4a9eff, #22c55e);">📊</div>
-                <h2 class="section-title">주간 시장 동향</h2>
+            <div class="market-item">
+                <div class="market-label">Silver</div>
+                <div class="market-value">$77.15</div>
+                <div class="market-change positive">YTD +150%</div>
             </div>
-            <table class="market-table">
-                <thead>
-                    <tr><th>지표</th><th>동향</th><th>비고</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>S&P 500</td><td class="trend-up">📈 6,929.94 (-0.03%)</td><td>장중 사상 최고치 6,945.77</td></tr>
-                    <tr><td>Nasdaq</td><td class="trend-down">🔻 23,593.10 (-0.09%)</td><td>주간 +1.4%</td></tr>
-                    <tr><td>Dow</td><td class="trend-down">🔻 48,710.97 (-0.04%)</td><td>YTD +14.5%</td></tr>
-                    <tr><td>USD/KRW</td><td class="trend-up">📈 1,447원</td><td>1,480원대에서 회복</td></tr>
-                    <tr><td>Gold</td><td class="trend-up">📈 $4,550+</td><td>올해 54번째 최고가</td></tr>
-                    <tr><td>Silver</td><td class="trend-up">📈 $77.15</td><td>YTD +150%</td></tr>
-                </tbody>
-            </table>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <p>Generated by Claude | 3중 신호 시스템 (RSS + 홈페이지 TOP + 랭킹 섹션)</p>
-            <p style="margin-top: 0.5rem;">© 2025 Foreign News Briefing</p>
-        </footer>
-    </div>
+    <section class="section">
+        <h2 class="section-title">🔥 TOP Headlines</h2>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">Nvidia-Groq $200억 딜 분석: 거대 현금으로 '지배력 유지'</span>
+                <span class="badge badge-score">10.5</span>
+            </div>
+            <div class="news-content">
+                Bernstein 애널리스트: Nvidia가 막대한 현금을 활용해 AI 시장 지배력 유지 전략. Groq 기술 비독점 라이선스 + CEO Jonathan Ross 등 핵심 인력 영입. CNBC는 $200억 규모로 보도, Nvidia 역대 최대 딜. Groq LPU 기술은 LLM 추론 속도 10배 향상 및 에너지 90% 절감 주장.
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">삼성, Nvidia Rubin용 HBM4 공급 승인 획득</span>
+                <span class="badge badge-top">TOP</span>
+            </div>
+            <div class="news-content">
+                삼성전자가 Nvidia의 차세대 Rubin AI 프로세서용 HBM4 메모리칩 테스트 통과. 2026년 2월 양산 시작 예정. SK하이닉스와 함께 HBM4 공급 경쟁 본격화. Morgan Stanley: 삼성 메모리 이익 2026년 300% 이상 증가 전망.
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">S&P 500 사상 최고치, 산타 랠리 진입</span>
+                <span class="badge badge-hot">HOT</span>
+            </div>
+            <div class="news-content">
+                S&P 500이 6,945.77로 장중 사상 최고치 기록. 5연속 상승 후 산타 랠리(12/24~1/5) 기간 진입. LPL Financial: "연말 모멘텀이 긍정적인 산타 랠리 설정을 시사 - 역사적으로 1월과 연간 강세 신호."
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">💾 반도체</h2>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">일본, 반도체·AI 예산 4배 증액 $79억으로</span>
+                <span class="badge badge-score">8.0</span>
+            </div>
+            <div class="news-content">
+                일본 경제산업성이 차세대 반도체 및 AI 개발 지원 예산을 약 1.23조엔($79억)으로 4배 증액. 다카이치 사나에 총리 내각 승인. 미국·중국과의 기술 패권 경쟁에서 일본의 적극적 투자 신호.
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">Stanford, 3D 칩으로 AI 최대 병목 해결</span>
+            </div>
+            <div class="news-content">
+                Stanford·CMU·MIT 공동 연구팀이 SkyWater Technology와 협력해 3D 적층 칩 개발. 기존 2D 칩 대비 4배 성능 향상, 시뮬레이션에서는 12배 개선. 미국 내 상용 파운드리에서 제작 가능하다는 점이 핵심.
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">🤖 AI / 기술</h2>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">중국, 인간형 AI 시스템 규제 초안 발표</span>
+                <span class="badge badge-score">7.0</span>
+            </div>
+            <div class="news-content">
+                중국 사이버공간관리국이 인간형 AI 서비스 규제 초안 발표. AI 서비스 제공자에게 윤리성·보안·투명성 확보 의무화. 로그인 시 및 2시간마다 AI임을 고지해야 함. 글로벌 AI 규제 흐름 가속화.
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">2025년 AI와 문화: NPR 연말 결산</span>
+            </div>
+            <div class="news-content">
+                AI 배우 Tilly Norwood 등장부터 주요 음악 레이블의 AI 기업 계약까지, 2025년은 AI와 문화의 분수령. 창작 산업 전반에 AI 통합 가속화.
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">💰 경제 / 금융</h2>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">금 $4,550 돌파, 은 올해 54번째 최고가</span>
+                <span class="badge badge-score">7.5</span>
+            </div>
+            <div class="news-content">
+                금 선물이 $4,579.60으로 역대 최고가 기록. 은도 $77.40 신고가. 연준 금리 인하 기대와 안전자산 수요 증가가 원인. 금과 은 모두 1979년 이후 최고 연간 수익률 기록 중.
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-header">
+                <span class="news-title">원화 1,447원대 회복, 정책 지원 효과</span>
+            </div>
+            <div class="news-content">
+                원/달러 환율이 1,480원대에서 1,447원대로 회복. 국민연금 외환 헤지 및 한은 $650억 통화스와프 연장 효과. 12월 23일 급등 이후 안정세 진입.
+            </div>
+        </div>
+    </section>
+
+    <section class="section picks-section">
+        <h2 class="section-title">✨ Claude's Pick</h2>
+        <div class="pick-item">
+            <div class="pick-title">
+                <span class="pick-number">1</span>
+                TSMC의 숨겨진 가치: 4명의 억만장자가 공통으로 보유한 AI 주식
+            </div>
+            <div class="pick-reason">
+                Chase Coleman(Tiger Global), Steve Mandel(Lone Pine), David Tepper(Appaloosa) 등 4명의 억만장자 헤지펀드 매니저가 TSMC를 공통 보유. Nvidia, AMD, Broadcom 모두 TSMC 의존. 2030년까지 데이터센터 CAPEX $3~4조 예상 속 "열쇠를 쥔 기업".
+            </div>
+        </div>
+        <div class="pick-item">
+            <div class="pick-title">
+                <span class="pick-number">2</span>
+                Big Tech AI 순환 투자 구조: 붐, 버블, 병목?
+            </div>
+            <div class="pick-reason">
+                빅테크들이 서로에게 투자하며 AI 구축 가속화하는 "AI 머니 루프" 분석. 규제 압력이나 경기 변화 시 이 구조가 끊어질 수 있다는 경고. AI 투자 과열 여부를 판단하는 중요한 프레임워크.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Jae's Briefing • AI-curated news with Value Score algorithm</p>
+        <p style="margin-top: 8px;">⚠️ 48시간 규칙 엄격 적용 | 12/26~28 기사만 포함</p>
+    </footer>
 </body>
 </html>
