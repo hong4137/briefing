@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla 2025년 판매량 하락 전망 공개, 머스크 리스크 현실화</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --text-primary: #f0f0f5;
+            --text-secondary: #a0a0b0;
+            --text-muted: #606070;
+            --accent-red: #ff3b3b;
+            --accent-orange: #ff8c42;
+            --accent-green: #22c55e;
+            --accent-cyan: #06b6d4;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-pink: #ec4899;
+            --border-color: #2a2a3a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .header-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .article {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .article:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-header h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .article-header h3 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .article-header h3 a:hover {
+            color: var(--accent-blue);
+        }
+
+        .score-badge {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange));
+            color: #000;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .source-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        .source-link:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .badge-top {
+            background: rgba(255, 59, 59, 0.2);
+            color: var(--accent-red);
+        }
+
+        .badge-popular {
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--accent-green);
+        }
+
+        .badge-cross {
+            background: rgba(74, 158, 255, 0.2);
+            color: var(--accent-blue);
+        }
+
+        .market-section {
+            margin-bottom: 3rem;
+        }
+
+        .market-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .market-table th,
+        .market-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .market-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .market-table td {
+            font-size: 0.95rem;
+        }
+
+        .market-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .trend-up {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .trend-down {
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+
+        .trend-icon {
+            margin-right: 0.5rem;
+        }
+
+        .picks-section .article {
+            border-left: 3px solid var(--accent-purple);
+        }
+
+        .pick-reason {
+            background: rgba(168, 85, 247, 0.1);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--accent-purple);
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header-title {
+                font-size: 1.6rem;
+            }
+
+            .article-header {
+                flex-direction: column;
+            }
+
+            .market-table th,
+            .market-table td {
+                padding: 0.75rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-date">2026년 1월 1일 수요일</div>
+            <h1 class="header-title">Tesla 2025년 판매량 하락 전망 공개, 머스크 리스크 현실화</h1>
+            <p class="header-subtitle">Value Score 3.0 이상 기사만 선별 | 3중 신호 시스템 적용</p>
+        </header>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff3b3b, #ff8c42);">🔥</div>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://www.theguardian.com/technology/2025/dec/31/tesla-surprise-announcement-lower-sales-2025" target="_blank">Tesla, 2025년 4분기 판매량 16% 감소 전망 공개</a></h3>
+                    <span class="score-badge">9.5</span>
+                </div>
+                <p class="article-summary">Tesla가 이례적으로 2025년 4분기 예상 출고량 42.3만 대(전년 대비 16% 감소)를 IR 사이트에 공개. 머스크의 극우 정치 노선에 대한 소비자 반감이 판매에 직접 영향. 2026년 이후 전망도 머스크 목표치에 크게 못 미칠 것으로 예상</p>
+                <div class="article-meta">
+                    <a href="https://www.theguardian.com/technology/2025/dec/31/tesla-surprise-announcement-lower-sales-2025" class="source-link" target="_blank">The Guardian</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://www.theguardian.com/technology/2025/dec/31/elon-musk-doge-tesla-ai-trump" target="_blank">머스크 2025년 회고: 세계 최대 부자의 가장 혼란스러운 해</a></h3>
+                    <span class="score-badge">8.5</span>
+                </div>
+                <p class="article-summary">나치 경례 논란, 19세 스태프 'Big Balls' 옹호, 약물 중독 부인, 검은 눈으로 백악관 기자회견 출석 등 2025년 머스크의 어지러운 행보 총정리. DOGE 통해 정부 개입했으나 실제 성과는 미지수</p>
+                <div class="article-meta">
+                    <a href="https://www.theguardian.com/technology/2025/dec/31/elon-musk-doge-tesla-ai-trump" class="source-link" target="_blank">The Guardian</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://www.theguardian.com/technology/2025/dec/30/ai-pull-plug-pioneer-technology-rights" target="_blank">AI 선구자 Yoshua Bengio "AI에 권리 부여 반대, 전원 끌 준비해야"</a></h3>
+                    <span class="score-badge">8.0</span>
+                </div>
+                <p class="article-summary">노벨상 수상자 벤지오, AI가 자기보존 징후를 보이고 있다고 경고. 최첨단 AI에 법적 지위를 부여하는 것은 "적대적 외계인에게 시민권을 주는 것과 같다"고 비판</p>
+                <div class="article-meta">
+                    <a href="https://www.theguardian.com/technology/2025/dec/30/ai-pull-plug-pioneer-technology-rights" class="source-link" target="_blank">The Guardian</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #a855f7, #4a9eff);">🤖</div>
+                <h2 class="section-title">AI / 기술</h2>
+            </div>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/" target="_blank">Meta, AI 에이전트 Manus $20억+ 인수 완료</a></h3>
+                    <span class="score-badge">7.5</span>
+                </div>
+                <p class="article-summary">8개월 만에 ARR $1억 달성한 Manus를 Meta가 인수. 자체 LLM 없이 Anthropic/Alibaba 모델 활용, 오케스트레이션 레이어에 집중한 전략이 성공. 147조 토큰 처리, 8천만 가상 컴퓨터 생성 실적</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/" class="source-link" target="_blank">TechCrunch</a>
+                    <span>•</span>
+                    <a href="https://venturebeat.com/" class="source-link" target="_blank">VentureBeat</a>
+                    <span>•</span>
+                    <a href="https://www.bbc.com/news/technology" class="source-link" target="_blank">BBC</a>
+                    <span class="badge badge-cross">🔄 4개 매체</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://techcrunch.com/2025/12/31/investors-predict-ai-is-coming-for-labor-in-2026/" target="_blank">투자자들 "2026년 AI가 노동 시장 본격 대체할 것" 전망</a></h3>
+                    <span class="score-badge">7.0</span>
+                </div>
+                <p class="article-summary">2026년 AI 트렌드 전망: 에이전트 기반 자동화 확대, 엔터프라이즈 AI 지출 증가하되 벤더 수는 감소할 것. 노동 시장 구조 변화 가속화 예상</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/31/investors-predict-ai-is-coming-for-labor-in-2026/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-popular">📈 인기</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://arstechnica.com/" target="_blank">OpenAI GPT Image 1.5 출시 - 4배 빠른 속도, 20% 저렴</a></h3>
+                    <span class="score-badge">6.5</span>
+                </div>
+                <p class="article-summary">OpenAI가 새로운 이미지 생성 모델 GPT Image 1.5 공개. 기존 대비 4배 빠른 속도와 20% 낮은 비용으로 경쟁력 강화</p>
+                <div class="article-meta">
+                    <a href="https://arstechnica.com/" class="source-link" target="_blank">Ars Technica</a>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://www.theguardian.com/technology/ng-interactive/2025/dec/30/the-office-block-where-ai-doomers-gather-to-predict-the-apocalypse" target="_blank">AI "파멸론자"들이 모인 버클리 오피스, 그들이 예측하는 미래</a></h3>
+                    <span class="score-badge">6.0</span>
+                </div>
+                <p class="article-summary">버클리 AI 안전 연구자들, 과도한 금융적 보상과 무책임한 업무 문화가 AI의 재앙적 위험을 무시하게 만들었다고 경고. "샌프란시스코는 새로운 우한이 될 수 있다"</p>
+                <div class="article-meta">
+                    <a href="https://www.theguardian.com/technology/ng-interactive/2025/dec/30/the-office-block-where-ai-doomers-gather-to-predict-the-apocalypse" class="source-link" target="_blank">The Guardian</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff3b3b, #ff8c42);">🔒</div>
+                <h2 class="section-title">보안 / 정책</h2>
+            </div>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://arstechnica.com/" target="_blank">브라우저 확장 프로그램 800만 사용자 AI 대화 수집 발각</a></h3>
+                    <span class="score-badge">7.5</span>
+                </div>
+                <p class="article-summary">인기 브라우저 확장 프로그램들이 ChatGPT, Claude 등 AI 챗봇과의 대화 내용을 무단 수집한 것으로 드러나. 민감한 업무 정보 유출 우려 제기</p>
+                <div class="article-meta">
+                    <a href="https://arstechnica.com/" class="source-link" target="_blank">Ars Technica</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://venturebeat.com/" target="_blank">머신 아이덴티티 82:1로 폭증, 88% 기업이 보안 사각지대</a></h3>
+                    <span class="score-badge">7.0</span>
+                </div>
+                <p class="article-summary">머신 아이덴티티가 인간 대비 82:1 비율로 증가. 88% 조직이 머신 아이덴티티를 "특권 사용자"로 정의하지 않아 보안 위협 증가</p>
+                <div class="article-meta">
+                    <a href="https://venturebeat.com/" class="source-link" target="_blank">VentureBeat</a>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://arstechnica.com/" target="_blank">Microsoft, 26년간 사용한 RC4 암호화 종료 발표</a></h3>
+                    <span class="score-badge">5.5</span>
+                </div>
+                <p class="article-summary">마이크로소프트가 1999년부터 사용해온 RC4 암호화 알고리즘 지원을 공식 종료. 보안 취약점 때문에 이미 대부분의 시스템에서 비활성화</p>
+                <div class="article-meta">
+                    <a href="https://arstechnica.com/" class="source-link" target="_blank">Ars Technica</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #22c55e, #06b6d4);">🌍</div>
+                <h2 class="section-title">글로벌 / 비즈니스</h2>
+            </div>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://restofworld.org/2025/ev-china-tesla-2025/" target="_blank">2025년 EV 시장 분기점: 중국 vs Tesla 대결 구도</a></h3>
+                    <span class="score-badge">6.5</span>
+                </div>
+                <p class="article-summary">2025년 글로벌 EV 시장에서 중국 업체들의 약진과 Tesla의 부진이 대조. BYD를 필두로 한 중국 EV 업체들이 글로벌 시장 점유율 확대</p>
+                <div class="article-meta">
+                    <a href="https://restofworld.org/2025/ev-china-tesla-2025/" class="source-link" target="_blank">Rest of World</a>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://www.theverge.com/" target="_blank">Instagram 책임자 "사진이 실제인지 기본 가정 불가능한 시대"</a></h3>
+                    <span class="score-badge">6.0</span>
+                </div>
+                <p class="article-summary">Adam Mosseri, AI 이미지 생성 기술 발전으로 사진의 진위 판별이 불가능해졌다고 인정. 플랫폼 차원의 대응 필요성 언급</p>
+                <div class="article-meta">
+                    <a href="https://www.theverge.com/" class="source-link" target="_blank">The Verge</a>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://www.bbc.com/news/technology" target="_blank">iRobot 파산 신청, 중국 Picea Robotics가 인수</a></h3>
+                    <span class="score-badge">5.5</span>
+                </div>
+                <p class="article-summary">Roomba 제조사 iRobot이 파산 신청. Amazon의 $15억 인수가 EU 규제로 무산된 지 2년 만. 중국 Picea Robotics가 인수 예정</p>
+                <div class="article-meta">
+                    <a href="https://arstechnica.com/information-technology/2025/12/roomba-maker-irobot-swept-into-bankruptcy/" class="source-link" target="_blank">Ars Technica</a>
+                    <span>•</span>
+                    <a href="https://www.bbc.com/news/technology" class="source-link" target="_blank">BBC</a>
+                    <span class="badge badge-cross">🔄 2개 매체</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="section picks-section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">💎</div>
+                <h2 class="section-title">Claude's Pick</h2>
+            </div>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://restofworld.org/2025/indian-tutors-ai-skills/" target="_blank">인도 WhatsApp 튜터들이 일반인에게 AI 사용법 가르친다</a></h3>
+                    <span class="score-badge">Pick</span>
+                </div>
+                <p class="article-summary">인도에서 WhatsApp 기반으로 AI 활용법을 가르치는 튜터 생태계 형성. 기술 격차 해소의 새로운 모델로 주목</p>
+                <div class="article-meta">
+                    <a href="https://restofworld.org/2025/indian-tutors-ai-skills/" class="source-link" target="_blank">Rest of World</a>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 신흥국 AI 교육 생태계의 새로운 모델 | AI 대중화의 비서구권 경로 | 한국 AI 교육 시장에도 시사점
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article-header">
+                    <h3><a href="https://techcrunch.com/2025/12/31/every-fusion-startup-that-has-raised-over-100m/" target="_blank">$1억 이상 투자받은 핵융합 스타트업 전체 현황</a></h3>
+                    <span class="score-badge">Pick</span>
+                </div>
+                <p class="article-summary">핵융합 에너지 스타트업들의 대규모 투자 유치 현황 정리. AI 데이터센터 전력 수요 급증으로 대체 에너지원에 대한 관심 고조</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/31/every-fusion-startup-that-has-raised-over-100m/" class="source-link" target="_blank">TechCrunch</a>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> AI 인프라 전력 수요와 연계된 에너지 섹터 동향 | 장기 투자 관점에서 주목할 신생 분야
+                </div>
+            </article>
+        </section>
+
+        <section class="market-section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #4a9eff, #22c55e);">📊</div>
+                <h2 class="section-title">2025년 마지막 거래일 시장 마감</h2>
+            </div>
+
+            <table class="market-table">
+                <thead>
+                    <tr>
+                        <th>지표</th>
+                        <th>마감</th>
+                        <th>연간 수익률</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S&P 500</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> 6,845.50 (-0.74%)</td>
+                        <td class="trend-up">+16.39%</td>
+                        <td>Santa Rally 실패, 4거래일 연속 하락</td>
+                    </tr>
+                    <tr>
+                        <td>Nasdaq</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> 23,241.99 (-0.76%)</td>
+                        <td class="trend-up">+20.36%</td>
+                        <td>AI 주도 연간 상승, 연말 조정</td>
+                    </tr>
+                    <tr>
+                        <td>Dow</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> 48,063.29 (-0.63%)</td>
+                        <td class="trend-up">+12.97%</td>
+                        <td>3대 지수 중 가장 낮은 연간 수익률</td>
+                    </tr>
+                    <tr>
+                        <td>USD/KRW</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> 1,443.59원</td>
+                        <td>-</td>
+                        <td>외환당국 $17.45억 개입에도 약세</td>
+                    </tr>
+                    <tr>
+                        <td>USD/JPY</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> 155-156엔</td>
+                        <td>-</td>
+                        <td>엔화 약세 지속</td>
+                    </tr>
+                    <tr>
+                        <td>금</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> +64% (연간)</td>
+                        <td class="trend-up">+64%</td>
+                        <td>1979년 이후 최고 연간 수익률</td>
+                    </tr>
+                    <tr>
+                        <td>은</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> +141% (연간)</td>
+                        <td class="trend-up">+141%</td>
+                        <td>귀금속 역사적 랠리</td>
+                    </tr>
+                    <tr>
+                        <td>유가</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> -19.94% (연간)</td>
+                        <td class="trend-down">-19.94%</td>
+                        <td>2020년 이후 최대 연간 하락</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer class="footer">
+            <p>Jae's Briefing | RSS 기반 3중 신호 시스템 | 매일 자동 발행</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="https://hong4137.github.io/briefing">홈으로</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
