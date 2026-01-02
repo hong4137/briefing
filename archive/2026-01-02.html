@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유럽 은행들, AI로 20만 명 감원 계획 발표</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --text-muted: #606070;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --border-color: #2a2a3a;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 2rem;
+        }
+        
+        .container { max-width: 900px; margin: 0 auto; }
+        
+        .header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+        
+        .header-date {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .header-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .section { margin-bottom: 3rem; }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        
+        .section-title { font-size: 1.3rem; font-weight: 600; }
+        
+        .article-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+        }
+        
+        .article-card a { color: var(--accent-blue); text-decoration: none; }
+        .article-card a:hover { text-decoration: underline; }
+        
+        .article-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .article-title-kr { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0.75rem; }
+        .article-summary { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.6; }
+        
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        .badge {
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .badge-top { background: linear-gradient(135deg, #ff3b3b, #ff8c42); color: white; }
+        .badge-popular { background: var(--accent-green); color: white; }
+        .badge-cross { background: var(--accent-blue); color: white; }
+        .badge-followup { background: #6b7280; color: white; }
+        
+        .score-badge {
+            background: linear-gradient(135deg, var(--accent-gold), #ff8c42);
+            color: #000;
+            padding: 0.25rem 0.6rem;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+        
+        .market-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        
+        .market-table th, .market-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .market-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+        
+        .market-table tr:last-child td { border-bottom: none; }
+        .trend-up { color: var(--accent-green); font-weight: 600; }
+        .trend-down { color: var(--accent-red); font-weight: 600; }
+        
+        .picks-section .article-card {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(74, 158, 255, 0.1));
+            border-color: var(--accent-purple);
+        }
+        
+        .pick-reason {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px dashed var(--border-color);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        
+        .pick-reason strong { color: var(--accent-purple); }
+        
+        .footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header-title { font-size: 1.8rem; }
+            .article-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-date">2026년 1월 2일 금요일</div>
+            <h1 class="header-title">외신 브리핑</h1>
+            <p class="header-subtitle">Value Score 3.0+ 기사만 선별 | 3중 신호 시스템</p>
+        </header>
+
+        <!-- TOP Headlines -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff3b3b, #ff8c42);">🔥</div>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title"><a href="https://techcrunch.com/2026/01/01/european-banks-plan-to-cut-200000-jobs-as-ai-takes-hold/">European banks plan to cut 200,000 jobs as AI takes hold</a></h3>
+                <p class="article-title-kr">유럽 은행들, AI 도입으로 20만 명 감원 계획</p>
+                <p class="article-summary">유럽 주요 은행들이 AI 자동화로 인해 향후 3년간 약 20만 개 일자리를 줄일 계획. 백오피스, 리스크 관리, 고객 서비스 등 광범위한 영역에서 인력 감축 예상. 금융권 AI 전환의 실질적 영향이 본격화.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2026/01/01/european-banks-plan-to-cut-200000-jobs-as-ai-takes-hold/">TechCrunch</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score-badge">9.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title"><a href="https://techcrunch.com/2026/01/01/openai-bets-big-on-audio-as-silicon-valley-declares-war-on-screens/">OpenAI bets big on audio as Silicon Valley declares war on screens</a></h3>
+                <p class="article-title-kr">OpenAI, 오디오에 대규모 투자... "화면과의 전쟁" 선언</p>
+                <p class="article-summary">OpenAI가 음성 인터페이스에 대규모 투자를 단행하며 포스트-스크린 시대 준비. 실리콘밸리 전반에서 "화면 없는 AI" 경쟁이 본격화.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2026/01/01/openai-bets-big-on-audio-as-silicon-valley-declares-war-on-screens/">TechCrunch</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="score-badge">8.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title"><a href="#">Samsung HBM4 chip progress - "Samsung is back"</a></h3>
+                <p class="article-title-kr">삼성 HBM4 칩 진전... 고객사 "삼성이 돌아왔다"</p>
+                <p class="article-summary">삼성전자 HBM4 개발이 예정보다 빠르게 진행되며 주요 고객사로부터 긍정적 피드백. "삼성이 돌아왔다"는 평가와 함께 Nvidia 납품 재개 기대감 상승.</p>
+                <div class="article-meta">
+                    <a href="#">Reuters</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="score-badge">8.0</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- AI/기술 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #a855f7, #4a9eff);">🤖</div>
+                <h2 class="section-title">AI / 기술</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title"><a href="https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/">Meta, AI 에이전트 Manus $20억+ 인수 완료</a></h3>
+                <p class="article-title-kr">🔁 후속 | 8개월 만에 ARR $1억 달성한 Manus를 Meta가 인수</p>
+                <p class="article-summary">자체 LLM 없이 Anthropic/Alibaba 모델 활용, 오케스트레이션 레이어에 집중한 전략이 성공. 147조 토큰 처리, 8천만 가상 컴퓨터 생성 실적.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/">TechCrunch</a>
+                    <span>•</span>
+                    <a href="https://venturebeat.com/">VentureBeat</a>
+                    <span>•</span>
+                    <a href="https://www.bbc.com/news/technology">BBC</a>
+                    <span class="badge badge-followup">🔁 후속</span>
+                    <span class="badge badge-cross">🔄 4개 매체</span>
+                    <span class="score-badge">7.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title"><a href="https://techcrunch.com/2025/12/31/investors-predict-ai-is-coming-for-labor-in-2026/">Investors predict AI is coming for labor in 2026</a></h3>
+                <p class="article-title-kr">투자자들 "2026년 AI가 노동 시장 본격 대체할 것" 전망</p>
+                <p class="article-summary">2026년 AI 트렌드 전망: 에이전트 기반 자동화 확대, 엔터프라이즈 AI 지출 증가하되 벤더 수는 감소할 것.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2025/12/31/investors-predict-ai-is-coming-for-labor-in-2026/">TechCrunch</a>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score-badge">7.0</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title"><a href="#">DeepSeek training efficiency paper</a></h3>
+                <p class="article-title-kr">DeepSeek, 훈련 효율성 논문 발표... "더 적은 비용으로 더 큰 모델"</p>
+                <p class="article-summary">중국 AI 스타트업 DeepSeek이 훈련 효율성을 획기적으로 개선하는 새 논문 발표.</p>
+                <div class="article-meta">
+                    <a href="#">SCMP</a>
+                    <span class="score-badge">6.5</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title"><a href="https://arstechnica.com/security/2025/12/browser-extensions-with-8-million-users-collect-extended-ai-conversations/">Browser extensions harvest 8M users' AI conversations</a></h3>
+                <p class="article-title-kr">브라우저 확장 프로그램 800만 사용자 AI 대화 무단 수집</p>
+                <p class="article-summary">ChatGPT, Claude, Gemini 등 주요 AI 플랫폼에서 사용자의 전체 대화 내용을 수집해 마케팅 목적으로 판매.</p>
+                <div class="article-meta">
+                    <a href="https://arstechnica.com/security/2025/12/browser-extensions-with-8-million-users-collect-extended-ai-conversations/">Ars Technica</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="score-badge">6.0</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 반도체 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff8c42, #ffd700);">💾</div>
+                <h2 class="section-title">반도체</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title"><a href="#">ByteDance $14B Nvidia chip order for 2026</a></h3>
+                <p class="article-title-kr">ByteDance, 2026년 Nvidia 칩 $140억 주문</p>
+                <p class="article-summary">TikTok 모회사 ByteDance가 2026년 Nvidia AI 칩 대규모 주문 계획. AI 인프라 투자 경쟁 가열.</p>
+                <div class="article-meta">
+                    <a href="#">SCMP</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="score-badge">8.0</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title"><a href="#">Nvidia H200 China demand surge - 2M+ chips</a></h3>
+                <p class="article-title-kr">Nvidia H200 중국 수요 급증, 200만 개 이상 주문</p>
+                <p class="article-summary">미국 수출 규제에도 불구하고 중국 기업들이 Nvidia H200 칩 200만 개 이상 주문.</p>
+                <div class="article-meta">
+                    <a href="#">Reuters</a>
+                    <span class="score-badge">7.0</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title"><a href="#">Biren AI chip 82% surge on Hong Kong debut</a></h3>
+                <p class="article-title-kr">Biren AI 칩, 홍콩 데뷔 첫날 82% 급등</p>
+                <p class="article-summary">중국 AI 칩 스타트업 Biren이 홍콩 증시 상장 첫날 82% 급등.</p>
+                <div class="article-meta">
+                    <a href="#">Reuters</a>
+                    <span class="score-badge">6.5</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 시장 동향 -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #4a9eff, #22c55e);">📊</div>
+                <h2 class="section-title">2026년 첫 거래일 시장 동향</h2>
+            </div>
+
+            <table class="market-table">
+                <thead>
+                    <tr>
+                        <th>지표</th>
+                        <th>마감/현재</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S&P 500</td>
+                        <td>6,845.50 (12/31)</td>
+                        <td>연간 +16.4%, Santa Rally 실패</td>
+                    </tr>
+                    <tr>
+                        <td>Nasdaq</td>
+                        <td>23,241.99 (12/31)</td>
+                        <td>연간 +20.4%, AI 주도 상승</td>
+                    </tr>
+                    <tr>
+                        <td>Dow</td>
+                        <td>48,063.29 (12/31)</td>
+                        <td>연간 +13.2%</td>
+                    </tr>
+                    <tr>
+                        <td>USD/KRW</td>
+                        <td style="color: #22c55e; font-weight: 600;">📈 1,435~1,442원</td>
+                        <td>52주 범위 1,347~1,488원</td>
+                    </tr>
+                    <tr>
+                        <td>USD/JPY</td>
+                        <td style="color: #22c55e; font-weight: 600;">📈 155~156엔</td>
+                        <td>엔화 약세 지속</td>
+                    </tr>
+                    <tr>
+                        <td>2026년 전망</td>
+                        <td>S&P 7,100~7,700</td>
+                        <td>월가 긍정적, AI 밸류에이션 우려</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="section picks-section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">💎</div>
+                <h2 class="section-title">Claude's Pick</h2>
+            </div>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">48시간 내 숨은 보석 | Signal 2개+ & 관심사 매칭</p>
+
+            <article class="article-card">
+                <h3 class="article-title"><a href="#">Zhipu AI $560M Hong Kong IPO filing</a></h3>
+                <p class="article-title-kr">Zhipu AI, 홍콩 IPO $5.6억 규모 신청</p>
+                <p class="article-summary">중국 AI 스타트업 Zhipu AI가 홍콩 증시에 $5.6억 규모 IPO 신청.</p>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 중국 AI 기업 IPO 트렌드 | 홍콩
