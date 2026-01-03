@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-01-03",
+      "day": "금",
+      "title": "Grok AI 음란물 논란 확산, 인도 정부 긴급 규제 착수",
+      "summary": "Grok AI 미성년자 음란물 생성 논란으로 인도 정부 긴급 규제. BYD, Tesla 제치고 글로벌 EV 1위 등극. CES 2026 개막 임박.",
+      "highlights": [
+        "Grok AI 미성년자 음란물 생성 논란, 인도 규제 착수",
+        "BYD, 4분기 판매량에서 Tesla 추월하며 EV 1위",
+        "CES 2026 개막 임박, AI 에이전트·자율주행 핵심 키워드"
+      ],
+      "stats": {
+        "articles": 12,
+        "sections": 5,
+        "picks": 2
+      }
+    },
+    {
       "date": "2026-01-02",
       "day": "금",
       "title": "유럽 은행들, AI로 20만 명 감원 계획 발표",
