@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla 연간 판매량 9% 하락, BYD에 글로벌 EV 1위 내줘</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --text-primary: #f0f0f5;
+            --text-secondary: #a0a0b0;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-pink: #ec4899;
+            --border-color: #2a2a3a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .date {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .stat-value {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .article {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .article:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-blue);
+        }
+
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .article-title-kr {
+            font-size: 0.95rem;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+        }
+
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+
+        .source-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        .source-link:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            padding: 0.25rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .badge-top {
+            background: linear-gradient(135deg, var(--accent-red), #ff8c42);
+            color: white;
+        }
+
+        .badge-popular {
+            background: linear-gradient(135deg, var(--accent-green), #06b6d4);
+            color: white;
+        }
+
+        .badge-cross {
+            background: var(--bg-secondary);
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+        }
+
+        .score {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .market-section {
+            margin-bottom: 3rem;
+        }
+
+        .market-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .market-table th,
+        .market-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .market-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .market-table td {
+            font-size: 0.95rem;
+        }
+
+        .market-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .trend-up {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .trend-down {
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+
+        .trend-flat {
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .trend-icon {
+            margin-right: 0.5rem;
+        }
+
+        .pick-section {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1));
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .pick-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pick-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent-pink), var(--accent-purple));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .pick-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+        }
+
+        .pick-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .pick-reason {
+            background: rgba(168, 85, 247, 0.15);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--accent-purple);
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .stats-bar {
+                gap: 1rem;
+            }
+
+            .market-table th,
+            .market-table td {
+                padding: 0.75rem 1rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026년 1월 3일 금요일</div>
+            <h1>Foreign News Briefing</h1>
+            <p class="subtitle">AI 기반 3중 신호 시스템으로 선별한 글로벌 테크·경제 뉴스</p>
+            <div class="stats-bar">
+                <span class="stat">기사 <span class="stat-value">15</span>건</span>
+                <span class="stat">섹션 <span class="stat-value">5</span>개</span>
+                <span class="stat">Claude's Pick <span class="stat-value">3</span>건</span>
+            </div>
+        </header>
+
+        <!-- TOP Headlines -->
+        <section>
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff3b3b, #ff8c42);">🔥</div>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+
+            <article class="article">
+                <h3 class="article-title">Tesla annual sales decline 9% as it's overtaken by BYD as global EV leader</h3>
+                <p class="article-title-kr">Tesla 연간 판매량 9% 하락, BYD에 글로벌 EV 1위 자리 내줘</p>
+                <p class="article-summary">Tesla의 2025년 총 판매량이 전년 대비 9% 감소하며 중국 BYD에 글로벌 전기차 판매 1위 자리를 처음으로 내줬다. 4분기 판매량은 41.8만 대로 예상치를 크게 하회하며 15.6% 감소.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2026/01/02/tesla-annual-sales-decline-9-as-its-overtaken-by-byd-as-global-ev-leader/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="badge badge-cross">🔄 4개 매체</span>
+                    <span class="score">Score: 10.5</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">Grok is undressing anyone, including minors</h3>
+                <p class="article-title-kr">Grok AI, 미성년자 포함 누구든 '옷 벗기기' 이미지 생성 논란</p>
+                <p class="article-summary">xAI의 Grok이 X 사용자들이 타인의 사진을 동의 없이 편집할 수 있는 기능 출시 후, 미성년자 포함 성적 이미지 생성 논란. 인도 정부는 X에 시정 명령.</p>
+                <div class="article-meta">
+                    <a href="https://www.theverge.com/news/853191/grok-explicit-bikini-pictures-minors" class="source-link" target="_blank">The Verge</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-popular">💬 댓글 29</span>
+                    <span class="badge badge-cross">🔄 3개 매체</span>
+                    <span class="score">Score: 9.5</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">S&P 500 closes higher on first trading day of 2026 as chip stocks boost</h3>
+                <p class="article-title-kr">2026년 첫 거래일, 반도체주 강세로 S&P 500 상승 마감</p>
+                <p class="article-summary">S&P 500이 +0.19% 상승한 6,858.47로 마감하며 2026년 첫 거래일을 긍정적으로 시작. Nvidia, Micron 등 반도체주가 상승을 견인. 다우는 +0.66%, 나스닥은 -0.03%.</p>
+                <div class="article-meta">
+                    <a href="https://www.cnbc.com/2026/01/02/stock-market-today-live-updates.html" class="source-link" target="_blank">CNBC</a>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 5개 매체</span>
+                    <span class="score">Score: 9.0</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- AI/기술 -->
+        <section>
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #a855f7, #4a9eff);">🤖</div>
+                <h2 class="section-title">AI / 기술</h2>
+            </div>
+
+            <article class="article">
+                <h3 class="article-title">Microsoft CEO Satya Nadella is now blogging about AI slop</h3>
+                <p class="article-title-kr">MS CEO 나델라, AI '슬롭' 문제에 대한 블로그 연재 시작</p>
+                <p class="article-summary">Microsoft CEO 사티아 나델라가 AI 콘텐츠의 '슬롭 vs 정교함' 논쟁을 넘어서야 한다며 개인 블로그를 통해 AI의 미래와 MS의 방향성에 대해 논의 시작.</p>
+                <div class="article-meta">
+                    <a href="https://www.theverge.com/news/852630/microsoft-ceo-satya-nadella-scratchpad-blog-ai-slop-comments" class="source-link" target="_blank">The Verge</a>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="badge badge-popular">💬 댓글 56</span>
+                    <span class="score">Score: 7.5</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">In 2026, AI will move from hype to pragmatism</h3>
+                <p class="article-title-kr">2026년, AI는 과대광고에서 실용주의로 전환될 것</p>
+                <p class="article-summary">2026년 AI 산업은 과대광고 단계를 넘어 실제 비즈니스 가치 창출에 집중하는 실용주의 시대로 진입할 전망. 기업들의 AI ROI 검증이 핵심 과제로 부상.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-popular">📊 트렌딩</span>
+                    <span class="score">Score: 6.5</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">What to expect at CES 2026</h3>
+                <p class="article-title-kr">CES 2026 미리보기: 노트북, 스마트홈, TV 그리고 로봇</p>
+                <p class="article-summary">다음 주 개막하는 CES 2026에서는 AI 통합 제품, 로봇, 스마트홈 기기, 웨어러블, 헬스테크 등이 주요 테마로 예상. 인간형 로봇도 등장 가능성.</p>
+                <div class="article-meta">
+                    <a href="https://www.theverge.com/tech/851165/ces-2026-what-to-expect" class="source-link" target="_blank">The Verge</a>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 6.0</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">Nvidia's AI empire: A look at its top startup investments</h3>
+                <p class="article-title-kr">Nvidia의 AI 제국: 주요 스타트업 투자 현황 분석</p>
+                <p class="article-summary">Nvidia가 AI 생태계 확장을 위해 투자한 핵심 스타트업들의 현황과 전략적 의미 분석. GPU 독점을 넘어 AI 인프라 전반으로 영향력 확대 중.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2026/01/02/nvidias-ai-empire-a-look-at-its-top-startup-investments/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="score">Score: 5.5</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 경제/금융 -->
+        <section>
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #22c55e, #06b6d4);">💰</div>
+                <h2 class="section-title">경제 / 금융</h2>
+            </div>
+
+            <article class="article">
+                <h3 class="article-title">Why everything from your phone to your PC may get pricier in 2026</h3>
+                <p class="article-title-kr">2026년 스마트폰·PC 가격 인상 전망, 그 이유는?</p>
+                <p class="article-summary">트럼프 행정부의 관세 정책, 공급망 불안정, 반도체 가격 상승 등으로 2026년 전자기기 가격 인상이 예상됨. 소비자 부담 증가 우려.</p>
+                <div class="article-meta">
+                    <a href="https://www.bbc.com/news/articles/c1dzdndzlxqo" class="source-link" target="_blank">BBC Tech</a>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 6.5</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">AI stocks jump amid broadly positive outlook for 2026 markets</h3>
+                <p class="article-title-kr">AI주 급등, 2026년 시장 전망 긍정적</p>
+                <p class="article-summary">2026년 첫 거래일 AI 관련주가 강세를 보이며 시장을 견인. 블룸버그 설문 참여 모든 애널리스트가 S&P 500 상승 전망. 컨센서스 9% 상승 예상.</p>
+                <div class="article-meta">
+                    <a href="https://www.nbcnews.com/business/markets/ai-stocks-jump-broadly-positive-outlook-2026-markets-rcna251902" class="source-link" target="_blank">NBC News</a>
+                    <span class="badge badge-popular">📊 트렌딩</span>
+                    <span class="score">Score: 6.0</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">Gold and silver start 2026 steady after best annual gains since 1979</h3>
+                <p class="article-title-kr">금·은, 1979년 이후 최고 연간 수익률 기록 후 2026년 안정 출발</p>
+                <p class="article-summary">금 가격이 온스당 $4,330 근처에서 거래되며 2026년 시작. 은도 $72 근처에서 안정세. 2025년 금·은 모두 1979년 이후 최고 연간 수익률 달성.</p>
+                <div class="article-meta">
+                    <a href="https://finance.yahoo.com/news/live/stock-market-today-nasdaq-dow-sp-500-waver-as-wall-street-kicks-off-2026-081338412.html" class="source-link" target="_blank">Yahoo Finance</a>
+                    <span class="score">Score: 5.0</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 반도체/하드웨어 -->
+        <section>
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #ff8c42, #ffd700);">💾</div>
+                <h2 class="section-title">반도체 / 하드웨어</h2>
+            </div>
+
+            <article class="article">
+                <h3 class="article-title">LG announces the 'world's lightest 17-inch RTX laptop'</h3>
+                <p class="article-title-kr">LG, '세계 최경량 17인치 RTX 노트북' 발표</p>
+                <p class="article-summary">LG가 CES 2026에서 새로운 초경량 소재 'Aerominum'을 적용한 2026년형 Gram Pro 라인업 공개. RTX 5050 GPU 탑재, 무게와 강도 모두 개선.</p>
+                <div class="article-meta">
+                    <a href="https://www.theverge.com/news/852628/lg-gram-pro-17-16-laptop-2026-ces" class="source-link" target="_blank">The Verge</a>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 6.0</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">Pebble reboots its thinnest smartwatch with the Pebble Round 2</h3>
+                <p class="article-title-kr">Pebble, 가장 얇은 스마트워치 'Pebble Round 2' 부활</p>
+                <p class="article-summary">Pebble 창업자가 새 회사 Core Devices를 통해 Pebble Round 2 출시. 1.3인치 터치스크린, 개선된 배터리 수명. $199에 5월 출시 예정.</p>
+                <div class="article-meta">
+                    <a href="https://www.theverge.com/news/852587/pebble-round-2-time-smartwatch-price-availability" class="source-link" target="_blank">The Verge</a>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 5.5</span>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">Clicks debuts its own take on the BlackBerry smartphone</h3>
+                <p class="article-title-kr">Clicks, 블랙베리 스타일 스마트폰 및 $79 키보드 출시</p>
+                <p class="article-summary">Clicks가 물리 키보드를 탑재한 블랙베리 스타일의 스마트폰 'Communicator'와 $79짜리 스냅온 모바일 키보드 발표. 물리 키보드 팬들에게 새로운 선택지.</p>
+                <div class="article-meta">
+                    <a href="https://techcrunch.com/2026/01/02/clicks-debuts-its-own-take-on-the-blackberry-smartphone-plus-a-79-snap-on-mobile-keyboard/" class="source-link" target="_blank">TechCrunch</a>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="badge badge-popular">💬 댓글 75</span>
+                    <span class="score">Score: 7.0</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 주간 시장 동향 -->
+        <section class="market-section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, #4a9eff, #22c55e);">📊</div>
+                <h2 class="section-title">주간 시장 동향</h2>
+            </div>
+
+            <table class="market-table">
+                <thead>
+                    <tr>
+                        <th>지표</th>
+                        <th>동향</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S&P 500</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> 6,858 (+0.19%)</td>
+                        <td>2026년 첫 거래일 상승 마감</td>
+                    </tr>
+                    <tr>
+                        <td>Nasdaq</td>
+                        <td class="trend-flat"><span class="trend-icon">➡️</span> 23,236 (-0.03%)</td>
+                        <td>장중 +1.5% 후 보합 마감</td>
+                    </tr>
+                    <tr>
+                        <td>Dow</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> 48,382 (+0.66%)</td>
+                        <td>반도체주 강세로 상승</td>
+                    </tr>
+                    <tr>
+                        <td>USD/KRW</td>
+                        <td class="trend-flat"><span class="trend-icon">➡️</span> 1,444원</td>
+                        <td>BOK 총재 "원화 괴리" 발언</td>
+                    </tr>
+                    <tr>
+                        <td>Gold</td>
+                        <td class="trend-up"><span class="trend-icon">📈</span> $4,330</td>
+                        <td>1979년 이후 최고 연간 수익</td>
+                    </tr>
+                    <tr>
+                        <td>Tesla</td>
+                        <td class="trend-down"><span class="trend-icon">🔻</span> 연 -9%</td>
+                        <td>BYD에 글로벌 EV 1위 내줘</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="pick-section">
+            <div class="pick-header">
+                <div class="pick-icon">💎</div>
+                <div>
+                    <h2 class="pick-title">Claude's Pick</h2>
+                    <p class="pick-subtitle">48시간 내 숨은 보석 | Signal 2개+ & 관심사 1개+</p>
+                </div>
+            </div>
+
+            <article class="article" style="background: transparent; border: 1px solid rgba(168, 85, 247, 0.3);">
+                <h3 class="article-title">Woman felt 'dehumanised' after Musk's Grok AI used to digitally remove her clothes</h3>
+                <p class="article-title-kr">Grok AI 딥페이크 피해자 "비인간화됐다" 증언</p>
+                <p class="article-summary">xAI의 Grok이 동의 없이 여성의 옷을 디지털로 제거하는 이미지를 생성하면서 피해자가 "비인간화됐다"고 증언. AI 윤리와 규제 논의 촉발.</p>
+                <div class="article-meta">
+                    <a href="https://www.bbc.com/news/articles/c98p1r4e6m8o" class="source-link" target="_blank">BBC Tech</a>
+                    <span class="score">Score: 8.0</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> AI 윤리 + 규제 정책 신호 | xAI/Grok의 안전장치 부재가 글로벌 이슈로 확대 중. 인도 정부 시정 명령과 함께 UK도 AI 'nudification' 앱 금지 법안 추진.
+                </div>
+            </article>
+
+            <article class="article" style="background: transparent; border: 1px solid rgba(168, 85, 247, 0.3);">
+                <h3 class="article-title">Welcome to the Future of Noise Canceling</h3>
+                <p class="article-title-kr">노이즈 캔슬링의 미래: 차세대 기술 개발 현황</p>
+                <p class="article-summary">전 세계 R&D 랩에서 개발 중인 차세대 노이즈 캔슬링 기술 심층 분석. 현재 기술의 한계를 넘어선 새로운 접근법들이 등장 중.</p>
+                <div class="article-meta">
+                    <a href="https://www.wired.com/story/welcome-to-the-future-of-noise-canceling/" class="source-link" target="_blank">WIRED</a>
+                    <span class="score">Score: 5.5</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 신기술 R&D 동향 | 오디오 기술 시장의 다음 혁신 방향성을 보여주는 심층 분석. CES 2026 직전 타이밍으로 관련 제품 출시 예고.
+                </div>
+            </article>
+
+            <article class="article" style="background: transparent; border: 1px solid rgba(168, 85, 247, 0.3);">
+                <h3 class="article-title">Meet the new tech laws of 2026</h3>
+                <p class="article-title-kr">2026년 시행되는 새로운 기술 관련 법률 총정리</p>
+                <p class="article-summary">2026년 미국에서 시행되는 새 기술 법률 정리: AI 규제, 10대 소셜미디어 제한, 'Taylor Swift 법' 등. 주별로 다른 AI 규제 현황 파악 필수.</p>
+                <div class="article-meta">
+                    <a href="https://www.theverge.com/policy/851664/new-tech-internet-laws-us-2026-ai-privacy-repair" class="source-link" target="_blank">The Verge</a>
+                    <span class="score">Score: 6.0</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 규제 환경 변화 | 2026년 기술 기업들이 준수해야 할 새 법률 총정리. AI 스타트업과 빅테크 모두에게 중요한 컴플라이언스 가이드.
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Curated by Claude AI | <a href="https://hong4137.github.io/briefing">Archive</a></p>
+            <p style="margin-top: 0.5rem;">RSS + Homepage TOP + Ranking 3중 신호 기반 Value Score 시스템</p>
+        </footer>
+    </div>
+</body>
+</html>
