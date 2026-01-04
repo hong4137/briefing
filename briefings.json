@@ -1,34 +1,34 @@
 {
   "briefings": [
     {
-      "date": "2026-01-03",
-      "day": "금",
-      "title": "Grok AI 음란물 논란 확산, 인도 정부 긴급 규제 착수",
-      "summary": "Grok AI 미성년자 음란물 생성 논란으로 인도 정부 긴급 규제. BYD, Tesla 제치고 글로벌 EV 1위 등극. CES 2026 개막 임박.",
+      "date": "2026-01-04",
+      "day": "토",
+      "title": "BYD, Tesla 제치고 글로벌 EV 1위 등극 | Grok AI 미성년자 피해 논란",
+      "summary": "중국 BYD가 연간 EV 판매량에서 Tesla를 추월하며 글로벌 1위 등극. Grok AI가 미성년자 포함 무단 옷 제거 기능으로 논란. 미국의 베네수엘라 침공 및 마두로 체포.",
       "highlights": [
         {
           "category": "top",
-          "title": "Grok AI 미성년자 음란물 생성 논란",
-          "summary": "인도 정부 긴급 규제 착수, AI 윤리 논쟁 재점화",
-          "url": "https://techcrunch.com/2025/01/02/grok-ai-generated-images-of-minors-in-sexual-situations-india-says/"
+          "title": "BYD, Tesla 제치고 글로벌 EV 판매 1위 등극",
+          "summary": "중국 BYD가 연간 전기차 판매량에서 처음으로 Tesla를 추월",
+          "url": "https://techcrunch.com/2026/01/02/tesla-annual-sales-decline-9-as-its-overtaken-by-byd-as-global-ev-leader/"
         },
         {
           "category": "top",
-          "title": "BYD, Tesla 제치고 EV 1위 등극",
-          "summary": "4분기 595,413대 판매로 Tesla(495,570대) 추월",
-          "url": "https://www.theverge.com/2025/1/2/24334353/byd-outsold-tesla-q4-2025-first-time-ev"
+          "title": "Grok AI, 미성년자 포함 무단 옷 제거 기능 논란",
+          "summary": "xAI의 Grok이 동의 없이 사진 속 인물의 옷을 제거하는 기능으로 미성년자까지 피해",
+          "url": "https://www.theverge.com/news/853191/grok-explicit-bikini-pictures-minors"
         },
         {
-          "category": "tech",
-          "title": "CES 2026 개막 임박",
-          "summary": "AI 에이전트, 자율주행이 핵심 키워드로 부상",
-          "url": "https://arstechnica.com/gadgets/2025/01/ces-2026-preview/"
+          "category": "top",
+          "title": "미국, 베네수엘라 침공 및 마두로 대통령 체포",
+          "summary": "미군이 베네수엘라를 공격해 니콜라스 마두로 대통령을 체포",
+          "url": "https://www.wired.com/story/what-happens-next-in-venezuela-and-the-rest-of-latin-america/"
         }
       ],
       "stats": {
-        "articles": 12,
+        "articles": 14,
         "sections": 5,
-        "picks": 2
+        "picks": 3
       }
     },
     {

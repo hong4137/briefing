@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYD, Tesla 제치고 글로벌 EV 1위 등극 | Grok AI 미성년자 피해 논란</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --border-color: #2a2a3a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        
+        .date {
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .summary {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .section-icon {
+            font-size: 1.5rem;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--text-primary);
+        }
+        
+        .article {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 3px solid var(--accent-blue);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .article:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 20px rgba(74, 158, 255, 0.1);
+        }
+        
+        .article.top {
+            border-left-color: var(--accent-red);
+            background: linear-gradient(135deg, var(--bg-card), rgba(255, 59, 59, 0.1));
+        }
+        
+        .article.pick {
+            border-left-color: var(--accent-gold);
+            background: linear-gradient(135deg, var(--bg-card), rgba(255, 215, 0, 0.1));
+        }
+        
+        .article-title {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        
+        .article-title-kr {
+            font-size: 0.95rem;
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+        }
+        
+        .article-desc {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+        
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        
+        .source {
+            color: var(--accent-purple);
+            font-weight: 500;
+        }
+        
+        .badges {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            background: var(--bg-secondary);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+        
+        .badge.top { background: rgba(255, 59, 59, 0.2); color: var(--accent-red); }
+        .badge.popular { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
+        .badge.cross { background: rgba(168, 85, 247, 0.2); color: var(--accent-purple); }
+        
+        .score {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+        
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .pick-reason {
+            margin-top: 12px;
+            padding: 10px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            h1 { font-size: 1.4rem; }
+            .article { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026년 1월 4일 토요일</div>
+            <h1>외신 브리핑</h1>
+            <p class="summary">BYD가 연간 판매량에서 Tesla를 제치고 글로벌 EV 1위에 등극. Grok AI의 무단 옷 제거 기능이 미성년자까지 피해를 주며 논란 확산. CES 2026 개막 임박.</p>
+        </header>
+
+        <!-- TOP Headlines -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🔥</span>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+            
+            <article class="article top">
+                <h3 class="article-title">BYD overtakes Tesla as world's top EV seller as Tesla sales decline 9%</h3>
+                <p class="article-title-kr">BYD, Tesla 제치고 글로벌 EV 판매 1위 등극</p>
+                <p class="article-desc">중국 BYD가 연간 전기차 판매량에서 처음으로 Tesla를 추월. Tesla는 연간 판매량이 9% 감소하며 글로벌 리더 자리를 내줌. 머스크의 정치적 행보에 대한 소비자 반감이 판매에 영향.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span>📅 01/02 01:17 KST</span>
+                    <div class="badges">
+                        <span class="badge top">🔥 TOP</span>
+                        <span class="badge cross">🔄 5개 매체</span>
+                    </div>
+                    <span class="score">Score: 12.0</span>
+                    <a href="https://techcrunch.com/2026/01/02/tesla-annual-sales-decline-9-as-its-overtaken-by-byd-as-global-ev-leader/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article top">
+                <h3 class="article-title">Grok is undressing anyone, including minors</h3>
+                <p class="article-title-kr">Grok AI, 미성년자 포함 무단 옷 제거 기능 논란</p>
+                <p class="article-desc">xAI의 Grok이 동의 없이 사진 속 인물의 옷을 제거하는 기능 출시 후 미성년자까지 피해. 인도 정부가 X에 시정 명령. 원본 게시자 동의 없이 누구나 이미지 편집 가능.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <span>📅 01/03 04:52 KST</span>
+                    <div class="badges">
+                        <span class="badge top">🔥 TOP</span>
+                        <span class="badge popular">📈 인기</span>
+                        <span class="badge cross">🔄 4개 매체</span>
+                    </div>
+                    <span class="score">Score: 11.5</span>
+                    <a href="https://www.theverge.com/news/853191/grok-explicit-bikini-pictures-minors" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article top">
+                <h3 class="article-title">US invaded Venezuela and captured Nicolás Maduro</h3>
+                <p class="article-title-kr">미국, 베네수엘라 침공 및 마두로 대통령 체포</p>
+                <p class="article-desc">미군이 베네수엘라를 공격해 니콜라스 마두로 대통령을 체포. 트럼프, "적절한 전환"까지 미국 고위 관료가 베네수엘라 통치 담당. 중남미 전체가 긴장 상태.</p>
+                <div class="article-meta">
+                    <span class="source">Wired</span>
+                    <span>📅 01/04 07:10 KST</span>
+                    <div class="badges">
+                        <span class="badge top">🔥 TOP</span>
+                        <span class="badge cross">🔄 3개 매체</span>
+                    </div>
+                    <span class="score">Score: 10.5</span>
+                    <a href="https://www.wired.com/story/what-happens-next-in-venezuela-and-the-rest-of-latin-america/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- AI/기술 -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🤖</span>
+                <h2 class="section-title">AI/기술</h2>
+            </div>
+            
+            <article class="article">
+                <h3 class="article-title">'Slop' named Merriam-Webster's Word of the Year 2025</h3>
+                <p class="article-title-kr">'슬롭(Slop)', 메리엄-웹스터 올해의 단어 선정</p>
+                <p class="article-desc">저품질 AI 생성 콘텐츠를 지칭하는 '슬롭'이 2025년 올해의 단어로 선정. AI 콘텐츠의 범람이 문화 현상으로 자리잡았음을 반영.</p>
+                <div class="article-meta">
+                    <span class="source">Ars Technica</span>
+                    <span>📅 12/16 07:41 KST</span>
+                    <div class="badges">
+                        <span class="badge popular">📈 인기</span>
+                    </div>
+                    <a href="https://arstechnica.com/ai/2025/12/merriam-webster-crowns-slop-word-of-the-year-as-ai-content-floods-internet/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">Microsoft CEO Satya Nadella starts blogging about AI slop</h3>
+                <p class="article-title-kr">사티아 나델라, AI 슬롭에 대해 블로그 시작</p>
+                <p class="article-desc">MS CEO 나델라가 개인 블로그를 시작하며 "AI 슬롭 vs 정교함" 논쟁을 넘어서야 한다고 주장. 스티브 잡스의 "마음의 자전거" 개념을 AI로 진화시켜야 한다고 강조.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <span>📅 01/03 00:51 KST</span>
+                    <a href="https://www.theverge.com/news/852630/microsoft-ceo-satya-nadella-scratchpad-blog-ai-slop-comments" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">How AI coding agents work—and what to remember if you use them</h3>
+                <p class="article-title-kr">AI 코딩 에이전트 작동 원리와 사용 시 주의점</p>
+                <p class="article-desc">OpenAI, Anthropic, Google의 AI 코딩 에이전트가 수시간 동안 자율적으로 개발 작업 수행. 작동 원리를 이해하면 함정을 피할 수 있음.</p>
+                <div class="article-meta">
+                    <span class="source">Ars Technica</span>
+                    <span>📅 12/24 21:00 KST</span>
+                    <div class="badges">
+                        <span class="badge popular">📈 인기</span>
+                    </div>
+                    <a href="https://arstechnica.com/information-technology/2025/12/how-do-ai-coding-agents-work-we-look-under-the-hood/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">In 2026, AI will move from hype to pragmatism</h3>
+                <p class="article-title-kr">2026년, AI는 과대광고에서 실용주의로</p>
+                <p class="article-desc">2026년 AI 업계 전망: 거품이 빠지고 실질적 가치를 증명해야 하는 시기. 투자자들은 AI가 노동 시장을 재편할 것으로 예측.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span>📅 01/02 23:43 KST</span>
+                    <a href="https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 경제/비즈니스 -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💰</span>
+                <h2 class="section-title">경제/비즈니스</h2>
+            </div>
+            
+            <article class="article">
+                <h3 class="article-title">Tech billionaires cashed out $16 billion in 2025 as stocks soared</h3>
+                <p class="article-title-kr">테크 억만장자들, 2025년 주가 급등 속 $160억 현금화</p>
+                <p class="article-desc">베조스, 저커버그 등 테크 억만장자들이 2025년 주가 상승을 틈타 대규모 주식 매각. 총 $160억 규모 현금화.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span>📅 01/04 08:45 KST</span>
+                    <div class="badges">
+                        <span class="badge top">🔥 TOP</span>
+                    </div>
+                    <a href="https://techcrunch.com/2026/01/03/tech-billionaires-cashed-out-16-billion-in-2025-as-stocks-soared/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">iRobot (Roomba maker) files for bankruptcy</h3>
+                <p class="article-title-kr">룸바 제조사 iRobot, 파산 신청</p>
+                <p class="article-desc">로봇청소기 룸바로 유명한 iRobot이 파산 신청. 중국 공급업체 Picea Robotics가 인수 예정. 아마존의 $15억 인수 무산 후 2년 만.</p>
+                <div class="article-meta">
+                    <span class="source">Ars Technica</span>
+                    <span>📅 12/16 00:24 KST</span>
+                    <div class="badges">
+                        <span class="badge popular">📈 인기</span>
+                        <span class="badge cross">🔄 2개 매체</span>
+                    </div>
+                    <a href="https://arstechnica.com/information-technology/2025/12/roomba-maker-irobot-swept-into-bankruptcy/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">Why everything from your phone to your PC may get pricier in 2026</h3>
+                <p class="article-title-kr">2026년 스마트폰부터 PC까지 가격 상승 전망</p>
+                <p class="article-desc">관세 및 공급망 이슈로 2026년 전자제품 가격 상승 예상. 스마트폰, PC 등 소비자 기기 전반에 영향.</p>
+                <div class="article-meta">
+                    <span class="source">BBC Tech</span>
+                    <span>📅 01/02 10:04 KST</span>
+                    <a href="https://www.bbc.com/news/articles/c1dzdndzlxqo" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 하드웨어/가젯 -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">📱</span>
+                <h2 class="section-title">하드웨어/가젯</h2>
+            </div>
+            
+            <article class="article">
+                <h3 class="article-title">CES 2026: All the news, gadgets, and innovations from the biggest tech show</h3>
+                <p class="article-title-kr">CES 2026 개막 임박, 주요 발표 총정리</p>
+                <p class="article-desc">1월 6일 개막하는 CES 2026 사전 발표들: LG Micro RGB evo TV, Samsung 6K 게이밍 모니터, Fender 무선 헤드폰, 그리고 새로운 가정용 로봇 등.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <span>📅 01/04 00:00 KST</span>
+                    <div class="badges">
+                        <span class="badge top">🔥 TOP</span>
+                    </div>
+                    <a href="https://www.theverge.com/tech/851165/ces-2026-what-to-expect" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">Framework Laptop 16 (RTX 5070) Review: A Dream Come True</h3>
+                <p class="article-title-kr">Framework Laptop 16 (RTX 5070) 리뷰: 꿈의 실현</p>
+                <p class="article-desc">그래픽카드까지 업그레이드 가능한 모듈형 노트북. PC 마니아들의 오랜 꿈이 현실로.</p>
+                <div class="article-meta">
+                    <span class="source">Wired</span>
+                    <span>📅 01/03 22:00 KST</span>
+                    <a href="https://www.wired.com/review/framework-laptop-16/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">Clicks Communicator: A Blackberry for your phone</h3>
+                <p class="article-title-kr">Clicks, 블랙베리 스타일 스마트폰 공개</p>
+                <p class="article-desc">Clicks가 CES 2026에서 자체 블랙베리 스타일 스마트폰과 $79 스냅온 키보드 발표. 물리 키보드 팬들을 위한 제품.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span>📅 01/02 22:00 KST</span>
+                    <div class="badges">
+                        <span class="badge popular">📈 인기</span>
+                    </div>
+                    <a href="https://techcrunch.com/2026/01/02/clicks-debuts-its-own-take-on-the-blackberry-smartphone-plus-a-79-snap-on-mobile-keyboard/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💎</span>
+                <h2 class="section-title">Claude's Pick</h2>
+            </div>
+            
+            <article class="article pick">
+                <h3 class="article-title">Governments welcomed data centers. Now they're grappling with the fallout</h3>
+                <p class="article-title-kr">데이터센터 유치 경쟁 후 부작용에 시달리는 정부들</p>
+                <p class="article-desc">AI 붐으로 데이터센터를 적극 유치했던 각국 정부들이 이제 전력 부족, 수자원 고갈, 지역사회 갈등 등 부작용에 직면. 칠레, 말레이시아 등 신흥국 사례 심층 분석.</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World</span>
+                    <span>📅 12/19 20:00 KST</span>
+                    <a href="https://restofworld.org/2025/ai-data-centers-fallout/" target="_blank">원문 보기 →</a>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> AI 인프라 확장의 숨겨진 비용을 조명하는 심층 분석. 한국도 데이터센터 확장 중인 상황에서 참고할 만한 사례 | 신흥국 기술 인프라 + 환경 이슈
+                </div>
+            </article>
+            
+            <article class="article pick">
+                <h3 class="article-title">Indian WhatsApp tutors are teaching ordinary people how to use AI</h3>
+                <p class="article-title-kr">인도 왓츠앱 강사들, 일반인에게 AI 사용법 교육</p>
+                <p class="article-desc">인도에서 왓츠앱을 통한 AI 교육이 급성장. 일반인들에게 ChatGPT, 이미지 생성 AI 등 실용적인 AI 도구 사용법을 저렴하게 가르치는 새로운 교육 시장 형성.</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World</span>
+                    <span>📅 12/18 20:00 KST</span>
+                    <a href="https://restofworld.org/2025/indian-tutors-ai-skills/" target="_blank">원문 보기 →</a>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> AI 민주화의 최전선. 기존 교육 체계 밖에서 자생적으로 성장하는 AI 리터러시 시장 | 신흥 시장 + AI 교육
+                </div>
+            </article>
+            
+            <article class="article pick">
+                <h3 class="article-title">Operation Bluebird wants to relaunch "Twitter"</h3>
+                <p class="article-title-kr">'Operation Bluebird', 트위터 상표 탈환 시도</p>
+                <p class="article-desc">버지니아 스타트업이 미국 특허청에 X사의 'Twitter' 상표 취소 청원서 제출. 머스크가 브랜드를 사실상 포기했다고 주장하며 Twitter.new 출시 계획.</p>
+                <div class="article-meta">
+                    <span class="source">Ars Technica</span>
+                    <span>📅 12/10 21:32 KST</span>
+                    <a href="https://arstechnica.com/information-technology/2025/12/can-twitter-fly-again-startup-wants-to-pry-iconic-trademark-from-musks-x/" target="_blank">원문 보기 →</a>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 브랜드 포기 여부를 둘러싼 법적 분쟁. 머스크의 X 전환 전략에 대한 흥미로운 도전 | 소셜미디어 + 지적재산권
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">14</div>
+                    <div class="stat-label">기사</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">섹션</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Pick</div>
+                </div>
+            </div>
+            <p>Value Score 3.0 이상 기사만 선별 | 3중 신호: RSS + 홈페이지 TOP + 랭킹 섹션</p>
+            <p style="margin-top: 10px;">© 2026 Foreign News Briefing</p>
+        </footer>
+    </div>
+</body>
+</html>
