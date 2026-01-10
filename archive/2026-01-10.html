@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트럼프, 세계 기후조약 UNFCCC 탈퇴 선언 | GM, EV 축소로 $60억 손실</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b7280;
+            --border-color: #2a2a3a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        
+        .date {
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-gold);
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        section {
+            margin-bottom: 50px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .section-icon {
+            font-size: 1.5rem;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--text-primary);
+        }
+        
+        .article {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-blue);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .article:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 20px rgba(74, 158, 255, 0.1);
+        }
+        
+        .article.top {
+            border-left-color: var(--accent-red);
+        }
+        
+        .article.pick {
+            border-left-color: var(--accent-purple);
+            background: linear-gradient(135deg, var(--bg-card), #1f1a2e);
+        }
+        
+        .article-title {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        
+        .article-title-kr {
+            font-size: 1rem;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+        }
+        
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            background: var(--bg-secondary);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+        }
+        
+        .badge.top { background: rgba(255, 59, 59, 0.2); color: var(--accent-red); }
+        .badge.popular { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
+        .badge.cross { background: rgba(74, 158, 255, 0.2); color: var(--accent-blue); }
+        .badge.follow { background: rgba(168, 85, 247, 0.2); color: var(--accent-purple); }
+        
+        .source {
+            color: var(--accent-blue);
+        }
+        
+        .source a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        .source a:hover {
+            text-decoration: underline;
+        }
+        
+        .pick-reason {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--accent-purple);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        footer a {
+            color: var(--accent-blue);
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            h1 { font-size: 1.4rem; }
+            .article { padding: 20px; }
+            .stats { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="date">📅 2026년 1월 10일 금요일</div>
+        <h1>트럼프, 세계 기후조약 UNFCCC 탈퇴 선언 | GM, EV 축소로 $60억 손실</h1>
+        <p class="subtitle">Value Score 3.0 이상 기사 선별 | 3중 신호: RSS + 홈페이지 TOP + 랭킹 섹션</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">12</div>
+                <div class="stat-label">총 기사</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">5</div>
+                <div class="stat-label">섹션</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Claude's Pick</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="top">
+        <div class="section-header">
+            <span class="section-icon">🔥</span>
+            <h2 class="section-title">TOP Headlines</h2>
+        </div>
+        
+        <article class="article top">
+            <h3 class="article-title">Trump withdraws US from world's most important climate treaty</h3>
+            <p class="article-title-kr">트럼프, 세계 최초로 UNFCCC 탈퇴 선언 - 66개 국제기구 동시 탈퇴</p>
+            <p class="article-summary">트럼프 대통령이 1992년 체결된 유엔기후변화협약(UNFCCC)과 IPCC 등 66개 국제기구 탈퇴를 선언. 세계 최초로 기후조약을 탈퇴하는 국가가 되며, 파리협정 복귀도 사실상 불가능해져</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://arstechnica.com/science/2026/01/trump-withdraws-us-from-worlds-most-important-climate-treaty/" target="_blank">Ars Technica</a> · 📅 01/08</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge cross">🔄 5개+ 매체</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article top">
+            <h3 class="article-title">General Motors writes down $6 billion as domestic EV sales plans change</h3>
+            <p class="article-title-kr">GM, 미국 내 EV 판매 축소로 $60억 손실 처리</p>
+            <p class="article-summary">GM이 전기차 생산·판매 축소에 따른 $60억 손실을 발표. 세금 공제 폐지와 딜러 저항, 그리고 트럼프 행정부의 규제 완화가 맞물려 미국 자동차 업계의 EV 후퇴 가속화</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://arstechnica.com/cars/2026/01/fewer-american-evs-costs-gm-6-billion-even-as-its-chinese-sales-boom/" target="_blank">Ars Technica</a> · 📅 01/09</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge popular">📉 산업</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article top">
+            <h3 class="article-title">NASA orders "controlled medical evacuation" from the International Space Station</h3>
+            <p class="article-title-kr">NASA, 65년 역사상 최초 ISS 의료 대피 명령 - 우주비행사 4명 조기 귀환</p>
+            <p class="article-summary">NASA가 65년 역사상 처음으로 건강 문제로 인한 우주정거장 의료 대피를 명령. Crew-11 미션 4명이 예정보다 6주 일찍 지구로 귀환 예정</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://arstechnica.com/space/2026/01/in-a-first-nasa-orders-astronauts-home-after-unspecified-medical-issue/" target="_blank">Ars Technica</a> · 📅 01/09</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge follow">🔁 후속</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="ai-tech">
+        <div class="section-header">
+            <span class="section-icon">🤖</span>
+            <h2 class="section-title">AI/기술</h2>
+        </div>
+
+        <article class="article">
+            <h3 class="article-title">OpenAI Is Asking Contractors to Upload Work From Past Jobs to Evaluate AI Agents</h3>
+            <p class="article-title-kr">OpenAI, AI 에이전트 평가용 실제 업무 문서 수집 - 기밀 정보 논란</p>
+            <p class="article-summary">OpenAI가 계약직에게 이전 직장 프로젝트 문서 업로드를 요청. 기밀 정보 삭제 책임을 계약직에게 전가하는 방식에 논란 제기</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://www.wired.com/story/openai-contractor-upload-real-work-documents-ai-agents/" target="_blank">WIRED</a> · 📅 01/10</span>
+                <div class="badges">
+                    <span class="badge popular">📊 조사</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">ChatGPT falls to new data-pilfering attack as a vicious cycle in AI continues</h3>
+            <p class="article-title-kr">ChatGPT, 새로운 데이터 탈취 공격 'ZombieAgent'에 취약</p>
+            <p class="article-summary">보안 연구진이 ChatGPT의 장기 메모리에 침투해 사용자 정보를 탈취하는 새 공격 기법 발견. AI 가드레일의 반복적 우회 문제 재확인</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://arstechnica.com/security/2026/01/chatgpt-falls-to-new-data-pilfering-attack-as-a-vicious-cycle-in-ai-continues/" target="_blank">Ars Technica</a> · 📅 01/08</span>
+                <div class="badges">
+                    <span class="badge cross">🔐 보안</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Grok assumes users seeking images of underage girls have "good intent"</h3>
+            <p class="article-title-kr">Grok, 미성년 여아 이미지 요청에 "선의로 추정" - 안전 가드라인 문제</p>
+            <p class="article-summary">Grok의 공개된 GitHub 안전 가이드라인 분석 결과, 미성년자 관련 요청에도 '선의'를 가정하도록 프로그래밍되어 있음이 밝혀져</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://arstechnica.com/tech-policy/2026/01/grok-assumes-users-seeking-images-of-underage-girls-have-good-intent/" target="_blank">Ars Technica</a> · 📅 01/08</span>
+                <div class="badges">
+                    <span class="badge follow">🔁 후속</span>
+                    <span class="badge cross">🔄 5개+ 매체</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="economy">
+        <div class="section-header">
+            <span class="section-icon">💰</span>
+            <h2 class="section-title">경제/비즈니스</h2>
+        </div>
+
+        <article class="article">
+            <h3 class="article-title">High RAM prices mean record-setting profits for Samsung and other memory makers</h3>
+            <p class="article-title-kr">RAM 가격 급등으로 삼성전자 등 메모리 업체 사상 최대 실적</p>
+            <p class="article-summary">메모리 공급 부족과 가격 상승으로 삼성전자 4분기 영업이익 약 $138억(20조 원) 전망. 전년 동기 대비 3배 이상 증가</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://arstechnica.com/gadgets/2026/01/high-ram-prices-mean-record-setting-profits-for-samsung-and-other-memory-makers/" target="_blank">Ars Technica</a> · 📅 01/08</span>
+                <div class="badges">
+                    <span class="badge popular">📈 실적</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Amazon is planning a Super Amazon-mart store near Chicago</h3>
+            <p class="article-title-kr">아마존, 시카고 근교에 '슈퍼 아마존마트' 대형 오프라인 매장 계획</p>
+            <p class="article-summary">아마존이 월마트식 슈퍼센터 진출 시도. 22.9만 평방피트 규모로 식료품·일반 상품 판매와 풀필먼트 센터를 결합한 새 포맷</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://www.theverge.com/news/860058/amazon-chicago-supercenter-store-plans" target="_blank">The Verge</a> · 📅 01/09</span>
+                <div class="badges">
+                    <span class="badge cross">🛒 유통</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="global">
+        <div class="section-header">
+            <span class="section-icon">🌏</span>
+            <h2 class="section-title">국제/정책</h2>
+        </div>
+
+        <article class="article">
+            <h3 class="article-title">X could face UK ban over deepfakes, minister says</h3>
+            <p class="article-title-kr">英 정부, X 금지 가능성 언급 - Grok 딥페이크 대응 강화</p>
+            <p class="article-summary">영국 정부가 Grok 딥페이크 문제에 대해 X 금지 권한까지 행사할 수 있다고 경고. Ofcom에 최대 수준의 규제 조치 촉구</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://www.bbc.com/news/articles/c99kn52nx9do" target="_blank">BBC</a> · 📅 01/09</span>
+                <div class="badges">
+                    <span class="badge follow">🔁 후속</span>
+                    <span class="badge cross">🔄 규제</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Former Google CEO plans to singlehandedly fund a Hubble telescope replacement</h3>
+            <p class="article-title-kr">에릭 슈미트, 허블 우주망원경 후속기 개인 자금으로 추진</p>
+            <p class="article-summary">전 구글 CEO 에릭 슈미트가 민간 자금으로 대규모 천문 망원경 프로젝트 투자 발표. 2차 세계대전 이후 정부 주도였던 대형 망원경 건설의 패러다임 전환</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://arstechnica.com/space/2026/01/eric-schmidt-will-massively-invest-in-private-telescopes-including-hubble-replacement/" target="_blank">Ars Technica</a> · 📅 01/08</span>
+                <div class="badges">
+                    <span class="badge popular">🚀 우주</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="picks">
+        <div class="section-header">
+            <span class="section-icon">💎</span>
+            <h2 class="section-title">Claude's Pick</h2>
+        </div>
+
+        <article class="article pick">
+            <h3 class="article-title">The AI race is creating a new world order</h3>
+            <p class="article-title-kr">AI 경쟁이 새로운 세계 질서를 만들고 있다 - Rest of World 심층분석</p>
+            <p class="article-summary">AI 기술 패권 경쟁이 글로벌 권력 구조를 재편하고 있다는 분석. 미국-중국 경쟁 속에서 신흥국들의 기회와 위험, 그리고 기술 식민주의 우려</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://restofworld.org/2026/silicon-empires-nick-srnicek-book/" target="_blank">Rest of World</a> · 📅 01/08</span>
+                <div class="badges">
+                    <span class="badge pick">💎 Pick</span>
+                </div>
+            </div>
+            <p class="pick-reason">📌 선정 이유: AI 기술 패권의 지정학적 함의 | 트럼프의 UNFCCC 탈퇴와 맞물려 읽으면 미국 기술 우선주의의 글로벌 파급 효과 이해에 도움</p>
+        </article>
+
+        <article class="article pick">
+            <h3 class="article-title">In Chinese data factories, workers teach humanoid robots boring tasks</h3>
+            <p class="article-title-kr">중국 데이터 공장 - 노동자들이 휴머노이드 로봇에게 지루한 업무를 가르친다</p>
+            <p class="article-summary">중국 전역에 '로봇 훈련 센터'가 확산. 저임금 노동자들이 휴머노이드 로봇에게 일상 업무를 시연하며 AI 훈련 데이터를 생산하는 새로운 노동 형태</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://restofworld.org/2026/china-robots-training-centers-workers/" target="_blank">Rest of World</a> · 📅 01/07</span>
+                <div class="badges">
+                    <span class="badge pick">💎 Pick</span>
+                </div>
+            </div>
+            <p class="pick-reason">📌 선정 이유: Physical AI 시대의 숨겨진 인간 노동 | CES 2026의 화려한 로봇 뒤에 있는 노동 현실, 글로벌 AI 공급망의 새로운 단면</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>📰 Value Score 3.0 이상 | 3중 신호 시스템 (RSS + 홈페이지 TOP + 랭킹 섹션)</p>
+        <p>🔗 <a href="https://hong4137.github.io/briefing">브리핑 아카이브</a></p>
+    </footer>
+</body>
+</html>

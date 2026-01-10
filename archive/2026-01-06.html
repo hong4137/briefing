@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nvidia CES 2026 'Physical AI' 선언, 현대차 휴머노이드 공장 배치</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b7280;
+            --border-color: #2a2a3a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        
+        .date {
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-gold);
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        section {
+            margin-bottom: 50px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .section-icon {
+            font-size: 1.5rem;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--text-primary);
+        }
+        
+        .article {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-blue);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .article:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 20px rgba(74, 158, 255, 0.1);
+        }
+        
+        .article.top {
+            border-left-color: var(--accent-red);
+        }
+        
+        .article.pick {
+            border-left-color: var(--accent-purple);
+            background: linear-gradient(135deg, var(--bg-card), #1f1a2e);
+        }
+        
+        .article-title {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        
+        .article-title-kr {
+            font-size: 1rem;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+        }
+        
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            background: var(--bg-secondary);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+        }
+        
+        .badge.top { background: rgba(255, 59, 59, 0.2); color: var(--accent-red); }
+        .badge.popular { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
+        .badge.cross { background: rgba(74, 158, 255, 0.2); color: var(--accent-blue); }
+        .badge.follow { background: rgba(168, 85, 247, 0.2); color: var(--accent-purple); }
+        
+        .source {
+            color: var(--accent-blue);
+        }
+        
+        .source a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        .source a:hover {
+            text-decoration: underline;
+        }
+        
+        .pick-reason {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--accent-purple);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        footer a {
+            color: var(--accent-blue);
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            h1 { font-size: 1.4rem; }
+            .article { padding: 20px; }
+            .stats { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="date">📅 2026년 1월 6일 월요일</div>
+        <h1>Nvidia CES 2026 'Physical AI' 선언, 현대차 휴머노이드 공장 배치</h1>
+        <p class="subtitle">Value Score 3.0 이상 기사 선별 | 3중 신호: RSS + 홈페이지 TOP + 랭킹 섹션</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">13</div>
+                <div class="stat-label">총 기사</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">5</div>
+                <div class="stat-label">섹션</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Claude's Pick</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="top">
+        <div class="section-header">
+            <span class="section-icon">🔥</span>
+            <h2 class="section-title">TOP Headlines</h2>
+        </div>
+        
+        <article class="article top">
+            <h3 class="article-title">Nvidia unveils self-driving car tech as it seeks to power more products with AI</h3>
+            <p class="article-title-kr">Nvidia, CES 2026서 자율주행 기술 공개 - 'Physical AI' 시대 선언</p>
+            <p class="article-summary">젠슨 황 CEO가 CES 2026 키노트에서 자율주행차, 휴머노이드 로봇을 아우르는 'Physical AI' 플랫폼 전략 발표. Nvidia가 로봇 산업의 안드로이드가 되겠다는 비전 제시</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://www.bbc.com/news/articles/c0jv1vd571wo" target="_blank">BBC</a> · 📅 01/06 19:30 KST</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge cross">🔄 5개+ 매체</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article top">
+            <h3 class="article-title">Car giant Hyundai to use human-like robots in factories</h3>
+            <p class="article-title-kr">현대차, 공장에 휴머노이드 로봇 배치 발표</p>
+            <p class="article-summary">현대자동차가 Boston Dynamics 기술을 활용해 생산 라인에 인간형 로봇을 배치할 계획 발표. 자동차 제조업 자동화의 새로운 이정표</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://www.bbc.com/news/articles/cvgjm5x54ldo" target="_blank">BBC</a> · 📅 01/06 12:26 KST</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge popular">📈 인기</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article top">
+            <h3 class="article-title">Lego unveils tech-filled Smart Bricks - to play experts' unease</h3>
+            <p class="article-title-kr">레고 스마트 브릭 CES 공개 - 전문가들 "스크린 없는 디지털 플레이" 주목</p>
+            <p class="article-summary">레고가 전자 센서 내장 스마트 브릭을 CES 2026에서 공개. 물리적 조립과 디지털 상호작용을 결합하되 스크린 의존도를 낮춘 혁신적 접근으로 Best In Show 수상</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://www.bbc.com/news/articles/crmlnmnwzk2o" target="_blank">BBC</a> · 📅 01/07 01:20 KST</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge popular">📈 화제</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="ai-tech">
+        <div class="section-header">
+            <span class="section-icon">🤖</span>
+            <h2 class="section-title">AI/기술</h2>
+        </div>
+
+        <article class="article">
+            <h3 class="article-title">Countries are outlawing online gambling ads. Meta is selling them anyway</h3>
+            <p class="article-title-kr">Meta, 온라인 도박 광고 금지 국가에서도 광고 판매 논란</p>
+            <p class="article-summary">여러 국가에서 온라인 도박 광고가 불법임에도 Meta가 Facebook·Instagram을 통해 해당 광고를 계속 판매하고 있다는 조사 결과 발표</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://restofworld.org/2026/meta-online-gambling-ads/" target="_blank">Rest of World</a> · 📅 01/06 20:00 KST</span>
+                <div class="badges">
+                    <span class="badge popular">📊 조사</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Government demands Musk's X deals with 'appalling' Grok AI deepfakes</h3>
+            <p class="article-title-kr">영국 정부, X에 Grok 딥페이크 "끔찍하다" 즉각 조치 요구</p>
+            <p class="article-summary">영국 정부가 Grok AI의 비동의 딥페이크 이미지 생성 기능에 대해 X에 즉각적인 조치를 요구. 규제 당국 Ofcom도 공식 질의</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://www.bbc.com/news/articles/crrn054nxe7o" target="_blank">BBC</a> · 📅 01/07 02:01 KST</span>
+                <div class="badges">
+                    <span class="badge follow">🔁 후속</span>
+                    <span class="badge cross">🔄 3개 매체</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Ofcom asks X about reports its Grok AI makes sexualised images of children</h3>
+            <p class="article-title-kr">英 Ofcom, Grok AI 아동 성적 이미지 생성 의혹 공식 조사</p>
+            <p class="article-summary">영국 통신규제기관 Ofcom이 Grok AI가 아동의 성적 이미지를 생성했다는 보도에 대해 X에 공식 질의. 온라인안전법 위반 여부 검토</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://www.bbc.com/news/articles/c5y5w0k99r1o" target="_blank">BBC</a> · 📅 01/06 02:43 KST</span>
+                <div class="badges">
+                    <span class="badge follow">🔁 후속</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="economy">
+        <div class="section-header">
+            <span class="section-icon">💰</span>
+            <h2 class="section-title">경제/비즈니스</h2>
+        </div>
+
+        <article class="article">
+            <h3 class="article-title">Chinese AI unicorns beat Silicon Valley giants in race to go public</h3>
+            <p class="article-title-kr">중국 AI 유니콘 Zhipu·MiniMax, 홍콩 IPO 경쟁 본격화</p>
+            <p class="article-summary">중국 AI 스타트업 Zhipu AI와 MiniMax가 홍콩 증시 상장 절차에 돌입. OpenAI, Anthropic보다 먼저 공개 시장에 진출하며 중국식 AI 상용화 전략 주목</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://restofworld.org/2026/zhipu-ai-minimax-ipo/" target="_blank">Rest of World</a> · 📅 01/06 20:11 KST</span>
+                <div class="badges">
+                    <span class="badge popular">📈 IPO</span>
+                    <span class="badge cross">🔄 2개 매체</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Why Venezuela's political shock had MercadoLibre's stock rallying</h3>
+            <p class="article-title-kr">베네수엘라 정변, MercadoLibre 주가 급등 촉발</p>
+            <p class="article-summary">미국의 베네수엘라 개입과 마두로 체포 이후 라틴아메리카 최대 전자상거래 기업 MercadoLibre 주가 급등. 베네수엘라 시장 재개방 기대</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://restofworld.org/2026/maduro-mercadolibre-venezuela/" target="_blank">Rest of World</a> · 📅 01/07 17:49 KST</span>
+                <div class="badges">
+                    <span class="badge popular">📈 시장</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="global">
+        <div class="section-header">
+            <span class="section-icon">🌏</span>
+            <h2 class="section-title">국제/정책</h2>
+        </div>
+
+        <article class="article">
+            <h3 class="article-title">China to crack down on AI firms to protect kids</h3>
+            <p class="article-title-kr">중국, 아동 보호 위해 AI 기업 단속 강화</p>
+            <p class="article-summary">중국 정부가 아동·청소년 보호를 위해 AI 기업에 대한 규제를 강화한다고 발표. 생성형 AI의 유해 콘텐츠 필터링 의무화</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://www.bbc.com/news/articles/c8dydlmenvro" target="_blank">BBC</a> · 📅 12/30 11:32 KST</span>
+                <div class="badges">
+                    <span class="badge cross">🔄 규제</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Why everything from your phone to your PC may get pricier in 2026</h3>
+            <p class="article-title-kr">2026년 스마트폰·PC 가격 상승 전망 - 반도체 공급난 지속</p>
+            <p class="article-summary">DRAM·NAND 공급 부족과 AI 칩 수요 급증으로 2026년 전자제품 가격 상승 불가피. 소비자 부담 증가 전망</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://www.bbc.com/news/articles/c1dzdndzlxqo" target="_blank">BBC</a> · 📅 01/02 10:04 KST</span>
+                <div class="badges">
+                    <span class="badge popular">📊 전망</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="picks">
+        <div class="section-header">
+            <span class="section-icon">💎</span>
+            <h2 class="section-title">Claude's Pick</h2>
+        </div>
+
+        <article class="article pick">
+            <h3 class="article-title">In Chinese data factories, workers teach humanoid robots boring tasks</h3>
+            <p class="article-title-kr">중국 '로봇 훈련 공장' - 노동자들이 휴머노이드에 반복 작업 교육</p>
+            <p class="article-summary">중국 전역에 로봇 훈련 센터 확산. 인간 노동자들이 휴머노이드 로봇에게 일상적 작업을 시연하며 AI 학습 데이터를 생성하는 새로운 산업 등장</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://restofworld.org/2026/china-robots-training-centers-workers/" target="_blank">Rest of World</a> · 📅 01/07 20:00 KST</span>
+                <div class="badges">
+                    <span class="badge pick">💎 Pick</span>
+                </div>
+            </div>
+            <p class="pick-reason">📌 선정 이유: Physical AI 시대의 새로운 노동 형태 | 중국 AI 생태계의 독특한 발전 경로, 데이터 수집 방식의 진화</p>
+        </article>
+
+        <article class="article pick">
+            <h3 class="article-title">The AI race is creating a new world order</h3>
+            <p class="article-title-kr">AI 경쟁이 만드는 새로운 세계 질서 - Silicon Empires 저자 분석</p>
+            <p class="article-summary">Nick Srnicek의 신간 'Silicon Empires' 발췌. AI 기술 패권 경쟁이 어떻게 글로벌 정치·경제 질서를 재편하고 있는지 심층 분석</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://restofworld.org/2026/silicon-empires-nick-srnicek-book/" target="_blank">Rest of World</a> · 📅 01/08 20:00 KST</span>
+                <div class="badges">
+                    <span class="badge pick">💎 Pick</span>
+                </div>
+            </div>
+            <p class="pick-reason">📌 선정 이유: 거시적 관점의 AI 지정학 분석 | 미중 기술 갈등의 구조적 이해에 도움</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>📰 Value Score 3.0 이상 | 3중 신호 시스템 (RSS + 홈페이지 TOP + 랭킹 섹션)</p>
+        <p>🔗 <a href="https://hong4137.github.io/briefing">브리핑 아카이브</a></p>
+    </footer>
+</body>
+</html>
