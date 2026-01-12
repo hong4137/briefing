@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google 창업자 캘리포니아 탈출 | 인도네시아·말레이시아 Grok 차단</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --text-primary: #f0f0f0;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666;
+            --border-color: #2a2a3a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .header .date {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        .header .stats {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-red);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .article {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 3px solid var(--accent-blue);
+            transition: transform 0.2s;
+        }
+        .article:hover {
+            transform: translateX(5px);
+        }
+        .article.top { border-left-color: var(--accent-red); }
+        .article.pick { border-left-color: var(--accent-gold); }
+        .article h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .article h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .article h3 a:hover {
+            color: var(--accent-blue);
+        }
+        .article .korean-title {
+            font-size: 1rem;
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .article .summary {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+        .article .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .badge {
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .badge.top { background: var(--accent-red); color: white; }
+        .badge.popular { background: var(--accent-green); color: white; }
+        .badge.trending { background: var(--accent-purple); color: white; }
+        .badge.cross { background: var(--accent-blue); color: white; }
+        .source-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        .source-link:hover {
+            text-decoration: underline;
+        }
+        .picks-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        .picks-section .section-title {
+            border-bottom-color: var(--accent-gold);
+        }
+        .pick-reason {
+            margin-top: 10px;
+            padding: 10px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+        }
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            .header h1 { font-size: 1.4rem; }
+            .article { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>📡 외신 브리핑</h1>
+        <div class="date">2026년 1월 12일 월요일</div>
+        <div class="stats">
+            Value Score 3.0+ 기사 선별 | 총 13건 | 3중 신호 시스템
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">🔥 TOP Headlines</h2>
+        
+        <article class="article top">
+            <h3><a href="https://techcrunch.com/2026/01/11/google-co-founders-may-be-pulling-out-of-california/" target="_blank">Google Co-Founders May Be Leaving California</a></h3>
+            <div class="korean-title">구글 창업자 래리 페이지·세르게이 브린, 캘리포니아 탈출 검토</div>
+            <div class="summary">실리콘밸리 부유세 공포 확산. 피터 틸 이어 구글 창업자들도 플로리다 이주 검토. 최대 23.8% 부유세 법안에 억만장자 엑소더스 가속</div>
+            <div class="meta">
+                <a href="https://techcrunch.com/2026/01/11/google-co-founders-may-be-pulling-out-of-california/" class="source-link" target="_blank">TechCrunch</a>
+                <span>📅 01/12 07:56 KST</span>
+                <span class="badge top">🔥 TOP</span>
+                <span class="badge cross">🔄 3개 매체</span>
+                <span>Score: 10.5</span>
+            </div>
+        </article>
+
+        <article class="article top">
+            <h3><a href="https://techcrunch.com/2026/01/11/indonesia-blocks-grok-over-non-consensual-sexualized-deepfakes/" target="_blank">Indonesia and Malaysia Block Grok Over Non-Consensual Deepfakes</a></h3>
+            <div class="korean-title">인도네시아·말레이시아, Grok 전면 차단 - 아시아 규제 도미노</div>
+            <div class="summary">성적 딥페이크 논란 지속. 영국 이어 동남아 국가들도 차단 조치. 머스크 X에 대한 글로벌 규제 압박 심화</div>
+            <div class="meta">
+                <a href="https://techcrunch.com/2026/01/11/indonesia-blocks-grok-over-non-consensual-sexualized-deepfakes/" class="source-link" target="_blank">TechCrunch</a>
+                <span>📅 01/12 00:07 KST</span>
+                <span class="badge top">🔥 TOP</span>
+                <span class="badge cross">🔄 4개 매체</span>
+                <span>Score: 11.0</span>
+            </div>
+        </article>
+
+        <article class="article top">
+            <h3><a href="https://techcrunch.com/2026/01/11/motional-puts-ai-at-center-of-robotaxi-reboot-as-it-targets-2026-for-driverless-service/" target="_blank">Motional Puts AI at Center of Robotaxi Reboot, Targets 2026</a></h3>
+            <div class="korean-title">현대차 합작 Motional, 2026년 무인 로보택시 서비스 재개 선언</div>
+            <div class="summary">Aptiv-현대차 JV, AI 중심 전략으로 재출발. 라스베이거스에서 올해 내 무인 서비스 목표. 웨이모·크루즈 경쟁 본격화</div>
+            <div class="meta">
+                <a href="https://techcrunch.com/2026/01/11/motional-puts-ai-at-center-of-robotaxi-reboot-as-it-targets-2026-for-driverless-service/" class="source-link" target="_blank">TechCrunch</a>
+                <span>📅 01/12 09:10 KST</span>
+                <span class="badge top">🔥 TOP</span>
+                <span>Score: 8.0</span>
+            </div>
+        </article>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">🤖 AI/기술</h2>
+
+        <article class="article">
+            <h3><a href="https://techcrunch.com/2026/01/11/google-announces-a-new-protocol-to-facilitate-commerce-using-ai-agents/" target="_blank">Google Announces New Protocol for AI Agent Commerce</a></h3>
+            <div class="korean-title">구글, AI 에이전트 커머스 프로토콜 발표</div>
+            <div class="summary">AI 에이전트가 자동으로 쇼핑·결제할 수 있는 새 표준 제안. 에이전트 시대 전자상거래 인프라 선점 경쟁</div>
+            <div class="meta">
+                <a href="https://techcrunch.com/2026/01/11/google-announces-a-new-protocol-to-facilitate-commerce-using-ai-agents/" class="source-link" target="_blank">TechCrunch</a>
+                <span>📅 01/12 00:00 KST</span>
+                <span class="badge popular">📈 인기</span>
+                <span>Score: 7.0</span>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3><a href="https://techcrunch.com/2026/01/11/google-removes-ai-overviews-for-certain-medical-queries/" target="_blank">Google Removes AI Overviews for Certain Medical Queries</a></h3>
+            <div class="korean-title">구글, 의료 검색서 AI Overviews 제거 - 오정보 논란 후 조치</div>
+            <div class="summary">췌장암 등 의료 질문에 위험한 오답 제공 논란 후 조치. AI 검색 정확도 신뢰 문제 부각</div>
+            <div class="meta">
+                <a href="https://techcrunch.com/2026/01/11/google-removes-ai-overviews-for-certain-medical-queries/" class="source-link" target="_blank">TechCrunch</a>
+                <span>📅 01/12 02:56 KST</span>
+                <span class="badge cross">🔄 2개 매체</span>
+                <span>Score: 6.5</span>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3><a href="https://venturebeat.com/technology/anthropic-cracks-down-on-unauthorized-claude-usage-by-third-party-harnesses" target="_blank">Anthropic Cracks Down on Unauthorized Claude Usage</a></h3>
+            <div class="korean-title">Anthropic, Claude Code 무단 사용 타사 앱 차단</div>
+            <div class="summary">OpenCode 등 서드파티 도구의 Claude API 스푸핑 차단. xAI의 Cursor 통한 Claude 사용도 제한. AI 모델 생태계 통제 강화</div>
+            <div class="meta">
+                <a href="https://venturebeat.com/technology/anthropic-cracks-down-on-unauthorized-claude-usage-by-third-party-harnesses" class="source-link" target="_blank">VentureBeat</a>
+                <span>📅 01/10 08:14 KST</span>
+                <span>Score: 5.5</span>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3><a href="https://arstechnica.com/security/2026/01/chatgpt-falls-to-new-data-pilfering-attack-as-a-vicious-cycle-in-ai-continues/" target="_blank">ChatGPT Falls to New Data-Pilfering Attack "ZombieAgent"</a></h3>
+            <div class="korean-title">ChatGPT 새로운 데이터 유출 공격 'ZombieAgent' 취약점 노출</div>
+            <div class="summary">장기 메모리에 악성 코드 심어 개인정보 탈취. AI 보안 가드레일의 한계 재확인</div>
+            <div class="meta">
+                <a href="https://arstechnica.com/security/2026/01/chatgpt-falls-to-new-data-pilfering-attack-as-a-vicious-cycle-in-ai-continues/" class="source-link" target="_blank">Ars Technica</a>
+                <span>📅 01/08 23:00 KST</span>
+                <span>Score: 5.0</span>
+            </div>
+        </article>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">💰 경제/비즈니스</h2>
+
+        <article class="article">
+            <h3><a href="https://techcrunch.com/2026/01/09/meta-signs-deals-with-three-nuclear-companies-for-6-plus-gw-of-power/" target="_blank">Meta Signs Deals with Three Nuclear Companies for 6+ GW of Power</a></h3>
+            <div class="korean-title">메타, 원자력 기업 3곳과 6GW+ 전력 계약 체결</div>
+            <div class="summary">AI 데이터센터 전력 수요 폭증에 원자력으로 대응. Oklo 등 SMR 스타트업에 대규모 투자</div>
+            <div class="meta">
+                <a href="https://techcrunch.com/2026/01/09/meta-signs-deals-with-three-nuclear-companies-for-6-plus-gw-of-power/" class="source-link" target="_blank">TechCrunch</a>
+                <span>📅 01/10 02:51 KST</span>
+                <span class="badge cross">🔄 2개 매체</span>
+                <span>Score: 7.0</span>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3><a href="https://www.theverge.com/news/860329/gamestop-is-kicking-off-2026-by-shutting-down-over-400-stores-in-42-states" target="_blank">GameStop Shuts Down Over 400 Stores in 42 States</a></h3>
+            <div class="korean-title">게임스탑, 42개 주 400개+ 매장 폐점 - 밈 주식의 현실</div>
+            <div class="summary">CEO 라이언 코언 $350억 스톡옵션 목표 달성 위해 비용 절감. 디지털 게임 시대 소매점 몰락 가속</div>
+            <div class="meta">
+                <a href="https://www.theverge.com/news/860329/gamestop-is-kicking-off-2026-by-shutting-down-over-400-stores-in-42-states" class="source-link" target="_blank">The Verge</a>
+                <span>📅 01/11 21:01 KST</span>
+                <span>Score: 5.5</span>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3><a href="https://techcrunch.com/2026/01/10/openai-is-reportedly-asking-contractors-to-upload-real-work-from-past-jobs/" target="_blank">OpenAI Asking Contractors to Upload Real Work from Past Jobs</a></h3>
+            <div class="korean-title">OpenAI, 계약자에 과거 직장 실제 업무 파일 업로드 요청</div>
+            <div class="summary">AI 에이전트 학습 데이터용. 기밀 정보 처리는 계약자 책임. 데이터 수집 윤리 논란</div>
+            <div class="meta">
+                <a href="https://techcrunch.com/2026/01/10/openai-is-reportedly-asking-contractors-to-upload-real-work-from-past-jobs/" class="source-link" target="_blank">TechCrunch</a>
+                <span>📅 01/11 06:18 KST</span>
+                <span class="badge cross">🔄 2개 매체</span>
+                <span>Score: 6.0</span>
+            </div>
+        </article>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">🚀 모빌리티/로보틱스</h2>
+
+        <article class="article">
+            <h3><a href="https://techcrunch.com/2026/01/11/wing-to-expand-drone-delivery-to-another-150-walmart-stores/" target="_blank">Wing to Expand Drone Delivery to Another 150 Walmart Stores</a></h3>
+            <div class="korean-title">알파벳 Wing, 월마트 드론 배송 150개 매장 확대</div>
+            <div class="summary">LA, 세인트루이스, 마이애미, 신시내티 신규 진출. 2027년까지 대규모 네트워크 구축 목표</div>
+            <div class="meta">
+                <a href="https://techcrunch.com/2026/01/11/wing-to-expand-drone-delivery-to-another-150-walmart-stores/" class="source-link" target="_blank">TechCrunch</a>
+                <span>📅 01/12 00:00 KST</span>
+                <span class="badge top">🔥 TOP</span>
+                <span>Score: 6.5</span>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3><a href="https://restofworld.org/2026/china-robots-training-centers-workers/" target="_blank">In Chinese Data Factories, Workers Teach Humanoid Robots Boring Tasks</a></h3>
+            <div class="korean-title">중국 '데이터 공장', 노동자가 휴머노이드 로봇 훈련</div>
+            <div class="summary">저임금 노동자들이 반복 동작으로 로봇 데이터 수집. Physical AI 훈련의 숨겨진 노동 현장</div>
+            <div class="meta">
+                <a href="https://restofworld.org/2026/china-robots-training-centers-workers/" class="source-link" target="_blank">Rest of World</a>
+                <span>📅 01/07 20:00 KST</span>
+                <span>Score: 6.0</span>
+            </div>
+        </article>
+    </section>
+
+    <section class="picks-section">
+        <h2 class="section-title">💎 Claude's Pick</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 0.9rem;">48시간 내 숨은 보석 | Signal 2개+ & 관심사 1개+</p>
+
+        <article class="article pick">
+            <h3><a href="https://techcrunch.com/2026/01/11/nuclear-startups-are-back-in-vogue-with-small-reactors-and-big-challenges/" target="_blank">Nuclear Startups Are Back in Vogue with Small Reactors</a></h3>
+            <div class="korean-title">소형 원자로 스타트업 붐 - AI가 원자력 르네상스 촉발</div>
+            <div class="summary">Microsoft, Google, Meta, Amazon 모두 원자력 투자. SMR 기술 상용화 경쟁 본격화. 규제 허들은 여전히 과제</div>
+            <div class="meta">
+                <a href="https://techcrunch.com/2026/01/11/nuclear-startups-are-back-in-vogue-with-small-reactors-and-big-challenges/" class="source-link" target="_blank">TechCrunch</a>
+                <span>📅 01/11 22:15 KST</span>
+            </div>
+            <div class="pick-reason">
+                <strong>선정 이유:</strong> 빅테크 원자력 투자 트렌드 + AI 인프라 에너지 수요 신호 | 반도체/데이터센터 공급망 연관성
+            </div>
+        </article>
+
+        <article class="article pick">
+            <h3><a href="https://restofworld.org/2026/meta-manus-singapore/" target="_blank">Will Meta-Manus Deal Push More Chinese AI Startups to Singapore?</a></h3>
+            <div class="korean-title">Meta-Manus 인수 후폭풍, 중국 AI 스타트업 싱가포르 이주 가속</div>
+            <div class="summary">미중 기술 갈등 속 싱가포르가 AI 스타트업 허브로 부상. 중국 기업들의 '탈중국' 전략 분석</div>
+            <div class="meta">
+                <a href="https://restofworld.org/2026/meta-manus-singapore/" class="source-link" target="_blank">Rest of World</a>
+                <span>📅 01/09 20:00 KST</span>
+            </div>
+            <div class="pick-reason">
+                <strong>선정 이유:</strong> 글로벌 AI 지정학 변화 신호 + 아시아 시장 재편 | 투자 관점 의미 있는 변화
+            </div>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>📡 Value Score 3.0+ 기사만 선별 | 3중 신호: RSS + 홈페이지 TOP + 랭킹 섹션</p>
+        <p style="margin-top: 10px;">Foreign News Collector v6.2 | Briefing Publisher v1.2</p>
+    </footer>
+</body>
+</html>
