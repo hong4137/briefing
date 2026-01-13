@@ -1,32 +1,32 @@
 {
   "briefings": [
     {
-      "date": "2026-01-12",
+      "date": "2026-01-13",
       "day": "월",
-      "title": "Google 창업자 캘리포니아 탈출 검토 | 인도네시아·말레이시아 Grok 차단",
-      "summary": "구글 창업자 래리 페이지·세르게이 브린이 캘리포니아 부유세 공포에 플로리다 이주 검토. 인도네시아·말레이시아가 Grok 딥페이크 논란에 전면 차단. 현대차 합작 Motional이 2026년 무인 로보택시 서비스 재개 선언.",
+      "title": "Apple Siri에 Google Gemini 채택, 10년 라이벌 AI 동맹",
+      "summary": "Apple이 차세대 Siri에 Google Gemini를 채택하며 10년 경쟁 관계 라이벌과 역사적 동맹. Anthropic Cowork 출시로 AI 에이전트 경쟁 가속. UK가 X/Grok 딥페이크에 공식 조사 착수.",
       "highlights": [
         {
           "category": "top",
-          "title": "구글 창업자 래리 페이지·세르게이 브린, 캘리포니아 탈출 검토",
-          "summary": "실리콘밸리 부유세 공포에 피터 틸 이어 억만장자 엑소더스 가속",
-          "url": "https://techcrunch.com/2026/01/11/google-co-founders-may-be-pulling-out-of-california/"
+          "title": "Apple, 차세대 Siri AI에 Google Gemini 채택",
+          "summary": "10년 경쟁 관계 라이벌의 역사적 AI 동맹",
+          "url": "https://www.theverge.com/news/860521/apple-siri-google-gemini-ai-personalization"
         },
         {
           "category": "top",
-          "title": "인도네시아·말레이시아, Grok 전면 차단",
-          "summary": "영국 이어 동남아 국가들도 딥페이크 논란에 규제 조치",
-          "url": "https://techcrunch.com/2026/01/11/indonesia-blocks-grok-over-non-consensual-sexualized-deepfakes/"
+          "title": "Anthropic, AI 에이전트 'Cowork' 출시",
+          "summary": "Claude Code의 일반 사용자 버전, 코딩 없이 업무 자동화",
+          "url": "https://techcrunch.com/2026/01/12/anthropics-new-cowork-tool-offers-claude-code-without-the-code/"
         },
         {
           "category": "top",
-          "title": "현대차 합작 Motional, 2026년 무인 로보택시 서비스 재개",
-          "summary": "AI 중심 전략으로 웨이모·크루즈 경쟁 본격화",
-          "url": "https://techcrunch.com/2026/01/11/motional-puts-ai-at-center-of-robotaxi-reboot-as-it-targets-2026-for-driverless-service/"
+          "title": "UK, X/Grok 딥페이크 공식 조사 착수",
+          "summary": "온라인안전법 위반 시 매출 10% 벌금 또는 UK 차단 가능",
+          "url": "https://www.theverge.com/news/860480/the-uk-is-formally-investigating-x-over-grok-deepfakes"
         }
       ],
       "stats": {
-        "articles": 13,
+        "articles": 12,
         "sections": 5,
         "picks": 2
       }

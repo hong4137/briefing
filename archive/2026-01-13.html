@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Siri에 Google Gemini 채택, 10년 라이벌 AI 동맹</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --border-color: #2a2a3a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .header .date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-red);
+        }
+        .article {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 3px solid var(--accent-blue);
+            transition: transform 0.2s;
+        }
+        .article:hover {
+            transform: translateX(5px);
+        }
+        .article.top { border-left-color: var(--accent-red); }
+        .article.pick { border-left-color: var(--accent-gold); }
+        .article h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .article .ko-title {
+            font-size: 0.95rem;
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .article .summary {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .badge.top { background: rgba(255, 59, 59, 0.2); color: var(--accent-red); }
+        .badge.popular { background: rgba(74, 158, 255, 0.2); color: var(--accent-blue); }
+        .badge.trending { background: rgba(168, 85, 247, 0.2); color: var(--accent-purple); }
+        .badge.cross { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
+        .badge.followup { background: rgba(255, 215, 0, 0.2); color: var(--accent-gold); }
+        .source { color: var(--accent-green); }
+        a { color: var(--accent-blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .pick-section {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(168, 85, 247, 0.1));
+            border-radius: 16px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        .pick-section .section-title {
+            border-bottom-color: var(--accent-gold);
+        }
+        .pick-reason {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: var(--accent-gold);
+        }
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-blue);
+        }
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🌐 외신 브리핑</h1>
+        <p class="date">2026년 1월 13일 월요일 | Value Score 3.0+ 선별</p>
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value">12</div>
+                <div class="stat-label">기사</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">5</div>
+                <div class="stat-label">섹션</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Pick</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">🔥 TOP Headlines</h2>
+
+        <article class="article top">
+            <h3>Apple picks Google's Gemini AI for its big Siri upgrade</h3>
+            <p class="ko-title">Apple, 차세대 Siri AI에 Google Gemini 채택</p>
+            <p class="summary">10년 경쟁 관계였던 Apple과 Google이 AI 시대에 전격 제휴. Apple은 OpenAI ChatGPT를 iOS에 통합했지만, 핵심 Siri 업그레이드에는 Google Gemini를 선택. 실리콘밸리 최대 라이벌의 역사적 동맹.</p>
+            <div class="article-meta">
+                <span class="source">The Verge</span>
+                <span class="badge top">🔥 TOP</span>
+                <span class="badge cross">🔄 3개 매체</span>
+                <span>📅 01/13 10:38 KST</span>
+                <a href="https://www.theverge.com/news/860521/apple-siri-google-gemini-ai-personalization" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article top">
+            <h3>Anthropic launches Cowork, a Claude Code-like for general computing</h3>
+            <p class="ko-title">Anthropic, AI 에이전트 'Cowork' 출시</p>
+            <p class="summary">코딩 지식 없이 Claude에게 폴더 접근 권한을 주고 업무 자동화 가능. Claude Code의 일반 사용자 버전으로, AI 에이전트 시대 가속화. OpenAI Operator와 정면 경쟁.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch</span>
+                <span class="badge top">🔥 TOP</span>
+                <span class="badge cross">🔄 3개 매체</span>
+                <span>📅 01/13 06:42 KST</span>
+                <a href="https://techcrunch.com/2026/01/12/anthropics-new-cowork-tool-offers-claude-code-without-the-code/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article top">
+            <h3>UK formally investigates X over Grok deepfakes</h3>
+            <p class="ko-title">UK, X/Grok 딥페이크 공식 조사 착수</p>
+            <p class="summary">Ofcom이 X의 Grok AI 성적 딥페이크 생성에 대해 공식 조사 개시. 온라인안전법 위반 시 매출의 10% 벌금 또는 UK 차단 가능성. 머스크는 '검열' 주장.</p>
+            <div class="article-meta">
+                <span class="source">The Verge</span>
+                <span class="badge top">🔥 TOP</span>
+                <span class="badge followup">🔁 후속</span>
+                <span>📅 01/13 09:52 KST</span>
+                <a href="https://www.theverge.com/news/860480/the-uk-is-formally-investigating-x-over-grok-deepfakes" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">🤖 AI/기술</h2>
+
+        <article class="article">
+            <h3>Mark Zuckerberg says Meta is launching its own AI infrastructure initiative</h3>
+            <p class="ko-title">Meta, 자체 AI 인프라 이니셔티브 발표</p>
+            <p class="summary">저커버그가 데이터센터와 AI 칩 자체 개발 전략 발표. 빅테크의 AI 인프라 내재화 경쟁 심화. Nvidia 의존도 낮추려는 움직임.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch</span>
+                <span class="badge top">🔥 TOP</span>
+                <span>📅 01/13 04:44 KST</span>
+                <a href="https://techcrunch.com/2026/01/12/mark-zuckerberg-says-meta-is-launching-its-own-ai-infrastructure-initiative/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3>Google removes some AI health summaries after investigation finds "dangerous" flaws</h3>
+            <p class="ko-title">Google, 위험한 AI 건강 요약 일부 제거</p>
+            <p class="summary">AI Overviews가 간 검사 결과에 대해 잘못된 정보 제공. 전문가들이 '위험하고 경악스럽다' 평가 후 Google이 일부 기능 제거.</p>
+            <div class="article-meta">
+                <span class="source">Ars Technica</span>
+                <span class="badge popular">📈 인기</span>
+                <span>📅 01/13 04:47 KST</span>
+                <a href="https://arstechnica.com/ai/2026/01/google-removes-some-ai-health-summaries-after-investigation-finds-dangerous-flaws/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3>Even Linus Torvalds is trying his hand at vibe coding</h3>
+            <p class="ko-title">리누스 토발즈도 AI 코딩 시도 중</p>
+            <p class="summary">Linux 창시자가 개인 취미 프로젝트에서 AI 보조 코딩 활용. "중간 단계인 나를 생략했다"며 AI 코딩 트렌드 합류.</p>
+            <div class="article-meta">
+                <span class="source">Ars Technica</span>
+                <span class="badge popular">📈 인기</span>
+                <span>📅 01/13 05:27 KST</span>
+                <a href="https://arstechnica.com/ai/2026/01/hobby-github-repo-shows-linus-torvalds-vibe-codes-sometimes/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">💰 경제/비즈니스</h2>
+
+        <article class="article">
+            <h3>GameStop is kicking off 2026 by shutting down over 400 stores in 42 states</h3>
+            <p class="ko-title">GameStop, 42개주 400개 이상 매장 폐쇄</p>
+            <p class="summary">밈 주식의 대표주자 GameStop이 대규모 매장 정리. CEO는 $350억 보상 패키지 확보 경쟁 중. 물리적 소매업 쇠퇴 가속화.</p>
+            <div class="article-meta">
+                <span class="source">The Verge</span>
+                <span class="badge top">🔥 TOP</span>
+                <span class="badge cross">🔄 2개 매체</span>
+                <span>📅 01/12</span>
+                <a href="https://www.theverge.com/news/860329/gamestop-is-kicking-off-2026-by-shutting-down-over-400-stores-in-42-states" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3>Paramount sues WBD over Netflix deal</h3>
+            <p class="ko-title">Paramount, Warner Bros. Discovery 상대 소송</p>
+            <p class="summary">Netflix 합병 관련 Paramount가 WBD 상대 소송 제기. WBD는 '무가치한 소송'이라며 Paramount 제안가 부적절 주장. 스트리밍 업계 재편 가속.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch</span>
+                <span class="badge popular">📈 인기</span>
+                <span>📅 01/13 05:49 KST</span>
+                <a href="https://techcrunch.com/2026/01/12/paramount-files-lawsuit-against-warner-bros-amidst-controversial-netflix-merger/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3>Meta plans to lay off hundreds of metaverse employees this week</h3>
+            <p class="ko-title">Meta, 메타버스 직원 수백 명 해고 예정</p>
+            <p class="summary">Reality Labs 부서에서 대규모 감원 예정. 메타버스 투자 축소하고 AI로 전략 전환 가속화. 빅테크 구조조정 지속.</p>
+            <div class="article-meta">
+                <span class="source">The Verge</span>
+                <span class="badge top">🔥 TOP</span>
+                <span>📅 01/13 05:14 KST</span>
+                <a href="https://www.theverge.com/news/860984/meta-reality-labs-layoffs-metaverse" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">🚗 모빌리티</h2>
+
+        <article class="article">
+            <h3>The Chevrolet Bolt is back… but for how long?</h3>
+            <p class="ko-title">쉐보레 볼트 부활... 하지만 얼마나 갈까</p>
+            <p class="summary">GM이 262마일 주행거리의 LFP 배터리 볼트 재출시. 하지만 미국 내 EV 정책 불확실성 속 장기 생존 의문. 150kW 급속충전 지원.</p>
+            <div class="article-meta">
+                <span class="source">Ars Technica</span>
+                <span class="badge popular">📈 인기</span>
+                <span>📅 01/13 10:59 KST</span>
+                <a href="https://arstechnica.com/cars/2026/01/the-chevrolet-bolt-is-back-but-for-how-long/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="pick-section">
+        <h2 class="section-title">💎 Claude's Pick</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 0.9rem;">48시간 내 숨은 보석 | Signal 2개+ & 관심사 1개+</p>
+
+        <article class="article pick">
+            <h3>More than 100 new tech unicorns were minted in 2025</h3>
+            <p class="ko-title">2025년 100개 이상 신규 유니콘 탄생</p>
+            <p class="summary">스타트업 겨울론에도 불구하고 2025년 한 해 동안 100개 이상의 기업이 $10억 밸류에이션 돌파. AI 기업이 대부분 차지. 벤처 시장 회복 신호.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch</span>
+                <span class="badge top">🔥 TOP</span>
+                <span>📅 01/13 01:00 KST</span>
+                <a href="https://techcrunch.com/2026/01/12/at-least-36-new-tech-unicorns-were-minted-in-2025-so-far/" target="_blank">원문 보기 →</a>
+            </div>
+            <div class="pick-reason">
+                <strong>선정 이유:</strong> 투자 시장 회복 신호 + 2026년 IPO 전망에 중요한 지표 | 스타트업 생태계 관심사
+            </div>
+        </article>
+
+        <article class="article pick">
+            <h3>Data center projects are dropping like flies</h3>
+            <p class="ko-title">미국 데이터센터 프로젝트 25개 취소</p>
+            <p class="summary">2025년 미국에서 최소 25개 데이터센터 프로젝트 취소. 지역 사회의 에너지·물 사용 반대 여론 급증. AI 인프라 확장에 새로운 장애물.</p>
+            <div class="article-meta">
+                <span class="source">The Verge</span>
+                <span>📅 01/13</span>
+                <a href="https://heatmap.news/politics/data-center-cancellations-2025" target="_blank">원문 보기 →</a>
+            </div>
+            <div class="pick-reason">
+                <strong>선정 이유:</strong> AI 인프라 투자 리스크 + 규제/ESG 관점 | 반도체 공급망 관심사
+            </div>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>3중 신호 시스템: RSS + 홈페이지 TOP + 랭킹 섹션</p>
+        <p>매체: TechCrunch, The Verge, Ars Technica, Wired, BBC, Guardian, VentureBeat, Reuters, SCMP, Rest of World</p>
+        <p style="margin-top: 10px;">© 2026 외신 브리핑 by Claude</p>
+    </footer>
+</body>
+</html>
