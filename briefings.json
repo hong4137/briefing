@@ -1,28 +1,28 @@
 {
   "briefings": [
     {
-      "date": "2026-01-13",
-      "day": "월",
-      "title": "Apple Siri에 Google Gemini 채택, 10년 라이벌 AI 동맹",
-      "summary": "Apple이 차세대 Siri에 Google Gemini를 채택하며 10년 경쟁 관계 라이벌과 역사적 동맹. Anthropic Cowork 출시로 AI 에이전트 경쟁 가속. UK가 X/Grok 딥페이크에 공식 조사 착수.",
+      "date": "2026-01-11",
+      "day": "토",
+      "title": "Google AI 에이전트 상거래 프로토콜 | 인니·말레이 Grok 차단 | Motional 로보택시 AI 재편",
+      "summary": "Google이 AI 에이전트가 온라인 쇼핑을 할 수 있는 새로운 상거래 프로토콜 발표. 인도네시아와 말레이시아가 Grok의 성적 딥페이크 생성 문제로 차단 조치. Motional이 AI 중심으로 로보택시 사업 전면 재편.",
       "highlights": [
         {
           "category": "top",
-          "title": "Apple, 차세대 Siri AI에 Google Gemini 채택",
-          "summary": "10년 경쟁 관계 라이벌의 역사적 AI 동맹",
-          "url": "https://www.theverge.com/news/860521/apple-siri-google-gemini-ai-personalization"
+          "title": "Google, AI 에이전트 상거래 프로토콜 발표",
+          "summary": "제품 검색, 비교, 결제까지 AI가 자동 수행하는 미래 상거래 인프라 구축",
+          "url": "https://techcrunch.com/2026/01/11/google-announces-a-new-protocol-to-facilitate-commerce-using-ai-agents/"
         },
         {
           "category": "top",
-          "title": "Anthropic, AI 에이전트 'Cowork' 출시",
-          "summary": "Claude Code의 일반 사용자 버전, 코딩 없이 업무 자동화",
-          "url": "https://techcrunch.com/2026/01/12/anthropics-new-cowork-tool-offers-claude-code-without-the-code/"
+          "title": "인도네시아·말레이시아, Grok 차단",
+          "summary": "비동의 성적 딥페이크 생성 문제로 아시아 주요국 AI 규제 압박 본격화",
+          "url": "https://techcrunch.com/2026/01/11/indonesia-blocks-grok-over-non-consensual-sexualized-deepfakes/"
         },
         {
           "category": "top",
-          "title": "UK, X/Grok 딥페이크 공식 조사 착수",
-          "summary": "온라인안전법 위반 시 매출 10% 벌금 또는 UK 차단 가능",
-          "url": "https://www.theverge.com/news/860480/the-uk-is-formally-investigating-x-over-grok-deepfakes"
+          "title": "Motional, AI 중심 로보택시 재편",
+          "summary": "Hyundai-Aptiv 합작사, 2026년 무인 서비스 목표로 기술 개발 가속화",
+          "url": "https://techcrunch.com/2026/01/11/motional-puts-ai-at-center-of-robotaxi-reboot-as-it-targets-2026-for-driverless-service/"
         }
       ],
       "stats": {
