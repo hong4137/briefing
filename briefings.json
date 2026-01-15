@@ -1,6 +1,37 @@
 {
   "briefings": [
     {
+      "date": "2026-01-15",
+      "day": "수",
+      "title": "Apple-Google AI 동맹 | Skild AI $140억 | Verizon 미국 대규모 장애",
+      "summary": "Apple이 Siri AI 업그레이드에 Google Gemini를 채택하며 역사적 동맹 체결. 로보틱스 소프트웨어 Skild AI가 $140억 밸류에이션 달성. Verizon 미국 전역 통신망 장애로 일부 911 통화까지 영향.",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "Apple, Siri AI 업그레이드에 Google Gemini 채택",
+          "summary": "오랜 경쟁 관계를 넘어선 전략적 AI 동맹",
+          "url": "https://www.bbc.com/news/articles/czdqvp2zqezo"
+        },
+        {
+          "category": "top",
+          "title": "Skild AI $140억 밸류에이션 달성",
+          "summary": "범용 로봇 두뇌 개발 스타트업, Physical AI 시대 핵심 기업으로 부상",
+          "url": "https://techcrunch.com/2026/01/14/robotic-software-maker-skild-ai-hits-14b-valuation/"
+        },
+        {
+          "category": "top",
+          "title": "Verizon 미국 전역 통신망 장애",
+          "summary": "일부 911 긴급통화까지 영향, 휴대폰 SOS 모드 전환",
+          "url": "https://www.theverge.com/news/861956/verizon-is-down-outage-cell-wireless-service-sos-mode"
+        }
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 6,
+        "picks": 2
+      }
+    },
+    {
       "date": "2026-01-11",
       "day": "토",
       "title": "Google AI 에이전트 상거래 프로토콜 | 인니·말레이 Grok 차단 | Motional 로보택시 AI 재편",

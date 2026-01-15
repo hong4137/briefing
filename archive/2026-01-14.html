@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple, Siri 업그레이드에 Google Gemini 채택 | Anthropic 경영진 개편</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b7280;
+            --border-color: #2a2a3a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        .date-badge {
+            display: inline-block;
+            background: var(--accent-red);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle { color: var(--text-secondary); font-size: 1rem; }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .stat-item { text-align: center; }
+        .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--accent-gold); }
+        .stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+        
+        section { margin-bottom: 40px; }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .section-icon { font-size: 1.5rem; }
+        .section-title { font-size: 1.3rem; font-weight: 700; }
+        
+        .article-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+        .article-card:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+        .article-badges { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+        .badge {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .badge-top { background: var(--accent-red); color: white; }
+        .badge-popular { background: var(--accent-gold); color: black; }
+        .badge-trending { background: var(--accent-purple); color: white; }
+        .badge-discussed { background: var(--accent-blue); color: white; }
+        .badge-cross { background: var(--accent-green); color: white; }
+        .badge-follow { background: #6b7280; color: white; }
+        
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--text-primary);
+        }
+        .article-title-ko {
+            font-size: 0.95rem;
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+        }
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .article-meta a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        .article-meta a:hover { text-decoration: underline; }
+        .score { color: var(--accent-gold); font-weight: 600; }
+        
+        .picks-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border: 1px solid var(--accent-purple);
+            border-radius: 12px;
+            padding: 25px;
+        }
+        .picks-section .section-header { border-bottom-color: var(--accent-purple); }
+        .pick-reason {
+            background: rgba(168, 85, 247, 0.1);
+            border-left: 3px solid var(--accent-purple);
+            padding: 10px 15px;
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+        }
+        .footer-text { color: var(--text-muted); font-size: 0.85rem; }
+        .footer-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            h1 { font-size: 1.4rem; }
+            .article-title { font-size: 1rem; }
+            .stats { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date-badge">📅 2026년 1월 14일 화요일</div>
+            <h1>Apple, Siri 업그레이드에 Google Gemini 채택</h1>
+            <p class="subtitle">Anthropic 경영진 개편 · Slackbot AI 에이전트 전환 · 뉴욕 로보택시 허용</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value">13</div>
+                    <div class="stat-label">Articles</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Sections</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Claude's Pick</div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section-header">
+                <span class="section-icon">🔥</span>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+            
+            <div class="article-card">
+                <div class="article-badges">
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 3개 매체</span>
+                </div>
+                <h3 class="article-title">Apple turns to Google to power AI upgrade for Siri</h3>
+                <p class="article-title-ko">애플, Siri AI 업그레이드에 Google Gemini 채택</p>
+                <p class="article-summary">애플이 Siri 음성 비서의 AI 성능 향상을 위해 자체 개발 대신 구글의 Gemini를 선택. 이로 인해 Alphabet 시가총액이 $4조를 돌파하며 Apple을 제치고 세계 2위 기업으로 부상</p>
+                <div class="article-meta">
+                    <span><a href="https://www.bbc.com/news/articles/czdqvp2zqezo" target="_blank">BBC</a> · <a href="https://www.theguardian.com/technology/2026/jan/12/google-gemini-alphabet-4-trillion-value" target="_blank">Guardian</a> | 📅 1/13 22:09 KST</span>
+                    <span class="score">Score: 11.5</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-badges">
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                </div>
+                <h3 class="article-title">Anthropic shakes up C-suite to expand its internal incubator</h3>
+                <p class="article-title-ko">Anthropic 경영진 개편, 내부 인큐베이터 Labs 팀 확대</p>
+                <p class="article-summary">Instagram 공동창업자 Mike Krieger가 CPO에서 Labs 팀 공동 리더로 이동. Ami Vora가 새로운 제품 총괄로 승진하며 실험적 AI 제품 개발에 집중</p>
+                <div class="article-meta">
+                    <span><a href="https://www.theverge.com/ai-artificial-intelligence/861475/anthropic-ai-c-suite-internal-incubator-labs-team-mike-krieger" target="_blank">The Verge</a> | 📅 1/14 05:30 KST</span>
+                    <span class="score">Score: 10.0</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-badges">
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 2개 매체</span>
+                </div>
+                <h3 class="article-title">New York governor clears path for robotaxis everywhere, with one notable exception</h3>
+                <p class="article-title-ko">뉴욕 주지사, 로보택시 전면 허용 법안 발의 - NYC만 제외</p>
+                <p class="article-summary">Kathy Hochul 뉴욕 주지사가 뉴욕시를 제외한 전 지역에서 자율주행 차량 운행을 허용하는 법안 발의. 미국 자율주행 규제 완화의 새로운 이정표</p>
+                <div class="article-meta">
+                    <span><a href="https://techcrunch.com/2026/01/13/new-york-governor-clears-path-for-robotaxis-everywhere-with-one-notable-exception/" target="_blank">TechCrunch</a> | 📅 1/14 07:05 KST</span>
+                    <span class="score">Score: 9.5</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <span class="section-icon">🤖</span>
+                <h2 class="section-title">AI / 기술</h2>
+            </div>
+
+            <div class="article-card">
+                <div class="article-badges">
+                    <span class="badge badge-popular">📈 인기</span>
+                </div>
+                <h3 class="article-title">Slackbot is an AI agent now</h3>
+                <p class="article-title-ko">Slackbot, AI 에이전트로 진화</p>
+                <p class="article-summary">Salesforce의 Slack이 기존 봇을 완전한 AI 에이전트로 업그레이드. 워크플로우 자동화와 맞춤형 업무 처리 가능</p>
+                <div class="article-meta">
+                    <span><a href="https://techcrunch.com/2026/01/13/slackbot-is-an-ai-agent-now/" target="_blank">TechCrunch</a> | 📅 1/13 22:00 KST</span>
+                    <span class="score">Score: 7.0</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-badges">
+                    <span class="badge badge-trending">📊 트렌딩</span>
+                </div>
+                <h3 class="article-title">Deepgram raises $130M at $1.3B valuation and buys a YC AI startup</h3>
+                <p class="article-title-ko">음성 AI Deepgram, $13억 밸류에이션으로 $1.3억 유치</p>
+                <p class="article-summary">음성 인식 AI 스타트업 Deepgram이 유니콘 반열에 오르며 YC 출신 AI 스타트업 인수</p>
+                <div class="article-meta">
+                    <span><a href="https://techcrunch.com/2026/01/13/deepgram-raises-130m-at-1-3b-valuation-and-buys-a-yc-ai-startup/" target="_blank">TechCrunch</a> | 📅 1/13 22:30 KST</span>
+                    <span class="score">Score: 6.5</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Google removes some AI health summaries after investigation finds "dangerous" flaws</h3>
+                <p class="article-title-ko">Google, 위험한 AI 건강 정보 요약 기능 일부 삭제</p>
+                <p class="article-summary">Guardian 조사 결과 AI Overviews가 간 기능 검사 등에서 부정확한 건강 정보 제공. 환자 안전 위협으로 해당 쿼리 비활성화</p>
+                <div class="article-meta">
+                    <span><a href="https://arstechnica.com/ai/2026/01/google-removes-some-ai-health-summaries-after-investigation-finds-dangerous-flaws/" target="_blank">Ars Technica</a> | 📅 1/13 06:47 KST</span>
+                    <span class="score">Score: 5.5</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Neo humanoid maker 1X releases world model to help bots learn what they see</h3>
+                <p class="article-title-ko">휴머노이드 로봇 1X, 시각 학습용 월드 모델 공개</p>
+                <p class="article-summary">노르웨이 로봇 스타트업 1X가 Neo 휴머노이드의 시각 인지 능력 향상을 위한 월드 모델 오픈소스 공개</p>
+                <div class="article-meta">
+                    <span><a href="https://techcrunch.com/2026/01/13/neo-humanoid-maker-1x-releases-world-model-to-help-bots-learn-what-they-see/" target="_blank">TechCrunch</a> | 📅 1/14 02:14 KST</span>
+                    <span class="score">Score: 5.0</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <span class="section-icon">💰</span>
+                <h2 class="section-title">경제 / 비즈니스</h2>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Microsoft announces glut of new data centers but says it won't let your electricity bill go up</h3>
+                <p class="article-title-ko">Microsoft, 대규모 데이터센터 확장 발표 - 전기요금 인상 방지 약속</p>
+                <p class="article-summary">AI 수요 급증에 따른 데이터센터 확장 계획 발표. 지역 주민 전기요금 부담 방지를 위한 조치 병행</p>
+                <div class="article-meta">
+                    <span><a href="https://techcrunch.com/2026/01/13/microsoft-announces-glut-of-new-data-centers-but-says-it-wont-let-your-electricity-bill-go-up/" target="_blank">TechCrunch</a> | 📅 1/14 05:15 KST</span>
+                    <span class="score">Score: 5.0</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">BYD burns profit chasing global dominance over Tesla</h3>
+                <p class="article-title-ko">BYD, Tesla 추월 위해 수익성 희생하며 글로벌 확장</p>
+                <p class="article-summary">중국 BYD가 글로벌 EV 시장 지배력 확대를 위해 공격적 가격 전략으로 이익률 하락 감수</p>
+                <div class="article-meta">
+                    <span><a href="https://restofworld.org/2026/byd-profits-drop/" target="_blank">Rest of World</a> | 📅 1/13 14:11 KST</span>
+                    <span class="score">Score: 4.5</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">ElevenLabs CEO says the voice AI startup crossed $330M ARR last year</h3>
+                <p class="article-title-ko">음성 AI ElevenLabs, 연 매출 $3.3억 돌파</p>
+                <p class="article-summary">음성 합성 AI 스타트업 ElevenLabs가 폭발적 성장세로 ARR $3.3억 달성</p>
+                <div class="article-meta">
+                    <span><a href="https://techcrunch.com/2026/01/13/elevenlabs-ceo-says-the-voice-ai-startup-crossed-330-million-arr-last-year/" target="_blank">TechCrunch</a> | 📅 1/14 01:15 KST</span>
+                    <span class="score">Score: 4.0</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <span class="section-icon">🌏</span>
+                <h2 class="section-title">글로벌 / 규제</h2>
+            </div>
+
+            <div class="article-card">
+                <div class="article-badges">
+                    <span class="badge badge-follow">🔁 후속</span>
+                </div>
+                <h3 class="article-title">Ofcom investigates Elon Musk's X over Grok AI sexual deepfakes</h3>
+                <p class="article-title-ko">영국 Ofcom, X의 Grok 성적 딥페이크 관련 공식 조사 착수</p>
+                <p class="article-summary">영국 통신규제기관 Ofcom이 X에 대한 온라인안전법 위반 여부 공식 조사 개시. 스타머 총리는 X 영국 차단 가능성 시사</p>
+                <div class="article-meta">
+                    <span><a href="https://www.bbc.com/news/articles/cwy875j28k0o" target="_blank">BBC</a> | 📅 1/12 23:27 KST</span>
+                    <span class="score">Score: 6.0</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Iran crippled Starlink and why the rest of the world should worry</h3>
+                <p class="article-title-ko">이란, Starlink까지 차단 - 전 세계 인터넷 자유에 경고등</p>
+                <p class="article-summary">반정부 시위 확산 속 이란 정부가 Starlink 위성 인터넷까지 차단하며 역대 최강 인터넷 봉쇄 실시</p>
+                <div class="article-meta">
+                    <span><a href="https://restofworld.org/2026/iran-starlink-internet-shutdown/" target="_blank">Rest of World</a> | 📅 1/14 02:17 KST</span>
+                    <span class="score">Score: 5.5</span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">Why India's plan to make AI companies pay for training data should go global</h3>
+                <p class="article-title-ko">인도의 AI 학습 데이터 유료화 계획, 글로벌 확산 필요성</p>
+                <p class="article-summary">인도가 AI 기업들에게 학습 데이터 사용료를 부과하는 방안 추진. 콘텐츠 창작자 권리 보호의 새로운 모델로 주목</p>
+                <div class="article-meta">
+                    <span><a href="https://restofworld.org/2026/india-ai-data-license-fee/" target="_blank">Rest of World</a> | 📅 1/13 20:00 KST</span>
+                    <span class="score">Score: 5.0</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="picks-section">
+            <div class="section-header">
+                <span class="section-icon">💎</span>
+                <h2 class="section-title">Claude's Pick</h2>
+            </div>
+            <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 0.9rem;">48시간 내 숨은 보석 | Signal 2개+ & 관심사 1개+</p>
+
+            <div class="article-card" style="border-color: var(--accent-purple);">
+                <h3 class="article-title">Silicon, not oil: Why the U.S. needs the Gulf for AI</h3>
+                <p class="article-title-ko">실리콘이 석유를 대체한다: 미국 AI에 걸프 지역이 필수인 이유</p>
+                <p class="article-summary">Jacob Helberg 국무부 차관이 주도한 'Pax Silica' 서밋에서 AI 시대 새로운 경제안보 동맹 논의. 카타르, UAE가 AI 경제의 핵심 파트너로 부상</p>
+                <div class="article-meta">
+                    <span><a href="https://restofworld.org/2026/pax-silica-qatar-uae/" target="_blank">Rest of World</a> | 📅 1/12 17:34 KST</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 신규 정책 신호 + 시장 규모 예측 첫 등장 | AI 인프라 + 글로벌 지정학 연관성
+                </div>
+            </div>
+
+            <div class="article-card" style="border-color: var(--accent-purple);">
+                <h3 class="article-title">AI's green-energy goal is devastating Taiwan's coastal villages</h3>
+                <p class="article-title-ko">AI의 친환경 목표가 대만 해안 마을을 파괴하고 있다</p>
+                <p class="article-summary">AI 데이터센터 전력 수요 충족을 위한 대만의 해상풍력 확장이 지역 어촌 공동체와 생태계에 심각한 피해. 기술 발전과 환경의 충돌 심화</p>
+                <div class="article-meta">
+                    <span><a href="https://restofworld.org/2026/taiwan-ai-green-energy-impacts/" target="_blank">Rest of World</a> | 📅 1/12 20:00 KST</span>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 신생 이슈 첫 등장 + 대기업 조용한 움직임 | 반도체 공급망 + 데이터 인프라 연관성
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p class="footer-text">
+                3중 신호 시스템 기반 뉴스 선별 | Value Score 3.0+ | 
+                <a href="https://hong4137.github.io/briefing" class="footer-link">브리핑 아카이브</a>
+            </p>
+            <p class="footer-text" style="margin-top: 10px;">
+                RSS: TechCrunch · The Verge · Ars Technica · BBC Tech · WIRED · Rest of World · The Guardian Tech
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
