@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT 광고 도입 | xAI 딥페이크 중지 명령 | TSMC $165B 미국 투자</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --text-primary: #e5e5e5;
+            --text-secondary: #a0a0a0;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --border-color: #2a2a3a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        
+        .date {
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #fff 0%, #a0a0a0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .summary {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .section-icon {
+            font-size: 1.5rem;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .article {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .article:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+        
+        .article-title-kr {
+            font-size: 0.95rem;
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+        }
+        
+        .article-summary {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+        
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+        }
+        
+        .source {
+            color: var(--accent-purple);
+            font-weight: 500;
+        }
+        
+        .badges {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            background: var(--bg-secondary);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+        
+        .badge-top { color: var(--accent-red); border: 1px solid var(--accent-red); }
+        .badge-popular { color: var(--accent-green); border: 1px solid var(--accent-green); }
+        .badge-cross { color: var(--accent-blue); border: 1px solid var(--accent-blue); }
+        
+        .score {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+        
+        .article-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        
+        .article-link:hover {
+            text-decoration: underline;
+        }
+        
+        .pick-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 15px;
+            border: 1px solid var(--accent-purple);
+        }
+        
+        .pick-badge {
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        .pick-reason {
+            background: rgba(168, 85, 247, 0.1);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 12px;
+            font-size: 0.85rem;
+            color: var(--accent-purple);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        footer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            h1 { font-size: 1.4rem; }
+            .stats-bar { gap: 20px; }
+            .article { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026년 1월 16일 목요일</div>
+            <h1>ChatGPT 광고 도입 | xAI 딥페이크 중지 명령 | TSMC $165B 미국 투자</h1>
+            <p class="summary">OpenAI가 ChatGPT에 타겟 광고 도입을 발표하고 $8/월 Go 구독 출시. 캘리포니아 법무장관이 xAI에 딥페이크 중지 명령. TSMC $165B 미국 투자 확대 및 Google 반독점 판결 항소.</p>
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-value">16</div>
+                    <div class="stat-label">기사</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">섹션</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Claude's Pick</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- TOP Headlines -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🔥</span>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+            
+            <article class="article">
+                <h3 class="article-title">ChatGPT users are about to get hit with targeted ads</h3>
+                <p class="article-title-kr">ChatGPT에 타겟 광고 도입 - OpenAI, 무료/Go 구독자 대상 광고 테스트 시작</p>
+                <p class="article-summary">OpenAI가 ChatGPT에 "명확히 표시된" 광고를 도입한다고 발표. 대화 내용은 광고주에게 공개되지 않으며, 데이터 판매도 하지 않겠다고 약속. 광고는 채팅 하단 별도 영역에 표시될 예정.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <div class="badges">
+                        <span class="badge badge-top">🔥 TOP</span>
+                        <span class="badge badge-cross">🔄 3개 매체</span>
+                    </div>
+                    <span class="score">Score: 14.0</span>
+                    <a href="https://techcrunch.com/2026/01/16/chatgpt-users-are-about-to-get-hit-with-targeted-ads/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">California AG sends Musk's xAI a cease-and-desist order over sexual deepfakes</h3>
+                <p class="article-title-kr">캘리포니아 법무장관, xAI에 딥페이크 중지 명령 발송</p>
+                <p class="article-summary">캘리포니아 법무장관이 Grok AI의 성적 딥페이크 생성 문제로 xAI에 공식 중지 명령 발송. 전 세계적 규제 압박이 법적 조치로 발전.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <div class="badges">
+                        <span class="badge badge-top">🔥 TOP</span>
+                        <span class="badge badge-cross">🔄 2개 매체</span>
+                    </div>
+                    <span class="score">Score: 12.5</span>
+                    <a href="https://techcrunch.com/2026/01/16/california-ag-sends-musks-xai-a-cease-and-desist-order-over-sexual-deepfakes/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">Trump administration wants tech companies to buy $15B of power plants they may not use</h3>
+                <p class="article-title-kr">트럼프 행정부, 테크 기업에 $15B 발전소 구매 요구</p>
+                <p class="article-summary">트럼프 행정부와 양당 주지사들이 PJM에 15년 장기 계약 기반 "긴급" 전력 경매 개최를 촉구. AI 데이터센터 전력 수요 급증에 대응하기 위한 인프라 투자 압박.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <div class="badges">
+                        <span class="badge badge-top">🔥 TOP</span>
+                    </div>
+                    <span class="score">Score: 10.5</span>
+                    <a href="https://techcrunch.com/2026/01/16/trump-administration-wants-tech-companies-to-buy-15b-of-power-plants-they-may-not-use/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">Google is appealing a judge's search monopoly ruling</h3>
+                <p class="article-title-kr">Google, 검색 독점 판결에 항소 제기</p>
+                <p class="article-summary">Google이 연방법원의 불법 검색 독점 판결에 대해 항소. 경쟁 회복을 위한 법원 명령 구제책에 대한 유예도 함께 요청.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <div class="badges">
+                        <span class="badge badge-top">🔥 TOP</span>
+                    </div>
+                    <span class="score">Score: 10.0</span>
+                    <a href="https://www.theverge.com/news/863710/google-search-antitrust-monopoly-appeal" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- AI/기술 -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🤖</span>
+                <h2 class="section-title">AI/기술</h2>
+            </div>
+            
+            <article class="article">
+                <h3 class="article-title">OpenAI releases a cheaper ChatGPT subscription</h3>
+                <p class="article-title-kr">OpenAI, ChatGPT Go $8/월 글로벌 출시</p>
+                <p class="article-summary">OpenAI가 저가형 구독 ChatGPT Go를 미국 및 전 세계에 확대 출시. 무료 티어보다 더 많은 메시지, 파일 업로드, 이미지 생성 제공.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <div class="badges">
+                        <span class="badge badge-popular">📈 인기</span>
+                    </div>
+                    <span class="score">Score: 8.0</span>
+                    <a href="https://www.theverge.com/news/863466/openai-chatgpt-go-global-release" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">Google brings its AI videomaker to Workspace users</h3>
+                <p class="article-title-kr">Google Flow AI 비디오메이커, Workspace로 확대</p>
+                <p class="article-summary">Google이 AI 비디오 생성 도구 Flow를 Business, Enterprise, Education Workspace 플랜으로 확대. Veo 3.1 모델 기반 8초 클립 생성.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <span class="score">Score: 6.5</span>
+                    <a href="https://www.theverge.com/news/863570/google-flow-ai-video-generator-workspace" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">AI journalism startup Symbolic.ai signs deal with Rupert Murdoch's News Corp</h3>
+                <p class="article-title-kr">AI 저널리즘 스타트업 Symbolic.ai, News Corp과 계약 체결</p>
+                <p class="article-summary">루퍼트 머독의 News Corp이 AI 저널리즘 스타트업 Symbolic.ai와 파트너십 체결. 미디어 산업의 AI 도입 가속화.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span class="score">Score: 5.5</span>
+                    <a href="https://techcrunch.com/2026/01/15/ai-journalism-startup-symbolic-ai-signs-deal-with-rupert-murdochs-news-corp/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">The rise of 'micro' apps: non-developers are writing apps instead of buying them</h3>
+                <p class="article-title-kr">'마이크로 앱' 시대: 비개발자들이 앱을 직접 만든다</p>
+                <p class="article-summary">AI 코딩 도구의 발전으로 비개발자들이 자신만의 앱을 직접 개발하는 추세. 소프트웨어 구매 대신 맞춤형 솔루션 제작 확산.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span class="score">Score: 5.0</span>
+                    <a href="https://techcrunch.com/2026/01/16/the-rise-of-micro-apps-non-developers-are-writing-apps-instead-of-buying-them/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 경제/비즈니스 -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💰</span>
+                <h2 class="section-title">경제/비즈니스</h2>
+            </div>
+            
+            <article class="article">
+                <h3 class="article-title">Snowflake, Databricks challenger ClickHouse hits $15B valuation</h3>
+                <p class="article-title-kr">ClickHouse, $150억 밸류에이션 달성</p>
+                <p class="article-summary">Snowflake, Databricks의 경쟁자 ClickHouse가 $150억 밸류에이션 기록. 데이터 인프라 시장 경쟁 심화.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <div class="badges">
+                        <span class="badge badge-popular">📈 인기</span>
+                    </div>
+                    <span class="score">Score: 8.5</span>
+                    <a href="https://techcrunch.com/2026/01/16/snowflake-databricks-challenger-clickhouse-hits-15b-valuation/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">AI cloud startup Runpod hits $120M in ARR — and it started with a Reddit post</h3>
+                <p class="article-title-kr">AI 클라우드 스타트업 Runpod, ARR $1.2억 달성</p>
+                <p class="article-summary">Reddit 포스트에서 시작한 AI 클라우드 스타트업 Runpod가 연간 반복 매출 $1.2억 달성. GPU 클라우드 수요 급증 반영.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span class="score">Score: 7.0</span>
+                    <a href="https://techcrunch.com/2026/01/16/ai-cloud-startup-runpod-hits-120m-in-arr-and-it-started-with-a-reddit-post/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">Ted Sarandos says Netflix will commit to 45-day theatrical releases</h3>
+                <p class="article-title-kr">Netflix CEO, WBD 인수 시 45일 극장 상영 유지 약속</p>
+                <p class="article-summary">Netflix 공동 CEO Ted Sarandos가 Warner Bros. Discovery 인수 시 45일 극장 상영 기간을 유지하겠다고 발표. 영화관 산업 우려 불식 시도.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <span class="score">Score: 6.0</span>
+                    <a href="https://www.theverge.com/streaming/863511/ted-sarandos-netflix-theatrical-movie-release-windows" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">Chinese EVs inch closer to the US as Canada slashes tariffs</h3>
+                <p class="article-title-kr">캐나다 관세 인하로 중국 EV 미국 접근 가속</p>
+                <p class="article-summary">캐나다의 중국 EV 관세 인하로 중국 전기차의 북미 시장 진출이 한 걸음 더 가까워짐.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span class="score">Score: 5.0</span>
+                    <a href="https://techcrunch.com/2026/01/16/chinese-evs-inch-closer-to-the-us-as-canada-slashes-tariffs/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 보안/규제 -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🔒</span>
+                <h2 class="section-title">보안/규제</h2>
+            </div>
+            
+            <article class="article">
+                <h3 class="article-title">EPA rules that xAI's natural gas generators were illegally used</h3>
+                <p class="article-title-kr">EPA, xAI 천연가스 발전기 불법 사용 판정</p>
+                <p class="article-summary">미국 환경보호청(EPA)이 xAI의 천연가스 발전기가 불법적으로 사용되었다고 판정. 환경 규제 위반 확인.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span class="score">Score: 6.5</span>
+                    <a href="https://techcrunch.com/2026/01/16/epa-rules-that-xais-natural-gas-generators-were-illegally-used/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">Mother of Elon Musk's child sues xAI over Grok deepfakes</h3>
+                <p class="article-title-kr">머스크 자녀의 어머니, Grok 딥페이크로 xAI 소송</p>
+                <p class="article-summary">Elon Musk의 자녀를 둔 여성이 Grok AI 딥페이크 문제로 xAI를 상대로 소송 제기.</p>
+                <div class="article-meta">
+                    <span class="source">BBC</span>
+                    <span class="score">Score: 6.0</span>
+                    <a href="https://www.bbc.com/news/articles/cp37erw0zwwo" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article">
+                <h3 class="article-title">How a hacking campaign targeted high-profile Gmail and WhatsApp users across the Middle East</h3>
+                <p class="article-title-kr">중동 고위 인사 대상 Gmail·WhatsApp 해킹 캠페인 적발</p>
+                <p class="article-summary">중동 지역 고위 인사들을 표적으로 한 Gmail 및 WhatsApp 해킹 캠페인이 발견됨.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span class="score">Score: 5.0</span>
+                    <a href="https://techcrunch.com/2026/01/16/how-a-hacking-campaign-targeted-high-profile-gmail-and-whatsapp-users-across-the-middle-east/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💎</span>
+                <h2 class="section-title">Claude's Pick</h2>
+            </div>
+            
+            <article class="pick-section">
+                <span class="pick-badge">💎 CLAUDE'S PICK</span>
+                <h3 class="article-title">From OpenAI's offices to a deal with Eli Lilly — how Chai Discovery became one of the flashiest names in AI drug development</h3>
+                <p class="article-title-kr">OpenAI 출신이 세운 Chai Discovery, Eli Lilly와 계약 체결</p>
+                <p class="article-summary">OpenAI 오피스에서 시작해 제약 대기업 Eli Lilly와 계약을 맺기까지 - AI 신약 개발 분야의 떠오르는 스타 Chai Discovery의 성장 스토리.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span class="score">Score: 7.5</span>
+                    <a href="https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> AI + 바이오/헬스케어 융합의 대표 사례. OpenAI 인재 유출과 빅파마의 AI 투자 트렌드를 동시에 보여주는 기사.
+                </div>
+            </article>
+            
+            <article class="pick-section">
+                <span class="pick-badge">💎 CLAUDE'S PICK</span>
+                <h3 class="article-title">Anthropic taps former Microsoft India MD to lead Bengaluru expansion</h3>
+                <p class="article-title-kr">Anthropic, 전 Microsoft 인도 MD 영입 - 벵갈루루 확장 본격화</p>
+                <p class="article-summary">Anthropic이 전 Microsoft India 전무를 영입해 벵갈루루 사무소 확장을 이끌 예정. AI 인재 확보를 위한 글로벌 경쟁 가속화.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span class="score">Score: 6.5</span>
+                    <a href="https://techcrunch.com/2026/01/15/anthropic-taps-former-microsoft-india-md-to-lead-bengaluru-expansion/" target="_blank" class="article-link">원문 보기 →</a>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> AI 기업의 인도 진출 트렌드. Anthropic의 글로벌 확장 전략과 AI 인재 확보 경쟁을 보여주는 신호.
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Foreign News Briefing</p>
+            <p>Sources: TechCrunch, The Verge, BBC Tech, Ars Technica, Wired, Reuters, Rest of World</p>
+            <p><a href="https://hong4137.github.io/briefing/">← 브리핑 홈으로</a></p>
+        </footer>
+    </div>
+</body>
+</html>
