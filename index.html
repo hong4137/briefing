@@ -1,311 +1,340 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jae's Foreign News Briefing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFNB — Jae’s Foreign News Briefing</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      /* Young editorial palette – soft & playful */
-      --bg: #fdfefe;
-      --bg-soft: #f4f6fb;
-      --text: #1b1b1b;
-      --text-muted: #7a7a7a;
-      --accent: #5b7cff; /* fresher blue */
-      --accent-soft: #eef1ff;
-      --border: #e6e8f0;
-    }
+    <style>
+        :root {
+            --bg-primary: #0f1115;
+            --bg-secondary: #151823;
+            --bg-card: #1b1f2e;
+            --bg-card-hover: #222741;
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+            --accent-main: #6366f1;   /* indigo */
+            --accent-soft: #a5b4fc;
+            --accent-warm: #f59e0b;
 
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.75;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+            --text-primary: #f9fafb;
+            --text-secondary: #c7cad9;
+            --text-muted: #8b8fa3;
 
-    a { color: inherit; text-decoration: none; }
+            --border-color: #2a2f45;
+            --radius-lg: 20px;
+            --radius-md: 14px;
+        }
 
-    /* ===== Masthead (NYT) ===== */
-    header {
-      border-bottom: 1px solid var(--border);
-      padding: 1.75rem 1rem 1.25rem;
-      text-align: center;
-      background: linear-gradient(180deg, var(--bg-soft), var(--bg));
-    }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    .masthead-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.6rem;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-    }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
 
-    .masthead-subtitle {
-      margin-top: 0.25rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
+        /* Navigation */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(21, 24, 35, 0.8);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-color);
+        }
 
-    nav {
-      margin-top: 0.75rem;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-    }
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    nav a:hover { color: var(--text); }
+        .brand {
+            text-decoration: none;
+            color: var(--text-primary);
+        }
 
-    /* ===== Layout ===== */
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 2.5rem 1.25rem 4rem;
-    }
+        .brand strong {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            letter-spacing: 0.5px;
+        }
 
-    section { margin-bottom: 3.5rem; }
+        .brand span {
+            display: block;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
 
-    /* ===== Editor's Note ===== */
-    .editors-note {
-      font-style: normal;
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      background: var(--bg-soft);
-      border-left: none;
-      border-radius: 10px;
-      padding: 1rem 1.25rem;
-    }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
 
-    /* ===== Main Briefing (NYT Front Page) ===== */
-    .briefing-date {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-bottom: 0.5rem;
-    }
+        .nav-links a {
+            text-decoration: none;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
 
-    .briefing-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.4rem;
-      line-height: 1.25;
-      margin-bottom: 1rem;
-    }
+        .nav-links a:hover { color: var(--text-primary); }
 
-    .briefing-summary {
-      font-size: 1.05rem;
-      color: #2a2a2a;
-    }
+        /* Hero */
+        .hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem 3rem;
+            text-align: center;
+        }
 
-    /* ===== Why it matters (Axios) ===== */
-    .why-title {
-      font-weight: 700;
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0.75rem;
+        }
 
-    .why-list {
-      list-style: disc;
-      padding-left: 1.25rem;
-    }
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
 
-    .why-list li {
-      margin-bottom: 0.5rem;
-    }
+        /* Section */
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
 
-    /* ===== Links (The Verge) ===== */
-    .links-list article {
-      padding: 1rem 0.5rem;
-      border-bottom: 1px solid var(--border);
-      border-radius: 8px;
-    }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
 
-    .links-list article:hover {
-      background: var(--bg-soft);
-    }
+        .section-header h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
 
-    .link-category {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.25rem;
-    }
+        .section-header a {
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: var(--accent-soft);
+        }
 
-    .links-list h3 {
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 1.4;
-    }
+        /* Latest Card */
+        .latest-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+        }
 
-    .links-list span {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
+        .latest-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-warm);
+            margin-bottom: 0.75rem;
+        }
 
-    /* ===== Archive ===== */
-    .archive-list li {
-      list-style: none;
-      padding: 0.75rem 0;
-      border-bottom: 1px solid var(--border);
-      font-size: 0.95rem;
-    }
+        .latest-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
 
-    .archive-list span {
-      color: var(--text-muted);
-      margin-right: 0.5rem;
-    }
+        .latest-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
 
-    /* ===== Footer ===== */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 2rem 1rem 3rem;
-      text-align: center;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 1rem;
+        }
 
-    @media (max-width: 600px) {
-      .briefing-title { font-size: 2rem; }
-    }
-  </style>
+        .highlight {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .highlight h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .read-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.6rem 1.4rem;
+            background: var(--accent-main);
+            color: #fff;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        /* Archive preview */
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1rem;
+        }
+
+        .archive-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .archive-card span {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--accent-soft);
+        }
+
+        .archive-card h4 {
+            font-size: 0.95rem;
+            margin: 0.5rem 0;
+        }
+
+        .archive-card p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 1.5rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Masthead -->
-  <header>
-    <div class="masthead-title">JFNB</div>
-    <div class="masthead-subtitle">Jae’s Foreign News Briefing</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Archive</a>
-      <a href="#">About</a>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- Editor's Note -->
-    <section class="editors-note">
-      Today’s global tech market is quietly repricing AI infrastructure.
-      What matters is not the hype — but where capital is actually moving.
-    </section>
-
-    <!-- Main Briefing -->
-    <section>
-      <div class="briefing-date">Jan 18, 2026 · Seoul</div>
-      <h1 class="briefing-title">AI 인프라 투자는 다시 반도체로 향하고 있다</h1>
-      <p class="briefing-summary">
-        빅테크의 AI 전략이 모델 경쟁에서 인프라 경쟁으로 이동하면서,
-        반도체·장비·전력 인프라에 대한 자본 배분이 빠르게 재편되고 있다.
-      </p>
-      <div style="margin-top: 0.75rem;">
-        <a class="read-today" href="#" style="font-size:0.9rem; color: var(--accent);">
-          → Read the full briefing
+<!-- Navigation -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="./" class="brand">
+            <strong>JFNB</strong>
+            <span>Jae’s Foreign News Briefing</span>
         </a>
-      </div>
-    </section>
+        <ul class="nav-links">
+            <li><a href="./">홈</a></li>
+            <li><a href="./archive/">아카이브</a></li>
+            <li><a href="./about/">소개</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- Why it matters -->
-    <section>
-      <div class="why-title">WHY IT MATTERS</div>
-      <ul class="why-list">
-        <li>AI 데이터센터 증설 속도가 예상보다 빠르다</li>
-        <li>클라우드 기업의 CAPEX 가이던스가 상향 조정되고 있다</li>
-        <li>반도체 장비주는 이미 선반영 구간에 진입했다</li>
-      </ul>
-    </section>
+<!-- Hero -->
+<section class="hero">
+    <h1>Foreign News Briefing</h1>
+    <p>매일 외신을 읽고, 중요한 것만 정리합니다.</p>
+</section>
 
-    <!-- Article Links -->
-    <section class="links-list">
-      <article>
-        <div class="link-category">AI / Tech</div>
-        <h3>Why hyperscalers are racing to lock in AI compute capacity</h3>
-        <span>Bloomberg</span>
-      </article>
-      <article>
-        <div class="link-category">Semiconductor</div>
-        <h3>Chip equipment makers see demand rebound earlier than expected</h3>
-        <span>Reuters</span>
-      </article>
-      <article>
-        <div class="link-category">Economy</div>
-        <h3>AI spending is quietly reshaping corporate capex priorities</h3>
-        <span>CNBC</span>
-      </article>
-    </section>
+<!-- Latest -->
+<section class="section">
+    <div class="section-header">
+        <h2>최신 브리핑</h2>
+        <a href="./archive/">전체 보기 →</a>
+    </div>
+    <div id="latest-container">
+        <div class="latest-card">불러오는 중…</div>
+    </div>
+</section>
 
-    <!-- Archive -->
-    <section>
-      <ul class="archive-list">
-        <li><span>Jan 17</span> 빅테크는 왜 자체 칩 설계에 집착하는가</li>
-        <li><span>Jan 16</span> AI 데이터센터 전력 문제가 새로운 병목이 되는 이유</li>
-        <li><span>Jan 15</span> 반도체 사이클은 이미 돌아서고 있는가</li>
-      </ul>
-    </section>
+<!-- Archive preview -->
+<section class="section">
+    <div class="section-header">
+        <h2>지난 브리핑</h2>
+        <a href="./archive/">아카이브 →</a>
+    </div>
+    <div id="archive-container" class="archive-grid">
+        <div class="archive-card">불러오는 중…</div>
+    </div>
+</section>
 
-  </main>
+<footer>
+    <p>Curated by AI · Edited by Jae</p>
+    <p>
+        <a href="./about/">About</a> ·
+        <a href="./archive/">Archive</a> ·
+        <a href="https://github.com/hong4137">GitHub</a>
+    </p>
+</footer>
 
-  <footer>
-    Curated by Jae · Inspired by NYT, Axios & The Verge
-  </footer>
+<script>
+    async function loadBriefings() {
+        const res = await fetch('./briefings.json');
+        const data = await res.json();
 
-  <script>
-    fetch('briefings.json')
-      .then(res => res.json())
-      .then(data => {
-        const [today, ...past] = data.briefings;
+        const latest = data.briefings[0];
+        document.getElementById('latest-container').innerHTML = `
+            <div class="latest-card">
+                <div class="latest-date">${latest.date}</div>
+                <h3>${latest.title}</h3>
+                <p>${latest.summary}</p>
+                <div class="highlights">
+                    ${latest.highlights.map(h => `
+                        <a class="highlight" href="${h.url}" target="_blank">
+                            <h4>${h.title}</h4>
+                            <p>${h.summary}</p>
+                        </a>
+                    `).join('')}
+                </div>
+                <a class="read-btn" href="./archive/${latest.date}.html">브리핑 읽기 →</a>
+            </div>
+        `;
 
-        // Today briefing
-        document.querySelector('.briefing-date').innerText = `${today.date} · Seoul`;
-        document.querySelector('.briefing-title').innerText = today.title;
-        document.querySelector('.briefing-summary').innerText = today.summary;
-        document.querySelector('.read-today').href = `archive/${today.date}.html`;
-
-        // Highlights → links list (defensive rendering)
-        document.querySelector('.links-list').innerHTML = today.highlights.map(h => {
-          // Old data compatibility
-          if (typeof h === 'string') {
-            return `
-              <article>
-                <h3>${h}</h3>
-              </article>
-            `;
-          }
-
-          const source = h.url
-            ? new URL(h.url).hostname.replace('www.', '')
-            : '';
-
-          return `
-            <article>
-              <div class="link-category">${h.category}</div>
-              <h3>${h.title}</h3>
-              <span>${source}</span>
-            </article>
-          `;
-        }).join('');
-
-        // Archive
-        document.querySelector('.archive-list').innerHTML = past.slice(0,3).map(b => `
-          <li>
-            <span>${b.date}</span>
-            <a href="archive/${b.date}.html">${b.title}</a>
-          </li>
+        document.getElementById('archive-container').innerHTML = data.briefings.slice(1,4).map(b => `
+            <a class="archive-card" href="./archive/${b.date}.html">
+                <span>${b.date}</span>
+                <h4>${b.title}</h4>
+                <p>${b.summary}</p>
+            </a>
         `).join('');
-      });
-  </script>
+    }
+
+    loadBriefings();
+</script>
+
 </body>
 </html>
