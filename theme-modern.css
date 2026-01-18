@@ -1,0 +1,205 @@
+/* =====================================================
+   JFNB – Modern / Notion-style Theme
+   SAFE CSS OVERRIDE (HTML / JS UNTOUCHED)
+   ===================================================== */
+
+/* ---------- 1. COLOR SYSTEM (Soft Dark, Young) ---------- */
+:root {
+  --bg-primary: #0f172a;        /* slate-900 */
+  --bg-secondary: #020617;      /* slate-950 */
+  --bg-card: #020617;
+  --bg-card-hover: #020617;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5f5;
+  --text-muted: #94a3b8;
+
+  --border-color: #1e293b;
+
+  --accent-red: #ef4444;
+  --accent-blue: #3b82f6;
+  --accent-purple: #8b5cf6;
+  --accent-green: #22c55e;
+
+  /* 기존 네온 그라디언트 제거 */
+  --gradient-fire: none;
+  --gradient-money: none;
+  --gradient-ai: none;
+}
+
+/* ---------- 2. GLOBAL FEEL ---------- */
+body {
+  background: var(--bg-primary);
+  letter-spacing: -0.01em;
+}
+
+/* ---------- 3. NAVIGATION (Notion-like) ---------- */
+.nav {
+  background: rgba(2, 6, 23, 0.75);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-logo-icon {
+  background: var(--accent-red);
+  border-radius: 8px;
+}
+
+.nav-logo-text {
+  background: none;
+  -webkit-text-fill-color: unset;
+  color: var(--text-primary);
+  font-weight: 800;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+}
+
+.nav-links a.active {
+  color: var(--accent-red);
+}
+
+/* ---------- 4. HERO (Less Marketing, More Editorial) ---------- */
+.hero {
+  padding: 3rem 2rem 2.5rem;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  letter-spacing: -0.035em;
+  background: none;
+  -webkit-text-fill-color: unset;
+  color: var(--text-primary);
+}
+
+.hero p {
+  font-size: 1rem;
+  max-width: 520px;
+}
+
+/* ---------- 5. SECTION HEADERS ---------- */
+.section-icon {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  font-size: 1.1rem;
+}
+
+.section-title h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- 6. CARD SYSTEM (Flat, Editorial) ---------- */
+.latest-card,
+.archive-card,
+.highlight {
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  box-shadow: none;
+  transform: none;
+}
+
+/* Hover = subtle only */
+.latest-card:hover,
+.archive-card:hover,
+.highlight:hover {
+  transform: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 1px rgba(59,130,246,0.15);
+}
+
+/* ---------- 7. LATEST CARD DETAILS ---------- */
+.latest-card-header {
+  padding: 1.5rem 1.75rem;
+  background: none;
+}
+
+.latest-card-header h3 {
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+}
+
+.latest-card-body {
+  padding: 1.5rem 1.75rem;
+}
+
+.latest-card-footer {
+  padding: 1.25rem 1.75rem;
+}
+
+/* ---------- 8. HIGHLIGHTS (Notion Block Feel) ---------- */
+.latest-highlights {
+  gap: 1rem;
+}
+
+.highlight {
+  padding: 1.25rem;
+}
+
+.highlight-category {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+}
+
+.highlight h4 {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.highlight p {
+  font-size: 0.85rem;
+}
+
+/* ---------- 9. BUTTONS ---------- */
+.read-btn {
+  background: var(--accent-red);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  padding: 0.6rem 1.1rem;
+  box-shadow: none;
+}
+
+.read-btn:hover {
+  transform: none;
+  box-shadow: none;
+  opacity: 0.9;
+}
+
+/* ---------- 10. ARCHIVE ---------- */
+.archive-card h4 {
+  font-size: 0.95rem;
+}
+
+.archive-card-meta {
+  font-size: 0.75rem;
+}
+
+/* ---------- 11. FOOTER ---------- */
+.footer {
+  font-size: 0.8rem;
+  background: var(--bg-secondary);
+}
+
+.footer-links a {
+  color: var(--text-muted);
+}
+
+/* ---------- 12. MOBILE FIRST POLISH ---------- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section-header {
+    gap: 0.75rem;
+  }
+
+  .latest-card-header,
+  .latest-card-body,
+  .latest-card-footer {
+    padding: 1.25rem;
+  }
+}
