@@ -1,63 +1,32 @@
 {
   "briefings": [
     {
-      "date": "2026-01-17",
-      "day": "금",
-      "title": "머스크 OpenAI에 $1,340억 요구 | ClickHouse $150억 | Runpod ARR $1.2억",
-      "summary": "머스크가 OpenAI를 상대로 최대 $1,340억 손해배상 요구. 데이터베이스 스타트업 ClickHouse가 $150억 밸류에이션 달성. AI 클라우드 Runpod이 Reddit 포스트에서 시작해 ARR $1.2억 달성.",
+      "date": "2026-01-18",
+      "day": "토",
+      "title": "ChatGPT 광고 시대 개막 | xAI 법적 위기 | ClickHouse $150억 유니콘",
+      "summary": "OpenAI가 ChatGPT에 타겟 광고 도입을 공식 발표하며 AI 수익화 새 시대 개막. 캘리포니아 법무장관이 xAI에 Grok 딥페이크 중지명령. 데이터 분석 스타트업 ClickHouse가 $150억 밸류에이션 달성.",
       "highlights": [
         {
           "category": "top",
-          "title": "머스크, OpenAI에 최대 $1,340억 손해배상 요구",
-          "summary": "$7,000억 자산 보유 세계 최고 부자가 OpenAI 비영리→영리 전환 저지 시도",
-          "url": "https://techcrunch.com/2026/01/17/musk-wants-up-to-134b-in-openai-lawsuit-despite-700b-fortune/"
-        },
-        {
-          "category": "top",
-          "title": "ClickHouse $150억 밸류에이션 달성",
-          "summary": "Snowflake, Databricks에 도전장 내민 오픈소스 데이터베이스",
-          "url": "https://techcrunch.com/2026/01/16/snowflake-databricks-challenger-clickhouse-hits-15b-valuation/"
-        },
-        {
-          "category": "top",
-          "title": "AI 클라우드 Runpod, ARR $1.2억 달성",
-          "summary": "Reddit 포스트로 시작한 GPU 클라우드 스타트업의 폭발적 성장",
-          "url": "https://techcrunch.com/2026/01/16/ai-cloud-startup-runpod-hits-120m-in-arr-and-it-started-with-a-reddit-post/"
-        }
-      ],
-      "stats": {
-        "articles": 14,
-        "sections": 5,
-        "picks": 2
-      }
-    },
-    {
-      "date": "2026-01-16",
-      "day": "목",
-      "title": "ChatGPT 광고 도입 | xAI 딥페이크 중지 명령 | Google 반독점 항소",
-      "summary": "OpenAI가 ChatGPT에 타겟 광고 도입을 발표하고 $8/월 Go 구독 출시. 캘리포니아 법무장관이 xAI에 딥페이크 중지 명령. Google 반독점 판결 항소.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "ChatGPT에 타겟 광고 도입",
-          "summary": "OpenAI, 무료/Go 구독자 대상 광고 테스트 시작",
+          "title": "ChatGPT, 미국에서 타겟 광고 테스트 시작",
+          "summary": "AI 무료 서비스 수익화 본격화, 응답에 영향 없다고 밝혀",
           "url": "https://techcrunch.com/2026/01/16/chatgpt-users-are-about-to-get-hit-with-targeted-ads/"
         },
         {
           "category": "top",
-          "title": "캘리포니아 법무장관, xAI에 딥페이크 중지 명령",
-          "summary": "Grok AI 성적 딥페이크 문제로 공식 중지 명령 발송",
+          "title": "캘리포니아 법무장관, xAI에 Grok 딥페이크 중지명령",
+          "summary": "성적 콘텐츠 무단 생성 문제로 법적 조치, 영국 Ofcom도 조사 착수",
           "url": "https://techcrunch.com/2026/01/16/california-ag-sends-musks-xai-a-cease-and-desist-order-over-sexual-deepfakes/"
         },
         {
           "category": "top",
-          "title": "Google, 검색 독점 판결에 항소",
-          "summary": "연방법원 불법 검색 독점 판결에 대해 항소 제기",
-          "url": "https://www.theverge.com/news/863710/google-search-antitrust-monopoly-appeal"
+          "title": "ClickHouse $150억 밸류에이션 달성",
+          "summary": "Snowflake·Databricks 대항마로 급부상",
+          "url": "https://techcrunch.com/2026/01/16/snowflake-databricks-challenger-clickhouse-hits-15b-valuation/"
         }
       ],
       "stats": {
-        "articles": 16,
+        "articles": 14,
         "sections": 5,
         "picks": 2
       }
@@ -90,99 +59,6 @@
       "stats": {
         "articles": 19,
         "sections": 6,
-        "picks": 2
-      }
-    },
-    {
-      "date": "2026-01-14",
-      "day": "화",
-      "title": "Apple, Siri 업그레이드에 Google Gemini 채택 | Anthropic 경영진 개편",
-      "summary": "Apple이 Siri AI 업그레이드에 Google Gemini를 채택하며 Alphabet 시가총액 $4조 돌파. Anthropic이 Mike Krieger를 Labs 팀으로 이동시키며 경영진 개편. 뉴욕 주지사가 NYC 제외 전 지역 로보택시 허용 법안 발의.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "Apple, Siri AI 업그레이드에 Google Gemini 채택",
-          "summary": "Alphabet 시가총액 $4조 돌파, Apple 제치고 세계 2위 기업",
-          "url": "https://www.bbc.com/news/articles/czdqvp2zqezo"
-        },
-        {
-          "category": "top",
-          "title": "Anthropic 경영진 개편, Labs 팀 확대",
-          "summary": "Mike Krieger CPO에서 Labs 공동 리더로 이동",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/861475/anthropic-ai-c-suite-internal-incubator-labs-team-mike-krieger"
-        },
-        {
-          "category": "top",
-          "title": "뉴욕 주지사, 로보택시 전면 허용 법안 발의",
-          "summary": "NYC만 제외, 미국 자율주행 규제 완화의 새로운 이정표",
-          "url": "https://techcrunch.com/2026/01/13/new-york-governor-clears-path-for-robotaxis-everywhere-with-one-notable-exception/"
-        }
-      ],
-      "stats": {
-        "articles": 14,
-        "sections": 5,
-        "picks": 2
-      }
-    },
-    {
-      "date": "2026-01-13",
-      "day": "월",
-      "title": "Slackbot AI 에이전트 전환 | Google Gemini-Apple 통합 | Meta AI 인프라 이니셔티브",
-      "summary": "Salesforce가 Slackbot을 AI 에이전트로 전환. Google Gemini가 Apple AI 기능 및 Siri에 탑재. Meta가 독자적인 AI 인프라 이니셔티브 발표.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "Slackbot, AI 에이전트로 진화",
-          "summary": "Salesforce 엔터프라이즈 AI 전략 본격화",
-          "url": "https://techcrunch.com/2026/01/13/slackbot-is-an-ai-agent-now/"
-        },
-        {
-          "category": "top",
-          "title": "Google Gemini, Apple AI 및 Siri에 탑재",
-          "summary": "OpenAI 이어 Google까지 Apple 생태계 진입",
-          "url": "https://techcrunch.com/2026/01/12/googles-gemini-to-power-apples-ai-features-like-siri/"
-        },
-        {
-          "category": "top",
-          "title": "저커버그, Meta AI 인프라 이니셔티브 발표",
-          "summary": "데이터센터, 반도체, 클라우드 수직 통합 추진",
-          "url": "https://techcrunch.com/2026/01/12/mark-zuckerberg-says-meta-is-launching-its-own-ai-infrastructure-initiative/"
-        }
-      ],
-      "stats": {
-        "articles": 15,
-        "sections": 5,
-        "picks": 2
-      }
-    },
-    {
-      "date": "2026-01-12",
-      "day": "일",
-      "title": "Google AI 에이전트 상거래 프로토콜 | 인니·말레이 Grok 차단 | Motional 로보택시 재편",
-      "summary": "Google이 AI 에이전트 상거래 프로토콜 발표. 인도네시아와 말레이시아가 Grok 차단 조치. Wing 드론 배송 월마트 150개 매장 확대.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "Google, AI 에이전트 상거래 프로토콜 발표",
-          "summary": "AI가 자동으로 쇼핑·결제하는 새 표준 제안",
-          "url": "https://techcrunch.com/2026/01/11/google-announces-a-new-protocol-to-facilitate-commerce-using-ai-agents/"
-        },
-        {
-          "category": "top",
-          "title": "인도네시아·말레이시아, Grok 차단",
-          "summary": "성적 딥페이크 문제로 아시아 주요국 규제 압박",
-          "url": "https://www.bbc.com/news/articles/cg7y10xm4x2o"
-        },
-        {
-          "category": "top",
-          "title": "Wing 드론 배송 월마트 150개 매장 확대",
-          "summary": "LA, 마이애미 등 신규 진출, 2027년 대규모 네트워크 구축",
-          "url": "https://techcrunch.com/2026/01/11/wing-to-expand-drone-delivery-to-another-150-walmart-stores/"
-        }
-      ],
-      "stats": {
-        "articles": 12,
-        "sections": 5,
         "picks": 2
       }
     },
