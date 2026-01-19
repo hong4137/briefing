@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequoia, Anthropic 투자로 VC 금기 깨다 | Threads가 X 추월</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b7280;
+            --border-color: #2a2a3a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        
+        .date {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        
+        .summary-box {
+            background: linear-gradient(135deg, rgba(74, 158, 255, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .summary-box p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .section-title.top { border-color: var(--accent-red); }
+        .section-title.ai { border-color: var(--accent-blue); }
+        .section-title.economy { border-color: var(--accent-gold); }
+        .section-title.chip { border-color: var(--accent-green); }
+        .section-title.pick { border-color: var(--accent-purple); }
+        
+        .article-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-blue);
+        }
+        
+        .article-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        
+        .article-title-kr {
+            font-size: 1.1rem;
+            color: var(--accent-blue);
+            margin-bottom: 12px;
+        }
+        
+        .article-summary {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+        }
+        
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .source {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .badge-top { background: rgba(255, 59, 59, 0.2); color: var(--accent-red); }
+        .badge-popular { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
+        .badge-trend { background: rgba(255, 215, 0, 0.2); color: var(--accent-gold); }
+        .badge-cross { background: rgba(168, 85, 247, 0.2); color: var(--accent-purple); }
+        
+        .score {
+            font-weight: 700;
+            color: var(--accent-gold);
+        }
+        
+        .pick-reason {
+            background: rgba(168, 85, 247, 0.1);
+            border-left: 3px solid var(--accent-purple);
+            padding: 12px 16px;
+            margin-top: 12px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            .logo { font-size: 1.5rem; }
+            .section-title { font-size: 1.25rem; }
+            .article-title { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Jae's Briefing</div>
+            <div class="date">2026년 1월 19일 월요일</div>
+        </header>
+        
+        <div class="summary-box">
+            <p>Sequoia Capital이 OpenAI 투자사임에도 Anthropic에 투자를 결정하며 VC 업계 금기를 깼습니다. Meta의 Threads가 일일 활성 사용자 수에서 X를 추월했습니다. Signal 창업자 Moxie Marlinspike가 프라이버시 중심 AI 챗봇을 공개했습니다.</p>
+        </div>
+        
+        <!-- TOP Headlines -->
+        <section class="section">
+            <h2 class="section-title top">🔥 TOP Headlines</h2>
+            
+            <article class="article-card">
+                <h3 class="article-title">Sequoia to Invest in Anthropic, Breaking VC Taboo on Backing Rivals</h3>
+                <p class="article-title-kr">Sequoia, Anthropic 투자 결정 - VC 업계 '경쟁사 투자 금기' 깨다</p>
+                <p class="article-summary">OpenAI의 주요 투자자인 Sequoia Capital이 Anthropic에도 투자하기로 결정. 동일 분야 경쟁사에 동시 투자하지 않는 VC 업계의 오랜 관행을 깨는 이례적 행보.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span>📅 1/19 07:15 KST</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 2개 매체</span>
+                    <span class="score">Score: 9.5</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://techcrunch.com/2026/01/18/sequoia-to-invest-in-anthropic-breaking-vc-taboo-on-backing-rivals-ft/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <h3 class="article-title">Threads Edges Out X in Daily Mobile Users, New Data Shows</h3>
+                <p class="article-title-kr">Threads, 일일 모바일 사용자 수에서 X 추월 - 새 데이터 확인</p>
+                <p class="article-summary">Meta의 Threads가 일일 활성 사용자 수에서 Elon Musk의 X를 처음으로 추월. 출시 18개월 만에 달성한 이정표로, 소셜 미디어 지형 변화를 예고.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span>📅 1/19 02:00 KST</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 9.0</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://techcrunch.com/2026/01/18/threads-edges-out-x-in-daily-mobile-users-new-data-shows/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <h3 class="article-title">Moxie Marlinspike Has a Privacy-Conscious Alternative to ChatGPT</h3>
+                <p class="article-title-kr">Signal 창업자 Moxie, 프라이버시 중심 ChatGPT 대안 출시</p>
+                <p class="article-summary">암호화 메시징 앱 Signal의 창업자 Moxie Marlinspike가 프라이버시를 최우선으로 하는 AI 챗봇 공개. 개인정보 수집 없이 AI 서비스를 제공하겠다는 목표.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span>📅 1/19 00:30 KST</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-trend">📊 트렌딩</span>
+                    <span class="score">Score: 8.5</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://techcrunch.com/2026/01/18/moxie-marlinspike-has-a-privacy-conscious-alternative-to-chatgpt/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+        
+        <!-- AI/기술 -->
+        <section class="section">
+            <h2 class="section-title ai">🤖 AI/기술</h2>
+            
+            <article class="article-card">
+                <h3 class="article-title">The Race to Build the DeepSeek of Europe Is On</h3>
+                <p class="article-title-kr">유럽판 DeepSeek 경쟁 본격화 - AI 자주권 향한 긴박한 움직임</p>
+                <p class="article-summary">미국과의 동맹 흔들림 속, 유럽이 AI 자주 강국 도약을 위한 노력 가속화. 자체 대형 언어 모델 개발에 국가 차원의 투자 확대.</p>
+                <div class="article-meta">
+                    <span class="source">WIRED</span>
+                    <span>📅 1/19 16:00 KST</span>
+                    <span class="badge badge-trend">📊 트렌딩</span>
+                    <span class="score">Score: 7.5</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://www.wired.com/story/europe-race-us-deepseek-sovereign-ai/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <h3 class="article-title">Thinking Machines Cofounder's Office Relationship Preceded Termination</h3>
+                <p class="article-title-kr">Thinking Machines Lab 공동창업자 해고, 사내 관계가 원인</p>
+                <p class="article-summary">Mira Murati가 설립한 AI 스타트업에서 공동창업자 Barret Zoph가 '심각한 비위행위'로 해고. OpenAI 출신 핵심 인력의 이탈 속 내부 정치 부각.</p>
+                <div class="article-meta">
+                    <span class="source">WIRED</span>
+                    <span>📅 1/18 09:40 KST</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 7.0</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://www.wired.com/story/thinking-machines-lab-cofounder-office-relationship-firing-openai/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <h3 class="article-title">Under Musk, the Grok Disaster Was Inevitable</h3>
+                <p class="article-title-kr">머스크 체제 하 Grok 재앙은 필연이었다</p>
+                <p class="article-summary">'반항적' AI를 표방한 Grok의 딥페이크 사태는 출시 때부터 예견됐다는 분석. 안전장치보다 '반-워크' 노선을 우선시한 결과.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <span>📅 1/18 22:00 KST</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 6.5</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://www.theverge.com/column/863502/grok-deepfake-musk" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <h3 class="article-title">Wikipedia Signs Major AI Firms to New Priority Data Access Deals</h3>
+                <p class="article-title-kr">Wikipedia, 주요 AI 기업들과 우선 데이터 접근 계약 체결</p>
+                <p class="article-summary">Wikimedia Foundation이 Microsoft, Meta, Amazon, Perplexity, Mistral AI와 API 접근 계약 체결. AI 훈련 데이터 수익화 본격화.</p>
+                <div class="article-meta">
+                    <span class="source">Ars Technica</span>
+                    <span>📅 1/16 00:26 KST</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 6.0</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://arstechnica.com/ai/2026/01/wikipedia-will-share-content-with-ai-firms-in-new-licensing-deals/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+        
+        <!-- 경제/금융 -->
+        <section class="section">
+            <h2 class="section-title economy">💰 경제/금융</h2>
+            
+            <article class="article-card">
+                <h3 class="article-title">ASM International's Bookings Beat Market View as China Orders Rebound</h3>
+                <p class="article-title-kr">ASM International, 중국 주문 회복으로 시장 예상 상회</p>
+                <p class="article-summary">네덜란드 반도체 장비업체 ASM International이 4분기 수주 실적 발표. 중국 고객 주문 급반등으로 시장 기대치 초과 달성.</p>
+                <div class="article-meta">
+                    <span class="source">Reuters</span>
+                    <span>📅 1/19 16:30 KST</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="score">Score: 7.0</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://www.reuters.com/world/china/asm-international-reports-bookings-above-market-view-china-orders-rebound-2026-01-19/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <h3 class="article-title">Tesla Poised to Be Early Winner as Canada Opens Door to Chinese-Made EVs</h3>
+                <p class="article-title-kr">캐나다 중국산 EV 문호 개방 - Tesla가 최대 수혜자</p>
+                <p class="article-summary">캐나다가 중국 제조 전기차에 대한 규제 완화 움직임. 상하이 공장에서 생산하는 Tesla가 초기 최대 수혜 예상.</p>
+                <div class="article-meta">
+                    <span class="source">Reuters</span>
+                    <span>📅 1/19 16:01 KST</span>
+                    <span class="badge badge-trend">📊 트렌딩</span>
+                    <span class="score">Score: 6.5</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://www.reuters.com/business/autos-transportation/tesla-poised-be-early-winner-canada-opens-door-chinese-made-evs-2026-01-19/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <h3 class="article-title">Why Silicon Valley Is Really Talking About Fleeing California</h3>
+                <p class="article-title-kr">실리콘밸리가 정말로 캘리포니아 탈출을 논하는 이유</p>
+                <p class="article-summary">부유세 5%가 아닌 다른 이유가 있다. 정치적 양극화와 규제 환경 변화 속 기술 기업인들의 이주 논의 심층 분석.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <span>📅 1/18 10:17 KST</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 6.0</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://techcrunch.com/2026/01/17/why-silicon-valley-is-really-talking-about-fleeing-california-its-not-the-5/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+        
+        <!-- 반도체 -->
+        <section class="section">
+            <h2 class="section-title chip">💾 반도체</h2>
+            
+            <article class="article-card">
+                <h3 class="article-title">Nvidia H200 Chip Parts Suppliers Halt Output After China Blocks Shipments</h3>
+                <p class="article-title-kr">Nvidia H200 부품 공급업체들, 중국 차단으로 생산 중단</p>
+                <p class="article-summary">중국의 Nvidia 칩 수출 차단 조치 이후 H200 관련 부품 공급업체들이 생산을 중단. 미중 기술 분쟁의 공급망 파급효과 현실화.</p>
+                <div class="article-meta">
+                    <span class="source">Reuters/FT</span>
+                    <span>📅 1/17</span>
+                    <span class="badge badge-top">🔥 TOP</span>
+                    <span class="badge badge-cross">🔄 3개 매체</span>
+                    <span class="score">Score: 8.5</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://www.reuters.com/world/china/nvidia-suppliers-halt-h200-output-after-china-blocks-chip-shipments-ft-reports-2026-01-17/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <h3 class="article-title">TSMC Says AI Demand Is "Endless" After Record Q4 Earnings</h3>
+                <p class="article-title-kr">TSMC "AI 수요는 끝이 없다" - 기록적 4분기 실적 후</p>
+                <p class="article-summary">TSMC CEO가 실적 발표에서 AI 칩 수요가 "수년간 지속될 것"이라 전망. 4분기 실적 사상 최고치 기록.</p>
+                <div class="article-meta">
+                    <span class="source">Ars Technica</span>
+                    <span>📅 1/17 01:55 KST</span>
+                    <span class="badge badge-popular">📈 인기</span>
+                    <span class="score">Score: 7.0</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://arstechnica.com/ai/2026/01/tsmc-says-ai-demand-is-endless-after-record-q4-earnings/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <h3 class="article-title">South Korea to Negotiate with US for Favourable Chip Tariff Terms</h3>
+                <p class="article-title-kr">한국, 미국과 유리한 반도체 관세 조건 협상 추진</p>
+                <p class="article-summary">한국 정부가 미국의 반도체 관세 정책에 대응해 유리한 조건 확보 위한 협상에 나설 계획. 삼성·SK 등 국내 반도체 업체 보호 목적.</p>
+                <div class="article-meta">
+                    <span class="source">Reuters</span>
+                    <span>📅 1/18</span>
+                    <span class="badge badge-trend">📊 트렌딩</span>
+                    <span class="score">Score: 6.5</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://www.reuters.com/world/asia-pacific/south-korea-negotiate-with-us-favourable-chip-tariff-terms-official-says-2026-01-18/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+        
+        <!-- Claude's Pick -->
+        <section class="section">
+            <h2 class="section-title pick">💎 Claude's Pick</h2>
+            
+            <article class="article-card">
+                <h3 class="article-title">Iran Crippled Starlink — and Why the Rest of the World Should Worry</h3>
+                <p class="article-title-kr">이란이 Starlink를 무력화시켰다 - 세계가 우려해야 할 이유</p>
+                <p class="article-summary">이란 정부가 시위 진압 과정에서 Starlink 위성 인터넷 차단에 성공. 권위주의 정권의 인터넷 통제 역량 향상이 글로벌 인터넷 자유에 미치는 함의 분석.</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World</span>
+                    <span>📅 1/14 02:17 KST</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://restofworld.org/2026/iran-starlink-internet-shutdown/" target="_blank">원문 보기 →</a>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 위성 인터넷의 검열 우회 능력에 대한 첫 실질적 테스트 사례 | Starlink의 '인터넷 자유' 약속 한계 노출 | 권위주의 정권 대응 전략 변화 신호
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <h3 class="article-title">64% of UAE Residents Now Use Generative AI</h3>
+                <p class="article-title-kr">UAE 거주자 64%가 생성형 AI 사용 - 글로벌 최고 수준</p>
+                <p class="article-summary">UAE가 생성형 AI 도입률에서 전 세계를 선도. 정부 주도의 AI 전략과 인프라 투자가 빠른 대중 보급으로 이어져.</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World</span>
+                    <span>📅 1/14 20:00 KST</span>
+                </div>
+                <div class="article-meta" style="margin-top: 8px;">
+                    <a href="https://restofworld.org/2026/countries-generative-ai-adoption/" target="_blank">원문 보기 →</a>
+                </div>
+                <div class="pick-reason">
+                    <strong>선정 이유:</strong> 미국·유럽 중심 AI 담론에서 벗어난 신흥국 AI 도입 현황 | 중동 AI 허브로서 UAE의 부상 | 정부 주도 AI 정책의 대안적 모델 제시
+                </div>
+            </article>
+        </section>
+        
+        <footer>
+            <p>Jae's Briefing | AI-powered foreign news curation</p>
+            <p style="margin-top: 8px;">Value Score 3.0 이상 기사만 선별 | 총 14건</p>
+            <p style="margin-top: 8px;">3중 신호: RSS + 홈페이지 TOP + 랭킹 섹션</p>
+        </footer>
+    </div>
+</body>
+</html>
