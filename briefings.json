@@ -1,27 +1,27 @@
 {
   "briefings": [
     {
-      "date": "2026-01-19",
+      "date": "2026-01-20",
       "day": "월",
-      "title": "Sequoia, Anthropic 투자로 VC 금기 깨다 | Threads가 X 추월 | Nvidia H200 공급 차질",
-      "summary": "Sequoia Capital이 OpenAI 투자사임에도 Anthropic에 투자를 결정하며 VC 업계 금기를 깼습니다. Meta의 Threads가 일일 활성 사용자 수에서 X를 추월했습니다. 중국의 Nvidia 칩 차단으로 H200 부품 공급업체들이 생산을 중단했습니다.",
+      "title": "Sequoia, Anthropic 투자로 VC 금기 깨기 | Threads가 X 추월 | 유럽 DeepSeek 경쟁",
+      "summary": "Sequoia Capital이 OpenAI 경쟁사 Anthropic에 투자를 결정하며 VC 업계 불문율 깨기. Threads가 X를 일일 모바일 사용자 수에서 추월. 유럽이 AI 자주국방 위해 DeepSeek급 모델 구축 경쟁 시작.",
       "highlights": [
         {
           "category": "top",
-          "title": "Sequoia, Anthropic 투자로 VC 금기 깨다",
-          "summary": "OpenAI 투자사가 경쟁사 Anthropic에도 투자 결정",
+          "title": "Sequoia, Anthropic 투자 확정 - VC 업계 금기 깨다",
+          "summary": "동종 업계 경쟁사 양쪽 투자는 AI 시장 불확실성 방증",
           "url": "https://techcrunch.com/2026/01/18/sequoia-to-invest-in-anthropic-breaking-vc-taboo-on-backing-rivals-ft/"
         },
         {
           "category": "top",
-          "title": "Threads, 일일 사용자 수에서 X 추월",
-          "summary": "출시 18개월 만에 달성한 이정표",
+          "title": "Threads, X를 일일 모바일 사용자 수에서 추월",
+          "summary": "전 세계 DAU 1억 4,150만 vs 1억 2,500만",
           "url": "https://techcrunch.com/2026/01/18/threads-edges-out-x-in-daily-mobile-users-new-data-shows/"
         },
         {
           "category": "top",
-          "title": "Moxie Marlinspike, 프라이버시 AI 챗봇 출시",
-          "summary": "Signal 창업자의 ChatGPT 대안",
+          "title": "Signal 창업자, 프라이버시 중심 AI 챗봇 출시",
+          "summary": "대형 테크 기업 데이터 수집 우려 속 대안 제시",
           "url": "https://techcrunch.com/2026/01/18/moxie-marlinspike-has-a-privacy-conscious-alternative-to-chatgpt/"
         }
       ],
@@ -240,6 +240,68 @@
           "title": "소형 원자로 스타트업 붐",
           "summary": "AI가 원자력 르네상스 촉발, SMR 기술 상용화 경쟁",
           "url": "https://techcrunch.com/2026/01/11/nuclear-startups-are-back-in-vogue-with-small-reactors-and-big-challenges/"
+        }
+      ],
+      "stats": {
+        "articles": 12,
+        "sections": 5,
+        "picks": 2
+      }
+    },
+    {
+      "date": "2026-01-11",
+      "day": "토",
+      "title": "Google AI 에이전트 상거래 프로토콜 | 인니·말레이 Grok 차단 | Motional 로보택시 AI 재편",
+      "summary": "Google이 AI 에이전트가 온라인 쇼핑을 할 수 있는 새로운 상거래 프로토콜 발표. 인도네시아와 말레이시아가 Grok의 성적 딥페이크 생성 문제로 차단 조치. Motional이 AI 중심으로 로보택시 사업 전면 재편.",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "Google, AI 에이전트 상거래 프로토콜 발표",
+          "summary": "제품 검색, 비교, 결제까지 AI가 자동 수행하는 미래 상거래 인프라 구축",
+          "url": "https://techcrunch.com/2026/01/11/google-announces-a-new-protocol-to-facilitate-commerce-using-ai-agents/"
+        },
+        {
+          "category": "top",
+          "title": "인도네시아·말레이시아, Grok 차단",
+          "summary": "비동의 성적 딥페이크 생성 문제로 아시아 주요국 AI 규제 압박 본격화",
+          "url": "https://techcrunch.com/2026/01/11/indonesia-blocks-grok-over-non-consensual-sexualized-deepfakes/"
+        },
+        {
+          "category": "top",
+          "title": "Motional, AI 중심 로보택시 재편",
+          "summary": "Hyundai-Aptiv 합작사, 2026년 무인 서비스 목표로 기술 개발 가속화",
+          "url": "https://techcrunch.com/2026/01/11/motional-puts-ai-at-center-of-robotaxi-reboot-as-it-targets-2026-for-driverless-service/"
+        }
+      ],
+      "stats": {
+        "articles": 12,
+        "sections": 5,
+        "picks": 2
+      }
+    },
+    {
+      "date": "2026-01-10",
+      "day": "금",
+      "title": "트럼프, 세계 기후조약 UNFCCC 탈퇴 선언 | GM, EV 축소로 $60억 손실",
+      "summary": "트럼프 대통령이 세계 최초로 UNFCCC 탈퇴를 선언하며 66개 국제기구에서 동시 철수. GM이 미국 내 EV 판매 축소로 $60억 손실 처리. NASA 65년 역사상 최초로 ISS 의료 대피 명령.",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "트럼프, UNFCCC 탈퇴 - 세계 최초로 기후조약 탈퇴국",
+          "summary": "66개 국제기구 동시 철수, 파리협정 복귀 사실상 불가능",
+          "url": "https://arstechnica.com/science/2026/01/trump-withdraws-us-from-worlds-most-important-climate-treaty/"
+        },
+        {
+          "category": "top",
+          "title": "GM, EV 축소로 $60억 손실 처리",
+          "summary": "세금 공제 폐지와 딜러 저항으로 미국 EV 후퇴 가속",
+          "url": "https://arstechnica.com/cars/2026/01/fewer-american-evs-costs-gm-6-billion-even-as-its-chinese-sales-boom/"
+        },
+        {
+          "category": "top",
+          "title": "NASA, 65년 역사상 최초 ISS 의료 대피 명령",
+          "summary": "Crew-11 미션 4명 예정보다 6주 일찍 귀환",
+          "url": "https://arstechnica.com/space/2026/01/in-a-first-nasa-orders-astronauts-home-after-unspecified-medical-issue/"
         }
       ],
       "stats": {

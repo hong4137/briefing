@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequoia, Anthropic 투자로 VC 금기 깨기 | Threads가 X 추월</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --text-primary: #e8e8ed;
+            --text-secondary: #a0a0a8;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --border-color: #2a2a3a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .logo { font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }
+        .logo span { color: var(--accent-blue); }
+        .date { color: var(--text-secondary); font-size: 1rem; }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 15px 25px;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+        }
+        .stat-number { font-size: 1.5rem; font-weight: 700; color: var(--accent-blue); }
+        .stat-label { font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px; }
+        .section { margin-bottom: 50px; }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .section-icon { font-size: 1.5rem; }
+        .section-title { font-size: 1.4rem; font-weight: 600; }
+        .article {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+        .article:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(74, 158, 255, 0.1);
+        }
+        .article-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .article-title-kr {
+            font-size: 1rem;
+            color: var(--accent-blue);
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .source {
+            color: var(--accent-purple);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .source a {
+            color: var(--accent-purple);
+            text-decoration: none;
+        }
+        .source a:hover { text-decoration: underline; }
+        .badges { display: flex; gap: 8px; flex-wrap: wrap; }
+        .badge {
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .badge-top { background: rgba(255, 59, 59, 0.2); color: var(--accent-red); }
+        .badge-popular { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
+        .badge-new { background: rgba(74, 158, 255, 0.2); color: var(--accent-blue); }
+        .badge-pick { background: rgba(255, 215, 0, 0.2); color: var(--accent-gold); }
+        .picks-section {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 100%);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid var(--accent-gold);
+        }
+        .picks-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .picks-title { font-size: 1.3rem; font-weight: 600; color: var(--accent-gold); }
+        .pick-reason {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-top: 12px;
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+        }
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 20px 15px; }
+            .stats { gap: 15px; }
+            .stat-item { padding: 12px 18px; }
+            .article { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Jae's <span>Briefing</span></div>
+            <div class="date">2026년 1월 20일 월요일</div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">14</div>
+                    <div class="stat-label">기사</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">섹션</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Pick</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- TOP Headlines -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🔥</span>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+
+            <article class="article">
+                <h3 class="article-title">Sequoia to invest in Anthropic, breaking VC taboo on backing rivals</h3>
+                <div class="article-title-kr">Sequoia, Anthropic 투자 확정 - VC 업계 금기 깨다</div>
+                <p class="article-summary">실리콘밸리 최고 VC인 Sequoia Capital이 OpenAI의 최대 경쟁사 Anthropic에 투자를 결정. 동종 업계 경쟁사 양쪽 투자는 VC 업계의 불문율을 깨는 것으로, AI 시장의 지배적 승자가 누가 될지 불확실하다는 방증.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://techcrunch.com/2026/01/18/sequoia-to-invest-in-anthropic-breaking-vc-taboo-on-backing-rivals-ft/" target="_blank">TechCrunch</a></span>
+                    <div class="badges">
+                        <span class="badge badge-top">🔥 TOP</span>
+                        <span class="badge badge-new">⭐ 신규</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">Threads edges out X in daily mobile users, new data shows</h3>
+                <div class="article-title-kr">Threads, X를 일일 모바일 사용자 수에서 추월</div>
+                <p class="article-summary">Similarweb 데이터에 따르면 Meta의 Threads가 전 세계 일일 모바일 사용자 1억 4,150만 명으로 X의 1억 2,500만 명을 추월. 10~11월 사이에 역전이 시작되어 Grok 논란 이전부터 진행된 추세.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://techcrunch.com/2026/01/18/threads-edges-out-x-in-daily-mobile-users-new-data-shows/" target="_blank">TechCrunch</a></span>
+                    <div class="badges">
+                        <span class="badge badge-top">🔥 TOP</span>
+                        <span class="badge badge-popular">📈 인기</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">Moxie Marlinspike has a privacy-conscious alternative to ChatGPT</h3>
+                <div class="article-title-kr">Signal 창업자, 프라이버시 중심 AI 챗봇 출시</div>
+                <p class="article-summary">암호화 메시징 Signal의 창업자 Moxie Marlinspike가 개인정보 보호를 최우선으로 하는 AI 챗봇을 공개. 대형 테크 기업의 데이터 수집에 대한 우려가 커지는 가운데 대안 제시.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://techcrunch.com/2026/01/18/moxie-marlinspike-has-a-privacy-conscious-alternative-to-chatgpt/" target="_blank">TechCrunch</a></span>
+                    <div class="badges">
+                        <span class="badge badge-top">🔥 TOP</span>
+                        <span class="badge badge-new">⭐ 신규</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- AI/기술 -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🤖</span>
+                <h2 class="section-title">AI/기술</h2>
+            </div>
+
+            <article class="article">
+                <h3 class="article-title">The Race to Build the DeepSeek of Europe Is On</h3>
+                <div class="article-title-kr">유럽, AI 자주국방 위해 DeepSeek 모델 구축 경쟁 시작</div>
+                <p class="article-summary">미국과의 동맹 불안정 속에서 유럽이 AI 자급자족 초강대국이 되기 위한 추진이 더욱 시급해짐. 중국 DeepSeek처럼 저비용 고효율 모델 개발 경쟁이 유럽 전역에서 시작.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://www.wired.com/story/europe-race-us-deepseek-sovereign-ai/" target="_blank">WIRED</a></span>
+                    <div class="badges">
+                        <span class="badge badge-new">⭐ 신규</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">Thinking Machines Cofounder's Office Relationship Preceded His Termination</h3>
+                <div class="article-title-kr">Thinking Machines 공동창업자 해고, 사무실 관계가 원인</div>
+                <p class="article-summary">Mira Murati의 스타트업 리더들이 Barret Zoph가 '심각한 비위행위'에 연루됐다고 판단. OpenAI 출신 인력이 모인 AI 스타트업에서 발생한 인사 문제의 세부 내용 공개.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://www.wired.com/story/thinking-machines-lab-cofounder-office-relationship-firing-openai/" target="_blank">WIRED</a></span>
+                    <div class="badges">
+                        <span class="badge badge-new">⭐ 신규</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">Wikipedia signs major AI firms to new priority data access deals</h3>
+                <div class="article-title-kr">Wikipedia, MS·Meta·Amazon과 AI 데이터 접근 계약 체결</div>
+                <p class="article-summary">Wikimedia Foundation이 Microsoft, Meta, Amazon, Perplexity, Mistral AI와 고속 API 접근 계약 발표. 대형 AI 기업들이 Wikipedia 6,500만 개 기사를 AI 학습에 활용하는 대가로 비용 지불.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://arstechnica.com/ai/2026/01/wikipedia-will-share-content-with-ai-firms-in-new-licensing-deals/" target="_blank">Ars Technica</a></span>
+                    <div class="badges">
+                        <span class="badge badge-new">⭐ 신규</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">OpenAI's 2026 'focus' is 'practical adoption'</h3>
+                <div class="article-title-kr">OpenAI, 2026년 '실용적 도입'에 집중</div>
+                <p class="article-summary">OpenAI CFO Sarah Friar가 AI가 할 수 있는 것과 실제 사용 간의 '격차 해소'에 집중한다고 발표. 헬스케어, 과학, 엔터프라이즈 분야에서 구체적 성과 창출에 주력.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://www.theverge.com/news/864229/openai-focus-practical-adoption-sarah-friar" target="_blank">The Verge</a></span>
+                    <div class="badges">
+                        <span class="badge badge-new">⭐ 신규</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- 경제/금융 -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💰</span>
+                <h2 class="section-title">경제/금융</h2>
+            </div>
+
+            <article class="article">
+                <h3 class="article-title">Rackspace customers grapple with "devastating" email hosting price hike</h3>
+                <div class="article-title-kr">Rackspace, 이메일 호스팅 가격 706% 인상 - 고객 '충격'</div>
+                <p class="article-summary">Rackspace가 이메일 호스팅 가격을 월 $3에서 $10으로 인상. 1999년부터 사용해온 파트너들은 '파괴적'이라고 반발. 클라우드 서비스 가격 경쟁 심화 속 생존 전략.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://arstechnica.com/information-technology/2026/01/rackspace-raises-email-hosting-prices-by-as-much-as-706-percent/" target="_blank">Ars Technica</a></span>
+                    <div class="badges">
+                        <span class="badge badge-new">⭐ 신규</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">BYD burns profit chasing global dominance over Tesla</h3>
+                <div class="article-title-kr">BYD, Tesla 추격에 이익 불태워 - 수익성 악화</div>
+                <p class="article-summary">중국 BYD가 글로벌 EV 1위 자리를 굳히기 위해 공격적 가격 인하와 확장 전략을 펼치며 이익률 급락. Tesla와의 판매 경쟁에서 승리했지만 수익성 희생 대가.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://restofworld.org/2026/byd-profits-drop/" target="_blank">Rest of World</a></span>
+                    <div class="badges">
+                        <span class="badge badge-new">⭐ 신규</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">Why Silicon Valley is really talking about fleeing California</h3>
+                <div class="article-title-kr">실리콘밸리, 캘리포니아 탈출 논의 - 부유세만이 이유 아니다</div>
+                <p class="article-summary">래리 페이지, 피터 틸 등 억만장자들의 플로리다 이주 러시. 5% 부유세 논란을 넘어 규제, 생활비, 정치적 분위기 등 복합적 요인 분석.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://techcrunch.com/2026/01/17/why-silicon-valley-is-really-talking-about-fleeing-california-its-not-the-5/" target="_blank">TechCrunch</a></span>
+                    <div class="badges">
+                        <span class="badge badge-popular">📈 인기</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- 반도체/하드웨어 -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💾</span>
+                <h2 class="section-title">반도체/하드웨어</h2>
+            </div>
+
+            <article class="article">
+                <h3 class="article-title">TSMC says AI demand is "endless" after record Q4 earnings</h3>
+                <div class="article-title-kr">TSMC, 사상 최대 4분기 실적 후 "AI 수요는 끝없다"</div>
+                <p class="article-summary">TSMC CEO C.C. Wei가 AI 칩 수요가 수년간 지속될 것이라 전망. Apple, Nvidia, AMD, Qualcomm 등 고객사의 첨단 반도체 수요가 지속적으로 증가.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://arstechnica.com/ai/2026/01/tsmc-says-ai-demand-is-endless-after-record-q4-earnings/" target="_blank">Ars Technica</a></span>
+                    <div class="badges">
+                        <span class="badge badge-popular">📈 인기</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <h3 class="article-title">Asus may have made its last phone</h3>
+                <div class="article-title-kr">ASUS, 스마트폰 사업 철수 발표</div>
+                <p class="article-summary">ASUS 회장 Jonney Shih가 향후 신규 스마트폰 모델 출시를 중단한다고 발표. Zenfone과 ROG Phone 라인업 종료, 시장 '무기한 관찰' 상태로 전환.</p>
+                <div class="article-meta">
+                    <span class="source"><a href="https://www.theverge.com/news/864116/asus-may-have-made-its-last-phone" target="_blank">The Verge</a></span>
+                    <div class="badges">
+                        <span class="badge badge-new">⭐ 신규</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="section">
+            <div class="picks-section">
+                <div class="picks-header">
+                    <span class="section-icon">💎</span>
+                    <h2 class="picks-title">Claude's Pick</h2>
+                </div>
+
+                <article class="article" style="background: var(--bg-primary);">
+                    <h3 class="article-title">Iran crippled Starlink and why the rest of the world should worry</h3>
+                    <div class="article-title-kr">이란, Starlink 무력화 - 전 세계가 걱정해야 하는 이유</div>
+                    <p class="article-summary">이란이 Starlink 위성 인터넷을 효과적으로 차단하는 데 성공. 위성 인터넷이 권위주의 정권의 인터넷 차단을 우회할 수 있다는 낙관론에 찬물. 기술적 방법과 글로벌 함의 분석.</p>
+                    <div class="article-meta">
+                        <span class="source"><a href="https://restofworld.org/2026/iran-starlink-internet-shutdown/" target="_blank">Rest of World</a></span>
+                        <div class="badges">
+                            <span class="badge badge-pick">💎 Pick</span>
+                        </div>
+                    </div>
+                    <div class="pick-reason">
+                        <strong>선정 이유:</strong> 위성 인터넷의 지정학적 한계를 보여주는 사례 | 기술 인프라 투자 관점에서 중요한 리스크 신호
+                    </div>
+                </article>
+
+                <article class="article" style="background: var(--bg-primary);">
+                    <h3 class="article-title">64% of UAE residents now use generative AI</h3>
+                    <div class="article-title-kr">UAE 거주자 64%, 생성형 AI 사용 - 글로벌 최고 수준</div>
+                    <p class="article-summary">UAE가 생성형 AI 도입률에서 세계 최고 수준 기록. 중동 지역의 AI 기술 수용이 서구 선진국을 앞서는 역전 현상 발생. 신흥 시장의 AI 도입 속도 주목.</p>
+                    <div class="article-meta">
+                        <span class="source"><a href="https://restofworld.org/2026/countries-generative-ai-adoption/" target="_blank">Rest of World</a></span>
+                        <div class="badges">
+                            <span class="badge badge-pick">💎 Pick</span>
+                        </div>
+                    </div>
+                    <div class="pick-reason">
+                        <strong>선정 이유:</strong> 신흥 시장 AI 도입 속도 | 투자 관점에서 중동 테크 시장 성장 신호
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing · 매일 외신 기술 뉴스를 요약합니다</p>
+            <p style="margin-top: 8px;">RSS 기반 수집 · 3중 신호 시스템 · Value Score 3.0+</p>
+        </footer>
+    </div>
+</body>
+</html>
