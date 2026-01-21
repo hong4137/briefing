@@ -19,12 +19,14 @@
             --accent-blue: #4a9eff;
             --accent-purple: #a855f7;
             --accent-green: #22c55e;
+            --accent-cyan: #06b6d4;
             --text-primary: #ffffff;
             --text-secondary: #a0a0b0;
             --text-muted: #666680;
             --border-color: #2a2a3a;
             --gradient-fire: linear-gradient(135deg, #ff3b3b, #ff8c42);
             --gradient-ai: linear-gradient(135deg, #a855f7, #4a9eff);
+            --gradient-special: linear-gradient(135deg, #06b6d4, #a855f7);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -152,6 +154,10 @@
             font-size: 1rem;
         }
 
+        .month-icon.special {
+            background: var(--gradient-special);
+        }
+
         .month-header h2 {
             font-family: 'Playfair Display', serif;
             font-size: 1.4rem;
@@ -182,6 +188,15 @@
             transform: translateX(4px);
         }
 
+        .archive-item.special {
+            border-color: var(--accent-cyan);
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(168, 85, 247, 0.1));
+        }
+
+        .archive-item.special:hover {
+            border-color: var(--accent-purple);
+        }
+
         .archive-item-date {
             flex-shrink: 0;
             width: 100px;
@@ -190,11 +205,20 @@
             color: var(--accent-blue);
         }
 
+        .archive-item.special .archive-item-date {
+            color: var(--accent-cyan);
+        }
+
         .archive-item-day {
             flex-shrink: 0;
-            width: 40px;
+            width: 60px;
             font-size: 0.85rem;
             color: var(--text-muted);
+        }
+
+        .archive-item.special .archive-item-day {
+            color: var(--accent-purple);
+            font-weight: 600;
         }
 
         .archive-item-content {
@@ -297,43 +321,96 @@
     </footer>
 
     <script>
+        // 특별판 감지 함수
+        function isSpecialEdition(dateStr) {
+            // "ces-", "special-" 등으로 시작하거나 YYYY-MM-DD 형식이 아닌 경우
+            return !(/^\d{4}-\d{2}-\d{2}$/.test(dateStr));
+        }
+
+        // 날짜에서 연월 추출 (특별판은 'special' 반환)
+        function getYearMonth(dateStr) {
+            if (isSpecialEdition(dateStr)) {
+                return 'special';
+            }
+            return dateStr.substring(0, 7); // "2026-01"
+        }
+
+        // 월 라벨 생성
+        function getMonthLabel(yearMonth) {
+            if (yearMonth === 'special') {
+                return '🌟 특별판';
+            }
+            const [year, month] = yearMonth.split('-');
+            return `${year}년 ${parseInt(month)}월`;
+        }
+
+        // 날짜 표시 형식
+        function getDisplayDate(dateStr) {
+            if (isSpecialEdition(dateStr)) {
+                // "ces-2026-special" -> "CES 2026"
+                // 다양한 특별판 형식 처리
+                if (dateStr.toLowerCase().includes('ces')) {
+                    return 'CES 2026';
+                }
+                return dateStr;
+            }
+            return dateStr.substring(5); // "01-10"
+        }
+
         async function loadArchive() {
             try {
                 const response = await fetch('briefings.json');
                 const data = await response.json();
-                
+
                 if (data.briefings.length === 0) {
-                    document.getElementById('archive-container').innerHTML = 
+                    document.getElementById('archive-container').innerHTML =
                         '<div class="empty-state">아직 브리핑이 없습니다.</div>';
                     return;
                 }
 
-                // Group by month
+                // Group by month (특별판은 'special' 그룹으로)
                 const grouped = {};
                 data.briefings.forEach(b => {
-                    const [year, month] = b.date.split('-');
-                    const key = `${year}-${month}`;
+                    const key = getYearMonth(b.date);
                     if (!grouped[key]) {
                         grouped[key] = {
-                            label: `${year}년 ${parseInt(month)}월`,
+                            label: getMonthLabel(key),
+                            isSpecial: key === 'special',
                             items: []
                         };
                     }
                     grouped[key].items.push(b);
                 });
 
+                // 정렬: 특별판을 맨 위로, 나머지는 최신순
+                const sortedKeys = Object.keys(grouped).sort((a, b) => {
+                    if (a === 'special') return -1;
+                    if (b === 'special') return 1;
+                    return b.localeCompare(a);
+                });
+
                 // Render
-                const html = Object.entries(grouped).map(([key, group]) => `
+                const html = sortedKeys.map(key => {
+                    const group = grouped[key];
+                    const iconClass = group.isSpecial ? 'month-icon special' : 'month-icon';
+                    const icon = group.isSpecial ? '⭐' : '📅';
+
+                    return `
                     <section class="month-section">
                         <div class="month-header">
-                            <div class="month-icon">📅</div>
+                            <div class="${iconClass}">${icon}</div>
                             <h2>${group.label}</h2>
                         </div>
 
                         <div class="archive-list">
-                            ${group.items.map(b => `
-                                <a href="archive/${b.date}.html" class="archive-item">
-                                    <span class="archive-item-date">${b.date.substring(5)}</span>
+                            ${group.items.map(b => {
+                                const isSpecial = isSpecialEdition(b.date);
+                                const itemClass = isSpecial ? 'archive-item special' : 'archive-item';
+                                const displayDate = getDisplayDate(b.date);
+                                
+                                return `
+                                <a href="archive/${b.date}.html" class="${itemClass}">
+                                    <span class="archive-item-date">${displayDate}</span>
                                     <span class="archive-item-day">(${b.day})</span>
                                     <div class="archive-item-content">
                                         <div class="archive-item-title">${b.title}</div>
@@ -345,16 +422,16 @@
                                     </div>
                                     <span class="archive-item-arrow">→</span>
                                 </a>
-                            `).join('')}
+                            `}).join('')}
                         </div>
                     </section>
-                `).join('');
+                `}).join('');
 
                 document.getElementById('archive-container').innerHTML = html;
 
             } catch (error) {
                 console.error('Error loading archive:', error);
-                document.getElementById('archive-container').innerHTML = 
+                document.getElementById('archive-container').innerHTML =
                     '<div class="empty-state">아카이브를 불러올 수 없습니다.</div>';
             }
         }
