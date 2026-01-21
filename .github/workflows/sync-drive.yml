@@ -2,18 +2,18 @@ name: Sync from Google Drive
 
 on:
   schedule:
-    # KST 오전 10시 = UTC 01:00
-    - cron: '0 1 * * *'
-    # KST 오전 10시 30분 = UTC 01:30
-    - cron: '30 1 * * *'
-    # KST 오전 11시 = UTC 02:00
-    - cron: '0 2 * * *'
-    # KST 오전 11시 30분 = UTC 02:30
-    - cron: '30 2 * * *'
-    # KST 정오 12시 = UTC 03:00
-    - cron: '0 3 * * *'
-    # KST 오후 1시 = UTC 04:00 (보험용)
-    - cron: '0 4 * * *'
+    # 아침 (KST 7시, 8시, 9시)
+    - cron: '0 22 * * *'   # KST 07:00
+    - cron: '0 23 * * *'   # KST 08:00
+    - cron: '0 0 * * *'    # KST 09:00
+    # 오전 (KST 10시, 11시)
+    - cron: '0 1 * * *'    # KST 10:00
+    - cron: '0 2 * * *'    # KST 11:00
+    # 점심 (KST 13시)
+    - cron: '0 4 * * *'    # KST 13:00
+    # 오후 (KST 15시, 17시)
+    - cron: '0 6 * * *'    # KST 15:00
+    - cron: '0 8 * * *'    # KST 17:00
   workflow_dispatch:
 
 permissions:
@@ -140,7 +140,7 @@ jobs:
       - name: Update Briefing List JSON
         if: steps.sync.outputs.synced == 'true'
         run: python scripts/generate_list.py
-        
+
       - name: Commit and push changes
         if: steps.sync.outputs.synced == 'true'
         run: |
