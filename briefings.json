@@ -1,6 +1,53 @@
 {
   "briefings": [
     {
+      "date": "2026-01-22",
+      "day": "수",
+      "title": "다보스 2026: AI 버블 경고와 에너지 비용이 결정할 AI 경쟁력",
+      "summary": "나델라 MS CEO, AI 버블 경고 및 에너지 비용이 국가 AI 경쟁력 좌우할 것 발언. SK하이닉스 $129억 첨단 패키징 공장 투자 발표. OpenAI 2026년 하반기 소비자 디바이스 출시 예정.",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "Microsoft CEO Nadella warns AI risks becoming bubble unless adoption spreads",
+          "summary": "다보스 2026에서 나델라 CEO는 AI가 빅테크 기업에만 혜택을 주고 다른 산업이나 개발도상국으로 확산되지 않으면 버블이 될 위험 경고",
+          "url": "https://www.cnbc.com/2026/01/20/microsoft-nadella-ai-race-energy-tokens.html"
+        },
+        {
+          "category": "top",
+          "title": "SK Hynix to invest $12.9 billion in new advanced packaging plant",
+          "summary": "SK하이닉스가 AI 메모리 수요 급증에 대응해 청주에 19조원 규모 첨단 패키징 공장 건설 발표",
+          "url": "https://www.cnbc.com/2026/01/13/sk-hynix-invest-13-billion-new-fab-memory-chip-shortage-advanced-packaging-ai-memory.html"
+        },
+        {
+          "category": "top",
+          "title": "OpenAI 'on track' for consumer device launch in 2026",
+          "summary": "조니 아이브와 협력 중인 첫 소비자 디바이스 2026년 하반기 공개 예정",
+          "url": "https://fortune.com/2026/01/20/davos-world-economic-forum-leaders-shift-focus-to-ai-roi/"
+        },
+        {
+          "category": "ai",
+          "title": "Nvidia unveils Vera Rubin platform at CES 2026",
+          "summary": "차세대 AI 데이터센터 플랫폼 베라 루빈 공개, Grace Blackwell 대비 10배 성능 향상",
+          "url": "https://www.cnn.com/2026/01/05/tech/vera-rubin-nvidia-ai-ces"
+        },
+        {
+          "category": "semi",
+          "title": "HBM4 Memory War intensifies at CES 2026",
+          "summary": "SK하이닉스, 삼성, 마이크론 HBM4 기술 경쟁 본격화, 2026년 HBM 시장 $546억 전망",
+          "url": "https://www.trendforce.com/news/2026/01/05/news-sk-hynix-2026-outlook-hbm3e-remains-mainstream-hbm4-dual-strategy-amid-triple-market-headwinds/"
+        }
+      ],
+      "stats": {
+        "articles": 15,
+        "sections": 5,
+        "picks": 3
+      }
+    }
+  ]
+},
+{
+  "briefings": [
+    {
       "date": "2026-01-21",
       "day": "화",
       "title": "Humans& $4.8억 시드 | DOGE 사회보장 데이터 오용 | Netflix 앱 개편",

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다보스 2026: AI 버블 경고와 에너지 비용이 결정할 AI 경쟁력</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --border-color: #2a2a3a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        
+        .date {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        
+        .summary-box {
+            background: linear-gradient(135deg, rgba(74, 158, 255, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .summary-box p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .section-title.top { color: var(--accent-red); border-color: var(--accent-red); }
+        .section-title.economy { color: var(--accent-gold); border-color: var(--accent-gold); }
+        .section-title.ai { color: var(--accent-blue); border-color: var(--accent-blue); }
+        .section-title.semi { color: var(--accent-green); border-color: var(--accent-green); }
+        .section-title.pick { color: var(--accent-purple); border-color: var(--accent-purple); }
+        
+        .article {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .article:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .article-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        
+        .article-title-ko {
+            font-size: 1rem;
+            color: var(--accent-blue);
+            margin-bottom: 12px;
+        }
+        
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+        
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+        
+        .source {
+            color: var(--accent-purple);
+            font-weight: 500;
+        }
+        
+        .badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .badge.top { background: rgba(255, 59, 59, 0.2); color: var(--accent-red); }
+        .badge.popular { background: rgba(74, 158, 255, 0.2); color: var(--accent-blue); }
+        .badge.trending { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
+        .badge.cross { background: rgba(168, 85, 247, 0.2); color: var(--accent-purple); }
+        
+        .score {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+        
+        .article-meta a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        .article-meta a:hover {
+            text-decoration: underline;
+        }
+        
+        .pick-reason {
+            background: rgba(168, 85, 247, 0.1);
+            border-left: 3px solid var(--accent-purple);
+            padding: 12px 16px;
+            margin-top: 16px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 12px; }
+            .article { padding: 16px; }
+            .section-title { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Jae's Briefing</div>
+        <div class="date">2026년 1월 22일 (수) | Foreign News Briefing</div>
+    </header>
+
+    <div class="summary-box">
+        <p>다보스 2026에서 사티아 나델라 마이크로소프트 CEO가 AI 버블 경고와 에너지 비용이 AI 경쟁력을 결정할 것이라 발언. SK하이닉스 $129억 첨단 패키징 공장 투자 발표. HBM4 메모리 전쟁 본격화되며 2026년 메모리 시장 $440B 전망. OpenAI, 2026년 하반기 소비자 디바이스 출시 예정.</p>
+    </div>
+
+    <section class="section">
+        <h2 class="section-title top">🔥 TOP Headlines</h2>
+        
+        <article class="article">
+            <h3 class="article-title">Microsoft CEO Nadella warns AI risks becoming bubble unless adoption spreads</h3>
+            <p class="article-title-ko">나델라, AI 버블 위험 경고 - 기술기업 외 확산 없으면 버블 될 것</p>
+            <p class="article-summary">다보스 2026에서 나델라 CEO는 AI가 빅테크 기업에만 혜택을 주고 다른 산업이나 개발도상국으로 확산되지 않으면 투기 버블이 될 위험이 있다고 경고. 에너지 비용이 AI 경쟁력을 결정하는 핵심 요소가 될 것이라며, 'AI 토큰'이 새로운 글로벌 상품이 되고 있다고 언급.</p>
+            <div class="article-meta">
+                <span class="source">CNBC / Fortune</span>
+                <span>📅 1/20 KST</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge cross">🔄 5개 매체</span>
+                </div>
+                <span class="score">Score: 12.0</span>
+                <a href="https://www.cnbc.com/2026/01/20/microsoft-nadella-ai-race-energy-tokens.html" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">SK Hynix to invest $12.9 billion in new advanced packaging plant for AI memory</h3>
+            <p class="article-title-ko">SK하이닉스, $129억 규모 첨단 패키징 공장 투자 발표</p>
+            <p class="article-summary">SK하이닉스가 AI 메모리 수요 급증에 대응해 청주에 19조원 규모 첨단 패키징 공장 건설 발표. 2027년 말 완공 목표로 HBM3E와 HBM4 생산에 집중. 2025-2030년 HBM 시장 연평균 33% 성장 전망.</p>
+            <div class="article-meta">
+                <span class="source">CNBC</span>
+                <span>📅 1/13 KST</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge popular">📈 인기</span>
+                    <span class="badge cross">🔄 4개 매체</span>
+                </div>
+                <span class="score">Score: 11.5</span>
+                <a href="https://www.cnbc.com/2026/01/13/sk-hynix-invest-13-billion-new-fab-memory-chip-shortage-advanced-packaging-ai-memory.html" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">OpenAI 'on track' for consumer device launch in second half of 2026</h3>
+            <p class="article-title-ko">OpenAI, 2026년 하반기 첫 소비자 디바이스 출시 목표</p>
+            <p class="article-summary">OpenAI 글로벌 정책 책임자 Chris Lehane이 다보스에서 조니 아이브와 협력 중인 첫 소비자 디바이스가 2026년 하반기 공개 예정이라고 확인. 스크린 없는 소형 웨어러블 디바이스로 AI 기반 상호작용에 집중할 것으로 알려짐.</p>
+            <div class="article-meta">
+                <span class="source">Fortune</span>
+                <span>📅 1/20 KST</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge cross">🔄 3개 매체</span>
+                </div>
+                <span class="score">Score: 10.0</span>
+                <a href="https://fortune.com/2026/01/20/davos-world-economic-forum-leaders-shift-focus-to-ai-roi/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title economy">💰 경제/금융</h2>
+        
+        <article class="article">
+            <h3 class="article-title">Walmart partners with Google Gemini on AI-powered shopping tool</h3>
+            <p class="article-title-ko">월마트-구글 제미니 파트너십, AI 쇼핑 도구 공동 개발</p>
+            <p class="article-summary">월마트와 구글이 NRF 컨퍼런스에서 제미니 AI를 활용한 쇼핑 경험 파트너십 발표. 월마트 차기 CEO John Furner는 "에이전트 주도 커머스가 리테일의 다음 큰 진화"라고 언급. 미국 우선 출시 후 글로벌 확대 예정.</p>
+            <div class="article-meta">
+                <span class="source">CNBC</span>
+                <span>📅 1/11 KST</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge popular">📈 인기</span>
+                </div>
+                <span class="score">Score: 9.5</span>
+                <a href="https://www.cnbc.com/2026/01/11/walmart-partners-with-google-gemini-on-shopping-tool.html" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Magnificent 7's stock market dominance shows signs of cracking</h3>
+            <p class="article-title-ko">매그니피센트 7 지배력 균열 조짐, 2026년 이익 성장 둔화</p>
+            <p class="article-summary">Magnificent 7의 2026년 이익 성장률이 약 18%로 2022년 이후 최저 전망. S&P 500 나머지 493개 기업의 13% 성장률과 큰 차이 없어져. 테슬라 밸류에이션 P/E 200배로 S&P 500 내 두 번째로 고평가.</p>
+            <div class="article-meta">
+                <span class="source">Fortune / Bloomberg</span>
+                <span>📅 1/11 KST</span>
+                <div class="badges">
+                    <span class="badge popular">📈 인기</span>
+                    <span class="badge cross">🔄 3개 매체</span>
+                </div>
+                <span class="score">Score: 8.0</span>
+                <a href="https://fortune.com/2026/01/11/magnificent-7-stock-market-dominance-cracking-nvidia-microsoft-apple-meta-alphabet-amazon-tesla/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Payment giants Visa and Mastercard racing to build AI agentic commerce infrastructure</h3>
+            <p class="article-title-ko">비자-마스터카드, AI 에이전트 커머스 인프라 구축 경쟁</p>
+            <p class="article-summary">비자와 마스터카드가 AI 에이전트가 검색, 가격 비교, 구매까지 수행하는 '에이전틱 커머스' 인프라 구축에 박차. 2026년 기술 상용화 예상되며, 이커머스 플랫폼 등장보다 더 큰 변화 될 수 있다고 전망.</p>
+            <div class="article-meta">
+                <span class="source">CNBC</span>
+                <span>📅 12/29 KST</span>
+                <div class="badges">
+                    <span class="badge trending">📊 트렌딩</span>
+                </div>
+                <span class="score">Score: 7.0</span>
+                <a href="https://www.cnbc.com/2025/12/29/ai-agentic-shopping-price-discounts-cheap-sales-commerce-visa-mastercard-chatbots.html" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title ai">🤖 AI/기술</h2>
+        
+        <article class="article">
+            <h3 class="article-title">Nvidia unveils Vera Rubin platform at CES 2026 with 10x performance improvement</h3>
+            <p class="article-title-ko">엔비디아 CES 2026서 베라 루빈 플랫폼 공개, 10배 성능 향상</p>
+            <p class="article-summary">엔비디아가 CES 2026에서 차세대 AI 데이터센터 플랫폼 '베라 루빈' 공개. Grace Blackwell 대비 처리량 10배, 토큰 비용 10분의 1 절감. 2026년 하반기 출시 예정이며 MS, AWS, 구글 클라우드, CoreWeave가 첫 도입 고객.</p>
+            <div class="article-meta">
+                <span class="source">CNN / Yahoo Finance</span>
+                <span>📅 1/5 KST</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge popular">📈 인기</span>
+                    <span class="badge cross">🔄 6개 매체</span>
+                </div>
+                <span class="score">Score: 11.0</span>
+                <a href="https://www.cnn.com/2026/01/05/tech/vera-rubin-nvidia-ai-ces" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Anthropic CEO Amodei: Selling H200 chips to China like 'selling nuclear weapons to North Korea'</h3>
+            <p class="article-title-ko">앤스로픽 CEO, H200 칩 중국 판매는 "북한에 핵무기 판매와 같다"</p>
+            <p class="article-summary">다보스에서 Dario Amodei CEO가 트럼프 행정부의 AI 칩 수출 규제 완화를 "큰 실수"라고 비판. AGI 개발 후 통제력 상실 가능성 우려하며 중국에 칩 판매 금지가 AI 안전 확보 시간을 벌 수 있는 가장 중요한 조치라고 강조.</p>
+            <div class="article-meta">
+                <span class="source">Fortune / Euronews</span>
+                <span>📅 1/20 KST</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge cross">🔄 4개 매체</span>
+                </div>
+                <span class="score">Score: 10.0</span>
+                <a href="https://www.euronews.com/next/2026/01/20/ai-at-davos-2026-from-work-to-useful-and-safe-ai-heres-what-the-tech-leaders-have-said" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Nvidia invests in Baseten, signaling shift from AI training to inference economics</h3>
+            <p class="article-title-ko">엔비디아, AI 추론 스타트업 Baseten 투자 - 훈련에서 추론으로 중심 이동</p>
+            <p class="article-summary">엔비디아가 AI 모델 효율적 운영 전문 스타트업 Baseten에 투자. 대규모 모델 훈련 시대에서 '추론' 경제 시대로 전환되고 있음을 시사. 레이턴시, 쿼리당 비용, 안정성이 기업 AI 도입의 핵심 결정 요소로 부상.</p>
+            <div class="article-meta">
+                <span class="source">TechStartups / Barron's</span>
+                <span>📅 1/21 KST</span>
+                <div class="badges">
+                    <span class="badge trending">📊 트렌딩</span>
+                </div>
+                <span class="score">Score: 7.5</span>
+                <a href="https://techstartups.com/2026/01/21/top-tech-news-today-january-21-2026/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">VCs predict AI's 'show me the money' year - enterprises must prove ROI in 2026</h3>
+            <p class="article-title-ko">VC들 "2026년은 AI ROI 증명의 해" - 실질적 수익 창출 압박 증가</p>
+            <p class="article-summary">Menlo Ventures 파트너 Venky Ganesan은 "기업들은 AI 투자에서 실질적 ROI를 보여야 하고, 국가들은 생산성 향상을 입증해야 할 것"이라고 전망. 일부 공격적 투자 기업의 파산 가능성도 경고.</p>
+            <div class="article-meta">
+                <span class="source">Axios</span>
+                <span>📅 1/1 KST</span>
+                <div class="badges">
+                    <span class="badge popular">📈 인기</span>
+                </div>
+                <span class="score">Score: 6.5</span>
+                <a href="https://www.axios.com/2026/01/01/ai-2026-money-openai-google-anthropic-agents" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title semi">💾 반도체</h2>
+        
+        <article class="article">
+            <h3 class="article-title">HBM4 Memory War intensifies at CES 2026 - SK Hynix unveils 16-Hi breakthrough</h3>
+            <p class="article-title-ko">CES 2026 HBM4 메모리 전쟁 본격화, SK하이닉스 16-Hi 기술 돌파</p>
+            <p class="article-summary">CES 2026에서 SK하이닉스, 삼성, 마이크론이 HBM4 기술 경쟁 본격화. SK하이닉스가 2,048비트 인터페이스의 16-Hi HBM4 시연. 2026년 HBM 시장 $546억 규모(전년비 58% 증가) 전망.</p>
+            <div class="article-meta">
+                <span class="source">TrendForce / Financial Content</span>
+                <span>📅 1/14 KST</span>
+                <div class="badges">
+                    <span class="badge top">🔥 TOP</span>
+                    <span class="badge popular">📈 인기</span>
+                    <span class="badge cross">🔄 5개 매체</span>
+                </div>
+                <span class="score">Score: 11.0</span>
+                <a href="https://www.trendforce.com/news/2026/01/05/news-sk-hynix-2026-outlook-hbm3e-remains-mainstream-hbm4-dual-strategy-amid-triple-market-headwinds/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">Samsung, SK Hynix, Micron racing for Nvidia 16-Hi HBM4 supply contracts by Q4 2026</h3>
+            <p class="article-title-ko">삼성-SK하이닉스-마이크론, 엔비디아 16-Hi HBM4 공급권 경쟁</p>
+            <p class="article-summary">엔비디아가 2026년 4분기까지 16-Hi HBM4 메모리 납품 요청. 기존 12-Hi HBM의 웨이퍼 두께 50㎛에서 30㎛로 얇아져야 하는 기술적 난제. 삼성 CEO "HBM4에서 '삼성이 돌아왔다'는 평가 받고 있다"고 발언.</p>
+            <div class="article-meta">
+                <span class="source">TweakTown / Reuters</span>
+                <span>📅 1/3 KST</span>
+                <div class="badges">
+                    <span class="badge popular">📈 인기</span>
+                    <span class="badge cross">🔄 3개 매체</span>
+                </div>
+                <span class="score">Score: 9.0</span>
+                <a href="https://www.tweaktown.com/news/109495/sk-hynix-samsung-and-micron-fighting-for-nvidia-supply-contracts-for-new-16-hi-hbm4-orders/index.html" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">2026 Memory supercycle: Global semiconductor market to reach $975B</h3>
+            <p class="article-title-ko">2026년 메모리 슈퍼사이클 - 글로벌 반도체 시장 $9,750억 규모 전망</p>
+            <p class="article-summary">WSTS에 따르면 2026년 글로벌 반도체 시장 전년비 25% 이상 성장해 약 $9,750억 규모 전망. 메모리 부문 30% 성장으로 $4,400억 이상 예상. HBM3E가 여전히 주류이나 HBM4로 점진적 전환 중.</p>
+            <div class="article-meta">
+                <span class="source">SK Hynix News</span>
+                <span>📅 1/8 KST</span>
+                <div class="badges">
+                    <span class="badge trending">📊 트렌딩</span>
+                </div>
+                <span class="score">Score: 7.5</span>
+                <a href="https://news.skhynix.com/2026-market-outlook-focus-on-the-hbm-led-memory-supercycle/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title pick">💎 Claude's Pick</h2>
+        
+        <article class="article">
+            <h3 class="article-title">OpenAI chip deals portfolio expands: Nvidia, AMD, Broadcom, and now Cerebras</h3>
+            <p class="article-title-ko">OpenAI 칩 딜 포트폴리오 확대 - Nvidia·AMD·Broadcom에 Cerebras 추가</p>
+            <p class="article-summary">OpenAI가 Cerebras와 수십억 달러 규모 칩 공급 계약 체결. 이미 Nvidia($1,000억), AMD(6GW), Broadcom과 대규모 거래 중. 다중 칩 공급원 확보로 컴퓨팅 파워 의존도 분산 전략 강화.</p>
+            <div class="article-meta">
+                <span class="source">CNBC</span>
+                <span>📅 1/16 KST</span>
+                <a href="https://www.cnbc.com/2026/01/16/openai-chip-deal-with-cerebras-adds-to-roster-of-nvidia-amd-broadcom.html" target="_blank">원문 보기 →</a>
+            </div>
+            <div class="pick-reason">
+                <strong>선정 이유:</strong> OpenAI의 공급망 다각화 전략이 AI 인프라 시장 전체의 경쟁 구도 변화 신호. Cerebras 같은 대안 칩 제조사의 시장 진입 기회 확대 의미.
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">AI market set to splinter in 2026: Monetizers vs Manufacturers</h3>
+            <p class="article-title-ko">2026년 AI 시장 분열 전망 - '수익화' vs '제조업' 진영으로 양분</p>
+            <p class="article-summary">Blue Whale Growth Fund CIO Stephen Yiu는 AI 투자자들이 돈을 쓰는 기업과 버는 기업을 구분하기 시작할 것이라 전망. Meta, Google 같은 빅테크가 자산경량에서 자산집약 기업으로 변화하며 리스크 프로필과 비즈니스 모델이 달라지고 있다고 분석.</p>
+            <div class="article-meta">
+                <span class="source">CNBC</span>
+                <span>📅 12/25 KST</span>
+                <a href="https://www.cnbc.com/2025/12/25/how-the-ai-market-could-splinter-in-2026-.html" target="_blank">원문 보기 →</a>
+            </div>
+            <div class="pick-reason">
+                <strong>선정 이유:</strong> AI 투자 평가 프레임워크 변화 조기 신호. 2026년 투자 판단에 중요한 관점 제시하며 버블 vs 실질 가치 논쟁의 핵심 키워드.
+            </div>
+        </article>
+
+        <article class="article">
+            <h3 class="article-title">US states roll out major tech laws covering AI and privacy in 2026</h3>
+            <p class="article-title-ko">미국 주정부들, 2026년 AI·프라이버시 규제법 대거 시행</p>
+            <p class="article-summary">연방 의회 교착 속에 캘리포니아 등 주정부들이 독자적으로 AI 규제 시행. AI 개발사 안전 정보 공개, 동반자 챗봇 가드레일, 수리권 법률 등 다양한 규제 발효. 3월 뉴욕 AI법, 5월 연방 Take It Down Act 등 추가 규제 예정.</p>
+            <div class="article-meta">
+                <span class="source">The Verge / Interesting Engineering</span>
+                <span>📅 1/1 KST</span>
+                <a href="https://interestingengineering.com/culture/us-state-tech-laws-2026" target="_blank">원문 보기 →</a>
+            </div>
+            <div class="pick-reason">
+                <strong>선정 이유:</strong> 연방-주 정부 간 AI 규제 충돌 조기 신호. 기업들의 컴플라이언스 전략 수립에 영향 미칠 패치워크 규제 환경 형성 중.
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>Value Score 3.0+ 기사만 선별 | 3중 신호: RSS + 홈페이지 TOP + 랭킹 섹션</p>
+        <p style="margin-top: 10px;">© 2026 Jae's Briefing. Curated by Claude.</p>
+    </footer>
+</body>
+</html>
