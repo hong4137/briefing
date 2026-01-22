@@ -1,6 +1,39 @@
 {
   "briefings": [
     {
+      "date": "davos-2026-special",
+      "day": "특별판",
+      "title": "다보스 2026: AI 인프라 대전환과 미중 기술패권 경쟁",
+      "summary": "트럼프 3주 원전 승인, 젠슨 황 AI 5층 케이크, 아모데이 중국 칩 수출 비판, 하사비스 AGI 전망",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "Trump Fast-Tracks 'Three-Week' Nuclear Approval for Big Tech AI",
+          "summary": "트럼프, 빅테크 직접 원전 건설 3주 승인 약속",
+          "url": "https://fortune.com/2026/01/21/trump-davos-nuclear-power-plant-approval-data-centers-ai-race-energy/"
+        },
+        {
+          "category": "top",
+          "title": "Jensen Huang: AI is 'Largest Infrastructure Buildout in Human History'",
+          "summary": "젠슨 황, AI '5층 케이크' 인프라 설명 - 버블 아니다",
+          "url": "https://blogs.nvidia.com/blog/davos-wef-blackrock-ceo-larry-fink-jensen-huang/"
+        },
+        {
+          "category": "top",
+          "title": "Anthropic CEO: Selling AI Chips to China is 'Like Nuclear Weapons to North Korea'",
+          "summary": "다리오 아모데이, 중국 AI칩 수출 강력 비판",
+          "url": "https://siliconangle.com/2026/01/20/anthropic-boss-dario-amodei-slams-trump-crazy-decision-sell-advanced-ai-chips-china/"
+        },
+        {
+          "category": "top",
+          "title": "Amodei & Hassabis Agree: AGI Coming Faster Than Expected",
+          "summary": "AGI 예상보다 빨리 온다, 화이트칼라 일자리 절반 5년 내 위험",
+          "url": "https://jpcaparas.medium.com/what-amodei-and-hassabis-said-about-agi-timelines-jobs-and-china-at-davos-156308aa12c3"
+        }
+      ],
+      "stats": { "articles": 13, "sections": 4, "picks": 0 }
+    },
+    {
       "date": "2026-01-22",
       "day": "목",
       "title": "트럼프, AI 원전 3주 승인 제안 | 젠슨 황 '역사상 최대 인프라 투자'",
@@ -23,303 +56,133 @@
     },
     {
       "date": "2026-01-21",
-      "day": "수",
-      "title": "나델라 'AI 버블 아닌 골드러시' | SK하이닉스 인디애나 HBM 패키징 공장 검토",
-      "summary": "마이크로소프트 CEO AI 인프라 투자 지속, SK하이닉스 미국 공장 검토",
+      "day": "화",
+      "title": "Humans& $4.8억 시드 | DOGE 사회보장 데이터 오용 | Netflix 앱 개편",
+      "summary": "AI 스타트업 Humans& AI가 시드 라운드 역대 최대 규모인 $4.8억 투자 유치. DOGE가 사회보장국 데이터를 오용해 정부 효율성 프로젝트 논란.",
       "highlights": [
         {
           "category": "top",
-          "title": "Microsoft CEO Nadella: 'AI is Not a Bubble, It's a Gold Rush'",
-          "summary": "나델라 다보스서 AI 인프라 투자 지속 의지 피력"
+          "title": "Humans& AI raises record $480M seed round",
+          "summary": "역대 최대 시드 라운드, AI 에이전트 플랫폼 구축"
+        },
+        {
+          "category": "top",
+          "title": "DOGE accused of misusing Social Security data",
+          "summary": "머스크 DOGE, 사회보장국 데이터 오용 논란"
         }
       ],
-      "stats": { "articles": 15, "sections": 5, "picks": 2 }
+      "stats": { "articles": 14, "sections": 5, "picks": 2 }
     },
     {
       "date": "2026-01-20",
-      "day": "화",
-      "title": "Sequoia, Anthropic $20억 추가 투자 | Threads, X 사용자 수 추월",
-      "summary": "세쿼이아 Anthropic 대규모 추가 투자, 메타 Threads X 추월",
+      "day": "월",
+      "title": "트럼프 취임 | Sequoia-Anthropic 투자 | Threads, X 추월",
+      "summary": "트럼프 대통령 취임식과 함께 AI 정책 방향 전환 예고. Sequoia가 OpenAI 경쟁사 Anthropic에 투자하며 VC 업계 금기 깨뜨림.",
       "highlights": [
         {
           "category": "top",
-          "title": "Sequoia Leads $2B Additional Investment in Anthropic",
-          "summary": "세쿼이아, Anthropic $20억 추가 투자 리드"
+          "title": "Sequoia, Anthropic 투자로 VC 금기 깨다",
+          "summary": "OpenAI 투자사가 경쟁사 Anthropic에도 투자 결정",
+          "url": "https://techcrunch.com/2026/01/18/sequoia-to-invest-in-anthropic-breaking-vc-taboo-on-backing-rivals-ft/"
+        },
+        {
+          "category": "top",
+          "title": "Threads, 일일 사용자 수에서 X 추월",
+          "summary": "1억 4,150만 vs 1억 2,500만 DAU",
+          "url": "https://techcrunch.com/2026/01/18/threads-edges-out-x-in-daily-mobile-users-new-data-shows/"
         }
       ],
       "stats": { "articles": 14, "sections": 5, "picks": 2 }
     },
     {
       "date": "2026-01-19",
-      "day": "월",
-      "title": "ChatGPT 광고 도입 검토 | xAI 딥페이크 중지 명령",
-      "summary": "OpenAI ChatGPT 광고 모델 검토, xAI Grok 딥페이크 생성 중지 명령",
+      "day": "일",
+      "title": "Sequoia-Anthropic 투자 | Threads, X 추월 | Signal AI 챗봇",
+      "summary": "Sequoia Capital이 OpenAI 경쟁사인 Anthropic에 투자하며 VC 업계 금기를 깨뜨렸습니다. Meta의 Threads가 일일 활성 사용자 수에서 X를 추월했습니다.",
       "highlights": [
         {
           "category": "top",
-          "title": "OpenAI Considers Introducing Ads to ChatGPT",
-          "summary": "OpenAI, ChatGPT 광고 모델 도입 검토"
+          "title": "Sequoia, Anthropic 투자로 VC 금기 깨다",
+          "summary": "OpenAI 투자사가 경쟁사 Anthropic에도 투자 결정",
+          "url": "https://techcrunch.com/2026/01/18/sequoia-to-invest-in-anthropic-breaking-vc-taboo-on-backing-rivals-ft/"
+        },
+        {
+          "category": "top",
+          "title": "Threads, 일일 사용자 수에서 X 추월",
+          "summary": "1억 4,150만 vs 1억 2,500만 DAU",
+          "url": "https://techcrunch.com/2026/01/18/threads-edges-out-x-in-daily-mobile-users-new-data-shows/"
+        },
+        {
+          "category": "top",
+          "title": "Signal 창업자, 프라이버시 AI 챗봇 출시",
+          "summary": "Moxie Marlinspike의 ChatGPT 대안",
+          "url": "https://techcrunch.com/2026/01/18/moxie-marlinspike-has-a-privacy-conscious-alternative-to-chatgpt/"
         }
       ],
-      "stats": { "articles": 12, "sections": 4, "picks": 2 }
+      "stats": { "articles": 14, "sections": 5, "picks": 2 }
     },
     {
       "date": "2026-01-18",
-      "day": "일",
-      "title": "Nvidia Blackwell 양산 순항 | OpenAI 새 AI 디바이스 팀 공개",
-      "summary": "엔비디아 Blackwell 칩 양산 궤도, OpenAI 전용 AI 디바이스 개발팀 가동",
+      "day": "토",
+      "title": "ChatGPT 광고 시대 개막 | xAI 법적 위기 | ClickHouse $150억 유니콘",
+      "summary": "OpenAI가 ChatGPT에 타겟 광고 도입을 공식 발표하며 AI 수익화 새 시대 개막. 캘리포니아 법무장관이 xAI에 Grok 딥페이크 중지명령.",
       "highlights": [
         {
           "category": "top",
-          "title": "Nvidia Blackwell Mass Production On Track",
-          "summary": "엔비디아 Blackwell 칩 양산 순조롭게 진행"
+          "title": "ChatGPT, 미국에서 타겟 광고 테스트 시작",
+          "summary": "AI 무료 서비스 수익화 본격화, 응답에 영향 없다고 밝혀",
+          "url": "https://techcrunch.com/2026/01/16/chatgpt-users-are-about-to-get-hit-with-targeted-ads/"
+        },
+        {
+          "category": "top",
+          "title": "캘리포니아 법무장관, xAI에 Grok 딥페이크 중지명령",
+          "summary": "성적 콘텐츠 무단 생성 문제로 법적 조치",
+          "url": "https://techcrunch.com/2026/01/16/california-ag-sends-musks-xai-a-cease-and-desist-order-over-sexual-deepfakes/"
+        },
+        {
+          "category": "top",
+          "title": "ClickHouse $150억 밸류에이션 달성",
+          "summary": "Snowflake·Databricks 대항마로 급부상",
+          "url": "https://techcrunch.com/2026/01/16/snowflake-databricks-challenger-clickhouse-hits-15b-valuation/"
         }
       ],
-      "stats": { "articles": 10, "sections": 4, "picks": 1 }
+      "stats": { "articles": 14, "sections": 5, "picks": 2 }
     },
     {
       "date": "2026-01-17",
-      "day": "토",
-      "title": "OpenAI Vera Rubin 칩 공개 | HBM4 개발 경쟁 가속",
-      "summary": "OpenAI 자체 AI 칩 Vera Rubin 공개, 삼성 SK하이닉스 HBM4 개발 가속",
+      "day": "금",
+      "title": "머스크 OpenAI $1,340억 손해배상 | ClickHouse $150억 | Runpod ARR $1.2억",
+      "summary": "머스크가 OpenAI에 최대 $1,340억 손해배상 요구하며 비영리→영리 전환 저지 시도.",
       "highlights": [
-        {
-          "category": "top",
-          "title": "OpenAI Unveils Custom AI Chip 'Vera Rubin'",
-          "summary": "OpenAI, 자체 AI 칩 'Vera Rubin' 공개"
-        }
+        "머스크, OpenAI에 최대 $1,340억 손해배상 요구",
+        "ClickHouse $150억 밸류에이션 달성",
+        "AI 클라우드 Runpod, ARR $1.2억 달성"
       ],
-      "stats": { "articles": 13, "sections": 5, "picks": 2 }
+      "stats": { "articles": 14, "sections": 5, "picks": 3 }
+    },
+    {
+      "date": "ces-2026-special",
+      "day": "특별판",
+      "title": "CES 2026: AI 하드웨어 대혁신과 NVIDIA 베라 루빈 플랫폼",
+      "summary": "CES 2026 현장 특별 브리핑. NVIDIA 베라 루빈 플랫폼 공개, 삼성·LG AI 가전 대전.",
+      "highlights": [
+        "NVIDIA 베라 루빈 플랫폼 공개",
+        "삼성 AI 홈 비전 발표",
+        "현대차 보스턴 다이나믹스 로봇 시연"
+      ],
+      "stats": { "articles": 20, "sections": 6, "picks": 3 }
     },
     {
       "date": "2026-01-16",
-      "day": "금",
-      "title": "Humans& AI $50M 시드 라운드 | DOGE 사회보장 민감 정보 접근 논란",
-      "summary": "Humans& AI 대규모 시드 투자, DOGE 팀 사회보장국 민감 정보 접근 논란",
+      "day": "목",
+      "title": "ChatGPT 광고 도입 공식화 | xAI Grok 딥페이크 논란 | AI 클라우드 경쟁 가열",
+      "summary": "OpenAI가 ChatGPT 무료 사용자 대상 타겟 광고 도입을 공식 발표.",
       "highlights": [
-        {
-          "category": "top",
-          "title": "Humans& Raises $50M Seed for AI Workforce Platform",
-          "summary": "Humans& AI 인력 플랫폼 $5천만 시드 투자 유치"
-        }
+        "ChatGPT 타겟 광고 도입 공식 발표",
+        "xAI Grok 딥페이크 논란, 법적 조치",
+        "CoreWeave $400억 밸류에이션 IPO 추진"
       ],
-      "stats": { "articles": 11, "sections": 4, "picks": 1 }
-    },
-    {
-      "date": "2026-01-15",
-      "day": "목",
-      "title": "OpenAI API 가격 인하 | Google Gemini 2.0 Flash 출시",
-      "summary": "OpenAI API 대폭 가격 인하, Google Gemini 2.0 Flash 정식 출시",
-      "highlights": [],
-      "stats": { "articles": 12, "sections": 4, "picks": 1 }
-    },
-    {
-      "date": "2026-01-14",
-      "day": "수",
-      "title": "Meta AI 글래스 판매 호조 | Amazon AGI 팀 확대",
-      "summary": "Meta Ray-Ban AI 글래스 판매 급증, Amazon AGI 연구팀 대폭 확대",
-      "highlights": [],
-      "stats": { "articles": 11, "sections": 4, "picks": 1 }
-    },
-    {
-      "date": "2026-01-13",
-      "day": "화",
-      "title": "Tesla FSD v13 출시 | Anthropic Claude 3.5 업데이트",
-      "summary": "테슬라 FSD v13 정식 출시, Anthropic Claude 3.5 성능 개선",
-      "highlights": [],
-      "stats": { "articles": 13, "sections": 5, "picks": 2 }
-    },
-    {
-      "date": "2026-01-12",
-      "day": "월",
-      "title": "CES 2026 폐막 | AI PC 원년 선언",
-      "summary": "CES 2026 폐막, AI PC 시대 본격 개막 선언",
-      "highlights": [],
       "stats": { "articles": 15, "sections": 5, "picks": 2 }
-    },
-    {
-      "date": "2026-01-11",
-      "day": "일",
-      "title": "CES 2026 Day 4 | 로봇 전시 대거 등장",
-      "summary": "CES 2026 로봇 전시 붐, 가정용 로봇 상용화 가속",
-      "highlights": [],
-      "stats": { "articles": 14, "sections": 5, "picks": 2 }
-    },
-    {
-      "date": "2026-01-10",
-      "day": "토",
-      "title": "CES 2026 Day 3 | Samsung AI TV 라인업 공개",
-      "summary": "삼성 AI TV 신제품 대거 공개, LG 투명 OLED 화제",
-      "highlights": [],
-      "stats": { "articles": 16, "sections": 5, "picks": 3 }
-    },
-    {
-      "date": "2026-01-09",
-      "day": "금",
-      "title": "CES 2026 Day 2 | Nvidia Project DIGITS 발표",
-      "summary": "엔비디아 개인용 AI 슈퍼컴퓨터 Project DIGITS 발표",
-      "highlights": [],
-      "stats": { "articles": 18, "sections": 6, "picks": 3 }
-    },
-    {
-      "date": "2026-01-08",
-      "day": "목",
-      "title": "CES 2026 Day 1 | Jensen Huang 키노트",
-      "summary": "젠슨 황 CES 키노트, Blackwell Ultra 및 로봇 비전 발표",
-      "highlights": [],
-      "stats": { "articles": 20, "sections": 6, "picks": 4 }
-    },
-    {
-      "date": "2026-01-07",
-      "day": "수",
-      "title": "CES 2026 개막 전야 | AI 기대감 고조",
-      "summary": "CES 2026 개막 전야, AI 하드웨어 기대감 최고조",
-      "highlights": [],
-      "stats": { "articles": 12, "sections": 4, "picks": 2 }
-    },
-    {
-      "date": "2026-01-06",
-      "day": "화",
-      "title": "Apple Vision Pro 2 루머 | Microsoft Copilot 업데이트",
-      "summary": "Apple Vision Pro 2세대 개발 루머, Microsoft Copilot 기능 대폭 확대",
-      "highlights": [],
-      "stats": { "articles": 11, "sections": 4, "picks": 1 }
-    },
-    {
-      "date": "2026-01-05",
-      "day": "월",
-      "title": "2026년 AI 전망 특집 | 주요 트렌드 분석",
-      "summary": "2026년 AI 산업 전망, 에이전트 AI와 온디바이스 AI 주목",
-      "highlights": [],
-      "stats": { "articles": 10, "sections": 4, "picks": 2 }
-    },
-    {
-      "date": "2026-01-04",
-      "day": "일",
-      "title": "새해 첫 주말 | AI 스타트업 투자 동향",
-      "summary": "2026년 AI 스타트업 투자 전망, VC들의 관심 분야",
-      "highlights": [],
-      "stats": { "articles": 8, "sections": 3, "picks": 1 }
-    },
-    {
-      "date": "2026-01-03",
-      "day": "토",
-      "title": "신년 연휴 | 2025년 AI 결산",
-      "summary": "2025년 AI 산업 결산, 주요 성과와 한계",
-      "highlights": [],
-      "stats": { "articles": 9, "sections": 4, "picks": 1 }
-    },
-    {
-      "date": "2026-01-02",
-      "day": "금",
-      "title": "새해 첫 거래일 | AI 주식 강세",
-      "summary": "2026년 첫 거래일 AI 주식 상승, 엔비디아 사상 최고가 근접",
-      "highlights": [],
-      "stats": { "articles": 10, "sections": 4, "picks": 1 }
-    },
-    {
-      "date": "2026-01-01",
-      "day": "목",
-      "title": "2026년 새해 특집 | AI 업계 신년 메시지",
-      "summary": "2026년 새해, AI 업계 리더들의 신년 메시지",
-      "highlights": [],
-      "stats": { "articles": 8, "sections": 3, "picks": 1 }
-    },
-    {
-      "date": "2025-12-31",
-      "day": "수",
-      "title": "2025년 마지막 날 | 연말 결산",
-      "summary": "2025년 마지막 날, AI 업계 연말 결산",
-      "highlights": [],
-      "stats": { "articles": 10, "sections": 4, "picks": 1 }
-    },
-    {
-      "date": "2025-12-30",
-      "day": "화",
-      "title": "연말 특집 | 2025년 AI 10대 뉴스",
-      "summary": "2025년 AI 10대 뉴스 선정, ChatGPT부터 Gemini까지",
-      "highlights": [],
-      "stats": { "articles": 12, "sections": 5, "picks": 2 }
-    },
-    {
-      "date": "2025-12-29",
-      "day": "월",
-      "title": "연말 연휴 | AI 규제 동향 정리",
-      "summary": "2025년 글로벌 AI 규제 동향 총정리",
-      "highlights": [],
-      "stats": { "articles": 9, "sections": 4, "picks": 1 }
-    },
-    {
-      "date": "2025-12-28",
-      "day": "일",
-      "title": "주말 특집 | AI 하드웨어 트렌드",
-      "summary": "2025년 AI 하드웨어 트렌드, 칩 경쟁 심화",
-      "highlights": [],
-      "stats": { "articles": 8, "sections": 3, "picks": 1 }
-    },
-    {
-      "date": "2025-12-27",
-      "day": "토",
-      "title": "연말 특집 | AI 스타트업 유니콘 정리",
-      "summary": "2025년 신규 AI 유니콘 기업 총정리",
-      "highlights": [],
-      "stats": { "articles": 10, "sections": 4, "picks": 2 }
-    },
-    {
-      "date": "2025-12-26",
-      "day": "금",
-      "title": "박싱데이 | 테크 업계 휴식",
-      "summary": "연말 연휴 테크 업계 동향, 2026년 전망",
-      "highlights": [],
-      "stats": { "articles": 7, "sections": 3, "picks": 1 }
-    },
-    {
-      "date": "2025-12-25",
-      "day": "목",
-      "title": "크리스마스 특집 | AI 선물 가이드",
-      "summary": "크리스마스 특집, AI 기기 선물 가이드",
-      "highlights": [],
-      "stats": { "articles": 6, "sections": 3, "picks": 1 }
-    },
-    {
-      "date": "2025-12-24",
-      "day": "수",
-      "title": "크리스마스 이브 | 연말 AI 트렌드",
-      "summary": "크리스마스 이브, 2025년 AI 트렌드 마무리",
-      "highlights": [],
-      "stats": { "articles": 8, "sections": 3, "picks": 1 }
-    },
-    {
-      "date": "2025-12-22",
-      "day": "월",
-      "title": "주간 마무리 | AI 업계 동향",
-      "summary": "연말 주간 AI 업계 주요 동향 정리",
-      "highlights": [],
-      "stats": { "articles": 11, "sections": 4, "picks": 1 }
-    },
-    {
-      "date": "2025-12-21",
-      "day": "일",
-      "title": "주말 특집 | 2025년 AI 하이라이트",
-      "summary": "2025년 AI 하이라이트 모음",
-      "highlights": [],
-      "stats": { "articles": 9, "sections": 4, "picks": 1 }
-    },
-    {
-      "date": "2025-12-19",
-      "day": "금",
-      "title": "주간 마감 | OpenAI 12일 발표 정리",
-      "summary": "OpenAI 12일 연속 발표 최종 정리",
-      "highlights": [],
-      "stats": { "articles": 14, "sections": 5, "picks": 2 }
-    },
-    {
-      "date": "2025-12-18",
-      "day": "목",
-      "title": "OpenAI o1 정식 출시 | Sora 공개",
-      "summary": "OpenAI o1 정식 출시, 동영상 생성 AI Sora 공개",
-      "highlights": [],
-      "stats": { "articles": 16, "sections": 5, "picks": 3 }
     }
   ]
 }
