@@ -1,188 +1,47 @@
 {
   "briefings": [
     {
-      "date": "davos-2026-special",
-      "day": "특별판",
-      "title": "다보스 2026: AI 인프라 대전환과 미중 기술패권 경쟁",
-      "summary": "트럼프 3주 원전 승인, 젠슨 황 AI 5층 케이크, 아모데이 중국 칩 수출 비판, 하사비스 AGI 전망",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "Trump Fast-Tracks 'Three-Week' Nuclear Approval for Big Tech AI",
-          "summary": "트럼프, 빅테크 직접 원전 건설 3주 승인 약속",
-          "url": "https://fortune.com/2026/01/21/trump-davos-nuclear-power-plant-approval-data-centers-ai-race-energy/"
-        },
-        {
-          "category": "top",
-          "title": "Jensen Huang: AI is 'Largest Infrastructure Buildout in Human History'",
-          "summary": "젠슨 황, AI '5층 케이크' 인프라 설명 - 버블 아니다",
-          "url": "https://blogs.nvidia.com/blog/davos-wef-blackrock-ceo-larry-fink-jensen-huang/"
-        },
-        {
-          "category": "top",
-          "title": "Anthropic CEO: Selling AI Chips to China is 'Like Nuclear Weapons to North Korea'",
-          "summary": "다리오 아모데이, 중국 AI칩 수출 강력 비판",
-          "url": "https://siliconangle.com/2026/01/20/anthropic-boss-dario-amodei-slams-trump-crazy-decision-sell-advanced-ai-chips-china/"
-        },
-        {
-          "category": "top",
-          "title": "Amodei & Hassabis Agree: AGI Coming Faster Than Expected",
-          "summary": "AGI 예상보다 빨리 온다, 화이트칼라 일자리 절반 5년 내 위험",
-          "url": "https://jpcaparas.medium.com/what-amodei-and-hassabis-said-about-agi-timelines-jobs-and-china-at-davos-156308aa12c3"
-        }
-      ],
-      "stats": { "articles": 13, "sections": 4, "picks": 0 }
-    },
-    {
-      "date": "2026-01-22",
-      "day": "목",
-      "title": "트럼프, AI 원전 3주 승인 제안 | 젠슨 황 '역사상 최대 인프라 투자'",
-      "summary": "다보스 2026 특집: 트럼프 대통령 빅테크 직접 원전 건설 3주 승인 약속, 젠슨 황 AI '5층 케이크' 인프라 설명, Anthropic CEO 중국 AI칩 수출 경고",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "Trump Fast-Tracks 'Three-Week' Nuclear Approval for Big Tech AI",
-          "summary": "트럼프, 다보스서 빅테크 직접 원전 건설 3주 승인 제안",
-          "url": "https://fortune.com/2026/01/21/trump-davos-nuclear-power-plant-approval-data-centers-ai-race-energy/"
-        },
-        {
-          "category": "top",
-          "title": "Jensen Huang: AI is 'Largest Infrastructure Buildout in Human History'",
-          "summary": "젠슨 황, AI '5층 케이크' 인프라 설명 - 버블 아니다",
-          "url": "https://blogs.nvidia.com/blog/davos-wef-blackrock-ceo-larry-fink-jensen-huang/"
-        }
-      ],
-      "stats": { "articles": 12, "sections": 4, "picks": 2 }
-    },
-    {
-      "date": "2026-01-21",
-      "day": "화",
-      "title": "Humans& $4.8억 시드 | DOGE 사회보장 데이터 오용 | Netflix 앱 개편",
-      "summary": "AI 스타트업 Humans& AI가 시드 라운드 역대 최대 규모인 $4.8억 투자 유치. DOGE가 사회보장국 데이터를 오용해 정부 효율성 프로젝트 논란.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "Humans& AI raises record $480M seed round",
-          "summary": "역대 최대 시드 라운드, AI 에이전트 플랫폼 구축"
-        },
-        {
-          "category": "top",
-          "title": "DOGE accused of misusing Social Security data",
-          "summary": "머스크 DOGE, 사회보장국 데이터 오용 논란"
-        }
-      ],
-      "stats": { "articles": 14, "sections": 5, "picks": 2 }
-    },
-    {
-      "date": "2026-01-20",
-      "day": "월",
-      "title": "트럼프 취임 | Sequoia-Anthropic 투자 | Threads, X 추월",
-      "summary": "트럼프 대통령 취임식과 함께 AI 정책 방향 전환 예고. Sequoia가 OpenAI 경쟁사 Anthropic에 투자하며 VC 업계 금기 깨뜨림.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "Sequoia, Anthropic 투자로 VC 금기 깨다",
-          "summary": "OpenAI 투자사가 경쟁사 Anthropic에도 투자 결정",
-          "url": "https://techcrunch.com/2026/01/18/sequoia-to-invest-in-anthropic-breaking-vc-taboo-on-backing-rivals-ft/"
-        },
-        {
-          "category": "top",
-          "title": "Threads, 일일 사용자 수에서 X 추월",
-          "summary": "1억 4,150만 vs 1억 2,500만 DAU",
-          "url": "https://techcrunch.com/2026/01/18/threads-edges-out-x-in-daily-mobile-users-new-data-shows/"
-        }
-      ],
-      "stats": { "articles": 14, "sections": 5, "picks": 2 }
-    },
-    {
-      "date": "2026-01-19",
-      "day": "일",
-      "title": "Sequoia-Anthropic 투자 | Threads, X 추월 | Signal AI 챗봇",
-      "summary": "Sequoia Capital이 OpenAI 경쟁사인 Anthropic에 투자하며 VC 업계 금기를 깨뜨렸습니다. Meta의 Threads가 일일 활성 사용자 수에서 X를 추월했습니다.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "Sequoia, Anthropic 투자로 VC 금기 깨다",
-          "summary": "OpenAI 투자사가 경쟁사 Anthropic에도 투자 결정",
-          "url": "https://techcrunch.com/2026/01/18/sequoia-to-invest-in-anthropic-breaking-vc-taboo-on-backing-rivals-ft/"
-        },
-        {
-          "category": "top",
-          "title": "Threads, 일일 사용자 수에서 X 추월",
-          "summary": "1억 4,150만 vs 1억 2,500만 DAU",
-          "url": "https://techcrunch.com/2026/01/18/threads-edges-out-x-in-daily-mobile-users-new-data-shows/"
-        },
-        {
-          "category": "top",
-          "title": "Signal 창업자, 프라이버시 AI 챗봇 출시",
-          "summary": "Moxie Marlinspike의 ChatGPT 대안",
-          "url": "https://techcrunch.com/2026/01/18/moxie-marlinspike-has-a-privacy-conscious-alternative-to-chatgpt/"
-        }
-      ],
-      "stats": { "articles": 14, "sections": 5, "picks": 2 }
-    },
-    {
-      "date": "2026-01-18",
-      "day": "토",
-      "title": "ChatGPT 광고 시대 개막 | xAI 법적 위기 | ClickHouse $150억 유니콘",
-      "summary": "OpenAI가 ChatGPT에 타겟 광고 도입을 공식 발표하며 AI 수익화 새 시대 개막. 캘리포니아 법무장관이 xAI에 Grok 딥페이크 중지명령.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "ChatGPT, 미국에서 타겟 광고 테스트 시작",
-          "summary": "AI 무료 서비스 수익화 본격화, 응답에 영향 없다고 밝혀",
-          "url": "https://techcrunch.com/2026/01/16/chatgpt-users-are-about-to-get-hit-with-targeted-ads/"
-        },
-        {
-          "category": "top",
-          "title": "캘리포니아 법무장관, xAI에 Grok 딥페이크 중지명령",
-          "summary": "성적 콘텐츠 무단 생성 문제로 법적 조치",
-          "url": "https://techcrunch.com/2026/01/16/california-ag-sends-musks-xai-a-cease-and-desist-order-over-sexual-deepfakes/"
-        },
-        {
-          "category": "top",
-          "title": "ClickHouse $150억 밸류에이션 달성",
-          "summary": "Snowflake·Databricks 대항마로 급부상",
-          "url": "https://techcrunch.com/2026/01/16/snowflake-databricks-challenger-clickhouse-hits-15b-valuation/"
-        }
-      ],
-      "stats": { "articles": 14, "sections": 5, "picks": 2 }
-    },
-    {
-      "date": "2026-01-17",
+      "date": "2026-01-23",
       "day": "금",
-      "title": "머스크 OpenAI $1,340억 손해배상 | ClickHouse $150억 | Runpod ARR $1.2억",
-      "summary": "머스크가 OpenAI에 최대 $1,340억 손해배상 요구하며 비영리→영리 전환 저지 시도.",
+      "title": "Davos 2026: AI 리더들, 실용주의 시대 선언",
+      "summary": "Anthropic CEO Amodei, 중국 칩 수출을 '북한에 핵무기 파는 것'과 비유하며 경고. OpenAI 2026년 하반기 첫 소비자 디바이스 출시 예정. Microsoft Nadella, AI 확산 없이는 버블 위험 경고.",
       "highlights": [
-        "머스크, OpenAI에 최대 $1,340억 손해배상 요구",
-        "ClickHouse $150억 밸류에이션 달성",
-        "AI 클라우드 Runpod, ARR $1.2억 달성"
+        {
+          "category": "top",
+          "title": "Anthropic CEO Warns China Chip Sales Like 'Selling Nuclear Weapons'",
+          "summary": "Dario Amodei, 다보스에서 트럼프 행정부의 H200 칩 중국 수출 허용 비판",
+          "url": "https://www.cnbc.com/2026/01/21/openai-anthropic-enterprise-davos.html"
+        },
+        {
+          "category": "top",
+          "title": "OpenAI 'On Track' for First Consumer Device in Late 2026",
+          "summary": "Jony Ive와 협력 중인 스크린리스 웨어러블 기기 출시 계획",
+          "url": "https://fortune.com/2026/01/20/davos-world-economic-forum-leaders-shift-focus-to-ai-roi/"
+        },
+        {
+          "category": "ai",
+          "title": "Nvidia Rubin Platform in Full Production",
+          "summary": "CES 2026에서 Blackwell 후속 아키텍처 발표, 토큰 비용 1/10 절감 목표",
+          "url": "https://blogs.nvidia.com/blog/2026-ces-special-presentation/"
+        },
+        {
+          "category": "ai",
+          "title": "DeepSeek New Architecture Paper Ahead of R2",
+          "summary": "CEO Liang Wenfeng이 직접 arXiv에 mHC 논문 업로드, 춘절 전 R2 출시 예상",
+          "url": "https://tech.yahoo.com/ai/articles/deepseek-kicks-off-2026-paper-093000536.html"
+        },
+        {
+          "category": "pick",
+          "title": "Jensen Huang: Data Center Boom Creating Six-Figure Salaries",
+          "summary": "Nvidia CEO, AI 시대 배관공/전기기사 등 기술직 연봉 2배 상승 강조",
+          "url": "https://www.euronews.com/next/2026/01/20/ai-at-davos-2026-from-work-to-useful-and-safe-ai-heres-what-the-tech-leaders-have-said"
+        }
       ],
-      "stats": { "articles": 14, "sections": 5, "picks": 3 }
-    },
-    {
-      "date": "ces-2026-special",
-      "day": "특별판",
-      "title": "CES 2026: AI 하드웨어 대혁신과 NVIDIA 베라 루빈 플랫폼",
-      "summary": "CES 2026 현장 특별 브리핑. NVIDIA 베라 루빈 플랫폼 공개, 삼성·LG AI 가전 대전.",
-      "highlights": [
-        "NVIDIA 베라 루빈 플랫폼 공개",
-        "삼성 AI 홈 비전 발표",
-        "현대차 보스턴 다이나믹스 로봇 시연"
-      ],
-      "stats": { "articles": 20, "sections": 6, "picks": 3 }
-    },
-    {
-      "date": "2026-01-16",
-      "day": "목",
-      "title": "ChatGPT 광고 도입 공식화 | xAI Grok 딥페이크 논란 | AI 클라우드 경쟁 가열",
-      "summary": "OpenAI가 ChatGPT 무료 사용자 대상 타겟 광고 도입을 공식 발표.",
-      "highlights": [
-        "ChatGPT 타겟 광고 도입 공식 발표",
-        "xAI Grok 딥페이크 논란, 법적 조치",
-        "CoreWeave $400억 밸류에이션 IPO 추진"
-      ],
-      "stats": { "articles": 15, "sections": 5, "picks": 2 }
+      "stats": {
+        "articles": 12,
+        "sections": 5,
+        "picks": 2
+      }
     }
   ]
 }
