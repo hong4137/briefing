@@ -3,42 +3,42 @@
     {
       "date": "2026-01-23",
       "day": "금",
-      "title": "Davos 2026: AI 리더들, 실용주의 시대 선언",
-      "summary": "Anthropic CEO Amodei, 중국 칩 수출을 '북한에 핵무기 파는 것'과 비유하며 경고. OpenAI 2026년 하반기 첫 소비자 디바이스 출시 예정. Microsoft Nadella, AI 확산 없이는 버블 위험 경고.",
+      "title": "TikTok 미국 합작법인 설립 | Tesla 오스틴 무인 로보택시 | Capital One Brex 인수",
+      "summary": "TikTok이 ByteDance와 미국 투자자들의 합작법인 'USDS'를 통해 미국 금지 회피. Tesla 오스틴에서 무인 로보택시 서비스 시작. Capital One이 핀테크 Brex 인수.",
       "highlights": [
         {
           "category": "top",
-          "title": "Anthropic CEO Warns China Chip Sales Like 'Selling Nuclear Weapons'",
-          "summary": "Dario Amodei, 다보스에서 트럼프 행정부의 H200 칩 중국 수출 허용 비판",
-          "url": "https://www.cnbc.com/2026/01/21/openai-anthropic-enterprise-davos.html"
+          "title": "TikTok Seals Deal for New US Joint Venture",
+          "summary": "ByteDance와 미국 투자자들이 TikTok 합작법인 'USDS' 설립 합의",
+          "url": "https://www.reuters.com/world/china/tiktok-reaches-deal-new-us-joint-venture-avoid-american-ban-2026-01-23/"
         },
         {
           "category": "top",
-          "title": "OpenAI 'On Track' for First Consumer Device in Late 2026",
-          "summary": "Jony Ive와 협력 중인 스크린리스 웨어러블 기기 출시 계획",
-          "url": "https://fortune.com/2026/01/20/davos-world-economic-forum-leaders-shift-focus-to-ai-roi/"
+          "title": "Tesla Launches Unsupervised Robotaxi in Austin",
+          "summary": "Tesla, 오스틴에서 안전 모니터 없는 완전 무인 로보택시 서비스 시작",
+          "url": "https://www.theverge.com/transportation/866165/tesla-robotaxi-unsupervised-austin-texas-safety-monitor"
+        },
+        {
+          "category": "top",
+          "title": "Capital One Acquires Brex",
+          "summary": "Capital One, 핀테크 유니콘 Brex를 피크 대비 대폭 할인된 가격에 인수",
+          "url": "https://techcrunch.com/2026/01/22/capital-one-acquires-brex-for-steep-discount-to-its-peak-valuation-but-early-believers-are-laughing-all-the-way-to-the-bank/"
         },
         {
           "category": "ai",
-          "title": "Nvidia Rubin Platform in Full Production",
-          "summary": "CES 2026에서 Blackwell 후속 아키텍처 발표, 토큰 비용 1/10 절감 목표",
-          "url": "https://blogs.nvidia.com/blog/2026-ces-special-presentation/"
-        },
-        {
-          "category": "ai",
-          "title": "DeepSeek New Architecture Paper Ahead of R2",
-          "summary": "CEO Liang Wenfeng이 직접 arXiv에 mHC 논문 업로드, 춘절 전 R2 출시 예상",
-          "url": "https://tech.yahoo.com/ai/articles/deepseek-kicks-off-2026-paper-093000536.html"
+          "title": "Claude Code Everywhere Inside Microsoft",
+          "summary": "Anthropic의 Claude Code가 Microsoft 내부에서 급속 확산",
+          "url": "https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad"
         },
         {
           "category": "pick",
-          "title": "Jensen Huang: Data Center Boom Creating Six-Figure Salaries",
-          "summary": "Nvidia CEO, AI 시대 배관공/전기기사 등 기술직 연봉 2배 상승 강조",
-          "url": "https://www.euronews.com/next/2026/01/20/ai-at-davos-2026-from-work-to-useful-and-safe-ai-heres-what-the-tech-leaders-have-said"
+          "title": "Malaysia Lifts Block on Grok AI",
+          "summary": "말레이시아, X의 안전 조치 이행 후 Grok AI 차단 해제",
+          "url": "https://www.reuters.com/world/asia-pacific/malaysia-lifts-block-grok-ai-after-x-implements-safety-measures-2026-01-23/"
         }
       ],
       "stats": {
-        "articles": 12,
+        "articles": 14,
         "sections": 5,
         "picks": 2
       }

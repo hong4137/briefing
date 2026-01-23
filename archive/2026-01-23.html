@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davos 2026: AI 리더들, 실용주의 시대 선언</title>
+    <title>TikTok 미국 합작법인 설립 | Tesla 오스틴 무인 로보택시 | Capital One Brex 인수</title>
     <style>
         :root {
             --bg-primary: #0a0a0f;
             --bg-secondary: #12121a;
             --bg-card: #1a1a24;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
             --accent-red: #ff3b3b;
             --accent-green: #22c55e;
             --accent-gold: #ffd700;
             --accent-blue: #4a9eff;
             --accent-purple: #a855f7;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --text-muted: #6b7280;
             --border-color: #2a2a3a;
         }
         
@@ -27,72 +26,57 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: var(--bg-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.6;
-            min-height: 100vh;
-        }
-        
-        .container {
+            padding: 20px;
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
         }
         
         header {
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 0;
             border-bottom: 1px solid var(--border-color);
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         
         .logo {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--accent-blue);
             margin-bottom: 10px;
         }
         
         .date {
-            color: var(--text-secondary);
             font-size: 1.1rem;
-        }
-        
-        .summary-box {
-            background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 40px;
-        }
-        
-        .summary-box h2 {
-            color: var(--accent-gold);
-            font-size: 1rem;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .summary-box p {
             color: var(--text-secondary);
-            font-size: 0.95rem;
         }
         
-        .section {
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        section {
             margin-bottom: 40px;
         }
         
-        .section-title {
+        .section-header {
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size: 1.3rem;
-            color: var(--text-primary);
             margin-bottom: 20px;
             padding-bottom: 10px;
             border-bottom: 2px solid var(--border-color);
@@ -102,60 +86,58 @@
             font-size: 1.5rem;
         }
         
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
         .article {
             background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
+            border-radius: 12px;
             padding: 20px;
-            margin-bottom: 16px;
-            transition: transform 0.2s, border-color 0.2s;
+            margin-bottom: 15px;
+            border-left: 3px solid var(--accent-blue);
+            transition: transform 0.2s;
         }
         
         .article:hover {
-            transform: translateY(-2px);
-            border-color: var(--accent-blue);
+            transform: translateX(5px);
+        }
+        
+        .article.top {
+            border-left-color: var(--accent-red);
+        }
+        
+        .article.pick {
+            border-left-color: var(--accent-gold);
+            background: linear-gradient(135deg, var(--bg-card) 0%, #1a1a2e 100%);
         }
         
         .article-title {
             font-size: 1.1rem;
             font-weight: 600;
-            color: var(--text-primary);
             margin-bottom: 8px;
-        }
-        
-        .article-title-kr {
-            font-size: 0.95rem;
-            color: var(--accent-blue);
-            margin-bottom: 10px;
+            color: var(--text-primary);
         }
         
         .article-summary {
+            font-size: 0.95rem;
             color: var(--text-secondary);
-            font-size: 0.9rem;
             margin-bottom: 12px;
         }
         
         .article-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
-            align-items: center;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-        
-        .source {
-            color: var(--accent-purple);
-            font-weight: 500;
-        }
-        
-        .badges {
-            display: flex;
-            gap: 6px;
-            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
         }
         
         .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
             padding: 2px 8px;
             border-radius: 4px;
             font-size: 0.75rem;
@@ -168,415 +150,279 @@
         }
         
         .badge-popular {
-            background: rgba(34, 197, 94, 0.2);
-            color: var(--accent-green);
-        }
-        
-        .badge-cross {
             background: rgba(74, 158, 255, 0.2);
             color: var(--accent-blue);
         }
         
-        .article-link {
+        .badge-pick {
+            background: rgba(255, 215, 0, 0.2);
+            color: var(--accent-gold);
+        }
+        
+        .badge-cross {
+            background: rgba(168, 85, 247, 0.2);
+            color: var(--accent-purple);
+        }
+        
+        .source {
+            color: var(--accent-blue);
+        }
+        
+        .source a {
             color: var(--accent-blue);
             text-decoration: none;
-            font-size: 0.85rem;
         }
         
-        .article-link:hover {
+        .source a:hover {
             text-decoration: underline;
-        }
-        
-        .picks-section {
-            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(74, 158, 255, 0.1));
-            border: 1px solid var(--accent-purple);
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 40px;
-        }
-        
-        .picks-section .section-title {
-            color: var(--accent-purple);
-            border-bottom-color: var(--accent-purple);
-        }
-        
-        .pick-reason {
-            background: rgba(168, 85, 247, 0.1);
-            border-left: 3px solid var(--accent-purple);
-            padding: 10px 14px;
-            margin-top: 12px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-        
-        .market-section {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 40px;
-        }
-        
-        .market-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-            margin-top: 16px;
-        }
-        
-        .market-item {
-            background: var(--bg-secondary);
-            padding: 16px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        
-        .market-label {
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            margin-bottom: 4px;
-        }
-        
-        .market-value {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-        
-        .market-change {
-            font-size: 0.85rem;
-            margin-top: 4px;
-        }
-        
-        .positive {
-            color: var(--accent-green);
-        }
-        
-        .negative {
-            color: var(--accent-red);
         }
         
         footer {
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 0;
             border-top: 1px solid var(--border-color);
-            color: var(--text-muted);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .pick-reason {
+            margin-top: 12px;
+            padding: 10px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 8px;
             font-size: 0.85rem;
+            color: var(--accent-gold);
         }
         
         @media (max-width: 600px) {
-            .container {
-                padding: 12px;
-            }
-            
-            header {
-                padding: 24px 12px;
-            }
-            
-            .logo {
-                font-size: 1.5rem;
+            body {
+                padding: 15px;
             }
             
             .article {
-                padding: 16px;
+                padding: 15px;
             }
             
-            .article-meta {
-                flex-direction: column;
-                align-items: flex-start;
+            .section-title {
+                font-size: 1.1rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">Jae's Briefing</div>
-            <div class="date">2026년 1월 23일 금요일</div>
-        </header>
-        
-        <div class="summary-box">
-            <h2>📌 오늘의 핵심</h2>
-            <p>Davos 2026에서 AI 리더들이 실용주의 시대 개막을 선언했습니다. Anthropic CEO Dario Amodei는 중국 칩 수출 완화를 강하게 비판하며 "핵무기를 북한에 파는 것과 같다"고 경고했습니다. 한편 OpenAI는 2026년 하반기 첫 소비자 디바이스 출시 계획을 밝혔고, DeepSeek은 차세대 모델 R2 출시를 앞두고 새로운 아키텍처 논문을 공개했습니다.</p>
+    <header>
+        <div class="logo">📰 Jae's Briefing</div>
+        <div class="date">2026년 1월 23일 금요일</div>
+        <div class="stats">
+            <span class="stat-item">📊 기사 14개</span>
+            <span class="stat-item">📁 섹션 5개</span>
+            <span class="stat-item">💎 Pick 2개</span>
+        </div>
+    </header>
+
+    <section>
+        <div class="section-header">
+            <span class="section-icon">🔥</span>
+            <h2 class="section-title">TOP Headlines</h2>
         </div>
         
-        <!-- TOP Headlines -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">🔥</span>
-                TOP Headlines
-            </h2>
-            
-            <article class="article">
-                <h3 class="article-title">Anthropic CEO Warns China Chip Sales Like 'Selling Nuclear Weapons to North Korea'</h3>
-                <p class="article-title-kr">Anthropic CEO, 중국 칩 수출 "북한에 핵무기 파는 것"과 비유하며 강력 경고</p>
-                <p class="article-summary">Dario Amodei가 다보스에서 트럼프 행정부의 H200 칩 중국 수출 허용 결정을 강하게 비판. AI 통제권 상실의 '중대한 국가 안보적 함의'가 있다고 경고</p>
-                <div class="article-meta">
-                    <span class="source">CNBC / Fortune</span>
-                    <span>📅 01/22 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-top">🔥 TOP</span>
-                        <span class="badge badge-cross">🔄 4개 매체</span>
-                    </div>
-                    <a href="https://www.cnbc.com/2026/01/21/openai-anthropic-enterprise-davos.html" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-            
-            <article class="article">
-                <h3 class="article-title">OpenAI 'On Track' for First Consumer Device Launch in Late 2026</h3>
-                <p class="article-title-kr">OpenAI, 2026년 하반기 첫 소비자 디바이스 출시 '예정대로 진행'</p>
-                <p class="article-summary">OpenAI의 Chris Lehane이 Jony Ive와 협력 중인 비밀 프로젝트가 2026년 하반기 출시 목표로 순항 중이라고 밝혀. 소형 스크린리스 웨어러블 기기로 추정</p>
-                <div class="article-meta">
-                    <span class="source">Fortune / Axios</span>
-                    <span>📅 01/21 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-top">🔥 TOP</span>
-                        <span class="badge badge-cross">🔄 3개 매체</span>
-                    </div>
-                    <a href="https://fortune.com/2026/01/20/davos-world-economic-forum-leaders-shift-focus-to-ai-roi/" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-            
-            <article class="article">
-                <h3 class="article-title">At Davos 2026, AI Hype Gives Way to Focus on ROI</h3>
-                <p class="article-title-kr">다보스 2026: AI 과대광고에서 ROI 실증으로 무게중심 이동</p>
-                <p class="article-summary">Microsoft CEO Satya Nadella, AI 확산 없이는 버블 위험 경고. 기업들이 파일럿 실험에서 실제 비즈니스 성과 증명으로 전환 중</p>
-                <div class="article-meta">
-                    <span class="source">Fortune / Irish Times</span>
-                    <span>📅 01/21 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-top">🔥 TOP</span>
-                        <span class="badge badge-popular">📈 인기</span>
-                    </div>
-                    <a href="https://www.irishtimes.com/business/2026/01/20/ai-boom-could-falter-without-wider-adoption-microsoft-chief-satya-nadella-warns/" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-        </section>
-        
-        <!-- AI/기술 -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">🤖</span>
-                AI/기술
-            </h2>
-            
-            <article class="article">
-                <h3 class="article-title">Nvidia Rubin Platform Now in Full Production, Targets 10x Cost Reduction</h3>
-                <p class="article-title-kr">Nvidia Rubin 플랫폼 양산 시작, 토큰 생성 비용 1/10로 절감</p>
-                <p class="article-summary">CES 2026에서 Jensen Huang이 Blackwell 후속 Rubin 아키텍처 발표. 6개 칩 극단적 코디자인으로 AI 추론 비용 획기적 절감 목표</p>
-                <div class="article-meta">
-                    <span class="source">NVIDIA Blog / TechCrunch</span>
-                    <span>📅 01/15 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-top">🔥 TOP</span>
-                        <span class="badge badge-cross">🔄 5개 매체</span>
-                    </div>
-                    <a href="https://blogs.nvidia.com/blog/2026-ces-special-presentation/" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-            
-            <article class="article">
-                <h3 class="article-title">Anthropic Projects $26B Revenue by 2026, Cuts Margin Forecast</h3>
-                <p class="article-title-kr">Anthropic, 2026년 매출 $260억 전망하며 마진 전망은 하향</p>
-                <p class="article-summary">AI 추론 비용 상승으로 2025년 마진 전망 50%→40%로 하향. 그러나 매출은 2024년 $10억→2025년 $100억→2026년 $260억으로 급성장 예상</p>
-                <div class="article-meta">
-                    <span class="source">The Information / WebProNews</span>
-                    <span>📅 01/23 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-popular">📈 인기</span>
-                    </div>
-                    <a href="https://www.webpronews.com/anthropic-slashes-2025-margin-forecast-to-40-amid-ai-cost-surge/" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-            
-            <article class="article">
-                <h3 class="article-title">Apple Using Google Cloud TPUs to Train 'LLM Siri'</h3>
-                <p class="article-title-kr">Apple, Google 클라우드 TPU로 '차세대 LLM Siri' 훈련 중</p>
-                <p class="article-summary">자체 실리콘 고집하던 Apple이 Google 인프라 활용. 대규모 워크로드와 빠른 품질 향상을 위한 실용적 전환으로 해석</p>
-                <div class="article-meta">
-                    <span class="source">Tech Startups</span>
-                    <span>📅 01/22 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-popular">📈 인기</span>
-                    </div>
-                    <a href="https://techstartups.com/2026/01/22/top-tech-news-today-january-22-2026/" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-            
-            <article class="article">
-                <h3 class="article-title">DeepSeek Releases New Architecture Paper Ahead of R2 Model Launch</h3>
-                <p class="article-title-kr">DeepSeek, R2 모델 출시 앞두고 새 아키텍처 논문 공개</p>
-                <p class="article-summary">CEO Liang Wenfeng이 직접 arXiv에 mHC(Manifold-Constrained Hyper-Connections) 논문 업로드. 춘절 전 차세대 모델 출시 예상</p>
-                <div class="article-meta">
-                    <span class="source">SCMP / Yahoo Tech</span>
-                    <span>📅 01/06 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-cross">🔄 3개 매체</span>
-                    </div>
-                    <a href="https://tech.yahoo.com/ai/articles/deepseek-kicks-off-2026-paper-093000536.html" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-        </section>
-        
-        <!-- 경제/금융 -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">💰</span>
-                경제/금융
-            </h2>
-            
-            <article class="article">
-                <h3 class="article-title">Nvidia to Start Shipping H200 Chips to China by Mid-February</h3>
-                <p class="article-title-kr">Nvidia, 2월 중순부터 중국에 H200 칩 출하 시작</p>
-                <p class="article-summary">트럼프 승인 후 Nvidia가 중국 고객들에게 4만~8만 개 H200 칩 출하 계획. TSMC에 200만 개 H200 생산 요청, $12.8억~$25.6억 매출 예상</p>
-                <div class="article-meta">
-                    <span class="source">Reuters / Motley Fool</span>
-                    <span>📅 01/03 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-top">🔥 TOP</span>
-                        <span class="badge badge-cross">🔄 4개 매체</span>
-                    </div>
-                    <a href="https://www.fool.com/investing/2026/01/03/nvidia-just-made-a-major-move-for-2026-time-to-buy/" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-            
-            <article class="article">
-                <h3 class="article-title">U.S. House Passes AI Chip Export Oversight Legislation</h3>
-                <p class="article-title-kr">미 하원, AI 칩 수출 감독 강화 법안 통과</p>
-                <p class="article-summary">첨단 AI 칩의 적국 군사·감시 역량 가속화 방지를 위한 법안. 수출 통제가 제품 로드맵, 클라우드 용량 계획, 매출 예측에 직접 영향</p>
-                <div class="article-meta">
-                    <span class="source">Tech Startups</span>
-                    <span>📅 01/22 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-popular">📈 인기</span>
-                    </div>
-                    <a href="https://techstartups.com/2026/01/22/top-tech-news-today-january-22-2026/" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-            
-            <article class="article">
-                <h3 class="article-title">Chinese AI Startups MiniMax, Zhipu Soar in Hong Kong IPO Debuts</h3>
-                <p class="article-title-kr">중국 AI 스타트업 MiniMax·Zhipu, 홍콩 IPO 대박</p>
-                <p class="article-summary">MiniMax $6.19억 조달하며 공모가 대비 100%+ 상승, 시총 $135억. Zhipu도 $5.58억 조달, 37% 상승. DeepSeek 이후 중국 AI 투자 열기 반영</p>
-                <div class="article-meta">
-                    <span class="source">Taipei Times / WSWS</span>
-                    <span>📅 01/21 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-cross">🔄 3개 매체</span>
-                    </div>
-                    <a href="https://www.taipeitimes.com/News/feat/archives/2026/01/21/2003850942" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-        </section>
-        
-        <!-- 반도체 -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">💾</span>
-                반도체
-            </h2>
-            
-            <article class="article">
-                <h3 class="article-title">Micron Stock Jumps 10% as Chip Rally Kicks Off 2026</h3>
-                <p class="article-title-kr">Micron 10% 급등, 2026년 반도체 랠리 시작</p>
-                <p class="article-summary">새해 첫 거래일 반도체주 강세. ASML 9%, Lam Research·Intel 6%+, Marvell 5%, AMD 4% 상승. VanEck 반도체 ETF 3년 연속 상승</p>
-                <div class="article-meta">
-                    <span class="source">CNBC</span>
-                    <span>📅 01/02 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-popular">📈 인기</span>
-                    </div>
-                    <a href="https://www.cnbc.com/2026/01/02/chipmakers-2026-ai-trade.html" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-            
-            <article class="article">
-                <h3 class="article-title">China's SiCarrier Developing ASML Alternative Lithography Tools</h3>
-                <p class="article-title-kr">중국 SiCarrier, ASML 대체 리소그래피 장비 개발 중</p>
-                <p class="article-summary">Huawei 연계 SiCarrier가 ASML, Applied Materials, Lam Research 벤치마킹. 자국 칩 자립화 가속</p>
-                <div class="article-meta">
-                    <span class="source">Asia Tech Review</span>
-                    <span>📅 01/20 KST</span>
-                    <div class="badges">
-                        <span class="badge badge-cross">🔄 2개 매체</span>
-                    </div>
-                    <a href="https://www.asiatechreview.com/p/chinas-ai-giants-change-course-after" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-            </article>
-        </section>
-        
-        <!-- Claude's Pick -->
-        <section class="picks-section">
-            <h2 class="section-title">
-                <span class="section-icon">💎</span>
-                Claude's Pick
-            </h2>
-            <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 20px;">48시간 내 숨은 보석 | Signal 2개+ & 관심사 1개+</p>
-            
-            <article class="article" style="background: rgba(168, 85, 247, 0.05);">
-                <h3 class="article-title">Jensen Huang: Data Center Boom Creating 'Six-Figure Salaries' for Trade Workers</h3>
-                <p class="article-title-kr">Jensen Huang: 데이터센터 붐이 기술직 노동자에게 '6자리 연봉' 창출</p>
-                <p class="article-summary">다보스에서 Nvidia CEO가 AI가 화이트칼라 일자리를 대체하는 대신 배관공, 전기기사, 건설 노동자 수요가 급증하고 있다고 강조. "연봉이 거의 2배 상승"</p>
-                <div class="article-meta">
-                    <span class="source">Euronews / Business Standard</span>
-                    <span>📅 01/22 KST</span>
-                    <a href="https://www.euronews.com/next/2026/01/20/ai-at-davos-2026-from-work-to-useful-and-safe-ai-heres-what-the-tech-leaders-have-said" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-                <div class="pick-reason">
-                    <strong>선정 이유:</strong> AI 시대 일자리 담론의 새로운 프레임 제시 | 인프라 투자 관점에서 주목할 노동시장 변화
-                </div>
-            </article>
-            
-            <article class="article" style="background: rgba(168, 85, 247, 0.05);">
-                <h3 class="article-title">UBS: 2026 Will Be 'Year of AI Agent Monetization' in China</h3>
-                <p class="article-title-kr">UBS: 2026년은 중국에서 'AI 에이전트 수익화의 해'</p>
-                <p class="article-summary">ByteDance Coze Studio, Alibaba Qwen-Agent가 GitHub에서 1만+ 스타 기록. 미국 AI 에이전트 시장 연 $150~200억, 중국 급추격 예상</p>
-                <div class="article-meta">
-                    <span class="source">Business Standard / SCMP</span>
-                    <span>📅 01/20 KST</span>
-                    <a href="https://www.business-standard.com/technology/tech-news/china-ai-agents-monetisation-2026-ubs-report-alibaba-bytedance-125090401056_1.html" target="_blank" class="article-link">원문 보기 →</a>
-                </div>
-                <div class="pick-reason">
-                    <strong>선정 이유:</strong> AI 에이전트 상용화 원년 시그널 | 중국 AI 생태계 투자 관점
-                </div>
-            </article>
-        </section>
-        
-        <!-- 주간 시장 동향 -->
-        <section class="market-section">
-            <h2 class="section-title">
-                <span class="section-icon">📊</span>
-                이번 주 주요 일정
-            </h2>
-            <div class="market-grid">
-                <div class="market-item">
-                    <div class="market-label">1/27 (월)</div>
-                    <div class="market-value" style="font-size: 0.9rem;">GM, UPS, Boeing 실적</div>
-                </div>
-                <div class="market-item">
-                    <div class="market-label">1/28 (화)</div>
-                    <div class="market-value" style="font-size: 0.9rem;">FOMC 결정</div>
-                    <div class="market-change">MSFT, META, TSLA 실적</div>
-                </div>
-                <div class="market-item">
-                    <div class="market-label">1/29 (수)</div>
-                    <div class="market-value" style="font-size: 0.9rem;">Apple 실적</div>
-                </div>
-                <div class="market-item">
-                    <div class="market-label">춘절 전</div>
-                    <div class="market-value" style="font-size: 0.9rem;">DeepSeek R2?</div>
-                    <div class="market-change">출시 예상</div>
-                </div>
+        <article class="article top">
+            <h3 class="article-title">TikTok, 미국 합작법인 설립으로 금지 회피</h3>
+            <p class="article-summary">ByteDance와 미국 투자자들이 TikTok의 새로운 미국 합작법인 'USDS' 설립에 합의. Oracle, MGX 등이 참여하며 미국 내 운영 지속 결정.</p>
+            <div class="article-meta">
+                <span class="badge badge-top">🔥 TOP</span>
+                <span class="badge badge-cross">🔄 5개 매체</span>
+                <span class="source"><a href="https://www.reuters.com/world/china/tiktok-reaches-deal-new-us-joint-venture-avoid-american-ban-2026-01-23/" target="_blank">Reuters</a></span>
+                <span>📅 01/23 04:07 UTC</span>
             </div>
-            <p style="margin-top: 16px; font-size: 0.85rem; color: var(--text-muted);">
-                💡 <strong>한 줄 평가:</strong> 빅테크 실적 시즌 본격화. FOMC에서 금리 동결 예상되나 PCE 인플레이션 주시. 중국 춘절 전 DeepSeek R2 발표 가능성이 시장 변수.
-            </p>
-        </section>
+        </article>
         
-        <footer>
-            <p>Jae's Briefing | 외신 기반 AI 큐레이션</p>
-            <p style="margin-top: 8px;">Value Score 3.0+ 기사만 선별 | 3중 신호 시스템 (RSS + 홈페이지 TOP + 랭킹)</p>
-        </footer>
-    </div>
+        <article class="article top">
+            <h3 class="article-title">Tesla, 오스틴에서 무인 로보택시 운행 시작</h3>
+            <p class="article-summary">Tesla가 오스틴에서 안전 모니터 없는 완전 무인 로보택시 서비스 시작. Waymo, Cruise에 이어 세 번째 무인 자율주행 서비스 제공업체로 등극.</p>
+            <div class="article-meta">
+                <span class="badge badge-top">🔥 TOP</span>
+                <span class="badge badge-cross">🔄 4개 매체</span>
+                <span class="source"><a href="https://www.theverge.com/transportation/866165/tesla-robotaxi-unsupervised-austin-texas-safety-monitor" target="_blank">The Verge</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+        
+        <article class="article top">
+            <h3 class="article-title">Capital One, Brex 인수 - 피크 밸류에이션 대폭 할인</h3>
+            <p class="article-summary">Capital One이 핀테크 유니콘 Brex를 피크 밸류에이션 대비 대폭 할인된 가격에 인수. 초기 투자자들은 여전히 큰 수익 실현.</p>
+            <div class="article-meta">
+                <span class="badge badge-top">🔥 TOP</span>
+                <span class="badge badge-popular">📈 인기</span>
+                <span class="source"><a href="https://techcrunch.com/2026/01/22/capital-one-acquires-brex-for-steep-discount-to-its-peak-valuation-but-early-believers-are-laughing-all-the-way-to-the-bank/" target="_blank">TechCrunch</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <span class="section-icon">🤖</span>
+            <h2 class="section-title">AI / 기술</h2>
+        </div>
+        
+        <article class="article">
+            <h3 class="article-title">Claude Code, Microsoft 내부 전역 확산 중</h3>
+            <p class="article-summary">Anthropic의 Claude Code가 Microsoft 내부에서 급속도로 확산. OpenAI 투자에도 불구하고 경쟁사 도구 도입 화제.</p>
+            <div class="article-meta">
+                <span class="badge badge-popular">📈 인기</span>
+                <span class="source"><a href="https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad" target="_blank">The Verge</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+        
+        <article class="article">
+            <h3 class="article-title">Epic-Google, $8억 Unreal Engine 비밀 계약 체결</h3>
+            <p class="article-summary">Epic Games와 Google이 Unreal Engine 및 서비스 관련 $8억 규모의 비밀 계약 체결. 반독점 소송 합의의 일환으로 공개.</p>
+            <div class="article-meta">
+                <span class="badge badge-popular">📈 인기</span>
+                <span class="source"><a href="https://www.theverge.com/policy/866140/epic-google-fortnite-android-unreal-deal-antitrust-settlement" target="_blank">The Verge</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+        
+        <article class="article">
+            <h3 class="article-title">AI 에이전트, 업무 현장 준비 안 됐다 - 새 벤치마크</h3>
+            <p class="article-summary">새로운 벤치마크 연구 결과, AI 에이전트가 실제 업무 환경에서 사용될 준비가 아직 안 됐다는 의문 제기.</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://techcrunch.com/2026/01/22/are-ai-agents-ready-for-the-workplace-a-new-benchmark-raises-doubts/" target="_blank">TechCrunch</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+        
+        <article class="article">
+            <h3 class="article-title">Humans&amp;, AI 조율 모델 개발에 $4.8억 시드 라운드</h3>
+            <p class="article-summary">Anthropic, xAI, Google 출신이 설립한 '인간 중심' AI 스타트업 Humans&amp;가 역대 최대 규모 시드 라운드 $4.8억 유치.</p>
+            <div class="article-meta">
+                <span class="badge badge-popular">📈 인기</span>
+                <span class="source"><a href="https://techcrunch.com/2026/01/20/humans-a-human-centric-ai-startup-founded-by-anthropic-xai-google-alums-raised-480m-seed-round/" target="_blank">TechCrunch</a></span>
+                <span>📅 01/20</span>
+            </div>
+        </article>
+        
+        <article class="article">
+            <h3 class="article-title">DeepMind CEO, OpenAI의 ChatGPT 광고 도입에 '놀랐다'</h3>
+            <p class="article-summary">Google DeepMind CEO Demis Hassabis, OpenAI가 ChatGPT에 광고를 서둘러 도입하는 것에 대해 놀라움 표명.</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://techcrunch.com/2026/01/22/google-deepmind-ceo-is-surprised-openai-is-rushing-forward-with-ads-in-chatgpt/" target="_blank">TechCrunch</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <span class="section-icon">💰</span>
+            <h2 class="section-title">경제 / 비즈니스</h2>
+        </div>
+        
+        <article class="article">
+            <h3 class="article-title">Intel, AI 데이터센터 수요 충족 실패 - 주가 13% 하락</h3>
+            <p class="article-summary">Intel Q4 실적 발표 후 주가 13% 급락. AI 데이터센터 수요를 충족시키지 못하고 있으며 $6억 순손실 기록.</p>
+            <div class="article-meta">
+                <span class="badge badge-cross">🔄 3개 매체</span>
+                <span class="source"><a href="https://www.reuters.com/business/intel-forecasts-first-quarter-sales-profit-below-estimates-2026-01-22/" target="_blank">Reuters</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+        
+        <article class="article">
+            <h3 class="article-title">Amazon, 다음 주 수천 명 추가 해고 계획</h3>
+            <p class="article-summary">Amazon이 다음 주부터 수천 명의 기업 부문 직원 추가 해고 예정. 지난해 10월 14,000명 감축에 이은 후속 조치.</p>
+            <div class="article-meta">
+                <span class="badge badge-cross">🔄 2개 매체</span>
+                <span class="source"><a href="https://www.reuters.com/business/world-at-work/amazon-plans-thousands-more-corporate-job-cuts-next-week-sources-say-2026-01-22/" target="_blank">Reuters</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+        
+        <article class="article">
+            <h3 class="article-title">LiveKit, 음성 AI 엔진으로 $10억 밸류에이션 달성</h3>
+            <p class="article-summary">OpenAI 파트너인 음성 AI 엔진 스타트업 LiveKit이 $10억 밸류에이션 달성. 실시간 음성 AI 인프라 제공.</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://techcrunch.com/2026/01/22/voice-ai-engine-and-openai-partner-livekit-hits-1b-valuation/" target="_blank">TechCrunch</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+        
+        <article class="article">
+            <h3 class="article-title">Vimeo, Bending Spoons 인수 후 대규모 해고</h3>
+            <p class="article-summary">Bending Spoons에 인수된 Vimeo가 '상당수' 직원 해고 시작. Bending Spoons의 인수 후 구조조정 패턴 지속.</p>
+            <div class="article-meta">
+                <span class="badge badge-cross">🔄 2개 매체</span>
+                <span class="source"><a href="https://techcrunch.com/2026/01/22/vimeo-starts-layoffs-after-acquisition-by-bending-spoons/" target="_blank">TechCrunch</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <span class="section-icon">💾</span>
+            <h2 class="section-title">반도체</h2>
+        </div>
+        
+        <article class="article">
+            <h3 class="article-title">메모리 칩 가격 급등, 가전 제조업체 전망 암울</h3>
+            <p class="article-summary">AI 수요로 인한 메모리 칩 가격 급등이 스마트폰, PC 등 소비자 가전 제조업체들의 전망을 어둡게 만들고 있음.</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://www.reuters.com/world/asia-pacific/surging-memory-chip-prices-dim-outlook-consumer-electronics-makers-2026-01-22/" target="_blank">Reuters</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+        
+        <article class="article">
+            <h3 class="article-title">Inferact, vLLM 상용화 위해 $1.5억 투자 유치</h3>
+            <p class="article-summary">AI 추론 스타트업 Inferact가 오픈소스 vLLM 상용화를 위해 $1.5억 투자 유치. AI 추론 시장 경쟁 심화.</p>
+            <div class="article-meta">
+                <span class="source"><a href="https://techcrunch.com/2026/01/22/inference-startup-inferact-lands-150m-to-commercialize-vllm/" target="_blank">TechCrunch</a></span>
+                <span>📅 01/22</span>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <span class="section-icon">💎</span>
+            <h2 class="section-title">Claude's Pick</h2>
+        </div>
+        
+        <article class="article pick">
+            <h3 class="article-title">Malaysia, Grok AI 접근 차단 해제 - X의 안전 조치 이행 후</h3>
+            <p class="article-summary">말레이시아가 X의 추가 안전 조치 이행 후 Grok AI 접근 차단 해제. 딥페이크 논란 이후 첫 규제 대응 사례.</p>
+            <div class="article-meta">
+                <span class="badge badge-pick">💎 Pick</span>
+                <span class="source"><a href="https://www.reuters.com/world/asia-pacific/malaysia-lifts-block-grok-ai-after-x-implements-safety-measures-2026-01-23/" target="_blank">Reuters</a></span>
+                <span>📅 01/23 05:30 UTC</span>
+            </div>
+            <div class="pick-reason">
+                <strong>선정 이유:</strong> AI 생성 콘텐츠 규제의 첫 국가별 대응 사례 | 글로벌 AI 규제 방향성 시사점
+            </div>
+        </article>
+        
+        <article class="article pick">
+            <h3 class="article-title">Ring, ICE에 카메라 접근권 제공 안 한다고 발표</h3>
+            <p class="article-summary">Amazon 산하 Ring이 이민단속국(ICE)에 카메라 접근권을 제공하지 않겠다고 공식 발표. 이민 단속 강화 속 프라이버시 논쟁.</p>
+            <div class="article-meta">
+                <span class="badge badge-pick">💎 Pick</span>
+                <span class="source"><a href="https://www.theverge.com/news/866003/ring-ice-camera-access-flock" target="_blank">The Verge</a></span>
+                <span>📅 01/22</span>
+            </div>
+            <div class="pick-reason">
+                <strong>선정 이유:</strong> 빅테크-정부 관계 긴장 | 프라이버시 vs 보안 논쟁의 새로운 전선
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>📰 Jae's Briefing | AI/기술/경제 외신 브리핑</p>
+        <p>Value Score 3.0 이상 기사 선별 | RSS + 홈페이지 TOP + 랭킹 섹션 3중 신호</p>
+        <p>© 2026 Jae's Briefing. Curated by Claude.</p>
+    </footer>
 </body>
 </html>
