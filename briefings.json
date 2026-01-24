@@ -3,62 +3,75 @@
     {
       "date": "2026-01-24",
       "day": "토",
-      "title": "TikTok 미국 합작법인 출범, Netflix-Warner Bros 역사적 인수 발표",
-      "summary": "TikTok이 6년간의 미국 내 규제 논쟁을 마무리하고 Oracle 컨소시엄과 합작법인 출범. Netflix의 Warner Bros 인수로 할리우드 대변혁 예고. Intel 제조 문제로 주가 급락, Tesla Autopilot 중단.",
+      "title": "Netflix-Warner Bros. 역사적 인수 | Intel 제조 위기 주가 17% 폭락 | Yann LeCun AMI Labs 설립",
+      "summary": "Netflix가 Warner Bros.를 인수하며 할리우드 역사상 가장 큰 M&A. Intel 제조 문제로 주가 17% 폭락. AI 선구자 Yann LeCun이 Meta 떠나 AMI Labs 설립.",
       "highlights": [
         {
           "category": "top",
-          "title": "TikTok Seals Deal to Operate in the US After Years of Drama",
-          "summary": "ByteDance와 Oracle 컨소시엄 $140억 딜 마무리, 미국 투자자 80.1% 지분",
-          "url": "https://www.bloomberg.com/news/articles/2026-01-23/tiktok-seals-deal-to-operate-in-the-us-after-years-of-drama"
-        },
-        {
-          "category": "top",
-          "title": "Netflix's Landmark Acquisition of Warner Bros",
-          "summary": "할리우드 역사상 최대 M&A, HBO/DC 유니버스 편입 전망",
+          "title": "Netflix, Warner Bros. 역사적 인수",
+          "summary": "할리우드 역사상 가장 큰 미디어 M&A 딜, 스트리밍-스튜디오 통합 가속화",
           "url": "https://techcrunch.com/2026/01/23/what-to-know-about-netflixs-landmark-acquisition-of-warner-bros/"
         },
         {
           "category": "top",
-          "title": "Intel Suffers Worst Decline in 17 Months",
-          "summary": "18A 공정 지연으로 주가 17% 급락, Q4 순손실 $6억",
+          "title": "Intel 주가 17% 폭락 - 제조 위기",
+          "summary": "CEO Lip-Bu Tan 부진한 가이던스, 17개월 만에 최악의 주가 하락",
           "url": "https://www.bloomberg.com/news/articles/2026-01-22/intel-gives-weak-forecast-after-supply-shortages-hamper-sales"
         },
         {
-          "category": "business",
-          "title": "Capital One Acquires Brex for $5.15B",
-          "summary": "핀테크 유니콘 Brex 인수, Discover에 이은 연속 M&A",
-          "url": "https://www.cnbc.com/2026/01/22/capital-one-is-buying-startup-brex-for-5point15-billion-in-credit-card-firms-latest-deal.html"
+          "category": "top",
+          "title": "Yann LeCun AMI Labs 설립",
+          "summary": "AI 선구자 Meta 떠나 '월드 모델' 스타트업 창업, $40억 밸류에이션 목표",
+          "url": "https://techcrunch.com/2026/01/23/whos-behind-ami-labs-yann-lecuns-world-model-startup/"
         },
         {
           "category": "ai",
-          "title": "Meta Pauses Teen AI Characters Access",
-          "summary": "청소년 AI 캐릭터 대화 일시 중단, 연령별 맞춤 버전 개발",
-          "url": "https://techcrunch.com/2026/01/23/meta-pauses-teen-access-to-ai-characters-ahead-of-new-version/"
-        },
-        {
-          "category": "ai",
-          "title": "China Tells Tech Firms to Prep Nvidia H200 Orders",
-          "summary": "알리바바 등에 H200 주문 준비 지시, AI칩 수입 승인 임박",
+          "title": "중국, Nvidia H200 칩 주문 허가",
+          "summary": "Alibaba 등 대형 테크 기업에 AI 칩 주문 준비 허가, 수출 규제 완화 신호",
           "url": "https://www.bloomberg.com/news/articles/2026-01-23/china-tells-alibaba-top-tech-firms-to-prep-nvidia-h200-orders"
         },
         {
-          "category": "chip",
-          "title": "SK Hynix and Samsung Boosted by Memory Demand",
-          "summary": "메모리 칩 수요 회복세, 엔비디아 공급사 호조 전망",
-          "url": "https://www.bloomberg.com/news/articles/2026-01-23/south-korea-s-sk-hynix-and-samsung-boosted-by-strong-memory-demand"
-        },
-        {
           "category": "pick",
-          "title": "Claude Code Reshaping Software and Anthropic",
-          "summary": "AI 코딩 도구의 비즈니스 임팩트, Anthropic 내부 운영 변화",
-          "url": "https://www.wired.com/story/claude-code-success-anthropic-business-model/"
+          "title": "이란, 디지털 계급 시스템 구축",
+          "summary": "2계층 인터넷 시스템 테스트, 인터넷 접근이 심사된 특권으로",
+          "url": "https://restofworld.org/2026/iran-blackout-tiered-internet/"
         }
       ],
       "stats": {
-        "articles": 20,
+        "articles": 15,
         "sections": 5,
         "picks": 3
+      }
+    },
+    {
+      "date": "2026-01-23",
+      "day": "금",
+      "title": "TikTok 미국 합작법인 설립 | Tesla 오스틴 무인 로보택시 | Capital One Brex 인수",
+      "summary": "TikTok이 ByteDance와 미국 투자자들의 합작법인 'USDS'를 통해 미국 금지 회피. Tesla 오스틴에서 무인 로보택시 서비스 시작. Capital One이 핀테크 Brex 인수.",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "TikTok Seals Deal for New US Joint Venture",
+          "summary": "ByteDance와 미국 투자자들이 TikTok 합작법인 'USDS' 설립 합의",
+          "url": "https://www.reuters.com/world/china/tiktok-reaches-deal-new-us-joint-venture-avoid-american-ban-2026-01-23/"
+        },
+        {
+          "category": "top",
+          "title": "Tesla Launches Unsupervised Robotaxi in Austin",
+          "summary": "Tesla, 오스틴에서 안전 모니터 없는 완전 무인 로보택시 서비스 시작",
+          "url": "https://www.theverge.com/transportation/866165/tesla-robotaxi-unsupervised-austin-texas-safety-monitor"
+        },
+        {
+          "category": "top",
+          "title": "Capital One Acquires Brex",
+          "summary": "Capital One, 핀테크 유니콘 Brex를 피크 대비 대폭 할인된 가격에 인수",
+          "url": "https://techcrunch.com/2026/01/22/capital-one-acquires-brex-for-steep-discount-to-its-peak-valuation-but-early-believers-are-laughing-all-the-way-to-the-bank/"
+        }
+      ],
+      "stats": {
+        "articles": 14,
+        "sections": 5,
+        "picks": 2
       }
     }
   ]
