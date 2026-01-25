@@ -1,6 +1,49 @@
 {
   "briefings": [
     {
+      "date": "2026-01-25",
+      "day": "일",
+      "title": "중국, Nvidia H200 주문 허가 | AI 에이전트 수익성 의문 | IMF \"AI 쓰나미\" 경고",
+      "summary": "중국이 알리바바 등 대형 테크 기업에 Nvidia H200 AI 칩 주문 준비를 허가했다. AI 에이전트의 실제 업무 수행 능력에 의문을 제기하는 벤치마크 연구 발표. IMF 총재가 다보스에서 AI가 청년층 일자리에 쓰나미급 충격을 줄 것이라 경고했다.",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "중국, Nvidia H200 주문 준비 허가",
+          "summary": "알리바바 등 대형 테크 기업에 AI 칩 주문 허가, 수출 규제 완화 신호",
+          "url": "https://www.bloomberg.com/news/articles/2026-01-23/china-tells-alibaba-top-tech-firms-to-prep-nvidia-h200-orders"
+        },
+        {
+          "category": "top",
+          "title": "AI 에이전트, 실제 업무 테스트 대부분 실패",
+          "summary": "컨설팅·투자은행·법률 업무 벤치마크에서 대부분 AI 모델 실패",
+          "url": "https://techcrunch.com/2026/01/22/are-ai-agents-ready-for-the-workplace-a-new-benchmark-raises-doubts/"
+        },
+        {
+          "category": "top",
+          "title": "IMF 총재 \"AI 쓰나미, 청년층 최대 피해\"",
+          "summary": "선진국 일자리 60% 영향, 초급 직책 다수 사라질 전망",
+          "url": "https://www.theguardian.com/technology/2026/jan/23/ai-tsunami-labour-market-youth-employment-says-head-of-imf-davos"
+        },
+        {
+          "category": "pick",
+          "title": "AI 랩들, 다보스에서 명성 칼싸움",
+          "summary": "OpenAI, Anthropic, Google 리더들 대선 후보처럼 서로 공격",
+          "url": "https://www.theverge.com/column/866573/ai-labs-wage-a-reputational-knife-fight-at-davos"
+        },
+        {
+          "category": "pick",
+          "title": "Claude Code가 Anthropic을 바꾸고 있다",
+          "summary": "바이럴 코딩 도구가 회사 운영 방식 자체를 변화시키는 중",
+          "url": "https://www.wired.com/story/claude-code-success-anthropic-business-model/"
+        }
+      ],
+      "stats": {
+        "articles": 14,
+        "sections": 5,
+        "picks": 2
+      }
+    },
+    {
       "date": "2026-01-24",
       "day": "토",
       "title": "Netflix-Warner Bros. 역사적 인수 | Intel 제조 위기 주가 17% 폭락 | Yann LeCun AMI Labs 설립",
@@ -23,18 +66,6 @@
           "title": "Yann LeCun AMI Labs 설립",
           "summary": "AI 선구자 Meta 떠나 '월드 모델' 스타트업 창업, $40억 밸류에이션 목표",
           "url": "https://techcrunch.com/2026/01/23/whos-behind-ami-labs-yann-lecuns-world-model-startup/"
-        },
-        {
-          "category": "ai",
-          "title": "중국, Nvidia H200 칩 주문 허가",
-          "summary": "Alibaba 등 대형 테크 기업에 AI 칩 주문 준비 허가, 수출 규제 완화 신호",
-          "url": "https://www.bloomberg.com/news/articles/2026-01-23/china-tells-alibaba-top-tech-firms-to-prep-nvidia-h200-orders"
-        },
-        {
-          "category": "pick",
-          "title": "이란, 디지털 계급 시스템 구축",
-          "summary": "2계층 인터넷 시스템 테스트, 인터넷 접근이 심사된 특권으로",
-          "url": "https://restofworld.org/2026/iran-blackout-tiered-internet/"
         }
       ],
       "stats": {
