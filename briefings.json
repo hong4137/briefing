@@ -1,158 +1,55 @@
-{
-  "briefings": [
-    {
-      "date": "2026-01-26",
-      "day": "월",
-      "title": "Synthesia $4B 밸류에이션 | Nvidia TSMC 최대 고객 등극 | 메모리칩 부족 2027년까지",
-      "summary": "AI 비디오 스타트업 Synthesia가 $40억 밸류에이션 달성. Nvidia가 Apple을 제치고 TSMC 최대 고객으로 부상, AI 칩 수요 폭발 반영. 메모리칩 부족 사태가 2027년까지 지속될 전망.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "Synthesia $40억 밸류에이션 달성",
-          "summary": "Nvidia와 Alphabet VC 투자 주도, AI 비디오 생성 시장 선도",
-          "url": "https://techcrunch.com/2026/01/26/synthesia-hits-4b-valuation-lets-employees-cash-in/"
-        },
-        {
-          "category": "top",
-          "title": "Nvidia, Apple 제치고 TSMC 최대 고객",
-          "summary": "AI 칩 수요 폭발로 반도체 산업 판도 변화",
-          "url": "https://www.cnbc.com/2026/01/26/nvidia-set-to-supplant-apple-as-tsmcs-largest-customer.html"
-        },
-        {
-          "category": "top",
-          "title": "메모리칩 부족 2027년까지 지속",
-          "summary": "Synopsys CEO, AI 데이터센터 수요로 공급난 장기화 전망",
-          "url": "https://www.cnbc.com/2026/01/26/memory-chip-shortage-synopsys-lenovo-ai-data-centers.html"
-        },
-        {
-          "category": "top",
-          "title": "USA Rare Earth 주가 20% 급등",
-          "summary": "미 상무부 지분 투자, 중국 의존도 감소 전략",
-          "url": "https://www.cnbc.com/2026/01/26/usa-rare-earth-shares-jump-20percent-as-commerce-department-takes-equity-stake.html"
-        },
-        {
-          "category": "pick",
-          "title": "AI 랩들 수익화 전략 부재 지적",
-          "summary": "막대한 투자 대비 수익 모델 불명확성이 업계 과제",
-          "url": "https://techcrunch.com/2026/01/24/a-new-test-for-ai-labs-are-you-even-trying-to-make-money/"
-        },
-        {
-          "category": "pick",
-          "title": "소방 혁신 창업자의 AI 전환",
-          "summary": "산업 데이터 + AI 결합 사례, 비전형적 비즈니스 모델",
-          "url": "https://techcrunch.com/2026/01/25/this-founder-cracked-firefighting-now-hes-creating-an-ai-gold-mine/"
-        }
-      ],
-      "stats": {
-        "articles": 15,
-        "sections": 6,
-        "picks": 2
-      }
-    },
-    {
-      "date": "2026-01-25",
-      "day": "일",
-      "title": "중국, Nvidia H200 주문 허가 | AI 에이전트 수익성 의문 | IMF \"AI 쓰나미\" 경고",
-      "summary": "중국이 알리바바 등 대형 테크 기업에 Nvidia H200 AI 칩 주문 준비를 허가했다. AI 에이전트의 실제 업무 수행 능력에 의문을 제기하는 벤치마크 연구 발표. IMF 총재가 다보스에서 AI가 청년층 일자리에 쓰나미급 충격을 줄 것이라 경고했다.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "중국, Nvidia H200 주문 준비 허가",
-          "summary": "알리바바 등 대형 테크 기업에 AI 칩 주문 허가, 수출 규제 완화 신호",
-          "url": "https://www.bloomberg.com/news/articles/2026-01-23/china-tells-alibaba-top-tech-firms-to-prep-nvidia-h200-orders"
-        },
-        {
-          "category": "top",
-          "title": "AI 에이전트, 실제 업무 테스트 대부분 실패",
-          "summary": "컨설팅·투자은행·법률 업무 벤치마크에서 대부분 AI 모델 실패",
-          "url": "https://techcrunch.com/2026/01/22/are-ai-agents-ready-for-the-workplace-a-new-benchmark-raises-doubts/"
-        },
-        {
-          "category": "top",
-          "title": "IMF 총재 \"AI 쓰나미, 청년층 최대 피해\"",
-          "summary": "선진국 일자리 60% 영향, 초급 직책 다수 사라질 전망",
-          "url": "https://www.theguardian.com/technology/2026/jan/23/ai-tsunami-labour-market-youth-employment-says-head-of-imf-davos"
-        },
-        {
-          "category": "pick",
-          "title": "AI 랩들, 다보스에서 명성 칼싸움",
-          "summary": "OpenAI, Anthropic, Google 리더들 대선 후보처럼 서로 공격",
-          "url": "https://www.theverge.com/column/866573/ai-labs-wage-a-reputational-knife-fight-at-davos"
-        },
-        {
-          "category": "pick",
-          "title": "Claude Code가 Anthropic을 바꾸고 있다",
-          "summary": "바이럴 코딩 도구가 회사 운영 방식 자체를 변화시키는 중",
-          "url": "https://www.wired.com/story/claude-code-success-anthropic-business-model/"
-        }
-      ],
-      "stats": {
-        "articles": 14,
-        "sections": 5,
-        "picks": 2
-      }
-    },
-    {
-      "date": "2026-01-24",
-      "day": "토",
-      "title": "Netflix-Warner Bros. 역사적 인수 | Intel 제조 위기 주가 17% 폭락 | Yann LeCun AMI Labs 설립",
-      "summary": "Netflix가 Warner Bros.를 인수하며 할리우드 역사상 가장 큰 M&A. Intel 제조 문제로 주가 17% 폭락. AI 선구자 Yann LeCun이 Meta 떠나 AMI Labs 설립.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "Netflix, Warner Bros. 역사적 인수",
-          "summary": "할리우드 역사상 가장 큰 미디어 M&A 딜, 스트리밍-스튜디오 통합 가속화",
-          "url": "https://techcrunch.com/2026/01/23/what-to-know-about-netflixs-landmark-acquisition-of-warner-bros/"
-        },
-        {
-          "category": "top",
-          "title": "Intel 주가 17% 폭락 - 제조 위기",
-          "summary": "CEO Lip-Bu Tan 부진한 가이던스, 17개월 만에 최악의 주가 하락",
-          "url": "https://www.bloomberg.com/news/articles/2026-01-22/intel-gives-weak-forecast-after-supply-shortages-hamper-sales"
-        },
-        {
-          "category": "top",
-          "title": "Yann LeCun AMI Labs 설립",
-          "summary": "AI 선구자 Meta 떠나 '월드 모델' 스타트업 창업, $40억 밸류에이션 목표",
-          "url": "https://techcrunch.com/2026/01/23/whos-behind-ami-labs-yann-lecuns-world-model-startup/"
-        }
-      ],
-      "stats": {
-        "articles": 15,
-        "sections": 5,
-        "picks": 3
-      }
-    },
-    {
-      "date": "2026-01-23",
-      "day": "금",
-      "title": "TikTok 미국 합작법인 설립 | Tesla 오스틴 무인 로보택시 | Capital One Brex 인수",
-      "summary": "TikTok이 ByteDance와 미국 투자자들의 합작법인 'USDS'를 통해 미국 금지 회피. Tesla 오스틴에서 무인 로보택시 서비스 시작. Capital One이 핀테크 Brex 인수.",
-      "highlights": [
-        {
-          "category": "top",
-          "title": "TikTok Seals Deal for New US Joint Venture",
-          "summary": "ByteDance와 미국 투자자들이 TikTok 합작법인 'USDS' 설립 합의",
-          "url": "https://www.reuters.com/world/china/tiktok-reaches-deal-new-us-joint-venture-avoid-american-ban-2026-01-23/"
-        },
-        {
-          "category": "top",
-          "title": "Tesla Launches Unsupervised Robotaxi in Austin",
-          "summary": "Tesla, 오스틴에서 안전 모니터 없는 완전 무인 로보택시 서비스 시작",
-          "url": "https://www.theverge.com/transportation/866165/tesla-robotaxi-unsupervised-austin-texas-safety-monitor"
-        },
-        {
-          "category": "top",
-          "title": "Capital One Acquires Brex",
-          "summary": "Capital One, 핀테크 유니콘 Brex를 피크 대비 대폭 할인된 가격에 인수",
-          "url": "https://techcrunch.com/2026/01/22/capital-one-acquires-brex-for-steep-discount-to-its-peak-valuation-but-early-believers-are-laughing-all-the-way-to-the-bank/"
-        }
-      ],
-      "stats": {
-        "articles": 14,
-        "sections": 5,
-        "picks": 2
-      }
-    }
-  ]
-}
+# Jae's Briefing Archive
+
+## Daily Briefings
+
+2025-12-18.txt
+2025-12-19.txt
+2025-12-21.txt
+2025-12-22.txt
+2025-12-24.txt
+2025-12-25.txt
+2025-12-26.txt
+2025-12-27.txt
+2025-12-28.txt
+2025-12-29.txt
+2025-12-30.txt
+2025-12-31.txt
+2026-01-01.txt
+2026-01-02.txt
+2026-01-03.txt
+2026-01-04.txt
+2026-01-05.txt
+2026-01-06.txt
+2026-01-07.txt
+2026-01-08.txt
+2026-01-09.txt
+2026-01-10.txt
+2026-01-11.txt
+2026-01-12.txt
+2026-01-13.txt
+2026-01-14.txt
+2026-01-15.txt
+2026-01-16.txt
+2026-01-17.txt
+2026-01-18.txt
+2026-01-19.txt
+2026-01-20.txt
+2026-01-21.txt
+2026-01-22.txt
+2026-01-23.txt
+2026-01-24.txt
+2026-01-25.txt
+2026-01-26.txt
+
+## Special Editions
+
+ces-2026-special.txt
+davos-2026-special.txt
+
+## Weekly Briefings
+
+weekly-2026-01-26.txt
+
+---
+Last updated: 2026-01-27
+Total: 37 daily briefings, 2 special editions, 1 weekly briefing
