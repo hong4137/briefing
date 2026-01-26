@@ -1,6 +1,55 @@
 {
   "briefings": [
     {
+      "date": "2026-01-26",
+      "day": "월",
+      "title": "Synthesia $4B 밸류에이션 | Nvidia TSMC 최대 고객 등극 | 메모리칩 부족 2027년까지",
+      "summary": "AI 비디오 스타트업 Synthesia가 $40억 밸류에이션 달성. Nvidia가 Apple을 제치고 TSMC 최대 고객으로 부상, AI 칩 수요 폭발 반영. 메모리칩 부족 사태가 2027년까지 지속될 전망.",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "Synthesia $40억 밸류에이션 달성",
+          "summary": "Nvidia와 Alphabet VC 투자 주도, AI 비디오 생성 시장 선도",
+          "url": "https://techcrunch.com/2026/01/26/synthesia-hits-4b-valuation-lets-employees-cash-in/"
+        },
+        {
+          "category": "top",
+          "title": "Nvidia, Apple 제치고 TSMC 최대 고객",
+          "summary": "AI 칩 수요 폭발로 반도체 산업 판도 변화",
+          "url": "https://www.cnbc.com/2026/01/26/nvidia-set-to-supplant-apple-as-tsmcs-largest-customer.html"
+        },
+        {
+          "category": "top",
+          "title": "메모리칩 부족 2027년까지 지속",
+          "summary": "Synopsys CEO, AI 데이터센터 수요로 공급난 장기화 전망",
+          "url": "https://www.cnbc.com/2026/01/26/memory-chip-shortage-synopsys-lenovo-ai-data-centers.html"
+        },
+        {
+          "category": "top",
+          "title": "USA Rare Earth 주가 20% 급등",
+          "summary": "미 상무부 지분 투자, 중국 의존도 감소 전략",
+          "url": "https://www.cnbc.com/2026/01/26/usa-rare-earth-shares-jump-20percent-as-commerce-department-takes-equity-stake.html"
+        },
+        {
+          "category": "pick",
+          "title": "AI 랩들 수익화 전략 부재 지적",
+          "summary": "막대한 투자 대비 수익 모델 불명확성이 업계 과제",
+          "url": "https://techcrunch.com/2026/01/24/a-new-test-for-ai-labs-are-you-even-trying-to-make-money/"
+        },
+        {
+          "category": "pick",
+          "title": "소방 혁신 창업자의 AI 전환",
+          "summary": "산업 데이터 + AI 결합 사례, 비전형적 비즈니스 모델",
+          "url": "https://techcrunch.com/2026/01/25/this-founder-cracked-firefighting-now-hes-creating-an-ai-gold-mine/"
+        }
+      ],
+      "stats": {
+        "articles": 15,
+        "sections": 6,
+        "picks": 2
+      }
+    },
+    {
       "date": "2026-01-25",
       "day": "일",
       "title": "중국, Nvidia H200 주문 허가 | AI 에이전트 수익성 의문 | IMF \"AI 쓰나미\" 경고",
