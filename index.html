@@ -27,6 +27,8 @@
             --gradient-fire: linear-gradient(135deg, #ff3b3b, #ff8c42);
             --gradient-money: linear-gradient(135deg, #22c55e, #06b6d4);
             --gradient-ai: linear-gradient(135deg, #a855f7, #4a9eff);
+            --gradient-special: linear-gradient(135deg, #ffd700, #ff8c42);
+            --gradient-weekly: linear-gradient(135deg, #06b6d4, #22c55e);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -361,6 +363,112 @@
             box-shadow: 0 8px 24px rgba(255, 59, 59, 0.3);
         }
 
+        /* Special/Weekly Section */
+        .special-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 2rem 3rem;
+        }
+
+        .special-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .special-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 1.75rem;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .special-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+        }
+
+        .special-card.special::before {
+            background: var(--gradient-special);
+        }
+
+        .special-card.weekly::before {
+            background: var(--gradient-weekly);
+        }
+
+        .special-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-gold);
+            box-shadow: 0 16px 48px rgba(255, 215, 0, 0.15);
+        }
+
+        .special-card.weekly:hover {
+            border-color: var(--accent-cyan);
+            box-shadow: 0 16px 48px rgba(6, 182, 212, 0.15);
+        }
+
+        .special-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .special-badge.special {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 140, 66, 0.2));
+            color: var(--accent-gold);
+        }
+
+        .special-badge.weekly {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(34, 197, 94, 0.2));
+            color: var(--accent-cyan);
+        }
+
+        .special-card h4 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .special-card .summary {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .special-card .period {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .special-card .stats {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
         /* Archive Section */
         .archive {
             max-width: 1400px;
@@ -462,6 +570,7 @@
         /* Responsive */
         @media (max-width: 1024px) {
             .latest-highlights { grid-template-columns: 1fr; }
+            .special-grid { grid-template-columns: 1fr; }
             .hero h1 { font-size: 2.5rem; }
             .hero-stats { flex-wrap: wrap; gap: 2rem; }
         }
@@ -528,6 +637,20 @@
         </div>
     </section>
 
+    <!-- Special & Weekly Section -->
+    <section class="special-section" id="special-section" style="display: none;">
+        <div class="section-header">
+            <div class="section-title">
+                <div class="section-icon" style="background: var(--gradient-special);">⭐</div>
+                <h2>특별판 & 주간 브리핑</h2>
+            </div>
+        </div>
+
+        <div id="special-container" class="special-grid">
+            <!-- Dynamically populated -->
+        </div>
+    </section>
+
     <!-- Past Briefings -->
     <section class="archive">
         <div class="section-header">
@@ -583,6 +706,9 @@
                 const past = data.briefings.slice(1, 4);
                 renderArchive(past);
 
+                // Special & Weekly briefings
+                renderSpecials(data.specials || [], data.weekly || []);
+
             } catch (error) {
                 console.error('Error loading briefings:', error);
                 document.getElementById('latest-container').innerHTML = 
@@ -591,14 +717,14 @@
         }
 
         function renderLatest(briefing) {
-            const highlightsHTML = briefing.highlights.map(h => `
+            const highlightsHTML = briefing.highlights ? briefing.highlights.map(h => `
                 <a href="${h.url}" target="_blank" rel="noopener" class="highlight">
                     <div class="highlight-category ${h.category}">${categoryLabels[h.category] || h.category}</div>
                     <h4>${h.title}</h4>
                     <p>${h.summary}</p>
                     <span class="highlight-link">원문 보기 →</span>
                 </a>
-            `).join('');
+            `).join('') : '<div class="empty-state">하이라이트가 없습니다.</div>';
 
             document.getElementById('latest-container').innerHTML = `
                 <div class="latest-card">
@@ -646,6 +772,58 @@
                     <div class="archive-card-meta">
                         <span>${b.stats.articles} 기사</span>
                         <span>${b.stats.sections} 섹션</span>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        function renderSpecials(specials, weekly) {
+            const allItems = [];
+
+            // Add weekly items
+            weekly.forEach(w => {
+                allItems.push({
+                    type: 'weekly',
+                    date: w.date,
+                    title: w.title,
+                    summary: w.summary,
+                    period: w.period,
+                    stats: w.stats,
+                    badge: '📅 주간 브리핑',
+                    link: `archive/${w.date}.html`
+                });
+            });
+
+            // Add special items
+            specials.forEach(s => {
+                allItems.push({
+                    type: 'special',
+                    date: s.date,
+                    title: s.title,
+                    summary: s.summary,
+                    period: s.period,
+                    stats: s.stats,
+                    badge: '⭐ 특별판',
+                    link: `archive/${s.date}.html`
+                });
+            });
+
+            if (allItems.length === 0) {
+                document.getElementById('special-section').style.display = 'none';
+                return;
+            }
+
+            document.getElementById('special-section').style.display = 'block';
+
+            document.getElementById('special-container').innerHTML = allItems.map(item => `
+                <a href="${item.link}" class="special-card ${item.type}">
+                    <div class="special-badge ${item.type}">${item.badge}</div>
+                    <h4>${item.title}</h4>
+                    <p class="summary">${item.summary}</p>
+                    <div class="period">📆 ${item.period}</div>
+                    <div class="stats">
+                        <span>📰 ${item.stats.articles || item.stats.clusters || 0} ${item.type === 'weekly' ? '클러스터' : '기사'}</span>
+                        <span>📑 ${item.stats.sections || item.stats.clusters || 0} 섹션</span>
                     </div>
                 </a>
             `).join('');
