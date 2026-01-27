@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minneapolis 2차 총격, 미 부분 셧다운 위기로 확대</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --text-primary: #f0f0f5;
+            --text-secondary: #a0a0b0;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-cyan: #06b6d4;
+            --border-color: #2a2a3a;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        .site-title {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        .date {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        .summary-box {
+            background: linear-gradient(135deg, rgba(255,59,59,0.1), rgba(255,215,0,0.1));
+            border: 1px solid var(--accent-red);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 40px;
+        }
+        .summary-box h2 {
+            color: var(--accent-gold);
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .summary-box p {
+            color: var(--text-primary);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .section-icon {
+            font-size: 1.5rem;
+        }
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .article-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: all 0.2s;
+        }
+        .article-card:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+        .article-card.featured {
+            border-left: 4px solid var(--accent-red);
+        }
+        .article-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        .article-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+        .source {
+            color: var(--accent-cyan);
+            font-weight: 500;
+        }
+        .article-meta a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        .article-meta a:hover { text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .badge-breaking { background: var(--accent-red); color: white; }
+        .badge-update { background: var(--accent-gold); color: black; }
+        .badge-analysis { background: var(--accent-purple); color: white; }
+        .badge-pick { background: linear-gradient(135deg, var(--accent-gold), var(--accent-purple)); color: white; }
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .market-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 16px;
+            text-align: center;
+        }
+        .market-label { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 8px; }
+        .market-value { font-size: 1.3rem; font-weight: 700; }
+        .market-change { font-size: 0.9rem; margin-top: 4px; }
+        .positive { color: var(--accent-green); }
+        .negative { color: var(--accent-red); }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+            color: var(--text-secondary);
+        }
+        footer a { color: var(--accent-blue); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            .container { padding: 16px; }
+            .site-title { font-size: 1.6rem; }
+            .section-title { font-size: 1.2rem; }
+            .article-title { font-size: 1.05rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="site-title">Jae's Briefing</h1>
+            <p class="date">2026년 1월 27일 화요일</p>
+        </header>
+
+        <div class="summary-box">
+            <h2>📌 오늘의 핵심</h2>
+            <p>Minneapolis에서 또 한 명의 시민이 ICE 요원에 의해 총격 사망하면서 연방정부 예산안 통과가 불투명해졌습니다. 민주당은 DHS 예산안에 반대표를 던질 것으로 예상되며 부분 셧다운 우려가 커지고 있습니다. 한편 ChatGPT가 Elon Musk의 Grokipedia를 인용하기 시작해 허위정보 확산 우려가 제기되고, 금값은 사상 최초로 $5,000를 돌파했습니다.</p>
+        </div>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🔥</span>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+
+            <article class="article-card featured">
+                <span class="badge badge-breaking">BREAKING</span>
+                <h3 class="article-title">Minneapolis 2차 총격 사망, 미 정부 부분 셧다운 위기로 확대</h3>
+                <p class="article-summary">토요일 아침 Minneapolis에서 연방 요원들이 또 한 명의 시민을 총격 사망시켰습니다. Alex Pretti(32)는 반복적으로 폭행당한 후 총에 맞았으며, 벨링캣 분석에 따르면 총격 당시 비무장 상태였습니다. 민주당 상원은 DHS 예산안 반대를 선언했고, 정부 부분 셧다운 가능성이 커지고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC / The Verge / Wired</span>
+                    <a href="https://www.cnbc.com/2026/01/25/minneapolis-shooting-government-shutdown.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card featured">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">ChatGPT, Elon Musk의 Grokipedia를 공식 출처로 인용 시작</h3>
+                <p class="article-summary">OpenAI의 최신 GPT-5.2 모델이 이란 정치 구조, 홀로코스트 부정론자 등 다양한 주제에서 Musk의 AI 생성 백과사전 Grokipedia를 인용하기 시작했습니다. Guardian 테스트에서 12개 이상의 질문에 9번 Grokipedia를 출처로 제시해 허위정보 확산 우려가 제기됩니다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian / TechCrunch</span>
+                    <a href="https://www.theguardian.com/technology/2026/jan/24/latest-chatgpt-model-uses-elon-musks-grokipedia-as-source-tests-reveal" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">금값 사상 최초 $5,000 돌파, 안전자산 수요 급증</h3>
+                <p class="article-summary">글로벌 불확실성 확대와 Greenland 관세 위협 속에 금값이 사상 처음으로 온스당 $5,000를 돌파했습니다. 트럼프 대통령의 Greenland 관련 관세 위협으로 이번 주 S&P 500과 나스닥이 10월 이후 최악의 하락세를 기록한 가운데, 투자자들이 안전자산으로 몰려들고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC</span>
+                    <a href="https://www.cnbc.com/2026/01/26/asia-pacific-markets-nikkei-225-hang-seng-index-kospi-gold-canada.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">TikTok 새 프라이버시 정책, 'immigration status' 수집 논란</h3>
+                <p class="article-summary">미국 소유권 전환 후 TikTok이 발표한 새 프라이버시 정책에서 'immigration status' 데이터 수집 조항이 발견되어 사용자들이 공포에 휩싸였습니다. 변호사들은 이 조항이 캘리포니아 등 주별 프라이버시법과 관련된 것이라고 설명하지만, ICE 위기 속에 민감하게 받아들여지고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch / Wired</span>
+                    <a href="https://techcrunch.com/2026/01/23/tiktok-users-freak-out-over-apps-immigration-status-collection-heres-what-it-means/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🤖</span>
+                <h2 class="section-title">AI/기술</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title">Grok AI, 11일간 300만 개 성적 이미지 생성 - EU 공식 조사 착수</h3>
+                <p class="article-summary">Center for Countering Digital Hate 연구에 따르면 Elon Musk의 Grok AI가 11일간 약 300만 개의 성적 이미지를 생성했으며, 이 중 23,000개는 아동을 묘사한 것으로 추정됩니다. EU는 xAI에 대한 공식 조사를 시작했으며, Stripe, Visa, Mastercard 등 결제사들은 대응하지 않고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian / BBC / The Verge</span>
+                    <a href="https://www.theguardian.com/technology/2026/jan/22/grok-ai-generated-millions-sexualised-images-in-month-research-says" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Google AI Overviews, 의료 질문에 YouTube를 가장 많이 인용</h3>
+                <p class="article-summary">독일 연구팀 분석 결과, 월 20억 명이 사용하는 Google AI Overviews가 건강 관련 질문에 대해 의료 전문 사이트보다 YouTube를 더 자주 인용하는 것으로 나타났습니다. 전문가들은 이 기능이 "완전히 잘못된" 의료 조언을 제공해 사용자 건강을 위험에 빠뜨릴 수 있다고 경고합니다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian</span>
+                    <a href="https://www.theguardian.com/technology/2026/jan/24/google-ai-overviews-youtube-medical-citations-study" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Apple, 2월 Gemini 기반 새 Siri 공개 예정</h3>
+                <p class="article-summary">Apple이 Google과의 AI 파트너십 결과물로 Gemini 기반의 새로운 Siri 어시스턴트를 2월에 공개할 예정입니다. Bloomberg에 따르면 Apple은 AI 전략을 대폭 수정하고 있으며, John Ternus가 디자인 책임을 맡는 등 경영진 변화도 진행 중입니다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch / Bloomberg</span>
+                    <a href="https://techcrunch.com/2026/01/25/apple-will-reportedly-unveil-its-gemini-powered-siri-assistant-in-february/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Meta, 청소년 AI 캐릭터 대화 일시 중단</h3>
+                <p class="article-summary">Meta가 청소년들이 AI 캐릭터와 대화하는 기능을 일시 중단하고 "더 나은 경험"을 제공할 새 버전을 개발 중이라고 밝혔습니다. 이는 10월 발표한 청소년 AI 사용 제한 조치의 연장선으로, 연령에 적합한 응답을 제공하는 새 버전이 개발되고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch / The Verge</span>
+                    <a href="https://techcrunch.com/2026/01/23/meta-pauses-teen-access-to-ai-characters-ahead-of-new-version/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💼</span>
+                <h2 class="section-title">비즈니스</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title">ByteDance, TikTok USDS 거래로 미국 접근권 대승리</h3>
+                <p class="article-summary">7년간의 대치와 전면 금지 위기를 넘긴 ByteDance가 TikTok 미국 사업 일부를 Oracle 주도 컨소시엄에 이전하는 거래를 성사시켰습니다. 새 TikTok USDS CEO Adam Presser는 ByteDance 경영진과의 깊은 유대와 할리우드 인맥을 갖추고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-23/bytedance-emerges-from-tiktok-saga-with-major-win-on-us-access" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Intel 주가 15% 급락, 제조 문제로 트럼프 반도체 비전 타격</h3>
+                <p class="article-summary">Intel이 실적 발표 후 주가가 15% 급락했습니다. Lip-Bu Tan CEO가 제조 문제를 인정하고 부진한 전망을 제시하면서, 미 정부가 10% 지분 인수를 추진한 지 4개월 만에 트럼프의 국내 반도체 제조 부흥 비전에 먹구름이 드리웠습니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg / CNBC</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-23/intel-s-stock-meltdown-risks-eroding-trump-endorsed-comeback" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Nvidia 이사 Persis Drell 사임, 10년 재임 후 퇴장</h3>
+                <p class="article-summary">세계 최고 가치 기업 Nvidia의 이사 Persis Drell이 "새로운 전문적 기회를 추구하기 위해" 이사회를 떠났습니다. 10년간 재임하며 $2,600만 상당의 주식을 보유한 그녀의 퇴임으로 Nvidia 이사회는 Jensen Huang CEO 포함 10명이 됩니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg / CNBC</span>
+                    <a href="https://www.cnbc.com/2026/01/23/nvidia-director-persis-drell-resigns-decade-on-board-26-million-stock.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Singapore, AI 연구에 $786M 투입 - AI 강국 도약 가속</h3>
+                <p class="article-summary">Singapore가 향후 5년간 공공 AI 연구에 10억 싱가포르달러($786M)를 투자한다고 발표했습니다. 미국과 중국이 지배하는 AI 분야에서 자국 산업을 육성하려는 Singapore의 야심찬 행보입니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-24/singapore-pours-786-million-into-race-to-become-ai-powerhouse" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🏛️</span>
+                <h2 class="section-title">정책/규제</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title">미 연방 판사, "ICE 가택 수색에 판사 영장 필요"</h3>
+                <p class="article-summary">Minnesota 연방 판사가 ICE의 동의 없는 가택 진입에 판사 서명 영장이 필요하다고 판결했습니다. 이는 판사 서명 영장이 필요 없다고 주장한 비밀 ICE 메모와 정면으로 충돌하며, 이민 단속 방식에 중대한 영향을 미칠 전망입니다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired</span>
+                    <a href="https://www.wired.com/story/us-judge-rules-ice-raids-require-judicial-warrants-contradicting-secret-ice-memo/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">ICE, 광고 기술 빅데이터 도구 도입 검토</h3>
+                <p class="article-summary">ICE가 수사에 활용할 "광고 기술 및 빅데이터" 도구에 대해 기업들에 문의한 연방 문서가 공개되었습니다. 상업용 데이터 도구가 법 집행과 감시 목적으로 점점 더 활용되고 있음을 보여주는 사례입니다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired</span>
+                    <a href="https://www.wired.com/story/ice-asks-companies-about-ad-tech-and-big-data-tools/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">트럼프, 캐나다에 100% 관세 위협 - 중국 우회 차단</h3>
+                <p class="article-summary">트럼프 대통령이 캐나다가 중국과 협정을 맺을 경우 100% 관세를 부과하겠다고 위협했습니다. 중국이 캐나다를 통해 미국 관세를 우회하려 할 것이라는 주장입니다. 이에 앞서 트럼프는 Mark Carney에 대한 '평화 위원회' 초청도 철회했습니다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC</span>
+                    <a href="https://www.cnbc.com/2026/01/24/trump-tariff-canada-china.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💾</span>
+                <h2 class="section-title">하드웨어</h2>
+            </div>
+
+            <article class="article-card">
+                <h3 class="article-title">Apple AirTag 2 공개, 5년 만의 업그레이드</h3>
+                <p class="article-summary">Apple이 5년 만에 AirTag 2를 공개했습니다. 새로운 칩 탑재로 범위가 확장되고 스피커가 개선되었습니다. 분실물 추적기 시장 경쟁이 치열해지는 가운데, Apple이 기술 우위를 강화하려는 행보입니다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge / Wired / Ars Technica</span>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Nvidia, Windows Arm 노트북 시장 진출 - 8개 모델 준비</h3>
+                <p class="article-summary">유출에 따르면 Nvidia가 올 봄 N1/N1X 칩으로 Windows 소비자 노트북 시장에 진출합니다. Lenovo, Dell 등에서 최대 8개 모델이 출시될 예정으로, Intel과 AMD가 양분해온 시장에 큰 변화가 예상됩니다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <a href="https://www.theverge.com/games/867056/leak-nvidia-n1-n1x-laptops-lenovo-dell" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Sony LinkBuds Clip 리뷰: 오픈이어폰 경쟁 가열</h3>
+                <p class="article-summary">Sony의 첫 클립형 이어폰 LinkBuds Clip이 출시되었습니다. Bose Ultra Open과의 경쟁에서 쿠션 디자인으로 착용감 문제를 해결했으나, 평가는 엇갈리고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge / ZDNet</span>
+                    <a href="https://www.zdnet.com/article/sony-linkbuds-clip-earbuds-review/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💎</span>
+                <h2 class="section-title">Claude's Pick</h2>
+            </div>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">AI 봇 스웜, 민주주의 위협 - 전문가 그룹 경고</h3>
+                <p class="article-summary">노벨 평화상 수상자 Maria Ressa와 Berkeley, Harvard, Oxford 등의 AI 연구자들이 AI가 인간을 모방하는 "봇 스웜"을 대규모 배포해 여론을 조작하고 민주주의를 위협할 수 있다고 경고했습니다. 2028년 미국 대선이 주요 위험 시점으로 지목됩니다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian</span>
+                    <a href="https://www.theguardian.com/technology/2026/jan/22/experts-warn-of-threat-to-democracy-by-ai-bot-swarms-infesting-social-media" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Google 내부 문서: Chromebook으로 아이들을 "평생 고객"으로</h3>
+                <p class="article-summary">아동 안전 소송에서 공개된 Google 내부 문서에 따르면, 회사가 학교 투자를 통해 "아이들을 생태계에 온보딩"하고 "평생에 걸친 브랜드 신뢰와 충성도"를 구축하려 했습니다. 교육 투자의 숨겨진 동기가 드러났습니다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <a href="https://www.theverge.com/news/867138/google-chromebook-education-expansion-court-filings" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Bloomberg: "테크 업계가 Claude Code에 열광하는 이유"</h3>
+                <p class="article-summary">Bloomberg가 Anthropic의 Claude Code가 테크 업계에서 뜨거운 화제가 된 배경을 분석했습니다. AI 지원 코딩의 진화와 전통적 소프트웨어 기업 주가 급락 현상을 짚으며, AI 코딩 도구의 현주소를 조명합니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/videos/2026-01-25/why-the-tech-world-is-going-crazy-for-claude-code" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">📊</span>
+                <h2 class="section-title">주요 지표</h2>
+            </div>
+            <div class="market-grid">
+                <div class="market-item">
+                    <div class="market-label">Gold</div>
+                    <div class="market-value">$5,000+</div>
+                    <div class="market-change positive">사상 최고치</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">S&P 500</div>
+                    <div class="market-value">주간 하락</div>
+                    <div class="market-change negative">10월 이후 최악</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">Intel</div>
+                    <div class="market-value">-15%</div>
+                    <div class="market-change negative">제조 문제</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">TikTok USDS</div>
+                    <div class="market-value">$14B</div>
+                    <div class="market-change">거래 성사</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>📬 매일 아침 8시, 글로벌 테크 뉴스를 전합니다</p>
+            <p style="margin-top: 12px;">
+                <a href="https://hong4137.github.io/briefing">홈으로</a> · 
+                <a href="https://hong4137.github.io/briefing/archive">아카이브</a>
+            </p>
+            <p style="margin-top: 20px; font-size: 0.85rem;">© 2026 Jae's Briefing</p>
+        </footer>
+    </div>
+</body>
+</html>
