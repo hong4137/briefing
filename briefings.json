@@ -1,6 +1,39 @@
 {
   "briefings": [
     {
+      "date": "2026-01-27",
+      "day": "화",
+      "title": "Minneapolis ICE 2차 총격 사망 | ChatGPT Grokipedia 인용 | 금값 $5,000 돌파",
+      "summary": "Minneapolis ICE 총격 현장에서 두 번째 사망자 발생, 부분 셧다운 위기로 확대. ChatGPT가 Elon Musk의 Grokipedia를 공식 출처로 인용 시작. 안전자산 수요 급증으로 금값 사상 최초 $5,000 돌파.",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "Minneapolis 2차 총격 사망, 부분 셧다운 위기",
+          "summary": "Alex Pretti(32) 사망, 민주당 상원 DHS 예산안 반대로 정부 셧다운 우려",
+          "url": "https://www.cnbc.com/2026/01/25/minneapolis-shooting-government-shutdown.html"
+        },
+        {
+          "category": "top",
+          "title": "ChatGPT, Grokipedia를 공식 출처로 인용",
+          "summary": "GPT-5.2 모델이 이란, 홀로코스트 등 민감한 주제에서 Musk의 AI 백과사전 인용",
+          "url": "https://www.theguardian.com/technology/2026/jan/24/latest-chatgpt-model-uses-elon-musks-grokipedia-as-source-tests-reveal"
+        },
+        {
+          "category": "top",
+          "title": "금값 사상 최초 $5,000 돌파",
+          "summary": "Greenland 관세 위협 속 안전자산 수요 급증, S&P 500 10월 이후 최악 하락",
+          "url": "https://www.cnbc.com/2026/01/26/asia-pacific-markets-nikkei-225-hang-seng-index-kospi-gold-canada.html"
+        },
+        {
+          "category": "top",
+          "title": "TikTok 'immigration status' 수집 논란",
+          "summary": "미국 소유권 전환 후 신규 프라이버시 정책에서 이민 지위 데이터 수집 조항",
+          "url": "https://techcrunch.com/2026/01/23/tiktok-users-freak-out-over-apps-immigration-status-collection-heres-what-it-means/"
+        }
+      ],
+      "stats": { "articles": 18, "sections": 7, "picks": 3 }
+    },
+    {
       "date": "2026-01-26",
       "day": "월",
       "title": "Synthesia $4B 밸류에이션 | Nvidia TSMC 최대 고객 등극 | 메모리칩 부족 2027년까지",
