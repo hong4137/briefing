@@ -58,7 +58,7 @@
             </nav>
         </div>
         <div class="flex items-center gap-3">
-            <button class="text-white hover:text-gray-300 transition" onclick="document.documentElement.classList.toggle('dark')" title="다크모드 토글">
+            <button class="text-white hover:text-gray-300 transition" onclick="toggleDarkMode()" title="다크모드 토글">
                 <span class="material-icons-outlined text-xl">dark_mode</span>
             </button>
             <a href="https://github.com/hong4137/briefing" target="_blank" class="text-white hover:text-gray-300 transition">
@@ -90,11 +90,6 @@
             <span class="material-icons-outlined text-sm text-accent-purple">public</span>
             <span>미중 기술패권</span>
         </a>
-        <div class="w-px h-4 bg-gray-700"></div>
-        <a class="flex items-center gap-2 hover:text-white transition group" href="#">
-            <span class="bg-accent-gold text-black text-[10px] font-bold px-1.5 py-0.5 rounded">특별판</span>
-            <span>CES · Davos 2026</span>
-        </a>
     </div>
 </div>
 
@@ -107,47 +102,44 @@
 
     <!-- Main Content Grid -->
     <div id="content" class="hidden">
-        <!-- Hero Section: Latest Briefing -->
-        <section id="hero-section" class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12 border-b border-border-light dark:border-border-dark pb-12">
-            <!-- Main Story -->
-            <article id="main-story" class="lg:col-span-6 flex flex-col gap-4">
-                <!-- Populated by JS -->
-            </article>
-
-            <!-- Side Stories -->
-            <div id="side-stories" class="lg:col-span-4 flex flex-col gap-5 lg:border-r border-border-light dark:border-border-dark lg:pr-8">
-                <!-- Populated by JS -->
+        <!-- Hero Section: 최신 브리핑 -->
+        <section class="mb-12">
+            <!-- 날짜 및 브리핑 정보 헤더 -->
+            <div id="briefing-header" class="mb-6">
+                <!-- JS로 채워짐 -->
             </div>
 
-            <!-- Headlines -->
-            <div class="lg:col-span-2 pl-0 lg:pl-2">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="font-bold uppercase tracking-widest text-xs text-gray-500 dark:text-gray-400">Headlines</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-border-light dark:border-border-dark pb-12">
+                <!-- 좌측: TOP 헤드라인 (큰 영역) -->
+                <div id="top-headlines" class="lg:col-span-6">
+                    <!-- JS로 채워짐 -->
                 </div>
-                <ul id="headlines-list" class="space-y-4">
-                    <!-- Populated by JS -->
-                </ul>
+
+                <!-- 중간: 일반 기사들 -->
+                <div id="regular-articles" class="lg:col-span-4 flex flex-col gap-5 lg:border-l lg:border-r border-border-light dark:border-border-dark lg:px-6">
+                    <!-- JS로 채워짐 -->
+                </div>
+
+                <!-- 우측: 특별판 섹션 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-bold uppercase tracking-widest text-xs text-gray-500 dark:text-gray-400">특별판</h3>
+                    </div>
+                    <div id="special-sidebar" class="space-y-4">
+                        <!-- JS로 채워짐 -->
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Recent Briefings Section -->
         <section class="mb-16">
             <div class="flex items-center justify-between mb-6 border-b border-black dark:border-white pb-2">
-                <h2 class="text-xl font-serif font-black text-black dark:text-white">최근 브리핑</h2>
+                <h2 class="text-xl font-serif font-black text-black dark:text-white">지난 브리핑</h2>
                 <a class="text-xs font-bold uppercase tracking-wider hover:text-gray-600 dark:hover:text-gray-300 transition" href="archive.html">전체 보기 →</a>
             </div>
-            <div id="recent-briefings" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- Populated by JS -->
-            </div>
-        </section>
-
-        <!-- Special Editions Section -->
-        <section id="special-section" class="mb-12">
-            <div class="flex items-center justify-between mb-6 border-b border-border-light dark:border-border-dark pb-2">
-                <h2 class="text-lg font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">특별판</h2>
-            </div>
-            <div id="special-editions" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Populated by JS -->
+            <div id="recent-briefings" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- JS로 채워짐 -->
             </div>
         </section>
     </div>
@@ -189,18 +181,27 @@
 </footer>
 
 <script>
-    // 다크모드 초기화
-    if (localStorage.getItem('darkMode') === 'true' || 
-        (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
+    // 다크모드 초기화 및 토글
+    function initDarkMode() {
+        if (localStorage.getItem('darkMode') === 'true' || 
+            (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
     }
+    
+    function toggleDarkMode() {
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+    }
+    
+    initDarkMode();
 
     // 요일 한글 변환
     const dayNames = ['일', '월', '화', '수', '목', '금', '토'];
     
     function formatDate(dateStr) {
         if (dateStr.includes('special')) return '특별판';
-        if (dateStr.includes('weekly')) return '주간 브리핑';
+        if (dateStr.includes('weekly')) return '주간';
         const date = new Date(dateStr);
         const month = date.getMonth() + 1;
         const day = date.getDate();
@@ -208,15 +209,11 @@
         return `${month}월 ${day}일 (${dayName})`;
     }
 
-    function getRelativeTime(dateStr) {
-        if (dateStr.includes('special') || dateStr.includes('weekly')) return '';
+    function formatShortDate(dateStr) {
+        if (dateStr.includes('special')) return '특별판';
+        if (dateStr.includes('weekly')) return '주간';
         const date = new Date(dateStr);
-        const now = new Date();
-        const diffDays = Math.floor((now - date) / (1000 * 60 * 60 * 24));
-        if (diffDays === 0) return '오늘';
-        if (diffDays === 1) return '어제';
-        if (diffDays < 7) return `${diffDays}일 전`;
-        return formatDate(dateStr);
+        return `${date.getMonth() + 1}/${date.getDate()}`;
     }
 
     // 데이터 로드 및 렌더링
@@ -241,162 +238,142 @@
 
         // 최신 브리핑
         const latest = dailyBriefings[0];
-        const recentOthers = dailyBriefings.slice(1, 5);
-        const olderBriefings = dailyBriefings.slice(5, 11);
-
-        // Hero Section - Main Story
-        const mainStory = document.getElementById('main-story');
-        const latestHighlights = getHighlights(latest);
+        const highlights = getHighlights(latest);
         
-        mainStory.innerHTML = `
+        // TOP 기사와 일반 기사 분리
+        const topArticles = highlights.filter(h => h.category === 'top');
+        const regularArticles = highlights.filter(h => h.category !== 'top');
+        // 만약 category가 없으면 처음 3개를 TOP으로
+        const displayTopArticles = topArticles.length > 0 ? topArticles : highlights.slice(0, 3);
+        const displayRegularArticles = topArticles.length > 0 ? regularArticles : highlights.slice(3);
+
+        // 브리핑 헤더
+        document.getElementById('briefing-header').innerHTML = `
+            <div class="flex items-center gap-3 mb-2">
+                <span class="inline-flex items-center gap-1.5 bg-accent-red text-white text-xs font-bold px-2.5 py-1 rounded">
+                    <span class="material-icons-outlined text-sm">local_fire_department</span>
+                    최신 브리핑
+                </span>
+                <span class="text-gray-500 dark:text-gray-400 text-sm font-medium">${formatDate(latest.date)}</span>
+                <span class="text-gray-400 text-sm">•</span>
+                <span class="text-gray-500 dark:text-gray-400 text-sm">${latest.stats?.articles || 0}개 기사</span>
+                <span class="text-gray-400 text-sm">•</span>
+                <span class="text-gray-500 dark:text-gray-400 text-sm">${latest.stats?.sections || 0}개 섹션</span>
+                ${latest.stats?.picks ? `
+                <span class="text-gray-400 text-sm">•</span>
+                <span class="text-accent-gold text-sm font-medium">💎 ${latest.stats.picks} Pick</span>
+                ` : ''}
+            </div>
             <a href="${latest.date}.html" class="block group">
-                <div class="mb-3">
-                    <span class="inline-flex items-center gap-1.5 bg-accent-red text-white text-xs font-bold px-2 py-1 rounded">
-                        <span class="material-icons-outlined text-sm">local_fire_department</span>
-                        최신
-                    </span>
-                    <span class="text-gray-500 dark:text-gray-400 text-sm ml-2">${formatDate(latest.date)}</span>
-                </div>
-                <h1 class="text-2xl lg:text-3xl font-serif font-bold text-gray-900 dark:text-white leading-tight mb-4 group-hover:underline decoration-2 decoration-gray-400 underline-offset-4">
+                <h1 class="text-2xl lg:text-3xl font-serif font-bold text-gray-900 dark:text-white leading-tight group-hover:text-gray-600 dark:group-hover:text-gray-300 transition">
                     ${latest.title}
                 </h1>
-                <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed mb-4 line-clamp-3">
-                    ${latest.summary}
-                </p>
-                <div class="flex items-center gap-4 text-xs font-medium text-gray-500 dark:text-gray-500">
-                    <span class="flex items-center gap-1">
-                        <span class="material-icons-outlined text-sm">article</span>
-                        ${latest.stats?.articles || 0}개 기사
-                    </span>
-                    <span class="flex items-center gap-1">
-                        <span class="material-icons-outlined text-sm">category</span>
-                        ${latest.stats?.sections || 0}개 섹션
-                    </span>
-                    ${latest.stats?.picks ? `
-                    <span class="flex items-center gap-1 text-accent-gold">
-                        <span class="material-icons-outlined text-sm">diamond</span>
-                        ${latest.stats.picks} Pick
-                    </span>
-                    ` : ''}
-                </div>
+            </a>
+            <p class="text-gray-600 dark:text-gray-400 mt-3 text-base leading-relaxed max-w-4xl">
+                ${latest.summary}
+            </p>
+        `;
+
+        // 좌측: TOP 헤드라인
+        document.getElementById('top-headlines').innerHTML = `
+            <div class="space-y-6">
+                ${displayTopArticles.map((article, idx) => `
+                    <article class="group ${idx > 0 ? 'pt-6 border-t border-border-light dark:border-border-dark' : ''}">
+                        <a href="${article.url || latest.date + '.html'}" target="${article.url ? '_blank' : '_self'}" class="block">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="inline-flex items-center gap-1 bg-accent-red/10 text-accent-red text-xs font-bold px-2 py-0.5 rounded">
+                                    🔥 TOP
+                                </span>
+                            </div>
+                            <h2 class="text-xl font-serif font-bold leading-snug mb-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition">
+                                ${article.title}
+                            </h2>
+                            ${article.summary ? `
+                            <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed line-clamp-2">
+                                ${article.summary}
+                            </p>
+                            ` : ''}
+                        </a>
+                    </article>
+                `).join('')}
+            </div>
+        `;
+
+        // 중간: 일반 기사들
+        const allRegularArticles = displayRegularArticles.length > 0 ? displayRegularArticles : highlights.slice(3);
+        document.getElementById('regular-articles').innerHTML = `
+            <h3 class="font-bold uppercase tracking-widest text-xs text-gray-500 dark:text-gray-400 mb-4">More Headlines</h3>
+            ${allRegularArticles.slice(0, 5).map(article => `
+                <article class="group pb-4 border-b border-border-light dark:border-border-dark last:border-0">
+                    <a href="${article.url || latest.date + '.html'}" target="${article.url ? '_blank' : '_self'}" class="block">
+                        <h4 class="font-medium text-sm leading-snug group-hover:text-gray-600 dark:group-hover:text-gray-300 transition line-clamp-2">
+                            ${article.title}
+                        </h4>
+                        ${article.category === 'pick' ? `
+                        <span class="inline-flex items-center gap-1 text-accent-gold text-xs mt-1">
+                            💎 Claude's Pick
+                        </span>
+                        ` : ''}
+                    </a>
+                </article>
+            `).join('')}
+            <a href="${latest.date}.html" class="inline-flex items-center gap-1 text-sm font-medium text-accent-blue hover:underline mt-2">
+                브리핑 전체 보기
+                <span class="material-icons-outlined text-sm">arrow_forward</span>
             </a>
         `;
 
-        // Side Stories (다음 4개 브리핑의 하이라이트)
-        const sideStories = document.getElementById('side-stories');
-        sideStories.innerHTML = recentOthers.map((briefing, idx) => {
-            const highlights = getHighlights(briefing);
-            const topHighlight = highlights[0];
-            return `
-                <article class="flex gap-4 group cursor-pointer items-start pb-5 border-b border-border-light dark:border-border-dark last:border-0 last:pb-0">
-                    <a href="${briefing.date}.html" class="flex-1">
-                        <div class="text-[10px] text-gray-400 mb-1">${formatDate(briefing.date)}</div>
-                        <h2 class="font-serif text-base font-bold leading-snug mb-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition line-clamp-2">
-                            ${topHighlight?.title || briefing.title.split('|')[0].trim()}
-                        </h2>
-                        <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
-                            ${topHighlight?.summary || briefing.summary.substring(0, 80)}...
-                        </p>
-                    </a>
-                </article>
-            `;
-        }).join('');
-
-        // Headlines (최신 브리핑의 하이라이트들)
-        const headlinesList = document.getElementById('headlines-list');
-        headlinesList.innerHTML = latestHighlights.slice(0, 5).map(h => `
-            <li class="group cursor-pointer">
-                <a href="${h.url || '#'}" target="_blank" class="block">
-                    <div class="flex items-start gap-2">
-                        <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-black dark:bg-white flex-shrink-0 group-hover:bg-gray-500 transition"></span>
-                        <span class="text-sm font-medium leading-snug group-hover:text-gray-600 dark:group-hover:text-gray-300 transition line-clamp-2">${h.title}</span>
-                    </div>
-                    ${h.category ? `<span class="text-[10px] text-gray-400 ml-3.5 block mt-1">${getCategoryLabel(h.category)}</span>` : ''}
-                </a>
-            </li>
-        `).join('');
-
-        // Recent Briefings Grid
-        const recentGrid = document.getElementById('recent-briefings');
-        recentGrid.innerHTML = olderBriefings.map((briefing, idx) => {
-            const highlights = getHighlights(briefing);
-            if (idx === 0) {
-                // Featured card (larger)
+        // 우측: 특별판 사이드바
+        document.getElementById('special-sidebar').innerHTML = specialEditions.length > 0 ? 
+            specialEditions.map(edition => {
+                const isWeekly = edition.date.includes('weekly');
+                const icon = isWeekly ? 'date_range' : 'star';
+                const label = isWeekly ? '주간' : '특별판';
+                const colorClass = isWeekly ? 'text-accent-blue' : 'text-accent-gold';
+                
                 return `
-                    <div class="lg:col-span-2 group cursor-pointer">
-                        <a href="${briefing.date}.html" class="block bg-surface-light dark:bg-surface-dark rounded-lg p-6 h-full hover:shadow-lg transition">
-                            <div class="flex items-center gap-2 mb-3">
-                                <span class="text-xs font-bold text-gray-500 dark:text-gray-400">${formatDate(briefing.date)}</span>
-                                <span class="w-1 h-1 rounded-full bg-gray-400"></span>
-                                <span class="text-xs text-gray-400">${briefing.stats?.articles || 0}개 기사</span>
+                    <a href="${edition.date}.html" class="block group">
+                        <div class="p-3 rounded-lg bg-surface-light dark:bg-surface-dark group-hover:bg-gray-100 dark:group-hover:bg-gray-800 transition">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="material-icons-outlined text-sm ${colorClass}">${icon}</span>
+                                <span class="text-[10px] font-bold uppercase tracking-wider ${colorClass}">${label}</span>
                             </div>
-                            <h3 class="text-xl font-serif font-bold mb-3 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition">
-                                ${briefing.title}
-                            </h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-2 mb-4">
-                                ${briefing.summary}
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                ${highlights.slice(0, 3).map(h => `
-                                    <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">${truncate(h.title, 20)}</span>
-                                `).join('')}
-                            </div>
-                        </a>
-                    </div>
+                            <h4 class="text-sm font-bold leading-snug line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition">
+                                ${edition.title.split(':')[0]}
+                            </h4>
+                        </div>
+                    </a>
                 `;
-            }
-            // Regular cards
+            }).join('') : `
+            <p class="text-xs text-gray-400">특별판이 없습니다.</p>
+        `;
+
+        // 지난 브리핑 (최신 제외 8개)
+        const recentBriefings = dailyBriefings.slice(1, 9);
+        document.getElementById('recent-briefings').innerHTML = recentBriefings.map(briefing => {
+            const briefingHighlights = getHighlights(briefing);
+            const topHighlight = briefingHighlights.find(h => h.category === 'top') || briefingHighlights[0];
+            
             return `
                 <article class="group cursor-pointer">
                     <a href="${briefing.date}.html" class="block">
-                        <div class="text-xs text-gray-400 mb-2">${formatDate(briefing.date)}</div>
-                        <h4 class="font-serif text-lg font-bold leading-snug mb-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition line-clamp-2">
-                            ${briefing.title.split('|')[0].trim()}
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400">${formatDate(briefing.date)}</span>
+                            ${briefing.stats?.picks ? `<span class="text-accent-gold text-xs">💎 ${briefing.stats.picks}</span>` : ''}
+                        </div>
+                        <h4 class="font-serif text-base font-bold leading-snug mb-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition line-clamp-2">
+                            ${topHighlight?.title || briefing.title.split('|')[0].trim()}
                         </h4>
                         <p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-2">
-                            ${briefing.summary.substring(0, 100)}...
+                            ${topHighlight?.summary || briefing.summary.substring(0, 60)}...
                         </p>
-                        <div class="mt-3 flex items-center gap-2 text-xs text-gray-400">
-                            <span>${briefing.stats?.articles || 0}개 기사</span>
-                            ${briefing.stats?.picks ? `<span class="text-accent-gold">💎 ${briefing.stats.picks}</span>` : ''}
+                        <div class="mt-2 text-xs text-gray-400">
+                            ${briefing.stats?.articles || 0}개 기사
                         </div>
                     </a>
                 </article>
             `;
         }).join('');
-
-        // Special Editions
-        const specialGrid = document.getElementById('special-editions');
-        if (specialEditions.length > 0) {
-            specialGrid.innerHTML = specialEditions.map(edition => {
-                const isWeekly = edition.date.includes('weekly');
-                const color = isWeekly ? 'accent-blue' : 'accent-gold';
-                const icon = isWeekly ? 'date_range' : 'star';
-                const label = isWeekly ? '주간 브리핑' : '특별판';
-                
-                return `
-                    <article class="group cursor-pointer">
-                        <a href="${edition.date}.html" class="block">
-                            <div class="relative overflow-hidden rounded-lg mb-3 bg-gradient-to-br from-gray-800 to-gray-900 p-6">
-                                <span class="material-icons-outlined text-6xl text-white/10 absolute -right-2 -bottom-2">${icon}</span>
-                                <span class="inline-flex items-center gap-1 bg-${color} text-white text-xs font-bold px-2 py-1 rounded mb-2">
-                                    <span class="material-icons-outlined text-sm">${icon}</span>
-                                    ${label}
-                                </span>
-                                <h3 class="font-serif text-lg font-bold text-white leading-tight">
-                                    ${edition.title.split(':')[0]}
-                                </h3>
-                            </div>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-2">
-                                ${edition.summary}
-                            </p>
-                        </a>
-                    </article>
-                `;
-            }).join('');
-        } else {
-            document.getElementById('special-section').style.display = 'none';
-        }
 
         // Show content, hide loading
         document.getElementById('loading').classList.add('hidden');
@@ -412,15 +389,6 @@
             }
             return h;
         });
-    }
-
-    function getCategoryLabel(category) {
-        const labels = {
-            'top': '🔥 TOP',
-            'pick': '💎 Pick',
-            'trend': '📈 Trend'
-        };
-        return labels[category] || category;
     }
 
     function truncate(str, len) {
