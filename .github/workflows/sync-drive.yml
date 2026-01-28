@@ -141,6 +141,10 @@ jobs:
         if: steps.sync.outputs.synced == 'true'
         run: python scripts/generate_list.py
 
+      - name: Build Search Index
+        if: steps.sync.outputs.synced == 'true'
+        run: python scripts/build_search_index.py
+
       - name: Commit and push changes
         if: steps.sync.outputs.synced == 'true'
         run: |
