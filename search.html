@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 - Jae's Foreign News Briefing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --bg-card-hover: #222230;
+            --accent-red: #ff3b3b;
+            --accent-orange: #ff8c42;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-green: #22c55e;
+            --accent-cyan: #06b6d4;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --text-muted: #666680;
+            --border-color: #2a2a3a;
+            --gradient-fire: linear-gradient(135deg, #ff3b3b, #ff8c42);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        .nav {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .nav-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-fire);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .nav-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 900;
+            background: var(--gradient-fire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--text-primary); }
+
+        /* Search Section */
+        .search-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .search-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .search-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .search-header p {
+            color: var(--text-secondary);
+        }
+
+        /* Search Box */
+        .search-box {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+
+        .search-input-wrapper {
+            display: flex;
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: border-color 0.3s;
+        }
+
+        .search-input-wrapper:focus-within {
+            border-color: var(--accent-blue);
+        }
+
+        .search-input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            padding: 1.25rem 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            font-family: inherit;
+        }
+
+        .search-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .search-input:focus {
+            outline: none;
+        }
+
+        .search-btn {
+            background: var(--gradient-fire);
+            border: none;
+            padding: 1.25rem 2rem;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .search-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Search Stats */
+        .search-stats {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .search-stats strong {
+            color: var(--accent-gold);
+        }
+
+        /* Results */
+        .results-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .result-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .result-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent-blue);
+            transform: translateX(4px);
+        }
+
+        .result-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .result-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .result-title mark {
+            background: rgba(255, 140, 66, 0.3);
+            color: var(--accent-orange);
+            padding: 0 0.2rem;
+            border-radius: 3px;
+        }
+
+        .result-summary {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+
+        .result-summary mark {
+            background: rgba(255, 140, 66, 0.2);
+            color: var(--accent-orange);
+            padding: 0 0.15rem;
+            border-radius: 2px;
+        }
+
+        .result-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .result-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-muted);
+        }
+
+        .empty-state .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .empty-state h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            margin-top: 4rem;
+        }
+
+        .footer .heart { color: var(--accent-red); }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--text-primary); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-content { flex-direction: column; gap: 1rem; }
+            .nav-links { gap: 1rem; }
+            .search-header h1 { font-size: 1.8rem; }
+            .search-input { padding: 1rem; font-size: 1rem; }
+            .search-btn { padding: 1rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">📰</div>
+                <span class="nav-logo-text">JFNB</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="archive.html">아카이브</a></li>
+                <li><a href="search.html" class="active" style="color: var(--accent-red);">검색</a></li>
+                <li><a href="about.html">소개</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-header">
+            <h1>🔍 브리핑 검색</h1>
+            <p>과거 브리핑에서 기사를 검색하세요</p>
+        </div>
+
+        <div class="search-box">
+            <div class="search-input-wrapper">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    class="search-input" 
+                    placeholder="예: 아마존 고, Nvidia, 반도체, AI..."
+                    autofocus
+                >
+                <button class="search-btn" onclick="performSearch()">검색</button>
+            </div>
+        </div>
+
+        <div id="search-stats" class="search-stats" style="display: none;"></div>
+
+        <div id="results-container" class="results-container">
+            <div class="empty-state">
+                <div class="icon">🔎</div>
+                <h3>검색어를 입력하세요</h3>
+                <p>기사 제목, 내용, 키워드로 검색할 수 있습니다</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Curated by Claude with <span class="heart">♥</span></p>
+        <p style="font-size: 0.85rem;">Value Score 기반 뉴스 큐레이션 시스템</p>
+        <div class="footer-links">
+            <a href="https://github.com/hong4137">GitHub</a>
+            <a href="about.html">소개</a>
+            <a href="archive.html">아카이브</a>
+        </div>
+    </footer>
+
+    <script>
+        let searchIndex = null;
+        let isLoading = false;
+
+        // Load search index
+        async function loadSearchIndex() {
+            if (searchIndex) return searchIndex;
+            if (isLoading) return null;
+            
+            isLoading = true;
+            try {
+                const response = await fetch('search-index.json');
+                searchIndex = await response.json();
+                console.log(`Search index loaded: ${searchIndex.total} articles`);
+                return searchIndex;
+            } catch (error) {
+                console.error('Failed to load search index:', error);
+                return null;
+            } finally {
+                isLoading = false;
+            }
+        }
+
+        // Highlight matching text
+        function highlightText(text, query) {
+            if (!query || !text) return text;
+            
+            const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 0);
+            let result = text;
+            
+            terms.forEach(term => {
+                const regex = new RegExp(`(${escapeRegex(term)})`, 'gi');
+                result = result.replace(regex, '<mark>$1</mark>');
+            });
+            
+            return result;
+        }
+
+        function escapeRegex(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        // Search function
+        async function performSearch() {
+            const query = document.getElementById('search-input').value.trim();
+            
+            if (!query) {
+                showEmptyState();
+                return;
+            }
+
+            const index = await loadSearchIndex();
+            if (!index) {
+                showError('검색 인덱스를 불러올 수 없습니다.');
+                return;
+            }
+
+            const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 0);
+            
+            // Score and filter articles
+            const results = index.articles
+                .map(article => {
+                    let score = 0;
+                    const titleLower = (article.title || '').toLowerCase();
+                    const summaryLower = (article.summary || '').toLowerCase();
+                    const keywords = (article.keywords || []).join(' ').toLowerCase();
+                    
+                    terms.forEach(term => {
+                        // Title match (highest weight)
+                        if (titleLower.includes(term)) score += 10;
+                        // Summary match
+                        if (summaryLower.includes(term)) score += 5;
+                        // Keyword match
+                        if (keywords.includes(term)) score += 3;
+                    });
+                    
+                    return { ...article, score };
+                })
+                .filter(article => article.score > 0)
+                .sort((a, b) => {
+                    // Sort by score, then by date (recent first)
+                    if (b.score !== a.score) return b.score - a.score;
+                    return (b.date || '').localeCompare(a.date || '');
+                });
+
+            displayResults(results, query);
+        }
+
+        // Display results
+        function displayResults(results, query) {
+            const container = document.getElementById('results-container');
+            const statsEl = document.getElementById('search-stats');
+
+            if (results.length === 0) {
+                statsEl.style.display = 'none';
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="icon">😕</div>
+                        <h3>"${query}"에 대한 검색 결과가 없습니다</h3>
+                        <p>다른 키워드로 검색해보세요</p>
+                    </div>
+                `;
+                return;
+            }
+
+            statsEl.style.display = 'block';
+            statsEl.innerHTML = `"<strong>${query}</strong>" 검색 결과: <strong>${results.length}</strong>개 기사`;
+
+            container.innerHTML = results.map(article => `
+                <div class="result-card">
+                    <div class="result-date">${article.date || '날짜 없음'}</div>
+                    <div class="result-title">${highlightText(article.title, query)}</div>
+                    <div class="result-summary">${highlightText(article.summary || '', query)}</div>
+                    <a href="archive/${article.file}.html" class="result-link">
+                        브리핑 보기 →
+                    </a>
+                </div>
+            `).join('');
+        }
+
+        function showEmptyState() {
+            document.getElementById('search-stats').style.display = 'none';
+            document.getElementById('results-container').innerHTML = `
+                <div class="empty-state">
+                    <div class="icon">🔎</div>
+                    <h3>검색어를 입력하세요</h3>
+                    <p>기사 제목, 내용, 키워드로 검색할 수 있습니다</p>
+                </div>
+            `;
+        }
+
+        function showError(message) {
+            document.getElementById('search-stats').style.display = 'none';
+            document.getElementById('results-container').innerHTML = `
+                <div class="empty-state">
+                    <div class="icon">⚠️</div>
+                    <h3>오류가 발생했습니다</h3>
+                    <p>${message}</p>
+                </div>
+            `;
+        }
+
+        // Event listeners
+        document.getElementById('search-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Check URL params for initial search
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialQuery = urlParams.get('q');
+        if (initialQuery) {
+            document.getElementById('search-input').value = initialQuery;
+            performSearch();
+        }
+
+        // Preload search index
+        loadSearchIndex();
+    </script>
+</body>
+</html>
