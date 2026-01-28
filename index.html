@@ -658,11 +658,16 @@
 <body>
     <!-- Navigation -->
     <nav class="nav">
-    <form action="search.html" method="get" class="nav-search" onsubmit="return true;">
-        <span class="nav-search-icon">🔍</span>
-        <input type="text" name="q" placeholder="브리핑 검색...">
-        <button type="submit" class="nav-search-btn">검색</button>
-    </form>
+            <div class="nav-content">
+        <a href="index.html" class="nav-logo">  <!-- 1. 로고 먼저 -->
+            <div class="nav-logo-icon">📰</div>
+            <span class="nav-logo-text">JFNB</span>
+        </a>
+        <form action="search.html" method="get" class="nav-search" onsubmit="return true;">
+            <span class="nav-search-icon">🔍</span>
+            <input type="text" name="q" placeholder="브리핑 검색...">
+            <button type="submit" class="nav-search-btn">검색</button>
+        </form>
 
     <ul class="nav-links">
         <li><a href="index.html" class="active">홈</a></li>
