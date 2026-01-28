@@ -1,6 +1,33 @@
 {
   "briefings": [
     {
+      "date": "2026-01-28",
+      "day": "수",
+      "title": "Moltbot 바이럴 | Anthropic $20B 밸류에이션 | Amazon Go/Fresh 전면 폐쇄",
+      "summary": "오픈소스 AI 에이전트 Moltbot(구 Clawdbot)이 바이럴 확산. Anthropic이 Microsoft·Nvidia 참여로 $200억 밸류에이션 논의 중. Amazon이 10년간 진행한 오프라인 리테일 실험 Go/Fresh 매장 전면 폐쇄.",
+      "highlights": [
+        {
+          "category": "top",
+          "title": "Moltbot, 오픈소스 AI 에이전트 바이럴",
+          "summary": "로컬 실행 가능한 개인 비서 에이전트, 스크린샷 기반 자동화",
+          "url": "https://techcrunch.com/2026/01/27/moltbot-viral-open-source-ai-agent/"
+        },
+        {
+          "category": "top",
+          "title": "Anthropic $200억 밸류에이션 논의",
+          "summary": "Microsoft·Nvidia 추가 참여, SoftBank $300억 별도 협상",
+          "url": "https://www.theinformation.com/articles/anthropic-funding-microsoft-nvidia"
+        },
+        {
+          "category": "top",
+          "title": "Amazon Go/Fresh 매장 전면 폐쇄",
+          "summary": "10년 오프라인 리테일 실험 종료, 기존 매장 전환 또는 폐쇄",
+          "url": "https://www.cnbc.com/2026/01/27/amazon-closes-go-fresh-stores.html"
+        }
+      ],
+      "stats": { "articles": 18, "sections": 6, "picks": 3 }
+    },
+    {
       "date": "2026-01-27",
       "day": "화",
       "title": "Minneapolis ICE 2차 총격 사망 | ChatGPT Grokipedia 인용 | 금값 $5,000 돌파",

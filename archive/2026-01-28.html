@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moltbot 바이럴 | Anthropic $20B 밸류에이션 | Amazon Go/Fresh 전면 폐쇄</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --accent-red: #ff3b3b;
+            --accent-green: #22c55e;
+            --accent-gold: #ffd700;
+            --accent-blue: #4a9eff;
+            --accent-purple: #a855f7;
+            --accent-cyan: #06b6d4;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --border-color: #2a2a3a;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-red), #ff6b6b);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        .summary {
+            color: var(--text-secondary);
+            font-size: 1.05em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .section-icon {
+            font-size: 1.5em;
+        }
+        .section-title {
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+        .article {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-blue);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .article:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .article.top { border-left-color: var(--accent-red); }
+        .article.ai { border-left-color: var(--accent-purple); }
+        .article.semi { border-left-color: var(--accent-cyan); }
+        .article.finance { border-left-color: var(--accent-gold); }
+        .article.pick { border-left-color: var(--accent-green); }
+        .article-title {
+            font-size: 1.15em;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+        .article-content {
+            color: var(--text-secondary);
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85em;
+        }
+        .source {
+            color: var(--accent-blue);
+            font-weight: 500;
+        }
+        .article-meta a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+        .article-meta a:hover { color: var(--text-primary); }
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        .badge-hot { background: var(--accent-red); color: white; }
+        .badge-new { background: var(--accent-green); color: white; }
+        .badge-update { background: var(--accent-purple); color: white; }
+        .market-section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .market-item {
+            background: var(--bg-card);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .market-label { font-size: 0.8em; color: var(--text-secondary); margin-bottom: 5px; }
+        .market-value { font-size: 1.1em; font-weight: 600; }
+        .market-change { font-size: 0.85em; margin-top: 3px; }
+        .positive { color: var(--accent-green); }
+        .negative { color: var(--accent-red); }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 50px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.4em; }
+            .article { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date-badge">2026년 1월 28일 수요일</div>
+            <h1>Moltbot 바이럴 | Anthropic $20B 밸류에이션 | Amazon Go/Fresh 전면 폐쇄</h1>
+            <p class="summary">오픈소스 개인 AI 비서 Moltbot이 폭발적 인기를 얻으며 기술계 화제. Anthropic이 $200억 밸류에이션으로 대규모 펀딩 마무리. Amazon이 10년간 운영한 Amazon Go와 Fresh 매장 전면 폐쇄 결정.</p>
+        </header>
+
+        <!-- TOP Headlines -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🔥</span>
+                <h2 class="section-title">TOP Headlines</h2>
+            </div>
+            
+            <article class="article top">
+                <h3 class="article-title">Moltbot, 개인 AI 비서 오픈소스 에이전트 폭발적 인기 <span class="badge badge-hot">HOT</span></h3>
+                <p class="article-content">로컬에서 실행되는 오픈소스 AI 에이전트 Moltbot(구 Clawdbot)이 "실제로 무언가를 하는" AI로 입소문. 리마인더 관리, 건강/피트니스 데이터 로깅, 클라이언트 커뮤니케이션 등 다양한 용도로 활용 중. 다양한 디바이스에서 로컬 실행 가능하며, 개인 데이터 보안 우려 없이 사용 가능.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero</span>
+                    <a href="https://techcrunch.com/2026/01/27/everything-you-need-to-know-about-viral-personal-ai-assistant-clawdbot-now-moltbot/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article top">
+                <h3 class="article-title">Anthropic, $200억 밸류에이션으로 대규모 펀딩 마무리 <span class="badge badge-hot">HOT</span></h3>
+                <p class="article-content">Claude를 만든 Anthropic이 $100억 이상의 펀딩을 확정하고, Microsoft와 Nvidia가 추가 참여할 경우 $200억까지 증가 가능. $3,000억 이상 밸류에이션 전망. SoftBank도 $300억 추가 투자 협상 중으로 알려지며 AI 인프라 경쟁 가속화.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg, CNBC 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/01/27/anthropic-reportedly-upped-its-latest-raise-to-20b/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article top">
+                <h3 class="article-title">Amazon, 10년 프로젝트 Amazon Go·Fresh 매장 전면 폐쇄</h3>
+                <p class="article-content">Amazon이 무인 결제 기술을 적용한 Amazon Go 편의점과 Fresh 슈퍼마켓을 전면 폐쇄하고, 일부는 Whole Foods로 전환 예정. 온라인 Fresh 배송은 유지. "경제성을 맞출 수 없었다"며 10년간의 오프라인 리테일 실험 종료.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg, CNBC</span>
+                    <a href="https://techcrunch.com/2026/01/27/amazon-is-closing-its-physical-amazon-go-and-amazon-fresh-stores/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- AI/Tech -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🤖</span>
+                <h2 class="section-title">AI / 기술</h2>
+            </div>
+
+            <article class="article ai">
+                <h3 class="article-title">OpenAI, 과학자용 무료 AI 워크스페이스 'Prism' 출시 <span class="badge badge-new">NEW</span></h3>
+                <p class="article-content">OpenAI가 과학자들이 연구 논문 작성 시 ChatGPT를 쉽게 활용할 수 있도록 하는 새로운 프로그램 Prism 출시. GPT-5.2 기반으로 논문 초안 작성, 맥락화된 참조 소싱 등 지원. 기존 연구 논문 작성 표준에 통합.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, ZDNet</span>
+                    <a href="https://techcrunch.com/2026/01/27/openai-launches-prism-a-new-ai-workspace-for-scientists/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article ai">
+                <h3 class="article-title">Google AI Plus 플랜, 미국 포함 전 세계 출시</h3>
+                <p class="article-content">Google이 Gemini 3 Pro 및 기타 AI 도구를 포함한 Google AI Plus 플랜을 미국 등 전 세계에 출시. 월 $7.99로 프리미엄 AI 기능 이용 가능. 기존 One AI Premium보다 저렴한 가격대로 AI 대중화 가속.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/01/27/googles-ai-plus-plan-rolls-out-to-all-markets-including-the-u-s/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article ai">
+                <h3 class="article-title">Pinterest, 15% 인력 감원 - AI로 리소스 재배치</h3>
+                <p class="article-content">Pinterest가 전체 인력의 15% 미만을 감원하고 AI 중심 역할과 팀에 리소스 재배치 발표. "AI 채택과 실행을 추진하는 역할과 팀에 리소스 재배치" 설명. 2026년 9월까지 감원 완료 예정.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg, CNBC</span>
+                    <a href="https://techcrunch.com/2026/01/27/pinterest-to-lay-off-15-of-staff-to-redirect-resources-to-ai/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article ai">
+                <h3 class="article-title">중국 Moonshot, 오픈소스 모델 Kimi K2.5 및 코딩 에이전트 공개</h3>
+                <p class="article-content">중국 AI 스타트업 Moonshot이 15조 개의 혼합 비주얼·텍스트 토큰으로 학습한 새 오픈소스 모델 Kimi K2.5 출시. "비디오 한 개로 바이브 코딩" 기능 포함. DeepSeek R1 공개 1주년 맞아 중국 AI 기업들의 모델 출시 경쟁 가열.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, ZDNet</span>
+                    <a href="https://techcrunch.com/2026/01/27/chinas-moonshot-releases-a-new-open-source-model-kimi-k2-5-and-a-coding-agent/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article ai">
+                <h3 class="article-title">Bluesky, 2026년 로드맵 공개 - Discover 피드 개선, 실시간 기능 예고</h3>
+                <p class="article-content">분산형 소셜 네트워크 Bluesky가 2026년 로드맵 공개. 더 나은 Discover 피드, 실시간 기능, 비디오 지원 개선 등 다양한 신기능 예고. X(구 Twitter) 대안으로 급성장 중.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/01/27/bluesky-teases-2026-roadmap-a-better-discover-feed-real-time-features-and-more/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Economy/Finance -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💰</span>
+                <h2 class="section-title">경제 / 금융</h2>
+            </div>
+
+            <article class="article finance">
+                <h3 class="article-title">Tim Cook, Alex Pretti 사망 관련 "De-escalation" 촉구</h3>
+                <p class="article-content">Apple CEO Tim Cook이 Minneapolis에서 ICE에 의해 사망한 Alex Pretti 사건에 대해 직원들에게 "가슴이 아프다"며 "긴장 완화"를 촉구. Anthropic CEO Dario Amodei와 OpenAI CEO Sam Altman도 ICE 폭력 비난.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, TechCrunch</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-28/apple-s-cook-calls-for-deescalation-after-latest-ice-shooting" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article finance">
+                <h3 class="article-title">UPS, Amazon 파트너십 종료하며 3만 명 추가 감원</h3>
+                <p class="article-content">UPS가 Amazon과의 파트너십 종료 및 사업 전환 계획의 일환으로 3만 명 추가 감원 발표. 물류 자동화 및 효율화에 따른 구조조정.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC</span>
+                    <a href="https://www.cnbc.com/2026/01/27/ups-job-cuts-amazon-unwind-turnaround-plan.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article finance">
+                <h3 class="article-title">Meta, Corning과 $60억 AI 광섬유 케이블 딜 체결</h3>
+                <p class="article-content">Meta가 iPhone 유리 공급업체 Corning과 AI 데이터센터용 광섬유 케이블 공급 계약 체결. 최대 $60억 규모. Corning 주가 16%+ 급등. AI 인프라 붐의 수혜자로 부상.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC</span>
+                    <a href="https://www.cnbc.com/2026/01/27/apple-supplier-corning-wins-6-billion-from-meta-for-ai-optical-fiber.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article finance">
+                <h3 class="article-title">한국 증시, 독일 추월 - AI·로봇 열풍으로 $1.7조 랠리</h3>
+                <p class="article-content">한국 증시 시가총액이 독일을 추월. 삼성전자, SK하이닉스 등 AI·로봇 관련주의 글로벌 붐에 힘입어 급등. "아시아 자본 시장에 믿을 수 없는 자금 유입" 평가.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-28/south-korea-exceeds-germany-s-market-cap-on-ai-robotics-craze" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Semiconductor -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💾</span>
+                <h2 class="section-title">반도체</h2>
+            </div>
+
+            <article class="article semi">
+                <h3 class="article-title">삼성·SK하이닉스, 동일 실적발표일 - AI 메모리 왕좌 경쟁</h3>
+                <p class="article-content">삼성전자와 SK하이닉스가 같은 날 실적 발표 예정. HBM4 AI 메모리 칩 승인 경쟁이 핵심. SK하이닉스가 HBM 시장 선도 중이나, 삼성도 Nvidia 승인 임박 보도.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-27/samsung-sk-hynix-results-to-showcase-fight-for-ai-memory-crown" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article semi">
+                <h3 class="article-title">Texas Instruments, 예상 상회 전망 - 산업용 칩 수요 회복</h3>
+                <p class="article-content">Texas Instruments가 1분기 예상 상회 전망 발표. 산업용 장비·자동차 칩 수요가 부진에서 회복세. 반도체 다운사이클 종료 신호로 해석.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-27/texas-instruments-gives-solid-outlook-after-chip-demand-picks-up" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article semi">
+                <h3 class="article-title">Samsung Galaxy Z TriFold, 미국 출시 $2,899</h3>
+                <p class="article-content">삼성이 3중 폴더블폰 Galaxy Z TriFold를 1월 30일 미국 출시 확정. 가격 $2,899. 10인치 디스플레이로 Galaxy 역대 최대 화면. 혁신적 폼팩터지만 높은 가격이 관건.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg, ZDNet</span>
+                    <a href="https://techcrunch.com/2026/01/27/samsungs-trifold-phone-will-cost-2899-in-the-us/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💎</span>
+                <h2 class="section-title">Claude's Pick</h2>
+            </div>
+
+            <article class="article pick">
+                <h3 class="article-title">Pornhub, 영국 신규 사용자 차단 - 연령 인증법 반발</h3>
+                <p class="article-content">세계 최대 포르노 사이트 Pornhub가 영국의 Online Safety Act 연령 인증 의무에 반발하며 2월 2일부터 영국 신규 사용자 차단 발표. "결함 있는 ID 법" 비판. 기존 인증 완료 사용자만 접속 가능.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Wired, BBC</span>
+                    <a href="https://techcrunch.com/2026/01/27/if-you-live-in-the-uk-you-probably-wont-be-able-to-visit-pornhub-anymore/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article pick">
+                <h3 class="article-title">유럽, 트럼프 공격·제재 무기화 속 미국 기술 의존도 축소 모색</h3>
+                <p class="article-content">유럽 정부들이 미국의 불확실성과 변동성 속에서 미국 기술 의존도를 줄이고 디지털 주권 회복을 모색. EU가 €106억 규모 자체 위성 통신망 가동으로 Starlink 대안 구축. 미-EU 기술 동맹 균열 신호.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg</span>
+                    <a href="https://techcrunch.com/2026/01/27/amid-trump-attacks-and-weaponized-sanctions-europeans-look-to-rely-less-on-us-tech/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article pick">
+                <h3 class="article-title">Dario Amodei, "AI가 일자리에 '유례없이 고통스러운' 혼란 야기할 것" 경고</h3>
+                <p class="article-content">Anthropic CEO Dario Amodei가 AI가 일자리에 "유례없이 고통스러운 혼란"을 야기할 것이라 경고. "AI 발전 속도가 이전 기술 혁명보다 훨씬 빠르다"며 인류가 "종으로서 누구인지 시험하는" 단계 진입 언급.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Guardian</span>
+                    <a href="https://www.cnbc.com/2026/01/27/dario-amodei-warns-ai-cause-unusually-painful-disruption-jobs.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Market Section -->
+        <div class="market-section">
+            <div class="section-header">
+                <span class="section-icon">📊</span>
+                <h2 class="section-title">주요 시장 동향</h2>
+            </div>
+            <div class="market-grid">
+                <div class="market-item">
+                    <div class="market-label">S&P 500</div>
+                    <div class="market-value">사상 최고가 경신</div>
+                    <div class="market-change positive">기술주 주도</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">금 (Gold)</div>
+                    <div class="market-value">$5,000+ 유지</div>
+                    <div class="market-change positive">지정학 리스크</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">달러 인덱스</div>
+                    <div class="market-value">4월 이후 최대 낙폭</div>
+                    <div class="market-change negative">-1.3%</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">한국 KOSPI</div>
+                    <div class="market-value">독일 시총 추월</div>
+                    <div class="market-change positive">AI·로봇 랠리</div>
+                </div>
+            </div>
+            <p style="margin-top: 20px; color: var(--text-secondary); font-size: 0.9em;">
+                📌 Fed 1월 FOMC 회의 수요일 결정 발표 예정. 금리 동결 전망 우세.
+            </p>
+        </div>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p style="margin-top: 10px;">기사 18건 | 섹션 6개 | Pick 3건</p>
+        </footer>
+    </div>
+</body>
+</html>
