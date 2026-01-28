@@ -41,7 +41,7 @@
         .nav {
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border-color);
-            padding: 0.75rem 0;
+            padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -55,7 +55,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 1.5rem;
         }
 
         .nav-logo {
@@ -63,23 +62,22 @@
             align-items: center;
             gap: 0.75rem;
             text-decoration: none;
-            flex-shrink: 0;
         }
 
         .nav-logo-icon {
-            width: 36px;
-            height: 36px;
+            width: 40px;
+            height: 40px;
             background: var(--gradient-fire);
-            border-radius: 8px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
         .nav-logo-text {
             font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: 900;
             background: var(--gradient-fire);
             -webkit-background-clip: text;
@@ -87,75 +85,63 @@
             background-clip: text;
         }
 
-        /* Nav Search Box */
-        .nav-search {
-            flex: 1;
-            max-width: 400px;
+        /* Nav Right */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        /* Compact Search */
+        .nav-search-compact {
             display: flex;
             align-items: center;
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 50px;
-            overflow: hidden;
+            border-radius: 20px;
+            padding: 0.4rem 0.75rem;
             transition: border-color 0.2s, box-shadow 0.2s;
         }
 
-        .nav-search:focus-within {
+        .nav-search-compact:focus-within {
             border-color: var(--accent-blue);
-            box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.15);
+            box-shadow: 0 0 0 2px rgba(74, 158, 255, 0.15);
         }
 
-        .nav-search-icon {
-            padding: 0 0.5rem 0 1rem;
-            color: var(--text-muted);
-            font-size: 0.9rem;
+        .nav-search-compact .search-icon {
+            font-size: 0.85rem;
+            margin-right: 0.4rem;
+            opacity: 0.6;
         }
 
-        .nav-search input {
-            flex: 1;
+        .nav-search-compact input {
             background: transparent;
             border: none;
-            padding: 0.5rem 0;
-            font-size: 0.85rem;
+            width: 80px;
+            font-size: 0.8rem;
             color: var(--text-primary);
             font-family: inherit;
-            min-width: 0;
         }
 
-        .nav-search input::placeholder {
+        .nav-search-compact input::placeholder {
             color: var(--text-muted);
         }
 
-        .nav-search input:focus {
+        .nav-search-compact input:focus {
             outline: none;
-        }
-
-        .nav-search-btn {
-            background: var(--gradient-fire);
-            border: none;
-            padding: 0.5rem 1rem;
-            color: white;
-            font-size: 0.8rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: opacity 0.2s;
-        }
-
-        .nav-search-btn:hover {
-            opacity: 0.9;
+            width: 120px;
         }
 
         .nav-links {
             display: flex;
-            gap: 1.5rem;
+            gap: 2rem;
             list-style: none;
-            flex-shrink: 0;
         }
 
         .nav-links a {
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 500;
             transition: color 0.2s;
         }
@@ -300,40 +286,36 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .nav-content {
-                flex-wrap: wrap;
-                gap: 0.75rem;
-            }
-            .nav-search {
-                order: 3;
-                max-width: 100%;
-                width: 100%;
-            }
+            .nav-content { flex-direction: column; gap: 1rem; }
+            .nav-right { gap: 1rem; }
+            .nav-search-compact input { width: 60px; }
+            .nav-search-compact input:focus { width: 80px; }
             .features { grid-template-columns: 1fr; }
             .content { padding: 2rem 1.5rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation with Search -->
+    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-content">
             <a href="index.html" class="nav-logo">
                 <div class="nav-logo-icon">📰</div>
-                <span class="nav-logo-text">JFNB</span>
+                <span class="nav-logo-text">Jae's Briefing</span>
             </a>
             
-            <form action="search.html" method="get" class="nav-search">
-                <span class="nav-search-icon">🔍</span>
-                <input type="text" name="q" placeholder="브리핑 검색...">
-                <button type="submit" class="nav-search-btn">검색</button>
-            </form>
-
-            <ul class="nav-links">
-                <li><a href="index.html">홈</a></li>
-                <li><a href="archive.html">아카이브</a></li>
-                <li><a href="about.html" class="active">소개</a></li>
-            </ul>
+            <div class="nav-right">
+                <form action="search.html" method="get" class="nav-search-compact">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" name="q" placeholder="검색...">
+                </form>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="archive.html">아카이브</a></li>
+                    <li><a href="about.html" class="active">소개</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
