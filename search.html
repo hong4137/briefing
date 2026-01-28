@@ -41,7 +41,7 @@
         .nav {
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border-color);
-            padding: 0.75rem 0;
+            padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -49,13 +49,12 @@
         }
 
         .nav-content {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 1.5rem;
         }
 
         .nav-logo {
@@ -63,23 +62,22 @@
             align-items: center;
             gap: 0.75rem;
             text-decoration: none;
-            flex-shrink: 0;
         }
 
         .nav-logo-icon {
-            width: 36px;
-            height: 36px;
+            width: 40px;
+            height: 40px;
             background: var(--gradient-fire);
-            border-radius: 8px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
         .nav-logo-text {
             font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: 900;
             background: var(--gradient-fire);
             -webkit-background-clip: text;
@@ -87,84 +85,142 @@
             background-clip: text;
         }
 
-        /* Nav Search Box */
-        .nav-search {
-            flex: 1;
-            max-width: 500px;
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav-search-compact {
             display: flex;
             align-items: center;
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 50px;
-            overflow: hidden;
+            border-radius: 20px;
+            padding: 0.4rem 0.75rem;
             transition: border-color 0.2s, box-shadow 0.2s;
         }
 
-        .nav-search:focus-within {
+        .nav-search-compact:focus-within {
             border-color: var(--accent-blue);
-            box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.15);
+            box-shadow: 0 0 0 2px rgba(74, 158, 255, 0.15);
         }
 
-        .nav-search-icon {
-            padding: 0 0.75rem 0 1rem;
-            color: var(--text-muted);
-            display: flex;
-            align-items: center;
+        .nav-search-compact .search-icon {
+            font-size: 0.85rem;
+            margin-right: 0.4rem;
+            opacity: 0.6;
         }
 
-        .nav-search input {
-            flex: 1;
+        .nav-search-compact input {
             background: transparent;
             border: none;
-            padding: 0.6rem 0;
-            font-size: 0.9rem;
+            width: 80px;
+            font-size: 0.8rem;
             color: var(--text-primary);
             font-family: inherit;
-            min-width: 0;
         }
 
-        .nav-search input::placeholder {
+        .nav-search-compact input::placeholder {
             color: var(--text-muted);
         }
 
-        .nav-search input:focus {
+        .nav-search-compact input:focus {
             outline: none;
-        }
-
-        .nav-search-btn {
-            background: var(--gradient-fire);
-            border: none;
-            padding: 0.6rem 1.25rem;
-            color: white;
-            font-size: 0.85rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: opacity 0.2s;
-            white-space: nowrap;
-        }
-
-        .nav-search-btn:hover {
-            opacity: 0.9;
+            width: 120px;
         }
 
         .nav-links {
             display: flex;
-            gap: 1.5rem;
+            gap: 2rem;
             list-style: none;
-            flex-shrink: 0;
         }
 
         .nav-links a {
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 500;
             transition: color 0.2s;
         }
 
         .nav-links a:hover { color: var(--text-primary); }
 
-        /* Search Results Section */
+        /* Search Hero */
+        .search-hero {
+            padding: 3rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+        }
+
+        .search-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-hero p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        /* Main Search Box */
+        .main-search {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            border-radius: 50px;
+            overflow: hidden;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .main-search:focus-within {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 4px rgba(74, 158, 255, 0.15);
+        }
+
+        .main-search .search-icon {
+            padding: 1rem 0 1rem 1.5rem;
+            font-size: 1.2rem;
+            opacity: 0.6;
+        }
+
+        .main-search input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            padding: 1rem;
+            font-size: 1rem;
+            color: var(--text-primary);
+            font-family: inherit;
+        }
+
+        .main-search input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .main-search input:focus {
+            outline: none;
+        }
+
+        .main-search button {
+            background: var(--gradient-fire);
+            border: none;
+            padding: 1rem 2rem;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .main-search button:hover {
+            opacity: 0.9;
+        }
+
+        /* Search Section */
         .search-section {
             max-width: 900px;
             margin: 0 auto;
@@ -263,12 +319,12 @@
         /* Empty State */
         .empty-state {
             text-align: center;
-            padding: 4rem 2rem;
+            padding: 3rem 2rem;
             color: var(--text-muted);
         }
 
         .empty-state .icon {
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
         }
 
@@ -276,10 +332,6 @@
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
             color: var(--text-secondary);
-        }
-
-        .empty-state p {
-            font-size: 0.9rem;
         }
 
         /* Popular Keywords */
@@ -319,74 +371,53 @@
 
         .footer .heart { color: var(--accent-red); }
 
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 0.75rem;
-        }
-
-        .footer-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover { color: var(--text-primary); }
-
         /* Responsive */
         @media (max-width: 768px) {
-            .nav-content {
-                flex-wrap: wrap;
-                gap: 0.75rem;
-            }
-            .nav-search {
-                order: 3;
-                max-width: 100%;
-                width: 100%;
-            }
-            .nav-links {
-                gap: 1rem;
-            }
-            .nav-links a {
-                font-size: 0.8rem;
-            }
-            .search-section {
-                padding: 1.5rem 1rem 3rem;
-            }
-            .result-card {
-                padding: 1rem 1.25rem;
-            }
+            .nav-content { flex-direction: column; gap: 1rem; }
+            .nav-right { gap: 1rem; }
+            .nav-search-compact input { width: 60px; }
+            .search-hero h1 { font-size: 2rem; }
+            .main-search { flex-direction: column; border-radius: 16px; }
+            .main-search button { border-radius: 0 0 14px 14px; }
+            .search-section { padding: 1.5rem 1rem 3rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation with Search -->
+    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-content">
             <a href="index.html" class="nav-logo">
                 <div class="nav-logo-icon">📰</div>
-                <span class="nav-logo-text">JFNB</span>
+                <span class="nav-logo-text">Jae's Briefing</span>
             </a>
             
-            <div class="nav-search">
-                <span class="nav-search-icon">🔍</span>
-                <input 
-                    type="text" 
-                    id="search-input" 
-                    placeholder="브리핑 검색... (예: 아마존 고, Nvidia, 반도체)"
-                    autofocus
-                >
-                <button class="nav-search-btn" onclick="performSearch()">검색</button>
+            <div class="nav-right">
+                <form action="search.html" method="get" class="nav-search-compact">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" name="q" placeholder="검색...">
+                </form>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="archive.html">아카이브</a></li>
+                    <li><a href="about.html">소개</a></li>
+                </ul>
             </div>
-
-            <ul class="nav-links">
-                <li><a href="index.html">홈</a></li>
-                <li><a href="archive.html">아카이브</a></li>
-                <li><a href="about.html">소개</a></li>
-            </ul>
         </div>
     </nav>
+
+    <!-- Search Hero -->
+    <section class="search-hero">
+        <h1>🔍 브리핑 검색</h1>
+        <p>과거 브리핑에서 기사를 검색하세요</p>
+        
+        <div class="main-search">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" placeholder="검색어 입력... (예: Nvidia, 반도체, AI)" autofocus>
+            <button onclick="performSearch()">검색</button>
+        </div>
+    </section>
 
     <!-- Search Results Section -->
     <section class="search-section">
@@ -415,18 +446,12 @@
     <!-- Footer -->
     <footer class="footer">
         <p>Curated by Claude with <span class="heart">♥</span></p>
-        <div class="footer-links">
-            <a href="https://github.com/hong4137">GitHub</a>
-            <a href="about.html">소개</a>
-            <a href="archive.html">아카이브</a>
-        </div>
     </footer>
 
     <script>
         let searchIndex = null;
         let isLoading = false;
 
-        // Load search index
         async function loadSearchIndex() {
             if (searchIndex) return searchIndex;
             if (isLoading) return null;
@@ -436,7 +461,6 @@
                 const response = await fetch('search-index.json');
                 if (!response.ok) throw new Error('Index not found');
                 searchIndex = await response.json();
-                console.log(`Search index loaded: ${searchIndex.total} articles`);
                 return searchIndex;
             } catch (error) {
                 console.error('Failed to load search index:', error);
@@ -446,18 +470,14 @@
             }
         }
 
-        // Highlight matching text
         function highlightText(text, query) {
             if (!query || !text) return text;
-            
             const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 0);
             let result = text;
-            
             terms.forEach(term => {
                 const regex = new RegExp(`(${escapeRegex(term)})`, 'gi');
                 result = result.replace(regex, '<mark>$1</mark>');
             });
-            
             return result;
         }
 
@@ -465,13 +485,11 @@
             return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         }
 
-        // Search keyword from tag
         function searchKeyword(keyword) {
             document.getElementById('search-input').value = keyword;
             performSearch();
         }
 
-        // Search function
         async function performSearch() {
             const query = document.getElementById('search-input').value.trim();
             
@@ -482,13 +500,12 @@
 
             const index = await loadSearchIndex();
             if (!index) {
-                showError('검색 인덱스를 불러올 수 없습니다. 잠시 후 다시 시도해주세요.');
+                showError('검색 인덱스를 불러올 수 없습니다.');
                 return;
             }
 
             const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 0);
             
-            // Score and filter articles
             const results = index.articles
                 .map(article => {
                     let score = 0;
@@ -497,11 +514,8 @@
                     const keywords = (article.keywords || []).join(' ').toLowerCase();
                     
                     terms.forEach(term => {
-                        // Title match (highest weight)
                         if (titleLower.includes(term)) score += 10;
-                        // Summary match
                         if (summaryLower.includes(term)) score += 5;
-                        // Keyword match
                         if (keywords.includes(term)) score += 3;
                     });
                     
@@ -509,20 +523,17 @@
                 })
                 .filter(article => article.score > 0)
                 .sort((a, b) => {
-                    // Sort by score, then by date (recent first)
                     if (b.score !== a.score) return b.score - a.score;
                     return (b.date || '').localeCompare(a.date || '');
                 });
 
             displayResults(results, query);
             
-            // Update URL
             const url = new URL(window.location);
             url.searchParams.set('q', query);
             window.history.replaceState({}, '', url);
         }
 
-        // Display results
         function displayResults(results, query) {
             const container = document.getElementById('results-container');
             const statsEl = document.getElementById('search-stats');
@@ -538,7 +549,6 @@
                             <span class="keyword-tag" onclick="searchKeyword('AI')">AI</span>
                             <span class="keyword-tag" onclick="searchKeyword('Nvidia')">Nvidia</span>
                             <span class="keyword-tag" onclick="searchKeyword('반도체')">반도체</span>
-                            <span class="keyword-tag" onclick="searchKeyword('삼성')">삼성</span>
                         </div>
                     </div>
                 `;
@@ -579,8 +589,6 @@
                         <span class="keyword-tag" onclick="searchKeyword('삼성')">삼성</span>
                         <span class="keyword-tag" onclick="searchKeyword('Tesla')">Tesla</span>
                         <span class="keyword-tag" onclick="searchKeyword('OpenAI')">OpenAI</span>
-                        <span class="keyword-tag" onclick="searchKeyword('아마존')">아마존</span>
-                        <span class="keyword-tag" onclick="searchKeyword('중국')">중국</span>
                     </div>
                 </div>
             `;
@@ -597,14 +605,10 @@
             `;
         }
 
-        // Event listeners
         document.getElementById('search-input').addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                performSearch();
-            }
+            if (e.key === 'Enter') performSearch();
         });
 
-        // Check URL params for initial search
         const urlParams = new URLSearchParams(window.location.search);
         const initialQuery = urlParams.get('q');
         if (initialQuery) {
@@ -612,7 +616,6 @@
             performSearch();
         }
 
-        // Preload search index
         loadSearchIndex();
     </script>
 </body>
