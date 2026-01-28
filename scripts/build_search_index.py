@@ -3,7 +3,7 @@
 Build search index from archive HTML files.
 Parses all HTML files in archive/ folder and creates search-index.json
 
-v2: Added Claude's Pick support + improved section detection
+v3: Handles multiple HTML format versions + Claude's Pick support
 """
 
 import os
@@ -14,98 +14,126 @@ from datetime import datetime
 
 
 class BriefingParser(HTMLParser):
-    """Parse briefing HTML to extract articles."""
+    """Parse briefing HTML to extract articles - handles multiple format versions."""
     
     def __init__(self):
         super().__init__()
         self.articles = []
         self.current_article = {}
-        self.in_title = False
-        self.in_summary = False
-        self.capture_text = False
-        self.current_text = ""
         self.current_section = ""
         self.is_claudes_pick = False
         
+        # Tag tracking
+        self.in_h2 = False
+        self.in_h3 = False
+        self.in_p = False
+        self.in_article = False
+        
+        # Class detection
+        self.current_tag_class = ""
+        self.current_text = ""
+        
     def handle_starttag(self, tag, attrs):
         attrs_dict = dict(attrs)
+        class_name = attrs_dict.get('class', '')
         
-        # Detect section headers (h2 tags)
+        # Track article container
+        if tag == 'article':
+            self.in_article = True
+            # Save previous article if complete
+            if self._is_article_complete():
+                self.articles.append(self.current_article.copy())
+            self.current_article = {
+                'section': self.current_section,
+                'is_pick': self.is_claudes_pick
+            }
+            
+        # Section headers (h2 tags)
         if tag == 'h2':
-            self.capture_text = True
+            self.in_h2 = True
             self.current_text = ""
             
-        # Capture article titles (h3 tags)
+        # Article titles (h3 tags)
         if tag == 'h3':
-            self.in_title = True
-            self.capture_text = True
+            self.in_h3 = True
+            self.current_tag_class = class_name
             self.current_text = ""
             
-        # Capture summaries (p tags after h3)
-        if tag == 'p' and self.current_article.get('title'):
-            if not self.current_article.get('summary'):
-                self.in_summary = True
-                self.capture_text = True
-                self.current_text = ""
-                
-        # Capture article links
-        if tag == 'a' and self.current_article.get('title'):
-            href = attrs_dict.get('href', '')
-            if href.startswith('http') and not self.current_article.get('url'):
-                self.current_article['url'] = href
+        # Paragraphs - check class for different content types
+        if tag == 'p':
+            self.in_p = True
+            self.current_tag_class = class_name
+            self.current_text = ""
                 
     def handle_endtag(self, tag):
-        if tag == 'h2':
-            if self.capture_text and self.current_text:
-                section = self.current_text.strip()
-                self.current_section = section
-                # Check if this is Claude's Pick section
-                if "Claude's Pick" in section or "클로드" in section or "💎" in section:
-                    self.is_claudes_pick = True
-                else:
-                    self.is_claudes_pick = False
-            self.capture_text = False
+        if tag == 'h2' and self.in_h2:
+            self.in_h2 = False
+            section = self.current_text.strip()
+            self.current_section = section
+            # Check if this is Claude's Pick section
+            if any(x in section for x in ["Claude's Pick", "클로드", "💎", "Pick"]):
+                self.is_claudes_pick = True
+            elif any(x in section for x in ["TOP", "🔥", "AI", "🤖", "경제", "💰", "반도체", "💾", "글로벌", "🌏", "🌐"]):
+                self.is_claudes_pick = False
             self.current_text = ""
             
-        if tag == 'h3':
-            if self.in_title and self.current_text:
-                # Save previous article if exists
-                if self.current_article.get('title') and self.current_article.get('summary'):
-                    self.articles.append(self.current_article.copy())
-                
-                # Start new article
-                title = self.current_text.strip()
-                # Remove tags like HOT, NEW, PICK
-                title = re.sub(r'\s*(HOT|NEW|PICK)\s*$', '', title).strip()
-                
+        if tag == 'h3' and self.in_h3:
+            self.in_h3 = False
+            title = self.current_text.strip()
+            # Remove badges like HOT, NEW, PICK
+            title = re.sub(r'\s*(HOT|NEW|PICK)\s*$', '', title).strip()
+            if title:
+                # This could be English title or Korean title depending on format
+                if 'article-title' in self.current_tag_class and 'kr' not in self.current_tag_class:
+                    self.current_article['title_en'] = title
+                else:
+                    self.current_article['title'] = title
+            self.current_tag_class = ""
+            self.current_text = ""
+            
+        if tag == 'p' and self.in_p:
+            self.in_p = False
+            text = self.current_text.strip()
+            text = re.sub(r'\s+', ' ', text)  # Normalize whitespace
+            
+            if text and len(text) > 10:
+                if 'article-title-kr' in self.current_tag_class:
+                    # Korean title
+                    self.current_article['title'] = text
+                elif 'article-summary' in self.current_tag_class:
+                    # Summary
+                    self.current_article['summary'] = text
+                elif 'summary' not in self.current_article and self.in_article:
+                    # First paragraph after title is usually summary
+                    if 'title' in self.current_article or 'title_en' in self.current_article:
+                        self.current_article['summary'] = text
+                        
+            self.current_tag_class = ""
+            self.current_text = ""
+            
+        if tag == 'article':
+            self.in_article = False
+            # Save article when closing article tag
+            if self._is_article_complete():
+                self.articles.append(self.current_article.copy())
                 self.current_article = {
-                    'title': title,
                     'section': self.current_section,
                     'is_pick': self.is_claudes_pick
                 }
-                
-            self.in_title = False
-            self.capture_text = False
-            self.current_text = ""
-            
-        if tag == 'p' and self.in_summary:
-            if self.current_text:
-                summary = self.current_text.strip()
-                # Clean up summary
-                summary = re.sub(r'\s+', ' ', summary)
-                if len(summary) > 20:  # Only save meaningful summaries
-                    self.current_article['summary'] = summary
-            self.in_summary = False
-            self.capture_text = False
-            self.current_text = ""
             
     def handle_data(self, data):
-        if self.capture_text:
+        if self.in_h2 or self.in_h3 or self.in_p:
             self.current_text += data
+            
+    def _is_article_complete(self):
+        """Check if current article has required fields."""
+        has_title = 'title' in self.current_article or 'title_en' in self.current_article
+        has_summary = 'summary' in self.current_article
+        return has_title and has_summary
             
     def get_articles(self):
         # Don't forget last article
-        if self.current_article.get('title') and self.current_article.get('summary'):
+        if self._is_article_complete():
             self.articles.append(self.current_article.copy())
         return self.articles
 
@@ -133,30 +161,32 @@ def extract_keywords(title, summary):
     
     # Extract capitalized words (likely proper nouns)
     proper_nouns = re.findall(r'\b[A-Z][a-zA-Z]+\b', f"{title} {summary}")
-    keywords.update(word.lower() for word in proper_nouns)
+    keywords.update(word.lower() for word in proper_nouns if len(word) > 2)
     
-    # Extract Korean company/product names
-    korean_patterns = [
+    # Extract Korean/English company/product names
+    patterns = [
         r'삼성|Samsung', r'SK하이닉스|SK Hynix|하이닉스',
         r'네이버|Naver', r'카카오|Kakao',
         r'엔비디아|Nvidia|NVIDIA', r'인텔|Intel',
-        r'AMD|에이엠디', r'TSMC',
+        r'AMD|에이엠디', r'TSMC', r'마이크론|Micron',
         r'애플|Apple', r'구글|Google', r'마이크로소프트|Microsoft',
         r'아마존|Amazon', r'메타|Meta|Facebook',
-        r'테슬라|Tesla', r'OpenAI|오픈AI',
+        r'테슬라|Tesla', r'OpenAI|오픈AI|GPT',
         r'Anthropic|앤트로픽|클로드|Claude',
         r'반도체', r'HBM', r'AI|인공지능',
         r'로봇', r'자율주행', r'전기차|EV',
         r'트럼프|Trump', r'중국|China',
+        r'BYD|비야디', r'Grok', r'xAI',
+        r'Netflix|넷플릭스', r'DOGE',
+        r'CES', r'IPO', r'투자|펀딩',
     ]
     
-    for pattern in korean_patterns:
-        if re.search(pattern, text, re.IGNORECASE):
-            match = re.search(pattern, text, re.IGNORECASE)
-            if match:
-                keywords.add(match.group().lower())
+    for pattern in patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            keywords.add(match.group().lower())
     
-    return list(keywords)
+    return list(keywords)[:15]  # Limit keywords
 
 
 def parse_briefing_file(filepath):
@@ -180,22 +210,32 @@ def parse_briefing_file(filepath):
     
     articles = parser.get_articles()
     
-    # Add date and keywords to each article
+    # Process and normalize articles
     result = []
+    seen_titles = set()
+    
     for article in articles:
-        if article.get('title') and article.get('summary'):
-            result.append({
-                'date': date,
-                'file': filename.replace('.html', ''),
-                'title': article['title'],
-                'summary': article['summary'],
-                'keywords': extract_keywords(
-                    article.get('title', ''),
-                    article.get('summary', '')
-                ),
-                'section': article.get('section', ''),
-                'is_pick': article.get('is_pick', False)
-            })
+        # Get best title (prefer Korean, fallback to English)
+        title = article.get('title') or article.get('title_en', '')
+        summary = article.get('summary', '')
+        
+        if not title or not summary:
+            continue
+            
+        # Skip duplicates
+        if title in seen_titles:
+            continue
+        seen_titles.add(title)
+        
+        result.append({
+            'date': date,
+            'file': filename.replace('.html', ''),
+            'title': title,
+            'summary': summary[:300],  # Limit summary length
+            'keywords': extract_keywords(title, summary),
+            'section': article.get('section', ''),
+            'is_pick': article.get('is_pick', False)
+        })
     
     return result
 
@@ -204,7 +244,7 @@ def build_search_index(archive_dir='archive'):
     """Build search index from all archive files."""
     if not os.path.exists(archive_dir):
         print(f"Archive directory '{archive_dir}' not found")
-        return {'articles': [], 'total': 0, 'updated': datetime.now().isoformat()}
+        return {'articles': [], 'total': 0, 'picks': 0, 'updated': datetime.now().isoformat()}
     
     all_articles = []
     pick_count = 0
@@ -235,7 +275,8 @@ def build_search_index(archive_dir='archive'):
 
 def main():
     """Main entry point."""
-    print("Building search index (v2 - with Claude's Pick)...")
+    print("Building search index (v3 - multi-format support)...")
+    print("=" * 50)
     
     index = build_search_index('archive')
     
@@ -244,7 +285,8 @@ def main():
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(index, f, ensure_ascii=False, indent=2)
     
-    print(f"\nSearch index created: {output_file}")
+    print("=" * 50)
+    print(f"Search index created: {output_file}")
     print(f"Total articles indexed: {index['total']}")
     print(f"Claude's Picks: {index['picks']}")
 
