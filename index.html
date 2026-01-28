@@ -583,24 +583,92 @@
             .latest-card-footer { flex-direction: column; gap: 1rem; }
             .briefing-stats { flex-wrap: wrap; }
         }
+        .nav-search {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    overflow: hidden;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.nav-search:focus-within {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.15);
+}
+
+.nav-search-icon {
+    padding: 0 0.5rem 0 1rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.nav-search input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    font-family: inherit;
+    min-width: 0;
+}
+
+.nav-search input::placeholder {
+    color: var(--text-muted);
+}
+
+.nav-search input:focus {
+    outline: none;
+}
+
+.nav-search-btn {
+    background: var(--gradient-fire);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.nav-search-btn:hover {
+    opacity: 0.9;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+    .nav-search {
+        order: 3;
+        max-width: 100%;
+        width: 100%;
+    }
+}
     </style>
     <link rel="stylesheet" href="theme-modern.css?v=20260118">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="nav">
-        <div class="nav-content">
-            <a href="index.html" class="nav-logo">
-                <div class="nav-logo-icon">📰</div>
-                <span class="nav-logo-text">JFNB</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">홈</a></li>
-                <li><a href="archive.html">아카이브</a></li>
-                <li><a href="search.html">검색</a></li>
-                <li><a href="about.html">소개</a></li>
-            </ul>
-        </div>
+    <form action="search.html" method="get" class="nav-search" onsubmit="return true;">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" name="q" placeholder="브리핑 검색...">
+        <button type="submit" class="nav-search-btn">검색</button>
+    </form>
+
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">홈</a></li>
+        <li><a href="archive.html">아카이브</a></li>
+        <li><a href="about.html">소개</a></li>
+    </ul>
     </nav>
 
     <!-- Hero -->
