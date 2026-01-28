@@ -41,7 +41,7 @@
         .nav {
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border-color);
-            padding: 1rem 0;
+            padding: 0.75rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -55,6 +55,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 1.5rem;
         }
 
         .nav-logo {
@@ -62,22 +63,23 @@
             align-items: center;
             gap: 0.75rem;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .nav-logo-icon {
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             background: var(--gradient-fire);
-            border-radius: 10px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         .nav-logo-text {
             font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 900;
             background: var(--gradient-fire);
             -webkit-background-clip: text;
@@ -85,16 +87,75 @@
             background-clip: text;
         }
 
+        /* Nav Search Box */
+        .nav-search {
+            flex: 1;
+            max-width: 400px;
+            display: flex;
+            align-items: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            overflow: hidden;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .nav-search:focus-within {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.15);
+        }
+
+        .nav-search-icon {
+            padding: 0 0.5rem 0 1rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .nav-search input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            padding: 0.5rem 0;
+            font-size: 0.85rem;
+            color: var(--text-primary);
+            font-family: inherit;
+            min-width: 0;
+        }
+
+        .nav-search input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .nav-search input:focus {
+            outline: none;
+        }
+
+        .nav-search-btn {
+            background: var(--gradient-fire);
+            border: none;
+            padding: 0.5rem 1rem;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .nav-search-btn:hover {
+            opacity: 0.9;
+        }
+
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
             list-style: none;
+            flex-shrink: 0;
         }
 
         .nav-links a {
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 500;
             transition: color 0.2s;
         }
@@ -239,24 +300,38 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .nav-content { flex-direction: column; gap: 1rem; }
+            .nav-content {
+                flex-wrap: wrap;
+                gap: 0.75rem;
+            }
+            .nav-search {
+                order: 3;
+                max-width: 100%;
+                width: 100%;
+            }
             .features { grid-template-columns: 1fr; }
             .content { padding: 2rem 1.5rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation with Search -->
     <nav class="nav">
         <div class="nav-content">
             <a href="index.html" class="nav-logo">
                 <div class="nav-logo-icon">📰</div>
-                <span class="nav-logo-text">Jae's Briefing</span>
+                <span class="nav-logo-text">JFNB</span>
             </a>
+            
+            <form action="search.html" method="get" class="nav-search">
+                <span class="nav-search-icon">🔍</span>
+                <input type="text" name="q" placeholder="브리핑 검색...">
+                <button type="submit" class="nav-search-btn">검색</button>
+            </form>
+
             <ul class="nav-links">
                 <li><a href="index.html">홈</a></li>
                 <li><a href="archive.html">아카이브</a></li>
-                <li><a href="search.html">검색</a></li>
                 <li><a href="about.html" class="active">소개</a></li>
             </ul>
         </div>
@@ -275,7 +350,7 @@
         <div class="features">
             <div class="feature">
                 <div class="feature-icon fire">🔥</div>
-                <h3>면 배치 기반 선별</h3>
+                <h3>멀티 배치 기반 선별</h3>
                 <p>각 매체 홈페이지의 TOP Headlines, Most Popular 위치를 분석합니다.</p>
             </div>
             <div class="feature">
@@ -286,12 +361,12 @@
             <div class="feature">
                 <div class="feature-icon money">💎</div>
                 <h3>Claude's Pick</h3>
-                <p>메인 뉴스에서 놓칠 수 있는 '숨은 보석' 기사를 발굴합니다.</p>
+                <p>메인 뉴스에서 놓칠 수 없는 '숨은 보석' 기사를 발굴합니다.</p>
             </div>
             <div class="feature">
                 <div class="feature-icon gold">⏰</div>
                 <h3>KST 기준 타임라인</h3>
-                <p>모든 시간을 한국시각으로 변환하여 표시합니다.</p>
+                <p>모든 시각을 한국시각으로 변환하여 표시합니다.</p>
             </div>
         </div>
 
@@ -299,7 +374,7 @@
         
         <p>
             뉴스의 중요도를 객관적으로 평가하기 위해 자체 개발한 스코어링 시스템입니다. 
-            단순 조회수나 좋아요가 아닌, <strong>편집자의 판단(면 배치)</strong>을 핵심 지표로 삼습니다.
+            단순 조회수나 좋아요가 아닌, <strong>편집자의 판단(멀티 배치)</strong>을 핵심 지표로 삼습니다.
         </p>
 
         <table class="score-table">
@@ -335,12 +410,12 @@
         </table>
 
         <p style="font-size: 0.9rem; color: var(--text-muted);">
-            Value Score = (면 배치 × 매체가중치) + 교차보도 보너스 | 기준: 3.0 이상만 브리핑 포함
+            Value Score = (멀티 배치 × 매체가중치) + 교차보도 보너스 | 기준: 3.0 이상만 브리핑 포함
         </p>
 
         <h2>대상 매체</h2>
         
-        <p>AI/기술, 경제/비즈니스, 국제정세 분야의 신뢰도 높은 10개 매체를 모니터링합니다.</p>
+        <p>AI/기술, 경제/비즈니스, 국제정세 분야의 신뢰도 높은 12개 매체를 모니터링합니다.</p>
 
         <div class="media-list">
             <span class="media-tag">TechCrunch</span>
@@ -352,6 +427,8 @@
             <span class="media-tag">BBC</span>
             <span class="media-tag">The Guardian Tech</span>
             <span class="media-tag">Bloomberg Tech</span>
+            <span class="media-tag">SCMP Tech</span>
+            <span class="media-tag">Rest of World</span>
         </div>
 
         <h2>Claude's Pick이란?</h2>
