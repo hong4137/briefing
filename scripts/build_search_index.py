@@ -2,6 +2,8 @@
 """
 Build search index from archive HTML files.
 Parses all HTML files in archive/ folder and creates search-index.json
+
+v2: Added Claude's Pick support + improved section detection
 """
 
 import os
@@ -10,6 +12,7 @@ import json
 from html.parser import HTMLParser
 from datetime import datetime
 
+
 class BriefingParser(HTMLParser):
     """Parse briefing HTML to extract articles."""
     
@@ -17,29 +20,23 @@ class BriefingParser(HTMLParser):
         super().__init__()
         self.articles = []
         self.current_article = {}
-        self.in_article = False
         self.in_title = False
         self.in_summary = False
         self.capture_text = False
         self.current_text = ""
-        self.briefing_title = ""
-        self.briefing_date = ""
-        self.in_briefing_title = False
-        self.h2_depth = 0
-        self.h3_depth = 0
+        self.current_section = ""
+        self.is_claudes_pick = False
         
     def handle_starttag(self, tag, attrs):
         attrs_dict = dict(attrs)
         
-        # Capture briefing date from h2 with date pattern
+        # Detect section headers (h2 tags)
         if tag == 'h2':
-            self.h2_depth += 1
             self.capture_text = True
             self.current_text = ""
             
         # Capture article titles (h3 tags)
         if tag == 'h3':
-            self.h3_depth += 1
             self.in_title = True
             self.capture_text = True
             self.current_text = ""
@@ -59,17 +56,18 @@ class BriefingParser(HTMLParser):
                 
     def handle_endtag(self, tag):
         if tag == 'h2':
-            self.h2_depth -= 1
             if self.capture_text and self.current_text:
-                # Check if this looks like a date
-                text = self.current_text.strip()
-                if re.match(r'\d{4}년', text):
-                    self.briefing_date = text
+                section = self.current_text.strip()
+                self.current_section = section
+                # Check if this is Claude's Pick section
+                if "Claude's Pick" in section or "클로드" in section or "💎" in section:
+                    self.is_claudes_pick = True
+                else:
+                    self.is_claudes_pick = False
             self.capture_text = False
             self.current_text = ""
             
         if tag == 'h3':
-            self.h3_depth -= 1
             if self.in_title and self.current_text:
                 # Save previous article if exists
                 if self.current_article.get('title') and self.current_article.get('summary'):
@@ -77,9 +75,14 @@ class BriefingParser(HTMLParser):
                 
                 # Start new article
                 title = self.current_text.strip()
-                # Remove tags like HOT, NEW
+                # Remove tags like HOT, NEW, PICK
                 title = re.sub(r'\s*(HOT|NEW|PICK)\s*$', '', title).strip()
-                self.current_article = {'title': title}
+                
+                self.current_article = {
+                    'title': title,
+                    'section': self.current_section,
+                    'is_pick': self.is_claudes_pick
+                }
                 
             self.in_title = False
             self.capture_text = False
@@ -126,7 +129,6 @@ def extract_keywords(title, summary):
     """Extract searchable keywords from title and summary."""
     text = f"{title} {summary}".lower()
     
-    # Common tech/business terms to extract
     keywords = set()
     
     # Extract capitalized words (likely proper nouns)
@@ -145,11 +147,11 @@ def extract_keywords(title, summary):
         r'Anthropic|앤트로픽|클로드|Claude',
         r'반도체', r'HBM', r'AI|인공지능',
         r'로봇', r'자율주행', r'전기차|EV',
+        r'트럼프|Trump', r'중국|China',
     ]
     
     for pattern in korean_patterns:
         if re.search(pattern, text, re.IGNORECASE):
-            # Add the matched term
             match = re.search(pattern, text, re.IGNORECASE)
             if match:
                 keywords.add(match.group().lower())
@@ -182,13 +184,18 @@ def parse_briefing_file(filepath):
     result = []
     for article in articles:
         if article.get('title') and article.get('summary'):
-            article['date'] = date
-            article['file'] = filename.replace('.html', '')
-            article['keywords'] = extract_keywords(
-                article.get('title', ''),
-                article.get('summary', '')
-            )
-            result.append(article)
+            result.append({
+                'date': date,
+                'file': filename.replace('.html', ''),
+                'title': article['title'],
+                'summary': article['summary'],
+                'keywords': extract_keywords(
+                    article.get('title', ''),
+                    article.get('summary', '')
+                ),
+                'section': article.get('section', ''),
+                'is_pick': article.get('is_pick', False)
+            })
     
     return result
 
@@ -197,22 +204,29 @@ def build_search_index(archive_dir='archive'):
     """Build search index from all archive files."""
     if not os.path.exists(archive_dir):
         print(f"Archive directory '{archive_dir}' not found")
-        return {'articles': [], 'updated': datetime.now().isoformat()}
+        return {'articles': [], 'total': 0, 'updated': datetime.now().isoformat()}
     
     all_articles = []
+    pick_count = 0
     
     # Process all HTML files
     for filename in sorted(os.listdir(archive_dir), reverse=True):
         if filename.endswith('.html'):
             filepath = os.path.join(archive_dir, filename)
             articles = parse_briefing_file(filepath)
+            
+            # Count picks
+            picks = sum(1 for a in articles if a.get('is_pick'))
+            pick_count += picks
+            
             all_articles.extend(articles)
-            print(f"Parsed {filename}: {len(articles)} articles")
+            print(f"Parsed {filename}: {len(articles)} articles ({picks} picks)")
     
     # Create index
     index = {
         'articles': all_articles,
         'total': len(all_articles),
+        'picks': pick_count,
         'updated': datetime.now().isoformat()
     }
     
@@ -221,7 +235,7 @@ def build_search_index(archive_dir='archive'):
 
 def main():
     """Main entry point."""
-    print("Building search index...")
+    print("Building search index (v2 - with Claude's Pick)...")
     
     index = build_search_index('archive')
     
@@ -232,6 +246,7 @@ def main():
     
     print(f"\nSearch index created: {output_file}")
     print(f"Total articles indexed: {index['total']}")
+    print(f"Claude's Picks: {index['picks']}")
 
 
 if __name__ == '__main__':
