@@ -1,336 +1,578 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meta AI 투자 확대, Tesla Model S/X 단종, Microsoft 클라우드 성장 둔화</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
-            color: #e0e0e0;
-            min-height: 100vh;
-            line-height: 1.7;
-        }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            margin-bottom: 40px;
-        }
-        .date-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            padding: 8px 20px;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        h1 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #fff, #a0a0a0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
-        }
-        .subtitle { color: #888; font-size: 1rem; }
-        
-        .section { margin-bottom: 50px; }
-        .section-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #667eea;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .section-icon { font-size: 1.5rem; }
-        
-        .article {
-            background: rgba(255,255,255,0.03);
-            border-radius: 16px;
-            padding: 25px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255,255,255,0.08);
-            transition: all 0.3s ease;
-        }
-        .article:hover {
-            background: rgba(255,255,255,0.06);
-            border-color: rgba(102, 126, 234, 0.3);
-            transform: translateY(-2px);
-        }
-        .article-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-        .article h3 {
-            font-size: 1.15rem;
-            font-weight: 600;
-            color: #fff;
-            flex: 1;
-        }
-        .article h3 a {
-            color: inherit;
-            text-decoration: none;
-        }
-        .article h3 a:hover { color: #667eea; }
-        .source-badge {
-            background: rgba(102, 126, 234, 0.2);
-            color: #a0b4ff;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-        .article-summary {
-            color: #b0b0b0;
-            font-size: 0.95rem;
-            margin-bottom: 12px;
-        }
-        .article-meta {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            font-size: 0.8rem;
-            color: #666;
-        }
-        .value-score {
-            background: linear-gradient(135deg, #f093fb, #f5576c);
-            color: #fff;
-            padding: 2px 10px;
-            border-radius: 10px;
-            font-weight: 700;
-        }
-        
-        .picks-section {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 50px;
-            border: 1px solid rgba(102, 126, 234, 0.3);
-        }
-        .picks-section .section-title {
-            border-bottom-color: #f5576c;
-        }
-        
-        .brief-item {
-            padding: 15px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
-        .brief-item:last-child { border-bottom: none; }
-        .brief-item h4 {
-            font-size: 1rem;
-            margin-bottom: 8px;
-            color: #fff;
-        }
-        .brief-item h4 a {
-            color: inherit;
-            text-decoration: none;
-        }
-        .brief-item h4 a:hover { color: #667eea; }
-        .brief-item p {
-            color: #999;
-            font-size: 0.9rem;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            margin-top: 40px;
-        }
-        footer p { color: #555; font-size: 0.85rem; }
-        footer a { color: #667eea; text-decoration: none; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta AI 투자 $650억 | Tesla Model S/X 단종 | Fed 금리 동결</title>
+  <style>
+    :root {
+      --bg-primary: #0d1117;
+      --bg-secondary: #161b22;
+      --bg-tertiary: #21262d;
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --accent-blue: #58a6ff;
+      --accent-green: #3fb950;
+      --accent-yellow: #d29922;
+      --accent-red: #f85149;
+      --accent-purple: #a371f7;
+      --border-color: #30363d;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 30px;
+    }
+    .date-badge {
+      display: inline-block;
+      background: var(--accent-blue);
+      color: var(--bg-primary);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+    .summary {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .highlight-box {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .highlight-box h2 {
+      color: var(--accent-yellow);
+      font-size: 1rem;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .highlight-box ul {
+      list-style: none;
+    }
+    .highlight-box li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    .highlight-box li:last-child { border-bottom: none; }
+    .highlight-box strong { color: var(--text-primary); }
+    section {
+      margin-bottom: 35px;
+    }
+    section > h2 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .article {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 15px;
+      transition: border-color 0.2s;
+    }
+    .article:hover {
+      border-color: var(--accent-blue);
+    }
+    .article-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .article h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      flex: 1;
+      min-width: 200px;
+    }
+    .badge {
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .badge.hot { background: var(--accent-red); color: white; }
+    .badge.new { background: var(--accent-green); color: white; }
+    .badge.update { background: var(--accent-yellow); color: var(--bg-primary); }
+    .badge.pick { background: var(--accent-purple); color: white; }
+    .badge.breaking { background: #ff6b6b; color: white; }
+    .article-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .source {
+      font-size: 0.8rem;
+      color: var(--accent-blue);
+    }
+    .article-meta a {
+      font-size: 0.8rem;
+      color: var(--accent-green);
+      text-decoration: none;
+    }
+    .article-meta a:hover {
+      text-decoration: underline;
+    }
+    .article p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    .claude-pick {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border: 1px solid var(--accent-purple);
+    }
+    .market-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .market-item {
+      background: var(--bg-tertiary);
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .market-item .label {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-bottom: 5px;
+    }
+    .market-item .value {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .market-item .change {
+      font-size: 0.85rem;
+      margin-top: 3px;
+    }
+    .up { color: var(--accent-green); }
+    .down { color: var(--accent-red); }
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      border-top: 1px solid var(--border-color);
+      margin-top: 40px;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: var(--accent-blue);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+    .nav-links {
+      margin-top: 15px;
+    }
+    .nav-links a {
+      margin: 0 10px;
+    }
+    @media (max-width: 600px) {
+      body { padding: 15px; }
+      h1 { font-size: 1.3rem; }
+      .article { padding: 15px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="date-badge">2026년 1월 29일 목요일</div>
-            <h1>Jae's Briefing</h1>
-            <p class="subtitle">글로벌 테크 뉴스 브리핑</p>
-        </header>
-        
-        <section class="picks-section">
-            <h2 class="section-title"><span class="section-icon">⭐</span> Claude's Pick</h2>
-            
-            <article class="article">
-                <div class="article-header">
-                    <h3><a href="https://www.cnbc.com/2026/01/28/meta-q4-earnings-report-2025.html" target="_blank">Meta, Q4 실적 예상 상회하며 주가 10% 급등 - AI 투자에 월가 '청신호'</a></h3>
-                    <span class="source-badge">CNBC</span>
-                </div>
-                <p class="article-summary">Meta가 4분기 실적을 발표하며 예상을 크게 상회하는 매출 가이던스를 제시했습니다. Reality Labs는 분기 60억 달러 손실을 기록했지만(2025년 총 190억 달러 손실), 월가는 Zuckerberg의 AI 투자 확대에 긍정적 반응을 보였습니다. Zuckerberg는 "agentic commerce"가 AI의 다음 단계가 될 것이라며 AI 지출을 더욱 늘릴 계획을 밝혔습니다.</p>
-                <div class="article-meta">
-                    <span class="value-score">VS 9.5</span>
-                    <span>📊 홈페이지 TOP + 랭킹 + RSS 3중 확인</span>
-                </div>
-            </article>
-            
-            <article class="article">
-                <div class="article-header">
-                    <h3><a href="https://www.cnbc.com/2026/01/28/tesla-tsla-2025-q4-earnings.html" target="_blank">Tesla, 2025년 연매출 사상 첫 하락 기록 - Model S/X 단종, Optimus 전환</a></h3>
-                    <span class="source-badge">The Verge</span>
-                </div>
-                <p class="article-summary">Tesla가 연간 매출이 처음으로 하락하는 역사적 이정표를 기록했습니다. 이익은 46% 급감했으며, 이익의 절반 이상이 배출권 크레딧에서 발생했습니다. Musk는 Model S와 X 생산을 중단하고 프리몬트 공장 라인을 Optimus 로봇 생산으로 전환하겠다고 발표했습니다. 또한 Tesla는 Musk의 xAI에 20억 달러를 투자한다고 밝혔습니다.</p>
-                <div class="article-meta">
-                    <span class="value-score">VS 9.0</span>
-                    <span>📊 홈페이지 TOP + 랭킹 + RSS 3중 확인</span>
-                </div>
-            </article>
-            
-            <article class="article">
-                <div class="article-header">
-                    <h3><a href="https://www.cnbc.com/2026/01/28/microsoft-msft-q2-earnings-report-2026.html" target="_blank">Microsoft, 클라우드 성장 둔화로 주가 7% 하락 - Azure AI 투자 우려</a></h3>
-                    <span class="source-badge">CNBC</span>
-                </div>
-                <p class="article-summary">Microsoft가 2분기 실적을 발표했으나 Azure 클라우드 성장 둔화와 낮은 마진 가이던스로 주가가 7% 하락했습니다. OpenAI는 2024년에 76억 달러 매출을 달성했으며, Windows 11은 출시 후 Windows 10보다 빠르게 10억 사용자를 돌파했습니다.</p>
-                <div class="article-meta">
-                    <span class="value-score">VS 8.5</span>
-                    <span>📊 홈페이지 TOP + RSS 확인</span>
-                </div>
-            </article>
-        </section>
-        
-        <section class="section">
-            <h2 class="section-title"><span class="section-icon">🤖</span> AI & Big Tech</h2>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.cnbc.com/2026/01/29/samsung-record-q4-2025-profit-ai-hbm-ai-memory-chip-shortage.html" target="_blank">Samsung, Q4 이익 3배 급증 - AI 칩 수요로 메모리 부족 심화</a></h4>
-                <p>Samsung 4분기 이익이 AI HBM 메모리 수요에 힘입어 예상을 상회. AI 칩 수요가 메모리 부족 사태를 가속화하고 있으며, Apple은 iPhone 18 가격 유지 위해 RAM 공급 확보에 주력 중.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://arstechnica.com/google/2026/01/google-begins-rolling-out-chromes-auto-browse-ai-agent-today/" target="_blank">Google, Chrome 'Auto Browse' AI 에이전트 출시 시작</a></h4>
-                <p>Google이 AI Pro/Ultra 구독자 대상으로 Chrome에서 웹을 자동 탐색하는 AI 에이전트를 출시. 사용자 없이도 웹을 탐색할 수 있는 기능이지만 일부 제한 있음.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.bbc.com/news/articles/c39428dv18yo" target="_blank">Google DeepMind, DNA 분석 AI 도구 'AlphaGenome' 출시</a></h4>
-                <p>최대 100만 개의 DNA 코드를 분석할 수 있는 AI 모델 발표. 질병 발생 원인 규명과 새로운 치료법 개발에 기여할 것으로 기대.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://arstechnica.com/ai/2026/01/viral-ai-assistant-moltbot-rapidly-gains-popularity-but-poses-security-risks/" target="_blank">Moltbot, 바이럴 AI 어시스턴트로 부상 - 보안 우려도</a></h4>
-                <p>WhatsApp 기반 오픈소스 AI 어시스턴트 Moltbot(구 Clawdbot)이 빠르게 인기를 얻고 있으나, 파일/계정 접근 권한으로 인한 보안 리스크 경고. Anthropic 접촉 후 리브랜딩.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.scmp.com/tech/tech-trends/article/3341580/moonshots-newest-release-narrows-us-china-ai-model-development-gap-analysts" target="_blank">중국 Moonshot, Kimi K2.5로 미-중 AI 격차 축소</a></h4>
-                <p>Alibaba의 Qwen3-Max-Thinking과 함께 Moonshot의 Kimi K2.5가 OpenAI, Google에 도전. 미국의 첨단 칩 규제 효과에 의문 제기.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.scmp.com/tech/big-tech/article/3341568/beijing-clears-nvidias-h200-imports-ending-chip-uncertainty-china-tech-giants" target="_blank">중국, Nvidia H200 칩 수입 승인 - ByteDance·Alibaba·Tencent 대상</a></h4>
-                <p>40만 개 이상의 H200 칩이 중국 빅테크에 공급 예정. 기술 자립과 AI 수요 사이 균형 모색.</p>
-            </div>
-        </section>
-        
-        <section class="section">
-            <h2 class="section-title"><span class="section-icon">💼</span> Business & Finance</h2>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.cnbc.com/2026/01/28/amazon-layoffs-anti-bureaucracy-ai.html" target="_blank">Amazon, 16,000명 추가 감원 발표</a></h4>
-                <p>AI 전환과 팬데믹 후 구조조정의 일환으로 두 번째 대규모 감원 단행. "관료주의 제거와 소유권 강화" 목표.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.cnbc.com/2026/01/28/ibm-earnings-q4-2025.html" target="_blank">IBM, Q4 실적 호조로 주가 8% 급등 - AI 사업 125억 달러 돌파</a></h4>
-                <p>4분기 실적이 예상을 상회하며 AI 사업이 연간 125억 달러 규모로 성장.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.cnbc.com/2026/01/28/servicenow-now-q4-2025-earnings-report.html" target="_blank">ServiceNow, Q4 실적 예상 상회 - Anthropic 파트너십 발표</a></h4>
-                <p>4분기 실적 호조와 함께 Anthropic과의 AI 파트너십을 발표하며 기업 AI 시장 공략 강화.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.theverge.com/transportation/869603/tesla-q4-2025-earnings-revenue-profit-musk-robotaxis" target="_blank">Tesla, xAI에 20억 달러 투자 - Musk의 AI 야망 가속</a></h4>
-                <p>"AI 제품 개발 및 물리적 세계 배포 역량 강화" 목적. xAI는 2025년 첫 9개월 동안 78억 달러 소진.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.theverge.com/news/869008/meta-data-centers-ad-campaign" target="_blank">Snap, 스마트 안경 팀 자회사로 분사</a></h4>
-                <p>Spectacles 개발팀을 독립 회사로 전환하며 AR 하드웨어 사업 강화.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.cnbc.com/2026/01/29/gold-and-silver-keep-hitting-record-high-but-the-market-may-be-broken.html" target="_blank">금·은 가격 사상 최고치 경신 지속 - 시장 '고장' 우려</a></h4>
-                <p>금 3% 이상 급등하며 신고가 경신. Fed 금리 동결 속 안전자산 선호 심리 강화.</p>
-            </div>
-        </section>
-        
-        <section class="section">
-            <h2 class="section-title"><span class="section-icon">🌏</span> Tech Policy & Society</h2>
-            
-            <div class="brief-item">
-                <h4><a href="https://arstechnica.com/tech-policy/2026/01/us-cyber-defense-chief-accidentally-uploaded-secret-government-info-to-chatgpt/" target="_blank">美 사이버 방어 책임자, 기밀 정보 실수로 ChatGPT에 업로드</a></h4>
-                <p>대규모 해고와 폴리그래프 실패 후 의회 청문회에서 밝혀진 보안 사고.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.wired.com/story/ice-is-using-palantirs-ai-tools-to-sort-through-tips/" target="_blank">ICE, Palantir AI로 제보 분류 - 미니애폴리스 사태 지속</a></h4>
-                <p>지난 봄부터 ICE가 Palantir의 AI 시스템으로 제보를 요약 처리. Meta는 ICE List 링크 차단.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.bbc.com/news/articles/czr428rxg57o" target="_blank">Pornhub, 영국 신규 사용자 접근 차단 예고</a></h4>
-                <p>다음 주부터 연령 인증 없는 신규 사용자 차단. '결함 있는' 규제에 항의.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.theguardian.com/technology/2026/jan/29/internet-inventor-tim-berners-lee-interview-battle-soul-web" target="_blank">팀 버너스-리: "인터넷 영혼을 위한 전쟁 중"</a></h4>
-                <p>웹 창시자, 상업화로 인터넷이 "악의에 최적화"되었지만 협력과 연민으로 회복 가능하다고 주장.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.wired.com/story/the-doomsday-clock-is-now-85-seconds-to-midnight-heres-what-that-means/" target="_blank">종말 시계, 자정까지 85초로 단축</a></h4>
-                <p>AI, 핵위협, 기후변화 등 복합 위기로 역사상 가장 위험한 수준.</p>
-            </div>
-        </section>
-        
-        <section class="section">
-            <h2 class="section-title"><span class="section-icon">🚗</span> Mobility & Hardware</h2>
-            
-            <div class="brief-item">
-                <h4><a href="https://restofworld.org/2026/robotaxis-gulf-china/" target="_blank">중국 로보택시, 걸프 지역 장악 - 미국 경쟁사 부재</a></h4>
-                <p>WeRide, Baidu, Pony.ai가 걸프 전역에서 로보택시 확장. Waymo, Cruise는 국내 시장에 집중.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.theverge.com/tech/852121/roborock-saros-rover-stair-climbing-robot-vacuum-ces-2026" target="_blank">Waabi, 10억 달러 투자 유치 - Uber와 로보택시 협력</a></h4>
-                <p>자율주행 트럭 스타트업 Waabi가 Uber와 로보택시 협력 발표하며 대규모 투자 유치.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.theverge.com/news/869008/meta-data-centers-ad-campaign" target="_blank">Redwood Materials, Google 등으로부터 4.25억 달러 유치</a></h4>
-                <p>前 Tesla CTO JB Straubel이 이끄는 배터리 재활용 기업, 에너지 저장 플랫폼 확장.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.wired.com/story/humanoid-robot-butler-sprout-fauna/" target="_blank">Fauna Robotics, '물리적으로 안전한' 소프트 휴머노이드 로봇 공개</a></h4>
-                <p>칫솔 가져다주는 수준의 가정용 로봇 버틀러 'Sprout' 발표.</p>
-            </div>
-            
-            <div class="brief-item">
-                <h4><a href="https://www.scmp.com/tech/big-tech/article/3341229/chinas-eyou-opens-worlds-first-automated-line-humanoid-robot-joints" target="_blank">중국 Eyou, 세계 최초 휴머노이드 로봇 관절 자동화 라인 가동</a></h4>
-                <p>2027년까지 10만 대 휴머노이드 로봇 출하 예상에 대비한 선제적 투자.</p>
-            </div>
-        </section>
-        
-        <footer>
-            <p>Jae's Briefing · <a href="https://hong4137.github.io/briefing">Archive</a></p>
-            <p style="margin-top: 10px;">12개 매체 RSS + 홈페이지 크롤링 기반 Value Score 산출</p>
-        </footer>
+  <header>
+    <div class="date-badge">2026년 1월 29일 목요일</div>
+    <h1>Meta AI 투자 $650억 | Tesla Model S/X 단종 | Fed 금리 동결</h1>
+    <p class="summary">Meta Q4 실적 예상 상회하며 AI 투자 $600-650억 확대 발표. Tesla Model S/X 단종하고 Optimus 로봇 생산 전환. Fed 금리 동결 속 금값 3% 급등 신고가. SK Hynix·Samsung AI 메모리 호황으로 사상 최대 실적.</p>
+  </header>
+
+  <div class="highlight-box">
+    <h2>📌 오늘의 핵심</h2>
+    <ul>
+      <li><strong>Meta:</strong> Q4 매출 $485억 예상 상회, Reality Labs $60억 손실에도 AI 인프라 투자 $600-650억 계획</li>
+      <li><strong>Tesla:</strong> 2025년 이익 46% 급감, Model S/X 단종 후 프리몬트 공장 Optimus 로봇 생산 전환</li>
+      <li><strong>Microsoft:</strong> Azure 성장률 31%로 둔화, AI 수요 대비 공급 부족 인정하며 주가 7% 하락</li>
+      <li><strong>Fed:</strong> 금리 동결 결정, Powell "경제 견고한 기반 위에" 발언</li>
+      <li><strong>금값:</strong> 3% 급등하며 사상 최고가 경신, 안전자산 수요 급증</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>🔥 TOP Headlines</h2>
+    
+    <article class="article">
+      <div class="article-header">
+        <h3>Meta Q4 실적 예상 상회, AI 투자 $650억 확대</h3>
+        <span class="badge hot">HOT</span>
+      </div>
+      <div class="article-meta">
+        <span class="source">TechCrunch, CNBC, Bloomberg</span>
+        <a href="https://techcrunch.com/2026/01/28/meta-burned-19-billion-on-vr-last-year-and-2026-wont-be-any-better/" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Meta가 4분기 매출 $485억으로 시장 예상을 상회했다. Reality Labs 부문이 $60억 손실을 기록했음에도 Zuckerberg는 2026년 AI 인프라 투자를 $600-650억으로 확대한다고 발표. 월가는 AI 투자 지속에 청신호를 보내며 주가 상승.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>Tesla Model S/X 단종, Optimus 로봇 생산 전환</h3>
+        <span class="badge hot">HOT</span>
+      </div>
+      <div class="article-meta">
+        <span class="source">TechCrunch, CNBC, Bloomberg</span>
+        <a href="https://techcrunch.com/2026/01/28/tesla-is-killing-off-the-model-s-and-model-x/" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Tesla가 2025년 이익 46% 급감을 발표하며 Model S와 Model X 생산 중단을 선언했다. 프리몬트 공장 생산라인을 Optimus 휴머노이드 로봇 제조로 전환할 계획. Musk는 Tesla가 xAI에 $20억을 투자할 것이라고 밝혔다.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>Microsoft 클라우드 성장 둔화, 주가 7% 하락</h3>
+        <span class="badge hot">HOT</span>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC, Bloomberg, TechCrunch</span>
+        <a href="https://www.cnbc.com/2026/01/28/microsoft-msft-q2-earnings-report-2026.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Microsoft Azure 성장률이 31%로 둔화되며 주가가 7% 하락했다. AI 수요 대비 공급 부족을 인정하면서도 OpenAI로부터 분기 $76억 수익을 올렸다고 발표.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>SK Hynix, Samsung 제치고 연간 이익 1위 등극</h3>
+        <span class="badge new">NEW</span>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC, Bloomberg</span>
+        <a href="https://www.cnbc.com/2026/01/29/sk-hynix-beats-samsung-2025-profit-ai-memory-hbm.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>SK Hynix가 AI 메모리 수요 폭발로 사상 최대 분기 실적을 기록하며 처음으로 Samsung을 제치고 연간 이익 1위에 올랐다. 글로벌 AI 칩 수요가 메모리 업계 판도를 재편하고 있다.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>🤖 AI/기술</h2>
+    
+    <article class="article">
+      <div class="article-header">
+        <h3>Chrome, Gemini AI 통합으로 에이전트 브라우저로 진화</h3>
+        <span class="badge new">NEW</span>
+      </div>
+      <div class="article-meta">
+        <span class="source">TechCrunch</span>
+        <a href="https://techcrunch.com/2026/01/28/chrome-takes-on-ai-browsers-with-tighter-gemini-integration-agentic-features-for-autonomous-tasks/" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Google이 Chrome 브라우저에 Gemini AI를 깊이 통합하며 자율 태스크 수행이 가능한 에이전트 기능을 추가했다. AI 브라우저 경쟁에서 선제적 대응.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>Anthropic $200억 투자 유치 협상, Microsoft·Nvidia 참여</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">TechCrunch, CNBC</span>
+        <a href="https://techcrunch.com/2026/01/27/anthropic-reportedly-upped-its-latest-raise-to-20b/" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Anthropic이 Microsoft와 Nvidia 참여로 $200억 밸류에이션 투자 유치를 협상 중이다. OpenAI와의 AI 양강 구도가 더욱 굳어지는 모습.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>DeepSeek, AI 검색·에이전트로 사업 확장</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/28/chinese-tech-companies-accelerate-ai-model-rollouts-us-rivals-deepseek-moonshot-kimi.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>중국 AI 스타트업 DeepSeek이 AI 검색과 에이전트 분야로 확장 계획을 드러냈다. Alibaba, Moonshot 등도 새 모델을 출시하며 미국 기업들과 경쟁 가속화.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>ServiceNow, Anthropic과 AI 파트너십 체결</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">TechCrunch</span>
+        <a href="https://techcrunch.com/2026/01/28/servicenow-inks-another-ai-partnership-this-time-with-anthropic/" target="_blank">원문 보기 →</a>
+      </div>
+      <p>엔터프라이즈 소프트웨어 기업 ServiceNow가 Anthropic과 AI 파트너십을 체결했다. 기업용 AI 시장에서 Claude 모델 통합이 확대되고 있다.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>💰 경제/금융</h2>
+    
+    <article class="article">
+      <div class="article-header">
+        <h3>Fed 금리 동결, Powell "경제 견고한 기반"</h3>
+        <span class="badge breaking">BREAKING</span>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/28/fed-rate-decision-january-2026.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>연준이 예상대로 기준금리를 동결했다. Powell 의장은 "경제가 견고한 기반 위에 있으며 현재 금리 수준은 제한적이지 않다"고 발언.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>금값 3% 급등, 사상 최고가 경신</h3>
+        <span class="badge hot">HOT</span>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/29/gold-and-silver-keep-hitting-record-high-but-the-market-may-be-broken.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>금 가격이 3% 이상 급등하며 사상 최고가를 다시 경신했다. 일부 전문가들은 "귀금속 시장이 '고장났다'"며 과열 가능성을 제기.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>Home Depot 800명 감원, 5일 출근제 발표</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/28/home-depot-layoffs-return-to-office.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Home Depot가 800명을 감원하고 본사 직원들에게 주 5일 사무실 출근을 의무화했다. RTO(Return to Office) 정책이 대기업으로 확산.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>JPMorgan·BofA, 직원 Trump Accounts $1,000 매칭</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/28/jpmorgan-chase-trump-accounts.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>JPMorgan Chase와 Bank of America가 직원들의 'Trump Accounts' 기여금에 $1,000까지 매칭해주겠다고 발표했다.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>📱 플랫폼/소셜</h2>
+    
+    <article class="article">
+      <div class="article-header">
+        <h3>Pinterest 감원, AI 전환 가속</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/27/pinterest-layoffs-stock-ai.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Pinterest가 인력을 감원하고 AI에 리소스를 재배치한다고 발표했다. 소셜미디어 기업들의 AI 피벗이 본격화.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>Snap, AR 안경 사업 자회사 분리</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">TechCrunch</span>
+        <a href="https://techcrunch.com/2026/01/28/snap-gets-serious-about-specs-spins-ar-glasses-into-standalone-company/" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Snap이 AR 안경 사업을 독립 자회사로 분리했다. Meta와 Apple의 스마트글래스 경쟁에 Snap도 가세.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>Apple, Patreon에 인앱 결제 전환 요구</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">TechCrunch</span>
+        <a href="https://techcrunch.com/2026/01/28/apple-tells-patreon-to-move-creators-to-in-app-purchase-for-subscriptions-by-november/" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Apple이 Patreon에 11월까지 크리에이터 구독을 인앱 결제로 전환하라고 요구했다. 30% 수수료 정책 확대.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>Carvana 주가 14% 급락, 공매도 리포트 영향</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/28/carvana-shares-fall-14percent-following-short-seller-accusations.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>온라인 중고차 업체 Carvana 주가가 공매도 세력의 리포트 발표 후 14% 급락했다.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>🔧 하드웨어/기타</h2>
+    
+    <article class="article">
+      <div class="article-header">
+        <h3>Advantest 주가 14% 급등, AI 칩 테스터 수요 폭발</h3>
+        <span class="badge new">NEW</span>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/29/advantest-shares-jump-record-quarterly-sales-ai-tester-demand-q3-2025-forecast-q4-chip-testing.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>AI 칩 테스트 장비 기업 Advantest 주가가 14% 급등했다. 사상 최대 분기 매출을 기록하며 이익 전망치도 상향.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>Samsung 이익 3배 증가, AI 메모리 호황</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/29/samsung-record-q4-2025-profit-ai-hbm-ai-memory-chip-shortage.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Samsung이 AI 칩 수요로 분기 이익이 3배 증가했다. HBM 시장에서 SK Hynix에 뒤처졌지만 전반적인 메모리 호황 수혜.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>Micron, 싱가포르에 $240억 투자</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/27/micron-24-billion-singapore-nand-dram-expansion-ai-memory-shortages.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Micron이 싱가포르 공장에 $240억을 투자해 NAND/DRAM 생산을 확대한다. 메모리 부족은 2027년까지 지속될 전망.</p>
+    </article>
+
+    <article class="article">
+      <div class="article-header">
+        <h3>Zoox 자율주행차, 샌프란시스코서 충돌 사고</h3>
+      </div>
+      <div class="article-meta">
+        <span class="source">TechCrunch</span>
+        <a href="https://techcrunch.com/2026/01/28/san-francisco-police-department-investigating-zoox-collision-with-a-parked-car/" target="_blank">원문 보기 →</a>
+      </div>
+      <p>Amazon 자회사 Zoox의 자율주행차가 샌프란시스코에서 주차된 차량과 충돌했다. 경찰이 조사 중.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>💎 Claude's Pick</h2>
+    
+    <article class="article claude-pick">
+      <div class="article-header">
+        <h3>Moltbot, 바이럴 확산 중인 로컬 AI 에이전트</h3>
+        <span class="badge pick">PICK</span>
+      </div>
+      <div class="article-meta">
+        <span class="source">TechCrunch</span>
+        <a href="https://techcrunch.com/2026/01/27/everything-you-need-to-know-about-viral-personal-ai-assistant-clawdbot-now-moltbot/" target="_blank">원문 보기 →</a>
+      </div>
+      <p>오픈소스 AI 에이전트 Moltbot(구 Clawdbot)이 빠르게 확산 중이다. 로컬에서 실행되며 스크린샷 기반으로 컴퓨터를 자동화할 수 있는 개인 비서.</p>
+    </article>
+
+    <article class="article claude-pick">
+      <div class="article-header">
+        <h3>싱가포르, 투자자들의 새로운 피난처로 부상</h3>
+        <span class="badge pick">PICK</span>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/29/investing-in-singapore-many-happy-returns-or-more-of-a-refuge.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>글로벌 불확실성 속에서 싱가포르가 투자자들의 피난처로 부상하고 있다. 안정적인 규제 환경과 아시아 허브 역할이 매력 포인트.</p>
+    </article>
+
+    <article class="article claude-pick">
+      <div class="article-header">
+        <h3>중국 휴머노이드 로봇, 글로벌 확장 가속</h3>
+        <span class="badge pick">PICK</span>
+      </div>
+      <div class="article-meta">
+        <span class="source">CNBC</span>
+        <a href="https://www.cnbc.com/2026/01/28/cnbc-china-connection-newsletter-humanoid-robots-middle-east-us-limx-tesla-optimus.html" target="_blank">원문 보기 →</a>
+      </div>
+      <p>중국산 휴머노이드 로봇이 중동과 미국 시장 진출을 추진 중이다. Tesla Optimus가 아직 시장에 나오지 않은 사이 빠르게 선점 움직임.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>📊 주요 시장 동향</h2>
+    <div class="market-section">
+      <div class="market-item">
+        <div class="label">금 (Gold)</div>
+        <div class="value">$5,150+</div>
+        <div class="change up">▲ 3%+ 신고가</div>
+      </div>
+      <div class="market-item">
+        <div class="label">S&P 500</div>
+        <div class="value">7,000</div>
+        <div class="change">일시 돌파 후 보합</div>
+      </div>
+      <div class="market-item">
+        <div class="label">META</div>
+        <div class="value">$668+</div>
+        <div class="change up">▲ 시간외 상승</div>
+      </div>
+      <div class="market-item">
+        <div class="label">MSFT</div>
+        <div class="value">하락</div>
+        <div class="change down">▼ 7% 급락</div>
+      </div>
+      <div class="market-item">
+        <div class="label">INTC</div>
+        <div class="value">$48.78</div>
+        <div class="change up">▲ 11%</div>
+      </div>
+      <div class="market-item">
+        <div class="label">SK Hynix</div>
+        <div class="value">신고가</div>
+        <div class="change up">▲ AI 메모리 호황</div>
+      </div>
     </div>
+  </section>
+
+  <section>
+    <h2>📌 이벤트 예고</h2>
+    <div class="highlight-box">
+      <ul>
+        <li><strong>1/30 (금):</strong> Apple Q1 실적 발표 예정</li>
+        <li><strong>1/30 (금):</strong> 미 정부 셧다운 기한 - 공화당 탈출구 모색 중</li>
+        <li><strong>계속:</strong> 영국 총리 Starmer 중국 방문 중 - Airbus, HSBC 등 경제인 동행</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>📰 오늘 브리핑: 기사 20개 | 섹션 5개 | Pick 3개</p>
+    <p>TechCrunch, CNBC, Bloomberg 종합</p>
+    <div class="nav-links">
+      <a href="https://hong4137.github.io/briefing/">🏠 홈</a>
+      <a href="https://hong4137.github.io/briefing/archive/">📚 아카이브</a>
+    </div>
+    <p style="margin-top: 15px;">Jae's Foreign News Briefing</p>
+  </footer>
 </body>
 </html>
