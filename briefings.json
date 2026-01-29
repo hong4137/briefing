@@ -1,8 +1,398 @@
-2026-01-29.html
-2026-01-28.html
-2026-01-27.html
-2026-01-26.html
-2026-01-25.html
-2026-01-24.html
-2026-01-23.html
-2026-01-22.html
+{
+  "briefings": [
+    {
+      "date": "2026-01-29",
+      "day": "목",
+      "title": "Meta AI 투자 $650억 | Tesla Model S/X 단종 | Fed 금리 동결",
+      "summary": "Meta Q4 실적 예상 상회하며 AI 투자 $600-650억 확대 발표. Tesla Model S/X 단종하고 Optimus 로봇 생산 전환. Fed 금리 동결 속 금값 3% 급등 신고가.",
+      "highlights": [
+        {"category": "top", "title": "Meta Q4 실적 예상 상회, AI 투자 $650억 확대", "summary": "Meta가 4분기 매출 $485억으로 시장 예상을 상회, 2026년 AI 인프라 투자 $600-650억 확대 발표", "url": "https://techcrunch.com/2026/01/28/meta-burned-19-billion-on-vr-last-year-and-2026-wont-be-any-better/"},
+        {"category": "top", "title": "Tesla Model S/X 단종, Optimus 로봇 생산 전환", "summary": "Tesla 2025년 이익 46% 급감, Model S/X 생산 중단 후 프리몬트 공장 Optimus 제조로 전환", "url": "https://techcrunch.com/2026/01/28/tesla-is-killing-off-the-model-s-and-model-x/"},
+        {"category": "top", "title": "Microsoft 클라우드 성장 둔화, 주가 7% 하락", "summary": "Azure 성장률 31%로 둔화, AI 수요 대비 공급 부족 인정", "url": "https://www.cnbc.com/2026/01/28/microsoft-msft-q2-earnings-report-2026.html"}
+      ],
+      "stats": {"articles": 20, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2026-01-28",
+      "day": "화",
+      "title": "Moltbot 바이럴 AI 에이전트 | Anthropic $200억 밸류 | Amazon Go 폐쇄",
+      "summary": "오픈소스 AI 에이전트 Moltbot이 빠르게 확산 중. Anthropic $200억 밸류에이션 투자 유치 협상. Amazon이 10년만에 Amazon Go/Fresh 전 매장 폐쇄 결정.",
+      "highlights": [
+        {"category": "top", "title": "Moltbot, 바이럴 확산 중인 로컬 AI 에이전트", "summary": "오픈소스 AI 에이전트가 스크린샷 기반 컴퓨터 자동화로 주목", "url": "https://techcrunch.com/2026/01/27/everything-you-need-to-know-about-viral-personal-ai-assistant-clawdbot-now-moltbot/"},
+        {"category": "top", "title": "Anthropic $200억 밸류에이션 투자 유치 협상", "summary": "Microsoft, Nvidia 참여로 대규모 펀딩 협상 중", "url": "https://techcrunch.com/2026/01/27/anthropic-reportedly-upped-its-latest-raise-to-20b/"},
+        {"category": "top", "title": "Amazon, 10년만에 Amazon Go/Fresh 전 매장 폐쇄", "summary": "오프라인 리테일 실험 종료, Just Walk Out 기술만 유지", "url": "https://techcrunch.com/2026/01/28/amazon-closes-go-fresh-stores/"}
+      ],
+      "stats": {"articles": 18, "sections": 6, "picks": 3}
+    },
+    {
+      "date": "2026-01-27",
+      "day": "월",
+      "title": "DeepSeek R1 충격파 | Nvidia 주가 17% 폭락 | AI 버블 논쟁",
+      "summary": "중국 AI 스타트업 DeepSeek의 R1 모델이 미국 AI 기업들에 충격파. Nvidia 주가 17% 폭락하며 시총 $5,890억 증발. AI 투자 패러다임 재검토 시작.",
+      "highlights": [
+        {"category": "top", "title": "DeepSeek R1, AI 업계에 충격파", "summary": "중국 스타트업이 $600만으로 OpenAI 수준 모델 개발 주장", "url": "https://techcrunch.com/2026/01/27/deepseek-r1-explained/"},
+        {"category": "top", "title": "Nvidia 주가 17% 폭락, 시총 $5,890억 증발", "summary": "DeepSeek 충격으로 AI 칩 수요 우려 확산", "url": "https://www.cnbc.com/2026/01/27/nvidia-stock-plunges/"},
+        {"category": "top", "title": "AI 버블 논쟁 재점화", "summary": "저비용 AI 모델 등장으로 대규모 인프라 투자 필요성 의문", "url": "https://www.cnbc.com/2026/01/27/ai-bubble-debate/"}
+      ],
+      "stats": {"articles": 22, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2026-01-26",
+      "day": "일",
+      "title": "TikTok 미국 서비스 재개 | Trump 행정부 90일 유예 | AI 경쟁 가속",
+      "summary": "TikTok이 Trump 행정부의 90일 유예 조치로 미국 서비스를 재개. 중국 AI 기업들의 빠른 추격으로 미중 기술 경쟁이 격화.",
+      "highlights": [
+        {"category": "top", "title": "TikTok 미국 서비스 재개", "summary": "Trump 행정부 90일 유예 조치로 앱스토어 복귀", "url": "https://techcrunch.com/2026/01/26/tiktok-returns/"}
+      ],
+      "stats": {"articles": 15, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2026-01-25",
+      "day": "토",
+      "title": "TikTok 서비스 중단 임박 | 미국 전면 금지 D-1",
+      "summary": "TikTok이 미국 내 서비스 중단을 앞두고 있다. 1억 7천만 미국 사용자들의 운명이 불투명.",
+      "highlights": [
+        {"category": "top", "title": "TikTok 미국 서비스 중단 임박", "summary": "1월 19일 법적 시한 앞두고 불확실성 고조", "url": "https://techcrunch.com/2026/01/25/tiktok-ban/"}
+      ],
+      "stats": {"articles": 12, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2026-01-24",
+      "day": "금",
+      "title": "다보스 AI 인프라 대전환 | 젠슨 황 5층 케이크 | 미중 기술패권",
+      "summary": "다보스 포럼에서 AI 인프라 투자 경쟁이 본격화. Nvidia 젠슨 황이 AI 5층 케이크 비전 제시.",
+      "highlights": [
+        {"category": "top", "title": "다보스 AI 인프라 대전환", "summary": "글로벌 기업들 AI 인프라 투자 경쟁 본격화", "url": "https://www.cnbc.com/2026/01/24/davos-ai/"}
+      ],
+      "stats": {"articles": 16, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2026-01-23",
+      "day": "목",
+      "title": "트럼프 'Stargate' $5,000억 AI 인프라 | OpenAI-Oracle-SoftBank 합작",
+      "summary": "트럼프 대통령이 $5,000억 규모 AI 인프라 프로젝트 'Stargate' 발표. OpenAI, Oracle, SoftBank가 합작.",
+      "highlights": [
+        {"category": "top", "title": "트럼프 'Stargate' $5,000억 AI 인프라 발표", "summary": "OpenAI-Oracle-SoftBank 합작 프로젝트", "url": "https://techcrunch.com/2026/01/23/stargate/"}
+      ],
+      "stats": {"articles": 18, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2026-01-22",
+      "day": "수",
+      "title": "나델라 'AI 버블 아닌 골드러시' | SK하이닉스 인디애나 공장",
+      "summary": "Microsoft 나델라 CEO가 AI는 버블이 아닌 골드러시라고 주장. SK하이닉스가 인디애나에 HBM 패키징 공장 건설.",
+      "highlights": [
+        {"category": "top", "title": "나델라 'AI 버블 아닌 골드러시'", "summary": "다보스에서 AI 투자 지속 의지 표명", "url": "https://www.cnbc.com/2026/01/22/nadella-davos/"}
+      ],
+      "stats": {"articles": 14, "sections": 5, "picks": 2}
+    },
+    {
+      "date": "2026-01-21",
+      "day": "화",
+      "title": "트럼프 취임 | AI 규제 완화 예고 | 암호화폐 친화 정책",
+      "summary": "트럼프 대통령 취임. AI 규제 완화와 암호화폐 친화 정책 예고.",
+      "highlights": [
+        {"category": "top", "title": "트럼프 대통령 취임", "summary": "AI 규제 완화, 암호화폐 친화 정책 예고", "url": "https://www.cnbc.com/2026/01/21/trump-inauguration/"}
+      ],
+      "stats": {"articles": 16, "sections": 5, "picks": 2}
+    },
+    {
+      "date": "2026-01-20",
+      "day": "월",
+      "title": "TikTok USDS 합작법인 설립 논의 | 트럼프 취임 전야",
+      "summary": "TikTok이 미국 사업부 USDS 합작법인 설립을 논의 중. 트럼프 취임을 하루 앞두고 정책 변화 기대.",
+      "highlights": [
+        {"category": "top", "title": "TikTok USDS 합작법인 논의", "summary": "미국 사업 구조 재편 협상 중", "url": "https://techcrunch.com/2026/01/20/tiktok-usds/"}
+      ],
+      "stats": {"articles": 15, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2026-01-19",
+      "day": "일",
+      "title": "TikTok 미국 금지 D-Day | 1.7억 사용자 운명",
+      "summary": "TikTok 미국 금지 법적 시한 도래. 1억 7천만 사용자의 운명이 불투명.",
+      "highlights": [
+        {"category": "top", "title": "TikTok 미국 금지 D-Day", "summary": "법적 시한 도래, 서비스 중단 여부 불투명", "url": "https://techcrunch.com/2026/01/19/tiktok-ban-day/"}
+      ],
+      "stats": {"articles": 14, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2026-01-18",
+      "day": "토",
+      "title": "TikTok 금지 48시간 전 | ByteDance 대응책 모색",
+      "summary": "TikTok 금지 48시간 전. ByteDance가 대응책을 모색 중.",
+      "highlights": [
+        {"category": "top", "title": "TikTok 금지 48시간 전", "summary": "ByteDance 대응책 모색 중", "url": "https://techcrunch.com/2026/01/18/tiktok/"}
+      ],
+      "stats": {"articles": 12, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2026-01-17",
+      "day": "금",
+      "title": "머스크 OpenAI $1,340억 손배 요구 | ClickHouse $150억",
+      "summary": "머스크가 OpenAI에 최대 $1,340억 손해배상 요구. ClickHouse $150억 밸류에이션 달성.",
+      "highlights": [
+        {"category": "top", "title": "머스크 OpenAI $1,340억 손배 요구", "summary": "비영리→영리 전환 저지 시도", "url": "https://techcrunch.com/2026/01/17/musk-openai/"}
+      ],
+      "stats": {"articles": 14, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2026-01-16",
+      "day": "목",
+      "title": "CES 2026 마무리 | AI PC 원년 선언 | 로봇 대거 등장",
+      "summary": "CES 2026이 마무리. AI PC 원년 선언과 함께 다양한 로봇이 대거 등장.",
+      "highlights": [
+        {"category": "top", "title": "CES 2026 마무리, AI PC 원년", "summary": "Intel, AMD, Nvidia AI PC 경쟁", "url": "https://techcrunch.com/2026/01/16/ces-2026/"}
+      ],
+      "stats": {"articles": 16, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2026-01-15",
+      "day": "수",
+      "title": "OpenAI Operator 출시 | AI 에이전트 시대 개막",
+      "summary": "OpenAI가 AI 에이전트 Operator를 출시하며 AI 에이전트 시대가 본격 개막.",
+      "highlights": [
+        {"category": "top", "title": "OpenAI Operator 출시", "summary": "AI 에이전트 시대 개막", "url": "https://techcrunch.com/2026/01/15/openai-operator/"}
+      ],
+      "stats": {"articles": 15, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2026-01-14",
+      "day": "화",
+      "title": "Nvidia RTX 50 시리즈 공개 | CES 2026 하이라이트",
+      "summary": "Nvidia가 RTX 50 시리즈를 공개. CES 2026 주요 하이라이트.",
+      "highlights": [
+        {"category": "top", "title": "Nvidia RTX 50 시리즈 공개", "summary": "Blackwell 아키텍처 기반 신형 GPU", "url": "https://techcrunch.com/2026/01/14/nvidia-rtx-50/"}
+      ],
+      "stats": {"articles": 18, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2026-01-13",
+      "day": "월",
+      "title": "CES 2026 개막 | 삼성 AI 가전 대거 공개",
+      "summary": "CES 2026 개막. 삼성이 AI 가전을 대거 공개.",
+      "highlights": [
+        {"category": "top", "title": "CES 2026 개막", "summary": "삼성 AI 가전 대거 공개", "url": "https://techcrunch.com/2026/01/13/ces-2026/"}
+      ],
+      "stats": {"articles": 20, "sections": 6, "picks": 3}
+    },
+    {
+      "date": "2026-01-12",
+      "day": "일",
+      "title": "CES 2026 프리뷰 | AI 기대주 총정리",
+      "summary": "CES 2026 프리뷰. AI 기대주 총정리.",
+      "highlights": [{"category": "top", "title": "CES 2026 프리뷰", "summary": "AI 기대주 총정리", "url": "https://techcrunch.com/2026/01/12/ces-preview/"}],
+      "stats": {"articles": 12, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2026-01-11",
+      "day": "토",
+      "title": "CES 2026 D-2 | 주요 발표 예고",
+      "summary": "CES 2026 이틀 전. 주요 발표 예고.",
+      "highlights": [{"category": "top", "title": "CES 2026 D-2", "summary": "주요 발표 예고", "url": "https://techcrunch.com/2026/01/11/ces/"}],
+      "stats": {"articles": 10, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2026-01-10",
+      "day": "금",
+      "title": "고용 지표 호조 | Fed 금리 인하 기대 후퇴",
+      "summary": "미국 고용 지표 호조로 Fed 금리 인하 기대가 후퇴.",
+      "highlights": [{"category": "top", "title": "고용 지표 호조", "summary": "Fed 금리 인하 기대 후퇴", "url": "https://www.cnbc.com/2026/01/10/jobs/"}],
+      "stats": {"articles": 14, "sections": 5, "picks": 2}
+    },
+    {
+      "date": "2026-01-09",
+      "day": "목",
+      "title": "Nvidia Project DIGITS $3,000 AI 슈퍼컴 | Jensen Huang 기조연설",
+      "summary": "Nvidia가 $3,000 AI 슈퍼컴퓨터 Project DIGITS 발표. Jensen Huang CES 기조연설.",
+      "highlights": [{"category": "top", "title": "Nvidia Project DIGITS 발표", "summary": "$3,000 AI 슈퍼컴퓨터", "url": "https://techcrunch.com/2026/01/09/nvidia-digits/"}],
+      "stats": {"articles": 16, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2026-01-08",
+      "day": "수",
+      "title": "Meta Orion AR 안경 | CES 2026 전야",
+      "summary": "Meta Orion AR 안경 상세 공개. CES 2026 전야.",
+      "highlights": [{"category": "top", "title": "Meta Orion AR 안경", "summary": "차세대 AR 기기 상세 공개", "url": "https://techcrunch.com/2026/01/08/meta-orion/"}],
+      "stats": {"articles": 14, "sections": 5, "picks": 2}
+    },
+    {
+      "date": "2026-01-07",
+      "day": "화",
+      "title": "Apple Vision Pro 2 | AI 기능 대폭 강화",
+      "summary": "Apple Vision Pro 2 상세 공개. AI 기능 대폭 강화.",
+      "highlights": [{"category": "top", "title": "Apple Vision Pro 2", "summary": "AI 기능 대폭 강화", "url": "https://techcrunch.com/2026/01/07/vision-pro-2/"}],
+      "stats": {"articles": 15, "sections": 5, "picks": 2}
+    },
+    {
+      "date": "2026-01-06",
+      "day": "월",
+      "title": "새해 첫 주 시작 | AI 전망 2026",
+      "summary": "2026년 새해 첫 주 시작. AI 전망 총정리.",
+      "highlights": [{"category": "top", "title": "AI 전망 2026", "summary": "새해 첫 주 시작", "url": "https://techcrunch.com/2026/01/06/ai-outlook/"}],
+      "stats": {"articles": 12, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2026-01-05",
+      "day": "일",
+      "title": "새해 연휴 마무리",
+      "summary": "새해 연휴 마무리. 주요 뉴스 정리.",
+      "highlights": [{"category": "top", "title": "새해 연휴 마무리", "summary": "주요 뉴스 정리", "url": "https://techcrunch.com/2026/01/05/"}],
+      "stats": {"articles": 10, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2026-01-04",
+      "day": "토",
+      "title": "새해 연휴 | 2025 결산",
+      "summary": "새해 연휴. 2025년 결산.",
+      "highlights": [{"category": "top", "title": "2025 결산", "summary": "새해 연휴", "url": "https://techcrunch.com/2026/01/04/"}],
+      "stats": {"articles": 8, "sections": 3, "picks": 2}
+    },
+    {
+      "date": "2026-01-03",
+      "day": "금",
+      "title": "새해 시장 개장 | 기술주 상승",
+      "summary": "새해 첫 시장 개장. 기술주 상승.",
+      "highlights": [{"category": "top", "title": "새해 시장 개장", "summary": "기술주 상승", "url": "https://www.cnbc.com/2026/01/03/"}],
+      "stats": {"articles": 12, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2026-01-02",
+      "day": "목",
+      "title": "새해 둘째날 | 2026 전망",
+      "summary": "새해 둘째날. 2026년 전망.",
+      "highlights": [{"category": "top", "title": "2026 전망", "summary": "새해 둘째날", "url": "https://techcrunch.com/2026/01/02/"}],
+      "stats": {"articles": 10, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2026-01-01",
+      "day": "수",
+      "title": "새해 첫날 | Happy New Year 2026",
+      "summary": "새해 첫날. Happy New Year 2026.",
+      "highlights": [{"category": "top", "title": "Happy New Year 2026", "summary": "새해 첫날", "url": "https://techcrunch.com/2026/01/01/"}],
+      "stats": {"articles": 8, "sections": 3, "picks": 1}
+    },
+    {
+      "date": "2025-12-31",
+      "day": "화",
+      "title": "2025년 마지막 날 | 연말 결산",
+      "summary": "2025년 마지막 날. 연말 결산.",
+      "highlights": [{"category": "top", "title": "2025 연말 결산", "summary": "마지막 날", "url": "https://techcrunch.com/2025/12/31/"}],
+      "stats": {"articles": 10, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2025-12-30",
+      "day": "월",
+      "title": "Meta Manus 인수, 삼성 HBM4 공급 확정",
+      "summary": "Meta가 AI 에이전트 Manus 인수. 삼성전자 HBM4 Nvidia 납품 확정.",
+      "highlights": [{"category": "top", "title": "Meta Manus 인수", "summary": "AI 에이전트 인수 협의", "url": "https://techcrunch.com/2025/12/30/"}],
+      "stats": {"articles": 13, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2025-12-29",
+      "day": "일",
+      "title": "Nvidia $200억 Groq 라이선스 딜",
+      "summary": "Nvidia가 Groq 기술 $200억에 라이선스.",
+      "highlights": [{"category": "top", "title": "Nvidia Groq 라이선스", "summary": "$200억 딜", "url": "https://techcrunch.com/2025/12/29/"}],
+      "stats": {"articles": 12, "sections": 5, "picks": 2}
+    },
+    {
+      "date": "2025-12-28",
+      "day": "토",
+      "title": "Nvidia-Groq 라이선싱 딜",
+      "summary": "Nvidia가 Groq 기술 라이선싱 및 핵심 인력 영입.",
+      "highlights": [{"category": "top", "title": "Nvidia Groq 딜", "summary": "기술 라이선싱", "url": "https://techcrunch.com/2025/12/28/"}],
+      "stats": {"articles": 14, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2025-12-27",
+      "day": "금",
+      "title": "연말 시장 동향",
+      "summary": "연말 시장 동향 정리.",
+      "highlights": [{"category": "top", "title": "연말 시장 동향", "summary": "정리", "url": "https://www.cnbc.com/2025/12/27/"}],
+      "stats": {"articles": 10, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2025-12-26",
+      "day": "목",
+      "title": "연휴 시장",
+      "summary": "연휴 시장.",
+      "highlights": [{"category": "top", "title": "연휴 시장", "summary": "박싱데이", "url": "https://www.cnbc.com/2025/12/26/"}],
+      "stats": {"articles": 8, "sections": 3, "picks": 1}
+    },
+    {
+      "date": "2025-12-25",
+      "day": "수",
+      "title": "Merry Christmas 2025",
+      "summary": "크리스마스.",
+      "highlights": [{"category": "top", "title": "Merry Christmas", "summary": "2025", "url": "https://techcrunch.com/2025/12/25/"}],
+      "stats": {"articles": 5, "sections": 2, "picks": 1}
+    },
+    {
+      "date": "2025-12-24",
+      "day": "화",
+      "title": "크리스마스 이브",
+      "summary": "크리스마스 이브.",
+      "highlights": [{"category": "top", "title": "크리스마스 이브", "summary": "연휴 시작", "url": "https://techcrunch.com/2025/12/24/"}],
+      "stats": {"articles": 8, "sections": 3, "picks": 1}
+    },
+    {
+      "date": "2025-12-22",
+      "day": "일",
+      "title": "OpenAI 대규모 투자 유치",
+      "summary": "OpenAI 투자 유치.",
+      "highlights": [{"category": "top", "title": "OpenAI 투자", "summary": "대규모 유치", "url": "https://techcrunch.com/2025/12/22/"}],
+      "stats": {"articles": 12, "sections": 5, "picks": 2}
+    },
+    {
+      "date": "2025-12-21",
+      "day": "토",
+      "title": "TikTok-Oracle 합작법인 논의",
+      "summary": "TikTok-Oracle 합작법인 논의.",
+      "highlights": [{"category": "top", "title": "TikTok-Oracle", "summary": "합작법인 논의", "url": "https://www.reuters.com/2025/12/21/"}],
+      "stats": {"articles": 11, "sections": 4, "picks": 2}
+    },
+    {
+      "date": "2025-12-19",
+      "day": "금",
+      "title": "Waymo $150억 펀딩",
+      "summary": "Waymo가 $150억 이상 펀딩 협상.",
+      "highlights": [{"category": "top", "title": "Waymo 펀딩", "summary": "$150억 협상", "url": "https://techcrunch.com/2025/12/19/"}],
+      "stats": {"articles": 11, "sections": 5, "picks": 3}
+    },
+    {
+      "date": "2025-12-18",
+      "day": "목",
+      "title": "Google Gemini 3 Flash 출시",
+      "summary": "Google Gemini 3 Flash 출시.",
+      "highlights": [{"category": "top", "title": "Gemini 3 Flash", "summary": "Google 새 AI 모델", "url": "https://blog.google/2025/12/18/"}],
+      "stats": {"articles": 14, "sections": 5, "picks": 3}
+    }
+  ],
+  "specials": [
+    {
+      "date": "ces-2026-special",
+      "title": "CES 2026 특별판: AI·로봇·모빌리티 혁신 총정리",
+      "summary": "CES 2026에서 공개된 AI, 로봇, 자율주행, 스마트홈 혁신 기술 총정리.",
+      "period": "2026-01-06 ~ 2026-01-13",
+      "stats": {"articles": 20, "sections": 6}
+    },
+    {
+      "date": "davos-2026-special",
+      "title": "다보스 2026: AI 인프라 대전환과 미중 기술패권 경쟁",
+      "summary": "트럼프 3주 원전 승인, 젠슨 황 AI 5층 케이크. 다보스 포럼 AI 핵심 발언 총정리.",
+      "period": "2026-01-20 ~ 2026-01-24",
+      "stats": {"articles": 13, "sections": 4}
+    }
+  ],
+  "weekly": [
+    {
+      "date": "weekly-2026-01-26",
+      "week": "2026-W04",
+      "title": "1월 4주차 | TikTok 합작법인·다보스 AI 인프라·Intel 제조 위기",
+      "summary": "TikTok USDS 합작법인 설립, 다보스 AI 인프라 대전환, Intel 제조 위기 심화.",
+      "period": "2026-01-20 ~ 2026-01-26",
+      "stats": {"articles": 98, "clusters": 12}
+    }
+  ]
+}
