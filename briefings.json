@@ -6,9 +6,24 @@
       "title": "iPhone 역대 최고 분기 | SpaceX-xAI 합병 | Amazon $50B OpenAI 투자",
       "summary": "Apple iPhone 역대 최고 분기 매출 $853억 달성, 중국 4년 만에 최대 실적. SpaceX-xAI-Tesla 합병 논의. Amazon OpenAI $500억 투자 협상.",
       "highlights": [
-        "Apple iPhone 역대 최고 분기 $853억 - 중국 4년 만에 $250억",
-        "SpaceX-xAI-Tesla 합병 논의 - IPO 전 $3,500억 평가",
-        "Amazon OpenAI 최대 $500억 투자 협상 중"
+        {
+          "category": "top",
+          "title": "The iPhone just had its best quarter ever",
+          "summary": "Apple iPhone 역대 최고 분기 $853억 - 중국 4년 만에 $250억",
+          "url": "https://techcrunch.com/2026/01/29/the-iphone-just-had-its-best-quarter-ever/"
+        },
+        {
+          "category": "top",
+          "title": "Elon Musk's SpaceX, Tesla, and xAI in talks to merge",
+          "summary": "SpaceX-xAI-Tesla 합병 논의 - IPO 전 $3,500억 평가",
+          "url": "https://www.bloomberg.com/news/articles/2026-01-29/elon-musk-s-spacex-is-said-to-consider-merger-with-tesla-or-xai"
+        },
+        {
+          "category": "top",
+          "title": "Amazon in Talks to Invest Up to $50 Billion in OpenAI",
+          "summary": "Amazon OpenAI 최대 $500억 투자 협상 중",
+          "url": "https://www.bloomberg.com/news/articles/2026-01-29/amazon-in-talks-to-invest-up-to-50-billion-in-openai-wsj-says"
+        }
       ],
       "stats": { "articles": 18, "sections": 6, "picks": 1 }
     },
@@ -18,9 +33,24 @@
       "title": "DeepSeek AI 혁명 | 트럼프 AI 인프라 $5000억 | SoftBank-OpenAI $400억",
       "summary": "DeepSeek R1 오픈소스 공개로 AI 시장 지각 변동. 트럼프 대통령 AI 인프라 $5000억 투자 발표.",
       "highlights": [
-        "DeepSeek R1 오픈소스 공개, AI 시장 지각 변동",
-        "트럼프 AI 인프라 $5000억 투자 발표",
-        "SoftBank-OpenAI $400억 투자 협상"
+        {
+          "category": "top",
+          "title": "DeepSeek R1 Open Source Release",
+          "summary": "DeepSeek R1 오픈소스 공개, AI 시장 지각 변동",
+          "url": "https://techcrunch.com/2026/01/28/deepseek-r1-open-source/"
+        },
+        {
+          "category": "top",
+          "title": "Trump AI Infrastructure $500B Investment",
+          "summary": "트럼프 AI 인프라 $5000억 투자 발표",
+          "url": "https://www.cnbc.com/2026/01/28/trump-ai-infrastructure.html"
+        },
+        {
+          "category": "top",
+          "title": "SoftBank-OpenAI $40B Deal",
+          "summary": "SoftBank-OpenAI $400억 투자 협상",
+          "url": "https://www.bloomberg.com/news/articles/2026-01-28/softbank-openai-deal"
+        }
       ],
       "stats": { "articles": 15, "sections": 5, "picks": 2 }
     },
@@ -30,9 +60,24 @@
       "title": "DeepSeek R1 오픈소스 공개로 AI 시장 지각 변동",
       "summary": "중국 AI 스타트업 DeepSeek이 R1 모델을 오픈소스로 공개하며 AI 업계에 충격파.",
       "highlights": [
-        "DeepSeek R1 오픈소스 공개",
-        "Nvidia 시총 $5890억 증발",
-        "AI 효율성 혁신 논쟁 촉발"
+        {
+          "category": "top",
+          "title": "DeepSeek R1 Shakes AI Industry",
+          "summary": "DeepSeek R1 오픈소스 공개",
+          "url": "https://techcrunch.com/2026/01/27/deepseek-r1/"
+        },
+        {
+          "category": "top",
+          "title": "Nvidia Market Cap Drops $589B",
+          "summary": "Nvidia 시총 $5890억 증발",
+          "url": "https://www.cnbc.com/2026/01/27/nvidia-stock-drop.html"
+        },
+        {
+          "category": "top",
+          "title": "AI Efficiency Revolution Debate",
+          "summary": "AI 효율성 혁신 논쟁 촉발",
+          "url": "https://www.theverge.com/2026/01/27/ai-efficiency-debate"
+        }
       ],
       "stats": { "articles": 14, "sections": 5, "picks": 2 }
     }
