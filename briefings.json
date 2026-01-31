@@ -2,7 +2,7 @@
   "briefings": [
     {
       "date": "2026-01-31",
-      "day": "금",
+      "day": "토",
       "title": "Musk-Epstein 파일 폭로 | Physical Intelligence 로봇 AI | Kevin Warsh 연준 의장 지명",
       "summary": "DOJ가 300만 페이지 Epstein 파일 공개, Musk 섬 방문 계획 및 SpaceX 방문 기록 확인. Physical Intelligence $5.6B 밸류에이션 로봇 AI 급부상.",
       "stats": {
@@ -13,13 +13,24 @@
     },
     {
       "date": "2026-01-30",
-      "day": "목",
+      "day": "금",
       "title": "iPhone 역대 최고 분기 | SpaceX-xAI 합병 | Amazon $50B OpenAI 투자",
       "summary": "Apple iPhone 역대 최고 분기 매출 $853억 달성. SpaceX-xAI-Tesla 합병 논의. Amazon OpenAI $500억 투자 협상.",
       "stats": {
         "articles": 18,
         "sections": 6,
         "picks": 3
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "day": "목",
+      "title": "Meta AI 투자 $650억 | Tesla Model S/X 단종 | Fed 금리 동결",
+      "summary": "Meta Q4 실적 예상 상회, AI 투자 $650억 확대. Tesla Model S/X 단종 발표. Fed 금리 동결.",
+      "stats": {
+        "articles": 15,
+        "sections": 5,
+        "picks": 2
       }
     },
     {
@@ -152,17 +163,6 @@
         "articles": 14,
         "sections": 5,
         "picks": 3
-      }
-    },
-    {
-      "date": "2026-01-16",
-      "day": "금",
-      "title": "보안 취약점 | TS Lombard",
-      "summary": "보안 취약점 이슈. TS Lombard 분석.",
-      "stats": {
-        "articles": 13,
-        "sections": 5,
-        "picks": 2
       }
     },
     {
