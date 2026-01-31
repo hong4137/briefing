@@ -94,11 +94,6 @@ jobs:
                   mime_type = file['mimeType']
                   local_file_path = os.path.join(local_path, file_name)
 
-                  # briefings.txt는 건너뛰기 (Sheet에서 가져옴)
-                  if file_name == 'briefings.txt':
-                      print(f"Skipped: {file_name} (using Sheet instead)")
-                      continue
-                  
                   # Google Sheets 파일은 건너뛰기 (일반 다운로드 불가)
                   if mime_type == 'application/vnd.google-apps.spreadsheet':
                       print(f"Skipped: {file_name} (Google Sheets file)")
