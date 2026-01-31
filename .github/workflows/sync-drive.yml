@@ -36,13 +36,14 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install google-api-python-client google-auth
+          pip install google-api-python-client google-auth gspread
 
       - name: Run sync script
         id: sync
         env:
           GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
           DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
+          BRIEFINGS_SHEET_ID: '1OiLeRDrEb1lxXtL2CHGWkyfG0wA9r7QpEISw-3321n0'
         run: |
           python << 'EOF'
           import os
@@ -53,22 +54,28 @@ jobs:
           from googleapiclient.http import MediaIoBaseDownload
 
           FOLDER_ID = os.environ['DRIVE_FOLDER_ID']
-          SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
+          SHEET_ID = os.environ['BRIEFINGS_SHEET_ID']
+          SCOPES = [
+              'https://www.googleapis.com/auth/drive.readonly',
+              'https://www.googleapis.com/auth/spreadsheets.readonly'
+          ]
 
           creds_json = os.environ['GOOGLE_SERVICE_ACCOUNT']
           creds_dict = json.loads(creds_json)
           creds = service_account.Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
-          service = build('drive', 'v3', credentials=creds)
+          
+          drive_service = build('drive', 'v3', credentials=creds)
+          sheets_service = build('sheets', 'v4', credentials=creds)
 
           def list_files(folder_id):
-              results = service.files().list(
+              results = drive_service.files().list(
                   q=f"'{folder_id}' in parents and trashed=false",
                   fields="files(id, name, mimeType, modifiedTime)"
               ).execute()
               return results.get('files', [])
 
           def download_file(file_id, file_name):
-              request = service.files().get_media(fileId=file_id)
+              request = drive_service.files().get_media(fileId=file_id)
               fh = io.BytesIO()
               downloader = MediaIoBaseDownload(fh, request)
               done = False
@@ -87,6 +94,11 @@ jobs:
                   mime_type = file['mimeType']
                   local_file_path = os.path.join(local_path, file_name)
 
+                  # briefings.txt는 건너뛰기 (Sheet에서 가져옴)
+                  if file_name == 'briefings.txt':
+                      print(f"Skipped: {file_name} (using Sheet instead)")
+                      continue
+
                   if mime_type == 'application/vnd.google-apps.folder':
                       os.makedirs(local_file_path, exist_ok=True)
                       synced.extend(sync_folder(file_id, local_file_path))
@@ -103,11 +115,52 @@ jobs:
 
               return synced
 
+          def sync_briefings_from_sheet():
+              """Google Sheet에서 briefings 히스토리 읽어서 briefings_history.json 생성"""
+              try:
+                  result = sheets_service.spreadsheets().values().get(
+                      spreadsheetId=SHEET_ID,
+                      range='A:B'
+                  ).execute()
+                  
+                  rows = result.get('values', [])
+                  if not rows or len(rows) < 2:
+                      print("Sheet is empty or has no data")
+                      return False
+                  
+                  # 첫 행은 헤더 (date, headline)
+                  header = rows[0]
+                  data = rows[1:]
+                  
+                  # briefings_history.json 생성 (중복 체크용)
+                  history = []
+                  for row in data:
+                      if len(row) >= 2:
+                          history.append({
+                              "date": row[0],
+                              "headline": row[1]
+                          })
+                  
+                  with open('briefings_history.json', 'w', encoding='utf-8') as f:
+                      json.dump(history, f, ensure_ascii=False, indent=2)
+                  
+                  print(f"Created briefings_history.json with {len(history)} entries from Sheet")
+                  return True
+                  
+              except Exception as e:
+                  print(f"Failed to sync from Sheet: {e}")
+                  return False
+
+          # 1. Drive 폴더에서 파일 동기화
           print(f"Syncing from Google Drive folder: {FOLDER_ID}")
           synced_files = sync_folder(FOLDER_ID)
 
-          if synced_files:
-              print(f"Synced {len(synced_files)} file(s)")
+          # 2. Sheet에서 briefings 히스토리 동기화
+          print(f"Syncing briefings history from Sheet: {SHEET_ID}")
+          sheet_synced = sync_briefings_from_sheet()
+
+          if synced_files or sheet_synced:
+              print(f"Synced {len(synced_files)} file(s) from Drive")
               with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:
                   f.write("synced=true\n")
           else:
@@ -129,7 +182,7 @@ jobs:
             done
           fi
 
-      - name: Rename briefings.txt to briefings.json
+      - name: Rename briefings.txt to briefings.json (if exists)
         if: steps.sync.outputs.synced == 'true'
         run: |
           if [ -f "briefings.txt" ]; then
