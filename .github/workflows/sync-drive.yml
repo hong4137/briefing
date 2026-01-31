@@ -87,95 +87,101 @@ jobs:
           def sync_folder(folder_id, local_path='.'):
               files = list_files(folder_id)
               synced = []
-
+              
               for file in files:
-                  file_name = file['name']
+                  name = file['name']
                   file_id = file['id']
                   mime_type = file['mimeType']
-                  local_file_path = os.path.join(local_path, file_name)
-
-                  # Google Sheets 파일은 건너뛰기 (일반 다운로드 불가)
-                  if mime_type == 'application/vnd.google-apps.spreadsheet':
-                      print(f"Skipped: {file_name} (Google Sheets file)")
+                  
+                  # Skip briefings.txt (now using Sheet instead)
+                  if name == 'briefings.txt':
+                      print(f"  Skipping {name} (using Sheet instead)")
                       continue
                   
-                  # briefings.txt는 건너뛰기 (Sheet에서 생성)
-                  if file_name == 'briefings.txt':
-                      print(f"Skipped: {file_name} (using Sheet instead)")
-                      continue
-
                   if mime_type == 'application/vnd.google-apps.folder':
-                      os.makedirs(local_file_path, exist_ok=True)
-                      synced.extend(sync_folder(file_id, local_file_path))
+                      # Handle subfolders (like 'archive')
+                      subfolder_path = os.path.join(local_path, name)
+                      os.makedirs(subfolder_path, exist_ok=True)
+                      synced.extend(sync_folder(file_id, subfolder_path))
                   else:
+                      # Download file
+                      file_path = os.path.join(local_path, name)
                       try:
-                          content = download_file(file_id, file_name)
-                          os.makedirs(os.path.dirname(local_file_path) if os.path.dirname(local_file_path) else '.', exist_ok=True)
-                          with open(local_file_path, 'wb') as f:
+                          content = download_file(file_id, name)
+                          with open(file_path, 'wb') as f:
                               f.write(content)
-                          synced.append(local_file_path)
-                          print(f"Downloaded: {local_file_path}")
+                          print(f"  Downloaded: {file_path}")
+                          synced.append(file_path)
                       except Exception as e:
-                          print(f"Failed: {file_name} - {e}")
-
+                          print(f"  Error downloading {name}: {e}")
+              
               return synced
 
           def sync_briefings_from_sheet():
-              """Google Sheet에서 briefings 읽어서 briefings.json 생성"""
+              """Read briefings data from Google Sheet and generate briefings.json"""
               try:
+                  # Read Sheet data - A:H (8 columns including highlights)
                   result = sheets_service.spreadsheets().values().get(
                       spreadsheetId=SHEET_ID,
-                      range='A:G'
+                      range='A:H'
                   ).execute()
                   
                   rows = result.get('values', [])
-                  if not rows or len(rows) < 2:
-                      print("Sheet is empty or has no data")
+                  if len(rows) < 2:
+                      print("  No data in Sheet")
                       return False
                   
-                  # 첫 행은 헤더: date, day, title, summary, articles, sections, picks
+                  # Skip header row
                   header = rows[0]
-                  data = rows[1:]
+                  data_rows = rows[1:]
                   
-                  # briefings.json 생성
                   briefings = []
-                  for row in data:
-                      if len(row) >= 4:  # 최소 date, day, title, summary 필요
-                          entry = {
-                              "date": row[0] if len(row) > 0 else "",
-                              "day": row[1] if len(row) > 1 else "",
-                              "title": row[2] if len(row) > 2 else "",
-                              "summary": row[3] if len(row) > 3 else "",
-                              "stats": {
-                                  "articles": int(row[4]) if len(row) > 4 and row[4].isdigit() else 0,
-                                  "sections": int(row[5]) if len(row) > 5 and row[5].isdigit() else 0,
-                                  "picks": int(row[6]) if len(row) > 6 and row[6].isdigit() else 0
-                              }
+                  for row in data_rows:
+                      # Ensure row has enough columns (pad if necessary)
+                      while len(row) < 8:
+                          row.append('')
+                      
+                      date, day, title, summary, articles, sections, picks, highlights = row[:8]
+                      
+                      # Skip empty rows
+                      if not date or not title:
+                          continue
+                      
+                      # Parse highlights (pipe-separated string → array)
+                      highlights_list = []
+                      if highlights:
+                          highlights_list = [h.strip() for h in highlights.split('|') if h.strip()]
+                      
+                      briefing = {
+                          "date": date,
+                          "day": day,
+                          "title": title,
+                          "summary": summary,
+                          "highlights": highlights_list,
+                          "stats": {
+                              "articles": int(articles) if articles else 0,
+                              "sections": int(sections) if sections else 0,
+                              "picks": int(picks) if picks else 0
                           }
-                          briefings.append(entry)
+                      }
+                      briefings.append(briefing)
                   
-                  # briefings.json 저장
-                  output = {
-                      "briefings": briefings,
-                      "specials": [],
-                      "weekly": []
-                  }
-                  
+                  # Write briefings.json
+                  output = {"briefings": briefings}
                   with open('briefings.json', 'w', encoding='utf-8') as f:
                       json.dump(output, f, ensure_ascii=False, indent=2)
                   
-                  print(f"Created briefings.json with {len(briefings)} entries from Sheet")
+                  print(f"  Generated briefings.json with {len(briefings)} entries")
                   return True
                   
               except Exception as e:
-                  print(f"Failed to sync from Sheet: {e}")
+                  print(f"  Error reading Sheet: {e}")
                   return False
 
-          # 1. Drive 폴더에서 파일 동기화
+          # Main execution
           print(f"Syncing from Google Drive folder: {FOLDER_ID}")
           synced_files = sync_folder(FOLDER_ID)
 
-          # 2. Sheet에서 briefings.json 생성
           print(f"Syncing briefings from Sheet: {SHEET_ID}")
           sheet_synced = sync_briefings_from_sheet()
 
