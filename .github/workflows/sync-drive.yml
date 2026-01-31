@@ -98,6 +98,11 @@ jobs:
                   if file_name == 'briefings.txt':
                       print(f"Skipped: {file_name} (using Sheet instead)")
                       continue
+                  
+                  # Google Sheets 파일은 건너뛰기 (일반 다운로드 불가)
+                  if mime_type == 'application/vnd.google-apps.spreadsheet':
+                      print(f"Skipped: {file_name} (Google Sheets file)")
+                      continue
 
                   if mime_type == 'application/vnd.google-apps.folder':
                       os.makedirs(local_file_path, exist_ok=True)
