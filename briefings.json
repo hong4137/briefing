@@ -1,24 +1,24 @@
 {
   "briefings": [
     {
-      "date": "2026-01-30",
+      "date": "2026-01-31",
       "day": "금",
+      "title": "Musk-Epstein 파일 폭로 | Physical Intelligence 로봇 AI | Kevin Warsh 연준 의장 지명",
+      "summary": "DOJ가 300만 페이지 Epstein 파일 공개, Musk 섬 방문 계획 및 SpaceX 방문 기록 확인. Physical Intelligence $5.6B 밸류에이션 로봇 AI 급부상.",
+      "stats": {
+        "articles": 10,
+        "sections": 6,
+        "picks": 1
+      }
+    },
+    {
+      "date": "2026-01-30",
+      "day": "목",
       "title": "iPhone 역대 최고 분기 | SpaceX-xAI 합병 | Amazon $50B OpenAI 투자",
       "summary": "Apple iPhone 역대 최고 분기 매출 $853억 달성. SpaceX-xAI-Tesla 합병 논의. Amazon OpenAI $500억 투자 협상.",
       "stats": {
         "articles": 18,
         "sections": 6,
-        "picks": 3
-      }
-    },
-    {
-      "date": "2026-01-29",
-      "day": "목",
-      "title": "DeepSeek AI 혁명 | 트럼프 AI 인프라 $5000억 | SoftBank-OpenAI $400억",
-      "summary": "DeepSeek R1 오픈소스 공개로 AI 시장 지각 변동. 트럼프 대통령 AI 인프라 $5000억 투자 발표.",
-      "stats": {
-        "articles": 15,
-        "sections": 5,
         "picks": 3
       }
     },

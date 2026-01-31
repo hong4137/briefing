@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musk-Epstein 파일 폭로 | Tech CEO들 ICE 침묵 압박 | Jae's Briefing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .summary {
+            color: #a0a0a0;
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .key-points {
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .key-points h3 {
+            color: #667eea;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .key-points ul {
+            list-style: none;
+        }
+
+        .key-points li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.95rem;
+        }
+
+        .key-points li:last-child {
+            border-bottom: none;
+        }
+
+        .key-points strong {
+            color: #fff;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #667eea;
+            color: #fff;
+        }
+
+        .article-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .article-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .article-title-kr {
+            font-size: 1rem;
+            color: #a0a0a0;
+            margin-bottom: 12px;
+        }
+
+        .article-summary {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.85rem;
+        }
+
+        .source {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .article-meta a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+
+        .article-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .badge-hot {
+            background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            color: #fff;
+        }
+
+        .badge-new {
+            background: #4a9eff;
+            color: #fff;
+        }
+
+        .badge-pick {
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            color: #fff;
+        }
+
+        .top-section .article-card {
+            background: rgba(255, 59, 59, 0.05);
+            border-color: rgba(255, 59, 59, 0.2);
+        }
+
+        .picks-section .article-card {
+            background: rgba(168, 85, 247, 0.05);
+            border-color: rgba(168, 85, 247, 0.2);
+        }
+
+        .pick-reason {
+            font-size: 0.85rem;
+            color: #a855f7;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.4rem;
+            }
+            .article-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 1월 31일 토요일</div>
+            <h1 class="title">Musk-Epstein 파일 폭로 | Tech CEO들 ICE 침묵 압박 | Physical Intelligence $5.6B</h1>
+            <p class="summary">DOJ 300만 페이지 Epstein 파일 공개로 Musk 교류 확인. Minneapolis 사태 후 실리콘밸리 CEO들 침묵에 대한 비판 고조. 로봇 AI 스타트업 Physical Intelligence 급부상.</p>
+        </header>
+
+        <div class="key-points">
+            <h3>📌 오늘의 핵심</h3>
+            <ul>
+                <li><strong>Musk-Epstein:</strong> DOJ 300만 페이지 공개, 2012~2014년 이메일 교류 및 섬 방문 논의 확인</li>
+                <li><strong>Tech CEO 침묵:</strong> Minneapolis ICE 사태 후 Reid Hoffman "무릎 꿇지 말라" 공개 촉구</li>
+                <li><strong>Physical Intelligence:</strong> Stripe 출신 Lachy Groom 공동창업, $5.6B 밸류에이션 로봇 AI</li>
+                <li><strong>중국 AI 헬스케어:</strong> Ant Group AQ 앱 MAU 1,500만 돌파, 5,000개 병원 연결</li>
+                <li><strong>연준 인사:</strong> Trump, Kevin Warsh 차기 연준 의장 지명 발표</li>
+            </ul>
+        </div>
+
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+            
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Epstein Files Show Elon Musk Planned Visit to Island, Host at SpaceX</h3>
+                <p class="article-title-kr">Epstein 파일, Musk의 섬 방문 계획 및 SpaceX 방문 확인</p>
+                <p class="article-summary">미국 법무부가 300만 페이지 이상의 Jeffrey Epstein 관련 파일을 공개했다. 2012~2014년 사이 Musk와 Epstein 간 16건 이상의 이메일 교류가 확인됐으며, Musk는 "섬에서 가장 격렬한 파티는 언제냐"고 묻고 헬리콥터 제공 제안을 받았다. 2013년 2월에는 Epstein이 3명의 어시스턴트와 함께 SpaceX를 방문한 기록도 있다. Musk는 그동안 섬 방문을 거절했다고 주장해왔으나, 이번 파일은 적극적인 방문 계획 논의를 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Tech, Guardian Tech 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/01/30/epstein-files-show-elon-musk-planned-visit-to-island-host-at-spacex.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🏛️ 정책/사회</h2>
+            
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">After Minneapolis, Tech CEOs Are Struggling to Stay Silent</h3>
+                <p class="article-title-kr">Minneapolis 사태 후, Tech CEO들의 침묵에 대한 압박 고조</p>
+                <p class="article-summary">Minneapolis에서 ICE 단속 중 Alex Pretti가 사망한 사건 이후 실리콘밸리 CEO들의 침묵이 비판받고 있다. LinkedIn 공동창업자 Reid Hoffman은 공개적으로 "무릎 꿇지 말라"며 동료 CEO들의 발언을 촉구했다. Wired는 이 사안을 집중 보도하며 Tech 업계의 정치적 침묵과 책임에 대한 논의를 이끌고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired</span>
+                    <a href="https://www.wired.com/story/after-minneapolis-tech-ceos-are-struggling-to-stay-silent/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Trump Nominates Kevin Warsh as Next Fed Chair</h3>
+                <p class="article-title-kr">Trump, Kevin Warsh 차기 연준 의장 지명</p>
+                <p class="article-summary">Trump 대통령이 Jerome Powell 후임으로 Kevin Warsh를 연준 의장으로 지명했다. Warsh는 전 연준 이사이자 금융 시장 전문가로, 이번 인사는 소비자 대출 비용과 저축 금리에 광범위한 영향을 미칠 전망이다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC</span>
+                    <a href="https://www.cnbc.com/2026/01/30/trump-nominates-kevin-warsh-fed-chair.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🤖 AI/기술</h2>
+            
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Physical Intelligence: Stripe Veteran Lachy Groom's Latest Bet on Robot Brains</h3>
+                <p class="article-title-kr">Physical Intelligence, 실리콘밸리 최고의 로봇 AI 스타트업으로 부상</p>
+                <p class="article-summary">Stripe 30번째 직원 출신 Lachy Groom이 공동 창업한 Physical Intelligence가 $5.6B 밸류에이션으로 급부상했다. 2024년 3월 설립, $70M 시드 후 11월 $400M 시리즈B를 유치했다. Google DeepMind의 Karol Hausman과 Stanford의 Chelsea Finn 등 세계적 로봇공학 연구진이 참여하며, "모든 로봇에서 작동하는 범용 AI 뇌"를 목표로 한다. Jeff Bezos, OpenAI, Sequoia Capital 등이 투자했다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero</span>
+                    <a href="https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">AI Health Care Is Taking Off in China, Led by Jack Ma's Ant Group</h3>
+                <p class="article-title-kr">중국 AI 헬스케어, Ant Group의 AQ 앱이 주도</p>
+                <p class="article-summary">Jack Ma의 Ant Group이 출시한 AI 헬스케어 앱 AQ(Ant Afu)가 4개월 만에 MAU 1,000만을 돌파하고 현재 1,500만에 달한다. 5,000개 병원과 30만 의사를 연결하며, 300명의 유명 의사 AI 에이전트를 제공한다. IDC에 따르면 중국 의료 AI 시장은 2026년 $134억에 달하며 연 40% 성장 전망이다. 2035년 중국 인구 30%가 60세 이상이 되면서 AI 헬스케어 수요가 급증할 것으로 예상된다.</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World Hero</span>
+                    <a href="https://restofworld.org/2026/ai-health-care-is-taking-off-in-china-led-by-jack-mas-ant-group/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Anthropic Brings Agentic Plugins to Cowork</h3>
+                <p class="article-title-kr">Anthropic, Cowork에 에이전트 플러그인 추가</p>
+                <p class="article-summary">Anthropic이 자사 도구 Cowork에 agentic 플러그인 기능을 추가했다. 사용자가 Claude에게 작업 방식, 도구, 데이터, 워크플로우, 슬래시 명령어를 지정할 수 있어 팀 전체에 일관된 결과를 제공할 수 있게 됐다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured</span>
+                    <a href="https://techcrunch.com/2026/01/30/anthropic-brings-agentic-plugins-to-cowork/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">💾 반도체/하드웨어</h2>
+            
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Hair-Raising Memory Chip Prices Could Take China's Top Makers to New Heights</h3>
+                <p class="article-title-kr">메모리칩 가격 급등, 중국 CXMT·YMTC에 기회</p>
+                <p class="article-summary">DRAM 가격 급등으로 중국 메모리칩 업체들이 반사이익을 얻고 있다. 장신메모리(CXMT)와 양쯔메모리(YMTC) 등 중국 업체들이 시장 점유율 확대의 기회를 잡을 전망이다. 소비자와 스마트폰 브랜드에는 악재지만, 중국 반도체 자립에는 호재로 작용하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Tech Featured</span>
+                    <a href="https://www.scmp.com/tech/tech-trends/article/3341762/how-hair-raising-prices-memory-chips-could-take-chinas-top-makers-new-heights" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">💼 비즈니스</h2>
+            
+            <article class="article-card">
+                <h3 class="article-title">Peloton Lays Off 11% of Workforce</h3>
+                <p class="article-title-kr">Peloton, 전체 직원 11% 감원</p>
+                <p class="article-summary">Peloton이 전체 직원의 11%를 감원한다고 발표했다. 주로 엔지니어링 팀이 영향을 받을 예정이며, AI 하드웨어 출시 몇 달 만에 구조조정에 돌입했다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Ranking</span>
+                    <a href="https://www.theverge.com/gadgets/871422/peloton-layoffs-cost-cutting-2026" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">OnlyFans Considering Selling Majority Stake to Architect Capital</h3>
+                <p class="article-title-kr">OnlyFans, Architect Capital에 과반 지분 매각 검토</p>
+                <p class="article-summary">OnlyFans가 Architect Capital에 과반 지분 매각을 검토 중이다. 최근 매각 논의가 재개되면서 크리에이터 플랫폼 시장의 재편 가능성이 제기되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured</span>
+                    <a href="https://techcrunch.com/2026/01/30/onlyfans-considering-selling-majority-stake-to-architect-capital/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Blue Origin Suspends Space Tourism for At Least 2 Years</h3>
+                <p class="article-title-kr">Blue Origin, 우주관광 최소 2년 중단</p>
+                <p class="article-summary">Jeff Bezos의 Blue Origin이 우주관광 비행을 최소 2년간 중단한다고 발표했다. 달 착륙선 및 기타 달 기술 개발 가속화에 자원을 집중하기 위한 전략적 결정이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured</span>
+                    <a href="https://techcrunch.com/2026/01/30/blue-origin-suspends-space-tourism/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+            
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Physical Intelligence: Building General-Purpose Robot Brains</h3>
+                <p class="article-title-kr">Physical Intelligence: 범용 로봇 뇌를 만드는 스타트업</p>
+                <p class="article-summary">18개월 만에 5~10년 로드맵을 달성했다는 Physical Intelligence의 성장 속도가 인상적이다. "특정 로봇이 아닌 모든 로봇을 위한 단일 뇌"라는 비전은 로봇 산업의 Android가 될 가능성을 시사한다. Stripe 출신 창업자의 실행력과 DeepMind/Stanford 연구진의 기술력 조합이 주목할 만하다.</p>
+                <p class="pick-reason">선정 이유: 신생 기업 첫 등장 + $5.6B 밸류에이션 + AI/로봇 인프라 관심사 매칭</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 10건 | 섹션 6개 | Pick 1건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
