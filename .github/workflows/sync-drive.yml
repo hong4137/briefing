@@ -98,6 +98,11 @@ jobs:
                   if mime_type == 'application/vnd.google-apps.spreadsheet':
                       print(f"Skipped: {file_name} (Google Sheets file)")
                       continue
+                  
+                  # briefings.txt는 건너뛰기 (Sheet에서 생성)
+                  if file_name == 'briefings.txt':
+                      print(f"Skipped: {file_name} (using Sheet instead)")
+                      continue
 
                   if mime_type == 'application/vnd.google-apps.folder':
                       os.makedirs(local_file_path, exist_ok=True)
@@ -116,11 +121,11 @@ jobs:
               return synced
 
           def sync_briefings_from_sheet():
-              """Google Sheet에서 briefings 히스토리 읽어서 briefings_history.json 생성"""
+              """Google Sheet에서 briefings 읽어서 briefings.json 생성"""
               try:
                   result = sheets_service.spreadsheets().values().get(
                       spreadsheetId=SHEET_ID,
-                      range='A:B'
+                      range='A:G'
                   ).execute()
                   
                   rows = result.get('values', [])
@@ -128,23 +133,38 @@ jobs:
                       print("Sheet is empty or has no data")
                       return False
                   
-                  # 첫 행은 헤더 (date, headline)
+                  # 첫 행은 헤더: date, day, title, summary, articles, sections, picks
                   header = rows[0]
                   data = rows[1:]
                   
-                  # briefings_history.json 생성 (중복 체크용)
-                  history = []
+                  # briefings.json 생성
+                  briefings = []
                   for row in data:
-                      if len(row) >= 2:
-                          history.append({
-                              "date": row[0],
-                              "headline": row[1]
-                          })
+                      if len(row) >= 4:  # 최소 date, day, title, summary 필요
+                          entry = {
+                              "date": row[0] if len(row) > 0 else "",
+                              "day": row[1] if len(row) > 1 else "",
+                              "title": row[2] if len(row) > 2 else "",
+                              "summary": row[3] if len(row) > 3 else "",
+                              "stats": {
+                                  "articles": int(row[4]) if len(row) > 4 and row[4].isdigit() else 0,
+                                  "sections": int(row[5]) if len(row) > 5 and row[5].isdigit() else 0,
+                                  "picks": int(row[6]) if len(row) > 6 and row[6].isdigit() else 0
+                              }
+                          }
+                          briefings.append(entry)
                   
-                  with open('briefings_history.json', 'w', encoding='utf-8') as f:
-                      json.dump(history, f, ensure_ascii=False, indent=2)
+                  # briefings.json 저장
+                  output = {
+                      "briefings": briefings,
+                      "specials": [],
+                      "weekly": []
+                  }
                   
-                  print(f"Created briefings_history.json with {len(history)} entries from Sheet")
+                  with open('briefings.json', 'w', encoding='utf-8') as f:
+                      json.dump(output, f, ensure_ascii=False, indent=2)
+                  
+                  print(f"Created briefings.json with {len(briefings)} entries from Sheet")
                   return True
                   
               except Exception as e:
@@ -155,8 +175,8 @@ jobs:
           print(f"Syncing from Google Drive folder: {FOLDER_ID}")
           synced_files = sync_folder(FOLDER_ID)
 
-          # 2. Sheet에서 briefings 히스토리 동기화
-          print(f"Syncing briefings history from Sheet: {SHEET_ID}")
+          # 2. Sheet에서 briefings.json 생성
+          print(f"Syncing briefings from Sheet: {SHEET_ID}")
           sheet_synced = sync_briefings_from_sheet()
 
           if synced_files or sheet_synced:
@@ -180,14 +200,6 @@ jobs:
                 echo "Renamed: $f -> $newname"
               fi
             done
-          fi
-
-      - name: Rename briefings.txt to briefings.json (if exists)
-        if: steps.sync.outputs.synced == 'true'
-        run: |
-          if [ -f "briefings.txt" ]; then
-            mv briefings.txt briefings.json
-            echo "Renamed: briefings.txt -> briefings.json"
           fi
 
       - name: Update Briefing List JSON
