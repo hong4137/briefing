@@ -777,14 +777,26 @@
         }
 
         function renderLatest(briefing) {
-            const highlightsHTML = briefing.highlights ? briefing.highlights.map(h => `
+            const highlightsHTML = briefing.highlights ? briefing.highlights.map(h => {
+    // 객체인 경우 (기존 방식 - url 있음)
+        if (typeof h === 'object' && h.url) {
+            return `
                 <a href="${h.url}" target="_blank" rel="noopener" class="highlight">
                     <div class="highlight-category ${h.category}">${categoryLabels[h.category] || h.category}</div>
                     <h4>${h.title}</h4>
                     <p>${h.summary}</p>
                     <span class="highlight-link">원문 보기 →</span>
                 </a>
-            `).join('') : '<div class="empty-state">하이라이트가 없습니다.</div>';
+            `;
+        }
+    // 문자열인 경우 (Sheet 방식)
+        return `
+            <div class="highlight">
+                <div class="highlight-category top">TOP</div>
+                <h4>${h}</h4>
+            </div>
+        `;
+    }).join('') : '<div class="empty-state">하이라이트가 없습니다.</div>';
 
             document.getElementById('latest-container').innerHTML = `
                 <div class="latest-card">
