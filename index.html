@@ -879,7 +879,34 @@
                     link: `archive/${s.date}.html`
                 });
             });
+            // Add special items
+    specials.forEach(s => {
+        allItems.push({
+            type: 'special',
+            date: s.date,
+            title: s.title,
+            summary: s.summary,
+            period: s.period,
+            stats: s.stats,
+            badge: '⭐ 특별판',
+            link: `archive/${s.date}.html`
+        });
+    });
 
+    // ========== 여기에 추가 ==========
+    // period 종료일 기준 최신순 정렬
+    allItems.sort((a, b) => {
+        const getEndDate = (item) => {
+            if (item.period && item.period.includes('~')) {
+                return item.period.split('~')[1].trim();
+            }
+            return '0000-00-00';
+        };
+        return getEndDate(b).localeCompare(getEndDate(a));
+    });
+    // ================================
+
+    if (allItems.length === 0) {
             if (allItems.length === 0) {
                 document.getElementById('special-section').style.display = 'none';
                 return;
