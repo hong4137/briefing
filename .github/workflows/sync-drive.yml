@@ -118,64 +118,138 @@ jobs:
               return synced
 
           def sync_briefings_from_sheet():
-              """Read briefings data from Google Sheet and generate briefings.json"""
+              """Read briefings, weekly, specials data from Google Sheet and generate briefings.json"""
               try:
-                  # Read Sheet data - A:H (8 columns including highlights)
-                  result = sheets_service.spreadsheets().values().get(
-                      spreadsheetId=SHEET_ID,
-                      range='A:H'
-                  ).execute()
+                  output = {
+                      "briefings": [],
+                      "weekly": [],
+                      "specials": []
+                  }
                   
-                  rows = result.get('values', [])
-                  if len(rows) < 2:
-                      print("  No data in Sheet")
-                      return False
+                  # ========== 1. Read briefings sheet ==========
+                  try:
+                      result = sheets_service.spreadsheets().values().get(
+                          spreadsheetId=SHEET_ID,
+                          range='briefings!A:H'
+                      ).execute()
+                      
+                      rows = result.get('values', [])
+                      if len(rows) >= 2:
+                          data_rows = rows[1:]  # Skip header
+                          
+                          for row in data_rows:
+                              while len(row) < 8:
+                                  row.append('')
+                              
+                              date, day, title, summary, articles, sections, picks, highlights = row[:8]
+                              
+                              if not date or not title:
+                                  continue
+                              
+                              highlights_list = []
+                              if highlights:
+                                  highlights_list = [h.strip() for h in highlights.split('|') if h.strip()]
+                              
+                              briefing = {
+                                  "date": date,
+                                  "day": day,
+                                  "title": title,
+                                  "summary": summary,
+                                  "highlights": highlights_list,
+                                  "stats": {
+                                      "articles": int(articles) if articles else 0,
+                                      "sections": int(sections) if sections else 0,
+                                      "picks": int(picks) if picks else 0
+                                  }
+                              }
+                              output["briefings"].append(briefing)
+                          
+                          print(f"  Read {len(output['briefings'])} briefings")
+                  except Exception as e:
+                      print(f"  Error reading briefings sheet: {e}")
                   
-                  # Skip header row
-                  header = rows[0]
-                  data_rows = rows[1:]
+                  # ========== 2. Read weekly sheet ==========
+                  try:
+                      result = sheets_service.spreadsheets().values().get(
+                          spreadsheetId=SHEET_ID,
+                          range='weekly!A:F'
+                      ).execute()
+                      
+                      rows = result.get('values', [])
+                      if len(rows) >= 2:
+                          data_rows = rows[1:]  # Skip header
+                          
+                          for row in data_rows:
+                              while len(row) < 6:
+                                  row.append('')
+                              
+                              date, week, title, summary, period, clusters = row[:6]
+                              
+                              if not date or not title:
+                                  continue
+                              
+                              weekly_item = {
+                                  "date": date,
+                                  "week": week,
+                                  "title": title,
+                                  "summary": summary,
+                                  "period": period,
+                                  "stats": {
+                                      "clusters": int(clusters) if clusters else 0
+                                  }
+                              }
+                              output["weekly"].append(weekly_item)
+                          
+                          print(f"  Read {len(output['weekly'])} weekly briefings")
+                  except Exception as e:
+                      print(f"  Error reading weekly sheet: {e}")
                   
-                  briefings = []
-                  for row in data_rows:
-                      # Ensure row has enough columns (pad if necessary)
-                      while len(row) < 8:
-                          row.append('')
+                  # ========== 3. Read specials sheet ==========
+                  try:
+                      result = sheets_service.spreadsheets().values().get(
+                          spreadsheetId=SHEET_ID,
+                          range='specials!A:F'
+                      ).execute()
                       
-                      date, day, title, summary, articles, sections, picks, highlights = row[:8]
-                      
-                      # Skip empty rows
-                      if not date or not title:
-                          continue
-                      
-                      # Parse highlights (pipe-separated string → array)
-                      highlights_list = []
-                      if highlights:
-                          highlights_list = [h.strip() for h in highlights.split('|') if h.strip()]
-                      
-                      briefing = {
-                          "date": date,
-                          "day": day,
-                          "title": title,
-                          "summary": summary,
-                          "highlights": highlights_list,
-                          "stats": {
-                              "articles": int(articles) if articles else 0,
-                              "sections": int(sections) if sections else 0,
-                              "picks": int(picks) if picks else 0
-                          }
-                      }
-                      briefings.append(briefing)
+                      rows = result.get('values', [])
+                      if len(rows) >= 2:
+                          data_rows = rows[1:]  # Skip header
+                          
+                          for row in data_rows:
+                              while len(row) < 6:
+                                  row.append('')
+                              
+                              date, title, summary, period, articles, sections = row[:6]
+                              
+                              if not date or not title:
+                                  continue
+                              
+                              special_item = {
+                                  "date": date,
+                                  "title": title,
+                                  "summary": summary,
+                                  "period": period,
+                                  "stats": {
+                                      "articles": int(articles) if articles else 0,
+                                      "sections": int(sections) if sections else 0
+                                  }
+                              }
+                              output["specials"].append(special_item)
+                          
+                          print(f"  Read {len(output['specials'])} special briefings")
+                  except Exception as e:
+                      print(f"  Error reading specials sheet: {e}")
                   
-                  # Write briefings.json
-                  output = {"briefings": briefings}
+                  # ========== Write briefings.json ==========
                   with open('briefings.json', 'w', encoding='utf-8') as f:
                       json.dump(output, f, ensure_ascii=False, indent=2)
                   
-                  print(f"  Generated briefings.json with {len(briefings)} entries")
+                  total = len(output['briefings']) + len(output['weekly']) + len(output['specials'])
+                  print(f"  Generated briefings.json with {total} total entries")
                   return True
                   
               except Exception as e:
-                  print(f"  Error reading Sheet: {e}")
+                  print(f"  Error in sync_briefings_from_sheet: {e}")
                   return False
 
           # Main execution
