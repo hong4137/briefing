@@ -849,37 +849,24 @@
             `).join('');
         }
 
-        function renderSpecials(specials, weekly) {
-            const allItems = [];
+function renderSpecials(specials, weekly) {
+    const allItems = [];
 
-            // Add weekly items
-            weekly.forEach(w => {
-                allItems.push({
-                    type: 'weekly',
-                    date: w.date,
-                    title: w.title,
-                    summary: w.summary,
-                    period: w.period,
-                    stats: w.stats,
-                    badge: '📅 주간 브리핑',
-                    link: `archive/${w.date}.html`
-                });
-            });
+    // Add weekly items
+    weekly.forEach(w => {
+        allItems.push({
+            type: 'weekly',
+            date: w.date,
+            title: w.title,
+            summary: w.summary,
+            period: w.period,
+            stats: w.stats,
+            badge: '📅 주간 브리핑',
+            link: `archive/${w.date}.html`
+        });
+    });
 
-            // Add special items
-            specials.forEach(s => {
-                allItems.push({
-                    type: 'special',
-                    date: s.date,
-                    title: s.title,
-                    summary: s.summary,
-                    period: s.period,
-                    stats: s.stats,
-                    badge: '⭐ 특별판',
-                    link: `archive/${s.date}.html`
-                });
-            });
-            // Add special items
+    // Add special items
     specials.forEach(s => {
         allItems.push({
             type: 'special',
@@ -893,7 +880,6 @@
         });
     });
 
-    // ========== 여기에 추가 ==========
     // period 종료일 기준 최신순 정렬
     allItems.sort((a, b) => {
         const getEndDate = (item) => {
@@ -904,29 +890,27 @@
         };
         return getEndDate(b).localeCompare(getEndDate(a));
     });
-    // ================================
 
     if (allItems.length === 0) {
-            if (allItems.length === 0) {
-                document.getElementById('special-section').style.display = 'none';
-                return;
-            }
+        document.getElementById('special-section').style.display = 'none';
+        return;
+    }
 
-            document.getElementById('special-section').style.display = 'block';
+    document.getElementById('special-section').style.display = 'block';
 
-            document.getElementById('special-container').innerHTML = allItems.map(item => `
-                <a href="${item.link}" class="special-card ${item.type}">
-                    <div class="special-badge ${item.type}">${item.badge}</div>
-                    <h4>${item.title}</h4>
-                    <p class="summary">${item.summary}</p>
-                    <div class="period">📆 ${item.period}</div>
-                    <div class="stats">
-                        <span>📰 ${item.stats.articles || item.stats.clusters || 0} ${item.type === 'weekly' ? '클러스터' : '기사'}</span>
-                        <span>📑 ${item.stats.sections || item.stats.clusters || 0} 섹션</span>
-                    </div>
-                </a>
-            `).join('');
-        }
+    document.getElementById('special-container').innerHTML = allItems.map(item => `
+        <a href="${item.link}" class="special-card ${item.type}">
+            <div class="special-badge ${item.type}">${item.badge}</div>
+            <h4>${item.title}</h4>
+            <p class="summary">${item.summary}</p>
+            <div class="period">📆 ${item.period}</div>
+            <div class="stats">
+                <span>📰 ${item.stats.articles || item.stats.clusters || 0} ${item.type === 'weekly' ? '클러스터' : '기사'}</span>
+                <span>📑 ${item.stats.sections || item.stats.clusters || 0} 섹션</span>
+            </div>
+        </a>
+    `).join('');
+}
 
         // Load on page ready
         loadBriefings();
