@@ -1,6 +1,38 @@
 {
   "briefings": [
     {
+      "date": "2026-02-02",
+      "day": "월",
+      "title": "Waymo $1100억 밸류에이션 | Oracle $500억 클라우드 투자 | SpaceX 100만 위성 데이터센터",
+      "summary": "Waymo가 $160억 펀딩으로 $1100억 밸류에이션 목표. Oracle은 클라우드 확장에 최대 $500억 조달 계획.",
+      "highlights": [
+        "Waymo $160억 펀딩, $1100억 밸류에이션 목표",
+        "Oracle 클라우드 인프라 $500억 조달 계획",
+        "SpaceX 100만 위성 데이터센터 FCC 승인 신청"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 7,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2026-02-02",
+      "day": "월",
+      "title": "Waymo $1100억 밸류에이션 | Oracle $500억 클라우드 투자 | SpaceX 100만 위성 데이터센터",
+      "summary": "Waymo가 $160억 펀딩으로 $1100억 밸류에이션 목표. Oracle은 클라우드 확장에 최대 $500억 조달 계획.",
+      "highlights": [
+        "Waymo $160억 펀딩, $1100억 밸류에이션 목표",
+        "Oracle 클라우드 인프라 $500억 조달 계획",
+        "SpaceX 100만 위성 데이터센터 FCC 승인 신청"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 7,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-01-31",
       "day": "토",
       "title": "Musk-Epstein 파일 폭로 | Physical Intelligence 로봇 AI | Kevin Warsh 연준 의장 지명",
