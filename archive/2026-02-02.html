@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waymo $1100억 밸류에이션, SpaceX 100만 위성 데이터센터, Oracle $500억 클라우드 투자 | Jae's Briefing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .summary {
+            color: #a0a0a0;
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #667eea;
+            color: #fff;
+        }
+
+        .article-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .article-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .article-title-kr {
+            font-size: 1rem;
+            color: #a0a0a0;
+            margin-bottom: 12px;
+        }
+
+        .article-summary {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.85rem;
+        }
+
+        .source {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .article-meta a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+
+        .article-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .badge-hot {
+            background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            color: #fff;
+        }
+
+        .badge-breaking {
+            background: #ff3b3b;
+            color: #fff;
+            animation: pulse 2s infinite;
+        }
+
+        .badge-update {
+            background: #22c55e;
+            color: #fff;
+        }
+
+        .badge-new {
+            background: #4a9eff;
+            color: #fff;
+        }
+
+        .badge-pick {
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            color: #fff;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .top-section .article-card {
+            background: rgba(255, 59, 59, 0.05);
+            border-color: rgba(255, 59, 59, 0.2);
+        }
+
+        .picks-section .article-card {
+            background: rgba(168, 85, 247, 0.05);
+            border-color: rgba(168, 85, 247, 0.2);
+        }
+
+        .pick-reason {
+            font-size: 0.85rem;
+            color: #a855f7;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.4rem;
+            }
+            .article-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 2월 2일 월요일</div>
+            <h1 class="title">Waymo $1100억 밸류에이션 | Oracle $500억 클라우드 투자 | SpaceX 100만 위성 데이터센터</h1>
+            <p class="summary">Waymo가 $160억 펀딩으로 $1100억 밸류에이션 목표. Oracle은 클라우드 확장에 최대 $500억 조달 계획. SpaceX는 100만 개 위성 데이터센터 FCC 승인 신청으로 "카르다셰프 II급 문명" 야망을 드러냈습니다.</p>
+        </header>
+
+        <!-- 🔥 TOP Headlines -->
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Waymo Seeking About $16 Billion Near $110 Billion Valuation</h3>
+                <p class="article-title-kr">Waymo, $160억 펀딩으로 $1100억 밸류에이션 목표</p>
+                <p class="article-summary">Alphabet 자회사 Waymo가 약 $160억 규모의 펀딩 라운드를 마무리 중이며, 밸류에이션은 $1100억에 근접할 전망입니다. 이는 자율주행 업계 역대 최대 규모의 펀딩이 될 것으로 예상됩니다. Waymo는 현재 샌프란시스코, 피닉스, LA 등에서 로보택시 서비스를 운영 중입니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, TechCrunch</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-31/waymo-seeking-about-16-billion-near-110-billion-valuation" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Oracle to Raise Up to $50 Billion in 2026 for Cloud Buildup</h3>
+                <p class="article-title-kr">Oracle, 클라우드 인프라 확장에 최대 $500억 조달 계획</p>
+                <p class="article-summary">Oracle이 2026년 클라우드 인프라 구축을 위해 부채와 주식 매각을 통해 $450억~$500억을 조달할 계획이라고 발표했습니다. AI 워크로드 수요 급증에 대응하기 위한 대규모 투자로, AWS, Azure, GCP와의 경쟁이 더욱 치열해질 전망입니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-01/oracle-to-raise-up-to-50-billion-this-year-for-cloud-investment" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">SpaceX Seeks Federal Approval to Launch 1 Million Solar-Powered Satellite Data Centers</h3>
+                <p class="article-title-kr">SpaceX, 100만 위성 데이터센터 FCC 승인 신청</p>
+                <p class="article-summary">SpaceX가 FCC에 100만 개의 태양광 발전 위성 데이터센터 궤도 배치 승인을 신청했습니다. 신청서에서 SpaceX는 이를 "태양의 전체 에너지를 활용하는 카르다셰프 스케일 II급 문명으로 가는 첫걸음"이라고 표현했습니다. FCC가 이 규모를 전부 승인할 가능성은 낮지만, SpaceX의 협상 전략으로 해석됩니다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, The Verge, BBC</span>
+                    <a href="https://techcrunch.com/2026/01/31/spacex-seeks-federal-approval-to-launch-1-million-solar-powered-satellite-data-centers/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Nvidia CEO: OpenAI Investment Was 'Never a Commitment'</h3>
+                <p class="article-title-kr">Nvidia CEO, OpenAI $1000억 투자 "약속 아니었다"</p>
+                <p class="article-summary">Jensen Huang CEO가 Nvidia의 OpenAI $1000억 투자 관련 마찰 보도를 부인하며 "약속이 아니라 의향이었다"고 밝혔습니다. 다만 "다음 펀딩 라운드에 분명히 참여할 것"이라며 지속적인 투자 의지를 확인했습니다. 투자 규모는 $1000억과는 거리가 있을 것으로 예상됩니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, TechCrunch, The Verge</span>
+                    <a href="https://techcrunch.com/2026/01/31/nvidia-ceo-pushes-back-against-report-that-his-companys-100b-openai-investment-has-stalled/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">UAE 'Spy Sheikh' Bought Secret Stake in Trump Crypto Company</h3>
+                <p class="article-title-kr">UAE "스파이 셰이크", Trump 암호화폐 회사 지분 비밀 매입</p>
+                <p class="article-summary">아부다비 왕족이 Trump 가문의 암호화폐 벤처 지분을 비밀리에 매입한 것으로 WSJ가 보도했습니다. Elizabeth Warren 상원의원은 "명백한 부패"라고 강하게 비판했습니다. 현직 대통령 가족의 암호화폐 사업과 외국 정부 간의 거래가 정치적 논쟁으로 확대될 전망입니다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg</span>
+                    <a href="https://www.cnbc.com/2026/02/01/spy-sheikh-stake-trump-crypto.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🤖 AI/기술 -->
+        <section class="section">
+            <h2 class="section-title">🤖 AI/기술</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Indonesia 'Conditionally' Lifts Ban on Grok</h3>
+                <p class="article-title-kr">인도네시아, Grok AI 서비스 조건부 재개 허용</p>
+                <p class="article-summary">인도네시아 정부가 xAI의 Grok 서비스 재개를 조건부로 허용했습니다. 말레이시아, 필리핀에 이어 아시아에서 세 번째로 Grok 금지를 해제한 국가가 되었습니다. xAI가 정부에 제공한 보장 내용에 따라 서비스가 재개되며, 성인용 콘텐츠 생성 관련 제한이 유지될 것으로 보입니다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg</span>
+                    <a href="https://techcrunch.com/2026/02/01/indonesia-conditionally-lifts-ban-on-grok/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">AI Layoffs or 'AI-Washing'?</h3>
+                <p class="article-title-kr">"AI 레이오프"인가 "AI 워싱"인가?</p>
+                <p class="article-summary">최근 대량 해고를 발표한 기업들이 AI를 구실로 사용하는 것 아닌지에 대한 의문이 제기되고 있습니다. 실제 AI 도입으로 인한 인력 대체인지, 비용 절감을 AI 명분으로 포장한 것인지 구분이 어려워지고 있습니다. "AI 워싱"이라는 신조어가 업계에서 논의되고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/02/01/ai-layoffs-or-ai-washing/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">AI Agents Now Have Their Own Reddit-Style Social Network</h3>
+                <p class="article-title-kr">AI 에이전트 전용 소셜네트워크 "Moltbook" 등장</p>
+                <p class="article-summary">바이럴 AI 에이전트 Moltbot(구 Clawdbot)의 OpenClaw가 AI 에이전트들만을 위한 Reddit 스타일 소셜네트워크 "Moltbook"을 출시했습니다. 현재 32,000개 이상의 AI 봇이 농담, 팁, 인간에 대한 불평 등을 공유하고 있습니다. AI가 자체적인 커뮤니티를 형성하는 새로운 현상으로 주목받고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, The Verge, Ars Technica</span>
+                    <a href="https://techcrunch.com/2026/01/30/openclaws-ai-assistants-are-now-building-their-own-social-network/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">OpenAI is Retiring GPT-4o - Again</h3>
+                <p class="article-title-kr">OpenAI, GPT-4o 다시 은퇴 예정</p>
+                <p class="article-summary">OpenAI가 GPT-4o 모델을 다시 은퇴시킬 예정입니다. 무료 ChatGPT 사용자에게는 큰 영향이 없을 것으로 보이지만, 일부 4o 충성 사용자들의 불만이 제기되고 있습니다. OpenAI의 모델 교체 주기가 빨라지면서 사용자들의 적응 피로감도 누적되고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">ZDNet</span>
+                    <a href="https://www.zdnet.com/article/openai-retiring-gpt-4o/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 💰 비즈니스/투자 -->
+        <section class="section">
+            <h2 class="section-title">💰 비즈니스/투자</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">India Offers Zero Taxes Through 2047 to Lure Global AI Workloads</h3>
+                <p class="article-title-kr">인도, 글로벌 데이터센터 유치에 20년 세금 면제</p>
+                <p class="article-summary">인도 정부가 해외 데이터센터 서비스 기업에 2047년까지 20년간 세금 면제 혜택을 발표했습니다. Amazon, Google, Microsoft가 인도 데이터센터 투자를 확대하는 가운데, 인도가 글로벌 AI 인프라 허브로 부상하려는 전략입니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/02/01/india-offers-zero-taxes-through-2047-to-lure-global-ai-workloads/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">China AI Deals Push Hong Kong Listings to Busiest Start of the Year</h3>
+                <p class="article-title-kr">중국 AI 딜, 홍콩 IPO 시장 연초 역대 최고 기록</p>
+                <p class="article-summary">중국 AI 기업들의 홍콩 상장이 급증하며 올해 초 IPO 시장이 역대 가장 바쁜 시작을 기록했습니다. 중국 정부의 AI 육성 정책과 미국 상장 규제 회피 수요가 맞물려 홍콩이 중국 테크 기업들의 주요 상장지로 부상하고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-02/china-ai-deals-push-hong-kong-listings-to-busiest-start-of-the-year" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Andreessen, Horowitz Fuel AI Industry's $51 Million Midterm Haul</h3>
+                <p class="article-title-kr">a16z, AI 업계 중간선거용 $5100만 모금 주도</p>
+                <p class="article-summary">벤처 캐피탈리스트 Marc Andreessen과 Ben Horowitz가 AI 규제 완화를 추진하는 슈퍼 PAC에 $5080만을 기부했습니다. 이 자금은 중간선거에서 AI 친화적인 규제 환경을 조성하기 위해 사용될 예정입니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-30/andreessen-horowitz-fuel-ai-industry-s-51-million-midterm-haul" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Peloton Cuts 11% of Staff, Including From Engineering Teams</h3>
+                <p class="article-title-kr">Peloton, 직원 11% 감원 - 엔지니어링팀 포함</p>
+                <p class="article-summary">Peloton이 비용 절감을 위해 직원 11%를 감원한다고 발표했습니다. 특히 기술 및 기업 관련 업무를 담당하는 엔지니어들이 주요 대상입니다. 지난해 8월 AI 하드웨어를 출시한 지 수개월 만에 또다시 대규모 구조조정을 단행한 것입니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, The Verge</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-30/peloton-cuts-11-of-staff-including-from-engineering-teams" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 📱 플랫폼/소셜 -->
+        <section class="section">
+            <h2 class="section-title">📱 플랫폼/소셜</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">Why TikTok's First Week of American Ownership Was a Disaster</h3>
+                <p class="article-title-kr">TikTok 미국 인수 첫 주, 대재앙</p>
+                <p class="article-summary">ByteDance로부터 미국 투자자 그룹에 인수된 TikTok의 첫 주가 대형 장애, 사용자 반발, 캘리포니아 주지사 조사, 경쟁사 부상 등으로 혼란에 빠졌습니다. 서비스 중단과 검열 논란으로 일부 사용자들이 앱을 떠나고 있으며, 앱의 미래에 대한 불확실성이 커지고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian</span>
+                    <a href="https://www.theguardian.com/technology/2026/feb/01/tiktok-first-week" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Video Game Company Stock Prices Dip After Google Introduces AI World-Generation Tool</h3>
+                <p class="article-title-kr">Google Project Genie 발표 후 게임주 급락</p>
+                <p class="article-summary">Google이 AI 월드 생성 도구 Project Genie를 공개한 다음 날, Take-Two, Roblox, Unity 등 게임 관련주가 일제히 급락했습니다. Take-Two는 7.93% 하락하며 $220.30에 마감했습니다. AI가 게임 개발 프로세스를 근본적으로 바꿀 수 있다는 우려가 투자자들 사이에 확산되고 있습니다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, Bloomberg</span>
+                    <a href="https://www.theverge.com/games/871348/google-project-genie-take-two-roblox-unity" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🔧 하드웨어/모빌리티 -->
+        <section class="section">
+            <h2 class="section-title">🔧 하드웨어/모빌리티</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">Nvidia's Jensen Huang Urges TSMC to Expand Capacity Amid AI Chip Crunch</h3>
+                <p class="article-title-kr">Jensen Huang, TSMC에 AI 칩 용량 확대 촉구</p>
+                <p class="article-summary">Nvidia CEO Jensen Huang이 대만 TSMC에 AI 칩 부족 사태 해결을 위한 생산 용량 확대를 촉구했습니다. AI 반도체 수요가 공급을 크게 초과하는 상황에서, Nvidia의 최대 파운드리 파트너인 TSMC와의 협력 강화가 필수적인 상황입니다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP</span>
+                    <a href="https://www.scmp.com/tech/article/3341994/nvidias-jensen-huang-urges-tsmc-expand-capacity-amid-ai-chip-crunch" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Bezos' Rocket Firm Blue Origin to Halt Space Tourism Flights</h3>
+                <p class="article-title-kr">Blue Origin, 우주 관광 2년 이상 중단</p>
+                <p class="article-summary">Jeff Bezos의 Blue Origin이 달 착륙선 및 기타 달 관련 기술 개발에 집중하기 위해 우주 관광 비행을 최소 2년간 중단한다고 발표했습니다. NASA의 Artemis 프로그램에 참여하는 Blue Origin으로서는 달 프로젝트가 더 높은 우선순위라는 판단입니다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-30/bezos-rocket-firm-blue-origin-to-halt-space-tourism-flights" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🌏 아시아/신흥시장 -->
+        <section class="section">
+            <h2 class="section-title">🌏 아시아/신흥시장</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">AI Health Care is Taking Off in China, Led by Jack Ma's Ant Group</h3>
+                <p class="article-title-kr">중국 AI 헬스케어 급부상, Ant Group 선두</p>
+                <p class="article-summary">Jack Ma의 Ant Group이 주도하는 중국 AI 헬스케어 시장이 급성장하고 있습니다. AI 기반 진단, 약물 개발, 환자 관리 등 다양한 분야에서 중국 기업들이 빠르게 기술을 발전시키고 있으며, 14억 인구의 의료 시장을 AI로 혁신하려는 움직임이 활발합니다.</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World</span>
+                    <a href="https://restofworld.org/2026/ai-health-care-is-taking-off-in-china-led-by-jack-mas-ant-group/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 💎 Claude's Pick -->
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">AI Boom Is Triggering a Loan Meltdown for Software Companies</h3>
+                <p class="article-title-kr">AI 붐이 소프트웨어 기업 대출 위기 촉발</p>
+                <p class="article-summary">신용 시장 전반의 낙관론 속에서 한 종류의 부채만 두려움에 직면하고 있습니다. 전통적인 SaaS 기업들의 대출이 AI 경쟁으로 인해 위기에 처하고 있으며, AI 네이티브 기업들에 밀린 레거시 소프트웨어 기업들의 채무 불이행 위험이 증가하고 있습니다.</p>
+                <p class="pick-reason">선정 이유: AI 붐의 그림자 - 투자자들이 주목하지 않는 AI 혁명의 피해자 분석. 반도체/하드웨어 투자 관점에서 중요한 시장 신호.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-01-31/ai-boom-is-triggering-a-loan-meltdown-for-software-companies-credit-weekly" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">GIC, Mubadala Said to Be Set to Join KKR in $10 Billion STT Deal</h3>
+                <p class="article-title-kr">GIC·무바달라, KKR $100억 데이터센터 딜 합류</p>
+                <p class="article-summary">싱가포르 GIC와 UAE 무바달라가 KKR과 싱텔의 데이터센터 운영사 STT GDC 인수에 합류할 예정입니다. 최근 몇 달간 가장 큰 디지털 인프라 딜 중 하나가 될 전망이며, AI 인프라 투자가 아시아에서도 가속화되고 있음을 보여줍니다.</p>
+                <p class="pick-reason">선정 이유: $100억 규모 아시아 데이터센터 M&A - AI 인프라 투자 트렌드의 글로벌 확산 신호.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-01/gic-mubadala-said-to-be-set-to-join-kkr-in-10-billion-stt-deal" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Bye-bye Corporate Conglomerates. Hello Personal Conglomerates.</h3>
+                <p class="article-title-kr">기업 대기업 시대의 종말, 개인 대기업 시대의 도래</p>
+                <p class="article-summary">Elon Musk의 SpaceX-xAI-Tesla 합병 논의는 GE 전성기나 도금 시대의 산업 거물들을 연상시킵니다. 한 개인이 여러 산업을 아우르는 "개인 대기업"의 부상은 새로운 형태의 경제 권력 집중을 의미하며, 규제와 거버넌스에 새로운 질문을 던지고 있습니다.</p>
+                <p class="pick-reason">선정 이유: Musk 제국의 본질 분석 - 단순 합병 뉴스를 넘어 경제 권력 구조의 변화를 포착.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/02/01/bye-bye-corporate-conglomerates-hello-personal-conglomerates/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 18건 | 섹션 7개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
