@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-03",
+      "day": "화",
+      "title": "SpaceX-xAI $1.25조 합병 | Palantir AI 어닝 서프라이즈 | Notepad++ 중국 해커 장악",
+      "summary": "SpaceX와 xAI가 합병하며 $1.25조 세계 최대 비상장기업 탄생. Palantir AI·국방 수요로 어닝 서프라이즈. Notepad++ 6개월간 중국 해커에 업데이트 서버 장악.",
+      "highlights": [
+        "SpaceX-xAI 합병 $1.25조 세계 최대 비상장기업",
+        "Palantir AI+국방 수요 어닝 서프라이즈",
+        "Notepad++ 업데이트 서버 6개월 중국 해커 장악"
+      ],
+      "stats": {
+        "articles": 17,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-02",
       "day": "월",
       "title": "Waymo $1100억 밸류에이션 | Oracle $500억 클라우드 투자 | SpaceX 100만 위성 데이터센터",
