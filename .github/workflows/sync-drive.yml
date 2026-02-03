@@ -14,6 +14,9 @@ on:
     # 오후 (KST 15시, 17시)
     - cron: '0 6 * * *'    # KST 15:00
     - cron: '0 8 * * *'    # KST 17:00
+  push:
+    paths:
+      - 'archive/**'
   workflow_dispatch:
 
 permissions:
@@ -22,6 +25,8 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    # push 트리거 시 GitHub Actions Bot 커밋은 무시 (무한루프 방지)
+    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
 
     steps:
       - name: Checkout repository
@@ -93,18 +98,19 @@ jobs:
                   file_id = file['id']
                   mime_type = file['mimeType']
                   
-                  # Skip briefings.txt (now using Sheet instead)
+                  # Skip briefings.txt (using Sheet instead)
                   if name == 'briefings.txt':
                       print(f"  Skipping {name} (using Sheet instead)")
                       continue
                   
                   if mime_type == 'application/vnd.google-apps.folder':
-                      # Handle subfolders (like 'archive')
                       subfolder_path = os.path.join(local_path, name)
                       os.makedirs(subfolder_path, exist_ok=True)
                       synced.extend(sync_folder(file_id, subfolder_path))
+                  elif mime_type == 'application/vnd.google-apps.spreadsheet':
+                      print(f"  Skipping {name} (Google Sheets file)")
+                      continue
                   else:
-                      # Download file
                       file_path = os.path.join(local_path, name)
                       try:
                           content = download_file(file_id, name)
@@ -135,7 +141,7 @@ jobs:
                       
                       rows = result.get('values', [])
                       if len(rows) >= 2:
-                          data_rows = rows[1:]  # Skip header
+                          data_rows = rows[1:]
                           
                           for row in data_rows:
                               while len(row) < 8:
@@ -177,7 +183,7 @@ jobs:
                       
                       rows = result.get('values', [])
                       if len(rows) >= 2:
-                          data_rows = rows[1:]  # Skip header
+                          data_rows = rows[1:]
                           
                           for row in data_rows:
                               while len(row) < 6:
@@ -213,7 +219,7 @@ jobs:
                       
                       rows = result.get('values', [])
                       if len(rows) >= 2:
-                          data_rows = rows[1:]  # Skip header
+                          data_rows = rows[1:]
                           
                           for row in data_rows:
                               while len(row) < 6:
