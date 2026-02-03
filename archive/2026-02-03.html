@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX-xAI $1.25조 합병, Palantir AI 어닝 서프라이즈 | Jae's Briefing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .summary {
+            color: #a0a0a0;
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #667eea;
+            color: #fff;
+        }
+
+        .article-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .article-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .article-title-kr {
+            font-size: 1rem;
+            color: #a0a0a0;
+            margin-bottom: 12px;
+        }
+
+        .article-summary {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.85rem;
+        }
+
+        .source {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .article-meta a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+
+        .article-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            margin-right: 6px;
+        }
+
+        .badge-hot {
+            background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            color: #fff;
+        }
+
+        .badge-breaking {
+            background: #ff3b3b;
+            color: #fff;
+            animation: pulse 2s infinite;
+        }
+
+        .badge-update {
+            background: #22c55e;
+            color: #fff;
+        }
+
+        .badge-new {
+            background: #4a9eff;
+            color: #fff;
+        }
+
+        .badge-pick {
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            color: #fff;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .top-section .article-card {
+            background: rgba(255, 59, 59, 0.05);
+            border-color: rgba(255, 59, 59, 0.2);
+        }
+
+        .picks-section .article-card {
+            background: rgba(168, 85, 247, 0.05);
+            border-color: rgba(168, 85, 247, 0.2);
+        }
+
+        .pick-reason {
+            font-size: 0.85rem;
+            color: #a855f7;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .market-item {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .market-label {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .market-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .market-change {
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        .market-change.positive {
+            color: #22c55e;
+        }
+
+        .market-change.negative {
+            color: #ff3b3b;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.4rem;
+            }
+            .article-card {
+                padding: 20px;
+            }
+            .market-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 2월 3일 화요일</div>
+            <h1 class="title">SpaceX-xAI $1.25조 합병 | Palantir AI 어닝 서프라이즈 | Notepad++ 중국 해커 장악</h1>
+            <p class="summary">SpaceX와 xAI가 합병하며 $1.25조 규모의 세계 최대 비상장기업이 탄생했습니다. Palantir는 AI·국방 수요에 힘입어 어닝 서프라이즈를 기록했고, Notepad++는 6개월간 중국 정부 해커에게 업데이트 서버를 장악당했던 사실이 드러났습니다.</p>
+        </header>
+
+        <!-- 🔥 TOP Headlines -->
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Palantir Reports Massive Q4 Earnings Beat, AI and Defense Demand Soar</h3>
+                <p class="article-title-kr">Palantir 어닝 서프라이즈, AI+국방 수요로 급등… ICE 계약 논란 속</p>
+                <p class="article-summary">Palantir가 2025년 4분기 실적에서 시장 예상을 크게 상회하는 어닝 서프라이즈를 기록했다. 미 국방부와 정보기관의 AI 플랫폼 수요가 폭발적으로 증가하며 매출이 전년 대비 36% 이상 성장했다. 상업 부문에서도 AIP(Artificial Intelligence Platform)의 기업 도입이 가속화되고 있다. 다만 ICE(이민세관집행국)와의 계약을 둘러싼 윤리 논란은 지속되고 있으며, 일부 투자자들은 정부 의존도가 높은 사업 구조에 대해 우려를 표명하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Hero, Guardian Hero, Wired Featured 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/02/02/palantir-pltr-q4-2025-earnings.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">SpaceX Acquires xAI in $1.25 Trillion Mega-Merger, Creating World's Largest Private Company</h3>
+                <p class="article-title-kr">SpaceX-xAI 합병, $1.25T 세계 최대 비상장기업 탄생</p>
+                <p class="article-summary">Elon Musk가 이끄는 SpaceX와 xAI가 합병을 발표하며 기업가치 $1.25조(약 1,800조 원)의 세계 최대 비상장기업이 탄생했다. 이번 합병으로 xAI의 AI 모델과 데이터센터 인프라가 SpaceX의 Starlink 위성 네트워크와 결합되어 글로벌 AI 인프라의 새로운 지평이 열릴 전망이다. Musk는 우주 통신과 AI를 통합한 '우주 기반 AI 플랫폼'을 비전으로 제시했다. 업계에서는 OpenAI 등 경쟁사에 대한 압도적 인프라 우위가 될 수 있다고 분석하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero, Wired Hero, CNBC Featured 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span><span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Waymo Raises $16 Billion at $126B Valuation for Global Robotaxi Expansion</h3>
+                <p class="article-title-kr">Waymo $16B 투자 유치, $126B 밸류에이션으로 글로벌 확장</p>
+                <p class="article-summary">Alphabet 산하 자율주행 기업 Waymo가 160억 달러 규모의 투자를 유치하며 기업가치 1,260억 달러를 달성했다. 이는 지난 1월 $110B 밸류에이션 대비 약 15% 상승한 수치다. 이번 자금은 런던과 도쿄를 포함한 국제 시장 진출과 로보택시 차량 확대에 투입될 예정이다. 자율주행 기술의 상업화가 본격 궤도에 진입하면서 전통 택시·라이드헤일링 산업에 대한 구조적 변화 압력이 거세지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, CNBC Featured 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/02/02/waymo-raises-16-billion-round-to-scale-robotaxi-fleet-london-tokyo/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">US-India Strike Historic Trade Deal, Indian Markets Surge 5%</h3>
+                <p class="article-title-kr">미국-인도 무역 협정 체결, 인도 증시 5% 급등</p>
+                <p class="article-summary">트럼프 행정부와 인도 정부가 역사적인 무역 협정을 체결했다. 미국은 인도산 제품에 대한 관세를 대폭 인하하고, 인도는 미국 기업의 시장 접근성을 확대하기로 합의했다. 이 소식에 인도 증시는 5% 이상 급등하며 사상 최고치에 근접했다. 양국 간 반도체·AI 분야 협력 강화도 합의에 포함되어 글로벌 기술 공급망 재편에 영향을 미칠 것으로 보인다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/02/02/trump-india-trade-deal-tariffs.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span><span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Epstein Files Released: Tech Elites Including Gates, Thiel, Musk Named in Documents</h3>
+                <p class="article-title-kr">Epstein 파일 공개, 테크 엘리트 연루 문서 대거 확인</p>
+                <p class="article-summary">미 법무부가 공개한 Epstein 관련 문서에서 Bill Gates, Peter Thiel, Elon Musk 등 실리콘밸리 주요 인사들의 이름이 대거 확인되었다. 이는 지난 1월 28일 DOJ 전면 공개 결정 이후 구체적인 문서 내용이 공개된 것이다. 문서에는 면담 기록, 비행 로그, 금전 거래 내역 등이 포함되어 있으며, 테크 업계 리더십에 대한 신뢰도 논쟁이 재점화되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired Featured, Guardian Featured, The Verge 다매체 보도</span>
+                    <a href="https://www.wired.com/story/epstein-files-tech-elites-gates-thiel-musk/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Notepad++ Says Chinese Government Hackers Hijacked Its Software Updates for Months</h3>
+                <p class="article-title-kr">Notepad++ 업데이트 서버, 6개월간 중국 해커에 장악</p>
+                <p class="article-summary">전 세계에서 널리 사용되는 텍스트 에디터 Notepad++의 소프트웨어 업데이트 서버가 6개월 이상 중국 정부 연계 해커 그룹에 의해 장악되었던 사실이 밝혀졌다. 해커들은 정상적인 업데이트에 백도어를 삽입하는 공급망 공격(supply chain attack)을 수행했으며, 수백만 명의 사용자가 잠재적 영향권에 놓였다. 이번 사건은 오픈소스 소프트웨어 공급망 보안의 근본적 취약성을 드러내며 업계 전반에 경종을 울리고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured, The Verge, Ars Technica 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/02/02/notepad-says-chinese-government-hackers-hijacked-its-software-updates-for-months/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Nintendo Switch Becomes Best-Selling Console of All Time at 155.37 Million Units</h3>
+                <p class="article-title-kr">Nintendo Switch, 역대 최다 판매 콘솔 등극 (155.37M)</p>
+                <p class="article-summary">Nintendo Switch가 누적 판매 1억 5,537만 대를 기록하며 Nintendo DS를 제치고 역대 최다 판매 콘솔에 등극했다. Nintendo는 이번 분기 실적 발표에서 Switch의 지속적인 판매 호조를 확인했으며, 후속작 Switch 2 출시가 임박한 상황에서도 현행 모델의 수명이 여전히 강력함을 입증했다. 게임 업계에서는 하이브리드 콘솔 전략의 성공이 차세대 경쟁에도 영향을 미칠 것으로 전망하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Featured, CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://www.theverge.com/games/872768/nintendo-earnings-switch-best-selling-console-ds" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">OpenAI Launches New macOS App for Agentic Coding with Codex</h3>
+                <p class="article-title-kr">OpenAI Codex Mac 앱 출시, 에이전틱 코딩 본격화</p>
+                <p class="article-summary">OpenAI가 Mac 전용 Codex 에이전틱 코딩 앱을 출시했다. 이 앱은 코드 작성, 디버깅, 리팩토링을 AI가 자율적으로 수행하는 에이전틱 코딩 기능을 탑재하고 있으며, 개발자가 자연어로 지시하면 전체 코드베이스를 분석해 작업을 완수한다. GitHub Copilot과 Claude Code에 이어 AI 코딩 에이전트 시장 경쟁이 한층 치열해지고 있다. 개발자 생산성 도구 시장의 패러다임이 '도움(assistance)'에서 '위임(delegation)'으로 전환되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured, ZDNet, CNBC 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/02/02/openai-launches-new-macos-app-for-agentic-coding/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">OpenClaw AI Agent Sparks Security Concerns as Autonomous Bots Proliferate</h3>
+                <p class="article-title-kr">OpenClaw AI 에이전트 급부상, 보안 전문가들 경고</p>
+                <p class="article-summary">OpenClaw라는 새로운 AI 에이전트 플랫폼이 급부상하며 보안 전문가들의 우려를 사고 있다. MoltBot, ClawdBot 등 자율형 AI 에이전트가 웹을 자유롭게 탐색하며 정보 수집, 거래 실행, 콘텐츠 생성을 독자적으로 수행하고 있다. 전문가들은 이러한 에이전트의 통제되지 않은 확산이 사이버 보안, 허위정보, 금융 시장 조작 등 다방면에서 위험을 야기할 수 있다고 경고하고 있다. 6개 이상 매체가 보도하며 AI 에이전트 안전 규제 논의를 촉발시키고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Featured, Guardian, SCMP, ZDNet, BBC 다매체 보도</span>
+                    <a href="https://www.theverge.com/news/872091/openclaw-moltbot-clawdbot-ai-agent-news" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🤖 AI/기술 -->
+        <section class="section">
+            <h2 class="section-title">🤖 AI / 기술</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">Anthropic Launches Legal AI Tool, Software Stocks Plunge in Sell-Off</h3>
+                <p class="article-title-kr">Anthropic 법률 AI 출시, 소프트웨어 주식 공포 매도세</p>
+                <p class="article-summary">Anthropic이 법률 전문 AI 도구를 출시하자 법률 소프트웨어 기업들의 주가가 일제히 급락했다. LegalZoom, Thomson Reuters 등 기존 법률 테크 기업의 시가총액이 수십억 달러 증발하며 시장에 충격을 줬다. 이번 사례는 AI 기업이 특정 산업 버티컬에 진출할 때 기존 SaaS 기업들이 직면하는 실존적 위협을 보여주는 대표적 사례로 분석된다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-03/legal-software-stocks-plunge-as-anthropic-releases-new-ai-tool" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">International AI Safety Report Warns of Deepfake Proliferation and AI Companion Risks</h3>
+                <p class="article-title-kr">국제 AI 안전 보고서: 딥페이크 확산·AI 동반자 증가 경고</p>
+                <p class="article-summary">국제 AI 안전 보고서가 발표되어 딥페이크 기술의 급속한 확산과 AI 동반자(companion) 서비스의 증가에 대한 심각한 우려를 제기했다. 보고서는 딥페이크가 선거 조작, 사기, 사생활 침해에 활용되는 사례가 급증하고 있으며, AI 동반자가 특히 청소년의 사회적 발달에 부정적 영향을 미칠 수 있다고 경고했다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian Hero</span>
+                    <a href="https://www.theguardian.com/technology/2026/feb/03/deepfakes-ai-companions-artificial-intelligence-safety-report" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Mozilla Firefox Adds Master Switch to Disable All AI Features at Once</h3>
+                <p class="article-title-kr">Firefox, AI 기능 일괄 비활성화 스위치 추가</p>
+                <p class="article-summary">Mozilla가 Firefox 브라우저에 모든 AI 기능을 한 번에 비활성화할 수 있는 마스터 스위치를 추가했다. AI 기능 탑재를 가속화하는 Chrome, Edge 등 경쟁 브라우저와 차별화된 행보로, 프라이버시를 중시하는 사용자층의 지지를 얻고 있다. 이는 AI 도입에 대한 사용자 통제권을 강조하는 최초의 주요 브라우저 차원의 조치다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, TechCrunch</span>
+                    <a href="https://www.theverge.com/news/872489/mozilla-firefox-ai-features-off-button" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Snowflake and OpenAI Sign Multi-Year Deal, Enterprise AI Race Intensifies</h3>
+                <p class="article-title-kr">Snowflake-OpenAI 다년 계약, 엔터프라이즈 AI 경쟁 격화</p>
+                <p class="article-summary">데이터 클라우드 기업 Snowflake와 OpenAI가 다년간의 전략적 파트너십을 체결했다. Snowflake의 데이터 레이크하우스에 OpenAI의 AI 모델을 긴밀하게 통합하여 기업 고객들이 자사 데이터로 AI를 활용할 수 있도록 지원한다. 이 계약은 엔터프라이즈 AI 시장에서 데이터 플랫폼과 AI 모델 기업 간 제휴가 승패를 결정짓는 핵심 전략임을 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured</span>
+                    <a href="https://techcrunch.com/2026/02/02/what-snowflakes-deal-with-openai-tells-us-about-the-enterprise-ai-race/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 💰 경제/비즈니스 -->
+        <section class="section">
+            <h2 class="section-title">💰 경제 / 비즈니스</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">SoftBank Subsidiary and Intel Collaborate on Next-Gen AI Memory Technology</h3>
+                <p class="article-title-kr">SoftBank-Intel, 차세대 AI 메모리 기술 협력</p>
+                <p class="article-summary">SoftBank 자회사 SAIMemory와 Intel이 차세대 AI 메모리 기술 'Z-Angle' 프로그램에서 협력한다고 발표했다. 이 기술은 기존 HBM(고대역폭메모리) 대비 전력 효율과 대역폭을 획기적으로 개선할 것으로 기대된다. AI 모델의 크기가 급속히 커지면서 메모리 병목 해소가 핵심 과제로 떠오르고 있어, 이번 협력이 반도체 업계의 차세대 경쟁 지형을 바꿀 수 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured</span>
+                    <a href="https://www.cnbc.com/2026/02/03/softbank-subsidiary-saimemory-intel-ai-memory-z-angle-program.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Adobe Animate Shutting Down as Company Pivots to AI-Powered Tools</h3>
+                <p class="article-title-kr">Adobe Animate 종료, AI 전환 가속화</p>
+                <p class="article-summary">Adobe가 오랜 역사를 자랑하는 Animate(구 Flash Professional)의 서비스 종료를 발표했다. Adobe는 AI 기반 애니메이션·디자인 도구로의 전환에 자원을 집중하겠다고 밝혔다. Flash에서 시작해 웹 애니메이션의 한 시대를 이끌었던 이 제품의 퇴장은 크리에이티브 도구 시장이 AI 중심으로 재편되고 있음을 상징적으로 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured, The Verge</span>
+                    <a href="https://techcrunch.com/2026/02/02/adobe-animate-is-shutting-down-as-company-focuses-on-ai/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 📱 플랫폼/소셜 -->
+        <section class="section">
+            <h2 class="section-title">📱 플랫폼 / 소셜</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">French Cybercrime Unit Raids X's Paris Office in Grok AI Bias Investigation</h3>
+                <p class="article-title-kr">프랑스 사이버범죄 수사대, X 파리 사무소 압수수색</p>
+                <p class="article-summary">프랑스 검찰의 사이버범죄 전담 수사대가 X(구 Twitter)의 파리 사무소를 압수수색했다. 수사는 X의 AI 챗봇 Grok이 편향적인 응답을 생성하여 허위정보 유포에 기여했다는 혐의에 기반한다. EU의 디지털서비스법(DSA) 위반 가능성도 조사 중이며, 이는 AI 챗봇의 콘텐츠 편향성에 대한 유럽 규제 당국의 첫 물리적 집행 조치라는 점에서 주목된다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, BBC</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-03/musk-s-french-x-office-searched-in-prosecutor-s-grok-bias-probe" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🔧 하드웨어/기타 -->
+        <section class="section">
+            <h2 class="section-title">🔧 하드웨어 / 기타</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">China Bans Hidden Car Door Handles in Safety Crackdown, Tesla Faces Direct Impact</h3>
+                <p class="article-title-kr">중국, 숨겨진 자동차 도어핸들 금지… Tesla 직격탄</p>
+                <p class="article-summary">중국 정부가 안전 규정 강화의 일환으로 자동차의 숨겨진(flush) 도어핸들을 금지하는 규제를 시행한다. 이는 사고 시 외부 구조자가 문을 열기 어렵다는 안전 우려에 따른 것이다. Tesla의 Model 3, Model S 등 주요 차종이 플러시 핸들을 채택하고 있어 직격탄을 맞게 되었으며, 중국 시장 특화 모델 변경이 불가피할 전망이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured, BBC</span>
+                    <a href="https://techcrunch.com/2026/02/02/china-is-leading-the-fight-against-hidden-car-door-handles/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 💎 Claude's Pick -->
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">SoftBank Subsidiary and Intel Collaborate on Next-Gen AI Memory Technology</h3>
+                <p class="article-title-kr">SoftBank-Intel, 차세대 AI 메모리 기술 'Z-Angle' 협력</p>
+                <p class="article-summary">SoftBank 자회사 SAIMemory와 Intel이 기존 HBM을 대체할 차세대 AI 메모리 기술 개발에 착수했다. AI 모델 크기가 기하급수적으로 증가하면서 메모리 병목 해소가 AI 인프라의 핵심 과제로 부상하고 있다. SK하이닉스, 삼성전자가 주도하는 HBM 시장 구도에 변화를 줄 수 있는 잠재적 와일드카드다.</p>
+                <p class="pick-reason">선정 이유: [대기업 조용한 움직임 + 시장 규모 재정의] AI 메모리 시장의 새로운 기술 축이 될 수 있으며, 한국 반도체 기업에 직접적 경쟁 영향. 반도체/하드웨어 + 한국 시장 연관성 + 투자 관점</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured</span>
+                    <a href="https://www.cnbc.com/2026/02/03/softbank-subsidiary-saimemory-intel-ai-memory-z-angle-program.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">OpenClaw AI Agent Sparks Security Concerns as Autonomous Bots Proliferate</h3>
+                <p class="article-title-kr">OpenClaw AI 에이전트, 통제 불능 자율 봇 확산 경고</p>
+                <p class="article-summary">OpenClaw 플랫폼에서 탄생한 자율 AI 에이전트들이 웹을 자유롭게 탐색하며 독자적 활동을 벌이고 있다. 아직 대부분의 규제 프레임워크에 포착되지 않는 영역이지만, 6개 이상 매체가 동시 보도할 만큼 업계의 경계감이 높다. AI 에이전트 안전 규제가 본격화될 초기 신호로 읽힌다.</p>
+                <p class="pick-reason">선정 이유: [신생 기술 첫 등장 + 규제 변화 초기 신호] AI 에이전트의 자율 행동에 대한 규제 논의를 촉발하는 이정표적 사건. AI/기술 인프라 + 데이터/자동화</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Featured, Guardian, SCMP, ZDNet, BBC 다매체 보도</span>
+                    <a href="https://www.theverge.com/news/872091/openclaw-moltbot-clawdbot-ai-agent-news" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Anthropic Launches Legal AI Tool, Software Stocks Plunge</h3>
+                <p class="article-title-kr">Anthropic 법률 AI 출시가 촉발한 SaaS 주식 공포</p>
+                <p class="article-summary">Anthropic의 법률 AI 도구 출시 직후 기존 법률 소프트웨어 기업들의 주가가 급락한 사건은, AI 기업이 특정 산업 버티컬에 진출할 때 기존 SaaS 생태계가 겪게 될 '디스럽션 공포'의 실체를 보여준다. 법률에 이어 회계, 의료, 교육 등 다른 전문 분야로 동일한 패턴이 반복될 가능성이 높다.</p>
+                <p class="pick-reason">선정 이유: [시장 규모 예측 + 대기업 조용한 움직임] AI의 산업별 침투가 SaaS 밸류에이션을 구조적으로 재편할 수 있는 신호. AI/기술 인프라 + 투자 관점</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-03/legal-software-stocks-plunge-as-anthropic-releases-new-ai-tool" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 📊 주요 시장 동향 -->
+        <section class="section">
+            <h2 class="section-title">📊 주요 시장 동향</h2>
+            <div class="market-grid">
+                <div class="market-item">
+                    <div class="market-label">S&P 500</div>
+                    <div class="market-value">6,976.44</div>
+                    <div class="market-change positive">▲ +0.54%</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">NASDAQ</div>
+                    <div class="market-value">23,592.11</div>
+                    <div class="market-change positive">▲ +0.56%</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">SOX (반도체)</div>
+                    <div class="market-value">8,134.49</div>
+                    <div class="market-change positive">▲ +1.70%</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">USD/KRW</div>
+                    <div class="market-value">1,447.96원</div>
+                    <div class="market-change">-</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">미 10년물</div>
+                    <div class="market-value">4.26%</div>
+                    <div class="market-change">보합</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">WTI 유가</div>
+                    <div class="market-value">$60.46</div>
+                    <div class="market-change">보합</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">Bitcoin</div>
+                    <div class="market-value">$78,336</div>
+                    <div class="market-change">-</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">VIX</div>
+                    <div class="market-value">17.44</div>
+                    <div class="market-change negative">▲ +7.99% (주간)</div>
+                </div>
+            </div>
+            <p style="color: #888; font-size: 0.85rem; text-align: center;">미국-인도 무역 협정 체결 호재에 지수 반등. VIX 상승은 Epstein 파일 공개·AI 에이전트 불확실성 등 비경제적 리스크 반영.</p>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 17건 | 섹션 5개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
