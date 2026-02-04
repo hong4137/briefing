@@ -731,5 +731,26 @@
       }
     }
   ],
-  "specials": []
+  "specials": [
+    {
+      "date": "ces-2026-special",
+      "title": "CES 2026 특별판: AI·로봇·모빌리티 혁신 총정리",
+      "summary": "CES 2026에서 공개된 AI, 로봇, 자율주행, 스마트홈 혁신 기술 총정리.",
+      "period": "2026-01-06 ~ 2026-01-13",
+      "stats": {
+        "articles": 20,
+        "sections": 6
+      }
+    },
+    {
+      "date": "davos-2026-special",
+      "title": "다보스 2026: AI 인프라 대전환과 미중 기술패권 경쟁",
+      "summary": "트럼프 3주 원전 승인, 젠슨 황 AI 5층 케이크. 다보스 포럼 AI 핵심 발언 총정리.",
+      "period": "2026-01-20 ~ 2026-01-24",
+      "stats": {
+        "articles": 13,
+        "sections": 4
+      }
+    }
+  ]
 }
