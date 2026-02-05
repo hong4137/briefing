@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthropic 광고 거부, ElevenLabs $110억 기업가치, Positron AI칩 $230M 투자 | Jae's Briefing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .summary {
+            color: #a0a0a0;
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #667eea;
+            color: #fff;
+        }
+
+        .article-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .article-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .article-title-kr {
+            font-size: 1rem;
+            color: #a0a0a0;
+            margin-bottom: 12px;
+        }
+
+        .article-summary {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.85rem;
+        }
+
+        .source {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .article-meta a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+
+        .article-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .badge-hot {
+            background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            color: #fff;
+        }
+
+        .badge-breaking {
+            background: #ff3b3b;
+            color: #fff;
+            animation: pulse 2s infinite;
+        }
+
+        .badge-update {
+            background: #22c55e;
+            color: #fff;
+        }
+
+        .badge-new {
+            background: #4a9eff;
+            color: #fff;
+        }
+
+        .badge-pick {
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            color: #fff;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .top-section .article-card {
+            background: rgba(255, 59, 59, 0.05);
+            border-color: rgba(255, 59, 59, 0.2);
+        }
+
+        .picks-section .article-card {
+            background: rgba(168, 85, 247, 0.05);
+            border-color: rgba(168, 85, 247, 0.2);
+        }
+
+        .pick-reason {
+            font-size: 0.85rem;
+            color: #a855f7;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.4rem;
+            }
+            .article-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 2월 5일 목요일</div>
+            <h1 class="title">Anthropic 광고 거부 | ElevenLabs $110억 | Microsoft 보안 수장 교체</h1>
+            <p class="summary">Anthropic이 Claude 챗봇에 광고를 넣지 않겠다고 선언하며 OpenAI와 차별화. ElevenLabs는 $110억 기업가치로 $5억 투자 유치. AI 칩 스타트업 Positron이 Nvidia에 도전장. 소프트웨어 주식 대폭락으로 공매도 세력이 $240억 수익.</p>
+        </header>
+
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+            
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Anthropic says no to ads on Claude chatbot</h3>
+                <p class="article-title-kr">Anthropic, Claude 챗봇에 광고 도입 거부 선언</p>
+                <p class="article-summary">Anthropic이 Claude 챗봇에 광고를 도입하지 않겠다고 밝혔다. OpenAI가 ChatGPT에 광고 테스트를 시작한 지 몇 주 만에 나온 발표다. Anthropic은 "사용자와 Claude 간의 대화가 개인적인 성격을 띠기 때문에 광고가 부조화스러울 것"이라고 설명했다. 슈퍼볼 광고에서도 AI 제품 광고를 조롱하는 내용을 담아 경쟁사와의 차별화를 강조하고 있다. 이 결정은 AI 챗봇 시장에서 수익화 전략의 분기점이 될 수 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Ars Technica, The Verge 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/02/04/anthropic-no-ads-claude-chatbot-openai-chatgpt.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Microsoft replaces security chief Bell with Google's Gallot</h3>
+                <p class="article-title-kr">Microsoft, Google Cloud 출신 Gallot을 새 보안 총괄로 임명</p>
+                <p class="article-summary">Microsoft가 보안 총괄 Charlie Bell을 교체하고 Google Cloud 고객 경험 담당 사장이었던 Hayete Gallot을 새 보안 책임자로 임명했다. Gallot은 원래 Microsoft 출신으로, 2024년 10월 Google로 이적했다가 복귀하게 됐다. Bell은 개별 기여자 역할로 이동해 엔지니어링 품질에 집중할 예정이다. Microsoft는 최근 사이버 공격 대응 과정에서 보안 이슈를 겪은 바 있어, 이번 인사가 보안 전략 강화의 신호탄이 될 것으로 보인다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg, The Verge 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/02/04/microsoft-brings-back-hayete-gallot-to-run-security-new-role-for-bell.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">ElevenLabs raises $500M at $11 billion valuation</h3>
+                <p class="article-title-kr">ElevenLabs, $110억 기업가치로 $5억 투자 유치</p>
+                <p class="article-summary">AI 음성 합성 스타트업 ElevenLabs가 Sequoia가 리드한 투자 라운드에서 $5억을 조달하며 기업가치가 $110억으로 평가됐다. 1년 전 대비 3배 이상 상승한 수치다. 다양한 사실적인 음성을 생성하는 기술력으로 주목받아 왔으며, Nvidia의 지원도 받고 있다. 2025년 유럽 AI 스타트업 투자가 $216억으로 사상 최고치를 기록한 가운데, ElevenLabs는 IPO를 준비 중인 것으로 알려졌다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg, CNBC 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/02/04/elevenlabs-raises-500m-from-sequioia-at-a-11-billion-valuation/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Positron raises $230M Series B to take on Nvidia's AI chips</h3>
+                <p class="article-title-kr">AI 칩 스타트업 Positron, Nvidia에 도전하며 $2.3억 Series B 투자 유치</p>
+                <p class="article-summary">AI 칩 스타트업 Positron이 $2.3억 규모의 Series B 투자를 유치하며 기업가치가 $10억을 돌파했다. Nvidia의 독주에 도전하겠다는 야심을 품고 있는 Positron은 차세대 AI 칩 개발에 박차를 가하고 있다. CEO Mitesh Agrawal이 Bloomberg와의 인터뷰에서 밝힌 바에 따르면, 기존 GPU 기반 접근과 다른 아키텍처로 AI 추론 효율성을 높이는 것이 목표다. Nvidia에 대한 의존도를 낮추려는 기업들의 수요가 투자 유치의 배경이 됐다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero, Bloomberg</span>
+                    <a href="https://techcrunch.com/2026/02/04/exclusive-positron-raises-230m-series-b-to-take-on-nvidias-ai-chips/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🤖 AI / 기술</h2>
+            
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">OpenClaw AI 'skill' extensions are a security nightmare</h3>
+                <p class="article-title-kr">OpenClaw AI '스킬' 확장 프로그램, 보안 악몽으로 부상</p>
+                <p class="article-summary">지난 주 폭발적으로 인기를 얻은 AI 에이전트 OpenClaw의 스킬 마켓플레이스에서 보안 우려가 제기됐다. 1Password 제품 VP Jason Meller에 따르면 수백 개의 사용자 제출 '스킬' 애드온에서 맬웨어가 발견됐다. 가장 많이 다운로드된 애드온이 악성 코드를 배포하고 있어 "공격 표면"이 됐다는 지적이다. AI 에이전트의 대중화와 함께 보안 위험도 커지고 있음을 보여주는 사례다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, Bloomberg</span>
+                    <a href="https://www.theverge.com/news/874011/openclaw-ai-skill-clawhub-extensions-security-nightmare" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">A New AI Math Startup Axiom Cracked 4 Previously Unsolved Problems</h3>
+                <p class="article-title-kr">AI 수학 스타트업 Axiom, 미해결 문제 4개 풀어</p>
+                <p class="article-summary">AI 스타트업 Axiom이 오랜 기간 풀리지 않던 수학 문제 4개의 해답을 AI를 통해 찾아냈다고 발표했다. 이는 AI의 추론 능력이 꾸준히 발전하고 있음을 보여주는 징표다. 수학적 증명과 논리적 추론은 AI에게 가장 어려운 영역 중 하나로 여겨져 왔기 때문에 이번 성과가 주목받고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired Featured</span>
+                    <a href="https://www.wired.com/story/a-new-ai-math-ai-startup-just-cracked-4-previously-unsolved-problems/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Mistral's New Ultra-Fast Translation Model</h3>
+                <p class="article-title-kr">Mistral, 초고속 실시간 번역 모델 공개</p>
+                <p class="article-summary">프랑스 AI 스타트업 Mistral이 초고속 실시간 번역 모델 Voxtral을 공개했다. "GPU가 너무 많으면 게을러진다"는 과학 운영 부사장의 말처럼, Mistral은 미국 대형 AI 회사들과 다른 효율적인 경로를 개척하고 있다. 리소스를 적게 사용하면서도 주요 AI 연구소들과 경쟁할 수 있는 성능을 보여주고 있어 주목받는다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired Featured</span>
+                    <a href="https://www.wired.com/story/mistral-voxtral-real-time-ai-translation/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">GitHub adds Claude and Codex AI coding agents</h3>
+                <p class="article-title-kr">GitHub, Claude와 Codex AI 코딩 에이전트 추가</p>
+                <p class="article-summary">GitHub가 Anthropic의 Claude와 OpenAI의 Codex AI 코딩 에이전트를 직접 플랫폼에 통합했다. Copilot Pro Plus 또는 Enterprise 구독자는 GitHub, GitHub Mobile, Visual Studio Code에서 바로 사용할 수 있다. 'Agent HQ'라는 비전의 일환으로, 개발자들이 다양한 AI 코딩 도구를 한 곳에서 활용할 수 있게 하는 것이 목표다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <a href="https://www.theverge.com/news/873665/github-claude-codex-ai-agents" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Tinder looks to AI to help fight 'swipe fatigue'</h3>
+                <p class="article-title-kr">Tinder, AI로 '스와이프 피로' 해결 나서</p>
+                <p class="article-summary">Tinder가 데이팅 앱 번아웃 문제를 해결하기 위해 AI를 도입한다. AI 추천 기능과 카메라롤 분석을 통해 더 나은 매칭을 제공할 계획이다. 사용자들이 무한 스와이프에 지쳐 앱 사용을 줄이는 현상에 대응하려는 전략으로, 개인화된 경험을 통해 참여도를 높이겠다는 것이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured</span>
+                    <a href="https://techcrunch.com/2026/02/04/tinder-looks-to-ai-to-help-fight-swipe-fatigue-and-dating-app-burnout/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Resolve AI hits $1B valuation</h3>
+                <p class="article-title-kr">Resolve AI, 유니콘 등극 - $10억 기업가치</p>
+                <p class="article-summary">라이브 소프트웨어 시스템의 문제를 찾아 해결하는 AI 에이전트를 개발하는 스타트업 Resolve AI가 $10억 기업가치로 새로운 펀딩 라운드를 마쳤다. 2년 된 스타트업이 Lightspeed가 리드한 Series A에서 $1.25억을 조달했다. 시스템 장애 대응 자동화에 대한 기업 수요가 반영된 결과다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, TechCrunch</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-04/resolve-ai-hits-1-billion-valuation-for-outage-thwarting-ai-agents" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">💰 경제 / 비즈니스</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">Google's annual revenue tops $400B, capex $185B</h3>
+                <p class="article-title-kr">Google 연매출 $4000억 돌파, 설비투자 $1850억 예고</p>
+                <p class="article-summary">Alphabet이 사상 최초로 연간 매출 $4000억을 돌파했다. Q4 실적 발표와 함께 2026년 설비투자를 $1750억~$1850억으로 예고해 애널리스트 예상($1195억)을 크게 웃돌았다. 클라우드 사업과 YouTube의 지속적인 성장이 견인했으며, AI 인프라 구축에 공격적으로 투자하겠다는 의지를 보여줬다. 전년 대비 15% 성장이다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, The Verge, CNBC 다매체 보도</span>
+                    <a href="https://www.theverge.com/news/874161/google-400-billion-revenue-q4-2025-earnings" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Software short sellers mint $24 billion profit</h3>
+                <p class="article-title-kr">소프트웨어 공매도 세력, $240억 수익 기록</p>
+                <p class="article-summary">소프트웨어 주식의 대폭락으로 공매도에 베팅한 투자자들이 막대한 수익을 거뒀다. 헤지펀드들은 AI 도구가 기존 소프트웨어 비즈니스를 잠식할 것이라는 우려에 공매도 포지션을 늘려왔다. Anthropic의 새로운 자동화 도구 출시 이후 촉발된 이번 매도세는 기술주 전반에 걸쳐 조 달러 규모의 시가총액 감소를 초래했다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-04/software-short-sellers-mint-24-billion-profit-as-stocks-tumble" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Snap Q4: revenue beat but fewer users</h3>
+                <p class="article-title-kr">Snap Q4 실적: 매출 호조, 사용자는 감소</p>
+                <p class="article-summary">Snap이 Q4 매출이 예상을 상회했지만 일일 사용자 수는 감소했다고 발표했다. 광고 사업이 성장하고 구독 매출이 의미 있게 기여하기 시작했다는 긍정적 신호에도 불구하고, 사용자 감소는 우려 요인이다. 대중 시장을 겨냥한 AR 글래스 Specs 출시를 준비하며 수익원 다각화에 나서고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg, CNBC 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/02/04/as-it-preps-specs-for-the-masses-snaps-q4-shows-revenue-growth-but-fewer-daily-users/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Lunar Energy raises $232M for home batteries</h3>
+                <p class="article-title-kr">Lunar Energy, 가정용 배터리 사업에 $2.32억 투자 유치</p>
+                <p class="article-summary">가정용 배터리로 분산 발전소를 구축하려는 스타트업 Lunar Energy가 $2.32억을 추가 투자받아 누적 $5억 이상을 조달했다. 전력망을 지원하는 대규모 가정용 배터리 네트워크를 목표로 하고 있으며, 에너지 저장 시장의 성장세를 타고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured</span>
+                    <a href="https://techcrunch.com/2026/02/04/lunar-energy-raises-232m-to-deploy-home-batteries-that-prop-up-the-grid/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">💾 반도체 / 하드웨어</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">Qualcomm gives tepid forecast - memory shortage</h3>
+                <p class="article-title-kr">Qualcomm, 부진한 전망 제시 - 메모리 부족이 원인</p>
+                <p class="article-summary">최대 스마트폰 프로세서 제조사 Qualcomm이 현 분기 매출 전망을 시장 기대 이하로 제시했다. CEO Cristiano Amon은 "메모리가 모바일 시장 규모를 결정하게 될 것"이라며 부품 부족이 소비자 수요에 영향을 미칠 것으로 우려했다. 주가는 장 외 거래에서 하락했다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg</span>
+                    <a href="https://www.cnbc.com/2026/02/04/qualcomm-qcom-q1-2026-earnings.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">📱 플랫폼 / 정책</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">Amazon launches AI-enhanced Alexa+ in US</h3>
+                <p class="article-title-kr">Amazon, AI 강화된 Alexa+ 미국 전역 출시</p>
+                <p class="article-summary">Amazon이 생성형 AI가 탑재된 Alexa+를 미국 전역의 Prime 구독자에게 공개했다. 지난해 'early access' 프리뷰로 시작해 대기자 명단이나 새 기기 구매가 필요했지만, 이제 모든 사용자가 이용 가능하다. 기존 Alexa 대비 더 자연스러운 대화와 복잡한 작업 처리가 가능해졌다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg</span>
+                    <a href="https://www.cnbc.com/2026/02/04/amazon-alexa-plus-us-releas.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">OpenAI models could help power Alexa</h3>
+                <p class="article-title-kr">OpenAI 모델, Alexa 구동에 활용될 수 있어</p>
+                <p class="article-summary">Amazon이 OpenAI에 최대 $500억 투자를 논의하는 과정에서, OpenAI 모델이 Alexa를 구동하는 데 사용될 가능성이 제기됐다. 소식통에 따르면 이는 협력 논의의 일부로, Amazon의 AI 전략에서 외부 모델 활용 가능성을 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured</span>
+                    <a href="https://www.cnbc.com/2026/02/04/open-ai-alexa-amazon-investment.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Sen. Warren urges FTC to scrutinize AI acquihires</h3>
+                <p class="article-title-kr">워런 상원의원, FTC에 AI '인수고용' 거래 조사 촉구</p>
+                <p class="article-summary">Elizabeth Warren 상원의원 등이 FTC와 DOJ에 기술 기업들의 AI '인수고용(acquihire)' 거래를 면밀히 조사할 것을 촉구하는 서한을 보냈다. 반독점법 위반 시 거래를 차단하거나 되돌려야 한다고 주장했다. 대형 기술 기업들이 스타트업 인재를 인수하는 관행에 대한 규제 압력이 높아지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured</span>
+                    <a href="https://www.cnbc.com/2026/02/04/sen-warren-others-urge-ftc-doj-to-scrutinize-tech-acquihire-deals.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Pinterest sacks engineers for fired workers software</h3>
+                <p class="article-title-kr">Pinterest, 해고 직원 식별 소프트웨어 만든 엔지니어 2명 해고</p>
+                <p class="article-summary">Pinterest가 해고된 직원들을 식별하는 소프트웨어를 만든 엔지니어 2명을 해고했다. 해당 도구가 회사 정책을 위반했는지 여부가 논란이 됐으며, 직원들의 자체적인 도구 개발이 회사와 충돌하는 사례로 주목받고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian Tech Hero</span>
+                    <a href="https://www.theguardian.com/technology/2026/feb/04/pinterest-sacks-two-engineers-for-software-identify-fired-workers" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Hackers publish Harvard, UPenn stolen data</h3>
+                <p class="article-title-kr">해커 그룹, 하버드·펜실베니아대 탈취 데이터 공개</p>
+                <p class="article-summary">악명 높은 사이버 범죄 그룹 ShinyHunters가 하버드 대학교와 펜실베니아 대학교를 해킹한 후 탈취한 개인 정보를 자신들의 협박 웹사이트에 공개했다. 대학 기관을 대상으로 한 사이버 공격이 증가하는 추세를 보여주는 사건이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero</span>
+                    <a href="https://techcrunch.com/2026/02/04/hackers-publish-personal-information-stolen-during-harvard-upenn-data-breaches/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+            
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Cerebras raises $1B at $23B valuation</h3>
+                <p class="article-title-kr">Cerebras, $230억 기업가치로 $10억 투자 유치</p>
+                <p class="article-summary">AI 칩 제공업체 Cerebras Systems가 새로운 펀딩 라운드에서 약 $10억을 조달하며 Nvidia와의 경쟁에 본격적으로 나섰다. Nvidia 독점에 대한 우려가 커지면서 대안 AI 칩 개발사들에 대한 투자가 활발해지고 있다. 오늘 발표된 Positron의 $2.3억 투자와 함께, AI 칩 시장의 다극화 조짐을 보여주는 신호다.</p>
+                <p class="pick-reason">선정 이유: AI 칩 시장 다극화의 또 다른 증거 + 반도체 공급망 다변화 트렌드 + 투자 관점에서 의미 있는 변화</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-04/cerebras-raises-1-billion-in-funding-at-23-billion-valuation" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">China ramps up energy boom for AI race</h3>
+                <p class="article-title-kr">중국, AI 경쟁 대비 에너지 인프라 대폭 확충</p>
+                <p class="article-summary">중국의 에너지 설비 투자 데이터가 Elon Musk와 Jensen Huang이 경고한 내용을 뒷받침한다. 세계 최고 수준의 전력망이 AI 경쟁에서 미국에 대한 주요 우위가 될 것이라는 분석이다. AI 데이터센터의 막대한 전력 소비를 감당할 인프라 경쟁이 본격화되고 있다.</p>
+                <p class="pick-reason">선정 이유: AI 경쟁의 새로운 차원(에너지 인프라) 부각 + 미-중 기술 경쟁 관점 + 장기적 투자 시사점</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-04/china-ramps-up-energy-boom-flagged-by-musk-as-key-to-ai-race" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">A16z raises $1.7B for AI infrastructure</h3>
+                <p class="article-title-kr">A16z, AI 인프라 전담 $17억 펀드 조성</p>
+                <p class="article-summary">Andreessen Horowitz가 $150억 신규 펀딩 중 $17억을 AI 인프라 팀에 배정했다. OpenAI, ElevenLabs, Black Forest Labs, Cursor, Fal, Ideogram 등 주요 AI 투자를 담당해온 팀이다. 제너럴 파트너 Jennifer Li가 이끄는 이 팀의 대규모 자금 확보는 AI 인프라 레이어에 대한 VC 베팅이 본격화되고 있음을 보여준다.</p>
+                <p class="pick-reason">선정 이유: 최대 VC의 AI 인프라 집중 투자 전략 + 투자 관점에서 의미 있는 방향성 + 한국 시장에도 영향</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/video/a16z-just-raised-1-7b-for-ai-infrastructure-heres-where-its-going/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 20건 | 섹션 6개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
