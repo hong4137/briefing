@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-05",
+      "day": "목",
+      "title": "Anthropic 광고 거부 | ElevenLabs $110억 | Microsoft 보안 수장 교체",
+      "summary": "Anthropic이 Claude 챗봇에 광고 미도입 선언하며 OpenAI와 차별화. ElevenLabs $110억 기업가치로 $5억 투자 유치. AI 칩 스타트업 Positron이 Nvidia에 도전장.",
+      "highlights": [
+        "Anthropic Claude 광고 거부 OpenAI 차별화",
+        "ElevenLabs $110억 기업가치 $5억 투자",
+        "Positron AI칩 $2.3억 투자 Nvidia 도전"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-04",
       "day": "수",
       "title": "Palantir 실적 호조 속 ICE 논란 | 닌텐도 10% 급락 | Intel GPU 시장 도전",
