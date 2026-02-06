@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-06",
+      "day": "금",
+      "title": "비트코인 $70K 붕괴 | OpenAI 에이전트 플랫폼 | AI 공포에 소프트웨어 $285B 증발",
+      "summary": "비트코인이 트럼프 당선 이후 최저치인 $70K 아래로 추락하며 암호화폐 시장 $2조 증발. OpenAI가 엔터프라이즈 AI 에이전트 관리 플랫폼 출시. AI 자동화 우려로 소프트웨어 주식 $285B 폭락.",
+      "highlights": [
+        "비트코인 $70K 붕괴 암호화폐 $2조 증발",
+        "OpenAI Frontier 엔터프라이즈 AI 에이전트 플랫폼",
+        "소프트웨어 주식 $285B 폭락 AI 자동화 공포"
+      ],
+      "stats": {
+        "articles": 15,
+        "sections": 6,
+        "picks": 1
+      }
+    },
+    {
       "date": "2026-02-05",
       "day": "목",
       "title": "Anthropic 광고 거부 | ElevenLabs $110억 | Microsoft 보안 수장 교체",
