@@ -741,28 +741,7 @@
       }
     }
   ],
-  "weekly": [
-    {
-      "date": "weekly-2026-01-26",
-      "week": "2026-W04",
-      "title": "TikTok 미국 합작법인 설립 | Intel 제조 위기 | 중국 H200 허가",
-      "summary": "TikTok 미국 합작법인 설립으로 6년 금지 논란 일단락, Intel 제조 위기로 주가 17% 폭락, 중국 Nvidia H200 주문 허가로 수출 규제 완화 신호",
-      "period": "2026-01-20 ~ 2026-01-25",
-      "stats": {
-        "clusters": 4
-      }
-    },
-    {
-      "date": "weekly-2026-02-02",
-      "week": "2026-W05",
-      "title": "DeepSeek 충격파로 AI 업계 지각변동",
-      "summary": "중국 AI 스타트업 DeepSeek의 R1 모델 공개로 Nvidia 시총 $5,890억 증발.",
-      "period": "2026-01-26 ~ 2026-02-01",
-      "stats": {
-        "clusters": 9
-      }
-    }
-  ],
+  "weekly": [],
   "specials": [
     {
       "date": "ces-2026-special",
