@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-07",
+      "day": "토",
+      "title": "빅테크 AI 투자 $650B 시대 | Nvidia 반등 8% | EU TikTok 중독 디자인 최후통첩",
+      "summary": "빅테크가 올해 AI 인프라에 총 $650B 투자를 선언하며 사상 최대 캐펙스 경쟁에 돌입. Amazon $200B 계획에 시장은 충격받았지만 Nvidia는 8% 반등. EU는 TikTok에 무한스크롤 제거를 명령. Uber 성폭행 첫 배상 판결, Google 직원 900명의 ICE 계약 해지 요구.",
+      "highlights": [
+        "빅테크 AI 투자 $650B 사상 최대 캐펙스",
+        "Nvidia 8% 반등 젠슨 황 지속가능 발언",
+        "EU TikTok 무한스크롤 제거 최후통첩"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-06",
       "day": "금",
       "title": "비트코인 $70K 붕괴 | OpenAI 에이전트 플랫폼 | AI 공포에 소프트웨어 $285B 증발",
