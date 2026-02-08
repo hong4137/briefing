@@ -759,6 +759,16 @@
   ],
   "weekly": [
     {
+      "date": "weekly-2026-02-08",
+      "title": "빅테크 AI $650B 투자 경쟁과 VIX 공포 확산",
+      "summary": "빅테크가 사상 최대 AI 인프라 투자를 선언한 가운데, SpaceX-xAI $1.25조 합병, 비트코인 $70K 붕괴, AI 자동화 공포로 소프트웨어 주식 $285B 증발.",
+      "period": "2026-02-02 ~ 2026-02-07",
+      "stats": {
+        "clusters": 13,
+        "sections": 7
+      }
+    },
+    {
       "date": "weekly-2026-01-26",
       "week": "2026-W04",
       "title": "TikTok 미국 합작법인 설립 | Intel 제조 위기 | 중국 H200 허가",
