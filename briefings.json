@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-09",
+      "day": "월",
+      "title": "빅테크 AI $700B 캐펙스 전쟁 | Section 230 30주년 위기 | Anthropic vs OpenAI 광고 대결",
+      "summary": "빅테크 AI 인프라 투자가 올해 $700B에 접근하며 사상 최대 캐펙스 전쟁 돌입. 인터넷의 근간 Section 230이 30주년을 맞아 최대 시험대에. Anthropic과 OpenAI가 슈퍼볼 광고를 둘러싸고 AI 윤리 전면전. 뉴욕주 데이터센터 3년 건설 중단 법안 발의.",
+      "highlights": [
+        "빅테크 AI $700B 캐펙스 전쟁 실적 타격 제한 전망",
+        "Section 230 30주년 플랫폼 규제 최대 시험대",
+        "Anthropic vs OpenAI 슈퍼볼 광고 윤리 전면전"
+      ],
+      "stats": {
+        "articles": 16,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-07",
       "day": "토",
       "title": "빅테크 AI 투자 $650B 시대 | Nvidia 반등 8% | EU TikTok 중독 디자인 최후통첩",
