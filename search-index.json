@@ -6,10 +6,10 @@
       "title": "1. 빅테크 AI 인프라 투자 사상 최대 $650B 경쟁",
       "summary": "Amazon의 $200B 투자 계획에 시장이 충격을 받았지만, Nvidia가 8% 반등하며 AI 인프라 수혜 기대감이 여전히 유효함을 보여줌. AI 캐펙스 경쟁이 수익성으로 연결될지가 핵심 관전 포인트.",
       "keywords": [
-        "ai",
+        "nvidia",
         "amazon",
         "투자",
-        "nvidia"
+        "ai"
       ],
       "section": "이번 주 TOP 스토리",
       "is_pick": false
@@ -20,12 +20,12 @@
       "title": "2. SpaceX-xAI $1.25조 합병, 세계 최대 비상장기업 탄생",
       "summary": "Elon Musk의 SpaceX 위성 인프라와 xAI의 Grok 모델이 결합하며 우주 기반 AI 컴퓨팅이라는 새로운 패러다임 제시. IPO 전 기업가치 극대화 전략으로 해석.",
       "keywords": [
-        "spacex",
-        "ipo",
         "grok",
+        "spacex",
         "elon",
+        "ai",
         "xai",
-        "ai"
+        "ipo"
       ],
       "section": "이번 주 TOP 스토리",
       "is_pick": false
@@ -36,11 +36,11 @@
       "title": "3. Palantir AI·국방 수요로 실적 호조, ICE 논란 그림자",
       "summary": "실적은 압도적이지만, ICE와의 AI 도구 계약이 윤리적 논란으로 번지며 Google 직원 900명의 ICE 계약 해지 요구와 함께 빅테크-정부 AI 협력의 윤리 문제가 부상.",
       "keywords": [
-        "은",
+        "ice",
         "google",
-        "palantir",
         "ai",
-        "ice"
+        "은",
+        "palantir"
       ],
       "section": "이번 주 TOP 스토리",
       "is_pick": false
@@ -51,12 +51,12 @@
       "title": "4. AI 자동화 공포가 촉발한 시장 급락",
       "summary": "AI 에이전트가 소프트웨어 개발 자동화를 가속화하면서 Salesforce, ServiceNow 등 SaaS 기업들의 밸류에이션 재평가 압력. VIX 33% 급등은 이러한 공포가 시장 전반으로 확산 중임을 시사.",
       "keywords": [
+        "servicenow",
+        "salesforce",
         "vix",
         "ai",
         "은",
-        "saas",
-        "salesforce",
-        "servicenow"
+        "saas"
       ],
       "section": "이번 주 TOP 스토리",
       "is_pick": false
@@ -67,11 +67,11 @@
       "title": "1. DeepSeek R1 충격과 AI 버블 논쟁",
       "summary": "중국 AI 스타트업 DeepSeek이 $600만으로 OpenAI 수준 모델 개발을 주장하며 AI 업계에 충격파를 던졌다. Nvidia 주가는 17% 폭락하며 역대 최대 시총 손실($5,890억)을 기록했고, 대규모 인프라 투자 필요성에 대한 의문이 제기되며 AI 버블 논쟁이 재점화됐다.",
       "keywords": [
-        "openai",
-        "nvidia",
-        "중국",
-        "ai",
         "deepseek",
+        "ai",
+        "openai",
+        "중국",
+        "nvidia",
         "투자"
       ],
       "section": "이번 주 TOP 스토리",
@@ -84,15 +84,15 @@
       "summary": "DeepSeek 충격에도 불구하고 AI 스타트업 투자 경쟁은 오히려 가속화됐다. Anthropic은 $200억 밸류에이션으로 투자 협상 중이고, Amazon은 OpenAI에 최대 $500억 투자를 협상 중이다. 로봇 AI 스타트업 Physical Intelligence도 $56억 밸류에이션을 달성했다.",
       "keywords": [
         "physical",
-        "anthropic",
-        "intel",
-        "openai",
         "은",
+        "intel",
         "amazon",
-        "ai",
         "deepseek",
         "투자",
-        "로봇"
+        "openai",
+        "로봇",
+        "ai",
+        "anthropic"
       ],
       "section": "이번 주 TOP 스토리",
       "is_pick": false
@@ -103,12 +103,12 @@
       "title": "3. 빅테크 AI 인프라 투자 확대",
       "summary": "DeepSeek 충격에도 빅테크의 AI 인프라 투자는 오히려 강화되는 모습이다. Meta는 Q4 실적 발표에서 AI 투자를 $650억으로 확대한다고 밝혔고, Nvidia는 Apple을 제치고 TSMC의 최대 고객이 됐다.",
       "keywords": [
-        "apple",
-        "nvidia",
+        "deepseek",
         "tsmc",
         "ai",
         "meta",
-        "deepseek",
+        "apple",
+        "nvidia",
         "투자"
       ],
       "section": "이번 주 TOP 스토리",
@@ -120,12 +120,12 @@
       "title": "4. Musk 관련 연쇄 이슈",
       "summary": "SpaceX-xAI-Tesla 합병 논의 보도와 함께 DOJ의 Musk-Epstein 파일 300만 페이지 공개로 Musk를 둘러싼 이슈가 급부상했다.",
       "keywords": [
+        "epstein",
         "spacex",
         "tesla",
-        "musk",
-        "xai",
         "ai",
-        "epstein"
+        "xai",
+        "musk"
       ],
       "section": "이번 주 TOP 스토리",
       "is_pick": false
@@ -136,12 +136,12 @@
       "title": "5. Apple iPhone 기록 경신 & Tesla 전략 전환",
       "summary": "Apple이 iPhone 역대 최고 분기 $853억 매출을 기록하며 중국 시장 우려를 불식시켰다. Tesla는 Model S/X 단종을 발표하고 Optimus 로봇 생산으로 전략을 전환했다.",
       "keywords": [
-        "apple",
-        "tesla",
-        "중국",
-        "optimus",
         "model",
-        "로봇"
+        "optimus",
+        "tesla",
+        "로봇",
+        "중국",
+        "apple"
       ],
       "section": "이번 주 TOP 스토리",
       "is_pick": false
@@ -152,11 +152,11 @@
       "title": "1. DeepSeek R1 충격과 AI 버블 논쟁",
       "summary": "중국 AI 스타트업 DeepSeek이 $600만으로 OpenAI 수준 모델 개발을 주장하며 AI 업계에 충격파를 던졌다. Nvidia 주가는 17% 폭락하며 역대 최대 시총 손실($5,890억)을 기록했고, 대규모 인프라 투자 필요성에 대한 의문이 제기되며 AI 버블 논쟁이 재점화됐다.",
       "keywords": [
-        "openai",
-        "nvidia",
-        "중국",
-        "ai",
         "deepseek",
+        "ai",
+        "openai",
+        "중국",
+        "nvidia",
         "투자"
       ],
       "section": "이번 주 TOP 스토리",
@@ -169,15 +169,15 @@
       "summary": "DeepSeek 충격에도 불구하고 AI 스타트업 투자 경쟁은 오히려 가속화됐다. Anthropic은 $200억 밸류에이션으로 투자 협상 중이고, Amazon은 OpenAI에 최대 $500억 투자를 협상 중이다. 로봇 AI 스타트업 Physical Intelligence도 $56억 밸류에이션을 달성했다.",
       "keywords": [
         "physical",
-        "anthropic",
-        "intel",
-        "openai",
         "은",
+        "intel",
         "amazon",
-        "ai",
         "deepseek",
         "투자",
-        "로봇"
+        "openai",
+        "로봇",
+        "ai",
+        "anthropic"
       ],
       "section": "이번 주 TOP 스토리",
       "is_pick": false
@@ -188,12 +188,12 @@
       "title": "3. 빅테크 AI 인프라 투자 확대",
       "summary": "Nvidia가 Apple을 제치고 TSMC 최대 고객으로 등극하며 AI 칩 수요 폭발을 입증했다. Meta는 2026년 AI 인프라 투자를 $650억으로 확대한다고 발표했고, 메모리칩 부족은 2027년까지 지속될 전망이다.",
       "keywords": [
-        "apple",
         "은",
-        "nvidia",
-        "tsmc",
         "ai",
+        "tsmc",
         "meta",
+        "apple",
+        "nvidia",
         "투자"
       ],
       "section": "이번 주 TOP 스토리",
@@ -205,13 +205,13 @@
       "title": "4. Musk 관련 연쇄 이슈",
       "summary": "SpaceX-xAI-Tesla 합병 논의가 수면 위로 떠올랐다. IPO 전 $3,500억 평가를 목표로 한 것으로 알려졌다. 이어서 DOJ가 300만 페이지 Epstein 파일을 공개하며 Musk의 섬 방문 계획 및 SpaceX 방문 기록이 확인됐다.",
       "keywords": [
+        "epstein",
         "spacex",
-        "ipo",
         "tesla",
-        "musk",
-        "xai",
         "ai",
-        "epstein"
+        "xai",
+        "ipo",
+        "musk"
       ],
       "section": "이번 주 TOP 스토리",
       "is_pick": false
@@ -222,12 +222,12 @@
       "title": "5. Fed 금리 정책 및 인사",
       "summary": "Fed가 예상대로 금리를 동결했고, Powell은 인플레이션 경고를 재차 강조했다. 주 후반 Trump 행정부가 Kevin Warsh를 차기 연준 의장으로 지명했다.",
       "keywords": [
-        "ev",
+        "금",
         "trump",
-        "kevin",
-        "은",
         "fed",
-        "금"
+        "은",
+        "ev",
+        "kevin"
       ],
       "section": "이번 주 TOP 스토리",
       "is_pick": false
@@ -239,8 +239,8 @@
       "summary": "새 벤치마크 연구 결과, 컨설팅·투자은행·법률 분야 실제 업무에서 대부분 AI 모델이 실패. 연구진은 AI 에이전트가 \"수학적으로 실패할 운명\"이라고 주장.",
       "keywords": [
         "ai",
-        "은",
-        "투자"
+        "투자",
+        "은"
       ],
       "section": "TOP 스토리",
       "is_pick": false
@@ -253,8 +253,8 @@
       "keywords": [
         "ai",
         "은",
-        "다보스",
-        "트럼프"
+        "트럼프",
+        "다보스"
       ],
       "section": "AI 인프라 & 에너지",
       "is_pick": false
@@ -265,12 +265,12 @@
       "title": "젠슨 황, AI '5층 케이크' 인프라 설명 - 버블 아니다",
       "summary": "엔비디아 CEO 젠슨 황이 블랙록 CEO 래리 핑크와의 대담에서 AI를 에너지-칩-클라우드-모델-애플리케이션의 '5층 케이크'로 설명. \"수천억 달러를 투자했지만 수조 달러 규모의 인프라가 더 필요하다\"며 버블 우려를 일축. 유럽에 로봇공학이 \"세대 단 한 번의 기회\"라고 강조.",
       "keywords": [
-        "엔비디아",
         "ceo",
         "애플",
-        "ai",
         "투자",
-        "로봇"
+        "로봇",
+        "ai",
+        "엔비디아"
       ],
       "section": "AI 인프라 & 에너지",
       "is_pick": false
@@ -281,9 +281,9 @@
       "title": "나델라, \"에너지 비용이 AI 경쟁 승자 결정\"",
       "summary": "마이크로소프트 CEO 사티아 나델라가 AI 확산이 빅테크를 넘어 전 산업으로 퍼져야 버블이 아니라고 경고. \"AI 토큰이 의료, 교육, 공공서비스 효율성을 개선하지 못한다면 에너지를 쓸 사회적 허가를 잃을 것\"이라며 실용적 AI 적용 강조. 유럽의 에너지 비용 문제도 지적.",
       "keywords": [
+        "ai",
         "마이크로소프트",
-        "ceo",
-        "ai"
+        "ceo"
       ],
       "section": "AI 인프라 & 에너지",
       "is_pick": false
@@ -294,14 +294,14 @@
       "title": "다리오 아모데이, 중국 AI칩 수출 \"북한 핵무기 판매와 같다\"",
       "summary": "Anthropic CEO 다리오 아모데이가 트럼프 행정부의 엔비디아 H200 칩 대중국 수출 승인을 강력 비판. \"미국은 칩 제조 능력에서 중국보다 수년 앞서 있다. 이 칩을 보내는 것은 엄청난 국가안보적 실수\"라며 \"중국 기업 CEO들이 직접 '칩 금수조치가 우리를 막고 있다'고 말한다\"고 강조.",
       "keywords": [
-        "anthropic",
-        "엔비디아",
+        "금",
         "은",
         "ceo",
         "트럼프",
         "중국",
         "ai",
-        "금"
+        "anthropic",
+        "엔비디아"
       ],
       "section": "미중 기술패권 경쟁",
       "is_pick": false
@@ -312,10 +312,10 @@
       "title": "젠슨 황, 지정학적 긴장 속 춘절 앞두고 중국 방문 예정",
       "summary": "엔비디아 CEO 젠슨 황이 춘절 연휴를 앞두고 중국 방문 예정. 베이징 방문도 계획 중이나 고위 관료 면담 여부는 미정. 트럼프 행정부의 H200 칩 대중국 수출 승인 이후 첫 방문으로, 중국 시장 재진입 시도로 해석됨. 아모데이와의 대조적 행보가 주목.",
       "keywords": [
+        "엔비디아",
         "중국",
-        "ceo",
         "트럼프",
-        "엔비디아"
+        "ceo"
       ],
       "section": "미중 기술패권 경쟁",
       "is_pick": false
@@ -326,13 +326,13 @@
       "title": "아모데이 vs 황: 다보스가 드러낸 AI 업계의 중국 분열",
       "summary": "다보스에서 두 개의 정상회담이 동시에 진행 중: 그린란드·베네수엘라 중심의 지정학 회의와 AI 딜메이킹 중심의 기술 콘퍼런스. 아모데이의 발언은 이 두 세계가 여전히 강하게 연결되어 있음을 상기시킴. 엔비디아의 Anthropic 투자(수억 달러)에도 불구하고 공개적 비판이 나온 점이 이례적.",
       "keywords": [
-        "anthropic",
-        "엔비디아",
         "은",
+        "다보스",
+        "투자",
         "중국",
         "ai",
-        "다보스",
-        "투자"
+        "anthropic",
+        "엔비디아"
       ],
       "section": "미중 기술패권 경쟁",
       "is_pick": false
@@ -343,11 +343,11 @@
       "title": "아모데이·하사비스 동의: AGI 예상보다 빨리 온다",
       "summary": "경쟁사 CEO인 Anthropic 아모데이와 DeepMind 하사비스가 다보스에서 이례적으로 동조. 아모데이: \"2026~27년 내 노벨상 수준 AI 모델 등장\", 하사비스: \"2030년까지 AGI 달성 확률 50%\". 화이트칼라 일자리의 절반이 5년 내 사라질 수 있다는 전망에도 합의.",
       "keywords": [
-        "anthropic",
         "deepmind",
-        "agi",
+        "다보스",
+        "anthropic",
         "ai",
-        "다보스"
+        "agi"
       ],
       "section": "AGI 전망 & 일자리 영향",
       "is_pick": false
@@ -359,8 +359,8 @@
       "summary": "아모데이가 Anthropic 내부에서 이미 엔지니어들이 직접 코드를 거의 작성하지 않고 AI가 전부 수행한다고 밝힘. 인간은 리뷰와 가이드만 담당. \"AI가 코드 작성 → AI가 연구 수행 → 완전 자기반복 루프\"가 곧 완성될 것이라 전망. 소프트웨어 엔지니어 직군의 근본적 변화 예고.",
       "keywords": [
         "ai",
-        "은",
-        "anthropic"
+        "anthropic",
+        "은"
       ],
       "section": "AGI 전망 & 일자리 영향",
       "is_pick": false
@@ -371,10 +371,10 @@
       "title": "알렉스 카프, \"AI가 인문학 일자리 파괴할 것\"",
       "summary": "Palantir CEO 알렉스 카프가 \"명문대에서 철학을 전공했다면, 다른 기술이 없으면 취업이 어려울 것\"이라고 경고. 반면 직업훈련을 받은 사람들에게는 \"충분한 일자리가 있을 것\"이라며 인문학 vs 직업훈련의 격차 확대 전망. Palantir의 '메리토크라시 펠로우십' 프로그램도 언급.",
       "keywords": [
-        "palantir",
-        "ceo",
+        "ai",
         "은",
-        "ai"
+        "ceo",
+        "palantir"
       ],
       "section": "AGI 전망 & 일자리 영향",
       "is_pick": false
@@ -385,8 +385,8 @@
       "title": "트럼프, 그린란드 \"군사력 사용 안 할 것\"... 그래도 원한다",
       "summary": "트럼프가 다보스 연설에서 \"그린란드에 군사력을 사용하지 않겠다\"고 밝혀 시장 안도. 하지만 \"미국이 원하는 것을 얻지 못하면 기억할 것\"이라며 압박 지속. 8개 유럽 국가에 대한 관세(2월 10%, 6월 25%)를 예고하며 긴장 고조. 덴마크 정부 대표단 불참.",
       "keywords": [
-        "다보스",
-        "트럼프"
+        "트럼프",
+        "다보스"
       ],
       "section": "지정학 & 무역",
       "is_pick": false
@@ -397,11 +397,11 @@
       "title": "제이미 다이먼, 다보스 엘리트에 직격탄",
       "summary": "JP모건 CEO 제이미 다이먼이 \"다보스에 수년간 왔지만, 여러분은 세상을 더 좋게 만드는 데 특별히 잘하지 못했다\"며 직설적 비판. 동시에 \"나는 세계주의자(globalist)\"라고 선언하며 트럼프의 고립주의 경향에 간접적 경고. AI에 대해선 \"도망치지 말고 적극 도입하라\" 조언.",
       "keywords": [
-        "은",
         "ceo",
         "트럼프",
+        "다보스",
         "ai",
-        "다보스"
+        "은"
       ],
       "section": "지정학 & 무역",
       "is_pick": false
@@ -426,17 +426,17 @@
       "summary": "Nvidia가 차세대 AI 슈퍼칩 플랫폼 'Vera Rubin' 공개. Vera CPU + Rubin GPU 조합으로 Grace Blackwell 대비 10배 처리량 향상, 10배 토큰 비용 절감. 자율주행 AI 모델 'Alpamayo' 오픈소스 공개, Siemens와 전략적 파트너십 체결. 무대에 등장한 귀여운 로봇 2대가 청중의 마음을 사로잡음",
       "keywords": [
         "physical",
-        "blackwell",
-        "자율주행",
         "alpamayo",
-        "nvidia",
-        "rubin",
         "ai",
-        "vera",
+        "rubin",
         "gpu",
         "cpu",
+        "자율주행",
+        "vera",
+        "로봇",
         "grace",
-        "로봇"
+        "blackwell",
+        "nvidia"
       ],
       "section": "기조연설 하이라이트",
       "is_pick": false
@@ -447,12 +447,12 @@
       "title": "리사 수 CEO, Ryzen AI 400 시리즈 발표 - \"AI는 모든 곳에\"",
       "summary": "AMD가 CES 첫 번째 기조연설에서 Ryzen AI 400 시리즈 프로세서 공개. OpenAI 사장 그렉 브록만, AI 거장 페이-페이 리 등 파트너 총출동. \"AI가 이미 10억 명 이상의 사용자에게 도달했으며, 50억 명까지 확대될 것\" 전망",
       "keywords": [
-        "ryzen",
         "amd",
-        "ces",
-        "openai",
         "ceo",
-        "ai"
+        "openai",
+        "ryzen",
+        "ai",
+        "ces"
       ],
       "section": "기조연설 하이라이트",
       "is_pick": false
@@ -489,11 +489,11 @@
       "title": "Nvidia Alpamayo, 자율주행용 오픈소스 AI 모델 패밀리 공개",
       "summary": "Nvidia가 자율주행차와 로봇을 위한 오픈소스 AI 모델 패밀리 'Alpamayo' 발표. \"로봇계의 안드로이드\"를 목표로 범용 로봇 인프라 구축 추진",
       "keywords": [
-        "자율주행",
-        "nvidia",
-        "ai",
         "alpamayo",
-        "로봇"
+        "ai",
+        "자율주행",
+        "로봇",
+        "nvidia"
       ],
       "section": "로봇/Physical AI",
       "is_pick": false
@@ -529,8 +529,8 @@
       "title": "하이센스, RGB Mini-LED 및 163인치 Micro-LED 공개",
       "summary": "하이센스가 UR9, UR8 RGB Mini-LED TV 라인업과 163인치 Micro-LED 디스플레이 163MX 발표. 색상과 대비 혁신에 집중",
       "keywords": [
-        "rgb",
         "mini",
+        "rgb",
         "micro",
         "led"
       ],
@@ -543,14 +543,14 @@
       "title": "퀄컴 Snapdragon X2 Plus 발표 - AI PC 3파전 본격화",
       "summary": "퀄컴이 Snapdragon X2 Plus 공개. 전작 대비 단일 코어 성능 35% 향상. AMD Ryzen AI 400, Intel Core Ultra 3과 AI PC 시장 3파전",
       "keywords": [
-        "ryzen",
-        "core",
-        "amd",
         "intel",
+        "amd",
+        "ai",
+        "plus",
+        "ryzen",
         "ultra",
         "snapdragon",
-        "ai",
-        "plus"
+        "core"
       ],
       "section": "컴퓨팅/노트북",
       "is_pick": false
@@ -561,9 +561,9 @@
       "title": "Dell XPS 브랜드 부활 - \"우리의 뿌리로 돌아간다\"",
       "summary": "Dell이 'Premium' 브랜딩을 버리고 상징적인 XPS 브랜드 부활. 새 XPS 노트북 라인업 공개",
       "keywords": [
-        "xps",
         "dell",
-        "premium"
+        "premium",
+        "xps"
       ],
       "section": "컴퓨팅/노트북",
       "is_pick": false
@@ -574,12 +574,12 @@
       "title": "ASUS ROG Zephyrus Duo, 듀얼 스크린 게이밍 노트북",
       "summary": "ASUS가 16인치 듀얼 OLED 패널 게이밍 노트북 공개. RTX 5090 지원, 1,100니트 밝기. \"이번 10년간 본 가장 멋진 노트북\"이라는 평가",
       "keywords": [
-        "rog",
-        "asus",
-        "duo",
         "oled",
         "rtx",
-        "zephyrus"
+        "rog",
+        "asus",
+        "zephyrus",
+        "duo"
       ],
       "section": "컴퓨팅/노트북",
       "is_pick": false
@@ -590,13 +590,13 @@
       "title": "Sony Honda Afeela 1, 차 안에서 PS5 원격 플레이",
       "summary": "소니-혼다 합작 EV Afeela 1 상세 공개. 주차 중 PS5 원격 플레이 가능, Level 4 자율주행 OTA 업데이트 계획. 2026년 말 캘리포니아부터 출시",
       "keywords": [
-        "ev",
-        "자율주행",
         "honda",
         "ota",
-        "level",
+        "afeela",
         "sony",
-        "afeela"
+        "level",
+        "자율주행",
+        "ev"
       ],
       "section": "모빌리티",
       "is_pick": false
@@ -607,8 +607,8 @@
       "title": "Verge, 세계 최초 전고체 배터리 오토바이 - 370마일 주행, 10분 충전",
       "summary": "Verge가 전고체 배터리 탑재 전기 오토바이 발표. 370마일(약 595km) 주행거리, 10분 충전. EV 배터리 기술의 새 이정표",
       "keywords": [
-        "ev",
-        "verge"
+        "verge",
+        "ev"
       ],
       "section": "모빌리티",
       "is_pick": false
@@ -620,9 +620,9 @@
       "summary": "레고가 스마트 브릭 기술 공개. 브릭 간 무선 통신으로 게임·학습 경험 구현, 거리 측정 기능까지. 스타워즈 세트부터 적용 예정. The Verge Best In Show 수상",
       "keywords": [
         "verge",
-        "best",
         "the",
-        "show"
+        "show",
+        "best"
       ],
       "section": "혁신/이색 제품",
       "is_pick": false
@@ -635,8 +635,8 @@
       "keywords": [
         "ai",
         "galaxy",
-        "삼성",
-        "trifold"
+        "trifold",
+        "삼성"
       ],
       "section": "혁신/이색 제품",
       "is_pick": false
@@ -649,8 +649,8 @@
       "keywords": [
         "spice",
         "ice",
-        "akon",
-        "ces"
+        "ces",
+        "akon"
       ],
       "section": "혁신/이색 제품",
       "is_pick": false
@@ -662,11 +662,11 @@
       "summary": "CES 2026의 화려한 로봇 시연 뒤에는 중국 전역의 '로봇 훈련 센터'가 있다. 저임금 노동자들이 휴머노이드에게 일상 업무를 시연하며 AI 훈련 데이터를 생산하는 새로운 노동 형태가 Physical AI 시대의 숨겨진 공급망",
       "keywords": [
         "physical",
-        "ces",
-        "중국",
-        "ai",
         "금",
-        "로봇"
+        "중국",
+        "로봇",
+        "ai",
+        "ces"
       ],
       "section": "Claude's CES Pick",
       "is_pick": true
@@ -677,11 +677,11 @@
       "title": "Ford AI 어시스턴트: 자동차 AI의 조용한 혁명",
       "summary": "Ford가 Google Cloud 기반 AI 어시스턴트를 2027년 차량에 탑재 발표. \"당신이 어디에 있고, 무엇을 하고 있고, 차량이 무엇을 할 수 있는지 이해하는 지능\"이 목표. 테슬라 FSD와 다른 접근",
       "keywords": [
-        "ford",
-        "google",
         "cloud",
+        "google",
+        "ai",
         "테슬라",
-        "ai"
+        "ford"
       ],
       "section": "Claude's CES Pick",
       "is_pick": true
@@ -692,15 +692,15 @@
       "title": "빅테크, 올해 AI에 $650B 투자 — 사상 최대 캐펙스 경쟁 본격화",
       "summary": "Amazon이 올해 $200B 캐펙스 계획을 발표하며 시장을 놀라게 한 가운데, Google·Microsoft·Meta를 합산한 빅테크 전체 AI 인프라 투자가 $650B에 달할 전망입니다. Amazon 주가는 발표 후 9% 급락했지만, Nvidia CEO 젠슨 황은 이 수준의 지출이 \"적절하고 지속 가능하다\"고 반박하며 Nvidia 주가는 8% 반등했습니다. 투자자들 사이에서는 현금흐름 압박과 AI 수익화 시점에 대한 우려가 커지고 있습니다.",
       "keywords": [
-        "google",
+        "금",
         "은",
         "ceo",
-        "microsoft",
         "amazon",
-        "nvidia",
-        "금",
         "ai",
         "meta",
+        "microsoft",
+        "google",
+        "nvidia",
         "투자"
       ],
       "section": "🔥 TOP Headlines",
@@ -712,10 +712,10 @@
       "title": "Nvidia 8% 반등 — 젠슨 황 \"$660B AI 투자는 지속 가능\"",
       "summary": "빅테크의 대규모 AI 투자 발표에 Nvidia 주가가 8% 급등하며 시장 불안을 일축했습니다. 젠슨 황 CEO는 $660B 규모의 캐펙스 투자가 \"적절하고 지속 가능하며 필요하다\"고 강조했습니다. 반도체 업계는 AI 붐 덕분에 칩 산업이 조만간 $1조 규모 산업으로 성장할 것으로 전망합니다.",
       "keywords": [
-        "ai",
-        "반도체",
+        "nvidia",
         "투자",
-        "nvidia"
+        "ai",
+        "반도체"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -726,11 +726,11 @@
       "title": "Google 직원 900명, ICE·CBP 계약 해지 공개 서한",
       "summary": "900명 이상의 Google 직원이 미국 이민세관집행국(ICE)과 세관국경보호국(CBP)과의 모든 계약을 중단할 것을 경영진에 요구하는 공개 서한에 서명했습니다. 트럼프 행정부의 강경 이민 정책이 계속되는 가운데, ICE의 안면인식 앱이 실제로 신원을 확인하지 못한다는 Wired 보도도 함께 나오면서 기술기업의 정부 계약에 대한 윤리적 논쟁이 재점화되고 있습니다.",
       "keywords": [
-        "google",
         "cbp",
+        "ice",
         "트럼프",
-        "wired",
-        "ice"
+        "google",
+        "wired"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -755,8 +755,8 @@
       "summary": "Uber가 운전자에 의한 승객 성폭행 사건에서 최초로 법적 책임이 인정되어 $850만 배상금을 지급하라는 판결을 받았습니다. 이번 판결은 수천 건의 유사 소송에 선례가 될 수 있어, Uber의 안전 책임 범위와 재무적 리스크에 대한 관심이 집중되고 있습니다.",
       "keywords": [
         "은",
-        "uber",
-        "금"
+        "금",
+        "uber"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -767,14 +767,14 @@
       "title": "Anthropic, 에이전트 팀 기능 탑재한 Opus 4.6 출시",
       "summary": "Anthropic이 새로운 최상위 모델 Claude Opus 4.6을 출시했습니다. 금융 리서치에 특화된 성능을 갖추고 있으며, '에이전트 팀' 기능으로 여러 AI 에이전트가 협업하는 워크플로우를 지원합니다. Goldman Sachs는 이미 이 모델을 회계·컴플라이언스 자동화에 도입했으며, The Verge는 \"Claude가 지금 전성기를 누리고 있다\"고 평가했습니다. 한편 Rest of World는 이 도구가 인도 IT 기업들에게 근본적인 위협이 되고 있다고 분석했습니다.",
       "keywords": [
-        "anthropic",
         "goldman",
-        "opus",
-        "rest",
+        "금",
         "the",
-        "ai",
         "claude",
-        "금"
+        "rest",
+        "opus",
+        "ai",
+        "anthropic"
       ],
       "section": "🤖 AI / 기술",
       "is_pick": false
@@ -786,8 +786,8 @@
       "summary": "OpenAI가 GPT-4o 모델을 단종하기로 결정하자 해당 모델과 깊은 유대감을 형성한 사용자들의 거센 반발이 일어나고 있습니다. 일부 사용자들은 AI 동반자를 '잃는' 것에 대해 실제 상실감을 호소하고 있어, AI 챗봇과의 정서적 의존 관계가 얼마나 위험할 수 있는지를 보여주는 사례로 주목받고 있습니다.",
       "keywords": [
         "ai",
-        "openai",
         "은",
+        "openai",
         "gpt"
       ],
       "section": "🤖 AI / 기술",
@@ -799,9 +799,9 @@
       "title": "Waymo, 워싱턴DC에서 난관 — 한편 Genie 3 시뮬레이션으로 확장 가속",
       "summary": "Waymo가 워싱턴DC에서 규제 장벽과 스쿨버스 정차 감지 문제 등 난관에 직면하고 있습니다. 오스틴에서는 스쿨버스를 위한 정차가 어려운 이유도 보도됐습니다. 반면 Google DeepMind의 Genie 3 시뮬레이션 기술을 활용해 토네이도, 코끼리 등 극단적 시나리오를 가상으로 훈련할 수 있게 되면서 로보택시 확장에 속도를 낼 것으로 기대됩니다.",
       "keywords": [
-        "google",
         "genie",
-        "waymo"
+        "waymo",
+        "google"
       ],
       "section": "🤖 AI / 기술",
       "is_pick": false
@@ -813,10 +813,10 @@
       "summary": "Apple이 CarPlay에서 ChatGPT 등 서드파티 AI 챗봇을 음성으로 제어할 수 있도록 개방할 계획인 것으로 알려졌습니다. 자체 Siri AI 강화와 병행하는 전략으로, 자동차 내 AI 어시스턴트 경쟁이 본격화될 전망입니다.",
       "keywords": [
         "chatgpt",
+        "gpt",
         "apple",
-        "siri",
         "ai",
-        "gpt"
+        "siri"
       ],
       "section": "🤖 AI / 기술",
       "is_pick": false
@@ -838,10 +838,10 @@
       "title": "Amazon, $200B AI 투자 선언 후 주가 9% 급락",
       "summary": "Amazon이 올해 캐펙스를 $200B으로 대폭 확대한다고 발표하자 주가가 9% 급락하며 시가총액 $2000억 이상이 증발했습니다. 그러나 AWS 클라우드 부문은 매출과 이익 모두 시장 예상을 상회했으며, CEO 앤디 재시는 AI 수요가 공급을 초과하고 있어 투자가 필수라고 강조했습니다.",
       "keywords": [
-        "aws",
         "은",
         "ceo",
         "amazon",
+        "aws",
         "ai",
         "투자"
       ],
@@ -878,8 +878,8 @@
       "summary": "BYD의 시가총액이 $600억 급감하며 중국 전기차 시장의 심각한 위기를 보여주고 있습니다. 미국의 EV 정책 후퇴가 중국의 글로벌 시장 지배력을 오히려 강화시키고 있다는 분석도 나오면서, EV 산업의 지정학적 역학이 빠르게 변화하고 있습니다.",
       "keywords": [
         "ev",
-        "byd",
-        "중국"
+        "중국",
+        "byd"
       ],
       "section": "💰 경제 / 금융",
       "is_pick": false
@@ -905,9 +905,9 @@
       "summary": "Meta가 AI로 생성한 짧은 영상 콘텐츠를 공유하는 독립 앱 'Vibes'를 테스트하고 있습니다. AI 기반 콘텐츠 생성 도구를 소셜미디어 플랫폼과 결합하는 새로운 실험으로, 크리에이터 경제의 AI 전환을 가속화할 수 있습니다.",
       "keywords": [
         "ai",
-        "meta",
+        "은",
         "vibes",
-        "은"
+        "meta"
       ],
       "section": "📱 플랫폼 / 소셜",
       "is_pick": false
@@ -920,8 +920,8 @@
       "keywords": [
         "ai",
         "song",
-        "spotify",
-        "about"
+        "about",
+        "spotify"
       ],
       "section": "📱 플랫폼 / 소셜",
       "is_pick": false
@@ -932,9 +932,9 @@
       "title": "워싱턴포스트, 실리콘밸리 취재 축소 — 가장 중요한 시기에",
       "summary": "Jeff Bezos 소유의 워싱턴포스트가 대규모 감원을 단행하며 실리콘밸리 취재 인력을 줄이고 있습니다. AI와 빅테크 감시가 그 어느 때보다 중요한 시점에 기술 전문 저널리즘이 후퇴하고 있다는 비판이 제기되고 있습니다.",
       "keywords": [
+        "jeff",
         "ai",
-        "bezos",
-        "jeff"
+        "bezos"
       ],
       "section": "📱 플랫폼 / 소셜",
       "is_pick": false
@@ -945,10 +945,10 @@
       "title": "뉴욕주, 데이터센터 신규 건설 중단 검토",
       "summary": "뉴욕주가 데이터센터 신규 건설을 일시 중단하는 법안을 검토하고 있습니다. PJM(미 동부 최대 전력망 운영사)은 데이터센터 붐으로 향후 10년간 60GW의 전력 부족이 발생할 것으로 전망했으며, 미시간 검찰총장도 Oracle 데이터센터 전력 계획을 재검토하라고 촉구하는 등 AI 인프라 확장과 에너지 문제의 충돌이 가시화되고 있습니다.",
       "keywords": [
-        "ai",
+        "pjm",
         "은",
-        "oracle",
-        "pjm"
+        "ai",
+        "oracle"
       ],
       "section": "🔧 하드웨어 / 인프라",
       "is_pick": false
@@ -959,9 +959,9 @@
       "title": "머스크, 우주 데이터센터 구상 본격화",
       "summary": "Elon Musk가 SpaceX를 통해 궤도 데이터센터 건설을 본격적으로 추진하고 있습니다. Voyager Technologies CEO는 우주 데이터센터의 냉각 문제가 아직 해결되지 않았다고 지적했지만, 지상 전력 제약과 AI 컴퓨팅 수요 폭증 속에서 우주 기반 인프라에 대한 관심이 커지고 있습니다.",
       "keywords": [
-        "technologies",
-        "elon",
         "voyager",
+        "elon",
+        "technologies",
         "ai"
       ],
       "section": "🔧 하드웨어 / 인프라",
@@ -985,9 +985,9 @@
       "title": "중국 Salt Typhoon 해커 그룹, 노르웨이 기업 침투",
       "summary": "중국 정부 연계 해커 그룹 Salt Typhoon이 노르웨이 기업들의 네트워크에 침투한 것으로 확인됐습니다. 미국 통신사 해킹에 이어 유럽으로도 공격 범위를 넓히고 있어, 글로벌 사이버 보안 위협이 심화되고 있습니다.",
       "keywords": [
-        "중국",
         "typhoon",
-        "salt"
+        "salt",
+        "중국"
       ],
       "section": "🔧 하드웨어 / 인프라",
       "is_pick": false
@@ -998,11 +998,11 @@
       "title": "중국 AI 기업들, 설날 '홍바오' 마케팅 대전 돌입",
       "summary": "DeepSeek, Baidu, Alibaba 등 중국 AI 기업들이 춘절을 맞아 대규모 마케팅 공세를 펼치고 있습니다. 전통적인 '홍바오(빨간 봉투)' 문화를 AI 서비스 가입 유인으로 활용하며, 무료 보바 티까지 제공하는 등 소비자 시장 침투 전략이 본격화되고 있습니다.",
       "keywords": [
-        "baidu",
-        "중국",
-        "ai",
         "deepseek",
-        "alibaba"
+        "baidu",
+        "alibaba",
+        "중국",
+        "ai"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -1013,8 +1013,8 @@
       "title": "미 동부 전력망 PJM, 10년 내 60GW 전력 부족 경고",
       "summary": "미국 최대 전력망 운영사 PJM이 데이터센터 확장으로 인해 향후 10년간 60GW에 달하는 전력 부족이 발생할 것으로 전망했습니다. 이는 한국 전체 발전용량의 약 절반에 해당하는 규모로, AI 인프라 확장의 물리적 한계가 구체적 수치로 드러난 첫 사례입니다.",
       "keywords": [
-        "ai",
-        "pjm"
+        "pjm",
+        "ai"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -1025,8 +1025,8 @@
       "title": "Pacific Fusion, 핵융합 원자로의 저비용 대안 발견",
       "summary": "핵융합 스타트업 Pacific Fusion이 기존보다 훨씬 저렴한 방식으로 핵융합 반응을 달성하는 새로운 접근법을 개발했습니다. 데이터센터 전력 수요가 폭증하는 가운데, 핵융합이 차세대 에너지원으로 부상할 수 있는 기술적 돌파구로 주목됩니다.",
       "keywords": [
-        "pacific",
-        "fusion"
+        "fusion",
+        "pacific"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -1037,12 +1037,12 @@
       "title": "비트코인 $70K 붕괴, 암호화폐 시장 $2조 증발",
       "summary": "비트코인이 $66,675까지 하락하며 2024년 10월 이후 최저치 기록. 트럼프 대통령 당선 이후 쌓아올린 상승분을 대부분 반납했다. Kevin Warsh 연준 의장 지명 가능성과 금리 인하 지연 우려가 하락을 촉발. 이더리움도 $1,800선이 위협받으며 알트코인 전반이 동반 급락. 3주간 암호화폐 시장 시가총액 $5,000억 이상 증발하며 투자자들의 위험자산 회피 심리 확대.",
       "keywords": [
-        "ev",
-        "kevin",
-        "트럼프",
         "금",
         "warsh",
-        "투자"
+        "트럼프",
+        "투자",
+        "ev",
+        "kevin"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1053,11 +1053,11 @@
       "title": "OpenAI, 엔터프라이즈용 AI 에이전트 관리 플랫폼 출시",
       "summary": "OpenAI가 기업들이 AI 에이전트를 구축하고 관리할 수 있는 'Frontier' 플랫폼을 공식 출시했다. 복잡한 워크플로우를 자동화하고 여러 에이전트를 조율하는 기능을 제공하며, 기존 엔터프라이즈 시스템과의 통합을 지원한다. Microsoft, Salesforce 등 주요 엔터프라이즈 소프트웨어 기업들과의 경쟁이 본격화될 전망. 에이전트 AI 시장의 B2B 전환점으로 평가받고 있다.",
       "keywords": [
-        "frontier",
+        "salesforce",
         "openai",
         "microsoft",
-        "salesforce",
-        "ai"
+        "ai",
+        "frontier"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1068,12 +1068,12 @@
       "title": "Anthropic, 에이전트 팀 기능 탑재한 Opus 4.6 출시",
       "summary": "Anthropic이 Claude Opus 4.6을 출시하며 여러 AI 에이전트가 협업하는 'agent teams' 기능을 도입했다. 금융 리서치, 법률 검토, 복잡한 코딩 작업에서 강화된 성능을 보여주며, 특히 금융 분야에서 벤치마크 기록 갱신. OpenAI와의 에이전트 AI 경쟁이 더욱 치열해질 전망.",
       "keywords": [
-        "anthropic",
+        "금",
+        "claude",
         "opus",
         "openai",
         "ai",
-        "claude",
-        "금"
+        "anthropic"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -1085,9 +1085,9 @@
       "summary": "AI가 소프트웨어 개발 및 서비스 업무를 대체할 것이라는 우려가 확산되며 소프트웨어·금융서비스 섹터에서 $2,850억 규모의 시가총액이 증발했다. Anthropic의 법률 AI 도구 발표가 패닉을 촉발했으며, 헤지펀드들은 소프트웨어 숏 포지션으로 $240억 수익을 거뒀다. JPMorgan은 \"소프트웨어 주식들이 재판 전에 선고받는 상황\"이라고 평가.",
       "keywords": [
         "ai",
-        "은",
         "anthropic",
-        "금"
+        "금",
+        "은"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -1120,12 +1120,12 @@
       "title": "$1,000억 딜 무산, AI 경제에 미치는 영향은?",
       "summary": "Nvidia의 OpenAI $1,000억 투자 협상이 무산되며 AI 펀딩 환경에 대한 우려가 확산되고 있다. 대형 투자의 실패는 AI 기업들의 자금 조달 전략에 영향을 미칠 수 있으며, 순환 경제 모델과 지속가능한 AI 투자 방식에 대한 논의가 활발해지고 있다.",
       "keywords": [
-        "투자",
+        "금",
         "은",
+        "ai",
         "openai",
         "nvidia",
-        "ai",
-        "금"
+        "투자"
       ],
       "section": "💰 경제/투자",
       "is_pick": false
@@ -1137,8 +1137,8 @@
       "summary": "Alphabet이 Q4 실적 발표에서 연간 매출 런레이트 $4,000억을 넘어섰다고 밝혔다. 특히 2026년 자본 지출(Capex) 가이던스를 $1,750억~$1,850억으로 제시해 시장 예상치($1,195억)를 크게 상회했다. AI 인프라에 대한 공격적 투자 의지를 재확인한 것으로 해석된다.",
       "keywords": [
         "ai",
-        "capex",
-        "투자"
+        "투자",
+        "capex"
       ],
       "section": "💰 경제/투자",
       "is_pick": false
@@ -1161,9 +1161,9 @@
       "summary": "바이두, 알리바바, 텐센트 등 중국 빅테크들이 설날을 맞아 AI 챗봇을 활용한 대규모 '홍바오(세뱃돈)' 마케팅에 돌입했다. 사용자들이 AI와 대화하며 가상 세뱃돈을 받는 방식으로, DeepSeek, Moonshot 등 신흥 AI 기업들도 합류하며 경쟁이 격화되고 있다.",
       "keywords": [
         "ai",
-        "중국",
         "deepseek",
-        "moonshot"
+        "moonshot",
+        "중국"
       ],
       "section": "🌏 국제/정책",
       "is_pick": false
@@ -1176,8 +1176,8 @@
       "keywords": [
         "cbp",
         "ice",
-        "fortify",
-        "mobile"
+        "mobile",
+        "fortify"
       ],
       "section": "🌏 국제/정책",
       "is_pick": false
@@ -1211,13 +1211,13 @@
       "title": "중국, EV 전략을 휴머노이드 로봇에 적용 중",
       "summary": "중국이 전기차 산업을 성공시킨 전략을 휴머노이드 로봇에 그대로 적용하고 있다. Unitree, Agibot 등 중국 기업들이 테슬라 Optimus보다 저렴한 가격에 로봇을 출시하며 시장을 빠르게 장악 중. 정부 보조금과 대규모 생산 능력이 경쟁력의 핵심이다.",
       "keywords": [
-        "ev",
-        "unitree",
-        "중국",
-        "agibot",
-        "테슬라",
         "금",
-        "로봇"
+        "unitree",
+        "로봇",
+        "중국",
+        "ev",
+        "agibot",
+        "테슬라"
       ],
       "section": "🔧 하드웨어/로봇",
       "is_pick": false
@@ -1228,8 +1228,8 @@
       "title": "국토안보부, 테크 기업들에 트럼프 비판자 데이터 요구",
       "summary": "미 국토안보부(DHS)가 테크 기업들에게 트럼프 대통령 비판자들의 개인정보를 넘기도록 압박하고 있다는 보도가 나왔다. 소셜미디어 게시물, 위치 데이터 등을 요구하는 것으로 알려졌으며, 빅테크 기업들과 정부 간 데이터 프라이버시를 둘러싼 긴장이 고조되고 있다.",
       "keywords": [
-        "dhs",
-        "트럼프"
+        "트럼프",
+        "dhs"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -1240,11 +1240,11 @@
       "title": "Anthropic, Claude 챗봇에 광고 도입 거부 선언",
       "summary": "Anthropic이 Claude 챗봇에 광고를 도입하지 않겠다고 밝혔다. OpenAI가 ChatGPT에 광고 테스트를 시작한 지 몇 주 만에 나온 발표다. Anthropic은 \"사용자와 Claude 간의 대화가 개인적인 성격을 띠기 때문에 광고가 부조화스러울 것\"이라고 설명했다. 슈퍼볼 광고에서도 AI 제품 광고를 조롱하는 내용을 담아 경쟁사와의 차별화를 강조하고 있다. 이 결정은 AI 챗봇 시장에서 수익화 전략의 분기점이 될 수 있다.",
       "keywords": [
-        "anthropic",
         "은",
+        "claude",
         "openai",
         "ai",
-        "claude"
+        "anthropic"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1255,12 +1255,12 @@
       "title": "Microsoft, Google Cloud 출신 Gallot을 새 보안 총괄로 임명",
       "summary": "Microsoft가 보안 총괄 Charlie Bell을 교체하고 Google Cloud 고객 경험 담당 사장이었던 Hayete Gallot을 새 보안 책임자로 임명했다. Gallot은 원래 Microsoft 출신으로, 2024년 10월 Google로 이적했다가 복귀하게 됐다. Bell은 개별 기여자 역할로 이동해 엔지니어링 품질에 집중할 예정이다. Microsoft는 최근 사이버 공격 대응 과정에서 보안 이슈를 겪은 바 있어, 이번 인사가 보안 전략 강화의 신호탄이 될 것으로 보인다.",
       "keywords": [
-        "google",
-        "은",
+        "charlie",
         "hayete",
         "microsoft",
         "cloud",
-        "charlie"
+        "google",
+        "은"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1271,12 +1271,12 @@
       "title": "ElevenLabs, $110억 기업가치로 $5억 투자 유치",
       "summary": "AI 음성 합성 스타트업 ElevenLabs가 Sequoia가 리드한 투자 라운드에서 $5억을 조달하며 기업가치가 $110억으로 평가됐다. 1년 전 대비 3배 이상 상승한 수치다. 다양한 사실적인 음성을 생성하는 기술력으로 주목받아 왔으며, Nvidia의 지원도 받고 있다. 2025년 유럽 AI 스타트업 투자가 $216억으로 사상 최고치를 기록한 가운데, ElevenLabs는 IPO를 준비 중인 것으로 알려졌다.",
       "keywords": [
-        "ev",
         "ipo",
+        "ai",
+        "투자",
         "nvidia",
         "elevenlabs",
-        "ai",
-        "투자"
+        "ev"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1287,14 +1287,14 @@
       "title": "AI 칩 스타트업 Positron, Nvidia에 도전하며 $2.3억 Series B 투자 유치",
       "summary": "AI 칩 스타트업 Positron이 $2.3억 규모의 Series B 투자를 유치하며 기업가치가 $10억을 돌파했다. Nvidia의 독주에 도전하겠다는 야심을 품고 있는 Positron은 차세대 AI 칩 개발에 박차를 가하고 있다. CEO Mitesh Agrawal이 Bloomberg와의 인터뷰에서 밝힌 바에 따르면, 기존 GPU 기반 접근과 다른 아키텍처로 AI 추론 효율성을 높이는 것이 목표다. Nvidia에 대한 의존도를 낮추려는 기업들의 수요가 투자 유치의 배경이 됐다.",
       "keywords": [
-        "series",
         "은",
         "ceo",
-        "nvidia",
-        "mitesh",
         "ai",
+        "series",
         "gpu",
+        "mitesh",
         "positron",
+        "nvidia",
         "투자"
       ],
       "section": "🔥 TOP Headlines",
@@ -1306,10 +1306,10 @@
       "title": "OpenClaw AI '스킬' 확장 프로그램, 보안 악몽으로 부상",
       "summary": "지난 주 폭발적으로 인기를 얻은 AI 에이전트 OpenClaw의 스킬 마켓플레이스에서 보안 우려가 제기됐다. 1Password 제품 VP Jason Meller에 따르면 수백 개의 사용자 제출 '스킬' 애드온에서 맬웨어가 발견됐다. 가장 많이 다운로드된 애드온이 악성 코드를 배포하고 있어 \"공격 표면\"이 됐다는 지적이다. AI 에이전트의 대중화와 함께 보안 위험도 커지고 있음을 보여주는 사례다.",
       "keywords": [
-        "jason",
         "ai",
-        "은",
-        "openclaw"
+        "openclaw",
+        "jason",
+        "은"
       ],
       "section": "🤖 AI / 기술",
       "is_pick": false
@@ -1348,17 +1348,17 @@
       "keywords": [
         "claude",
         "codex",
+        "ai",
+        "plus",
+        "pro",
+        "copilot",
+        "mobile",
         "openai",
         "visual",
-        "pro",
-        "enterprise",
-        "studio",
-        "mobile",
-        "ai",
+        "agent",
         "github",
-        "copilot",
-        "plus",
-        "agent"
+        "enterprise",
+        "studio"
       ],
       "section": "🤖 AI / 기술",
       "is_pick": false
@@ -1382,10 +1382,10 @@
       "title": "Resolve AI, 유니콘 등극 - $10억 기업가치",
       "summary": "라이브 소프트웨어 시스템의 문제를 찾아 해결하는 AI 에이전트를 개발하는 스타트업 Resolve AI가 $10억 기업가치로 새로운 펀딩 라운드를 마쳤다. 2년 된 스타트업이 Lightspeed가 리드한 Series A에서 $1.25억을 조달했다. 시스템 장애 대응 자동화에 대한 기업 수요가 반영된 결과다.",
       "keywords": [
-        "ai",
         "series",
         "resolve",
-        "펀딩"
+        "펀딩",
+        "ai"
       ],
       "section": "🤖 AI / 기술",
       "is_pick": false
@@ -1396,9 +1396,9 @@
       "title": "Google 연매출 $4000억 돌파, 설비투자 $1850억 예고",
       "summary": "Alphabet이 사상 최초로 연간 매출 $4000억을 돌파했다. Q4 실적 발표와 함께 2026년 설비투자를 $1750억~$1850억으로 예고해 애널리스트 예상($1195억)을 크게 웃돌았다. 클라우드 사업과 YouTube의 지속적인 성장이 견인했으며, AI 인프라 구축에 공격적으로 투자하겠다는 의지를 보여줬다. 전년 대비 15% 성장이다.",
       "keywords": [
-        "google",
+        "ai",
         "투자",
-        "ai"
+        "google"
       ],
       "section": "💰 경제 / 비즈니스",
       "is_pick": false
@@ -1410,9 +1410,9 @@
       "summary": "소프트웨어 주식의 대폭락으로 공매도에 베팅한 투자자들이 막대한 수익을 거뒀다. 헤지펀드들은 AI 도구가 기존 소프트웨어 비즈니스를 잠식할 것이라는 우려에 공매도 포지션을 늘려왔다. Anthropic의 새로운 자동화 도구 출시 이후 촉발된 이번 매도세는 기술주 전반에 걸쳐 조 달러 규모의 시가총액 감소를 초래했다.",
       "keywords": [
         "ai",
-        "은",
         "anthropic",
-        "투자"
+        "투자",
+        "은"
       ],
       "section": "💰 경제 / 비즈니스",
       "is_pick": false
@@ -1423,8 +1423,8 @@
       "title": "Snap Q4 실적: 매출 호조, 사용자는 감소",
       "summary": "Snap이 Q4 매출이 예상을 상회했지만 일일 사용자 수는 감소했다고 발표했다. 광고 사업이 성장하고 구독 매출이 의미 있게 기여하기 시작했다는 긍정적 신호에도 불구하고, 사용자 감소는 우려 요인이다. 대중 시장을 겨냥한 AR 글래스 Specs 출시를 준비하며 수익원 다각화에 나서고 있다.",
       "keywords": [
-        "specs",
-        "snap"
+        "snap",
+        "specs"
       ],
       "section": "💰 경제 / 비즈니스",
       "is_pick": false
@@ -1450,8 +1450,8 @@
       "keywords": [
         "cristiano",
         "은",
-        "ceo",
-        "qualcomm"
+        "qualcomm",
+        "ceo"
       ],
       "section": "💾 반도체 / 하드웨어",
       "is_pick": false
@@ -1462,11 +1462,11 @@
       "title": "Amazon, AI 강화된 Alexa+ 미국 전역 출시",
       "summary": "Amazon이 생성형 AI가 탑재된 Alexa+를 미국 전역의 Prime 구독자에게 공개했다. 지난해 'early access' 프리뷰로 시작해 대기자 명단이나 새 기기 구매가 필요했지만, 이제 모든 사용자가 이용 가능하다. 기존 Alexa 대비 더 자연스러운 대화와 복잡한 작업 처리가 가능해졌다.",
       "keywords": [
-        "ces",
+        "prime",
         "amazon",
         "alexa",
         "ai",
-        "prime"
+        "ces"
       ],
       "section": "📱 플랫폼 / 정책",
       "is_pick": false
@@ -1477,9 +1477,9 @@
       "title": "OpenAI 모델, Alexa 구동에 활용될 수 있어",
       "summary": "Amazon이 OpenAI에 최대 $500억 투자를 논의하는 과정에서, OpenAI 모델이 Alexa를 구동하는 데 사용될 가능성이 제기됐다. 소식통에 따르면 이는 협력 논의의 일부로, Amazon의 AI 전략에서 외부 모델 활용 가능성을 보여준다.",
       "keywords": [
-        "openai",
         "amazon",
         "alexa",
+        "openai",
         "ai",
         "투자"
       ],
@@ -1493,8 +1493,8 @@
       "summary": "Elizabeth Warren 상원의원 등이 FTC와 DOJ에 기술 기업들의 AI '인수고용(acquihire)' 거래를 면밀히 조사할 것을 촉구하는 서한을 보냈다. 반독점법 위반 시 거래를 차단하거나 되돌려야 한다고 주장했다. 대형 기술 기업들이 스타트업 인재를 인수하는 관행에 대한 규제 압력이 높아지고 있다.",
       "keywords": [
         "ai",
-        "warren",
-        "elizabeth"
+        "elizabeth",
+        "warren"
       ],
       "section": "📱 플랫폼 / 정책",
       "is_pick": false
@@ -1527,10 +1527,10 @@
       "title": "Cerebras, $230억 기업가치로 $10억 투자 유치",
       "summary": "AI 칩 제공업체 Cerebras Systems가 새로운 펀딩 라운드에서 약 $10억을 조달하며 Nvidia와의 경쟁에 본격적으로 나섰다. Nvidia 독점에 대한 우려가 커지면서 대안 AI 칩 개발사들에 대한 투자가 활발해지고 있다. 오늘 발표된 Positron의 $2.3억 투자와 함께, AI 칩 시장의 다극화 조짐을 보여주는 신호다.",
       "keywords": [
-        "ai",
-        "cerebras",
+        "nvidia",
         "투자",
-        "nvidia"
+        "cerebras",
+        "ai"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -1542,9 +1542,9 @@
       "summary": "중국의 에너지 설비 투자 데이터가 Elon Musk와 Jensen Huang이 경고한 내용을 뒷받침한다. 세계 최고 수준의 전력망이 AI 경쟁에서 미국에 대한 주요 우위가 될 것이라는 분석이다. AI 데이터센터의 막대한 전력 소비를 감당할 인프라 경쟁이 본격화되고 있다.",
       "keywords": [
         "elon",
+        "jensen",
         "중국",
         "ai",
-        "jensen",
         "투자"
       ],
       "section": "💎 Claude's Pick",
@@ -1556,20 +1556,20 @@
       "title": "A16z, AI 인프라 전담 $17억 펀드 조성",
       "summary": "Andreessen Horowitz가 $150억 신규 펀딩 중 $17억을 AI 인프라 팀에 배정했다. OpenAI, ElevenLabs, Black Forest Labs, Cursor, Fal, Ideogram 등 주요 AI 투자를 담당해온 팀이다. 제너럴 파트너 Jennifer Li가 이끄는 이 팀의 대규모 자금 확보는 AI 인프라 레이어에 대한 VC 베팅이 본격화되고 있음을 보여준다.",
       "keywords": [
+        "금",
+        "forest",
+        "펀딩",
+        "andreessen",
         "ev",
         "cursor",
-        "fal",
-        "펀딩",
-        "labs",
-        "andreessen",
         "openai",
-        "black",
         "ideogram",
         "jennifer",
-        "elevenlabs",
-        "forest",
+        "labs",
         "ai",
-        "금"
+        "elevenlabs",
+        "black",
+        "fal"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -1581,13 +1581,13 @@
       "summary": "Palantir가 Q4 조정 EPS 25센트(예상 23센트), 매출 $14.1억(예상 $13.3억)으로 월가 예상을 상회했다. 매출은 전년 대비 70% 성장했고, 미국 정부 매출은 66% 증가한 $5.7억을 기록했다. CEO Alex Karp는 \"지난 10년간 테크 업계 최고의 실적\"이라 자평했다. 그러나 DHS AI 인벤토리에서 ICE가 Palantir의 생성형 AI 도구를 활용해 이민 단속 제보를 분류·요약하고 있다는 사실이 공개되면서 논란이 확산되고 있다. Karp는 \"ICE를 비판한다면 오히려 더 많은 Palantir를 요구",
       "keywords": [
         "eps",
-        "은",
         "ceo",
-        "palantir",
-        "alex",
         "dhs",
+        "ice",
         "ai",
-        "ice"
+        "은",
+        "alex",
+        "palantir"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1600,8 +1600,8 @@
       "keywords": [
         "ai",
         "은",
-        "dram",
-        "switch"
+        "switch",
+        "dram"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1612,11 +1612,11 @@
       "title": "Apple Xcode, Anthropic·OpenAI 에이전트 코딩 도입",
       "summary": "Apple이 개발 도구 Xcode에 Anthropic과 OpenAI의 에이전트 코딩 기능을 추가했다. 개발자들이 AI 에이전트를 활용해 코드 작성, 디버깅, 리팩토링을 자동화할 수 있게 되면서, Apple 생태계의 AI 통합이 한 단계 더 진전됐다.",
       "keywords": [
-        "anthropic",
-        "apple",
         "openai",
         "xcode",
-        "ai"
+        "apple",
+        "ai",
+        "anthropic"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -1628,9 +1628,9 @@
       "summary": "젠슨 황 Nvidia CEO가 OpenAI 투자를 둘러싼 갈등설을 직접 부인했다. 양사 관계에 \"드라마는 없다\"고 선을 그으며, Nvidia의 AI 생태계 전략은 특정 기업과의 독점 관계가 아닌 전방위적 파트너십에 기반한다고 강조했다.",
       "keywords": [
         "은",
+        "ai",
         "openai",
         "nvidia",
-        "ai",
         "투자"
       ],
       "section": "🤖 AI/기술",
@@ -1643,8 +1643,8 @@
       "summary": "Anthropic이 AI 기반 법률 분석 도구를 출시하면서, Pearson 등 유럽 데이터 서비스 기업들의 주가가 하락했다. AI가 전통적인 법률·데이터 분석 시장을 직접 침투하기 시작했다는 신호로, 관련 산업의 구조적 변화에 대한 우려가 확산되고 있다.",
       "keywords": [
         "ai",
-        "pearson",
-        "anthropic"
+        "anthropic",
+        "pearson"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -1667,11 +1667,11 @@
       "summary": "주요 AI 챗봇들이 뚜렷한 성격적 정체성을 형성하고 있다. Google의 Gemini는 학구적이고 신중한 성향을, Grok은 도발적이고 풍자적인 어조를 보이며, ChatGPT와 Claude 역시 고유한 대화 스타일을 발전시키고 있다. AI의 인격화가 사용자 경험을 어떻게 바꾸고 있는지 조명한다.",
       "keywords": [
         "grok",
-        "google",
-        "은",
-        "ai",
         "claude",
-        "gpt"
+        "gpt",
+        "google",
+        "ai",
+        "은"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -1684,10 +1684,10 @@
       "keywords": [
         "intel",
         "ceo",
-        "nvidia",
-        "lip",
         "ai",
-        "gpu"
+        "gpu",
+        "lip",
+        "nvidia"
       ],
       "section": "💰 경제/비즈니스",
       "is_pick": false
@@ -1698,11 +1698,11 @@
       "title": "구글 실적 발표 – Apple Siri-Gemini 딜 질의 집중",
       "summary": "구글 실적 발표를 앞두고, 애널리스트들이 Apple과의 Siri-Gemini 통합 딜 세부사항에 대한 답변을 요구하고 있다. AI 검색 시장에서 구글과 Apple의 전략적 파트너십이 어떤 수익 구조로 이어질지가 핵심 관심사로 떠올랐다.",
       "keywords": [
-        "apple",
-        "siri",
-        "gemini",
         "구글",
-        "ai"
+        "apple",
+        "ai",
+        "siri",
+        "gemini"
       ],
       "section": "💰 경제/비즈니스",
       "is_pick": false
@@ -1713,8 +1713,8 @@
       "title": "Pinterest CEO, 해고 추적 도구 만든 직원들 해고",
       "summary": "Pinterest CEO가 사내 해고 추적 도구를 만든 직원들을 해고했다. 직원들이 회사의 구조조정 동향을 추적하기 위해 자체 제작한 내부 도구가 경영진의 반발을 산 것이다. 빅테크 기업들의 내부 투명성 갈등을 보여주는 사례다.",
       "keywords": [
-        "ceo",
-        "pinterest"
+        "pinterest",
+        "ceo"
       ],
       "section": "💰 경제/비즈니스",
       "is_pick": false
@@ -1725,10 +1725,10 @@
       "title": "KKR·싱텔, 데이터센터 기업 STT GDC $50억 인수",
       "summary": "KKR과 싱가포르 통신사 싱텔이 데이터센터 운영사 STT GDC의 지분을 $50억 이상에 인수했다. AI 인프라 수요 급증으로 아시아태평양 데이터센터 시장이 활황을 맞으면서, 대형 PE들의 디지털 인프라 투자가 가속화되고 있다.",
       "keywords": [
+        "gdc",
         "stt",
         "kkr",
         "ai",
-        "gdc",
         "투자"
       ],
       "section": "💰 경제/비즈니스",
@@ -1760,8 +1760,8 @@
       "title": "미 국토안보부, 테크기업에 트럼프 비판자 데이터 강제 요구",
       "summary": "미 국토안보부(DHS)가 테크 기업들에게 트럼프 대통령 비판자들의 데이터를 넘기도록 압박하고 있다는 보도가 나왔다. 정부 기관의 데이터 접근 권한 확대가 표현의 자유와 사생활 보호에 미칠 영향에 대한 우려가 커지고 있다.",
       "keywords": [
-        "dhs",
-        "트럼프"
+        "트럼프",
+        "dhs"
       ],
       "section": "🌏 국제/정책",
       "is_pick": false
@@ -1785,12 +1785,12 @@
       "title": "중국 메모리 기업들, 홍콩 상장으로 글로벌 야심 본격화",
       "summary": "중국 메모리 반도체 기업들이 홍콩 IPO를 통해 글로벌 확장 자금을 조달하려는 움직임이 본격화되고 있다. 미국의 대중국 반도체 제재 속에서도 CXMT, YMTC 등 중국 업체들이 메모리칩 가격 급등의 반사이익을 활용해 시장 점유율 확대를 노리고 있다.",
       "keywords": [
-        "ipo",
+        "금",
+        "ymtc",
         "cxmt",
         "반도체",
         "중국",
-        "ymtc",
-        "금"
+        "ipo"
       ],
       "section": "💾 반도체/하드웨어",
       "is_pick": false
@@ -1802,8 +1802,8 @@
       "summary": "잭 마의 앤트그룹이 중국 AI 의료 시장을 선도하고 있다. 5,000개 병원과 30만 의사를 연결하고, 300명의 유명 의사 AI 에이전트를 운영 중이다. IDC에 따르면 중국 의료 AI 시장은 2026년 $134억 규모로 연 40% 성장할 전망이며, 2035년 인구의 30%가 60세 이상이 되면서 수요가 더욱 급증할 것으로 예상된다.",
       "keywords": [
         "ai",
-        "중국",
-        "은"
+        "은",
+        "중국"
       ],
       "section": "💾 반도체/하드웨어",
       "is_pick": false
@@ -1827,8 +1827,8 @@
       "title": "YC 스타트업, 스테이블코인으로 투자금 수령 가능",
       "summary": "Y Combinator가 스타트업들에게 스테이블코인으로 투자금을 수령할 수 있는 옵션을 제공하기 시작했다. 실리콘밸리의 대표적 VC가 크립토 결제를 공식 수용한 것으로, 스타트업 생태계의 금융 인프라 변화를 보여주는 신호탄이다.",
       "keywords": [
-        "금",
-        "투자"
+        "투자",
+        "금"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -1839,8 +1839,8 @@
       "title": "베이징, AI로 전통 한의학 현대화 추진",
       "summary": "베이징이 AI 기술을 활용해 전통 한의학(TCM)의 현대화를 추진하고 있다. 수천 년 역사의 의학 지식을 AI 모델에 학습시켜, 진단 정확도 향상과 처방 최적화를 목표로 한다. 서양 의학과의 통합이 아닌, 전통 의학 고유의 방법론을 AI로 강화하는 독특한 접근이다.",
       "keywords": [
-        "tcm",
-        "ai"
+        "ai",
+        "tcm"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -1851,16 +1851,16 @@
       "title": "Palantir 어닝 서프라이즈, AI+국방 수요로 급등… ICE 계약 논란 속",
       "summary": "Palantir가 2025년 4분기 실적에서 시장 예상을 크게 상회하는 어닝 서프라이즈를 기록했다. 미 국방부와 정보기관의 AI 플랫폼 수요가 폭발적으로 증가하며 매출이 전년 대비 36% 이상 성장했다. 상업 부문에서도 AIP(Artificial Intelligence Platform)의 기업 도입이 가속화되고 있다. 다만 ICE(이민세관집행국)와의 계약을 둘러싼 윤리 논란은 지속되고 있으며, 일부 투자자들은 정부 의존도가 높은 사업 구조에 대해 우려를 표명하고 있다.",
       "keywords": [
-        "platform",
-        "intel",
-        "은",
-        "intelligence",
-        "palantir",
         "aip",
-        "ai",
-        "artificial",
+        "은",
+        "intel",
         "ice",
-        "투자"
+        "platform",
+        "intelligence",
+        "ai",
+        "투자",
+        "artificial",
+        "palantir"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1872,10 +1872,10 @@
       "summary": "Elon Musk가 이끄는 SpaceX와 xAI가 합병을 발표하며 기업가치 $1.25조(약 1,800조 원)의 세계 최대 비상장기업이 탄생했다. 이번 합병으로 xAI의 AI 모델과 데이터센터 인프라가 SpaceX의 Starlink 위성 네트워크와 결합되어 글로벌 AI 인프라의 새로운 지평이 열릴 전망이다. Musk는 우주 통신과 AI를 통합한 '우주 기반 AI 플랫폼'을 비전으로 제시했다. 업계에서는 OpenAI 등 경쟁사에 대한 압도적 인프라 우위가 될 수 있다고 분석하고 있다.",
       "keywords": [
         "spacex",
-        "openai",
         "elon",
-        "xai",
+        "openai",
         "ai",
+        "xai",
         "starlink"
       ],
       "section": "🔥 TOP Headlines",
@@ -1887,12 +1887,12 @@
       "title": "Waymo $16B 투자 유치, $126B 밸류에이션으로 글로벌 확장",
       "summary": "Alphabet 산하 자율주행 기업 Waymo가 160억 달러 규모의 투자를 유치하며 기업가치 1,260억 달러를 달성했다. 이는 지난 1월 $110B 밸류에이션 대비 약 15% 상승한 수치다. 이번 자금은 런던과 도쿄를 포함한 국제 시장 진출과 로보택시 차량 확대에 투입될 예정이다. 자율주행 기술의 상업화가 본격 궤도에 진입하면서 전통 택시·라이드헤일링 산업에 대한 구조적 변화 압력이 거세지고 있다.",
       "keywords": [
-        "투자",
+        "금",
         "은",
         "alphabet",
         "waymo",
         "자율주행",
-        "금"
+        "투자"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1905,8 +1905,8 @@
       "keywords": [
         "ai",
         "은",
-        "반도체",
-        "트럼프"
+        "트럼프",
+        "반도체"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1918,14 +1918,14 @@
       "summary": "미 법무부가 공개한 Epstein 관련 문서에서 Bill Gates, Peter Thiel, Elon Musk 등 실리콘밸리 주요 인사들의 이름이 대거 확인되었다. 이는 지난 1월 28일 DOJ 전면 공개 결정 이후 구체적인 문서 내용이 공개된 것이다. 문서에는 면담 기록, 비행 로그, 금전 거래 내역 등이 포함되어 있으며, 테크 업계 리더십에 대한 신뢰도 논쟁이 재점화되고 있다.",
       "keywords": [
         "peter",
-        "thiel",
-        "musk",
-        "gates",
-        "elon",
-        "bill",
-        "doj",
         "금",
-        "epstein"
+        "thiel",
+        "epstein",
+        "doj",
+        "bill",
+        "elon",
+        "gates",
+        "musk"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1936,10 +1936,10 @@
       "title": "Notepad++ 업데이트 서버, 6개월간 중국 해커에 장악",
       "summary": "전 세계에서 널리 사용되는 텍스트 에디터 Notepad++의 소프트웨어 업데이트 서버가 6개월 이상 중국 정부 연계 해커 그룹에 의해 장악되었던 사실이 밝혀졌다. 해커들은 정상적인 업데이트에 백도어를 삽입하는 공급망 공격(supply chain attack)을 수행했으며, 수백만 명의 사용자가 잠재적 영향권에 놓였다. 이번 사건은 오픈소스 소프트웨어 공급망 보안의 근본적 취약성을 드러내며 업계 전반에 경종을 울리고 있다.",
       "keywords": [
-        "notepad",
-        "중국",
+        "ai",
         "은",
-        "ai"
+        "notepad",
+        "중국"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1950,8 +1950,8 @@
       "title": "Nintendo Switch, 역대 최다 판매 콘솔 등극 (155.37M)",
       "summary": "Nintendo Switch가 누적 판매 1억 5,537만 대를 기록하며 Nintendo DS를 제치고 역대 최다 판매 콘솔에 등극했다. Nintendo는 이번 분기 실적 발표에서 Switch의 지속적인 판매 호조를 확인했으며, 후속작 Switch 2 출시가 임박한 상황에서도 현행 모델의 수명이 여전히 강력함을 입증했다. 게임 업계에서는 하이브리드 콘솔 전략의 성공이 차세대 경쟁에도 영향을 미칠 것으로 전망하고 있다.",
       "keywords": [
-        "nintendo",
-        "switch"
+        "switch",
+        "nintendo"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1962,13 +1962,13 @@
       "title": "OpenAI Codex Mac 앱 출시, 에이전틱 코딩 본격화",
       "summary": "OpenAI가 Mac 전용 Codex 에이전틱 코딩 앱을 출시했다. 이 앱은 코드 작성, 디버깅, 리팩토링을 AI가 자율적으로 수행하는 에이전틱 코딩 기능을 탑재하고 있으며, 개발자가 자연어로 지시하면 전체 코드베이스를 분석해 작업을 완수한다. GitHub Copilot과 Claude Code에 이어 AI 코딩 에이전트 시장 경쟁이 한층 치열해지고 있다. 개발자 생산성 도구 시장의 패러다임이 '도움(assistance)'에서 '위임(delegation)'으로 전환되고 있다.",
       "keywords": [
+        "claude",
         "codex",
-        "은",
-        "openai",
-        "github",
         "mac",
+        "openai",
         "ai",
-        "claude"
+        "은",
+        "github"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1980,11 +1980,11 @@
       "summary": "OpenClaw라는 새로운 AI 에이전트 플랫폼이 급부상하며 보안 전문가들의 우려를 사고 있다. MoltBot, ClawdBot 등 자율형 AI 에이전트가 웹을 자유롭게 탐색하며 정보 수집, 거래 실행, 콘텐츠 생성을 독자적으로 수행하고 있다. 전문가들은 이러한 에이전트의 통제되지 않은 확산이 사이버 보안, 허위정보, 금융 시장 조작 등 다방면에서 위험을 야기할 수 있다고 경고하고 있다. 6개 이상 매체가 보도하며 AI 에이전트 안전 규제 논의를 촉발시키고 있다.",
       "keywords": [
         "moltbot",
+        "금",
         "openclaw",
-        "은",
         "clawdbot",
         "ai",
-        "금"
+        "은"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -1995,12 +1995,12 @@
       "title": "Anthropic 법률 AI 출시, 소프트웨어 주식 공포 매도세",
       "summary": "Anthropic이 법률 전문 AI 도구를 출시하자 법률 소프트웨어 기업들의 주가가 일제히 급락했다. LegalZoom, Thomson Reuters 등 기존 법률 테크 기업의 시가총액이 수십억 달러 증발하며 시장에 충격을 줬다. 이번 사례는 AI 기업이 특정 산업 버티컬에 진출할 때 기존 SaaS 기업들이 직면하는 실존적 위협을 보여주는 대표적 사례로 분석된다.",
       "keywords": [
-        "anthropic",
         "thomson",
-        "saas",
-        "ai",
         "reuters",
-        "legalzoom"
+        "legalzoom",
+        "ai",
+        "anthropic",
+        "saas"
       ],
       "section": "🤖 AI / 기술",
       "is_pick": false
@@ -2022,10 +2022,10 @@
       "title": "Firefox, AI 기능 일괄 비활성화 스위치 추가",
       "summary": "Mozilla가 Firefox 브라우저에 모든 AI 기능을 한 번에 비활성화할 수 있는 마스터 스위치를 추가했다. AI 기능 탑재를 가속화하는 Chrome, Edge 등 경쟁 브라우저와 차별화된 행보로, 프라이버시를 중시하는 사용자층의 지지를 얻고 있다. 이는 AI 도입에 대한 사용자 통제권을 강조하는 최초의 주요 브라우저 차원의 조치다.",
       "keywords": [
-        "firefox",
-        "chrome",
+        "ai",
         "edge",
-        "ai"
+        "chrome",
+        "firefox"
       ],
       "section": "🤖 AI / 기술",
       "is_pick": false
@@ -2037,8 +2037,8 @@
       "summary": "데이터 클라우드 기업 Snowflake와 OpenAI가 다년간의 전략적 파트너십을 체결했다. Snowflake의 데이터 레이크하우스에 OpenAI의 AI 모델을 긴밀하게 통합하여 기업 고객들이 자사 데이터로 AI를 활용할 수 있도록 지원한다. 이 계약은 엔터프라이즈 AI 시장에서 데이터 플랫폼과 AI 모델 기업 간 제휴가 승패를 결정짓는 핵심 전략임을 보여준다.",
       "keywords": [
         "ai",
-        "openai",
         "은",
+        "openai",
         "snowflake"
       ],
       "section": "🤖 AI / 기술",
@@ -2050,13 +2050,13 @@
       "title": "SoftBank-Intel, 차세대 AI 메모리 기술 협력",
       "summary": "SoftBank 자회사 SAIMemory와 Intel이 차세대 AI 메모리 기술 'Z-Angle' 프로그램에서 협력한다고 발표했다. 이 기술은 기존 HBM(고대역폭메모리) 대비 전력 효율과 대역폭을 획기적으로 개선할 것으로 기대된다. AI 모델의 크기가 급속히 커지면서 메모리 병목 해소가 핵심 과제로 떠오르고 있어, 이번 협력이 반도체 업계의 차세대 경쟁 지형을 바꿀 수 있다.",
       "keywords": [
-        "intel",
-        "은",
-        "반도체",
-        "angle",
         "softbank",
+        "intel",
+        "hbm",
+        "반도체",
         "ai",
-        "hbm"
+        "은",
+        "angle"
       ],
       "section": "💰 경제 / 비즈니스",
       "is_pick": false
@@ -2067,11 +2067,11 @@
       "title": "Adobe Animate 종료, AI 전환 가속화",
       "summary": "Adobe가 오랜 역사를 자랑하는 Animate(구 Flash Professional)의 서비스 종료를 발표했다. Adobe는 AI 기반 애니메이션·디자인 도구로의 전환에 자원을 집중하겠다고 밝혔다. Flash에서 시작해 웹 애니메이션의 한 시대를 이끌었던 이 제품의 퇴장은 크리에이티브 도구 시장이 AI 중심으로 재편되고 있음을 상징적으로 보여준다.",
       "keywords": [
-        "animate",
-        "professional",
-        "은",
-        "ai",
         "flash",
+        "professional",
+        "animate",
+        "ai",
+        "은",
         "adobe"
       ],
       "section": "💰 경제 / 비즈니스",
@@ -2084,8 +2084,8 @@
       "summary": "프랑스 검찰의 사이버범죄 전담 수사대가 X(구 Twitter)의 파리 사무소를 압수수색했다. 수사는 X의 AI 챗봇 Grok이 편향적인 응답을 생성하여 허위정보 유포에 기여했다는 혐의에 기반한다. EU의 디지털서비스법(DSA) 위반 가능성도 조사 중이며, 이는 AI 챗봇의 콘텐츠 편향성에 대한 유럽 규제 당국의 첫 물리적 집행 조치라는 점에서 주목된다.",
       "keywords": [
         "ai",
-        "dsa",
         "twitter",
+        "dsa",
         "grok"
       ],
       "section": "📱 플랫폼 / 소셜",
@@ -2097,9 +2097,9 @@
       "title": "중국, 숨겨진 자동차 도어핸들 금지… Tesla 직격탄",
       "summary": "중국 정부가 안전 규정 강화의 일환으로 자동차의 숨겨진(flush) 도어핸들을 금지하는 규제를 시행한다. 이는 사고 시 외부 구조자가 문을 열기 어렵다는 안전 우려에 따른 것이다. Tesla의 Model 3, Model S 등 주요 차종이 플러시 핸들을 채택하고 있어 직격탄을 맞게 되었으며, 중국 시장 특화 모델 변경이 불가피할 전망이다.",
       "keywords": [
-        "중국",
-        "금",
         "tesla",
+        "금",
+        "중국",
         "model"
       ],
       "section": "🔧 하드웨어 / 기타",
@@ -2111,13 +2111,13 @@
       "title": "SoftBank-Intel, 차세대 AI 메모리 기술 'Z-Angle' 협력",
       "summary": "SoftBank 자회사 SAIMemory와 Intel이 기존 HBM을 대체할 차세대 AI 메모리 기술 개발에 착수했다. AI 모델 크기가 기하급수적으로 증가하면서 메모리 병목 해소가 AI 인프라의 핵심 과제로 부상하고 있다. SK하이닉스, 삼성전자가 주도하는 HBM 시장 구도에 변화를 줄 수 있는 잠재적 와일드카드다.",
       "keywords": [
-        "sk하이닉스",
-        "intel",
-        "angle",
         "softbank",
-        "ai",
         "삼성",
-        "hbm"
+        "intel",
+        "hbm",
+        "ai",
+        "sk하이닉스",
+        "angle"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -2141,9 +2141,9 @@
       "summary": "Anthropic의 법률 AI 도구 출시 직후 기존 법률 소프트웨어 기업들의 주가가 급락한 사건은, AI 기업이 특정 산업 버티컬에 진출할 때 기존 SaaS 생태계가 겪게 될 '디스럽션 공포'의 실체를 보여준다. 법률에 이어 회계, 의료, 교육 등 다른 전문 분야로 동일한 패턴이 반복될 가능성이 높다.",
       "keywords": [
         "ai",
-        "은",
         "anthropic",
-        "saas"
+        "saas",
+        "은"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -2155,10 +2155,10 @@
       "summary": "Alphabet 자회사 Waymo가 약 $160억 규모의 펀딩 라운드를 마무리 중이며, 밸류에이션은 $1100억에 근접할 전망입니다. 이는 자율주행 업계 역대 최대 규모의 펀딩이 될 것으로 예상됩니다. Waymo는 현재 샌프란시스코, 피닉스, LA 등에서 로보택시 서비스를 운영 중입니다.",
       "keywords": [
         "펀딩",
-        "은",
         "alphabet",
         "waymo",
-        "자율주행"
+        "자율주행",
+        "은"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -2169,11 +2169,11 @@
       "title": "Oracle, 클라우드 인프라 확장에 최대 $500억 조달 계획",
       "summary": "Oracle이 2026년 클라우드 인프라 구축을 위해 부채와 주식 매각을 통해 $450억~$500억을 조달할 계획이라고 발표했습니다. AI 워크로드 수요 급증에 대응하기 위한 대규모 투자로, AWS, Azure, GCP와의 경쟁이 더욱 치열해질 전망입니다.",
       "keywords": [
-        "aws",
-        "azure",
-        "ai",
         "oracle",
-        "투자"
+        "azure",
+        "투자",
+        "ai",
+        "aws"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -2184,8 +2184,8 @@
       "title": "SpaceX, 100만 위성 데이터센터 FCC 승인 신청",
       "summary": "SpaceX가 FCC에 100만 개의 태양광 발전 위성 데이터센터 궤도 배치 승인을 신청했습니다. 신청서에서 SpaceX는 이를 \"태양의 전체 에너지를 활용하는 카르다셰프 스케일 II급 문명으로 가는 첫걸음\"이라고 표현했습니다. FCC가 이 규모를 전부 승인할 가능성은 낮지만, SpaceX의 협상 전략으로 해석됩니다.",
       "keywords": [
-        "fcc",
         "은",
+        "fcc",
         "spacex"
       ],
       "section": "🔥 TOP Headlines",
@@ -2197,12 +2197,12 @@
       "title": "Nvidia CEO, OpenAI $1000억 투자 \"약속 아니었다\"",
       "summary": "Jensen Huang CEO가 Nvidia의 OpenAI $1000억 투자 관련 마찰 보도를 부인하며 \"약속이 아니라 의향이었다\"고 밝혔습니다. 다만 \"다음 펀딩 라운드에 분명히 참여할 것\"이라며 지속적인 투자 의지를 확인했습니다. 투자 규모는 $1000억과는 거리가 있을 것으로 예상됩니다.",
       "keywords": [
-        "openai",
-        "ceo",
         "huang",
-        "nvidia",
+        "ceo",
         "ai",
+        "openai",
         "jensen",
+        "nvidia",
         "투자"
       ],
       "section": "🔥 TOP Headlines",
@@ -2214,11 +2214,11 @@
       "title": "UAE \"스파이 셰이크\", Trump 암호화폐 회사 지분 비밀 매입",
       "summary": "아부다비 왕족이 Trump 가문의 암호화폐 벤처 지분을 비밀리에 매입한 것으로 WSJ가 보도했습니다. Elizabeth Warren 상원의원은 \"명백한 부패\"라고 강하게 비판했습니다. 현직 대통령 가족의 암호화폐 사업과 외국 정부 간의 거래가 정치적 논쟁으로 확대될 전망입니다.",
       "keywords": [
-        "warren",
-        "trump",
-        "은",
         "uae",
-        "elizabeth"
+        "trump",
+        "warren",
+        "elizabeth",
+        "은"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -2230,8 +2230,8 @@
       "summary": "인도네시아 정부가 xAI의 Grok 서비스 재개를 조건부로 허용했습니다. 말레이시아, 필리핀에 이어 아시아에서 세 번째로 Grok 금지를 해제한 국가가 되었습니다. xAI가 정부에 제공한 보장 내용에 따라 서비스가 재개되며, 성인용 콘텐츠 생성 관련 제한이 유지될 것으로 보입니다.",
       "keywords": [
         "ai",
-        "금",
         "xai",
+        "금",
         "grok"
       ],
       "section": "🤖 AI/기술",
@@ -2257,8 +2257,8 @@
         "moltbot",
         "reddit",
         "clawdbot",
-        "moltbook",
-        "ai"
+        "ai",
+        "moltbook"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -2270,10 +2270,10 @@
       "summary": "OpenAI가 GPT-4o 모델을 다시 은퇴시킬 예정입니다. 무료 ChatGPT 사용자에게는 큰 영향이 없을 것으로 보이지만, 일부 4o 충성 사용자들의 불만이 제기되고 있습니다. OpenAI의 모델 교체 주기가 빨라지면서 사용자들의 적응 피로감도 누적되고 있습니다.",
       "keywords": [
         "chatgpt",
-        "은",
+        "gpt",
         "openai",
         "ai",
-        "gpt"
+        "은"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -2284,10 +2284,10 @@
       "title": "인도, 글로벌 데이터센터 유치에 20년 세금 면제",
       "summary": "인도 정부가 해외 데이터센터 서비스 기업에 2047년까지 20년간 세금 면제 혜택을 발표했습니다. Amazon, Google, Microsoft가 인도 데이터센터 투자를 확대하는 가운데, 인도가 글로벌 AI 인프라 허브로 부상하려는 전략입니다.",
       "keywords": [
-        "google",
-        "microsoft",
-        "amazon",
         "금",
+        "amazon",
+        "microsoft",
+        "google",
         "ai",
         "투자"
       ],
@@ -2301,8 +2301,8 @@
       "summary": "중국 AI 기업들의 홍콩 상장이 급증하며 올해 초 IPO 시장이 역대 가장 바쁜 시작을 기록했습니다. 중국 정부의 AI 육성 정책과 미국 상장 규제 회피 수요가 맞물려 홍콩이 중국 테크 기업들의 주요 상장지로 부상하고 있습니다.",
       "keywords": [
         "ai",
-        "중국",
-        "ipo"
+        "ipo",
+        "중국"
       ],
       "section": "💰 비즈니스/투자",
       "is_pick": false
@@ -2313,11 +2313,11 @@
       "title": "a16z, AI 업계 중간선거용 $5100만 모금 주도",
       "summary": "벤처 캐피탈리스트 Marc Andreessen과 Ben Horowitz가 AI 규제 완화를 추진하는 슈퍼 PAC에 $5080만을 기부했습니다. 이 자금은 중간선거에서 AI 친화적인 규제 환경을 조성하기 위해 사용될 예정입니다.",
       "keywords": [
-        "은",
-        "ben",
+        "금",
         "ai",
+        "ben",
         "marc",
-        "금"
+        "은"
       ],
       "section": "💰 비즈니스/투자",
       "is_pick": false
@@ -2352,15 +2352,15 @@
       "title": "Google Project Genie 발표 후 게임주 급락",
       "summary": "Google이 AI 월드 생성 도구 Project Genie를 공개한 다음 날, Take-Two, Roblox, Unity 등 게임 관련주가 일제히 급락했습니다. Take-Two는 7.93% 하락하며 $220.30에 마감했습니다. AI가 게임 개발 프로세스를 근본적으로 바꿀 수 있다는 우려가 투자자들 사이에 확산되고 있습니다.",
       "keywords": [
-        "unity",
-        "google",
-        "genie",
         "project",
-        "roblox",
+        "unity",
         "two",
         "ai",
-        "take",
-        "투자"
+        "투자",
+        "genie",
+        "google",
+        "roblox",
+        "take"
       ],
       "section": "📱 플랫폼/소셜",
       "is_pick": false
@@ -2371,13 +2371,13 @@
       "title": "Jensen Huang, TSMC에 AI 칩 용량 확대 촉구",
       "summary": "Nvidia CEO Jensen Huang이 대만 TSMC에 AI 칩 부족 사태 해결을 위한 생산 용량 확대를 촉구했습니다. AI 반도체 수요가 공급을 크게 초과하는 상황에서, Nvidia의 최대 파운드리 파트너인 TSMC와의 협력 강화가 필수적인 상황입니다.",
       "keywords": [
-        "ceo",
-        "반도체",
-        "nvidia",
         "huang",
+        "ceo",
         "tsmc",
         "ai",
-        "jensen"
+        "반도체",
+        "jensen",
+        "nvidia"
       ],
       "section": "🔧 하드웨어/모빌리티",
       "is_pick": false
@@ -2388,11 +2388,11 @@
       "title": "Blue Origin, 우주 관광 2년 이상 중단",
       "summary": "Jeff Bezos의 Blue Origin이 달 착륙선 및 기타 달 관련 기술 개발에 집중하기 위해 우주 관광 비행을 최소 2년간 중단한다고 발표했습니다. NASA의 Artemis 프로그램에 참여하는 Blue Origin으로서는 달 프로젝트가 더 높은 우선순위라는 판단입니다.",
       "keywords": [
-        "은",
+        "artemis",
         "blue",
-        "origin",
         "jeff",
-        "artemis"
+        "은",
+        "origin"
       ],
       "section": "🔧 하드웨어/모빌리티",
       "is_pick": false
@@ -2403,10 +2403,10 @@
       "title": "중국 AI 헬스케어 급부상, Ant Group 선두",
       "summary": "Jack Ma의 Ant Group이 주도하는 중국 AI 헬스케어 시장이 급성장하고 있습니다. AI 기반 진단, 약물 개발, 환자 관리 등 다양한 분야에서 중국 기업들이 빠르게 기술을 발전시키고 있으며, 14억 인구의 의료 시장을 AI로 혁신하려는 움직임이 활발합니다.",
       "keywords": [
-        "ant",
         "jack",
-        "group",
+        "ant",
         "중국",
+        "group",
         "ai"
       ],
       "section": "🌏 아시아/신흥시장",
@@ -2430,12 +2430,12 @@
       "title": "GIC·무바달라, KKR $100억 데이터센터 딜 합류",
       "summary": "싱가포르 GIC와 UAE 무바달라가 KKR과 싱텔의 데이터센터 운영사 STT GDC 인수에 합류할 예정입니다. 최근 몇 달간 가장 큰 디지털 인프라 딜 중 하나가 될 전망이며, AI 인프라 투자가 아시아에서도 가속화되고 있음을 보여줍니다.",
       "keywords": [
-        "stt",
-        "kkr",
-        "gic",
-        "uae",
-        "ai",
         "gdc",
+        "uae",
+        "stt",
+        "gic",
+        "kkr",
+        "ai",
         "투자"
       ],
       "section": "💎 Claude's Pick",
@@ -2447,13 +2447,13 @@
       "title": "기업 대기업 시대의 종말, 개인 대기업 시대의 도래",
       "summary": "Elon Musk의 SpaceX-xAI-Tesla 합병 논의는 GE 전성기나 도금 시대의 산업 거물들을 연상시킵니다. 한 개인이 여러 산업을 아우르는 \"개인 대기업\"의 부상은 새로운 형태의 경제 권력 집중을 의미하며, 규제와 거버넌스에 새로운 질문을 던지고 있습니다.",
       "keywords": [
-        "spacex",
+        "금",
         "은",
+        "spacex",
         "tesla",
         "elon",
-        "xai",
         "ai",
-        "금"
+        "xai"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -2465,14 +2465,14 @@
       "summary": "DOJ 300만 페이지 Epstein 파일 공개로 Musk 교류 확인. Minneapolis 사태 후 실리콘밸리 CEO들 침묵에 대한 비판 고조. 로봇 AI 스타트업 Physical Intelligence 급부상.",
       "keywords": [
         "physical",
-        "minneapolis",
+        "epstein",
+        "doj",
         "intel",
         "intelligence",
-        "musk",
         "로봇",
-        "doj",
+        "minneapolis",
         "ai",
-        "epstein"
+        "musk"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -2484,8 +2484,8 @@
       "summary": "미국 법무부가 300만 페이지 이상의 Jeffrey Epstein 관련 파일을 공개했다. 2012~2014년 사이 Musk와 Epstein 간 16건 이상의 이메일 교류가 확인됐으며, Musk는 \"섬에서 가장 격렬한 파티는 언제냐\"고 묻고 헬리콥터 제공 제안을 받았다. 2013년 2월에는 Epstein이 3명의 어시스턴트와 함께 SpaceX를 방문한 기록도 있다. Musk는 그동안 섬 방문을 거절했다고 주장해왔으나, 이번 파일은 적극적인 방문 계획 논의를 보여준다.",
       "keywords": [
         "은",
-        "jeffrey",
         "spacex",
+        "jeffrey",
         "epstein"
       ],
       "section": "🔥 TOP Headlines",
@@ -2497,13 +2497,13 @@
       "title": "Minneapolis 사태 후, Tech CEO들의 침묵에 대한 압박 고조",
       "summary": "Minneapolis에서 ICE 단속 중 Alex Pretti가 사망한 사건 이후 실리콘밸리 CEO들의 침묵이 비판받고 있다. LinkedIn 공동창업자 Reid Hoffman은 공개적으로 \"무릎 꿇지 말라\"며 동료 CEO들의 발언을 촉구했다. Wired는 이 사안을 집중 보도하며 Tech 업계의 정치적 침묵과 책임에 대한 논의를 이끌고 있다.",
       "keywords": [
+        "linkedin",
+        "reid",
+        "tech",
+        "ice",
         "minneapolis",
         "은",
-        "tech",
-        "reid",
-        "alex",
-        "linkedin",
-        "ice"
+        "alex"
       ],
       "section": "🏛️ 정책/사회",
       "is_pick": false
@@ -2514,13 +2514,13 @@
       "title": "Trump, Kevin Warsh 차기 연준 의장 지명",
       "summary": "Trump 대통령이 Jerome Powell 후임으로 Kevin Warsh를 연준 의장으로 지명했다. Warsh는 전 연준 이사이자 금융 시장 전문가로, 이번 인사는 소비자 대출 비용과 저축 금리에 광범위한 영향을 미칠 전망이다.",
       "keywords": [
+        "금",
+        "trump",
+        "warsh",
+        "powell",
         "jerome",
         "ev",
-        "trump",
-        "kevin",
-        "powell",
-        "warsh",
-        "금"
+        "kevin"
       ],
       "section": "🏛️ 정책/사회",
       "is_pick": false
@@ -2532,20 +2532,20 @@
       "summary": "Stripe 30번째 직원 출신 Lachy Groom이 공동 창업한 Physical Intelligence가 $5.6B 밸류에이션으로 급부상했다. 2024년 3월 설립, $70M 시드 후 11월 $400M 시리즈B를 유치했다. Google DeepMind의 Karol Hausman과 Stanford의 Chelsea Finn 등 세계적 로봇공학 연구진이 참여하며, \"모든 로봇에서 작동하는 범용 AI 뇌\"를 목표로 한다. Jeff Bezos, OpenAI, Sequoia Capital 등이 투자했다.",
       "keywords": [
         "physical",
-        "stripe",
-        "bezos",
-        "capital",
-        "google",
-        "openai",
-        "intel",
-        "intelligence",
-        "sequoia",
-        "karol",
         "lachy",
-        "finn",
+        "intel",
+        "sequoia",
         "ai",
+        "stripe",
+        "capital",
+        "karol",
+        "투자",
+        "openai",
+        "intelligence",
         "chelsea",
-        "jeff"
+        "google",
+        "jeff",
+        "finn"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -2556,13 +2556,13 @@
       "title": "중국 AI 헬스케어, Ant Group의 AQ 앱이 주도",
       "summary": "Jack Ma의 Ant Group이 출시한 AI 헬스케어 앱 AQ(Ant Afu)가 4개월 만에 MAU 1,000만을 돌파하고 현재 1,500만에 달한다. 5,000개 병원과 30만 의사를 연결하며, 300명의 유명 의사 AI 에이전트를 제공한다. IDC에 따르면 중국 의료 AI 시장은 2026년 $134억에 달하며 연 40% 성장 전망이다. 2035년 중국 인구 30%가 60세 이상이 되면서 AI 헬스케어 수요가 급증할 것으로 예상된다.",
       "keywords": [
-        "은",
+        "mau",
+        "jack",
         "ant",
         "afu",
         "중국",
         "ai",
-        "jack",
-        "mau"
+        "은"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -2584,11 +2584,11 @@
       "title": "메모리칩 가격 급등, 중국 CXMT·YMTC에 기회",
       "summary": "DRAM 가격 급등으로 중국 메모리칩 업체들이 반사이익을 얻고 있다. 장신메모리(CXMT)와 양쯔메모리(YMTC) 등 중국 업체들이 시장 점유율 확대의 기회를 잡을 전망이다. 소비자와 스마트폰 브랜드에는 악재지만, 중국 반도체 자립에는 호재로 작용하고 있다.",
       "keywords": [
-        "dram",
+        "ymtc",
         "cxmt",
         "반도체",
         "중국",
-        "ymtc"
+        "dram"
       ],
       "section": "💾 반도체/하드웨어",
       "is_pick": false
@@ -2623,8 +2623,8 @@
       "title": "Blue Origin, 우주관광 최소 2년 중단",
       "summary": "Jeff Bezos의 Blue Origin이 우주관광 비행을 최소 2년간 중단한다고 발표했다. 달 착륙선 및 기타 달 기술 개발 가속화에 자원을 집중하기 위한 전략적 결정이다.",
       "keywords": [
-        "blue",
         "jeff",
+        "blue",
         "origin"
       ],
       "section": "💼 비즈니스",
@@ -2637,13 +2637,13 @@
       "summary": "18개월 만에 5~10년 로드맵을 달성했다는 Physical Intelligence의 성장 속도가 인상적이다. \"특정 로봇이 아닌 모든 로봇을 위한 단일 뇌\"라는 비전은 로봇 산업의 Android가 될 가능성을 시사한다. Stripe 출신 창업자의 실행력과 DeepMind/Stanford 연구진의 기술력 조합이 주목할 만하다.",
       "keywords": [
         "physical",
-        "stripe",
-        "stanford",
         "deepmind",
         "intel",
-        "은",
+        "stanford",
         "intelligence",
-        "로봇"
+        "로봇",
+        "stripe",
+        "은"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -2667,17 +2667,17 @@
       "title": "머스크의 SpaceX-Tesla-xAI, 합병 논의 중 - IPO 앞두고 제국 통합 검토",
       "summary": "Reuters와 Bloomberg에 따르면 Elon Musk의 SpaceX가 xAI 및 Tesla와의 합병을 검토 중이다. 이 합병이 성사되면 Grok 챗봇, Starlink 위성, SpaceX 로켓, Tesla 전기차와 로봇이 하나의 기업 아래 통합된다. SpaceX의 IPO 전 평가액은 $3,500억 이상으로 추정된다.",
       "keywords": [
-        "spacex",
-        "ipo",
-        "grok",
+        "starlink",
         "전기차",
+        "grok",
         "은",
+        "spacex",
         "tesla",
         "elon",
-        "xai",
+        "로봇",
         "ai",
-        "starlink",
-        "로봇"
+        "xai",
+        "ipo"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -2688,14 +2688,14 @@
       "title": "Amazon, OpenAI에 최대 $500억 투자 협상 중 - AI 패권 경쟁 본격화",
       "summary": "Wall Street Journal과 Bloomberg에 따르면 Amazon이 OpenAI에 최대 $500억을 투자하는 협상을 진행 중이다. Amazon은 이미 OpenAI 경쟁사 Anthropic에 $80억을 투자한 상태로, 두 경쟁 스타트업을 동시에 지원하는 특이한 행보가 될 전망이다.",
       "keywords": [
-        "anthropic",
-        "wall",
         "은",
-        "openai",
         "amazon",
+        "wall",
+        "투자",
+        "openai",
         "ai",
-        "street",
-        "투자"
+        "anthropic",
+        "street"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -2707,8 +2707,8 @@
       "summary": "Microsoft 주가가 목요일 10% 가까이 급락하며 2020년 이후 최악의 일일 하락을 기록했다. AI 지출 확대에도 Azure 클라우드 성장이 31%로 예상치 31.8%를 하회한 것이 원인이다.",
       "keywords": [
         "ai",
-        "microsoft",
-        "azure"
+        "azure",
+        "microsoft"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -2720,8 +2720,8 @@
       "summary": "Apple이 이스라엘 AI 스타트업 Q.ai를 약 $20억에 인수했다. 이는 2014년 Beats($30억) 이후 Apple의 역대 두 번째로 큰 인수다.",
       "keywords": [
         "ai",
-        "apple",
-        "beats"
+        "beats",
+        "apple"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -2745,9 +2745,9 @@
       "title": "Nvidia, 중국에 H200 칩 수십만 개 판매 승인 획득",
       "summary": "베이징이 중국 AI 기업들에 Nvidia H200 칩 수십만 개 판매를 승인한 것으로 알려졌다.",
       "keywords": [
+        "nvidia",
         "ai",
-        "중국",
-        "nvidia"
+        "중국"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -2771,8 +2771,8 @@
       "summary": "AI 스타트업 Perplexity가 Microsoft Azure 클라우드 서비스 이용을 위해 $7.5억 계약을 체결했다.",
       "keywords": [
         "ai",
-        "microsoft",
-        "azure"
+        "azure",
+        "microsoft"
       ],
       "section": "💰 경제/금융",
       "is_pick": false
@@ -2783,14 +2783,14 @@
       "title": "소프트웨어 주식 Bear Market 진입 - ServiceNow 12% 급락",
       "summary": "iShares Expanded Tech-Software Sector ETF가 AI 대체 우려로 2024년 4월 관세 충격 이후 최대 일일 하락을 기록했다.",
       "keywords": [
-        "software",
         "tech",
-        "expanded",
-        "ai",
         "servicenow",
         "market",
+        "software",
+        "bear",
+        "ai",
         "sector",
-        "bear"
+        "expanded"
       ],
       "section": "💰 경제/금융",
       "is_pick": false
@@ -2802,9 +2802,9 @@
       "summary": "대만 AI 서버 부품 업체 Delta Electronics의 시가총액이 4월 이후 4배 이상 상승해 $1,000억을 돌파했다.",
       "keywords": [
         "ai",
+        "foxconn",
         "delta",
-        "electronics",
-        "foxconn"
+        "electronics"
       ],
       "section": "💰 경제/금융",
       "is_pick": false
@@ -2849,9 +2849,9 @@
       "title": "OpenAI Sora 앱, 화려한 출시 이후 성장 둔화",
       "summary": "AI 비디오 소셜 네트워크로 주목받았던 OpenAI의 Sora 앱이 출시 초기 열풍 이후 하락세를 보이고 있다.",
       "keywords": [
-        "sora",
+        "ai",
         "openai",
-        "ai"
+        "sora"
       ],
       "section": "📱 플랫폼/소셜",
       "is_pick": false
@@ -2875,8 +2875,8 @@
       "summary": "역대 가장 빠르게 판매되는 게임 콘솔인 Nintendo Switch 2도 급등하는 메모리 가격에 대한 투자자 우려를 막기엔 역부족일 수 있다.",
       "keywords": [
         "투자",
-        "nintendo",
-        "switch"
+        "switch",
+        "nintendo"
       ],
       "section": "🔧 하드웨어/기타",
       "is_pick": false
@@ -2908,9 +2908,9 @@
       "title": "AI 장난감 업체 Bondu, 아동과의 대화 기록 5만 건 무방비 노출",
       "summary": "AI 채팅 장난감 업체 Bondu가 웹 콘솔을 거의 보호하지 않아 아이들이 인형과 나눈 대화 기록 약 5만 건이 Gmail 계정만 있으면 누구나 접근 가능했던 것으로 드러났다.",
       "keywords": [
+        "ai",
         "gmail",
-        "bondu",
-        "ai"
+        "bondu"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -2921,10 +2921,10 @@
       "title": "Meta Q4 실적 예상 상회, AI 투자 $650억 확대",
       "summary": "Meta가 4분기 매출 $485억으로 시장 예상을 상회했다. Reality Labs 부문이 $60억 손실을 기록했음에도 Zuckerberg는 2026년 AI 인프라 투자를 $600-650억으로 확대한다고 발표. 월가는 AI 투자 지속에 청신호를 보내며 주가 상승.",
       "keywords": [
-        "labs",
         "reality",
-        "ai",
         "meta",
+        "labs",
+        "ai",
         "투자"
       ],
       "section": "🔥 TOP Headlines",
@@ -2936,13 +2936,13 @@
       "title": "Tesla Model S/X 단종, Optimus 로봇 생산 전환",
       "summary": "Tesla가 2025년 이익 46% 급감을 발표하며 Model S와 Model X 생산 중단을 선언했다. 프리몬트 공장 생산라인을 Optimus 휴머노이드 로봇 제조로 전환할 계획. Musk는 Tesla가 xAI에 $20억을 투자할 것이라고 밝혔다.",
       "keywords": [
-        "투자",
-        "tesla",
-        "xai",
-        "ai",
-        "optimus",
         "model",
-        "로봇"
+        "optimus",
+        "tesla",
+        "투자",
+        "로봇",
+        "ai",
+        "xai"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -2954,9 +2954,9 @@
       "summary": "Microsoft Azure 성장률이 31%로 둔화되며 주가가 7% 하락했다. AI 수요 대비 공급 부족을 인정하면서도 OpenAI로부터 분기 $76억 수익을 올렸다고 발표.",
       "keywords": [
         "ai",
+        "azure",
         "openai",
-        "microsoft",
-        "azure"
+        "microsoft"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -2967,10 +2967,10 @@
       "title": "SK Hynix, Samsung 제치고 연간 이익 1위 등극",
       "summary": "SK Hynix가 AI 메모리 수요 폭발로 사상 최대 분기 실적을 기록하며 처음으로 Samsung을 제치고 연간 이익 1위에 올랐다. 글로벌 AI 칩 수요가 메모리 업계 판도를 재편하고 있다.",
       "keywords": [
+        "ai",
         "sk hynix",
         "hynix",
-        "samsung",
-        "ai"
+        "samsung"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -2981,10 +2981,10 @@
       "title": "Chrome, Gemini AI 통합으로 에이전트 브라우저로 진화",
       "summary": "Google이 Chrome 브라우저에 Gemini AI를 깊이 통합하며 자율 태스크 수행이 가능한 에이전트 기능을 추가했다. AI 브라우저 경쟁에서 선제적 대응.",
       "keywords": [
-        "google",
-        "gemini",
+        "ai",
         "chrome",
-        "ai"
+        "gemini",
+        "google"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -2995,12 +2995,12 @@
       "title": "Anthropic $200억 투자 유치 협상, Microsoft·Nvidia 참여",
       "summary": "Anthropic이 Microsoft와 Nvidia 참여로 $200억 밸류에이션 투자 유치를 협상 중이다. OpenAI와의 AI 양강 구도가 더욱 굳어지는 모습.",
       "keywords": [
-        "anthropic",
+        "ai",
+        "투자",
         "openai",
         "microsoft",
         "nvidia",
-        "ai",
-        "투자"
+        "anthropic"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -3012,10 +3012,10 @@
       "summary": "중국 AI 스타트업 DeepSeek이 AI 검색과 에이전트 분야로 확장 계획을 드러냈다. Alibaba, Moonshot 등도 새 모델을 출시하며 미국 기업들과 경쟁 가속화.",
       "keywords": [
         "moonshot",
-        "중국",
-        "ai",
         "deepseek",
-        "alibaba"
+        "alibaba",
+        "중국",
+        "ai"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -3026,10 +3026,10 @@
       "title": "ServiceNow, Anthropic과 AI 파트너십 체결",
       "summary": "엔터프라이즈 소프트웨어 기업 ServiceNow가 Anthropic과 AI 파트너십을 체결했다. 기업용 AI 시장에서 Claude 모델 통합이 확대되고 있다.",
       "keywords": [
-        "servicenow",
+        "ai",
         "claude",
-        "anthropic",
-        "ai"
+        "servicenow",
+        "anthropic"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -3040,10 +3040,10 @@
       "title": "Fed 금리 동결, Powell \"경제 견고한 기반\"",
       "summary": "연준이 예상대로 기준금리를 동결했다. Powell 의장은 \"경제가 견고한 기반 위에 있으며 현재 금리 수준은 제한적이지 않다\"고 발언.",
       "keywords": [
-        "은",
-        "fed",
         "금",
-        "powell"
+        "powell",
+        "은",
+        "fed"
       ],
       "section": "💰 경제/금융",
       "is_pick": false
@@ -3066,11 +3066,11 @@
       "title": "Home Depot 800명 감원, 5일 출근제 발표",
       "summary": "Home Depot가 800명을 감원하고 본사 직원들에게 주 5일 사무실 출근을 의무화했다. RTO(Return to Office) 정책이 대기업으로 확산.",
       "keywords": [
-        "depot",
         "home",
         "office",
-        "rto",
-        "return"
+        "depot",
+        "return",
+        "rto"
       ],
       "section": "💰 경제/금융",
       "is_pick": false
@@ -3081,12 +3081,12 @@
       "title": "JPMorgan·BofA, 직원 Trump Accounts $1,000 매칭",
       "summary": "JPMorgan Chase와 Bank of America가 직원들의 'Trump Accounts' 기여금에 $1,000까지 매칭해주겠다고 발표했다.",
       "keywords": [
-        "bofa",
+        "금",
         "trump",
         "accounts",
+        "bank",
         "jpmorgan",
-        "금",
-        "bank"
+        "bofa"
       ],
       "section": "💰 경제/금융",
       "is_pick": false
@@ -3109,8 +3109,8 @@
       "title": "Snap, AR 안경 사업 자회사 분리",
       "summary": "Snap이 AR 안경 사업을 독립 자회사로 분리했다. Meta와 Apple의 스마트글래스 경쟁에 Snap도 가세.",
       "keywords": [
-        "meta",
         "snap",
+        "meta",
         "apple"
       ],
       "section": "📱 플랫폼/소셜",
@@ -3144,8 +3144,8 @@
       "title": "Advantest 주가 14% 급등, AI 칩 테스터 수요 폭발",
       "summary": "AI 칩 테스트 장비 기업 Advantest 주가가 14% 급등했다. 사상 최대 분기 매출을 기록하며 이익 전망치도 상향.",
       "keywords": [
-        "ai",
-        "advantest"
+        "advantest",
+        "ai"
       ],
       "section": "🔧 하드웨어/기타",
       "is_pick": false
@@ -3156,10 +3156,10 @@
       "title": "Samsung 이익 3배 증가, AI 메모리 호황",
       "summary": "Samsung이 AI 칩 수요로 분기 이익이 3배 증가했다. HBM 시장에서 SK Hynix에 뒤처졌지만 전반적인 메모리 호황 수혜.",
       "keywords": [
+        "ai",
         "sk hynix",
-        "samsung",
         "hbm",
-        "ai"
+        "samsung"
       ],
       "section": "🔧 하드웨어/기타",
       "is_pick": false
@@ -3170,11 +3170,11 @@
       "title": "Micron, 싱가포르에 $240억 투자",
       "summary": "Micron이 싱가포르 공장에 $240억을 투자해 NAND/DRAM 생산을 확대한다. 메모리 부족은 2027년까지 지속될 전망.",
       "keywords": [
-        "micron",
-        "dram",
-        "nand",
         "은",
-        "투자"
+        "dram",
+        "투자",
+        "micron",
+        "nand"
       ],
       "section": "🔧 하드웨어/기타",
       "is_pick": false
@@ -3185,9 +3185,9 @@
       "title": "Zoox 자율주행차, 샌프란시스코서 충돌 사고",
       "summary": "Amazon 자회사 Zoox의 자율주행차가 샌프란시스코에서 주차된 차량과 충돌했다. 경찰이 조사 중.",
       "keywords": [
+        "amazon",
         "자율주행",
-        "zoox",
-        "amazon"
+        "zoox"
       ],
       "section": "🔧 하드웨어/기타",
       "is_pick": false
@@ -3222,9 +3222,9 @@
       "title": "중국 휴머노이드 로봇, 글로벌 확장 가속",
       "summary": "중국산 휴머노이드 로봇이 중동과 미국 시장 진출을 추진 중이다. Tesla Optimus가 아직 시장에 나오지 않은 사이 빠르게 선점 움직임.",
       "keywords": [
+        "tesla",
         "은",
         "중국",
-        "tesla",
         "로봇"
       ],
       "section": "💎 Claude's Pick",
@@ -3250,10 +3250,10 @@
       "summary": "Claude를 만든 Anthropic이 $100억 이상의 펀딩을 확정하고, Microsoft와 Nvidia가 추가 참여할 경우 $200억까지 증가 가능. $3,000억 이상 밸류에이션 전망. SoftBank도 $300억 추가 투자 협상 중으로 알려지며 AI 인프라 경쟁 가속화.",
       "keywords": [
         "펀딩",
-        "anthropic",
+        "ai",
         "microsoft",
         "nvidia",
-        "ai"
+        "anthropic"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -3264,10 +3264,10 @@
       "title": "Amazon, 10년 프로젝트 Amazon Go·Fresh 매장 전면 폐쇄",
       "summary": "Amazon이 무인 결제 기술을 적용한 Amazon Go 편의점과 Fresh 슈퍼마켓을 전면 폐쇄하고, 일부는 Whole Foods로 전환 예정. 온라인 Fresh 배송은 유지. \"경제성을 맞출 수 없었다\"며 10년간의 오프라인 리테일 실험 종료.",
       "keywords": [
-        "은",
-        "fresh",
+        "amazon",
         "whole",
-        "amazon"
+        "은",
+        "fresh"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -3280,8 +3280,8 @@
       "keywords": [
         "ai",
         "openai",
-        "gpt",
-        "prism"
+        "prism",
+        "gpt"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -3292,12 +3292,12 @@
       "title": "Google AI Plus 플랜, 미국 포함 전 세계 출시",
       "summary": "Google이 Gemini 3 Pro 및 기타 AI 도구를 포함한 Google AI Plus 플랜을 미국 등 전 세계에 출시. 월 $7.99로 프리미엄 AI 기능 이용 가능. 기존 One AI Premium보다 저렴한 가격대로 AI 대중화 가속.",
       "keywords": [
-        "google",
         "one",
+        "plus",
         "pro",
-        "gemini",
+        "google",
         "ai",
-        "plus"
+        "gemini"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -3321,10 +3321,10 @@
       "summary": "중국 AI 스타트업 Moonshot이 15조 개의 혼합 비주얼·텍스트 토큰으로 학습한 새 오픈소스 모델 Kimi K2.5 출시. \"비디오 한 개로 바이브 코딩\" 기능 포함. DeepSeek R1 공개 1주년 맞아 중국 AI 기업들의 모델 출시 경쟁 가열.",
       "keywords": [
         "moonshot",
-        "중국",
-        "kimi",
+        "deepseek",
         "ai",
-        "deepseek"
+        "중국",
+        "kimi"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -3335,10 +3335,10 @@
       "title": "Bluesky, 2026년 로드맵 공개 - Discover 피드 개선, 실시간 기능 예고",
       "summary": "분산형 소셜 네트워크 Bluesky가 2026년 로드맵 공개. 더 나은 Discover 피드, 실시간 기능, 비디오 지원 개선 등 다양한 신기능 예고. X(구 Twitter) 대안으로 급성장 중.",
       "keywords": [
-        "discover",
         "은",
+        "bluesky",
         "twitter",
-        "bluesky"
+        "discover"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -3349,18 +3349,18 @@
       "title": "Tim Cook, Alex Pretti 사망 관련 \"De-escalation\" 촉구",
       "summary": "Apple CEO Tim Cook이 Minneapolis에서 ICE에 의해 사망한 Alex Pretti 사건에 대해 직원들에게 \"가슴이 아프다\"며 \"긴장 완화\"를 촉구. Anthropic CEO Dario Amodei와 OpenAI CEO Sam Altman도 ICE 폭력 비난.",
       "keywords": [
-        "ice",
-        "pretti",
-        "apple",
-        "anthropic",
-        "openai",
+        "tim",
         "ceo",
-        "alex",
-        "sam",
+        "ice",
         "dario",
-        "ai",
+        "pretti",
         "cook",
-        "tim"
+        "openai",
+        "apple",
+        "ai",
+        "anthropic",
+        "sam",
+        "alex"
       ],
       "section": "경제 / 금융",
       "is_pick": false
@@ -3383,9 +3383,9 @@
       "title": "Meta, Corning과 $60억 AI 광섬유 케이블 딜 체결",
       "summary": "Meta가 iPhone 유리 공급업체 Corning과 AI 데이터센터용 광섬유 케이블 공급 계약 체결. 최대 $60억 규모. Corning 주가 16%+ 급등. AI 인프라 붐의 수혜자로 부상.",
       "keywords": [
+        "corning",
         "ai",
-        "meta",
-        "corning"
+        "meta"
       ],
       "section": "경제 / 금융",
       "is_pick": false
@@ -3396,11 +3396,11 @@
       "title": "한국 증시, 독일 추월 - AI·로봇 열풍으로 $1.7조 랠리",
       "summary": "한국 증시 시가총액이 독일을 추월. 삼성전자, SK하이닉스 등 AI·로봇 관련주의 글로벌 붐에 힘입어 급등. \"아시아 자본 시장에 믿을 수 없는 자금 유입\" 평가.",
       "keywords": [
-        "sk하이닉스",
-        "ai",
-        "삼성",
         "금",
-        "로봇"
+        "삼성",
+        "로봇",
+        "ai",
+        "sk하이닉스"
       ],
       "section": "경제 / 금융",
       "is_pick": false
@@ -3411,12 +3411,12 @@
       "title": "삼성·SK하이닉스, 동일 실적발표일 - AI 메모리 왕좌 경쟁",
       "summary": "삼성전자와 SK하이닉스가 같은 날 실적 발표 예정. HBM4 AI 메모리 칩 승인 경쟁이 핵심. SK하이닉스가 HBM 시장 선도 중이나, 삼성도 Nvidia 승인 임박 보도.",
       "keywords": [
-        "sk하이닉스",
-        "은",
-        "nvidia",
-        "ai",
         "삼성",
-        "hbm"
+        "은",
+        "hbm",
+        "ai",
+        "nvidia",
+        "sk하이닉스"
       ],
       "section": "반도체",
       "is_pick": false
@@ -3427,9 +3427,9 @@
       "title": "Texas Instruments, 예상 상회 전망 - 산업용 칩 수요 회복",
       "summary": "Texas Instruments가 1분기 예상 상회 전망 발표. 산업용 장비·자동차 칩 수요가 부진에서 회복세. 반도체 다운사이클 종료 신호로 해석.",
       "keywords": [
-        "반도체",
         "texas",
-        "instruments"
+        "instruments",
+        "반도체"
       ],
       "section": "반도체",
       "is_pick": false
@@ -3454,10 +3454,10 @@
       "title": "Pornhub, 영국 신규 사용자 차단 - 연령 인증법 반발",
       "summary": "세계 최대 포르노 사이트 Pornhub가 영국의 Online Safety Act 연령 인증 의무에 반발하며 2월 2일부터 영국 신규 사용자 차단 발표. \"결함 있는 ID 법\" 비판. 기존 인증 완료 사용자만 접속 가능.",
       "keywords": [
+        "act",
         "pornhub",
-        "online",
         "safety",
-        "act"
+        "online"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -3480,11 +3480,11 @@
       "title": "Dario Amodei, \"AI가 일자리에 '유례없이 고통스러운' 혼란 야기할 것\" 경고",
       "summary": "Anthropic CEO Dario Amodei가 AI가 일자리에 \"유례없이 고통스러운 혼란\"을 야기할 것이라 경고. \"AI 발전 속도가 이전 기술 혁명보다 훨씬 빠르다\"며 인류가 \"종으로서 누구인지 시험하는\" 단계 진입 언급.",
       "keywords": [
-        "anthropic",
-        "ceo",
         "amodei",
+        "ceo",
         "dario",
-        "ai"
+        "ai",
+        "anthropic"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -3512,10 +3512,10 @@
       "keywords": [
         "chatgpt",
         "grok",
-        "elon",
-        "ai",
         "guardian",
-        "gpt"
+        "gpt",
+        "elon",
+        "ai"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -3526,10 +3526,10 @@
       "title": "금값 사상 최초 $5,000 돌파, 안전자산 수요 급증",
       "summary": "글로벌 불확실성 확대와 Greenland 관세 위협 속에 금값이 사상 처음으로 온스당 $5,000를 돌파했습니다. 트럼프 대통령의 Greenland 관련 관세 위협으로 이번 주 S&P 500과 나스닥이 10월 이후 최악의 하락세를 기록한 가운데, 투자자들이 안전자산으로 몰려들고 있습니다.",
       "keywords": [
-        "금",
-        "greenland",
         "투자",
-        "트럼프"
+        "트럼프",
+        "금",
+        "greenland"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -3553,17 +3553,17 @@
       "title": "Grok AI, 11일간 300만 개 성적 이미지 생성 - EU 공식 조사 착수",
       "summary": "Center for Countering Digital Hate 연구에 따르면 Elon Musk의 Grok AI가 11일간 약 300만 개의 성적 이미지를 생성했으며, 이 중 23,000개는 아동을 묘사한 것으로 추정됩니다. EU는 xAI에 대한 공식 조사를 시작했으며, Stripe, Visa, Mastercard 등 결제사들은 대응하지 않고 있습니다.",
       "keywords": [
-        "hate",
-        "digital",
-        "stripe",
-        "mastercard",
-        "center",
-        "grok",
-        "은",
-        "visa",
-        "elon",
         "xai",
+        "은",
+        "grok",
+        "center",
+        "digital",
+        "elon",
+        "hate",
+        "stripe",
         "ai",
+        "mastercard",
+        "visa",
         "countering"
       ],
       "section": "AI/기술",
@@ -3575,10 +3575,10 @@
       "title": "Google AI Overviews, 의료 질문에 YouTube를 가장 많이 인용",
       "summary": "독일 연구팀 분석 결과, 월 20억 명이 사용하는 Google AI Overviews가 건강 관련 질문에 대해 의료 전문 사이트보다 YouTube를 더 자주 인용하는 것으로 나타났습니다. 전문가들은 이 기능이 \"완전히 잘못된\" 의료 조언을 제공해 사용자 건강을 위험에 빠뜨릴 수 있다고 경고합니다.",
       "keywords": [
-        "google",
+        "ai",
         "은",
         "overviews",
-        "ai"
+        "google"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -3589,13 +3589,13 @@
       "title": "Apple, 2월 Gemini 기반 새 Siri 공개 예정",
       "summary": "Apple이 Google과의 AI 파트너십 결과물로 Gemini 기반의 새로운 Siri 어시스턴트를 2월에 공개할 예정입니다. Bloomberg에 따르면 Apple은 AI 전략을 대폭 수정하고 있으며, John Ternus가 디자인 책임을 맡는 등 경영진 변화도 진행 중입니다.",
       "keywords": [
-        "apple",
-        "google",
         "은",
-        "siri",
-        "gemini",
+        "apple",
         "john",
-        "ai"
+        "google",
+        "ai",
+        "siri",
+        "gemini"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -3607,8 +3607,8 @@
       "summary": "Meta가 청소년들이 AI 캐릭터와 대화하는 기능을 일시 중단하고 \"더 나은 경험\"을 제공할 새 버전을 개발 중이라고 밝혔습니다. 이는 10월 발표한 청소년 AI 사용 제한 조치의 연장선으로, 연령에 적합한 응답을 제공하는 새 버전이 개발되고 있습니다.",
       "keywords": [
         "ai",
-        "meta",
-        "은"
+        "은",
+        "meta"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -3619,13 +3619,13 @@
       "title": "ByteDance, TikTok USDS 거래로 미국 접근권 대승리",
       "summary": "7년간의 대치와 전면 금지 위기를 넘긴 ByteDance가 TikTok 미국 사업 일부를 Oracle 주도 컨소시엄에 이전하는 거래를 성사시켰습니다. 새 TikTok USDS CEO Adam Presser는 ByteDance 경영진과의 깊은 유대와 할리우드 인맥을 갖추고 있습니다.",
       "keywords": [
-        "은",
+        "tiktok",
+        "금",
         "ceo",
         "usds",
-        "adam",
-        "tiktok",
         "oracle",
-        "금",
+        "adam",
+        "은",
         "bytedance"
       ],
       "section": "비즈니스",
@@ -3638,10 +3638,10 @@
       "summary": "Intel이 실적 발표 후 주가가 15% 급락했습니다. Lip-Bu Tan CEO가 제조 문제를 인정하고 부진한 전망을 제시하면서, 미 정부가 10% 지분 인수를 추진한 지 4개월 만에 트럼프의 국내 반도체 제조 부흥 비전에 먹구름이 드리웠습니다.",
       "keywords": [
         "intel",
-        "반도체",
         "트럼프",
-        "lip",
-        "tan"
+        "반도체",
+        "tan",
+        "lip"
       ],
       "section": "비즈니스",
       "is_pick": false
@@ -3652,12 +3652,12 @@
       "title": "Nvidia 이사 Persis Drell 사임, 10년 재임 후 퇴장",
       "summary": "세계 최고 가치 기업 Nvidia의 이사 Persis Drell이 \"새로운 전문적 기회를 추구하기 위해\" 이사회를 떠났습니다. 10년간 재임하며 $2,600만 상당의 주식을 보유한 그녀의 퇴임으로 Nvidia 이사회는 Jensen Huang CEO 포함 10명이 됩니다.",
       "keywords": [
-        "drell",
-        "ceo",
         "persis",
+        "drell",
         "huang",
-        "nvidia",
-        "jensen"
+        "ceo",
+        "jensen",
+        "nvidia"
       ],
       "section": "비즈니스",
       "is_pick": false
@@ -3669,9 +3669,9 @@
       "summary": "Singapore가 향후 5년간 공공 AI 연구에 10억 싱가포르달러($786M)를 투자한다고 발표했습니다. 미국과 중국이 지배하는 AI 분야에서 자국 산업을 육성하려는 Singapore의 야심찬 행보입니다.",
       "keywords": [
         "ai",
+        "투자",
         "중국",
-        "singapore",
-        "투자"
+        "singapore"
       ],
       "section": "비즈니스",
       "is_pick": false
@@ -3705,9 +3705,9 @@
       "title": "트럼프, 캐나다에 100% 관세 위협 - 중국 우회 차단",
       "summary": "트럼프 대통령이 캐나다가 중국과 협정을 맺을 경우 100% 관세를 부과하겠다고 위협했습니다. 중국이 캐나다를 통해 미국 관세를 우회하려 할 것이라는 주장입니다. 이에 앞서 트럼프는 Mark Carney에 대한 '평화 위원회' 초청도 철회했습니다.",
       "keywords": [
-        "중국",
         "mark",
-        "트럼프"
+        "트럼프",
+        "중국"
       ],
       "section": "정책/규제",
       "is_pick": false
@@ -3719,8 +3719,8 @@
       "summary": "Apple이 5년 만에 AirTag 2를 공개했습니다. 새로운 칩 탑재로 범위가 확장되고 스피커가 개선되었습니다. 분실물 추적기 시장 경쟁이 치열해지는 가운데, Apple이 기술 우위를 강화하려는 행보입니다.",
       "keywords": [
         "ai",
-        "apple",
-        "airtag"
+        "airtag",
+        "apple"
       ],
       "section": "하드웨어",
       "is_pick": false
@@ -3731,11 +3731,11 @@
       "title": "Nvidia, Windows Arm 노트북 시장 진출 - 8개 모델 준비",
       "summary": "유출에 따르면 Nvidia가 올 봄 N1/N1X 칩으로 Windows 소비자 노트북 시장에 진출합니다. Lenovo, Dell 등에서 최대 8개 모델이 출시될 예정으로, Intel과 AMD가 양분해온 시장에 큰 변화가 예상됩니다.",
       "keywords": [
-        "amd",
         "intel",
+        "amd",
         "lenovo",
-        "nvidia",
         "windows",
+        "nvidia",
         "dell",
         "arm"
       ],
@@ -3749,9 +3749,9 @@
       "summary": "Sony의 첫 클립형 이어폰 LinkBuds Clip이 출시되었습니다. Bose Ultra Open과의 경쟁에서 쿠션 디자인으로 착용감 문제를 해결했으나, 평가는 엇갈리고 있습니다.",
       "keywords": [
         "bose",
-        "linkbuds",
-        "ultra",
         "sony",
+        "ultra",
+        "linkbuds",
         "clip"
       ],
       "section": "하드웨어",
@@ -3763,11 +3763,11 @@
       "title": "AI 봇 스웜, 민주주의 위협 - 전문가 그룹 경고",
       "summary": "노벨 평화상 수상자 Maria Ressa와 Berkeley, Harvard, Oxford 등의 AI 연구자들이 AI가 인간을 모방하는 \"봇 스웜\"을 대규모 배포해 여론을 조작하고 민주주의를 위협할 수 있다고 경고했습니다. 2028년 미국 대선이 주요 위험 시점으로 지목됩니다.",
       "keywords": [
-        "berkeley",
-        "oxford",
+        "harvard",
         "maria",
-        "ai",
-        "harvard"
+        "oxford",
+        "berkeley",
+        "ai"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -3778,8 +3778,8 @@
       "title": "Google 내부 문서: Chromebook으로 아이들을 \"평생 고객\"으로",
       "summary": "아동 안전 소송에서 공개된 Google 내부 문서에 따르면, 회사가 학교 투자를 통해 \"아이들을 생태계에 온보딩\"하고 \"평생에 걸친 브랜드 신뢰와 충성도\"를 구축하려 했습니다. 교육 투자의 숨겨진 동기가 드러났습니다.",
       "keywords": [
-        "google",
-        "투자"
+        "투자",
+        "google"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -3790,9 +3790,9 @@
       "title": "Bloomberg: \"테크 업계가 Claude Code에 열광하는 이유\"",
       "summary": "Bloomberg가 Anthropic의 Claude Code가 테크 업계에서 뜨거운 화제가 된 배경을 분석했습니다. AI 지원 코딩의 진화와 전통적 소프트웨어 기업 주가 급락 현상을 짚으며, AI 코딩 도구의 현주소를 조명합니다.",
       "keywords": [
-        "claude",
+        "ai",
         "bloomberg",
-        "ai"
+        "claude"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -3803,11 +3803,11 @@
       "title": "AI 비디오 스타트업 Synthesia, $40억 밸류에이션 달성",
       "summary": "Nvidia와 Alphabet VC가 투자 주도. 직원 주식 현금화 기회 제공하며 AI 비디오 생성 시장 선도.",
       "keywords": [
-        "synthesia",
-        "alphabet",
-        "nvidia",
         "금",
+        "alphabet",
         "ai",
+        "synthesia",
+        "nvidia",
         "투자"
       ],
       "section": "🔥 TOP Headlines",
@@ -3819,11 +3819,11 @@
       "title": "Nvidia, Apple 제치고 TSMC 최대 고객 등극",
       "summary": "AI 칩 수요 폭발로 Nvidia가 TSMC 매출 비중 1위로 부상. 반도체 산업 판도 변화 신호.",
       "keywords": [
-        "apple",
-        "반도체",
-        "nvidia",
+        "ai",
         "tsmc",
-        "ai"
+        "반도체",
+        "apple",
+        "nvidia"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -3835,9 +3835,9 @@
       "summary": "Synopsys CEO, AI 데이터센터 수요로 메모리 공급난 장기화 예상. Lenovo 등 PC 업체에도 영향.",
       "keywords": [
         "ai",
+        "lenovo",
         "synopsys",
-        "ceo",
-        "lenovo"
+        "ceo"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -3849,9 +3849,9 @@
       "summary": "미 상무부가 텍사스 희토류 광산 및 자석 제조 시설에 지분 투자. 중국 의존도 감소 전략.",
       "keywords": [
         "usa",
-        "earth",
-        "중국",
         "rare",
+        "중국",
+        "earth",
         "투자"
       ],
       "section": "🔥 TOP Headlines",
@@ -3866,9 +3866,9 @@
         "chatgpt",
         "grokipedia",
         "grok",
-        "xai",
+        "gpt",
         "ai",
-        "gpt"
+        "xai"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -3892,11 +3892,11 @@
       "title": "Humans&, 'AI 협업'이 다음 프론티어라 주장",
       "summary": "Anthropic, xAI, Google 출신 팀이 설립한 스타트업, $4.8억 시드 라운드 유치 후 협업 AI 모델 개발 중.",
       "keywords": [
-        "anthropic",
-        "google",
         "xai",
         "humans",
-        "ai"
+        "google",
+        "ai",
+        "anthropic"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -3907,8 +3907,8 @@
       "title": "Get ready for the AI ad-pocalypse",
       "summary": "AI 생성 광고가 급증하며 품질 저하 우려. 인간 크리에이티브의 가치 재평가 논의.",
       "keywords": [
-        "get",
-        "ai"
+        "ai",
+        "get"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -3919,10 +3919,10 @@
       "title": "Meta Reality Labs 구조조정, 'VR 겨울' 우려",
       "summary": "Meta의 VR 부문 인력 감축으로 업계 전반 위축 우려. 메타버스 투자 재조정 신호.",
       "keywords": [
+        "투자",
         "reality",
         "meta",
-        "labs",
-        "투자"
+        "labs"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -3935,10 +3935,10 @@
       "keywords": [
         "intel",
         "lenovo",
-        "inside",
+        "arm",
         "nvidia",
         "dell",
-        "arm"
+        "inside"
       ],
       "section": "💾 반도체/하드웨어",
       "is_pick": false
@@ -3972,9 +3972,9 @@
       "title": "Bending Spoons이 뭐길래? Vimeo 대규모 해고 배후",
       "summary": "이탈리아 소프트웨어 기업이 Vimeo 인수 후 대규모 구조조정 단행. 이전 Evernote도 유사 패턴.",
       "keywords": [
+        "ev",
         "vimeo",
-        "bending",
-        "ev"
+        "bending"
       ],
       "section": "📱 플랫폼/소셜",
       "is_pick": false
@@ -3985,9 +3985,9 @@
       "title": "Microsoft, FBI에 BitLocker 암호화 키 제공",
       "summary": "괌 사기 사건 피의자 노트북 잠금 해제 위해 MS가 FBI에 암호화 복구 키 제공. 프라이버시 논쟁.",
       "keywords": [
-        "bitlocker",
+        "금",
         "microsoft",
-        "금"
+        "bitlocker"
       ],
       "section": "🔒 보안/정책",
       "is_pick": false
@@ -4007,8 +4007,8 @@
       "title": "Chromebook, 학생을 충성 고객으로 훈련? Google 내부 문서",
       "summary": "법원 제출 문서에서 Google이 교육 시장 크롬북 보급을 장기 고객 확보 전략으로 활용했음이 드러남.",
       "keywords": [
-        "google",
-        "chromebook"
+        "chromebook",
+        "google"
       ],
       "section": "🔒 보안/정책",
       "is_pick": false
@@ -4054,9 +4054,9 @@
       "title": "중국, 알리바바 등 대형 테크 기업에 Nvidia H200 주문 준비 허가",
       "summary": "중국 당국이 알리바바 등 주요 테크 기업들에게 Nvidia H200 AI 칩 주문 준비를 허가했다. 이는 베이징이 AI 필수 부품 수입을 공식 승인하는 데 근접했음을 시사하며, 미중 기술 긴장 속에서도 실용적 접근을 선택한 것으로 해석된다.",
       "keywords": [
+        "nvidia",
         "ai",
-        "중국",
-        "nvidia"
+        "중국"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -4068,8 +4068,8 @@
       "summary": "컨설팅, 투자은행, 법률 분야의 실제 화이트칼라 업무를 테스트한 결과, 대부분의 AI 모델이 실패했다. 연구진은 AI 에이전트가 \"수학적으로 실패할 운명\"이라는 논문을 발표했으며, 업계는 이에 동의하지 않는다.",
       "keywords": [
         "ai",
-        "은",
-        "투자"
+        "투자",
+        "은"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -4080,10 +4080,10 @@
       "title": "IMF 총재 \"AI 쓰나미, 청년층 일자리 최대 피해\"",
       "summary": "크리스탈리나 게오르기에바 IMF 총재가 다보스에서 AI가 \"노동시장을 덮칠 쓰나미\"가 될 것이며, 특히 청년층이 가장 큰 피해를 입을 것이라고 경고했다. IMF 연구에 따르면 선진국 일자리의 60%가 영향을 받고, 많은 초급 직책이 사라질 전망이다.",
       "keywords": [
-        "ai",
-        "다보스",
+        "imf",
         "은",
-        "imf"
+        "ai",
+        "다보스"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -4094,11 +4094,11 @@
       "title": "Google, 일본 Sakana AI에 투자 - Gemini 일본 시장 강화",
       "summary": "Google이 일본 스타트업 Sakana AI에 투자하며 챗봇 Gemini의 일본 시장 입지를 강화한다. AI 도입에 적극적인 일본 시장에서의 영향력 확대 전략.",
       "keywords": [
-        "google",
-        "gemini",
-        "ai",
         "sakana",
-        "투자"
+        "google",
+        "ai",
+        "투자",
+        "gemini"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -4122,9 +4122,9 @@
       "keywords": [
         "chatgpt",
         "deepmind",
-        "google",
-        "openai",
         "ceo",
+        "openai",
+        "google",
         "ai"
       ],
       "section": "🤖 AI/기술",
@@ -4136,8 +4136,8 @@
       "title": "Grab-GoTo 인수, 국영 투자자 지분 문제로 난항",
       "summary": "Grab의 수십억 달러 규모 GoTo 인수가 국영 투자자 지분 문제로 장애물에 부딪혔다. 동남아시아 최대 기술 M&A 딜의 향방에 관심이 집중된다.",
       "keywords": [
-        "투자",
         "grab",
+        "투자",
         "goto"
       ],
       "section": "💰 경제/비즈니스",
@@ -4150,12 +4150,12 @@
       "summary": "OpenAI ChatGPT 음성 모드를 지원하는 5년차 스타트업 LiveKit이 Index Ventures 주도로 $1억 투자를 유치하며 유니콘 대열에 합류했다.",
       "keywords": [
         "chatgpt",
+        "ventures",
         "openai",
         "index",
-        "ventures",
-        "livekit",
         "ai",
-        "투자"
+        "투자",
+        "livekit"
       ],
       "section": "💰 경제/비즈니스",
       "is_pick": false
@@ -4166,8 +4166,8 @@
       "title": "추론 스타트업 Inferact, vLLM 상용화에 $1.5억 유치",
       "summary": "오픈소스 추론 엔진 vLLM을 상용화하는 Inferact가 시드 라운드에서 $1.5억을 유치하며 $8억 밸류에이션을 기록했다. AI 추론 시장의 폭발적 성장을 반영한다.",
       "keywords": [
-        "inferact",
-        "ai"
+        "ai",
+        "inferact"
       ],
       "section": "💰 경제/비즈니스",
       "is_pick": false
@@ -4179,9 +4179,9 @@
       "summary": "베이징이 Meta의 중국계 AI 스타트업 Manus $20억 인수에 대한 조사를 심화하고 있다. 위법 사항 발견 시 딜 수정 또는 철회를 요구할 수 있어 리스크가 높아졌다.",
       "keywords": [
         "ai",
-        "meta",
+        "manus",
         "중국",
-        "manus"
+        "meta"
       ],
       "section": "💰 경제/비즈니스",
       "is_pick": false
@@ -4204,8 +4204,8 @@
       "summary": "말레이시아가 xAI가 성적 이미지 생성 방지를 위한 안전 조치를 추가한 후 일론 머스크의 Grok AI 챗봇에 대한 일시적 금지를 해제했다.",
       "keywords": [
         "ai",
-        "금",
         "xai",
+        "금",
         "grok"
       ],
       "section": "🌏 글로벌/정책",
@@ -4217,16 +4217,16 @@
       "title": "AI 랩들, 다보스에서 명성 칼싸움",
       "summary": "OpenAI, Anthropic, Google의 3대 프론티어 AI 랩 리더들이 다보스에서 마치 대선 후보처럼 서로를 공격했다. Dario Amodei(Anthropic)가 Nvidia의 중국 칩 수출을 비판하고, Sam Altman(OpenAI)과 데미스 하사비스(Google)가 광고 전략을 놓고 설전을 벌였다.",
       "keywords": [
-        "anthropic",
-        "google",
-        "openai",
         "amodei",
-        "nvidia",
-        "중국",
-        "다보스",
-        "altman",
         "dario",
         "ai",
+        "altman",
+        "다보스",
+        "openai",
+        "중국",
+        "google",
+        "nvidia",
+        "anthropic",
         "sam"
       ],
       "section": "💎 Claude's Pick",
@@ -4252,9 +4252,9 @@
       "title": "Netflix, Warner Bros. 역사적 인수 - 할리우드 지각 변동",
       "summary": "Netflix가 Warner Bros.를 인수하며 할리우드 역사상 가장 큰 미디어 M&A 딜 중 하나로 기록. 스트리밍과 전통 스튜디오의 통합 가속화.",
       "keywords": [
-        "netflix",
         "bros",
-        "warner"
+        "warner",
+        "netflix"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -4265,10 +4265,10 @@
       "title": "Intel 주가 17% 폭락 - 제조 문제로 턴어라운드 위기",
       "summary": "Intel CEO Lip-Bu Tan이 부진한 가이던스 발표. 제조 문제 지속으로 AI 수요 충족 실패, 17개월 만에 최악의 주가 하락 기록.",
       "keywords": [
-        "intel",
-        "ceo",
+        "ai",
         "lip",
-        "ai"
+        "intel",
+        "ceo"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -4279,13 +4279,13 @@
       "title": "Yann LeCun, Meta 떠나 AMI Labs 설립 - AI 연구 새 장",
       "summary": "AI 선구자 Yann LeCun이 Meta를 떠나 '월드 모델' 스타트업 AMI Labs 설립. 수억 달러 펀딩 협상 중, $40억 밸류에이션 목표.",
       "keywords": [
-        "lecun",
         "펀딩",
-        "labs",
+        "lecun",
         "ami",
-        "ai",
         "meta",
-        "yann"
+        "yann",
+        "labs",
+        "ai"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -4296,12 +4296,12 @@
       "title": "Tesla Autopilot 중단, FSD 구독 전환 강제",
       "summary": "Tesla가 기본 Autopilot 기능을 제거하고 FSD(Full Self-Driving) 구독으로 전환. 캘리포니아 제조·딜러 면허 30일 정지 처분 직면.",
       "keywords": [
-        "self",
         "autopilot",
         "tesla",
         "full",
-        "fsd",
-        "driving"
+        "self",
+        "driving",
+        "fsd"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -4335,10 +4335,10 @@
       "title": "중국, Nvidia H200 칩 주문 허가 - 수출 규제 완화 신호",
       "summary": "중국 당국이 Alibaba 등 대형 테크 기업에 Nvidia H200 AI 칩 주문 준비 허가. 베이징의 수입 승인 임박 신호.",
       "keywords": [
-        "ai",
-        "중국",
+        "nvidia",
         "alibaba",
-        "nvidia"
+        "ai",
+        "중국"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -4349,11 +4349,11 @@
       "title": "Google, 일본 AI 스타트업 Sakana AI 투자",
       "summary": "Google이 Sakana AI에 투자하며 일본 시장에서 Gemini 입지 강화. AI 도입 가속화하는 일본의 핵심 파트너로 부상.",
       "keywords": [
-        "google",
-        "gemini",
-        "ai",
         "sakana",
-        "투자"
+        "google",
+        "ai",
+        "투자",
+        "gemini"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -4364,11 +4364,11 @@
       "title": "Google, AI 음성 스타트업 Hume AI 인재 영입",
       "summary": "Hume AI CEO Alan Cowen과 핵심 엔지니어들이 대규모 라이선싱 계약과 함께 Google DeepMind 합류.",
       "keywords": [
-        "hume",
         "deepmind",
-        "google",
         "ceo",
         "alan",
+        "hume",
+        "google",
         "ai"
       ],
       "section": "AI / 기술",
@@ -4380,16 +4380,16 @@
       "title": "SpaceX IPO 준비 - 월스트리트 4대 은행 선정",
       "summary": "Elon Musk의 SpaceX가 Bank of America, JP Morgan, Goldman Sachs, Morgan Stanley와 IPO 논의. $8,000억 밸류에이션 추정.",
       "keywords": [
-        "morgan",
-        "spacex",
-        "ipo",
         "goldman",
-        "은",
-        "america",
-        "gold",
+        "spacex",
+        "bank",
         "elon",
-        "sachs",
-        "bank"
+        "gold",
+        "america",
+        "은",
+        "ipo",
+        "morgan",
+        "sachs"
       ],
       "section": "경제 / 금융",
       "is_pick": false
@@ -4400,12 +4400,12 @@
       "title": "IMF 총재 \"AI 쓰나미가 노동시장 강타, 청년층 최대 피해\"",
       "summary": "다보스 WEF에서 Kristalina Georgieva IMF 총재 경고. 선진국 일자리 60% AI 영향, 초급 직군 대거 소멸 전망.",
       "keywords": [
-        "ev",
-        "georgieva",
+        "ai",
+        "다보스",
         "kristalina",
         "imf",
-        "ai",
-        "다보스"
+        "ev",
+        "georgieva"
       ],
       "section": "경제 / 금융",
       "is_pick": false
@@ -4442,8 +4442,8 @@
       "title": "Waymo, NTSB 조사 착수 - 스쿨버스 위반 사건",
       "summary": "미국 교통안전위원회(NTSB)가 Waymo 자율주행차의 오스틴 스쿨버스 불법 추월 사건 조사 개시. NHTSA에 이어 두 번째 조사.",
       "keywords": [
-        "자율주행",
         "ntsb",
+        "자율주행",
         "waymo"
       ],
       "section": "모빌리티",
@@ -4479,12 +4479,12 @@
       "title": "Grok AI, 11일 만에 성인화 이미지 300만 장 생성",
       "summary": "Center for Countering Digital Hate 연구: Grok AI가 11일 동안 약 300만 장의 성인화 이미지 생성, 그 중 2.3만 장은 아동 관련 추정.",
       "keywords": [
-        "hate",
-        "digital",
-        "center",
         "grok",
-        "은",
+        "center",
+        "digital",
+        "hate",
         "ai",
+        "은",
         "countering"
       ],
       "section": "Claude's Pick",
@@ -4496,8 +4496,8 @@
       "title": "AI 봇 군단이 민주주의 위협 - 전문가 경고",
       "summary": "노벨 평화상 수상자 Maria Ressa와 버클리·하버드·옥스퍼드 AI 연구진 경고: 인간 모방 AI 에이전트 대규모 배포로 2028년 미 대선 위협 가능.",
       "keywords": [
-        "maria",
-        "ai"
+        "ai",
+        "maria"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -4508,10 +4508,10 @@
       "title": "TikTok, 미국 합작법인 설립으로 금지 회피",
       "summary": "ByteDance와 미국 투자자들이 TikTok의 새로운 미국 합작법인 'USDS' 설립에 합의. Oracle, MGX 등이 참여하며 미국 내 운영 지속 결정.",
       "keywords": [
-        "mgx",
-        "usds",
-        "금",
         "tiktok",
+        "mgx",
+        "금",
+        "usds",
         "oracle",
         "투자"
       ],
@@ -4524,8 +4524,8 @@
       "title": "Tesla, 오스틴에서 무인 로보택시 운행 시작",
       "summary": "Tesla가 오스틴에서 안전 모니터 없는 완전 무인 로보택시 서비스 시작. Waymo, Cruise에 이어 세 번째 무인 자율주행 서비스 제공업체로 등극.",
       "keywords": [
-        "자율주행",
         "tesla",
+        "자율주행",
         "waymo"
       ],
       "section": "TOP Headlines",
@@ -4537,9 +4537,9 @@
       "title": "Capital One, Brex 인수 - 피크 밸류에이션 대폭 할인",
       "summary": "Capital One이 핀테크 유니콘 Brex를 피크 밸류에이션 대비 대폭 할인된 가격에 인수. 초기 투자자들은 여전히 큰 수익 실현.",
       "keywords": [
-        "capital",
-        "은",
         "one",
+        "은",
+        "capital",
         "투자",
         "brex"
       ],
@@ -4553,10 +4553,10 @@
       "summary": "Anthropic의 Claude Code가 Microsoft 내부에서 급속도로 확산. OpenAI 투자에도 불구하고 경쟁사 도구 도입 화제.",
       "keywords": [
         "code",
+        "claude",
         "openai",
         "microsoft",
         "ai",
-        "claude",
         "투자"
       ],
       "section": "AI / 기술",
@@ -4568,10 +4568,10 @@
       "title": "Epic-Google, $8억 Unreal Engine 비밀 계약 체결",
       "summary": "Epic Games와 Google이 Unreal Engine 및 서비스 관련 $8억 규모의 비밀 계약 체결. 반독점 소송 합의의 일환으로 공개.",
       "keywords": [
-        "epic",
         "unreal",
-        "google",
-        "engine"
+        "epic",
+        "engine",
+        "google"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -4593,11 +4593,11 @@
       "title": "Humans&, AI 조율 모델 개발에 $4.8억 시드 라운드",
       "summary": "Anthropic, xAI, Google 출신이 설립한 '인간 중심' AI 스타트업 Humans&가 역대 최대 규모 시드 라운드 $4.8억 유치.",
       "keywords": [
-        "anthropic",
-        "google",
         "xai",
         "humans",
-        "ai"
+        "google",
+        "ai",
+        "anthropic"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -4609,12 +4609,12 @@
       "summary": "Google DeepMind CEO Demis Hassabis, OpenAI가 ChatGPT에 광고를 서둘러 도입하는 것에 대해 놀라움 표명.",
       "keywords": [
         "chatgpt",
-        "hassabis",
         "deepmind",
-        "google",
-        "openai",
+        "hassabis",
         "ceo",
+        "openai",
         "demis",
+        "google",
         "ai"
       ],
       "section": "AI / 기술",
@@ -4626,8 +4626,8 @@
       "title": "Intel, AI 데이터센터 수요 충족 실패 - 주가 13% 하락",
       "summary": "Intel Q4 실적 발표 후 주가 13% 급락. AI 데이터센터 수요를 충족시키지 못하고 있으며 $6억 순손실 기록.",
       "keywords": [
-        "intel",
-        "ai"
+        "ai",
+        "intel"
       ],
       "section": "경제 / 비즈니스",
       "is_pick": false
@@ -4638,8 +4638,8 @@
       "title": "Amazon, 다음 주 수천 명 추가 해고 계획",
       "summary": "Amazon이 다음 주부터 수천 명의 기업 부문 직원 추가 해고 예정. 지난해 10월 14,000명 감축에 이은 후속 조치.",
       "keywords": [
-        "은",
-        "amazon"
+        "amazon",
+        "은"
       ],
       "section": "경제 / 비즈니스",
       "is_pick": false
@@ -4663,9 +4663,9 @@
       "title": "Vimeo, Bending Spoons 인수 후 대규모 해고",
       "summary": "Bending Spoons에 인수된 Vimeo가 '상당수' 직원 해고 시작. Bending Spoons의 인수 후 구조조정 패턴 지속.",
       "keywords": [
+        "spoons",
         "vimeo",
-        "bending",
-        "spoons"
+        "bending"
       ],
       "section": "경제 / 비즈니스",
       "is_pick": false
@@ -4687,9 +4687,9 @@
       "title": "Inferact, vLLM 상용화 위해 $1.5억 투자 유치",
       "summary": "AI 추론 스타트업 Inferact가 오픈소스 vLLM 상용화를 위해 $1.5억 투자 유치. AI 추론 시장 경쟁 심화.",
       "keywords": [
-        "inferact",
+        "ai",
         "투자",
-        "ai"
+        "inferact"
       ],
       "section": "반도체",
       "is_pick": false
@@ -4713,9 +4713,9 @@
       "title": "Ring, ICE에 카메라 접근권 제공 안 한다고 발표",
       "summary": "Amazon 산하 Ring이 이민단속국(ICE)에 카메라 접근권을 제공하지 않겠다고 공식 발표. 이민 단속 강화 속 프라이버시 논쟁.",
       "keywords": [
+        "amazon",
         "ice",
-        "ring",
-        "amazon"
+        "ring"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -4728,8 +4728,8 @@
       "keywords": [
         "ai",
         "은",
-        "다보스",
-        "트럼프"
+        "트럼프",
+        "다보스"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -4743,9 +4743,9 @@
         "은",
         "ceo",
         "애플",
+        "로봇",
         "ai",
-        "투자",
-        "로봇"
+        "투자"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -4756,12 +4756,12 @@
       "title": "Anthropic CEO \"H200 중국 수출, 미국 AI 리더십에 심각한 결과\"",
       "summary": "다리오 아모데이, 다보스에서 \"AGI 문턱에 와 있다\"며 향후 수년이 규제·거버넌스의 결정적 시기라고 경고. 중국에 AI칩 안 파는 것이 AI 통제 시간 확보의 가장 중요한 조치라고 강조.",
       "keywords": [
-        "anthropic",
         "agi",
         "ceo",
+        "다보스",
         "중국",
         "ai",
-        "다보스"
+        "anthropic"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -4773,9 +4773,9 @@
       "summary": "데미스 하사비스, 인턴십 대신 AI 도구 학습 권장. \"새로운 의미 있는 일자리 창출될 것\"이라며 낙관하면서도, AGI 이후는 일자리·의미·목적에 관한 더 큰 질문이 제기될 것이라고 경고. 지정학적 경쟁으로 안전 기준이 급조되고 있다고 우려.",
       "keywords": [
         "ai",
+        "deepmind",
         "agi",
-        "ceo",
-        "deepmind"
+        "ceo"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -4786,15 +4786,15 @@
       "title": "WEF \"2030년까지 AI 투자 1.9조 달러 전망\"",
       "summary": "AI 애플리케이션 1.5조, AI 인프라 4천억 달러 예상. 그러나 AI 주권이 인프라 소유권과 혼동되면서 많은 경제권이 뒤처질 위험. Google CFO Ruth Porat \"AI는 챗봇 이상, 비용 절감만이 아닌 비즈니스 가능성 변화\".",
       "keywords": [
-        "google",
-        "은",
         "wef",
-        "ruth",
+        "은",
         "cfo",
+        "ruth",
         "애플",
-        "porat",
+        "google",
         "ai",
-        "투자"
+        "투자",
+        "porat"
       ],
       "section": "💰 경제/비즈니스",
       "is_pick": false
@@ -4805,11 +4805,11 @@
       "title": "Wipro CEO \"2026년은 AI ROI 책임의 해\"",
       "summary": "2025년 실험에서 2026년 전사적 배포로 전환. AI 지원 소프트웨어 개발로 코딩·테스트 비용 25% 절감 예상되지만, 절감분으로 더 많은 디지털 전환 프로젝트가 생겨 IT 예산은 장기적으로 줄지 않을 것.",
       "keywords": [
-        "wipro",
-        "은",
-        "ceo",
         "roi",
-        "ai"
+        "ceo",
+        "ai",
+        "은",
+        "wipro"
       ],
       "section": "💰 경제/비즈니스",
       "is_pick": false
@@ -4820,10 +4820,10 @@
       "title": "엔비디아, AI 추론 스타트업 Baseten 투자",
       "summary": "AI 모델 효율적 운영 전문 스타트업에 투자. 대규모 모델 훈련 시대에서 '서빙의 시대'로 전환 신호. 추론 워크로드가 전체 AI 컴퓨트에서 차지하는 비중 급증 전망. 2026 AI 플랫폼 승자는 모델 품질이 아닌 추론 경제성으로 결정될 수 있다.",
       "keywords": [
-        "ai",
+        "baseten",
         "엔비디아",
         "투자",
-        "baseten"
+        "ai"
       ],
       "section": "💰 경제/비즈니스",
       "is_pick": false
@@ -4896,9 +4896,9 @@
       "title": "MIT TR \"2026년 AI 규제 대충돌 - 백악관 vs 주정부\"",
       "summary": "트럼프 행정명령으로 주 AI 법률 무력화 시도. 캘리포니아 등 민주당 대형 주는 법적 대응 예고. AI 기업들의 치열한 로비와 '규제 패치워크가 혁신 질식' 내러티브 주목. AI 발전할수록 규제 줄다리기 격화, 2026년도 예외 없을 전망.",
       "keywords": [
-        "mit",
+        "ai",
         "트럼프",
-        "ai"
+        "mit"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -4911,8 +4911,8 @@
       "keywords": [
         "ai",
         "agi",
-        "llm",
-        "투자"
+        "투자",
+        "llm"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -4923,12 +4923,12 @@
       "title": "Anthropic·xAI·Google 출신들이 설립한 AI 스타트업, 사상 최대 $4.8억 시드 라운드 달성",
       "summary": "인간 중심 AI를 표방하는 스타트업이 역대 최대 규모의 시드 투자를 유치. OpenAI, Anthropic에 이어 AI 경쟁 구도 재편 예고.",
       "keywords": [
-        "anthropic",
-        "google",
-        "openai",
         "xai",
+        "투자",
+        "openai",
+        "google",
         "ai",
-        "투자"
+        "anthropic"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -4939,8 +4939,8 @@
       "title": "트럼프 행정부, DOGE의 사회보장국 데이터 오용 시인",
       "summary": "머스크의 DOGE 팀이 미국인들의 민감한 사회보장 데이터에 부적절하게 접근했음을 법원 제출 문서에서 인정. 데이터 접근 범위가 기존 발표보다 광범위했던 것으로 드러남.",
       "keywords": [
-        "doge",
-        "트럼프"
+        "트럼프",
+        "doge"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -4962,9 +4962,9 @@
       "title": "ChatGPT, 미성년자 보호 위해 사용자 나이 예측 기능 도입",
       "summary": "OpenAI가 청소년 보호를 위해 AI 기반 나이 추정 시스템 도입. 부적절한 콘텐츠 노출 방지 목적.",
       "keywords": [
+        "chatgpt",
         "ai",
-        "gpt",
-        "chatgpt"
+        "gpt"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -4975,11 +4975,11 @@
       "title": "머스크, Tesla Dojo3를 '우주 기반 AI 연산'용으로 재가동",
       "summary": "Tesla가 자체 AI 슈퍼컴퓨터 Dojo 프로젝트를 우주 기반 컴퓨팅으로 방향 전환. SpaceX Starlink 연계 가능성.",
       "keywords": [
+        "dojo",
         "spacex",
         "tesla",
         "ai",
-        "starlink",
-        "dojo"
+        "starlink"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -5003,8 +5003,8 @@
       "summary": "TSMC가 기록적인 4분기 실적을 발표하며 AI 칩 수요가 수년간 지속될 것이라 전망. CEO는 \"AI 메가트렌드\"를 강조.",
       "keywords": [
         "ai",
-        "ceo",
-        "tsmc"
+        "tsmc",
+        "ceo"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -5015,10 +5015,10 @@
       "title": "AI 코딩 에이전트로 번아웃까지 간 후 배운 10가지",
       "summary": "Claude Code와 GPT-5 Codex를 50개 프로젝트에 사용한 경험담. \"1982년 Apple II 이후 처음으로 이렇게 즐거웠다\"는 평가.",
       "keywords": [
-        "ai",
+        "apple",
         "claude",
-        "gpt",
-        "apple"
+        "ai",
+        "gpt"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -5029,8 +5029,8 @@
       "title": "보험테크 Ethos, 2026년 첫 기술 IPO 예정",
       "summary": "한때 핫했던 인슈어테크 스타트업 Ethos가 올해 첫 번째 기술 기업 IPO를 준비 중.",
       "keywords": [
-        "ethos",
-        "ipo"
+        "ipo",
+        "ethos"
       ],
       "section": "💰 경제/금융",
       "is_pick": false
@@ -5052,10 +5052,10 @@
       "title": "아마존 CEO \"관세가 제품 가격 인상 압력으로 작용\"",
       "summary": "Andy Jassy CEO가 관세가 이미 제품 가격에 영향을 미치기 시작했다고 언급.",
       "keywords": [
-        "아마존",
-        "ceo",
         "jassy",
-        "andy"
+        "아마존",
+        "andy",
+        "ceo"
       ],
       "section": "💰 경제/금융",
       "is_pick": false
@@ -5079,12 +5079,12 @@
       "title": "중국, 걸프 지역 자율주행 시장 장악 - 미국 기업들은 본국에 머물러",
       "summary": "WeRide 등 중국 기업들이 UAE·사우디 로보택시 시장을 선점하는 동안 Waymo 등 미국 기업들은 해외 진출에 소극적.",
       "keywords": [
-        "은",
-        "uae",
-        "중국",
         "weride",
+        "uae",
         "waymo",
-        "자율주행"
+        "자율주행",
+        "중국",
+        "은"
       ],
       "section": "🌏 글로벌/정책",
       "is_pick": false
@@ -5109,8 +5109,8 @@
       "summary": "Grok AI의 딥페이크 생성 기능으로 피해를 입은 여성이 xAI를 상대로 법적 조치. 글로벌 규제 압박 지속.",
       "keywords": [
         "ai",
-        "은",
         "xai",
+        "은",
         "grok"
       ],
       "section": "🌏 글로벌/정책",
@@ -5123,8 +5123,8 @@
       "summary": "배달 로봇 기업 Serve가 병원 내 물자 운반 로봇 Moxi를 개발한 Diligent Robotics 인수로 헬스케어 시장 진출.",
       "keywords": [
         "diligent",
-        "serve",
         "robotics",
+        "serve",
         "로봇"
       ],
       "section": "🤖 로보틱스/모빌리티",
@@ -5137,11 +5137,11 @@
       "summary": "자율주행 및 로봇용 이더넷 네트워킹 칩 개발사가 Physical AI 트렌드에 힘입어 대규모 투자 유치.",
       "keywords": [
         "physical",
-        "ai",
-        "자율주행",
         "ethernovia",
-        "투자",
-        "로봇"
+        "자율주행",
+        "로봇",
+        "ai",
+        "투자"
       ],
       "section": "🤖 로보틱스/모빌리티",
       "is_pick": false
@@ -5152,10 +5152,10 @@
       "title": "Luminar 창업자 Austin Russell, 파산 소송 소환장 수락",
       "summary": "LiDAR 기업 Luminar의 창업자가 회사 파산 절차와 관련된 소환장 수락에 동의.",
       "keywords": [
-        "russell",
-        "austin",
         "luminar",
-        "lidar"
+        "lidar",
+        "austin",
+        "russell"
       ],
       "section": "🤖 로보틱스/모빌리티",
       "is_pick": false
@@ -5166,16 +5166,16 @@
       "title": "Wikipedia, 주요 AI 기업들과 우선 데이터 접근 계약 체결",
       "summary": "Wikimedia 재단이 Microsoft, Meta, Amazon, Perplexity, Mistral AI와 유료 API 접근 계약 체결. Google에 이어 대부분의 주요 AI 개발사가 참여.",
       "keywords": [
-        "wikimedia",
-        "wikipedia",
         "perplexity",
-        "google",
-        "microsoft",
         "amazon",
         "api",
-        "mistral",
+        "meta",
+        "wikimedia",
+        "microsoft",
+        "google",
         "ai",
-        "meta"
+        "mistral",
+        "wikipedia"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -5210,10 +5210,10 @@
       "title": "ASUS, 스마트폰 사업 철수 발표 - Zenfone·ROG Phone 종료",
       "summary": "ASUS 회장 Jonney Shih가 향후 신규 스마트폰 모델 출시를 중단한다고 발표. Zenfone과 ROG Phone 라인업 종료.",
       "keywords": [
-        "phone",
+        "jonney",
         "rog",
         "asus",
-        "jonney",
+        "phone",
         "zenfone"
       ],
       "section": "🔥 TOP Headlines",
@@ -5225,9 +5225,9 @@
       "title": "Hegseth 국방장관, 이달 내 미군에 Grok AI 통합 추진",
       "summary": "Pete Hegseth 국방장관이 Grok을 국방부 모든 비밀·비비밀 네트워크에 통합하겠다고 발표. 최근 Grok 딥페이크 논란에도 불구하고 군사 AI 가속화 전략 추진.",
       "keywords": [
-        "pete",
         "ai",
         "hegseth",
+        "pete",
         "grok"
       ],
       "section": "🔥 TOP Headlines",
@@ -5239,11 +5239,11 @@
       "title": "OpenAI, 2026년 핵심 전략은 '실용적 도입'",
       "summary": "OpenAI CFO Sarah Friar가 AI가 할 수 있는 것과 실제 사용 간의 '격차 해소'에 집중한다고 발표. 헬스케어, 과학, 엔터프라이즈 분야에서 구체적 성과 창출에 주력.",
       "keywords": [
-        "은",
+        "cfo",
         "openai",
         "sarah",
-        "cfo",
-        "ai"
+        "ai",
+        "은"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -5255,8 +5255,8 @@
       "summary": "AI 에이전트의 보안 위협이 새로운 투자 카테고리로 부상. 기업 내 승인 없이 사용되는 '그림자 AI'에 대응하는 스타트업들에 VC 자금 집중.",
       "keywords": [
         "ai",
-        "금",
-        "투자"
+        "투자",
+        "금"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -5307,9 +5307,9 @@
       "title": "미국 2번째 Sphere, 메릴랜드에 건설 추진",
       "summary": "Sphere Entertainment가 워싱턴 DC 인근 메릴랜드 National Harbor에 두 번째 Sphere 건설 의향을 발표.",
       "keywords": [
-        "ai",
         "national",
-        "sphere"
+        "sphere",
+        "ai"
       ],
       "section": "💾 반도체/하드웨어",
       "is_pick": false
@@ -5320,9 +5320,9 @@
       "title": "Bungie Marathon, 3월 5일 출시 확정 - $39.99",
       "summary": "Bungie가 지연됐던 추출 슈터 Marathon의 출시일을 3월 5일로 확정. Xbox, PS5, PC에서 $39.99에 출시.",
       "keywords": [
-        "marathon",
         "xbox",
-        "bungie"
+        "bungie",
+        "marathon"
       ],
       "section": "💾 반도체/하드웨어",
       "is_pick": false
@@ -5346,10 +5346,10 @@
       "title": "BioticsAI, AI 태아 초음파 제품 FDA 승인 획득",
       "summary": "2023년 Disrupt Battlefield 우승 스타트업 BioticsAI가 AI 기반 태아 초음파 분석 제품으로 FDA 승인을 획득. 스타트업 경진대회에서 실제 의료기기 승인까지의 성공 사례.",
       "keywords": [
-        "bioticsai",
-        "fda",
         "disrupt",
+        "bioticsai",
         "ai",
+        "fda",
         "battlefield"
       ],
       "section": "💎 Claude's Pick",
@@ -5361,12 +5361,12 @@
       "title": "Sequoia, Anthropic 투자 결정 - VC 업계 '경쟁사 투자 금기' 깨다",
       "summary": "OpenAI의 주요 투자자인 Sequoia Capital이 Anthropic에도 투자하기로 결정. 동일 분야 경쟁사에 동시 투자하지 않는 VC 업계의 오랜 관행을 깨는 이례적 행보.",
       "keywords": [
-        "anthropic",
-        "openai",
-        "sequoia",
         "금",
+        "sequoia",
+        "투자",
+        "openai",
         "ai",
-        "투자"
+        "anthropic"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -5377,9 +5377,9 @@
       "title": "Threads, 일일 모바일 사용자 수에서 X 추월 - 새 데이터 확인",
       "summary": "Meta의 Threads가 일일 활성 사용자 수에서 Elon Musk의 X를 처음으로 추월. 출시 18개월 만에 달성한 이정표로, 소셜 미디어 지형 변화를 예고.",
       "keywords": [
-        "meta",
+        "threads",
         "elon",
-        "threads"
+        "meta"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -5392,9 +5392,9 @@
       "keywords": [
         "chatgpt",
         "signal",
-        "moxie",
+        "gpt",
         "ai",
-        "gpt"
+        "moxie"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -5406,8 +5406,8 @@
       "summary": "미국과의 동맹 흔들림 속, 유럽이 AI 자주 강국 도약을 위한 노력 가속화. 자체 대형 언어 모델 개발에 국가 차원의 투자 확대.",
       "keywords": [
         "ai",
-        "deepseek",
-        "투자"
+        "투자",
+        "deepseek"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -5418,13 +5418,13 @@
       "title": "Thinking Machines Lab 공동창업자 해고, 사내 관계가 원인",
       "summary": "Mira Murati가 설립한 AI 스타트업에서 공동창업자 Barret Zoph가 '심각한 비위행위'로 해고. OpenAI 출신 핵심 인력의 이탈 속 내부 정치 부각.",
       "keywords": [
-        "machines",
-        "openai",
-        "mira",
         "thinking",
-        "barret",
         "lab",
-        "ai"
+        "openai",
+        "machines",
+        "mira",
+        "ai",
+        "barret"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -5448,15 +5448,15 @@
       "title": "Wikipedia, 주요 AI 기업들과 우선 데이터 접근 계약 체결",
       "summary": "Wikimedia Foundation이 Microsoft, Meta, Amazon, Perplexity, Mistral AI와 API 접근 계약 체결. AI 훈련 데이터 수익화 본격화.",
       "keywords": [
-        "wikimedia",
-        "wikipedia",
         "perplexity",
-        "microsoft",
         "amazon",
         "api",
-        "mistral",
+        "meta",
+        "wikimedia",
+        "microsoft",
         "ai",
-        "meta"
+        "mistral",
+        "wikipedia"
       ],
       "section": "🤖 AI/기술",
       "is_pick": false
@@ -5467,10 +5467,10 @@
       "title": "ASM International, 중국 주문 회복으로 시장 예상 상회",
       "summary": "네덜란드 반도체 장비업체 ASM International이 4분기 수주 실적 발표. 중국 고객 주문 급반등으로 시장 기대치 초과 달성.",
       "keywords": [
-        "반도체",
         "international",
-        "asm",
-        "중국"
+        "중국",
+        "반도체",
+        "asm"
       ],
       "section": "💰 경제/금융",
       "is_pick": false
@@ -5481,9 +5481,9 @@
       "title": "캐나다 중국산 EV 문호 개방 - Tesla가 최대 수혜자",
       "summary": "캐나다가 중국 제조 전기차에 대한 규제 완화 움직임. 상하이 공장에서 생산하는 Tesla가 초기 최대 수혜 예상.",
       "keywords": [
+        "tesla",
         "ev",
-        "중국",
-        "tesla"
+        "중국"
       ],
       "section": "💰 경제/금융",
       "is_pick": false
@@ -5503,8 +5503,8 @@
       "title": "Nvidia H200 부품 공급업체들, 중국 차단으로 생산 중단",
       "summary": "중국의 Nvidia 칩 수출 차단 조치 이후 H200 관련 부품 공급업체들이 생산을 중단. 미중 기술 분쟁의 공급망 파급효과 현실화.",
       "keywords": [
-        "중국",
-        "nvidia"
+        "nvidia",
+        "중국"
       ],
       "section": "💾 반도체",
       "is_pick": false
@@ -5527,8 +5527,8 @@
       "title": "한국, 미국과 유리한 반도체 관세 조건 협상 추진",
       "summary": "한국 정부가 미국의 반도체 관세 정책에 대응해 유리한 조건 확보 위한 협상에 나설 계획. 삼성·SK 등 국내 반도체 업체 보호 목적.",
       "keywords": [
-        "반도체",
-        "삼성"
+        "삼성",
+        "반도체"
       ],
       "section": "💾 반도체",
       "is_pick": false
@@ -5551,8 +5551,8 @@
       "summary": "UAE가 생성형 AI 도입률에서 전 세계를 선도. 정부 주도의 AI 전략과 인프라 투자가 빠른 대중 보급으로 이어져.",
       "keywords": [
         "ai",
-        "uae",
-        "투자"
+        "투자",
+        "uae"
       ],
       "section": "💎 Claude's Pick",
       "is_pick": true
@@ -5563,13 +5563,13 @@
       "title": "Micron 주가 상승 - CEO \"AI 메모리 수요 강력\" 강조",
       "summary": "Rest of World 분석에 따르면 Grok의 가장 큰 위험은 생성하는 콘텐츠보다 X(트위터)라는 플랫폼에 통합되어 있다는 점이다. 8억 명의 사용자에게 즉시 노출되는 배포력이 다른 AI 도구들과 차별화되는 위험 요소로 지적되고 있다.",
       "keywords": [
-        "micron",
         "world",
         "grok",
-        "은",
         "ceo",
         "rest",
-        "ai"
+        "ai",
+        "은",
+        "micron"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -5581,8 +5581,8 @@
       "summary": "세계 최고 부자 일론 머스크가 OpenAI를 상대로 한 소송에서 최대 $1,340억의 손해배상을 요구. 그의 자산 $7,000억에 비해 상당한 금액으로, OpenAI의 비영리→영리 전환을 막으려는 시도",
       "keywords": [
         "ai",
-        "openai",
-        "금"
+        "금",
+        "openai"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -5607,9 +5607,9 @@
       "keywords": [
         "runpod",
         "reddit",
+        "gpu",
         "arr",
-        "ai",
-        "gpu"
+        "ai"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -5620,9 +5620,9 @@
       "title": "ChatGPT 광고 본격 출시 - OpenAI의 새로운 수익원",
       "summary": "OpenAI가 ChatGPT에 타겟 광고를 도입, 무료 및 Go 구독자 대상 테스트 시작. 광고가 응답에 영향을 주지 않으며 사용자 데이터를 광고주에게 판매하지 않겠다고 약속",
       "keywords": [
+        "chatgpt",
         "ai",
-        "gpt",
-        "chatgpt"
+        "gpt"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -5634,12 +5634,12 @@
       "summary": "위키미디어 재단이 Microsoft, Meta, Amazon, Perplexity, Mistral AI와 라이선싱 계약 발표. 6,500만 개 위키피디아 문서에 대한 API 접근권 판매로 인프라 비용 충당",
       "keywords": [
         "perplexity",
-        "microsoft",
         "amazon",
         "api",
-        "mistral",
+        "meta",
+        "microsoft",
         "ai",
-        "meta"
+        "mistral"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -5650,11 +5650,11 @@
       "title": "Thinking Machines Lab 공동창업자 2명, OpenAI로 복귀",
       "summary": "Mira Murati의 AI 스타트업 Thinking Machines Lab에서 공동창업자 2명이 OpenAI로 복귀. 창업 4개월 만에 핵심 인력 이탈로 AI 인재 전쟁 과열 양상",
       "keywords": [
-        "machines",
-        "openai",
-        "mira",
         "thinking",
         "lab",
+        "openai",
+        "machines",
+        "mira",
         "ai"
       ],
       "section": "AI / 기술",
@@ -5667,10 +5667,10 @@
       "summary": "Sam Altman의 새 스타트업 Merge Labs가 $2.52억 펀딩으로 스텔스 모드 탈출. 초음파로 뇌를 읽고 쓰는 기술 개발, OpenAI 등이 투자 참여",
       "keywords": [
         "openai",
-        "merge",
         "ai",
+        "투자",
         "sam",
-        "투자"
+        "merge"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -5682,12 +5682,12 @@
       "summary": "Netflix CEO Ted Sarandos가 Warner Bros. Discovery 인수 시 45일 극장 개봉 윈도우 유지를 약속. 극장 배급 엔진의 가치를 인정하며 극장 산업 우려 불식 시도",
       "keywords": [
         "ceo",
+        "wbd",
         "discovery",
         "netflix",
-        "bros",
-        "ted",
         "warner",
-        "wbd"
+        "bros",
+        "ted"
       ],
       "section": "경제 / 비즈니스",
       "is_pick": false
@@ -5710,10 +5710,10 @@
       "title": "Tesla, EV 경쟁에서 뒤처지지만 주가는 계속 상승",
       "summary": "Tesla가 EV 판매에서 BYD에 밀리고 있지만 주가는 계속 상승 중. 자율주행과 로보택시에 대한 기대감이 실제 판매 실적을 압도",
       "keywords": [
-        "자율주행",
-        "byd",
         "tesla",
-        "ev"
+        "자율주행",
+        "ev",
+        "byd"
       ],
       "section": "경제 / 비즈니스",
       "is_pick": false
@@ -5735,9 +5735,9 @@
       "title": "미 국방장관, 머스크 Grok AI 군 네트워크 통합 이번 달 추진",
       "summary": "Pete Hegseth 미 국방장관이 Grok AI를 국방부 모든 비밀/기밀 네트워크에 통합하겠다고 발표. 최근 딥페이크 논란에도 불구하고 군사 AI 전략 가속화",
       "keywords": [
-        "pete",
         "ai",
         "hegseth",
+        "pete",
         "grok"
       ],
       "section": "규제 / 정책",
@@ -5750,8 +5750,8 @@
       "summary": "미국 환경보호청(EPA)이 xAI의 멤피스 데이터센터 천연가스 발전기가 불법으로 사용됐다고 판정. AI 데이터센터의 에너지 문제가 규제 이슈로 부상",
       "keywords": [
         "ai",
-        "epa",
-        "xai"
+        "xai",
+        "epa"
       ],
       "section": "규제 / 정책",
       "is_pick": false
@@ -5788,8 +5788,8 @@
       "summary": "OpenAI가 ChatGPT에 \"명확히 표시된\" 광고를 도입한다고 발표. 대화 내용은 광고주에게 공개되지 않으며, 데이터 판매도 하지 않겠다고 약속. 광고는 채팅 하단 별도 영역에 표시될 예정.",
       "keywords": [
         "ai",
-        "openai",
         "은",
+        "openai",
         "gpt"
       ],
       "section": "TOP Headlines",
@@ -5838,10 +5838,10 @@
       "title": "OpenAI, ChatGPT Go $8/월 글로벌 출시",
       "summary": "OpenAI가 저가형 구독 ChatGPT Go를 미국 및 전 세계에 확대 출시. 무료 티어보다 더 많은 메시지, 파일 업로드, 이미지 생성 제공.",
       "keywords": [
-        "ai",
-        "openai",
+        "chatgpt",
         "은",
-        "chatgpt"
+        "openai",
+        "ai"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -5853,13 +5853,13 @@
       "summary": "Google이 AI 비디오 생성 도구 Flow를 Business, Enterprise, Education Workspace 플랜으로 확대. Veo 3.1 모델 기반 8초 클립 생성.",
       "keywords": [
         "business",
+        "workspace",
+        "ai",
+        "education",
         "google",
         "veo",
-        "enterprise",
-        "workspace",
-        "education",
-        "ai",
-        "flow"
+        "flow",
+        "enterprise"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -5870,9 +5870,9 @@
       "title": "AI 저널리즘 스타트업 Symbolic.ai, News Corp과 계약 체결",
       "summary": "루퍼트 머독의 News Corp이 AI 저널리즘 스타트업 Symbolic.ai와 파트너십 체결. 미디어 산업의 AI 도입 가속화.",
       "keywords": [
-        "ai",
         "symbolic",
-        "news"
+        "news",
+        "ai"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -5908,9 +5908,9 @@
       "keywords": [
         "runpod",
         "reddit",
+        "gpu",
         "arr",
-        "ai",
-        "gpu"
+        "ai"
       ],
       "section": "경제/비즈니스",
       "is_pick": false
@@ -5922,12 +5922,12 @@
       "summary": "Netflix 공동 CEO Ted Sarandos가 Warner Bros. Discovery 인수 시 45일 극장 상영 기간을 유지하겠다고 발표. 영화관 산업 우려 불식 시도.",
       "keywords": [
         "ceo",
+        "wbd",
         "discovery",
         "netflix",
-        "bros",
-        "ted",
         "warner",
-        "wbd"
+        "bros",
+        "ted"
       ],
       "section": "경제/비즈니스",
       "is_pick": false
@@ -5951,8 +5951,8 @@
       "summary": "미국 환경보호청(EPA)이 xAI의 천연가스 발전기가 불법적으로 사용되었다고 판정. 환경 규제 위반 확인.",
       "keywords": [
         "ai",
-        "epa",
-        "xai"
+        "xai",
+        "epa"
       ],
       "section": "보안/규제",
       "is_pick": false
@@ -5977,8 +5977,8 @@
       "title": "중동 고위 인사 대상 Gmail·WhatsApp 해킹 캠페인 적발",
       "summary": "중동 지역 고위 인사들을 표적으로 한 Gmail 및 WhatsApp 해킹 캠페인이 발견됨.",
       "keywords": [
-        "gmail",
         "ai",
+        "gmail",
         "whatsapp"
       ],
       "section": "보안/규제",
@@ -5990,10 +5990,10 @@
       "title": "OpenAI 출신이 세운 Chai Discovery, Eli Lilly와 계약 체결",
       "summary": "OpenAI 오피스에서 시작해 제약 대기업 Eli Lilly와 계약을 맺기까지 - AI 신약 개발 분야의 떠오르는 스타 Chai Discovery의 성장 스토리.",
       "keywords": [
-        "openai",
-        "discovery",
         "eli",
         "chai",
+        "discovery",
+        "openai",
         "ai"
       ],
       "section": "Claude's Pick",
@@ -6006,9 +6006,9 @@
       "summary": "Anthropic이 전 Microsoft India 전무를 영입해 벵갈루루 사무소 확장을 이끌 예정. AI 인재 확보를 위한 글로벌 경쟁 가속화.",
       "keywords": [
         "ai",
-        "india",
+        "anthropic",
         "microsoft",
-        "anthropic"
+        "india"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -6021,9 +6021,9 @@
       "keywords": [
         "apple",
         "google",
+        "ai",
         "siri",
-        "gemini",
-        "ai"
+        "gemini"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -6034,11 +6034,11 @@
       "title": "로보틱스 소프트웨어 Skild AI, $140억 밸류에이션 달성",
       "summary": "범용 로봇 두뇌 개발 스타트업 Skild AI가 최신 펀딩 라운드에서 $140억 기업가치 인정. Physical AI 시대의 핵심 인프라 기업으로 부상",
       "keywords": [
-        "펀딩",
         "physical",
         "skild",
-        "ai",
-        "로봇"
+        "펀딩",
+        "로봇",
+        "ai"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -6049,8 +6049,8 @@
       "title": "Verizon 미국 전역 통신망 장애, 일부 911 통화까지 먹통",
       "summary": "미국 최대 통신사 Verizon에서 전국적 서비스 장애 발생. 휴대폰이 SOS 모드로 전환되며 일부 지역 911 긴급통화까지 영향",
       "keywords": [
-        "verizon",
-        "sos"
+        "sos",
+        "verizon"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -6085,8 +6085,8 @@
       "title": "Gemini, 사진·이메일 기반 선제적 응답 기능 베타 출시",
       "summary": "Google Gemini가 사용자의 사진, 이메일 등을 분석해 먼저 유용한 정보를 제공하는 프로액티브 기능 베타 공개",
       "keywords": [
-        "google",
-        "gemini"
+        "gemini",
+        "google"
       ],
       "section": "🤖 AI / 기술",
       "is_pick": false
@@ -6110,9 +6110,9 @@
       "title": "Google, AI 건강 요약 일부 삭제 - '위험한' 결함 발견",
       "summary": "Guardian 조사에서 Google AI Overviews의 건강 정보가 부정확해 환자에게 위험할 수 있다는 점 밝혀져 일부 기능 비활성화",
       "keywords": [
-        "google",
+        "ai",
         "guardian",
-        "ai"
+        "google"
       ],
       "section": "🤖 AI / 기술",
       "is_pick": false
@@ -6123,10 +6123,10 @@
       "title": "Meta, Reality Labs 직원 10% 감원 예정",
       "summary": "Meta가 VR/AR 사업부 Reality Labs 인력 10%를 감원할 계획. 메타버스 투자 축소 신호로 해석",
       "keywords": [
+        "투자",
         "reality",
         "meta",
-        "labs",
-        "투자"
+        "labs"
       ],
       "section": "💰 경제 / 비즈니스",
       "is_pick": false
@@ -6137,9 +6137,9 @@
       "title": "Tesla, FSD 구독 전용으로 전환",
       "summary": "Tesla가 완전자율주행(FSD) 기능을 일회성 구매 대신 구독 모델로만 제공하기로 결정. 반복 수익 모델 강화",
       "keywords": [
+        "tesla",
         "자율주행",
-        "fsd",
-        "tesla"
+        "fsd"
       ],
       "section": "💰 경제 / 비즈니스",
       "is_pick": false
@@ -6161,11 +6161,11 @@
       "title": "Liftoff Mobile, IPO 신청 - Blackstone, GA 투자",
       "summary": "모바일 마케팅 플랫폼 Liftoff Mobile이 IPO 신청서 제출. 2026년 테크 IPO 러시의 신호탄",
       "keywords": [
-        "ipo",
         "blackstone",
-        "mobile",
         "liftoff",
-        "투자"
+        "mobile",
+        "투자",
+        "ipo"
       ],
       "section": "💰 경제 / 비즈니스",
       "is_pick": false
@@ -6176,9 +6176,9 @@
       "title": "BYD, Tesla 추격전에 수익성 희생",
       "summary": "글로벌 EV 1위 달성한 BYD가 시장 점유율 확대 위해 공격적 가격 정책 펼치며 이익률 하락 감수",
       "keywords": [
+        "tesla",
         "ev",
-        "byd",
-        "tesla"
+        "byd"
       ],
       "section": "💰 경제 / 비즈니스",
       "is_pick": false
@@ -6189,9 +6189,9 @@
       "title": "UK Ofcom, X의 Grok AI 성적 딥페이크 공식 조사 개시",
       "summary": "영국 통신규제기관 Ofcom이 X의 Grok AI가 생성하는 성적 딥페이크에 대해 공식 조사 착수. 플랫폼 규제 강화 신호",
       "keywords": [
-        "ofcom",
         "ai",
-        "grok"
+        "grok",
+        "ofcom"
       ],
       "section": "⚖️ 규제 / 정책",
       "is_pick": false
@@ -6281,10 +6281,10 @@
       "summary": "애플이 Siri 음성 비서의 AI 성능 향상을 위해 자체 개발 대신 구글의 Gemini를 선택. 이로 인해 Alphabet 시가총액이 $4조를 돌파하며 Apple을 제치고 세계 2위 기업으로 부상",
       "keywords": [
         "apple",
-        "google",
-        "siri",
         "alphabet",
-        "ai"
+        "google",
+        "ai",
+        "siri"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -6295,12 +6295,12 @@
       "title": "Anthropic shakes up C-suite to expand its internal incubator",
       "summary": "Instagram 공동창업자 Mike Krieger가 CPO에서 Labs 팀 공동 리더로 이동. Ami Vora가 새로운 제품 총괄로 승진하며 실험적 AI 제품 개발에 집중",
       "keywords": [
-        "labs",
-        "anthropic",
-        "instagram",
         "mike",
+        "instagram",
         "ami",
-        "ai"
+        "labs",
+        "ai",
+        "anthropic"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -6311,12 +6311,12 @@
       "title": "New York governor clears path for robotaxis everywhere, with one notable exception",
       "summary": "Kathy Hochul 뉴욕 주지사가 뉴욕시를 제외한 전 지역에서 자율주행 차량 운행을 허용하는 법안 발의. 미국 자율주행 규제 완화의 새로운 이정표",
       "keywords": [
-        "kathy",
-        "ev",
         "hochul",
-        "new",
+        "kathy",
+        "york",
         "자율주행",
-        "york"
+        "ev",
+        "new"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -6351,9 +6351,9 @@
       "title": "Google removes some AI health summaries after investigation finds \"dangerous\" flaws",
       "summary": "Guardian 조사 결과 AI Overviews가 간 기능 검사 등에서 부정확한 건강 정보 제공. 환자 안전 위협으로 해당 쿼리 비활성화",
       "keywords": [
-        "google",
+        "ai",
         "guardian",
-        "ai"
+        "google"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -6377,9 +6377,9 @@
       "summary": "AI 수요 급증에 따른 데이터센터 확장 계획 발표. 지역 주민 전기요금 부담 방지를 위한 조치 병행",
       "keywords": [
         "ai",
-        "microsoft",
         "ces",
-        "금"
+        "금",
+        "microsoft"
       ],
       "section": "경제 / 비즈니스",
       "is_pick": false
@@ -6390,10 +6390,10 @@
       "title": "BYD burns profit chasing global dominance over Tesla",
       "summary": "중국 BYD가 글로벌 EV 시장 지배력 확대를 위해 공격적 가격 전략으로 이익률 하락 감수",
       "keywords": [
-        "ev",
-        "byd",
         "tesla",
-        "중국"
+        "ev",
+        "중국",
+        "byd"
       ],
       "section": "경제 / 비즈니스",
       "is_pick": false
@@ -6404,11 +6404,11 @@
       "title": "ElevenLabs CEO says the voice AI startup crossed $330M ARR last year",
       "summary": "음성 합성 AI 스타트업 ElevenLabs가 폭발적 성장세로 ARR $3.3억 달성",
       "keywords": [
-        "ev",
         "ceo",
         "arr",
+        "ai",
         "elevenlabs",
-        "ai"
+        "ev"
       ],
       "section": "글로벌 / 규제",
       "is_pick": false
@@ -6419,11 +6419,11 @@
       "title": "Ofcom investigates Elon Musk's X over Grok AI sexual deepfakes",
       "summary": "영국 통신규제기관 Ofcom이 X에 대한 온라인안전법 위반 여부 공식 조사 개시. 스타머 총리는 X 영국 차단 가능성 시사",
       "keywords": [
-        "ofcom",
         "grok",
-        "musk",
+        "ofcom",
         "elon",
-        "ai"
+        "ai",
+        "musk"
       ],
       "section": "글로벌 / 규제",
       "is_pick": false
@@ -6434,8 +6434,8 @@
       "title": "Iran crippled Starlink and why the rest of the world should worry",
       "summary": "반정부 시위 확산 속 이란 정부가 Starlink 위성 인터넷까지 차단하며 역대 최강 인터넷 봉쇄 실시",
       "keywords": [
-        "starlink",
-        "iran"
+        "iran",
+        "starlink"
       ],
       "section": "글로벌 / 규제",
       "is_pick": false
@@ -6447,8 +6447,8 @@
       "summary": "인도가 AI 기업들에게 학습 데이터 사용료를 부과하는 방안 추진. 콘텐츠 창작자 권리 보호의 새로운 모델로 주목",
       "keywords": [
         "ai",
-        "why",
-        "india"
+        "india",
+        "why"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -6459,14 +6459,14 @@
       "title": "Silicon, not oil: Why the U.S. needs the Gulf for AI",
       "summary": "Jacob Helberg 국무부 차관이 주도한 'Pax Silica' 서밋에서 AI 시대 새로운 경제안보 동맹 논의. 카타르, UAE가 AI 경제의 핵심 파트너로 부상",
       "keywords": [
-        "pax",
-        "why",
-        "gulf",
-        "silica",
         "jacob",
-        "silicon",
+        "helberg",
+        "gulf",
+        "pax",
+        "silica",
+        "why",
         "ai",
-        "helberg"
+        "silicon"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -6477,9 +6477,9 @@
       "title": "AI's green-energy goal is devastating Taiwan's coastal villages",
       "summary": "AI 데이터센터 전력 수요 충족을 위한 대만의 해상풍력 확장이 지역 어촌 공동체와 생태계에 심각한 피해. 기술 발전과 환경의 충돌 심화",
       "keywords": [
-        "ai",
         "taiwan",
-        "ev"
+        "ev",
+        "ai"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -6490,8 +6490,8 @@
       "title": "Google, AI 에이전트 상거래 프로토콜 발표 - 쇼핑 자동화 새 지평",
       "summary": "Google이 AI 에이전트가 사람을 대신해 온라인 쇼핑을 할 수 있는 새로운 프로토콜 발표. 제품 검색, 비교, 결제까지 AI가 자동 수행하는 미래 상거래 인프라 구축.",
       "keywords": [
-        "google",
-        "ai"
+        "ai",
+        "google"
       ],
       "section": "",
       "is_pick": false
@@ -6515,9 +6515,9 @@
       "summary": "Hyundai-Aptiv 합작 Motional이 AI를 핵심에 둔 로보택시 사업 전면 재편 발표. 2026년 무인 서비스 출시 목표로 기술 개발 가속화.",
       "keywords": [
         "ai",
-        "motional",
+        "hyundai",
         "aptiv",
-        "hyundai"
+        "motional"
       ],
       "section": "",
       "is_pick": false
@@ -6528,9 +6528,9 @@
       "title": "Google, 의료 쿼리 AI Overviews 일부 삭제 - 위험 오정보 발견",
       "summary": "Google이 간 기능 검사 등 의료 관련 쿼리에서 위험한 오정보가 발견되어 AI Overviews 기능 일부 삭제. AI 건강정보 신뢰성 논란 지속.",
       "keywords": [
-        "google",
+        "ai",
         "overviews",
-        "ai"
+        "google"
       ],
       "section": "",
       "is_pick": false
@@ -6541,9 +6541,9 @@
       "title": "SMR 원자력 스타트업 부활 - AI 전력수요가 추동",
       "summary": "소형모듈원자로(SMR) 스타트업들이 AI 데이터센터 전력 수요 급증으로 다시 각광. 기술적 도전과 규제 장벽 속 새로운 투자 유입.",
       "keywords": [
-        "smr",
+        "ai",
         "투자",
-        "ai"
+        "smr"
       ],
       "section": "",
       "is_pick": false
@@ -6554,11 +6554,11 @@
       "title": "Reid Hoffman, 실리콘밸리에 트럼프 행정부 '반격' 촉구",
       "summary": "LinkedIn 공동창업자 Reid Hoffman이 WIRED 인터뷰에서 실리콘밸리 리더들에게 트럼프 행정부에 맞서 '일어설 것'을 촉구. 기술업계 정치적 분열 심화.",
       "keywords": [
-        "트럼프",
-        "reid",
-        "wired",
         "linkedin",
-        "hoffman"
+        "reid",
+        "트럼프",
+        "hoffman",
+        "wired"
       ],
       "section": "",
       "is_pick": false
@@ -6569,9 +6569,9 @@
       "title": "Google 공동창업자들, 캘리포니아 떠날 수도",
       "summary": "Larry Page와 Sergey Brin이 캘리포니아를 떠날 가능성이 제기. 부유세 논의와 규제 환경 변화가 실리콘밸리 거물들의 이탈을 가속화.",
       "keywords": [
-        "google",
+        "larry",
         "sergey",
-        "larry"
+        "google"
       ],
       "section": "",
       "is_pick": false
@@ -6591,8 +6591,8 @@
       "title": "Wing, Walmart 150개 매장 추가 드론배송 확대",
       "summary": "Alphabet 산하 Wing이 Walmart와 협력해 150개 매장에 드론 배송 서비스 확대. 미국 내 드론 상업배송 본격화.",
       "keywords": [
-        "walmart",
         "alphabet",
+        "walmart",
         "wing"
       ],
       "section": "",
@@ -6627,10 +6627,10 @@
       "title": "'Pax Silica' - 미국이 AI를 위해 걸프 지역을 필요로 하는 이유",
       "summary": "카타르와 UAE가 미국 주도 'Pax Silica' 이니셔티브에 합류, AI 공급망에 걸프 자본을 투입할 예정. 석유가 아닌 반도체를 둘러싼 새로운 지정학적 동맹.",
       "keywords": [
+        "ai",
         "pax",
-        "반도체",
         "silica",
-        "ai"
+        "반도체"
       ],
       "section": "",
       "is_pick": false
@@ -6641,9 +6641,9 @@
       "title": "트럼프, 세계 최초로 UNFCCC 탈퇴 선언 - 66개 국제기구 동시 탈퇴",
       "summary": "트럼프 대통령이 1992년 체결된 유엔기후변화협약(UNFCCC)과 IPCC 등 66개 국제기구 탈퇴를 선언. 세계 최초로 기후조약을 탈퇴하는 국가가 되며, 파리협정 복귀도 사실상 불가능해져",
       "keywords": [
-        "트럼프",
+        "unfccc",
         "ipcc",
-        "unfccc"
+        "트럼프"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -6667,9 +6667,9 @@
       "title": "NASA, 65년 역사상 최초 ISS 의료 대피 명령 - 우주비행사 4명 조기 귀환",
       "summary": "NASA가 65년 역사상 처음으로 건강 문제로 인한 우주정거장 의료 대피를 명령. Crew-11 미션 4명이 예정보다 6주 일찍 지구로 귀환 예정",
       "keywords": [
-        "crew",
         "iss",
-        "nasa"
+        "nasa",
+        "crew"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -6692,10 +6692,10 @@
       "title": "ChatGPT, 새로운 데이터 탈취 공격 'ZombieAgent'에 취약",
       "summary": "보안 연구진이 ChatGPT의 장기 메모리에 침투해 사용자 정보를 탈취하는 새 공격 기법 발견. AI 가드레일의 반복적 우회 문제 재확인",
       "keywords": [
-        "ai",
-        "gpt",
         "chatgpt",
-        "zombieagent"
+        "zombieagent",
+        "ai",
+        "gpt"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -6718,8 +6718,8 @@
       "title": "RAM 가격 급등으로 삼성전자 등 메모리 업체 사상 최대 실적",
       "summary": "메모리 공급 부족과 가격 상승으로 삼성전자 4분기 영업이익 약 $138억(20조 원) 전망. 전년 동기 대비 3배 이상 증가",
       "keywords": [
-        "삼성",
-        "ram"
+        "ram",
+        "삼성"
       ],
       "section": "경제/비즈니스",
       "is_pick": false
@@ -6753,10 +6753,10 @@
       "title": "에릭 슈미트, 허블 우주망원경 후속기 개인 자금으로 추진",
       "summary": "전 구글 CEO 에릭 슈미트가 민간 자금으로 대규모 천문 망원경 프로젝트 투자 발표. 2차 세계대전 이후 정부 주도였던 대형 망원경 건설의 패러다임 전환",
       "keywords": [
-        "ceo",
+        "투자",
         "금",
         "구글",
-        "투자"
+        "ceo"
       ],
       "section": "국제/정책",
       "is_pick": false
@@ -6768,9 +6768,9 @@
       "summary": "AI 기술 패권 경쟁이 글로벌 권력 구조를 재편하고 있다는 분석. 미국-중국 경쟁 속에서 신흥국들의 기회와 위험, 그리고 기술 식민주의 우려",
       "keywords": [
         "ai",
-        "중국",
+        "rest",
         "world",
-        "rest"
+        "중국"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -6782,8 +6782,8 @@
       "summary": "중국 전역에 '로봇 훈련 센터'가 확산. 저임금 노동자들이 휴머노이드 로봇에게 일상 업무를 시연하며 AI 훈련 데이터를 생산하는 새로운 노동 형태",
       "keywords": [
         "ai",
-        "중국",
         "금",
+        "중국",
         "로봇"
       ],
       "section": "Claude's Pick",
@@ -6842,9 +6842,9 @@
       "title": "CES 2026에서 만난 기이한 로봇들 - 가장 인상적이었던 것들",
       "summary": "CES 2026에서 선보인 다양한 로봇들 중 가장 기억에 남는 제품들 정리. AI 컴패니언부터 가정용 로봇까지 로봇 기술의 현주소",
       "keywords": [
+        "ai",
         "ces",
-        "로봇",
-        "ai"
+        "로봇"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -6866,8 +6866,8 @@
       "title": "구글 스핀아웃 SandboxAQ, 전직 임원 '갈취 시도' 주장",
       "summary": "구글의 문샷 프로젝트에서 분사한 양자컴퓨팅 스타트업 SandboxAQ가 전직 임원을 상대로 갈취 시도 혐의를 제기. 실리콘밸리 스타트업 내부 갈등 표면화",
       "keywords": [
-        "구글",
-        "sandboxaq"
+        "sandboxaq",
+        "구글"
       ],
       "section": "경제/비즈니스",
       "is_pick": false
@@ -6936,8 +6936,8 @@
       "title": "캘리포니아 부유세 공포 - 래리 페이지 등 억만장자 플로리다 이주 러시",
       "summary": "구글 공동창업자 래리 페이지의 플로리다 이주 소식을 계기로 캘리포니아 부유세 법안에 대한 억만장자들의 공포가 현실화. 피터 틸 등 실리콘밸리 거물들이 세금 회피를 위해 대거 이주 검토 중",
       "keywords": [
-        "구글",
-        "금"
+        "금",
+        "구글"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -6948,11 +6948,11 @@
       "title": "Anthropic, 독일 보험 거인 Allianz 고객 확보 - 엔터프라이즈 시장 공략 가속",
       "summary": "Anthropic이 독일 최대 보험사 Allianz를 엔터프라이즈 고객으로 확보. OpenAI와의 B2B 시장 경쟁에서 연이은 대형 계약 체결로 기업 시장 입지 강화",
       "keywords": [
-        "allianz",
-        "anthropic",
         "은",
+        "allianz",
         "openai",
-        "ai"
+        "ai",
+        "anthropic"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -6963,9 +6963,9 @@
       "title": "노벨상 수상자 제니퍼 다우드나, 맞춤형 유전자 치료 스타트업 Aurora 설립",
       "summary": "크리스퍼 공동개발로 노벨상을 수상한 제니퍼 다우드나가 희귀질환 맞춤형 유전자 치료제 개발 스타트업 Aurora Therapeutics 설립. FDA 새 규제 경로 활용",
       "keywords": [
-        "therapeutics",
         "fda",
-        "aurora"
+        "aurora",
+        "therapeutics"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -6989,8 +6989,8 @@
       "summary": "구글이 Gemini 모델 기반 AI 인박스 기능을 Gmail에 추가. 이메일 자동 요약으로 일상적인 AI 활용 확대 전략",
       "keywords": [
         "ai",
-        "gemini",
-        "구글"
+        "구글",
+        "gemini"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -7001,8 +7001,8 @@
       "title": "AI 모델, 스스로 질문하며 학습하는 단계 진입",
       "summary": "인간 입력 없이 스스로 흥미로운 질문을 생성하며 학습하는 AI 모델 등장. 초지능(superintelligence)으로 가는 길을 제시할 가능성",
       "keywords": [
-        "intel",
-        "ai"
+        "ai",
+        "intel"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -7015,9 +7015,9 @@
       "keywords": [
         "physical",
         "amd",
-        "ces",
+        "ai",
         "nvidia",
-        "ai"
+        "ces"
       ],
       "section": "경제/비즈니스",
       "is_pick": false
@@ -7039,10 +7039,10 @@
       "title": "WIRED: \"왜 Grok과 X는 아직 앱스토어에 있나?\" - Apple·Google 책임론",
       "summary": "Grok이 성인과 미성년자의 성적 이미지를 수천 건 생성했음에도 Apple과 Google이 앱스토어에서 X와 Grok을 퇴출하지 않는 이유 분석",
       "keywords": [
-        "google",
-        "apple",
         "wired",
-        "grok"
+        "google",
+        "grok",
+        "apple"
       ],
       "section": "국제/정책",
       "is_pick": false
@@ -7053,9 +7053,9 @@
       "title": "중국 로봇청소기 회사, EV 브랜드 2개 분사 - 중국 기업의 산업 피벗",
       "summary": "중국 전자기업들이 제조 역량을 새로운 산업에 적용하는 트렌드. CES에서 중국 기업들의 공격적인 자동차·EV 시장 진출 주목",
       "keywords": [
+        "ces",
         "ev",
         "중국",
-        "ces",
         "로봇"
       ],
       "section": "국제/정책",
@@ -7068,9 +7068,9 @@
       "summary": "OpenAI·Amazon 등이 AI를 차세대 플랫폼으로 선언하는 가운데, 일부 개발자들은 AI 에이전트가 자신과 사용자 사이에 끼어드는 것에 회의적. 앱 생태계 재편 전망",
       "keywords": [
         "ai",
+        "amazon",
         "openai",
-        "은",
-        "amazon"
+        "은"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -7081,11 +7081,11 @@
       "title": "2026년은 RGB LED TV의 해 - 차세대 백라이트 기술 대중화",
       "summary": "삼성, LG, Sony 등 주요 TV 제조사가 RGB LED 백라이트 기술 채택. 기존 대비 훨씬 정확한 색상 재현으로 디스플레이 기술의 새로운 장 개막",
       "keywords": [
-        "은",
-        "rgb",
-        "led",
+        "삼성",
         "sony",
-        "삼성"
+        "led",
+        "은",
+        "rgb"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -7096,10 +7096,10 @@
       "title": "OpenAI, ChatGPT Health 출시 - 의료 기록 분석 기능 도입",
       "summary": "OpenAI가 주간 2억 3천만 명이 건강 관련 질문을 하는 점에 착안해 ChatGPT Health 출시. 개인 의료 기록을 분석하고 건강 조언을 제공하는 새로운 기능 탑재",
       "keywords": [
-        "ai",
-        "openai",
         "chatgpt",
-        "health"
+        "health",
+        "openai",
+        "ai"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -7121,8 +7121,8 @@
       "title": "데이터 보안 스타트업 Cyera, 6개월 만에 $90억 밸류에이션 달성",
       "summary": "데이터 보안 스타트업 Cyera가 6개월 만에 $60억에서 $90억으로 밸류에이션 50% 상승. AI 시대 데이터 보안 수요 급증 반영",
       "keywords": [
-        "ai",
-        "cyera"
+        "cyera",
+        "ai"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -7168,8 +7168,8 @@
       "summary": "Meta가 AI 데이터센터 전력 수요 충족을 위해 3개 원자력 기업과 6GW 이상의 전력 공급 계약 체결. 빅테크의 원자력 투자 트렌드 가속화",
       "keywords": [
         "ai",
-        "meta",
-        "투자"
+        "투자",
+        "meta"
       ],
       "section": "경제/비즈니스",
       "is_pick": false
@@ -7204,8 +7204,8 @@
       "title": "온라인 도박 글로벌 단속 강화",
       "summary": "전 세계적으로 온라인 도박에 대한 규제 강화 움직임. 각국 정부가 도박 광고 금지 및 플랫폼 규제에 나서는 가운데 Meta 등 빅테크의 역할 논란",
       "keywords": [
-        "meta",
-        "금"
+        "금",
+        "meta"
       ],
       "section": "국제/정책",
       "is_pick": false
@@ -7217,9 +7217,9 @@
       "summary": "Meta의 Manus 인수 이후 중국 AI 스타트업들의 싱가포르 이전 움직임 가속화. 지정학적 긴장 속에서 아시아 AI 생태계의 재편이 진행 중",
       "keywords": [
         "ai",
-        "meta",
+        "manus",
         "중국",
-        "manus"
+        "meta"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -7230,11 +7230,11 @@
       "title": "The Verge 칼럼: \"팀 쿡과 순다르 피차이는 겁쟁이\" - 앱스토어가 Grok을 퇴출해야 하는 이유",
       "summary": "The Verge가 Apple과 Google이 Grok의 아동 성착취물 생성 기능에도 X를 앱스토어에서 퇴출하지 않는 것을 강력 비판. 실리콘밸리 리더십의 도덕적 실패 지적",
       "keywords": [
-        "apple",
-        "grok",
-        "google",
         "the",
-        "verge"
+        "grok",
+        "verge",
+        "apple",
+        "google"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -7246,11 +7246,11 @@
       "summary": "젠슨 황 CEO가 CES 2026 키노트에서 자율주행차, 휴머노이드 로봇을 아우르는 'Physical AI' 플랫폼 전략 발표. Nvidia가 로봇 산업의 안드로이드가 되겠다는 비전 제시",
       "keywords": [
         "physical",
-        "ces",
-        "자율주행",
-        "nvidia",
         "ai",
-        "로봇"
+        "자율주행",
+        "로봇",
+        "nvidia",
+        "ces"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -7275,8 +7275,8 @@
       "summary": "레고가 전자 센서 내장 스마트 브릭을 CES 2026에서 공개. 물리적 조립과 디지털 상호작용을 결합하되 스크린 의존도를 낮춘 혁신적 접근으로 Best In Show 수상",
       "keywords": [
         "ces",
-        "best",
-        "show"
+        "show",
+        "best"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -7287,9 +7287,9 @@
       "title": "Meta, 온라인 도박 광고 금지 국가에서도 광고 판매 논란",
       "summary": "여러 국가에서 온라인 도박 광고가 불법임에도 Meta가 Facebook·Instagram을 통해 해당 광고를 계속 판매하고 있다는 조사 결과 발표",
       "keywords": [
+        "금",
         "facebook",
-        "meta",
-        "금"
+        "meta"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -7312,9 +7312,9 @@
       "title": "英 Ofcom, Grok AI 아동 성적 이미지 생성 의혹 공식 조사",
       "summary": "영국 통신규제기관 Ofcom이 Grok AI가 아동의 성적 이미지를 생성했다는 보도에 대해 X에 공식 질의. 온라인안전법 위반 여부 검토",
       "keywords": [
-        "ofcom",
         "ai",
-        "grok"
+        "grok",
+        "ofcom"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -7325,13 +7325,13 @@
       "title": "중국 AI 유니콘 Zhipu·MiniMax, 홍콩 IPO 경쟁 본격화",
       "summary": "중국 AI 스타트업 Zhipu AI와 MiniMax가 홍콩 증시 상장 절차에 돌입. OpenAI, Anthropic보다 먼저 공개 시장에 진출하며 중국식 AI 상용화 전략 주목",
       "keywords": [
-        "anthropic",
-        "ipo",
+        "minimax",
+        "zhipu",
         "openai",
         "중국",
         "ai",
-        "zhipu",
-        "minimax"
+        "anthropic",
+        "ipo"
       ],
       "section": "경제/비즈니스",
       "is_pick": false
@@ -7366,9 +7366,9 @@
       "summary": "DRAM·NAND 공급 부족과 AI 칩 수요 급증으로 2026년 전자제품 가격 상승 불가피. 소비자 부담 증가 전망",
       "keywords": [
         "ai",
+        "nand",
         "dram",
-        "반도체",
-        "nand"
+        "반도체"
       ],
       "section": "국제/정책",
       "is_pick": false
@@ -7392,10 +7392,10 @@
       "title": "AI 경쟁이 만드는 새로운 세계 질서 - Silicon Empires 저자 분석",
       "summary": "Nick Srnicek의 신간 'Silicon Empires' 발췌. AI 기술 패권 경쟁이 어떻게 글로벌 정치·경제 질서를 재편하고 있는지 심층 분석",
       "keywords": [
-        "nick",
         "ai",
         "empires",
-        "silicon"
+        "silicon",
+        "nick"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -7406,9 +7406,9 @@
       "title": "미국 최강 개인정보보호법 캘리포니아서 발효, 데이터 브로커 타격",
       "summary": "캘리포니아주 '삭제법(Delete Act)'이 1월 1일부터 발효되어 500개 이상의 데이터 브로커 기업들이 소비자 개인정보 수집·판매를 대폭 제한받게 됨. 금융정보, 구매이력, 가족상황, 건강습관 등 광범위한 데이터 보호",
       "keywords": [
+        "act",
         "delete",
-        "금",
-        "act"
+        "금"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -7419,13 +7419,13 @@
       "title": "중국 AI 유니콘 Zhipu·MiniMax, 실리콘밸리 제치고 IPO 경쟁 선두",
       "summary": "중국 AI 스타트업 Zhipu AI와 MiniMax가 홍콩 증시 상장을 준비하며 OpenAI, Anthropic 등 미국 경쟁사보다 먼저 IPO 레이스에서 앞서가고 있음. 중국 시장의 빠른 상용화 전략 주목",
       "keywords": [
-        "anthropic",
-        "ipo",
+        "minimax",
+        "zhipu",
         "openai",
         "중국",
         "ai",
-        "zhipu",
-        "minimax"
+        "anthropic",
+        "ipo"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -7449,11 +7449,11 @@
       "summary": "젠슨 황 CEO가 CES 2026에서 'Physical AI' 비전 발표. Nvidia가 로봇 산업의 플랫폼 표준이 되겠다는 전략으로, 자율주행부터 휴머노이드까지 통합 AI 생태계 구축 추진",
       "keywords": [
         "physical",
-        "ces",
-        "자율주행",
-        "nvidia",
         "ai",
-        "로봇"
+        "자율주행",
+        "로봇",
+        "nvidia",
+        "ces"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -7464,10 +7464,10 @@
       "title": "클라우드 대란의 날 - 2025년 주요 장애 사태 분석",
       "summary": "2025년 발생한 주요 클라우드 서비스 장애들이 글로벌 비즈니스에 미친 영향 심층 분석. AWS, Azure, Google Cloud 장애가 신흥국 기업들에 특히 큰 타격",
       "keywords": [
-        "google",
-        "cloud",
         "aws",
-        "azure"
+        "azure",
+        "cloud",
+        "google"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -7551,9 +7551,9 @@
       "summary": "Meta의 Manus 인수 이후 중국 AI 스타트업들의 싱가포르 이전 움직임 분석. 미중 기술 갈등 속에서 제3국을 통한 글로벌 진출 전략 주목",
       "keywords": [
         "ai",
-        "meta",
+        "manus",
         "중국",
-        "manus"
+        "meta"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -7564,10 +7564,10 @@
       "title": "BYD, Tesla 제치고 글로벌 EV 판매 1위 등극",
       "summary": "중국 BYD가 연간 전기차 판매량에서 처음으로 Tesla를 추월. Tesla는 연간 판매량이 9% 감소하며 글로벌 리더 자리를 내줌. 머스크의 정치적 행보에 대한 소비자 반감이 판매에 영향.",
       "keywords": [
-        "ev",
-        "byd",
         "tesla",
-        "중국"
+        "ev",
+        "중국",
+        "byd"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -7626,10 +7626,10 @@
       "title": "AI 코딩 에이전트 작동 원리와 사용 시 주의점",
       "summary": "OpenAI, Anthropic, Google의 AI 코딩 에이전트가 수시간 동안 자율적으로 개발 작업 수행. 작동 원리를 이해하면 함정을 피할 수 있음.",
       "keywords": [
-        "google",
-        "openai",
+        "ai",
         "anthropic",
-        "ai"
+        "openai",
+        "google"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -7641,8 +7641,8 @@
       "summary": "2026년 AI 업계 전망: 거품이 빠지고 실질적 가치를 증명해야 하는 시기. 투자자들은 AI가 노동 시장을 재편할 것으로 예측.",
       "keywords": [
         "ai",
-        "은",
-        "투자"
+        "투자",
+        "은"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -7664,10 +7664,10 @@
       "title": "룸바 제조사 iRobot, 파산 신청",
       "summary": "로봇청소기 룸바로 유명한 iRobot이 파산 신청. 중국 공급업체 Picea Robotics가 인수 예정. 아마존의 $15억 인수 무산 후 2년 만.",
       "keywords": [
+        "picea",
         "아마존",
         "로봇",
-        "중국",
-        "picea"
+        "중국"
       ],
       "section": "경제/비즈니스",
       "is_pick": false
@@ -7687,13 +7687,13 @@
       "title": "CES 2026 개막 임박, 주요 발표 총정리",
       "summary": "1월 6일 개막하는 CES 2026 사전 발표들: LG Micro RGB evo TV, Samsung 6K 게이밍 모니터, Fender 무선 헤드폰, 그리고 새로운 가정용 로봇 등.",
       "keywords": [
-        "ev",
-        "fender",
-        "samsung",
-        "ces",
-        "rgb",
         "micro",
-        "로봇"
+        "samsung",
+        "로봇",
+        "fender",
+        "ces",
+        "ev",
+        "rgb"
       ],
       "section": "하드웨어/가젯",
       "is_pick": false
@@ -7704,9 +7704,9 @@
       "title": "Framework Laptop 16 (RTX 5070) 리뷰: 꿈의 실현",
       "summary": "그래픽카드까지 업그레이드 가능한 모듈형 노트북. PC 마니아들의 오랜 꿈이 현실로.",
       "keywords": [
+        "framework",
         "rtx",
-        "laptop",
-        "framework"
+        "laptop"
       ],
       "section": "하드웨어/가젯",
       "is_pick": false
@@ -7740,9 +7740,9 @@
       "title": "인도 왓츠앱 강사들, 일반인에게 AI 사용법 교육",
       "summary": "인도에서 왓츠앱을 통한 AI 교육이 급성장. 일반인들에게 ChatGPT, 이미지 생성 AI 등 실용적인 AI 도구 사용법을 저렴하게 가르치는 새로운 교육 시장 형성.",
       "keywords": [
+        "chatgpt",
         "ai",
-        "gpt",
-        "chatgpt"
+        "gpt"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -7753,9 +7753,9 @@
       "title": "'Operation Bluebird', 트위터 상표 탈환 시도",
       "summary": "버지니아 스타트업이 미국 특허청에 X사의 'Twitter' 상표 취소 청원서 제출. 머스크가 브랜드를 사실상 포기했다고 주장하며 Twitter.new 출시 계획.",
       "keywords": [
+        "twitter",
         "bluebird",
-        "operation",
-        "twitter"
+        "operation"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -7767,8 +7767,8 @@
       "summary": "일론 머스크의 xAI가 개발한 Grok AI가 미성년자 딥페이크 음란물을 생성할 수 있다는 사실이 알려지면서 인도 정부가 긴급 규제에 착수했다. 인도 IT부 장관은 해당 콘텐츠를 \"AI 윤리의 심각한 위반\"으로 규정하고 xAI에 공식 해명을 요구했다. X 플랫폼에서 확산된 이 이미지들은 AI 안전 가드레일의 근본적 한계를 드러내며 글로벌 규제 논의에 불을 붙이고 있다.",
       "keywords": [
         "ai",
-        "은",
         "xai",
+        "은",
         "grok"
       ],
       "section": "🔥 TOP Headlines",
@@ -7780,10 +7780,10 @@
       "title": "BYD, 연간 판매량에서 Tesla 제치고 글로벌 EV 1위 등극",
       "summary": "중국 BYD가 2025년 4분기 전기차 판매량 595,413대를 기록하며 Tesla(495,570대)를 처음으로 추월했다. 연간 기준으로도 BYD가 1위를 차지해 Tesla의 4년 연속 왕좌가 막을 내렸다. BYD는 저가 모델과 중국 내수시장 강세를 바탕으로 성장했으며, Tesla는 고가 전략과 신모델 부재로 유럽·중국 시장에서 고전 중이다.",
       "keywords": [
-        "ev",
-        "byd",
         "tesla",
-        "중국"
+        "ev",
+        "중국",
+        "byd"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -7794,11 +7794,11 @@
       "title": "CES 2026 개막 임박: AI 에이전트와 자율주행이 핵심 키워드",
       "summary": "다음 주 라스베이거스에서 개막하는 CES 2026에서는 AI 에이전트, 자율주행차, 그리고 AI 통합 가전제품이 주요 화두가 될 전망이다. 삼성, LG, Nvidia 등 주요 기업들이 차세대 기술을 공개할 예정이며, 특히 생성형 AI의 실생활 적용 사례에 관심이 집중되고 있다.",
       "keywords": [
-        "ces",
+        "삼성",
+        "ai",
         "자율주행",
         "nvidia",
-        "ai",
-        "삼성"
+        "ces"
       ],
       "section": "🔥 TOP Headlines",
       "is_pick": false
@@ -7811,8 +7811,8 @@
       "keywords": [
         "ai",
         "github",
-        "copilot",
-        "cursor"
+        "cursor",
+        "copilot"
       ],
       "section": "🤖 AI & 기술",
       "is_pick": false
@@ -7847,9 +7847,9 @@
       "summary": "골드만삭스가 2026년 S&P 500 목표가를 6,500에서 7,000으로 상향 조정했다. AI 투자 확대에 따른 기업 수익성 개선과 금리 인하 기대감이 주요 근거다. 다만 지정학적 리스크와 인플레이션 재발 가능성은 하방 리스크로 지목됐다.",
       "keywords": [
         "ai",
+        "투자",
         "금",
-        "은",
-        "투자"
+        "은"
       ],
       "section": "💰 경제 & 금융",
       "is_pick": false
@@ -7860,13 +7860,13 @@
       "title": "EU, AI법 시행 첫 달… 빅테크 규제 본격화",
       "summary": "유럽연합의 AI법(AI Act)이 2026년 1월 1일부터 본격 시행에 들어갔다. 고위험 AI 시스템에 대한 투명성 의무와 금지 AI 목록 적용이 시작됐으며, 위반 시 전 세계 매출의 최대 7%까지 벌금이 부과된다. OpenAI, Google, Meta 등 빅테크 기업들은 유럽 시장 전략 수정에 나선 상태다.",
       "keywords": [
-        "google",
-        "openai",
-        "은",
         "act",
-        "ai",
+        "금",
         "meta",
-        "금"
+        "openai",
+        "google",
+        "ai",
+        "은"
       ],
       "section": "🌐 글로벌 & 정치",
       "is_pick": false
@@ -7878,8 +7878,8 @@
       "summary": "미국의 대중국 반도체 장비 수출 통제 강화에 대응해 중국이 희토류 수출 제한 등 보복 조치를 검토 중인 것으로 알려졌다. 이번 조치가 현실화될 경우 전기차 배터리와 반도체 제조에 필수적인 희토류 공급망에 차질이 예상된다.",
       "keywords": [
         "중국",
-        "반도체",
-        "전기차"
+        "전기차",
+        "반도체"
       ],
       "section": "🌐 글로벌 & 정치",
       "is_pick": false
@@ -7891,8 +7891,8 @@
       "summary": "이 사건은 단순한 기술적 실패가 아니라 AI 개발 철학의 근본적 차이를 드러냅니다. xAI의 \"최소 규제\" 접근법은 빠른 혁신을 가능하게 했지만, 가장 취약한 집단(미성년자)을 보호하는 데 실패했습니다. AI 안전 가드레일은 사후 대응이 아닌 설계 단계부터 내재화되어야 한다는 점을 다시 한번 확인시켜주는 사례입니다.",
       "keywords": [
         "ai",
-        "은",
         "xai",
+        "은",
         "grok"
       ],
       "section": "🎯 Claude's Pick",
@@ -7904,10 +7904,10 @@
       "title": "BYD vs Tesla: 단순한 순위 경쟁을 넘어서",
       "summary": "BYD의 1위 등극은 중국 제조업의 성숙도와 수직계열화 전략의 승리를 의미합니다. BYD는 배터리부터 완성차까지 자체 생산하며 원가 경쟁력을 확보했고, 다양한 가격대의 모델 라인업으로 시장을 공략했습니다. 반면 Tesla는 프리미엄 전략에 집중하면서 대중 시장에서 경쟁력을 잃고 있습니다.",
       "keywords": [
-        "은",
-        "byd",
         "tesla",
-        "중국"
+        "은",
+        "중국",
+        "byd"
       ],
       "section": "🎯 Claude's Pick",
       "is_pick": true
@@ -7932,8 +7932,8 @@
       "summary": "OpenAI가 음성 인터페이스에 대규모 투자를 단행하며 포스트-스크린 시대 준비. 실리콘밸리 전반에서 \"화면 없는 AI\" 경쟁이 본격화.",
       "keywords": [
         "ai",
-        "openai",
-        "투자"
+        "투자",
+        "openai"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -7944,9 +7944,9 @@
       "title": "삼성 HBM4 칩 진전... 고객사 \"삼성이 돌아왔다\"",
       "summary": "삼성전자 HBM4 개발이 예정보다 빠르게 진행되며 주요 고객사로부터 긍정적 피드백. \"삼성이 돌아왔다\"는 평가와 함께 Nvidia 납품 재개 기대감 상승.",
       "keywords": [
-        "삼성",
+        "nvidia",
         "hbm",
-        "nvidia"
+        "삼성"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -7957,11 +7957,11 @@
       "title": "🔁 후속 | 8개월 만에 ARR $1억 달성한 Manus를 Meta가 인수",
       "summary": "자체 LLM 없이 Anthropic/Alibaba 모델 활용, 오케스트레이션 레이어에 집중한 전략이 성공. 147조 토큰 처리, 8천만 가상 컴퓨터 생성 실적.",
       "keywords": [
-        "anthropic",
-        "arr",
         "llm",
         "meta",
-        "alibaba"
+        "alibaba",
+        "arr",
+        "anthropic"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -7985,9 +7985,9 @@
       "summary": "중국 AI 스타트업 DeepSeek이 훈련 효율성을 획기적으로 개선하는 새 논문 발표.",
       "keywords": [
         "ai",
-        "중국",
         "은",
-        "deepseek"
+        "deepseek",
+        "중국"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -7999,10 +7999,10 @@
       "summary": "ChatGPT, Claude, Gemini 등 주요 AI 플랫폼에서 사용자의 전체 대화 내용을 수집해 마케팅 목적으로 판매.",
       "keywords": [
         "chatgpt",
-        "gemini",
-        "ai",
         "claude",
-        "gpt"
+        "gpt",
+        "ai",
+        "gemini"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -8013,9 +8013,9 @@
       "title": "ByteDance, 2026년 Nvidia 칩 $140억 주문",
       "summary": "TikTok 모회사 ByteDance가 2026년 Nvidia AI 칩 대규모 주문 계획. AI 인프라 투자 경쟁 가열.",
       "keywords": [
-        "nvidia",
-        "ai",
         "tiktok",
+        "ai",
+        "nvidia",
         "투자",
         "bytedance"
       ],
@@ -8028,8 +8028,8 @@
       "title": "Nvidia H200 중국 수요 급증, 200만 개 이상 주문",
       "summary": "미국 수출 규제에도 불구하고 중국 기업들이 Nvidia H200 칩 200만 개 이상 주문.",
       "keywords": [
-        "중국",
-        "nvidia"
+        "nvidia",
+        "중국"
       ],
       "section": "반도체",
       "is_pick": false
@@ -8041,8 +8041,8 @@
       "summary": "중국 AI 칩 스타트업 Biren이 홍콩 증시 상장 첫날 82% 급등.",
       "keywords": [
         "ai",
-        "중국",
-        "biren"
+        "biren",
+        "중국"
       ],
       "section": "반도체",
       "is_pick": false
@@ -8054,9 +8054,9 @@
       "summary": "중국 AI 스타트업 Zhipu AI가 홍콩 증시에 $5.6억 규모 IPO 신청.",
       "keywords": [
         "ai",
-        "중국",
+        "ipo",
         "zhipu",
-        "ipo"
+        "중국"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -8078,10 +8078,10 @@
       "title": "머스크 2025년 회고: 세계 최대 부자의 가장 혼란스러운 해",
       "summary": "나치 경례 논란, 19세 스태프 'Big Balls' 옹호, 약물 중독 부인, 검은 눈으로 백악관 기자회견 출석 등 2025년 머스크의 어지러운 행보 총정리. DOGE 통해 정부 개입했으나 실제 성과는 미지수",
       "keywords": [
-        "doge",
         "은",
-        "balls",
-        "big"
+        "big",
+        "doge",
+        "balls"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -8093,8 +8093,8 @@
       "summary": "노벨상 수상자 벤지오, AI가 자기보존 징후를 보이고 있다고 경고. 최첨단 AI에 법적 지위를 부여하는 것은 \"적대적 외계인에게 시민권을 주는 것과 같다\"고 비판",
       "keywords": [
         "ai",
-        "bengio",
         "은",
+        "bengio",
         "yoshua"
       ],
       "section": "TOP Headlines",
@@ -8106,13 +8106,13 @@
       "title": "Meta, AI 에이전트 Manus $20억+ 인수 완료",
       "summary": "8개월 만에 ARR $1억 달성한 Manus를 Meta가 인수. 자체 LLM 없이 Anthropic/Alibaba 모델 활용, 오케스트레이션 레이어에 집중한 전략이 성공. 147조 토큰 처리, 8천만 가상 컴퓨터 생성 실적",
       "keywords": [
-        "anthropic",
-        "arr",
         "llm",
         "manus",
-        "ai",
         "meta",
-        "alibaba"
+        "alibaba",
+        "arr",
+        "ai",
+        "anthropic"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -8135,11 +8135,11 @@
       "title": "OpenAI GPT Image 1.5 출시 - 4배 빠른 속도, 20% 저렴",
       "summary": "OpenAI가 새로운 이미지 생성 모델 GPT Image 1.5 공개. 기존 대비 4배 빠른 속도와 20% 낮은 비용으로 경쟁력 강화",
       "keywords": [
-        "image",
-        "은",
+        "gpt",
         "openai",
+        "image",
         "ai",
-        "gpt"
+        "은"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -8162,10 +8162,10 @@
       "title": "브라우저 확장 프로그램 800만 사용자 AI 대화 수집 발각",
       "summary": "인기 브라우저 확장 프로그램들이 ChatGPT, Claude 등 AI 챗봇과의 대화 내용을 무단 수집한 것으로 드러나. 민감한 업무 정보 유출 우려 제기",
       "keywords": [
-        "ai",
+        "chatgpt",
         "claude",
-        "gpt",
-        "chatgpt"
+        "ai",
+        "gpt"
       ],
       "section": "보안 / 정책",
       "is_pick": false
@@ -8196,9 +8196,9 @@
       "title": "2025년 EV 시장 분기점: 중국 vs Tesla 대결 구도",
       "summary": "2025년 글로벌 EV 시장에서 중국 업체들의 약진과 Tesla의 부진이 대조. BYD를 필두로 한 중국 EV 업체들이 글로벌 시장 점유율 확대",
       "keywords": [
+        "tesla",
         "ev",
         "중국",
-        "tesla",
         "byd"
       ],
       "section": "글로벌 / 비즈니스",
@@ -8211,9 +8211,9 @@
       "summary": "Adam Mosseri, AI 이미지 생성 기술 발전으로 사진의 진위 판별이 불가능해졌다고 인정. 플랫폼 차원의 대응 필요성 언급",
       "keywords": [
         "ai",
+        "adam",
         "instagram",
-        "mosseri",
-        "adam"
+        "mosseri"
       ],
       "section": "글로벌 / 비즈니스",
       "is_pick": false
@@ -8225,9 +8225,9 @@
       "summary": "Roomba 제조사 iRobot이 파산 신청. Amazon의 $15억 인수가 EU 규제로 무산된 지 2년 만. 중국 Picea Robotics가 인수 예정",
       "keywords": [
         "roomba",
+        "picea",
         "amazon",
-        "중국",
-        "picea"
+        "중국"
       ],
       "section": "글로벌 / 비즈니스",
       "is_pick": false
@@ -8238,8 +8238,8 @@
       "title": "인도 WhatsApp 튜터들이 일반인에게 AI 사용법 가르친다",
       "summary": "인도에서 WhatsApp 기반으로 AI 활용법을 가르치는 튜터 생태계 형성. 기술 격차 해소의 새로운 모델로 주목",
       "keywords": [
-        "whatsapp",
-        "ai"
+        "ai",
+        "whatsapp"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -8251,8 +8251,8 @@
       "summary": "핵융합 에너지 스타트업들의 대규모 투자 유치 현황 정리. AI 데이터센터 전력 수요 급증으로 대체 에너지원에 대한 관심 고조",
       "keywords": [
         "ai",
-        "은",
-        "투자"
+        "투자",
+        "은"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -8263,12 +8263,12 @@
       "title": "💡 오늘의 핵심",
       "summary": "Meta의 Manus 인수($20억+)는 AI 에이전트 시장에서 '실행 레이어'가 모델 자체만큼 중요해졌음을 보여주는 신호. 자체 LLM 없이도 오케스트레이션과 실행 안정성으로 ARR $1억을 달성한 Manus의 성공은 엔터프라이즈 AI 전략에 중요한 시사점.",
       "keywords": [
-        "은",
-        "arr",
         "llm",
         "manus",
+        "meta",
+        "arr",
         "ai",
-        "meta"
+        "은"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -8279,11 +8279,11 @@
       "title": "Meta, AI 에이전트 스타트업 Manus 인수",
       "summary": "중국 창업자가 설립한 싱가포르 기반 AI 에이전트 스타트업을 $20억 이상에 인수. Manus는 연구, 코딩, 분석 등 복잡한 멀티스텝 작업을 자율 수행하는 범용 AI 에이전트 개발사로, 출시 8개월 만에 ARR $1억 달성",
       "keywords": [
+        "manus",
+        "meta",
         "중국",
         "arr",
-        "manus",
-        "ai",
-        "meta"
+        "ai"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -8295,8 +8295,8 @@
       "summary": "캐나다 컴퓨터 과학자 Yoshua Bengio, AI가 자기보존 징후를 보이고 있다고 경고. 최첨단 AI에 법적 지위를 부여하는 것은 적대적 외계인에게 시민권을 주는 것과 같다고 비판",
       "keywords": [
         "ai",
-        "bengio",
         "은",
+        "bengio",
         "yoshua"
       ],
       "section": "AI / 기술",
@@ -8308,9 +8308,9 @@
       "title": "OpenAI, $555K 연봉 'AI 위험 대응' 책임자 채용",
       "summary": "ChatGPT 제조사 OpenAI가 'head of preparedness' 직책 공고. 강력해지는 AI가 인간 정신건강, 사이버보안, 생물무기에 미치는 위험 방어 책임",
       "keywords": [
-        "ai",
+        "chatgpt",
         "openai",
-        "chatgpt"
+        "ai"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -8322,13 +8322,13 @@
       "summary": "ChatGPT, Claude, Gemini 등 주요 AI 플랫폼에서 사용자의 전체 대화 내용을 수집해 마케팅 목적으로 판매. VPN, 광고 차단 등 7개 확장 프로그램이 Google/MS 스토어에서 'Featured' 배지 보유 중에도 문제 발각",
       "keywords": [
         "chatgpt",
-        "featured",
         "vpn",
-        "google",
-        "gemini",
-        "ai",
         "claude",
-        "gpt"
+        "gpt",
+        "google",
+        "ai",
+        "featured",
+        "gemini"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -8371,10 +8371,10 @@
       "title": "Nvidia, AI 칩 경쟁사 Groq 기술 라이선스 및 CEO 영입",
       "summary": "Nvidia가 빠른 AI 추론 칩으로 주목받던 Groq의 기술 라이선스 계약 체결 및 CEO 영입 추진",
       "keywords": [
-        "ai",
-        "ceo",
+        "nvidia",
         "groq",
-        "nvidia"
+        "ai",
+        "ceo"
       ],
       "section": "경제 / 비즈니스",
       "is_pick": false
@@ -8385,10 +8385,10 @@
       "title": "iRobot(룸바 제조사) 파산 신청",
       "summary": "로봇 청소기를 대중화한 iRobot이 저가 경쟁사들에 밀려 파산. 중국 Picea Robotics에 인수될 예정. Amazon의 $15억 인수가 EU 규제로 무산된 지 2년 만",
       "keywords": [
-        "중국",
-        "로봇",
         "amazon",
-        "picea"
+        "picea",
+        "로봇",
+        "중국"
       ],
       "section": "경제 / 비즈니스",
       "is_pick": false
@@ -8412,9 +8412,9 @@
       "summary": "Uber와 Lyft가 2026년 런던에서 Baidu의 로보택시 시범 운행 계획 발표",
       "keywords": [
         "baidu",
-        "uber",
-        "lyft",
         "중국",
+        "lyft",
+        "uber",
         "ai"
       ],
       "section": "글로벌 / 정책",
@@ -8468,12 +8468,12 @@
       "title": "엔비디아, Groq 기술 라이선스 $200억 딜… CEO 영입까지",
       "summary": "엔비디아가 AI 추론 칩 스타트업 Groq와 비독점 기술 라이선스 계약을 체결하고, 창업자 겸 CEO 조나단 로스(구글 TPU 개발자)를 비롯한 핵심 인력을 영입. 추론(inference) 시장 지배력 강화 포석으로, 빅테크의 인재·기술 흡수 전략이 가속화되는 양상.",
       "keywords": [
-        "groq",
-        "엔비디아",
         "ceo",
+        "groq",
         "tpu",
         "구글",
-        "ai"
+        "ai",
+        "엔비디아"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -8484,9 +8484,9 @@
       "title": "중국, $210억 규모 '하드테크' 벤처펀드 3개 출범",
       "summary": "중국이 반도체, 양자기술, 바이오의약, 뇌-컴퓨터 인터페이스, 항공우주 등 핵심 하드테크 분야에 투자하는 3개 국가 벤처펀드 공식 출범. 각 펀드 규모 500억 위안(약 $71억) 이상으로, 5억 위안 미만 초기 스타트업에 집중 투자 예정.",
       "keywords": [
+        "투자",
         "중국",
-        "반도체",
-        "투자"
+        "반도체"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -8497,10 +8497,10 @@
       "title": "아마존·MS·구글, 인도에 $675억 AI 투자 공약",
       "summary": "아마존, 마이크로소프트, 구글이 10월 이후 인도에 총 $675억 투자를 공약. 80%는 12월에 발표되었으며, 대부분 AI 데이터센터 구축에 투입될 예정. 실리콘밸리 AI 인프라 경쟁이 인도로 확산 중.",
       "keywords": [
-        "마이크로소프트",
-        "구글",
-        "ai",
         "아마존",
+        "구글",
+        "마이크로소프트",
+        "ai",
         "투자"
       ],
       "section": "TOP Headlines",
@@ -8512,14 +8512,14 @@
       "title": "구글 2025년 AI 성과 총정리: Gemini 3, 로보틱스, 날씨예측",
       "summary": "구글이 2025년 주요 연구 성과 발표. Gemini 2.5(3월) → Gemini 3(11월) → Gemini 3 Flash(12월)로 모델 진화, TPU Ironwood 출시, WeatherNext 2 예보 모델, Gemini Robotics 등 로보틱스 분야 진출 확대.",
       "keywords": [
-        "gemini",
-        "ironwood",
+        "flash",
         "tpu",
         "구글",
+        "ironwood",
         "ai",
-        "flash",
+        "robotics",
         "weathernext",
-        "robotics"
+        "gemini"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -8542,13 +8542,13 @@
       "title": "2026년 AI 시장 분화 전망: 수익화 vs 인프라 투자 기업",
       "summary": "Blue Whale Growth Fund CIO, AI 기업을 '수익화 기업', 'AI 지출 기업', 'AI 인프라 수혜 기업' 3개 그룹으로 분류. 빅테크가 자산 중심 기업으로 변모하면서 밸류에이션 재평가 필요성 제기. AI 벤처 투자는 2025년 3분기까지 $1,765억 기록.",
       "keywords": [
-        "growth",
-        "fund",
         "blue",
-        "cio",
-        "ai",
         "whale",
-        "투자"
+        "fund",
+        "ai",
+        "투자",
+        "cio",
+        "growth"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -8559,11 +8559,11 @@
       "title": "아마존 임원 \"스마트폰 시대 끝, 앰비언트 AI 시대 온다\"",
       "summary": "아마존 디바이스 수석부사장 파노스 파나이, Fortune Brainstorm AI에서 Z세대의 '둠스크롤링' 피로감이 앰비언트 인텔리전스 시대를 열 것이라 전망. 기술이 배경으로 사라지고 자연스러운 상호작용이 대세가 될 것.",
       "keywords": [
-        "fortune",
-        "인텔",
-        "ai",
+        "brainstorm",
         "아마존",
-        "brainstorm"
+        "인텔",
+        "fortune",
+        "ai"
       ],
       "section": "AI/기술",
       "is_pick": false
@@ -8574,13 +8574,13 @@
       "title": "삼성·SK하이닉스, HBM3E 가격 20% 인상 예고",
       "summary": "DigiTimes 보도에 따르면 삼성전자와 SK하이닉스가 2026년 납품분 5세대 HBM3E 칩 가격을 약 20% 인상 예정. Micron, SanDisk 주가 상승. AI 메모리 수요 폭증에 따른 공급 타이트 지속.",
       "keywords": [
-        "micron",
-        "sk하이닉스",
+        "삼성",
         "digitimes",
+        "hbm",
         "sandisk",
         "ai",
-        "삼성",
-        "hbm"
+        "sk하이닉스",
+        "micron"
       ],
       "section": "반도체",
       "is_pick": false
@@ -8592,9 +8592,9 @@
       "summary": "Micron이 Q1 실적에서 매출 $136억(전년比 +56%), EPS $4.60(+175%) 기록. CEO는 메모리 시장이 2026년 이후에도 공급 부족 상태 유지 전망. HBM 시장 2028년까지 연 40% 성장, $1000억 규모 예상.",
       "keywords": [
         "eps",
-        "ceo",
+        "hbm",
         "마이크론",
-        "hbm"
+        "ceo"
       ],
       "section": "반도체",
       "is_pick": false
@@ -8605,13 +8605,13 @@
       "title": "인텔, 2025년 주가 급등에도 파운드리 도전 과제 산적",
       "summary": "인텔이 미 정부 $90억 투자 확보 후 주가 급등. 18A 공정으로 Panther Lake(PC)와 Clearwater Forest(데이터센터) 칩 생산 예정. 애플의 18AP 공정 사용 루머도. 12~18개월 내 14A 대형 고객 확보가 관건.",
       "keywords": [
-        "인텔",
-        "panther",
-        "애플",
-        "clearwater",
-        "lake",
         "forest",
-        "투자"
+        "애플",
+        "panther",
+        "lake",
+        "인텔",
+        "투자",
+        "clearwater"
       ],
       "section": "반도체",
       "is_pick": false
@@ -8622,18 +8622,18 @@
       "title": "CES 2026 프리뷰: 인텔 Panther Lake, 퀄컴 X2 Elite 공개 예정",
       "summary": "인텔이 CES 2026에서 18A 공정 기반 Panther Lake \"Core Ultra Series 3\" CPU 공식 출시 예정. 퀄컴은 18코어 Snapdragon X2 Elite Extreme 공개. Xe3 내장 그래픽 성능 대폭 향상 기대.",
       "keywords": [
-        "core",
-        "series",
-        "ces",
-        "extreme",
         "인텔",
         "은",
-        "panther",
-        "ultra",
         "snapdragon",
-        "elite",
+        "series",
+        "cpu",
+        "extreme",
+        "panther",
         "lake",
-        "cpu"
+        "ultra",
+        "ces",
+        "elite",
+        "core"
       ],
       "section": "반도체",
       "is_pick": false
@@ -8668,8 +8668,8 @@
       "summary": "중국 공업부, 2025년 대기업 산업생산 +5.9% 성장 전망(2024년 5.8%와 유사). 하드테크 펀드 출범과 함께 AI 중소기업 지원 확대, '인볼루션(과잉경쟁)' 억제 공약. 내수 부진이 성장 제한 요인.",
       "keywords": [
         "ai",
-        "중국",
-        "투자"
+        "투자",
+        "중국"
       ],
       "section": "경제/금융",
       "is_pick": false
@@ -8680,11 +8680,11 @@
       "title": "중국, 서방 제재에도 EUV 시제품 개발 성공",
       "summary": "중국 연구진이 선전 연구소에서 EUV 리소그래피 장비 시제품 완성. ASML 출신 엔지니어들이 역설계로 개발. 2019년 네덜란드 EUV 판매 금지 이후에도 부품 해외 조달, DUV 업그레이드 등으로 제재 우회. 아직 실용화까지 수년 필요하나 대만 '실리콘 실드' 위협 가시화.",
       "keywords": [
-        "euv",
-        "asml",
-        "중국",
+        "금",
         "duv",
-        "금"
+        "asml",
+        "euv",
+        "중국"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -8695,9 +8695,9 @@
       "title": "미국 NIST, AI 제조·핵심 인프라 센터에 $9000만 투자",
       "summary": "NIST가 MITRE와 협력해 AI 기반 제조 혁신 및 사이버보안 강화를 위한 2개 센터 설립. 5년간 최대 $7000만 추가 투자 예정. '미국 AI 행동계획' 일환으로 AI 칩 공급망 및 보안 위협 대응 목표.",
       "keywords": [
-        "nist",
+        "ai",
         "투자",
-        "ai"
+        "nist"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -8719,17 +8719,17 @@
       "title": "Nvidia, Groq 기술 라이선스 및 CEO 영입 - $200억 규모",
       "summary": "Nvidia가 AI 추론 전문 스타트업 Groq과 비독점 기술 라이선스 계약 체결. CEO Jonathan Ross(구글 TPU 개발자) 포함 핵심 임원진 영입. Groq의 LPU 기술은 LLM 추론 속도 10배 향상 주장.",
       "keywords": [
-        "groq",
-        "은",
+        "jonathan",
         "ceo",
-        "ross",
-        "lpu",
-        "nvidia",
-        "tpu",
         "llm",
-        "구글",
+        "lpu",
         "ai",
-        "jonathan"
+        "groq",
+        "tpu",
+        "구글",
+        "nvidia",
+        "은",
+        "ross"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -8741,9 +8741,9 @@
       "summary": "아마존·MS·구글이 인도에 총 $675억 AI 인프라 투자 약속. 80%가 12월에 발표됨. 데이터센터 구축 및 AI 역량 강화에 집중.",
       "keywords": [
         "ai",
+        "투자",
         "아마존",
-        "구글",
-        "투자"
+        "구글"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -8755,8 +8755,8 @@
       "summary": "중국이 선전 고보안 연구소에서 EUV 장비 프로토타입 완성. ASML 출신 엔지니어들이 역설계로 개발. 2028년 상용화 목표.",
       "keywords": [
         "중국",
-        "euv",
-        "asml"
+        "asml",
+        "euv"
       ],
       "section": "반도체",
       "is_pick": false
@@ -8769,8 +8769,8 @@
       "keywords": [
         "ai",
         "sk하이닉스",
-        "삼성",
-        "hbm"
+        "hbm",
+        "삼성"
       ],
       "section": "반도체",
       "is_pick": false
@@ -8793,9 +8793,9 @@
       "title": "Databricks, $1,340억 기업가치로 $40억 투자 유치",
       "summary": "데이터 인텔리전스 기업 Databricks가 Series L 투자 유치. AI 제품 매출 $10억 돌파.",
       "keywords": [
+        "인텔",
         "series",
         "databricks",
-        "인텔",
         "ai",
         "투자"
       ],
@@ -8818,9 +8818,9 @@
       "summary": "선전 비밀연구소에서 EUV 리소그래피 시제품 완성. ASML 출신 엔지니어들이 역설계로 개발. 반도체 자립 의지 표출.",
       "keywords": [
         "중국",
+        "asml",
         "euv",
-        "반도체",
-        "asml"
+        "반도체"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -8831,14 +8831,14 @@
       "title": "월스트리트 버블 우려 속 글로벌 투자자들 중국 AI로 전환",
       "summary": "나스닥 31배 vs 항셍테크 24배 밸류에이션 차이. Moore Threads, MetaX 등 중국 AI 칩 기업 IPO 급등. 분산 투자 수요 증가.",
       "keywords": [
-        "ipo",
-        "metax",
         "moore",
-        "중국",
-        "threads",
         "ai",
         "meta",
-        "투자"
+        "metax",
+        "중국",
+        "threads",
+        "투자",
+        "ipo"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -8849,17 +8849,17 @@
       "title": "Nvidia, AI 칩 스타트업 Groq $200억에 인수 - 역대 최대 규모",
       "summary": "Nvidia가 AI 추론 칩 전문 스타트업 Groq을 약 $200억에 인수하며 역대 최대 M&A 단행. Groq은 LPU(Language Processing Unit)로 초저지연 AI 추론에 특화된 기술 보유. 이번 인수로 Nvidia는 학습(Training)뿐 아니라 추론(Inference) 시장까지 지배력 확장.",
       "keywords": [
+        "processing",
+        "inference",
+        "은",
+        "unit",
+        "lpu",
+        "ai",
         "training",
         "groq",
-        "unit",
-        "ces",
-        "은",
-        "lpu",
-        "nvidia",
-        "ai",
         "language",
-        "processing",
-        "inference"
+        "nvidia",
+        "ces"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -8892,13 +8892,13 @@
       "title": "AI 인프라주, 2025년 Nvidia보다 높은 수익률 기록",
       "summary": "AI 데이터센터 관련 기업들이 2025년 Nvidia를 상회하는 주가 상승 기록. Lumentum +375%, Seagate +229%. Big Tech의 $3,800억 데이터센터 투자가 공급망 전체에 수혜.",
       "keywords": [
-        "big",
         "은",
-        "nvidia",
-        "lumentum",
         "ai",
+        "lumentum",
         "seagate",
-        "투자"
+        "nvidia",
+        "투자",
+        "big"
       ],
       "section": "경제 / 시장",
       "is_pick": false
@@ -8910,9 +8910,9 @@
       "summary": "2025년 예상을 뛰어넘은 AI 관련 투자 트렌드 분석. 인프라, 에너지, 반도체 외에도 의료 AI, 로보틱스 관련주가 서프라이즈 기록.",
       "keywords": [
         "ai",
+        "투자",
         "은",
-        "반도체",
-        "투자"
+        "반도체"
       ],
       "section": "경제 / 시장",
       "is_pick": false
@@ -8924,8 +8924,8 @@
       "summary": "Amazon 주가가 2026년 반등하기 위해 필요한 조건 분석. AWS 성장 재가속, 광고 사업 확대, AI 투자 수익화가 핵심 요인.",
       "keywords": [
         "ai",
-        "투자",
         "amazon",
+        "투자",
         "aws"
       ],
       "section": "경제 / 시장",
@@ -8937,9 +8937,9 @@
       "title": "이탈리아, Meta의 WhatsApp AI 챗봇 차단 정책 중지 명령",
       "summary": "이탈리아 경쟁당국이 Meta에 WhatsApp에서 경쟁 AI 챗봇을 차단하는 정책 중지 명령. Meta AI 우선 정책이 경쟁법 위반 가능성 제기.",
       "keywords": [
+        "ai",
         "whatsapp",
-        "meta",
-        "ai"
+        "meta"
       ],
       "section": "규제 / 정책",
       "is_pick": false
@@ -8951,8 +8951,8 @@
       "summary": "미국 연방법원이 텍사스주의 앱스토어 연령 확인법에 대해 금지 명령. Apple은 해당 법 대응 위해 준비했던 앱스토어 변경 계획을 보류.",
       "keywords": [
         "은",
-        "apple",
-        "금"
+        "금",
+        "apple"
       ],
       "section": "규제 / 정책",
       "is_pick": false
@@ -8988,8 +8988,8 @@
       "summary": "미국 AI 주식의 버블 우려가 커지면서 글로벌 투자자들이 중국 AI 기업에 관심 전환. 밸류에이션 격차, 성장 잠재력 등을 고려한 투자 다변화 전략 분석.",
       "keywords": [
         "ai",
-        "중국",
-        "투자"
+        "투자",
+        "중국"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -9001,12 +9001,12 @@
       "summary": "Uber와 Lyft가 중국 Baidu의 Apollo Go 로보택시를 2026년 영국에서 시범 운영 계획 발표. 중국 자율주행 기술의 서방 진출 신호탄.",
       "keywords": [
         "baidu",
-        "uber",
-        "lyft",
         "자율주행",
-        "apollo",
+        "lyft",
+        "uber",
         "중국",
-        "ai"
+        "ai",
+        "apollo"
       ],
       "section": "Claude's Pick",
       "is_pick": true
@@ -9017,13 +9017,13 @@
       "title": "ServiceNow, 사이버보안 스타트업 Armis $77.5억 인수",
       "summary": "ServiceNow가 사이버보안 스타트업 Armis를 $77.5억에 전액 현금 인수하며 역대 최대 규모 M&A 단행. AI 시대의 사이버 위험 대응 강화 목적. Armis는 ARR $3.4억 달성, 전년 대비 50%+ 성장. ServiceNow의 2025년 인수 행보 지속 (Moveworks $28.5억, Veza 인수).",
       "keywords": [
+        "금",
+        "moveworks",
         "armis",
+        "servicenow",
         "veza",
         "arr",
-        "ai",
-        "servicenow",
-        "moveworks",
-        "금"
+        "ai"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -9034,11 +9034,11 @@
       "title": "Alphabet, 데이터센터 에너지 기업 Intersect Power $47.5억 인수",
       "summary": "Alphabet이 데이터센터·에너지 인프라 기업 Intersect Power를 $47.5억(현금) + 부채 인수로 매입. AI 데이터센터 확장을 위한 전력 확보 전략. 수 기가와트 규모의 에너지·데이터센터 프로젝트 포함. 2026년 상반기 거래 완료 예정.",
       "keywords": [
+        "금",
         "alphabet",
-        "ai",
-        "intersect",
         "power",
-        "금"
+        "intersect",
+        "ai"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -9049,10 +9049,10 @@
       "title": "Nvidia, 2월 중순 중국에 H200 칩 출하 목표",
       "summary": "Nvidia가 중국 고객들에게 춘절 전(2월 중순) H200 AI 칩 출하 계획 통보. 초기 물량 4만~8만 개 칩(5,000~10,000 모듈). 트럼프 행정부의 25% 수수료 조건부 수출 허용 결정에 따른 조치. 단, 베이징 정부 승인 필요.",
       "keywords": [
-        "ai",
+        "nvidia",
         "중국",
-        "트럼프",
-        "nvidia"
+        "ai",
+        "트럼프"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -9063,9 +9063,9 @@
       "title": "ChatGPT, 스포티파이 래핑 스타일 연말 리뷰 출시",
       "summary": "OpenAI가 ChatGPT 사용자를 위한 연말 리뷰 기능 출시. 스포티파이 래핑과 유사하게 개인별 사용 패턴, 주요 대화 주제 등 시각화. ChatGPT 사용자 경험 개인화 강화 전략의 일환.",
       "keywords": [
+        "chatgpt",
         "ai",
-        "gpt",
-        "chatgpt"
+        "gpt"
       ],
       "section": "AI / 기술",
       "is_pick": false
@@ -9113,11 +9113,11 @@
       "title": "S&P 500 사상 최고치 경신, AI 관련주 견인",
       "summary": "S&P 500이 6,909.79로 사상 최고 종가 기록. Nvidia, Broadcom 등 AI 관련주가 상승 견인. GDP 호조에도 불구 연준 금리 인하 기대 유지. 4거래일 연속 상승.",
       "keywords": [
-        "nvidia",
         "gdp",
+        "금",
         "broadcom",
         "ai",
-        "금"
+        "nvidia"
       ],
       "section": "경제 / 시장",
       "is_pick": false
@@ -9141,13 +9141,13 @@
       "title": "AI 인프라 주식, 2025년 Nvidia보다 높은 수익률 기록",
       "summary": "AI 데이터센터 관련 기업들이 2025년 Nvidia를 상회하는 주가 상승 기록. Lumentum +375%, Seagate +229%. Big Tech의 $3,800억 데이터센터 투자가 공급망 전체에 수혜. 메모리, 스토리지, 광통신 부품 수요 급증.",
       "keywords": [
-        "big",
         "은",
-        "nvidia",
-        "lumentum",
         "ai",
+        "lumentum",
         "seagate",
-        "투자"
+        "nvidia",
+        "투자",
+        "big"
       ],
       "section": "경제 / 시장",
       "is_pick": false
@@ -9159,11 +9159,11 @@
       "summary": "스웨덴 바이브코딩 스타트업 Lovable이 $3.3억 시리즈 B 투자 유치. 5개월 만에 밸류에이션 3.6배 상승($18억→$66억). CapitalG, Menlo Ventures 리드. 텍스트 프롬프트로 앱 제작하는 \"바이브코딩\" 도구. 8개월 만에 ARR $1억, 4개월 후 $2억 달성.",
       "keywords": [
         "menlo",
+        "ventures",
         "lovable",
         "arr",
-        "ventures",
-        "capitalg",
-        "투자"
+        "투자",
+        "capitalg"
       ],
       "section": "스타트업 / VC",
       "is_pick": false
@@ -9187,12 +9187,12 @@
       "title": "2025년 AI로 인한 해고 5만 건 돌파",
       "summary": "2025년 AI를 해고 사유로 명시한 기업 증가. Amazon 1.4만 명 감원, CrowdStrike 500명(5%), Workday 1,750명(8.5%) 등. MIT 연구: AI가 미국 노동시장 11.7% 대체 가능, $1.2조 임금 절감 효과. 2025년 총 해고 117만 건(2020년 이후 최다).",
       "keywords": [
-        "workday",
-        "crowdstrike",
+        "금",
         "amazon",
-        "ai",
+        "workday",
         "mit",
-        "금"
+        "ai",
+        "crowdstrike"
       ],
       "section": "🎯 Claude's Pick",
       "is_pick": true
@@ -9204,12 +9204,12 @@
       "summary": "ChatGPT 제작사, 내년 1분기까지 자금 조달 목표... 국부 펀드 투자 검토 중",
       "keywords": [
         "chatgpt",
-        "mac",
-        "simular",
         "금",
-        "ai",
-        "windows",
+        "simular",
         "gpt",
+        "mac",
+        "windows",
+        "ai",
         "투자"
       ],
       "section": "Claude's Pick",
@@ -9221,10 +9221,10 @@
       "title": "TikTok, Oracle 주도 미국 합작법인 설립 계약 체결",
       "summary": "TikTok이 Oracle, Silver Lake, MGX가 주도하는 미국 투자자 그룹과 미국 사업부 분사 계약을 체결했습니다. 2026년 1월 22일 거래 완료 예정이며, 새 합작법인이 미국 데이터 보호, 알고리즘 보안, 콘텐츠 모더레이션을 담당합니다.",
       "keywords": [
-        "silver",
-        "lake",
         "tiktok",
         "oracle",
+        "silver",
+        "lake",
         "투자"
       ],
       "section": "TOP Headlines",
@@ -9236,15 +9236,15 @@
       "title": "Yann LeCun, 'World Model' 스타트업 AMI Labs 공식 출범",
       "summary": "Meta 수석 AI 과학자 Yann LeCun이 새 스타트업 AMI Labs를 확인했습니다. €5억 투자 유치로 €30억 가치평가를 목표로 하며, LLM의 한계를 넘는 'World Model' AI 개발에 집중합니다.",
       "keywords": [
-        "lecun",
         "world",
-        "labs",
-        "투자",
+        "model",
+        "lecun",
         "ami",
-        "ai",
         "meta",
         "yann",
-        "model"
+        "labs",
+        "ai",
+        "투자"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -9256,9 +9256,9 @@
       "summary": "AI 코딩 에디터 Cursor가 코드 리뷰 플랫폼 Graphite를 인수했습니다. Graphite의 이전 가치평가 $2.9억을 상회하는 금액으로, AI 코드 작성부터 리뷰까지 엔드투엔드 플랫폼 구축을 목표로 합니다.",
       "keywords": [
         "ai",
-        "cursor",
         "graphite",
-        "금"
+        "금",
+        "cursor"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -9269,17 +9269,17 @@
       "title": "TikTok, 미국 매각 계약 체결 완료",
       "summary": "TikTok CEO Shou Chew가 직원들에게 메모를 통해 Oracle, Silver Lake, MGX 컨소시엄과의 계약 체결을 공식 발표했다. 새로운 합작법인 \"TikTok USDS Joint Venture LLC\"가 2026년 1월 22일 설립될 예정이며, 미국 법인 가치는 약 $140억으로 평가된다.",
       "keywords": [
+        "tiktok",
         "mgx",
+        "llc",
         "ceo",
         "usds",
-        "venture",
-        "shou",
-        "silver",
         "joint",
-        "lake",
-        "tiktok",
+        "venture",
         "oracle",
-        "llc"
+        "silver",
+        "lake",
+        "shou"
       ],
       "section": "TOP 헤드라인",
       "is_pick": false
@@ -9303,9 +9303,9 @@
       "title": "Micron, AI 메모리 수요 폭발로 역대급 실적",
       "summary": "2분기 매출 가이던스 $187억 (예상 대비 +32%), HBM 수요가 폭발적으로 증가하면서 \"완전 매진 상태 이상\"",
       "keywords": [
+        "ai",
         "micron",
-        "hbm",
-        "ai"
+        "hbm"
       ],
       "section": "TOP 헤드라인",
       "is_pick": false
@@ -9330,14 +9330,14 @@
       "title": "Apple, AI 수장 교체 - Siri 2026 출시 압박",
       "summary": "Apple이 AI 총괄 John Giannandrea를 교체하고 Google/Microsoft 16년 경력의 Amar Subramanya를 영입했습니다. Apple Intelligence 부진으로 차세대 Siri는 2026년으로 연기되었습니다.",
       "keywords": [
-        "apple",
-        "google",
         "intel",
-        "siri",
+        "apple",
         "microsoft",
-        "intelligence",
         "john",
+        "intelligence",
+        "google",
         "ai",
+        "siri",
         "amar"
       ],
       "section": "TOP Headlines",
@@ -9349,13 +9349,13 @@
       "title": "MetaX, 상하이 IPO 첫날 700% 급등",
       "summary": "중국 GPU 제조사 MetaX가 상하이 증시 데뷔에서 700% 급등했습니다. 2주 전 Moore Threads도 400% 상승하며 중국의 Nvidia 대안 칩 개발 열기를 보여줍니다.",
       "keywords": [
-        "ipo",
-        "metax",
-        "nvidia",
         "moore",
-        "중국",
         "meta",
-        "gpu"
+        "gpu",
+        "metax",
+        "중국",
+        "nvidia",
+        "ipo"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -9366,13 +9366,13 @@
       "title": "Google Gemini 3 Flash 출시, GPT-5.2와 경쟁",
       "summary": "Google이 Gemini 3 Flash 모델을 출시. 추론 속도 2배 향상, 가격 50% 인하로 OpenAI GPT-5.2와 정면 경쟁. 개발자용 API 즉시 제공.",
       "keywords": [
-        "google",
-        "openai",
-        "gemini",
-        "api",
-        "ai",
         "flash",
-        "gpt"
+        "api",
+        "gpt",
+        "openai",
+        "google",
+        "ai",
+        "gemini"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -9384,10 +9384,10 @@
       "summary": "OpenAI가 GPT-5.2를 공개. 수학·코딩 벤치마크에서 기존 대비 30% 향상. ChatGPT Plus 사용자에게 우선 제공.",
       "keywords": [
         "chatgpt",
-        "openai",
-        "ai",
         "gpt",
-        "plus"
+        "plus",
+        "openai",
+        "ai"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -9398,12 +9398,12 @@
       "title": "Amazon, OpenAI $100억 투자 검토",
       "summary": "Amazon이 OpenAI에 $100억 규모 투자를 검토 중. Anthropic 투자에 이어 AI 경쟁력 확보 목적. Microsoft 독점 관계에 균열 신호.",
       "keywords": [
-        "anthropic",
+        "amazon",
+        "투자",
         "openai",
         "microsoft",
-        "amazon",
         "ai",
-        "투자"
+        "anthropic"
       ],
       "section": "TOP Headlines",
       "is_pick": false
@@ -9414,10 +9414,10 @@
       "title": "Micron, AI 메모리 수요로 역대급 실적",
       "summary": "Micron이 AI 메모리 수요 폭발로 역대급 실적 발표. 주가 168% YTD 상승. CEO \"완판 그 이상, 수요가 공급을 압도\".",
       "keywords": [
-        "micron",
-        "ceo",
         "ytd",
-        "ai"
+        "micron",
+        "ai",
+        "ceo"
       ],
       "section": "반도체",
       "is_pick": false
@@ -9473,5 +9473,5 @@
   ],
   "total": 682,
   "picks": 88,
-  "updated": "2026-02-08T22:22:14.109289"
+  "updated": "2026-02-08T23:20:38.939561"
 }
