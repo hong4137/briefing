@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-11",
+      "day": "수",
+      "title": "ICE 확장에 테크 반발 | 삼성 HBM4·TSMC 37% | Meta 아동 안전 재판",
+      "summary": "ICE 미국 전역 확장에 Salesforce·Google 등 테크 기업 반발 확산. 삼성 HBM4 양산 보도와 TSMC 1월 매출 37% 성장으로 반도체 AI 수요 재확인. Meta 뉴멕시코 아동 안전 재판 빅토바코 모멘트. Alphabet $30B+ 역대급 채권 발행.",
+      "highlights": [
+        "ICE 확장 Salesforce Google 테크 기업 내부 반발 확산",
+        "삼성 HBM4 양산 TSMC 37% 반도체 AI 수요 재확인",
+        "Meta 아동 안전 재판 빅토바코 모멘트 개시"
+      ],
+      "stats": {
+        "articles": 23,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-10",
       "day": "화",
       "title": "ChatGPT 광고 시대 개막 | Databricks $134B 메가 라운드 | 실리콘밸리 인재 대이동",
