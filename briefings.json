@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-12",
+      "day": "목",
+      "title": "Meta AI 안경 3배 판매 | xAI 공동창업자 대거 이탈 | Apptronik $520M 조달",
+      "summary": "EssilorLuxottica Meta AI 스마트안경 판매 3배 급증. xAI 공동창업자 대거 이탈 후 SpaceX 합병 조직개편. Apptronik Google 참여 $520M 조달 휴머노이드 로봇 경쟁. Mistral AI 스웨덴 €12억 데이터센터. 인도 AI Summit 개최 제3의 AI 강국 포지셔닝.",
+      "highlights": [
+        "Meta AI 스마트안경 판매 3배 급증 AI 웨어러블 시대",
+        "xAI 공동창업자 대거 이탈 SpaceX 합병 조직개편",
+        "Apptronik Google 참여 $520M 휴머노이드 로봇 경쟁"
+      ],
+      "stats": {
+        "articles": 23,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-11",
       "day": "수",
       "title": "ICE 확장에 테크 반발 | 삼성 HBM4·TSMC 37% | Meta 아동 안전 재판",
