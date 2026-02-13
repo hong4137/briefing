@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthropic $20B 펀딩, AI 공포가 월가를 덮치다, Siri 또 지연 | Jae's Briefing</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif; background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%); color: #e0e0e0; min-height: 100vh; line-height: 1.8; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .date-badge { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); padding: 8px 20px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; }
+        .title { font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 15px; line-height: 1.4; }
+        .summary { color: #a0a0a0; font-size: 1rem; max-width: 700px; margin: 0 auto; }
+        .section { margin-bottom: 50px; }
+        .section-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 25px; padding-bottom: 12px; border-bottom: 2px solid #667eea; color: #fff; }
+        .article-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 25px; margin-bottom: 20px; transition: all 0.3s ease; }
+        .article-card:hover { background: rgba(255,255,255,0.06); border-color: rgba(102, 126, 234, 0.3); }
+        .article-title { font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
+        .article-title-kr { font-size: 1rem; color: #a0a0a0; margin-bottom: 12px; }
+        .article-summary { color: #b0b0b0; font-size: 0.95rem; line-height: 1.7; margin-bottom: 15px; }
+        .article-meta { display: flex; align-items: center; gap: 15px; font-size: 0.85rem; }
+        .source { color: #667eea; font-weight: 600; }
+        .article-meta a { color: #4a9eff; text-decoration: none; }
+        .article-meta a:hover { text-decoration: underline; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; margin-bottom: 12px; }
+        .badge-hot { background: linear-gradient(135deg, #ff3b3b, #ff8c42); color: #fff; }
+        .badge-breaking { background: #ff3b3b; color: #fff; animation: pulse 2s infinite; }
+        .badge-update { background: #22c55e; color: #fff; }
+        .badge-new { background: #4a9eff; color: #fff; }
+        .badge-pick { background: linear-gradient(135deg, #a855f7, #ec4899); color: #fff; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+        .top-section .article-card { background: rgba(255, 59, 59, 0.05); border-color: rgba(255, 59, 59, 0.2); }
+        .picks-section .article-card { background: rgba(168, 85, 247, 0.05); border-color: rgba(168, 85, 247, 0.2); }
+        .pick-reason { font-size: 0.85rem; color: #a855f7; margin-bottom: 10px; font-style: italic; }
+        .market-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .market-item { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 20px; text-align: center; }
+        .market-label { font-size: 0.85rem; color: #888; margin-bottom: 8px; }
+        .market-value { font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 5px; }
+        .market-change { font-size: 0.85rem; color: #888; }
+        .market-change.positive { color: #22c55e; }
+        .market-change.negative { color: #ff3b3b; }
+        footer { text-align: center; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); color: #666; font-size: 0.9rem; }
+        footer p { margin-bottom: 10px; }
+        footer a { color: #667eea; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) { .title { font-size: 1.4rem; } .article-card { padding: 20px; } .market-grid { grid-template-columns: repeat(2, 1fr); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 2월 13일 금요일</div>
+            <h1 class="title">Anthropic $20B 역대급 펀딩 | AI 공포가 월가를 덮치다 | Siri 또 지연</h1>
+            <p class="summary">Anthropic이 $380B 밸류에이션으로 $20B 펀딩을 확정하며 AI 스타트업 사상 최대 기록을 세웠다. 한편 월가에선 'AI Scare Trade'가 소프트웨어·부동산주를 강타하고, Apple은 Siri AI 업그레이드를 iOS 27까지 연기했다. Instagram CEO Adam Mosseri는 재판에서 "하루 16시간 사용도 중독이 아니다"는 논란의 발언을 내놨다.</p>
+        </header>
+
+        <!-- 🔥 TOP Headlines -->
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Anthropic Closes $20 Billion Funding Round at $380 Billion Valuation</h3>
+                <p class="article-title-kr">Anthropic, $380B 밸류에이션으로 $20B 펀딩 라운드 마감</p>
+                <p class="article-summary">Anthropic이 AI 스타트업 사상 최대 규모인 $20B 펀딩 라운드를 마감했다. $380B 밸류에이션은 불과 1년 전 $61B에서 6배 이상 급등한 수치다. Lightspeed Venture Partners가 리드했으며, Spark Capital, General Catalyst, Salesforce Ventures 등이 참여했다. 이번 펀딩으로 Anthropic은 GPU 인프라 확충과 Claude 모델 개발에 박차를 가할 계획이다. OpenAI의 $40B 라운드에 이어 AI 기업들의 밸류에이션 인플레이션이 가속화되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC, Guardian 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-12/anthropic-closes-20-billion-funding-round" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">AI Scare Trade Hammers Software and Real Estate Stocks</h3>
+                <p class="article-title-kr">'AI 공포 트레이드'가 소프트웨어·부동산주를 강타하다</p>
+                <p class="article-summary">AI가 기존 소프트웨어 비즈니스를 파괴할 수 있다는 우려가 확산되면서 'AI Scare Trade'가 월가를 덮치고 있다. SaaS 기업들의 주가가 급락했고, AI로 인한 상업용 부동산 수요 감소 우려까지 번지며 REIT도 동반 하락했다. ServiceNow, Salesforce, Adobe 등 전통 소프트웨어 대형주들이 타격을 받았다. 투자자들은 AI가 코딩, 고객 서비스, 데이터 분석 등 SaaS 핵심 기능을 대체할 가능성에 주목하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC, Guardian 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-12/ai-scare-trade-software-real-estate" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">xAI Restructures Organization, Plans Lunar Manufacturing Facility</h3>
+                <p class="article-title-kr">xAI 조직 재편 + 달 표면 제조 시설 계획 발표</p>
+                <p class="article-summary">Elon Musk의 xAI가 대규모 조직 재편을 단행했다. 연구팀과 엔지니어링팀을 통합하고, Grok 모델 개발에 더 많은 리소스를 집중시킨다. 동시에 SpaceX와 협력하여 달 표면에 AI 연산 시설을 구축하는 장기 프로젝트도 공개했다. 지구 밖 컴퓨팅 인프라를 통해 에너지 제약 없는 AI 학습 환경을 만들겠다는 구상이다. 업계에서는 현실성에 의문을 제기하면서도 Musk의 과거 행보를 고려하면 무시할 수 없다는 반응이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg, CNBC, Verge 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/02/12/xai-restructures-lunar-manufacturing/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Instagram CEO Adam Mosseri: "16 Hours a Day Is Not Addiction"</h3>
+                <p class="article-title-kr">Instagram CEO "하루 16시간 사용해도 중독 아니다"</p>
+                <p class="article-summary">소셜미디어 중독 관련 재판에서 Instagram CEO Adam Mosseri가 "하루 16시간 사용도 반드시 중독을 의미하지 않는다"고 증언해 논란이 일고 있다. 원고 측은 10대 청소년들의 정신건강 피해를 주장하며 Meta를 상대로 소송을 진행 중이다. Mosseri는 사용 시간만으로 중독 여부를 판단할 수 없다는 입장을 고수했으나, 의료 전문가들과 학부모 단체들은 강하게 반발했다. 이 발언은 소셜미디어 규제 논의에 불을 지필 것으로 예상된다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC, BBC, Guardian 다매체 보도</span>
+                    <a href="https://www.bbc.com/news/technology-mosseri-instagram-addiction-testimony" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">OpenAI Researchers Quit Over Ad-Supported Model Plans</h3>
+                <p class="article-title-kr">OpenAI 연구원들, 광고 모델 계획에 반발하며 퇴사</p>
+                <p class="article-summary">OpenAI가 무료 사용자 대상 광고 기반 수익 모델을 검토하고 있다는 내부 논의가 알려지면서, 일부 핵심 연구원들이 이에 반발하여 퇴사했다. 퇴사자들은 광고 모델이 AI 안전성과 사용자 경험을 훼손할 수 있다고 우려했다. OpenAI는 다양한 수익 모델을 탐색 중이며 확정된 것은 없다고 밝혔으나, 최근 Mission Alignment 팀 해체와 맞물려 기업 방향성에 대한 내부 갈등이 심화되고 있음을 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">Ars Technica, Verge, TechCrunch 다매체 보도</span>
+                    <a href="https://arstechnica.com/ai/2026/02/openai-researchers-quit-ads/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🤖 AI/기술 -->
+        <section class="section">
+            <h2 class="section-title">🤖 AI / 기술</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Apple Delays Siri AI Upgrade to iOS 27</h3>
+                <p class="article-title-kr">Apple, Siri AI 업그레이드를 iOS 27까지 연기</p>
+                <p class="article-summary">Apple이 Siri의 대규모 AI 업그레이드를 당초 예정된 iOS 26에서 iOS 27(2027년 가을)로 연기했다. LLM 기반 대화형 Siri 구현에 기술적 난관이 있는 것으로 알려졌다. Apple Intelligence 출시 이후 Siri 개선에 대한 사용자 기대가 높았으나, 경쟁사 대비 뒤처진 AI 비서 역량 격차가 더 벌어질 전망이다. 내부적으로는 온디바이스 처리와 클라우드 AI 간 균형 문제가 핵심 과제로 꼽힌다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-12/apple-siri-ai-delay-ios-27" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Waymo Targets 1 Million Weekly Rides Milestone</h3>
+                <p class="article-title-kr">Waymo, 주간 100만 건 라이드 달성 목표</p>
+                <p class="article-summary">Alphabet의 자율주행 사업부 Waymo가 주간 라이드 수 100만 건 달성을 목표로 서비스 확장에 나선다. 현재 주간 약 50만 건을 처리하고 있으며, 올해 말까지 서비스 지역을 추가 도시로 확대할 계획이다. Waymo는 최근 안전 기록 개선과 함께 수익성 달성 경로도 구체화하고 있어 자율주행 상용화의 가장 유력한 선두 주자로 평가받고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, TechCrunch</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-12/waymo-one-million-weekly-rides" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Anthropic Pledges $20M for AI Regulation Research</h3>
+                <p class="article-title-kr">Anthropic, AI 규제 연구에 $20M 기부 약속</p>
+                <p class="article-summary">Anthropic이 AI 규제와 정책 연구를 위해 $20M 기부를 약속했다. 학술 기관과 비영리 연구소를 대상으로 AI 안전성 평가 프레임워크, 규제 모델 연구 등을 지원한다. 대규모 펀딩 직후 발표된 이번 기부는 Anthropic의 '책임 있는 AI 개발' 이미지를 강화하려는 전략적 의미도 담고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Wired</span>
+                    <a href="https://techcrunch.com/2026/02/12/anthropic-20m-ai-regulation-research/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">OpenAI Disbands Mission Alignment Team</h3>
+                <p class="article-title-kr">OpenAI, Mission Alignment 팀 해체</p>
+                <p class="article-summary">OpenAI가 AI 안전성 연구를 담당하던 Mission Alignment 팀을 해체했다. 남은 인원은 다른 연구팀에 재배치되었다. 이전 Superalignment 팀 해체에 이어 또 다시 안전성 전담 조직이 사라진 것으로, AI 안전 커뮤니티에서 우려의 목소리가 높아지고 있다. OpenAI 측은 안전 연구를 모든 팀에 통합하는 방식으로 전환한다고 설명했다.</p>
+                <div class="article-meta">
+                    <span class="source">Verge, Ars Technica</span>
+                    <a href="https://www.theverge.com/2026/2/12/openai-mission-alignment-team-disbanded" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">China's Zhipu Launches New Frontier AI Model</h3>
+                <p class="article-title-kr">중국 Zhipu, 새 프론티어 AI 모델 출시</p>
+                <p class="article-summary">중국 AI 스타트업 Zhipu(智谱)가 새로운 대규모 언어 모델을 공개했다. 멀티모달 성능에서 GPT-4 수준을 주장하며, 중국 시장 특화 기능을 강조했다. Tsinghua 대학 출신 연구진이 설립한 Zhipu는 중국 정부의 AI 육성 정책 수혜를 받으며 빠르게 성장하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP, Rest of World</span>
+                    <a href="https://www.scmp.com/tech/big-tech/article/zhipu-new-ai-model" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Modal Labs Reaches $2.5B Valuation for Cloud GPU Platform</h3>
+                <p class="article-title-kr">Modal Labs, 클라우드 GPU 플랫폼으로 $2.5B 밸류 달성</p>
+                <p class="article-summary">AI 인프라 스타트업 Modal Labs가 새 펀딩 라운드에서 $2.5B 밸류에이션을 달성했다. 개발자들이 서버리스 방식으로 GPU 컴퓨팅을 사용할 수 있는 플랫폼을 제공하며, AI 모델 학습과 추론 인프라 수요 급증의 수혜를 받고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/02/12/modal-labs-2-5b-valuation/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 💰 경제/금융 -->
+        <section class="section">
+            <h2 class="section-title">💰 경제 / 금융</h2>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Memory Chip Prices Surge Over 600% Amid AI Demand</h3>
+                <p class="article-title-kr">AI 수요 폭증에 메모리 칩 가격 600% 이상 급등</p>
+                <p class="article-summary">HBM(고대역폭 메모리)을 중심으로 메모리 반도체 가격이 600% 이상 폭등했다. AI 데이터센터 구축 경쟁이 가속화되면서 HBM3e 수요가 공급을 크게 앞지르고 있다. SK하이닉스와 삼성전자가 최대 수혜주로 꼽히며, NVIDIA의 차세대 GPU와 함께 HBM4 선점 경쟁도 치열해지고 있다. 메모리 업황 슈퍼사이클이 예상보다 강하고 길어질 수 있다는 전망이 나온다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-12/memory-chip-prices-surge-600-percent" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">SoftBank Profits $4.2B from OpenAI Investment</h3>
+                <p class="article-title-kr">소프트뱅크, OpenAI 투자 수익 $4.2B 달성</p>
+                <p class="article-summary">SoftBank Vision Fund가 OpenAI 지분에서 $4.2B의 미실현 이익을 기록했다. 손정의 회장의 AI 올인 전략이 결실을 맺고 있는 가운데, SoftBank는 Stargate 프로젝트 참여를 통해 AI 인프라 투자도 확대하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-12/softbank-openai-profit-4-2-billion" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🌏 플랫폼/정책 -->
+        <section class="section">
+            <h2 class="section-title">🌏 플랫폼 / 정책</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Russia Blocks WhatsApp, Affecting 100 Million Users</h3>
+                <p class="article-title-kr">러시아, WhatsApp 차단 — 1억 명 사용자 영향</p>
+                <p class="article-summary">러시아 정부가 Meta 소유 WhatsApp을 전면 차단했다. 약 1억 명의 러시아 사용자가 영향을 받으며, 대체 메신저로 Telegram과 VK Messenger로의 이동이 가속화될 전망이다. 러시아는 이미 Instagram과 Facebook을 차단한 바 있으며, 이번 조치로 Meta의 러시아 내 서비스가 사실상 전면 중단됐다.</p>
+                <div class="article-meta">
+                    <span class="source">BBC, Guardian, Rest of World</span>
+                    <a href="https://www.bbc.com/news/world-europe-russia-whatsapp-block" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">X Accused of Violating Iran Sanctions</h3>
+                <p class="article-title-kr">X(구 트위터), 이란 제재 위반 혐의</p>
+                <p class="article-summary">Elon Musk의 X가 이란 제재 위반 혐의로 미국 재무부 조사를 받고 있다. 이란 정부 관련 계정들이 X 플랫폼에서 활동하며 미국 제재를 우회한 정황이 포착됐다. X 측은 콘텐츠 모더레이션 정책을 준수하고 있다고 반박했으나, 제재 전문가들은 플랫폼 서비스 제공 자체가 제재 위반에 해당할 수 있다고 지적했다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian, BBC</span>
+                    <a href="https://www.theguardian.com/technology/2026/feb/12/x-iran-sanctions-violation" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">ICE Court Closures Paralyze Immigration System, El Paso Airport Shut Down</h3>
+                <p class="article-title-kr">ICE 법원 마비 + El Paso 공항 폐쇄</p>
+                <p class="article-summary">ICE(이민세관집행국)의 법원 폐쇄 조치로 이민 시스템이 마비되고 있다. 동시에 El Paso 국제공항이 보안 사유로 일시 폐쇄되면서 국경 지역 혼란이 가중됐다. 이민 강경책과 관련된 연방 정부 조치가 일상 인프라에까지 영향을 미치면서, 법적·인도적 우려가 동시에 제기되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Guardian, BBC 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/02/12/ice-court-closures-el-paso-airport.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🔧 하드웨어/기타 -->
+        <section class="section">
+            <h2 class="section-title">🔧 하드웨어 / 기타</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">Inertia Fusion Startup Raises $450M for Commercial Reactor</h3>
+                <p class="article-title-kr">핵융합 스타트업 Inertia, 상용 원자로 개발에 $450M 확보</p>
+                <p class="article-summary">핵융합 스타트업 Inertia가 상용 핵융합 원자로 개발을 위해 $450M 투자를 유치했다. AI 데이터센터의 막대한 전력 수요가 핵융합 투자를 촉진하고 있으며, Inertia는 2030년대 초 시제품 가동을 목표로 하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Wired</span>
+                    <a href="https://techcrunch.com/2026/02/12/inertia-fusion-450m-funding/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">EssilorLuxottica Reports 3x Surge in Meta Smart Glasses Sales</h3>
+                <p class="article-title-kr">에실로룩소티카, Meta 스마트 안경 판매 3배 급증 보고</p>
+                <p class="article-summary">Ray-Ban Meta 스마트 안경의 판매가 전년 대비 3배 급증했다고 EssilorLuxottica가 발표했다. AI 기반 카메라·음성 기능이 소비자들에게 호평을 받으며, 스마트 안경이 웨어러블 시장의 새로운 성장 동력으로 부상하고 있다. Meta는 올해 더 저렴한 보급형 모델 출시도 계획하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, Verge</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-12/essilorluxottica-meta-glasses-3x-sales" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Weave Launches $7,999 Autonomous Laundry Robot</h3>
+                <p class="article-title-kr">Weave, $7,999 자율 세탁 로봇 출시</p>
+                <p class="article-summary">가정용 로봇 스타트업 Weave가 빨래 접기, 분류, 수납까지 자동화하는 로봇을 $7,999에 출시했다. AI 비전과 로봇팔을 결합한 이 제품은 가사 자동화 시장을 타겟으로 한다. 높은 가격이 대중 보급의 장벽이지만, 가정용 로봇 시장의 확장 가능성을 보여주는 사례로 주목받고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Verge</span>
+                    <a href="https://techcrunch.com/2026/02/12/weave-laundry-robot-7999/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 💎 Claude's Pick -->
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">T-Mobile Launches Real-Time Call Translation in 50+ Languages</h3>
+                <p class="article-title-kr">T-Mobile, 50개 이상 언어 실시간 통화 번역 서비스 출시</p>
+                <p class="article-summary">T-Mobile이 통화 중 50개 이상 언어를 실시간으로 번역하는 서비스를 출시했다. 통신 인프라에 AI를 직접 통합한 첫 사례 중 하나로, 별도 앱 설치 없이 기본 통화에서 작동한다. 이민자 커뮤니티와 글로벌 비즈니스 사용자를 타겟으로 하며, 통신사가 단순 파이프라인을 넘어 AI 서비스 제공자로 변모하는 신호탄이 될 수 있다.</p>
+                <p class="pick-reason">선정 이유: 통신 인프라 + AI 융합의 실전 배치. 별도 앱 없이 네트워크 레벨에서 작동하는 점이 기존 번역 서비스와 차별화.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/02/12/t-mobile-real-time-call-translation-50-languages/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">CBP Signs Clearview AI Facial Recognition Contract</h3>
+                <p class="article-title-kr">미국 세관국경보호국, Clearview AI 얼굴인식 계약 체결</p>
+                <p class="article-summary">미국 CBP(세관국경보호국)가 논란의 얼굴인식 기업 Clearview AI와 정식 계약을 맺었다. Clearview AI는 SNS에서 수집한 수십억 장의 사진 데이터베이스를 보유하고 있어 프라이버시 논란이 끊이지 않는 기업이다. CBP는 국경 보안 강화 목적이라고 밝혔으나, 시민자유단체들은 대규모 감시 확대를 우려하고 있다.</p>
+                <p class="pick-reason">선정 이유: AI 감시 기술의 정부 도입이 확대되는 초기 신호. 규제 논의의 방향을 가늠할 수 있는 사례.</p>
+                <div class="article-meta">
+                    <span class="source">Ars Technica, Wired</span>
+                    <a href="https://arstechnica.com/tech-policy/2026/02/cbp-clearview-ai-facial-recognition-contract/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">South Korea Launches $1.2B National AI Semiconductor Fund</h3>
+                <p class="article-title-kr">한국 정부, $1.2B 규모 국가 AI 반도체 펀드 출범</p>
+                <p class="article-summary">한국 정부가 AI 반도체 생태계 강화를 위해 1.6조원 규모의 국가 펀드를 출범시켰다. 팹리스 설계, 패키징 기술, AI 가속기 칩 개발에 집중 투자한다. 삼성전자와 SK하이닉스의 메모리 강점을 시스템 반도체로 확장하려는 전략이며, 미국 수출 규제 속 기술 자립도 제고도 목표로 한다.</p>
+                <p class="pick-reason">선정 이유: 한국 반도체 산업의 전략적 전환점. 메모리 강국에서 AI 반도체 종합 강국으로의 도약 시도.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP, Rest of World</span>
+                    <a href="https://www.scmp.com/tech/policy/article/south-korea-ai-semiconductor-fund" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 📊 주요 시장 동향 -->
+        <section class="section">
+            <h2 class="section-title">📊 주요 시장 동향</h2>
+            <div class="market-grid">
+                <div class="market-item">
+                    <div class="market-label">S&P 500</div>
+                    <div class="market-value">6,832.76</div>
+                    <div class="market-change">pt</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">NASDAQ</div>
+                    <div class="market-value">22,597.15</div>
+                    <div class="market-change">pt</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">SOX (반도체)</div>
+                    <div class="market-value">8,291.86</div>
+                    <div class="market-change">pt</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">10Y Treasury</div>
+                    <div class="market-value">4.18%</div>
+                    <div class="market-change">금리</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">USD/KRW</div>
+                    <div class="market-value">1,442.86</div>
+                    <div class="market-change">원</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">Bitcoin</div>
+                    <div class="market-value">$66,362</div>
+                    <div class="market-change">USD</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">WTI Oil</div>
+                    <div class="market-value">$64.53</div>
+                    <div class="market-change">배럴</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">VIX</div>
+                    <div class="market-value">17.65</div>
+                    <div class="market-change">pt</div>
+                </div>
+            </div>
+            <p style="color: #888; font-size: 0.85rem; text-align: center;">AI Scare Trade 영향으로 소프트웨어 섹터 약세. 메모리 반도체 가격 급등에 SOX 강세 지속. VIX 17pt대로 경계 수준.</p>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 23건 | 섹션 6개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
