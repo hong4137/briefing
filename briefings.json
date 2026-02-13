@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-14",
+      "day": "토",
+      "title": "OpenAI 사장 트럼프 정치자금 | AI 공포 매도 확산 | Waymo-DoorDash 동맹",
+      "summary": "OpenAI 사장 Brockman 트럼프에 수백만 달러 기부. AI 공포 매도 물류 부동산 소프트웨어까지 확산. Waymo DoorDash 기사에게 로보택시 문 닫기 의뢰. Nvidia 횡보 AMD 반등 Arista 워크로드 전환. Cohere IPO 채비 ARR $240M.",
+      "highlights": [
+        "OpenAI 사장 Brockman 트럼프 수백만 달러 정치자금 기부",
+        "AI 공포 매도 물류 부동산 소프트웨어 주식 폭락 확산",
+        "Waymo DoorDash 로보택시 문 닫기 차세대 Ojai 배치"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-13",
       "day": "금",
       "title": "Anthropic $20B 역대급 펀딩 | AI 공포가 월가를 덮치다 | Siri 또 지연",
