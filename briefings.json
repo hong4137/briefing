@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-13",
+      "day": "금",
+      "title": "Anthropic $20B 역대급 펀딩 | AI 공포가 월가를 덮치다 | Siri 또 지연",
+      "summary": "Anthropic $380B 밸류에이션 $20B 펀딩 AI 스타트업 사상 최대. AI Scare Trade 소프트웨어·부동산주 강타. Apple Siri AI 업그레이드 iOS 27까지 연기. Instagram CEO 하루 16시간도 중독 아니다 논란.",
+      "highlights": [
+        "Anthropic $380B 밸류 $20B 펀딩 AI 역대 최대",
+        "AI Scare Trade 소프트웨어 부동산주 강타 월가 공포",
+        "Apple Siri AI iOS 27 연기 경쟁사 격차 확대"
+      ],
+      "stats": {
+        "articles": 23,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-12",
       "day": "목",
       "title": "Meta AI 안경 3배 판매 | xAI 공동창업자 대거 이탈 | Apptronik $520M 조달",
