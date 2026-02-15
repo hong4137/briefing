@@ -9,68 +9,88 @@
             --bg-primary: #0a0a0f;
             --bg-secondary: #12121a;
             --bg-card: #1a1a24;
-            --accent-red: #ff3b3b;
-            --accent-green: #22c55e;
-            --accent-gold: #ffd700;
-            --accent-blue: #4a9eff;
-            --accent-purple: #a855f7;
             --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --text-muted: #6b7280;
+            --text-secondary: #a0a0b0;
+            --accent-purple: #a855f7;
+            --accent-gold: #fbbf24;
+            --accent-green: #22c55e;
+            --accent-red: #ef4444;
+            --accent-blue: #3b82f6;
             --border-color: #2a2a3a;
         }
         
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.7;
-            padding: 20px;
+        }
+        
+        .container {
             max-width: 900px;
             margin: 0 auto;
+            padding: 40px 20px;
         }
         
-        header {
+        /* Header */
+        .header {
             text-align: center;
-            padding: 40px 0;
-            border-bottom: 1px solid var(--border-color);
             margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
         }
         
-        .date { color: var(--accent-blue); font-size: 0.9rem; margin-bottom: 10px; }
+        .site-title {
+            font-size: 0.9rem;
+            color: var(--accent-purple);
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+        
         .week-badge {
             display: inline-block;
-            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+            background: var(--accent-purple);
             color: white;
-            padding: 4px 12px;
+            padding: 6px 16px;
             border-radius: 20px;
-            font-size: 0.8rem;
-            margin-bottom: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
         }
         
-        h1 {
+        .week-title {
             font-size: 1.8rem;
+            font-weight: 700;
             margin-bottom: 15px;
-            background: linear-gradient(135deg, var(--accent-gold), #ff6b6b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--text-primary);
         }
         
-        .summary {
+        .week-period {
             color: var(--text-secondary);
-            font-size: 1.1rem;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        
+        .week-summary {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.8;
             max-width: 700px;
             margin: 0 auto;
         }
         
+        /* Section */
         .section {
-            background: var(--bg-secondary);
+            background: var(--bg-card);
             border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 30px;
+            padding: 28px;
+            margin-bottom: 24px;
             border: 1px solid var(--border-color);
         }
         
@@ -78,68 +98,147 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 24px;
         }
         
-        .section-icon { font-size: 1.5rem; }
-        .section-title { font-size: 1.3rem; color: var(--text-primary); }
+        .section-icon {
+            font-size: 1.3rem;
+        }
         
-        .story-cluster {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 25px;
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        
+        /* Market Grid */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
             margin-bottom: 20px;
-            border-left: 4px solid var(--accent-blue);
+        }
+        
+        .market-item {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+        
+        .market-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        
+        .market-value {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        
+        .market-change {
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .market-change.positive { color: var(--accent-green); }
+        .market-change.negative { color: var(--accent-red); }
+        .market-change.neutral { color: var(--text-secondary); }
+        
+        .market-insight {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 4px solid var(--accent-purple);
+        }
+        
+        .insight-title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--accent-purple);
+        }
+        
+        .insight-text {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        .insight-source {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        
+        .insight-source a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        
+        /* Story Cluster */
+        .story-cluster {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-purple);
         }
         
         .story-cluster h3 {
             font-size: 1.15rem;
+            font-weight: 700;
             margin-bottom: 12px;
-            color: var(--text-primary);
         }
         
         .cluster-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
             margin-bottom: 15px;
         }
         
         .badge {
             display: inline-block;
             padding: 4px 10px;
-            border-radius: 6px;
+            border-radius: 12px;
             font-size: 0.75rem;
             font-weight: 600;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
         }
         
-        .badge-count { background: var(--accent-blue); color: white; }
-        .badge-duration { background: #374151; color: var(--text-secondary); }
-        .badge-momentum-up { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
-        .badge-momentum-stable { background: rgba(156, 163, 175, 0.2); color: #9ca3af; }
-        .badge-status-ongoing { background: rgba(234, 179, 8, 0.2); color: #eab308; }
-        .badge-status-resolved { background: rgba(34, 197, 94, 0.2); color: #22c55e; }
-        .badge-status-new { background: rgba(168, 85, 247, 0.2); color: #a855f7; }
-        .badge-status-monitor { background: rgba(59, 130, 246, 0.2); color: #3b82f6; }
+        .badge-count { color: var(--accent-blue); }
+        .badge-duration { color: var(--text-secondary); }
+        .badge-momentum-up { color: var(--accent-green); }
+        .badge-momentum-down { color: var(--accent-red); }
+        .badge-status-ongoing { color: var(--accent-gold); }
+        .badge-status-resolved { color: var(--accent-green); }
+        .badge-status-new { color: var(--accent-purple); }
+        .badge-score { background: var(--accent-gold); color: black; }
+        
+        .story-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
         
         .timeline {
-            background: var(--bg-secondary);
-            border-radius: 8px;
-            padding: 15px;
-            margin-top: 15px;
+            background: var(--bg-card);
+            border-radius: 10px;
+            padding: 16px;
         }
         
         .timeline h4 {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
         }
         
         .timeline ul {
             list-style: none;
-            padding-left: 0;
         }
         
         .timeline li {
@@ -149,55 +248,51 @@
             color: var(--text-secondary);
         }
         
-        .timeline li:last-child { border-bottom: none; }
-        .timeline li strong { color: var(--accent-blue); margin-right: 8px; }
+        .timeline li:last-child {
+            border-bottom: none;
+        }
         
-        .standalone-section {
-            background: var(--bg-secondary);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 30px;
-            border: 1px solid var(--border-color);
+        .timeline li strong {
+            color: var(--accent-purple);
+            margin-right: 8px;
+        }
+        
+        /* Standalone */
+        .standalone-list {
+            display: grid;
+            gap: 12px;
         }
         
         .standalone-item {
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            padding: 16px;
             display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            padding: 15px 0;
-            border-bottom: 1px solid var(--border-color);
+            align-items: center;
+            gap: 12px;
+            border: 1px solid var(--border-color);
         }
-        
-        .standalone-item:last-child { border-bottom: none; }
         
         .standalone-date {
-            background: var(--accent-purple);
-            color: white;
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 0.75rem;
+            color: var(--accent-purple);
             font-weight: 600;
-            white-space: nowrap;
+            font-size: 0.85rem;
+            min-width: 45px;
         }
         
-        .standalone-text {
+        .standalone-title {
+            color: var(--text-primary);
             font-size: 0.95rem;
-            color: var(--text-secondary);
         }
         
-        .picks-section {
-            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(74, 158, 255, 0.1));
-            border: 1px solid var(--accent-purple);
-        }
-        
+        /* Pick Section */
         .pick-item {
-            background: var(--bg-card);
+            background: var(--bg-secondary);
             border-radius: 12px;
             padding: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
+            border-left: 4px solid var(--accent-gold);
         }
-        
-        .pick-item:last-child { margin-bottom: 0; }
         
         .pick-item h4 {
             color: var(--accent-gold);
@@ -207,58 +302,156 @@
         
         .pick-item p {
             color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        /* Events Section */
+        .events-list {
+            display: grid;
+            gap: 12px;
+        }
+        
+        .event-item {
+            display: flex;
+            gap: 16px;
+            padding: 12px;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .event-date {
+            color: var(--accent-purple);
+            font-weight: 700;
+            font-size: 0.9rem;
+            min-width: 60px;
+        }
+        
+        .event-text {
+            color: var(--text-secondary);
             font-size: 0.9rem;
         }
         
-        .stats-section {
+        /* Stats Section */
+        .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 16px;
         }
         
-        .stat-card {
-            background: var(--bg-card);
+        .stat-item {
+            background: var(--bg-secondary);
             border-radius: 12px;
             padding: 20px;
             text-align: center;
+            border: 1px solid var(--border-color);
         }
         
         .stat-value {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 700;
-            color: var(--accent-blue);
+            color: var(--accent-purple);
         }
         
         .stat-label {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-top: 5px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
         }
         
+        /* Footer */
         footer {
             text-align: center;
-            padding: 40px 0;
-            color: var(--text-muted);
+            padding: 40px 20px;
+            color: var(--text-secondary);
             font-size: 0.85rem;
             border-top: 1px solid var(--border-color);
             margin-top: 40px;
         }
         
         footer a {
-            color: var(--accent-blue);
+            color: var(--accent-purple);
             text-decoration: none;
+        }
+        
+        footer p {
+            margin: 8px 0;
+        }
+        
+        @media (max-width: 600px) {
+            .market-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .week-title {
+                font-size: 1.4rem;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <p class="date">2026년 2월 2일 (일)</p>
-        <span class="week-badge">📅 WEEKLY BRIEFING</span>
-        <h1>DeepSeek 충격파로 AI 업계 지각변동</h1>
-        <p class="summary">중국 AI 스타트업 DeepSeek의 R1 모델 공개로 Nvidia 시총 $5,890억 증발. AI 스타트업 투자 경쟁 심화와 빅테크 인프라 확대가 동시 진행된 한 주.</p>
-    </header>
-    
-    <main>
+    <div class="container">
+        <header class="header">
+            <div class="site-title">JAE'S BRIEFING</div>
+            <div class="week-badge">📅 WEEKLY DIGEST</div>
+            <h1 class="week-title">2026년 1월 5주차</h1>
+            <p class="week-period">1월 27일 (월) ~ 2월 1일 (토) | DeepSeek R1 충격으로 Nvidia 시총 $5,890억 증발, AI 스타트업 투자 경쟁 심화와 빅테크 인프라 확대가 동시 진행된 한 주</p>
+        </header>
+        
+        <!-- 주간 시장 동향 -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">📊</span>
+                <h2 class="section-title">주간 시장 동향</h2>
+            </div>
+            
+            <div class="market-grid">
+                <div class="market-item">
+                    <div class="market-label">S&P 500</div>
+                    <div class="market-value">5,994</div>
+                    <div class="market-change negative">-1.0%</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">NASDAQ</div>
+                    <div class="market-value">19,391</div>
+                    <div class="market-change negative">-1.6%</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">SOX (반도체)</div>
+                    <div class="market-value">4,856</div>
+                    <div class="market-change negative">-4.2% 📉</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">10Y 국채</div>
+                    <div class="market-value">4.54%</div>
+                    <div class="market-change positive">+0.08%p</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">VIX</div>
+                    <div class="market-value">16.43</div>
+                    <div class="market-change negative">+8.0%</div>
+                </div>
+                <div class="market-item">
+                    <div class="market-label">달러인덱스</div>
+                    <div class="market-value">108.35</div>
+                    <div class="market-change positive">+0.5%</div>
+                </div>
+            </div>
+            
+            <div class="market-insight">
+                <div class="insight-title">📈 이번 주 시장 해석</div>
+                <div class="insight-text">
+                    DeepSeek R1 충격으로 월요일 Nvidia가 17% 폭락하며 역대 최대 일일 시총 손실($5,890억)을 기록했다. 
+                    이는 AI 칩 수요에 대한 근본적 의문을 제기하며 SOX 지수가 주간 -4.2% 하락했다. 
+                    다만 빅테크 실적 시즌이 시작되며 Meta의 $650억 AI 투자 발표와 Apple의 역대 최고 iPhone 분기 실적이 
+                    시장 심리를 일부 회복시켰다.
+                </div>
+                <div class="insight-source">
+                    출처: <a href="https://www.cnbc.com" target="_blank">CNBC</a>, <a href="https://www.bbc.com/news/technology" target="_blank">BBC Tech</a>
+                </div>
+            </div>
+        </section>
+        
         <!-- TOP 스토리 섹션 -->
         <section class="section">
             <div class="section-header">
@@ -274,9 +467,9 @@
                     <span class="badge badge-duration">📅 2일간</span>
                     <span class="badge badge-momentum-up">📈 관심</span>
                     <span class="badge badge-status-ongoing">⏳ 진행중</span>
-                    <span class="badge" style="background: var(--accent-gold); color: black;">주간 4.0점</span>
+                    <span class="badge badge-score">주간 4.0점</span>
                 </div>
-                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 15px;">
+                <p class="story-desc">
                     중국 AI 스타트업 DeepSeek이 $600만으로 OpenAI 수준 모델 개발을 주장하며 AI 업계에 충격파를 던졌다. 
                     Nvidia 주가는 17% 폭락하며 역대 최대 시총 손실($5,890억)을 기록했고, 대규모 인프라 투자 필요성에 대한 의문이 제기되며 AI 버블 논쟁이 재점화됐다.
                 </p>
@@ -299,9 +492,9 @@
                     <span class="badge badge-duration">📅 4일간</span>
                     <span class="badge badge-momentum-up">📈 관심</span>
                     <span class="badge badge-status-ongoing">⏳ 진행중</span>
-                    <span class="badge" style="background: var(--accent-gold); color: black;">주간 4.0점</span>
+                    <span class="badge badge-score">주간 4.0점</span>
                 </div>
-                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 15px;">
+                <p class="story-desc">
                     DeepSeek 충격에도 불구하고 AI 스타트업 투자 경쟁은 오히려 가속화됐다. 
                     Anthropic은 $200억 밸류에이션으로 투자 협상 중이고, Amazon은 OpenAI에 최대 $500억 투자를 협상 중이다.
                     로봇 AI 스타트업 Physical Intelligence도 $56억 밸류에이션을 달성했다.
@@ -309,8 +502,8 @@
                 <div class="timeline">
                     <h4>📅 스토리 타임라인</h4>
                     <ul>
-                        <li><strong>1/26</strong> Synthesia $40억 밸류에이션 달성 (Nvidia/Alphabet VC 투자)</li>
-                        <li><strong>1/28</strong> Anthropic $200억 밸류에이션 투자 유치 협상 (Microsoft, Nvidia 참여)</li>
+                        <li><strong>1/27</strong> Synthesia $40억 밸류에이션 달성 (Nvidia/Alphabet VC 투자)</li>
+                        <li><strong>1/28</strong> Anthropic $200억 밸류에이션 투자 유치 협상</li>
                         <li><strong>1/30</strong> Amazon, OpenAI에 최대 $500억 투자 협상 중</li>
                         <li><strong>1/31</strong> Physical Intelligence $56억 밸류에이션 - 로봇 AI 급부상</li>
                     </ul>
@@ -322,93 +515,100 @@
                 <h3>3. 빅테크 AI 인프라 투자 확대</h3>
                 <div class="cluster-meta">
                     <span class="badge badge-count">📰 3건</span>
-                    <span class="badge badge-duration">📅 2일간</span>
-                    <span class="badge badge-momentum-stable">📈 관심</span>
-                    <span class="badge badge-status-monitor">📋 모니터링</span>
-                    <span class="badge" style="background: var(--accent-gold); color: black;">주간 3.0점</span>
+                    <span class="badge badge-duration">📅 3일간</span>
+                    <span class="badge badge-momentum-up">📈 관심</span>
+                    <span class="badge badge-status-ongoing">📋 모니터링</span>
+                    <span class="badge badge-score">주간 3.0점</span>
                 </div>
-                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 15px;">
-                    Nvidia가 Apple을 제치고 TSMC 최대 고객으로 등극하며 AI 칩 수요 폭발을 입증했다.
-                    Meta는 2026년 AI 인프라 투자를 $650억으로 확대한다고 발표했고, 메모리칩 부족은 2027년까지 지속될 전망이다.
+                <p class="story-desc">
+                    DeepSeek 충격에도 빅테크의 AI 인프라 투자는 오히려 강화되는 모습이다.
+                    Meta는 Q4 실적 발표에서 AI 투자를 $650억으로 확대한다고 밝혔고, Nvidia는 Apple을 제치고 TSMC의 최대 고객이 됐다.
                 </p>
                 <div class="timeline">
                     <h4>📅 스토리 타임라인</h4>
                     <ul>
-                        <li><strong>1/26</strong> Nvidia, Apple 제치고 TSMC 최대 고객 등극</li>
-                        <li><strong>1/26</strong> 메모리칩 부족 2027년까지 지속 전망 (Synopsys CEO)</li>
+                        <li><strong>1/27</strong> Nvidia, Apple 제치고 TSMC 최대 고객 등극</li>
+                        <li><strong>1/27</strong> 메모리칩 부족 2027년까지 지속 전망</li>
                         <li><strong>1/29</strong> Meta Q4 실적 예상 상회, AI 투자 $650억 확대 발표</li>
                     </ul>
                 </div>
             </article>
             
-            <!-- 클러스터 4: Musk 관련 이슈 -->
-            <article class="story-cluster" style="border-left-color: #a855f7;">
+            <!-- 클러스터 4: Musk 연쇄 이슈 -->
+            <article class="story-cluster" style="border-left-color: #3b82f6;">
                 <h3>4. Musk 관련 연쇄 이슈</h3>
                 <div class="cluster-meta">
                     <span class="badge badge-count">📰 2건</span>
                     <span class="badge badge-duration">📅 2일간</span>
-                    <span class="badge badge-momentum-up">📈 관심</span>
+                    <span class="badge badge-momentum-up">🔥 상승세</span>
                     <span class="badge badge-status-ongoing">⏳ 진행중</span>
-                    <span class="badge" style="background: var(--accent-gold); color: black;">주간 2.0점</span>
+                    <span class="badge badge-score">주간 2.0점</span>
                 </div>
-                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 15px;">
-                    SpaceX-xAI-Tesla 합병 논의가 수면 위로 떠올랐다. IPO 전 $3,500억 평가를 목표로 한 것으로 알려졌다.
-                    이어서 DOJ가 300만 페이지 Epstein 파일을 공개하며 Musk의 섬 방문 계획 및 SpaceX 방문 기록이 확인됐다.
+                <p class="story-desc">
+                    SpaceX-xAI-Tesla 합병 논의 보도와 함께 DOJ의 Musk-Epstein 파일 300만 페이지 공개로 Musk를 둘러싼 이슈가 급부상했다.
                 </p>
                 <div class="timeline">
                     <h4>📅 스토리 타임라인</h4>
                     <ul>
-                        <li><strong>1/30</strong> SpaceX-xAI-Tesla 합병 논의 - IPO 전 $3,500억 평가 목표</li>
-                        <li><strong>1/31</strong> DOJ Musk-Epstein 파일 공개 - 300만 페이지 문서</li>
+                        <li><strong>1/30</strong> SpaceX-xAI-Tesla 합병 논의 보도 (Bloomberg)</li>
+                        <li><strong>1/31</strong> Musk-Epstein 파일 폭로 - DOJ 300만 페이지 공개</li>
                     </ul>
                 </div>
             </article>
             
-            <!-- 클러스터 5: Fed 금리/인사 -->
-            <article class="story-cluster" style="border-left-color: #3b82f6;">
-                <h3>5. Fed 금리 정책 및 인사</h3>
+            <!-- 클러스터 5: Apple/Tesla -->
+            <article class="story-cluster" style="border-left-color: #a855f7;">
+                <h3>5. Apple iPhone 기록 경신 & Tesla 전략 전환</h3>
                 <div class="cluster-meta">
                     <span class="badge badge-count">📰 2건</span>
                     <span class="badge badge-duration">📅 2일간</span>
-                    <span class="badge badge-momentum-stable">📈 관심</span>
-                    <span class="badge badge-status-monitor">📋 모니터링</span>
-                    <span class="badge" style="background: var(--accent-gold); color: black;">주간 2.0점</span>
+                    <span class="badge badge-status-resolved">✅ 해결됨</span>
+                    <span class="badge badge-score">주간 2.0점</span>
                 </div>
-                <p style="color: var(--text-secondary); font-size: 0.95rem;">
-                    Fed가 예상대로 금리를 동결했고, Powell은 인플레이션 경고를 재차 강조했다.
-                    주 후반 Trump 행정부가 Kevin Warsh를 차기 연준 의장으로 지명했다.
+                <p class="story-desc">
+                    Apple이 iPhone 역대 최고 분기 $853억 매출을 기록하며 중국 시장 우려를 불식시켰다. 
+                    Tesla는 Model S/X 단종을 발표하고 Optimus 로봇 생산으로 전략을 전환했다.
                 </p>
+                <div class="timeline">
+                    <h4>📅 스토리 타임라인</h4>
+                    <ul>
+                        <li><strong>1/29</strong> Tesla Model S/X 단종, Optimus 로봇 생산 전환</li>
+                        <li><strong>1/30</strong> Apple iPhone 역대 최고 분기 $853억, 중국 실적 서프라이즈</li>
+                    </ul>
+                </div>
             </article>
         </section>
         
-        <!-- 단독 하이라이트 섹션 -->
-        <section class="standalone-section">
+        <!-- 단독 하이라이트 -->
+        <section class="section">
             <div class="section-header">
                 <span class="section-icon">🎯</span>
-                <h2 class="section-title">단독 하이라이트 (📉 단발 ×0.6)</h2>
+                <h2 class="section-title">단독 하이라이트</h2>
             </div>
-            <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.9rem;">클러스터 없이 단독으로 주목받은 기사 — 후속 보도 없이 1일로 종료</p>
+            <p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 0.9rem;">클러스터 없이 단독으로 주목받은 기사</p>
             
-            <div class="standalone-item">
-                <span class="standalone-date">1/28</span>
-                <span class="standalone-text"><strong>Moltbot 바이럴</strong> — 오픈소스 AI 에이전트가 스크린샷 기반 컴퓨터 자동화로 주목 <em>(0.6점)</em></span>
-            </div>
-            <div class="standalone-item">
-                <span class="standalone-date">1/28</span>
-                <span class="standalone-text"><strong>Amazon Go/Fresh 전면 폐쇄</strong> — 10년 만에 오프라인 리테일 실험 종료 <em>(0.6점)</em></span>
-            </div>
-            <div class="standalone-item">
-                <span class="standalone-date">1/29</span>
-                <span class="standalone-text"><strong>Tesla Model S/X 단종</strong> — Optimus 로봇 생산으로 전환 <em>(0.6점)</em></span>
-            </div>
-            <div class="standalone-item">
-                <span class="standalone-date">1/30</span>
-                <span class="standalone-text"><strong>Apple iPhone 역대 최고 분기</strong> — $853억, 중국 4년 만에 최대 실적 <em>(0.6점)</em></span>
+            <div class="standalone-list">
+                <div class="standalone-item">
+                    <span class="standalone-date">1/28</span>
+                    <span class="standalone-title">Moltbot - 바이럴 확산 중인 로컬 AI 에이전트</span>
+                </div>
+                <div class="standalone-item">
+                    <span class="standalone-date">1/28</span>
+                    <span class="standalone-title">Amazon Go/Fresh 전면 폐쇄 - 10년 오프라인 실험 종료</span>
+                </div>
+                <div class="standalone-item">
+                    <span class="standalone-date">1/29</span>
+                    <span class="standalone-title">Fed 금리 동결 - 예상대로 4.25-4.50% 유지</span>
+                </div>
+                <div class="standalone-item">
+                    <span class="standalone-date">1/31</span>
+                    <span class="standalone-title">Kevin Warsh 연준 의장 지명 - Powell 후임</span>
+                </div>
             </div>
         </section>
         
         <!-- Claude's Pick -->
-        <section class="section picks-section">
+        <section class="section">
             <div class="section-header">
                 <span class="section-icon">💎</span>
                 <h2 class="section-title">Claude's Pick</h2>
@@ -429,9 +629,39 @@
                 <p>
                     "특정 로봇이 아닌 모든 로봇을 위한 단일 뇌"라는 비전으로 $56억 밸류에이션을 달성한 
                     Physical Intelligence는 로봇 산업의 Android가 될 가능성을 보여준다. 
-                    Stripe 출신 창업자의 실행력과 DeepMind/Stanford 연구진의 기술력 조합이 주목할 만하다.
                     AI가 소프트웨어를 넘어 물리적 세계로 확장하는 트렌드의 선봉에 서 있다.
                 </p>
+            </div>
+        </section>
+        
+        <!-- 다음 주 주요 일정 -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">📅</span>
+                <h2 class="section-title">다음 주 주요 일정</h2>
+            </div>
+            
+            <div class="events-list">
+                <div class="event-item">
+                    <div class="event-date">2/3</div>
+                    <div class="event-text">Alphabet (Google) Q4 실적 발표</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">2/4</div>
+                    <div class="event-text">AMD Q4 실적 발표</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">2/5</div>
+                    <div class="event-text">Qualcomm, Arm Holdings 실적 발표</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">2/6</div>
+                    <div class="event-text">Amazon Q4 실적 발표</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">2/7</div>
+                    <div class="event-text">미국 1월 고용지표 발표 (Non-Farm Payrolls)</div>
+                </div>
             </div>
         </section>
         
@@ -442,39 +672,39 @@
                 <h2 class="section-title">주간 통계</h2>
             </div>
             
-            <div class="stats-section">
-                <div class="stat-card">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">6</div>
+                    <div class="stat-label">일간 브리핑</div>
+                </div>
+                <div class="stat-item">
                     <div class="stat-value">18</div>
                     <div class="stat-label">총 헤드라인</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-value">9</div>
-                    <div class="stat-label">클러스터</div>
-                </div>
-                <div class="stat-card">
+                <div class="stat-item">
                     <div class="stat-value">5</div>
-                    <div class="stat-label">📈 관심</div>
+                    <div class="stat-label">주요 클러스터</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-value">4</div>
-                    <div class="stat-label">📉 단발</div>
+                <div class="stat-item">
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">🔥 상승세</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-value">0</div>
-                    <div class="stat-label">🔥 지속</div>
+                <div class="stat-item">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">⏳ 진행중</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-value">17.8</div>
-                    <div class="stat-label">총 주간 점수</div>
+                <div class="stat-item">
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">✅ 해결됨</div>
                 </div>
             </div>
         </section>
-    </main>
-    
-    <footer>
-        <p>Jae's Briefing | Weekly Edition v1.4</p>
-        <p>2026년 1월 26일 (일) ~ 2월 1일 (토) | 6일간 데이터 분석</p>
-        <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
-    </footer>
+        
+        <footer>
+            <p>Jae's Briefing | Weekly Edition v1.4</p>
+            <p>2026년 1월 27일 (월) ~ 2월 1일 (토) | 6일간 데이터 분석</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
 </body>
 </html>
