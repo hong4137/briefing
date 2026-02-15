@@ -883,6 +883,16 @@
       "stats": {
         "clusters": 13
       }
+    },
+    {
+      "date": "weekly-2026-02-15",
+      "week": "2026-W07",
+      "title": "AI 공포 매도 확산과 Anthropic $20B 역대급 펀딩",
+      "summary": "AI Scare Trade가 소프트웨어·부동산·물류주로 확산되며 VIX 20 돌파. Anthropic이 $380B 밸류로 $20B 펀딩 마감, 빅테크는 AI 캐펙스 $700B 투자 전쟁.",
+      "period": "2026-02-09 ~ 2026-02-14",
+      "stats": {
+        "clusters": 16
+      }
     }
   ],
   "specials": [
