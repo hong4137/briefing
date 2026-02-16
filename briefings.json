@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-16",
+      "day": "월",
+      "title": "인도 AI 서밋 테크 CEO 총출동 | Seedance 2.0 저작권 전쟁 | 메모리 칩 위기 확산",
+      "summary": "Nvidia 황 CEO부터 OpenAI 알트만까지 글로벌 AI 리더들이 뉴델리에 집결. ByteDance Seedance 2.0이 할리우드 저작권 전쟁 촉발. AI 수요 메모리 칩 위기가 게임 콘솔 가격까지 위협. Anthropic 펜타곤 Claude 사용 갈등 관계 단절 위기.",
+      "highlights": [
+        "인도 AI 서밋 Nvidia Google OpenAI 등 테크 CEO 총출동",
+        "Seedance 2.0 할리우드 저작권 전쟁 ByteDance 세이프가드 강화",
+        "메모리 칩 위기 PS Switch 2 가격 영향 AI DRAM 수요 폭증"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-14",
       "day": "토",
       "title": "OpenAI 사장 트럼프 정치자금 | AI 공포 매도 확산 | Waymo-DoorDash 동맹",
