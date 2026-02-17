@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-17",
+      "day": "화",
+      "title": "X 글로벌 장애 세 번째 | Seedance 저작권 전쟁 | 인도 AI 서밋 CEO 총출동",
+      "summary": "X(Twitter) 2026년 세 번째 대규모 글로벌 장애로 4만 명 접속 불가. ByteDance Seedance 2.0 Disney 법적 위협에 안전장치 약속. 인도 AI 서밋에 Huang Pichai 등 글로벌 CEO 총출동 ChatGPT 인도 주간 1억 사용자.",
+      "highlights": [
+        "X 트위터 2026 세 번째 대규모 글로벌 장애 4만 명 접속 불가",
+        "ByteDance Seedance 2.0 Disney 할리우드 저작권 전쟁 안전장치",
+        "인도 AI 서밋 Huang Pichai Altman ChatGPT 1억 사용자"
+      ],
+      "stats": {
+        "articles": 15,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-16",
       "day": "월",
       "title": "인도 AI 서밋 테크 CEO 총출동 | Seedance 2.0 저작권 전쟁 | 메모리 칩 위기 확산",
