@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-18",
+      "day": "수",
+      "title": "AI 메모리 대란 게임기까지 덮쳤다 | 인도 $200B AI 서밋 | Apple AI 웨어러블 3종",
+      "summary": "AI 수요 폭증 DRAM 가격 급등 Switch 2 PlayStation 출시 위협. 인도 AI 서밋 $200B 투자 유치 Adani $100B 데이터센터. Apple AI 안경 펜던트 카메라 AirPods 개발. Anthropic Claude Sonnet 4.6 정식 출시.",
+      "highlights": [
+        "AI 메모리 칩 대란 DRAM 급등 Switch 2 PS 출시 위협 Steam Deck 품절",
+        "인도 AI 서밋 $200B 투자 유치 Adani $100B 데이터센터 AMD Tata",
+        "Apple AI 웨어러블 3종 안경 펜던트 카메라 AirPods 3월 4일 이벤트"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 6,
+        "picks": 1
+      }
+    },
+    {
       "date": "2026-02-17",
       "day": "화",
       "title": "X 글로벌 장애 세 번째 | Seedance 저작권 전쟁 | 인도 AI 서밋 CEO 총출동",
