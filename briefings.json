@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-19",
+      "day": "목",
+      "title": "Zuckerberg 소셜미디어 재판 증언 | eBay Depop $1.2B 인수 | Meta-Nvidia 수백만 칩 딜",
+      "summary": "Zuckerberg LA 법정 소셜미디어 중독 재판 증언. eBay Depop $1.2B 인수 Etsy 14% 급등. Meta Nvidia 수백만 프로세서 배치 사우디 Humain xAI $3B 투자. World Labs $1B 펀딩 Autodesk $200M 전략투자. Figma 15% 급등 AI 수익화 가속.",
+      "highlights": [
+        "Zuckerberg LA 소셜미디어 중독 재판 증언 Instagram 청소년 보호",
+        "eBay Depop $1.2B 인수 Etsy 매각 14% 급등",
+        "Meta Nvidia 수백만 프로세서 사우디 Humain xAI $3B"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-18",
       "day": "수",
       "title": "AI 메모리 대란 게임기까지 덮쳤다 | 인도 $200B AI 서밋 | Apple AI 웨어러블 3종",
