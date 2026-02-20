@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-20",
+      "day": "금",
+      "title": "OpenAI $100B 메가라운드 임박 | 중국 휴머노이드 쿵푸 혁명 | NY 로보택시 규제 후퇴",
+      "summary": "OpenAI $100B+ 펀딩 Nvidia $30B 직접 투자 확정 임박. 중국 휴머노이드 춘절 갈라 쿵푸 1년만에 비약적 발전. NY주 로보택시 확장 계획 철회 Waymo 타격. Gemini 3.1 Pro 추론 2배. 인도 AI 서밋 AI 주권 논의.",
+      "highlights": [
+        "OpenAI $100B+ 펀딩 Nvidia $30B 투자 $850B 밸류에이션",
+        "중국 휴머노이드 춘절 갈라 쿵푸 백플립 1년만에 비약적 진화",
+        "NY 로보택시 규제 후퇴 Hochul 철회 Waymo 확장 차질"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-19",
       "day": "목",
       "title": "Zuckerberg 소셜미디어 재판 증언 | eBay Depop $1.2B 인수 | Meta-Nvidia 수백만 칩 딜",
