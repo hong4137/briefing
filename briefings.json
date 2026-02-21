@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-21",
+      "day": "토",
+      "title": "SCOTUS 트럼프 관세 위헌 판결 | Phil Spencer Xbox 은퇴 | AWS AI 에이전트 장애",
+      "summary": "대법원 6대3 트럼프 IEEPA 관세 위헌 판결 즉각 10% 글로벌 관세 재부과. Xbox 38년 거장 Phil Spencer 은퇴 AI 임원 Asha Sharma 후임. Altman vs Amodei 인도 서밋 손잡기 거부 Reliance $110B 투자. Meta VR 포기 모바일 전환. AWS AI 코딩 에이전트 Kiro 13시간 장애.",
+      "highlights": [
+        "SCOTUS 트럼프 관세 위헌 6대3 판결 $175B 환급 10% 재부과",
+        "Phil Spencer Xbox 38년 은퇴 AI 임원 Asha Sharma 후임",
+        "AWS AI 코딩 에이전트 Kiro 자율 삭제 13시간 장애"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-20",
       "day": "금",
       "title": "OpenAI $100B 메가라운드 임박 | 중국 휴머노이드 쿵푸 혁명 | NY 로보택시 규제 후퇴",
