@@ -989,6 +989,16 @@
       "stats": {
         "clusters": 16
       }
+    },
+    {
+      "date": "weekly-2026-02-22",
+      "week": "2026-W08",
+      "title": "SCOTUS 관세 위헌 판결과 인도 AI 서밋 $200B 투자",
+      "summary": "대법원 6대3 IEEPA 관세 위헌 판결로 $175B 환급. 인도 AI 서밋에 글로벌 CEO 총출동 $200B 투자 유치, AI 메모리 대란으로 게임 콘솔까지 타격.",
+      "period": "2026-02-16 ~ 2026-02-21",
+      "stats": {
+        "clusters": 13
+      }
     }
   ],
   "specials": [
