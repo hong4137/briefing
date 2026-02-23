@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-23",
+      "day": "월",
+      "title": "SCOTUS 관세 위헌에도 트럼프 15% 강행 | Tech Corps AI 수출 | Altman 물 우려는 가짜",
+      "summary": "대법원 6대3 관세 위헌 판결에도 트럼프 즉각 15% 글로벌 관세 행정명령 재부과. Tech Corps 프로그램으로 중국 AI 수출 대응. Sam Altman 인도 서밋에서 AI 자원 사용 비판 정면 반박. Netflix Susan Rice 해고 위협 DOJ $72B 딜 조사. TSA PreCheck 중단.",
+      "highlights": [
+        "SCOTUS 관세 위헌에도 트럼프 15% 글로벌 관세 즉각 재부과 비트코인 $65K 급락",
+        "트럼프 Tech Corps 중국 AI 수출 대응 Peace Corps 모델 개도국 AI 보급",
+        "Sam Altman 물 우려 가짜 인간 훈련에도 에너지 AI 자원 사용 방어"
+      ],
+      "stats": {
+        "articles": 24,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-21",
       "day": "토",
       "title": "SCOTUS 트럼프 관세 위헌 판결 | Phil Spencer Xbox 은퇴 | AWS AI 에이전트 장애",
