@@ -1,6 +1,38 @@
 {
   "briefings": [
     {
+      "date": "2026-02-25",
+      "day": "수",
+      "title": "Anthropic 펜타곤 데드라인 | Meta-AMD $60B 빅딜 | AI 공포 월가 강타",
+      "summary": "Anthropic 금요일 데드라인 펜타곤 AI 군사 가드레일 고수. Meta AMD $100B 규모 칩 딜 Nvidia 독점 균열. Citrini AI 공포 보고서 월가 소프트웨어 결제주 대규모 매도. Stripe $159B 밸류 74% 급등 PayPal 인수 관심. Waymo 10개 도시 확장. Samsung Unpacked S26 공개.",
+      "highlights": [
+        "Anthropic 펜타곤 금요일 데드라인 AI 군사 가드레일 $380B 계약 위기",
+        "Meta AMD $100B 칩 딜 6GW 데이터센터 Nvidia 독점 균열",
+        "Citrini AI 공포 보고서 실업률 10% 예측 월가 소프트웨어주 매도"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2026-02-25",
+      "day": "수",
+      "title": "Anthropic 펜타곤 데드라인 | Meta-AMD $60B 빅딜 | AI 공포 월가 강타",
+      "summary": "Anthropic 금요일 데드라인 펜타곤 AI 군사 가드레일 고수. Meta AMD $100B 규모 칩 딜 Nvidia 독점 균열. Citrini AI 공포 보고서 월가 소프트웨어 결제주 대규모 매도. Stripe $159B 밸류 74% 급등 PayPal 인수 관심. Waymo 10개 도시 확장. Samsung Unpacked S26 공개.",
+      "highlights": [
+        "Anthropic 펜타곤 금요일 데드라인 AI 군사 가드레일 $380B 계약 위기",
+        "Meta AMD $100B 칩 딜 6GW 데이터센터 Nvidia 독점 균열",
+        "Citrini AI 공포 보고서 실업률 10% 예측 월가 소프트웨어주 매도"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-24",
       "day": "화",
       "title": "Anthropic 국방부 충돌·DeepSeek 증류 폭로 | IBM COBOL 충격 13% 급락 | IQM 양자 $1.8B 상장",
