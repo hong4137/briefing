@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-26",
+      "day": "목",
+      "title": "Discord 연령인증 철회 | Samsung S26 공개 | Anthropic 펜타곤 대치 격화",
+      "summary": "Discord 얼굴인증 글로벌 확대 계획 사용자 반발로 철회. Samsung Galaxy S26 Ultra Privacy Screen 공개. Anthropic 중국 AI 기업 대규모 데이터 증류 폭로 및 펜타곤 군사 가드레일 데드라인 대치 지속. Nvidia Vera Rubin 10배 성능. Wayve $1.2B 시리즈 C.",
+      "highlights": [
+        "Discord 사용자 반발 얼굴인증 글로벌 확대 철회 프라이버시 논란",
+        "Samsung S26 Ultra Privacy Screen Gemini AI 통합 관세 속 가격 동결",
+        "Anthropic 중국 AI 증류 폭로 펜타곤 군사 가드레일 데드라인 대치"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-25",
       "day": "수",
       "title": "Anthropic 펜타곤 데드라인 | Meta-AMD $60B 빅딜 | AI 공포 월가 강타",
