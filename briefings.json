@@ -1,6 +1,38 @@
 {
   "briefings": [
     {
+      "date": "2026-02-27",
+      "day": "금",
+      "title": "Anthropic 펜타곤 최후통첩 거부 | SaaSpocalypse 패닉 확산 | Block 절반 감원",
+      "summary": "Anthropic CEO Amodei 펜타곤 최후통첩 공개 거부 치명적 자율무기 가드레일 고수. AI 에이전트 SaaS 산업 대체 공포 SaaSpocalypse 패닉 확산. Nvidia 역대 최고 실적에도 5.5% 하락. Jack Dorsey Block 4000명 절반 해고 AI Goose 활용 주가 20% 급등. Netflix WBD $83B 인수 포기 Paramount 우월 제안. IDC 스마트폰 12.9% 급락 메모리 위기. eBay C3 AI 대규모 감원 물결.",
+      "highlights": [
+        "Anthropic CEO 펜타곤 최후통첩 거부 치명적 자율무기 가드레일 고수",
+        "SaaSpocalypse AI 에이전트 SaaS 산업 대체 공포 패닉 확산 주가 급락",
+        "Jack Dorsey Block 4000명 절반 해고 AI Goose 활용 주가 20% 급등"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "day": "금",
+      "title": "Anthropic 펜타곤 최후통첩 거부 | SaaSpocalypse 패닉 확산 | Block 절반 감원",
+      "summary": "Anthropic CEO Amodei 펜타곤 최후통첩 공개 거부 치명적 자율무기 가드레일 고수. AI 에이전트 SaaS 대체 공포 SaaSpocalypse 확산 Salesforce 주가 급락. Nvidia 역대 최고 실적에도 5.5% 하락 소프트웨어 위협론 반박. Jack Dorsey Block 4000명 절반 감원 AI Goose 활용 주가 20% 급등. Netflix WBD $83B 인수 포기 Paramount 미디어 재편. 스마트폰 출하량 13% 급락 AI 데이터센터 메모리 위기.",
+      "highlights": [
+        "Anthropic CEO 펜타곤 최후통첩 공개 거부 치명적 자율무기 가드레일 고수",
+        "SaaSpocalypse AI 에이전트 SaaS 대체 공포 Salesforce 주가 급락 소프트웨어 패닉",
+        "Block Jack Dorsey 4000명 절반 감원 AI Goose 주가 20% 급등"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-26",
       "day": "목",
       "title": "Discord 연령인증 철회 | Samsung S26 공개 | Anthropic 펜타곤 대치 격화",
