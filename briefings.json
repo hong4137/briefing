@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-02-28",
+      "day": "토",
+      "title": "트럼프 Anthropic 사용 금지 | WBD-Paramount $110B 합병 | OpenAI $110B 펀딩 마감",
+      "summary": "트럼프 연방기관 Anthropic 제품 사용 금지 명령 펜타곤 AI 갈등 전면전. WBD Paramount $110B 합병 합의 Netflix 철수 할리우드 재편. OpenAI Amazon 참여 $110B 역대 최대 펀딩 마감. Block 전체 인력 절반 해고 AI Goose 전환 주가 20% 급등. 버거킹 AI 직원 감시 도입 논란. 스마트폰 메모리 위기 역대 최대 하락 전망.",
+      "highlights": [
+        "트럼프 Anthropic 연방기관 사용 금지 명령 펜타곤 AI 군사 갈등 전면전",
+        "WBD Paramount $110B 합병 합의 Netflix 인수전 철수 할리우드 재편",
+        "OpenAI Amazon $110B 역대 최대 민간 펀딩 마감"
+      ],
+      "stats": {
+        "articles": 22,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-27",
       "day": "금",
       "title": "Anthropic 펜타곤 최후통첩 거부 | SaaSpocalypse 패닉 확산 | Block 절반 감원",
