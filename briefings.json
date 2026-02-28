@@ -1029,7 +1029,58 @@
       }
     }
   ],
-  "weekly": [],
+  "weekly": [
+    {
+      "date": "weekly-2026-01-26",
+      "week": "2026-W04",
+      "title": "TikTok 미국 합작법인 설립 | Intel 제조 위기 | 중국 H200 허가",
+      "summary": "TikTok 미국 합작법인 설립으로 6년 금지 논란 일단락, Intel 제조 위기로 주가 17% 폭락, 중국 Nvidia H200 주문 허가로 수출 규제 완화 신호",
+      "period": "2026-01-20 ~ 2026-01-25",
+      "stats": {
+        "clusters": 4
+      }
+    },
+    {
+      "date": "weekly-2026-02-02",
+      "week": "2026-W05",
+      "title": "DeepSeek 충격파로 AI 업계 지각변동",
+      "summary": "중국 AI 스타트업 DeepSeek의 R1 모델 공개로 Nvidia 시총 $5,890억 증발.",
+      "period": "2026-01-26 ~ 2026-02-01",
+      "stats": {
+        "clusters": 9
+      }
+    },
+    {
+      "date": "weekly-2026-02-08",
+      "week": "2026-W06",
+      "title": "빅테크 AI $650B 투자 경쟁과 VIX 공포 확산",
+      "summary": "빅테크가 사상 최대 AI 인프라 투자를 선언한 가운데, SpaceX-xAI $1.25조 합병, 비트코인 $70K 붕괴, AI 자동화 공포로 소프트웨어 주식 $285B 증발.",
+      "period": "2026-02-02 ~ 2026-02-07",
+      "stats": {
+        "clusters": 13
+      }
+    },
+    {
+      "date": "weekly-2026-02-15",
+      "week": "2026-W07",
+      "title": "AI 공포 매도 확산과 Anthropic $20B 역대급 펀딩",
+      "summary": "AI Scare Trade가 소프트웨어·부동산·물류주로 확산되며 VIX 20 돌파. Anthropic이 $380B 밸류로 $20B 펀딩 마감, 빅테크는 AI 캐펙스 $700B 투자 전쟁.",
+      "period": "2026-02-09 ~ 2026-02-14",
+      "stats": {
+        "clusters": 16
+      }
+    },
+    {
+      "date": "weekly-2026-02-22",
+      "week": "2026-W08",
+      "title": "SCOTUS 관세 위헌 판결과 인도 AI 서밋 $200B 투자",
+      "summary": "대법원 6대3 IEEPA 관세 위헌 판결로 $175B 환급. 인도 AI 서밋에 글로벌 CEO 총출동 $200B 투자 유치, AI 메모리 대란으로 게임 콘솔까지 타격.",
+      "period": "2026-02-16 ~ 2026-02-21",
+      "stats": {
+        "clusters": 13
+      }
+    }
+  ],
   "specials": [
     {
       "date": "ces-2026-special",
