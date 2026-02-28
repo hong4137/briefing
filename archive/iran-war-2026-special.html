@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚨 미국-이스라엘 이란 전면 공습, 이란 중동 전역 미사일 보복 | Jae's Briefing 긴급 특별판</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+        /* 긴급 배너 */
+        .emergency-banner {
+            background: linear-gradient(135deg, #ff0000, #cc0000);
+            color: #fff;
+            text-align: center;
+            padding: 12px 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            animation: emergencyPulse 2s infinite;
+        }
+        @keyframes emergencyPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.85; }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,0,0,0.3);
+        }
+        .special-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff0000, #ff4444);
+            padding: 8px 24px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .date-sub {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .title {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .summary { color: #a0a0a0; font-size: 1rem; max-width: 750px; margin: 0 auto; }
+        .section { margin-bottom: 50px; }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #ff3b3b;
+            color: #fff;
+        }
+        .article-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .article-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(255, 59, 59, 0.3);
+        }
+        .article-title { font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
+        .article-title-kr { font-size: 1rem; color: #a0a0a0; margin-bottom: 12px; }
+        .article-summary { color: #b0b0b0; font-size: 0.95rem; line-height: 1.7; margin-bottom: 15px; }
+        .article-meta { display: flex; align-items: center; gap: 15px; font-size: 0.85rem; flex-wrap: wrap; }
+        .source { color: #ff6b6b; font-weight: 600; }
+        .article-meta a { color: #4a9eff; text-decoration: none; }
+        .article-meta a:hover { text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .badge-breaking {
+            background: #ff0000;
+            color: #fff;
+            animation: pulse 1.5s infinite;
+        }
+        .badge-urgent {
+            background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            color: #fff;
+        }
+        .badge-update {
+            background: #ff6600;
+            color: #fff;
+        }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+
+        .emergency-card {
+            background: rgba(255, 0, 0, 0.08);
+            border: 1px solid rgba(255, 0, 0, 0.3);
+        }
+
+        /* 타임라인 */
+        .timeline { margin-bottom: 40px; }
+        .timeline-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 2px solid rgba(255,59,59,0.4);
+        }
+        .timeline-time {
+            min-width: 90px;
+            color: #ff6b6b;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .timeline-content {
+            color: #c0c0c0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .timeline-content strong { color: #fff; }
+
+        /* 지도/요약 박스 */
+        .info-box {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .info-box h3 {
+            color: #fff;
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .info-item {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .info-label { font-size: 0.8rem; color: #888; margin-bottom: 5px; }
+        .info-value { font-size: 1rem; font-weight: 600; color: #fff; }
+        .info-value.danger { color: #ff3b3b; }
+        .info-value.warning { color: #ff8c42; }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        footer p { margin-bottom: 10px; }
+        footer a { color: #667eea; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        .disclaimer {
+            background: rgba(255,165,0,0.1);
+            border: 1px solid rgba(255,165,0,0.3);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #ccc;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .title { font-size: 1.4rem; }
+            .article-card { padding: 20px; }
+            .timeline-item { flex-direction: column; gap: 5px; }
+            .info-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="emergency-banner">
+        🚨 BREAKING — 긴급 특별판 — 상황 진행 중 🚨
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="special-badge">🚨 EMERGENCY SPECIAL EDITION</div>
+            <p class="date-sub">2026년 2월 28일 토요일 · 실시간 업데이트</p>
+            <h1 class="title">Operation Epic Fury<br>미국-이스라엘 이란 전면 공습, 이란 중동 전역 보복 미사일 발사</h1>
+            <p class="summary">2월 28일 오전, 미국과 이스라엘이 테헤란을 포함한 이란 전역에 대규모 합동 공습을 개시했다. 트럼프는 "대규모 전투 작전"을 선언하며 정권 교체를 촉구. 이란은 이스라엘과 중동 6개국 미군 기지에 탄도미사일로 즉각 보복했다. 호르무즈 해협 봉쇄 우려로 유가 급등이 예상되며, 2003년 이라크 전쟁 이후 최대 규모의 중동 군사 충돌이 진행 중이다.</p>
+        </header>
+
+        <!-- 📌 상황 요약 -->
+        <div class="info-box">
+            <h3>📌 현재 상황 요약</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">작전명</div>
+                    <div class="info-value">🇺🇸 Operation Epic Fury<br>🇮🇱 Operation Roaring Lion</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">이란 피격 도시</div>
+                    <div class="info-value danger">테헤란, 이스파한, 쿰, 카라지, 케르만샤, 타브리즈</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">이란 보복 대상</div>
+                    <div class="info-value warning">이스라엘, UAE, 카타르, 바레인, 쿠웨이트, 요르단, 사우디</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">유가 전망</div>
+                    <div class="info-value danger">월요일 $10~$20/배럴 급등 예상</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ⏰ 타임라인 -->
+        <section class="section">
+            <h2 class="section-title">⏰ 타임라인 (현지시간 기준)</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">09:27 AM</div>
+                    <div class="timeline-content"><strong>테헤란 첫 폭발</strong> — Fars 통신이 테헤란 시내 연쇄 폭발 보도. University Street, Jomhouri 지역 피격. 최고지도자 하메네이 거주지 인근에 미사일 7발 확인.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">09:30 AM</div>
+                    <div class="timeline-content"><strong>이스라엘 공격 확인</strong> — 국방장관 Israel Katz가 이란에 대한 "선제공격" 공식 확인. "이스라엘 국가에 대한 위협 제거" 목적.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">09:45 AM</div>
+                    <div class="timeline-content"><strong>트럼프 "대규모 전투 작전" 선언</strong> — Truth Social 영상으로 Operation Epic Fury 발표. "이란의 미사일·군사 역량 파괴, 핵무기 보유 저지, 정권 전복" 목표 천명.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">10:00 AM</div>
+                    <div class="timeline-content"><strong>이란 전역 확대</strong> — 이스파한, 쿰, 카라지, 케르만샤, 타브리즈 등 주요 도시 피격. 테헤란 인터넷 거의 차단.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">10:30 AM</div>
+                    <div class="timeline-content"><strong>이란 보복 개시</strong> — IRGC가 이스라엘과 중동 미군 기지에 수십 발의 탄도미사일 발사. 바레인 미 해군 제5함대 본부 피격 확인.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">11:00 AM</div>
+                    <div class="timeline-content"><strong>중동 전역 폭발</strong> — UAE, 카타르, 쿠웨이트, 요르단, 사우디에서 폭발음. 두바이 Palm Jumeirah 화재, 아부다비에서 아시아계 이주민 1명 사망.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">11:30 AM</div>
+                    <div class="timeline-content"><strong>이스라엘 비상사태 선포</strong> — 48시간 비상사태 선포, 전 국민 대피소 대기 명령. 공항 폐쇄, 민항기 운항 중단.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">계속 진행 중</div>
+                    <div class="timeline-content"><strong>UN 안보리 긴급회의 소집</strong> — 프랑스 요청. 미 동부시간 오후 4시 예정. 후티 반군도 홍해 공격 재개 선언.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🔥 핵심 보도 -->
+        <section class="section">
+            <h2 class="section-title">🔥 핵심 보도</h2>
+
+            <article class="article-card emergency-card">
+                <span class="badge badge-breaking">BREAKING</span>
+                <h3 class="article-title">U.S. and Israel Strike Iran in Joint Attack — Trump Declares "Major Combat Operations"</h3>
+                <p class="article-title-kr">미국-이스라엘 이란 합동 공습 — 트럼프 "대규모 전투 작전" 선언</p>
+                <p class="article-summary">미국과 이스라엘이 2월 28일 이란에 대규모 합동 공습을 개시했다. 미 국방부는 "Operation Epic Fury", 이스라엘군은 "Roaring Lion"으로 작전명을 명명. 테헤란, 이스파한, 쿰 등 이란 주요 도시가 공중·해상에서 동시 타격을 받았다. 트럼프는 8분짜리 영상 성명에서 이란의 미사일·군사 역량 파괴와 핵무기 보유 저지를 목표로 선언하며, IRGC에 무장 해제를 촉구하고 이란 국민에게 "공격이 끝나면 정부를 접수하라"고 호소했다. 네타냐후 총리는 "이란 테러 정권의 실존적 위협 제거"가 목표라고 밝혔다.</p>
+                <div class="article-meta">
+                    <span class="source">Washington Post, CNN, NPR, NBC, Al Jazeera, CNBC 등 전 세계 보도</span>
+                    <a href="https://www.washingtonpost.com/world/2026/02/28/israel-strikes-iran-live-updates/" target="_blank">WaPo →</a>
+                    <a href="https://edition.cnn.com/world/live-news/israel-iran-attack-02-28-26-hnk-intl" target="_blank">CNN →</a>
+                    <a href="https://www.npr.org/2026/02/28/nx-s1-5730158/israel-iran-strikes-trump-us" target="_blank">NPR →</a>
+                </div>
+            </article>
+
+            <article class="article-card emergency-card">
+                <span class="badge badge-breaking">BREAKING</span>
+                <h3 class="article-title">Iran Retaliates with Missiles Across Middle East — U.S. Bases, Israel, Gulf States Hit</h3>
+                <p class="article-title-kr">이란, 중동 전역 미사일 보복 — 미군 기지·이스라엘·걸프국 피격</p>
+                <p class="article-summary">이란이 미국-이스라엘 공습에 즉각 보복하며 이스라엘과 중동 6개국 이상의 미군 기지에 수십 발의 탄도미사일을 발사했다. IRGC는 카타르 Al-Udeid, 쿠웨이트 Al-Salem, UAE Al-Dhafra, 바레인 미 해군 기지를 타격했다고 발표. 바레인 미 제5함대 본부 피격이 확인됐고, UAE에서 아시아계 이주민 1명이 사망했다. 두바이와 아부다비에서 미사일 요격 폭발음이 울렸고, 요르단·사우디·시리아에서도 피격이 보고됐다. IRGC는 "적이 확실히 패배할 때까지 작전을 멈추지 않겠다"고 선언했다.</p>
+                <div class="article-meta">
+                    <span class="source">Al Jazeera, CNN, NBC, CBS 다매체 보도</span>
+                    <a href="https://www.aljazeera.com/news/2026/2/28/multiple-gulf-arab-states-that-host-us-assets-targeted-in-iran-retaliation" target="_blank">Al Jazeera →</a>
+                    <a href="https://www.nbcnews.com/world/iran/live-blog/israel-iran-live-updates-rcna261099" target="_blank">NBC →</a>
+                </div>
+            </article>
+
+            <article class="article-card emergency-card">
+                <span class="badge badge-urgent">URGENT</span>
+                <h3 class="article-title">Israeli Strikes Targeted Iranian Supreme Leader Khamenei, President Pezeshkian</h3>
+                <p class="article-title-kr">이스라엘, 최고지도자 하메네이·대통령 페제시키안 직접 겨냥</p>
+                <p class="article-summary">이스라엘의 공격이 이란 최고지도자 아야톨라 하메네이와 대통령 마수드 페제시키안을 직접 겨냥했다고 미국 관리들이 확인했다. 테헤란 시내 하메네이 거주지 인근에 미사일 7발이 명중했으며, 대통령궁과 국가안보회의 건물도 포함됐다. 이란 외무장관 아라그치는 최고지도자와 대통령이 "생존해 있다"고 밝혔지만, 국방장관 나시르자데와 IRGC 사령관 팍푸르가 사망한 것으로 보도됐다. 국방회의 수장 샴카니도 사망한 것으로 알려졌다.</p>
+                <div class="article-meta">
+                    <span class="source">CBS, CNN, Times of Israel, Washington Post</span>
+                    <a href="https://www.cbsnews.com/live-updates/israel-us-attack-iran-trump-says-major-combat-operations/" target="_blank">CBS →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-urgent">URGENT</span>
+                <h3 class="article-title">Iran Girls' School Hit — At Least 40-53 Killed in Minab Airstrike</h3>
+                <p class="article-title-kr">이란 미나브 여학교 공습 피격 — 최소 40~53명 사망</p>
+                <p class="article-summary">이란 남부 호르모즈간 주 미나브에서 이스라엘 공습이 여자 초등학교를 타격해 최소 40~53명의 학생이 사망했다고 이란 국영 IRNA와 Mehr 통신이 보도했다. Fars 통신은 미나브와 자스크 지역에서 70명 사망, 90명 부상을 보고했다. 공습이 이란의 업무일인 토요일 오전에 시작되어 수백만 명이 출근·등교 중이었고, 정부의 사전 경고가 없었다.</p>
+                <div class="article-meta">
+                    <span class="source">NPR, Al Jazeera, Wikipedia (Fars/Mehr/IRNA 인용)</span>
+                    <a href="https://www.npr.org/2026/02/28/nx-s1-5730186/iran-strikes-israel" target="_blank">NPR →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🌍 국제 반응 -->
+        <section class="section">
+            <h2 class="section-title">🌍 국제 반응 · 외교</h2>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">UN Security Council Emergency Meeting Called — Global Condemnation and Alarm</h3>
+                <p class="article-title-kr">UN 안보리 긴급회의 소집 — 국제사회 충격과 우려</p>
+                <p class="article-summary">프랑스의 요청으로 UN 안보리 긴급회의가 미 동부시간 오후 4시에 소집됐다. 마크롱 대통령은 "국제 평화와 안보에 중대한 결과"를 경고했다. 사우디는 이란의 걸프국 공격을 "잔인한 침략"으로 규탄하며 피격국에 대한 전면 지원을 선언했다. 오만 외무장관은 개전 직전까지 미-이란 간접 협상에서 "평화가 손에 닿을 거리에 있었다"며 미국에 "더 이상 빨려들지 말라"고 촉구했다.</p>
+                <div class="article-meta">
+                    <span class="source">CNN, CBS, Al Jazeera</span>
+                    <a href="https://edition.cnn.com/world/live-news/israel-iran-attack-02-28-26-hnk-intl" target="_blank">CNN →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Trump Calls on Iranians to Overthrow Government — "Hour of Freedom at Hand"</h3>
+                <p class="article-title-kr">트럼프, 이란 국민에 정권 전복 촉구 — "자유의 시간이 왔다"</p>
+                <p class="article-summary">트럼프는 Truth Social 영상에서 "공격이 끝나면 정부를 접수하라. 아마 여러 세대에 한 번의 기회"라며 이란 국민에게 봉기를 촉구했다. IRGC에는 무장 해제 시 "완전한 면책"을, 거부 시 "확실한 죽음"을 경고했다. 네타냐후도 "용감한 이란 국민이 운명을 스스로 결정할 조건을 만들 것"이라고 화답했다. 이란 망명 왕세자 레자 팔라비도 군·경에 국민 편에 서라고 호소했다. 중동 전문가들은 2003년 이라크 침공의 "충격과 공포" 전략과의 유사성을 지적하며 장기화 우려를 표명했다.</p>
+                <div class="article-meta">
+                    <span class="source">NBC, NPR, CNN</span>
+                    <a href="https://www.nbcnews.com/world/iran/live-blog/israel-iran-live-updates-rcna261099" target="_blank">NBC →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Houthis Announce Resumption of Red Sea Attacks</h3>
+                <p class="article-title-kr">후티 반군, 홍해 공격 재개 선언</p>
+                <p class="article-summary">예멘 후티 반군이 미국-이스라엘의 이란 공습에 연대하며 홍해 해상 공격을 재개하겠다고 선언했다. 이미 2023년 말부터 홍해 상선 공격으로 글로벌 해운에 심각한 차질을 초래한 바 있으며, 재개 시 수에즈 운하를 통한 유럽-아시아 해운 경로에 추가 교란이 불가피하다.</p>
+                <div class="article-meta">
+                    <span class="source">Wikipedia, Al Jazeera</span>
+                    <a href="https://en.wikipedia.org/wiki/2026_Israeli%E2%80%93United_States_strikes_on_Iran" target="_blank">Wikipedia →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 💰 시장·경제 영향 -->
+        <section class="section">
+            <h2 class="section-title">💰 시장 · 경제 영향</h2>
+
+            <article class="article-card">
+                <span class="badge badge-urgent">URGENT</span>
+                <h3 class="article-title">Oil Prices Expected to Surge $10-$20 Per Barrel — Strait of Hormuz Fears Mount</h3>
+                <p class="article-title-kr">유가 배럴당 $10~$20 급등 전망 — 호르무즈 해협 봉쇄 우려 고조</p>
+                <p class="article-summary">Rystad Energy는 탈에스컬레이션 신호가 없으면 월요일 시장 개장 시 유가가 배럴당 $10~$20 급등할 수 있다고 전망했다. 원유 선물 플랫폼에서는 이미 5% 이상 급등. 금요일 종가 기준 브렌트유 $72.87, WTI $67.02였으며, Vanda Insights는 전쟁이 월요일까지 지속되면 $80까지 도달할 것으로 예측했다. JPMorgan은 심각한 중동 교란 시나리오에서 $100 이상 가능성을 제시. 이란은 세계 3위 원유 매장량(2,090억 배럴)을 보유하고 있으며, 호르무즈 해협은 전 세계 해상 원유 운송의 약 25%를 담당한다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Yahoo Finance, Bloomberg, Euronews</span>
+                    <a href="https://www.cnbc.com/2026/02/28/markets-brace-for-impact-following-us-military-strikes-against-iran.html" target="_blank">CNBC →</a>
+                    <a href="https://finance.yahoo.com/news/us-strikes-against-iran-could-see-oil-prices-jump-10-to-20-or-more-with-no-deescalation-143847017.html" target="_blank">Yahoo →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Several Oil Majors Suspend Strait of Hormuz Shipments — Bitcoin Drops to $63K</h3>
+                <p class="article-title-kr">주요 석유사 호르무즈 해협 선적 중단 — 비트코인 $63K 급락</p>
+                <p class="article-summary">공습 직후 여러 대형 석유회사와 트레이딩 하우스가 호르무즈 해협 통과 원유·연료 선적을 중단했다고 Reuters가 보도했다. 비트코인은 $65,600에서 $63,000까지 급락 후 $65,000으로 반등. 금과 은 선물도 급등했다. OPEC+는 일요일 월례회의를 앞두고 있으며, 생산 쿼터 확대 결정에 영향이 불가피하다. 이란은 공습 직전 며칠간 최대한 많은 원유를 선적하기 위해 탱커 활동을 급격히 늘린 것으로 위성영상에서 확인됐다.</p>
+                <div class="article-meta">
+                    <span class="source">Reuters, CoinDesk, Bloomberg, OilPrice</span>
+                    <a href="https://www.coindesk.com/markets/2026/02/28/oil-linked-futures-on-hyperliquid-surge-5-after-u-s-israel-strike-on-iran" target="_blank">CoinDesk →</a>
+                    <a href="https://oilprice.com/Energy/Crude-Oil/Oil-Markets-Brace-for-Volatility-As-US-Israel-Launch-Strikes-Across-Iran.html" target="_blank">OilPrice →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 📋 배경 -->
+        <section class="section">
+            <h2 class="section-title">📋 배경 · 맥락</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">How We Got Here — From June 2025 Strikes to February 2026 War</h3>
+                <p class="article-title-kr">여기까지 오게 된 과정 — 2025년 6월 공습에서 2026년 2월 전쟁까지</p>
+                <p class="article-summary">2025년 6월 미국-이스라엘의 "Operation Midnight Hammer"로 이란 포르도·이스파한 핵시설을 타격한 이후, 미국은 이란에 핵 프로그램 포기를 압박해왔다. 2025년 말부터 이란 국내에서 경제 위기와 리알화 폭락으로 대규모 반정부 시위가 100개 이상 도시로 확산됐고, 정부의 강경 진압으로 수천 명이 사망했다. 2월 13일 트럼프가 "이란 정권 교체가 최선"이라 발언, 2월 14일 미국이 "수 주간 지속 작전"을 준비 중이라는 보도, 2월 24일 국정연설에서 이란 핵야망 규탄, 그리고 오만 중재 간접 협상이 결렬되며 2월 28일 합동 공습이 개시됐다.</p>
+                <div class="article-meta">
+                    <span class="source">Wikipedia, CNN, Al Jazeera, NPR 종합</span>
+                    <a href="https://www.aljazeera.com/news/2026/2/28/us-and-israel-attack-iran-what-we-know-so-far" target="_blank">Al Jazeera →</a>
+                    <a href="https://en.wikipedia.org/wiki/2026_Israeli%E2%80%93United_States_strikes_on_Iran" target="_blank">Wikipedia →</a>
+                </div>
+            </article>
+        </section>
+
+        <div class="disclaimer">
+            ⚠️ 본 브리핑은 2026년 2월 28일 오후 기준 공개된 보도를 종합한 것으로, 상황이 급변하고 있으며 일부 정보는 추후 수정될 수 있습니다. 각 매체의 원문을 함께 확인해주세요.
+        </div>
+
+        <footer>
+            <p>Jae's Briefing | 긴급 특별판 — 미국-이스라엘 이란 공습</p>
+            <p>핵심 보도 4건 | 국제 반응 3건 | 시장 영향 2건 | 배경 1건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
