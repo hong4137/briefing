@@ -152,6 +152,12 @@ jobs:
                               if not date or not title:
                                   continue
                               
+                              # 일일 브리핑만 허용: YYYY-MM-DD 형식이 아닌 항목 스킵
+                              import re
+                              if not re.match(r'^\d{4}-\d{2}-\d{2}$', date.strip()):
+                                  print(f"  Skipping non-daily entry in briefings sheet: {date}")
+                                  continue
+                              
                               highlights_list = []
                               if highlights:
                                   highlights_list = [h.strip() for h in highlights.split('|') if h.strip()]
