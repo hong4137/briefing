@@ -552,6 +552,20 @@
                 return;
             }
 
+            // period 종료일 기준 최신순 정렬 (단일 날짜도 지원)
+            allItems.sort((a, b) => {
+                const getEndDate = (item) => {
+                    if (item.period && item.period.includes('~')) {
+                        return item.period.split('~')[1].trim();
+                    }
+                    if (item.period && /^\d{4}-\d{2}-\d{2}/.test(item.period.trim())) {
+                        return item.period.trim();
+                    }
+                    return '0000-00-00';
+                };
+                return getEndDate(b).localeCompare(getEndDate(a));
+            });
+
             document.getElementById('special-section').style.display = 'block';
 
             document.getElementById('special-container').innerHTML = allItems.map(item => `
