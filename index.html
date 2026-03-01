@@ -768,17 +768,37 @@
                     b.title
                 );
 
-                // Latest briefing (first daily item)
-                if (dailyBriefings.length > 0) {
-                    const latest = dailyBriefings[0];
-                    renderLatest(latest);
+                // 모든 종류의 브리핑에서 최신 항목 결정
+                // 각 타입별 최신 날짜 추출 헬퍼
+                const getItemDate = (item) => {
+                    if (!item) return '0000-00-00';
+                    if (item.period) {
+                        if (item.period.includes('~')) return item.period.split('~')[1].trim();
+                        return item.period.trim();
+                    }
+                    if (item.date && /^\d{4}-\d{2}-\d{2}$/.test(item.date)) return item.date;
+                    return '0000-00-00';
+                };
+
+                const allSpecials = (data.specials || []).map(s => ({...s, _type: 'special', _date: getItemDate(s), _link: `archive/${s.date}.html`}));
+                const allWeekly = (data.weekly || []).map(w => ({...w, _type: 'weekly', _date: getItemDate(w), _link: `archive/${w.date}.html`}));
+                const allDaily = dailyBriefings.map(b => ({...b, _type: 'daily', _date: b.date, _link: `archive/${b.date}.html`}));
+
+                // 전체를 합쳐서 최신순 정렬
+                const allBriefings = [...allDaily, ...allSpecials, ...allWeekly].sort((a, b) => b._date.localeCompare(a._date));
+
+                // 가장 최신 항목을 latest로 표시
+                if (allBriefings.length > 0) {
+                    const latestItem = allBriefings[0];
+                    renderLatest(latestItem);
                 } else {
                     document.getElementById('latest-container').innerHTML = 
                         '<div class="empty-state">아직 브리핑이 없습니다.</div>';
                 }
 
-                // Past briefings (skip first, show up to 3)
-                const past = dailyBriefings.slice(1, 4);
+                // Past daily briefings (latest가 daily면 skip first, 아니면 전체에서 3개)
+                const latestIsDaily = allBriefings.length > 0 && allBriefings[0]._type === 'daily';
+                const past = latestIsDaily ? dailyBriefings.slice(1, 4) : dailyBriefings.slice(0, 3);
                 renderArchive(past);
 
                 // Special & Weekly briefings
@@ -834,9 +854,9 @@
                         <div class="briefing-stats">
                             <span class="briefing-stat"><strong>${briefing.stats.articles}</strong> 기사</span>
                             <span class="briefing-stat"><strong>${briefing.stats.sections}</strong> 섹션</span>
-                            <span class="briefing-stat"><strong>${briefing.stats.picks}</strong> Claude's Pick</span>
+                            ${briefing.stats.picks ? `<span class="briefing-stat"><strong>${briefing.stats.picks}</strong> Claude's Pick</span>` : ''}
                         </div>
-                        <a href="archive/${briefing.date}.html" class="read-btn">
+                        <a href="${briefing._link || ('archive/' + briefing.date + '.html')}" class="read-btn">
                             브리핑 읽기 →
                         </a>
                     </div>
@@ -895,11 +915,14 @@ function renderSpecials(specials, weekly) {
         });
     });
 
-    // period 종료일 기준 최신순 정렬
+    // period 종료일 기준 최신순 정렬 (단일 날짜도 지원)
     allItems.sort((a, b) => {
         const getEndDate = (item) => {
             if (item.period && item.period.includes('~')) {
                 return item.period.split('~')[1].trim();
+            }
+            if (item.period && /^\d{4}-\d{2}-\d{2}/.test(item.period.trim())) {
+                return item.period.trim();
             }
             return '0000-00-00';
         };
