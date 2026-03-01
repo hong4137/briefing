@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trump Anthropic 연방 금지 + WBD-Paramount $110B 합병 + OpenAI $110B 메가라운드 | 주간 외신 브리핑</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #222;
+            margin-bottom: 30px;
+        }
+        header h1 { font-size: 1.8em; color: #fff; margin-bottom: 8px; }
+        header .period { color: #888; font-size: 0.95em; margin-bottom: 4px; }
+        header .subtitle { color: #666; font-size: 0.85em; }
+
+        /* Market Section */
+        .market-section {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 30px;
+        }
+        .market-title {
+            font-size: 1.1em;
+            color: #fff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .market-item {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+        .market-item .name { color: #888; font-size: 0.8em; margin-bottom: 4px; }
+        .market-item .value { color: #fff; font-size: 1.1em; font-weight: 600; }
+        .market-item .change { font-size: 0.85em; font-weight: 600; margin-top: 2px; }
+        .up { color: #4ade80; }
+        .down { color: #f87171; }
+        .neutral { color: #888; }
+        .market-comment {
+            color: #aaa;
+            font-size: 0.88em;
+            line-height: 1.6;
+            padding-top: 12px;
+            border-top: 1px solid #222;
+        }
+
+        /* Section Headers */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #222;
+        }
+        .section-header h2 { font-size: 1.2em; color: #fff; }
+        .section-count { color: #666; font-size: 0.85em; }
+
+        /* Story Cards */
+        .story-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .story-rank {
+            display: inline-block;
+            background: #1a1a2e;
+            color: #818cf8;
+            font-size: 0.75em;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .story-card h3 {
+            font-size: 1.1em;
+            color: #fff;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .story-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 14px;
+        }
+        .badge {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #aaa;
+            font-size: 0.75em;
+            padding: 3px 8px;
+            border-radius: 10px;
+        }
+        .badge-fire { background: #2d1b0e; color: #fb923c; }
+        .badge-new { background: #0e2d1b; color: #4ade80; }
+        .badge-ongoing { background: #1b1b2e; color: #818cf8; }
+        .badge-resolved { background: #0e2d1b; color: #4ade80; }
+        .badge-down { background: #2d0e0e; color: #f87171; }
+
+        /* Timeline */
+        .story-timeline { margin: 12px 0; padding-left: 16px; border-left: 2px solid #333; }
+        .timeline-item { margin-bottom: 8px; font-size: 0.88em; color: #ccc; }
+        .timeline-date {
+            display: inline-block;
+            background: #1a1a2e;
+            color: #818cf8;
+            font-size: 0.8em;
+            padding: 1px 6px;
+            border-radius: 4px;
+            margin-right: 6px;
+            font-weight: 600;
+        }
+
+        /* Context */
+        .story-context {
+            background: #0d0d0d;
+            border-radius: 8px;
+            padding: 14px;
+            margin-top: 12px;
+            font-size: 0.88em;
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        /* Standalone */
+        .standalone-grid { display: grid; gap: 12px; }
+        .standalone-item {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 10px;
+            padding: 16px;
+            display: flex;
+            gap: 12px;
+        }
+        .standalone-icon { font-size: 1.5em; flex-shrink: 0; }
+        .standalone-content h4 { color: #fff; font-size: 0.95em; margin-bottom: 6px; }
+        .standalone-content p { color: #aaa; font-size: 0.85em; }
+        .standalone-date { color: #666; font-size: 0.75em; margin-top: 6px; }
+
+        /* Stats */
+        .stats-section {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 30px 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 16px;
+            text-align: center;
+        }
+        .stat-item .stat-value { font-size: 1.8em; font-weight: 700; color: #818cf8; }
+        .stat-item .stat-label { font-size: 0.8em; color: #888; margin-top: 4px; }
+
+        /* Claude's Pick */
+        .pick-section {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border: 1px solid #2d3748;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        .pick-section h2 { color: #818cf8; margin-bottom: 16px; }
+        .pick-item {
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        .pick-item h4 { color: #fff; margin-bottom: 6px; }
+        .pick-item p { color: #aaa; font-size: 0.88em; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 30px;
+            border-top: 1px solid #222;
+            color: #555;
+            font-size: 0.8em;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 12px; }
+            header h1 { font-size: 1.4em; }
+            .market-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📰 주간 외신 브리핑</h1>
+            <p class="period">2026년 2월 4주차 (2/23 ~ 2/28) · W09</p>
+            <p class="subtitle">일간 브리핑 기사 기반 TOP 스토리 클러스터링</p>
+        </header>
+
+        <!-- Market Section -->
+        <section class="market-section">
+            <div class="market-title">📊 주간 시장 동향</div>
+            <div class="market-grid">
+                <div class="market-item">
+                    <div class="name">S&P 500</div>
+                    <div class="value">6,878.88</div>
+                    <div class="change up">+0.60%</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">NASDAQ</div>
+                    <div class="value">22,668.21</div>
+                    <div class="change up">+0.18%</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">SOX (반도체)</div>
+                    <div class="value">8,098.37</div>
+                    <div class="change down">-1.40%</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">10Y Treasury</div>
+                    <div class="value">4.02%</div>
+                    <div class="change neutral">-0.01%p</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">VIX</div>
+                    <div class="value">18.63</div>
+                    <div class="change up">-11.33%</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">2Y Treasury</div>
+                    <div class="value">3.42%</div>
+                    <div class="change neutral">-0.01%p</div>
+                </div>
+            </div>
+            <div class="market-comment">
+                S&P 500과 NASDAQ이 소폭 상승하며 안정세를 보였으나, 반도체 지수(SOX)는 -1.40%로 약세. VIX는 21.01 → 18.63으로 11% 이상 급락하며 공포 지수가 크게 완화됨. 이는 SCOTUS 관세 위헌 판결로 인한 무역 불확실성 해소 + Anthropic 연방 금지가 AI 섹터 전체가 아닌 특정 기업 이슈로 해석된 영향. 국채 금리는 소폭 하락하며 안정적.
+            </div>
+        </section>
+
+        <!-- TOP Stories -->
+        <div class="section-header">
+            <h2>📈 이번 주 TOP 스토리</h2>
+            <span class="section-count">4 CLUSTERS</span>
+        </div>
+
+        <!-- #1: Trump-Anthropic -->
+        <div class="story-card">
+            <div class="story-rank">TOP 1</div>
+            <h3>Trump-Anthropic Pentagon AI 갈등 → 연방 사용 전면 금지 행정명령</h3>
+            <div class="story-badges">
+                <span class="badge badge-fire">📈 관심 (4일)</span>
+                <span class="badge">📰 4건</span>
+                <span class="badge">📅 2/24~28 (5일)</span>
+                <span class="badge badge-ongoing">⏳ 진행중</span>
+            </div>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2/24</span> Pentagon, Claude AI 군사 가드레일 철회 요구 → 금요일 데드라인 설정
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2/25</span> Anthropic, AI 군사 윤리 가드레일 유지 입장 재확인 — 긴장 고조
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2/27</span> Trump, Anthropic 제품 연방 사용 전면 금지 행정명령 서명
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2/28</span> 후속 보도 확산 — AI 기업 윤리 vs 정부 계약 딜레마 부각
+                </div>
+            </div>
+            <div class="story-context">
+                <strong>📍 현재 상태:</strong> Anthropic이 Claude의 자율 무기 관련 가드레일 철회를 거부하자, Trump 대통령이 연방 정부 전체에서 Anthropic 제품 사용을 금지하는 행정명령을 서명. $380B 밸류에이션의 Anthropic에게는 잠재적 정부 계약의 대규모 상실이나, AI 안전 원칙을 고수함으로써 상업 고객과 유럽 시장에서의 포지셔닝은 오히려 강화될 가능성. OpenAI, Google 등 경쟁사의 반응과 정부 AI 조달 시장 재편이 다음 관전 포인트.
+            </div>
+        </div>
+
+        <!-- #2: OpenAI $110B -->
+        <div class="story-card">
+            <div class="story-rank">TOP 2</div>
+            <h3>OpenAI $110B 역대 최대 펀딩 라운드 마감</h3>
+            <div class="story-badges">
+                <span class="badge badge-new">🆕 신규</span>
+                <span class="badge">📰 2건</span>
+                <span class="badge">📅 2/27~28 (2일)</span>
+                <span class="badge badge-resolved">✅ 펀딩 완료</span>
+            </div>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2/27</span> OpenAI, $110B 역대 최대 단일 펀딩 라운드 공식 마감 발표
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2/28</span> 상세 조건 공개 — Nvidia $30B 참여, AI 인프라 투자 구조
+                </div>
+            </div>
+            <div class="story-context">
+                <strong>📍 현재 상태:</strong> 지난 2/20에 예고됐던 $100B+ 메가라운드가 $110B로 최종 마감. Nvidia의 $30B 참여가 확인되며 AI 인프라 투자의 선순환 구조가 부각됨. 이전 주 $100B 뉴스에서 $110B로 상향된 최종 확정 소식. AI 스타트업 펀딩 규모의 새로운 기준점을 제시.
+            </div>
+        </div>
+
+        <!-- #3: Warner-Paramount -->
+        <div class="story-card">
+            <div class="story-rank">TOP 3</div>
+            <h3>Warner Bros Discovery $110B Paramount 합병 + Trump Netflix/DOJ 압박</h3>
+            <div class="story-badges">
+                <span class="badge badge-fire">📈 관심 (5일)</span>
+                <span class="badge">📰 2건</span>
+                <span class="badge">📅 2/23~27 (5일)</span>
+                <span class="badge badge-ongoing">⏳ 진행중</span>
+            </div>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2/23</span> Trump, Netflix에 Susan Rice 해고 압박 + DOJ Warner 합병 조사 지시
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2/27</span> Warner Bros Discovery, $110B 규모 Paramount 합병 합의 발표
+                </div>
+            </div>
+            <div class="story-context">
+                <strong>📍 현재 상태:</strong> 주 초 Trump의 Netflix 정치적 압박과 DOJ Warner 조사 지시로 시작된 미디어 업계 긴장이, 결국 WBD-Paramount $110B 합병 합의로 귀결. 1월 Netflix-Warner Bros. 인수 논의 이후 가장 큰 미디어 M&A 움직임. 반독점 심사와 DOJ 조사가 동시 진행되면서 정치적 개입 논란 예상.
+            </div>
+        </div>
+
+        <!-- #4: AI SaaSpocalypse -->
+        <div class="story-card">
+            <div class="story-rank">TOP 4</div>
+            <h3>AI 공포 매도(SaaSpocalypse) 지속 — Citrini 보고서 + IBM COBOL 충격</h3>
+            <div class="story-badges">
+                <span class="badge badge-fire">📈 관심 (4주+)</span>
+                <span class="badge">📰 2건</span>
+                <span class="badge">📅 2/24~25 (2일)</span>
+                <span class="badge badge-ongoing">⏳ 진행중</span>
+            </div>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2/24</span> IBM 주가 -6% 폭락 — Anthropic COBOL AI 현대화 도구 위협
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2/25</span> Citrini AI 공포 보고서 발표 → 월가 소프트웨어주 대규모 매도
+                </div>
+            </div>
+            <div class="story-context">
+                <strong>📍 현재 상태:</strong> 2월 초부터 지속된 'AI 공포 매도'가 이번 주에도 이어짐. Anthropic의 COBOL AI 현대화 도구가 IBM의 레거시 컨설팅 사업 모델을 직접 위협하며 주가 급락을 촉발. Citrini Research의 AI 위협 보고서가 월가 소프트웨어 섹터 전반에 매도 압력을 가중시킴. 다만 VIX가 11% 급락한 것은 공포의 정점을 지난 신호일 수 있음.
+            </div>
+        </div>
+
+        <!-- Standalone Highlights -->
+        <div class="section-header">
+            <h2>🎯 단독 하이라이트</h2>
+            <span class="section-count">8 STORIES</span>
+        </div>
+
+        <div class="standalone-grid">
+            <div class="standalone-item">
+                <div class="standalone-icon">⚖️</div>
+                <div class="standalone-content">
+                    <h4>SCOTUS 트럼프 관세 위헌 6대3 판결, $175B 환급 + 10% 재부과</h4>
+                    <p>대법원이 Trump 관세에 위헌 판결. $175B 환급 명령 + 새로운 10% 관세 재부과. 무역 정책의 중대 전환점.</p>
+                    <div class="standalone-date">2/23</div>
+                </div>
+            </div>
+            <div class="standalone-item">
+                <div class="standalone-icon">🤖</div>
+                <div class="standalone-content">
+                    <h4>DeepSeek·MiniMax·Moonshot 대규모 모델 증류, OpenAI 가짜 계정 고발</h4>
+                    <p>중국 AI 기업들의 대규모 모델 증류 실태 폭로. OpenAI가 가짜 계정을 통한 API 접근 증거를 제시.</p>
+                    <div class="standalone-date">2/24</div>
+                </div>
+            </div>
+            <div class="standalone-item">
+                <div class="standalone-icon">💻</div>
+                <div class="standalone-content">
+                    <h4>Meta-AMD $100B 칩 딜 — Nvidia GPU 독점 균열</h4>
+                    <p>Meta가 AMD와 대규모 칩 공급 계약 체결. Nvidia의 AI 칩 시장 독점에 최초로 유의미한 균열.</p>
+                    <div class="standalone-date">2/25</div>
+                </div>
+            </div>
+            <div class="standalone-item">
+                <div class="standalone-icon">🎮</div>
+                <div class="standalone-content">
+                    <h4>Phil Spencer Xbox 38년 은퇴, AI 임원 Asha Sharma 후임</h4>
+                    <p>Xbox의 상징 Phil Spencer가 38년 만에 은퇴. AI 배경의 Asha Sharma가 후임으로 Microsoft의 게임+AI 전략 전환 시사.</p>
+                    <div class="standalone-date">2/23</div>
+                </div>
+            </div>
+            <div class="standalone-item">
+                <div class="standalone-icon">👤</div>
+                <div class="standalone-content">
+                    <h4>Discord 연령인증 신분증 의무화 — 영국 Online Safety Act</h4>
+                    <p>Discord가 영국 규제에 따라 신분증 기반 연령인증 도입. 플랫폼 규제의 새로운 선례.</p>
+                    <div class="standalone-date">2/26</div>
+                </div>
+            </div>
+            <div class="standalone-item">
+                <div class="standalone-icon">📱</div>
+                <div class="standalone-content">
+                    <h4>Samsung Galaxy S26 AI 혁신 출시, Bixby AI 에이전트</h4>
+                    <p>Samsung이 Galaxy S26 출시. Bixby AI 에이전트가 핵심 기능으로 부각되며 AI 스마트폰 경쟁 심화.</p>
+                    <div class="standalone-date">2/26</div>
+                </div>
+            </div>
+            <div class="standalone-item">
+                <div class="standalone-icon">⚛️</div>
+                <div class="standalone-content">
+                    <h4>IQM 양자컴퓨팅 유럽 첫 IPO</h4>
+                    <p>핀란드 IQM이 유럽 양자컴퓨팅 기업 최초로 IPO 추진. 유럽 딥테크 생태계의 이정표.</p>
+                    <div class="standalone-date">2/26</div>
+                </div>
+            </div>
+            <div class="standalone-item">
+                <div class="standalone-icon">💧</div>
+                <div class="standalone-content">
+                    <h4>Altman 물/에너지 자원 발언 논란</h4>
+                    <p>Sam Altman이 AI 인프라의 물·에너지 사용에 대해 "인간도 많이 쓴다"고 발언해 논란. AI 환경 비용 논쟁 가열.</p>
+                    <div class="standalone-date">2/28</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Claude's Pick -->
+        <div class="pick-section">
+            <h2>💎 Claude's Pick</h2>
+            <div class="pick-item">
+                <h4>Meta-AMD $100B 칩 딜의 장기적 의미</h4>
+                <p>단독 헤드라인으로 다뤄졌지만, 이 딜의 진짜 의미는 Nvidia의 AI 칩 독점 구조에 처음으로 유의미한 균열이 생겼다는 것. AMD가 대형 고객을 확보하면서 AI 칩 공급망 다변화가 본격화되면, Nvidia의 프리미엄 가격 유지력과 SOX 지수의 향방에 중대한 영향. 이번 주 SOX -1.40% 하락과도 무관하지 않음.</p>
+            </div>
+            <div class="pick-item">
+                <h4>Anthropic 연방 금지가 만든 'AI 윤리 프리미엄'</h4>
+                <p>단기적으로 정부 계약 상실이지만, Anthropic은 "안전 원칙을 지킨 기업"이라는 브랜딩을 얻었음. 유럽 EU AI Act 준수 시장에서의 경쟁 우위, 기업 고객의 신뢰 확보 등 장기적 프리미엄이 더 클 수 있음. AI 기업의 가치가 기술력뿐 아니라 윤리적 포지셔닝에 의해서도 결정되는 새로운 시대의 사례.</p>
+            </div>
+        </div>
+
+        <!-- Weekly Stats -->
+        <section class="stats-section">
+            <div class="section-header" style="border: none; margin: 0 0 16px;">
+                <h2>📊 주간 통계</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">18</div>
+                    <div class="stat-label">총 헤드라인</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">클러스터 수</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">4</div>
+                    <div class="stat-label">멀티 기사 클러스터</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">단독 하이라이트</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">📈 관심 스토리</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">🆕 신규 스토리</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Generated by Claude · Jae's Weekly Briefing v1.6</p>
+            <p>2026년 3월 1일 발행 · W09</p>
+        </footer>
+    </div>
+</body>
+</html>
