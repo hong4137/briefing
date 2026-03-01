@@ -758,12 +758,27 @@
                     return;
                 }
 
-                // Latest briefing (first item)
-                const latest = data.briefings[0];
-                renderLatest(latest);
+                // Filter: briefings 배열에서 일일 브리핑만 추출 (weekly/special/빈 항목 제외)
+                const dailyBriefings = data.briefings.filter(b => 
+                    b.date && 
+                    !b.date.startsWith('weekly-') && 
+                    !b.date.startsWith('special-') &&
+                    !b.date.startsWith('ces-') &&
+                    !b.date.startsWith('davos-') &&
+                    b.title
+                );
+
+                // Latest briefing (first daily item)
+                if (dailyBriefings.length > 0) {
+                    const latest = dailyBriefings[0];
+                    renderLatest(latest);
+                } else {
+                    document.getElementById('latest-container').innerHTML = 
+                        '<div class="empty-state">아직 브리핑이 없습니다.</div>';
+                }
 
                 // Past briefings (skip first, show up to 3)
-                const past = data.briefings.slice(1, 4);
+                const past = dailyBriefings.slice(1, 4);
                 renderArchive(past);
 
                 // Special & Weekly briefings
