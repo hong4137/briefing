@@ -1,6 +1,18 @@
 {
   "briefings": [
     {
+      "date": "iran-war-2026-special",
+      "day": "",
+      "title": "🚨 긴급 특별판: 미국-이스라엘 이란 전면 공습, 이란 중동 전역 보복",
+      "summary": "미국-이스라엘 이란 합동 공습 Operation Epic Fury 개시. 트럼프 정권 교체 촉구. 이란 중동 6개국 미군기지 보복 미사일 발사. 호르무즈 해협 봉쇄 우려 유가 급등 전망.",
+      "highlights": [],
+      "stats": {
+        "articles": 10,
+        "sections": 5,
+        "picks": 0
+      }
+    },
+    {
       "date": "2026-02-28",
       "day": "토",
       "title": "트럼프 Anthropic 사용 금지 | WBD-Paramount $110B 합병 | OpenAI $110B 펀딩 마감",
@@ -1126,6 +1138,16 @@
       "stats": {
         "articles": 13,
         "sections": 4
+      }
+    },
+    {
+      "date": "iran-war-2026-special",
+      "title": "🚨 긴급 특별판: 미국-이스라엘 이란 전면 공습, 이란 중동 전역 보복",
+      "summary": "미국-이스라엘 이란 합동 공습 Operation Epic Fury 개시. 트럼프 정권 교체 촉구. 이란 중동 6개국 미군기지 보복 미사일 발사. 호르무즈 해협 봉쇄 우려 유가 급등 전망.",
+      "period": "2026-02-28",
+      "stats": {
+        "articles": 10,
+        "sections": 5
       }
     }
   ]
