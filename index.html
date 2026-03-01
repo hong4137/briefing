@@ -763,20 +763,20 @@
                     b.date && /^\d{4}-\d{2}-\d{2}$/.test(b.date) && b.title
                 );
 
-                // 날짜 추출 헬퍼
-                const getItemDate = (item) => {
-                    if (!item) return '0000-00-00';
-                    if (item.period && item.period.includes('~')) return item.period.split('~')[1].trim();
-                    if (item.period) return item.period.trim();
-                    if (item.date && /^\d{4}-\d{2}-\d{2}$/.test(item.date)) return item.date;
+                // 날짜 추출 헬퍼: 발행일 기준 정렬
+                const getPublishDate = (item) => {
+                    if (!item || !item.date) return '0000-00-00';
+                    // weekly-2026-03-01 → 2026-03-01
+                    const match = item.date.match(/(\d{4}-\d{2}-\d{2})/);
+                    if (match) return match[1];
                     return '0000-00-00';
                 };
 
-                // 모든 타입을 합쳐서 최신순 정렬
+                // 모든 타입을 합쳐서 발행일 최신순 정렬
                 const allItems = [
                     ...dailyBriefings.map(b => ({...b, _type: 'daily', _sortDate: b.date, _link: `archive/${b.date}.html`})),
-                    ...(data.specials || []).map(s => ({...s, _type: 'special', _sortDate: getItemDate(s), _link: `archive/${s.date}.html`})),
-                    ...(data.weekly || []).map(w => ({...w, _type: 'weekly', _sortDate: getItemDate(w), _link: `archive/${w.date}.html`}))
+                    ...(data.specials || []).map(s => ({...s, _type: 'special', _sortDate: getPublishDate(s), _link: `archive/${s.date}.html`})),
+                    ...(data.weekly || []).map(w => ({...w, _type: 'weekly', _sortDate: getPublishDate(w), _link: `archive/${w.date}.html`}))
                 ].sort((a, b) => b._sortDate.localeCompare(a._sortDate));
 
                 // 가장 최신 항목을 최신 브리핑으로 표시
