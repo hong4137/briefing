@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-02",
+      "day": "월",
+      "title": "미·이스라엘 이란 전면 공습 하메네이 사망 | Anthropic 역설의 앱스토어 1위 | MWC 로봇폰 시대 개막",
+      "summary": "미국과 이스라엘의 이란 전면 공습으로 하메네이가 사망하면서 글로벌 유가 쇼크 우려가 확산. 트럼프 행정부에 블랙리스트 당한 Anthropic은 역설적으로 Claude 앱스토어 1위 기록. OpenAI는 국방부와 신속 계약 체결. MWC 2026에서 Honor 로봇폰과 Xiaomi 17 글로벌 출시.",
+      "highlights": [
+        "미·이스라엘 이란 전면 공습 하메네이 사망 중동 전면전 위기",
+        "Anthropic 펜타곤 블랙리스트 속 Claude 앱스토어 1위 OpenAI 국방부 계약",
+        "MWC Honor 로봇폰 Xiaomi 17 글로벌 출시 메모리 가격 급등"
+      ],
+      "stats": {
+        "articles": 17,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-02-28",
       "day": "토",
       "title": "트럼프 Anthropic 사용 금지 | WBD-Paramount $110B 합병 | OpenAI $110B 펀딩 마감",
