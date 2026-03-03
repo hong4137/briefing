@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-03",
+      "day": "화",
+      "title": "걸프 AI 인프라 위기 | Apple iPhone 17e 출시 | Claude 대이동 시대 개막",
+      "summary": "이란 공습으로 Amazon UAE 데이터센터 피격 걸프 AI 인프라 꿈에 균열. Apple iPhone 17e와 iPad Air M4 동시 출시. ChatGPT 대탈출 Claude 앱스토어 1위 메모리 이전 도구 출시. Nvidia 포토닉스 $4B 투자. 이란 인터넷 이틀째 차단 사이버전.",
+      "highlights": [
+        "이란 공습 Amazon UAE 데이터센터 피격 걸프 AI 인프라 위기",
+        "Apple iPhone 17e iPad Air M4 동시 출시 Apple Intelligence 최적화",
+        "ChatGPT 대탈출 Claude 앱스토어 1위 Anthropic 메모리 이전 도구 출시"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-02",
       "day": "월",
       "title": "미·이스라엘 이란 전면 공습 하메네이 사망 | Anthropic 역설의 앱스토어 1위 | MWC 로봇폰 시대 개막",
