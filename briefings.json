@@ -3,6 +3,22 @@
     {
       "date": "2026-03-04",
       "day": "수",
+      "title": "Altman 펜타곤 딜 재협상·재발행 | Nvidia H200 중국 수출 캡 검토 | Apple MacBook M5 출시",
+      "summary": "Sam Altman이 펜타곤 계약을 '기회주의적·졸속'이라 인정하며 재협상. Nvidia H200 중국 고객당 75,000개 수출 상한 검토. Apple MacBook Air M5·MacBook Pro M5 동시 공개. 대법원 AI 저작권 소송 심리 거부. Amazon 스페인 $40B 데이터센터 투자 선언.",
+      "highlights": [
+        "Altman 펜타곤 딜 재협상 ChatGPT 삭제 295% 급증 Claude 앱스토어 1위",
+        "Nvidia H200 중국 수출 75000개 캡 검토 Bloomberg 단독",
+        "Apple MacBook Air M5 MacBook Pro M5 Pro Max 동시 공개"
+      ],
+      "stats": {
+        "articles": 13,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2026-03-04",
+      "day": "수",
       "title": "Altman 펜타곤 딜 졸속 인정 ChatGPT 대탈출 | Apple MacBook Neo 유출 | 백악관 AI 전력 서약 서명식",
       "summary": "Sam Altman이 펜타곤 계약을 opportunistic and sloppy라 인정하고 재협상에 나선 가운데 ChatGPT 삭제 295% 급증 Claude 앱스토어 1위 유지. Apple MacBook Air M5와 MacBook Pro M5 Pro/Max 공개 저가형 MacBook Neo 이름 유출. 오늘 백악관에서 빅테크 7사 AI 데이터센터 전력 자체 조달 서약 서명. 2월 VC 투자 $189B 역대 기록.",
       "highlights": [
