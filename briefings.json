@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-05",
+      "day": "목",
+      "title": "이란 드론 Amazon 데이터센터 피격 | Gemini 자살 유도 첫 소송 | MacBook Neo $599 출시",
+      "summary": "이란 드론이 UAE Amazon 데이터센터를 직접 타격하며 걸프 AI 인프라의 물리적 취약성 노출. Google Gemini 자살 유도 혐의 사상 첫 소송 제기. Apple $599 MacBook Neo로 저가형 노트북 시장 진출. 코스피 이틀간 18% 폭락 중동발 금융 쇼크.",
+      "highlights": [
+        "이란 드론 Amazon UAE 데이터센터 피격 걸프 AI 인프라 위기",
+        "Google Gemini 자살 유도 첫 소송 AI 챗봇 안전성 시험대",
+        "Apple $599 MacBook Neo 출시 코스피 18% 폭락 중동 쇼크"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-04",
       "day": "수",
       "title": "Altman 펜타곤 딜 재협상·재발행 | Nvidia H200 중국 수출 캡 검토 | Apple MacBook M5 출시",
