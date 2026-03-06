@@ -3,6 +3,22 @@
     {
       "date": "2026-03-06",
       "day": "금",
+      "title": "GPT-5.4 자율 에이전트 출시 | Google 30% 수수료 폐지 | Nvidia AI 투자 축소 선언",
+      "summary": "OpenAI GPT-5.4 네이티브 컴퓨터 사용 자율 에이전트 출시. Google-Epic 합의 Play Store 30% 수수료 종료. Nvidia CEO Huang OpenAI Anthropic 투자 마지막 선언. Broadcom AI 칩 $100B 전망. Pentagon Anthropic 공식 블랙리스트 완료.",
+      "highlights": [
+        "OpenAI GPT-5.4 출시 네이티브 컴퓨터 사용 자율 에이전트 본격화",
+        "Google Play Store 수수료 20% 인하 Epic 합의 30% 앱스토어 시대 종료",
+        "Nvidia CEO Huang OpenAI $30B Anthropic $10B 투자 마지막 선언"
+      ],
+      "stats": {
+        "articles": 17,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2026-03-06",
+      "day": "금",
       "title": "Pentagon Anthropic 블랙리스트 | GPT-5.4 에이전트 시대 | Google 30% 수수료 폐지",
       "summary": "Pentagon이 Anthropic을 미국 기업 최초 supply-chain risk 공식 지정하면서도 이란전 Claude 계속 사용. OpenAI GPT-5.4 자율 에이전트 출시. Google-Epic 합의 Play Store 30% 수수료 종료. Nvidia AI 투자 축소 선언. Broadcom AI 칩 $100B 전망.",
       "highlights": [
