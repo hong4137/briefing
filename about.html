@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0a0a0f">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="JFNB">
+    <meta name="application-name" content="JFNB">
+    <meta name="msapplication-TileColor" content="#0a0a0f">
+    <meta name="msapplication-TileImage" content="icons/icon-144x144.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-72x72.png">
     <title>소개 | Jae's Foreign News Briefing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -293,6 +305,125 @@
             .features { grid-template-columns: 1fr; }
             .content { padding: 2rem 1.5rem; }
         }
+    
+        /* PWA Install Banner */
+        .pwa-install-banner {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #1a1a24 0%, #12121a 100%);
+            border-top: 1px solid #2a2a3a;
+            padding: 1rem 1.5rem;
+            z-index: 10000;
+            animation: slideUp 0.3s ease-out;
+            backdrop-filter: blur(20px);
+        }
+        .pwa-install-banner.show { display: block; }
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        .pwa-banner-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .pwa-banner-info {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .pwa-banner-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .pwa-banner-text h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .pwa-banner-text p {
+            font-size: 0.75rem;
+            color: #a0a0b0;
+            margin: 0;
+        }
+        .pwa-banner-actions {
+            display: flex;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+        .pwa-btn-install {
+            padding: 0.5rem 1.25rem;
+            background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .pwa-btn-install:hover { opacity: 0.9; }
+        .pwa-btn-dismiss {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            color: #666680;
+            border: 1px solid #2a2a3a;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .pwa-btn-dismiss:hover { color: #a0a0b0; }
+
+        /* PWA Update Toast */
+        .pwa-update-toast {
+            display: none;
+            position: fixed;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1a1a24;
+            border: 1px solid #4a9eff;
+            border-radius: 12px;
+            padding: 0.75rem 1.25rem;
+            z-index: 10001;
+            box-shadow: 0 8px 32px rgba(74, 158, 255, 0.2);
+            animation: fadeInUp 0.3s ease-out;
+        }
+        .pwa-update-toast.show { display: flex; gap: 1rem; align-items: center; }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+        .pwa-update-toast span { font-size: 0.85rem; color: #a0a0b0; }
+        .pwa-update-btn {
+            padding: 0.4rem 1rem;
+            background: #4a9eff;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        @media (max-width: 480px) {
+            .pwa-install-banner { padding: 0.75rem 1rem; }
+            .pwa-banner-text p { display: none; }
+        }
     </style>
 </head>
 <body>
@@ -442,5 +573,103 @@
     <footer class="footer">
         <p>Curated by Claude with ♥</p>
     </footer>
+
+    <!-- PWA Install Banner -->
+    <div class="pwa-install-banner" id="pwaInstallBanner">
+        <div class="pwa-banner-content">
+            <div class="pwa-banner-info">
+                <div class="pwa-banner-icon">📰</div>
+                <div class="pwa-banner-text">
+                    <h4>JFNB 앱 설치</h4>
+                    <p>홈 화면에 추가하여 빠르게 접근하세요</p>
+                </div>
+            </div>
+            <div class="pwa-banner-actions">
+                <button class="pwa-btn-dismiss" onclick="dismissInstallBanner()">닫기</button>
+                <button class="pwa-btn-install" onclick="installPWA()">설치</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PWA Update Toast -->
+    <div class="pwa-update-toast" id="pwaUpdateToast">
+        <span>새 버전이 있습니다</span>
+        <button class="pwa-update-btn" onclick="updatePWA()">업데이트</button>
+    </div>
+
+
+    <!-- PWA Registration -->
+    <script>
+        // Service Worker Registration
+        let deferredPrompt = null;
+        let swRegistration = null;
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', async () => {
+                try {
+                    swRegistration = await navigator.serviceWorker.register('/briefing/sw.js', {
+                        scope: '/briefing/'
+                    });
+                    console.log('[PWA] SW registered:', swRegistration.scope);
+
+                    // Check for updates
+                    swRegistration.addEventListener('updatefound', () => {
+                        const newWorker = swRegistration.installing;
+                        newWorker.addEventListener('statechange', () => {
+                            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                // New version available
+                                document.getElementById('pwaUpdateToast')?.classList.add('show');
+                            }
+                        });
+                    });
+                } catch (err) {
+                    console.log('[PWA] SW registration failed:', err);
+                }
+            });
+        }
+
+        // Install Prompt
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // Show install banner if not dismissed recently
+            const dismissed = localStorage.getItem('pwa-install-dismissed');
+            if (!dismissed || Date.now() - parseInt(dismissed) > 7 * 24 * 60 * 60 * 1000) {
+                setTimeout(() => {
+                    document.getElementById('pwaInstallBanner')?.classList.add('show');
+                }, 3000);
+            }
+        });
+
+        async function installPWA() {
+            if (!deferredPrompt) return;
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            console.log('[PWA] Install outcome:', outcome);
+            deferredPrompt = null;
+            document.getElementById('pwaInstallBanner')?.classList.remove('show');
+        }
+
+        function dismissInstallBanner() {
+            document.getElementById('pwaInstallBanner')?.classList.remove('show');
+            localStorage.setItem('pwa-install-dismissed', Date.now().toString());
+        }
+
+        function updatePWA() {
+            if (swRegistration?.waiting) {
+                swRegistration.waiting.postMessage({ type: 'SKIP_WAITING' });
+            }
+            document.getElementById('pwaUpdateToast')?.classList.remove('show');
+            window.location.reload();
+        }
+
+        // Track install success
+        window.addEventListener('appinstalled', () => {
+            console.log('[PWA] App installed successfully');
+            deferredPrompt = null;
+            document.getElementById('pwaInstallBanner')?.classList.remove('show');
+        });
+    </script>
 </body>
 </html>
