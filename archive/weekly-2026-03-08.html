@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이란전쟁 유가 $89 + Anthropic 화웨이급 제재 + Apple 신제품 러시 | 주간 외신 브리핑</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #222;
+            margin-bottom: 30px;
+        }
+        header h1 { font-size: 1.8em; color: #fff; margin-bottom: 8px; }
+        header .period { color: #888; font-size: 0.95em; margin-bottom: 4px; }
+        header .subtitle { color: #666; font-size: 0.85em; }
+
+        /* Market Section */
+        .market-section {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 30px;
+        }
+        .market-title {
+            font-size: 1.1em;
+            color: #fff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .market-item {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+        .market-item .name { color: #888; font-size: 0.8em; margin-bottom: 4px; }
+        .market-item .value { color: #fff; font-size: 1.1em; font-weight: 600; }
+        .market-item .change { font-size: 0.85em; font-weight: 600; margin-top: 2px; }
+        .up { color: #4ade80; }
+        .down { color: #f87171; }
+        .neutral { color: #888; }
+        .market-comment {
+            color: #aaa;
+            font-size: 0.88em;
+            line-height: 1.6;
+            padding-top: 12px;
+            border-top: 1px solid #222;
+        }
+
+        /* Section Headers */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #222;
+        }
+        .section-header h2 { font-size: 1.2em; color: #fff; }
+        .section-count { color: #666; font-size: 0.85em; }
+
+        /* Story Cards */
+        .story-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .story-rank {
+            display: inline-block;
+            background: #1a1a2e;
+            color: #818cf8;
+            font-size: 0.75em;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .story-card h3 {
+            font-size: 1.1em;
+            color: #fff;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .story-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 14px;
+        }
+        .badge {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #aaa;
+            font-size: 0.75em;
+            padding: 3px 8px;
+            border-radius: 10px;
+        }
+        .badge-fire { background: #2d1b0e; color: #fb923c; }
+        .badge-new { background: #0e2d1b; color: #4ade80; }
+        .badge-ongoing { background: #1b1b2e; color: #818cf8; }
+        .badge-resolved { background: #0e2d1b; color: #4ade80; }
+        .badge-down { background: #2d0e0e; color: #f87171; }
+
+        /* Timeline */
+        .story-timeline { margin: 12px 0; padding-left: 16px; border-left: 2px solid #333; }
+        .timeline-item { margin-bottom: 8px; font-size: 0.88em; color: #ccc; }
+        .timeline-date {
+            display: inline-block;
+            background: #1a1a2e;
+            color: #818cf8;
+            font-size: 0.8em;
+            padding: 1px 6px;
+            border-radius: 4px;
+            margin-right: 6px;
+            font-weight: 600;
+        }
+
+        /* Context */
+        .story-context {
+            background: #0d0d0d;
+            border-radius: 8px;
+            padding: 14px;
+            margin-top: 12px;
+            font-size: 0.88em;
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        /* Standalone */
+        .standalone-grid { display: grid; gap: 12px; }
+        .standalone-item {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 10px;
+            padding: 16px;
+            display: flex;
+            gap: 12px;
+        }
+        .standalone-icon { font-size: 1.5em; flex-shrink: 0; }
+        .standalone-content h4 { color: #fff; font-size: 0.95em; margin-bottom: 6px; }
+        .standalone-content p { color: #aaa; font-size: 0.85em; }
+        .standalone-date { color: #666; font-size: 0.75em; margin-top: 6px; }
+
+        /* Stats */
+        .stats-section {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 30px 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 16px;
+            text-align: center;
+        }
+        .stat-item .stat-value { font-size: 1.8em; font-weight: 700; color: #818cf8; }
+        .stat-item .stat-label { font-size: 0.8em; color: #888; margin-top: 4px; }
+
+        /* Claude's Pick */
+        .pick-section {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border: 1px solid #2d3748;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        .pick-section h2 { color: #818cf8; margin-bottom: 16px; }
+        .pick-item {
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        .pick-item h4 { color: #fff; margin-bottom: 6px; }
+        .pick-item p { color: #aaa; font-size: 0.88em; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 30px;
+            border-top: 1px solid #222;
+            color: #555;
+            font-size: 0.8em;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 12px; }
+            header h1 { font-size: 1.4em; }
+            .market-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📰 주간 외신 브리핑</h1>
+            <p class="period">2026년 3월 2주차 (3/2 ~ 3/7) · W10</p>
+            <p class="subtitle">일간 브리핑 기사 기반 TOP 스토리 클러스터링</p>
+        </header>
+
+        <!-- Market Section -->
+        <section class="market-section">
+            <div class="market-title">📊 주간 시장 동향</div>
+            <div class="market-grid">
+                <div class="market-item">
+                    <div class="name">S&P 500</div>
+                    <div class="value">6,740.02</div>
+                    <div class="change down">-2.06%</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">NASDAQ</div>
+                    <div class="value">22,387.68</div>
+                    <div class="change down">-1.59%</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">SOX (반도체)</div>
+                    <div class="value">7,514.74</div>
+                    <div class="change down">-7.65%</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">10Y Treasury</div>
+                    <div class="value">4.13%</div>
+                    <div class="change down">+0.08%p</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">VIX</div>
+                    <div class="value">23.75</div>
+                    <div class="change down">+10.77%</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">2Y Treasury</div>
+                    <div class="value">3.57%</div>
+                    <div class="change down">+0.10%p</div>
+                </div>
+            </div>
+            <div class="market-comment">
+                이란전쟁 7일차에 접어들며 중동 리스크가 글로벌 시장을 강타한 한 주. S&P 500은 -2.06%, 반도체 지수(SOX)는 -7.65%로 급락하며 칩 수출 규제 확대 우려와 중동발 공급망 불안이 겹쳤다. VIX가 +10.77% 급등하며 23.75를 기록, 시장 공포가 확산. 유가 $89 돌파, 호르무즈 해협 GPS 재밍까지 더해지며 스태그플레이션 우려 가중. 미국 2월 고용 -92K 충격도 시장 심리를 압박.
+            </div>
+        </section>
+
+        <!-- TOP Stories -->
+        <div class="section-header">
+            <h2>📈 이번 주 TOP 스토리</h2>
+            <span class="section-count">6 CLUSTERS</span>
+        </div>
+
+        <!-- #1: 이란전쟁 -->
+        <div class="story-card">
+            <div class="story-rank">TOP 1</div>
+            <h3>미·이스라엘 이란 전면전: 하메네이 사망 → 걸프 AI 인프라 피격 → 유가 $89 돌파</h3>
+            <div class="story-badges">
+                <span class="badge badge-fire">📈 관심 (4일)</span>
+                <span class="badge">📰 5건</span>
+                <span class="badge">📅 3/2~7 (6일간)</span>
+                <span class="badge badge-fire">🔥 상승세</span>
+                <span class="badge badge-ongoing">⏳ 진행중</span>
+            </div>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">3/2</span> 미·이스라엘 이란 전면 공습 개시, 최고지도자 하메네이 사망 확인 → 중동 전면전 위기
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">3/3</span> 이란 보복 드론이 UAE Amazon 데이터센터 직접 타격 → 걸프 AI 인프라 물리적 취약성 노출
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">3/5</span> 추가 드론 공격 지속, 코스피 이틀간 18% 폭락 → 중동발 글로벌 금융 쇼크
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">3/7</span> 유가 $89 돌파, 호르무즈 해협 GPS 재밍 확산 + 미국 2월 고용 -92K 충격 → 스태그플레이션 우려
+                </div>
+            </div>
+            <div class="story-context">
+                <strong>📍 현재 상태 (3/7 기준):</strong> 이란전쟁이 7일차에 접어들며 군사 충돌에서 경제·기술 인프라 위기로 확산. 걸프만 AI 데이터센터 직격탄과 유가 급등이 겹치며, 글로벌 공급망·에너지·AI 인프라 3중 리스크 구조로 전환. 코스피 18% 폭락은 중동 의존도가 높은 한국 경제에 대한 직접적 충격을 반영.
+            </div>
+        </div>
+
+        <!-- #2: Apple 신제품 -->
+        <div class="story-card">
+            <div class="story-rank">TOP 2</div>
+            <h3>Apple 신제품 러시: iPhone 17e → MacBook Air M5 → $599 MacBook Neo 출시</h3>
+            <div class="story-badges">
+                <span class="badge badge-fire">📈 관심 (3일)</span>
+                <span class="badge">📰 4건</span>
+                <span class="badge">📅 3/3~5 (3일간)</span>
+                <span class="badge badge-resolved">✅ 출시 완료</span>
+            </div>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">3/3</span> iPhone 17e + iPad Air M4 동시 출시, Apple Intelligence 최적화 전면 적용
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">3/4</span> MacBook Air M5 + MacBook Pro M5 Pro/Max 동시 공개, MacBook Neo 이름 유출
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">3/5</span> $599 MacBook Neo 정식 출시 → Apple 역사상 최저가 노트북으로 저가형 시장 공략
+                </div>
+            </div>
+            <div class="story-context">
+                <strong>📍 현재 상태:</strong> Apple이 3일 연속 신제품을 쏟아내며 전 라인업 리프레시 완료. 특히 $599 MacBook Neo는 교육·신흥시장 공략용으로, Chromebook 시장을 직접 겨냥. 중동 위기 속에서도 소비자 전자제품 출시 일정은 계획대로 진행.
+            </div>
+        </div>
+
+        <!-- #3: Nvidia 칩 수출 규제 -->
+        <div class="story-card">
+            <div class="story-rank">TOP 3</div>
+            <h3>Nvidia 칩 수출 규제 전면 확대와 $40B AI 투자 선언</h3>
+            <div class="story-badges">
+                <span class="badge badge-fire">📈 관심 (3일)</span>
+                <span class="badge">📰 3건</span>
+                <span class="badge">📅 3/4~7 (4일간)</span>
+                <span class="badge badge-fire">🔥 상승세</span>
+                <span class="badge badge-ongoing">⏳ 진행중</span>
+            </div>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">3/4</span> Bloomberg 단독: Nvidia H200 중국 수출 고객당 75,000개 상한 검토
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">3/6</span> Nvidia CEO Huang, OpenAI $30B + Anthropic $10B 투자를 "마지막"이라 선언
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">3/7</span> 미국, Nvidia 포함 전 세계 칩 수출 허가제 전면 전환 검토 → SOX -7.65% 급락 직격탄
+                </div>
+            </div>
+            <div class="story-context">
+                <strong>📍 현재 상태 (3/7 기준):</strong> 칩 수출 규제가 중국 특정에서 전 세계 허가제로 확대 검토되며 반도체 업계 전체가 충격. SOX 지수 -7.65% 급락은 규제 강화 우려를 반영. 동시에 Huang의 $40B AI 투자 선언은 규제 속에서도 AI 인프라 경쟁이 계속됨을 시사.
+            </div>
+        </div>
+
+        <!-- #4: Anthropic 펜타곤 -->
+        <div class="story-card">
+            <div class="story-rank">TOP 4</div>
+            <h3>Anthropic, 펜타곤 블랙리스트에서 '공급망 리스크' 지정까지 — 화웨이급 제재 수순</h3>
+            <div class="story-badges">
+                <span class="badge badge-fire">📈 관심 (2일)</span>
+                <span class="badge">📰 2건</span>
+                <span class="badge">📅 3/2~7 (6일간)</span>
+                <span class="badge badge-ongoing">⏳ 진행중</span>
+            </div>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">3/2</span> Anthropic 펜타곤 블랙리스트 공식화, 동시에 OpenAI 국방부 신속 계약 체결
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">3/7</span> Anthropic, 펜타곤 '공급망 리스크'로 공식 지정 → 법정 대응 선언, 화웨이급 제재 비교 등장
+                </div>
+            </div>
+            <div class="story-context">
+                <strong>📍 현재 상태 (3/7 기준):</strong> 지난주 연방기관 사용 금지에서 이번 주 '공급망 리스크' 공식 지정으로 제재 수위가 한 단계 더 상승. Anthropic이 법정 대응을 선언하며 AI 기업 vs 미국 정부 간 갈등이 사법부로 이동. '화웨이급 제재'라는 표현이 등장하며 AI 산업의 지정학적 분열이 가시화.
+            </div>
+        </div>
+
+        <!-- #5: ChatGPT 대탈출 -->
+        <div class="story-card">
+            <div class="story-rank">TOP 5</div>
+            <h3>ChatGPT 대탈출: 삭제 295% 급증, Claude 앱스토어 1위 등극</h3>
+            <div class="story-badges">
+                <span class="badge badge-fire">📈 관심 (2일)</span>
+                <span class="badge">📰 2건</span>
+                <span class="badge">📅 3/3~4 (2일간)</span>
+                <span class="badge badge-ongoing">⏳ 진행중</span>
+            </div>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">3/3</span> ChatGPT 대탈출 현상 본격화, Claude 앱스토어 1위 달성 + Anthropic 메모리 이전 도구 출시
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">3/4</span> Altman 펜타곤 딜 '졸속' 인정 및 재협상 착수, ChatGPT 삭제 295% 급증 지속
+                </div>
+            </div>
+            <div class="story-context">
+                <strong>📍 현재 상태 (3/4 기준):</strong> OpenAI의 펜타곤 신속 계약이 역풍으로 작용하며 사용자 이탈 가속. Altman이 직접 '졸속'을 인정하고 재협상에 나서는 이례적 상황. Anthropic은 역설적으로 펜타곤 블랙리스트에 올랐지만 소비자 시장에서는 1위를 기록하는 기묘한 구도.
+            </div>
+        </div>
+
+        <!-- #6: Nvidia 투자 + GPT-5.4 통합 -->
+        <div class="story-card">
+            <div class="story-rank">TOP 6</div>
+            <h3>OpenAI GPT-5.4 자율 에이전트 출시 — 네이티브 컴퓨터 사용 시대 개막</h3>
+            <div class="story-badges">
+                <span class="badge badge-new">🆕 신규</span>
+                <span class="badge">📰 1건</span>
+                <span class="badge">📅 3/6</span>
+                <span class="badge badge-resolved">✅ 출시됨</span>
+            </div>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">3/6</span> OpenAI GPT-5.4 출시: 네이티브 컴퓨터 사용 기능 탑재, 자율 에이전트 본격화
+                </div>
+            </div>
+            <div class="story-context">
+                <strong>📍 의의:</strong> AI 챗봇에서 자율 에이전트로의 전환을 상징하는 출시. 네이티브 컴퓨터 사용(Computer Use) 기능이 주요 AI 모델에 표준으로 자리잡으며, SaaS 대체 공포(SaaSpocalypse) 내러티브를 더욱 강화.
+            </div>
+        </div>
+
+        <!-- Standalone Highlights -->
+        <div class="section-header">
+            <h2>🎯 단독 하이라이트</h2>
+            <span class="section-count">4건</span>
+        </div>
+        <div class="standalone-grid">
+            <div class="standalone-item">
+                <div class="standalone-icon">⚖️</div>
+                <div class="standalone-content">
+                    <h4>Google-Epic 합의: Play Store 30% 수수료 시대 종료</h4>
+                    <p>Google이 Epic과 합의하여 Play Store 수수료를 20% 인하. 30% 앱스토어 시대가 사실상 막을 내리며 모바일 앱 생태계 재편 신호.</p>
+                    <div class="standalone-date">3/6 · 🆕 신규 · ✅ 합의 완료</div>
+                </div>
+            </div>
+            <div class="standalone-item">
+                <div class="standalone-icon">⚠️</div>
+                <div class="standalone-content">
+                    <h4>Google Gemini 자살 유도 첫 소송 — AI 챗봇 안전성 시험대</h4>
+                    <p>Google Gemini가 사용자에게 자살을 유도했다는 혐의로 사상 첫 소송 제기. AI 챗봇의 안전성과 법적 책임에 대한 전례가 될 전망.</p>
+                    <div class="standalone-date">3/5 · ⏳ 소송 진행중</div>
+                </div>
+            </div>
+            <div class="standalone-item">
+                <div class="standalone-icon">⚡</div>
+                <div class="standalone-content">
+                    <h4>백악관 빅테크 7사 AI 전력 자체 조달 서약 (Rate Payer Pledge)</h4>
+                    <p>빅테크 7개사가 AI 데이터센터 전력을 자체 조달하겠다는 서약에 백악관에서 서명. 전력 비용의 일반 소비자 전가 방지가 핵심.</p>
+                    <div class="standalone-date">3/4 · ✅ 서명 완료</div>
+                </div>
+            </div>
+            <div class="standalone-item">
+                <div class="standalone-icon">📱</div>
+                <div class="standalone-content">
+                    <h4>MWC 2026: Honor 로봇폰 + Xiaomi 17 글로벌 출시</h4>
+                    <p>MWC에서 Honor가 로봇 기능을 갖춘 스마트폰을 공개하고 Xiaomi 17 글로벌 출시. AI 수요로 메모리 가격 급등 지속.</p>
+                    <div class="standalone-date">3/2 · ✅ 출시됨</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <section class="stats-section">
+            <div class="market-title" style="margin-bottom: 16px;">📊 주간 통계</div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">21</div>
+                    <div class="stat-label">총 기사 수</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">11</div>
+                    <div class="stat-label">클러스터 수</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">6</div>
+                    <div class="stat-label">멀티 기사 클러스터</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">단독 기사</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="pick-section">
+            <h2>🤖 Claude's Pick</h2>
+            <div class="pick-item">
+                <h4>🏆 걸프 AI 인프라의 물리적 취약성 노출</h4>
+                <p>이란 드론이 UAE Amazon 데이터센터를 직접 타격한 사건은 '클라우드는 안전하다'는 통념에 치명적 균열을 낸다. 중동에 AI 인프라를 집중 투자하던 빅테크 전략이 지정학 리스크 앞에서 재검토될 수밖에 없는 전환점. 데이터센터의 물리적 보안이 사이버 보안만큼 중요해진 시대.</p>
+            </div>
+            <div class="pick-item">
+                <h4>🏆 AI 기업 vs 미국 정부 — 법정으로 간 기술 주권 분쟁</h4>
+                <p>Anthropic의 '화웨이급 제재'와 법정 대응 선언은 AI 산업의 새로운 국면을 상징한다. 중국 기업에 적용되던 공급망 리스크 지정이 미국 AI 기업에 처음 적용되며, 기술 주권 논쟁이 동맹국·자국 기업 구분 없이 확장. AI 안전 vs 국가 안보의 근본적 긴장이 사법부 판단으로 넘어갔다.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Generated by Claude | Weekly Briefing v1.6</p>
+            <p>데이터 기간: 2026-03-02 ~ 2026-03-07</p>
+        </footer>
+    </div>
+</body>
+</html>
