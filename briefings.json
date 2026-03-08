@@ -1217,6 +1217,16 @@
       "stats": {
         "clusters": 12
       }
+    },
+    {
+      "date": "weekly-2026-03-08",
+      "week": "2026-W10",
+      "title": "이란전쟁 유가 $89 + Anthropic 화웨이급 제재 + Apple 신제품 러시",
+      "summary": "미·이스라엘 이란 전면전으로 유가 $89 돌파, 걸프 AI 인프라 피격. Anthropic이 화웨이급 공급망 리스크로 지정되며 법정 대응 선언. SOX -7.65% 급락.",
+      "period": "2026-03-02 ~ 2026-03-07",
+      "stats": {
+        "clusters": 11
+      }
     }
   ],
   "specials": [
