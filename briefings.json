@@ -3,6 +3,22 @@
     {
       "date": "2026-03-10",
       "day": "화",
+      "title": "Anthropic DOD 소송 전면전 | 유가 $100 돌파 역대급 공급 차질 | Bluesky CEO 사임",
+      "summary": "Anthropic이 펜타곤 공급망 리스크 지정에 맞서 국방부를 정식 제소하며 AI 군사 윤리 논쟁이 법정으로 향했다. 이란전 호르무즈 해협 봉쇄로 유가가 $100을 돌파하며 스태그플레이션 공포 재부상. Bluesky CEO Jay Graber가 사임하고 전 WordPress 모회사 CEO가 임시 대표에 올랐다.",
+      "highlights": [
+        "Anthropic DOD 소송 OpenAI Google 직원 amicus brief 지지",
+        "유가 $100 돌파 호르무즈 봉쇄 역대 최대 공급 차질 스태그플레이션",
+        "Bluesky CEO Graber 사임 전 Automattic CEO 임시 대표"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2026-03-10",
+      "day": "화",
       "title": "Anthropic 국방부 소송 전면전 | 유가 $100 돌파 역대 최대 공급 차질 | Bluesky CEO 사임",
       "summary": "Anthropic이 국방부를 상대로 소송을 제기하며 AI 군사 갈등이 법정으로 향했다. OpenAI와 Google 직원 40명이 amicus brief로 지원. 이란전 2주차 호르무즈 봉쇄로 유가 $100 돌파 역대 최대 공급 차질. Bluesky CEO Jay Graber 전격 사임.",
       "highlights": [
