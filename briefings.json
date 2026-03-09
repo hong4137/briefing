@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-10",
+      "day": "화",
+      "title": "Anthropic 국방부 소송 전면전 | 유가 $100 돌파 역대 최대 공급 차질 | Bluesky CEO 사임",
+      "summary": "Anthropic이 국방부를 상대로 소송을 제기하며 AI 군사 갈등이 법정으로 향했다. OpenAI와 Google 직원 40명이 amicus brief로 지원. 이란전 2주차 호르무즈 봉쇄로 유가 $100 돌파 역대 최대 공급 차질. Bluesky CEO Jay Graber 전격 사임.",
+      "highlights": [
+        "Anthropic DOD 소송 OpenAI Google 직원 amicus brief 지원",
+        "유가 $100 돌파 역대 최대 공급 차질 스태그플레이션 공포",
+        "Bluesky CEO Graber 사임 OpenAI Promptfoo 인수"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-09",
       "day": "월",
       "title": "Anthropic 런던 탈출 · 이란전 걸프 타격 확전 · AI 메모리칩 공급 위기",
