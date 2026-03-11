@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-11",
+      "day": "수",
+      "title": "MS Anthropic 법정 지원 전면전 | Meta Moltbook AI 에이전트 인수 | 유가 $100 돌파 스태그플레이션",
+      "summary": "Microsoft가 Anthropic 펜타곤 블랙리스트 임시 중지를 법원에 요청하며 빅테크 연대 확산. Meta가 AI 에이전트 소셜 네트워크 Moltbook 인수로 에이전트 시대 개막. 이란전 호르무즈 봉쇄로 유가 $100 돌파 역대 최대 공급 차질.",
+      "highlights": [
+        "MS Anthropic 법정 지원 OpenAI Google 직원 amicus brief 빅테크 연대",
+        "Meta Moltbook 인수 AI 에이전트 소셜 네트워크 Amazon Perplexity 차단",
+        "유가 $100 돌파 호르무즈 봉쇄 역대 최대 공급 차질 스태그플레이션"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-10",
       "day": "화",
       "title": "Anthropic DOD 소송 전면전 | 유가 $100 돌파 역대급 공급 차질 | Bluesky CEO 사임",
