@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-12",
+      "day": "목",
+      "title": "Meta AI칩 자체개발 본격화 | Zoox-Uber 로보택시 동맹 | Nvidia $26B 오픈소스 AI 투자",
+      "summary": "Meta가 Nvidia 의존도를 낮추기 위해 자체 AI칩 4종 개발에 착수하며 반도체 내재화 경쟁이 가속화된다. Amazon Zoox가 Uber와 제휴해 라스베이거스에서 로보택시 서비스를 시작한다. Nvidia는 $26B을 투입해 오픈웨이트 AI 모델 구축에 나서고 Nebius에 $2B 투자를 단행했다.",
+      "highlights": [
+        "Meta AI칩 MTIA 자체개발 Nvidia 의존도 축소 4종 개발",
+        "Zoox-Uber 로보택시 제휴 라스베이거스 LA 확대 연방승인 대기",
+        "Nvidia $26B 오픈웨이트 AI 모델 Nebius $2B 투자 생태계 장악"
+      ],
+      "stats": {
+        "articles": 22,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-11",
       "day": "수",
       "title": "MS Anthropic 법정 지원 전면전 | Meta Moltbook AI 에이전트 인수 | 유가 $100 돌파 스태그플레이션",
