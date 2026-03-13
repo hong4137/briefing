@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-13",
+      "day": "금",
+      "title": "Adobe CEO 퇴진 AI 시대 한계 | Cursor $50B 바이브코딩 왕좌 | 이란 호르무즈 봉쇄 유지 선언",
+      "summary": "Adobe CEO Shantanu Narayen가 AI 시대 적응 실패 비판 속에 퇴임을 발표했다. AI 코딩 스타트업 Cursor가 밸류에이션 $50B으로 두 배 올리며 바이브코딩 시대 최강자로 올라섰다. 이란 신임 최고지도자가 호르무즈 해협 봉쇄 유지를 선언하면서 Brent 유가 $100 돌파.",
+      "highlights": [
+        "Adobe CEO Narayen 퇴임 AI 시대 적응 실패 후임자 난제",
+        "Cursor $50B Lovable ARR $400M Replit $400M 바이브코딩 폭발",
+        "이란 신임 지도자 호르무즈 봉쇄 유지 Brent $100 IEA 비축유 방출"
+      ],
+      "stats": {
+        "articles": 21,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-12",
       "day": "목",
       "title": "Meta AI칩 자체개발 본격화 | Zoox-Uber 로보택시 동맹 | Nvidia $26B 오픈소스 AI 투자",
