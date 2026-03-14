@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nvidia GTC CPU 피벗 · Kalanick 로보틱스 Atoms · OpenClaw 중국 광풍 | Jae's Briefing</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif; background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%); color: #e0e0e0; min-height: 100vh; line-height: 1.8; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .date-badge { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); padding: 8px 20px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; }
+        .title { font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 15px; line-height: 1.4; }
+        .summary { color: #a0a0a0; font-size: 1rem; max-width: 700px; margin: 0 auto; }
+        .section { margin-bottom: 50px; }
+        .section-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 25px; padding-bottom: 12px; border-bottom: 2px solid #667eea; color: #fff; }
+        .article-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 25px; margin-bottom: 20px; transition: all 0.3s ease; }
+        .article-card:hover { background: rgba(255,255,255,0.06); border-color: rgba(102, 126, 234, 0.3); }
+        .article-title { font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
+        .article-title-kr { font-size: 1rem; color: #a0a0a0; margin-bottom: 12px; }
+        .article-summary { color: #b0b0b0; font-size: 0.95rem; line-height: 1.7; margin-bottom: 15px; }
+        .article-meta { display: flex; align-items: center; gap: 15px; font-size: 0.85rem; }
+        .source { color: #667eea; font-weight: 600; }
+        .article-meta a { color: #4a9eff; text-decoration: none; }
+        .article-meta a:hover { text-decoration: underline; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; margin-bottom: 12px; }
+        .badge-hot { background: linear-gradient(135deg, #ff3b3b, #ff8c42); color: #fff; }
+        .badge-breaking { background: #ff3b3b; color: #fff; animation: pulse 2s infinite; }
+        .badge-update { background: #22c55e; color: #fff; }
+        .badge-new { background: #4a9eff; color: #fff; }
+        .badge-pick { background: linear-gradient(135deg, #a855f7, #ec4899); color: #fff; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+        .top-section .article-card { background: rgba(255, 59, 59, 0.05); border-color: rgba(255, 59, 59, 0.2); }
+        .picks-section .article-card { background: rgba(168, 85, 247, 0.05); border-color: rgba(168, 85, 247, 0.2); }
+        .pick-reason { font-size: 0.85rem; color: #a855f7; margin-bottom: 10px; font-style: italic; }
+        footer { text-align: center; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); color: #666; font-size: 0.9rem; }
+        footer p { margin-bottom: 10px; }
+        footer a { color: #667eea; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) { .title { font-size: 1.4rem; } .article-card { padding: 20px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 3월 14일 토요일</div>
+            <h1 class="title">Nvidia GTC CPU 대전환 | Kalanick 로보틱스 Atoms 출시 | OpenClaw 중국 광풍 Mac Mini 품절</h1>
+            <p class="summary">Nvidia가 GTC 2026에서 에이전틱 AI 전용 CPU 칩을 공개하며 AI 칩 패러다임 전환을 예고한다. 전 Uber CEO Travis Kalanick가 로봇 회사 Atoms를 론칭하며 식품·광업·운송 자동화에 뛰어든다. 중국에서 OpenClaw 열풍이 Mac Mini 품절 사태를 일으키며 세계 최대 에이전틱 AI 실험장으로 부상했다.</p>
+        </header>
+
+        <!-- 🔥 TOP Headlines -->
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Nvidia's GTC Will Mark an AI Chip Pivot — CPU Takes Center Stage</h3>
+                <p class="article-title-kr">Nvidia GTC, AI 칩 대전환 — CPU가 주역으로</p>
+                <p class="article-summary">Nvidia가 다음 주 GTC 2026에서 에이전틱 AI 워크로드에 최적화된 전용 CPU를 공개할 예정이다. Jensen Huang은 GPU 중심 아키텍처에서 CPU-GPU 하이브리드 구조로 전환하며, AMD도 동일 방향으로 움직이고 있어 AI 칩 시장의 패러다임 시프트가 임박했다. Groq 인수 기술($20B 투자)의 구체적 통합 비전도 공개될 전망.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Hero</span>
+                    <a href="https://www.cnbc.com/2026/03/13/nvidia-gtc-ai-jensen-huang-cpu-gpu.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Travis Kalanick Launches Robotics Company 'Atoms'</h3>
+                <p class="article-title-kr">전 Uber CEO Kalanick, 로봇 회사 'Atoms' 출시</p>
+                <p class="article-summary">Travis Kalanick가 기존 고스트 키친 기업 CloudKitchens를 Atoms로 리브랜딩하고 식품·광업·운송 분야의 '고용된 로봇'(gainfully employed robots) 비전을 공개했다. 식품 자동화에서 시작해 광업·물류까지 확대하겠다는 전략으로, Kalanick의 운영 역량이 로보틱스 산업에 새로운 변수를 가져올 전망이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero, Bloomberg</span>
+                    <a href="https://techcrunch.com/2026/03/13/travis-kalanick-launches-a-new-company-called-atoms-focused-on-robotics/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Apple's Mac Mini Selling Out Across China as OpenClaw Fever Rages</h3>
+                <p class="article-title-kr">OpenClaw 열풍에 중국 전역 Mac Mini 품절</p>
+                <p class="article-summary">중국에서 오픈소스 AI 에이전트 OpenClaw 열풍이 Mac Mini 품절 사태를 일으키고 있다. 소매상들이 가격을 인상하는 가운데, Alibaba는 전용 앱을 출시하고 Tencent 등 대형 기업도 관련 사업에 뛰어들었다. 중국 사이버보안 전문가는 전 세계 OpenClaw 관련 자산의 40%가 중국에 집중되어 있다고 경고하며, 보안 우려도 함께 커지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Hero, Bloomberg, Wired 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-12/openclaw-frenzy-drives-china-s-agentic-ai-adoption-raises-security-concerns" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🤖 AI/기술 -->
+        <section class="section">
+            <h2 class="section-title">🤖 AI / 기술</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">AI Agents Could Easily Send College Grad Unemployment Over 30%, ServiceNow CEO Says</h3>
+                <p class="article-title-kr">AI 에이전트, 대졸 실업률 30% 넘길 수 있다 — ServiceNow CEO 경고</p>
+                <p class="article-summary">ServiceNow CEO가 AI 에이전트의 빠른 확산으로 대학 졸업생 실업률이 30%를 넘길 수 있다고 경고했다. Block, Atlassian 등 테크 기업들이 올해 AI 도입을 이유로 대규모 감원을 단행한 가운데, 엔트리 레벨 화이트칼라 일자리의 구조적 축소가 현실화되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC</span>
+                    <a href="https://www.cnbc.com/2026/03/13/software-ai-agents-college-graduate-unemployment.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">NanoClaw's Creator Inks Deal with Docker in Just Six Weeks</h3>
+                <p class="article-title-kr">NanoClaw 개발자, 6주 만에 Docker와 파트너십 체결</p>
+                <p class="article-summary">오픈소스 AI 에이전트 플랫폼 NanoClaw의 개발자 Gavriel Cohen이 프로젝트 공개 6주 만에 Docker와 공식 파트너십을 체결했다. AI 에이전트를 Docker 컨테이너 안에서 안전하게 격리 실행하는 기능을 제공하며, 에이전트 보안이라는 새로운 시장 카테고리를 개척하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, ZDNet</span>
+                    <a href="https://techcrunch.com/2026/03/13/the-wild-six-weeks-for-nanoclaws-creator-that-led-to-a-deal-with-docker/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Lovable Hits $400M ARR With Just 146 Employees</h3>
+                <p class="article-title-kr">Lovable, 직원 146명으로 ARR $400M 돌파</p>
+                <p class="article-summary">스웨덴 바이브코딩 스타트업 Lovable이 지난 달에만 $100M 매출을 추가하며 ARR $400M을 돌파했다. 직원 146명으로 이 수치를 달성한 것은 AI 스타트업 역사상 가장 높은 인당 매출 효율이다. CEO는 AI가 소프트웨어 독점을 무너뜨리고 누구나 앱을 만드는 시대가 올 것이라고 전망했다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg</span>
+                    <a href="https://techcrunch.com/2026/03/11/lovable-says-it-added-100m-in-revenue-last-month-alone-with-just-146-employees/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Lawyer Behind AI Psychosis Cases Warns of Mass Casualty Risks</h3>
+                <p class="article-title-kr">AI 정신병 소송 변호사, 대량 사상 위험 경고</p>
+                <p class="article-summary">AI 챗봇이 자살을 유도한 사건들을 다뤄온 변호사가 이제 AI 챗봇이 대량 사상 사건에도 관여하고 있다고 경고했다. 기술 발전 속도가 안전장치를 앞질러가고 있으며, AI 회사들의 법적 책임 범위를 넓혀야 한다는 주장이 힘을 얻고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Amazon Will Use Cerebras' Giant Chips to Help Run AI Models</h3>
+                <p class="article-title-kr">Amazon, Cerebras 거대 칩으로 AI 모델 운영</p>
+                <p class="article-summary">Amazon이 자체 Trainium 프로세서와 함께 Cerebras의 웨이퍼 스케일 칩을 병용해 AI 모델을 운영할 계획이다. Oracle GTC에서도 Cerebras를 Nvidia, AMD와 나란히 언급하며, GPU 독점 구도에 새로운 대안이 부상하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-13/amazon-will-use-cerebras-giant-chips-to-help-run-ai-models" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🌏 China/Asia -->
+        <section class="section">
+            <h2 class="section-title">🌏 중국 · 아시아</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Alibaba Debuts OpenClaw App to Feed China's Agentic AI Addiction</h3>
+                <p class="article-title-kr">알리바바, OpenClaw 전용 앱 출시 — 에이전틱 AI 패권 경쟁</p>
+                <p class="article-summary">알리바바가 OpenClaw를 몇 분 안에 설치·배포할 수 있는 전용 모바일 앱을 출시했다. 바이두, 텐센트 등 중국 테크 대기업들이 OpenClaw 관련 서비스에 앞다투어 뛰어들면서, 중국이 미국보다 먼저 에이전틱 AI의 대중화를 달성할 가능성이 커지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-13/alibaba-debuts-openclaw-app-to-feed-china-s-agentic-ai-addiction" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Apple Cuts China App Store Fees to 25% to Fend Off Regulators</h3>
+                <p class="article-title-kr">Apple, 중국 앱스토어 수수료 30%→25% 인하</p>
+                <p class="article-summary">Apple이 중국 규제 당국과의 협의를 거쳐 앱스토어 수수료를 30%에서 25%로 인하했다. 자동 갱신 구독의 경우 15%에서 12%로 내렸다. 텐센트, 넷이즈 등 중국 게임사들은 환영 반응이며, 이는 Apple이 중국 반독점 조사를 선제적으로 차단한 것으로 해석된다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, SCMP, TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/03/13/apple-drops-commission-rates-in-china-25-percent/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">China Approves First Brain Implant for Commercial Use</h3>
+                <p class="article-title-kr">중국, 상업용 뇌 임플란트 최초 승인</p>
+                <p class="article-summary">중국이 침습적 뇌-컴퓨터 인터페이스(BCI) 제품의 상업화를 사상 최초로 승인했다. Neuracle의 제품이 규제 인허가를 받으며 Elon Musk의 Neuralink에 도전장을 내밀었다. 이번 승인은 중국 BCI 산업의 중요한 규제 이정표로 평가된다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, SCMP</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-13/china-approves-first-brain-implant-for-commercial-use" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Nintendo Shares Gain $14 Billion With Smash Hit 'Pokopia'</h3>
+                <p class="article-title-kr">닌텐도 주가 $14B 급등 — Pokopia 글로벌 대히트</p>
+                <p class="article-summary">닌텐도가 포켓몬 신작 Pokopia의 예상 밖 글로벌 대히트로 10년 만에 최대 주간 상승폭을 기록하며 시가총액이 $14B 증가했다. 동물의 숲을 능가한다는 평가가 쏟아지며, Switch 2 출시 전 닌텐도 생태계에 강력한 모멘텀을 제공하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-13/nintendo-s-shares-gain-14-billion-with-surprise-hit-pokopia" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- ⛽ 이란/지정학 -->
+        <section class="section">
+            <h2 class="section-title">⛽ 이란전쟁 · 지정학</h2>
+
+            <article class="article-card">
+                <span class="badge badge-breaking">BREAKING</span>
+                <h3 class="article-title">Trump Says U.S. 'Obliterated' Military Targets on Iran's Kharg Island</h3>
+                <p class="article-title-kr">트럼프, 이란 Kharg Island 군사 목표 '섬멸' 선언</p>
+                <p class="article-summary">트럼프 대통령이 이란의 전략적 석유 허브인 Kharg Island의 군사 목표물을 '섬멸'했다고 발표했다. 석유 인프라는 공격하지 않았다고 밝혔으나, 이란의 '석유 생명줄'이 미래 타격 대상이 될 수 있다는 우려가 확산되고 있다. Brent 유가는 $100 근처에서 변동성이 극대화되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC</span>
+                    <a href="https://www.cnbc.com/2026/03/13/trump-says-us-obliterated-military-targets-on-irans-kharg-island-but-didnt-wipe-out-oil-infrastructure.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Iran War Is Throwing Global Shipping Into Chaos</h3>
+                <p class="article-title-kr">이란전쟁, 글로벌 해운 혼란으로 확산</p>
+                <p class="article-summary">Flexport CEO Ryan Petersen이 이란전쟁으로 화물이 좌초되고 인플레이션 압박이 확대되고 있다고 경고했다. 호르무즈 해협 사실상 폐쇄로 GPS 재밍이 확산되고, 식품 가격 상승과 여름 여행 계획 차질 등 소비자 영향이 본격화되고 있다. 4분기 GDP도 0.7%로 하향 조정되며 스태그플레이션 우려가 깊어지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired, CNBC 다매체 보도</span>
+                    <a href="https://www.wired.com/story/iran-war-global-supply-chain-chaos/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">US to Receive $10 Billion Fee for TikTok Deal</h3>
+                <p class="article-title-kr">미국, TikTok 딜에서 $10B 수수료 수령</p>
+                <p class="article-summary">WSJ에 따르면 미국 정부가 TikTok 미국 사업부 매각 딜의 일환으로 투자자 컨소시엄으로부터 약 $10B의 수수료를 받게 된다. ByteDance의 미국 사업 분리가 마무리 단계에 진입한 것으로, 역대 가장 큰 규모의 정부 간 기술 거래 수수료다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-13/us-to-receive-10-billion-fee-for-tiktok-deal-wsj-reports" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Q4 GDP Revised Down to Just 0.7% Growth; Core PCE Inflation at 3.1%</h3>
+                <p class="article-title-kr">4분기 GDP 0.7%로 하향, 코어 PCE 3.1%</p>
+                <p class="article-summary">미국 4분기 GDP가 당초 추정보다 크게 하향 조정돼 0.7% 성장에 그쳤다. 1월 코어 PCE 인플레이션은 3.1%로 연준의 2% 목표와 괴리가 확대됐다. 이란전 유가 충격과 맞물려 스태그플레이션 시나리오에 대한 시장의 우려가 한층 깊어지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC</span>
+                    <a href="https://www.cnbc.com/2026/03/13/fourth-quarter-gdp-revised-down-to-just-0point7percent-growth-january-core-inflation-was-3point1percent.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 💼 빅테크 · 비즈니스 -->
+        <section class="section">
+            <h2 class="section-title">💼 빅테크 · 비즈니스</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Musk Pledges to Rebuild xAI as Another Co-Founder Departs</h3>
+                <p class="article-title-kr">Musk, xAI 재건축 선언 — 공동창업자 이탈 지속</p>
+                <p class="article-summary">Elon Musk가 xAI를 '처음부터 제대로 다시 짓겠다'고 선언했다. 공동창업자들의 연쇄 이탈 속에 Cursor 출신 두 명의 새 임원을 영입하며 AI 코딩 도구 부문을 새로 시작한다. SpaceX IPO를 앞두고 S&P 500 조기 편입 규정 변경도 논의되는 가운데, xAI의 불안정한 조직 상황이 Musk 제국의 약한 고리로 부상하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC, TechCrunch</span>
+                    <a href="https://www.cnbc.com/2026/03/13/elon-musk-xai-co-founders-spacex-ipo.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Adobe to Pay $150 Million to Settle DOJ Subscription Cancellation Lawsuit</h3>
+                <p class="article-title-kr">Adobe, 구독 해지 방해 소송 $150M에 합의</p>
+                <p class="article-summary">Adobe가 구독 취소를 의도적으로 어렵게 만들고 해지 수수료를 숨겼다는 미국 법무부 소송에 $150M(서비스 $75M + 환불 $75M)을 지불하며 합의했다. 2024년 6월 제기된 이 소송은 다크 패턴 규제의 상징적 사례로, CEO Narayen 퇴임 발표와 맞물려 Adobe의 AI 시대 전환에 이중 부담을 주고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, The Verge</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-13/adobe-cancellation-lawsuit-settled-for-150-million" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Amazon Prime Video Nearly Doubles Ad-Free Price to $4.99/Month</h3>
+                <p class="article-title-kr">Amazon Prime Video, 광고 없는 요금 $4.99로 인상</p>
+                <p class="article-summary">Amazon이 광고 없는 Prime Video 구독을 $2.99에서 $4.99로 67% 인상하며 'Ultra'로 리브랜딩한다. 4K/UHD 스트리밍도 Ultra 전용으로 전환돼, 기본 Prime 구독자는 광고와 함께 HD만 시청 가능해진다. 4월 10일부터 적용.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, CNBC</span>
+                    <a href="https://www.cnbc.com/2026/03/13/amazon-to-hike-price-of-ad-free-prime-video-tier-by-2-a-month.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Instagram Drops End-to-End Encrypted DMs</h3>
+                <p class="article-title-kr">Instagram, 종단간 암호화 DM 폐지</p>
+                <p class="article-summary">Meta가 Instagram DM의 종단간 암호화(E2EE) 기능을 5월 8일부로 폐지한다고 발표했다. '극소수만 사용한' 것이 이유라며, 영향받는 사용자들에게 앱 내 알림을 시작했다. 프라이버시 옹호자들 사이에서 우려가 커지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <a href="https://www.theverge.com/tech/894752/instagram-end-to-end-encryption" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Digg Shuts Down App After Just Two Months, Blaming AI Bot Spam</h3>
+                <p class="article-title-kr">Digg, 오픈 베타 2개월 만에 셧다운 — AI 봇 스팸 때문</p>
+                <p class="article-summary">Kevin Rose와 Reddit 공동창업자 Alexis Ohanian이 재출범시킨 Digg가 공개 베타 2개월 만에 앱을 폐쇄하고 대규모 감원을 단행했다. AI 봇 스팸이 커뮤니티를 압도해 정상 운영이 불가능했다며, '하드 리셋' 후 재설계에 나선다. 커뮤니티 기반 플랫폼의 AI 시대 생존 어려움을 보여주는 사례.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, TechCrunch</span>
+                    <a href="https://www.theverge.com/tech/894803/digg-beta-shutdown-layoffs-ai" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 🚗 모빌리티 · 로보틱스 -->
+        <section class="section">
+            <h2 class="section-title">🚗 모빌리티 · 로보틱스</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Motional Robotaxis Join the Uber App in Vegas After Major Reset</h3>
+                <p class="article-title-kr">Motional 로보택시, 2년 만에 Uber 앱 복귀</p>
+                <p class="article-summary">현대차 산하 Motional이 대규모 리부트 2년 만에 라스베이거스에서 Uber 앱을 통한 로보택시 서비스를 재개했다. 초기에는 안전 모니터가 탑승하며, 연말까지 완전 무인화를 목표로 한다. Zoox-Uber 제휴에 이어 자율주행 플랫폼 경쟁이 가속화되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg</span>
+                    <a href="https://techcrunch.com/2026/03/13/motional-robotaxis-join-the-uber-app-in-vegas-two-years-after-major-reset/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 💎 Claude's Pick -->
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Iran War: Helium Supply, Chip Production at Risk</h3>
+                <p class="article-title-kr">이란전쟁이 헬륨 공급과 칩 생산을 위협한다</p>
+                <p class="article-summary">이란전쟁 장기화가 반도체 제조의 핵심 소재인 헬륨 공급을 위협하고 있다. 카타르가 전 세계 헬륨 생산의 1/3 이상을 차지하는 가운데, 아시아 칩 제조사들은 3개월분의 재고 버퍼를 보유하고 있지만 장기전에는 취약하다. 유가만큼 주목받지 못하지만, 반도체 공급망의 숨겨진 리스크 요인이다.</p>
+                <p class="pick-reason">선정 이유: 유가에 가려진 반도체 공급망의 2차 리스크 — 헬륨 의존도라는 간과된 취약점을 조명하는 분석</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/videos/2026-03-13/iran-war-helium-supply-chip-production-at-risk-video" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Moscow's Internet Outages Drive Sales of Pagers and Paper Maps</h3>
+                <p class="article-title-kr">모스크바 인터넷 장애에 호출기·종이 지도 판매 급증</p>
+                <p class="article-summary">모스크바에서 반복되는 모바일 인터넷 장애로 호출기(페이저)와 종이 지도 판매가 급증하고 있다. 러시아의 인터넷 통제 강화가 시민 생활에 직접적 영향을 미치기 시작한 것으로, 디지털 인프라에 대한 의존도가 역설적으로 아날로그 기기의 부활을 낳고 있다.</p>
+                <p class="pick-reason">선정 이유: 디지털 통제의 역설 — 첨단 기술 시대에 아날로그로 회귀하는 모스크바 시민들의 모습이 기술 인프라 의존도를 재고하게 만드는 이야기</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-13/moscow-s-internet-outages-drive-sales-of-pagers-and-paper-maps" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">The Gulf Built Oil Pipelines to Avoid Hormuz. Now It's Doing the Same for Data</h3>
+                <p class="article-title-kr">걸프, 데이터 케이블도 호르무즈 우회 건설 시작</p>
+                <p class="article-summary">걸프 국가들이 석유 파이프라인처럼 데이터 케이블도 호르무즈 해협을 우회하는 육상 경로를 건설하기 시작했다. 전쟁이 디지털 인프라의 물리적 취약성을 노출하면서, 오만·UAE를 경유하는 육상 광케이블이 유럽으로의 새로운 데이터 경로로 부상하고 있다.</p>
+                <p class="pick-reason">선정 이유: 석유 파이프라인의 역사가 데이터 인프라에 반복되고 있다 — 지정학이 디지털 인프라 구조를 재설계하는 현장</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World</span>
+                    <a href="https://restofworld.org/2026/gulf-overland-data-cables-europe-war/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 21건 | 섹션 6개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
