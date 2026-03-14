@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-14",
+      "day": "토",
+      "title": "Nvidia GTC CPU 대전환 | Kalanick 로보틱스 Atoms 출시 | OpenClaw 중국 광풍 Mac Mini 품절",
+      "summary": "Nvidia가 GTC 2026에서 에이전틱 AI 전용 CPU 칩을 공개하며 AI 칩 패러다임 전환을 예고한다. 전 Uber CEO Travis Kalanick가 로봇 회사 Atoms를 론칭하며 식품·광업·운송 자동화에 뛰어든다. 중국에서 OpenClaw 열풍이 Mac Mini 품절 사태를 일으키며 세계 최대 에이전틱 AI 실험장으로 부상했다.",
+      "highlights": [
+        "Nvidia GTC CPU 피벗 에이전틱 AI 전용 칩 공개 예고",
+        "Kalanick Atoms 로보틱스 출시 식품 광업 운송 자동화",
+        "OpenClaw 중국 광풍 Mac Mini 품절 Alibaba 전용 앱 출시"
+      ],
+      "stats": {
+        "articles": 21,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-13",
       "day": "금",
       "title": "Adobe CEO 퇴진 AI 시대 한계 | Cursor $50B 바이브코딩 왕좌 | 이란 호르무즈 봉쇄 유지 선언",
