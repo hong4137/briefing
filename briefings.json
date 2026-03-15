@@ -1339,6 +1339,16 @@
       "stats": {
         "clusters": 11
       }
+    },
+    {
+      "date": "weekly-2026-03-15",
+      "week": "2026-W11",
+      "title": "이란전쟁 유가 $100 + Anthropic 빅테크 연대 + Nvidia GTC CPU 피벗",
+      "summary": "이란 호르무즈 봉쇄 유지로 유가 $100 돌파 고착화, 스태그플레이션 공포 확산. Anthropic 국방부 소송에 MS·OpenAI·Google 연대 합류. Nvidia GTC에서 에이전틱 AI CPU 피벗 선언.",
+      "period": "2026-03-09 ~ 2026-03-14",
+      "stats": {
+        "clusters": 10
+      }
     }
   ],
   "specials": [
