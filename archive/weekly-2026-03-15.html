@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이란전쟁 유가 $100 + Anthropic 빅테크 연대 + Nvidia GTC CPU 피벗 | 주간 외신 브리핑</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a28;
+            --bg-card-hover: #222236;
+            --text-primary: #e8e8f0;
+            --text-secondary: #9898b0;
+            --text-muted: #6868808;
+            --accent-blue: #4a9eff;
+            --accent-purple: #8b5cf6;
+            --accent-red: #ef4444;
+            --accent-green: #22c55e;
+            --accent-orange: #f59e0b;
+            --accent-cyan: #06b6d4;
+            --border-color: #2a2a3d;
+            --gradient-1: linear-gradient(135deg, #4a9eff 0%, #8b5cf6 100%);
+            --gradient-2: linear-gradient(135deg, #ef4444 0%, #f59e0b 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Noto Sans KR', -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 16px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 0 30px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 32px;
+        }
+
+        header .label {
+            display: inline-block;
+            background: var(--gradient-1);
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 8px;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header .period {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        header .subtitle {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Market Section */
+        .market-section {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+            border: 1px solid var(--border-color);
+        }
+
+        .market-section h2 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+        }
+
+        .market-item {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 14px;
+            text-align: center;
+        }
+
+        .market-item .name {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .market-item .value {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .market-item .change {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .market-item .change.down { color: var(--accent-red); }
+        .market-item .change.up { color: var(--accent-green); }
+        .market-item .change.neutral { color: var(--text-secondary); }
+
+        .market-note {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-color);
+            line-height: 1.8;
+        }
+
+        /* Section Headers */
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section-icon {
+            font-size: 24px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        /* Story Cards */
+        .story-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            transition: border-color 0.2s;
+        }
+
+        .story-card:hover {
+            border-color: var(--accent-blue);
+        }
+
+        .story-card .rank {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .rank-1 { background: linear-gradient(135deg, #FFD700, #FFA500); color: #000; }
+        .rank-2 { background: linear-gradient(135deg, #C0C0C0, #A0A0A0); color: #000; }
+        .rank-3 { background: linear-gradient(135deg, #CD7F32, #B8860B); color: #fff; }
+        .rank-default { background: var(--bg-secondary); color: var(--text-secondary); }
+
+        .story-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 600;
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+        }
+
+        .badge.hot { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+        .badge.rising { background: rgba(74, 158, 255, 0.15); color: var(--accent-blue); }
+        .badge.new { background: rgba(139, 92, 246, 0.15); color: var(--accent-purple); }
+        .badge.fading { background: rgba(107, 114, 128, 0.15); color: #9ca3af; }
+        .badge.ongoing { background: rgba(245, 158, 11, 0.15); color: var(--accent-orange); }
+        .badge.resolved { background: rgba(34, 197, 94, 0.15); color: var(--accent-green); }
+        .badge.monitoring { background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan); }
+
+        .timeline {
+            border-left: 2px solid var(--border-color);
+            padding-left: 16px;
+            margin-top: 12px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 12px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .timeline-item:last-child { padding-bottom: 0; }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -21px;
+            top: 7px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+        }
+
+        .timeline-item .date {
+            color: var(--accent-blue);
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .timeline-item .text {
+            color: var(--text-secondary);
+        }
+
+        .current-status {
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            padding: 14px;
+            margin-top: 14px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            border-left: 3px solid var(--accent-orange);
+        }
+
+        .current-status strong {
+            color: var(--text-primary);
+        }
+
+        /* Standalone Section */
+        .standalone-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .standalone-item {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 16px 20px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .standalone-item .emoji { font-size: 20px; }
+
+        .standalone-item .content h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .standalone-item .content p {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Pick Section */
+        .pick-section {
+            background: linear-gradient(135deg, rgba(74, 158, 255, 0.08), rgba(139, 92, 246, 0.08));
+            border: 1px solid rgba(74, 158, 255, 0.2);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .pick-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .pick-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .pick-item h4 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--accent-blue);
+        }
+
+        .pick-item p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Stats */
+        .stats-section {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+            border: 1px solid var(--border-color);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 16px;
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-size: 28px;
+            font-weight: 900;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-item .label {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 24px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 32px;
+        }
+
+        footer p {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 12px; }
+            header h1 { font-size: 20px; }
+            .market-grid { grid-template-columns: repeat(2, 1fr); }
+            .story-card { padding: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="label">Weekly Briefing</div>
+            <h1>📰 주간 외신 브리핑</h1>
+            <p class="period">2026년 3월 2주차 (3/9 ~ 3/14)</p>
+            <p class="subtitle">일간 브리핑 헤드라인 누적 기반 · 10개 클러스터 분석</p>
+        </header>
+
+        <!-- Market Overview -->
+        <div class="market-section">
+            <h2>📊 주간 시장 요약</h2>
+            <div class="market-grid">
+                <div class="market-item">
+                    <div class="name">S&P 500</div>
+                    <div class="value">6,632</div>
+                    <div class="change down">▼ 2.41%</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">NASDAQ</div>
+                    <div class="value">22,105</div>
+                    <div class="change down">▼ 2.60%</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">SOX 반도체</div>
+                    <div class="value">7,647</div>
+                    <div class="change down">▼ 2.10%</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">10Y 국채</div>
+                    <div class="value">4.27%</div>
+                    <div class="change up">▲ +0.15%p</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">2Y 국채</div>
+                    <div class="value">3.76%</div>
+                    <div class="change up">▲ +0.20%p</div>
+                </div>
+                <div class="market-item">
+                    <div class="name">VIX</div>
+                    <div class="value">27.29</div>
+                    <div class="change down">▲ 7.02%</div>
+                </div>
+            </div>
+            <div class="market-note">
+                이란전쟁 2~3주차 호르무즈 해협 봉쇄 지속으로 유가 $100 돌파. 미국 증시 3대 지수 일제히 2% 이상 하락. VIX 27 상회로 공포 심리 확산. 국채 금리도 동반 상승하며 스태그플레이션 우려 고조. 특히 이란 신임 최고지도자의 봉쇄 유지 선언이 주 후반 시장을 압박.
+            </div>
+        </div>
+
+        <!-- TOP Stories -->
+        <div class="section-header">
+            <span class="section-icon">🏆</span>
+            <h2 class="section-title">이번 주 TOP 스토리</h2>
+        </div>
+
+        <!-- #1 이란전쟁 유가 -->
+        <div class="story-card">
+            <div class="rank rank-1">1</div>
+            <h3>이란전쟁 호르무즈 봉쇄와 유가 $100 돌파 — 스태그플레이션 공포 현실화</h3>
+            <div class="meta-row">
+                <span class="badge">📰 4건</span>
+                <span class="badge">📅 5일간 보도</span>
+                <span class="badge rising">📈 관심</span>
+                <span class="badge ongoing">⏳ 진행중</span>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">3/9 월</span>
+                    <span class="text"> — 이란전 걸프 민간 인프라 타격 확전, 원유 $150~200 전망 대두</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">3/10 화</span>
+                    <span class="text"> — 유가 $100 돌파, 역대 최대 공급 차질로 스태그플레이션 공포 확산</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">3/11 수</span>
+                    <span class="text"> — 호르무즈 봉쇄 지속, 유가 $100 선 유지, 스태그플레이션 논의 본격화</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">3/13 금</span>
+                    <span class="text"> — 이란 신임 최고지도자 호르무즈 봉쇄 유지 선언, Brent $100, IEA 비축유 방출 검토</span>
+                </div>
+            </div>
+            <div class="current-status">
+                <strong>📍 현황:</strong> 하메네이 사망 이후 등장한 이란 신임 지도부가 호르무즈 해협 봉쇄 유지를 공식 선언하면서 유가 $100선 고착화. IEA가 비축유 방출을 검토 중이나 시장 불안 해소는 요원. 걸프 AI 인프라(Amazon UAE 데이터센터 등) 물리적 피해도 누적되는 상황.
+            </div>
+        </div>
+
+        <!-- #2 Anthropic -->
+        <div class="story-card">
+            <div class="rank rank-2">2</div>
+            <h3>Anthropic 국방부 소송과 빅테크 업계 연대 확산</h3>
+            <div class="meta-row">
+                <span class="badge">📰 3건</span>
+                <span class="badge">📅 3일간 보도</span>
+                <span class="badge rising">📈 관심</span>
+                <span class="badge monitoring">📋 모니터링</span>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">3/9 월</span>
+                    <span class="text"> — 런던 시장이 Anthropic에 이전 제안, 펜타곤 배제 여파 글로벌화</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">3/10 화</span>
+                    <span class="text"> — Anthropic DOD 정식 제소, OpenAI·Google 직원 40명 amicus brief 지지</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">3/11 수</span>
+                    <span class="text"> — Microsoft 법정 지원 합류, 빅테크 전체가 Anthropic 편에 서는 연대 형성</span>
+                </div>
+            </div>
+            <div class="current-status">
+                <strong>📍 현황:</strong> 펜타곤 공급망 리스크 지정 → 법정 대응 → 빅테크 연대로 이어지는 흐름. 경쟁사인 OpenAI·Google 직원들까지 amicus brief로 지원하고 Microsoft도 임시 중지 청구에 합류하면서 "AI 군사 윤리" 이슈가 업계 전체 문제로 확대.
+            </div>
+        </div>
+
+        <!-- #3 Nvidia -->
+        <div class="story-card">
+            <div class="rank rank-3">3</div>
+            <h3>Nvidia GTC 2026 CPU 피벗 및 $26B 오픈웨이트 AI 대투자</h3>
+            <div class="meta-row">
+                <span class="badge">📰 2건</span>
+                <span class="badge">📅 3일간</span>
+                <span class="badge rising">📈 관심</span>
+                <span class="badge resolved">✅ 진행됨</span>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">3/12 목</span>
+                    <span class="text"> — Nvidia $26B 오픈웨이트 AI 모델 구축 선언, Nebius에 $2B 투자</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">3/14 토</span>
+                    <span class="text"> — GTC 2026에서 에이전틱 AI 전용 CPU 칩 공개 예고, GPU→CPU 패러다임 전환</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- #4 Meta -->
+        <div class="story-card">
+            <div class="rank rank-default">4</div>
+            <h3>Meta AI칩 MTIA 자체개발 4종 착수 및 Moltbook 인수</h3>
+            <div class="meta-row">
+                <span class="badge">📰 2건</span>
+                <span class="badge">📅 2일간</span>
+                <span class="badge rising">📈 관심</span>
+                <span class="badge monitoring">📋 모니터링</span>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">3/11 수</span>
+                    <span class="text"> — AI 에이전트 소셜 네트워크 Moltbook 인수, Amazon·Perplexity AI 접근 차단</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">3/12 목</span>
+                    <span class="text"> — AI칩 MTIA 자체개발 본격화, Nvidia 의존도 축소 위해 4종 동시 개발</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- #5 로보틱스 -->
+        <div class="story-card">
+            <div class="rank rank-default">5</div>
+            <h3>로보택시·로보틱스 산업 가속화 — Zoox-Uber 제휴, Kalanick 복귀</h3>
+            <div class="meta-row">
+                <span class="badge">📰 2건</span>
+                <span class="badge">📅 3일간</span>
+                <span class="badge rising">📈 관심</span>
+                <span class="badge resolved">✅ 진행됨</span>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">3/12 목</span>
+                    <span class="text"> — Amazon Zoox-Uber 로보택시 제휴, 라스베이거스·LA 서비스 시작</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">3/14 토</span>
+                    <span class="text"> — 전 Uber CEO Kalanick, 로봇 회사 Atoms 출시 (식품·광업·운송 자동화)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- #6 Bluesky -->
+        <div class="story-card">
+            <div class="rank rank-default">6</div>
+            <h3>Bluesky CEO Jay Graber 전격 사임</h3>
+            <div class="meta-row">
+                <span class="badge">📰 2건</span>
+                <span class="badge">📅 1일 보도</span>
+                <span class="badge fading">📉 단발</span>
+                <span class="badge monitoring">📋 모니터링</span>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">3/10 화</span>
+                    <span class="text"> — Bluesky CEO Jay Graber 사임, 전 Automattic(WordPress) CEO가 임시 대표 취임</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Standalone Highlights -->
+        <div style="margin-top: 36px;">
+            <div class="section-header">
+                <span class="section-icon">🎯</span>
+                <h2 class="section-title">단독 하이라이트</h2>
+            </div>
+
+            <div class="standalone-list">
+                <div class="standalone-item">
+                    <span class="emoji">🇨🇳</span>
+                    <div class="content">
+                        <h4>OpenClaw 중국 광풍 — Mac Mini 품절, Alibaba 전용 앱 출시</h4>
+                        <p>3/14 · 중국에서 오픈소스 AI 에이전트 OpenClaw 열풍이 Mac Mini 품절 사태를 일으키며 세계 최대 에이전틱 AI 실험장으로 부상 <span class="badge new">🆕 신규</span></p>
+                    </div>
+                </div>
+                <div class="standalone-item">
+                    <span class="emoji">🎨</span>
+                    <div class="content">
+                        <h4>Adobe CEO Narayen 퇴임 — AI 시대 적응 실패 평가</h4>
+                        <p>3/13 · 25년간 Adobe를 이끈 Shantanu Narayen이 AI 시대 적응 실패 비판 속 퇴임, 후임자 선정 난제 <span class="badge new">🆕 신규</span></p>
+                    </div>
+                </div>
+                <div class="standalone-item">
+                    <span class="emoji">💻</span>
+                    <div class="content">
+                        <h4>바이브코딩 시대 Cursor $50B — Lovable·Replit ARR $400M 돌파</h4>
+                        <p>3/13 · AI 코딩 스타트업 Cursor가 밸류에이션 $50B으로 두 배 상승, 바이브코딩 생태계 폭발적 성장 <span class="badge new">🆕 신규</span></p>
+                    </div>
+                </div>
+                <div class="standalone-item">
+                    <span class="emoji">💾</span>
+                    <div class="content">
+                        <h4>AI 메모리칩 공급 위기 현실화</h4>
+                        <p>3/9 · AI 수요 급증에 메모리칩 공급 부족이 현실화, 가격 상승 압력 지속 <span class="badge fading">📉 단발</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Claude's Pick -->
+        <div style="margin-top: 36px;">
+            <div class="section-header">
+                <span class="section-icon">🤖</span>
+                <h2 class="section-title">Claude's Pick</h2>
+            </div>
+
+            <div class="pick-section">
+                <div class="pick-item">
+                    <h4>💡 Nvidia의 CPU 피벗 — GPU 시대 너머를 준비하는 전략적 전환</h4>
+                    <p>GTC 2026에서 에이전틱 AI 전용 CPU를 공개 예고한 것은 GPU 의존 수익 구조의 한계를 Nvidia 스스로 인정한 것. $26B 오픈웨이트 AI 투자와 결합하면, Nvidia가 "칩 판매 → 생태계 운영자"로 피벗하려는 그림이 보인다. Meta의 MTIA 자체개발 4종 착수도 같은 맥락에서 읽히는데, Nvidia 독점 체제의 균열이 가속화되는 한 주였다.</p>
+                </div>
+                <div class="pick-item">
+                    <h4>🌍 AI 군사 윤리 — 경쟁사들이 연대하는 전례 없는 장면</h4>
+                    <p>Anthropic의 펜타곤 소송에 OpenAI·Google 직원이 amicus brief를 제출하고, Microsoft까지 법정 지원에 나선 것은 AI 업계 역사상 전례 없는 장면이다. 평소 치열하게 경쟁하는 기업들이 "치명적 자율무기 가드레일"이라는 원칙에서는 한 목소리를 낸 것. 이는 단순한 기업 간 동맹이 아니라, AI 산업 전체가 군사적 활용의 경계를 어디에 그을 것인지에 대한 업계 합의의 시작점으로 볼 수 있다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weekly Stats -->
+        <div class="stats-section">
+            <div class="section-header">
+                <span class="section-icon">📊</span>
+                <h2 class="section-title">주간 통계</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="number">19</div>
+                    <div class="label">총 기사 수</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">10</div>
+                    <div class="label">클러스터</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">6</div>
+                    <div class="label">멀티 기사</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">4</div>
+                    <div class="label">단독 기사</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">2</div>
+                    <div class="label">⏳ 진행중</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">2</div>
+                    <div class="label">✅ 진행됨</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Generated by Claude · Weekly Briefing v1.6</p>
+            <p style="margin-top: 6px;"><a href="https://hong4137.github.io/briefing/">홈으로 돌아가기</a></p>
+        </footer>
+
+    </div>
+</body>
+</html>
