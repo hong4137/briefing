@@ -392,6 +392,48 @@
             text-decoration: none;
         }
 
+        /* Events Section */
+        .events-section {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+            border: 1px solid var(--border-color);
+        }
+
+        .events-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .event-item {
+            display: flex;
+            align-items: baseline;
+            gap: 14px;
+            padding: 10px 14px;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+        }
+
+        .event-date {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--accent-blue);
+            white-space: nowrap;
+            min-width: 65px;
+        }
+
+        .event-text {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .event-text strong {
+            color: var(--text-primary);
+        }
+
         @media (max-width: 480px) {
             .container { padding: 12px; }
             header h1 { font-size: 20px; }
@@ -690,6 +732,31 @@
                 <div class="stat-item">
                     <div class="number">2</div>
                     <div class="label">✅ 진행됨</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Events -->
+        <div style="margin-top: 36px;">
+            <div class="section-header">
+                <span class="section-icon">📅</span>
+                <h2 class="section-title">다음 주 주요 일정</h2>
+            </div>
+
+            <div class="events-section">
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date">3/16-19</div>
+                        <div class="event-text"><strong>Nvidia GTC 2026</strong> — 에이전틱 AI 전용 CPU 정식 발표 예정. Jensen Huang 키노트 + AI 인프라·로보틱스 신제품 공개. 이번 주 브리핑 1위 스토리의 후속 전개가 핵심.</div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">3/18 (수)</div>
+                        <div class="event-text"><strong>Micron Technology (MU) FQ2 실적 발표</strong> — 가이던스 매출 $18.7B. HBM4 출하·AI 메모리 수요 전망이 핵심. 이란전쟁 공급망 리스크 속 메모리 가격 방향성 확인 계기.</div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">3/18-19</div>
+                        <div class="event-text"><strong>FOMC 3월 회의</strong> — 유가 $100 고착화·스태그플레이션 우려 속 금리 결정. 국채 금리 동반 상승(10Y 4.27%, 2Y 3.76%) 추세에서 파월 의장의 인플레이션 전망 발언 주목.</div>
+                    </div>
                 </div>
             </div>
         </div>
