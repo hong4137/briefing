@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-16",
+      "day": "월",
+      "title": "Samsung S26 프라이버시 디스플레이 혁신 | Moonshot $180억 밸류에이션 | 걸프전 아시아 경제 재편",
+      "summary": "Samsung이 Galaxy S26 Ultra에 세계 최초 하드웨어 프라이버시 디스플레이를 탑재하며 스마트폰 혁신의 새 장을 열었다. 중국 AI 스타트업 Moonshot이 3개월 만에 밸류에이션을 4배 이상 키워 $180억을 노크한다. 걸프전 장기화로 아시아 전역의 원격근무, 에너지 공급망, 물류가 근본적으로 재편되고 있다.",
+      "highlights": [
+        "Samsung S26 Ultra 프라이버시 디스플레이 세계 최초 하드웨어 기반",
+        "Moonshot AI $180억 밸류에이션 3개월 4배 Kimi Claw 폭발",
+        "걸프전 아시아 경제 재편 LPG 항공유 이주노동 원격근무"
+      ],
+      "stats": {
+        "articles": 22,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-14",
       "day": "토",
       "title": "Nvidia GTC CPU 대전환 | Kalanick 로보틱스 Atoms 출시 | OpenClaw 중국 광풍 Mac Mini 품절",
