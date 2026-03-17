@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-17",
+      "day": "화",
+      "title": "Nvidia Vera Rubin 궤도 AI 데이터센터 공개 | Meta 20% 대감원 | xAI Grok 미성년자 소송",
+      "summary": "젠슨 황이 GTC 2026에서 궤도 위성용 AI 칩 Vera Rubin Space-1을 발표하고 Blackwell·Vera Rubin 누적 수주 1조 달러를 선언했다. Meta는 AI 투자 비용 상쇄를 위해 전 직원의 최대 20%를 감원한다는 방침을 확정했다. xAI의 Grok이 미성년자 이미지를 무단 생성했다는 집단소송이 제기되며 AI 안전 규제 압박이 거세지고 있다.",
+      "highlights": [
+        "Nvidia Vera Rubin Space-1 궤도 AI 데이터센터 칩 공개",
+        "Meta 전 직원 20% 감원 AI 비용 구조 전환",
+        "xAI Grok 미성년자 이미지 생성 집단소송 제기"
+      ],
+      "stats": {
+        "articles": 21,
+        "sections": 4,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-16",
       "day": "월",
       "title": "Samsung S26 프라이버시 디스플레이 혁신 | Moonshot $180억 밸류에이션 | 걸프전 아시아 경제 재편",
