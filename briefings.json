@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-18",
+      "day": "수",
+      "title": "Amazon 1시간 배송 시대 개막 | Samsung TriFold 3개월 만에 단종 | OpenAI 연내 IPO 추진",
+      "summary": "Amazon이 미국에서 1시간·3시간 초고속 배송을 본격 도입하며 물류 전쟁을 가속화한다. Samsung은 3개월 만에 Galaxy Z TriFold을 단종하며 $2,899 폴더블 실험의 실패를 인정했다. OpenAI는 연내 IPO를 추진하면서 ChatGPT를 생산성 도구로 전환하라는 사내 지침을 내렸다.",
+      "highlights": [
+        "Amazon 1시간 3시간 초고속 배송 미국 본격 도입 물류전쟁",
+        "Samsung Galaxy Z TriFold 3개월 만에 단종 $2899 폴더블 실험 종료",
+        "OpenAI 연내 IPO 추진 ChatGPT 생산성 도구 전환 사내 지침"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-17",
       "day": "화",
       "title": "Nvidia Vera Rubin 궤도 AI 데이터센터 공개 | Meta 20% 대감원 | xAI Grok 미성년자 소송",
