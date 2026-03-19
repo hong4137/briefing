@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-19",
+      "day": "목",
+      "title": "Micron 매출 3배 메모리 대호황 | DOD Anthropic 국가안보 위협 선언 | 중국 OpenClaw 차세대 ChatGPT",
+      "summary": "Micron이 AI 메모리 수요 폭발에 매출이 거의 3배로 뛰며 반도체 대호황을 확인했다. 미 국방부는 Anthropic의 AI 군사 제한선이 전시 작전에 용납할 수 없는 위험이라고 선언하며 대립이 극한으로 치달았다. 젠슨 황이 OpenClaw를 차세대 ChatGPT로 지목하면서 중국 AI 에이전트 주가가 일제히 폭등했다.",
+      "highlights": [
+        "Micron 매출 3배 폭증 AI 메모리 대호황 HBM DRAM 가격 급등",
+        "DOD Anthropic 레드라인 국가안보 위협 선언 연방기관 퇴출 법적전쟁",
+        "중국 OpenClaw 주가 폭등 젠슨 황 차세대 ChatGPT Tencent Alibaba 에이전트"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-18",
       "day": "수",
       "title": "Amazon 1시간 배송 시대 개막 | Samsung TriFold 3개월 만에 단종 | OpenAI 연내 IPO 추진",
