@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-20",
+      "day": "금",
+      "title": "OpenAI 슈퍼앱 선언 | 이란전 카타르 LNG 타격 헬륨 위기 | Alibaba Tencent $66B 증발",
+      "summary": "OpenAI가 ChatGPT·Codex·Atlas를 통합하는 데스크톱 슈퍼앱을 예고하며 AI 플랫폼 전쟁의 새 국면을 열었다. 이란이 카타르 Ras Laffan LNG 시설을 타격하면서 헬륨 공급 차질로 반도체 생산까지 위협한다. Alibaba와 Tencent가 AI 수익화 비전 실패로 시총 $66B이 증발했다.",
+      "highlights": [
+        "OpenAI 슈퍼앱 ChatGPT Codex Atlas 통합 데스크톱 AI 플랫폼 전쟁",
+        "이란전 카타르 Ras Laffan LNG 타격 헬륨 공급 위기 반도체 생산 위협",
+        "Alibaba Tencent 시총 $66B 증발 AI 수익화 비전 실망 중국 OpenClaw 열풍"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-19",
       "day": "목",
       "title": "Micron 매출 3배 메모리 대호황 | DOD Anthropic 국가안보 위협 선언 | 중국 OpenClaw 차세대 ChatGPT",
