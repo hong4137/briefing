@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-21",
+      "day": "토",
+      "title": "Musk 트위터 투자자 기만 $2.1B 배상 | Super Micro 칩 밀수 기소 주가 33% 폭락 | Huang AI 토큰 급여 선언",
+      "summary": "캘리포니아 배심원단이 머스크 트위터 인수 과정 투자자 기만 인정 $2.1B 배상. Super Micro 공동창업자 Nvidia 칩 대중국 밀수 기소 주가 33% 급락. 젠슨 황 GTC에서 AI 토큰 급여 보상 모델 제시.",
+      "highlights": [
+        "Musk 트위터 기만 $2.1B 배상",
+        "Super Micro 칩 밀수 기소 SMCI -33%",
+        "Huang AI 토큰 급여 시대 선언"
+      ],
+      "stats": {
+        "articles": 21,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-20",
       "day": "금",
       "title": "OpenAI 슈퍼앱 선언 | 이란전 카타르 LNG 타격 헬륨 위기 | Alibaba Tencent $66B 증발",
