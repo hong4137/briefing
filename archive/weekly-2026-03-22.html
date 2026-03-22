@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTC 2026 AI 대전환 + 이란전 공급망 위기 + OpenAI 슈퍼앱 | 주간 외신 브리핑</title>
+    <style>
+        :root {
+            --bg-primary: #0a0f1e;
+            --bg-secondary: #111827;
+            --bg-card: #1a2332;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-blue: #60a5fa;
+            --accent-red: #f87171;
+            --accent-green: #4ade80;
+            --accent-yellow: #fbbf24;
+            --accent-purple: #a78bfa;
+            --border-color: #1e293b;
+            --gradient-start: #1e3a5f;
+            --gradient-end: #0a0f1e;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            border-radius: 20px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+        .header h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .header .period { color: var(--accent-blue); font-size: 1rem; font-weight: 600; }
+        .header .subtitle { color: var(--text-secondary); font-size: 0.9rem; margin-top: 5px; }
+
+        /* Market Section */
+        .market-section {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .section-icon { font-size: 1.5rem; }
+        .section-title { font-size: 1.2rem; color: var(--text-primary); }
+
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+        .market-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 14px;
+            background: var(--bg-card);
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        .market-item .name { color: var(--text-secondary); }
+        .market-item .value { font-weight: 600; }
+        .up { color: var(--accent-green); }
+        .down { color: var(--accent-red); }
+        .stable { color: var(--text-secondary); }
+
+        .market-analysis {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+        .market-analysis h3 {
+            color: var(--text-primary);
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        .market-analysis p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        /* Stories Section */
+        .stories-section {
+            margin-bottom: 30px;
+        }
+        .stories-section > .section-header {
+            padding: 0 5px;
+            margin-bottom: 20px;
+        }
+
+        .story-cluster {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+        }
+        .story-cluster h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+        .story-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .badge-count { background: rgba(96, 165, 250, 0.15); color: var(--accent-blue); }
+        .badge-duration { background: rgba(148, 163, 184, 0.15); color: var(--text-secondary); }
+        .badge-momentum-up { background: rgba(74, 222, 128, 0.15); color: var(--accent-green); }
+        .badge-momentum-stable { background: rgba(148, 163, 184, 0.15); color: var(--text-secondary); }
+        .badge-momentum-down { background: rgba(248, 113, 113, 0.15); color: var(--accent-red); }
+        .badge-status-ongoing { background: rgba(251, 191, 36, 0.15); color: var(--accent-yellow); }
+        .badge-status-resolved { background: rgba(74, 222, 128, 0.15); color: var(--accent-green); }
+        .badge-status-monitor { background: rgba(148, 163, 184, 0.15); color: var(--text-secondary); }
+        .badge-new { background: rgba(167, 139, 250, 0.15); color: var(--accent-purple); }
+        .badge-sustained { background: rgba(248, 113, 113, 0.15); color: var(--accent-red); }
+        .badge-interest { background: rgba(74, 222, 128, 0.15); color: var(--accent-green); }
+        .badge-single { background: rgba(148, 163, 184, 0.15); color: var(--text-secondary); }
+
+        .timeline {
+            margin-top: 12px;
+        }
+        .timeline h4 {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .timeline ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .timeline li {
+            padding: 6px 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            border-left: 2px solid var(--border-color);
+            padding-left: 15px;
+            margin-left: 5px;
+        }
+        .timeline li strong {
+            color: var(--accent-blue);
+            font-size: 0.85rem;
+        }
+        .current-status {
+            margin-top: 14px;
+            padding: 12px;
+            background: var(--bg-card);
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-yellow);
+        }
+        .current-status h4 {
+            font-size: 0.85rem;
+            color: var(--accent-yellow);
+            margin-bottom: 6px;
+        }
+        .current-status p {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Standalone Highlights */
+        .standalone-section {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+        .standalone-item {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .standalone-item:last-child { border-bottom: none; }
+        .standalone-item .date-badge {
+            font-size: 0.8rem;
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+        .standalone-item .title {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-top: 4px;
+        }
+        .standalone-item .desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Claude's Pick */
+        .pick-section {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+        .pick-item {
+            padding: 16px;
+            background: var(--bg-card);
+            border-radius: 10px;
+            margin-bottom: 12px;
+            border-left: 3px solid var(--accent-purple);
+        }
+        .pick-item:last-child { margin-bottom: 0; }
+        .pick-item h4 {
+            font-size: 1rem;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .pick-item p {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Stats */
+        .stats-section {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 16px;
+            background: var(--bg-card);
+            border-radius: 10px;
+        }
+        .stat-item .number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+        }
+        .stat-item .label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Events Section */
+        .events-section {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+        .events-list { display: grid; gap: 10px; }
+        .event-item {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            padding: 12px;
+            background: var(--bg-card);
+            border-radius: 8px;
+        }
+        .event-date {
+            font-size: 0.85rem;
+            color: var(--accent-blue);
+            font-weight: 600;
+            min-width: 65px;
+        }
+        .event-text {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .header { padding: 25px 15px; }
+            .header h1 { font-size: 1.4rem; }
+            .market-grid { grid-template-columns: 1fr; }
+            .story-meta { gap: 6px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .event-item { flex-direction: column; align-items: flex-start; gap: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <h1>📰 주간 외신 브리핑</h1>
+    <div class="period">2026년 3월 4주차 (3/16 ~ 3/21)</div>
+    <div class="subtitle">누적 기사 수 기반 TOP 스토리 · 12개 클러스터 분석</div>
+</header>
+
+<!-- Market Summary -->
+<section class="market-section">
+    <div class="section-header">
+        <span class="section-icon">📊</span>
+        <h2 class="section-title">주간 시장 동향</h2>
+    </div>
+
+    <div class="market-grid">
+        <div class="market-item">
+            <span class="name">S&P 500</span>
+            <span class="value down">-2.88% ⚠️</span>
+        </div>
+        <div class="market-item">
+            <span class="name">NASDAQ</span>
+            <span class="value down">-3.25% ⚠️</span>
+        </div>
+        <div class="market-item">
+            <span class="name">SOX (반도체)</span>
+            <span class="value down">-1.61% 📉</span>
+        </div>
+        <div class="market-item">
+            <span class="name">10Y 국채</span>
+            <span class="value stable">4.25% (+0.02%p)</span>
+        </div>
+        <div class="market-item">
+            <span class="name">2Y 국채</span>
+            <span class="value stable">3.79% (+0.11%p)</span>
+        </div>
+        <div class="market-item">
+            <span class="name">VIX</span>
+            <span class="value up">24.06 (+2.34%) 🔥</span>
+        </div>
+    </div>
+
+    <div class="market-analysis">
+        <h3>📝 주간 시장 해설</h3>
+        <p>
+            NASDAQ -3.25%, S&P 500 -2.88%로 기술주 중심의 매도세가 두드러진 한 주였다. 
+            Musk 트위터 $2.1B 배상 판결, Super Micro 칩 밀수 기소(-33%), Meta 20% 감원 등 
+            개별 악재가 연이어 터지며 투자 심리가 위축됐다. VIX는 24.06까지 상승하며 불안감 확대. 
+            반면 SOX는 -1.61%로 상대적 선방 — Micron 매출 3배 폭증이 AI 메모리 수요 지속을 확인시키며 
+            반도체 섹터를 지탱했다. 이란전 장기화로 에너지 공급 불안이 배경에 깔려 있으나, 
+            GTC 2026에서의 Nvidia 신제품 발표가 AI 낙관론의 버팀목 역할을 했다.
+        </p>
+    </div>
+</section>
+
+<!-- TOP Stories -->
+<section class="stories-section">
+    <div class="section-header">
+        <span class="section-icon">📈</span>
+        <h2 class="section-title">이번 주 TOP 스토리</h2>
+    </div>
+
+    <!-- Cluster 1: 중국 OpenClaw 열풍 -->
+    <article class="story-cluster">
+        <h3>1. 중국 OpenClaw 열풍과 AI 에이전트 생태계 폭발</h3>
+        <div class="story-meta">
+            <span class="badge badge-count">📰 3건</span>
+            <span class="badge badge-duration">📅 3일간 보도</span>
+            <span class="badge badge-interest">📈 관심</span>
+            <span class="badge badge-status-ongoing">⏳ 진행중</span>
+        </div>
+        <div class="timeline">
+            <h4>📅 스토리 타임라인</h4>
+            <ul>
+                <li><strong>3/16</strong> Moonshot AI $180억 밸류에이션 달성, 3개월 만에 4배 · Kimi Claw 폭발적 성장</li>
+                <li><strong>3/19</strong> 젠슨 황이 OpenClaw를 "차세대 ChatGPT"로 지목 · Tencent, Alibaba 에이전트 주가 폭등</li>
+                <li><strong>3/20</strong> Alibaba·Tencent 시총 $66B 증발 — AI 수익화 비전 실망과 OpenClaw 열풍 공존</li>
+            </ul>
+        </div>
+        <div class="current-status">
+            <h4>📍 현재 상태</h4>
+            <p>젠슨 황의 GTC 2026 공식 지목으로 OpenClaw가 글로벌 주목을 받고 있으나, 중국 AI 기업들의 수익화 실패 우려도 동시에 부각. Moonshot/Kimi 등 에이전트 플랫폼의 폭발적 성장이 지속되는 가운데 밸류에이션 거품 논쟁이 진행 중.</p>
+        </div>
+    </article>
+
+    <!-- Cluster 2: GTC 2026 & Nvidia -->
+    <article class="story-cluster">
+        <h3>2. GTC 2026: Nvidia의 AI 칩 패러다임 대전환</h3>
+        <div class="story-meta">
+            <span class="badge badge-count">📰 2건</span>
+            <span class="badge badge-duration">📅 2일간 보도</span>
+            <span class="badge badge-new">🆕 신규</span>
+            <span class="badge badge-status-resolved">✅ 발표 완료</span>
+        </div>
+        <div class="timeline">
+            <h4>📅 스토리 타임라인</h4>
+            <ul>
+                <li><strong>3/17</strong> Vera Rubin Space-1 궤도 AI 데이터센터 칩 공개 · Blackwell/Vera Rubin 누적 수주 $1T 선언</li>
+                <li><strong>3/21</strong> 젠슨 황 "AI 토큰 급여 시대" 선언 — AI가 노동을 수행하고 토큰으로 보상받는 모델 제시</li>
+            </ul>
+        </div>
+        <div class="current-status">
+            <h4>📍 현재 상태</h4>
+            <p>GTC 2026에서 궤도 위성 AI칩(Space-1), 에이전틱 AI 전용 CPU, AI 토큰 급여 모델 등 혁신적 비전을 총망라. 누적 수주 $1T 선언으로 AI 인프라 투자 사이클의 건재함을 재확인.</p>
+        </div>
+    </article>
+
+    <!-- Cluster 3: 이란전 걸프 위기 -->
+    <article class="story-cluster">
+        <h3>3. 이란전 걸프 에너지·반도체 공급망 위기 확산</h3>
+        <div class="story-meta">
+            <span class="badge badge-count">📰 2건</span>
+            <span class="badge badge-duration">📅 2일간 보도</span>
+            <span class="badge badge-sustained">🔥 지속</span>
+            <span class="badge badge-status-ongoing">⏳ 진행중</span>
+        </div>
+        <div class="timeline">
+            <h4>📅 스토리 타임라인</h4>
+            <ul>
+                <li><strong>3/16</strong> 걸프전 장기화로 아시아 원격근무·에너지 공급망·이주노동·물류 근본적 재편</li>
+                <li><strong>3/20</strong> 이란이 카타르 Ras Laffan LNG 시설 타격 → 헬륨 공급 차질 → 반도체 생산까지 위협</li>
+            </ul>
+        </div>
+        <div class="current-status">
+            <h4>📍 현재 상태</h4>
+            <p>이란전이 에너지 공급 차질을 넘어 반도체 생산에 직접 영향을 미치는 단계로 확전. 카타르 LNG 시설 피격으로 헬륨 공급이 차단되면서 반도체 제조 공정(리소그래피)에 필수적인 초고순도 헬륨 확보 문제가 부각. 3주 연속 TOP 스토리로 지속 보도 중.</p>
+        </div>
+    </article>
+
+    <!-- Cluster 4: OpenAI 슈퍼앱 + IPO -->
+    <article class="story-cluster">
+        <h3>4. OpenAI 슈퍼앱 선언 · 연내 IPO 추진으로 AI 플랫폼 전쟁 격화</h3>
+        <div class="story-meta">
+            <span class="badge badge-count">📰 2건</span>
+            <span class="badge badge-duration">📅 2일간 보도</span>
+            <span class="badge badge-interest">📈 관심</span>
+            <span class="badge badge-status-ongoing">⏳ 진행중</span>
+        </div>
+        <div class="timeline">
+            <h4>📅 스토리 타임라인</h4>
+            <ul>
+                <li><strong>3/18</strong> OpenAI 연내 IPO 추진 확정 · ChatGPT를 "생산성 도구"로 전환하라는 사내 지침 하달</li>
+                <li><strong>3/20</strong> ChatGPT·Codex·Atlas 통합 데스크톱 슈퍼앱 예고 — AI 플랫폼 전쟁 새 국면</li>
+            </ul>
+        </div>
+        <div class="current-status">
+            <h4>📍 현재 상태</h4>
+            <p>OpenAI가 슈퍼앱 전략과 IPO를 동시 추진하며 "AI 운영체제" 포지셔닝을 본격화. ChatGPT를 채팅봇에서 생산성 플랫폼으로 전환하겠다는 의지를 명확히 하며 Microsoft, Google과의 3파전 구도가 형성.</p>
+        </div>
+    </article>
+
+    <!-- Cluster 5: Samsung 전략 -->
+    <article class="story-cluster">
+        <h3>5. Samsung 전략 양면: S26 혁신과 TriFold 단종</h3>
+        <div class="story-meta">
+            <span class="badge badge-count">📰 2건</span>
+            <span class="badge badge-duration">📅 2일간 보도</span>
+            <span class="badge badge-interest">📈 관심</span>
+            <span class="badge badge-status-resolved">✅ 결정됨</span>
+        </div>
+        <div class="timeline">
+            <h4>📅 스토리 타임라인</h4>
+            <ul>
+                <li><strong>3/16</strong> Galaxy S26 Ultra에 세계 최초 하드웨어 프라이버시 디스플레이 탑재</li>
+                <li><strong>3/18</strong> Galaxy Z TriFold 3개월 만에 단종 — $2,899 폴더블 실험 종료</li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- Cluster 6: Anthropic vs DOD -->
+    <article class="story-cluster">
+        <h3>6. Anthropic vs 국방부 법정 대립 격화 — 국가안보 위협 선언</h3>
+        <div class="story-meta">
+            <span class="badge badge-count">📰 1건</span>
+            <span class="badge badge-duration">📅 1일 보도</span>
+            <span class="badge badge-sustained">🔥 지속</span>
+            <span class="badge badge-status-ongoing">⏳ 진행중</span>
+        </div>
+        <div class="timeline">
+            <h4>📅 스토리 타임라인</h4>
+            <ul>
+                <li><strong>3/19</strong> DOD, Anthropic의 AI 군사 레드라인이 전시 작전에 "용납할 수 없는 위험"이라 선언 · 연방기관 퇴출 및 법적 전쟁 심화</li>
+            </ul>
+        </div>
+        <div class="current-status">
+            <h4>📍 현재 상태</h4>
+            <p>3주 연속 TOP 스토리. 펜타곤 공급망 리스크 지정(3/7) → Anthropic 소송(3/10) → MS 법정 지원(3/11) → DOD 국가안보 위협 선언(3/19)으로 대립 수위가 갈수록 격화. AI 군사 윤리 논쟁이 미국 안보 정책의 핵심 쟁점으로 부상.</p>
+        </div>
+    </article>
+</section>
+
+<!-- Standalone Highlights -->
+<section class="standalone-section">
+    <div class="section-header">
+        <span class="section-icon">🎯</span>
+        <h2 class="section-title">단독 하이라이트</h2>
+    </div>
+
+    <div class="standalone-item">
+        <span class="date-badge">3/21</span>
+        <div class="title">🔴 Musk 트위터 인수 투자자 기만 $2.1B 배상 판결</div>
+        <div class="desc">캘리포니아 배심원단이 트위터 인수 과정에서 투자자 기만을 인정, $2.1B 배상 명령</div>
+    </div>
+
+    <div class="standalone-item">
+        <span class="date-badge">3/21</span>
+        <div class="title">🔴 Super Micro 공동창업자 Nvidia 칩 대중국 밀수 기소 — SMCI -33%</div>
+        <div class="desc">Super Micro 공동창업자가 Nvidia 칩 대중국 밀수 혐의로 기소, 주가 33% 급락</div>
+    </div>
+
+    <div class="standalone-item">
+        <span class="date-badge">3/19</span>
+        <div class="title">📈 Micron 매출 3배 폭증 — AI 메모리 대호황 확인</div>
+        <div class="desc">HBM·DRAM 가격 급등 속 Micron 매출 거의 3배 증가, AI 메모리 수요 사이클 건재함 입증</div>
+    </div>
+
+    <div class="standalone-item">
+        <span class="date-badge">3/18</span>
+        <div class="title">🚀 Amazon 1시간·3시간 초고속 배송 미국 본격 도입</div>
+        <div class="desc">미국 전역에서 초고속 배송 서비스를 개시하며 물류 전쟁 가속화</div>
+    </div>
+
+    <div class="standalone-item">
+        <span class="date-badge">3/17</span>
+        <div class="title">✂️ Meta 전 직원 20% 대감원 — AI 비용 구조 전환</div>
+        <div class="desc">AI 투자 비용 상쇄를 위해 전 직원 최대 20% 감원 방침 확정</div>
+    </div>
+
+    <div class="standalone-item">
+        <span class="date-badge">3/17</span>
+        <div class="title">⚖️ xAI Grok 미성년자 이미지 생성 집단소송</div>
+        <div class="desc">Grok이 미성년자 이미지를 무단 생성했다는 집단소송 제기, AI 안전 규제 압박 가중</div>
+    </div>
+</section>
+
+<!-- Claude's Pick -->
+<section class="pick-section">
+    <div class="section-header">
+        <span class="section-icon">💎</span>
+        <h2 class="section-title">Claude's Pick</h2>
+    </div>
+
+    <div class="pick-item">
+        <h4>🏭 헬륨 위기: 이란전이 반도체를 직접 때리기 시작했다</h4>
+        <p>
+            이란전의 파급이 유가를 넘어 반도체 생산의 핵심 원료인 헬륨 공급까지 위협하기 시작했다.
+            카타르 Ras Laffan은 세계 LNG 및 헬륨 생산의 핵심 허브로, 이곳이 타격받으면서 
+            EUV 리소그래피에 필수적인 초고순도 헬륨의 공급 차질이 현실화되고 있다.
+            에너지 위기가 반도체 위기로 전이되는 경로가 구체적으로 드러난 첫 사례이며, 
+            이는 AI 하드웨어 투자 사이클 전체에 영향을 줄 수 있는 변수다.
+        </p>
+    </div>
+
+    <div class="pick-item">
+        <h4>🤖 AI 토큰 급여: 젠슨 황이 그리는 AI 경제의 완전히 새로운 모델</h4>
+        <p>
+            젠슨 황이 GTC 2026에서 "AI가 노동을 수행하고 토큰으로 보상받는" 새로운 경제 모델을 제시했다.
+            우주 데이터센터(Space-1), 에이전틱 AI CPU에 이어 "AI 토큰 급여"까지 —
+            단순히 칩을 파는 회사를 넘어 AI 경제 시스템 자체를 설계하겠다는 선언이다.
+            OpenClaw를 차세대 ChatGPT로 지목한 것과 결합하면, Nvidia가 꿈꾸는 미래는
+            AI 에이전트가 자율적으로 일하고, 경제적 보상을 받으며, 그 인프라를 Nvidia가 제공하는 그림이다.
+        </p>
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="stats-section">
+    <div class="section-header">
+        <span class="section-icon">📊</span>
+        <h2 class="section-title">주간 통계</h2>
+    </div>
+    <div class="stats-grid">
+        <div class="stat-item">
+            <div class="number">18</div>
+            <div class="label">총 헤드라인</div>
+        </div>
+        <div class="stat-item">
+            <div class="number">12</div>
+            <div class="label">클러스터</div>
+        </div>
+        <div class="stat-item">
+            <div class="number">6</div>
+            <div class="label">멀티 기사</div>
+        </div>
+        <div class="stat-item">
+            <div class="number">6</div>
+            <div class="label">단독 기사</div>
+        </div>
+        <div class="stat-item">
+            <div class="number">2</div>
+            <div class="label">🔥 지속</div>
+        </div>
+        <div class="stat-item">
+            <div class="number">3</div>
+            <div class="label">⏳ 진행중</div>
+        </div>
+    </div>
+</section>
+
+<!-- Events -->
+<section class="events-section">
+    <div class="section-header">
+        <span class="section-icon">📅</span>
+        <h2 class="section-title">다음 주 주요 일정</h2>
+    </div>
+    <div class="events-list">
+        <div class="event-item">
+            <div class="event-date">3/25-26</div>
+            <div class="event-text">FOMC 회의 — 금리 결정 발표 (3/26 오후)</div>
+        </div>
+        <div class="event-item">
+            <div class="event-date">3/25</div>
+            <div class="event-text">미국 소비자신뢰지수(CB Consumer Confidence) 발표</div>
+        </div>
+        <div class="event-item">
+            <div class="event-date">3/27</div>
+            <div class="event-text">미국 4분기 GDP 확정치 발표</div>
+        </div>
+        <div class="event-item">
+            <div class="event-date">3/28</div>
+            <div class="event-text">미국 PCE 물가지수(연준 선호 인플레이션 지표) 발표</div>
+        </div>
+        <div class="event-item">
+            <div class="event-date">이번주</div>
+            <div class="event-text">Anthropic vs DOD 법적 전쟁 후속 전개 주시</div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>Generated by Claude · Weekly Briefing v1.6 · 2026-03-22</p>
+</footer>
+
+</body>
+</html>
