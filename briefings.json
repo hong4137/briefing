@@ -1445,6 +1445,16 @@
       "stats": {
         "clusters": 10
       }
+    },
+    {
+      "date": "weekly-2026-03-22",
+      "week": "2026-W12",
+      "title": "GTC 2026 AI 대전환 + 이란전 반도체 공급망 위기 + OpenAI 슈퍼앱",
+      "summary": "Nvidia GTC 2026에서 우주 AI칩·토큰 급여 모델 발표, 이란전 카타르 LNG 타격으로 헬륨 공급 차질 반도체 위기 확전, OpenAI 슈퍼앱+IPO 동시 추진. NASDAQ -3.25%.",
+      "period": "2026-03-16 ~ 2026-03-21",
+      "stats": {
+        "clusters": 12
+      }
     }
   ],
   "specials": [
