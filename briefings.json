@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-24",
+      "day": "화",
+      "title": "Jensen Huang AGI 달성 선언 | Trump 이란 공격 5일 중단 | Elliott Synopsys 수십억 달러 매입",
+      "summary": "Nvidia CEO 젠슨 황이 AGI 도달 선언. 트럼프 이란 에너지 인프라 공격 5일 중단 발표로 유가 급락 시장 반등. Elliott가 칩 설계 대장주 Synopsys에 수십억 달러 투자.",
+      "highlights": [
+        "Jensen Huang AGI 달성 선언 Nvidia CEO Lex Fridman 팟캐스트",
+        "Trump 이란 에너지 인프라 공격 5일 중단 유가 급락 시장 반등",
+        "Elliott Synopsys 수십억 달러 지분 매입 칩 설계 생태계 파장"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-23",
       "day": "월",
       "title": "OpenAI 데이터센터 전략 축소 IPO 우려 | Pentagon-Anthropic 비밀 협상 재조명 | Musk 텍사스 반도체 공장 선언",
