@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-23",
+      "day": "월",
+      "title": "OpenAI 데이터센터 전략 축소 IPO 우려 | Pentagon-Anthropic 비밀 협상 재조명 | Musk 텍사스 반도체 공장 선언",
+      "summary": "OpenAI가 IPO를 앞두고 데이터센터 인프라 전략을 대폭 축소하며 월가의 AI 투자 피로감을 반영했다. 미 국방부와 Anthropic이 결별 직전까지 합의에 근접했다는 법원 문서가 공개되어 양측 갈등의 실체가 드러났다. Musk는 Tesla와 SpaceX 전용 반도체 공장을 텍사스에 건설하겠다는 야심찬 계획을 발표했다.",
+      "highlights": [
+        "OpenAI 데이터센터 축소 IPO 월가 AI CapEx 피로",
+        "Pentagon Anthropic 합의 근접 후 정치적 결별 법원 문서",
+        "Musk Terafab 텍사스 반도체 공장 Tesla SpaceX xAI"
+      ],
+      "stats": {
+        "articles": 16,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-21",
       "day": "토",
       "title": "Musk 트위터 투자자 기만 $2.1B 배상 | Super Micro 칩 밀수 기소 주가 33% 폭락 | Huang AI 토큰 급여 선언",
