@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-25",
+      "day": "수",
+      "title": "Trump 이란 공격 5일 중단 유가 급락 | OpenAI Sora 단종 비용 절감 | ARM 자체 CPU 첫 출시",
+      "summary": "트럼프가 이란 에너지 인프라 공격을 5일간 중단하면서 유가가 급락하고 글로벌 시장이 반등했다. OpenAI는 비용 절감 모드에 돌입해 Sora 비디오 앱을 단종했다. ARM이 35년 역사상 최초로 자체 CPU 칩을 출시하며 Meta를 첫 고객으로 확보했다.",
+      "highlights": [
+        "Trump 이란 에너지 인프라 공격 5일 중단 유가 급락 시장 반등",
+        "OpenAI Sora 단종 비용 절감 ChatGPT 쇼핑 전환 난항 $10B 조달",
+        "ARM 35년 최초 자체 CPU 칩 출시 Meta 첫 고객 Amazon Fauna 인수"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-24",
       "day": "화",
       "title": "Jensen Huang AGI 달성 선언 | Trump 이란 공격 5일 중단 | Elliott Synopsys 수십억 달러 매입",
