@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-26",
+      "day": "목",
+      "title": "Meta 소셜미디어 중독 $375M 배상 | Epic Games 1000명 감원 | Claude Code 컴퓨터 제어 확대",
+      "summary": "LA 배심원이 Meta·YouTube의 청소년 소셜미디어 중독 책임을 인정하며 $375M 배상을 명령했다. Epic Games가 포트나이트 부진 속에 1,000명을 추가 감원했고 Meta는 Reality Labs에서도 수백 명을 추가 해고했다. Anthropic은 Claude Code의 컴퓨터 제어 기능을 대폭 확대하고 비개발자용 Cowork를 출시했다.",
+      "highlights": [
+        "Meta YouTube 소셜미디어 중독 배심 $375M 배상 뉴멕시코 규제 확대",
+        "Epic Games 1000명 감원 포트나이트 부진 Meta Reality Labs 수백명 해고",
+        "Anthropic Claude Code 컴퓨터 제어 확대 Cowork 출시 OpenAI Sora 단종"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-25",
       "day": "수",
       "title": "Trump 이란 공격 5일 중단 유가 급락 | OpenAI Sora 단종 비용 절감 | ARM 자체 CPU 첫 출시",
