@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-27",
+      "day": "금",
+      "title": "Netflix 또 가격 인상 | Meta 텍사스 AI 데이터센터 6배 증액 | Shield AI $127억 밸류에이션",
+      "summary": "Netflix가 광고 없는 프리미엄 요금제를 $25로 인상하며 수익 극대화에 나섰다. Meta는 텍사스 AI 데이터센터 투자를 6배 이상 증액하며 AI 인프라 군비 경쟁을 가속화한다. 방산 AI 스타트업 Shield AI가 $127억 밸류에이션으로 $20억을 조달하며 자율 무기 시장의 급성장을 보여주고 있다.",
+      "highlights": [
+        "Netflix 프리미엄 $25 가격 인상 광고 없는 요금제 수익 극대화",
+        "Meta 텍사스 AI 데이터센터 투자 6배 증액 $100억 CapEx $650억",
+        "Shield AI $127억 밸류에이션 $20억 조달 방산 자율 무기 스타트업"
+      ],
+      "stats": {
+        "articles": 22,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-26",
       "day": "목",
       "title": "Meta 소셜미디어 중독 $375M 배상 | Epic Games 1000명 감원 | Claude Code 컴퓨터 제어 확대",
