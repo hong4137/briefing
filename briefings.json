@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-28",
+      "day": "토",
+      "title": "PS5 최대 $150 인상 글로벌 충격 | Anthropic 펜타곤 소송 법원 승소 | Google 메모리칩 기술 혁신 주가 급락",
+      "summary": "Sony가 PS5 전 라인업 가격을 최대 $150까지 인상하며 글로벌 게이머들에게 충격을 줬다. Anthropic은 펜타곤의 공급망 리스크 지정에 맞선 소송에서 연방 판사의 가처분 결정을 이끌어냈다. Google의 AI 메모리 압축 기술 TurboQuant이 메모리칩 수요 감소 우려를 촉발하며 관련주가 이틀 연속 급락했다.",
+      "highlights": [
+        "Sony PS5 가격 최대 $150 인상 글로벌 경제 압박 메모리칩 급등",
+        "Anthropic 펜타곤 소송 법원 가처분 승소 1차 수정헌법 보복 IPO 10월",
+        "Google TurboQuant 메모리칩주 이틀 급락 AI 압축 기술 HBM NAND 분화"
+      ],
+      "stats": {
+        "articles": 23,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-27",
       "day": "금",
       "title": "Netflix 또 가격 인상 | Meta 텍사스 AI 데이터센터 6배 증액 | Shield AI $127억 밸류에이션",
