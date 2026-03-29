@@ -1551,6 +1551,16 @@
       "stats": {
         "clusters": 12
       }
+    },
+    {
+      "date": "weekly-2026-03-29",
+      "week": "2026-W13",
+      "title": "Anthropic 법원 승소 + 이란 공격 중단 유가 급락 + OpenAI 긴축 전환",
+      "summary": "Anthropic이 펜타곤 소송에서 가처분 승소, 트럼프 이란 공격 5일 중단으로 유가 급락 시장 반등, OpenAI 데이터센터 축소+Sora 단종으로 긴축 전환. NASDAQ -4.55% VIX 27.",
+      "period": "2026-03-23 ~ 2026-03-28",
+      "stats": {
+        "clusters": 13
+      }
     }
   ],
   "specials": [
