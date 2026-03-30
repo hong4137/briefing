@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-31",
+      "day": "화",
+      "title": "이란전 지상전 임박 Kharg Island 점령 검토 | Anthropic Mythos 유출 사이버보안 충격 | Artemis II 달 유인비행 내일 발사",
+      "summary": "이란전 5주차, Pentagon이 Kharg Island 점령을 포함한 제한적 지상작전을 준비하고 있으며 유가 $115를 돌파했다. Anthropic의 차세대 AI 모델 Claude Mythos가 데이터 유출로 공개되며 사이버보안주가 일제히 하락했다. NASA Artemis II가 내일 4월 1일 발사를 앞두고 1972년 이후 최초의 달 유인비행 카운트다운에 돌입했다.",
+      "highlights": [
+        "이란전 지상전 임박 Pentagon Kharg Island 점령 준비 유가 $115 후티 참전",
+        "Anthropic Claude Mythos 유출 Capybara 신모델 사이버보안주 하락 step change",
+        "NASA Artemis II 4월1일 달 유인비행 1972년 이후 최초 4인 승무원"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-30",
       "day": "월",
       "title": "이란전 오일쇼크 경제 결정적 국면 | 빅테크 무적 시대 종말 판결 | Eli Lilly $2.75B AI 신약 딜",
