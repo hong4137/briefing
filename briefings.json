@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-03-30",
+      "day": "월",
+      "title": "이란전 오일쇼크 경제 결정적 국면 | 빅테크 무적 시대 종말 판결 | Eli Lilly $2.75B AI 신약 딜",
+      "summary": "이란전 2개월차, 후티 참전과 UAE 알루미늄 공장 피격으로 오일쇼크가 경제 전반을 압박하고 있다. Meta·YouTube 중독 책임 인정 판결로 빅테크 무적의 시대가 저물고 있으며, Eli Lilly가 AI 신약 개발사 Insilico와 $2.75B 딜을 체결해 AI 제약 시대를 앞당기고 있다.",
+      "highlights": [
+        "이란전 오일쇼크 후티 참전 UAE 알루미늄 피격 경제 결정적 국면",
+        "빅테크 무적 시대 종말 Meta YouTube 중독 배심 판결 인도네시아 아동 금지",
+        "Eli Lilly Insilico $2.75B AI 신약 SoftBank $40B OpenAI IPO 시사"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-28",
       "day": "토",
       "title": "PS5 최대 $150 인상 글로벌 충격 | Anthropic 펜타곤 소송 법원 승소 | Google 메모리칩 기술 혁신 주가 급락",
