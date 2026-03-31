@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-01",
+      "day": "수",
+      "title": "Meta Ray-Ban 처방안경 출시 | OpenAI $122B 역대급 펀딩 | Nvidia-Marvell $2B 지분투자",
+      "summary": "Meta가 처방 렌즈 전용 Ray-Ban 스마트 안경 2종을 출시하며 AR 안경 대중화에 나섰다. OpenAI가 $122B 역대 최대 펀딩 라운드를 마감하며 IPO 카운트다운에 돌입했고, Nvidia가 Marvell에 $2B 지분 투자로 커스텀 칩 동맹을 강화했다.",
+      "highlights": [
+        "Meta Ray-Ban 처방안경 2종 출시 AR 대중화 스마트글래스",
+        "OpenAI $122B 역대 최대 펀딩 마감 IPO 카운트다운",
+        "Nvidia Marvell $2B 지분투자 커스텀 AI칩 동맹 강화"
+      ],
+      "stats": {
+        "articles": 21,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-03-31",
       "day": "화",
       "title": "이란전 지상전 임박 Kharg Island 점령 검토 | Anthropic Mythos 유출 사이버보안 충격 | Artemis II 달 유인비행 내일 발사",
