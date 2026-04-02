@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-02",
+      "day": "목",
+      "title": "SpaceX $1.75T IPO 신청 | Artemis II 달 발사 성공 | Baidu 로보택시 대마비",
+      "summary": "SpaceX가 역대 최대 규모 $1.75조 IPO를 비밀리에 신청하며 시장을 뒤흔들었다. NASA Artemis II가 1972년 이후 53년 만에 달 유인비행에 성공적으로 발사됐다. Baidu 로보택시가 우한 도심에서 100대 이상 동시 정지하며 자율주행 안전성에 심각한 의문을 던졌다.",
+      "highlights": [
+        "SpaceX $1.75T 역대 최대 IPO 비밀 신청 21개 은행 주관",
+        "Artemis II 53년 만의 달 유인비행 발사 성공 4인 역사적 기록",
+        "Baidu 로보택시 우한 100대 대마비 승객 갇혀 사고 자율주행 위기"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-01",
       "day": "수",
       "title": "Meta Ray-Ban 처방안경 출시 | OpenAI $122B 역대급 펀딩 | Nvidia-Marvell $2B 지분투자",
