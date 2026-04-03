@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-03",
+      "day": "금",
+      "title": "Trump 이란전 2~3주 연장 유가 $141 | DOJ Anthropic 항소 전면전 | Tesla Q1 14% 급락",
+      "summary": "트럼프가 이란전 2~3주 추가 진행을 선언하며 Brent 유가가 2008년 이후 최고치 $141까지 치솟았다. 법무부는 Anthropic AI 사용 금지 가처분에 즉각 항소하며 AI 군사 갈등이 다시 격화됐다. Tesla는 Q1 판매 358K대로 전분기 대비 14% 하락, 3년 연속 판매 감소 위기에 몰렸다.",
+      "highlights": [
+        "Trump 이란전 2~3주 연장 Brent $141 2008년 이후 최고 유가 급등",
+        "DOJ Anthropic 사용금지 가처분 항소 AI 군사 갈등 법정 전면전",
+        "Tesla Q1 358K대 14% 하락 3년 연속 판매 감소 위기"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-02",
       "day": "목",
       "title": "SpaceX $1.75T 역대 최대 IPO 신청 | Artemis II 53년 만의 달 유인비행 | Baidu 로보택시 우한 대마비",
