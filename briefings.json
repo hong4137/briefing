@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-04",
+      "day": "토",
+      "title": "OpenAI 임원 대격변 Fidji Simo 의료휴직 | Anthropic 바이오 $400M 인수 | Amazon 연료 할증 이란전 충격",
+      "summary": "OpenAI가 IPO를 앞두고 AGI 담당 CEO Fidji Simo의 의료휴직과 COO 교체라는 임원 대격변을 맞았다. Anthropic은 바이오 AI 스타트업 Coefficient Bio를 $400M에 인수하며 AI의 바이오 확장을 선언했고, Amazon은 이란전 유가 폭등에 판매자 연료 할증을 부과하며 전쟁의 실물경제 타격이 가시화되고 있다.",
+      "highlights": [
+        "OpenAI Fidji Simo 의료휴직 COO 교체 IPO 앞두고 C-suite 3명 공백",
+        "Anthropic Coefficient Bio $400M 바이오 AI 인수 헬스케어 확장",
+        "Amazon 3.5% 연료 할증 이란전 유가 폭등 실물경제 타격 가시화"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-03",
       "day": "금",
       "title": "Trump 이란전 2~3주 연장 유가 $141 | DOJ Anthropic 항소 전면전 | Tesla Q1 14% 급락",
