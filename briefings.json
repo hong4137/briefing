@@ -1664,7 +1664,9 @@
       "title": "이란전 $141 유가 폭등 + OpenAI $122B IPO 임박 + Anthropic 바이오 확장",
       "summary": "이란전쟁이 지상전 검토 단계로 확전되며 Brent $141 기록. OpenAI $122B 펀딩 마감 후 임원 대격변, Anthropic은 DOJ 항소에 맞서면서 바이오 $400M 인수, Artemis II 53년 만 달 유인비행 성공.",
       "period": "2026-03-30 ~ 2026-04-04",
-      "clusters": 11
+      "stats": {
+        "clusters": 11
+      }
     }
   ],
   "specials": [
