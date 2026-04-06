@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-06",
+      "day": "월",
+      "title": "Trump 이란 48시간 Hell 최후통첩 | Oracle 두바이 사옥 피격 | Polymarket 전쟁 도박 논란",
+      "summary": "트럼프가 이란에 호르무즈 해협 48시간 내 재개통을 요구하며 Hell을 예고했다. 이란 미사일 요격 파편이 두바이 Oracle 사옥을 타격하면서 걸프 테크 인프라의 물리적 취약성이 현실화됐다. Polymarket이 격추된 미 조종사 구출에 베팅 시장을 열었다가 윤리 논란에 휩싸여 시장을 제거했다.",
+      "highlights": [
+        "Trump 이란 48시간 Hell 최후통첩 호르무즈 해협 유가 폭등",
+        "이란전 파편 Oracle 두바이 사옥 타격 걸프 테크 인프라 위기",
+        "Polymarket 격추 조종사 구출 베팅 제거 전쟁 도박 윤리 논란"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-04",
       "day": "토",
       "title": "OpenAI 임원 대격변 Fidji Simo 의료휴직 | Anthropic 바이오 $400M 인수 | Amazon 연료 할증 이란전 충격",
