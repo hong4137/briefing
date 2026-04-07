@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-08",
+      "day": "수",
+      "title": "Anthropic $30B Broadcom TPU 딜 | Samsung AI칩 이익 8배 | Apple 폴더블 iPhone 9월 출시",
+      "summary": "Anthropic이 연간 런레이트 $30B을 돌파하며 Broadcom-Google과 TPU 공급 딜을 체결했다. Samsung은 AI 메모리칩 호황에 분기 이익이 8배 급증했고, Apple의 첫 폴더블 iPhone이 9월 예정대로 출시된다는 보도가 나왔다. 트럼프는 이란에 문명 멸망 최후 경고를 보내며 데드라인 직전 긴장이 극에 달하고 있다.",
+      "highlights": [
+        "Anthropic $30B 런레이트 Broadcom Google TPU 딜 Nvidia 대안 칩 전략 본격화",
+        "Samsung AI 메모리칩 분기 이익 8배 급증 전쟁 불구 수퍼사이클 입증",
+        "Apple 첫 폴더블 iPhone 9월 출시 온트랙 넓은 폼팩터 더미 공개"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-07",
       "day": "화",
       "title": "Iran IRGC Stargate 미사일 위협 | OpenAI 로봇세 4일근무 AI 경제 비전 | Artemis II 56년 최원거리 기록",
