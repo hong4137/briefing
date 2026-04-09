@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-09",
+      "day": "목",
+      "title": "US-이란 2주 휴전 유가 $100 이하 급락 | Meta Muse Spark AI 출시 | OpenAI IPO 개인투자자 배정",
+      "summary": "트럼프가 이란과 2주 휴전에 합의하면서 유가가 $100 아래로 급락하고 글로벌 릴리프 랠리가 펼쳐졌다. Meta는 Superintelligence Labs의 첫 AI 모델 Muse Spark를 공개하며 Google·OpenAI 추격전에 나섰고, OpenAI는 IPO에서 개인투자자에게 지분을 배정하겠다고 발표했다.",
+      "highlights": [
+        "US-이란 2주 휴전 유가 $100 급락 호르무즈 재개통 릴리프 랠리",
+        "Meta Muse Spark Superintelligence Labs 첫 AI 모델 Zuckerberg $14B 투자",
+        "OpenAI IPO 개인투자자 배정 CFO Sarah Friar $852B 밸류에이션"
+      ],
+      "stats": {
+        "articles": 22,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-08",
       "day": "수",
       "title": "Anthropic $30B Broadcom TPU 딜 | Samsung AI칩 이익 8배 | Apple 폴더블 iPhone 9월 출시",
