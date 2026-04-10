@@ -3,6 +3,22 @@
     {
       "date": "2026-04-10",
       "day": "금",
+      "title": "OpenAI ChatGPT Pro $100 구독 Anthropic 대항 | Amazon $200B AI 지출 칩 외부 판매 | Anthropic Mythos 제한 공개 논란",
+      "summary": "OpenAI가 월 $100 ChatGPT Pro 구독을 출시하며 Anthropic Claude Code에 정면 도전장을 냈다. Amazon CEO Jassy는 $200B AI 지출을 강력히 방어하면서 자체 AI 칩 외부 판매까지 검토한다고 밝혔다. Anthropic의 차세대 모델 Mythos는 사이버보안 취약점 발견 능력이 지나치게 뛰어나 제한적 공개만 진행돼 논란을 빚고 있다.",
+      "highlights": [
+        "OpenAI ChatGPT Pro $100 구독 Codex 확장 Anthropic Claude Code 정면 대항",
+        "Amazon CEO Jassy $200B AI 지출 방어 자체 칩 $20B 외부 판매 검토 Nvidia 대항",
+        "Anthropic Mythos 제한 공개 zero-day 수천건 발견 Project Glasswing 사이버보안"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "day": "금",
       "title": "US-이란 2주 휴전 유가 $100 이하 급락 | Meta Muse Spark AI 출시 | OpenAI IPO 개인투자자 배정",
       "summary": "트럼프가 이란과 2주 휴전에 합의하면서 유가가 $100 아래로 급락하고 글로벌 릴리프 랠리가 펼쳐졌다. Meta는 Superintelligence Labs의 첫 AI 모델 Muse Spark를 공개하며 Google·OpenAI 추격전에 나섰고, OpenAI는 IPO에서 개인투자자에게 지분을 배정하겠다고 발표했다.",
       "highlights": [
