@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-11",
+      "day": "토",
+      "title": "Anthropic Mythos 월가 긴급소집 | Artemis II 역사적 귀환 | 이란전 CPI 3.3% 인플레이션",
+      "summary": "Anthropic Mythos 사이버보안 위협으로 Bessent·Powell이 월가 CEO를 긴급 소집했다. Artemis II가 53년 만의 달 유인비행을 마치고 태평양에 귀환했다. 이란전 영향으로 CPI 3.3%를 기록하며 유럽 제트연료 위기까지 확산되고 있다.",
+      "highlights": [
+        "Anthropic Mythos Bessent Powell 월가 CEO 긴급 소집 사이버보안 위협",
+        "Artemis II 53년만 달 유인비행 완료 태평양 스플래시다운 인류 최원거리",
+        "이란전 CPI 3.3% 소비자심리 역대 최저 유럽 제트연료 3주 위기"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-10",
       "day": "금",
       "title": "OpenAI ChatGPT Pro $100 구독 Anthropic 대항 | Amazon $200B AI 지출 칩 외부 판매 | Anthropic Mythos 제한 공개 논란",
