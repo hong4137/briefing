@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-13",
+      "day": "월",
+      "title": "HumanX Claude Mania AI 독주 | Sam Altman 자택 화염병 공격 | 이란 평화회담 결렬 호르무즈 봉쇄",
+      "summary": "HumanX 컨퍼런스에서 Anthropic Claude가 AI 업계를 압도하며 Claude mania 분위기가 확산됐다. Sam Altman 자택에 화염병이 투척되고 OpenAI 본사가 위협받는 충격 사건이 발생했다. 이란 평화회담 결렬 후 트럼프가 호르무즈 해협 봉쇄를 선언하며 CPI 3.3% 인플레이션 충격이 이어지고 있다.",
+      "highlights": [
+        "HumanX Claude Mania AI 업계 Anthropic 독주 CoreWeave 멀티빌리언 딜",
+        "Sam Altman 자택 화염병 공격 New Yorker 프로필 반박 OpenAI 본사 위협",
+        "이란 평화회담 결렬 트럼프 호르무즈 봉쇄 선언 CPI 3.3% 소비자심리 최저"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-11",
       "day": "토",
       "title": "Anthropic Mythos 월가 긴급소집 | Artemis II 역사적 귀환 | 이란전 CPI 3.3% 인플레이션",
