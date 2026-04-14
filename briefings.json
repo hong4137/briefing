@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-15",
+      "day": "수",
+      "title": "Amazon Globalstar $11.6B 인수 Starlink 대항 | Mythos 글로벌 금융당국 경고 확산 | 메모리칩 부족 MS·삼성 가격 인상",
+      "summary": "Amazon이 위성 인터넷 사업자 Globalstar를 $11.6B에 인수하며 Starlink에 정면 도전장을 냈다. Anthropic Mythos는 Lagarde·IMF·BOE·US Treasury까지 글로벌 금융당국의 일제 경고를 촉발했다. 메모리칩 부족으로 Microsoft Surface와 Samsung Galaxy가 동시에 가격을 대폭 인상하며 전쟁발 인플레이션이 소비자 기기까지 침투하고 있다.",
+      "highlights": [
+        "Amazon Globalstar $11.6B 인수 Starlink 대항 위성 인터넷 패권 Apple 지분 인수",
+        "Anthropic Mythos Lagarde IMF BOE US Treasury 글로벌 금융당국 일제 경고 사이버 리스크",
+        "메모리칩 부족 Microsoft Surface Samsung Galaxy 동시 가격 인상 전쟁 인플레 소비자 직격"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-14",
       "day": "화",
       "title": "호르무즈 봉쇄 시행 유가 재돌파 | OpenAI Amazon 동맹 MS 비판 메모 | Sam Altman 2차 공격 연방기소",
