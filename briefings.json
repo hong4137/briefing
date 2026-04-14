@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-14",
+      "day": "화",
+      "title": "호르무즈 봉쇄 시행 유가 재돌파 | OpenAI Amazon 동맹 MS 비판 메모 | Sam Altman 2차 공격 연방기소",
+      "summary": "이란 평화회담 결렬 후 미 해군이 호르무즈 해협 봉쇄를 시행하며 유가가 다시 $100을 돌파했다. OpenAI는 내부 메모에서 Microsoft가 고객 접근을 제한했다고 비판하며 Amazon 동맹을 강조했다. Sam Altman이 화염병에 이어 2차 총격 공격을 받았고 용의자는 연방 살인미수 혐의로 기소됐다.",
+      "highlights": [
+        "호르무즈 봉쇄 시행 유가 $100 재돌파 이란 평화회담 결렬 식량위기 비료 차단",
+        "OpenAI CRO 내부 메모 Amazon 동맹 Microsoft 고객접근 제한 비판 Anthropic 경쟁",
+        "Sam Altman 2차 총격 공격 연방 살인미수 기소 AI 리더 물리적 위협 현실화"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-13",
       "day": "월",
       "title": "HumanX Claude Mania AI 독주 | Sam Altman 자택 화염병 공격 | 이란 평화회담 결렬 호르무즈 봉쇄",
