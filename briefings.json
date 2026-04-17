@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-17",
+      "day": "금",
+      "title": "Anthropic Claude Opus 4.7 축소 출시 | Ford EV 수장 사임 | 중국 Ganfeng 리튬 급등",
+      "summary": "Anthropic이 Mythos 대비 사이버 공격 능력을 의도적으로 낮춘 Claude Opus 4.7을 공개하며 안전성 우위 전략을 강화했다. Apple·Tesla를 거친 Ford EV·SW 총괄 Doug Field가 구조조정 속에 회사를 떠나며 Ford의 전동화 전략이 흔들린다. 중국 최대 리튬기업 Ganfeng이 EV·ESS 수요 회복으로 흑자 전환을 예고하고, Tesla AI 칩 진전에 중국 공급망이 랠리하면서 글로벌 배터리·반도체 축이 중국으로 이동 중임을 시사한다.",
+      "highlights": [
+        "Anthropic Claude Opus 4.7 공개 Mythos 대비 사이버 능력 축소 안전성 우위 전략",
+        "Ford EV SW 총괄 Doug Field 사임 Apple Tesla 출신 구조조정 전동화 차질",
+        "중국 Ganfeng 리튬 이익 급반등 EV ESS 수요 폭증 Tesla AI 칩 中 공급망 랠리"
+      ],
+      "stats": {
+        "articles": 21,
+        "sections": 5,
+        "picks": 2
+      }
+    },
+    {
       "date": "2026-04-16",
       "day": "목",
       "title": "Ticketmaster 독점 배심 평결 | Snap 16% 감원 1000명 | OpenAI Stargate 노르웨이 철수 MS 인수",
