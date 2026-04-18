@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-18",
+      "day": "토",
+      "title": "Amodei 백악관行 Mythos 해빙 임박 | Cursor $50B 바이브코딩 대관식 | 호르무즈 개방/봉쇄 혼선",
+      "summary": "Anthropic CEO Dario Amodei가 펜타곤 블랙리스트 이후 2개월 만에 백악관 Wiles 비서실장과 회동하며 Mythos 연방기관 접근이 임박했다. AI 코딩 스타트업 Cursor가 $50B 밸류에이션에 $2B 이상 조달 협상에 들어가고 Sequoia $7B·Cerebras IPO로 VC 자금이 AI에 거의 전량 쏠렸다. 이란이 호르무즈 개방을 선언했지만 미 해군 봉쇄가 계속되며 선박들은 여전히 회항 중이다. Netflix 가이던스 쇼크와 Reed Hastings 이사회 사임, OpenAI 핵심 임원 Weil·Peebles 동시 이탈, Meta Quest 가격 인상 등 구조적 변화 신호도 동시에 부각됐다.",
+      "highlights": [
+        "Anthropic Amodei 백악관 Wiles 회동 Mythos 연방기관 접근 임박 2개월 해빙 국면",
+        "Cursor $50B 밸류 $2B 조달 협상 a16z Thrive 리드 바이브코딩 왕좌 Sequoia $7B 펀드 AI 대형 베팅",
+        "이란 호르무즈 개방 선언 vs 미 해군 봉쇄 유지 선박 회항 Brent $100 Israel-Lebanon 10일 휴전"
+      ],
+      "stats": {
+        "articles": 24,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-17",
       "day": "금",
       "title": "Anthropic Claude Opus 4.7 축소 출시 | Ford EV 수장 사임 | 중국 Ganfeng 리튬 급등",
