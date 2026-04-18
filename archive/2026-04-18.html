@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amodei 백악관行 Mythos 해빙 | Cursor $50B 등극 | 호르무즈 개방/봉쇄 혼선 | Jae's Briefing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .summary {
+            color: #a0a0a0;
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #667eea;
+            color: #fff;
+        }
+
+        .article-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .article-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .article-title-kr {
+            font-size: 1rem;
+            color: #a0a0a0;
+            margin-bottom: 12px;
+        }
+
+        .article-summary {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.85rem;
+            flex-wrap: wrap;
+        }
+
+        .source {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .article-meta a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+
+        .article-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            margin-right: 6px;
+        }
+
+        .badge-hot {
+            background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            color: #fff;
+        }
+
+        .badge-breaking {
+            background: #ff3b3b;
+            color: #fff;
+            animation: pulse 2s infinite;
+        }
+
+        .badge-update {
+            background: #22c55e;
+            color: #fff;
+        }
+
+        .badge-new {
+            background: #4a9eff;
+            color: #fff;
+        }
+
+        .badge-pick {
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            color: #fff;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .top-section .article-card {
+            background: rgba(255, 59, 59, 0.05);
+            border-color: rgba(255, 59, 59, 0.2);
+        }
+
+        .picks-section .article-card {
+            background: rgba(168, 85, 247, 0.05);
+            border-color: rgba(168, 85, 247, 0.2);
+        }
+
+        .pick-reason {
+            font-size: 0.85rem;
+            color: #a855f7;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.4rem;
+            }
+            .article-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 4월 18일 토요일</div>
+            <h1 class="title">Amodei 백악관行, Mythos 해빙 임박 | Cursor $50B 바이브코딩 대관식 | 호르무즈 개방/봉쇄 혼선</h1>
+            <p class="summary">Anthropic CEO가 지난 2개월 펜타곤 전쟁 국면을 뒤집는 백악관 Wiles 미팅에 나서면서 연방기관 Mythos 접근이 임박했다. Cursor가 $50B 밸류에이션에 $2B 조달 협상을 벌이며 바이브코딩 왕좌를 굳혔고, Sequoia $7B·Cerebras IPO로 VC 자금이 AI로 거의 전량 몰렸다. 이란이 호르무즈 개방을 선언했지만 미 해군 봉쇄가 계속되며 선박들은 여전히 회항하고 있다.</p>
+        </header>
+
+        <!-- TOP Headlines -->
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <span class="badge badge-breaking">BREAKING</span>
+                <h3 class="article-title">Anthropic's Amodei to Meet Wiles With US Seeking Mythos Access</h3>
+                <p class="article-title-kr">Amodei, 백악관 Wiles와 금요일 회동… 트럼프 정부, 연방기관 Mythos 접근 확대 추진</p>
+                <p class="article-summary">Anthropic CEO Dario Amodei가 오늘(금) 백악관 비서실장 Susie Wiles와 만난다. 트럼프 정부가 Anthropic을 '래디컬 레프트 워크 컴퍼니'로 낙인찍고 연방기관 사용을 금지한 지 2개월 만의 화해 제스처다. 백악관이 내부 메모를 통해 주요 연방기관에 Mythos 모델 접근권을 부여하는 절차에 착수했고, Bessent 재무장관은 Mythos를 "대(對) 중국 AI 경쟁의 돌파구"라 평가했다. Bloomberg·CNBC·The Verge·Guardian·BBC가 일제히 보도하며 '해빙 국면' 시그널이 확산됐다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC, The Verge, Guardian, BBC 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-17/anthropic-s-amodei-to-meet-wiles-with-us-seeking-mythos-access" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Sources: Cursor in talks to raise $2B+ at $50B valuation as enterprise growth surges</h3>
+                <p class="article-title-kr">Cursor, $50B 밸류에이션에 $2B 이상 조달 협상… a16z·Thrive 재참여</p>
+                <p class="article-summary">AI 코딩 스타트업 Cursor가 $50B(이전 대비 50% 상승) 밸류에이션에 $2B 이상을 조달하는 라운드를 협상 중이다. 기존 투자자 a16z와 Thrive가 리드할 것으로 전망된다. 엔터프라이즈 부문 성장이 폭발적이며, TechCrunch 홈페이지 Hero로 다뤄졌고 Bloomberg도 뒤이어 보도했다. Cursor는 3월 $50B 조달 협상 시점(2026년 3월)부터 OpenAI Codex·Anthropic Claude Code와 함께 바이브코딩 삼두 체제의 독주 후보로 굳어졌다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero, Bloomberg 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- AI/기술 -->
+        <section class="section">
+            <h2 class="section-title">🤖 AI/기술</h2>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Finance leaders warn over Mythos as UK banks prepare to use powerful Anthropic AI tool</h3>
+                <p class="article-title-kr">Mythos, 다음 주 영국 은행권 공급 임박… Goldman Solomon "극도로 경계" 발언</p>
+                <p class="article-summary">Anthropic 영국·아일랜드·북유럽 총괄 Pip White는 Mythos를 다음 주 내 영국 금융기관에 공급한다고 밝혔다. Goldman Sachs CEO David Solomon은 Mythos의 사이버 능력에 "hyper-aware"하다며 극도의 경계감을 표했고, 인도 핀테크들도 Anthropic에 조기 접근을 요구하며 줄을 섰다. 4/15 "Mythos 글로벌 금융당국 경고(Lagarde·IMF·BOE·US Treasury)"의 후속으로, 글로벌 규제당국의 경고가 역설적으로 수요를 폭증시킨 구도다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian, Bloomberg, CNBC, BBC 다매체 보도</span>
+                    <a href="https://www.theguardian.com/technology/2026/apr/17/finance-leaders-warn-over-claude-mythos-as-uk-banks-prepare-to-use-powerful-anthropic-ai-tool" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">OpenAI takes aim at Anthropic with beefed-up Codex that gives it more power over your desktop</h3>
+                <p class="article-title-kr">OpenAI Codex 데스크톱 장악 대형 업데이트… 앱 조작·이미지 생성·메모리 장착</p>
+                <p class="article-summary">OpenAI가 Codex에 데스크톱 앱 조작, 이미지 생성, 과거 경험 기억 기능을 추가하며 Anthropic Claude Code에 정면 도전했다. 단순 코딩 도구에서 생산성 플랫폼으로 피벗했다는 평가. 자체 브라우저도 탑재. 4/10 "ChatGPT Pro $100 구독" 공세의 연장선이며, Anthropic이 오늘 동시에 Claude Design을 출시한 것과 정확히 겹치는 타이밍이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, The Verge, ZDNet 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/04/16/openai-takes-aim-at-anthropic-with-beefed-up-codex-that-gives-it-more-power-over-your-desktop/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Kevin Weil and Bill Peebles exit OpenAI as company continues to shed 'side quests'</h3>
+                <p class="article-title-kr">OpenAI 임원 대거 이탈… AGI 담당 CRO Weil·Sora 헤드 Peebles 동시 사임</p>
+                <p class="article-summary">OpenAI 과학 이니셔티브 총괄 Kevin Weil(전 Instagram VP)과 Sora 팀 리더 Bill Peebles가 동시에 회사를 떠난다. Sora는 이미 3월 단종됐고, OpenAI는 '사이드 퀘스트'를 쳐내고 엔터프라이즈 AI로 급선회 중이다. 4/4 Fidji Simo(AGI CEO) 의료휴직·COO 교체에 이어진 C-suite 공백으로, IPO 카운트다운 속 리더십 공백이 심화됐다. Anthropic 기세에 초조해진 일부 투자자들이 OpenAI 재평가에 나섰다는 보도가 어제 나왔다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg, The Verge, CNBC 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Gazing Into Sam Altman's Orb Now Proves You're Human on Tinder</h3>
+                <p class="article-title-kr">Tinder·Zoom, Altman의 'Orb' 휴먼 인증 채택… AI 시대 인간 증명 본격화</p>
+                <p class="article-summary">Sam Altman이 창업한 World(옛 Worldcoin)가 홍채 스캔 'Orb' 인증을 Tinder에 도입한다. 인증 사용자에게는 5회 무료 부스트를 제공. Zoom도 회의 참가자 휴먼 검증에 World와 파트너십을 체결했다. AI 봇·딥페이크·사기 계정 대응을 위한 '인간성 증명(Proof of Humanity)' 인프라가 글로벌 플랫폼에 침투하기 시작한 첫 대형 사례. Wired·BBC·The Verge·TechCrunch가 일제히 조명했다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired, BBC, The Verge, TechCrunch 다매체 보도</span>
+                    <a href="https://www.wired.com/story/gazing-into-sam-altmans-orb-now-proves-youre-human-on-tinder/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">'Tokenmaxxing' is making developers less productive than they think</h3>
+                <p class="article-title-kr">'토큰맥싱' 신조어 등장… AI 코딩량 폭증하지만 재작성 비용도 폭증</p>
+                <p class="article-summary">AI 기반 대량 코드 생성을 지향하는 '토큰맥싱(Tokenmaxxing)' 트렌드가 실제로는 개발자 생산성을 낮춘다는 TechCrunch 분석이 홈페이지 Featured로 배치됐다. 코드량은 폭증하지만 비용과 재작성(rewriting) 부담이 함께 커진다는 지적. Reid Hoffman 같은 업계 거물들도 이 논쟁에 참여했고(Hoffman Weighs In 기사), Stanford 리포트는 AI 내부자와 일반 개발자 사이 인식 격차가 계속 벌어지고 있다고 진단했다. 바이브코딩 거품론의 주요 근거.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured, Stanford/Wired 후속</span>
+                    <a href="https://techcrunch.com/2026/04/17/tokenmaxxing-is-making-developers-less-productive-than-they-think/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Anthropic launches Claude Design, a new product for creating quick visuals</h3>
+                <p class="article-title-kr">Anthropic, Claude Design 출시… 비디자이너 창업자·PM 겨냥</p>
+                <p class="article-summary">Anthropic이 창업자·PM 등 디자인 배경이 없는 사람들이 아이디어를 쉽게 시각화할 수 있도록 돕는 신제품 Claude Design을 공개했다. TechCrunch 홈페이지 Featured+Most Popular 양쪽에 걸쳐 노출. 공교롭게도 같은 날 Anthropic CPO Mike Krieger가 Figma 이사회에서 사퇴했는데, 경쟁 제품을 출시한다는 보도가 이유로 지목됐다. 'SaaSpocalypse' 테제 — AI 랩이 디자인/디자인 SaaS 영역을 직접 대체한다 — 의 구체적 증거로 읽힌다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero+Ranking</span>
+                    <a href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 경제/금융 -->
+        <section class="section">
+            <h2 class="section-title">💰 경제/금융</h2>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Iran declares Strait of Hormuz open to shipping; Trump says U.S. blockade still active</h3>
+                <p class="article-title-kr">이란 "호르무즈 완전 개방" 선언에도 미 해군 봉쇄 유지… 선박들 회항</p>
+                <p class="article-summary">이란이 호르무즈 해협을 '상업 선박에 완전 개방'한다고 선언했지만, 트럼프는 미 해군 봉쇄가 여전히 유효하다고 반박했다. 펜타곤은 나흘간 13척의 선박을 가로챘다고 발표했고, 현장 영상에서는 선박들이 해협 입구에서 회항하는 모습이 포착됐다. Brent 유가는 $100 근처에서 횡보. 4/14 "호르무즈 봉쇄 시행 유가 재돌파" 이후 상황이 '봉쇄/개방 해석 혼선'이라는 새 국면으로 진입했다. Trump는 "전쟁이 곧 끝날 것"이라며 '스위밍리(swimmingly)'라는 단어를 썼으나, 바이든 시절 이라크전 'Mission Accomplished' 실책을 연상시킨다는 Guardian 분석이 나왔다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg, Guardian, BBC, Wired 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/17/iran-war-hormuz-strait-israel-lebanon-ceasefire.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Israel and Lebanon agree to 10-day ceasefire, Trump says</h3>
+                <p class="article-title-kr">이스라엘-레바논 10일 휴전 합의… Vance·Rubio·Caine 중재</p>
+                <p class="article-summary">트럼프가 이스라엘과 레바논의 10일 휴전 합의를 발표했다. 부통령 JD Vance, 국무장관 Rubio, 합참의장 Dan Caine이 양국과 조율한다. 이스라엘 중앙은행 총재는 이 휴전에 경제 충격 완화의 희망을 걸고 있다고 밝혔다. 다만 레바논 협상이 '가장 어렵다'는 평가와 함께, 이란과의 주 거래 재개는 여전히 공백 상태다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/16/trump-israel-lebanon-ceasefire-iran-war.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Netflix Earnings Forecast Misses, Reed Hastings Steps Down</h3>
+                <p class="article-title-kr">Netflix Q2 가이던스 쇼크, 주가 4년래 최대 폭락… 공동창업자 Reed Hastings 이사회 사임</p>
+                <p class="article-summary">Netflix가 Q2 가이던스로 시장 기대에 미달하는 전망을 내놓으며 주가가 장외에서 4년래 최대폭 급락했다. 공동창업자이자 이사회 의장인 Reed Hastings가 6월 연례회의 재선거에 출마하지 않고 자선활동과 개인사업에 집중하기로 결정했다. WBD 인수전에서 철수한 후 '빌더가 아닌 바이어' 체제로의 전환, 모바일 앱 세로 비디오 피드·AI 추천 전면 도입 등 구조적 변화가 동시에 진행된다. 29년 만의 경영 세대교체.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, The Verge, CNBC, Guardian 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-16/netflix-revenue-beats-estimates-as-hastings-steps-down" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Europe could run out of jet fuel in 6 weeks, IEA chief says</h3>
+                <p class="article-title-kr">IEA "유럽, 6주 내 제트연료 고갈 가능"… 항공권 가격 연쇄 인상</p>
+                <p class="article-summary">IEA 사무총장이 유럽의 제트연료 재고가 최악의 경우 6주 안에 바닥날 수 있다고 경고했다. 호르무즈 봉쇄와 걸프 정유소 피격이 누적된 결과. 항공사 CEO들은 연료비가 내리면 항공권도 낮추겠다는 의회 요구에 "가능성은 있으나 보장은 못한다"고 답했다. EasyJet은 H1 연료비가 £25M 추가됐고 주가는 5% 하락.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/16/europe-jet-fuel-shortage-6-weeks-iea.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Sequoia's New Leaders Raise About $7 Billion for Firm's Biggest Bets</h3>
+                <p class="article-title-kr">Sequoia, 신임 체제 첫 펀드 $7B 조달… OpenAI·Anthropic 대형 베팅 겨냥</p>
+                <p class="article-summary">Sequoia Capital이 Alfred Lin·Pat Grady 신임 공동 수장 체제 아래 첫 $7B 펀드를 조달했다. 54년 역사상 최대 규모의 '확장 펀드(expansion fund)'로, OpenAI·Anthropic 등 AI 거물 후속 라운드 참여가 주 용도. 같은 날 발표된 PitchBook Q1 데이터는 글로벌 VC 딜메이킹이 $267B 기록을 경신했지만 거의 전량이 AI로 쏠렸다고 밝혔다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, TechCrunch 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-16/sequoia-s-new-leaders-raise-about-7-billion-for-firm-s-biggest-bets" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">TSMC's Profit Surges 58% On AI-Driven Chip Demand</h3>
+                <p class="article-title-kr">TSMC Q1 이익 58% 급증… 중동전 초반 AI 수요 타격 無, 2026년 가이던스 상향</p>
+                <p class="article-summary">TSMC가 Q1 이익을 58% 증가시키며 시장 기대를 뛰어넘었다. 중동전쟁 초반이 AI 투자 붐을 꺾지 못했다는 증거. 회사는 2026년 매출 가이던스를 상향하며 AI 수퍼사이클이 지속된다고 재확인했다. 다만 TSMC와 ASML 모두 실적 발표 후 주가 상승이 제한적이어서 '칩 업계 전반의 탑아웃 시그널인가'라는 CNBC 분석이 뒤따랐다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-16/tsmc-s-profit-beats-estimates-after-war-failed-to-dent-ai-demand" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">AI Chipmaker Cerebras Systems Files Publicly for US IPO</h3>
+                <p class="article-title-kr">Cerebras IPO 공개 신청… 작년 철회 후 AI 칩 수요 재점화로 재도전</p>
+                <p class="article-summary">AI 반도체·데이터센터 스타트업 Cerebras Systems가 미국 IPO 공개 서류를 재제출했다. 작년 상장 시도 철회 이후 재도전. 2025년 펀딩 시점 대비 3배 이상 밸류에이션이 예상된다. Nvidia 대항 AI 칩 업계가 전반적으로 record 펀딩을 받고 있고(Euclyd·Fractile 등 유럽 스타트업이 CNBC에 $100M 조달 공개), SiFive는 $400M를 확보했다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-17/ai-chipmaker-cerebras-systems-files-publicly-again-for-us-ipo" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 플랫폼/소셜 -->
+        <section class="section">
+            <h2 class="section-title">📱 플랫폼/소셜</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">Retail traders pile into Allbirds after odd AI pivot. History shows it won't end well</h3>
+                <p class="article-title-kr">Allbirds·Myseum AI 피벗 광란… 개인투자자 '동물적 본능' 재점화</p>
+                <p class="article-summary">신발 사업을 매각한 Allbirds가 'AI 인프라 플레이'로 피벗하자 주가가 한때 7배 폭등했다. Myseum도 비슷한 AI 피벗 발표 후 150% 급등. CNBC·Bloomberg·The Verge 모두 "1999년 '.com' 접미어 광란"에 비유했고, 역사적으로 이런 반(反)패턴은 끝이 좋지 않다고 경고했다. "AI 필연성 함정(The AI is Inevitable trap)"에 대한 The Verge Vergecast 특집이 이 현상을 집중 해부.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg, The Verge 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/16/retail-traders-pile-into-allbirds-after-odd-ai-pivot-history-shows-it-wont-end-well.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Macron Calls For United EU Front on Youth Social Media Limits</h3>
+                <p class="article-title-kr">Macron "EU, 미성년 소셜미디어 규제 일관된 전선" 촉구… EU 연령인증 앱 출시</p>
+                <p class="article-summary">프랑스 마크롱 대통령이 EU가 미성년 소셜미디어 규제에 대해 '통일된 전선(united front)'으로 가야 한다고 촉구했다. 같은 주 EU가 '완전 익명' 연령인증 앱을 무료로 배포. 영국 Starmer 총리는 Meta·TikTok·Google·X 대표들을 다우닝가 10번지로 소환해 "지금처럼 갈 수는 없다"고 경고. 다만 영국 의회는 호주식 미성년 SNS 금지법을 두 번째 부결시켰다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, Guardian 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-14/macron-leads-eu-push-to-coordinate-social-media-bans-for-minors" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">OnlyFans Tops $3 Billion Value in Advanced Stake Sale Talks</h3>
+                <p class="article-title-kr">OnlyFans, $3B 기업가치에 Architect Capital에 소수지분 매각 협상</p>
+                <p class="article-summary">성인 콘텐츠 플랫폼 OnlyFans가 샌프란시스코 투자사 Architect Capital에 20% 미만의 소수지분을 $3B 이상의 기업가치로 매각하는 협상에 돌입했다. 창업자 Leonid Radvinsky 사망 이후 안정성 확보 목적. 콘텐츠 크리에이터 이코노미의 '회색지대 거인'이 기관 자본을 본격 유치하는 첫 대형 사례로 읽힌다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, Guardian 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-17/onlyfans-tops-3-billion-value-in-advanced-stake-sale-talks" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Live Nation says it will fight monopoly suit loss</h3>
+                <p class="article-title-kr">Live Nation-Ticketmaster "반독점 배심 판결, 최종 아냐"… 즉각 항소 선언</p>
+                <p class="article-summary">4/16 배심이 Ticketmaster·Live Nation에 불법 독점 판결을 내린 뒤, 회사가 즉각 항소와 재심 모션을 예고했다. 블로그 포스트에서 "각 주들이 입증하지 못했다"며 판사의 최종 판결은 다르다고 주장. 실제 회사 분할까지 이어질지 논의가 재점화됐다. 티켓 가격 상승·투명성 이슈와 맞물려 라이브 엔터테인먼트 구조개혁 가능성이 여전히 열려있다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, Bloomberg 다매체 보도</span>
+                    <a href="https://www.theverge.com/policy/913494/live-nation-ticketmaster-fight-state-monopoly-jury-verdict" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 하드웨어/정책 -->
+        <section class="section">
+            <h2 class="section-title">🔧 하드웨어/정책</h2>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Meta Raises Prices of Quest VR Headsets on Growing Memory Costs</h3>
+                <p class="article-title-kr">Meta Quest 가격 인상 (4/19부터)… 메모리칩 부족 연쇄 타격 확산</p>
+                <p class="article-summary">Meta가 4/19부터 Quest 3S 128GB는 $349.99(+$50), 256GB는 $449.99(+$50), Quest 3는 $599.99(+$100)로 인상한다. 메모리 가격 폭등이 직접 원인. 4/15 "Microsoft Surface·Samsung Galaxy 가격 인상" 후속으로, 이제 XR 기기까지 연쇄 진입. Microsoft도 Surface Hub 디스플레이를 단종했다. SSD 재고 부족 경고가 소비자 전반 가격 인상 시즌의 시작임을 시사한다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, TechCrunch, The Verge 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-16/meta-hikes-prices-of-quest-3s-quest-3-vr-headsets-on-rising-memory-costs" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Republican Mutiny Sinks Trump's Push to Extend Warrantless Surveillance</h3>
+                <p class="article-title-kr">공화당 반란, 트럼프 FISA 702 영장 없는 감시 연장 무산</p>
+                <p class="article-summary">트럼프가 Section 702 영장 없는 감시 연장을 강행하려 했으나 자정 이후 하원에서 공화당 일부가 반란을 일으키며 무산됐다. FBI가 과거 의원·시위자·정치자금 기부자에 대해 Section 702를 사용한 이력이 문제가 됐다. 의회는 일단 단기 연장법을 통과시켰지만, 근본 개혁 논쟁이 재점화됐다. Big Tech·Palantir 등 기술 기업과 이민 단속(ICE)·감시 경제 전반에 파급.</p>
+                <div class="article-meta">
+                    <span class="source">Wired, TechCrunch, CNBC 다매체 보도</span>
+                    <a href="https://www.wired.com/story/republican-mutiny-sinks-trumps-push-to-extend-warrantless-surveillance/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Musk Asks Suppliers to Move at 'Light Speed' on Terafab Plan</h3>
+                <p class="article-title-kr">Musk, Terafab 공급사에 '광속' 추진 압박… Applied Materials·TEL·Lam 접촉</p>
+                <p class="article-summary">Elon Musk의 부하들이 Terafab(Tesla+SpaceX 조인트벤처) 구상을 위해 Applied Materials, Tokyo Electron, Lam Research에 장비 견적과 납기를 문의했다. 3/23 "Musk 텍사스 반도체 공장 선언" 후속으로, 구체적 공급망 접촉이 시작됐다. 반도체 업계 내부에서는 실현 가능성에 회의감이 여전하다. Intel과의 파트너십 논의도 병행 중. 4/13 Intel-Terafab 파트너십 소식과도 연결된다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg Featured, The Verge 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-16/musk-asks-suppliers-to-move-at-light-speed-on-terafab-project" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Anthropic unveils plans for major UK expansion after OpenAI announces first permanent London office</h3>
+                <p class="article-title-kr">Anthropic 런던 오피스 4배 확장… 직원 200명→800명 수용 규모</p>
+                <p class="article-summary">Anthropic이 런던 직원 수를 4배로 늘릴 수 있는 800명 규모의 신규 오피스 임대 계약을 체결했다. 펜타곤 블랙리스트 이후 런던 시장이 적극 구애한 결과로, OpenAI가 런던 첫 영구 오피스를 발표한 직후 공개된 맞불 전략. 백악관 Amodei 미팅과 함께 'Anthropic 탈미국화' 헤지 전략의 구체화.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Wired 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/16/anthropic-london-office-800-staff-openai-expansion.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Liz Kendall urges UK public to embrace AI as government makes first £500m fund investment</h3>
+                <p class="article-title-kr">UK £500M 주권 AI 펀드 첫 투자 집행… Kendall "일자리·사이버 우려에도 기회 잡아야"</p>
+                <p class="article-summary">영국 기술부 장관 Liz Kendall이 £500M 주권 AI 펀드의 첫 투자로 영국 스타트업 지분을 인수했다고 발표했다. Mythos 사이버 우려, AI 일자리 대체 공포에도 "영국은 기회를 잡아야 한다"고 강조. Anthropic 런던 확장과 맞물려 런던이 '미국-중국 2극 구도 속 제3극' 자리 경쟁에 본격 뛰어든 신호.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian, Wired 다매체 보도</span>
+                    <a href="https://www.theguardian.com/technology/2026/apr/17/liz-kendall-urges-uk-public-to-embrace-ai-as-government-makes-first-500m-fund-investment" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Claude's Pick -->
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Anthropic CPO leaves Figma's board after reports he will offer a competing product</h3>
+                <p class="article-title-kr">Anthropic CPO Mike Krieger, Figma 이사회 사퇴… Claude Design 경쟁 제품 출시 예고</p>
+                <p class="article-summary">Anthropic CPO Mike Krieger(전 Instagram 공동창업자)가 Figma 이사회에서 사퇴했다. Anthropic이 같은 날 Claude Design 비주얼 생성 툴을 출시한 것과 맞물려, 디자인 SaaS 영역에 AI 랩이 직접 진입하는 신호로 읽힌다. "SaaSpocalypse" 테제 — AI 랩이 SaaS 비즈니스를 직접 대체한다 — 의 가장 구체적 증거 중 하나.</p>
+                <p class="pick-reason">선정 이유: 대기업 조용한 움직임 (Krieger 사임) + 시장 규모 재평가 신호 (디자인 SaaS 영역의 AI 직접 진입). 한국 SaaS 투자자·디자인 툴 업계에 선행지표로 유의미.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/04/16/anthropic-cpo-leaves-figmas-board-after-reports-he-will-offer-a-competing-product/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">The $10 Billion Startup Training AI to Replace the White-Collar Workforce</h3>
+                <p class="article-title-kr">Mercor, $10B 밸류… LinkedIn에서 '내 대체자'를 훈련시키는 AI 스타트업</p>
+                <p class="article-summary">Mercor가 $10B 밸류로 부상했다. LinkedIn에 게시된 채용공고를 통해 화이트칼라 직무를 수행하는 AI를 훈련시키는 비즈니스 모델. 20대 중반의 '실무 경험 없는' 공동창업자들이 이끈다. 일자리 대체 불안과 AI 투자 붐이 교차하는 지점에 서 있는, 새로운 시장 카테고리의 첫 대형 사례.</p>
+                <p class="pick-reason">선정 이유: 시장 규모 예측 첫 등장 ($10B 밸류의 'AI 노동 대체' 카테고리) + 투자 관점 의미 있는 변화 (화이트칼라 노동의 트레이닝 데이터화). 노동시장 장기 변화를 먼저 읽을 수 있는 창.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/features/2026-04-16/ai-company-hiring-on-linkedin-wants-to-train-your-replacement-at-work" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Iconiq, Go-To Wealth Adviser for Tech's Elite, Is Putting Billions Into AI</h3>
+                <p class="article-title-kr">Iconiq, 테크 빌리어네어 자산관리사에서 AI 메인 투자자로 변신</p>
+                <p class="article-summary">마크 저커버그·셰릴 샌드버그 등의 자산을 관리하는 Iconiq가 AI 분야의 주요 투자자로 부상했다. 작년 Anthropic Amodei가 중동 자금 유치를 위해 QIA·MGX와 회동하는 과정에서 Iconiq가 핵심 연결고리로 등장. 빅테크 창업자들의 개인 자산이 AI 스타트업으로 재배치되는 구조적 자금 흐름.</p>
+                <p class="pick-reason">선정 이유: 대기업/거물 조용한 움직임 (빅테크 개인 자산 관리사의 AI 편중) + 투자 관점 의미 있는 변화. 자산시장 구조가 기관·국부펀드·패밀리오피스 경계를 넘어 재편되는 시그널.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-17/iconiq-advisor-to-tech-billionaires-emerges-as-major-ai-investor" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 24건 | 섹션 5개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
