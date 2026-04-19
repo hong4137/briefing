@@ -1885,6 +1885,16 @@
       "stats": {
         "clusters": 10
       }
+    },
+    {
+      "date": "weekly-2026-04-19",
+      "week": "2026-W16",
+      "title": "Anthropic Mythos 해빙 + 이란전 국면 전환 + Cursor $50B AI 앱 레이어 자본 재편",
+      "summary": "Anthropic Mythos 사이버 리스크가 글로벌 금융당국 경고→Opus 4.7 안전성 재장착→Amodei 백악관 해빙으로 이어진 3단 아크. 이란전은 호르무즈 봉쇄 시행에서 재개방 선언·Israel-Lebanon 10일 휴전으로 되감김. Cursor $50B·Sequoia $7B로 AI 자본 무게중심이 앱 레이어로 이동. OpenAI-MS 관계 재편(Stargate 노르웨이 철수), Sam Altman 2차 총격 공격 기소.",
+      "period": "2026-04-13 ~ 2026-04-18",
+      "stats": {
+        "clusters": 11
+      }
     }
   ],
   "specials": [
