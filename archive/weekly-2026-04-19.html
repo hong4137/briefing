@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anthropic Mythos 해빙·이란전 국면 전환·AI 앱 레이어 자본 재편 | 주간 외신 브리핑</title>
+<style>
+  :root{
+    --bg:#0a0a0b; --panel:#13131a; --panel-2:#191923; --border:#23232e;
+    --text:#e8e8ee; --mute:#8a8a97; --accent:#f59e0b; --accent-2:#fbbf24;
+    --red:#ef4444; --green:#10b981; --blue:#3b82f6; --purple:#a78bfa;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--text);font-family:-apple-system,"Pretendard","Noto Sans KR",BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:32px 20px 80px}
+  header{text-align:center;padding:40px 0 48px;border-bottom:1px solid var(--border);margin-bottom:40px}
+  header .kicker{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.15em;color:var(--accent);padding:6px 14px;border:1px solid var(--accent);border-radius:100px;margin-bottom:16px}
+  header h1{font-size:32px;font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+  header .date{color:var(--mute);font-size:15px}
+  header .subtitle{margin-top:18px;color:#cbd5e1;font-size:15px;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.7}
+
+  section{margin-bottom:56px}
+  .section-header{display:flex;align-items:center;gap:10px;margin-bottom:22px;padding-bottom:12px;border-bottom:2px solid var(--border)}
+  .section-icon{font-size:22px}
+  .section-title{font-size:22px;font-weight:700;letter-spacing:-.01em}
+
+  /* Overview */
+  .overview{background:linear-gradient(180deg,var(--panel) 0%,var(--panel-2) 100%);border:1px solid var(--border);border-radius:14px;padding:28px}
+  .overview p{font-size:15.5px;color:#d4d4dc;margin-bottom:12px}
+  .overview p:last-child{margin-bottom:0}
+
+  /* Market */
+  .market-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:6px}
+  .market-cell{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+  .market-cell .label{font-size:11px;color:var(--mute);font-weight:600;letter-spacing:.08em;margin-bottom:4px}
+  .market-cell .value{font-size:16px;font-weight:700;margin-bottom:2px}
+  .market-cell .chg{font-size:13px;font-weight:600}
+  .up{color:#34d399}.down{color:#f87171}.flat{color:#9ca3af}
+  .market-note{margin-top:16px;padding:14px 16px;background:rgba(245,158,11,.08);border-left:3px solid var(--accent);border-radius:4px;font-size:14px;color:#d4d4dc}
+
+  /* Cluster */
+  .cluster{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:20px;transition:border-color .2s}
+  .cluster:hover{border-color:#3a3a48}
+  .cluster h3{font-size:18px;font-weight:700;margin-bottom:14px;letter-spacing:-.01em;line-height:1.45}
+  .cluster h3 .num{color:var(--accent);margin-right:8px}
+  .badges{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}
+  .badge{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:100px;font-size:12px;font-weight:600;background:var(--panel-2);border:1px solid var(--border);color:#cbd5e1}
+  .badge.hot{background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.4);color:#fca5a5}
+  .badge.rise{background:rgba(16,185,129,.15);border-color:rgba(16,185,129,.4);color:#6ee7b7}
+  .badge.fall{background:rgba(148,163,184,.15);border-color:rgba(148,163,184,.4);color:#cbd5e1}
+  .badge.new{background:rgba(59,130,246,.15);border-color:rgba(59,130,246,.4);color:#93c5fd}
+  .badge.solo{background:rgba(139,92,246,.15);border-color:rgba(139,92,246,.4);color:#c4b5fd}
+
+  .timeline{margin-top:14px;padding-top:16px;border-top:1px dashed var(--border)}
+  .timeline-title{font-size:13px;font-weight:600;color:var(--accent-2);margin-bottom:10px;letter-spacing:.04em}
+  .timeline ul{list-style:none}
+  .timeline li{padding:8px 0 8px 18px;position:relative;font-size:14.5px;color:#d4d4dc;line-height:1.55}
+  .timeline li::before{content:"";position:absolute;left:4px;top:16px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+  .timeline li + li{border-top:1px dotted rgba(255,255,255,.06)}
+  .timeline .day{display:inline-block;color:var(--accent-2);font-weight:700;margin-right:8px;font-size:13px;min-width:44px}
+
+  .insight{margin-top:14px;padding:14px 16px;background:rgba(167,139,250,.06);border-left:3px solid var(--purple);border-radius:4px;font-size:14.5px;color:#dcd5f7}
+  .insight-title{font-size:12px;font-weight:700;color:var(--purple);letter-spacing:.08em;margin-bottom:6px}
+
+  /* Solo */
+  .solo-list{display:grid;gap:10px}
+  .solo-item{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:12px}
+  .solo-item .date{color:var(--accent-2);font-weight:700;font-size:13px;min-width:42px;padding-top:2px}
+  .solo-item .title{font-size:14.5px;color:#e2e2ea;line-height:1.5}
+
+  /* Pick */
+  .pick{background:linear-gradient(180deg,rgba(245,158,11,.08) 0%,rgba(245,158,11,.02) 100%);border:1px solid rgba(245,158,11,.3);border-radius:14px;padding:24px;margin-bottom:16px}
+  .pick-label{display:inline-block;padding:4px 12px;background:var(--accent);color:#0a0a0b;border-radius:100px;font-size:11px;font-weight:800;letter-spacing:.12em;margin-bottom:14px}
+  .pick h3{font-size:17px;font-weight:700;margin-bottom:12px;color:#fff;line-height:1.45}
+  .pick p{font-size:15px;color:#d4d4dc;margin-bottom:10px}
+  .pick p:last-child{margin-bottom:0}
+
+  /* Stats */
+  .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+  .stat{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center}
+  .stat .num{font-size:26px;font-weight:800;color:var(--accent);margin-bottom:4px}
+  .stat .lbl{font-size:12px;color:var(--mute);font-weight:500}
+
+  /* Events */
+  .events{display:grid;gap:8px}
+  .event{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;gap:14px;align-items:flex-start}
+  .event .dt{color:var(--accent-2);font-weight:700;font-size:13px;min-width:80px;padding-top:2px}
+  .event .txt{font-size:14.5px;color:#d4d4dc;line-height:1.55}
+
+  footer{text-align:center;padding-top:32px;margin-top:48px;border-top:1px solid var(--border);color:var(--mute);font-size:12px}
+  footer .home{color:var(--accent);text-decoration:none;margin-top:8px;display:inline-block}
+  footer .home:hover{text-decoration:underline}
+
+  @media(max-width:640px){
+    .wrap{padding:20px 14px 60px}
+    header{padding:24px 0 32px;margin-bottom:28px}
+    header h1{font-size:24px}
+    .section-title{font-size:18px}
+    .cluster{padding:18px}
+    .cluster h3{font-size:16px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="kicker">WEEKLY BRIEFING · 2026-W16</span>
+  <h1>Mythos 해빙, 이란전 국면 전환, AI 앱 레이어 자본 재편</h1>
+  <div class="date">2026년 4월 3주차 · 4월 13일(월) ~ 4월 18일(토)</div>
+  <p class="subtitle">이번 주는 AI 거버넌스·지정학·빅테크 역학이 동시에 변곡점을 지난 주간이었습니다. Anthropic Mythos는 '위협→금융당국 경고→백악관 해빙' 3단 전개로 정책의 중심에 섰고, 이란전은 봉쇄에서 재개방·휴전으로 빠르게 되감겼으며, Cursor $50B·Sequoia $7B로 AI 앱 레이어에 자본이 재배치됐습니다.</p>
+</header>
+
+<!-- 시장 요약 -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">📊</span>
+    <h2 class="section-title">이번 주 시장 동향</h2>
+  </div>
+  <div class="market-grid">
+    <div class="market-cell"><div class="label">S&amp;P 500</div><div class="value">7,022.95</div><div class="chg up">+1.99% 📈</div></div>
+    <div class="market-cell"><div class="label">NASDAQ</div><div class="value">24,102.70</div><div class="chg up">+3.96% 🔥</div></div>
+    <div class="market-cell"><div class="label">SOX 반도체</div><div class="value">9,329.35</div><div class="chg up">+3.21% 🔥</div></div>
+    <div class="market-cell"><div class="label">VIX 공포지수</div><div class="value">17.94</div><div class="chg down">-6.17% ⚠️</div></div>
+    <div class="market-cell"><div class="label">10Y 국채</div><div class="value">4.32%</div><div class="chg flat">+0.02%p</div></div>
+    <div class="market-cell"><div class="label">2Y 국채</div><div class="value">3.78%</div><div class="chg flat">±0.00%p</div></div>
+    <div class="market-cell"><div class="label">DXY 달러</div><div class="value">118.86</div><div class="chg flat">±0.00%</div></div>
+    <div class="market-cell"><div class="label">WTI 유가</div><div class="value">$100.72</div><div class="chg flat">±0.00%</div></div>
+  </div>
+  <div class="market-note">
+    <strong>핵심 관전 포인트:</strong> 이란 휴전 분위기로 VIX가 한 주 새 −6% 내리면서 NASDAQ +3.96%, SOX +3.21%의 강한 랠리가 나타났습니다. 다만 WTI는 $100선을 지키고 있어 지정학 프리미엄은 완전히 해소되지 않았고, 10Y 국채 금리도 소폭 반등해 '공포 해소 + 정책금리 기대 후퇴'가 혼재된 구간입니다.
+  </div>
+</section>
+
+<!-- TOP 스토리 -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">🔝</span>
+    <h2 class="section-title">이번 주 TOP 스토리</h2>
+  </div>
+
+  <!-- 1 -->
+  <article class="cluster">
+    <h3><span class="num">1.</span>Anthropic Mythos 사이버 리스크가 글로벌 금융당국·백악관 해빙으로 이어진 전략적 전환</h3>
+    <div class="badges">
+      <span class="badge">📰 3건</span>
+      <span class="badge">📅 04/15~04/18</span>
+      <span class="badge rise">📈 관심</span>
+      <span class="badge hot">🔥 상승세</span>
+      <span class="badge">⏳ 진행중</span>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul>
+        <li><span class="day">4/15 수</span>Mythos 사이버 리스크로 Lagarde(ECB)·IMF·BOE·미 재무부가 일제히 경고를 쏟아내며 '글로벌 금융 안정 이슈'로 격상</li>
+        <li><span class="day">4/17 금</span>Anthropic, 차세대 공개 모델인 Claude Opus 4.7을 Mythos 대비 사이버 공격 능력을 의도적으로 축소해 출시 — '안전성 우위' 마케팅 전환</li>
+        <li><span class="day">4/18 토</span>Amodei가 펜타곤 블랙리스트 이후 2개월 만에 Wiles 백악관 비서실장과 회동. Mythos의 연방기관 접근이 임박</li>
+      </ul>
+    </div>
+    <div class="insight">
+      <div class="insight-title">💡 INSIGHT</div>
+      2월 펜타곤 '공급망 리스크' 블랙리스트 이후 얼어붙었던 Anthropic-행정부 관계가, 오히려 Mythos 사이버 역량을 지렛대로 재설정되는 국면입니다. 금융당국의 경고가 '규제'가 아니라 '공식 인정'으로 작동한 것이 핵심 — 안전성 가드레일을 끼운 Opus 4.7 동시 출시가 그 증거입니다.
+    </div>
+  </article>
+
+  <!-- 2 -->
+  <article class="cluster">
+    <h3><span class="num">2.</span>이란전 국면 전환 — 평화회담 결렬·호르무즈 봉쇄에서 이스라엘-레바논 휴전·호르무즈 재개방까지</h3>
+    <div class="badges">
+      <span class="badge">📰 3건</span>
+      <span class="badge">📅 04/13~04/18</span>
+      <span class="badge rise">📈 관심</span>
+      <span class="badge fall">📉 하락세</span>
+      <span class="badge">📋 모니터링</span>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul>
+        <li><span class="day">4/13 월</span>이란 평화회담 결렬, 트럼프 호르무즈 봉쇄 선언. CPI 3.3% 발표와 소비자심리 최저치가 겹치며 '오일쇼크 재점화' 공포 최고조</li>
+        <li><span class="day">4/14 화</span>미 해군이 실제 봉쇄를 시행하며 유가 $100 재돌파. 비료·식량 수송 차단 우려가 매크로 헤드라인 장악</li>
+        <li><span class="day">4/18 토</span>이란은 호르무즈 개방을 선언했으나 미 해군 봉쇄는 유지. 선박들은 여전히 회항. 병행으로 Israel-Lebanon 10일 휴전 타결</li>
+      </ul>
+    </div>
+    <div class="insight">
+      <div class="insight-title">💡 INSIGHT</div>
+      주 초 '전면전 재점화'에서 주 말 '부분 휴전'으로 급격히 되감긴 사이클입니다. VIX −6%·NASDAQ +3.96%의 위험선호 회복이 이를 반영. 다만 미 해군이 봉쇄를 풀지 않아 Brent는 $100을 유지 중이고, 선박 회항이 계속되는 한 공급측 리스크 프리미엄은 살아있습니다.
+    </div>
+  </article>
+
+  <!-- 3 -->
+  <article class="cluster">
+    <h3><span class="num">3.</span>OpenAI의 하이퍼스케일러 파트너십 재편 — Microsoft 갈등 표면화와 Amazon 동맹 심화</h3>
+    <div class="badges">
+      <span class="badge">📰 2건</span>
+      <span class="badge">📅 04/14~04/16</span>
+      <span class="badge rise">📈 관심</span>
+      <span class="badge">→ 유지</span>
+      <span class="badge">⏳ 진행중</span>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul>
+        <li><span class="day">4/14 화</span>OpenAI CRO 내부 메모 유출 — "Microsoft가 고객 접근을 제한했다"고 공개 비판하며 Amazon 동맹을 핵심 축으로 내세움</li>
+        <li><span class="day">4/16 목</span>OpenAI가 Stargate 노르웨이 데이터센터 계약에서 철수, 해당 자산을 Microsoft가 인수. '공급자에서 경쟁자로'의 관계 변화 상징 딜</li>
+      </ul>
+    </div>
+    <div class="insight">
+      <div class="insight-title">💡 INSIGHT</div>
+      OpenAI-MS 관계가 '독점 파트너'에서 '프레너미'로 실질 재편되는 분수령입니다. 같은 주 Anthropic은 백악관·금융당국과 급속히 가까워지고 있어 — 클라우드·모델·정부 라인업 세 축에서 AI 원톱 구조가 완전히 해체되는 흐름입니다.
+    </div>
+  </article>
+
+  <!-- 4 -->
+  <article class="cluster">
+    <h3><span class="num">4.</span>Sam Altman·OpenAI 본사 연쇄 물리적 위협 — 화염병에서 총격까지</h3>
+    <div class="badges">
+      <span class="badge">📰 2건</span>
+      <span class="badge">📅 04/13~04/14</span>
+      <span class="badge rise">📈 관심</span>
+      <span class="badge fall">📉 하락세</span>
+      <span class="badge">✅ 기소 완료</span>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul>
+        <li><span class="day">4/13 월</span>Sam Altman 자택에 화염병 투척, OpenAI 본사 위협 발생. 같은 날 New Yorker 프로필이 공개되며 Altman이 직접 반박</li>
+        <li><span class="day">4/14 화</span>불과 하루 만에 2차 총격 공격 발생. 용의자가 연방 살인미수 혐의로 기소되며 AI 리더에 대한 물리적 위협이 현실화</li>
+      </ul>
+    </div>
+    <div class="insight">
+      <div class="insight-title">💡 INSIGHT</div>
+      AI 산업 리더에 대한 물리적 공격이 '경고 수준'에서 '실제 사건'으로 넘어간 첫 주입니다. 주 후반 기소 확정으로 추가 확전은 일단 멈췄지만, IPO 앞둔 OpenAI의 보안·거버넌스 비용 곡선이 구조적으로 상향될 가능성이 큽니다.
+    </div>
+  </article>
+
+  <!-- 5 -->
+  <article class="cluster">
+    <h3><span class="num">5.</span>Anthropic Claude의 AI 업계 독주 신호 — HumanX 'Claude Mania'에서 Cursor·Sequoia 대형 베팅까지</h3>
+    <div class="badges">
+      <span class="badge">📰 2건</span>
+      <span class="badge">📅 04/13~04/18</span>
+      <span class="badge rise">📈 관심</span>
+      <span class="badge">→ 유지</span>
+      <span class="badge">⏳ 진행중</span>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul>
+        <li><span class="day">4/13 월</span>HumanX 컨퍼런스에서 'Claude Mania' 분위기 형성 — Anthropic이 개발자 멘탈 셰어를 장악, CoreWeave와 멀티빌리언 딜도 체결</li>
+        <li><span class="day">4/18 토</span>Claude 기반 AI 코딩 스타트업 Cursor가 $50B 밸류에이션으로 $2B+ 조달 협상(a16z·Thrive 리드). 같은 주 Sequoia는 $7B AI 펀드, Cerebras IPO 성사</li>
+      </ul>
+    </div>
+    <div class="insight">
+      <div class="insight-title">💡 INSIGHT</div>
+      자본 흐름이 '파운데이션 모델'에서 '모델 위에 얹힌 앱 레이어'로 본격 재배치되는 주간이었습니다. Cursor $50B는 단일 앱 기업으로는 2026년 최대 밸류 딜 중 하나이고, 그 밑단 모델 공급자가 모두 Claude라는 점이 Anthropic 독주의 실체입니다.
+    </div>
+  </article>
+</section>
+
+<!-- Claude's Pick -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">⭐</span>
+    <h2 class="section-title">Claude's Pick</h2>
+  </div>
+
+  <div class="pick">
+    <span class="pick-label">PICK 1 · 주간 최대 스토리</span>
+    <h3>Mythos 3단 아크 — '위협→경고→해빙'이 한 주 안에 끝났다</h3>
+    <p>Mythos는 단순한 모델 출시 이슈가 아닙니다. 4/15 글로벌 금융당국의 이례적 일제 경고 → 4/17 Opus 4.7로 '안전성 내러티브' 재장착 → 4/18 Amodei의 백악관 회동. 3일 만에 '규제 위기'를 '정책 레버리지'로 전환한 정치·커뮤니케이션 설계가 이번 주 가장 주목할 수 있는 장면입니다.</p>
+    <p>주가 레벨에서의 함의는 명확합니다. AI 인프라 사이드(Broadcom, CoreWeave, TSMC 등)는 '안보 인증받은 AI'라는 새 카테고리의 수혜를 보기 시작했고, 반대로 Microsoft-OpenAI 축은 동일 주간에 Stargate 노르웨이 철수로 상대적 점수가 빠졌습니다.</p>
+  </div>
+
+  <div class="pick">
+    <span class="pick-label">PICK 2 · 구조 변화 신호</span>
+    <h3>Cursor $50B — AI 자본의 무게중심이 앱 레이어로 이동했다</h3>
+    <p>OpenAI $122B·Anthropic $30B런레이트 등 파운데이션 모델 사이드 뉴스는 이제 일상이 됐지만, Cursor $50B는 결이 다릅니다. 모델 위에 얹힌 단일 앱이 메가캡 수준에 진입한 첫 케이스이고, 같은 주 Sequoia $7B AI 펀드·Cerebras IPO까지 겹치며 VC 자금이 '모델 자체' 대신 '모델을 잘 쓰는 회사'로 명확히 방향을 틀었습니다.</p>
+    <p>여기서 놓치면 안 되는 디테일은 Cursor의 추론 워크로드 대부분이 Claude라는 점입니다. 결국 앱 레이어의 가치 상승이 아래쪽 Anthropic으로 수렴되는 구조 — '모델-앱' 수직 통합이 조용히 현실이 되고 있습니다.</p>
+  </div>
+</section>
+
+<!-- 단독 하이라이트 -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">🎯</span>
+    <h2 class="section-title">단독 하이라이트</h2>
+  </div>
+  <div class="solo-list">
+    <div class="solo-item">
+      <div class="date">4/15</div>
+      <div class="title"><strong>Amazon, Globalstar $11.6B 인수로 Starlink에 정면 도전</strong> — 위성 인터넷 패권 경쟁이 본격화. Apple은 Globalstar 지분을 이미 보유 중이라 삼각 역학으로 확장</div>
+    </div>
+    <div class="solo-item">
+      <div class="date">4/15</div>
+      <div class="title"><strong>메모리칩 부족으로 MS Surface·Samsung Galaxy 동시 가격 인상</strong> — 전쟁발 인플레가 소비자 기기까지 침투. HBM-NAND 수급 분화의 물리적 증거</div>
+    </div>
+    <div class="solo-item">
+      <div class="date">4/16</div>
+      <div class="title"><strong>Ticketmaster 불법 독점 배심 평결</strong> — Live Nation 회사 분할 가능성 부상. 2010년 합병 이후 15년 만에 라이브 엔터테인먼트 시장 지각 변동</div>
+    </div>
+    <div class="solo-item">
+      <div class="date">4/16</div>
+      <div class="title"><strong>Snap, 전체 인력 16%·1,000명 감원</strong> — AI 전환 구조조정. 2022년 Meta 감원 이후 '광고 기반 소셜'의 두 번째 대규모 체질 개선</div>
+    </div>
+    <div class="solo-item">
+      <div class="date">4/17</div>
+      <div class="title"><strong>Ford EV·SW 총괄 Doug Field 사임</strong> — Apple·Tesla 출신 스타 임원의 이탈로 Ford의 전동화 전략 차질. 소프트웨어 정의 차량(SDV) 전략 공백</div>
+    </div>
+    <div class="solo-item">
+      <div class="date">4/17</div>
+      <div class="title"><strong>중국 Ganfeng 리튬 흑자 전환 + Tesla AI 칩 中 공급망 랠리</strong> — EV·ESS 수요 회복의 신호. 글로벌 배터리·반도체 공급망 축이 중국으로 재편되는 흐름</div>
+    </div>
+  </div>
+</section>
+
+<!-- 주간 통계 -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">📈</span>
+    <h2 class="section-title">주간 통계</h2>
+  </div>
+  <div class="stats-grid">
+    <div class="stat"><div class="num">18</div><div class="lbl">총 헤드라인</div></div>
+    <div class="stat"><div class="num">11</div><div class="lbl">클러스터 수</div></div>
+    <div class="stat"><div class="num">5</div><div class="lbl">멀티 기사 스토리</div></div>
+    <div class="stat"><div class="num">6</div><div class="lbl">단독 하이라이트</div></div>
+    <div class="stat"><div class="num">3</div><div class="lbl">진행중 이슈</div></div>
+    <div class="stat"><div class="num">6</div><div class="lbl">발행일 수</div></div>
+  </div>
+</section>
+
+<!-- 다음 주 일정 -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">📅</span>
+    <h2 class="section-title">다음 주 주목 포인트</h2>
+  </div>
+  <div class="events">
+    <div class="event">
+      <div class="dt">Anthropic</div>
+      <div class="txt">Mythos의 연방기관 실제 배포 여부 — Amodei 백악관 회동 후속 조치가 이번 주 안에 구체화될 가능성</div>
+    </div>
+    <div class="event">
+      <div class="dt">중동</div>
+      <div class="txt">미 해군 호르무즈 봉쇄 해제 여부 — 이란 '개방 선언'과 실제 항행 재개 간의 시차가 유가 향방을 결정</div>
+    </div>
+    <div class="event">
+      <div class="dt">OpenAI</div>
+      <div class="txt">IPO 로드쇼 일정과 Microsoft와의 계약 구조 공시 — Amazon 동맹 비중 확대가 S-1에 어떻게 반영될지</div>
+    </div>
+    <div class="event">
+      <div class="dt">실적</div>
+      <div class="txt">Mag7·반도체 분기 실적 시즌 본격화 — 메모리칩 부족·AI CapEx 가이던스가 핵심 변수</div>
+    </div>
+    <div class="event">
+      <div class="dt">Cursor</div>
+      <div class="txt">$50B 라운드 공식 발표 여부 — 확정 시 AI 앱 레이어 밸류에이션 리레이팅 트리거</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>Weekly Briefing v1.6 · Generated by Claude · 2026-04-19</div>
+  <a class="home" href="../index.html">← 홈으로</a>
+</footer>
+
+</div>
+</body>
+</html>
