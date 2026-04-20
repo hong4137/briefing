@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-20",
+      "day": "월",
+      "title": "New Glenn 재사용 착륙 성공·위성 궤도 실패 | 미-이란 호르무즈 선박 나포 충돌 재격화 | Anthropic-Trump 해빙 국면",
+      "summary": "Blue Origin이 New Glenn 1단 재사용 착륙에는 성공했지만 AST SpaceMobile 위성을 잘못된 궤도에 투입하는 첫 중대 실패를 기록했다. 트럼프가 호르무즈에서 이란 화물선을 나포했다고 발표하며 이란의 상선 공격과 겹쳐 유가가 다시 급등했다. Anthropic은 펜타곤 블랙리스트에도 불구하고 Amodei가 백악관 Wiles 비서실장과 회동하며 관계 해빙이 본격화됐다.",
+      "highlights": [
+        "Blue Origin New Glenn 1단 재사용 착륙 첫 성공 AST SpaceMobile 위성 궤도 투입 실패 SpaceX 추격 첫 중대 차질",
+        "트럼프 오만만 이란 화물선 나포 발표 미 해군 봉쇄 격화 이란 상선 공격 유가 급등 평화협상 재시험",
+        "Anthropic-Trump 행정부 해빙 Amodei 백악관 Wiles 비서실장 회동 Mythos 영국 은행권 공급 임박"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-18",
       "day": "토",
       "title": "Amodei 백악관行 Mythos 해빙 임박 | Cursor $50B 바이브코딩 대관식 | 호르무즈 개방/봉쇄 혼선",
