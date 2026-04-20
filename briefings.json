@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-21",
+      "day": "화",
+      "title": "Apple CEO Tim Cook 사임 Ternus 승계 | Marvell Google AI칩 Amazon Anthropic $25B | Huawei AI안경 中 하드웨어 도약",
+      "summary": "Apple이 14년 만의 최대 리더십 교체로 팀 쿡이 CEO에서 물러나고 하드웨어 수장 John Ternus가 승계한다. Marvell이 Google 커스텀 AI 칩 파트너로 보도돼 Broadcom이 급락하고, Amazon은 Anthropic에 최대 $25B 추가 투자하며 AWS 장기 공급을 확보했다. Huawei AI 안경 출시와 베이징 휴머노이드 마라톤 세계 신기록으로 중국 하드웨어·로봇 도약이 뚜렷해지는 한편, Palantir 반DEI 선언문과 홍콩 크립토 허브 선언이 이념·정책 지형을 재편한다.",
+      "highlights": [
+        "Apple CEO Tim Cook 사임 John Ternus 승계 14년만 최대 리더십 교체 하드웨어 엔지니어 출신 CEO 회귀",
+        "Marvell Google 커스텀 AI 칩 파트너 보도 Broadcom 급락 Nvidia $2B 투자 연장선 반도체 공급망 재편",
+        "Amazon Anthropic 최대 $25B 추가 투자 Anthropic AWS 10년 $100B 지출 약정 하이퍼스케일러 얼라이언스 재편"
+      ],
+      "stats": {
+        "articles": 23,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-20",
       "day": "월",
       "title": "New Glenn 재사용 착륙 성공·위성 궤도 실패 | 미-이란 호르무즈 선박 나포 충돌 재격화 | Anthropic-Trump 해빙 국면",
