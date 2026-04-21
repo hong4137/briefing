@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-22",
+      "day": "수",
+      "title": "Apple CEO Cook→Ternus 15년 대전환 AI 최대 과제 | OpenAI ChatGPT Images 2.0 출시·Altman의 Mythos 공포마케팅 비판 | Xbox Game Pass 가격인하·Call of Duty 제외",
+      "summary": "Tim Cook이 15년 만에 CEO를 John Ternus에게 넘기며 9월 1일자 승계가 확정됐고, 공식 릴리스에 AI가 한 번도 언급되지 않아 AI 전략 재정비가 최대 과제로 부상했다. Trump-Cook 'kiss my ass' 통화가 공개되며 Cook은 이사회 의장으로서 외교 역할을 유지한다. OpenAI는 ChatGPT Images 2.0을 공개해 텍스트·차트 생성에서 진일보한 반면, Sam Altman은 Anthropic Mythos를 '공포 마케팅'이라 직격했고 Trump는 Anthropic DOD 딜이 '가능하다'고 언급하며 해빙을 본격화했다. Microsoft는 Asha Sharma 새 Xbox CEO 체제에서 Game Pass 가격을 인하하며 Call of Duty를 제외시키는 전략 전환을 감행했다. Victory Giant(Nvidia 공급사)가 홍콩 데뷔에서 60% 폭등하며 올해 최대 IPO를 기록했고, Mozilla는 Mythos로 Firefox 버그 271개를 수정하며 AI 사이버보안 실전 투입 첫 대규모 사례를 만들었다.",
+      "highlights": [
+        "Apple CEO Cook→Ternus 15년 대전환 9월1일 승계 AI 전략 최대 과제 Trump-Cook kiss my ass 통화 공개 Cook 이사회 의장 외교 역할",
+        "OpenAI ChatGPT Images 2.0 출시 텍스트·차트 생성 대폭 개선 Altman Anthropic Mythos 공포마케팅 직격 Trump DOD 딜 가능 언급",
+        "Microsoft Xbox Game Pass 가격 인하 Call of Duty 제외 Asha Sharma 신임 CEO 전략 전환 Victory Giant HK 데뷔 60% 폭등 Nvidia 공급사"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-21",
       "day": "화",
       "title": "Apple CEO Tim Cook 사임 Ternus 승계 | Marvell Google AI칩 Amazon Anthropic $25B | Huawei AI안경 中 하드웨어 도약",
