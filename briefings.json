@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-23",
+      "day": "목",
+      "title": "Meta 직원 키스트로크 추적 AI 훈련 | SpaceX-Cursor $60B 인수 옵션 | Nvidia Vast Data $30B 3배 밸류",
+      "summary": "Meta가 사내 소프트웨어 사용 전수를 AI 에이전트 훈련에 활용하기로 하면서 직장 감시 논란이 폭발했다. SpaceX는 Cursor를 $60B에 인수할 옵션을 확보(xAI 코딩 뒤처짐 배경)했고, Nvidia는 Vast Data $30B로 3배 밸류에 투자했다. Trump-Cook 'kiss my ass' 통화 공개와 Apple 반도체 수장 Srouji 승격이 후속으로 이어졌다. Google Cloud가 2종 새 TPU를 발표하며 Nvidia에 정면 도전했고, Anthropic Mythos는 무단 접근·Mozilla 271버그 수정·Altman 공포마케팅 비판 등 여러 각도로 확산 중이다. Tesla Q1 어닝에선 Musk가 HW3 FSD 업그레이드 필요성을 인정했고, SK Hynix·TSMC는 AI 메모리·칩 수요로 기록적 이익을 기록했으며, IBM·ServiceNow는 Iran 여파로 주춤했다. Netflix AI VFX 전환과 Hastings 이사회 사임, LinkedIn CEO 교체, Kalshi/Polymarket 영구선물 출시와 내부자거래 적발, Rivian R2 양산 시작, Musk Terafab $3B Intel 기술 활용 등이 주요 뉴스다.",
+      "highlights": [
+        "Meta 직원 클릭·키스트로크 전수 추적 AI 에이전트 훈련 BBC TechCrunch Verge Guardian 다매체 직장 감시 논란",
+        "SpaceX Cursor $60B 인수 옵션 확보 xAI 코딩 뒤처짐 $10B 협업 대안 $2B 펀드레이즈 프리엠트",
+        "Nvidia Vast Data $30B 3배 밸류 투자 $1B 라운드 IPO 준비 AI 인프라 생태계 지배력 강화"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-22",
       "day": "수",
       "title": "Apple CEO Cook→Ternus 15년 대전환 AI 최대 과제 | OpenAI ChatGPT Images 2.0 출시·Altman의 Mythos 공포마케팅 비판 | Xbox Game Pass 가격인하·Call of Duty 제외",
