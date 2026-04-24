@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-24",
+      "day": "금",
+      "title": "Anthropic Mythos 무단 접근 충격 | OpenAI GPT-5.5 AI 슈퍼앱 | Meta 8,000명 감원",
+      "summary": "Anthropic의 Mythos가 통제 밖으로 유출되며 AI 안전 논란이 정점에 달했다. OpenAI는 GPT-5.5로 슈퍼앱 레이스에 가속 페달을 밟았고, Meta는 직원 키스트로크를 AI 훈련에 활용하며 동시에 8,000명 감원을 발표했다. Intel·TI 어닝 서프라이즈로 반도체주가 폭등한 반면, 아시아 공급망은 나프타 부족과 삼성 파업 위협으로 긴장이 고조됐다.",
+      "highlights": [
+        "Anthropic Mythos 무단 접근 확인 공개 거부 AI 통제 밖 유출 TechCrunch The Verge Guardian SCMP 다매체",
+        "OpenAI GPT-5.5 출시 코딩 리서치 컴퓨터 조작 통합 슈퍼앱 한 걸음 기업 고객 Anthropic 경쟁",
+        "Meta 키스트로크 감시 AI 훈련 직원 10% 8000명 감원 5월 20일 시행 AI 비용 상쇄"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-23",
       "day": "목",
       "title": "Meta 직원 키스트로크 추적 AI 훈련 | SpaceX-Cursor $60B 인수 옵션 | Nvidia Vast Data $30B 3배 밸류",
