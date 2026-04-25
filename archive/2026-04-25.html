@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백악관 中 AI 도용 단속 | Musk-Altman 재판 임박 | Google Anthropic $40B | Jae's Briefing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .summary {
+            color: #a0a0a0;
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #667eea;
+            color: #fff;
+        }
+        .article-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .article-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .article-title-kr {
+            font-size: 1rem;
+            color: #a0a0a0;
+            margin-bottom: 12px;
+        }
+        .article-summary {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.85rem;
+        }
+        .source {
+            color: #667eea;
+            font-weight: 600;
+        }
+        .article-meta a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+        .article-meta a:hover {
+            text-decoration: underline;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .badge-hot {
+            background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            color: #fff;
+        }
+        .badge-breaking {
+            background: #ff3b3b;
+            color: #fff;
+            animation: pulse 2s infinite;
+        }
+        .badge-update {
+            background: #22c55e;
+            color: #fff;
+        }
+        .badge-new {
+            background: #4a9eff;
+            color: #fff;
+        }
+        .badge-pick {
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            color: #fff;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .top-section .article-card {
+            background: rgba(255, 59, 59, 0.05);
+            border-color: rgba(255, 59, 59, 0.2);
+        }
+        .picks-section .article-card {
+            background: rgba(168, 85, 247, 0.05);
+            border-color: rgba(168, 85, 247, 0.2);
+        }
+        .pick-reason {
+            font-size: 0.85rem;
+            color: #a855f7;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        footer p { margin-bottom: 10px; }
+        footer a { color: #667eea; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .title { font-size: 1.4rem; }
+            .article-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 4월 25일 토요일</div>
+            <h1 class="title">백악관 中 AI 모델 산업 규모 도용 단속 | Musk-Altman 재판 27일 개시 | Google, Anthropic에 최대 $40B 추가 투자</h1>
+            <p class="summary">트럼프 행정부가 중국의 미국 AI 모델 'distillation'을 정조준하는 첫 본격 대응을 발표했다. Musk가 OpenAI를 상대로 제기한 사기 소송이 27일 오클랜드 법정에서 개시되며, Google은 Amazon에 이어 Anthropic에 최대 $40B 추가 투자를 단행해 AI 컴퓨팅 패권 경쟁이 새 국면에 진입했다. 빅테크 23,000명 감원과 Intel·Nvidia의 사상 최고 랠리가 동시 진행되는 'AI K자 경제'가 본격화되고 있다.</p>
+        </header>
+
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">White House warns of 'industrial-scale' efforts in China to rip off U.S. AI tech</h3>
+                <p class="article-title-kr">백악관, 中 '산업 규모' 美 AI 모델 도용 정조준 — 첫 본격 단속 메모 공개</p>
+                <p class="article-summary">백악관 과학기술정책실(OSTP) 디렉터 Michael Kratsios가 중국 기업들이 미국 AI 모델을 부적절하게 'distillation' 방식으로 복제해 경쟁 모델을 만들어 왔다고 공식 명시한 메모를 공개했다. 미국 정부 차원에서 실리콘밸리 기업들의 불만을 받아들여 첫 본격 대응에 나선 것이며, 미 하원도 중국 기업의 모델 복제에 대한 처벌안을 검토 중이다. DeepSeek V4 프리뷰 출시 직후 발표된 조치로 美中 AI 디커플링이 정책 단계로 진입했다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg, BBC, SCMP 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/23/trump-china-ai-technology.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Elon Musk and Sam Altman's courtroom brawl could burn it all down</h3>
+                <p class="article-title-kr">Musk vs Altman 재판 27일 오클랜드 개시 — OpenAI 사기 소송 본격 심리</p>
+                <p class="article-summary">Musk가 OpenAI 공동창업자였다가 2018년 결별 후 제기한 사기 소송 재판이 4월 27일 캘리포니아 오클랜드 연방법원에서 배심원 선정으로 시작된다. Musk는 OpenAI가 비영리 사명을 저버리고 자신을 사기 쳤다고 주장하며 영리화 전환을 막으려 한다. 재판이 진행되는 동안 양측의 내부 이메일·증언이 공개될 예정이어서 OpenAI의 운영 내부 사정과 두 거물의 갈등 실체가 사상 처음 법정에서 드러난다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Hero, Wired, Bloomberg 다매체 보도</span>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/917755/musk-altman-openai-xai-gossip" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Google to invest up to $40B in Anthropic in cash and compute</h3>
+                <p class="article-title-kr">Google, Anthropic에 즉시 $10B + 향후 최대 $30B 추가 투자 — Amazon에 이은 빅뱅</p>
+                <p class="article-summary">Google이 Anthropic에 즉시 $10B를 $350B 밸류에이션으로 투자하고, 향후 최대 $30B를 추가 투입하기로 합의했다. 사흘 전 Amazon이 발표한 $25B 추가 투자와 합치면 Anthropic은 빅테크 양대 클라우드로부터 60주를 채 안 되는 기간에 $65B 규모의 자본·컴퓨팅을 확보하는 셈이다. Mythos 모델의 사이버보안 능력 노출 직후 단행된 베팅으로, AI 컴퓨팅 인프라 패권 경쟁이 OpenAI/Microsoft 진영과 Anthropic/AWS-Google 진영의 양강 구도로 굳어지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured, Bloomberg, CNBC 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Microsoft plans first-ever voluntary employee buyout for up to 7% of U.S. workforce</h3>
+                <p class="article-title-kr">Microsoft, 51년 역사상 첫 자발적 퇴직 — 美 직원 7%(약 6,000명) 대상</p>
+                <p class="article-summary">Microsoft가 1975년 창사 이래 처음으로 자발적 퇴직 프로그램을 도입한다. 시니어 디렉터급 이하로 근속연수+나이 합계가 70 이상인 미국 직원이 대상이며 약 7%, 6,000명 규모다. 같은 날 Meta가 8,000명(전체 10%) 감원을 5월 20일부터 시행한다고 발표하면서 빅테크 양사 합산 약 23,000명이 영향을 받게 됐다. AI 인프라에 대한 천문학적 자본 지출을 인건비 축소로 상쇄하려는 'AI K자 경제'가 노동시장 구조를 본격 재편하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured, TechCrunch, Bloomberg, Guardian 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/23/microsoft-plans-first-voluntary-retirement-program-for-us-employees.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Cohere acquires, merges with Germany-based startup to create a 'transatlantic AI powerhouse'</h3>
+                <p class="article-title-kr">Cohere, 독일 Aleph Alpha 인수·합병 — Schwarz Group $600M 투자로 'AI 대서양 동맹'</p>
+                <p class="article-summary">캐나다 AI 기업 Cohere가 독일의 한때 'AI 국가대표'로 불리던 Aleph Alpha를 인수·합병하고, 독일 유통 대기업 Schwarz Group(Lidl 모회사)이 Cohere 시리즈 E에 $600M를 투자하기로 했다. 규제 산업·정부 대상 AI 시장을 양대 진영(미·중) 사이에서 '제3의 축'으로 노리는 거래다. 영국·독일·캐나다가 한 묶음이 되는 새로운 동맹 구도가 형성되며, 美中 AI 디커플링 압박이 거세지는 가운데 유럽이 자체 AI 주권을 확보하려는 움직임이 본격화되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured, CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/04/24/cohere-acquires-merges-with-german-based-startup-to-create-a-transatlantic-ai-powerhouse/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🤖 AI/기술</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">DeepSeek previews new AI model that 'closes the gap' with frontier models</h3>
+                <p class="article-title-kr">DeepSeek V4 프리뷰 공개 — 1년 만의 신모델, 코딩 벤치마크에서 美 빅모델과 격차 거의 없어</p>
+                <p class="article-summary">중국 DeepSeek이 1년 전 R1으로 실리콘밸리에 충격을 준 이후 공개한 차세대 V4 프리뷰가 추론 벤치마크에서 OpenAI·Anthropic·Google의 폐쇄형 빅모델과 "거의 격차를 좁혔다"고 발표됐다. 다만 Bloomberg는 V4가 "美의 AI 우위를 좁히는 데 실패했다"고 보도해 평가가 엇갈린다. Huawei와 협력해 Ascend 950PR 슈퍼노드 본격 양산 전까지는 처리량 이슈가 있을 것으로 보이며, 백악관의 distillation 단속과 맞물려 美中 AI 분리 추세가 가속화되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, The Verge, Bloomberg, TechCrunch 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Anthropic Mythos breach was humiliating — global regulators on alert</h3>
+                <p class="article-title-kr">Mythos 무단 접근 후속: Finma "은행 즉시 접근 시 시스템적 위험" 경고, 일본·호주도 조사</p>
+                <p class="article-summary">어제 보도된 Anthropic Mythos 무단 접근 사건이 글로벌 금융당국 후속 대응으로 확산됐다. 스위스 Finma는 은행에 Mythos를 즉시 부여하는 것이 "시스템적 위험"이라고 경고했으며, 일본 재무장관과 호주 RBA도 Mythos 사이버 위협 점검에 착수했다. NSA가 펜타곤과의 갈등에도 불구하고 Mythos를 사용 중이라는 보도까지 나오면서 모델의 통제권 자체가 미국 정부 부처 간에서도 분열되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, The Verge, TechCrunch, Guardian 다매체 보도</span>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/917644/anthropic-claude-mythos-breach-humiliation" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Tesla's Cybercab goes into production — so why is Musk tapping the brakes?</h3>
+                <p class="article-title-kr">Tesla Cybercab 텍사스 기가팩토리 양산 시작 — Musk는 이례적으로 신중 모드</p>
+                <p class="article-summary">Tesla가 핸들 없는 로보택시 Cybercab을 텍사스 오스틴 기가팩토리에서 본격 양산하기 시작했지만, Musk는 Q1 어닝콜에서 이례적으로 롤아웃 속도를 늦추겠다고 발언했다. 동시에 Tesla는 2026년 capex 가이던스를 $25B 추가로 늘려 AI·로보틱스·반도체 인프라(Terafab 포함)에 대규모 투입을 예고했다. Musk는 또 기존 HW3 FSD가 진정한 자율주행을 구현하기 어려우며 "수백만 차주에게 업그레이드가 필요하다"고 인정해 기존 약속의 실현 가능성에 의문이 제기됐다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Featured, TechCrunch, Bloomberg 다매체 보도</span>
+                    <a href="https://www.theverge.com/transportation/918106/tesla-cybercab-production-robotaxi-elon-musk-earnings" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Meta inks multibillion-dollar deal to use Amazon chips for AI</h3>
+                <p class="article-title-kr">Meta-Amazon AI 칩 다년 딜 — Graviton CPU 수십만 개로 Nvidia 의존도 분산</p>
+                <p class="article-summary">Meta가 Amazon의 자체 ARM 기반 범용 CPU 'Graviton' 수십만 개를 임대해 AI 에이전틱 워크로드에 투입하는 다년 다중억 달러 계약을 체결했다. 단순 GPU 군비 경쟁을 넘어 CPU까지 새로운 칩 경쟁 영역으로 부상한 것이 핵심이다. Meta는 최근 CoreWeave와 Nebius에도 $48B 규모의 AI 인프라 약정을 한 직후라 Nvidia 일변도에서 멀티 벤더 전략으로 빠르게 전환하는 모양새다. 한편 중국은 Meta-Manus 인수에 대한 보복으로 자국 AI 기업의 美 자본 유치를 정부 사전 승인제로 전환할 계획이다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC, TechCrunch 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/24/meta-will-use-hundreds-of-thousands-of-aws-graviton-chips.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Google launches new Tensor Processing Unit (TPU) lineup, rivaling Nvidia</h3>
+                <p class="article-title-kr">Google Cloud, 학습·추론용 신형 TPU 2종 출시 — Nvidia에 정면 도전</p>
+                <p class="article-summary">Google이 Cloud Next 2026에서 학습용·추론용 신규 TPU 칩 두 종을 발표하며 AI 가속기 시장에서 Nvidia에 정면 도전한다고 선언했다. Vista의 Elliott 소유 Cloud Software 그룹과의 다년 계약, Stellantis와의 파트너십이 동반 발표돼 자체 칩 + 엔터프라이즈 채택을 묶는 통합 전략이 드러났다. Google이 자체 칩으로 Anthropic 학습을 지원할 가능성이 거론되는 가운데, AI 칩 자급자족 경쟁이 빅테크 전반으로 확산되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC, TechCrunch 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/22/google-launches-training-and-inference-tpus-in-latest-shot-at-nvidia.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">💰 경제/금융</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Intel stock has best day since 1987, soaring 24% as chipmaker shows turnaround signs</h3>
+                <p class="article-title-kr">Intel 24% 폭등 — 1987년 이래 최대폭, AI 인프라 수혜 본격화로 정부 지분 가치 4배</p>
+                <p class="article-summary">Intel이 강력한 차분기 가이던스를 발표하며 24% 폭등, 1987년 이래 최고의 하루를 기록했다. AI 인프라 빌드아웃 수혜가 처음으로 매출에 본격 반영됐다는 신호다. 이로써 미국 정부가 보유한 Intel 지분 가치가 약 $36B로 4배 증가했고, Musk Terafab 프로젝트와의 협력도 함께 확인됐다. 같은 날 AMD는 회사 발표 없이 12% 폭등했으며, Texas Instruments도 19% 급등(2000년 이래 최대)해 AI 반도체 랠리가 광범위하게 퍼지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/23/intel-intc-q1-2026-earnings-report.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Nvidia stock closes at record, pushing market cap past $5 trillion</h3>
+                <p class="article-title-kr">Nvidia 시총 사상 첫 $5T 돌파 — 10월 이래 첫 신고가, 반도체 ETF 한 달 30%+</p>
+                <p class="article-summary">Nvidia가 작년 10월 이후 처음으로 사상 최고가를 갱신하며 시가총액 $5T를 돌파했다. Intel 어닝 서프라이즈가 반도체 섹터 전체 랠리를 촉발한 것이 직접 원인이며, VanEck Semiconductor ETF(SMH)는 4월 한 달에만 30% 이상 상승했다. Mythos·이란전·중국 디커플링 등 우려 요인에도 불구하고 'AI 자본지출 사이클이 끝나지 않았다'는 컨센서스가 다시 굳어지는 분위기다. 다만 트레이더들은 "비싸지만 신경 안 쓴다"는 정서가 지배적이라는 점이 우려 요인으로 지적된다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/24/nvidia-stock-closes-at-record-pushing-market-cap-past-5-trillion.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Nuclear startup X-energy raises $1B in data center-driven IPO, stock pops 31%</h3>
+                <p class="article-title-kr">Amazon 투자 X-Energy IPO 31% 폭등 — $1.02B 조달, 데이터센터 발전 수요가 원전 부활 견인</p>
+                <p class="article-summary">Amazon이 투자한 소형 모듈 원자로(SMR) 스타트업 X-Energy가 첫 거래일 31% 폭등하며 $1.02B를 조달했다. 당초 계획보다 약 20% 증액된 규모로, AI 데이터센터의 폭발적 전력 수요가 원전 부활 트렌드를 만들고 있음을 보여준다. 같은 주 Blue Energy도 $380M를 모금해 데이터센터용 그리드급 SMR을 조선소에서 생산할 계획을 발표했다. Maine 주지사가 데이터센터 모라토리엄 법안에 거부권을 행사하는 등 정치 영역에서도 데이터센터-에너지 갈등이 본격화되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/04/24/nuclear-startup-x-energy-raises-1b-in-data-center-driven-ipo/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Strait of Hormuz may not fully reopen until second half of 2026, Baker Hughes says</h3>
+                <p class="article-title-kr">호르무즈 해협 정상화는 2026년 하반기 — Baker Hughes "투자자 예상보다 훨씬 길어"</p>
+                <p class="article-summary">유전 서비스 대기업 Baker Hughes가 호르무즈 해협 정체가 풀리기까지 거의 1년이 걸릴 수 있다고 전망했고, Dow CEO Jim Fitterling도 "물류 정체 해소에 1년 가까이 소요될 것"이라고 경고했다. 미·이란이 경쟁적 봉쇄를 유지하며 휴전 연장에도 탱커 통항은 여전히 매우 낮다. Brent는 다시 $104를 돌파하며, Iran 협상자 사임설까지 더해져 유가가 상승 압력을 받고 있다. Kalshi의 베터들도 호르무즈 정상화는 7월에야 가능하다고 본다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/24/strait-hormuz-baker-hughes-iran-war-oil-lng.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">DOJ drops criminal probe of Fed Chair Powell, removes hurdle for Warsh confirmation</h3>
+                <p class="article-title-kr">DOJ, Powell 형사 조사 종결 — Warsh 5월 인준 청신호, 그러나 Pirro "언제든 재개 가능"</p>
+                <p class="article-summary">법무부가 트럼프 행정부의 Fed 의장 Jerome Powell에 대한 형사 조사를 종결하며 Trump가 후임으로 지명한 Kevin Warsh의 상원 인준을 가로막던 큰 장애물이 제거됐다. Kalshi 베터들은 5월 15일까지 Warsh 인준 확률을 86%로 본다. 다만 검사 Pirro는 언제든 재개 가능하다고 발언했고, 민주당 Warren·Durbin은 정치적 위협이 끝나지 않았다고 경고했다. Fed 독립성에 대한 시장 우려가 완전히 해소되지는 않은 상황에서 Powell이 잔여 임기를 채울지가 5월의 핵심 변수가 됐다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/04/24/fed-powell-doj-warsh-trump.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">📱 플랫폼/소셜/규제</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">US arrests soldier who allegedly made $400k on Maduro Polymarket bets</h3>
+                <p class="article-title-kr">美 특수부대원, Maduro 작전 내부정보로 Polymarket $400K 수익 — 첫 예측시장 내부자거래 체포</p>
+                <p class="article-summary">美 검찰이 Special Forces 마스터 상사 Gannon Ken Van Dyke를 베네수엘라 Maduro 대통령 체포 작전 정보를 이용해 Polymarket에서 $400K를 번 혐의로 체포했다고 발표했다. 예측시장 사상 첫 내부자 거래 형사 기소 사례다. Kalshi는 자체 차단 조치를 적용했다고 밝혔으며, Bitwise·Roundhill 등이 SEC에 예측시장 ETF 상장을 신청하는 한편 New York 시는 공무원에게 예측시장 사용을 금지하는 법안을 통과시켰다. 시장 규모 폭발 속도와 규제 공백이 정면 충돌하고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired, The Verge, TechCrunch, CNBC 다매체 보도</span>
+                    <a href="https://www.theverge.com/policy/917910/polymarket-maduro-bets-arrest-van-dyke" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">How Project Maven taught the military to love AI</h3>
+                <p class="article-title-kr">Project Maven, 이란 첫 24시간에 1,000+ 표적 타격 — 美 군사 AI 본격 가동</p>
+                <p class="article-summary">미군의 AI 표적 시스템 'Maven Smart System'이 이란 작전 첫 24시간 동안 1,000개 이상의 표적을 타격하며 2003년 이라크전 'Shock and Awe'보다 거의 두 배 빠른 속도로 작전을 가속화했다는 The Verge 단독 분석이 나왔다. AI가 표적 식별·우선순위 결정 과정을 압축한 결과로, Palantir 매니페스토 논란과 맞물려 군사 AI 윤리 논쟁이 다시 점화되고 있다. 펜타곤이 별도로 $54B AI 전환 예산을 요청하면서 미국 국방 전략의 핵심 축이 'AI 기반 전쟁'으로 명문화됐다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Featured</span>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/917996/project-maven-military-ai-katrina-manson" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Norway set to ban social media for under-16s, joining global wave</h3>
+                <p class="article-title-kr">노르웨이도 16세 미만 SNS 금지 — 호주·필리핀에 이어 글로벌 청소년 SNS 차단 확산</p>
+                <p class="article-summary">노르웨이가 16세 미만의 SNS 접근을 제한하기로 하며 작년 호주에 이어 청소년 SNS 금지 흐름에 합류했다. 필리핀 상원의원도 호주 모델을 따르겠다고 밝혔고, 영국·EU도 디지털 공정성법으로 동참 중이다. 일본은 자체 연령 제한을 검토 중이며 영국 의회는 16세 미만 SNS 금지법안을 두 번째 부결시켰지만 압력은 여전하다. EU의 연령 인증 앱이 보안 취약점을 드러내며 출시 즉시 2분 만에 해킹됐다는 점이 부수 화두로 떠올랐다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, TechCrunch 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-24/norway-wants-kids-to-be-kids-with-social-media-ban-for-under-16s" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🔧 하드웨어/기타</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">The RAM shortage could get even worse if Samsung labor protests cut production</h3>
+                <p class="article-title-kr">Samsung 노조 시위 격화 — 30,000명 'AI 이익 분배' 요구, RAM 부족 심화 우려</p>
+                <p class="article-summary">AI 데이터센터발 RAM 수요 폭증으로 이미 폰·PS5·라즈베리파이 가격이 오르고 있는 가운데, Samsung 직원 30,000명이 SK Hynix 수준의 보너스 인상과 보너스 상한 폐지를 요구하며 시위에 나섰다. 칩 섹터 보너스가 $900K에 육박할 전망이라 'K자 경제' 논란이 격화되는 한편, Canon은 메모리 가격 급등으로 가이던스를 하향 조정해 1년 만에 최대폭 하락했다. 메모리 슈퍼사이클 수혜가 노동자 분배까지 흔드는 본격 단계로 진입했다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, Bloomberg 다매체 보도</span>
+                    <a href="https://www.theverge.com/tech/918301/samsung-south-korea-union-protests" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">How AI could help China bridge the medical resources gap</h3>
+                <p class="article-title-kr">中, AI로 의료 자원 격차 해소 본격 추진 — 병원·의사·환자 모두 수혜</p>
+                <p class="article-summary">중국이 의료 영역에 AI를 통합하면서 도시-농촌, 대형병원-기층의료 격차를 해소하는 정책을 본격 추진 중이다. SCMP 메인 기사에 따르면 진단·영상 분석·만성질환 관리 영역에서 빠른 보급이 일어나고 있으며, Huawei와 DeepSeek이 V4 모델로 협력해 美 의존 없는 AI 자급 인프라를 구축하고 있다. 같은 맥락에서 중국 광통신 기업들이 AI 붐 수혜로 주가가 폭등하고, 중국 광학 컴퓨팅 기업 Lightelligence가 홍콩 IPO 가격 범위 상단에서 매겨졌다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Tech Hero</span>
+                    <a href="https://scmp.com/tech/article/3351334/just-what-doctor-ordered-how-ai-could-help-china-bridge-medical-resources-gap" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">An AI Agent Takes Over a Store and Orders Too Many Candles</h3>
+                <p class="article-title-kr">샌프란시스코 첫 AI CEO 운영 매장 'Andon Market' — 'Luna'가 직접 상품·가격 결정</p>
+                <p class="article-summary">샌프란시스코 Cow Hollow에 'Luna'라는 AI 에이전트가 사실상 CEO 역할을 하는 부티크 매장 'Andon Market'이 문을 열었다. AI가 직접 어떤 상품(Bananagrams, 보드게임, 토트백, 책 등)을 들여놓을지, 가격을 어떻게 매길지를 결정한다. 다만 한 번은 양초를 너무 많이 발주하는 등 시행착오도 보이고 있다. AI 에이전트의 'B2C 운영 책임'을 처음 일반인 대상으로 시험하는 사례라는 점에서 향후 소매·유통 자동화의 시그널이 될 수 있다.</p>
+                <p class="pick-reason">선정 이유: AI 에이전트가 처음으로 'B2C 운영 책임'을 단독으로 진다는 점에서 시장 정의의 첫 사례 (Signal: 신생 기술 첫 등장 + 시장 규모 예측), 데이터/자동화 관심사 매칭</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-23/an-ai-agent-takes-over-a-store-and-orders-too-many-candles-mobwrfw2" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Two college kids raise a $5.1 million pre-seed to build an AI social network in iMessage</h3>
+                <p class="article-title-kr">대학생 2명, iMessage 기반 AI 소셜네트워크에 $5.1M 프리시드 — 빅테크 거물 다수 베팅</p>
+                <p class="article-summary">'Series'라는 대학 캠퍼스에서 인기를 끄는 iMessage 기반 소셜 네트워킹 앱이 $5.1M 프리시드를 조달했다고 발표했다. 투자자에는 테크 업계 거물들이 다수 포함됐다. 별도 앱이 아닌 iMessage 인프라 위에 AI 소셜을 얹는 접근이라는 점에서 Snap·Meta가 흔들리는 청소년 SNS 시장의 새 진입로 시도다. 한편 Instagram이 이번 주 'Instants'라는 사라지는 사진 앱을 이탈리아·스페인에 출시한 것과 맞물려, '사라지는 메시징' 트렌드 회귀 가능성이 다시 점쳐진다.</p>
+                <p class="pick-reason">선정 이유: 신생 기업 첫 등장 + iMessage 위에 얹는 새로운 분배 채널 정의 (Signal: 신생 기술 첫 등장 + 시장 규모 재평가), 플랫폼/AI 관심사 매칭</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/04/24/two-college-kids-raise-a-5-1-million-pre-seed-to-build-an-ai-social-network-in-imessage/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Mac mini prices skyrocket on eBay amid shortages driven by AI</h3>
+                <p class="article-title-kr">Mac mini 폭등 — 로컬 AI 모델 구동 수요로 품절·eBay 마크업, AI 메모리 슈퍼사이클 후폭풍</p>
+                <p class="article-summary">Apple Mac mini가 매장에서 품절되고 eBay에는 마크업이 붙은 매물이 쏟아지고 있다. 원인은 로컬 AI 모델·도구를 구동하기에 적합한 컴팩트 데스크톱으로 부상했기 때문이다. RAM 가격 급등이 단순히 폰·PC 가격을 올리는 차원을 넘어, 'AI 추론을 어디서 할 것인가'(클라우드 vs 엣지)라는 시장의 전선을 흔드는 중이라는 신호다. 한국 반도체 노조 시위(SK Hynix급 보너스 요구)와 직결된 슈퍼사이클의 또 다른 단면.</p>
+                <p class="pick-reason">선정 이유: 시장의 보이지 않는 변화 — 'AI는 데이터센터'라는 전제를 흔드는 엣지 추론 수요 시그널 (Signal: 시장 규모 재평가 + 대기업 조용한 움직임), 한국 반도체 공급망 관심사 매칭</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/04/24/mac-mini-price-expensive-ebay-shortage-ai-memory/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 18건 | 섹션 5개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
