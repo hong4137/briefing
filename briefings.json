@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-25",
+      "day": "토",
+      "title": "백악관 中 AI 도용 단속 | Musk-Altman 재판 27일 | Google Anthropic $40B",
+      "summary": "트럼프 행정부가 중국의 미국 AI 모델 'distillation'을 정조준하는 첫 본격 대응을 발표했다. Musk가 OpenAI를 상대로 제기한 사기 소송이 27일 오클랜드 법정에서 개시되며, Google은 Amazon에 이어 Anthropic에 최대 $40B 추가 투자를 단행해 AI 컴퓨팅 패권 경쟁이 새 국면에 진입했다. Microsoft 첫 자발적 퇴직과 Meta 8000명 감원으로 빅테크 23,000명이 영향을 받는 한편, Intel 24% 폭등과 Nvidia 시총 $5T 돌파로 'AI K자 경제'가 본격화되고 있다.",
+      "highlights": [
+        "백악관 中 AI 모델 산업 규모 도용 단속 OSTP Kratsios 메모 distillation DeepSeek V4 직후 정책 본격화",
+        "Musk vs Altman 재판 27일 오클랜드 개시 OpenAI 사기 소송 영리화 막기 시도 내부 이메일 증언 공개",
+        "Google Anthropic 즉시 $10B + 향후 최대 $30B 추가 투자 $350B 밸류 Amazon $25B 합쳐 빅테크 양강 구도 굳어짐"
+      ],
+      "stats": {
+        "articles": 18,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-24",
       "day": "금",
       "title": "Anthropic Mythos 무단 접근 충격 | OpenAI GPT-5.5 AI 슈퍼앱 | Meta 8,000명 감원",
