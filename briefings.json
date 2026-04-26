@@ -1991,6 +1991,16 @@
       "stats": {
         "clusters": 11
       }
+    },
+    {
+      "date": "weekly-2026-04-26",
+      "week": "2026-W17",
+      "title": "Anthropic $350B 양강 구도와 SOX +9.53% 폭등",
+      "summary": "Google·Amazon이 Anthropic에 합산 $65B를 약속하며 AI 인프라 양강 구도가 굳어졌다. OpenAI는 GPT-5.5 출시와 4/27 Musk 재판으로 분기점에 섰고, Apple은 14년 만의 CEO 교체(Cook→Ternus 9/1)를 발표. Meta는 키스트로크 추적과 8,000명 감원을 동시 발표하며 빅테크 구조조정 가속. SOX +9.53% 폭등 속 VIX +2.33%로 긴장 동반 상승.",
+      "period": "2026-04-20 ~ 2026-04-25",
+      "stats": {
+        "clusters": 5
+      }
     }
   ],
   "specials": [
