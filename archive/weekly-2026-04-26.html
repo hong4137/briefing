@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anthropic $350B 양강 구도와 SOX +9.53% 폭등 — 주간 브리핑</title>
+<meta property="og:title" content="Anthropic $350B 양강 구도와 SOX +9.53% 폭등 — 주간 브리핑">
+<meta property="og:description" content="Google·Amazon이 Anthropic에 합산 $65B를 약속하며 AI 인프라 양강 구도가 굳어졌고, OpenAI는 GPT-5.5와 Musk 재판으로 분기점에 섰다. 반도체는 SOX +9.53% 폭등.">
+<style>
+:root {
+  --bg: #fafaf7;
+  --surface: #ffffff;
+  --ink: #1a1a1a;
+  --ink-soft: #4a4a4a;
+  --muted: #8a8a8a;
+  --line: #e8e6e0;
+  --accent: #c9302c;
+  --accent-soft: #f7e8e7;
+  --green: #2e7d32;
+  --blue: #1565c0;
+  --orange: #e65100;
+  --bg-subtle: #f4f2ec;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Noto Sans KR', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+.container { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+
+/* Header */
+.header { border-bottom: 2px solid var(--ink); padding-bottom: 24px; margin-bottom: 40px; }
+.header-meta { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; font-size: 13px; color: var(--muted); }
+.header-tag { background: var(--ink); color: var(--bg); padding: 3px 10px; font-weight: 600; letter-spacing: 0.05em; }
+.header h1 { font-size: 32px; font-weight: 800; line-height: 1.25; margin-bottom: 16px; letter-spacing: -0.025em; }
+.header-summary { font-size: 16px; color: var(--ink-soft); line-height: 1.7; }
+
+/* Market Section */
+.market-section { background: var(--surface); border: 1px solid var(--line); padding: 24px; margin-bottom: 40px; }
+.section-label { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 14px; text-transform: uppercase; }
+.market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--line); }
+.market-cell { padding: 14px 12px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); }
+.market-cell:nth-child(3n) { border-right: none; }
+.market-name { font-size: 11px; color: var(--muted); margin-bottom: 4px; font-weight: 600; }
+.market-value { font-size: 16px; font-weight: 700; margin-bottom: 2px; }
+.market-change { font-size: 13px; font-weight: 600; }
+.up { color: var(--accent); }
+.down { color: var(--blue); }
+.flat { color: var(--muted); }
+.market-note { margin-top: 16px; padding: 12px; background: var(--accent-soft); font-size: 14px; color: var(--accent); font-weight: 600; }
+
+/* Top Stories */
+.top-section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 800; margin-bottom: 24px; padding-bottom: 8px; border-bottom: 1px solid var(--ink); display: flex; align-items: baseline; justify-content: space-between; }
+.section-title .count { font-size: 13px; color: var(--muted); font-weight: 500; }
+
+.story { border-bottom: 1px solid var(--line); padding: 24px 0; }
+.story:last-child { border-bottom: none; }
+.story-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.story-rank { 
+  flex-shrink: 0;
+  width: 32px; height: 32px;
+  background: var(--ink); color: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 14px;
+}
+.story-title { font-size: 19px; font-weight: 700; line-height: 1.4; flex: 1; }
+.story-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; padding-left: 44px; }
+.badge { font-size: 11px; padding: 3px 8px; font-weight: 600; letter-spacing: 0.02em; border: 1px solid var(--line); }
+.badge-articles { background: var(--bg-subtle); color: var(--ink-soft); }
+.badge-status-ongoing { background: #fff3e0; color: var(--orange); border-color: #ffcc80; }
+.badge-status-new { background: #e3f2fd; color: var(--blue); border-color: #90caf9; }
+.badge-status-resolved { background: #e8f5e9; color: var(--green); border-color: #a5d6a7; }
+.badge-momentum-up { background: var(--accent-soft); color: var(--accent); border-color: #f5b7b5; }
+.badge-momentum-flat { background: var(--bg-subtle); color: var(--muted); }
+.story-body { padding-left: 44px; color: var(--ink-soft); font-size: 15px; line-height: 1.75; }
+.story-body p { margin-bottom: 10px; }
+.timeline { margin-top: 14px; padding: 14px 16px; background: var(--bg-subtle); border-left: 3px solid var(--ink); }
+.timeline-item { font-size: 13px; color: var(--ink-soft); margin-bottom: 6px; padding-left: 60px; position: relative; }
+.timeline-item:last-child { margin-bottom: 0; }
+.timeline-date { position: absolute; left: 0; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* Notable */
+.notable-section { margin-bottom: 48px; }
+.notable-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.notable-card { background: var(--surface); border: 1px solid var(--line); padding: 18px 20px; }
+.notable-tag { font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: 0.08em; margin-bottom: 6px; text-transform: uppercase; }
+.notable-title { font-size: 16px; font-weight: 700; line-height: 1.45; margin-bottom: 6px; }
+.notable-desc { font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+
+/* Pick */
+.pick-section { background: var(--ink); color: var(--bg); padding: 32px 28px; margin-bottom: 48px; }
+.pick-section .section-label { color: #f5b7b5; }
+.pick-section .section-title { border-color: var(--bg); color: var(--bg); }
+.pick-item { padding: 18px 0; border-bottom: 1px solid #333; }
+.pick-item:last-child { border-bottom: none; }
+.pick-title { font-size: 17px; font-weight: 700; margin-bottom: 8px; line-height: 1.45; }
+.pick-body { font-size: 14px; color: #d0d0d0; line-height: 1.7; }
+
+/* Events */
+.events-section { background: var(--surface); border: 1px solid var(--line); padding: 24px; margin-bottom: 32px; }
+.event-item { display: flex; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.event-item:last-child { border-bottom: none; }
+.event-date { flex-shrink: 0; width: 64px; font-weight: 800; font-size: 14px; color: var(--accent); font-variant-numeric: tabular-nums; }
+.event-text { font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
+.monitor-list { margin-top: 16px; padding-top: 16px; border-top: 1px dashed var(--line); }
+.monitor-item { font-size: 13px; color: var(--muted); padding: 4px 0; }
+.monitor-item::before { content: "▸ "; color: var(--accent); font-weight: 700; }
+
+/* Footer */
+.footer { text-align: center; padding-top: 32px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+
+@media (max-width: 600px) {
+  .container { padding: 32px 16px 60px; }
+  .header h1 { font-size: 24px; }
+  .market-grid { grid-template-columns: repeat(2, 1fr); }
+  .market-cell:nth-child(3n) { border-right: 1px solid var(--line); }
+  .market-cell:nth-child(2n) { border-right: none; }
+  .story-meta, .story-body { padding-left: 0; }
+  .story-rank { width: 28px; height: 28px; font-size: 12px; }
+  .story-title { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<header class="header">
+  <div class="header-meta">
+    <span class="header-tag">WEEKLY · 2026-W17</span>
+    <span>2026.04.26 (일) · 4/20–4/25 종합</span>
+  </div>
+  <h1>Anthropic $350B 양강 구도와 SOX +9.53% 폭등</h1>
+  <p class="header-summary">
+    Google·Amazon이 Anthropic에 각각 $40B·$25B를 약속하며 AI 인프라 양강 구도가 굳어졌다. OpenAI는 GPT-5.5 출시와 Musk 재판이라는 양면 분기점에 섰고, Apple은 14년 만의 CEO 교체를 단행했다. Meta는 직원 키스트로크 추적과 8,000명 감원을 동시에 발표하며 빅테크 구조조정이 본격화됐다. 시장은 SOX +9.53%로 폭등하면서도 VIX +2.33%로 긴장이 함께 상승했다.
+  </p>
+</header>
+
+<!-- Market Section -->
+<section class="market-section">
+  <div class="section-label">📊 주간 시장</div>
+  <div class="market-grid">
+    <div class="market-cell">
+      <div class="market-name">S&P 500</div>
+      <div class="market-value">7,165.08</div>
+      <div class="market-change up">+0.79% 📈</div>
+    </div>
+    <div class="market-cell">
+      <div class="market-name">NASDAQ</div>
+      <div class="market-value">24,836.60</div>
+      <div class="market-change up">+1.77% 📈</div>
+    </div>
+    <div class="market-cell">
+      <div class="market-name">SOX (반도체)</div>
+      <div class="market-value">10,513.66</div>
+      <div class="market-change up">+9.53% 🔥</div>
+    </div>
+    <div class="market-cell">
+      <div class="market-name">10Y Treasury</div>
+      <div class="market-value">4.34%</div>
+      <div class="market-change up">+0.08%p 📈</div>
+    </div>
+    <div class="market-cell">
+      <div class="market-name">2Y Treasury</div>
+      <div class="market-value">3.83%</div>
+      <div class="market-change up">+0.11%p 📈</div>
+    </div>
+    <div class="market-cell">
+      <div class="market-name">VIX (변동성)</div>
+      <div class="market-value">19.31</div>
+      <div class="market-change up">+2.33% 🔥</div>
+    </div>
+  </div>
+  <div class="market-note">
+    🔥 핵심: SOX +9.53% 폭등(Intel·TI 어닝 서프라이즈, SK Hynix·TSMC 기록적 이익) — 그러나 VIX 동반 상승으로 'AI K자 경제' 긴장도 확대
+  </div>
+</section>
+
+<!-- Top Stories -->
+<section class="top-section">
+  <h2 class="section-title">🏆 주간 TOP 스토리 <span class="count">5개 클러스터 · 13건</span></h2>
+
+  <!-- Story 1 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">1</div>
+      <h3 class="story-title">Anthropic, Google·Amazon 합산 $65B 약속받으며 $350B 빅테크 양강 구도 굳혀</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">4건 보도 · 4일</span>
+      <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      <span class="badge badge-momentum-flat">→ 유지</span>
+    </div>
+    <div class="story-body">
+      <p>이번 주 가장 큰 흐름은 Anthropic의 평가가치가 $350B로 평가되며 'AWS+GCP 양강' 구도가 굳어진 사건이다. 월요일 백악관 해빙 신호로 시작된 이야기는 토요일 Google의 추가 투자 발표로 정점을 찍었다. Mythos 모델은 한 주 동안 무단 접근 사건과 영국 은행권 공급 임박이 동시에 보도되며 신뢰성과 위험성이 양립하는 모순적 상황이 부각됐다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/20 월</span> Amodei 백악관 Wiles 비서실장 회동 — 펜타곤 블랙리스트 이후 첫 해빙</div>
+        <div class="timeline-item"><span class="timeline-date">4/21 화</span> Amazon, Anthropic에 최대 $25B 추가 투자 + AWS 10년 $100B 지출 약정</div>
+        <div class="timeline-item"><span class="timeline-date">4/24 금</span> Mythos 무단 접근 확인 — 공개 거부, AI 통제 밖 유출 보도 (다매체)</div>
+        <div class="timeline-item"><span class="timeline-date">4/25 토</span> Google, 즉시 $10B + 향후 최대 $30B 추가 투자 — $350B 밸류 확정</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Story 2 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">2</div>
+      <h3 class="story-title">OpenAI, GPT-5.5 슈퍼앱 출시와 Musk-Altman 재판 개시 양면 분기점</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">3건 보도 · 3일</span>
+      <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      <span class="badge badge-momentum-up">🔥 가속 (×2.0)</span>
+    </div>
+    <div class="story-body">
+      <p>OpenAI는 한 주 만에 두 가지 결정적 분기점에 섰다. 한쪽에서는 ChatGPT Images 2.0과 GPT-5.5 출시로 '슈퍼앱'에 한 걸음 더 다가서며 Anthropic과 정면 경쟁에 들어갔고, 다른 한쪽에서는 4월 27일 오클랜드 법정에서 Musk와의 사기 소송이 개시되며 영리화 전환의 정당성이 법정에서 다뤄지게 됐다. Altman의 'Mythos 공포 마케팅' 직격 발언은 두 회사 간 노골적 대립이 표면화된 첫 신호다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/22 수</span> ChatGPT Images 2.0 출시 — 텍스트·차트 생성 대폭 개선, Altman의 Mythos 공포마케팅 비판</div>
+        <div class="timeline-item"><span class="timeline-date">4/24 금</span> GPT-5.5 출시 — 코딩·리서치·컴퓨터 조작 통합, 슈퍼앱에 한 걸음</div>
+        <div class="timeline-item"><span class="timeline-date">4/25 토</span> Musk vs Altman 재판 27일 오클랜드 개시 — 내부 이메일·증언 공개 예정</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Story 3 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">3</div>
+      <h3 class="story-title">Apple, 14년 만 CEO 교체 — Cook→Ternus 9월 1일 승계 확정</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">2건 보도 · 2일</span>
+      <span class="badge badge-status-resolved">✅ 발표됨</span>
+      <span class="badge badge-momentum-flat">→ 유지</span>
+    </div>
+    <div class="story-body">
+      <p>Tim Cook이 14년 만에 CEO에서 물러나고 하드웨어 엔지니어 출신 John Ternus에게 9월 1일자로 자리를 넘긴다. 공식 릴리스에 'AI'가 한 번도 언급되지 않은 점이 시장의 가장 큰 우려로 부상했다. Cook은 이사회 의장으로서 외교 역할을 유지하며, Trump-Cook 'kiss my ass' 통화 공개도 함께 이뤄졌다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/21 화</span> Cook 사임 보도 — Ternus 승계, 14년 만의 최대 리더십 교체</div>
+        <div class="timeline-item"><span class="timeline-date">4/22 수</span> 9월 1일 공식 승계 확정 — AI 전략 부재가 최대 과제로 부상</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Story 4 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">4</div>
+      <h3 class="story-title">Meta, 직원 키스트로크 추적과 8,000명 감원 동시 발표 — 빅테크 구조조정 본격화</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">2건 보도 · 2일</span>
+      <span class="badge badge-status-new">🆕 신규</span>
+      <span class="badge badge-momentum-up">🔥 가속</span>
+    </div>
+    <div class="story-body">
+      <p>Meta가 단 이틀에 걸쳐 두 가지 충격적 발표를 동시에 내놨다. 직원 클릭과 키스트로크를 전수 추적해 AI 에이전트 훈련에 활용하겠다는 직장 감시 정책과, 직원 10%에 해당하는 8,000명을 5월 20일자로 감원한다는 결정이다. Microsoft 첫 자발적 퇴직과 합쳐 빅테크 23,000명이 영향받는 구조조정 사이클이 본격화됐다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/23 목</span> 직원 클릭·키스트로크 전수 추적 → AI 에이전트 훈련 (BBC·TechCrunch·Verge·Guardian 다매체)</div>
+        <div class="timeline-item"><span class="timeline-date">4/24 금</span> 8,000명 감원 발표 — 5월 20일 시행, AI 비용 상쇄 명목</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Story 5 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">5</div>
+      <h3 class="story-title">美 반도체 공급망 재편 — Marvell-Google AI칩, Nvidia-Vast Data $30B</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">2건 보도 · 2일</span>
+      <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      <span class="badge badge-momentum-flat">→ 유지</span>
+    </div>
+    <div class="story-body">
+      <p>SOX +9.53% 폭등의 배경에는 두 가지 큰 딜이 있다. Marvell이 Google 커스텀 AI 칩 파트너로 보도되며 Broadcom이 급락했고, Nvidia는 Vast Data에 $30B 3배 밸류로 투자하며 AI 인프라 생태계 지배력을 강화했다. 여기에 Intel·TI 어닝 서프라이즈, SK Hynix·TSMC 기록적 이익까지 겹치며 반도체 수퍼사이클의 'K자 분화'가 뚜렷해졌다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/21 화</span> Marvell, Google 커스텀 AI 칩 파트너 보도 — Broadcom 급락, Nvidia $2B 투자 연장선</div>
+        <div class="timeline-item"><span class="timeline-date">4/23 목</span> Nvidia, Vast Data $30B 3배 밸류 투자 ($1B 라운드, IPO 준비)</div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- Notable Section -->
+<section class="notable-section">
+  <h2 class="section-title">📰 주목할 단발 스토리 <span class="count">3건</span></h2>
+  <div class="notable-grid">
+    <div class="notable-card">
+      <div class="notable-tag">🆕 신규 정책</div>
+      <h3 class="notable-title">백악관, 中 AI 모델 'distillation' 단속 첫 본격 대응 (4/25)</h3>
+      <p class="notable-desc">OSTP Kratsios 메모로 트럼프 행정부가 중국의 미국 AI 모델 산업규모 도용을 정조준했다. DeepSeek V4 출시 직후 정책 발효로 시기적 임팩트가 크다.</p>
+    </div>
+    <div class="notable-card">
+      <div class="notable-tag">🚀 우주산업</div>
+      <h3 class="notable-title">Blue Origin, New Glenn 1단 재사용 착륙 첫 성공 — 그러나 위성 궤도 실패 (4/20)</h3>
+      <p class="notable-desc">SpaceX 추격에 처음으로 의미 있는 진전이 있었지만, AST SpaceMobile 위성을 잘못된 궤도에 투입하며 첫 중대 차질도 함께 기록했다.</p>
+    </div>
+    <div class="notable-card">
+      <div class="notable-tag">💻 바이브코딩</div>
+      <h3 class="notable-title">SpaceX, Cursor $60B 인수 옵션 확보 (4/23)</h3>
+      <p class="notable-desc">xAI 코딩 뒤처짐을 메우기 위한 $10B 협업의 대안이자, $2B 펀드레이즈에 대한 프리엠트 조치. Cursor $50B → $60B로 한 주 만에 가속화됐다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Claude's Pick -->
+<section class="pick-section">
+  <div class="section-label">🎯 CLAUDE'S PICK</div>
+  <h2 class="section-title">이번 주 가장 의미있는 두 사건</h2>
+
+  <div class="pick-item">
+    <h3 class="pick-title">① Anthropic $350B — 'AI 인프라 양강' 시대의 공식 선언</h3>
+    <p class="pick-body">
+      Google과 Amazon이 한 주 사이에 Anthropic에 $40B + $25B를 약속한 것은 단순한 투자 이벤트가 아니다. 미국 AI 인프라가 'OpenAI-Microsoft' vs 'Anthropic-AWS+GCP' 양강 구도로 굳어지는 결정적 신호다. 특히 Mythos 무단 접근 사건이 같은 주에 보도됐음에도 양사가 베팅을 더 키운 점이 시사적이다 — 시장은 이미 'AI 안전 리스크'와 '투자 가속'을 별개 트랙으로 분리했다.
+    </p>
+  </div>
+
+  <div class="pick-item">
+    <h3 class="pick-title">② Apple의 'AI 침묵' — 9월 1일 Ternus 시대의 첫 시험대</h3>
+    <p class="pick-body">
+      14년 만의 CEO 교체 발표문에 'AI'가 단 한 번도 언급되지 않은 사실은 우연이 아니다. Apple은 빅테크 중 유일하게 자체 LLM·이미지 생성·코딩 어시스턴트 전쟁에서 명확한 위상을 확보하지 못한 상태다. 하드웨어 엔지니어 출신 Ternus가 9월 1일 취임할 때까지 4개월간 AI 전략의 공백이 어떻게 메워질지가 하반기 빅테크 지형의 변수가 될 가능성이 높다.
+    </p>
+  </div>
+</section>
+
+<!-- Upcoming Events -->
+<section class="events-section">
+  <div class="section-label">📅 다음 주 주요 일정</div>
+  <h2 class="section-title" style="margin-bottom: 16px; padding-bottom: 8px;">4월 27일 ~ 5월 3일</h2>
+  <div class="event-item">
+    <div class="event-date">4/27 (월)</div>
+    <div class="event-text">Musk vs Altman 재판 개시 — 오클랜드 법정, OpenAI 사기·영리화 소송 (내부 이메일·증언 공개 예정)</div>
+  </div>
+  <div class="event-item">
+    <div class="event-date">5/20 (수)</div>
+    <div class="event-text">Meta 8,000명 감원 시행 (직원 10%, 5월 20일자)</div>
+  </div>
+  <div class="event-item">
+    <div class="event-date">9/1 (화)</div>
+    <div class="event-text">Apple CEO 승계 — Tim Cook → John Ternus 공식 취임 (참고)</div>
+  </div>
+  <div class="monitor-list">
+    <div class="monitor-item">Anthropic Mythos 영국 은행권 공급 임박 — 첫 금융권 도입 사례</div>
+    <div class="monitor-item">Google → Anthropic 향후 최대 $30B 추가 투자 집행 시점</div>
+    <div class="monitor-item">DeepSeek V4 출시 후 백악관 distillation 단속 정책 본격 시행 추이</div>
+  </div>
+</section>
+
+<footer class="footer">
+  Jae's Briefing · 2026-W17 주간 종합 · 발행 2026.04.26<br>
+  대상 기간: 2026-04-20 (월) ~ 2026-04-25 (토) · 5개 TOP 클러스터 + 3개 단발
+</footer>
+
+</div>
+</body>
+</html>
