@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-27",
+      "day": "월",
+      "title": "OpenClaw + DeepSeek V4 + Huawei 中 AI 신연합 | Right to Repair 봉기 | Nvidia 시총 $5T 돌파",
+      "summary": "중국 인기 AI 에이전트 OpenClaw가 DeepSeek V4를 채택하고 Huawei 칩 통합을 시사하면서 美 distillation 단속 발표 직후 中 AI 진영이 빠르게 결집하고 있다. 美 의회·연방정부·주정부에서 'Right to Repair' 입법 물결이 일며 Apple·Tesla·John Deere의 captive 수익 구조가 정조준됐다. Nvidia는 시총 $5T를 돌파하며 빅테크 어닝 위크의 서막을 열었고, Tesla CEO는 xAI Grok 차량 통합 영상에서 처음으로 FSD 한계를 인정했다. Wired는 테크 거물들의 신체 최적화 집착을 조명했고, Rest of World는 글로벌 Edtech 자금 붕괴와 Netflix·Hollywood AI 전환이 글로벌 VFX·성우 노동시장을 재편하는 양상을 보도했다.",
+      "highlights": [
+        "OpenClaw DeepSeek V4 Flash·Pro 채택 Huawei 협력 시사 美 distillation 단속 직후 中 AI 진영 결집 SCMP hero",
+        "Right to Repair 봉기 CNBC hero Apple Tesla John Deere captive 수리경제 종결 양당 입법 중간선거 의제",
+        "Nvidia 시총 $5T 돌파 종가 신기록 어닝 위크 개막 neoclouds 강세 Cramer 분수령 진단"
+      ],
+      "stats": {
+        "articles": 21,
+        "sections": 7,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-25",
       "day": "토",
       "title": "백악관 中 AI 도용 단속 | Musk-Altman 재판 27일 | Google Anthropic $40B",
