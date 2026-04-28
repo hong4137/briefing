@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-29",
+      "day": "수",
+      "title": "OpenAI 매출·성장 IPO 미달 → Amazon 클라우드 진입·Cramer AI 과열 진단 | True Anomaly $650M Trump Golden Dome 위성요격 | DARPA AIxCC AI 사이버전 시대 개막",
+      "summary": "OpenAI가 IPO를 앞두고 매출·성장 추정치가 시장 컨센서스에 못 미친다는 WSJ 보도 직후 Amazon AWS에 모델을 출시하며 Microsoft 단독 의존을 끝냈다. Jim Cramer는 \"AI 랠리가 지나치게 멀리 갔다\"며 매도세를 과열 신호로 진단했다. True Anomaly가 트럼프 'Golden Dome' 우주 요격 프로젝트 지원을 위해 $650M 시리즈C를 조달하며 우주 방위 스타트업 시대를 본격화했다. The Verge는 DARPA AIxCC 결과를 토대로 'killer script kiddies' AI 사이버전 시대를 진단하고, Red Hat이 OpenClaw 컨테이너 'Tank OS'를 공개해 엔터프라이즈 AI 에이전트 보안 표준을 새로 썼다. 中 진영에서는 DeepSeek CEO 량원펑 부재 미스터리·Alibaba 헬스케어 AI 대장암 진단·BJ오토쇼 10분 충전 EV 경쟁이 동시 부상했다. 美에서는 UAE OPEC 탈퇴로 산유국 카르텔이 약화됐지만 휘발유 $4.18로 4년 최고치를 찍어 인플레가 재점화됐다. Spotify는 어닝 비트에도 가이던스 실망에 급락하며 빅테크 어닝 위크의 첫 경고음을 울렸다.",
+      "highlights": [
+        "OpenAI 매출·성장 IPO 미달 WSJ 보도 직후 Amazon AWS에 모델 출시 MS 4년 단독 의존 종료 Cramer AI 랠리 과열 진단 빅테크 어닝 위크 직격",
+        "True Anomaly $650M 시리즈C 조달 트럼프 Golden Dome 위성요격기 양산 우주방위 스타트업 록히드 노스롭 위협",
+        "DARPA AIxCC AI 사이버 5400만줄 자동 취약점 발견 Verge killer script kiddies 진단 Red Hat OpenClaw Tank OS 컨테이너 엔터프라이즈 AI 에이전트 보안 표준"
+      ],
+      "stats": {
+        "articles": 23,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-28",
       "day": "화",
       "title": "中, Meta의 $20억 Manus AI 인수 차단 | OpenAI-Qualcomm 폰 칩 협력 | OpenAI-MS 분쟁 종결 $50B Amazon 청신호",
