@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-28",
+      "day": "화",
+      "title": "中, Meta의 $20억 Manus AI 인수 차단 | OpenAI-Qualcomm 폰 칩 협력 | OpenAI-MS 분쟁 종결 $50B Amazon 청신호",
+      "summary": "중국 당국이 Meta의 $20억 규모 싱가포르·중국계 AI 에이전트 스타트업 Manus 인수를 공식 차단하면서 美中 AI 디커플링이 M&A 영역으로까지 확전됐다. OpenAI는 Qualcomm·MediaTek과 자체 스마트폰 칩 협력을 진행 중이라는 보도로 Qualcomm이 12% 급등했고, 동시에 Microsoft와의 분쟁을 종결하며 Amazon $50B 딜에 청신호를 켰다. Musk vs Altman 재판이 27일 오클랜드 연방법원에서 배심원 선정과 함께 본격 개시됐다. 메모리 사이클은 Melius Research의 2020년대 말 강세 진단으로 Micron·Sandisk가 다시 hero에 올랐고, DeepMind 출신 David Silver가 인간 데이터 없이 학습하는 AGI를 목표로 $1.1B을 조달했다. Sam Altman의 World ID가 Tinder·Zoom·Docusign과 美 기업 동맹을 형성하는 한편, Meta는 우주 태양광 전력 구매 계약으로 데이터센터 전력난 해결책을 우주로까지 확장했다.",
+      "highlights": [
+        "中 Meta $20억 Manus AI 인수 차단 4매체 동시보도 美 OSTP distillation 단속 직후 보복성 美中 디커플링 본격화",
+        "Qualcomm 12% 급등 OpenAI 스마트폰 칩 협력 MediaTek Luxshare OpenAI 폰 2028 양산 AI 에이전트가 앱 대체",
+        "OpenAI-MS 분쟁 종결 $50B Amazon 청신호 매출분배 상한 합의 Musk vs Altman 재판 첫날 오클랜드 배심원 선정 개시"
+      ],
+      "stats": {
+        "articles": 14,
+        "sections": 5,
+        "picks": 2
+      }
+    },
+    {
       "date": "2026-04-27",
       "day": "월",
       "title": "OpenClaw + DeepSeek V4 + Huawei 中 AI 신연합 | Right to Repair 봉기 | Nvidia 시총 $5T 돌파",
