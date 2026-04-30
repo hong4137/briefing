@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-04-30",
+      "day": "목",
+      "title": "빅테크 어닝 위크 Google 신뢰·Meta 의심 | Samsung 칩이익 48배 AI 메모리 슈퍼사이클 | Anthropic $50B $900B 밸류 | Google Pentagon 단독 수주",
+      "summary": "빅테크 1Q 어닝이 일제히 공개되며 시장은 Google AI 지출에 신뢰, Meta·Microsoft에는 의심 신호를 보냈다. Alphabet은 Google Cloud가 분기 매출 $20B를 첫 돌파하며 'capacity-constrained' 발언으로 추가 투자 정당성을 확보, 반면 Meta는 Reality Labs 1Q $4B+ 손실로 AR/VR 자금 소각이 다시 도마에 올랐다. Samsung은 1Q 영업이익 8배 급증과 반도체 영업이익 48배 폭증으로 AI 메모리 슈퍼사이클을 처음 실적 숫자로 확인했고, NXP는 자동차 시장 회복으로 26% 폭등하며 메모리·자동차 동시 사이클 반등 신호를 냈다. Anthropic이 $50B 라운드 $900B 밸류로 1년 만에 5배 점프했고, 같은 날 Google이 Anthropic 거부 직후 Pentagon AI 단독 수주를 따내며 군사 AI 분기점을 형성했다. Scout AI $100M·True Anomaly $650M(4/29)에 이어 美 국방 AI 자본 유입이 분기 누적 $1B을 돌파했다. Musk vs Altman 재판이 본격 증언 국면에 진입해 Musk가 자신의 트윗에 발목 잡혔고, Larry Ellison Oracle-OpenAI 데이터센터 자본 리스크가 부상했다. Apple App Store 대법원행·Australia 빅테크 뉴스세·Meta EU 아동보호법 위반이 동시다발로 빅테크를 정조준한 가운데, Tumbler Ridge 학교 총격 유족이 OpenAI를 'duty to warn' 명분으로 제소해 AI 회사의 의무 신고 책임이 최초 법정 쟁점이 됐다.",
+      "highlights": [
+        "빅테크 어닝 위크 Alphabet Cloud $20B 돌파 capacity-constrained Google 신뢰 Meta Reality Labs $4B 손실 의심 Samsung 영업이익 8배 칩이익 48배 AI 메모리 슈퍼사이클 NXP 26% 폭등 자동차 반도체 회복",
+        "Anthropic $50B 라운드 $900B 밸류 1년 만 5배 점프 Google Pentagon AI 단독 수주 Anthropic 거부 후 any lawful use Scout AI $100M 전쟁용 모델 학습 美 국방 AI 자본 분기 $1B 돌파",
+        "Musk vs Altman 재판 자기 트윗 발목 Larry Ellison Oracle-OpenAI 데이터센터 리스크 Apple App Store 대법원행 Australia 빅테크 2.25% 뉴스세 Meta EU 아동보호 위반 Tumbler Ridge 유족 OpenAI 고소 duty to warn 첫 쟁점"
+      ],
+      "stats": {
+        "articles": 21,
+        "sections": 4,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-29",
       "day": "수",
       "title": "OpenAI 매출·성장 IPO 미달 → Amazon 클라우드 진입·Cramer AI 과열 진단 | True Anomaly $650M Trump Golden Dome 위성요격 | DARPA AIxCC AI 사이버전 시대 개막",
