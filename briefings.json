@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-01",
+      "day": "금",
+      "title": "빅테크 4월 어닝 결산 Alphabet·Amazon 압도 Meta 부진 -10% | Apple Cook 마지막 분기 iPhone $57B 사상 최대 RAM 대란 | 빅테크 AI 지출 $700B 돌파 Tech 4월 Covid 이후 최고",
+      "summary": "매그니피센트 7 어닝이 일제히 발표되며 AI 투자 성과의 첫 실증이 갈렸다. Google Cloud는 분기 매출 $20B 첫 돌파, Amazon AWS는 +28% 성장으로 2022년 이후 최고를 기록하며 +5% 상승했지만, Meta는 capex 가이던스 $145B 상향에도 사용자 2,000만 명 감소로 -10% 폭락했다. Cook의 CEO 마지막 분기 Apple은 iPhone +22% $57B로 사상 최대를 기록했지만 Cook은 Mac mini·Studio·Neo의 RAM 공급 제약을 경고했다. 빅테크 4사 합산 AI capex는 올해 $725B에 도달, 2027년 $1조 돌파 전망 속에 AI 채권시장은 누적 $300B 발행 후 피로 신호를 보냈다. Samsung 반도체 이익은 48배 폭증, RAM 부족이 2027년까지 악화 전망. Musk vs Altman 재판 3일차에 Musk가 xAI Grok을 OpenAI 모델로 학습시켰다고 자백해 distillation 단속의 자가당착이 됐다. 백악관은 Anthropic Mythos 확대에 반대했지만 NSA는 이미 Microsoft 제품 취약점 테스트에 Mythos를 사용 중이다. Anthropic은 2주 내 $50B/$900B 밸류 라운드 마감으로 OpenAI($852B) 추월 임박. SoftBank는 AI·로보틱스 합작사 Roze를 $100B로 미국 IPO 검토, 1X는 Hayward 공장에서 가정용 휴머노이드 1만 대 첫 양산을 선언해 AI 인프라가 데이터센터에서 휴머노이드로 확장되는 변곡점이 동시다발 노출됐다. Trump가 AI 합성 이미지로 이란을 위협하며 Brent $121 돌파, California 가스 $6/갤런으로 인플레 재점화. Meta는 EU DSA 위반 판정에 뉴멕시코 철수까지 위협하며 빅테크 아동 안전 규제 글로벌 확전. Tech stocks는 Nasdaq +15%로 코로나 이후 최고의 4월을 마감했고 Intel은 시총 2배, Reddit은 매출 +69%로 화답했다.",
+      "highlights": [
+        "Alphabet Google Cloud $20B 첫 돌파 capacity-constrained +5% Amazon AWS +28% 2022년 이후 최고 Meta -10% Reality Labs $4B 손실 사용자 2000만 감소 Apple Cook 마지막 분기 iPhone +22% $57B 사상 최대 RAM 대란 Mac mini supply-constrained",
+        "빅테크 AI capex $725B 2027년 $1조 전망 AI 채권 $300B 피로 Anthropic $50B $900B 2주 내 마감 OpenAI 추월 임박 SoftBank Roze $100B 1X 가정용 휴머노이드 1만 대 양산 AI 데이터센터→휴머노이드 확장",
+        "Musk vs Altman 재판 3일차 Musk xAI Grok OpenAI distillation 자백 자가당착 백악관 Mythos 반대 NSA Microsoft 취약점 테스트 사용 Tumbler Ridge 7가족 OpenAI 정식 제소 Tech 4월 Nasdaq +15% Covid 이후 최고 Intel 더블 Reddit +69% 이란전 Brent $121 California $6/갤런"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-04-30",
       "day": "목",
       "title": "빅테크 어닝 위크 Google 신뢰·Meta 의심 | Samsung 칩이익 48배 AI 메모리 슈퍼사이클 | Anthropic $50B $900B 밸류 | Google Pentagon 단독 수주",
