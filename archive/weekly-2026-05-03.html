@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anthropic $900B 임박과 Nasdaq +15% 코로나 이후 최고의 4월 — 주간 브리핑</title>
+<meta property="og:title" content="Anthropic $900B 임박과 Nasdaq +15% 코로나 이후 최고의 4월 — 주간 브리핑">
+<meta property="og:description" content="Anthropic이 OpenAI($852B) 추월 임박, 빅테크 AI capex $725B 도달, Nvidia 시총 $5T 돌파. 그러나 Cramer는 과열을 경고했고 Musk는 distillation 자백으로 자가당착에 빠졌다.">
+<style>
+:root {
+  --bg: #fafaf7;
+  --surface: #ffffff;
+  --ink: #1a1a1a;
+  --ink-soft: #4a4a4a;
+  --muted: #8a8a8a;
+  --line: #e8e6e0;
+  --accent: #c9302c;
+  --accent-soft: #f7e8e7;
+  --green: #2e7d32;
+  --blue: #1565c0;
+  --orange: #e65100;
+  --bg-subtle: #f4f2ec;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Noto Sans KR', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+.container { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+
+/* Header */
+.header { border-bottom: 2px solid var(--ink); padding-bottom: 24px; margin-bottom: 40px; }
+.header-meta { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; font-size: 13px; color: var(--muted); }
+.header-tag { background: var(--ink); color: var(--bg); padding: 3px 10px; font-weight: 600; letter-spacing: 0.05em; }
+.header h1 { font-size: 32px; font-weight: 800; line-height: 1.25; margin-bottom: 16px; letter-spacing: -0.025em; }
+.header-summary { font-size: 16px; color: var(--ink-soft); line-height: 1.7; }
+
+/* Market Section */
+.market-section { background: var(--surface); border: 1px solid var(--line); padding: 24px; margin-bottom: 40px; }
+.section-label { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 14px; text-transform: uppercase; }
+.market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--line); }
+.market-cell { padding: 14px 12px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); }
+.market-cell:nth-child(3n) { border-right: none; }
+.market-name { font-size: 11px; color: var(--muted); margin-bottom: 4px; font-weight: 600; }
+.market-value { font-size: 16px; font-weight: 700; margin-bottom: 2px; }
+.market-change { font-size: 13px; font-weight: 600; }
+.up { color: var(--accent); }
+.down { color: var(--blue); }
+.flat { color: var(--muted); }
+.market-note { margin-top: 16px; padding: 12px; background: var(--accent-soft); font-size: 14px; color: var(--accent); font-weight: 600; }
+
+/* Top Stories */
+.top-section { margin-bottom: 48px; }
+.section-title { font-size: 22px; font-weight: 800; margin-bottom: 24px; padding-bottom: 8px; border-bottom: 1px solid var(--ink); display: flex; align-items: baseline; justify-content: space-between; }
+.section-title .count { font-size: 13px; color: var(--muted); font-weight: 500; }
+
+.story { border-bottom: 1px solid var(--line); padding: 24px 0; }
+.story:last-child { border-bottom: none; }
+.story-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.story-rank { 
+  flex-shrink: 0;
+  width: 32px; height: 32px;
+  background: var(--ink); color: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 14px;
+}
+.story-title { font-size: 19px; font-weight: 700; line-height: 1.4; flex: 1; }
+.story-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; padding-left: 44px; }
+.badge { font-size: 11px; padding: 3px 8px; font-weight: 600; letter-spacing: 0.02em; border: 1px solid var(--line); }
+.badge-articles { background: var(--bg-subtle); color: var(--ink-soft); }
+.badge-status-ongoing { background: #fff3e0; color: var(--orange); border-color: #ffcc80; }
+.badge-status-new { background: #e3f2fd; color: var(--blue); border-color: #90caf9; }
+.badge-status-resolved { background: #e8f5e9; color: var(--green); border-color: #a5d6a7; }
+.badge-momentum-up { background: var(--accent-soft); color: var(--accent); border-color: #f5b7b5; }
+.badge-momentum-down { background: #e3f2fd; color: var(--blue); border-color: #90caf9; }
+.badge-momentum-flat { background: var(--bg-subtle); color: var(--muted); }
+.story-body { padding-left: 44px; color: var(--ink-soft); font-size: 15px; line-height: 1.75; }
+.story-body p { margin-bottom: 10px; }
+.timeline { margin-top: 14px; padding: 14px 16px; background: var(--bg-subtle); border-left: 3px solid var(--ink); }
+.timeline-item { font-size: 13px; color: var(--ink-soft); margin-bottom: 6px; padding-left: 60px; position: relative; }
+.timeline-item:last-child { margin-bottom: 0; }
+.timeline-date { position: absolute; left: 0; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* Notable */
+.notable-section { margin-bottom: 48px; }
+.notable-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.notable-card { background: var(--surface); border: 1px solid var(--line); padding: 18px 20px; }
+.notable-tag { font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: 0.08em; margin-bottom: 6px; text-transform: uppercase; }
+.notable-title { font-size: 16px; font-weight: 700; line-height: 1.45; margin-bottom: 6px; }
+.notable-desc { font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+
+/* Pick */
+.pick-section { background: var(--ink); color: var(--bg); padding: 32px 28px; margin-bottom: 48px; }
+.pick-section .section-label { color: #f5b7b5; }
+.pick-section .section-title { border-color: var(--bg); color: var(--bg); }
+.pick-item { padding: 18px 0; border-bottom: 1px solid #333; }
+.pick-item:last-child { border-bottom: none; }
+.pick-title { font-size: 17px; font-weight: 700; margin-bottom: 8px; line-height: 1.45; }
+.pick-body { font-size: 14px; color: #d0d0d0; line-height: 1.7; }
+
+/* Events */
+.events-section { background: var(--surface); border: 1px solid var(--line); padding: 24px; margin-bottom: 32px; }
+.event-item { display: flex; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.event-item:last-child { border-bottom: none; }
+.event-date { flex-shrink: 0; width: 80px; font-weight: 800; font-size: 14px; color: var(--accent); font-variant-numeric: tabular-nums; }
+.event-text { font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
+.monitor-list { margin-top: 16px; padding-top: 16px; border-top: 1px dashed var(--line); }
+.monitor-item { font-size: 13px; color: var(--muted); padding: 4px 0; }
+.monitor-item::before { content: "▸ "; color: var(--accent); font-weight: 700; }
+
+/* Footer */
+.footer { text-align: center; padding-top: 32px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+
+@media (max-width: 600px) {
+  .container { padding: 32px 16px 60px; }
+  .header h1 { font-size: 24px; }
+  .market-grid { grid-template-columns: repeat(2, 1fr); }
+  .market-cell:nth-child(3n) { border-right: 1px solid var(--line); }
+  .market-cell:nth-child(2n) { border-right: none; }
+  .story-meta, .story-body { padding-left: 0; }
+  .story-rank { width: 28px; height: 28px; font-size: 12px; }
+  .story-title { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<header class="header">
+  <div class="header-meta">
+    <span class="header-tag">WEEKLY · 2026-W18</span>
+    <span>2026.05.03 (일) · 4/27–5/2 종합</span>
+  </div>
+  <h1>Anthropic $900B 임박과 Nasdaq +15% 코로나 이후 최고의 4월</h1>
+  <p class="header-summary">
+    AI 인프라 자본의 정점과 균열이 한 주에 동시 표면화됐다. Anthropic이 $50B 라운드 $900B 밸류로 1년 만에 5배 점프하며 OpenAI($852B) 추월 임박, 빅테크 4사 합산 AI capex는 올해 $725B에 도달했다. Nvidia는 시총 $5T를 돌파했고 Tech 4월은 Nasdaq +15%로 코로나 이후 최고를 기록했다. 그러나 Cramer는 'AI 랠리가 지나치게 멀리 갔다'며 과열을 경고했고, Musk vs Altman 재판 3일차에 Musk는 xAI Grok이 OpenAI 모델로 학습됐다고 자백하며 distillation 단속의 자가당착을 노출했다. AI 채권시장은 누적 $300B 발행 후 피로 신호를, 메모리는 RAM 대란을 보내며 인프라 사이클의 숙성 신호가 다층적으로 등장했다.
+  </p>
+</header>
+
+<!-- Market Section -->
+<section class="market-section">
+  <div class="section-label">📊 주간 시장 (4월 결산)</div>
+  <div class="market-grid">
+    <div class="market-cell">
+      <div class="market-name">NASDAQ (4월)</div>
+      <div class="market-value">+15%</div>
+      <div class="market-change up">코로나 이후 최고 🔥</div>
+    </div>
+    <div class="market-cell">
+      <div class="market-name">Intel (시총)</div>
+      <div class="market-value">×2.0</div>
+      <div class="market-change up">한 달 더블 🔥</div>
+    </div>
+    <div class="market-cell">
+      <div class="market-name">Nvidia (시총)</div>
+      <div class="market-value">$5T</div>
+      <div class="market-change up">사상 첫 돌파 🔥</div>
+    </div>
+    <div class="market-cell">
+      <div class="market-name">Brent 원유</div>
+      <div class="market-value">$121</div>
+      <div class="market-change up">이란 위협 재점화 📈</div>
+    </div>
+    <div class="market-cell">
+      <div class="market-name">미 휘발유</div>
+      <div class="market-value">$4.18</div>
+      <div class="market-change up">4년 최고치 📈</div>
+    </div>
+    <div class="market-cell">
+      <div class="market-name">Reddit 매출</div>
+      <div class="market-value">+69%</div>
+      <div class="market-change up">어닝 깜짝 🔥</div>
+    </div>
+  </div>
+  <div class="market-note">
+    🔥 핵심: Nasdaq +15% 코로나 이후 최고의 4월. 그러나 Cramer는 과열을 경고했고 AI 채권 누적 $300B 발행 피로 신호 — 자본은 정점, 균열은 다층적
+  </div>
+</section>
+
+<!-- Top Stories -->
+<section class="top-section">
+  <h2 class="section-title">🏆 주간 TOP 스토리 <span class="count">7개 클러스터 · 18건</span></h2>
+
+  <!-- Story 1 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">1</div>
+      <h3 class="story-title">Musk vs Altman 재판 — distillation 자백으로 미국 단속의 자가당착 노출</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">4건 보도 · 4일</span>
+      <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      <span class="badge badge-momentum-up">🔥 가속</span>
+    </div>
+    <div class="story-body">
+      <p>27일 오클랜드 연방법원에서 시작된 재판은 한 주 만에 미국 AI 정책의 가장 큰 모순을 노출시켰다. 백악관이 4월 25일 OSTP Kratsios 메모로 중국의 distillation을 정조준한 직후, 정작 첫 distillation 자백은 미국 측 원고 Elon Musk에게서 나왔다. xAI Grok이 OpenAI 모델로 학습됐다는 자백은 단순한 법정 진술이 아니라, 미국 행정부가 적의 행위로 단속하려던 기술이 미국 진영 내부에서도 표준 관행이었다는 사실의 공적 확인이다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/27 월</span> 재판 첫날 — 오클랜드 연방법원 배심원 선정 개시</div>
+        <div class="timeline-item"><span class="timeline-date">4/30 목</span> 본격 증언 국면 — Musk가 자기 트윗에 발목, Larry Ellison Oracle-OpenAI 데이터센터 자본 리스크 부상</div>
+        <div class="timeline-item"><span class="timeline-date">5/1 금</span> 재판 3일차 — Musk, xAI Grok이 OpenAI 모델로 학습됐다고 직접 자백</div>
+        <div class="timeline-item"><span class="timeline-date">5/2 토</span> 자가당착 후속 — distillation 단속의 정책적 정당성 자체가 흔들리는 국면</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Story 2 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">2</div>
+      <h3 class="story-title">Anthropic $900B 라운드 마감 임박 + Pentagon은 빅3 갈 길로</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">3건 보도 · 3일</span>
+      <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      <span class="badge badge-momentum-up">🔥 가속</span>
+    </div>
+    <div class="story-body">
+      <p>지난주 $350B로 굳어졌던 Anthropic 양강 구도가 단 일주일 만에 $900B로 점프했다. 1년 만에 5배 가속이다. 그러나 같은 주, 같은 회사에 대해 Pentagon은 정반대 신호를 보냈다 — Anthropic이 'any lawful use' 조항을 거부하자 Google에 단독 수주를 줬고, 이어 Nvidia·Microsoft·AWS와 분류 네트워크 AI 빅3 체제를 구축하면서도 Anthropic 블랙리스트는 그대로 유지했다. 자본 시장은 Anthropic을 OpenAI 추월 임박 후보로 평가했지만, 국방 시장은 안전 우선 원칙을 지키는 회사를 빅3에서 배제했다. AI 인프라 시장이 자본·국방 두 트랙으로 분기되는 결정적 신호다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/30 목</span> Anthropic $50B 라운드 $900B 밸류 — 1년 만 5배. 같은 날 Google이 Anthropic 거부 직후 Pentagon AI 단독 수주</div>
+        <div class="timeline-item"><span class="timeline-date">5/1 금</span> 라운드 2주 내 마감 임박 보도 — OpenAI($852B) 추월 카운트다운</div>
+        <div class="timeline-item"><span class="timeline-date">5/2 토</span> Pentagon, Nvidia·MS·AWS와 분류망 AI 딜 — 빅3 체제 확정, Anthropic 블랙리스트 유지. Coatue가 Anthropic용 추정 데이터센터 부지 매입 착수</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Story 3 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">3</div>
+      <h3 class="story-title">AI capex 메가사이클 정점 — Nvidia $5T, $725B 지출, 휴머노이드/우주방위 확장</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">3건 보도 · 3일</span>
+      <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      <span class="badge badge-momentum-flat">→ 유지</span>
+    </div>
+    <div class="story-body">
+      <p>한 주의 AI 인프라 자본 흐름을 한 줄로 요약하면: 정점에 도달했지만 확장 영역은 더 넓어졌다. 빅테크 4사 합산 AI capex는 올해 $725B에 도달, 2027년 $1조 돌파 전망이 굳어졌다. AI 인프라가 데이터센터 단계를 넘어 휴머노이드(1X 가정용 1만 대 양산, SoftBank Roze $100B IPO 검토)와 우주방위(True Anomaly $650M, Trump Golden Dome)로 동시 확장됐다. 그러나 정점의 이면은 피로다 — AI 채권은 누적 $300B 발행 후 피로 신호를 보냈고, Cramer는 'AI 랠리가 지나치게 멀리 갔다'며 매도세를 과열 신호로 진단했다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/27 월</span> Nvidia 시총 $5T 첫 돌파, 어닝 위크 개막 — Cramer "분수령" 진단, neoclouds 강세</div>
+        <div class="timeline-item"><span class="timeline-date">4/29 수</span> True Anomaly $650M 시리즈C 조달 — Trump Golden Dome 위성요격기 양산, 우주방위 스타트업 시대 본격화</div>
+        <div class="timeline-item"><span class="timeline-date">5/1 금</span> 빅테크 AI capex $725B 도달, 2027년 $1조 전망. AI 채권 $300B 피로. SoftBank Roze $100B IPO 검토, 1X 휴머노이드 1만 대 첫 양산</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Story 4 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">4</div>
+      <h3 class="story-title">빅테크 1Q 어닝 — Google·Amazon 압도, Meta 부진(-10%), Apple Cook 마지막 분기 iPhone 사상 최대</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">2건 보도 · 2일</span>
+      <span class="badge badge-status-resolved">✅ 발표됨</span>
+      <span class="badge badge-momentum-up">🔥 가속</span>
+    </div>
+    <div class="story-body">
+      <p>AI 투자 성과의 첫 실증이 갈렸다. Google Cloud는 분기 매출 $20B 첫 돌파, 'capacity-constrained' 발언으로 추가 투자 정당성을 확보하며 +5% 상승했다. Amazon AWS는 +28% 성장으로 2022년 이후 최고를 기록했다. 반면 Meta는 capex 가이던스 $145B 상향에도 사용자 2,000만 명 감소·Reality Labs 1Q $4B+ 손실로 -10% 폭락, AI 지출에 대한 '신뢰 vs 의심' 갈림길이 명확해졌다. Cook의 CEO 마지막 분기 Apple은 iPhone +22% $57B로 사상 최대를 기록했지만, Cook은 Mac mini·Studio·Neo의 RAM 공급 제약을 동시에 경고했다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/30 목</span> Alphabet Cloud $20B 돌파 → Google 신뢰. Meta Reality Labs $4B 손실 → 의심. NXP +26% 자동차 반등</div>
+        <div class="timeline-item"><span class="timeline-date">5/1 금</span> 4월 결산 — Apple iPhone $57B 사상 최대(Cook 마지막), Meta -10%, AWS +28% 2022 이후 최고</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Story 5 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">5</div>
+      <h3 class="story-title">AI 메모리 슈퍼사이클 — Samsung 칩이익 48배, RAM 대란이 소비자 가격까지 침투</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">2건 보도 · 2일</span>
+      <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      <span class="badge badge-momentum-up">🔥 가속</span>
+    </div>
+    <div class="story-body">
+      <p>AI 메모리 사이클이 처음으로 실적 숫자로 확인됐다. Samsung 1Q 영업이익은 8배, 반도체 영업이익은 48배 폭증했고, NXP는 자동차 시장 회복으로 26% 폭등했다. 그러나 사이클의 그림자는 소비자 가격으로 즉시 번졌다 — Apple은 Mac Mini 시작가를 $599→$799로 인상했고, Cook은 어닝콜에서 Mac mini·Studio·Neo의 RAM 공급 제약을 공식 경고했다. Samsung·SK하이닉스는 메모리 사상 최대 공급 압박을 경고하며 고객들의 2027년 물량 선예약 행렬을 공개했다. 'AI 인프라 호황 = 소비자 인플레이션'의 첫 본격 확인 사례다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/30 목</span> Samsung 1Q 영업이익 8배·칩이익 48배 — AI 메모리 슈퍼사이클 첫 실적 확인. NXP +26% 자동차 회복</div>
+        <div class="timeline-item"><span class="timeline-date">5/2 토</span> Apple Mac Mini $599→$799 — RAM 대란 소비자 가격 반영. Samsung·SK하이닉스 2027년 선예약 공개</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Story 6 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">6</div>
+      <h3 class="story-title">OpenAI 멀티 클라우드 전환 — Microsoft 4년 단독 의존 종료 후 AWS $50B 모델 출시</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">2건 보도 · 2일</span>
+      <span class="badge badge-status-resolved">✅ 발표됨</span>
+      <span class="badge badge-momentum-down">📉 하락</span>
+    </div>
+    <div class="story-body">
+      <p>OpenAI-Microsoft 4년 독점 시대가 공식 종료됐다. 화요일 OpenAI-MS 매출 분배 상한 합의가 발표되자마자, 수요일 OpenAI는 IPO를 앞두고 매출·성장 추정치가 시장 컨센서스에 못 미친다는 WSJ 보도 직후 Amazon AWS에 모델을 출시했다. 한 주 만에 OpenAI는 단일 클라우드 종속에서 벗어났고, Anthropic이 AWS 단독 진영을 차지하던 구도도 깨졌다. AWS-OpenAI-Anthropic 복수 동맹 구도는 향후 가격 협상력에 영향을 줄 변곡점이다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/28 화</span> OpenAI-MS 분쟁 종결 + 매출분배 상한 합의 → Amazon $50B 딜 청신호</div>
+        <div class="timeline-item"><span class="timeline-date">4/29 수</span> WSJ 매출·성장 IPO 미달 보도 직후 OpenAI, AWS에 모델 출시 — MS 4년 단독 의존 종료</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Story 7 -->
+  <article class="story">
+    <div class="story-header">
+      <div class="story-rank">7</div>
+      <h3 class="story-title">美中 AI 디커플링 격화 — distillation 단속 직후 中 진영 결집과 보복성 인수 차단</h3>
+    </div>
+    <div class="story-meta">
+      <span class="badge badge-articles">2건 보도 · 2일</span>
+      <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      <span class="badge badge-momentum-down">📉 하락</span>
+    </div>
+    <div class="story-body">
+      <p>지난주 백악관 distillation 단속에 대한 중국의 첫 본격 대응이 한 주에 두 갈래로 나타났다. 한쪽에서는 인기 AI 에이전트 OpenClaw가 DeepSeek V4를 채택하고 Huawei 칩 통합을 시사하며 중국 AI 진영이 빠르게 결집했다. 다른 한쪽에서는 중국 당국이 Meta의 $20억 규모 싱가포르·중국계 AI 에이전트 Manus 인수를 공식 차단하면서 美中 AI 디커플링이 M&A 영역으로까지 확전됐다. 결정과 보복이 같은 주에 나란히 발생한 것은 거버넌스 격리가 본격화되는 신호다. 그러나 5/2 자 추가 보도는 없어 모멘텀은 일시 하락했다.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">4/27 월</span> OpenClaw DeepSeek V4 채택 + Huawei 협력 시사 — 중국 AI 진영 결집 (SCMP hero)</div>
+        <div class="timeline-item"><span class="timeline-date">4/28 화</span> 중국 Meta $20억 Manus 인수 공식 차단 — distillation 단속 직후 보복성 디커플링 확전 (4매체 동시보도)</div>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+<!-- Notable Section -->
+<section class="notable-section">
+  <h2 class="section-title">📰 주목할 단발 스토리 <span class="count">5건</span></h2>
+  <div class="notable-grid">
+    <div class="notable-card">
+      <div class="notable-tag">🆕 콘텐츠 신규</div>
+      <h3 class="notable-title">Spotify, 인간 아티스트 'Verified' 배지 도입 — AI 음악 인증 글로벌 표준 부상 (5/2)</h3>
+      <p class="notable-desc">AI 생성 음악과 인간 음악을 분리하는 첫 본격 인증 체계. BBC·Guardian 다매체 보도로 음악 산업의 진정성 인증이 단일 회사 결정에서 산업 표준 의제로 격상됐다.</p>
+    </div>
+    <div class="notable-card">
+      <div class="notable-tag">📱 하드웨어</div>
+      <h3 class="notable-title">OpenAI 스마트폰 칩 진출 — Qualcomm·MediaTek 협력, 2028 양산 (4/28)</h3>
+      <p class="notable-desc">Qualcomm은 보도 직후 12% 급등. AI 에이전트가 앱을 대체하는 새 모바일 패러다임이 OpenAI 자체 폰으로 구체화 — Apple·Google 양강 모바일 OS 시장의 첫 진지한 도전자.</p>
+    </div>
+    <div class="notable-card">
+      <div class="notable-tag">⚖️ 입법</div>
+      <h3 class="notable-title">Right to Repair 봉기 — Apple·Tesla·John Deere captive 수리경제 종결 양당 입법 (4/27)</h3>
+      <p class="notable-desc">미 의회·연방·주정부 동시 입법 물결. CNBC hero. 빅테크의 captive 수익 구조가 처음으로 양당이 합의하는 중간선거 의제로 부상.</p>
+    </div>
+    <div class="notable-card">
+      <div class="notable-tag">🛡️ 사이버보안</div>
+      <h3 class="notable-title">DARPA AIxCC + Red Hat OpenClaw Tank OS — AI 사이버전 시대 본격 개막 (4/29)</h3>
+      <p class="notable-desc">DARPA AIxCC가 5,400만 줄 자동 취약점 발견을 입증, The Verge는 'killer script kiddies' 시대를 진단했다. Red Hat의 Tank OS는 엔터프라이즈 AI 에이전트 보안 표준의 첫 등장.</p>
+    </div>
+    <div class="notable-card">
+      <div class="notable-tag">⚖️ 법적 리스크</div>
+      <h3 class="notable-title">OpenAI 'duty to warn' 첫 법정 쟁점 — Tumbler Ridge 학교 총격 유족 제소 (4/30)</h3>
+      <p class="notable-desc">캐나다 BC주 학교 총격 유족이 OpenAI를 'duty to warn'(의무 경고) 명분으로 제소. AI 회사가 이용자의 위험 신호를 신고할 법적 의무를 갖는지가 최초 법정 쟁점이 됐다. 같은 주 Apple App Store 대법원행과 함께 빅테크 사법 리스크가 다층화.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Claude's Pick -->
+<section class="pick-section">
+  <div class="section-label">🎯 CLAUDE'S PICK</div>
+  <h2 class="section-title">이번 주 가장 의미있는 두 사건</h2>
+
+  <div class="pick-item">
+    <h3 class="pick-title">① Anthropic $900B 자본 정점과 Pentagon 빅3 배제의 동시 발생 — AI 시장이 '자본 vs 국방' 두 트랙으로 분기</h3>
+    <p class="pick-body">
+      한 회사가 같은 주에 자본 시장에서 1년 만에 5배 가속해 $900B로 OpenAI 추월 임박을 공식화하면서, 동시에 Pentagon 빅3 체제(Nvidia·MS·AWS)에서 명시적으로 배제됐다는 사실이 우연이 아니다. Anthropic이 'any lawful use' 조항을 거부한 안전 원칙은 자본 시장에서는 가치 평가의 신뢰 자산이 됐고, 국방 시장에서는 배제 사유가 됐다. 이 분기는 향후 AI 시장 구조 전체를 결정한다 — 안전 우선 회사들이 어느 트랙에서 성장하고 어느 트랙에서 배제될지가 이번 주에 첫 윤곽을 드러냈다.
+    </p>
+  </div>
+
+  <div class="pick-item">
+    <h3 class="pick-title">② Musk의 distillation 자백 — 미국 AI 정책의 '내부 자가당착' 첫 공적 노출</h3>
+    <p class="pick-body">
+      4월 25일 백악관 OSTP 메모로 중국 distillation을 정조준한 미국 행정부에게, 5월 1일 자기 진영 원고가 법정에서 같은 행위를 자백한 것은 정치적 사건이다. 이 자백은 두 가지를 동시에 노출했다 — 첫째, distillation은 중국의 도용 행위가 아니라 AI 산업 표준 관행이라는 것. 둘째, 미국 정부의 단속 정책 자체가 자기 진영 회사들에게도 거꾸로 적용 가능하다는 것. Cramer의 과열 진단·AI 채권 피로·메모리 대란과 합쳐 이번 주는 'AI 인프라 호황 1단계'의 정치적·금융적 임계점이 동시에 드러난 분수령 주간이었다.
+    </p>
+  </div>
+</section>
+
+<!-- Upcoming Events -->
+<section class="events-section">
+  <div class="section-label">📅 다음 주 주요 일정</div>
+  <h2 class="section-title" style="margin-bottom: 16px; padding-bottom: 8px;">5월 4일 ~ 5월 10일</h2>
+  <div class="event-item">
+    <div class="event-date">5/4 (월)</div>
+    <div class="event-text">Musk vs Altman 재판 4일차 — 주말 휴정 후 재개. Musk distillation 자백의 후속 영향 본격 노출 예정</div>
+  </div>
+  <div class="event-item">
+    <div class="event-date">~5/15</div>
+    <div class="event-text">Anthropic $50B/$900B 라운드 마감 임박 — 5/1 보도 기준 '2주 내 마감', OpenAI($852B) 추월 카운트다운</div>
+  </div>
+  <div class="event-item">
+    <div class="event-date">5/20 (수)</div>
+    <div class="event-text">Meta 8,000명 감원 시행 (직원 10%, 5월 20일자 — 4월 보도 후속)</div>
+  </div>
+  <div class="event-item">
+    <div class="event-date">9/1 (화)</div>
+    <div class="event-text">Apple CEO 승계 — Tim Cook → John Ternus 공식 취임 (참고, 카운트다운 4개월)</div>
+  </div>
+  <div class="monitor-list">
+    <div class="monitor-item">미드캡 SaaS 어닝 격차 확산 — Atlassian +20% vs Roblox -18% 후속</div>
+    <div class="monitor-item">Anthropic Mythos 백악관-NSA 갈등 결판 — 백악관 반대 vs NSA 이미 사용 중</div>
+    <div class="monitor-item">OpenAI IPO 시점 — WSJ 매출·성장 컨센서스 미달 보도 후 시장 반응</div>
+    <div class="monitor-item">2027년 RAM 부족 카운트다운 — Apple Mac 후속 가격 인상 가능성</div>
+    <div class="monitor-item">Trump 이란 종전 선언 vs 민주당 반박 — Brent $121, 휘발유 $4.18 인플레 후속</div>
+    <div class="monitor-item">한국 쿠팡 데이터 유출 — 美 정부의 자국 상장 빅테크 보호 의지 시험대</div>
+  </div>
+</section>
+
+<footer class="footer">
+  Jae's Briefing · 2026-W18 주간 종합 · 발행 2026.05.03<br>
+  대상 기간: 2026-04-27 (월) ~ 2026-05-02 (토) · 7개 TOP 클러스터 + 5개 단발 · 총 18건
+</footer>
+
+</div>
+</body>
+</html>
