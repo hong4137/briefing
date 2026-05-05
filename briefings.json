@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-05",
+      "day": "화",
+      "title": "GameStop $56B eBay 인수 제안 | Anthropic·OpenAI 월가 동시 진출 Goldman·Blackstone $1.5B JV | Musk-SEC Twitter 인수 합의 + OpenAI 재판 본격화",
+      "summary": "GameStop이 eBay에 시총 4배인 $56B 인수 제안을 던지며 5개 매체 동시 보도. Anthropic은 Goldman·Blackstone과 $1.5B JV로 PE 보유 기업 대상 AI 서비스를 공급하고 OpenAI는 사모펀드와 $10B JV를 마무리하며 같은 날 월가에 동시 진입, AI 빅3가 엔터프라이즈+사모로 매출 확보 단계 이행. Musk-SEC가 2022년 Twitter 인수 공시 지연 소송에 합의했고 OpenAI 재판에서는 Brockman의 $30B 지분 증언과 머스크의 합의 시도 메시지가 공개됐다. Amazon이 글로벌 물류 네트워크를 외부 기업에 개방하면서 'AWS의 물류 버전' 우려로 UPS·FedEx 폭락, Bloomberg는 'watershed' 평가. Palantir Q1 매출 +85%로 2020년 상장 이후 최고 성장, Pinterest +17%·Circle +20% 어닝 비트, Cerebras $3.5B IPO 재추진하며 Nvidia에 도전. Tesla는 머스크가 제시한 '안전한 무감독 주행' 임계점인 누적 100억 마일 통과, Sierra(Bret Taylor)는 $950M 후속 라운드로 엔터프라이즈 AI 에이전트 패권 다툼 본격화. Uber CEO Khosrowshahi는 'AI가 Uber 기사·CEO도 대체할 것'이라 직접 발언. Roomba 창업자가 털복숭이 AI 컴패니언 'Magic'으로 컴백, Ouster는 컬러 라이다로 카메라 대체 도전, Homebridge 2.0이 Matter 표준 정식 지원. Motorola 인도 명예훼손 소송이 글로벌 플랫폼 콘텐츠 검열 의무 가속화 우려를 일으키는 선례로 부각. Claude's Pick은 Harvard 연구의 AI 진단이 응급실 의사 능가 학술 입증, EU가 Anthropic Mythos 결함을 은행권 검증 도구로 확장 협상, Nvidia가 DeepInfra $107M 투자로 추론 미들웨어까지 외연 확장.",
+      "highlights": [
+        "GameStop $56B eBay 인수 제안 5매체 동시 보도 시총 4배 e커머스 빅딜",
+        "Anthropic Goldman Blackstone $1.5B JV OpenAI $10B PE JV 빅3 월가 동시 진출",
+        "Musk SEC Twitter 인수 소송 합의 OpenAI 재판 Brockman $30B 지분 증언 임박"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-04",
       "day": "월",
       "title": "중국 수출 신발→AI서비스 대전환 SCMP | BYD Denza Z9GT 10분 완충 EV | 빅테크 어닝 스마트 스펜딩 시장 보상 Meta 부진 차별화 | Musk vs Altman 재판 첫 주 자선단체 도용 쟁점",
