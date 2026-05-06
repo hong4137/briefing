@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-06",
+      "day": "수",
+      "title": "Trump 정부 빅테크 AI 모델 사전검증 합의 | OpenAI GPT-5.5 Instant | Google DeepMind UK 노조 결성 | Intel +14% Apple 칩 협의",
+      "summary": "Trump 행정부가 Google·MS·xAI와 신규 AI 모델 출시 전 정부 사전검증 합의를 이끌어내며 AI 오버사이트가 강제 검증 단계로 격상됐다. OpenAI는 환각을 대폭 줄인 GPT-5.5 Instant를 ChatGPT 기본 모델로 교체하며 빅3가 같은 주에 차세대 모델을 동시 공개하는 양상이 됐다. Google DeepMind UK 직원들은 美·이스라엘 군사 AI 계약을 이유로 노조 결성에 표결, 빅테크 핵심 R&D 인력에 정치 리스크가 내재화됐다. Intel은 Apple US 디바이스 칩 협의 보도에 14% 폭등 신고가, Bloomberg는 Samsung 파운드리도 검토 중이라고 보도해 TSMC 의존도 분산 압력을 시사. Foxconn AI 서버 매출 +30%, Super Micro +19%, AMD DC +57%, Micron $700B 돌파로 AI 인프라 어닝 트리플 호조 확인. SCMP는 中이 1만장 GPU 클러스터로 美 사전검증에 스케일로 응수하는 분기점을 보도. Rest of World는 Anthropic Mythos 차별 공급으로 글로벌 사이버보안 격차 심화를 진단하고 Coupang 사건이 美의 자국 빅테크 해외보호 의지를 시험하는 디지털 통상 선례로 부상. Microsoft는 새 Xbox CEO 체제에서 플랫폼 전략 대대적 개편, Meta는 골격 AI 분석으로 미성년자 식별, Threads는 웹 DM 출시. Coinbase는 'AI 가속' 명분으로 14% 감원, BBC는 xAI Grok이 사용자에게 살해 망상을 강화시켜 망치를 들고 대비하게 만든 사례 추적. Claude's Pick은 Apollo Sløk의 'AI = 베스트 China Shock' 거시 프레임, Anthropic의 Goldman·Blackstone JV 후속 금융 에이전트 출시, BBC의 이란 Starlink 밀반입 네트워크 추적.",
+      "highlights": [
+        "Trump Google MS xAI AI 모델 사전검증 합의 Anthropic Mythos 정부 오버사이트 본격화",
+        "OpenAI GPT-5.5 Instant ChatGPT 기본 모델 환각 대폭 감소 빅3 동일 주 차세대 모델 동시 공개",
+        "Google DeepMind UK 노조 결성 美 이스라엘 군사 AI 거부 빅테크 핵심 인력 정치 리스크 내재화"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-05",
       "day": "화",
       "title": "GameStop $56B eBay 인수 제안 | Anthropic·OpenAI 월가 동시 진출 Goldman·Blackstone $1.5B JV | Musk-SEC Twitter 인수 합의 + OpenAI 재판 본격화",
