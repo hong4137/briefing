@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-08",
+      "day": "금",
+      "title": "OpenAI 재판 Zilis 직접 증언·머스크 Tesla 영입 메시지 공개 | Paul Tudor Jones AI 규제 경고·강세장 1~2년 | 프랑스 X 형사조사 격상 | Anthropic Mythos Firefox 271버그 | Datadog +31% AI 어닝 위너 차별화",
+      "summary": "Musk vs Altman 재판이 4일차에 접어들며 Shivon Zilis가 직접 증언대에 올라 머스크가 2017년 Altman에게 Tesla 이사회 의석을 제안했고 Demis Hassabis와 함께 OpenAI 라이벌 AI랩 설립을 시도한 메시지가 공개됐다. CNBC가 hero 보도하며 BBC·Guardian·Bloomberg·Wired 4매체 교차 보도로 VS 7.3 최고점. Paul Tudor Jones는 CNBC에서 '美 AI 규제는 이미 늦었다'며 강세장은 1~2년 더 갈 것으로 진단했고, Kevin Warsh가 Fed 의장이 돼도 금리 인하는 '전혀' 불가능하다고 단언. France 검찰은 X와 머스크 조사를 형사 단계로 격상하며 AI 딥페이크 확산 공모 의혹을 정조준, 머스크 대상 사법 리스크가 美·佛 동시다발. AI 어닝 K자 차별화는 2분기에도 이어져 Datadog +31%로 클라우드 인프라 SaaS의 AI 수혜 첫 명확 시그널 부각, Snowflake·MongoDB 동반 강세. CoreWeave는 Q1 매출 2배 폭증으로 neocloud 성장 입증하면서도 데이터센터 빌드아웃을 위해 부채 조달 지속, AI 채권 $300B 피로 경고와 맞물려 부채 의존 모델 지속가능성 논쟁 본격화. 반면 Coinbase는 Q1 깜짝 손실 + 매출 컨센 미달로 시간외 -4%, 4월 'AI 가속' 14% 감원 직후 어닝 쇼크. Kalshi가 같은 날 Coatue 주도 $1B 시리즈F로 5개월 만에 밸류 더블링 $22B에 도달해 거래소 vs 예측시장 자본 분화 가시화. Anthropic Mythos는 Firefox에서 고심각도 버그 271개를 발견하며 AI가 단순 코딩 보조에서 사이버보안 감사로 이동하는 분기점을 글로벌 브라우저에서 실증, Pentagon 블랙리스트 와중에도 NSA·MS 취약점 테스트 사용 보도와 맞물려 빅테크·정부의 Anthropic 의존도 가속. Bumble은 시그니처 '스와이프' UX를 폐지하고 AI 데이팅 어시스턴트 'Bee'로 전환을 선언, Tinder류 모바일 데이팅 패러다임 종료. 가짜 콧수염만으로 연령 인증 통과 사례가 Wired·TechCrunch 동시 보도되며 Meta는 골격 분석 AI로 인증 도구 전면 개편 중. Claude's Pick은 바이브 코딩 플랫폼 Lovable의 자동 10% 임금 인상으로 협상 정치 제거 실험, Chen Tianqiao MiroMind의 中 서비스 중단·싱가포르 분리 운영(中 AI 본토 이탈 가속), Rest of World의 정부 AI 환각 5사례 정리(트럼프·남아공·Deloitte).",
+      "highlights": [
+        "OpenAI 재판 4일차 Zilis 직접 증언 머스크 Tesla 이사회 의석 제안 Hassabis 영입 라이벌 AI랩 메시지 공개 CNBC hero BBC Guardian Bloomberg Wired 4매체",
+        "Paul Tudor Jones 美 AI 규제 이미 늦었다 강세장 1~2년 Kevin Warsh Fed 금리 인하 가능성 zero 프랑스 검찰 X 머스크 형사조사 격상",
+        "Anthropic Mythos Firefox 고심각도 버그 271개 발견 AI 코딩 보조→사이버보안 분기점 Datadog +31% AI 어닝 위너 CoreWeave 매출 2배 Coinbase Q1 손실 -4% Kalshi $22B 더블링"
+      ],
+      "stats": {
+        "articles": 13,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-07",
       "day": "목",
       "title": "OpenAI 재판 폭로전 Brockman·Murati·Zilis 증언 | SpaceX Terafab $119B 칩공장 | Anthropic-SpaceX Colossus 컴퓨팅 딜 | Apple $250M Siri 합의 6매체 동시 보도 | Samsung $1T 시총 돌파",
