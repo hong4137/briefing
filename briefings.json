@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-07",
+      "day": "목",
+      "title": "OpenAI 재판 폭로전 Brockman·Murati·Zilis 증언 | SpaceX Terafab $119B 칩공장 | Anthropic-SpaceX Colossus 컴퓨팅 딜 | Apple $250M Siri 합의 6매체 동시 보도 | Samsung $1T 시총 돌파",
+      "summary": "Musk-Altman 재판이 2주차에 진입하며 Brockman의 'I thought he was going to hit me' 증언, Murati의 'Altman의 말 못 믿는다' 비디오 증언, Zilis의 머스크 정자 기증 증언까지 OpenAI 창업 비사가 한꺼번에 쏟아졌다. SpaceX는 텍사스 Terafab 칩 공장 비용을 $119B까지 책정하며 IPO 예상액을 초과했고, Anthropic은 라이벌 xAI 소유 SpaceX와 Colossus 1 컴퓨팅 딜로 합종연횡의 새 막을 열었다. Apple은 Siri AI 미출시로 6개 매체 동시에 $250M 합의 보도, Samsung은 $1T 시총 돌파로 TSMC 이은 두 번째 아시아 기업이 됐다. AMD +15%·Lisa Su 가이던스 대폭 상향, DeepSeek 첫 외부 펀딩 $45B 임박, White House AI 모델 사전검증 행정명령 추진, Apple iOS 27 외부 AI 모델 개방, SCMP 화이창베이 칩 거래자 위기, Hyundai Atlas 휴머노이드 라이브 데모, Nvidia-Corning $500M 광섬유 딜, Microsoft 청정에너지 폐기 검토, Snap-Perplexity $400M 딜 종료, Pentagon Alibaba/Baidu 블랙리스트 실수, Project Freedom 일시중단, Google Project Mariner 종료, Berkshire McLane Aurora 자율주행 트럭 등 AI·반도체 슈퍼사이클 균열과 가속이 동시 진행. Claude's Pick은 Singapore 의회의 'AI 시대 jobless growth 거부' 만장일치 결의, Anthropic 금융 서비스 AI 에이전트 출시, Hong Kong 백혈병 치료제 99.95% 가격 인하.",
+      "highlights": [
+        "OpenAI 재판 2주차 Brockman 'I thought he was going to hit me' 증언 Murati Altman 거짓말 비디오 증언 Zilis 머스크 정자 기증 BBC 폭로",
+        "SpaceX Terafab $55B-$119B 텍사스 칩공장 SEC 제출 IPO 조달액 초과 가능 Tesla SpaceX xAI 통합 vertically integrated 팹",
+        "Anthropic-SpaceX Colossus 1 컴퓨팅 딜 라이벌 xAI 소유 SpaceX와 거래 AI Race Turns Weird 1Q 80배 성장 Wall Street 금융 에이전트"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-06",
       "day": "수",
       "title": "Trump 정부 빅테크 AI 모델 사전검증 합의 | OpenAI GPT-5.5 Instant | Google DeepMind UK 노조 결성 | Intel +14% Apple 칩 협의",
