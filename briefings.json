@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-09",
+      "day": "토",
+      "title": "Intel-Apple 칩 협의 Wall Street 'changing of the guard' Intel +20% Wall Street guard 변경 | 메모리 슈퍼사이클 패러볼릭 Micron 주간 +38% DRAM ETF $1B/일 | OpenAI 재판 종합 Musk·Altman 경영 도마 + Murati 폭로 | Canvas 학교 데이터 유출 ShinyHunters 2.75억 레코드 학기말 시험 마비",
+      "summary": "반도체 패권 축이 Nvidia 단일 지배에서 Intel·AMD·Micron 분산 구도로 본격 이동, Apple-Intel 칩 합의 보도에 Intel +20% 폭등하며 1년 누적 +490% 랠리, CNBC는 'Wall Street changing of the guard in AI' 진단. Micron 주간 +38% 메모리 랠리 패러볼릭, DRAM ETF 일일 $1B 유입으로 비트코인 매니아 이후 최단 자금 흡수. OpenAI 재판은 Murati·Brockman·Zilis 증언이 한꺼번에 쏟아지며 Musk·Altman 양측 경영 스타일 도마, MS는 'OpenAI가 Amazon 가서 Azure 험담할까' 우려한 사실 폭로. Anthropic-Akamai $1.8B 컴퓨팅 딜로 하이퍼스케일러 의존 탈피 가속, Anthropic Mythos 사이버 hysteria 진단. Canvas LMS 해킹이 미국 전역 학기말 시험 마비, ShinyHunters 학생·교사 2.75억 레코드 협박. DOGE의 ChatGPT 활용 위헌 판결로 정부 AI 환각이 사법 리스크로 비화, Cloudflare 매출 신고가에도 AI 효율로 1100명 첫 대규모 감원, Airbnb 신규 코드 60%를 AI가 작성. AWS 北버지니아 데이터센터 정전 FanDuel·Coinbase 거래 마비, CoreWeave Q1 'transformational' vs 가이던스 우려 K자 차별화 가속. Iran 정전 흔들림에 美 유조선 타격, Rubio '오늘 응답' 압박, 소비자 심리 사상 최저, Fed 인하 명분 빠르게 소실. UK Starmer 지방선거 참패 생계비 위기, AST SpaceMobile +6,000% 폭등 meme stock 매니아 부활. Sony PS5 어닝 AI '강력한 도구' 게임 개발 + Switch 2 가격 인상으로 메모리 부족 콘솔 직격, Whoop 온디맨드 임상의 도입 AI 헬스 차별화. Avride NHTSA 조사 + Cybertruck 11번째 휠 리콜로 자율주행 안전 의문, Rocket Lab +34% SpaceX IPO 기대. Claude's Pick은 Burry '1999-2000 버블 마지막 달' 발언+MercadoLibre 매수, Honeywell-backed Quantinuum 양자 IPO 신청, Google DeepMind 분사 Isomorphic Labs $2B+ 신약 AI 펀딩.",
+      "highlights": [
+        "Intel-Apple 칩 협의 Intel +20% 1년 누적 +490% 랠리 Wall Street 'changing of the guard' Intel·AMD·Micron 강세 Nvidia 부진 Samsung 파운드리 협상 검토",
+        "메모리 슈퍼사이클 패러볼릭 Micron 주간 +38% 2008년 이후 최고 DRAM ETF 일일 $1B 유입 누적 $5B 비트코인 매니아 이후 최단 자금 흡수 Sony PS5 메모리 충격 Switch 2 가격 인상",
+        "Canvas 학교 데이터 유출 ShinyHunters 2.75억 레코드 NYC 별도 멀웨어 학기말 시험 전국 마비 OpenAI 재판 Musk·Altman 경영 도마 Murati MS shit-talk Azure 우려 폭로 Anthropic-Akamai $1.8B 컴퓨팅 딜 하이퍼스케일러 탈피"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-08",
       "day": "금",
       "title": "OpenAI 재판 Zilis 직접 증언·머스크 Tesla 영입 메시지 공개 | Paul Tudor Jones AI 규제 경고·강세장 1~2년 | 프랑스 X 형사조사 격상 | Anthropic Mythos Firefox 271버그 | Datadog +31% AI 어닝 위너 차별화",
