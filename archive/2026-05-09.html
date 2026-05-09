@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intel-Apple 칩 협의 Wall Street 'changing of the guard' | 메모리 슈퍼사이클 패러볼릭 | Canvas 학교 데이터 유출 | Jae's Briefing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .summary {
+            color: #a0a0a0;
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #667eea;
+            color: #fff;
+        }
+
+        .article-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .article-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .article-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .article-title-kr {
+            font-size: 1rem;
+            color: #a0a0a0;
+            margin-bottom: 12px;
+        }
+
+        .article-summary {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.85rem;
+        }
+
+        .source {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .article-meta a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+
+        .article-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .badge-hot {
+            background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+            color: #fff;
+        }
+
+        .badge-breaking {
+            background: #ff3b3b;
+            color: #fff;
+            animation: pulse 2s infinite;
+        }
+
+        .badge-update {
+            background: #22c55e;
+            color: #fff;
+        }
+
+        .badge-new {
+            background: #4a9eff;
+            color: #fff;
+        }
+
+        .badge-pick {
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            color: #fff;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .top-section .article-card {
+            background: rgba(255, 59, 59, 0.05);
+            border-color: rgba(255, 59, 59, 0.2);
+        }
+
+        .picks-section .article-card {
+            background: rgba(168, 85, 247, 0.05);
+            border-color: rgba(168, 85, 247, 0.2);
+        }
+
+        .pick-reason {
+            font-size: 0.85rem;
+            color: #a855f7;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.4rem;
+            }
+            .article-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 5월 9일 토요일</div>
+            <h1 class="title">Intel-Apple 칩 협의 Wall Street 'changing of the guard' | 메모리 슈퍼사이클 패러볼릭 Micron 주간 +38% | Canvas 학교 데이터 유출 ShinyHunters 2.75억 레코드</h1>
+            <p class="summary">반도체 패권 축이 Nvidia 단일 지배에서 Intel·AMD·Micron 분산 구도로 본격 이동했다. Apple이 Intel 칩 재도입에 합의한 보도가 도화선이 되어 Intel 주가가 1년 +490% 누적 랠리를 기록하고, DRAM ETF는 일일 $1B 신규 유입으로 비트코인 매니아 이후 최단기 자금 흡수를 달성했다. 동시에 OpenAI 재판은 Musk·Altman 쌍방 경영 스타일을 도마에 올렸고, Canvas 학습 플랫폼 해킹이 미국 전역 학기말 시험을 마비시켰다.</p>
+        </header>
+
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Intel shares soar on Apple chip deal report. Wall Street sees 'changing of the guard in AI'</h3>
+                <p class="article-title-kr">Intel-Apple 칩 협의 보도에 +20% 폭등 — Wall Street, AI 칩 패권 'Intel·AMD·Micron으로 이동' 진단</p>
+                <p class="article-summary">WSJ가 Apple-Intel '예비 합의' 보도를 내놓자 Intel 주가가 단주 +20% 폭등하며 1년 누적 +490% 랠리를 기록했다. CNBC는 같은 날 'Wall Street에서 changing of the guard in AI가 나타났다'며 Intel·AMD·Micron이 두 자릿수 동반 상승하는 동안 Nvidia가 부진하는 분기점을 진단했다. Samsung·Intel·TSMC가 최첨단 AI칩을 만들 수 있는 유일한 3사인 가운데 Apple이 다시 Intel 실리콘으로 회귀하는 것은 Apple Silicon 전환 이후 최초이며, Bloomberg는 Samsung 파운드리도 협상 중이라고 후속 보도. TechCrunch는 'Intel 컴백 스토리가 보이는 것보다 더 와일드하다'며 시장이 실제 턴어라운드보다 앞서가고 있다는 신중론을 동시 제시.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, The Verge, TechCrunch 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/05/08/intel-stock-apple-chip-deal.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Micron surges nearly 38% on week as memory chip rally goes parabolic — DRAM ETF adds $1B in a day</h3>
+                <p class="article-title-kr">Micron 주간 +38% 메모리 랠리 패러볼릭 — DRAM ETF는 비트코인 매니아 이후 최단기 $1B 일일 유입</p>
+                <p class="article-summary">Micron이 글로벌 메모리칩 부족 파장에 한 주 +38%를 기록하며 2008년 이후 최고 주간 상승률을 달성했다. CNBC는 Roundhill의 Memory ETF(DRAM)가 4월 2일 출시 후 누적 $5B을 끌어모으며 '비트코인 매니아 이후 가장 뜨거운 ETF'가 됐고, 어제 하루에만 $1B이 새로 유입됐다고 보도. The Verge는 동일한 RAM·NAND 부족이 SSD 가격까지 끌어올리며 PC·콘솔 소비자 가격 인상 압력으로 번지고 있다고 진단. 메모리는 Apple이 Mac mini 가격을 올린 데 이어 Sony·Nintendo가 동시에 Switch 2 가격 인상을 발표하는 등 소비자 직접 충격이 본격화됐다. Sony 어닝에서도 'memory price crunch' 영향이 명시적으로 공개됐다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, The Verge 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/05/08/micron-surges-more-than-30percent-on-week-as-memory-chip-rally-goes-parabolic.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Musk, Altman Management Styles Under Fire at OpenAI Trial</h3>
+                <p class="article-title-kr">OpenAI 재판 종합 — Musk·Altman 양측 경영 스타일이 동시에 법정에서 도마에 — Musk-SEC Twitter 합의 별도 진행</p>
+                <p class="article-summary">5일에 걸친 1주차 재판에서 Brockman의 'I thought he was going to hit me' 증언, Murati의 'Altman을 못 믿는다' 비디오 증언, Zilis의 직접 증언, 그리고 Murati 증언에서 폭로된 Microsoft가 'OpenAI가 Amazon으로 가서 Azure를 험담할까 우려했다'는 사실까지 쏟아졌다. Bloomberg는 'Musk와 Altman 양측 모두 리더십 스타일에서 두들겨 맞은 한 주'로 종합. 별개로 연방판사가 Musk-SEC가 도달한 Twitter 지분 공시 지연 합의($1.5M) 검토에 들어가며 Musk의 사법 부담은 한 건 정리될 전망. TechCrunch는 'Musk 소송이 OpenAI 안전 트랙 레코드를 현미경 위에 올려놨다'며 재판이 단순 창업 분쟁을 넘어 AI 안전성 거버넌스 전체로 번지는 양상을 진단.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, The Verge, TechCrunch 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-05-08/musk-altman-management-styles-come-under-fire-at-openai-trial" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Canvas hack disrupts US schools nationwide as ShinyHunters threatens to leak 275M records</h3>
+                <p class="article-title-kr">Canvas 학습 플랫폼 해킹이 美 전역 학기말 시험 마비 — ShinyHunters '학생·교사·교직원 2.75억 레코드' 협박</p>
+                <p class="article-summary">Instructure가 운영하는 Canvas LMS에 대한 사이버 공격으로 미국 전역 초중고·대학에서 기말고사가 줄줄이 연기됐다. 랜섬웨어 그룹 ShinyHunters는 학생·교사·교직원 정보 2.75억 건을 탈취했다고 주장. NYC 공립학교는 별도 멀웨어 공격까지 동시에 받으며 이중 충격에 빠졌다. The Verge는 해커들이 학교 로그인 페이지를 디페이스(deface)하며 Instructure에 대한 두 번째 침해를 주장했다고 보도. 학기말 평가 시즌과 정확히 맞물린 표적 공격으로 'AI 시대 사이버 공격의 일상화'가 교육 인프라까지 정조준한 결정적 사례가 됐다. Ars Technica는 '핀치 핫스폿이 된 학습 플랫폼이 카오스의 진원지'로 진단.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, The Verge, Ars Technica, Bloomberg, ZDNet 5매체 보도</span>
+                    <a href="https://arstechnica.com/security/2026/05/chaos-erupts-as-cyberattack-disrupts-learning-platform-canvas-amid-finals/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🤖 AI/기술</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Anthropic Inks $1.8 Billion Computing Deal With Akamai</h3>
+                <p class="article-title-kr">Anthropic, Akamai와 $1.8B 컴퓨팅 딜 — 하이퍼스케일러 의존 탈피·엣지 컴퓨팅 시대 신호</p>
+                <p class="article-summary">Anthropic이 클라우드·엣지 컴퓨팅 사업자 Akamai와 $1.8B 컴퓨팅 공급 계약을 체결, Akamai 주가가 하루 +20% 폭등했다. Akamai CEO Tom Leighton은 'Big Tech 하이퍼스케일러로부터의 이동을 의미하며 엣지 컴퓨팅이 AI 사이버 공격 차단·비용 절감·성능 향상에 필수가 되고 있다'고 강조. AWS·Azure·GCP 빅3 의존을 깨는 첫 1B+ 단위 딜로, 동일주 Anthropic-SpaceX Colossus 1 컴퓨팅 딜과 함께 '컴퓨팅 공급망 다변화'가 본격화됐다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-05-08/anthropic-inks-1-8-billion-computing-deal-with-akamai" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Anthropic's Mythos set off a cybersecurity 'hysteria.' Experts say the threat was already here</h3>
+                <p class="article-title-kr">CNBC 진단 — Anthropic Mythos가 촉발한 '사이버보안 hysteria', 사실 위협은 이미 와있었다</p>
+                <p class="article-summary">CNBC는 Mythos 출시 이후 은행·소프트웨어 거인·정부가 일제히 새로운 사이버 공격 시대에 대한 대응 태세에 들어간 것을 'hysteria'로 진단하면서도, 동일한 공격 능력은 Mythos 이전에도 존재했다고 지적. 5일에 Anthropic Mythos가 Firefox에서 고심각도 버그 271개를 발견한 사실이 알려진 데 이어, 어제는 Anthropic-Akamai $1.8B 딜까지 발표되며 'Anthropic이 사이버보안 인프라의 시스템 리스크인 동시에 솔루션이 되는 양면성'이 가시화. Rest of World는 동일 의제로 'Mythos 차별 공급에 따른 글로벌 사이버보안 격차 확대'를 같은 날 진단.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Rest of World 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">DeepSeek to soon close first external fundraising at US$50B valuation</h3>
+                <p class="article-title-kr">DeepSeek 첫 외부 펀딩 임박 — 中 IC 펀드 3단계 등 국부 자금 주도 $50B 밸류</p>
+                <p class="article-summary">SCMP가 단독으로 보도한 후속에 따르면 DeepSeek는 첫 외부 자금 조달을 곧 마감하며 $50B 밸류에 도달한다. 투자자에는 中 IC 펀드(국가집적회로산업투자펀드) 3단계 산하 AI 전문 자회사들이 포함된다. 어제까지 'DeepSeek 첫 외부 펀딩 $45B 임박'으로 알려졌다 하루 만에 $50B로 상향. OpenAI($852B)·Anthropic($900B 임박) 대비 1/17 수준이지만 中 본토 AI 모델 회사 중 압도적 1위를 굳혔고, 같은 날 Moonshot AI(Kimi 개발)는 $20B 밸류로 자금을 조달, Baidu Kunlunxin은 HK $14.6B IPO를 추진하는 등 中 AI 자본 결집이 가속화.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Hero (단독)</span>
+                    <a href="https://www.scmp.com/tech/tech-trends/article/3352945/deepseek-soon-close-first-external-fundraising-us50b-valuation-sources" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Judge rules DOGE used ChatGPT in a way that was both dumb and illegal</h3>
+                <p class="article-title-kr">DOGE의 ChatGPT 활용 위헌 판결 — 美 연방판사 '$100M+ 보조금 취소는 멍청하고 위법'</p>
+                <p class="article-summary">미 연방지방법원 Colleen McMahon 판사가 143페이지 판결문에서 DOGE(정부효율부)가 $100M 이상 연방 보조금을 취소한 절차가 위헌이라고 판시. DOGE는 ChatGPT를 사용해 보조금이 DEI(다양성·형평성·포용성) 관련인지 판별했으며, 판사는 이를 '둔하고(dumb) 동시에 위법(illegal)한' 절차로 적시. AI를 통한 정부 의사결정의 적법 절차 위반이 美 연방법원에서 명시적으로 인정된 첫 판례로, '정부 AI 환각'이 단순 망신을 넘어 사법 리스크로 비화하는 분기점.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Featured</span>
+                    <a href="https://www.theverge.com/policy/927071/doge-chatgpt-grants-canceled" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high</h3>
+                <p class="article-title-kr">Cloudflare 첫 대규모 감원 1100명 — 매출 신고가에도 'AI 효율로 자리가 사라졌다'</p>
+                <p class="article-summary">CEO Matthew Prince가 사내 발표에서 'AI 효율 향상으로 더 이상 그 정도의 지원 인력이 필요 없다'고 명시하며 Cloudflare 역사상 최대 규모 감원을 단행. 매출은 분기 신고가를 기록했음에도 단행된 첫 사례라는 점에서 '실적 호조 + 감원' 조합이 빅테크에서 미드캡 인프라 기업으로 확산. 같은 날 Airbnb는 신규 코드의 60%를 AI가 작성하고 있다고 공식 발표, AI 코딩이 엔지니어 생산성을 넘어 인력 구조 자체를 재편하는 단계.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured</span>
+                    <a href="https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">The biggest US power grid is under strain from AI — Three Mile Island gets an AI makeover</h3>
+                <p class="article-title-kr">美 최대 전력망 PJM이 AI 데이터센터 부담 임계점 — Three Mile Island, AI 챗봇용으로 2027년 재가동</p>
+                <p class="article-summary">TechCrunch hero는 美 최대 전력망 PJM이 AI 데이터센터 수요 폭증에 임계 부담에 도달했다고 보도. 동시에 Bloomberg는 美 최악 원전 사고 부지인 Three Mile Island가 AI 챗봇·애플리케이션 전력 공급용으로 2027년 중반 재가동된다고 발표. 빅테크가 화석연료 폐기 검토(Microsoft 청정에너지 폐기, 5/7)를 거쳐 원전 재가동까지 손을 뻗치는 가운데, Virginia에서는 행정 실수 한 건이 두 자산운용사 후원 데이터센터 허브 계획 전체를 무너뜨리는 사례까지 등장. AI 인프라가 전력·환경·지역사회 갈등의 새 진앙.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero, Bloomberg, The Verge 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/05/08/the-biggest-u-s-power-grid-is-under-strain-from-ai-and-no-one-is-happy/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">💰 경제/금융</h2>
+
+            <article class="article-card">
+                <span class="badge badge-breaking">BREAKING</span>
+                <h3 class="article-title">US strikes two Iran-flagged tankers as Rubio expects Tehran response 'today' — consumer sentiment hits fresh record low</h3>
+                <p class="article-title-kr">美 이란 유조선 두 척 타격 — Rubio '오늘 응답' 압박, 소비자 심리 사상 최저</p>
+                <p class="article-summary">불안한 美-이란 정전 협정이 한 주 내내 흔들리는 가운데 미국이 봉쇄 우회를 시도한 이란 국적 유조선 두 척을 타격했다고 발표. Marco Rubio 국무장관은 'Iran이 평화 제안에 오늘 답해야 한다'고 압박. 동시에 5월 초 Michigan 소비자 심리 지수가 유가 급등 영향으로 사상 최저를 새로 갱신, Iran전 인플레이션 충격이 미국 가계 심리에 풀스루(full pass-through)되는 단계. CNBC는 'Fed가 금리 인하 명분을 빠르게 잃고 있다'며 4월 고용보고서가 기대 이상이었음에도 적신호가 곳곳에 박혀있다고 진단.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/05/08/iran-war-oil-trump-blockade-ceasefire.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">The Federal Reserve is quickly running out of reasons to cut interest rates</h3>
+                <p class="article-title-kr">Fed, 금리 인하 명분 빠르게 소실 — 4월 고용 +55K 컨센 상회·생계비 압박은 가중</p>
+                <p class="article-summary">4월 비농업 고용이 컨센서스 +55K를 상회하며 견조한 흐름을 보였지만, 동시에 보고서 곳곳에 적신호가 박혀있다는 분석. 더 큰 문제는 생계비 부담이 점점 견디기 어려운 수준이라는 점이고, 이는 Iran전 유가 급등이 누적되며 가스·식료품 가격을 끌어올린 결과. Kevin Warsh가 Fed 의장이 돼도 인하는 '전혀(zero)' 가능하지 않다고 단언한 발언(5/8)에 이어, 시장은 Powell 라인의 인하 가능성도 빠르게 가격에서 빼는 중.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Top</span>
+                    <a href="https://www.cnbc.com/2026/05/08/the-federal-reserve-is-quickly-running-out-of-reasons-to-cut-interest-rates.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">CoreWeave Shares Drop After Forecast Sparks Growth Fears, Even as CEO Calls Q1 'Transformational'</h3>
+                <p class="article-title-kr">CoreWeave Q1 'transformational'이라는 CEO 발언에도 가이던스 우려에 주가 하락</p>
+                <p class="article-summary">CEO Michael Intrator가 Q1 어닝을 'transformational'이라 평가하며 매출 2배·운영 마진 호조·트레이딩·로보틱스 등 신규 버티컬 수요 강조. 그러나 가이던스가 시장 기대에 미치지 못하면서 시간외 주가 하락. 어제 Coinbase가 Q1 깜짝 손실에 -4%를 기록한 것과 함께 'AI 어닝 위너'와 '문제 종목'의 K자 차별화가 더 선명해지는 양상. CoreWeave는 데이터센터 빌드아웃을 위해 AI 채권 시장에서 부채 조달을 지속, $300B 누적 발행에 따른 피로 우려와 정면 충돌하는 중.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg Featured</span>
+                    <a href="https://www.bloomberg.com/news/videos/2026-05-08/bloomberg-tech-5-8-2026-video" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">AWS data center outage hits trading on FanDuel, Coinbase</h3>
+                <p class="article-title-kr">AWS 데이터센터 정전, FanDuel·Coinbase 트레이딩 마비 — 北버지니아 과열이 원인</p>
+                <p class="article-summary">AWS 北버지니아 데이터센터 과열로 발생한 정전이 FanDuel·Coinbase 등 주요 서비스의 거래를 마비시켰다. CNBC는 복구에 수 시간이 소요될 것이라고 보도. 같은 날 NYC 학교 별도 멀웨어 공격, Canvas 해킹, AST SpaceMobile 6000% 폭등 같은 사건과 함께 '디지털 인프라의 변동성'이 한 날에 집중 노출. 어제 Microsoft가 AI capex를 위해 청정에너지 계약을 폐기 검토 중이라는 보도와 맞물려, 빅테크 인프라가 공급·전력·보안의 삼중 압박에 동시 노출되는 모습.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured</span>
+                    <a href="https://www.cnbc.com/2026/05/08/aws-outage-data-center-fanduel-coinbase.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Cost of living crunch hurts UK PM Starmer in local elections</h3>
+                <p class="article-title-kr">英 Starmer 노동당 지방선거 참패 — 생계비 위기로 첫 본격 표 심판</p>
+                <p class="article-summary">英 지방선거 초기 결과에서 노동당이 광범위한 패배를 기록, Keir Starmer 총리 지도력에 본격적인 도전이 시작됐다. Guardian은 '노동당 재앙적 선거 밤 이후 Starmer 리더십이 시험대에 올랐다'고 헤드라인. 미국과 달리 영국에서는 인플레이션 + AI 일자리 충격이 누적되며 정치 지형 변화로 직결되는 신호. Iran전·메모리 부족·AI 자동화로 인한 비용 인플레이션이 글로벌 정치 환경을 동시에 흔드는 사례.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Guardian 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/05/08/cost-of-living-crunch-hurts-uk-pm-starmer-in-local-elections.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Online Mob Fuels 6,000% Stock Rally in Obscure SpaceX Rival AST SpaceMobile</h3>
+                <p class="article-title-kr">AST SpaceMobile +6,000% 폭등 — 'The Kook' 구루 주도 온라인 군중에 SpaceMob 화제, 'meme stock 매니아 부활' 진단</p>
+                <p class="article-summary">SpaceX 라이벌 AST SpaceMobile이 'The Kook'으로만 알려진 주식 구루를 중심으로 결집한 온라인 군중('SpaceMob')에 의해 6,000% 폭등하며 세계에서 가장 비싼 주식 중 하나가 됐다. Bloomberg는 'Meme stock 매니아가 돌아왔음을 입증하는 사례'로 진단. Robinhood·Reddit·Discord에서 AST 옵션 콜이 폭증하는 가운데, 같은 날 Rocket Lab은 어닝 비트와 기록적 발사 계약에 +34%(역대 최고일) 상승하며 SpaceX IPO 임박에 대한 공간 섹터 전체 베팅이 가속화.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg Features</span>
+                    <a href="https://www.bloomberg.com/news/features/2026-05-08/spacex-rival-ast-spacemobile-asts-proves-meme-stock-mania-is-back" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">📱 플랫폼/소셜</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">PlayStation sees AI as a 'powerful tool' to help make games — Sony eyes profit gains as memory price crunch bites</h3>
+                <p class="article-title-kr">Sony, AI '강력한 도구로 게임 개발 활용' — 메모리 가격 충격에도 두 자릿수 이익 증가 전망</p>
+                <p class="article-summary">Sony가 어닝 프레젠테이션에서 PlayStation 게임 개발에 AI를 어떻게 평가·활용하는지 상세 공개. 인디 개발자들이 생성형 AI를 거부하는 가운데서도 Sony는 '강력한 도구'로 적극 채택 입장. 동시에 메모리 가격 급등 충격에도 두 자릿수 이익 증가 전망을 제시. Nintendo는 같은 주 Switch 2 가격 인상을 발표(Verge featured)하며 메모리 부족이 콘솔 시장 전체로 번지는 모습. The Verge는 '게임 콘솔의 미래가 어둡다'며 가격 인상 + AI 도구 도입 + 인디의 AI 거부가 동시에 일어나는 게임 산업의 분열을 진단.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, CNBC 다매체 보도</span>
+                    <a href="https://www.theverge.com/games/926914/sony-playstation-ai-powerful-tool-games" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Microsoft was worried OpenAI would run off to Amazon and 'shit-talk' Azure</h3>
+                <p class="article-title-kr">MS 내부 우려 '하루 빨리 OpenAI가 Amazon으로 가서 Azure 험담할까' — Murati 증언서 폭로</p>
+                <p class="article-summary">OpenAI 재판에서 Mira Murati 증언으로 폭로된 사실. Microsoft가 OpenAI의 Amazon 이탈을 두려워한 이유는 단순 매출 손실이 아니라 'OpenAI가 떠나며 Azure를 험담할 것'이라는 평판 리스크였다. 4/28에 OpenAI-MS 분쟁 종결과 함께 Amazon $50B 청신호가 켜진 배경 맥락이 이번 증언으로 본격 공개. 빅3 클라우드(MS·Amazon·Google)와 빅3 AI(OpenAI·Anthropic·Meta)가 서로 다중 결합하며 의존도가 분산되는 가운데, Anthropic-Akamai $1.8B 딜은 같은 흐름의 후속.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Featured</span>
+                    <a href="https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Fitness wearable Whoop to offer on-demand clinician access to U.S. users</h3>
+                <p class="article-title-kr">Whoop, AI 건강 가이드 + 온디맨드 임상의 접근 도입 — 멤버십 가격 내에 포함</p>
+                <p class="article-summary">CNBC 헤드 보도. Whoop이 미국 사용자를 대상으로 온디맨드 임상의 접근과 AI 기반 건강 가이드를 도입하며 대부분 멤버십 가격에 포함시켰다. Apple Watch·Fitbit Air(Google)·Galaxy Watch가 AI 헬스 코칭에 진입하는 가운데 Whoop은 '의사 직접 연결'로 차별화. The Verge는 'AI 헬스 시대에 단순 피트니스 밴드의 역할은 무엇인가'를 묻는 칼럼으로 동일 주제를 짚었고, BBC Tech는 'AI를 사용해도 뇌가 둔해지지 않는 법' 가이드를 featured에 배치. AI 헬스가 디바이스·서비스·경고 가이드까지 다층으로 통합되는 단계.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Hero</span>
+                    <a href="https://www.cnbc.com/2026/05/08/whoop-on-demand-clinician-access.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🔧 하드웨어/모빌리티</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Uber partner Avride is under investigation for self-driving crashes — Tesla recalls Cybertrucks 11th time over wheels</h3>
+                <p class="article-title-kr">Uber 자율주행 파트너 Avride, NHTSA 조사 — Cybertruck 11번째 리콜 '바퀴 빠질 수 있다'</p>
+                <p class="article-summary">美 NHTSA가 Uber 자율주행 파트너사 Avride에 대해 12건 이상의 충돌 사고와 1건의 경상을 식별, 조사 개시. Wired는 Tesla Cybertruck이 11번째 리콜 대상이 됐고 일부 모델은 잘못된 그리스와 풀린 너트로 인해 갑자기 바퀴가 빠질 수 있다고 보도. Baidu 로보택시 우한 100대 동시 정지 사건(4/2) 이후 자율주행 안전성에 대한 美·中 동시 의문이 누적되는 중. PlayStation·Sony가 AI를 적극 채택하는 동안, 자율주행은 여전히 'AI에 인간 안전 일임' 단계에 진입하지 못하고 있다는 신호.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero, Wired, The Verge 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/05/08/uber-partner-avride-is-under-investigation-for-self-driving-crashes/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Rocket Lab surges 34% on revenue beat — space sector heats up ahead of SpaceX IPO</h3>
+                <p class="article-title-kr">Rocket Lab +34%, 역대 최고일 — 매출 비트 + 기록적 발사 계약, SpaceX IPO 앞두고 우주株 광풍</p>
+                <p class="article-summary">Rocket Lab이 어닝 발표 직후 +34%(역대 최고일)를 기록하며 매출 비트와 기록적 발사 계약을 발표. SpaceX IPO 기대감(SpaceX는 $1.75T 비밀 IPO 신청, 4/2)이 우주 섹터 전반의 평가를 끌어올리는 분위기. 같은 날 Honeywell-backed 양자컴퓨팅 기업 Quantinuum이 미국 IPO를 신청, 양자 컴퓨팅 株 열풍에 합류(별도 Pick으로 다룸). 우주·양자·AI 칩이 동시에 시장의 베팅 대상이 되며, Burry는 같은 날 '1999-2000 버블 마지막 달과 같다'는 진단을 내놓음.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured</span>
+                    <a href="https://www.cnbc.com/2026/05/08/rocket-lab-rklb-q1-earnings-2026.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Yarbo's promise to fix the robot mower that ran me over — Polish water plants breached by hackers</h3>
+                <p class="article-title-kr">Yarbo, 잔디깎이 로봇 해킹 후속 보안 약속 — 폴란드 수처리 시설은 러시아 해킹</p>
+                <p class="article-summary">The Verge가 어제 보도한 'Yarbo 中 잔디깎이 로봇이 해커에 의해 사용자를 친 사건' 후속으로, Yarbo는 GPS·WiFi·이메일 노출 취약점 수정 약속을 발표. 같은 날 폴란드는 정보기관 보고서를 통해 러시아의 수처리 시설 해킹·사보타주를 폭로, 美도 동일한 위협에 노출됐다고 진단(TechCrunch). 로봇·인프라 사이버 보안이 컨슈머 가전부터 국가 인프라까지 연속 노출되며, Anthropic-Akamai $1.8B 딜과 Mythos hysteria는 정확히 이 빈틈을 메우려는 자본 흐름.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, TechCrunch 다매체 보도</span>
+                    <a href="https://www.theverge.com/tech/926989/yarbo-robot-lawn-mower-hack-company-update-security-promise" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Michael Burry says the market today feels like 'the last months of the 1999-2000 bubble' — and buys MercadoLibre</h3>
+                <p class="article-title-kr">Burry '지금 시장은 1999-2000 버블 마지막 달 같다' 발언 + MercadoLibre 매수</p>
+                <p class="article-summary">Big Short의 Michael Burry가 'Stocks are not up or down because of jobs or consumer sentiment(주식은 고용·소비자 심리로 오르내리지 않고 있다). Feeling like the last months of the 1999-2000 bubble(1999-2000 버블 마지막 달과 같다)'고 발언. 동시에 슬럼프에 빠진 MercadoLibre를 매수하며 +15% 수익을 노리고 있다고 공개. AST +6,000%, Rocket Lab +34%, Intel +20%, Micron +38%이 같은 주에 동시에 발생하는 시장 환경에서 Burry의 발언은 '버블 정점 진단'과 '저평가 가치주 매수'의 동시 메시지로 읽힌다.</p>
+                <p class="pick-reason">선정 이유: 시장 정점 진단의 첫 명확한 'big name' 신호 + 투자자 관점 의미 있는 변화 (사용자 관심: 투자/금융시장)</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/05/08/michael-burry-says-the-market-today-feels-like-the-last-months-of-the-1999-2000-bubble.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Honeywell-Backed Quantinuum Files for US IPO</h3>
+                <p class="article-title-kr">Honeywell 후원 양자컴퓨팅 Quantinuum, 美 IPO 신청 — 양자株 열풍 합류</p>
+                <p class="article-summary">Honeywell이 후원하는 양자컴퓨팅 기업 Quantinuum이 미국 IPO를 신청, 양자 컴퓨팅 株에 대한 열풍에 올라탔다. AI 칩(Cerebras IPO 가격 상향), 우주(Rocket Lab +34%, SpaceX IPO), 메모리(Micron +38%)에 이어 양자 컴퓨팅까지 IPO·자본 시장 차원의 'Tech 4종 다각화 베팅'이 본격 형성. 단일 Nvidia·OpenAI 의존에서 벗어나 차세대 컴퓨팅·우주·메모리가 동시에 자금을 흡수하는 시장 구조 변화의 신호.</p>
+                <p class="pick-reason">선정 이유: 양자컴퓨팅 첫 대규모 美 IPO 신청 = 신생 기술 시장 등장 + 투자자 반향 동반 (사용자 관심: 반도체/하드웨어 공급망, 투자 관점)</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-05-08/honeywell-backed-computing-firm-quantinuum-files-for-us-ipo" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Google's Isomorphic Labs to Raise Over $2 Billion in New Funding</h3>
+                <p class="article-title-kr">Google DeepMind 스핀아웃 신약 AI Isomorphic Labs, $2B+ 펀딩 임박</p>
+                <p class="article-summary">Alphabet의 Google DeepMind에서 분사된 AI 신약 발견 기업 Isomorphic Labs가 $2B 이상 신규 펀딩을 위한 협상 막바지 단계라는 Bloomberg 보도. AlphaFold 기반 단백질 구조 예측에서 출발해 신약 발견 파이프라인까지 확장한 첫 사례로, Anthropic의 Coefficient Bio $400M 인수(4/4), Eli Lilly-Insilico $2.75B 딜(3/30)과 합쳐 'AI 제약'이 4월부터 1B+ 단위 자본을 본격 흡수. AI 인프라·코딩에 이어 헬스케어·신약이 다음 시그니처 응용 영역.</p>
+                <p class="pick-reason">선정 이유: AI 신약 시장 규모 재평가 첫 등장 + 대기업 분사 후속 자본 조달 (사용자 관심: AI/기술 인프라, 투자 관점)</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-05-08/google-s-isomorphic-labs-to-raise-over-2-billion-in-new-funding" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 19건 | 섹션 5개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
