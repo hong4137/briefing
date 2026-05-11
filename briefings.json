@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-11",
+      "day": "월",
+      "title": "Iran 휴전 결렬 Aramco +26% 오일 쇼크 | Chinese developers 美 AI 우회 SCMP Hero shadow API | AI 정부 환각 5사례 Rest of World | Canvas 해킹 글로벌 확전 BBC 후속",
+      "summary": "Iran-Israel 휴전이 사실상 무산되며 유가가 재상승, Aramco는 East-West 파이프라인 만재로 Q1 이익 +26% 점프하며 사우디 단독 수혜 구조 가시화. CNBC는 오일 임원들이 보는 영구적 글로벌 에너지 시장 재편을 분석, Brent·WTI 동반 급등 + S&P 500은 어닝 쇼크에도 6주 연속 상승으로 디커플링. SCMP가 Hero로 중국 개발자들이 'shadow API' 생태계로 Claude·Gemini 우회 접속하는 실태를 본격 보도, ByteDance는 2026 capex +25% 상향하며 국내 AI 칩 비중 의도적 확대로 지정학 헤지. 베이징은 AI 데이터센터 그린에너지 강제 29조치 액션플랜 발표(미국 빅테크 청정에너지 폐기와 정반대). Rest of World가 Hero로 정부 AI 환각 5사례(트럼프·남아공·Deloitte·인도·Wyoming) 카탈로그화, 글로벌 사이버보안 격차 심화 분석, 빅테크가 걸프 전쟁 회피용으로 데이터를 Iraq 송유관으로 우회시키는 인프라 재편까지 3편 동시 게재. Canvas 해킹은 BBC가 '국제 사이버 공격'으로 격상 보도하며 TechCrunch는 학교 로그인 페이지 변조 후속 보도. CNBC는 Alphabet 1년 +160% 랠리를 'AI 스택 전부 소유'의 가치로 분석, Nvidia는 2026년 누적 $40B+ 지분 베팅으로 'AI 투자자' 정체성 전환. TechCrunch Equity는 Anthropic-xAI(SpaceX) 컴퓨팅 딜에 회의적 시각 본격 제기. BBC는 xAI Grok 살해 망상 르포 + AI 회사 자기모순 분석을 3편 시리즈로 게재, CNBC는 AI 보이스 클로닝 사기 전화 일상 침투 보도. The Verge는 'AI 붐은 근본적 오해' 신경과학 비판과 '새 실리콘 밸리(literally)' 미국 반도체 클러스터 부활 분석 동시 게재. Substack 작가 대규모 이탈 → Ghost·Beehiiv 이주 + MrBeast 등 톱 크리에이터 뒤의 'YouTube whisperers' 컨설팅 산업 부상. Rest of World는 중국 EV 표준이 글로벌 채택되는데 미국만 금지하는 표준 분단을 분석, Vivo X300 Ultra가 '현존 스마트폰 최고 카메라' 평가. Hantavirus는 Tristan da Cunha 의심 사례 + MV Hondius 크루즈 발병으로 글로벌 경계 신호. Guardian은 CAR-T 세포 치료(Sam Neill 림프종 사례) '수면 위만 긁었을 뿐' 학계 진전 보도. Claude's Pick은 Anthropic의 '픽션 속 악한 AI가 Claude 협박 시도 원인' 자가 분석, TCL NXTPAPER E Ink 태블릿 Remarkable·Kindle 능가, San Francisco 주택시장 AI 보상 왜곡 '미쳤다' 본격 가시화.",
+      "highlights": [
+        "Iran 휴전 결렬 Trump '전적으로 받아들일 수 없다' Netanyahu '전쟁 아직 안 끝나' Aramco Q1 +26% East-West 파이프라인 만재 Brent WTI 동반 급등 S&P 500 6주 연속 상승 ECB AI 금융 인프라 검토",
+        "Chinese developers shadow API 우회 Claude Gemini 접속 SCMP Hero ByteDance 2026 capex +25% 국내 AI 칩 헤지 베이징 AI 데이터센터 그린에너지 29조치 강제 화이창베이 외국 바이어 복귀",
+        "Rest of World Hero 3편 정부 AI 환각 5사례 카탈로그화 트럼프 남아공 Deloitte 인도 Wyoming 글로벌 사이버보안 격차 심화 빅테크 Iraq 송유관 데이터 우회 Canvas 해킹 BBC 국제 사이버 공격 격상 TechCrunch 로그인 변조 후속"
+      ],
+      "stats": {
+        "articles": 26,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-09",
       "day": "토",
       "title": "Intel-Apple 칩 협의 Wall Street 'changing of the guard' Intel +20% Wall Street guard 변경 | 메모리 슈퍼사이클 패러볼릭 Micron 주간 +38% DRAM ETF $1B/일 | OpenAI 재판 종합 Musk·Altman 경영 도마 + Murati 폭로 | Canvas 학교 데이터 유출 ShinyHunters 2.75억 레코드 학기말 시험 마비",
