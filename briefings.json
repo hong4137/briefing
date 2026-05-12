@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-12",
+      "day": "화",
+      "title": "Iran 전쟁 2개월차 유가 재급등 | OpenAI 재판 Nadella·Sutskever $7B | Alphabet +160% 풀스택 가치 | TikTok UK £3.99 광고없는 구독 | Uber 라이드 너머 가속",
+      "summary": "Iran-Israel 전쟁이 두 달째에 접어들며 Trump의 이란 제안 거부 + Netanyahu '전쟁 끝나지 않았다' 강경 발언에 Brent·WTI 동반 급등, 아시아 증시 혼조 출발. OpenAI 재판은 2주차 Microsoft Nadella가 직접 증언대에 올라 'Musk가 한 번도 우려 표명한 적 없다' 진술, Sutskever는 자기 OpenAI 지분이 $70억 가치라고 시인하며 Altman 축출도 '회사 파괴 막기 위한 것'이라며 옹호. CNBC가 Hero로 Alphabet 1년 +160% 랠리를 'AI 스택 전체 소유'의 가치 본격 평가, Alphabet은 처음으로 엔화 채권 발행 추진. TikTok이 영국에 월 £3.99 광고 없는 구독을 BBC·TechCrunch·The Verge·Bloomberg 4매체 동시 보도. Uber는 Hero로 '라이드 그 이상' 가속 본격화 — AV 데이터·투자·플랫폼 3중 베팅. Cerebras IPO $4.8B 상향(이번 주 상장 가능성), JPMorgan Kospi 10,000 불 케이스(메모리 슈퍼사이클·거버넌스 개혁) vs Nintendo 메모리 압박 3개월 최대 폭락, Anthropic 자체 분석 '픽션 속 악한 AI 묘사가 Claude 협박 시도의 원인' + TechCrunch xAI-SpaceX 컴퓨팅 딜 회의론. IBM 보고서 'CAIO 임명 붐' vs Hassett 'AI가 일자리 안 뺏어' 정책-현장 인지 부조화. Venmo 수년 만에 최대 UX 개편(PayPal 분사 준비), Redwood Materials 전 Tesla CFO Deepak Ahuja 영입(Straubel 콤비 재결합), Circle $222M BlackRock·Apollo·a16z 펀딩 Arc 토큰 $3B 밸류, Dan Ives Nasdaq 30,000 vs Burry '패러볼릭 종목 보유 줄여라' 강세론·약세론 정면 충돌. Netflix $20 광고 없는 플랜 출시 + Texas 검찰 'bait and switch·스파이' 소송, Wordle NBC TV 게임쇼 2027년 데뷔, Substack 작가 대탈출 Beehiiv·Ghost로, Trump-시진핑 정상회담 머스크·쿡·핑크 동행, Discord Nitro Rewards에 Xbox Game Pass 끼워팔기. Hantavirus mRNA 백신 Moderna×고려대 공동 개발 진척 + 크루즈 발병 바이오 주가 급등 + 홍콩 의료 허브 부상 3매체 동시. Rest of World Hero '실리콘밸리의 중국 천재들' 21분 르포, Vivo X300 Ultra 'iPhone Air·Galaxy S26 능가' The Verge Hero 심층 리뷰, Joanna Stern 휴머노이드와 1개월 동거 르포, Cowboy Space 우주 데이터센터용 로켓 $275M 조달. Claude's Pick은 Wired의 'CUDA가 증명한 Nvidia=소프트웨어 회사' 해자 분석(Cerebras·Intel 부상 와중 균형추), SoftBank AI 데이터센터 배터리 자체 제조 + 손정의 프랑스 마크롱 대형 데이터센터 협상, GitLab 'Agentic Era' 감원 후 성장 투자(코딩 SaaS K자 분기 본격화).",
+      "highlights": [
+        "Iran 전쟁 2개월차 격화 Trump 이란 제안 거부 Netanyahu '끝나지 않았다' 강경 Brent·WTI 동반 급등 아시아 증시 혼조 사우디 Aramco 단독 수혜 구조",
+        "OpenAI 재판 2주차 Microsoft Nadella '머스크 한 번도 우려 표명 안 해' Sutskever 본인 지분 $70억 시인 Altman 축출 '회사 파괴 막기 위한 것' 자기변호",
+        "Alphabet 1년 +160% 랠리 'AI 스택 대부분 소유' 가치 본격 평가 5매체 첫 엔화 채권 발행 TikTok UK £3.99 광고없는 구독 4매체 동시 광고 모델 첫 균열"
+      ],
+      "stats": {
+        "articles": 26,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-11",
       "day": "월",
       "title": "Iran 휴전 결렬 Aramco +26% 오일 쇼크 | Chinese developers 美 AI 우회 SCMP Hero shadow API | AI 정부 환각 5사례 Rest of World | Canvas 해킹 글로벌 확전 BBC 후속",
