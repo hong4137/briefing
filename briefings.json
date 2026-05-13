@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-13",
+      "day": "수",
+      "title": "eBay·GameStop $56B 인수전 결렬 'neither credible' | OpenAI 재판 Altman 증언 'Musk가 OpenAI 자녀에게 넘기려 했다' | 대만 반도체·중국 레버리지 Rest of World·SCMP 양국 Hero | Google Gemini Apple Siri 직전 Android 진격 CNBC Hero | Anthropic 두 갈래 — 비공식 주식거래 경고 + AI 법률 진출",
+      "summary": "Ryan Cohen GameStop이 eBay에 던진 $56B 적대적 인수 제안을 eBay 이사회가 만장일치로 거부 — '신뢰성도 매력도 없다' CNBC·Bloomberg·The Verge·Guardian 4매체 동시 보도 VS 7.3 최고점. OpenAI 재판 2주차 클라이맥스 Sam Altman이 증언대에 올라 'Musk가 OpenAI를 자녀들에게 물려주는 안까지 검토' 폭로, Wired가 'Musk v Altman은 AI 레이스 판도 완전히 뒤바꿀 소송'으로 평가, CNBC·The Verge 라이브 커버. Rest of World와 SCMP가 동시에 Hero에 대만-중국 반도체 레버리지 게임 게재 — Trump-Xi 정상회담 직전 양국 동일 프레임 배치, '대만이 글로벌 경제 굴리지만 협상력은 베이징이 보유' 구조적 모순 + 중국 4월 컴퓨팅 수출 호조 '베이징 정상회담 순풍'. CNBC Hero로 Google이 Apple Siri 개편 발표 직전 Gemini의 Android 중심 통합 가속, The Verge Hero로 Chromebook 후속 'Googlebook' 알루미늄 바디 Android 노트북 출시 + Android 17 9대 신기능 + Gemini 폰 전체 제어. Anthropic 두 갈래 — TechCrunch·Bloomberg 동시 '비공식 2차 시장 주식거래 피하라' 공식 경고 + AI 법률 서비스 시장 직접 진입(리걸테크 스타트업 위협). Google·SpaceX 우주 데이터센터 협의(태양광 24/7·자연 냉각·우주 폐기물 트레이드오프), SoftBank 손정의 프랑스 대형 데이터센터 협상 별도 Bloomberg 단독. Waymo 3,800대 리콜 '고인 물 주행' 결함 CNBC·The Verge·Bloomberg 3매체. Qualcomm -13% 칩 랠리 첫 조정 — 5/9 Micron +38% 메모리 슈퍼사이클과 정반대. Spotify Wrapped 영구 확장 — 가입 이후 전체 음악 이력 시각화 록인 강화. Instructure(Canvas) 해커와 협상 타결 — 5/11 BBC 'Canvas 해킹 글로벌 확전' 결말 후속 보도. Texas-Netflix 아동 감시 소송, Motorola India 명예훼손 소송 글로벌 플랫폼 검열 가속, Amazon 30분 배송 미 전역. SCMP Featured 4건 — Kuaishou Kling AI $20B 스핀오프, Unitree $574K 변신 로봇 'real-life Transformers', Hengrui-BMS $15.2B 중국발 라이선스아웃 신기록, Tencent-Ximalaya $2.4B 조건부 승인 빅테크 M&A 빗장 풀림, JD.com Q1 -53% 가격 출혈 경쟁. Claude's Pick은 Rest of World '실리콘밸리의 중국 천재들' 21분 르포(미·중 인재 이동), '정부 AI 환각 5대 망신 사례' 공공부문 AI 거버넌스 빈틈(Anthropic 법률 진출과 자연 연결), Guardian Hero '러시아 화물선 Ursa Major 북한향 핵 반응로 운반 정황' 동북아 지정학 재고.",
+      "highlights": [
+        "eBay 이사회 GameStop $56B 적대적 인수 만장일치 거부 'neither credible nor attractive' CNBC Bloomberg The Verge Guardian 4매체 VS 7.3 Cohen 다음 카드 관전",
+        "OpenAI 재판 2주차 Altman 증언 'Musk가 OpenAI 자녀에게 넘기려' 폭로 TechCrunch Hero CNBC·The Verge 라이브 Wired 'AI 레이스 판도 완전히 바꿀 소송'",
+        "Rest of World·SCMP 양국 Hero 동시 대만 반도체·중국 레버리지 Trump-Xi 정상회담 직전 'TSMC 굴리지만 협상력 베이징' + 중국 4월 컴퓨팅 수출 호조"
+      ],
+      "stats": {
+        "articles": 21,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-12",
       "day": "화",
       "title": "Iran 전쟁 2개월차 유가 재급등 | OpenAI 재판 Nadella·Sutskever $7B | Alphabet +160% 풀스택 가치 | TikTok UK £3.99 광고없는 구독 | Uber 라이드 너머 가속",
