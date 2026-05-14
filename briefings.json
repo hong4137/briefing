@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-14",
+      "day": "목",
+      "title": "Microsoft 'OpenAI 의존 두려워' Nadella 증언 폭로 CNBC Hero | OpenAI 재판 Altman 증언 'Musk가 OpenAI 자녀에게 넘기려' 'hair-raising' | Trump 베이징 도착 Xi 정상회담 + Huang 동행 24시간 만에 결정 뒤집힘 | China 4월 컴퓨팅 수출 호조 SCMP 'Beijing 정상회담 순풍' | Google Android Show 2026 Googlebook 정식 출시 + Android 17 9대 신기능 + Gemini OS 통합 | Amazon Alexa Shopping 검색바 직접 통합 Rufus 폐기 | Alibaba AI 매출 첫 공개 capex boost core profit -84%",
+      "summary": "OpenAI 재판 2주차 정점 — Microsoft 내부 'OpenAI 의존도 두려워'가 CNBC Hero로 폭로되며 $13B 최대 후원사가 동시에 가장 큰 카운터파티 리스크라는 자기모순 구조가 법정에서 공식화. Sam Altman은 'Musk가 OpenAI를 자녀에게 넘기는 hair-raising 안 검토' '비영리 OpenAI를 left for dead로 방치' 폭로, Bloomberg·The Verge·BBC·Wired·TechCrunch·Guardian 7매체 동시 라이브 커버. Trump가 베이징 도착 Xi 정상회담 시작, 5/12 'Huang 동행 배제' 보도가 24시간 만에 'Trump 직접 전화 요청 후 Huang 합류'로 뒤집힘 — 정상회담 의제에서 AI 칩 수출 통제가 핵심 카드로 격상. SCMP 단독 '중국 4월 컴퓨팅 수출 호조가 Beijing 정상회담 순풍'으로 5/13 'Taiwan-China 반도체 레버리지' 명제가 무역 데이터로 첫 입증. Google Android Show 2026 본방 — Googlebook 정식 출시(Dell·HP 협업, MacBook Neo 대응) + Android 17 9대 신기능 + Gemini OS 중심 통합 + Spyware 탐지 동시 공개 7매체 Featured. Amazon Rufus 챗봇 폐기 + Alexa Shopping Agent 검색바 직접 통합 — Google의 Gemini OS 통합과 같은 날 발표돼 '에이전트가 앱·디바이스 플랫폼 흡수' 패턴 명확화. Alibaba Q1 core profit -84%인데 CEO가 AI 매출 첫 공개(11분기 연속 triple-digit 성장) + capex boost 동시 선언, US 시간외 +6%. Anthropic 중소기업 직판 전환(하이퍼스케일러 의존 다변화) + Cerebras IPO 상단 초과 발행(AI 쓰나미) + Anduril $5B $61B 더블링(방산 AI) + Fervo Energy IPO +33%(지열 데이터센터) + SoftBank Vision Fund $46B(OpenAI 베팅) + Cisco +17% AI 주문 + 4000명 감원(K자 K자 차별화 본격) 동시. 4월 인플레이션 점프 + 유가 추가 상승으로 Fed 인하 명분 추가 소실, Tencent Q1 매출 미스 vs AI 동력 베팅. Foxconn 랜섬웨어(Apple·Google·Nvidia 핵심 제조사) + Palo Alto 'AI 사이버공격 new norm' 경고 동시. WhatsApp Meta AI incognito + Spotify Wrapped 전체 이력 + Bloomberg 'AI 채권 binge가 월가 압도 → Alphabet 해외 차입' + ByteDance OpenClaw 수익화 + Utah 맨해튼 2배 데이터센터 백래시. Claude's Pick — Medicare 신규 결제 모델이 AI 위해 설계됐다(헬스케어 AI 시장 매출 가능성 확보), Alibaba core profit -84% + AI 매출 첫 공개(빅테크 K자 분기 모순 입체화), Huang의 China trip 합류 24시간 의사결정 역전(美·中 협상 자산화).",
+      "highlights": [
+        "Microsoft 'OpenAI 의존 두려워' Nadella 증언 폭로 CNBC Hero 5/9 Azure 우려·5/12 Nadella 진술 후속 빅테크-AI 의존 모순 법정 공식화 Anthropic 정반대 중소기업 직판",
+        "Trump 베이징 도착 Huang 동행 24시간 만에 결정 뒤집힘 CNBC 단독 Trump 직접 전화 요청 SCMP '중국 4월 컴퓨팅 수출 호조 Beijing 순풍' Taiwan-China 레버리지 무역 데이터 입증",
+        "Google Android Show 2026 Googlebook 정식 출시 + Android 17 9대 신기능 + Gemini OS 통합 + Spyware 탐지 7매체 Featured Amazon Alexa Shopping 검색바 통합 Rufus 폐기 에이전트가 앱·플랫폼 흡수 패턴"
+      ],
+      "stats": {
+        "articles": 21,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-13",
       "day": "수",
       "title": "eBay·GameStop $56B 인수전 결렬 'neither credible' | OpenAI 재판 Altman 증언 'Musk가 OpenAI 자녀에게 넘기려 했다' | 대만 반도체·중국 레버리지 Rest of World·SCMP 양국 Hero | Google Gemini Apple Siri 직전 Android 진격 CNBC Hero | Anthropic 두 갈래 — 비공식 주식거래 경고 + AI 법률 진출",
