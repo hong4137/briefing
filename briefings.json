@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-15",
+      "day": "금",
+      "title": "Trump-Xi 베이징 정상회담 'open wider' + Nvidia H200 中 수출 허용 | Cerebras IPO $5.55B 81% 폭등 2026 최대 IPO Arm·SoftBank 인수 시도 폭로 | OpenAI-Apple 동맹 균열 OpenAI 법적 조치 준비 | Cisco AI 'Networking Supercycle' 17%↑ + 4000명 감원 | 메모리 슈퍼사이클 中 확산 CXMT DRAM 양산 본격화 | Ex-Meta 中 스타 Self-improving AI $4.6B Nvidia·AMD 동반 베팅 | Anthropic $900B + 중소기업 직판 + MS Claude Code 라이선스 취소",
+      "summary": "Trump-Xi 정상회담이 베이징에서 본격 개시 — Xi가 Musk·Cook 등 동행 CEO 8명에게 '中 시장 더 열겠다(open wider)' 직접 발언 CNBC Featured, Bessent는 '美가 AI 안전 협의 가능한 건 美가 선두라서'라며 H200 中 수출 허용 보도와 맞물려 협상 카드 격상. Huang은 'Trump가 직접 전화로 와달라고 했다' 직접 확인. Cerebras가 Nasdaq 데뷔 81%(장중 108%) 폭등 $5.55B 조달로 2026 최대 IPO 등극, Bloomberg 단독 'Arm·SoftBank가 IPO 11시간 직전까지 인수 시도'까지 — Year's Biggest IPO 타이틀 확정 + Wall Street 'AI tsunami' 평가. OpenAI가 Apple 상대 법적 조치 준비 TechCrunch Hero, Bloomberg 'Apple-OpenAI Alliance Frays' 동시 — 4/30 라인의 Apple Siri $250M 합의 후에도 협업 파탄 → 법정으로 이행, OpenAI는 Codex 모바일 + Amazon AWS 동시 진입으로 다변화 가속. Cisco 어닝 +17% 4,000명 감원, CEO 'Networking Supercycle 진입' 선언 — Broadcom 동반 강세 + Datadog·Snowflake 라인의 'AI 어닝 위너' 그룹 확대. 中에서 CXMT DRAM 양산 본격화 SCMP Featured + 상위 파운드리 2분기 가이던스 상향 + Hon Hai(Nvidia 파트너) 이익 점프 + Fanuc Google Physical AI 사상 최고가까지 메모리·파운드리·로보틱스 3축 동시 강세. Alibaba HK +7% AI 가속 vs Tencent 신중 베팅 — 中 빅테크 K자 분기 명확. Ex-Meta 中 스타 연구자 $4.6B self-improving AI 스타트업 SCMP Hero — GV·Greycroft 리드, Nvidia·AMD 동반 베팅 (칩 양강 동시 참여 매우 이례). Anthropic $900B 라운드 임박 Bloomberg + 중소기업 직판 전환(TechCrunch) + 법률 SaaS Clio $500M 직접 위협 + xAI 첫 코딩 에이전트로 도전, 반면 Microsoft는 자사 직원 Claude Code 라이선스 취소. OpenAI 재판 2주차 'MS OpenAI 의존 두려워' + MS 누적 $100B 지출 Bloomberg 단독 + xAI Mississippi 가스 터빈 50대 무허가 운영 TechCrunch — AI 빅3 자기모순 정점. Kevin Warsh Fed 의장 인준 + 채권시장 'Fed 인플레 뒤처져' + 트레이더 40% Stagflation 베팅. SpaceX IPO 다음주 본격 + Fervo 지열 +33% + Blackstone REIT $1.75B — AI 인프라 IPO 행렬. Foxconn 랜섬웨어 침해 — Apple·Google·Nvidia 핵심 OEM 보안 위기. Wired Hero 'AI 에이전트 마르크스주의 성향' Anthropic 연구 + Meta 사상 최고 이익 vs 사상 최저 사기 + 키스트로크 감시 사내 항거. Rest of World Hero '대만 반도체 vs 中 레버리지' + '온라인 아동 안전 정말 가능한가' + Linux 연령 인증 반대. Waymo 수천 대 리콜(개울 추락) BBC. Google Android Show 후속 — Googlebook 왜 존재하나 + Android Auto 통합 + AI 예측. Claude's Pick — Bloomberg 'AI 안전 협의 시한 — Game Over 전에' 美中 거버넌스 정당화, Rest of World '실리콘밸리 中 천재들' 21분 르포 인재이동 메커니즘, BBC Future 'AI 기업 자기모순 — 인류 멸망 가능 주장하며 판매' 빅테크 paradox.",
+      "highlights": [
+        "Trump-Xi 베이징 정상회담 본격 개시 Xi 'open wider' Musk·Cook 등 동행 CEO 직접 발언 CNBC Featured Bessent 'AI 안전 협의 가능 美 선두라서' H200 中 수출 허용 보도 Huang 'Trump 직접 전화'",
+        "Cerebras Nasdaq 데뷔 81% 폭등 시총 $100B $5.55B 2026 최대 IPO Arm·SoftBank IPO 11시간 직전 인수 시도 Bloomberg 단독 Wall Street AI tsunami",
+        "OpenAI Apple 법적 조치 준비 TechCrunch Hero Apple-OpenAI Alliance Frays Bloomberg Cisco 'Networking Supercycle' 17%↑ 4000명 감원 CXMT DRAM 양산 본격화 SCMP"
+      ],
+      "stats": {
+        "articles": 21,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-14",
       "day": "목",
       "title": "Microsoft 'OpenAI 의존 두려워' Nadella 증언 폭로 CNBC Hero | OpenAI 재판 Altman 증언 'Musk가 OpenAI 자녀에게 넘기려' 'hair-raising' | Trump 베이징 도착 Xi 정상회담 + Huang 동행 24시간 만에 결정 뒤집힘 | China 4월 컴퓨팅 수출 호조 SCMP 'Beijing 정상회담 순풍' | Google Android Show 2026 Googlebook 정식 출시 + Android 17 9대 신기능 + Gemini OS 통합 | Amazon Alexa Shopping 검색바 직접 통합 Rufus 폐기 | Alibaba AI 매출 첫 공개 capex boost core profit -84%",
