@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trump-Xi 정상회담 AI guardrails 합의·OpenAI 재판 평결 임박·30Y 국채 5.1% 1년 최고 | 주간 외신 브리핑</title>
+<meta name="description" content="2026년 5월 3주차 주간 외신 브리핑. Trump-Xi 베이징 정상회담, OpenAI vs Musk 재판 마무리, 메모리 슈퍼사이클 가속, Cerebras IPO, 인플레·Fed 위기 신호.">
+<meta property="og:title" content="Trump-Xi AI guardrails·OpenAI 평결 임박·30Y 5.1% | 주간 브리핑 5/11~5/16">
+<meta property="og:description" content="이번 주 빅스토리: 美中 AI 협상, OpenAI 재판 종결, 메모리 슈퍼사이클, Fed 인상 베팅 첫 등장, Cerebras IPO 폭등→조정.">
+<meta property="og:type" content="article">
+<style>
+:root {
+  --bg: #0a0e1a;
+  --bg-card: #131826;
+  --bg-elevated: #1a2033;
+  --border: #252b3d;
+  --text: #e8eaed;
+  --text-dim: #9aa0a6;
+  --text-muted: #6b7280;
+  --accent: #4f8eff;
+  --accent-soft: rgba(79, 142, 255, 0.12);
+  --red: #ff5f5f;
+  --green: #4ade80;
+  --yellow: #facc15;
+  --orange: #fb923c;
+  --purple: #c084fc;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 32px 20px; }
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 0 32px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+.brand { font-size: 13px; color: var(--accent); letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
+h1 { font-size: 32px; font-weight: 800; margin: 12px 0 12px; letter-spacing: -0.5px; line-height: 1.3; }
+.period { color: var(--text-dim); font-size: 14px; }
+.period strong { color: var(--text); }
+
+/* Section */
+section { margin-bottom: 40px; }
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.section-icon { font-size: 22px; }
+.section-title { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; }
+
+/* Weekly Summary Box */
+.summary-box {
+  background: linear-gradient(135deg, rgba(79, 142, 255, 0.08), rgba(192, 132, 252, 0.05));
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.summary-box h2 { font-size: 18px; margin-bottom: 12px; color: var(--accent); }
+.summary-box p { color: var(--text); font-size: 15px; line-height: 1.8; }
+.summary-box strong { color: #fff; }
+
+/* Story Cluster */
+.story {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: border-color 0.2s;
+}
+.story:hover { border-color: var(--accent); }
+.story-header { margin-bottom: 14px; }
+.story-rank {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.story-title {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.story-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--bg-elevated);
+  color: var(--text-dim);
+  font-weight: 500;
+}
+.badge-count { color: var(--accent); }
+.badge-duration { color: var(--text-dim); }
+.badge-momentum-up { background: rgba(74, 222, 128, 0.12); color: var(--green); }
+.badge-momentum-flat { background: rgba(250, 204, 21, 0.12); color: var(--yellow); }
+.badge-momentum-down { background: rgba(255, 95, 95, 0.12); color: var(--red); }
+.badge-status-resolved { background: rgba(74, 222, 128, 0.12); color: var(--green); }
+.badge-status-ongoing { background: rgba(251, 146, 60, 0.15); color: var(--orange); }
+.badge-status-monitoring { background: rgba(192, 132, 252, 0.12); color: var(--purple); }
+.badge-persist-hot { background: rgba(255, 95, 95, 0.12); color: var(--red); }
+.badge-persist-interest { background: rgba(79, 142, 255, 0.12); color: var(--accent); }
+.badge-persist-new { background: rgba(192, 132, 252, 0.12); color: var(--purple); }
+
+/* Timeline */
+.timeline {
+  background: var(--bg-elevated);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+  border-left: 3px solid var(--accent);
+}
+.timeline-title {
+  font-size: 13px;
+  color: var(--text-dim);
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.timeline-list { list-style: none; }
+.timeline-list li {
+  font-size: 14px;
+  color: var(--text);
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--border);
+  display: flex;
+  gap: 12px;
+}
+.timeline-list li:last-child { border-bottom: none; }
+.timeline-date {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--accent);
+  min-width: 44px;
+}
+
+/* Current Status */
+.current-status {
+  background: rgba(251, 146, 60, 0.08);
+  border-left: 3px solid var(--orange);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-top: 12px;
+}
+.current-status-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--orange);
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+.current-status p { font-size: 14px; line-height: 1.7; color: var(--text); }
+
+/* Market Section */
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.market-note {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 14px;
+}
+.market-note-title { font-size: 12px; color: var(--text-dim); margin-bottom: 4px; }
+.market-note-value { font-size: 16px; font-weight: 700; color: #fff; }
+
+/* Pick Section */
+.pick-card {
+  background: linear-gradient(135deg, rgba(192, 132, 252, 0.08), rgba(79, 142, 255, 0.04));
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--purple);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+}
+.pick-title { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.pick-text { font-size: 14px; color: var(--text-dim); line-height: 1.7; }
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+.stat-value {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+.stat-label { font-size: 13px; color: var(--text-dim); }
+
+/* Events */
+.event-list { display: flex; flex-direction: column; gap: 10px; }
+.event-item {
+  display: flex;
+  gap: 14px;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.event-date {
+  font-weight: 700;
+  color: var(--accent);
+  min-width: 70px;
+  flex-shrink: 0;
+}
+.event-text { color: var(--text); font-size: 14px; }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 32px 0 20px;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+footer a { color: var(--accent); text-decoration: none; }
+
+@media (max-width: 640px) {
+  .container { padding: 20px 14px; }
+  h1 { font-size: 24px; }
+  .story { padding: 18px; }
+  .story-title { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="brand">JAE'S WEEKLY BRIEFING</div>
+  <h1>美中 AI guardrails 합의·OpenAI 평결 임박·Fed 인상 베팅 첫 등장</h1>
+  <div class="period">2026년 5월 3주차 · <strong>2026-05-11(월) ~ 2026-05-16(토)</strong></div>
+</header>
+
+<!-- Weekly Executive Summary -->
+<div class="summary-box">
+  <h2>🎯 이번 주 한 줄</h2>
+  <p>
+    <strong>Trump-Xi 베이징 정상회담</strong>이 'AI 가드레일 합의'와 'Taiwan don't talk'로 마무리되며 美中 AI 거버넌스가 협상 테이블로 격상된 한 주.
+    동시에 <strong>OpenAI vs Musk 재판</strong>이 6일간 폭로전 끝에 closing arguments 종료·평결 임박으로 종착, <strong>Cerebras IPO 81% 폭등→Day2 -10% 조정</strong>으로 AI 인프라 광풍의 첫 균열이 노출됐다.
+    가장 묵직한 신호는 채권시장 — <strong>30Y Treasury 5.1% 1년 최고, Fed 12월 '인상' 베팅 첫 등장</strong>으로 'AI 슈퍼사이클' 서사와 '스태그플레이션' 서사가 정면 충돌하는 분기점.
+  </p>
+</div>
+
+<!-- TOP Stories -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">📈</span>
+    <h2 class="section-title">이번 주 TOP 스토리</h2>
+  </div>
+
+  <!-- Story 1: Trump-Xi Summit -->
+  <article class="story">
+    <div class="story-header">
+      <span class="story-rank">#1 TOP STORY</span>
+      <h3 class="story-title">Trump-Xi 베이징 정상회담 — AI 가드레일 합의, Taiwan 'don't talk', H200 미해결</h3>
+      <div class="story-meta">
+        <span class="badge badge-count">📰 5건+</span>
+        <span class="badge badge-duration">📅 5일간 (5/12~5/16)</span>
+        <span class="badge badge-persist-hot">🔥 지속</span>
+        <span class="badge badge-momentum-up">🔥 상승세</span>
+        <span class="badge badge-status-resolved">✅ 1차 종결</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul class="timeline-list">
+        <li><span class="timeline-date">5/12</span><span>머스크·쿡·핑크 등 빅테크 CEO 동행 확정, 정상회담 의제 윤곽</span></li>
+        <li><span class="timeline-date">5/14</span><span>Trump 베이징 도착. '5/12 Huang 동행 배제'가 24시간 만에 'Trump 직접 전화 → Huang 합류'로 역전. SCMP '中 4월 컴퓨팅 수출 호조 = 정상회담 순풍'</span></li>
+        <li><span class="timeline-date">5/15</span><span>본 회담 개시. Xi가 동행 CEO 8명에게 'open wider' 직접 발언. Bessent 'AI 안전 협의는 美가 선두라서 가능'. <strong>H200 中 수출 허용 보도</strong></span></li>
+        <li><span class="timeline-date">5/16</span><span>회담 폐막. <strong>Trump가 Xi 9월 美 회담 초청</strong>(회담 정례화), AI guardrails 합의 시사. H200·rare earths 미해결. Taiwan 방어 질문에 <strong>"I don't talk about"</strong>로 전략적 모호성 의도적 유지. Air Force One 탑승객 中 선물·핀·버너폰 전량 폐기 명령 — 첩보 우려 노출</span></li>
+      </ul>
+    </div>
+    <div class="current-status">
+      <div class="current-status-title">📍 현재 상태 (5/17 기준)</div>
+      <p>SCMP Hero / CNBC Top / Bloomberg / Guardian Hero(Thucydides Trap)에서 다매체 동시 보도. <strong>AI 칩 수출 통제가 무역 협상의 핵심 카드로 격상</strong>됐고, 9월 워싱턴 회담 일정이 다음 분기 시장 변수로 떠올랐다. H200 실제 수출 승인 여부와 rare earths 별도 협의가 후속 관전 포인트.</p>
+    </div>
+  </article>
+
+  <!-- Story 2: OpenAI Trial -->
+  <article class="story">
+    <div class="story-header">
+      <span class="story-rank">#2</span>
+      <h3 class="story-title">OpenAI vs Musk 재판 — 6일간 폭로전, closing arguments 종료, 9인 배심원 평결 임박</h3>
+      <div class="story-meta">
+        <span class="badge badge-count">📰 6건+</span>
+        <span class="badge badge-duration">📅 6일간 (5/11~5/16)</span>
+        <span class="badge badge-persist-hot">🔥 지속</span>
+        <span class="badge badge-momentum-flat">→ 유지</span>
+        <span class="badge badge-status-ongoing">⏳ 진행중 (평결 대기)</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul class="timeline-list">
+        <li><span class="timeline-date">5/11</span><span>Anthropic '픽션 속 악한 AI가 Claude 협박 시도의 원인' 자가 분석 발표</span></li>
+        <li><span class="timeline-date">5/12</span><span>Microsoft Nadella 직접 증언 '머스크가 한 번도 우려 표명한 적 없다'. Sutskever 본인 OpenAI 지분이 <strong>$70억</strong>이라 시인. Altman 축출도 '회사 파괴 막기 위한 것' 자기변호</span></li>
+        <li><span class="timeline-date">5/13</span><span>Altman 증언대 — <strong>'Musk가 OpenAI를 자녀에게 물려주는 hair-raising 안까지 검토'</strong>, '비영리 OpenAI를 left for dead로 방치' 폭로. Wired 'AI 레이스 판도 완전히 바꿀 소송'</span></li>
+        <li><span class="timeline-date">5/14</span><span>CNBC Hero — <strong>MS 내부 'OpenAI 의존도 두려워' 폭로</strong>. $13B 최대 후원사가 동시에 가장 큰 카운터파티 리스크라는 자기모순 법정 공식화</span></li>
+        <li><span class="timeline-date">5/15</span><span>'MS OpenAI 의존 두려워' 후속. MS 누적 $100B 지출 Bloomberg 단독. <strong>Apple-OpenAI 동맹 균열 → 법적 조치 준비</strong>(4/30 $250M 합의 후에도 협업 파탄). xAI Mississippi 가스 터빈 50대 무허가 운영</span></li>
+        <li><span class="timeline-date">5/16</span><span><strong>Closing arguments 종료, 9인 배심원 평결 임박</strong>. Verge 'dirty laundry만 늘어놓은 재판' Hero 분석. BBC 'Five things we learned' 종합 정리</span></li>
+      </ul>
+    </div>
+    <div class="current-status">
+      <div class="current-status-title">📍 현재 상태 (5/17 기준)</div>
+      <p>2주차 closing arguments 종료, 9인 배심원 평결만 남았다. 재판이 <strong>OpenAI PBC 전환·IPO 시나리오</strong>에 직접적 영향을 줄 변수. 동시에 MS의 OpenAI 의존도 모순, Apple-OpenAI 동맹 균열까지 빅테크 AI 동맹 구조 전반이 흔들리는 후폭풍이 진행 중. Anthropic은 정반대 방향(중소기업 직판)으로 다변화 가속.</p>
+    </div>
+  </article>
+
+  <!-- Story 3: Memory Supercycle -->
+  <article class="story">
+    <div class="story-header">
+      <span class="story-rank">#3</span>
+      <h3 class="story-title">메모리 슈퍼사이클 가속 — DRAM ETF $10B 최단, CXMT 양산, Kioxia 美 상장</h3>
+      <div class="story-meta">
+        <span class="badge badge-count">📰 6건+</span>
+        <span class="badge badge-duration">📅 6일간 (5/11~5/16)</span>
+        <span class="badge badge-persist-hot">🔥 지속</span>
+        <span class="badge badge-momentum-up">🔥 상승세</span>
+        <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul class="timeline-list">
+        <li><span class="timeline-date">5/11</span><span>화이창베이 외국 바이어 복귀. ByteDance 2026 capex +25% 상향(국내 AI 칩 비중 확대)</span></li>
+        <li><span class="timeline-date">5/12</span><span>JPMorgan <strong>Kospi 10,000 불 케이스</strong>(메모리 슈퍼사이클+거버넌스 개혁). Nintendo 메모리 압박으로 3개월 최대 폭락</span></li>
+        <li><span class="timeline-date">5/13</span><span>Qualcomm -13% — 칩 랠리 첫 조정. 5/9 Micron +38%와 정반대 흐름</span></li>
+        <li><span class="timeline-date">5/15</span><span>中 <strong>CXMT DRAM 양산 본격화</strong>(SCMP Featured) + 상위 파운드리 Q2 가이던스 상향 + Hon Hai 이익 점프 + Fanuc Google Physical AI 사상 최고가</span></li>
+        <li><span class="timeline-date">5/16</span><span><strong>DRAM ETF $10B 최단 도달</strong>(메모리 슈퍼사이클 자금 흡수). <strong>Kioxia 美 상장 추진</strong>(올해 글로벌 최고 수익). Ackman MSFT 1Q 진입. Berkshire Delta $2.6B 항공 4년 만 복귀</span></li>
+      </ul>
+    </div>
+    <div class="current-status">
+      <div class="current-status-title">📍 현재 상태 (5/17 기준)</div>
+      <p>메모리 3축(DRAM ETF 자금 흡수 + Kioxia 美 IPO + CXMT 양산) 동시 가속. <strong>한국 반도체</strong> 입장에서 JPMorgan Kospi 10K 케이스가 글로벌 IB 컨센서스로 굳어지는 분기점이지만, 동시에 CXMT 본격 양산은 중장기 캐파 경쟁자 등장 신호. Qualcomm·Nintendo의 일부 조정은 '슈퍼사이클 내 종목 차별화' 시작을 시사.</p>
+    </div>
+  </article>
+
+  <!-- Story 4: Fed/Bonds Crisis -->
+  <article class="story">
+    <div class="story-header">
+      <span class="story-rank">#4</span>
+      <h3 class="story-title">채권시장 위기 신호 — 30Y 5.1%, Fed 12월 '인상' 베팅 첫 등장, 트레이더 40% 스태그플레이션</h3>
+      <div class="story-meta">
+        <span class="badge badge-count">📰 5건+</span>
+        <span class="badge badge-duration">📅 5일간 (5/12~5/16)</span>
+        <span class="badge badge-persist-hot">🔥 지속</span>
+        <span class="badge badge-momentum-up">🔥 상승세</span>
+        <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul class="timeline-list">
+        <li><span class="timeline-date">5/12</span><span>Burry '패러볼릭 종목 보유 줄여라' / Dan Ives 'Nasdaq 30K' 강세론·약세론 정면 충돌</span></li>
+        <li><span class="timeline-date">5/14</span><span>4월 인플레이션 점프 + 유가 추가 상승으로 <strong>Fed 인하 명분 추가 소실</strong></span></li>
+        <li><span class="timeline-date">5/15</span><span><strong>Kevin Warsh Fed 의장 인준</strong>. 채권시장 'Fed 인플레 뒤처져' 평가. <strong>트레이더 40% 스태그플레이션 베팅</strong></span></li>
+        <li><span class="timeline-date">5/16</span><span><strong>30Y Treasury 5.1% 1년 최고</strong>. 인플레 Q2 6% 예측. <strong>Fed Funds Futures '다음 무브는 인상' 12월 베팅 첫 등장</strong>. 글로벌 본드 매도 가속</span></li>
+      </ul>
+    </div>
+    <div class="current-status">
+      <div class="current-status-title">📍 현재 상태 (5/17 기준)</div>
+      <p>이번 주 가장 묵직한 신호. Warsh 의장 인준 후 첫 주에 'Fed 인하' 시나리오가 사실상 사라지고 <strong>'12월 인상'이 처음으로 가격에 반영</strong>되기 시작. AI 슈퍼사이클 랠리(Nasdaq 30K 시나리오)와 정면 충돌하는 매크로 구조 — 다음 주 주요 경제지표·연준 인사 발언이 분기 결정 변수.</p>
+    </div>
+  </article>
+
+  <!-- Story 5: Anthropic Expansion -->
+  <article class="story">
+    <div class="story-header">
+      <span class="story-rank">#5</span>
+      <h3 class="story-title">Anthropic 전방위 확장 — $900B 임박, 중소기업 직판, 법률 SaaS 위협, MS와 균열</h3>
+      <div class="story-meta">
+        <span class="badge badge-count">📰 5건+</span>
+        <span class="badge badge-duration">📅 6일간 (5/11~5/16)</span>
+        <span class="badge badge-persist-hot">🔥 지속</span>
+        <span class="badge badge-momentum-up">🔥 상승세</span>
+        <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul class="timeline-list">
+        <li><span class="timeline-date">5/11</span><span>'픽션 속 악한 AI가 Claude 협박 시도 원인' 자가 분석 발표</span></li>
+        <li><span class="timeline-date">5/13</span><span>비공식 2차 시장 주식거래 공식 경고(TechCrunch·Bloomberg) + <strong>AI 법률 서비스 시장 직접 진입</strong></span></li>
+        <li><span class="timeline-date">5/14</span><span><strong>중소기업 직판 전환</strong>(하이퍼스케일러 의존 다변화)</span></li>
+        <li><span class="timeline-date">5/15</span><span><strong>$900B 라운드 임박</strong>(Bloomberg). 법률 SaaS Clio $500M 직접 위협. xAI 첫 코딩 에이전트로 도전. <strong>Microsoft가 자사 직원 Claude Code 라이선스 취소</strong></span></li>
+        <li><span class="timeline-date">5/16</span><span>SCMP가 Anthropic의 '美 AI 우위 호소'를 <strong>'irresponsible'로 평가</strong>(中 매체 반발)</span></li>
+      </ul>
+    </div>
+    <div class="current-status">
+      <div class="current-status-title">📍 현재 상태 (5/17 기준)</div>
+      <p>밸류에이션($900B)·매출 채널(중소기업 직판)·수직 진출(법률·금융)·B2C 직판 모델까지 OpenAI와 정반대 전략으로 동시 가속. 동시에 <strong>MS와의 균열</strong>이 가시화되는 첫 신호(Claude Code 라이선스 취소) — Anthropic이 빅테크 중립지대 포지셔닝을 잃기 시작했다는 해석 가능.</p>
+    </div>
+  </article>
+
+  <!-- Story 6: OpenAI Reorganization -->
+  <article class="story">
+    <div class="story-header">
+      <span class="story-rank">#6</span>
+      <h3 class="story-title">OpenAI 대대적 재편 — Brockman product 총괄 승격, ChatGPT 개인금융, 'AI 에이전트 올인'</h3>
+      <div class="story-meta">
+        <span class="badge badge-count">📰 3건+</span>
+        <span class="badge badge-duration">📅 3일간 (5/14~5/16)</span>
+        <span class="badge badge-persist-interest">📈 관심</span>
+        <span class="badge badge-momentum-up">🔥 상승세</span>
+        <span class="badge badge-status-resolved">✅ 발표 완료</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul class="timeline-list">
+        <li><span class="timeline-date">5/14</span><span>Codex 모바일 + Amazon AWS 동시 진입 — 다변화 가속</span></li>
+        <li><span class="timeline-date">5/15</span><span>Apple 상대 법적 조치 준비(TechCrunch Hero)</span></li>
+        <li><span class="timeline-date">5/16</span><span><strong>Brockman을 product 총괄로 공식 승격</strong> 메모 발송. <strong>Plaid 연동 ChatGPT 개인금융 출시</strong>(Schwab·Fidelity 등 <strong>12,000개 금융기관 직접 연결</strong>). ChatGPT·Codex 단일 제품 통합. <strong>'2026 전략은 AI 에이전트 올인' 명시</strong>. CFO Sarah Friar '사상최대 펀딩 후에도 추가 자본 가능'</span></li>
+      </ul>
+    </div>
+    <div class="current-status">
+      <div class="current-status-title">📍 현재 상태 (5/17 기준)</div>
+      <p>재판 종결 직전 단행된 대대적 제품·조직 재편. <strong>개인금융(Plaid 12,000개 기관 연결)</strong>은 OpenAI가 처음으로 핀테크 인프라에 직접 침투하는 신호로, <strong>Robinhood·Intuit·뱅킹 앱 전반의 카운터파티 리스크</strong>가 새로 부상. '에이전트 올인'은 Codex 통합과 함께 코딩 SaaS·검색·이커머스에 동시 위협.</p>
+    </div>
+  </article>
+
+  <!-- Story 7: AI Job Losses -->
+  <article class="story">
+    <div class="story-header">
+      <span class="story-rank">#7</span>
+      <h3 class="story-title">AI 일자리 영향 첫 데이터 — Detroit 빅3 2만명+, Cisco 4천명, Starbucks 300명</h3>
+      <div class="story-meta">
+        <span class="badge badge-count">📰 3건+</span>
+        <span class="badge badge-duration">📅 2일간 (5/15~5/16)</span>
+        <span class="badge badge-persist-new">🆕 신규</span>
+        <span class="badge badge-momentum-up">🔥 상승세</span>
+        <span class="badge badge-status-monitoring">📋 모니터링</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul class="timeline-list">
+        <li><span class="timeline-date">5/15</span><span>Cisco +17% 어닝, 동시에 <strong>4,000명 감원</strong>. CEO 'Networking Supercycle 진입' 선언</span></li>
+        <li><span class="timeline-date">5/16</span><span><strong>Detroit GM·Ford·Stellantis 사무직 2만명+ 감원</strong>(CNBC Top). <strong>Bloomberg 'AI exposed roles 본격 일자리 손실 첫 데이터'</strong>. Guardian Hero 'tech AI manager purge'. Starbucks 300명 추가 감원</span></li>
+      </ul>
+    </div>
+    <div class="current-status">
+      <div class="current-status-title">📍 현재 상태 (5/17 기준)</div>
+      <p>"AI가 일자리 안 뺏어"(Hassett, 5/12)가 일주일 만에 정면 반박된 구조. Bloomberg가 <strong>처음으로 'AI 노출 직군 실제 손실 데이터'를 정량 보도</strong> — 사무직·미들매니지먼트 'purge' 본격화 신호. 매크로 위협(소비·신용)으로 전이될지가 다음 분기 관전 포인트.</p>
+    </div>
+  </article>
+
+  <!-- Story 8: Cerebras IPO -->
+  <article class="story">
+    <div class="story-header">
+      <span class="story-rank">#8</span>
+      <h3 class="story-title">Cerebras 2026 최대 IPO — 81% 폭등 → Day2 -10% 조정, Arm·SoftBank 인수 시도 폭로</h3>
+      <div class="story-meta">
+        <span class="badge badge-count">📰 2건</span>
+        <span class="badge badge-duration">📅 2일간 (5/15~5/16)</span>
+        <span class="badge badge-persist-new">🆕 신규</span>
+        <span class="badge badge-momentum-down">📉 조정</span>
+        <span class="badge badge-status-resolved">✅ 상장 완료</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul class="timeline-list">
+        <li><span class="timeline-date">5/15</span><span>Nasdaq 데뷔 <strong>81%(장중 108%) 폭등, $5.55B 조달로 2026 최대 IPO</strong>. Bloomberg 단독 — <strong>'Arm·SoftBank가 IPO 11시간 직전까지 인수 시도'</strong>. Wall Street 'AI tsunami' 평가</span></li>
+        <li><span class="timeline-date">5/16</span><span>Day2 <strong>-10% pull back</strong>. CEO Andrew Feldman <strong>$3.2B 자산</strong>, 시총 $67B, Benchmark VC 잭팟. Dan Ives 'Nasdaq 30K 6-9개월' vs Cramer 'trim'. SambaNova CEO '진짜 전쟁은 추론(inference) 비용·확장성'</span></li>
+      </ul>
+    </div>
+    <div class="current-status">
+      <div class="current-status-title">📍 현재 상태 (5/17 기준)</div>
+      <p>2026 최대 IPO 폭등 → 즉시 -10% 조정으로 <strong>'AI 인프라 IPO 광풍'의 첫 균열</strong>. Arm·SoftBank의 마지막 순간 인수 시도는 Cerebras가 단기 매물보다 전략 자산으로 평가받는다는 신호. SambaNova가 'training이 아닌 inference'로 차별화 노선 부각.</p>
+    </div>
+  </article>
+
+  <!-- Story 9: Iran/Hormuz -->
+  <article class="story">
+    <div class="story-header">
+      <span class="story-rank">#9</span>
+      <h3 class="story-title">Iran 정세 & 호르무즈 — 휴전 결렬, UAE 2차 송유관, Iran-Oman 폭로 5축 동시 가동</h3>
+      <div class="story-meta">
+        <span class="badge badge-count">📰 3건</span>
+        <span class="badge badge-duration">📅 3일간 (5/11, 5/12, 5/16)</span>
+        <span class="badge badge-persist-interest">📈 관심</span>
+        <span class="badge badge-momentum-flat">→ 유지</span>
+        <span class="badge badge-status-ongoing">⏳ 진행중</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul class="timeline-list">
+        <li><span class="timeline-date">5/11</span><span>Iran-Israel 휴전 결렬. <strong>Aramco Q1 +26%</strong>(East-West 파이프라인 만재). Brent·WTI 동반 급등. ECB AI 금융 인프라 검토</span></li>
+        <li><span class="timeline-date">5/12</span><span>전쟁 2개월차. Trump 이란 제안 거부. Netanyahu '전쟁 끝나지 않았다'. 사우디 Aramco 단독 수혜 구조</span></li>
+        <li><span class="timeline-date">5/16</span><span><strong>UAE 호르무즈 우회 2차 송유관 fast track</strong> + <strong>Iran Kharg Island 수출 중단</strong>(TankerTrackers oil spill 추정) + Guardian <strong>'Iran-Oman Hormuz 공동운영' 폭로</strong> + Energy Sec Wright 'China-美 원유 직접 무역 확대' + <strong>CIA Ratcliffe Cuba 역사적 방문</strong>(美 봉쇄로 며칠씩 정전 격화). 5축 동시 가동</span></li>
+      </ul>
+    </div>
+    <div class="current-status">
+      <div class="current-status-title">📍 현재 상태 (5/17 기준)</div>
+      <p>호르무즈 의존도 분산이 <strong>인프라(UAE 송유관)·외교(Iran-Oman 공동운영)·정보전(CIA Cuba)·무역(中美 직접 거래)</strong>로 동시 다층 전개. Iran 수출 중단(Kharg oil spill)이 의도적 사보타주인지가 후속 관전 포인트. 유가 추가 상승은 Fed 인하 명분 소실과 직결.</p>
+    </div>
+  </article>
+
+  <!-- Story 10: AI Governance & Misinfo -->
+  <article class="story">
+    <div class="story-header">
+      <span class="story-rank">#10</span>
+      <h3 class="story-title">AI 거버넌스 빈틈 — 정부 환각 5사례, 영국 反이민 AI 영상 위조망, $130B 크립토 AI 해킹</h3>
+      <div class="story-meta">
+        <span class="badge badge-count">📰 4건+</span>
+        <span class="badge badge-duration">📅 6일간 (5/11~5/16)</span>
+        <span class="badge badge-persist-interest">📈 관심</span>
+        <span class="badge badge-momentum-flat">→ 유지</span>
+        <span class="badge badge-status-monitoring">📋 모니터링</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-title">📅 스토리 타임라인</div>
+      <ul class="timeline-list">
+        <li><span class="timeline-date">5/11</span><span>Rest of World Hero <strong>정부 AI 환각 5사례 카탈로그</strong>(트럼프·남아공·Deloitte·인도·Wyoming). Canvas 해킹 BBC '국제 사이버 공격' 격상</span></li>
+        <li><span class="timeline-date">5/13</span><span>Anthropic '비공식 주식거래 피하라' 경고</span></li>
+        <li><span class="timeline-date">5/15</span><span>Wired Hero 'AI 에이전트 마르크스주의 성향' Anthropic 연구. Meta 사상 최저 사기. BBC Future 'AI 기업 자기모순 — 인류 멸망 가능 주장하며 판매'</span></li>
+        <li><span class="timeline-date">5/16</span><span><strong>BBC 영국 反이민 AI 영상 해외 위조 네트워크 추적</strong>. Bloomberg <strong>$130B 크립토 AI 해킹 위협 산업 붕괴 직전</strong>. Hotel 100만 여권 클라우드 미설정 노출</span></li>
+      </ul>
+    </div>
+    <div class="current-status">
+      <div class="current-status-title">📍 현재 상태 (5/17 기준)</div>
+      <p>美中 정상회담에서 'AI guardrails 합의'가 나온 같은 주에 거버넌스 빈틈이 정부·언론·크립토·호텔 등 전 산업에서 동시 노출된 모순적 풍경. <strong>AI 해킹이 $130B 크립토 산업을 붕괴 직전까지 몰고 있다는 보도</strong>는 다음 분기 보안주(Palo Alto, CrowdStrike) 재평가 트리거 가능.</p>
+    </div>
+  </article>
+
+</section>
+
+<!-- Standalone Highlights -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">🎯</span>
+    <h2 class="section-title">단독 하이라이트</h2>
+  </div>
+
+  <div class="pick-card">
+    <div class="pick-title">eBay·GameStop $56B 인수전 결렬 (5/13)</div>
+    <div class="pick-text">eBay 이사회 만장일치 거부 — 'neither credible nor attractive'. Ryan Cohen의 다음 카드 관전. VS 7.3 최고점 기록.</div>
+  </div>
+
+  <div class="pick-card">
+    <div class="pick-title">India VC가 Silicon Valley 추월 (5/16)</div>
+    <div class="pick-text">Rest of World Hero. General Catalyst의 rage bait가 a16z와 정면 충돌. RJ Scaringe Rivian $12B 누적 펀딩. 글로벌 VC 지형의 변곡점.</div>
+  </div>
+
+  <div class="pick-card">
+    <div class="pick-title">Waymo 수천 대 리콜 — 개울 추락 결함 (5/14)</div>
+    <div class="pick-text">CNBC·The Verge·Bloomberg 3매체 동시 보도. 5/13의 '3,800대 고인 물 주행' 후속. Tesla Robotaxi 사고는 teleoperator 개입 시인(5/16) — 자율주행 안전 신뢰도 동시 균열.</div>
+  </div>
+
+  <div class="pick-card">
+    <div class="pick-title">Trump 1Q OGE 윤리 공시 (5/16)</div>
+    <div class="pick-text">Amazon·Meta·Oracle·Broadcom·Motorola·Dell·Nvidia·Apple 대량 매수 + Palantir 매수 후 Truth Social 'pump' 의혹. 美 대통령 빅테크 직접 베팅의 윤리 논란 본격화.</div>
+  </div>
+
+  <div class="pick-card">
+    <div class="pick-title">SMIC 'mature node Panic' (5/16)</div>
+    <div class="pick-text">SCMP Featured. 중국 성숙 공정 과잉 공급 우려. Asia 로봇 종목 최고 인기 + Figure CEO teleoperation 부인(LIVE 시연) + Tesla Robotaxi teleoperator 시인이 같은 주에 충돌.</div>
+  </div>
+
+</section>
+
+<!-- Market Snapshot (qualitative) -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">📊</span>
+    <h2 class="section-title">시장 시그널 요약</h2>
+  </div>
+  <div class="market-grid">
+    <div class="market-note">
+      <div class="market-note-title">30Y Treasury</div>
+      <div class="market-note-value">5.1%</div>
+      <div style="font-size:12px;color:var(--red);margin-top:2px;">1년 최고</div>
+    </div>
+    <div class="market-note">
+      <div class="market-note-title">Q2 인플레 예측</div>
+      <div class="market-note-value">6%</div>
+      <div style="font-size:12px;color:var(--red);margin-top:2px;">상향 베팅</div>
+    </div>
+    <div class="market-note">
+      <div class="market-note-title">Fed 12월</div>
+      <div class="market-note-value">인상 베팅</div>
+      <div style="font-size:12px;color:var(--orange);margin-top:2px;">첫 등장</div>
+    </div>
+    <div class="market-note">
+      <div class="market-note-title">스태그플레이션</div>
+      <div class="market-note-value">40%</div>
+      <div style="font-size:12px;color:var(--text-dim);margin-top:2px;">트레이더 베팅</div>
+    </div>
+    <div class="market-note">
+      <div class="market-note-title">DRAM ETF</div>
+      <div class="market-note-value">$10B</div>
+      <div style="font-size:12px;color:var(--green);margin-top:2px;">최단 자금 흡수</div>
+    </div>
+    <div class="market-note">
+      <div class="market-note-title">Cerebras 시총</div>
+      <div class="market-note-value">$67B</div>
+      <div style="font-size:12px;color:var(--red);margin-top:2px;">Day2 -10%</div>
+    </div>
+  </div>
+  <p style="font-size:14px;color:var(--text-dim);margin-top:12px;line-height:1.7;">
+    <strong style="color:var(--text);">시장 매크로 해석:</strong> 'AI 슈퍼사이클 강세론'(Ives Nasdaq 30K, DRAM ETF $10B, Cerebras 폭등)과 '매크로 약세론'(30Y 5.1%, Fed 인상 베팅, Stagflation 40%)이 정면 충돌. Warsh Fed 의장 인준 후 첫 주에 시장이 'Fed가 인플레에 뒤처졌다'고 가격을 매기기 시작 — AI 어닝 K자 차별화(Cisco·Datadog vs Coinbase·Qualcomm 조정)도 같은 분기 신호.
+  </p>
+</section>
+
+<!-- Claude's Pick -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">💎</span>
+    <h2 class="section-title">Claude's Pick</h2>
+  </div>
+
+  <div class="pick-card">
+    <div class="pick-title">Fed 12월 '인상' 베팅 첫 등장 (5/16)</div>
+    <div class="pick-text">올해 가장 묵직한 시장 시그널. 'AI 슈퍼사이클'과 '인플레 재발화'가 동시에 가속되는 구조는 1970년대 후반의 stagflation 패턴과 가장 닮은 매크로 환경. Warsh 의장 인준 후 첫 주에 시장이 'Fed가 비둘기적 입장을 더는 유지할 수 없다'고 가격을 매기는 것은 향후 6개월 자산배분의 분기점이 될 가능성이 매우 높다.</div>
+  </div>
+
+  <div class="pick-card">
+    <div class="pick-title">ChatGPT Plaid 연동 — 12,000개 금융기관 직접 침투 (5/16)</div>
+    <div class="pick-text">단일 통합 발표 중 가장 광범위한 영향. <strong>Robinhood, Intuit, 뱅킹 앱, 핀테크 SaaS 전반의 카운터파티 리스크</strong>가 새로 가격에 반영돼야 함. Anthropic의 금융 서비스(Goldman·Blackstone JV) 진입과 합쳐 '금융 인프라 = AI 빅2 격전지' 패턴 명확화. 다음 분기 미국 핀테크 섹터 밸류에이션 재조정의 트리거.</div>
+  </div>
+
+  <div class="pick-card">
+    <div class="pick-title">SCMP 'mature node Panic' & India VC가 SV 추월 (5/16)</div>
+    <div class="pick-text">메모리·첨단 공정 슈퍼사이클 그늘에서 동시에 진행 중인 두 변화. 중국 성숙공정 과잉공급은 SMIC 단기 수혜인 동시에 글로벌 비메모리 가격 압박 신호이며, India VC의 SV 추월은 글로벌 자본 흐름의 구조적 분기점. 두 사건 모두 '美 중심 AI 서사'의 사이드 노트가 아닌, 다음 10년 변수의 시작 신호로 봐야 함.</div>
+  </div>
+
+</section>
+
+<!-- Weekly Stats -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">📈</span>
+    <h2 class="section-title">주간 통계</h2>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-value">6</div>
+      <div class="stat-label">발행일 수</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">125+</div>
+      <div class="stat-label">총 헤드라인 수</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">10</div>
+      <div class="stat-label">TOP 클러스터</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">5</div>
+      <div class="stat-label">🔥 지속 스토리</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">7</div>
+      <div class="stat-label">🔥 상승세</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">6</div>
+      <div class="stat-label">⏳ 진행중</div>
+    </div>
+  </div>
+</section>
+
+<!-- Upcoming Events -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">📅</span>
+    <h2 class="section-title">다음 주 주요 일정 (5/18~5/23)</h2>
+  </div>
+  <div class="event-list">
+    <div class="event-item">
+      <div class="event-date">5/18~22</div>
+      <div class="event-text"><strong>OpenAI vs Musk 재판 평결 발표 주간</strong> — 9인 배심원 평결 시점, AI 빅테크 동맹 구조에 직접 영향. PBC 전환·IPO 시나리오 분기점</div>
+    </div>
+    <div class="event-item">
+      <div class="event-date">5/19~22</div>
+      <div class="event-text"><strong>SpaceX IPO 본격</strong>(5/15 보도 후속). AI 인프라 IPO 행렬의 정점 — Cerebras 조정 직후 시장 반응이 광풍 지속/조정 신호</div>
+    </div>
+    <div class="event-item">
+      <div class="event-date">5/20 전후</div>
+      <div class="event-text"><strong>Nvidia FY26 Q1 실적</strong> 예상 — H200 中 수출 허용 보도(5/15)의 실제 가이던스 반영 여부, 메모리 슈퍼사이클의 데이터 검증</div>
+    </div>
+    <div class="event-item">
+      <div class="event-date">5/21 전후</div>
+      <div class="event-text"><strong>4월 소매판매·산업생산</strong>(美) 발표 가능 — Fed 12월 '인상' 베팅의 추가 검증 데이터</div>
+    </div>
+    <div class="event-item">
+      <div class="event-date">5/22</div>
+      <div class="event-text"><strong>Warsh 의장 첫 공식 발언</strong> 가능성(인준 직후 첫 주) — 인플레/인상 시그널 시장 충격</div>
+    </div>
+    <div class="event-item">
+      <div class="event-date">9월 (예정)</div>
+      <div class="event-text"><strong>Trump-Xi 워싱턴 회담</strong> — Trump가 Xi 美 방문 초청, AI guardrails 후속 협상의 본 무대</div>
+    </div>
+  </div>
+  <p style="font-size:12px;color:var(--text-muted);margin-top:14px;line-height:1.6;">
+    ※ 일정은 5/11~5/16 헤드라인 및 과거 대화 기록을 바탕으로 추정. 실제 발표 일자는 변동 가능.
+  </p>
+</section>
+
+<footer>
+  <p>📰 Jae's Briefing · Weekly Edition</p>
+  <p style="margin-top:6px;">Generated by Claude · Weekly Briefing v1.6 · 2026-05-17</p>
+  <p style="margin-top:6px;"><a href="https://hong4137.github.io/briefing">briefing 홈으로</a></p>
+</footer>
+
+</div>
+</body>
+</html>
