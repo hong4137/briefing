@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-23",
+      "day": "토",
+      "title": "Oura 비공개 IPO 신청 5.5M 스마트링 | Lenovo 어닝 +15% AI 매출 거의 2배 26년래 최고 | Mega-IPO 시장 천장 신호? SpaceX 6/12·OpenAI 라인업 애널리스트 경고",
+      "summary": "Oura 비공개 IPO 신청과 Lenovo 어닝 폭등이 SpaceX(6/12 예상)·OpenAI 메가 IPO 라인업과 겹치며 애널리스트들이 '시장 천장' 신호를 경고. StanChart CEO Bill Winters의 '저가치 인적자본' 발언 사과(8천명 AI 감원 앞두고)와 RoW Hero 'AI 빌리어네어 vs 노동'(삼성 노조 상징)으로 AI 일자리 분배 갈등 본격화. Waymo 로보택시 4개 도시 운행중단(홍수 반복 진입)·TeamPCP 오픈소스 공급망 공격(Wired·Ars)으로 AI 인프라 신뢰성 균열 동시 노출. Qualcomm AI 디바이스 붐 재평가, Spotify-UMG AI remix 라이선스 첫 체결+The Verge 비판, GitHub AI 코딩 경쟁 뒤처짐, Reddit -6% Meta Forum 앱, Apple Epic 대법원 항소, Trump Mobile 개인정보 유출, Starship V3 발사 직전 scrub. Pick: Hark $700M 시리즈A(Brett Adcock $6B), 문학계 AI 충격(Granta·커먼웰스 단편상), Dating 스타트업 사기 차단.",
+      "highlights": [
+        "Oura·Lenovo IPO·어닝 러시가 '시장 천장' 논쟁으로 SpaceX 6/12·OpenAI 라인업 애널리스트 경고",
+        "StanChart CEO '저가치 인적자본' 발언 사과 + RoW Hero AI 빌리어네어 vs 노동 삼성 노조 상징 AI 일자리 분배 갈등 본격화",
+        "Waymo 4개 도시 운행중단 홍수 반복 + TeamPCP 오픈소스 공급망 공격 Wired·Ars AI 인프라 신뢰성 균열"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-22",
       "day": "금",
       "title": "SpaceX IPO 공식 파일링 사상최대 카운트다운 TC Hero 'Forget TechnoKing' Musk 50%+ 의결권 + Mars 인센티브 + xAI $6.4B 손실 + Anthropic $15B/yr $45B 3년 Wired 단독 폭로 6+매체 | Nvidia Q1 비트 시장 lukewarm + Huang $200B CPU 'brand new' 신시장 + 中 진보칩 Huawei에 'largely conceded' 양보 + SoftBank +20% | Anthropic 다축 충돌 SpaceX 컴퓨팅 + MS Maia 200 협의 + Pentagon 25명 파워유저 대체 모델 테스트 + 첫 흑자 분기 $10.9B Q2 | Trump AI 보안 EO 사인 직전 연기 'lead 방해 안 함' + Quantum 9개사 $2B 美 지분 IBM $1B Foundry | Samsung 노조 임협 타결 🔁 직원당 $340K 보너스 40조원 한국 시장 직접 + AMD $10B Taiwan AI + Taiwan 칩 中 밀수 첫 단속 | Spotify 4축 대공세 UMG AI remix 라이선스 + NotebookLM 대항 데스크탑 앱 + Reserved 콘서트 티켓 + ElevenLabs 오디오북 첫 투자자 데이 | China 휴머노이드 본격 CNBC Hero 직업훈련 + SCMP 가정용 2027 Musk '최대 경쟁자' | Google Android XR 글라스 핸즈온 후속 Wired Featured + RayNeo Air 4 Pro HDR10 첫 글라스 ZDNet Hero | OpenAI 9월 IPO Friday 비공식 파일링 + Erdős 80년 수학난제 해결 + Altman YC mic drop 토큰-지분 | Hark $700M 시리즈A Brett Adcock universal AI $6B 밸류 | SCMP 다축 Alibaba AI 30조위안 + 에이전트 클라우드 50%+ + YMTC IPO + AI God's-eye 그린에너지 | Iran 평화협상 변곡점 Khamenei '우라늄 잔류' 유가 +3% 반등 IEA July red zone | Stellantis $70B 회생 + Wayve 자율주행 美 진출 첫 OEM | JPMorgan Dimon 'AI 인재 더, 뱅커 줄인다' + Workday +14% AI + Commerzbank €350M AI 절감 | 졸업식 학생들 AI CEO 야유 doomjobbing 후속 + WiseTech 中 감원 이메일 'AI' 단어 삭제 | Bambu 3D AGPL DMCA 오픈소스 반발 + GitHub Microsoft 8년 만 생존 위기 | Waymo Atlanta·San Antonio 홍수 + 고속도로 운행 중단 | TeamPCP GitHub 오픈소스 공급망 공격 unprecedented + Meta 학교 소송 합의 1차 재판 회피 | RoW Hero Africa AI Sovereignty Big Tech 인프라 의존 한복판 | Pick Cursor $3B ARR + SpaceX 인수 임박 / Texans 데이터센터 'Jesus 도움 요청' 종교적 결집 / Wired 4chan misogynist wizards 여성 nudify",
