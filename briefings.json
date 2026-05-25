@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-26",
+      "day": "화",
+      "title": "교황 첫 AI 회칙 Magnifica Humanitas AI 무장해제 선언 | Huawei EUV 우회 新 스케일링 법칙 2031년 1.4nm급 | ByteDance AI 영화 칸 강타",
+      "summary": "교황 레오 14세가 즉위 후 첫 회칙 Magnifica Humanitas(4만 2300단어)로 AI 규제·노동·존엄성 수호를 촉구하며 AI를 무장해제하라 선언했고, 발표회에 Anthropic 공동창업자 Chris Olah가 참석했다. Huawei는 EUV 없이 2031년 1.4nm급 칩을 노리는 Tau 스케일링 법칙과 LogicFolding을 공개했고, ByteDance의 Seedance 2.0 AI 영화 도구는 칸 영화제를 흔들며 할리우드에 도전했다. ClickUp은 수백 직원을 수천 AI 에이전트로 대체했고, Meta Forum 앱 출시로 Reddit 주가가 6% 급락했다. Qualcomm은 AI 기기 붐 기대로 주가가 급등했고, AI 부의 분배를 둘러싼 삼성·한국 노조의 요구가 거세지고 있다.",
+      "highlights": [
+        "교황 레오 14세 첫 AI 회칙 Magnifica Humanitas AI 무장해제 선언 Anthropic 공동창업자 Chris Olah 발표회 참석",
+        "Huawei Tau 스케일링 법칙·LogicFolding 공개 EUV 우회 2031년 1.4nm급 칩 목표 TSMC와 3년 격차",
+        "ByteDance Seedance 2.0 AI 영화 칸 영화제 강타 + ClickUp 수백명 AI 에이전트 대체 + Meta Forum 앱에 Reddit 6% 급락"
+      ],
+      "stats": {
+        "articles": 11,
+        "sections": 6,
+        "picks": 2
+      }
+    },
+    {
       "date": "2026-05-25",
       "day": "월",
       "title": "Gemini Omni·XR 글라스 실전 공개 | DeepSeek V4 Pro 75% 영구 할인 세계 1위 | AI 부의 분배 논쟁 삼성·한국 부총리 경고",
