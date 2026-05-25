@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-25",
+      "day": "월",
+      "title": "Gemini Omni·XR 글라스 실전 공개 | DeepSeek V4 Pro 75% 영구 할인 세계 1위 | AI 부의 분배 논쟁 삼성·한국 부총리 경고",
+      "summary": "Google이 Gemini Omni와 Android XR 스마트글라스를 공개하며 멀티모달 AI 경쟁을 선도했고, DeepSeek이 V4 Pro 가격을 영구 인하해 달러당 성능 세계 1위에 올랐다. 삼성 노조 타결 후 한국 부총리의 AI 富 환원 요구와 Rest of World Hero가 AI 빌리어네어 vs 노동자 분배 논쟁을 정면 조명했다. 호르무즈 협상 진전으로 유가 5% 급락하고 미·중 우주 컴퓨팅 레이스가 새 전선을 열었다. Trump의 AI 행정명령 철회로 빅테크는 사전 안전 검토 없이 모델을 배포할 수 있게 됐고, ECB는 AI 모델 보안 취약점 점검을 위해 은행권을 긴급 소집했다.",
+      "highlights": [
+        "Gemini Omni·Android XR 스마트글라스 핸즈온 + DeepSeek V4 Pro 75% 영구 할인 달러당 성능 1위",
+        "AI가 빌리어네어를 만드는 동안 노동자들은 분배를 요구한다 Rest of World Hero 삼성·한국 부총리 경고",
+        "호르무즈 협상 진전 유가 5% 급락 + 미·중 우주 컴퓨팅 패권 경쟁 SpaceX $26.5T AI 시장 정조준"
+      ],
+      "stats": {
+        "articles": 16,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-23",
       "day": "토",
       "title": "Oura 비공개 IPO 신청 5.5M 스마트링 | Lenovo 어닝 +15% AI 매출 거의 2배 26년래 최고 | Mega-IPO 시장 천장 신호? SpaceX 6/12·OpenAI 라인업 애널리스트 경고",
