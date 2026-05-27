@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-27",
+      "day": "수",
+      "title": "SK하이닉스·마이크론 동시 시총 1조 달러 클럽 | Unitree IPO 임박 中 로봇 공급망주 급등 | 구글 헬스 출시 핏빗 앱 종료 반발",
+      "summary": "AI 메모리 슈퍼사이클이 반도체 시총 지형을 다시 그렸다. SK하이닉스가 마이크론에 이어 시총 1조 달러 클럽에 합류했고, Unitree IPO 진전이 중국 휴머노이드 공급망 전체를 끌어올렸다. 구글은 핏빗 앱을 접고 '구글 헬스'로 전환하며 반발에 직면했고, SpaceX는 아메리칸항공 500대 스타링크 계약으로 IPO 모멘텀을 더했다.",
+      "highlights": [
+        "SK하이닉스·마이크론 동시 시총 1조 달러",
+        "Unitree IPO 임박 中 로봇주 급등",
+        "구글 헬스 출시 = 핏빗 앱 종료 반발"
+      ],
+      "stats": {
+        "articles": 22,
+        "sections": 7,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-26",
       "day": "화",
       "title": "교황 첫 AI 회칙 Magnifica Humanitas AI 무장해제 선언 | Huawei EUV 우회 新 스케일링 법칙 2031년 1.4nm급 | ByteDance AI 영화 칸 강타",
