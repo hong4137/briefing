@@ -1,0 +1,514 @@
+/* ============================================================
+   theme-modern.css - JFNB Readwise-style Theme
+   Maintainer: Codex
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* 1. CSS Variables (:root) ---------------------------------- */
+:root {
+  --color-bg-base: #121214;
+  --color-bg-elevated: #18181b;
+  --color-bg-overlay: #1f1f23;
+  --color-bg-hover: #26262c;
+
+  --color-text-primary: #e8e8ea;
+  --color-text-secondary: #9898a6;
+  --color-text-muted: #5c5c70;
+  --color-text-disabled: #3a3a48;
+
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(255, 255, 255, 0.15);
+  --color-border-accent: rgba(255, 59, 59, 0.35);
+
+  --color-accent-red: #e84040;
+  --color-accent-blue: #4a9eff;
+  --color-accent-gold: #f5c842;
+
+  --gnb-bg: rgba(18, 18, 20, 0.80);
+  --gnb-blur: blur(20px) saturate(160%);
+  --gnb-border: rgba(255, 255, 255, 0.07);
+  --gnb-height: 52px;
+
+  --hero-height-desktop: 320px;
+  --hero-height-mobile: 200px;
+  --hero-overlay: linear-gradient(
+    to bottom,
+    rgba(18, 18, 20, 0.15) 0%,
+    rgba(18, 18, 20, 0.70) 100%
+  );
+
+  --font-sans: "Outfit", "Noto Sans KR", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-serif: "Playfair Display", "Noto Serif KR", Georgia, serif;
+
+  --reading-width: 680px;
+  --content-width: 1200px;
+  --reading-px: clamp(1.5rem, 4vw, 2.5rem);
+
+  --transition-fast: 0.15s ease;
+  --transition-mid: 0.25s ease;
+}
+
+/* 2. Shell Page - GNB --------------------------------------- */
+body.shell-page {
+  background: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
+
+body.shell-page .nav,
+body.shell-page .gnb {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: var(--gnb-height);
+  padding: 0;
+  background: var(--gnb-bg);
+  backdrop-filter: var(--gnb-blur);
+  -webkit-backdrop-filter: var(--gnb-blur);
+  border-bottom: 1px solid var(--gnb-border);
+  display: flex;
+  align-items: center;
+}
+
+body.shell-page .nav-content,
+body.shell-page .gnb-inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.shell-page .nav-logo,
+body.shell-page .gnb-logo {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  opacity: 0.9;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+body.shell-page .nav-logo:hover,
+body.shell-page .gnb-logo:hover {
+  opacity: 1;
+}
+
+body.shell-page .nav-logo-icon {
+  display: none;
+}
+
+body.shell-page .nav-logo-text {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+body.shell-page .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+body.shell-page .nav-links,
+body.shell-page .gnb-links {
+  display: flex;
+  gap: 1.75rem;
+  list-style: none;
+}
+
+body.shell-page .nav-links a,
+body.shell-page .gnb-links a {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+body.shell-page .nav-links a:hover,
+body.shell-page .nav-links a.active,
+body.shell-page .gnb-links a:hover,
+body.shell-page .gnb-links a.active {
+  color: var(--color-text-primary);
+}
+
+body.shell-page .nav-search-compact,
+body.shell-page .gnb-search {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+body.shell-page .nav-search-compact:focus-within,
+body.shell-page .gnb-search:focus-within {
+  border-color: var(--color-border-hover);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+body.shell-page .nav-search-compact input,
+body.shell-page .gnb-search input {
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-text-primary);
+  width: 80px;
+  outline: none;
+}
+
+body.shell-page .nav-search-compact input:focus,
+body.shell-page .gnb-search input:focus {
+  width: 120px;
+}
+
+body.shell-page .nav-search-compact input::placeholder,
+body.shell-page .gnb-search input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* 3. Shell Page - Layout And Timeline ----------------------- */
+body.shell-page .hero {
+  background: linear-gradient(180deg, #18181b 0%, var(--color-bg-base) 100%);
+}
+
+body.shell-page .archive-content {
+  max-width: var(--content-width);
+}
+
+body.shell-page.archive-page .month-group {
+  margin-bottom: 2.5rem;
+}
+
+body.shell-page.archive-page .month-header {
+  display: block;
+  margin: 0 0 0.5rem 3.5rem;
+  padding: 0;
+  border-bottom: none;
+}
+
+body.shell-page.archive-page .month-icon {
+  display: none;
+}
+
+body.shell-page.archive-page .month-title {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+body.shell-page .timeline-list {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--color-border);
+  margin-left: 3.5rem;
+  padding-left: 0;
+}
+
+body.shell-page .tl-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.5rem 1fr auto;
+  gap: 0 1.25rem;
+  align-items: baseline;
+  padding: 0.875rem 1rem 0.875rem 1.5rem;
+  margin-left: -1px;
+  border-bottom: 1px solid var(--color-border);
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--transition-fast);
+}
+
+body.shell-page .tl-item:last-child {
+  border-bottom: none;
+}
+
+body.shell-page .tl-item:hover {
+  background: var(--color-bg-hover);
+}
+
+body.shell-page .tl-date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  margin-left: -3.5rem;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+body.shell-page .tl-dot {
+  position: absolute;
+  left: -4px;
+  top: 1.25rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-border-hover);
+  border: 1px solid var(--color-bg-base);
+  transition: background var(--transition-fast);
+}
+
+body.shell-page .tl-item:hover .tl-dot {
+  background: var(--color-accent-blue);
+}
+
+body.shell-page .tl-title {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  line-height: 1.4;
+  margin: 0 0 0.2rem;
+}
+
+body.shell-page .tl-summary {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+body.shell-page .tl-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-disabled);
+  white-space: nowrap;
+  align-self: center;
+}
+
+body.shell-page .tl-month-header {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 1.5rem 1.5rem 0.5rem;
+  margin-left: -1px;
+}
+
+body.shell-page .footer {
+  border-top-color: var(--color-border);
+}
+
+/* 4. Reader Mode - GNB -------------------------------------- */
+body.reader-mode {
+  font-family: var(--font-sans);
+  background: var(--color-bg-base);
+}
+
+body.reader-mode .reader-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 48px;
+  background: var(--gnb-bg);
+  backdrop-filter: var(--gnb-blur);
+  -webkit-backdrop-filter: var(--gnb-blur);
+  border-bottom: 1px solid var(--gnb-border);
+  display: flex;
+  align-items: center;
+}
+
+body.reader-mode .reader-nav-inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.reader-mode .reader-nav-logo {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+body.reader-mode .reader-nav-logo:hover {
+  color: var(--color-text-primary);
+}
+
+body.reader-mode .reader-nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+body.reader-mode .reader-nav-links a {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+body.reader-mode .reader-nav-links a:hover {
+  color: var(--color-text-secondary);
+}
+
+/* 5. Reader Mode - Hero Image ------------------------------- */
+body.reader-mode .reader-hero {
+  position: relative;
+  width: 100%;
+  height: var(--hero-height-desktop);
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+body.reader-mode .reader-hero.no-image {
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 46, 1) 0%,
+    rgba(22, 33, 62, 1) 60%,
+    rgba(15, 52, 96, 0.8) 100%
+  );
+}
+
+body.reader-mode .reader-hero picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+body.reader-mode .reader-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+}
+
+body.reader-mode .reader-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay);
+  pointer-events: none;
+}
+
+body.reader-mode .reader-hero-credit {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+body.reader-mode .reader-hero-credit:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* 6. Reader Mode - Footer ----------------------------------- */
+body.reader-mode .reader-footer {
+  max-width: var(--reading-width);
+  margin: 3rem auto 2rem;
+  padding: 1.5rem var(--reading-px);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+body.reader-mode .reader-footer a {
+  color: var(--color-accent-blue);
+  text-decoration: none;
+}
+
+body.reader-mode .reader-footer a:hover {
+  text-decoration: underline;
+}
+
+/* 7. Responsive Breakpoints --------------------------------- */
+@media (max-width: 768px) {
+  body.shell-page .nav-content,
+  body.shell-page .gnb-inner,
+  body.reader-mode .reader-nav-inner {
+    padding: 0 1rem;
+  }
+
+  body.shell-page .nav-content {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  body.shell-page .nav-links,
+  body.shell-page .gnb-links {
+    gap: 1rem;
+  }
+
+  body.shell-page .nav-search-compact input,
+  body.shell-page .gnb-search input {
+    width: 60px;
+  }
+
+  body.shell-page .nav-search-compact input:focus,
+  body.shell-page .gnb-search input:focus {
+    width: 80px;
+  }
+
+  body.reader-mode .reader-hero {
+    height: var(--hero-height-mobile);
+  }
+}
+
+@media (max-width: 640px) {
+  body.shell-page.archive-page .month-header {
+    margin-left: 2rem;
+  }
+
+  body.shell-page .timeline-list {
+    margin-left: 2rem;
+  }
+
+  body.shell-page .tl-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  body.shell-page .tl-date {
+    margin-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  body.shell-page .tl-meta {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body.shell-page .nav-search-compact,
+  body.shell-page .gnb-search {
+    display: none;
+  }
+
+  body.reader-mode .reader-nav-links {
+    gap: 1rem;
+  }
+}
