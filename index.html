@@ -5,22 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-72x72.png">
-    <!-- SW Cleanup: Unregister any previously installed service workers -->
+    <!-- SW Cleanup: Unregister previously installed service workers -->
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then(function(registrations) {
-          for (let registration of registrations) {
-            registration.unregister();
-          }
+          for (let r of registrations) { r.unregister(); }
         });
-        caches.keys().then(function(cacheNames) {
-          cacheNames.forEach(function(cacheName) {
-            caches.delete(cacheName);
-          });
+        caches.keys().then(function(names) {
+          names.forEach(function(n) { caches.delete(n); });
         });
       }
-    </script>
-    <title>Jae's Foreign News Briefing</title>
+    </script><title>Jae's Foreign News Briefing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -840,8 +835,16 @@
         `;
     }).join('') : '<div class="empty-state">하이라이트가 없습니다.</div>';
 
+            const coverHTML = briefing.thumb_url ? `
+                <div class="card-cover">
+                    <img src="${briefing.thumb_url.replace('w=480','w=800').replace('h=270','h=450')}"
+                         alt="${briefing.thumb_alt || ''}" loading="lazy" decoding="async">
+                    <div class="card-cover-overlay"></div>
+                </div>` : '';
+
             document.getElementById('latest-container').innerHTML = `
                 <div class="latest-card">
+                    ${coverHTML}
                     <div class="latest-card-header">
                         <div class="latest-date">
                             <span class="live"></span>
@@ -879,7 +882,10 @@
             }
 
             document.getElementById('archive-container').innerHTML = briefings.map(b => `
-                <a href="archive/${b.date}.html" class="archive-card">
+                <a href="archive/${b.date}.html" class="highlight">
+                    ${b.thumb_url ? `<div class="card-thumbnail">
+                        <img src="${b.thumb_url}" alt="${b.thumb_alt || ''}" loading="lazy" decoding="async">
+                    </div>` : ''}
                     <div class="archive-card-date">${b.date} (${b.day})</div>
                     <h4>${b.title}</h4>
                     <p>${b.summary}</p>

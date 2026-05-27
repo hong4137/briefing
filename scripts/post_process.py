@@ -1,46 +1,38 @@
-#!/usr/bin/env python3
-"""Post-process briefing article pages with reader-mode chrome and heroes.
-
-API keys are not required. Hero images are selected from a handpicked,
-deterministic Unsplash CDN image map.
-"""
-
-from __future__ import annotations
-
-import hashlib
-import json
 import re
-from html import escape
+import json
+import hashlib
 from pathlib import Path
-from typing import Any
-
 from bs4 import BeautifulSoup
 
-
-ARCHIVE_DIR = Path("briefing/archive")
+ARCHIVE_DIR    = Path("briefing/archive")
 BRIEFINGS_JSON = Path("briefing/briefings.json")
 
+BASE = "https://images.unsplash.com/photo-"
+
+PARAMS_HERO     = "?w=1200&h=630&fit=crop&auto=format&q=80"
+PARAMS_HERO_SM  = "?w=640&h=360&fit=crop&auto=format&q=80"
+PARAMS_THUMB    = "?w=480&h=270&fit=crop&auto=format&q=75"
+PARAMS_THUMB_XS = "?w=112&h=112&fit=crop&auto=format&q=70"
+
 CATEGORY_PATTERNS = [
-    # (카테고리 키, regex 패턴)
-    ("ai",          r'AI|인공지능|LLM|ChatGPT|Gemini|Claude|Grok|딥러닝|머신러닝|GPT|오픈AI|OpenAI|Anthropic'),
-    ("chip",        r'반도체|칩|HBM|TSMC|SK하이닉스|하이닉스|마이크론|Micron|NVIDIA|엔비디아|삼성전자|파운드리|웨이퍼'),
-    ("finance",     r'주식|증시|S&P|나스닥|시총|IPO|상장|월가|투자|채권|금리|연준|Fed|주가|코스피|다우'),
-    ("robot",       r'로봇|휴머노이드|Unitree|보스턴다이내믹스|Figure|Agility|자동화|드론'),
-    ("space",       r'우주|SpaceX|스타링크|Starlink|위성|로켓|발사|NASA|스타십|Starship|ISS'),
-    ("health",      r'헬스|의료|Fitbit|웨어러블|건강|바이오|임상|FDA|제약|스마트워치|애플워치'),
-    ("ev",          r'전기차|EV|배터리|Tesla|테슬라|리비안|BYD|충전|전동화|자율주행'),
-    ("economy",     r'무역|관세|수출|수입|경제|글로벌|GDP|인플레|관세|공급망|달러|환율'),
+    # 순서가 우선순위. 앞 카테고리가 먼저 매칭되면 이후 검사 안 함.
+    ("ai",       r'AI|인공지능|LLM|ChatGPT|Gemini|Claude|Grok|딥러닝|머신러닝|GPT|오픈AI|OpenAI|Anthropic'),
+    ("chip",     r'반도체|칩|HBM|TSMC|SK하이닉스|하이닉스|마이크론|Micron|NVIDIA|엔비디아|삼성전자|파운드리|웨이퍼'),
+    ("finance",  r'주식|증시|S&P|나스닥|시총|IPO|상장|월가|투자|채권|금리|연준|Fed|주가|코스피|다우'),
+    ("robot",    r'로봇|휴머노이드|Unitree|보스턴다이내믹스|Figure|Agility|자동화|드론'),
+    ("space",    r'우주|SpaceX|스타링크|Starlink|위성|로켓|발사|NASA|스타십|Starship|ISS'),
+    ("health",   r'헬스|의료|Fitbit|웨어러블|건강|바이오|임상|FDA|제약|스마트워치|애플워치'),
+    ("ev",       r'전기차|배터리|자율주행|EV|테슬라|Tesla|리튬|양극재'),
+    ("economy",  r'거시경제|무역|관세|수출|인플레이션|GDP|경기|환율|달러|무역전쟁|통상'),
+    ("telecom",  r'통신망|5G|6G|통신사|광케이블|기지국|네트워크|라우터'),
+    ("bigtech",  r'빅테크|마이크로소프트|구글|애플|메타|아마존|OS|iOS|안드로이드|Windows|GCP|AWS'),
+    ("policy",   r'규제|반독점|소송|정부|청문회|법원|벌금|가이드라인|국회|안전성|안보'),
+    ("defense",  r'방산|방위산업|미사일|무기|전투기|군사|국방|K-방산|드론전|화약|군인'),
 ]
 
-# post_process.py 내 상단 상수로 선언
-BASE = "https://images.unsplash.com/photo-"
-PARAMS_LG = "?w=1200&q=80&fit=crop&auto=format"
-PARAMS_SM = "?w=640&q=80&fit=crop&auto=format"
-
-def _img(photo_id, alt, credit_name, credit_slug):
+def _img(photo_id, alt, credit_name):
     return {
-        "url":         BASE + photo_id + PARAMS_LG,
-        "url_small":   BASE + photo_id + PARAMS_SM,
+        "id":          photo_id,
         "alt":         alt,
         "credit_name": credit_name,
         "credit_url":  f"https://unsplash.com/photos/{photo_id}",
@@ -48,150 +40,289 @@ def _img(photo_id, alt, credit_name, credit_slug):
 
 CATEGORY_IMAGE_MAP = {
 
-    # ── AI / 인공지능 ─────────────────────────────────────────────
+    # ── 1. AI / 인공지능 ────────────────────────────────────────
     "ai": [
         _img("1677442135703-1787eea5ce01",
-             "Blue neural network visualization on dark background",
-             "Growtika", "growtika"),
+             "Blue neural network data visualization on dark background",
+             "Growtika"),
         _img("1620712943543-bcc4688e7485",
-             "Humanoid robot face with silver metallic surface",
-             "Possessed Photography", "possessedphotography"),
-        _img("1526378722484-bd91ca387e72",
-             "Robot hand reaching through digital interface",
-             "Franck V.", "franckinjapan"),
-        _img("1655720828018-edd2daec9349",
-             "Abstract AI data streams in deep blue",
-             "Steve Johnson", "steve_j"),
+             "Cybernetic virtual brain with glowing circuits",
+             "Possessed Photography"),
+        _img("1507146426996-ef05306b995a",
+             "Neon glowing line tech art abstract dark",
+             "Alina Grubnyak"),
+        _img("1526374965328-7f61d4dc18c5",
+             "Matrix green binary code wall on black screen",
+             "Markus Spiske"),
     ],
 
-    # ── 반도체 / 칩 ──────────────────────────────────────────────
+    # ── 2. 반도체 / 칩 ──────────────────────────────────────────
     "chip": [
         _img("1518770660439-4636190af475",
-             "Close-up of blue printed circuit board",
-             "Alexandre Debiève", "alexkixa"),
-        _img("1563770557593-f9e36f476dc8",
-             "Silicon semiconductor wafer under purple light",
-             "Laura Ockel", "lauraockel"),
-        _img("1591696331111-ef9586a5b17a",
-             "Macro shot of CPU processor chip",
-             "Slejven Djurakovic", "slavudin"),
-        _img("1601004890684-d8cbf643f5f2",
-             "Intel microprocessor on motherboard close-up",
-             "Olivier Collet", "olivier_collet"),
+             "Gold pattern silicon microchip circuit board macro",
+             "Alexandre Debiève"),
+        _img("1607604276583-eef5d076aa5f",
+             "Blue neon illuminated printed circuit motherboard",
+             "Olivier Collet"),
+        _img("1555664424-778a1e5e1b48",
+             "Extreme macro close-up of circuit board traces",
+             "Alex Andrews"),
+        _img("1591453089816-0fbb971b454c",
+             "Abstract semiconductor lattice grid graphic",
+             "Laura Ockel"),
     ],
 
-    # ── 주식 / 금융 ──────────────────────────────────────────────
+    # ── 3. 주식 / 금융 ──────────────────────────────────────────
     "finance": [
         _img("1611974789855-9c2a0a7236a3",
-             "Stock market candlestick chart on dark screen",
-             "Maxim Hopman", "nampoh"),
+             "Neon candlestick stock market chart on dark monitor",
+             "Maxim Hopman"),
         _img("1590283603385-17ffb3a7f29f",
-             "Charging Bull bronze statue on Wall Street",
-             "Konstantin Evdokimov", "konstantinv"),
-        _img("1579621970563-ebec7560ff3e",
-             "Financial data graph with upward trend on dark background",
-             "Tech Daily", "techdailyca"),
-        _img("1638913971789-f64cf5acac09",
-             "Multiple trading monitors showing financial data",
-             "Austin Distel", "austindistel"),
+             "Blue tone stock trading dashboard interface",
+             "Konstantin Evdokimov"),
+        _img("1642543492481-44e81e3914a7",
+             "Financial data abstract 3D volume visualization",
+             "Adam Nowakowski"),
+        _img("1526304640581-d334cdbbf45e",
+             "Digital currency and capital liquidity visual",
+             "André François McKenzie"),
     ],
 
-    # ── 로봇 / 휴머노이드 ─────────────────────────────────────────
+    # ── 4. 로봇 / 휴머노이드 ────────────────────────────────────
     "robot": [
         _img("1485827404703-89b55fcc595e",
-             "White humanoid robot standing against grey background",
-             "Alex Knight", "agk42"),
+             "AI robot hand reaching digital interface",
+             "Alex Knight"),
+        _img("1589254065878-42c9da997008",
+             "Minimalist humanoid robot upper body dark background",
+             "Possessed Photography"),
         _img("1535378917042-10a22c95931a",
-             "Industrial robotic arm in dark factory",
-             "Lenny Kuhne", "lennykuhne"),
-        _img("1561144257-e32e8efc6c4f",
-             "Robotic arm welding with sparks in dark setting",
-             "Ant Rozetsky", "rozetsky"),
-        _img("1508614589041-895b88991e3e",
-             "Futuristic robot head with glowing eyes",
-             "Possessed Photography", "possessedphotography"),
+             "Robot under neon lighting looking forward",
+             "Lenny Kuhne"),
+        _img("1563770660941-20978e870e26",
+             "Precise mechanical robot joint actuator close-up",
+             "Ant Rozetsky"),
     ],
 
-    # ── 우주 / SpaceX / 위성 ─────────────────────────────────────
+    # ── 5. 우주 / SpaceX ────────────────────────────────────────
     "space": [
+        _img("1451187580459-43490279c0fa",
+             "Blue Earth viewed from dark outer space orbit",
+             "NASA"),
+        _img("1506703719100-a0f3a48c0f86",
+             "Majestic aurora borealis with deep space nebula",
+             "Greg Rakozy"),
         _img("1446776811953-b23d57bd21aa",
-             "Earth from orbit with blue atmosphere",
-             "NASA", "nasa"),
-        _img("1516849841032-87cbac4d88f7",
-             "Rocket launching with bright exhaust flame at night",
-             "SpaceX", "spacex"),
-        _img("1454789548928-701522940945",
-             "Milky Way galaxy with stars over dark landscape",
-             "Greg Rakozy", "grakozy"),
-        _img("1614730321146-b6fa6a46bcb4",
-             "Nebula and stars in deep space",
-             "Jeremy Thomas", "jeremythomasphoto"),
+             "Space station solar panels orbiting Earth",
+             "NASA"),
+        _img("1541185933-ef5d8ed016c2",
+             "Rocket launch trajectory arc into night sky",
+             "SpaceX"),
     ],
 
-    # ── 헬스케어 / 웨어러블 ──────────────────────────────────────
+    # ── 6. 헬스케어 / 웨어러블 ──────────────────────────────────
     "health": [
         _img("1576091160399-112ba8d25d1d",
-             "Medical professional using digital health tablet",
-             "National Cancer Institute", "nci"),
-        _img("1559757148-5c350d0d3c56",
-             "DNA strand and biotechnology research visualization",
-             "Warren Umoh", "warrenumoh"),
-        _img("1576671081837-49000212a223",
-             "Smart wearable health monitoring device on wrist",
-             "Luke Chesser", "lukechesser"),
+             "Glowing DNA helix structure graphic in dark lab",
+             "National Cancer Institute"),
+        _img("1530026405186-ed1ea0ac7a63",
+             "Digital heartbeat ECG waveform sensor display",
+             "National Cancer Institute"),
         _img("1505751172876-fa1923c5c528",
-             "Doctor reviewing digital patient data on screen",
-             "Online Marketing", "impulsq"),
+             "Smart wearable health monitoring loop screen",
+             "Online Marketing"),
+        _img("1579684389782-64d84b5e905d",
+             "Bio cells under microscope biotech visualization",
+             "National Cancer Institute"),
     ],
 
-    # ── 전기차 / EV ───────────────────────────────────────────────
+    # ── 7. 전기차 / EV ──────────────────────────────────────────
     "ev": [
-        _img("1593941707882-a5bba14938c7",
-             "Electric vehicle charging port glowing blue",
-             "dcbel", "dcbel"),
-        _img("1558618666-fcd25c85cd64",
-             "Red Tesla Model S on mountain road",
-             "Charlie Deets", "charliedeets"),
+        _img("1563720223185-11003d516935",
+             "Autonomous vehicle headlight light trails tech art",
+             "Jp Valery"),
+        _img("1558441719-ff34b0524a24",
+             "Futuristic electric vehicle charging port close-up",
+             "Chuttersnap"),
         _img("1617788138017-80ad40651399",
-             "EV charging station with multiple connectors",
-             "Juice Flair", "juiceflair"),
-        _img("1603584173870-7f23fdae1b7a",
-             "Modern electric vehicle interior dashboard at night",
-             "Jp Valery", "jpvalery"),
+             "Sleek EV body curves in dark studio lighting",
+             "Juice Flair"),
+        _img("1544716278-ca5e3f4abd8c",
+             "LiDAR sensor autonomous driving line graphic",
+             "Possessed Photography"),
     ],
 
-    # ── 무역 / 글로벌 경제 ───────────────────────────────────────
+    # ── 8. 거시경제 / 글로벌 무역 ───────────────────────────────
     "economy": [
-        _img("1553729459-efe14ef6055d",
-             "Container cargo ship at ocean port",
-             "Channey", "channey"),
-        _img("1486406146926-c627a92ad1ab",
-             "Glass skyscrapers of financial district",
-             "Sean Pollock", "seanpollock"),
         _img("1454165804606-c3d57bc86b40",
-             "Business professionals in meeting room",
-             "Cytonn Photography", "cytonn_photography"),
-        _img("1494412574643-ff11b0a5c1c3",
-             "Aerial view of cargo containers at port terminal",
-             "Tom Fisk", "tomfisk"),
+             "Dark theme global trade chart analysis screen",
+             "Cytonn Photography"),
+        _img("1526304640581-d334cdbbf45e",
+             "Digital dollar financial liquidity visual",
+             "André François McKenzie"),
+        _img("1601597111158-2fceff292cdc",
+             "Dark harbor container crane silhouette at dusk",
+             "Channey"),
+        _img("1586528116311-ad8dd3c8310d",
+             "World map shipping route light graphic",
+             "Thomas Lefebvre"),
+    ],
+
+    # ── 9. 통신 / 5G / 네트워크 ─────────────────────────────────
+    "telecom": [
+        _img("1544197150-b99a580bb7a8",
+             "Dark blue fiber optic cables filling server rack",
+             "Alina Grubnyak"),
+        _img("1516321318423-f06f85e504b3",
+             "Digital node hub connection network abstract art",
+             "Alina Grubnyak"),
+        _img("1600132806370-bf17e65e942f",
+             "Tall cell tower antenna rising into night sky",
+             "Thomas Kelley"),
+        _img("1488590528505-98d2b5aba04b",
+             "Neon data transmission flow visual dark background",
+             "Umberto"),
+    ],
+
+    # ── 10. 빅테크 / 플랫폼 ─────────────────────────────────────
+    "bigtech": [
+        _img("1618005182384-a83a8bd57fbe",
+             "Abstract dark silk web browser art visual",
+             "Growtika"),
+        _img("1531297484001-80022131f5a1",
+             "Premium laptop display Apple-style aesthetic",
+             "Ales Nesetril"),
+        _img("1562577309-4932fdd64cd1",
+             "Data marketing multi-screen dashboard display",
+             "Luke Chesser"),
+        _img("1498050108023-c5249f4df085",
+             "MacBook and smart devices overlay in dark room",
+             "Christopher Gower"),
+    ],
+
+    # ── 11. 정책 / 규제 / AI 안전 ───────────────────────────────
+    "policy": [
+        _img("1589829545856-d10d557cf95f",
+             "Scales of justice in darkness law court symbol",
+             "René DeAnda"),
+        _img("1450133064473-71024230f91b",
+             "Solemn marble columns and capitol building silhouette",
+             "Louis Velazquez"),
+        _img("1505664194779-8beaceb93744",
+             "Old classic law books with leather cover close-up",
+             "Tingey Injury Law Firm"),
+        _img("1521791136364-7286472b6b5c",
+             "Document signing with premium pen dark overlay",
+             "Cytonn Photography"),
+    ],
+
+    # ── 12. 방산 / 군사 기술 ────────────────────────────────────
+    "defense": [
+        _img("1508873535684-277a3cbcc4e8",
+             "Military helicopter silhouette in dark hangar",
+             "David Henrichs"),
+        _img("1473163928189-364b2c4e1135",
+             "Radar grid scan line screen display",
+             "Chris Henry"),
+        _img("1506084868230-bb9d95c24759",
+             "Aircraft vapor trails contrails in night sky",
+             "Amir Kabirov"),
+        _img("1569003339405-ea396a5a8a90",
+             "Dark security zone restricted area fence",
+             "Ehud Neuhaus"),
     ],
 }
 
-# ── 기본 풀 (카테고리 미매칭 시) ────────────────────────────────
+# ── 기본 풀 (카테고리 미매칭 시) ─────────────────────────────────
 DEFAULT_IMAGE_POOL = [
     _img("1504711434969-e33886168f5c",
-         "Aerial view of city lights at night in blue tones",
-         "Maximalfocus", "maximalfocus"),
+         "Aerial view of city lights glowing at night",
+         "Maximalfocus"),
     _img("1451187580459-43490279c0fa",
-         "Planet Earth seen from space with city lights",
-         "NASA", "nasa"),
+         "Planet Earth viewed from space with city lights",
+         "NASA"),
     _img("1498050108023-c5249f4df085",
-         "Laptop with code on screen in dark environment",
-         "Christopher Gower", "cgower"),
+         "Laptop displaying code in dark environment",
+         "Christopher Gower"),
     _img("1522071820081-009f0129c71c",
-         "Team working on laptops in modern office",
-         "Annie Spratt", "anniespratt"),
+         "Tech team collaborating on laptops in office",
+         "Annie Spratt"),
 ]
+
+
+def select_from_pool(pool: list, title: str, date_str: str = "") -> dict:
+    """제목+날짜 해시 → 결정론적 이미지 선택 (§6-5)."""
+    seed   = f"{title}_{date_str}".encode("utf-8")
+    digest = hashlib.md5(seed).hexdigest()
+    return pool[int(digest, 16) % len(pool)]
+
+
+def detect_category(title: str, summary: str) -> str | None:
+    """CATEGORY_PATTERNS 순서대로 첫 매칭 카테고리 반환."""
+    text = title + " " + summary
+    for category_key, pattern in CATEGORY_PATTERNS:
+        if re.search(pattern, text, re.IGNORECASE):
+            return category_key
+    return None
+
+
+def parse_dimension(value) -> int | None:
+    if value is None:
+        return None
+    match = re.search(r"\d+", str(value))
+    return int(match.group(0)) if match else None
+
+
+def find_article_image(soup: BeautifulSoup) -> dict | None:
+    """Priority 1: 기사 본문 내 이미지 탐색."""
+    BLOCKED = re.compile(r'icon|logo|badge|emoji|bullet|arrow|avatar', re.I)
+    for img in soup.find_all("img"):
+        src = img.get("src", "")
+        if not src or BLOCKED.search(src):
+            continue
+        w, h = parse_dimension(img.get("width")), parse_dimension(img.get("height"))
+        if w is not None and w <= 200:
+            continue
+        if h is not None and h <= 100:
+            continue
+        img["data-promoted"] = "hero"
+        return {"id": None, "alt": img.get("alt", ""),
+                "credit_name": "", "credit_url": "", "src_override": src}
+    return None
+
+
+def make_urls(img_meta: dict) -> dict:
+    """이미지 메타에서 모든 URL 크기 변형 생성."""
+    if img_meta.get("src_override"):
+        src = img_meta["src_override"]
+        return {
+            "hero_url":     src, "hero_url_sm":  src,
+            "thumb_url":    src, "thumb_url_xs": src,
+        }
+    pid = img_meta["id"]
+    return {
+        "hero_url":     BASE + pid + PARAMS_HERO,
+        "hero_url_sm":  BASE + pid + PARAMS_HERO_SM,
+        "thumb_url":    BASE + pid + PARAMS_THUMB,
+        "thumb_url_xs": BASE + pid + PARAMS_THUMB_XS,
+    }
+
+
+def resolve_image(soup: BeautifulSoup, title: str,
+                  date_str: str, summary: str) -> tuple[dict, str]:
+    """이미지 결정 메인 로직. 반환: (img_meta dict, hero_source string)"""
+    art = find_article_image(soup)
+    if art:
+        return art, "article_image"
+
+    cat = detect_category(title, summary)
+    if cat and cat in CATEGORY_IMAGE_MAP:
+        img = select_from_pool(CATEGORY_IMAGE_MAP[cat], title, date_str)
+        return img, "handpick_category"
+
+    img = select_from_pool(DEFAULT_IMAGE_POOL, title, date_str)
+    return img, "handpick_default"
+
 
 GNB_HTML = """<nav class="reader-nav">
   <div class="reader-nav-inner">
@@ -209,108 +340,6 @@ FOOTER_HTML = """<footer class="reader-footer">
 </footer>"""
 
 
-def select_from_pool(pool: list, date_str: str) -> dict:
-    """날짜 해시 기반 결정론적 선택 (§6-4 알고리즘)."""
-    index = int(hashlib.md5(date_str.encode("utf-8")).hexdigest(), 16) % len(pool)
-    return pool[index]
-
-
-def parse_dimension(value: Any) -> int | None:
-    if value is None:
-        return None
-    match = re.search(r"\d+", str(value))
-    return int(match.group(0)) if match else None
-
-
-def find_article_image(soup: BeautifulSoup) -> dict | None:
-    """Priority 1: 기사 본문 내 이미지 탐색 및 히어로 승격."""
-    BLOCKED = re.compile(r'icon|logo|badge|emoji|bullet|arrow|avatar', re.I)
-    for img in soup.find_all("img"):
-        src = img.get("src", "")
-        if not src or BLOCKED.search(src):
-            continue
-        w = parse_dimension(img.get("width"))
-        h = parse_dimension(img.get("height"))
-        if w is not None and w <= 200:
-            continue
-        if h is not None and h <= 100:
-            continue
-        img["data-promoted"] = "hero"
-        return {
-            "url":         src,
-            "url_small":   src,
-            "alt":         img.get("alt", ""),
-            "credit_name": "",
-            "credit_url":  "",
-            "source":      "article_image",
-        }
-    return None
-
-
-def detect_category(title: str, summary: str) -> str | None:
-    """Priority 2: 제목+요약 텍스트에서 카테고리 탐지."""
-    text = title + " " + summary
-    for category_key, pattern in CATEGORY_PATTERNS:
-        if re.search(pattern, text, re.IGNORECASE):
-            return category_key
-    return None
-
-
-def html_attr(value: Any) -> str:
-    return escape(str(value or ""), quote=True)
-
-
-def build_hero_html(img: dict, date_str: str) -> str:
-    """히어로 이미지 div HTML 생성."""
-    credit_html = ""
-    if img.get("credit_name") and img.get("credit_url"):
-        credit_html = (
-            f'<a class="reader-hero-credit" href="{html_attr(img["credit_url"])}" '
-            f'target="_blank" rel="noopener">'
-            f'Photo by {html_attr(img["credit_name"])} / Unsplash</a>'
-        )
-    return f"""<div class="reader-hero has-image" data-article-date="{html_attr(date_str)}">
-  <picture>
-    <source media="(max-width: 640px)" srcset="{html_attr(img['url_small'])}">
-    <img class="reader-hero-img" src="{html_attr(img['url'])}" alt="{html_attr(img['alt'])}"
-         loading="lazy" decoding="async">
-  </picture>
-  <div class="reader-hero-overlay"></div>
-  {credit_html}
-</div>"""
-
-
-def resolve_hero(soup: BeautifulSoup, meta: dict) -> tuple[str, dict | None]:
-    """
-    히어로 이미지 결정. (html_snippet, image_meta) 반환.
-    image_meta는 briefings.json 저장용. html_snippet은 주입용.
-    """
-    date_str = meta.get("date", "2026-01-01")
-    title    = meta.get("title", "")
-    summary  = meta.get("summary", "")
-
-    # ── Priority 1: 기사 본문 이미지 ─────────────────────────────
-    article_img = find_article_image(soup)
-    if article_img:
-        article_img["source"] = "article_image"
-        return build_hero_html(article_img, date_str), article_img
-
-    # ── Priority 2: 카테고리 핸드픽 맵 ──────────────────────────
-    category = detect_category(title, summary)
-    if category and category in CATEGORY_IMAGE_MAP:
-        img_meta = select_from_pool(CATEGORY_IMAGE_MAP[category], date_str)
-        img_meta = {**img_meta, "source": "handpick_category"}
-        return build_hero_html(img_meta, date_str), img_meta
-
-    # ── Priority 3: 기본 풀 ──────────────────────────────────────
-    img_meta = select_from_pool(DEFAULT_IMAGE_POOL, date_str)
-    img_meta = {**img_meta, "source": "handpick_default"}
-    return build_hero_html(img_meta, date_str), img_meta
-
-    # ── Priority 4: CSS 그라데이션 폴백 (도달 불가 — 기본 풀이 항상 존재)
-    # return f'<div class="reader-hero no-image" data-article-date="{date_str}"></div>', None
-
-
 def remove_previous_reader_chrome(soup: BeautifulSoup) -> None:
     for selector in ("nav.reader-nav", ".reader-hero", "footer.reader-footer"):
         for tag in soup.select(selector):
@@ -325,14 +354,10 @@ def ensure_theme_link(soup: BeautifulSoup) -> None:
         if link.get("href", "").split("?", 1)[0] == "../theme-modern.css":
             return
     link = soup.new_tag("link", rel="stylesheet", href="../theme-modern.css")
-    styles = head.find_all("style")
-    if styles:
-        styles[-1].insert_after(link)
-    else:
-        head.append(link)
+    head.append(link)
 
 
-def ensure_reader_mode(body: Any) -> None:
+def ensure_reader_mode(body) -> None:
     existing = body.get("class", [])
     if isinstance(existing, str):
         existing = existing.split()
@@ -341,69 +366,84 @@ def ensure_reader_mode(body: Any) -> None:
     body["class"] = existing
 
 
-def process_article(html_path: Path, meta: dict) -> dict:
-    """
-    단일 기사 HTML 파일 변환.
-    반환: briefings.json에 병합할 hero 메타데이터 dict.
-    """
-    soup = BeautifulSoup(html_path.read_text("utf-8"), "html.parser")
+def build_hero_html(img_meta: dict, urls: dict, date_str: str) -> str:
+    """reader-mode 히어로 div HTML 생성."""
+    credit = ""
+    if img_meta.get("credit_name") and img_meta.get("credit_url"):
+        credit = (f'<a class="reader-hero-credit" href="{img_meta["credit_url"]}"'
+                  f' target="_blank" rel="noopener">'
+                  f'Photo by {img_meta["credit_name"]} / Unsplash</a>')
+    return (f'<div class="reader-hero has-image" data-article-date="{date_str}">\n'
+            f'  <picture>\n'
+            f'    <source media="(max-width:640px)" srcset="{urls["hero_url_sm"]}">\n'
+            f'    <img class="reader-hero-img" src="{urls["hero_url"]}"'
+            f' alt="{img_meta["alt"]}" loading="lazy" decoding="async">\n'
+            f'  </picture>\n'
+            f'  <div class="reader-hero-overlay"></div>\n'
+            f'  {credit}\n'
+            f'</div>')
 
-    # 1. <head>에 theme-modern.css 링크 주입
+
+def process_article(html_path: Path, briefing_meta: dict) -> dict:
+    """단일 기사 HTML 변환. 반환: briefings.json 갱신용 hero/thumb 메타 dict."""
+    soup  = BeautifulSoup(html_path.read_text("utf-8"), "html.parser")
+    title = briefing_meta.get("title", "")
+    date  = briefing_meta.get("date", "")
+    summ  = briefing_meta.get("summary", "")
+
+    img_meta, source = resolve_image(soup, title, date, summ)
+    urls = make_urls(img_meta)
+
     head = soup.find("head")
     body = soup.find("body")
     if head is None or body is None:
-        return {"hero_source": "css_gradient"}
+        return {"hero_source": "css_gradient", "thumb_category": "default"}
 
     remove_previous_reader_chrome(soup)
     ensure_theme_link(soup)
-
-    # 2. <body>에 reader-mode 클래스 추가
     ensure_reader_mode(body)
 
-    # 3. 히어로 이미지 결정
-    hero_html, img_meta = resolve_hero(soup, meta)
-
-    # 4. GNB + 히어로를 <body> 최상단에 삽입
+    hero_html = build_hero_html(img_meta, urls, date)
     body.insert(0, BeautifulSoup(hero_html, "html.parser"))
     body.insert(0, BeautifulSoup(GNB_HTML, "html.parser"))
-
-    # 5. 리더 푸터를 </body> 직전에 삽입
     body.append(BeautifulSoup(FOOTER_HTML, "html.parser"))
 
-    # 6. 저장
     html_path.write_text(str(soup), "utf-8")
 
-    # 7. briefings.json 갱신용 메타 반환
-    if img_meta:
-        return {
-            "hero_url":         img_meta.get("url", ""),
-            "hero_url_small":   img_meta.get("url_small", ""),
-            "hero_alt":         img_meta.get("alt", ""),
-            "hero_credit_name": img_meta.get("credit_name", ""),
-            "hero_credit_url":  img_meta.get("credit_url", ""),
-            "hero_source":      img_meta.get("source", "css_gradient"),
-        }
-    return {"hero_source": "css_gradient"}
+    cat = detect_category(title, summ) or "default"
+
+    return {
+        "hero_url":         urls["hero_url"],
+        "hero_url_sm":      urls["hero_url_sm"],
+        "hero_alt":         img_meta["alt"],
+        "hero_credit_name": img_meta.get("credit_name", ""),
+        "hero_credit_url":  img_meta.get("credit_url", ""),
+        "hero_source":      source,
+        "thumb_url":        urls["thumb_url"],
+        "thumb_url_xs":     urls["thumb_url_xs"],
+        "thumb_alt":        img_meta["alt"],
+        "thumb_category":   cat,
+    }
 
 
 def main():
     data = json.loads(BRIEFINGS_JSON.read_text("utf-8"))
 
     for briefing in data.get("briefings", []):
-        date = briefing.get("date", "")
+        date      = briefing.get("date", "")
         html_path = ARCHIVE_DIR / f"{date}.html"
         if not html_path.exists():
+            print(f"[SKIP] {date}.html not found")
             continue
 
-        hero_meta = process_article(html_path, briefing)
-        briefing.update(hero_meta)
-        print(f"[OK] {date} → source={hero_meta.get('hero_source')}")
+        meta = process_article(html_path, briefing)
+        briefing.update(meta)
+        print(f"[OK] {date} cat={meta['thumb_category']} src={meta['hero_source']}")
 
     BRIEFINGS_JSON.write_text(
         json.dumps(data, ensure_ascii=False, indent=2), "utf-8"
     )
-    print(f"[DONE] briefings.json updated.")
-
+    print("[DONE] briefings.json updated.")
 
 if __name__ == "__main__":
     main()

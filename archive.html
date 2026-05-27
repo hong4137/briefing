@@ -5,22 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-72x72.png">
-    <!-- SW Cleanup: Unregister any previously installed service workers -->
+    <!-- SW Cleanup: Unregister previously installed service workers -->
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then(function(registrations) {
-          for (let registration of registrations) {
-            registration.unregister();
-          }
+          for (let r of registrations) { r.unregister(); }
         });
-        caches.keys().then(function(cacheNames) {
-          cacheNames.forEach(function(cacheName) {
-            caches.delete(cacheName);
-          });
+        caches.keys().then(function(names) {
+          names.forEach(function(n) { caches.delete(n); });
         });
       }
-    </script>
-    <title>아카이브 | Jae's Foreign News Briefing</title>
+    </script><title>아카이브 | Jae's Foreign News Briefing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -646,13 +641,20 @@
                         <div class="timeline-list">
                             ${monthBriefings.map(b => `
                                 <a href="archive/${encodeURIComponent(b.date)}.html" class="tl-item">
-                                    <span class="tl-date">${escapeHTML(b.date.substring(5))}</span>
+                                    <div class="tl-date">
+                                        <div class="day">${escapeHTML(b.date.substring(5))}</div>
+                                        <div class="weekday">(${escapeHTML(b.day || '')})</div>
+                                    </div>
                                     <span class="tl-dot"></span>
-                                    <div class="tl-body">
+                                    ${b.thumb_url ? `<div class="tl-thumbnail">
+                                        <img src="${escapeHTML(b.thumb_url_xs || b.thumb_url)}"
+                                             alt="${escapeHTML(b.thumb_alt || '')}" loading="lazy" decoding="async">
+                                    </div>` : ''}
+                                    <div class="tl-content">
                                         <h3 class="tl-title">${escapeHTML(b.title)}</h3>
                                         <p class="tl-summary">${escapeHTML(b.summary)}</p>
                                     </div>
-                                    <span class="tl-meta">${escapeHTML(b.stats?.articles || 0)}기사</span>
+                                    <div class="tl-meta">${escapeHTML(b.stats?.articles || 0)} 기사</div>
                                 </a>
                             `).join('')}
                         </div>

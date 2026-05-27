@@ -14,7 +14,17 @@
         "articles": 22,
         "sections": 7,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-26",
@@ -30,7 +40,17 @@
         "articles": 11,
         "sections": 6,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-25",
@@ -46,7 +66,17 @@
         "articles": 16,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-23",
@@ -62,7 +92,17 @@
         "articles": 20,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-22",
@@ -78,7 +118,17 @@
         "articles": 18,
         "sections": 7,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-21",
@@ -94,7 +144,17 @@
         "articles": 19,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-20",
@@ -110,7 +170,17 @@
         "articles": 16,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-19",
@@ -126,7 +196,17 @@
         "articles": 16,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-18",
@@ -142,7 +222,17 @@
         "articles": 19,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-16",
@@ -158,7 +248,17 @@
         "articles": 19,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-15",
@@ -174,7 +274,17 @@
         "articles": 21,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-14",
@@ -190,7 +300,17 @@
         "articles": 21,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-13",
@@ -206,7 +326,17 @@
         "articles": 21,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-12",
@@ -222,7 +352,17 @@
         "articles": 26,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-11",
@@ -238,7 +378,17 @@
         "articles": 26,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-09",
@@ -254,7 +404,17 @@
         "articles": 19,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-08",
@@ -270,7 +430,17 @@
         "articles": 13,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-07",
@@ -286,7 +456,17 @@
         "articles": 19,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-06",
@@ -302,7 +482,17 @@
         "articles": 19,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-05",
@@ -318,7 +508,17 @@
         "articles": 19,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-04",
@@ -334,7 +534,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-04",
@@ -350,7 +560,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-02",
@@ -366,7 +586,17 @@
         "articles": 19,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-01",
@@ -382,7 +612,17 @@
         "articles": 19,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-30",
@@ -398,7 +638,17 @@
         "articles": 21,
         "sections": 4,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-29",
@@ -414,7 +664,17 @@
         "articles": 23,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-28",
@@ -430,7 +690,17 @@
         "articles": 14,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-27",
@@ -446,7 +716,17 @@
         "articles": 21,
         "sections": 7,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-25",
@@ -462,7 +742,17 @@
         "articles": 18,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-24",
@@ -478,7 +768,17 @@
         "articles": 19,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-23",
@@ -494,7 +794,17 @@
         "articles": 18,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-22",
@@ -510,7 +820,17 @@
         "articles": 18,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-21",
@@ -526,7 +846,17 @@
         "articles": 23,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-20",
@@ -542,7 +872,17 @@
         "articles": 18,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-18",
@@ -558,7 +898,17 @@
         "articles": 24,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-17",
@@ -574,7 +924,17 @@
         "articles": 21,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-16",
@@ -590,7 +950,17 @@
         "articles": 23,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-15",
@@ -606,7 +976,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-14",
@@ -622,7 +1002,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-13",
@@ -638,7 +1028,17 @@
         "articles": 18,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-11",
@@ -654,7 +1054,17 @@
         "articles": 18,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-10",
@@ -670,7 +1080,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-10",
@@ -686,7 +1106,17 @@
         "articles": 22,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-09",
@@ -702,7 +1132,17 @@
         "articles": 22,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-08",
@@ -718,7 +1158,17 @@
         "articles": 18,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-07",
@@ -734,7 +1184,17 @@
         "articles": 18,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-06",
@@ -750,7 +1210,17 @@
         "articles": 19,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Aircraft vapor trails contrails in night sky",
+      "hero_credit_name": "Amir Kabirov",
+      "hero_credit_url": "https://unsplash.com/photos/1506084868230-bb9d95c24759",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Aircraft vapor trails contrails in night sky",
+      "thumb_category": "defense"
     },
     {
       "date": "2026-04-04",
@@ -766,7 +1236,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-03",
@@ -782,7 +1262,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-02",
@@ -798,7 +1288,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-04-01",
@@ -814,7 +1314,17 @@
         "articles": 21,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-31",
@@ -830,7 +1340,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-30",
@@ -846,7 +1366,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-28",
@@ -862,7 +1392,17 @@
         "articles": 23,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-27",
@@ -878,7 +1418,17 @@
         "articles": 22,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-26",
@@ -894,7 +1444,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-25",
@@ -910,7 +1470,17 @@
         "articles": 19,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-24",
@@ -926,7 +1496,17 @@
         "articles": 19,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "chip"
     },
     {
       "date": "2026-03-23",
@@ -942,7 +1522,17 @@
         "articles": 16,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-21",
@@ -958,7 +1548,17 @@
         "articles": 21,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-20",
@@ -974,7 +1574,17 @@
         "articles": 18,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-19",
@@ -990,7 +1600,17 @@
         "articles": 18,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-18",
@@ -1006,7 +1626,17 @@
         "articles": 19,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-17",
@@ -1022,7 +1652,17 @@
         "articles": 21,
         "sections": 4,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-16",
@@ -1038,7 +1678,17 @@
         "articles": 22,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-14",
@@ -1054,7 +1704,17 @@
         "articles": 21,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-13",
@@ -1070,7 +1730,17 @@
         "articles": 21,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-12",
@@ -1086,7 +1756,17 @@
         "articles": 22,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-11",
@@ -1102,7 +1782,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-10",
@@ -1118,7 +1808,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-10",
@@ -1134,7 +1834,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-09",
@@ -1150,7 +1860,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-07",
@@ -1166,7 +1886,17 @@
         "articles": 17,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-06",
@@ -1182,7 +1912,17 @@
         "articles": 17,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-05",
@@ -1198,7 +1938,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-04",
@@ -1214,7 +1964,17 @@
         "articles": 13,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-04",
@@ -1230,7 +1990,17 @@
         "articles": 17,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-03",
@@ -1246,7 +2016,17 @@
         "articles": 20,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-03-02",
@@ -1262,7 +2042,17 @@
         "articles": 17,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-28",
@@ -1278,7 +2068,17 @@
         "articles": 22,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-27",
@@ -1294,7 +2094,17 @@
         "articles": 18,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-26",
@@ -1310,7 +2120,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-25",
@@ -1326,7 +2146,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-24",
@@ -1342,7 +2172,17 @@
         "articles": 18,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-23",
@@ -1358,7 +2198,17 @@
         "articles": 24,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-21",
@@ -1374,7 +2224,17 @@
         "articles": 18,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-20",
@@ -1390,7 +2250,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-19",
@@ -1406,7 +2276,17 @@
         "articles": 19,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-18",
@@ -1422,7 +2302,17 @@
         "articles": 18,
         "sections": 6,
         "picks": 1
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-17",
@@ -1438,7 +2328,17 @@
         "articles": 15,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-16",
@@ -1454,7 +2354,17 @@
         "articles": 19,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-14",
@@ -1470,7 +2380,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-13",
@@ -1486,7 +2406,17 @@
         "articles": 23,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-12",
@@ -1502,7 +2432,17 @@
         "articles": 23,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-11",
@@ -1518,7 +2458,17 @@
         "articles": 23,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-10",
@@ -1534,7 +2484,17 @@
         "articles": 19,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-09",
@@ -1550,7 +2510,17 @@
         "articles": 16,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-07",
@@ -1566,7 +2536,17 @@
         "articles": 20,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-06",
@@ -1582,7 +2562,17 @@
         "articles": 15,
         "sections": 6,
         "picks": 1
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-05",
@@ -1598,7 +2588,17 @@
         "articles": 20,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-04",
@@ -1614,7 +2614,17 @@
         "articles": 20,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-03",
@@ -1630,7 +2640,17 @@
         "articles": 17,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-02-02",
@@ -1646,7 +2666,17 @@
         "articles": 18,
         "sections": 7,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Financial data abstract 3D volume visualization",
+      "hero_credit_name": "Adam Nowakowski",
+      "hero_credit_url": "https://unsplash.com/photos/1642543492481-44e81e3914a7",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Financial data abstract 3D volume visualization",
+      "thumb_category": "finance"
     },
     {
       "date": "2026-01-31",
@@ -1662,7 +2692,17 @@
         "articles": 10,
         "sections": 6,
         "picks": 1
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-30",
@@ -1678,7 +2718,17 @@
         "articles": 18,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-29",
@@ -1694,7 +2744,17 @@
         "articles": 15,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-28",
@@ -1710,7 +2770,17 @@
         "articles": 14,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-27",
@@ -1726,7 +2796,17 @@
         "articles": 15,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-26",
@@ -1742,7 +2822,17 @@
         "articles": 14,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Abstract semiconductor lattice grid graphic",
+      "hero_credit_name": "Laura Ockel",
+      "hero_credit_url": "https://unsplash.com/photos/1591453089816-0fbb971b454c",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Abstract semiconductor lattice grid graphic",
+      "thumb_category": "chip"
     },
     {
       "date": "2026-01-25",
@@ -1758,7 +2848,17 @@
         "articles": 12,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-24",
@@ -1774,7 +2874,17 @@
         "articles": 16,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon candlestick stock market chart on dark monitor",
+      "hero_credit_name": "Maxim Hopman",
+      "hero_credit_url": "https://unsplash.com/photos/1611974789855-9c2a0a7236a3",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon candlestick stock market chart on dark monitor",
+      "thumb_category": "finance"
     },
     {
       "date": "2026-01-23",
@@ -1790,7 +2900,17 @@
         "articles": 15,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Autonomous vehicle headlight light trails tech art",
+      "hero_credit_name": "Jp Valery",
+      "hero_credit_url": "https://unsplash.com/photos/1563720223185-11003d516935",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Autonomous vehicle headlight light trails tech art",
+      "thumb_category": "ev"
     },
     {
       "date": "2026-01-22",
@@ -1806,7 +2926,17 @@
         "articles": 20,
         "sections": 6,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-21",
@@ -1822,7 +2952,17 @@
         "articles": 14,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Planet Earth viewed from space with city lights",
+      "hero_credit_name": "NASA",
+      "hero_credit_url": "https://unsplash.com/photos/1451187580459-43490279c0fa",
+      "hero_source": "handpick_default",
+      "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Planet Earth viewed from space with city lights",
+      "thumb_category": "default"
     },
     {
       "date": "2026-01-20",
@@ -1838,7 +2978,17 @@
         "articles": 15,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Planet Earth viewed from space with city lights",
+      "hero_credit_name": "NASA",
+      "hero_credit_url": "https://unsplash.com/photos/1451187580459-43490279c0fa",
+      "hero_source": "handpick_default",
+      "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Planet Earth viewed from space with city lights",
+      "thumb_category": "default"
     },
     {
       "date": "2026-01-19",
@@ -1854,7 +3004,17 @@
         "articles": 12,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Planet Earth viewed from space with city lights",
+      "hero_credit_name": "NASA",
+      "hero_credit_url": "https://unsplash.com/photos/1451187580459-43490279c0fa",
+      "hero_source": "handpick_default",
+      "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Planet Earth viewed from space with city lights",
+      "thumb_category": "default"
     },
     {
       "date": "2026-01-18",
@@ -1870,7 +3030,17 @@
         "articles": 11,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-17",
@@ -1886,7 +3056,17 @@
         "articles": 14,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-15",
@@ -1902,7 +3082,17 @@
         "articles": 19,
         "sections": 6,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-14",
@@ -1918,7 +3108,17 @@
         "articles": 15,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-13",
@@ -1934,7 +3134,17 @@
         "articles": 14,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-12",
@@ -1950,7 +3160,17 @@
         "articles": 12,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-11",
@@ -1966,7 +3186,17 @@
         "articles": 13,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-10",
@@ -1982,7 +3212,17 @@
         "articles": 15,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Planet Earth viewed from space with city lights",
+      "hero_credit_name": "NASA",
+      "hero_credit_url": "https://unsplash.com/photos/1451187580459-43490279c0fa",
+      "hero_source": "handpick_default",
+      "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Planet Earth viewed from space with city lights",
+      "thumb_category": "default"
     },
     {
       "date": "2026-01-09",
@@ -1998,7 +3238,17 @@
         "articles": 14,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-08",
@@ -2014,7 +3264,17 @@
         "articles": 16,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-07",
@@ -2030,7 +3290,17 @@
         "articles": 15,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Planet Earth viewed from space with city lights",
+      "hero_credit_name": "NASA",
+      "hero_credit_url": "https://unsplash.com/photos/1451187580459-43490279c0fa",
+      "hero_source": "handpick_default",
+      "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Planet Earth viewed from space with city lights",
+      "thumb_category": "default"
     },
     {
       "date": "2026-01-06",
@@ -2046,7 +3316,17 @@
         "articles": 13,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-05",
@@ -2062,7 +3342,17 @@
         "articles": 12,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-04",
@@ -2078,7 +3368,17 @@
         "articles": 14,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-03",
@@ -2094,7 +3394,17 @@
         "articles": 13,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1558441719-ff34b0524a24?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1558441719-ff34b0524a24?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Futuristic electric vehicle charging port close-up",
+      "hero_credit_name": "Chuttersnap",
+      "hero_credit_url": "https://unsplash.com/photos/1558441719-ff34b0524a24",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1558441719-ff34b0524a24?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1558441719-ff34b0524a24?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Futuristic electric vehicle charging port close-up",
+      "thumb_category": "ev"
     },
     {
       "date": "2026-01-02",
@@ -2110,7 +3420,17 @@
         "articles": 14,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-01-01",
@@ -2126,7 +3446,17 @@
         "articles": 15,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Autonomous vehicle headlight light trails tech art",
+      "hero_credit_name": "Jp Valery",
+      "hero_credit_url": "https://unsplash.com/photos/1563720223185-11003d516935",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Autonomous vehicle headlight light trails tech art",
+      "thumb_category": "ev"
     },
     {
       "date": "2025-12-31",
@@ -2142,7 +3472,17 @@
         "articles": 14,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2025-12-30",
@@ -2158,7 +3498,17 @@
         "articles": 13,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon glowing line tech art abstract dark",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1507146426996-ef05306b995a",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Neon glowing line tech art abstract dark",
+      "thumb_category": "ai"
     },
     {
       "date": "2025-12-29",
@@ -2174,7 +3524,17 @@
         "articles": 12,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
     },
     {
       "date": "2025-12-28",
@@ -2190,7 +3550,17 @@
         "articles": 14,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Abstract semiconductor lattice grid graphic",
+      "hero_credit_name": "Laura Ockel",
+      "hero_credit_url": "https://unsplash.com/photos/1591453089816-0fbb971b454c",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Abstract semiconductor lattice grid graphic",
+      "thumb_category": "chip"
     },
     {
       "date": "2025-12-27",
@@ -2206,7 +3576,17 @@
         "articles": 13,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Abstract semiconductor lattice grid graphic",
+      "hero_credit_name": "Laura Ockel",
+      "hero_credit_url": "https://unsplash.com/photos/1591453089816-0fbb971b454c",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Abstract semiconductor lattice grid graphic",
+      "thumb_category": "chip"
     },
     {
       "date": "2025-12-26",
@@ -2222,7 +3602,17 @@
         "articles": 12,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2025-12-25",
@@ -2238,7 +3628,17 @@
         "articles": 11,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Laptop displaying code in dark environment",
+      "hero_credit_name": "Christopher Gower",
+      "hero_credit_url": "https://unsplash.com/photos/1498050108023-c5249f4df085",
+      "hero_source": "handpick_default",
+      "thumb_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Laptop displaying code in dark environment",
+      "thumb_category": "default"
     },
     {
       "date": "2025-12-24",
@@ -2254,7 +3654,17 @@
         "articles": 12,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2025-12-22",
@@ -2270,7 +3680,17 @@
         "articles": 11,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Tech team collaborating on laptops in office",
+      "hero_credit_name": "Annie Spratt",
+      "hero_credit_url": "https://unsplash.com/photos/1522071820081-009f0129c71c",
+      "hero_source": "handpick_default",
+      "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Tech team collaborating on laptops in office",
+      "thumb_category": "default"
     },
     {
       "date": "2025-12-21",
@@ -2282,7 +3702,17 @@
         "articles": 10,
         "sections": 5,
         "picks": 2
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2025-12-19",
@@ -2294,7 +3724,17 @@
         "articles": 11,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Digital currency and capital liquidity visual",
+      "hero_credit_name": "André François McKenzie",
+      "hero_credit_url": "https://unsplash.com/photos/1526304640581-d334cdbbf45e",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Digital currency and capital liquidity visual",
+      "thumb_category": "finance"
     },
     {
       "date": "2025-12-18",
@@ -2306,7 +3746,17 @@
         "articles": 10,
         "sections": 4,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Aerial view of city lights glowing at night",
+      "hero_credit_name": "Maximalfocus",
+      "hero_credit_url": "https://unsplash.com/photos/1504711434969-e33886168f5c",
+      "hero_source": "handpick_default",
+      "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Aerial view of city lights glowing at night",
+      "thumb_category": "default"
     }
   ],
   "weekly": [

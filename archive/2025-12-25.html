@@ -10,8 +10,28 @@
     <style>
         :root{--bg-primary:#0a0a0f;--bg-secondary:#12121a;--bg-card:#1a1a24;--bg-card-hover:#222230;--accent-red:#ff3b3b;--accent-orange:#ff8c42;--accent-gold:#ffd700;--accent-blue:#4a9eff;--accent-purple:#a855f7;--accent-green:#22c55e;--accent-cyan:#06b6d4;--text-primary:#fff;--text-secondary:#a0a0b0;--text-muted:#666680;--border-color:#2a2a3a;--gradient-fire:linear-gradient(135deg,#ff3b3b,#ff8c42);--gradient-ai:linear-gradient(135deg,#a855f7,#4a9eff)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.7;min-height:100vh}.nav{background:var(--bg-secondary);border-bottom:1px solid var(--border-color);padding:1rem 0;position:sticky;top:0;z-index:1000;backdrop-filter:blur(20px)}.nav-content{max-width:900px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}.nav-logo{display:flex;align-items:center;gap:.75rem;text-decoration:none}.nav-logo-icon{width:40px;height:40px;background:var(--gradient-fire);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem}.nav-logo-text{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;background:var(--gradient-fire);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.nav-links{display:flex;gap:2rem;list-style:none}.nav-links a{color:var(--text-secondary);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}.nav-links a:hover{color:var(--text-primary)}.header{max-width:900px;margin:0 auto;padding:3rem 2rem 2rem}.date-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--bg-card);border:1px solid var(--border-color);padding:.5rem 1rem;border-radius:50px;font-family:'JetBrains Mono',monospace;font-size:.9rem;margin-bottom:1.5rem}.date-badge .dot{width:8px;height:8px;background:var(--accent-red);border-radius:50%;animation:pulse 2s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}.header h1{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;line-height:1.3;margin-bottom:1rem}.header-summary{color:var(--text-secondary);font-size:1.1rem;line-height:1.6}.stats-bar{display:flex;gap:2rem;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border-color)}.stat-item{display:flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--text-muted)}.stat-item strong{color:var(--text-primary);font-weight:700}.content{max-width:900px;margin:0 auto;padding:0 2rem 4rem}.section{margin-bottom:3rem}.section-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--border-color)}.section-icon{font-size:1.5rem}.section-title{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700}.article{background:var(--bg-card);border:1px solid var(--border-color);border-radius:16px;padding:1.5rem;margin-bottom:1rem;transition:all .3s ease}.article:hover{border-color:var(--accent-blue);transform:translateX(4px)}.article-title{font-size:1.1rem;font-weight:700;margin-bottom:.5rem;line-height:1.4}.article-title-en{font-size:.85rem;color:var(--text-muted);margin-bottom:.75rem;font-style:italic}.article-summary{color:var(--text-secondary);font-size:.95rem;line-height:1.7;margin-bottom:1rem}.article-meta{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;font-size:.8rem}.source-link{color:var(--accent-blue);text-decoration:none;font-weight:500}.source-link:hover{text-decoration:underline}.tag{padding:.25rem .5rem;border-radius:4px;font-size:.75rem;font-weight:600}.tag-top{background:rgba(255,59,59,.2);color:var(--accent-red)}.tag-popular{background:rgba(255,140,66,.2);color:var(--accent-orange)}.tag-cross{background:rgba(74,158,255,.2);color:var(--accent-blue)}.score{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-weight:600}.time{color:var(--text-muted)}.picks-section{background:linear-gradient(135deg,rgba(168,85,247,.1),rgba(74,158,255,.1));border:1px solid rgba(168,85,247,.3);border-radius:20px;padding:2rem;margin-top:3rem}.picks-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}.picks-icon{font-size:1.5rem}.picks-title{font-family:'Playfair Display',serif;font-size:1.4rem}.picks-subtitle{color:var(--text-muted);font-size:.85rem;margin-left:auto}.pick-article{background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:1.5rem;margin-bottom:1rem}.pick-article:last-child{margin-bottom:0}.pick-reason{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border-color);font-size:.85rem;color:var(--accent-purple)}.footer{max-width:900px;margin:0 auto;padding:2rem;text-align:center;border-top:1px solid var(--border-color);color:var(--text-muted);font-size:.9rem}.footer a{color:var(--accent-blue);text-decoration:none}@media(max-width:768px){.nav-links{display:none}.header h1{font-size:1.8rem}.stats-bar{flex-wrap:wrap;gap:1rem}.article-meta{flex-direction:column;align-items:flex-start}}
     </style>
+<link rel="stylesheet" href="../theme-modern.css">
 </head>
-<body>
+<body class="reader-mode">
+<nav class="reader-nav">
+  <div class="reader-nav-inner">
+    <a href="../index.html" class="reader-nav-logo">JFNB</a>
+    <div class="reader-nav-links">
+      <a href="../index.html">홈</a>
+      <a href="../archive.html">아카이브</a>
+      <a href="../about.html">소개</a>
+    </div>
+  </div>
+</nav>
+<div class="reader-hero has-image" data-article-date="2025-12-25">
+  <picture>
+    <source media="(max-width:640px)" srcset="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=640&amp;h=360&amp;fit=crop&amp;auto=format&amp;q=80">
+    <img class="reader-hero-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&amp;h=630&amp;fit=crop&amp;auto=format&amp;q=80" alt="Laptop displaying code in dark environment" loading="lazy" decoding="async">
+  </picture>
+  <div class="reader-hero-overlay"></div>
+  <a class="reader-hero-credit" href="https://unsplash.com/photos/1498050108023-c5249f4df085" target="_blank" rel="noopener">Photo by Christopher Gower / Unsplash</a>
+</div>
+
     <nav class="nav"><div class="nav-content"><a href="index.html" class="nav-logo"><div class="nav-logo-icon">📰</div><span class="nav-logo-text">Jae's Briefing</span></a><ul class="nav-links"><li><a href="index.html">홈</a></li><li><a href="archive.html">아카이브</a></li><li><a href="about.html">소개</a></li></ul></div></nav>
     <header class="header"><div class="date-badge"><span class="dot"></span>2025-12-25 KST</div><h1>Nvidia $200억 Groq 인수, AI 칩 시장 판도 변화</h1><p class="header-summary">Nvidia 역대 최대 M&A로 추론 칩 시장 지배력 강화, Waymo SF 정전 대응 소프트웨어 업데이트 발표, AI 인프라주 2025년 Nvidia 상회 수익률 기록</p><div class="stats-bar"><div class="stat-item"><strong>12</strong> 기사</div><div class="stat-item"><strong>5</strong> 섹션</div><div class="stat-item"><strong>3</strong> Claude's Pick</div></div></header>
     <main class="content">
@@ -39,5 +59,8 @@
         </section>
     </main>
     <footer class="footer"><p>Curated by Claude with ♥ | <a href="index.html">홈으로 돌아가기</a></p></footer>
+<footer class="reader-footer">
+  <a href="../archive.html">← 아카이브로 돌아가기</a>
+</footer>
 </body>
 </html>
