@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-28",
+      "day": "목",
+      "title": "Huawei 베이징대 3D 칩 설계툴 + Chip Queen 인터뷰 + Nvidia 칩 中 일본 경유 밀수 적발 | SK하이닉스·Micron $1T 클럽 + Snowflake +35% AWS $6B + Salesforce·Zscaler -31% SaaS K자 | 호르무즈 1개월 재개통안 유가 -5% Kalshi 회의적",
+      "summary": "Huawei가 베이징대와 LogicFolding 호환 3D 칩 설계툴을 공개하며 EUV 없는 칩 전략에 학계 인프라까지 결합한다. Wired는 'Chip Queen' He Tingbo로 'Moore의 법칙 종말 적응'을 진단, 같은 날 대만 검찰은 Nvidia 칩 일본 경유 中 밀수 3명을 첫 구속. SK하이닉스·Micron이 동시에 시총 $1T 클럽에 진입했고 어닝 위크는 Snowflake +35%·AWS Graviton $6B 5년 계약 vs Salesforce 가이던스 충격·Zscaler -31% 사상 최악으로 SaaS K자를 깊게 갈랐다. Iran이 미국과 협상안에서 1개월 내 호르무즈 정상화를 제시하며 유가가 5% 급락 $90 아래로 빠졌지만 Kalshi 트레이더는 회의적이다. Goldman·UBS가 S&P 500 8,000·7,900으로 동반 상향했고, ECB VP는 정점 조정 위험을 경고. Cognition $1B/$26B 라운드와 Meta AI 구독 $7.99·Robinhood AI 에이전트 거래·FAA Starship V3 그라운드·Ferrari Luce(Jony Ive) 백래시·NASA Blue Origin 선정도 동시 노출. Samsung 메모리 직원 £310K 보너스가 정식 타결됐고 TSMC도 30%+ 인센티브 상향으로 동조. Blackstone·Guggenheim의 새 CLO 딜이 'less software' 조건을 명시하며 채권 시장이 AI 디스럽션을 가격에 반영하기 시작했다.",
+      "highlights": [
+        "Huawei 베이징대 LogicFolding 호환 3D 칩 설계툴 공개 + Wired 'Chip Queen' He Tingbo Moore 법칙 종말 적응 SCMP Hero Wired Hero Bloomberg 다매체 + 대만 Nvidia 칩 일본 경유 中 밀수 3명 첫 구속 + Germany·Spain Huawei 금지 반대",
+        "SK하이닉스·Micron 동시 시총 $1T 클럽 진입 + 어닝 위크 Snowflake +35% AWS Graviton $6B 5년 계약 Marvell +9% HP 가이던스 비트 vs Salesforce 가이던스 충격 Zscaler -31% 사상 최악 + Valve Steam Deck +$300 RAM 대란 + Samsung £310K TSMC 30%+ 인센티브",
+        "호르무즈 1개월 재개통안 유가 -5% $90 아래 Kalshi 회의적 + Goldman·UBS S&P 500 8000·7900 동반 상향 ECB VP 시장 조정 위험 격상 + Cognition $1B/$26B AI 코딩 $492M ARR + Meta 인스타·페북·왓츠앱·AI 구독 $7.99 + Robinhood AI 에이전트 거래·신용카드 + FAA Starship V3 그라운드 NASA Blue Origin 선정 SpaceX 패배 + Ferrari Luce(Jony Ive) 4매체 백래시 Lamborghini EV 캔슬 옳았다 + RoW Hero Indian IT AI 솔루션"
+      ],
+      "stats": {
+        "articles": 19,
+        "sections": 6,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-27",
       "day": "수",
       "title": "SK하이닉스·마이크론 동시 시총 1조 달러 클럽 | Unitree IPO 임박 中 로봇 공급망주 급등 | 구글 헬스 출시 핏빗 앱 종료 반발",
