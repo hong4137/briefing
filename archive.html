@@ -7,14 +7,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-72x72.png">
     <!-- SW Cleanup: Unregister previously installed service workers -->
     <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(function(registrations) {
-          for (let r of registrations) { r.unregister(); }
-        });
-        caches.keys().then(function(names) {
-          names.forEach(function(n) { caches.delete(n); });
-        });
-      }
+      window.__swCleanupReady = (async function() {
+        try {
+          if ('serviceWorker' in navigator) {
+            const registrations = await navigator.serviceWorker.getRegistrations();
+            await Promise.all(registrations.map(function(r) { return r.unregister(); }));
+          }
+          if ('caches' in window) {
+            const names = await caches.keys();
+            await Promise.all(names.map(function(n) { return caches.delete(n); }));
+          }
+        } catch (error) {
+          console.warn('SW cleanup skipped:', error);
+        }
+      })();
     </script><title>아카이브 | Jae's Foreign News Briefing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -511,7 +517,8 @@
     <script>
         async function loadArchive() {
             try {
-                const response = await fetch('briefings.json');
+                await (window.__swCleanupReady || Promise.resolve());
+                const response = await fetch(`briefings.json?v=${Date.now()}`, { cache: 'no-store' });
                 const data = await response.json();
                 
                 renderSpecials(data.specials || [], data.weekly || []);
