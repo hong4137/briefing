@@ -15,10 +15,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-28",
@@ -35,10 +41,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-27",
@@ -55,10 +67,16 @@
         "sections": 7,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-26",
@@ -75,10 +93,16 @@
         "sections": 6,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-25",
@@ -94,7 +118,17 @@
         "articles": 16,
         "sections": 5,
         "picks": 3
-      }
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai"
     },
     {
       "date": "2026-05-23",
@@ -111,10 +145,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-22",
@@ -131,10 +171,16 @@
         "sections": 7,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-21",
@@ -154,7 +200,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-20",
@@ -174,7 +226,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-19",
@@ -194,7 +252,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-18",
@@ -211,10 +275,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-16",
@@ -234,7 +304,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-15",
@@ -254,7 +330,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-14",
@@ -271,10 +353,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-13",
@@ -294,7 +382,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-12",
@@ -311,10 +405,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-11",
@@ -331,10 +431,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-09",
@@ -354,7 +460,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-08",
@@ -371,10 +483,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-07",
@@ -394,7 +512,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-06",
@@ -411,10 +535,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-05",
@@ -431,10 +561,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-04",
@@ -451,10 +587,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-04",
@@ -471,10 +613,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-02",
@@ -491,10 +639,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-05-01",
@@ -514,7 +668,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-30",
@@ -534,7 +694,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-29",
@@ -551,10 +717,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-28",
@@ -571,10 +743,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-27",
@@ -591,10 +769,16 @@
         "sections": 7,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-25",
@@ -611,10 +795,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-24",
@@ -631,10 +821,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-23",
@@ -654,7 +850,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-22",
@@ -671,10 +873,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-21",
@@ -694,7 +902,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-20",
@@ -711,10 +925,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-18",
@@ -731,10 +951,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-17",
@@ -751,10 +977,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-16",
@@ -774,7 +1006,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-15",
@@ -794,7 +1032,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-14",
@@ -811,10 +1055,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-13",
@@ -834,7 +1084,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-11",
@@ -851,10 +1107,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-10",
@@ -874,7 +1136,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-10",
@@ -891,10 +1159,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-09",
@@ -914,7 +1188,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-08",
@@ -931,10 +1211,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-07",
@@ -954,7 +1240,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-06",
@@ -971,10 +1263,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1586611292591-17f37862d040?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1586611292591-17f37862d040?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Fighter jet afterburner dark sky",
-      "thumb_category": "defense"
+      "thumb_url": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Aircraft vapor trails contrails in night sky",
+      "thumb_category": "defense",
+      "hero_url": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Aircraft vapor trails contrails in night sky",
+      "hero_credit_name": "Amir Kabirov",
+      "hero_credit_url": "https://unsplash.com/photos/1506084868230-bb9d95c24759",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-04",
@@ -991,10 +1289,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-03",
@@ -1011,10 +1315,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-02",
@@ -1031,10 +1341,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-04-01",
@@ -1054,7 +1370,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-31",
@@ -1071,10 +1393,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-30",
@@ -1091,10 +1419,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-28",
@@ -1111,10 +1445,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-27",
@@ -1134,7 +1474,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-26",
@@ -1154,7 +1500,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-25",
@@ -1171,10 +1523,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-24",
@@ -1191,10 +1549,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1641854961-9484f4e2c3c0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1641854961-9484f4e2c3c0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Semiconductor wafer silicon close-up",
-      "thumb_category": "chip"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "chip",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-23",
@@ -1211,10 +1575,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-21",
@@ -1234,7 +1604,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-20",
@@ -1251,10 +1627,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-19",
@@ -1271,10 +1653,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-18",
@@ -1294,7 +1682,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-17",
@@ -1311,10 +1705,16 @@
         "sections": 4,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-16",
@@ -1331,10 +1731,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-14",
@@ -1351,10 +1757,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-13",
@@ -1371,10 +1783,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-12",
@@ -1394,7 +1812,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-11",
@@ -1411,10 +1835,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-10",
@@ -1431,10 +1861,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-10",
@@ -1451,10 +1887,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-09",
@@ -1471,10 +1913,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-07",
@@ -1491,10 +1939,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-06",
@@ -1511,10 +1965,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-05",
@@ -1534,7 +1994,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-04",
@@ -1554,7 +2020,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-04",
@@ -1571,10 +2043,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-03",
@@ -1594,7 +2072,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-03-02",
@@ -1611,10 +2095,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-28",
@@ -1634,7 +2124,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-27",
@@ -1651,10 +2147,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-26",
@@ -1674,7 +2176,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-25",
@@ -1691,10 +2199,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-24",
@@ -1711,10 +2225,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-23",
@@ -1734,7 +2254,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-21",
@@ -1751,10 +2277,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-20",
@@ -1771,10 +2303,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-19",
@@ -1791,10 +2329,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-18",
@@ -1814,7 +2358,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-17",
@@ -1831,10 +2381,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-16",
@@ -1851,10 +2407,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-14",
@@ -1871,10 +2433,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-13",
@@ -1894,7 +2462,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-12",
@@ -1914,7 +2488,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-11",
@@ -1931,10 +2511,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-10",
@@ -1951,10 +2537,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-09",
@@ -1974,7 +2566,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-07",
@@ -1994,7 +2592,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-06",
@@ -2011,10 +2615,16 @@
         "sections": 6,
         "picks": 1
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-05",
@@ -2031,10 +2641,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-04",
@@ -2051,10 +2667,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-03",
@@ -2071,10 +2693,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-02-02",
@@ -2094,7 +2722,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Financial data abstract 3D volume visualization",
-      "thumb_category": "finance"
+      "thumb_category": "finance",
+      "hero_url": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Financial data abstract 3D volume visualization",
+      "hero_credit_name": "Adam Nowakowski",
+      "hero_credit_url": "https://unsplash.com/photos/1642543492481-44e81e3914a7",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-31",
@@ -2111,10 +2745,16 @@
         "sections": 6,
         "picks": 1
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-30",
@@ -2131,10 +2771,16 @@
         "sections": 6,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-29",
@@ -2154,7 +2800,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-28",
@@ -2171,10 +2823,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-27",
@@ -2191,10 +2849,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-26",
@@ -2214,7 +2878,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Abstract semiconductor lattice grid graphic",
-      "thumb_category": "chip"
+      "thumb_category": "chip",
+      "hero_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Abstract semiconductor lattice grid graphic",
+      "hero_credit_name": "Laura Ockel",
+      "hero_credit_url": "https://unsplash.com/photos/1591453089816-0fbb971b454c",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-25",
@@ -2231,10 +2901,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-24",
@@ -2254,7 +2930,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Neon candlestick stock market chart on dark monitor",
-      "thumb_category": "finance"
+      "thumb_category": "finance",
+      "hero_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Neon candlestick stock market chart on dark monitor",
+      "hero_credit_name": "Maxim Hopman",
+      "hero_credit_url": "https://unsplash.com/photos/1611974789855-9c2a0a7236a3",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-23",
@@ -2271,10 +2953,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Electric car charging cable night glow",
-      "thumb_category": "ev"
+      "thumb_url": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Autonomous vehicle headlight light trails tech art",
+      "thumb_category": "ev",
+      "hero_url": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Autonomous vehicle headlight light trails tech art",
+      "hero_credit_name": "Jp Valery",
+      "hero_credit_url": "https://unsplash.com/photos/1563720223185-11003d516935",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-22",
@@ -2294,7 +2982,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-21",
@@ -2314,7 +3008,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Planet Earth viewed from space with city lights",
-      "thumb_category": "default"
+      "thumb_category": "default",
+      "hero_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Planet Earth viewed from space with city lights",
+      "hero_credit_name": "NASA",
+      "hero_credit_url": "https://unsplash.com/photos/1451187580459-43490279c0fa",
+      "hero_source": "handpick_default"
     },
     {
       "date": "2026-01-20",
@@ -2334,7 +3034,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Planet Earth viewed from space with city lights",
-      "thumb_category": "default"
+      "thumb_category": "default",
+      "hero_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Planet Earth viewed from space with city lights",
+      "hero_credit_name": "NASA",
+      "hero_credit_url": "https://unsplash.com/photos/1451187580459-43490279c0fa",
+      "hero_source": "handpick_default"
     },
     {
       "date": "2026-01-19",
@@ -2354,7 +3060,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Planet Earth viewed from space with city lights",
-      "thumb_category": "default"
+      "thumb_category": "default",
+      "hero_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Planet Earth viewed from space with city lights",
+      "hero_credit_name": "NASA",
+      "hero_credit_url": "https://unsplash.com/photos/1451187580459-43490279c0fa",
+      "hero_source": "handpick_default"
     },
     {
       "date": "2026-01-18",
@@ -2371,10 +3083,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-17",
@@ -2391,10 +3109,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-15",
@@ -2411,10 +3135,16 @@
         "sections": 6,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-14",
@@ -2431,10 +3161,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1604079477490-fef21a76fb43?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing network nodes interconnected web abstract",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-13",
@@ -2454,7 +3190,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-12",
@@ -2471,10 +3213,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-11",
@@ -2491,10 +3239,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-10",
@@ -2514,7 +3268,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Planet Earth viewed from space with city lights",
-      "thumb_category": "default"
+      "thumb_category": "default",
+      "hero_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Planet Earth viewed from space with city lights",
+      "hero_credit_name": "NASA",
+      "hero_credit_url": "https://unsplash.com/photos/1451187580459-43490279c0fa",
+      "hero_source": "handpick_default"
     },
     {
       "date": "2026-01-09",
@@ -2534,7 +3294,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Blue neural network data visualization on dark background",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-08",
@@ -2551,10 +3317,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-07",
@@ -2574,7 +3346,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Planet Earth viewed from space with city lights",
-      "thumb_category": "default"
+      "thumb_category": "default",
+      "hero_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Planet Earth viewed from space with city lights",
+      "hero_credit_name": "NASA",
+      "hero_credit_url": "https://unsplash.com/photos/1451187580459-43490279c0fa",
+      "hero_source": "handpick_default"
     },
     {
       "date": "2026-01-06",
@@ -2591,10 +3369,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-05",
@@ -2611,10 +3395,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-04",
@@ -2634,7 +3424,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Matrix green binary code wall on black screen",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-03",
@@ -2654,7 +3450,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1558441719-ff34b0524a24?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1558441719-ff34b0524a24?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Futuristic electric vehicle charging port close-up",
-      "thumb_category": "ev"
+      "thumb_category": "ev",
+      "hero_url": "https://images.unsplash.com/photo-1558441719-ff34b0524a24?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1558441719-ff34b0524a24?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Futuristic electric vehicle charging port close-up",
+      "hero_credit_name": "Chuttersnap",
+      "hero_credit_url": "https://unsplash.com/photos/1558441719-ff34b0524a24",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-02",
@@ -2671,10 +3473,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1633356122102-4c8c5f9a2aa4?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Futuristic AI robot eye close-up neon",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization on dark background",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization on dark background",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2026-01-01",
@@ -2691,10 +3499,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Electric car charging cable night glow",
-      "thumb_category": "ev"
+      "thumb_url": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Autonomous vehicle headlight light trails tech art",
+      "thumb_category": "ev",
+      "hero_url": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Autonomous vehicle headlight light trails tech art",
+      "hero_credit_name": "Jp Valery",
+      "hero_credit_url": "https://unsplash.com/photos/1563720223185-11003d516935",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2025-12-31",
@@ -2711,10 +3525,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2025-12-30",
@@ -2731,10 +3551,16 @@
         "sections": 5,
         "picks": 3
       },
-      "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark neural network connection visualization",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2025-12-29",
@@ -2751,10 +3577,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1546776230-3b2a7aa2b0f0?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue digital brain neuron signal concept",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2025-12-28",
@@ -2774,7 +3606,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Abstract semiconductor lattice grid graphic",
-      "thumb_category": "chip"
+      "thumb_category": "chip",
+      "hero_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Abstract semiconductor lattice grid graphic",
+      "hero_credit_name": "Laura Ockel",
+      "hero_credit_url": "https://unsplash.com/photos/1591453089816-0fbb971b454c",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2025-12-27",
@@ -2794,7 +3632,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Abstract semiconductor lattice grid graphic",
-      "thumb_category": "chip"
+      "thumb_category": "chip",
+      "hero_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Abstract semiconductor lattice grid graphic",
+      "hero_credit_name": "Laura Ockel",
+      "hero_credit_url": "https://unsplash.com/photos/1591453089816-0fbb971b454c",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2025-12-26",
@@ -2814,7 +3658,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Cybernetic virtual brain with glowing circuits",
-      "thumb_category": "ai"
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2025-12-25",
@@ -2834,7 +3684,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Laptop displaying code in dark environment",
-      "thumb_category": "default"
+      "thumb_category": "default",
+      "hero_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Laptop displaying code in dark environment",
+      "hero_credit_name": "Christopher Gower",
+      "hero_credit_url": "https://unsplash.com/photos/1498050108023-c5249f4df085",
+      "hero_source": "handpick_default"
     },
     {
       "date": "2025-12-24",
@@ -2851,10 +3707,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2025-12-22",
@@ -2874,7 +3736,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Tech team collaborating on laptops in office",
-      "thumb_category": "default"
+      "thumb_category": "default",
+      "hero_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Tech team collaborating on laptops in office",
+      "hero_credit_name": "Annie Spratt",
+      "hero_credit_url": "https://unsplash.com/photos/1522071820081-009f0129c71c",
+      "hero_source": "handpick_default"
     },
     {
       "date": "2025-12-21",
@@ -2887,10 +3755,16 @@
         "sections": 5,
         "picks": 2
       },
-      "thumb_url": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract artificial intelligence digital face",
-      "thumb_category": "ai"
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2025-12-19",
@@ -2906,7 +3780,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Digital currency and capital liquidity visual",
-      "thumb_category": "finance"
+      "thumb_category": "finance",
+      "hero_url": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Digital currency and capital liquidity visual",
+      "hero_credit_name": "André François McKenzie",
+      "hero_credit_url": "https://unsplash.com/photos/1526304640581-d334cdbbf45e",
+      "hero_source": "handpick_category"
     },
     {
       "date": "2025-12-18",
@@ -2922,7 +3802,13 @@
       "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
       "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
       "thumb_alt": "Aerial view of city lights glowing at night",
-      "thumb_category": "default"
+      "thumb_category": "default",
+      "hero_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Aerial view of city lights glowing at night",
+      "hero_credit_name": "Maximalfocus",
+      "hero_credit_url": "https://unsplash.com/photos/1504711434969-e33886168f5c",
+      "hero_source": "handpick_default"
     }
   ],
   "weekly": [

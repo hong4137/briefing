@@ -10,6 +10,8 @@ BRIEFINGS_JSON = ROOT_DIR / "briefings.json"
 
 BASE = "https://images.unsplash.com/photo-"
 
+PARAMS_HERO     = "?w=1200&h=630&fit=crop&auto=format&q=80"
+PARAMS_HERO_SM  = "?w=640&h=360&fit=crop&auto=format&q=80"
 PARAMS_THUMB    = "?w=480&h=270&fit=crop&auto=format&q=75"
 PARAMS_THUMB_XS = "?w=112&h=112&fit=crop&auto=format&q=70"
 
@@ -56,9 +58,9 @@ CATEGORY_IMAGE_MAP = {
         _img("1620712943543-bcc4688e7485",
              "Cybernetic virtual brain with glowing circuits",
              "Possessed Photography"),
-        _img("1507146426996-ef05306b995a",
-             "Neon line technology art on dark background",
-             "Maximalfocus"),
+        _img("1518770660439-4636190af475",
+             "Gold pattern silicon microchip circuit board macro",
+             "Alexandre Debiève"),
         _img("1526374965328-7f61d4dc18c5",
              "Matrix green binary code wall on black screen",
              "Markus Spiske"),
@@ -303,9 +305,16 @@ def make_urls(img_meta: dict) -> dict:
     """이미지 메타에서 모든 URL 크기 변형 생성."""
     if img_meta.get("src_override"):
         src = img_meta["src_override"]
-        return {"thumb_url": src, "thumb_url_xs": src}
+        return {
+            "hero_url":     src,
+            "hero_url_sm":  src,
+            "thumb_url":    src,
+            "thumb_url_xs": src,
+        }
     pid = img_meta["id"]
     return {
+        "hero_url":     BASE + pid + PARAMS_HERO,
+        "hero_url_sm":  BASE + pid + PARAMS_HERO_SM,
         "thumb_url":    BASE + pid + PARAMS_THUMB,
         "thumb_url_xs": BASE + pid + PARAMS_THUMB_XS,
     }
@@ -376,7 +385,7 @@ def process_article(html_path: Path, briefing_meta: dict) -> dict:
     date  = briefing_meta.get("date", "")
     summ  = briefing_meta.get("summary", "")
 
-    img_meta, _source = resolve_image(soup, title, date, summ)
+    img_meta, source = resolve_image(soup, title, date, summ)
     urls = make_urls(img_meta)
 
     head = soup.find("head")
@@ -396,6 +405,12 @@ def process_article(html_path: Path, briefing_meta: dict) -> dict:
     cat = detect_category(title, summ) or "default"
 
     return {
+        "hero_url":         urls["hero_url"],
+        "hero_url_sm":      urls["hero_url_sm"],
+        "hero_alt":         img_meta["alt"],
+        "hero_credit_name": img_meta.get("credit_name", ""),
+        "hero_credit_url":  img_meta.get("credit_url", ""),
+        "hero_source":      source,
         "thumb_url":        urls["thumb_url"],
         "thumb_url_xs":     urls["thumb_url_xs"],
         "thumb_alt":        img_meta["alt"],
