@@ -1,6 +1,22 @@
 {
   "briefings": [
     {
+      "date": "2026-05-29",
+      "day": "금",
+      "title": "Anthropic $65B 조달 $965B 밸류 OpenAI 추월·Opus 4.8 동시 출시 | Trump 이란 평화협정 초안 동맹국 공유 | 구글 엔지니어 Polymarket 내부자거래 $1.2M 기소 | Waymo 로보택시 확장·BYD 4nm 자율주행칩 | Meta 인스타·페북·WhatsApp 구독제 출시",
+      "summary": "Anthropic가 $65B 시리즈H로 $965B 밸류를 평가받으며 OpenAI를 추월, 같은 날 더 정직한 Opus 4.8을 출시했습니다. Samsung·SK하이닉스·Micron이 전략 인프라 파트너로 참여하고 한국 법인 대표도 선임됐습니다. Trump가 이란 평화협정 초안을 동맹국과 공유하며 호르무즈 재개방이 가시화됐고, Waymo·BYD 등 자율주행 경쟁과 Meta 구독제 전환도 주목됩니다.",
+      "highlights": [
+        "Anthropic $65B·$965B 밸류로 OpenAI 추월, Opus 4.8 동시 출시 (Samsung·SK하이닉스·Micron 참여)",
+        "Trump 이란 평화협정 초안 공유, 60일 호르무즈 재개방안",
+        "구글 엔지니어 Polymarket 내부자거래 $1.2M 형사기소"
+      ],
+      "stats": {
+        "articles": 20,
+        "sections": 5,
+        "picks": 3
+      }
+    },
+    {
       "date": "2026-05-28",
       "day": "목",
       "title": "Huawei 베이징대 3D 칩 설계툴 + Chip Queen 인터뷰 + Nvidia 칩 中 일본 경유 밀수 적발 | SK하이닉스·Micron $1T 클럽 + Snowflake +35% AWS $6B + Salesforce·Zscaler -31% SaaS K자 | 호르무즈 1개월 재개통안 유가 -5% Kalshi 회의적",
