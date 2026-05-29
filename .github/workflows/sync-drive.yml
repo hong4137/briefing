@@ -298,6 +298,10 @@ jobs:
         if: steps.sync.outputs.synced == 'true'
         run: python scripts/generate_list.py
 
+      - name: Post-Process Articles (Image Mapping)
+        if: steps.sync.outputs.synced == 'true'
+        run: python scripts/post_process.py
+
       - name: Build Search Index
         if: steps.sync.outputs.synced == 'true'
         run: python scripts/build_search_index.py
