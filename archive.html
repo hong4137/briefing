@@ -600,6 +600,15 @@
             const allItems = [];
 
             weekly.forEach(w => {
+                const rawDate = w.date || '';
+                const m = rawDate.match(/(\d{4})-(\d{2})-(\d{2})/);
+                const dateLabel = m
+                    ? `${parseInt(m[2], 10)}월 ${parseInt(m[3], 10)}일자`
+                    : '';
+                const badge = dateLabel
+                    ? `📅 주간 브리핑 • ${dateLabel}`
+                    : '📅 주간 브리핑';
+
                 allItems.push({
                     type: 'weekly',
                     date: w.date,
@@ -607,7 +616,7 @@
                     summary: w.summary,
                     period: w.period,
                     stats: w.stats,
-                    badge: '📅 주간 브리핑',
+                    badge: badge,
                     link: `archive/${w.date}.html`
                 });
             });
