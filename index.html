@@ -680,23 +680,8 @@
      </nav>
 
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" style="padding: 3rem 2rem 2rem 2rem;">
         <h1>Essential NEWS</h1>
-        <p>TechCrunch, CNBC, Bloomberg, Reuters 등 주요 외신에서 매일 엄선한 AI/기술, 경제, 비즈니스 뉴스</p>
-        <div class="hero-stats">
-            <div class="stat">
-                <div class="stat-number">10+</div>
-                <div class="stat-label">매체 모니터링</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">Daily</div>
-                <div class="stat-label">업데이트</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">Value Score</div>
-                <div class="stat-label">기반 큐레이션</div>
-            </div>
-        </div>
     </section>
 
     <!-- Latest Briefing -->
@@ -907,7 +892,7 @@
 function renderSpecials(specials, weekly) {
     const allItems = [];
 
-    // Add weekly items
+    // 주간 브리핑 데이터 수집
     weekly.forEach(w => {
         allItems.push({
             type: 'weekly',
@@ -921,7 +906,7 @@ function renderSpecials(specials, weekly) {
         });
     });
 
-    // Add special items
+    // 특별판 데이터 수집
     specials.forEach(s => {
         allItems.push({
             type: 'special',
@@ -935,7 +920,7 @@ function renderSpecials(specials, weekly) {
         });
     });
 
-    // period 종료일 기준 최신순 정렬 (단일 날짜도 지원)
+    // 정렬
     allItems.sort((a, b) => {
         const getEndDate = (item) => {
             if (item.period && item.period.includes('~')) {
@@ -956,19 +941,87 @@ function renderSpecials(specials, weekly) {
 
     document.getElementById('special-section').style.display = 'block';
 
-    document.getElementById('special-container').innerHTML = allItems.map(item => `
-        <a href="${item.link}" class="special-card ${item.type}">
-            <div class="special-badge ${item.type}">${item.badge}</div>
-            <h4>${item.title}</h4>
-            <p class="summary">${item.summary}</p>
-            <div class="period">📆 ${item.period}</div>
-            <div class="stats">
-                <span>📰 ${item.stats.articles || item.stats.clusters || 0} ${item.type === 'weekly' ? '클러스터' : '기사'}</span>
-                <span>📑 ${item.stats.sections || item.stats.clusters || 0} 섹션</span>
+    // 최신 2개는 기본 노출, 나머지는 hidden-special-card 클래스 및 display: none 상태로 렌더링
+    const cardsHTML = allItems.map((item, index) => {
+        const isHidden = index >= 2;
+        const displayStyle = isHidden ? 'display: none;' : '';
+        const hiddenClass = isHidden ? 'hidden-special-card' : '';
+
+        return `
+            <a href="${item.link}" class="special-card ${item.type} ${hiddenClass}" style="${displayStyle}">
+                <div class="special-badge ${item.type}">${item.badge}</div>
+                <h4>${item.title}</h4>
+                <p class="summary">${item.summary}</p>
+                <div class="period">📆 ${item.period}</div>
+                <div class="stats">
+                    <span>📰 ${item.stats.articles || item.stats.clusters || 0} ${item.type === 'weekly' ? '클러스터' : '기사'}</span>
+                    <span>📑 ${item.stats.sections || item.stats.clusters || 0} 섹션</span>
+                </div>
+            </a>
+        `;
+    }).join('');
+
+    // 컨테이너 채우기
+    let containerHTML = cardsHTML;
+
+    // 3개 이상일 때만 '더 보기' 아코디언 토글 버튼 추가
+    if (allItems.length > 2) {
+        containerHTML += `
+            <div id="special-toggle-container" style="grid-column: span 2; display: flex; justify-content: center; margin-top: 1.5rem;">
+                <button id="btn-special-toggle" onclick="toggleSpecialCards()" style="
+                    background: rgba(26, 26, 36, 0.6);
+                    border: 1px solid var(--border-color);
+                    color: var(--text-secondary);
+                    padding: 0.75rem 2rem;
+                    border-radius: 50px;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                    backdrop-filter: blur(10px);
+                    transition: all 0.2s ease;
+                ">더 보기 ▾</button>
             </div>
-        </a>
-    `).join('');
+        `;
+    }
+
+    document.getElementById('special-container').innerHTML = containerHTML;
 }
+
+// 아코디언 상태 토글을 위한 글로벌 함수 정의
+window.toggleSpecialCards = function() {
+    const hiddenCards = document.querySelectorAll('.hidden-special-card');
+    const toggleBtn = document.getElementById('btn-special-toggle');
+    if (hiddenCards.length === 0 || !toggleBtn) return;
+
+    // 현재 숨겨져 있는지 체크 (첫 번째 숨김 카드의 상태 조사)
+    const isHidden = hiddenCards[0].style.display === 'none';
+
+    if (isHidden) {
+        // 숨김 카드 노출
+        hiddenCards.forEach(card => {
+            card.style.display = 'block';
+            card.style.opacity = '0';
+            setTimeout(() => {
+                card.style.transition = 'opacity 0.3s ease';
+                card.style.opacity = '1';
+            }, 10);
+        });
+        toggleBtn.innerHTML = '접기 ▴';
+        toggleBtn.style.borderColor = 'var(--accent-blue)';
+        toggleBtn.style.color = 'var(--text-primary)';
+    } else {
+        // 숨김 처리
+        hiddenCards.forEach(card => {
+            card.style.display = 'none';
+        });
+        toggleBtn.innerHTML = '더 보기 ▾';
+        toggleBtn.style.borderColor = 'var(--border-color)';
+        toggleBtn.style.color = 'var(--text-secondary)';
+
+        // 접은 후 스크롤을 특별판 섹션 타이틀 쪽으로 우아하게 이동
+        document.getElementById('special-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+};
 
         // Load on page ready
         loadBriefings();
