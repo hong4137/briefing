@@ -4,8 +4,9 @@ import hashlib
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-ARCHIVE_DIR    = Path("briefing/archive")
-BRIEFINGS_JSON = Path("briefing/briefings.json")
+ROOT_DIR       = Path(__file__).resolve().parent.parent
+ARCHIVE_DIR    = ROOT_DIR / "archive"
+BRIEFINGS_JSON = ROOT_DIR / "briefings.json"
 
 BASE = "https://images.unsplash.com/photo-"
 
