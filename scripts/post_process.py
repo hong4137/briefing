@@ -584,8 +584,8 @@ ENTITY_IMAGE_MAP = {
     "trump": [
         _img("1507679799987-c73779587ccf", "Wooden gavel courtroom justice symbol",        "Tingey Injury Law Firm",
              tags=["flag", "america", "capitol", "politics", "trump", "government"]),
-        _img("1450133064473-71024230f91b", "Solemn marble columns and capitol silhouette",  "Louis Velazquez",
-             tags=["capitol", "columns", "washington", "government", "trump"]),
+        _img("1501594907352-04cda38ebc29", "Majestic US Capitol dome and blue sky",          "Caleb Fisher",
+             tags=["capitol", "dome", "washington", "government", "trump"]),
         _img("1505664194779-8beaceb93744", "Classic law books leather cover close-up",     "Tingey Injury Law Firm",
              tags=["document", "signing", "executive", "policy", "trump"]),
         _img("1541872705-1f73c6400ec9",    "Parliament government building exterior dusk",  "Louis Velazquez",
@@ -595,8 +595,8 @@ ENTITY_IMAGE_MAP = {
     ],
 
     "biden": [
-        _img("1450133064473-71024230f91b", "Marble columns and capitol building silhouette","Louis Velazquez",
-             tags=["capitol", "government", "politics", "washington", "biden"]),
+        _img("1501594907352-04cda38ebc29", "Majestic US Capitol dome and blue sky",          "Caleb Fisher",
+             tags=["capitol", "dome", "washington", "government", "biden"]),
         _img("1507679799987-c73779587ccf", "Wooden gavel courtroom justice symbol",        "Tingey Injury Law Firm",
              tags=["document", "executive", "policy", "government", "biden"]),
         _img("1505664194779-8beaceb93744", "Classic law books leather cover close-up",      "Tingey Injury Law Firm",
