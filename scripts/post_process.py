@@ -426,22 +426,29 @@ def get_log_source(meta: dict) -> str:
     return "handpick_category"
 
 
+def _process_list(items: list, label: str) -> None:
+    """briefings / weekly / specials 공통 후처리 루프."""
+    for item in items:
+        for key in HERO_META_KEYS:
+            item.pop(key, None)
+
+        date      = item.get("date", "")
+        html_path = ARCHIVE_DIR / f"{date}.html"
+        if not html_path.exists():
+            print(f"[SKIP-{label}] {date}.html not found")
+            continue
+
+        meta = process_article(html_path, item)
+        item.update(meta)
+        print(f"[OK-{label}] {date} cat={meta['thumb_category']} src={get_log_source(meta)}")
+
+
 def main():
     data = json.loads(BRIEFINGS_JSON.read_text("utf-8"))
 
-    for briefing in data.get("briefings", []):
-        for key in HERO_META_KEYS:
-            briefing.pop(key, None)
-
-        date      = briefing.get("date", "")
-        html_path = ARCHIVE_DIR / f"{date}.html"
-        if not html_path.exists():
-            print(f"[SKIP] {date}.html not found")
-            continue
-
-        meta = process_article(html_path, briefing)
-        briefing.update(meta)
-        print(f"[OK] {date} cat={meta['thumb_category']} src={get_log_source(meta)}")
+    _process_list(data.get("briefings", []), "briefing")
+    _process_list(data.get("weekly",    []), "weekly")
+    _process_list(data.get("specials",  []), "special")
 
     BRIEFINGS_JSON.write_text(
         json.dumps(data, ensure_ascii=False, indent=2), "utf-8"
