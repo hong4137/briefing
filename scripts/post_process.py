@@ -555,6 +555,226 @@ DEFAULT_IMAGE_POOL = [
          "Annie Spratt"),
 ]
 
+# ── 엔티티 탐지 패턴 (순서 = 우선순위) ────────────────────────────
+# (entity_key, regex_pattern)
+ENTITY_PATTERNS = [
+    # 인물
+    ("trump",        r'트럼프|Trump'),
+    ("biden",        r'바이든|Biden'),
+    ("musk",         r'머스크|Musk|일론\s*머스크'),
+    ("powell",       r'파월|Powell|제롬\s*파월'),
+    ("jensen_huang", r'젠슨\s*황|Jensen\s*Huang'),
+    ("altman",       r'올트먼|Altman|샘\s*올트먼'),
+    # 기업
+    ("nvidia",       r'Nvidia|NVIDIA|엔비디아'),
+    ("apple",        r'\bApple\b|애플'),
+    ("microsoft",    r'Microsoft|마이크로소프트'),
+    ("google",       r'\bGoogle\b|구글'),
+    ("tesla",        r'\bTesla\b|테슬라'),
+    ("dell",         r'\bDell\b'),
+    ("amazon",       r'\bAmazon\b|아마존'),
+    ("tsmc",         r'TSMC|티에스엠씨'),
+    ("samsung",      r'삼성|Samsung'),
+]
+
+ENTITY_IMAGE_MAP = {
+
+    # ── 인물 ─────────────────────────────────────────────────────
+
+    "trump": [
+        _img("1507679799987-c73779587ccf", "Wooden gavel courtroom justice symbol",        "Tingey Injury Law Firm",
+             tags=["flag", "america", "capitol", "politics", "trump", "government"]),
+        _img("1450133064473-71024230f91b", "Solemn marble columns and capitol silhouette",  "Louis Velazquez",
+             tags=["capitol", "columns", "washington", "government", "trump"]),
+        _img("1505664194779-8beaceb93744", "Classic law books leather cover close-up",     "Tingey Injury Law Firm",
+             tags=["document", "signing", "executive", "policy", "trump"]),
+        _img("1541872705-1f73c6400ec9",    "Parliament government building exterior dusk",  "Louis Velazquez",
+             tags=["government", "politics", "congress", "washington", "trump"]),
+        _img("1589829545856-d10d557cf95f", "Scales of justice law court dark symbol",      "René DeAnda",
+             tags=["justice", "law", "court", "policy", "trump"]),
+    ],
+
+    "biden": [
+        _img("1450133064473-71024230f91b", "Marble columns and capitol building silhouette","Louis Velazquez",
+             tags=["capitol", "government", "politics", "washington", "biden"]),
+        _img("1507679799987-c73779587ccf", "Wooden gavel courtroom justice symbol",        "Tingey Injury Law Firm",
+             tags=["document", "executive", "policy", "government", "biden"]),
+        _img("1505664194779-8beaceb93744", "Classic law books leather cover close-up",      "Tingey Injury Law Firm",
+             tags=["law", "policy", "government", "regulation", "biden"]),
+        _img("1589829545856-d10d557cf95f", "Scales of justice darkness court symbol",      "René DeAnda",
+             tags=["justice", "law", "policy", "government", "biden"]),
+    ],
+
+    "musk": [
+        _img("1541185933-ef5d8ed016c2",    "Rocket launch trajectory arc into night sky",  "SpaceX",
+             tags=["spacex", "rocket", "launch", "musk", "night", "flame"]),
+        _img("1593941707882-a5bba14938c7", "Electric vehicle charging port futuristic",    "dcbel",
+             tags=["tesla", "ev", "electric", "charging", "musk"]),
+        _img("1563720223185-11003d516935", "Autonomous headlight trails tech art dark",    "Jp Valery",
+             tags=["tesla", "autonomous", "fsd", "car", "musk"]),
+        _img("1614730321146-b6fa6a46bcb4", "Deep space nebula colorful gas clouds",        "Jeremy Thomas",
+             tags=["space", "spacex", "cosmos", "nebula", "musk"]),
+        _img("1516849841032-87cbac4d88f7", "Rocket launching bright exhaust flame night",  "SpaceX",
+             tags=["spacex", "rocket", "liftoff", "flame", "musk"]),
+    ],
+
+    "powell": [
+        _img("1611974789855-9c2a0a7236a3", "Neon candlestick stock market chart dark",     "Maxim Hopman",
+             tags=["fed", "rate", "market", "powell", "finance", "interest"]),
+        _img("1526304640581-d334cdbbf45e", "Dollar digital currency capital liquidity",     "André F. McKenzie",
+             tags=["dollar", "fed", "monetary", "powell", "currency"]),
+        _img("1486406146926-c627a92ad1ab", "Glass skyscrapers financial district twilight", "Sean Pollock",
+             tags=["financial", "fed", "bank", "powell", "central bank"]),
+        _img("1642543492481-44e81e3914a7", "Financial data abstract 3D volume visual",     "Adam Nowakowski",
+             tags=["rate", "inflation", "finance", "fed", "powell"]),
+        _img("1642543492481-44e81e3914a7", "Financial data abstract 3D volume visual",     "Adam Nowakowski",
+             tags=["gold", "treasury", "federal", "powell", "reserve"]),
+    ],
+
+    "jensen_huang": [
+        _img("1607604276583-eef5d076aa5f", "Blue neon illuminated circuit motherboard",    "Olivier Collet",
+             tags=["nvidia", "gpu", "circuit", "jensen", "ai compute"]),
+        _img("1591453089816-0fbb971b454c", "Abstract semiconductor lattice grid graphic",  "Laura Ockel",
+             tags=["nvidia", "chip", "gpu", "jensen", "semiconductor"]),
+        _img("1677442135703-1787eea5ce01", "Blue neural network data visualization",       "Growtika",
+             tags=["nvidia", "ai", "neural", "jensen", "deep learning"]),
+        _img("1606765962248-7ff407b51667", "Data center server racks blue illuminated",    "Taylor Vick",
+             tags=["nvidia", "data center", "gpu", "h100", "jensen"]),
+        _img("1518770660439-4636190af475", "Gold pattern silicon microchip macro",         "Alexandre Debiève",
+             tags=["nvidia", "chip", "silicon", "processor", "jensen"]),
+    ],
+
+    "altman": [
+        _img("1677442135703-1787eea5ce01", "Blue neural network data visualization",       "Growtika",
+             tags=["openai", "altman", "ai", "neural", "gpt", "llm"]),
+        _img("1620712943543-bcc4688e7485", "Cybernetic virtual brain with circuits",       "Possessed Photography",
+             tags=["ai", "openai", "altman", "brain", "gpt", "model"]),
+        _img("1507146426996-ef05306b995a", "Neon glowing abstract tech lines",             "Alina Grubnyak",
+             tags=["ai", "openai", "altman", "neural", "abstract", "gpt"]),
+        _img("1607604276583-eef5d076aa5f", "Blue neon illuminated circuit motherboard",    "Olivier Collet",
+             tags=["openai", "altman", "ai chip", "compute", "llm"]),
+        _img("1526374965328-7f61d4dc18c5", "Matrix binary code wall dark screen",          "Markus Spiske",
+             tags=["code", "ai", "openai", "altman", "training", "gpt"]),
+    ],
+
+    # ── 기업 ─────────────────────────────────────────────────────
+
+    "apple": [
+        _img("1531297484001-80022131f5a1", "Premium laptop display Apple-style aesthetic", "Ales Nesetril",
+             tags=["apple", "macbook", "laptop", "premium", "design"]),
+        _img("1496181133206-80ce9b88a853", "MacBook Pro backlit keyboard close-up",        "Ales Nesetril",
+             tags=["apple", "macbook", "keyboard", "premium", "product"]),
+        _img("1504868584819-f8e8b4b6d7e3", "Smartphone apps screen dark display",          "Adem AY",
+             tags=["apple", "iphone", "ios", "app", "mobile"]),
+        _img("1562577309-4932fdd64cd1",    "Multi-screen data dashboard display",          "Luke Chesser",
+             tags=["apple", "display", "screen", "mac", "design"]),
+        _img("1617788138017-80ad40651399", "Sleek product curves dark studio lighting",    "Juice Flair",
+             tags=["apple", "product", "design", "hardware", "premium"]),
+    ],
+
+    "nvidia": [
+        _img("1607604276583-eef5d076aa5f", "Blue neon illuminated circuit motherboard",    "Olivier Collet",
+             tags=["nvidia", "gpu", "circuit", "gaming", "chip"]),
+        _img("1591453089816-0fbb971b454c", "Abstract semiconductor lattice grid",          "Laura Ockel",
+             tags=["nvidia", "chip", "gpu", "ai", "semiconductor"]),
+        _img("1677442135703-1787eea5ce01", "Blue neural network data visualization",       "Growtika",
+             tags=["nvidia", "ai", "neural", "gpu", "cuda", "deep learning"]),
+        _img("1606765962248-7ff407b51667", "Data center server racks blue illuminated",    "Taylor Vick",
+             tags=["nvidia", "data center", "gpu", "h100", "compute"]),
+        _img("1518770660439-4636190af475", "Gold pattern silicon microchip macro",         "Alexandre Debiève",
+             tags=["nvidia", "chip", "silicon", "processor", "hardware"]),
+    ],
+
+    "microsoft": [
+        _img("1531297484001-80022131f5a1", "Premium laptop display dark workstation",      "Ales Nesetril",
+             tags=["microsoft", "windows", "surface", "laptop", "software"]),
+        _img("1580927752452-89d86da3fa0a", "Developer coding laptop dark room",            "Christopher Gower",
+             tags=["microsoft", "developer", "azure", "cloud", "copilot"]),
+        _img("1606765962248-7ff407b51667", "Data center server racks blue illuminated",    "Taylor Vick",
+             tags=["microsoft", "azure", "cloud", "server", "enterprise"]),
+        _img("1618005182384-a83a8bd57fbe", "Abstract dark web browser visual",             "Growtika",
+             tags=["microsoft", "browser", "edge", "windows", "platform"]),
+        _img("1460925895917-afdab827c52f", "Open office bright modern furniture startup",  "Alex Kotliarskyi",
+             tags=["microsoft", "office", "workplace", "enterprise", "team"]),
+    ],
+
+    "google": [
+        _img("1573804633927-bfcbcd909acd", "Modern tech company open office natural light","Marvin Meyer",
+             tags=["google", "office", "tech", "innovation", "workplace"]),
+        _img("1606765962248-7ff407b51667", "Data center server racks blue illuminated",    "Taylor Vick",
+             tags=["google", "gcp", "cloud", "data center", "server"]),
+        _img("1504868584819-f8e8b4b6d7e3", "Smartphone apps screen dark display",          "Adem AY",
+             tags=["google", "android", "app", "mobile", "search"]),
+        _img("1562577309-4932fdd64cd1",    "Multi-screen data dashboard display",          "Luke Chesser",
+             tags=["google", "analytics", "data", "dashboard", "platform"]),
+        _img("1544197150-b99a580bb7a8",    "Server rack fiber optic cables blue glow",     "Alina Grubnyak",
+             tags=["google", "cloud", "infrastructure", "server", "data"]),
+    ],
+
+    "tesla": [
+        _img("1563720223185-11003d516935", "Autonomous headlight trails tech art dark",    "Jp Valery",
+             tags=["tesla", "autonomous", "fsd", "electric", "car"]),
+        _img("1593941707882-a5bba14938c7", "Electric vehicle charging port futuristic",    "dcbel",
+             tags=["tesla", "charging", "ev", "supercharger", "electric"]),
+        _img("1617788138017-80ad40651399", "Sleek EV body curves dark studio lighting",    "Juice Flair",
+             tags=["tesla", "model", "design", "electric", "vehicle"]),
+        _img("1544716278-ca5e3f4abd8c",    "LiDAR sensor autonomous driving graphic",     "Possessed Photography",
+             tags=["tesla", "autopilot", "lidar", "sensor", "autonomous"]),
+        _img("1593941707882-a5bba14938c7", "EV charging port glowing blue light",          "dcbel",
+             tags=["tesla", "ev", "charging", "blue", "electric"]),
+    ],
+
+    "dell": [
+        _img("1606765962248-7ff407b51667", "Data center server racks blue illuminated",    "Taylor Vick",
+             tags=["dell", "server", "enterprise", "data center", "rack"]),
+        _img("1544197150-b99a580bb7a8",    "Fiber optic cables in server rack blue",       "Alina Grubnyak",
+             tags=["dell", "infrastructure", "network", "server", "fiber"]),
+        _img("1531297484001-80022131f5a1", "Premium laptop workstation display setup",     "Ales Nesetril",
+             tags=["dell", "laptop", "workstation", "hardware", "enterprise"]),
+        _img("1516321318423-f06f85e504b3", "Digital node hub connection abstract art",    "Alina Grubnyak",
+             tags=["dell", "network", "data", "cloud", "enterprise"]),
+    ],
+
+    "amazon": [
+        _img("1606765962248-7ff407b51667", "Data center server racks blue illuminated",    "Taylor Vick",
+             tags=["amazon", "aws", "cloud", "server", "infrastructure"]),
+        _img("1553729459-efe14ef6055d",    "Large container cargo ship ocean port",        "Channey",
+             tags=["amazon", "logistics", "shipping", "cargo", "delivery"]),
+        _img("1601597111158-2fceff292cdc", "Dark harbor container crane silhouette",       "Channey",
+             tags=["amazon", "warehouse", "logistics", "port", "fulfillment"]),
+        _img("1544197150-b99a580bb7a8",    "Server rack fiber optic cables blue glow",     "Alina Grubnyak",
+             tags=["amazon", "aws", "cloud", "data center", "server"]),
+        _img("1586528116311-ad8dd3c8310d", "World map shipping route light graphic",       "Thomas Lefebvre",
+             tags=["amazon", "shipping", "global", "logistics", "delivery"]),
+    ],
+
+    "tsmc": [
+        _img("1518770660439-4636190af475", "Gold pattern silicon microchip macro",         "Alexandre Debiève",
+             tags=["tsmc", "chip", "wafer", "foundry", "semiconductor"]),
+        _img("1591453089816-0fbb971b454c", "Abstract semiconductor lattice grid graphic",  "Laura Ockel",
+             tags=["tsmc", "fab", "wafer", "process", "semiconductor"]),
+        _img("1587202372634-32705e3bf49c", "Silicon wafer manufacturing clean room",       "Laura Ockel",
+             tags=["tsmc", "wafer", "silicon", "foundry", "fab"]),
+        _img("1607604276583-eef5d076aa5f", "Blue neon motherboard circuit detail",         "Olivier Collet",
+             tags=["tsmc", "chip", "circuit", "advanced node", "foundry"]),
+        _img("1555664424-778a1e5e1b48",    "Circuit board traces extreme macro",           "Alex Andrews",
+             tags=["tsmc", "circuit", "board", "semiconductor", "process"]),
+    ],
+
+    "samsung": [
+        _img("1518770660439-4636190af475", "Gold pattern silicon microchip macro",         "Alexandre Debiève",
+             tags=["samsung", "chip", "semiconductor", "memory", "hbm"]),
+        _img("1607604276583-eef5d076aa5f", "Blue neon circuit motherboard close-up",       "Olivier Collet",
+             tags=["samsung", "semiconductor", "circuit", "memory", "chip"]),
+        _img("1504868584819-f8e8b4b6d7e3", "Smartphone apps screen dark display",          "Adem AY",
+             tags=["samsung", "galaxy", "phone", "android", "mobile"]),
+        _img("1591453089816-0fbb971b454c", "Abstract semiconductor lattice grid",          "Laura Ockel",
+             tags=["samsung", "wafer", "fab", "memory", "foundry"]),
+        _img("1606765962248-7ff407b51667", "Data center server racks blue illuminated",    "Taylor Vick",
+             tags=["samsung", "data center", "server", "semiconductor", "enterprise"]),
+    ],
+}
+
 
 CATEGORY_SMART_TAGS = {
     "ai": ["ai", "artificial", "intelligence", "openai", "anthropic", "claude", "gpt", "gemini", "model", "llm", "neural", "code", "robot", "data"],
@@ -695,6 +915,26 @@ def parse_summary_sentences(raw_summary: str) -> list:
     return [s.strip() for s in re.split(r'\.\s+', raw_summary) if s.strip()]
 
 
+def detect_entity(title: str, summary: str) -> str | None:
+    """
+    엔티티 우선 탐지.
+    제목 매칭: +3점 / 본문 매칭: +1점.
+    임계치 2점 이상의 최고점 엔티티 반환. 미달 시 None.
+    """
+    best_entity = None
+    best_score  = 0.0
+
+    for entity_key, pattern in ENTITY_PATTERNS:
+        score  = len(re.findall(pattern, title,   re.IGNORECASE)) * 3.0
+        score += len(re.findall(pattern, summary, re.IGNORECASE)) * 1.0
+
+        if score > best_score:
+            best_score  = score
+            best_entity = entity_key
+
+    return best_entity if best_score >= 2.0 else None
+
+
 def detect_category(title: str, summary: str) -> str | None:
     """
     스코어링 기반 카테고리 탐지.
@@ -766,21 +1006,32 @@ def make_urls(img_meta: dict) -> dict:
 
 def resolve_image(soup: BeautifulSoup, title: str,
                   date_str: str, summary: str) -> tuple[dict, str]:
-    """이미지 결정 메인 로직. 반환: (img_meta dict, source string)"""
+    article_text = f"{title} {summary}"
+
+    # Priority 1: 기사 본문 이미지
     art = find_article_image(soup)
     if art:
         return art, "article_image"
 
+    # Priority 2: 엔티티 우선 매칭
+    entity = detect_entity(title, summary)
+    if entity and entity in ENTITY_IMAGE_MAP:
+        pool  = ENTITY_IMAGE_MAP[entity]
+        smart = smart_pick_image(pool, article_text)
+        img   = smart if smart else select_from_pool(pool, title, date_str)
+        return img, f"entity:{entity}"
+
+    # Priority 3: 카테고리 스코어링
     cat = detect_category(title, summary)
     if cat and cat in CATEGORY_IMAGE_MAP:
         pool = CATEGORY_IMAGE_MAP[cat]
-        img = smart_pick_image(pool, f"{title} {summary}")
+        img  = smart_pick_image(pool, article_text)
         if img:
             return img, "smart_pick"
-
         img = select_from_pool(pool, title, date_str)
         return img, "handpick_category"
 
+    # Priority 4: Default
     img = select_from_pool(DEFAULT_IMAGE_POOL, title, date_str)
     return img, "handpick_default"
 
@@ -851,7 +1102,7 @@ def process_article(html_path: Path, briefing_meta: dict) -> dict:
 
     html_path.write_text(str(soup), "utf-8")
 
-    cat = detect_category(title, summ) or "default"
+    cat = source if source.startswith("entity:") else (detect_category(title, summ) or "default")
 
     return {
         "hero_url":         urls["hero_url"],
@@ -900,15 +1151,26 @@ def build_segments_with_images(raw_title: str, raw_summary: str, date_str: str) 
         summary = '. '.join(chunk) + ('.' if chunk else '')
         cursor += count
 
-        cat = detect_category(title, summary)
+        seg_text = title + " " + summary
 
-        if cat and cat in CATEGORY_IMAGE_MAP:
-            pool     = CATEGORY_IMAGE_MAP[cat]
-            smart    = smart_pick_image(pool, title + " " + summary)
+        # Priority A: 엔티티 우선 매칭
+        entity = detect_entity(title, summary)
+        if entity and entity in ENTITY_IMAGE_MAP:
+            pool     = ENTITY_IMAGE_MAP[entity]
+            smart    = smart_pick_image(pool, seg_text)
             img_meta = smart if smart else select_from_pool(pool, title, date_str)
+            cat      = f"entity:{entity}"
+
         else:
-            img_meta = select_from_pool(DEFAULT_IMAGE_POOL, title, date_str)
-            cat = "default"
+            # Priority B: 카테고리 스코어링 (기존 로직)
+            cat = detect_category(title, summary)
+            if cat and cat in CATEGORY_IMAGE_MAP:
+                pool     = CATEGORY_IMAGE_MAP[cat]
+                smart    = smart_pick_image(pool, seg_text)
+                img_meta = smart if smart else select_from_pool(pool, title, date_str)
+            else:
+                img_meta = select_from_pool(DEFAULT_IMAGE_POOL, title, date_str)
+                cat = "default"
 
         urls = make_urls(img_meta)
         segments.append({
