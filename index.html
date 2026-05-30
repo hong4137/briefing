@@ -124,42 +124,6 @@
         .nav-links a:hover { color: var(--text-primary); }
         .nav-links a.active { color: var(--accent-red); }
 
-        /* Hero Section */
-        .hero {
-            padding: 4rem 2rem;
-            text-align: center;
-            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-        }
-
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 1rem;
-            background: var(--gradient-fire);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 2rem;
-        }
-
-        .stat {
-            text-align: center;
-        }
-
         .stat-number {
             font-family: 'JetBrains Mono', monospace;
             font-size: 2rem;
@@ -177,7 +141,7 @@
         .latest {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 2.5rem 2rem 3rem;
         }
 
         .section-header {
@@ -232,8 +196,11 @@
 
         .latest-card:hover {
             border-color: var(--accent-red);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 60px rgba(255, 59, 59, 0.15);
+            transform: translateY(-6px);
+            box-shadow:
+                0 0 0 1px rgba(255, 59, 59, 0.25),
+                0 24px 80px rgba(255, 59, 59, 0.22),
+                0 8px 32px rgba(255, 140, 66, 0.12);
         }
 
         .latest-card-header {
@@ -589,14 +556,11 @@
         @media (max-width: 1024px) {
             .latest-highlights { grid-template-columns: 1fr; }
             .special-grid { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 2.5rem; }
-            .hero-stats { flex-wrap: wrap; gap: 2rem; }
         }
 
         @media (max-width: 768px) {
             .nav-content { flex-direction: column; gap: 1rem; }
             .nav-links { gap: 1rem; }
-            .hero { padding: 3rem 1.5rem; }
             .section-header { flex-direction: column; gap: 1rem; align-items: flex-start; }
             .latest-card-footer { flex-direction: column; gap: 1rem; }
             .briefing-stats { flex-wrap: wrap; }
@@ -678,11 +642,6 @@
               </div>
             </div>
      </nav>
-
-    <!-- Hero -->
-    <section class="hero" style="padding: 3rem 2rem 2rem 2rem;">
-        <h1>Essential NEWS</h1>
-    </section>
 
     <!-- Latest Briefing -->
     <section class="latest">
@@ -829,7 +788,7 @@
 
             const coverHTML = briefing.thumb_url ? `
                 <div class="card-cover">
-                    <img src="${briefing.thumb_url.replace('w=480','w=800').replace('h=270','h=450')}"
+                    <img src="${briefing.thumb_url.replace('w=480','w=1200').replace('h=270','h=675')}"
                          alt="${briefing.thumb_alt || ''}" loading="lazy" decoding="async">
                     <div class="card-cover-overlay"></div>
                 </div>` : '';

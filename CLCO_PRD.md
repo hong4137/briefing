@@ -1,8 +1,8 @@
 # CLCO_PRD.md v3 — PWA 제거 + 리드와이즈 리더 테마 + 핸드픽 이미지 맵 최종 설계 명세서
 
-> **작성**: 클코 (Cl-Co / 설계자)  
-> **기반**: 안티 (Anti / 계획자) 2차 지시서 v2.0 + 유저 피드백 v3 (API 키 없는 핸드픽 이미지 맵)  
-> **날짜**: 2026-05-28  
+> **작성**: 클코 (Cl-Co / 설계자)
+> **기반**: 안티 (Anti / 계획자) 2차 지시서 v2.0 + 유저 피드백 v3 (API 키 없는 핸드픽 이미지 맵)
+> **날짜**: 2026-05-28
 > **수신**: 코덱스 (Codex / 전문 코더)
 
 ---
@@ -84,7 +84,7 @@ briefing/
 
 #### [B] `<style>` 내 PWA CSS 블록 제거
 
-각 파일의 `<style>` 태그 내에서 아래 섹션 전체를 삭제한다.  
+각 파일의 `<style>` 태그 내에서 아래 섹션 전체를 삭제한다.
 시작 주석(`/* PWA Install Banner */`)부터 끝 미디어 쿼리까지를 찾아 제거한다.
 
 ```css
@@ -243,7 +243,7 @@ briefing/
 
 ### 2-3. 삽입 위치
 
-4개 HTML 파일(`index.html`, `archive.html`, `about.html`, `search.html`)의 `<head>` 내,  
+4개 HTML 파일(`index.html`, `archive.html`, `about.html`, `search.html`)의 `<head>` 내,
 **`<title>` 태그 직전**에 삽입한다.
 
 ```html
@@ -274,7 +274,7 @@ briefing/
   ...
 ```
 
-**왜 `<title>` 직전인가?**  
+**왜 `<title>` 직전인가?**
 - `<head>` 내 가장 이른 위치에서 비동기적으로 실행되어야 캐시 충돌을 페이지 렌더링 전에 최대한 일찍 처리할 수 있다.
 - 렌더링을 블로킹하지 않는다 (Promise 기반 비동기 코드이므로).
 
@@ -299,7 +299,7 @@ briefing/
 
 ### 3-2. 기사 본문 페이지 (포스트 프로세서 처리)
 
-`archive/*.html` 파일은 포스트 프로세서(`scripts/post_process.py`)가 자동으로 처리한다.  
+`archive/*.html` 파일은 포스트 프로세서(`scripts/post_process.py`)가 자동으로 처리한다.
 수동으로 변경하지 않는다.
 
 ---
@@ -308,7 +308,7 @@ briefing/
 
 ### 4-1. 격리 원칙 재확인
 
-`theme-modern.css` 검토 결과 올바르게 구현되어 있음을 확인했다.  
+`theme-modern.css` 검토 결과 올바르게 구현되어 있음을 확인했다.
 코덱스는 이 파일을 **수정하지 않는다.** 구조 요약:
 
 ```
@@ -340,7 +340,7 @@ body { font-family: ...; background: ...; }
 h2.section-title { ... }
 ```
 
-`theme-modern.css`는 `body.reader-mode` 접두사로 격리되어 있으므로 이들과 충돌하지 않는다.  
+`theme-modern.css`는 `body.reader-mode` 접두사로 격리되어 있으므로 이들과 충돌하지 않는다.
 단, `body { background: ...; }` vs `body.reader-mode { background: ...; }` 에서 후자가 명시도(specificity)가 높아 승리한다. 이 경우 기사의 원래 body 배경색이 `theme-modern.css`의 `#121214`로 덮이는데, 두 값이 시각적으로 유사(`#0a0a0f` vs `#121214`)하므로 실질적 문제는 없다.
 
 ---
@@ -392,7 +392,7 @@ GNB 배경:       rgba(18,18,20,0.80) + backdrop-filter: blur(20px) saturate(160
 | 장애 위험 | API 다운/할당 초과 시 실패 | **없음 (오프라인 동작)** |
 | 이미지 품질 | 검색 결과 품질 변동 | **사전 큐레이션된 초고화질만** |
 
-Unsplash CDN URL은 API 인증 없이 공개 접근이 가능하다.  
+Unsplash CDN URL은 API 인증 없이 공개 접근이 가능하다.
 URL 형식: `https://images.unsplash.com/photo-{ID}?w=1200&q=80&fit=crop&auto=format`
 
 ---
@@ -426,14 +426,14 @@ CATEGORY_PATTERNS = [
 ]
 ```
 
-탐지 우선순위: 리스트 순서대로 첫 번째 매칭 카테고리 사용.  
+탐지 우선순위: 리스트 순서대로 첫 번째 매칭 카테고리 사용.
 기사 제목 + 요약 텍스트를 합쳐서 탐지한다.
 
 ---
 
 ### 6-3. 핸드픽 프리미엄 이미지 맵 (CATEGORY_IMAGE_MAP)
 
-각 카테고리별 4장, 기본 풀 4장. 총 36장 큐레이션.  
+각 카테고리별 4장, 기본 풀 4장. 총 36장 큐레이션.
 선택 알고리즘: `index = int(md5(date_str)) % len(pool)` (날짜 결정론적)
 
 ```python
@@ -968,3 +968,230 @@ print('OK:', b['hero_source'], b['hero_url'][:60])
 ---
 
 *v3 설계 완료 (2026-05-28). 이 문서(`CLCO_PRD.md`)를 코덱스(Codex)에게 전달하여 구현을 시작하세요.*
+
+---
+
+# CLCO_PRD.md — 3차 UI 개편 설계 (v3.1)
+
+> **추가 작성**: 클코 (Cl-Co / 설계자)
+> **기반**: 안티 (Anti / 기획자) 3차 지시서 `CLCO_HANDOFF.md` v3.0
+> **날짜**: 2026-05-30
+> **수신**: 코덱스 (Codex / 전문 코더)
+
+---
+
+## A. 실태 조사 결과 (Codex 작업 전 현황)
+
+| 파일 | 항목 | 현재 값 | 목표 값 |
+|---|---|---|---|
+| `index.html` | Hero 섹션 HTML | `<section class="hero">` 존재 (3차 목표 제거 대상) | **완전 삭제** |
+| `index.html` | 커버 이미지 해상도 | `w=800`, `h=450` | **`w=1200`, `h=675`** |
+| `index.html` | 로고 텍스트 | `JFNB` ✅ | 유지 |
+| `archive.html` | 로고 텍스트 | `Jae's Briefing` ❌ | **`JFNB`** |
+| `about.html` | 로고 텍스트 | `Jae's Briefing` ❌ | **`JFNB`** |
+| `search.html` | 로고 텍스트 | `Jae's Briefing` ❌ | **`JFNB`** |
+| 전체 GNB 링크 | `target="_blank"` | **미존재 ✅** (GNB 네비 링크에는 없음) | 현상 유지, 변경 불필요 |
+| `post_process.py` `GNB_HTML` | 로고·링크 | `JFNB`, `target` 없음 ✅ | 현상 유지 |
+
+> **`target="_blank"` 진단**: GNB 네비게이션 링크에는 현재 `target="_blank"`가 **존재하지 않음**.
+> 유일하게 `target="_blank"`가 있는 곳은 `index.html`의 `.highlight` 외부 기사 링크이며, 이는 외신 원문을 별도 탭에서 여는 **의도된 정상 동작**이므로 건드리지 않는다.
+
+---
+
+## B. 3차 설계 명세
+
+### B-1. `index.html` — Hero 섹션 완전 제거
+
+#### HTML 삭제 대상 (약 682~685라인)
+
+```html
+<!-- 아래 블록 전체 삭제 -->
+    <!-- Hero -->
+    <section class="hero" style="padding: 3rem 2rem 2rem 2rem;">
+        <h1>Essential NEWS</h1>
+    </section>
+```
+
+#### CSS 삭제 대상 (`<style>` 내부)
+
+아래 규칙들을 **통째로 삭제**한다. 다른 선택자에 영향 없음.
+
+```css
+/* 삭제 대상 CSS 블록 1 — 약 128~161라인 */
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: var(--gradient-fire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+```
+
+```css
+/* 삭제 대상 CSS 블록 2 — @media (max-width: 1024px) 내부 두 줄 */
+            .hero h1 { font-size: 2.5rem; }
+            .hero-stats { flex-wrap: wrap; gap: 2rem; }
+```
+
+```css
+/* 삭제 대상 CSS 블록 3 — @media (max-width: 768px) 내부 한 줄 */
+            .hero { padding: 3rem 1.5rem; }
+```
+
+#### `.latest` 상단 여백 조정
+
+Hero 제거 후 GNB와 최신 브리핑 카드 사이 여백을 적절히 확보한다.
+기존 `.latest` 규칙을 아래와 같이 교체:
+
+```css
+/* 교체 전 */
+        .latest {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+/* 교체 후 */
+        .latest {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2.5rem 2rem 3rem;
+        }
+```
+
+---
+
+### B-2. `index.html` — 최신 브리핑 커버 이미지 해상도 업그레이드 + Hero 비주얼 강화
+
+#### `renderLatest()` 함수 내 커버 이미지 URL 교체 (약 832라인)
+
+```javascript
+// 교체 전
+                <img src="${briefing.thumb_url.replace('w=480','w=800').replace('h=270','h=450')}"
+
+// 교체 후
+                <img src="${briefing.thumb_url.replace('w=480','w=1200').replace('h=270','h=675')}"
+```
+
+> 16:9 비율(1200×675)로 변경하여 풀와이드 Hero 비주얼 완성.
+
+#### `.latest-card:hover` 보더 라이팅 강화 (기존 CSS 교체)
+
+```css
+/* 교체 전 */
+        .latest-card:hover {
+            border-color: var(--accent-red);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(255, 59, 59, 0.15);
+        }
+
+/* 교체 후 */
+        .latest-card:hover {
+            border-color: var(--accent-red);
+            transform: translateY(-6px);
+            box-shadow:
+                0 0 0 1px rgba(255, 59, 59, 0.25),
+                0 24px 80px rgba(255, 59, 59, 0.22),
+                0 8px 32px rgba(255, 140, 66, 0.12);
+        }
+```
+
+---
+
+### B-3. GNB 로고 텍스트 `JFNB` 일괄 통일
+
+`archive.html`, `about.html`, `search.html` 각각에서 아래 1줄 교체:
+
+```html
+<!-- 교체 전 (3개 파일 동일) -->
+                <span class="nav-logo-text">Jae's Briefing</span>
+
+<!-- 교체 후 (3개 파일 동일) -->
+                <span class="nav-logo-text">JFNB</span>
+```
+
+---
+
+### B-4. GNB `target="_blank"` 현황 확정 (조치 없음)
+
+```bash
+# 검증 명령어 — 실행 후 GNB 링크에 target 없음 확인
+grep -n 'target="_blank"' briefing/index.html briefing/archive.html briefing/about.html briefing/search.html briefing/scripts/post_process.py
+```
+
+> 예상 결과: `index.html`의 `.highlight` 기사 링크(외신 원문)에만 출력됨.
+> GNB 네비게이션 `<a>` 태그에는 해당 속성 없음 → **조치 불필요**.
+
+---
+
+## C. 코덱스 구현 체크리스트 (v3.1)
+
+### Phase 1 — `index.html` Hero 완전 제거
+- [ ] HTML: `<section class="hero">...</section>` 블록 삭제
+- [ ] CSS: `.hero {}`, `.hero h1 {}`, `.hero p {}`, `.hero-stats {}`, `.stat {}` 5개 블록 삭제
+- [ ] CSS 반응형: `@media` 내 `.hero` 관련 3개 규칙 삭제
+- [ ] CSS: `.latest {}` padding `3rem 2rem` → `2.5rem 2rem 3rem` 교체
+
+### Phase 2 — `index.html` 최신 브리핑 Hero 비주얼 강화
+- [ ] JS: `renderLatest()` 커버 이미지 `w=800`, `h=450` → `w=1200`, `h=675` 교체
+- [ ] CSS: `.latest-card:hover` 보더 라이팅 강화 규칙으로 교체
+
+### Phase 3 — 로고 텍스트 일괄 통일
+- [ ] `archive.html`: `Jae's Briefing` → `JFNB`
+- [ ] `about.html`: `Jae's Briefing` → `JFNB`
+- [ ] `search.html`: `Jae's Briefing` → `JFNB`
+
+### Phase 4 — GNB target 전수조사 확인
+- [ ] `grep -n 'target="_blank"'` 실행 → GNB 링크에 해당 없음 확인
+- [ ] `post_process.py` GNB_HTML 동일 확인
+
+---
+
+## D. 검수 기준
+
+### 시각적 검증
+- [ ] `index.html` 로드 시 `Essential NEWS` 섹션 미표시
+- [ ] GNB 바로 아래 최신 브리핑 카드가 즉시 등장 (여백 자연스러움)
+- [ ] 최신 브리핑 커버 이미지가 기존보다 고화질·와이드 비율로 표시
+- [ ] 카드 호버 시 붉은 보더 글로우 효과 선명하게 발생
+- [ ] `archive.html`, `about.html`, `search.html` 좌상단 로고 `JFNB` 표시
+- [ ] 모든 GNB 내비 링크 클릭 시 동일 탭 전환 (새 탭 없음)
+- [ ] 모바일 375px 뷰포트 정상 레이아웃
+
+### 코드 검증
+```bash
+grep -n "Essential NEWS\|hero-stats\|class=\"hero\"" briefing/index.html  # → 결과 없어야 함
+grep -n "Jae's Briefing" briefing/archive.html briefing/about.html briefing/search.html  # → 결과 없어야 함
+grep -n "w=800\|h=450" briefing/index.html  # → renderLatest 커버에 없어야 함
+```
+
+---
+
+*v3.1 설계 추가 완료 (2026-05-30). Phase 1 → 4 순서로 구현 후 검수 기준으로 자가 검증하세요.*
