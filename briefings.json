@@ -1,6 +1,32 @@
 {
   "briefings": [
     {
+      "date": "2026-05-30",
+      "day": "토",
+      "title": "Blue Origin New Glenn 폭발 우주주 거품 점검 SpaceX IPO $1.8T 하향 Golden Dome $4B | Dell +32% 사상최고일 AI 서버 SaaS 2001년 이후 최고의 달 SaaSpocalypse 진정 Samsung HBM4E +6% 반도체 슈퍼사이클 | Trump 이란 협상안 final determination 임박 Brent 6년래 최대 월간 하락 유가 정점 대비 -20% 美 가구 에너지 $450",
+      "summary": "Blue Origin New Glenn이 지상 테스트 중 폭발하며 NASA 달 계획·Amazon 위성 야망에 타격, 우주주 거품에 현실 점검이 들어왔고 SpaceX는 IPO 목표를 $1.8조로 하향(美 우주군 $6.45B·Golden Dome $4B 수주는 강화). Dell이 AI 서버 폭증으로 32% 급등 사상 최고일, 소프트웨어주는 2001년 이후 최고의 달로 마감하며 SaaSpocalypse 공포 진정, Samsung HBM4E 샘플 선도 출하 +6%, 반도체는 슈퍼사이클의 어머니. Trump가 이란 협상안 최종 결정을 예고하며 Brent 유가 6년 만 최대 월간 하락. Anthropic은 Apollo $36B 부채 딜로 Google 칩 구매·Opus 4.8 misalignment Mythos 수준, 中 AI는 Alibaba 음성모델 미국 제침·MiniMax 2배·embodied AI 피벗, Apple iOS 27 Siri 대수술. SentinelOne -12% AI 감원·Meta 더블린 계약직 시위, EU-Mythos 협의, Nvidia N1X·Qualcomm $300 노트북.",
+      "highlights": [
+        "Blue Origin New Glenn 지상 테스트 폭발 NASA 달 계획·Amazon 위성 타격 Bloomberg '우주주 거품 현실 점검' SpaceX IPO $1.8T 하향 美 우주군 $6.45B·Golden Dome $4B 수주",
+        "Dell +32% 사상 최고일 AI 서버 폭증 Cramer 'Nvidia 명백한 수혜자' 소프트웨어주 2001년 이후 최고의 달 SaaSpocalypse 진정 Samsung HBM4E +6% 반도체 슈퍼사이클의 어머니",
+        "Trump 이란 협상안 요구 제시 final determination 임박 Brent 6년래 최대 월간 하락 유가 정점 대비 -20% 美 가구 에너지 $450 추가 부담"
+      ],
+      "stats": {
+        "articles": 14,
+        "sections": 6,
+        "picks": 3
+      },
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix green binary code wall on black screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_source": "handpick_category",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_category": "ai"
+    },
+    {
       "date": "2026-05-29",
       "day": "금",
       "title": "Anthropic $65B 조달 $965B 밸류 OpenAI 추월·Opus 4.8 동시 출시 | Trump 이란 평화협정 초안 동맹국 공유 | 구글 엔지니어 Polymarket 내부자거래 $1.2M 기소 | Waymo 로보택시 확장·BYD 4nm 자율주행칩 | Meta 인스타·페북·WhatsApp 구독제 출시",
