@@ -44,12 +44,14 @@ CATEGORY_PATTERNS = [
     ("defense",  r'방산|방위산업|미사일|무기|전투기|군사|국방|K-방산|드론전|화약|군인'),
 ]
 
-def _img(photo_id, alt, credit_name):
+def _img(photo_id, alt, credit_name, tags=None):
+    """tags: 이미지 연관 영문 키워드 리스트."""
     return {
         "id":          photo_id,
         "alt":         alt,
         "credit_name": credit_name,
         "credit_url":  f"https://unsplash.com/photos/{photo_id}",
+        "tags":        [t.lower() for t in (tags or [])],
     }
 
 CATEGORY_IMAGE_MAP = {
@@ -58,7 +60,8 @@ CATEGORY_IMAGE_MAP = {
     "ai": [
         _img("1677442135703-1787eea5ce01",
              "Blue neural network data visualization on dark background",
-             "Growtika"),
+             "Growtika",
+             tags=["ai", "neural", "data", "model", "llm"]),
         _img("1620712943543-bcc4688e7485",
              "Cybernetic virtual brain with glowing circuits",
              "Possessed Photography"),
@@ -218,7 +221,8 @@ CATEGORY_IMAGE_MAP = {
     "space": [
         _img("1451187580459-43490279c0fa",
              "Blue Earth viewed from dark outer space orbit",
-             "NASA"),
+             "NASA",
+             tags=["space", "earth", "orbit", "nasa", "satellite"]),
         _img("1506703719100-a0f3a48c0f86",
              "Majestic aurora borealis with deep space nebula",
              "Greg Rakozy"),
@@ -552,6 +556,114 @@ DEFAULT_IMAGE_POOL = [
 ]
 
 
+CATEGORY_SMART_TAGS = {
+    "ai": ["ai", "artificial", "intelligence", "openai", "anthropic", "claude", "gpt", "gemini", "model", "llm", "neural", "code", "robot", "data"],
+    "chip": ["chip", "semiconductor", "nvidia", "tsmc", "micron", "sk", "hbm", "wafer", "circuit", "server", "gpu", "processor"],
+    "finance": ["stock", "market", "ipo", "fed", "rate", "bond", "bitcoin", "crypto", "finance", "trading", "wall", "street"],
+    "robot": ["robot", "humanoid", "unitree", "figure", "automation", "drone", "mechanical", "factory", "autonomous"],
+    "space": ["space", "spacex", "starship", "starlink", "rocket", "launch", "nasa", "orbit", "satellite", "moon", "mars", "earth"],
+    "health": ["health", "medical", "fitbit", "wearable", "bio", "dna", "drug", "pharma", "genome", "fitness"],
+    "ev": ["ev", "tesla", "electric", "vehicle", "battery", "charging", "autonomous", "lidar", "car"],
+    "economy": ["economy", "trade", "tariff", "inflation", "gdp", "dollar", "shipping", "supply", "global", "port"],
+    "telecom": ["telecom", "5g", "6g", "network", "fiber", "satellite", "antenna", "data", "server", "internet"],
+    "bigtech": ["google", "apple", "meta", "microsoft", "amazon", "software", "developer", "cloud", "platform", "app"],
+    "policy": ["policy", "regulation", "court", "law", "congress", "government", "legal", "safety", "compliance"],
+    "defense": ["defense", "military", "drone", "fighter", "radar", "satellite", "security", "weapon", "army", "naval"],
+}
+
+CATEGORY_EXTRA_IMAGES = {
+    "ai": [
+        ("1531297484001-80022131f5a1", "Premium laptop display dark setup", "Ales Nesetril", ["laptop", "coding", "developer", "screen", "software", "ai"]),
+        ("1580927752452-89d86da3fa0a", "Developer coding laptop dark room", "Christopher Gower", ["coding", "developer", "programming", "software", "llm", "model"]),
+        ("1498050108023-c5249f4df085", "Laptop displaying code in dark environment", "Christopher Gower", ["code", "screen", "developer", "software", "ai"]),
+        ("1573804633927-bfcbcd909acd", "Modern tech company open office", "Marvin Meyer", ["startup", "technology", "office", "ai", "platform"]),
+        ("1517245386807-bb43f82c33c4", "Devices laptop tablet phone clean desk", "Thomas Lefebvre", ["device", "app", "software", "technology", "platform"]),
+        ("1496181133206-80ce9b88a853", "Backlit laptop keyboard close-up", "Ales Nesetril", ["keyboard", "developer", "coding", "software", "dark"]),
+        ("1606765962248-7ff407b51667", "Data center server racks blue illuminated", "Taylor Vick", ["compute", "server", "data", "cloud", "ai"]),
+        ("1544197150-b99a580bb7a8", "Fiber optic cables in server rack", "Alina Grubnyak", ["network", "data", "server", "compute", "ai"]),
+        ("1516321318423-f06f85e504b3", "Digital node hub connection abstract", "Alina Grubnyak", ["network", "node", "digital", "data", "ai"]),
+        ("1607604276583-eef5d076aa5f", "Blue neon motherboard circuit detail", "Olivier Collet", ["circuit", "hardware", "chip", "ai", "compute"]),
+        ("1591453089816-0fbb971b454c", "Abstract semiconductor lattice grid", "Laura Ockel", ["chip", "semiconductor", "grid", "hardware", "ai"]),
+        ("1555664424-778a1e5e1b48", "Circuit board traces macro close-up", "Alex Andrews", ["circuit", "board", "hardware", "compute", "ai"]),
+    ],
+    "space": [
+        ("1506084868230-bb9d95c24759", "Aircraft vapor trails in night sky", "Amir Kabirov", ["sky", "flight", "aerospace", "night", "space"]),
+        ("1517976487492-5750f3195933", "Fighter jet cockpit interior panel", "Lasseter Wen", ["cockpit", "aerospace", "flight", "control", "mission"]),
+        ("1569003339405-ea396a5a8a90", "Dark security zone restricted fence", "Ehud Neuhaus", ["security", "mission", "base", "space", "night"]),
+        ("1600132806370-bf17e65e942f", "Tall antenna mast communications", "Thomas Kelley", ["antenna", "signal", "satellite", "network", "space"]),
+        ("1497366216548-37526070297c", "Blue fiber optic light strands", "Umberto", ["starlink", "network", "signal", "satellite", "data"]),
+        ("1544197150-b99a580bb7a8", "Server rack fiber optic cables", "Alina Grubnyak", ["starlink", "network", "satellite", "data", "spacex"]),
+        ("1606765962248-7ff407b51667", "Data center server racks blue", "Taylor Vick", ["mission", "control", "data", "satellite", "network"]),
+        ("1450133064473-71024230f91b", "Solemn columns and sky silhouette", "Louis Velazquez", ["nasa", "government", "mission", "space", "policy"]),
+        ("1508873535684-277a3cbcc4e8", "Helicopter dark hangar silhouette", "David Henrichs", ["aerospace", "hangar", "flight", "mission", "rocket"]),
+        ("1473163928189-364b2c4e1135", "Radar scan line screen display", "Chris Henry", ["radar", "tracking", "orbit", "satellite", "mission"]),
+        ("1516849841032-87cbac4d88f7", "Rocket bright exhaust flame", "SpaceX", ["rocket", "launch", "spacex", "flame", "liftoff"]),
+        ("1541185933-ef5d8ed016c2", "Rocket launch trajectory night sky", "SpaceX", ["rocket", "launch", "starship", "spacex", "night"]),
+    ],
+}
+
+_SHARED_EXTRAS = [
+    ("1504711434969-e33886168f5c", "Aerial city lights skyline night view", "Maximalfocus"),
+    ("1451187580459-43490279c0fa", "Blue Earth viewed from dark outer space", "NASA"),
+    ("1498050108023-c5249f4df085", "Laptop displaying code in dark environment", "Christopher Gower"),
+    ("1522071820081-009f0129c71c", "Tech team collaborating on laptops in office", "Annie Spratt"),
+    ("1606765962248-7ff407b51667", "Data center server racks blue illuminated", "Taylor Vick"),
+    ("1544197150-b99a580bb7a8", "Server rack fiber optic cables blue glow", "Alina Grubnyak"),
+    ("1486406146926-c627a92ad1ab", "Glass skyscrapers financial district twilight", "Sean Pollock"),
+    ("1611974789855-9c2a0a7236a3", "Stock market chart dark monitor", "Maxim Hopman"),
+    ("1517976487492-5750f3195933", "Fighter jet cockpit interior control panel", "Lasseter Wen"),
+    ("1507679799987-c73779587ccf", "Wooden gavel courtroom justice symbol", "Tingey Injury Law Firm"),
+    ("1593941707882-a5bba14938c7", "Electric vehicle charging port glowing blue", "dcbel"),
+    ("1571019613454-1cb2f99b2d8b", "Pharmaceutical drug vials medical dark", "Nguyen Dang Hoang Nhu"),
+]
+
+
+def _augment_category_image_map() -> None:
+    for category, pool in CATEGORY_IMAGE_MAP.items():
+        base_tags = CATEGORY_SMART_TAGS.get(category, [])
+        for img in pool:
+            if not img.get("tags"):
+                img["tags"] = list(base_tags)
+
+        extras = CATEGORY_EXTRA_IMAGES.get(category)
+        if extras is None:
+            extras = [
+                (photo_id, alt, credit, base_tags)
+                for photo_id, alt, credit in _SHARED_EXTRAS
+            ]
+
+        cursor = 0
+        while len(pool) < 24:
+            photo_id, alt, credit, tags = extras[cursor % len(extras)]
+            pool.append(_img(photo_id, alt, credit, tags=tags or base_tags))
+            cursor += 1
+
+
+_augment_category_image_map()
+
+
+def smart_pick_image(pool: list, article_text: str) -> dict | None:
+    """
+    기사 텍스트와 이미지 tags를 비교해 의미상 가장 가까운 이미지를 선택.
+    매칭 점수가 없으면 None을 반환해 기존 hash+dedup 로직으로 fallback.
+    """
+    text = article_text.lower()
+    best_img = None
+    best_score = 0
+
+    for img in pool:
+        score = sum(1 for tag in img.get("tags", []) if tag and tag in text)
+        if score > best_score and img.get("id") not in _dedup_window:
+            best_img = img
+            best_score = score
+
+    if best_img and best_score > 0:
+        _dedup_window.append(best_img["id"])
+        return best_img
+
+    return None
+
+
 def select_from_pool(pool: list, title: str, date_str: str = "") -> dict:
     """
     제목+날짜 해시 → 결정론적 기본 인덱스 산출.
@@ -651,7 +763,12 @@ def resolve_image(soup: BeautifulSoup, title: str,
 
     cat = detect_category(title, summary)
     if cat and cat in CATEGORY_IMAGE_MAP:
-        img = select_from_pool(CATEGORY_IMAGE_MAP[cat], title, date_str)
+        pool = CATEGORY_IMAGE_MAP[cat]
+        img = smart_pick_image(pool, f"{title} {summary}")
+        if img:
+            return img, "smart_pick"
+
+        img = select_from_pool(pool, title, date_str)
         return img, "handpick_category"
 
     img = select_from_pool(DEFAULT_IMAGE_POOL, title, date_str)
@@ -741,6 +858,8 @@ def process_article(html_path: Path, briefing_meta: dict) -> dict:
 
 
 def get_log_source(meta: dict) -> str:
+    if meta.get("hero_source"):
+        return meta["hero_source"]
     if not meta.get("thumb_url", "").startswith(BASE):
         return "article_image"
     if meta.get("thumb_category") == "default":

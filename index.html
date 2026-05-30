@@ -7,6 +7,28 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-72x72.png">
     <!-- SW Cleanup: Unregister previously installed service workers -->
     <script>
+
+        (function initTheme() {
+            function applyTheme() {
+                var isLight = localStorage.getItem('jfnb-theme') === 'light';
+                if (document.body) document.body.classList.toggle('light-mode', isLight);
+                var btn = document.getElementById('theme-toggle');
+                if (btn) btn.textContent = isLight ? '\u2600\ufe0f' : '\ud83c\udf19';
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', applyTheme);
+            } else {
+                applyTheme();
+            }
+        })();
+
+        function toggleTheme() {
+            var isLight = document.body.classList.toggle('light-mode');
+            localStorage.setItem('jfnb-theme', isLight ? 'light' : 'dark');
+            var btn = document.getElementById('theme-toggle');
+            if (btn) btn.textContent = isLight ? '\u2600\ufe0f' : '\ud83c\udf19';
+        }
+
       window.__swCleanupReady = (async function() {
         try {
           if ('serviceWorker' in navigator) {
@@ -616,6 +638,307 @@
     .nav-search-compact input { width: 60px; }
     .nav-search-compact input:focus { width: 80px; }
 }
+
+/* ?? Portal Layout ???????????????????????????????????????? */
+.portal-wrap {
+    background: var(--bg-card);
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+.portal-hero {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    min-height: 380px;
+    overflow: hidden;
+    transition: filter 0.2s ease;
+}
+.portal-hero:hover { filter: brightness(1.05); }
+.portal-hero-img,
+.portal-hero-no-img {
+    position: absolute;
+    inset: 0;
+    background: var(--bg-secondary);
+}
+.portal-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
+}
+.portal-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,10,15,0.1) 0%, rgba(10,10,15,0.85) 100%);
+}
+.portal-hero-body {
+    position: relative;
+    padding: 2rem;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 0;
+}
+.portal-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+.portal-live-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-red);
+    animation: portalPulse 2s infinite;
+}
+@keyframes portalPulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+.portal-date,
+.portal-stats {
+    font-size: 0.78rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(255,255,255,0.75);
+}
+.portal-hero-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+    margin-bottom: 0.75rem;
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+}
+.portal-hero-summary {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.portal-sub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border-color);
+    border-top: 1px solid var(--border-color);
+}
+.portal-sub {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    background: var(--bg-card);
+    overflow: hidden;
+    min-width: 0;
+    transition: background 0.2s ease;
+}
+.portal-sub:hover { background: var(--bg-card-hover); }
+.portal-sub-img {
+    height: 130px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.portal-sub-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+.portal-sub:hover .portal-sub-img img { transform: scale(1.05); }
+.portal-sub-body {
+    padding: 1rem 1.25rem;
+    flex: 1;
+}
+.portal-sub-index {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--accent-red);
+    background: rgba(255,59,59,0.1);
+    padding: 0.15rem 0.45rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+.portal-sub-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-primary);
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.portal-sub-summary {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-top: 0.4rem;
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.portal-more-list {
+    list-style: none;
+    border-top: 1px solid var(--border-color);
+    padding: 0.5rem 0;
+}
+.portal-more-item { border-bottom: 1px solid var(--border-color); }
+.portal-more-item:last-child { border-bottom: none; }
+.portal-more-item a {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s ease;
+}
+.portal-more-item a:hover { background: var(--bg-card-hover); }
+.portal-more-index {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    width: 1.2rem;
+}
+.portal-more-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+}
+.portal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+}
+.portal-footer-stats {
+    display: flex;
+    gap: 1.25rem;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+.portal-footer-stats strong { color: var(--text-secondary); }
+@media (max-width: 768px) {
+    .portal-hero,
+    .portal-hero-body { min-height: 260px; }
+    .portal-hero-title { font-size: 1.2rem; }
+    .portal-sub-grid { grid-template-columns: 1fr; }
+    .portal-sub-img { height: 100px; }
+    .portal-footer { flex-direction: column; gap: 0.75rem; }
+}
+@media (max-width: 480px) {
+    .portal-hero-body { padding: 1.25rem; }
+    .portal-hero-title { font-size: 1.05rem; }
+}
+
+@media (max-width: 768px) {
+    body { overflow-x: hidden; }
+    .nav-content {
+        padding: 0 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    .nav-right {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+    .nav-search-compact {
+        flex: 1 1 150px;
+        min-width: 0;
+    }
+    .nav-search-compact input,
+    .nav-search-compact input:focus {
+        width: 100%;
+    }
+    .latest {
+        max-width: 100%;
+        padding: 2rem 1rem 2.5rem;
+    }
+    .portal-wrap {
+        width: 100%;
+        max-width: calc(100vw - 2rem);
+        border-radius: 18px;
+    }
+    .portal-more-item a { padding: 0.7rem 1rem; }
+}
+
+
+/* ?? Classic Paper Mode (Light Theme) ????????????????????? */
+body.light-mode {
+    --bg-primary:     #faf8f3;
+    --bg-secondary:   #f0ede5;
+    --bg-card:        #ffffff;
+    --bg-card-hover:  #f5f2ea;
+    --text-primary:   #1c1c1e;
+    --text-secondary: #44444f;
+    --text-muted:     #8a8a9a;
+    --border-color:   #dedad2;
+    --accent-red:     #d62d2d;
+    --accent-blue:    #1a6fc4;
+    --accent-gold:    #b8860b;
+    --gradient-fire:  linear-gradient(135deg, #d62d2d, #c9600a);
+    --gradient-ai:    linear-gradient(135deg, #7c3aed, #1a6fc4);
+}
+body.light-mode .nav {
+    background: rgba(250, 248, 243, 0.92);
+    border-bottom-color: var(--border-color);
+}
+body.light-mode .portal-hero-title { color: #ffffff; }
+body.light-mode .portal-date,
+body.light-mode .portal-stats { color: rgba(255,255,255,0.8); }
+body,
+.nav,
+.portal-wrap,
+.portal-sub,
+.portal-footer,
+.portal-more-list {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.theme-toggle-btn {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.35rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+.theme-toggle-btn:hover {
+    background: rgba(255,255,255,0.14);
+    transform: scale(1.1);
+}
+body.light-mode .theme-toggle-btn {
+    background: rgba(0,0,0,0.06);
+    border-color: var(--border-color);
+}
+
 </style>
     <link rel="stylesheet" href="theme-modern.css?v=20260118">
 </head>
@@ -634,6 +957,7 @@
                     <input type="text" name="q" placeholder="검색...">
                 </form>
         
+                <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" aria-label="테마 전환">🌙</button>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">홈</a></li>
                     <li><a href="archive.html">아카이브</a></li>
@@ -764,65 +1088,116 @@
             }
         }
 
-        function renderLatest(briefing) {
-            const highlightsHTML = briefing.highlights ? briefing.highlights.map(h => {
-    // 객체인 경우 (기존 방식 - url 있음)
-        if (typeof h === 'object' && h.url) {
-            return `
-                <a href="${h.url}" target="_blank" rel="noopener" class="highlight">
-                    <div class="highlight-category ${h.category}">${categoryLabels[h.category] || h.category}</div>
-                    <h4>${h.title}</h4>
-                    <p>${h.summary}</p>
-                    <span class="highlight-link">원문 보기 →</span>
-                </a>
-            `;
+        function parseTitles(rawTitle) {
+            return String(rawTitle || '').split('|').map(t => t.trim()).filter(Boolean);
         }
-    // 문자열인 경우 (Sheet 방식)
-        return `
-            <div class="highlight">
-                <div class="highlight-category top">TOP</div>
-                <h4>${h}</h4>
-            </div>
-        `;
-    }).join('') : '<div class="empty-state">하이라이트가 없습니다.</div>';
 
-            const coverHTML = briefing.thumb_url ? `
-                <div class="card-cover">
-                    <img src="${briefing.thumb_url.replace('w=480','w=1200').replace('h=270','h=675')}"
-                         alt="${briefing.thumb_alt || ''}" loading="lazy" decoding="async">
-                    <div class="card-cover-overlay"></div>
+        function parseSentences(rawSummary) {
+            return String(rawSummary || '').split(/\.\s+/).map(s => s.trim()).filter(Boolean);
+        }
+
+        function buildSegments(titles, sentences) {
+            const n = titles.length;
+            if (n === 0) return [];
+            if (sentences.length === 0) return titles.map(t => ({ title: t, summary: '' }));
+
+            const perSlot   = Math.floor(sentences.length / n);
+            const remainder = sentences.length % n;
+            const segments  = [];
+            let cursor = 0;
+
+            titles.forEach((title, i) => {
+                const count = perSlot + (i === n - 1 ? remainder : 0);
+                const chunk = sentences.slice(cursor, cursor + count);
+                segments.push({ title, summary: chunk.join('. ') + (chunk.length ? '.' : '') });
+                cursor += count;
+            });
+
+            return segments;
+        }
+
+        function renderLatest(briefing) {
+            const titles    = parseTitles(briefing.title);
+            const sentences = parseSentences(briefing.summary);
+            const segments  = buildSegments(titles, sentences);
+
+            if (segments.length === 0) {
+                document.getElementById('latest-container').innerHTML =
+                    '<div class="empty-state">표시할 브리핑이 없습니다.</div>';
+                return;
+            }
+
+            const baseLink = briefing._link || `archive/${briefing.date}.html`;
+            const coverSrc = briefing.thumb_url
+                ? briefing.thumb_url.replace('w=480','w=1200').replace('h=270','h=675')
+                : '';
+            const coverAlt = briefing.thumb_alt || '';
+
+            const hero = segments[0];
+            const heroHTML = `
+                <a href="${baseLink}" class="portal-hero">
+                    ${coverSrc ? `
+                    <div class="portal-hero-img">
+                        <img src="${coverSrc}" alt="${coverAlt}" loading="lazy" decoding="async">
+                        <div class="portal-hero-overlay"></div>
+                    </div>` : '<div class="portal-hero-no-img"></div>'}
+                    <div class="portal-hero-body">
+                        <div class="portal-meta">
+                            <span class="portal-live-dot"></span>
+                            <span class="portal-date">${briefing.date} KST</span>
+                            <span class="portal-stats">${briefing.stats?.articles || briefing.stats?.clusters || 0} 건</span>
+                        </div>
+                        <h2 class="portal-hero-title">${hero.title}</h2>
+                        ${hero.summary ? `<p class="portal-hero-summary">${hero.summary}</p>` : ''}
+                    </div>
+                </a>`;
+
+            const subs = segments.slice(1, 3);
+            const subSrc = briefing.thumb_url
+                ? briefing.thumb_url.replace('w=480','w=400').replace('h=270','h=225')
+                : '';
+            const subGridHTML = subs.length ? `
+                <div class="portal-sub-grid">
+                    ${subs.map((seg, i) => `
+                    <a href="${baseLink}" class="portal-sub">
+                        ${subSrc ? `
+                        <div class="portal-sub-img">
+                            <img src="${subSrc}" alt="${coverAlt}" loading="lazy" decoding="async">
+                        </div>` : ''}
+                        <div class="portal-sub-body">
+                            <span class="portal-sub-index">${i + 2}</span>
+                            <h3 class="portal-sub-title">${seg.title}</h3>
+                            ${seg.summary ? `<p class="portal-sub-summary">${seg.summary}</p>` : ''}
+                        </div>
+                    </a>`).join('')}
                 </div>` : '';
 
-            document.getElementById('latest-container').innerHTML = `
-                <div class="latest-card">
-                    ${coverHTML}
-                    <div class="latest-card-header">
-                        <div class="latest-date">
-                            <span class="live"></span>
-                            ${briefing.date} KST
-                        </div>
-                        <h3>${briefing.title}</h3>
-                        <p>${briefing.summary}</p>
-                    </div>
-
-                    <div class="latest-card-body">
-                        <div class="latest-highlights">
-                            ${highlightsHTML}
-                        </div>
-                    </div>
-
-                    <div class="latest-card-footer">
-                        <div class="briefing-stats">
-                            <span class="briefing-stat"><strong>${briefing.stats.articles || briefing.stats.clusters || 0}</strong> ${briefing.stats.articles ? '기사' : '클러스터'}</span>
-                            <span class="briefing-stat"><strong>${briefing.stats.sections || briefing.stats.clusters || 0}</strong> 섹션</span>
-                            ${briefing.stats.picks ? `<span class="briefing-stat"><strong>${briefing.stats.picks}</strong> Claude's Pick</span>` : ''}
-                        </div>
-                        <a href="${briefing._link || ('archive/' + briefing.date + '.html')}" class="read-btn">
-                            브리핑 읽기 →
+            const moreItems = segments.slice(3);
+            const moreHTML = moreItems.length ? `
+                <ul class="portal-more-list">
+                    ${moreItems.map((seg, i) => `
+                    <li class="portal-more-item">
+                        <a href="${baseLink}">
+                            <span class="portal-more-index">${i + 4}</span>
+                            <span class="portal-more-title">${seg.title}</span>
                         </a>
+                    </li>`).join('')}
+                </ul>` : '';
+
+            const footerHTML = `
+                <div class="portal-footer">
+                    <div class="portal-footer-stats">
+                        <span><strong>${briefing.stats?.articles || briefing.stats?.clusters || 0}</strong> 건</span>
+                        <span><strong>${briefing.stats?.sections || briefing.stats?.clusters || 0}</strong> 섹션</span>
+                        ${briefing.stats?.picks ? `<span><strong>${briefing.stats.picks}</strong> Claude's Pick</span>` : ''}
                     </div>
-                </div>
-            `;
+                    <a href="${baseLink}" class="read-btn">브리핑 읽기 →</a>
+                </div>`;
+
+            document.getElementById('latest-container').innerHTML = `
+                <div class="portal-wrap">
+                    ${heroHTML}${subGridHTML}${moreHTML}${footerHTML}
+                </div>`;
         }
 
         function renderArchive(briefings) {

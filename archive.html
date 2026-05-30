@@ -7,6 +7,28 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-72x72.png">
     <!-- SW Cleanup: Unregister previously installed service workers -->
     <script>
+
+        (function initTheme() {
+            function applyTheme() {
+                var isLight = localStorage.getItem('jfnb-theme') === 'light';
+                if (document.body) document.body.classList.toggle('light-mode', isLight);
+                var btn = document.getElementById('theme-toggle');
+                if (btn) btn.textContent = isLight ? '\u2600\ufe0f' : '\ud83c\udf19';
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', applyTheme);
+            } else {
+                applyTheme();
+            }
+        })();
+
+        function toggleTheme() {
+            var isLight = document.body.classList.toggle('light-mode');
+            localStorage.setItem('jfnb-theme', isLight ? 'light' : 'dark');
+            var btn = document.getElementById('theme-toggle');
+            if (btn) btn.textContent = isLight ? '\u2600\ufe0f' : '\ud83c\udf19';
+        }
+
       window.__swCleanupReady = (async function() {
         try {
           if ('serviceWorker' in navigator) {
@@ -514,6 +536,57 @@
             .briefing-meta { text-align: left; }
             .special-grid { grid-template-columns: 1fr; }
         }
+
+/* ?? Classic Paper Mode (Light Theme) ????????????????????? */
+body.light-mode {
+    --bg-primary:     #faf8f3;
+    --bg-secondary:   #f0ede5;
+    --bg-card:        #ffffff;
+    --bg-card-hover:  #f5f2ea;
+    --text-primary:   #1c1c1e;
+    --text-secondary: #44444f;
+    --text-muted:     #8a8a9a;
+    --border-color:   #dedad2;
+    --accent-red:     #d62d2d;
+    --accent-blue:    #1a6fc4;
+    --accent-gold:    #b8860b;
+    --gradient-fire:  linear-gradient(135deg, #d62d2d, #c9600a);
+    --gradient-ai:    linear-gradient(135deg, #7c3aed, #1a6fc4);
+}
+body.light-mode .nav {
+    background: rgba(250, 248, 243, 0.92);
+    border-bottom-color: var(--border-color);
+}
+body.light-mode .portal-hero-title { color: #ffffff; }
+body.light-mode .portal-date,
+body.light-mode .portal-stats { color: rgba(255,255,255,0.8); }
+body,
+.nav,
+.portal-wrap,
+.portal-sub,
+.portal-footer,
+.portal-more-list {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.theme-toggle-btn {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.35rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+.theme-toggle-btn:hover {
+    background: rgba(255,255,255,0.14);
+    transform: scale(1.1);
+}
+body.light-mode .theme-toggle-btn {
+    background: rgba(0,0,0,0.06);
+    border-color: var(--border-color);
+}
+
 </style>
     <link rel="stylesheet" href="theme-modern.css?v=20260527">
 </head>
@@ -532,6 +605,7 @@
                     <input type="text" name="q" placeholder="검색...">
                 </form>
                 
+                <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" aria-label="테마 전환">🌙</button>
                 <ul class="nav-links">
                     <li><a href="index.html">홈</a></li>
                     <li><a href="archive.html" class="active">아카이브</a></li>
