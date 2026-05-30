@@ -3961,6 +3961,16 @@
       "stats": {
         "clusters": 10
       }
+    },
+    {
+      "date": "weekly-2026-05-24",
+      "week": "2026-W21",
+      "title": "SpaceX 사상최대 IPO 공식 파일링 + AI 일자리 대정리 doomjobbing + Anthropic 다축 충돌",
+      "summary": "SpaceX가 5/22 사상 최대 IPO 공식 파일링(Nasdaq SPCX, $2T+ 목표)으로 Musk 50%+ 의결권·xAI $6.4B 손실·Anthropic $15B/yr 컴퓨팅 딜 동시 노출. Meta 8천·Intuit 17%·StanChart 7천+ AI 감원으로 'doomjobbing' 신조어 본격화, 졸업식 학생들이 AI CEO 야유. Musk-Altman 평결 OpenAI 만장일치 승, Anthropic 다축 충돌(Disruptor 50 No.1·MS Maia 협의·Pentagon 대체 테스트), Nvidia Q1 비트 lukewarm·Huang 中 진보칩 Huawei 양보, Samsung 노조 $340K 보너스 타결, Iran 호르무즈·30Y 5.1%, Google Android XR 글라스 3진 분파, Waymo 4개 도시 중단, TeamPCP 오픈소스 공급망 공격 동시 표면화.",
+      "period": "2026-05-18 ~ 2026-05-23",
+      "stats": {
+        "clusters": 12
+      }
     }
   ],
   "specials": [
