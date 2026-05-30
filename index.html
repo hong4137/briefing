@@ -647,41 +647,50 @@
     border: 1px solid var(--border-color);
 }
 .portal-hero {
-    display: block;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    min-height: 340px;
+    overflow: hidden;
     text-decoration: none;
     color: inherit;
-    min-height: 380px;
-    overflow: hidden;
-    transition: filter 0.2s ease;
+    transition: box-shadow 0.25s ease;
 }
-.portal-hero:hover { filter: brightness(1.05); }
-.portal-hero-img,
-.portal-hero-no-img {
-    position: absolute;
-    inset: 0;
+.portal-hero:hover {
+    box-shadow: inset 0 0 0 2px rgba(255, 59, 59, 0.5);
+}
+.portal-hero-img {
+    position: relative;
+    overflow: hidden;
     background: var(--bg-secondary);
+    min-height: 280px;
+}
+.portal-hero-no-img {
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
+    min-height: 280px;
 }
 .portal-hero-img img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 40%;
+    object-position: center;
     display: block;
+    transition: transform 0.4s ease;
 }
-.portal-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, rgba(10,10,15,0.1) 0%, rgba(10,10,15,0.85) 100%);
+.portal-hero:hover .portal-hero-img img {
+    transform: scale(1.04);
 }
+.portal-hero-overlay { display: none; }
 .portal-hero-body {
-    position: relative;
-    padding: 2rem;
-    min-height: 380px;
+    padding: 2rem 1.75rem;
+    background: var(--bg-card);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 0;
     min-width: 0;
+    border-left: 1px solid var(--border-color);
 }
 .portal-meta {
     display: flex;
@@ -701,26 +710,26 @@
 .portal-stats {
     font-size: 0.78rem;
     font-family: 'JetBrains Mono', monospace;
-    color: rgba(255,255,255,0.75);
+    color: var(--text-muted);
 }
 .portal-hero-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1.3;
-    color: #fff;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+    line-height: 1.35;
+    color: var(--text-primary);
+    text-shadow: none;
     margin-bottom: 0.75rem;
     overflow-wrap: anywhere;
     word-break: keep-all;
 }
 .portal-hero-summary {
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.8);
+    color: var(--text-secondary);
     line-height: 1.6;
     overflow-wrap: anywhere;
     word-break: keep-all;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -771,7 +780,7 @@
     margin-bottom: 0.5rem;
 }
 .portal-sub-title {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     font-weight: 600;
     line-height: 1.4;
     color: var(--text-primary);
@@ -783,10 +792,10 @@
     overflow: hidden;
 }
 .portal-sub-summary {
-    font-size: 0.8rem;
+    font-size: 0.93rem;
     color: var(--text-secondary);
-    line-height: 1.5;
-    margin-top: 0.4rem;
+    line-height: 1.6;
+    margin-top: 0.5rem;
     overflow-wrap: anywhere;
     word-break: keep-all;
     display: -webkit-box;
@@ -843,9 +852,18 @@
 }
 .portal-footer-stats strong { color: var(--text-secondary); }
 @media (max-width: 768px) {
-    .portal-hero,
-    .portal-hero-body { min-height: 260px; }
-    .portal-hero-title { font-size: 1.2rem; }
+    .portal-hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px auto;
+        min-height: unset;
+    }
+    .portal-hero-body {
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+        padding: 1.25rem;
+        justify-content: flex-start;
+    }
+    .portal-hero-title { font-size: 1.15rem; }
     .portal-sub-grid { grid-template-columns: 1fr; }
     .portal-sub-img { height: 100px; }
     .portal-footer { flex-direction: column; gap: 0.75rem; }
@@ -909,9 +927,6 @@ body.light-mode .nav {
     background: rgba(250, 248, 243, 0.92);
     border-bottom-color: var(--border-color);
 }
-body.light-mode .portal-hero-title { color: #ffffff; }
-body.light-mode .portal-date,
-body.light-mode .portal-stats { color: rgba(255,255,255,0.8); }
 body,
 .nav,
 .portal-wrap,
@@ -1117,9 +1132,23 @@ body.light-mode .theme-toggle-btn {
         }
 
         function renderLatest(briefing) {
-            const titles    = parseTitles(briefing.title);
-            const sentences = parseSentences(briefing.summary);
-            const segments  = buildSegments(titles, sentences);
+            const baseLink = briefing._link || `archive/${briefing.date}.html`;
+
+            let segments;
+            if (briefing.segments && briefing.segments.length > 0) {
+                segments = briefing.segments;
+            } else {
+                const titles    = parseTitles(briefing.title);
+                const sentences = parseSentences(briefing.summary);
+                const baseSegs  = buildSegments(titles, sentences);
+                const fallbackThumb = briefing.thumb_url || '';
+                const fallbackAlt   = briefing.thumb_alt  || '';
+                segments = baseSegs.map(seg => ({
+                    ...seg,
+                    thumb_url: fallbackThumb,
+                    thumb_alt: fallbackAlt,
+                }));
+            }
 
             if (segments.length === 0) {
                 document.getElementById('latest-container').innerHTML =
@@ -1127,19 +1156,17 @@ body.light-mode .theme-toggle-btn {
                 return;
             }
 
-            const baseLink = briefing._link || `archive/${briefing.date}.html`;
-            const coverSrc = briefing.thumb_url
-                ? briefing.thumb_url.replace('w=480','w=1200').replace('h=270','h=675')
+            const hero    = segments[0];
+            const heroSrc = hero.thumb_url
+                ? hero.thumb_url.replace('w=480', 'w=700').replace('h=270', 'h=525')
                 : '';
-            const coverAlt = briefing.thumb_alt || '';
+            const heroAlt = hero.thumb_alt || '';
 
-            const hero = segments[0];
             const heroHTML = `
                 <a href="${baseLink}" class="portal-hero">
-                    ${coverSrc ? `
+                    ${heroSrc ? `
                     <div class="portal-hero-img">
-                        <img src="${coverSrc}" alt="${coverAlt}" loading="lazy" decoding="async">
-                        <div class="portal-hero-overlay"></div>
+                        <img src="${heroSrc}" alt="${heroAlt}" loading="lazy" decoding="async">
                     </div>` : '<div class="portal-hero-no-img"></div>'}
                     <div class="portal-hero-body">
                         <div class="portal-meta">
@@ -1149,20 +1176,18 @@ body.light-mode .theme-toggle-btn {
                         </div>
                         <h2 class="portal-hero-title">${hero.title}</h2>
                         ${hero.summary ? `<p class="portal-hero-summary">${hero.summary}</p>` : ''}
+                        <span class="read-btn" style="margin-top:1.25rem;display:inline-block;">브리핑 읽기 →</span>
                     </div>
                 </a>`;
 
             const subs = segments.slice(1, 3);
-            const subSrc = briefing.thumb_url
-                ? briefing.thumb_url.replace('w=480','w=400').replace('h=270','h=225')
-                : '';
             const subGridHTML = subs.length ? `
                 <div class="portal-sub-grid">
                     ${subs.map((seg, i) => `
                     <a href="${baseLink}" class="portal-sub">
-                        ${subSrc ? `
+                        ${seg.thumb_url ? `
                         <div class="portal-sub-img">
-                            <img src="${subSrc}" alt="${coverAlt}" loading="lazy" decoding="async">
+                            <img src="${seg.thumb_url}" alt="${seg.thumb_alt || ''}" loading="lazy" decoding="async">
                         </div>` : ''}
                         <div class="portal-sub-body">
                             <span class="portal-sub-index">${i + 2}</span>
@@ -1191,7 +1216,7 @@ body.light-mode .theme-toggle-btn {
                         <span><strong>${briefing.stats?.sections || briefing.stats?.clusters || 0}</strong> 섹션</span>
                         ${briefing.stats?.picks ? `<span><strong>${briefing.stats.picks}</strong> Claude's Pick</span>` : ''}
                     </div>
-                    <a href="${baseLink}" class="read-btn">브리핑 읽기 →</a>
+                    <a href="${baseLink}" class="read-btn">전체 읽기 →</a>
                 </div>`;
 
             document.getElementById('latest-container').innerHTML = `

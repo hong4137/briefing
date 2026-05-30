@@ -2278,3 +2278,450 @@ grep -n "light-mode\|jfnb-theme\|theme-toggle" briefing/index.html briefing/arch
 ---
 
 *v3.4 ?ㅺ퀎 ?꾨즺 (2026-05-30). 3?몃옓: ?ы꽭 ?뚯꽌 ?덉씠?꾩썐 + ?쒕㎤??Smart Pick + ?대옒??醫낆씠 紐⑤뱶 ?좉?.*
+
+
+---
+
+# CLCO_PRD.md — 5차 포털 리디자인 + 세그먼트 고유 이미지 주입 (v3.5)
+
+> **추가 작성**: 클코 (Cl-Co / 설계자)
+> **기반**: 안티 (Anti / 기획자) CLCO_HANDOFF.md 5차 긴급
+> **날짜**: 2026-05-31
+> **수신**: 코덱스 (Codex / 전문 코더)
+
+---
+
+## 현황 진단
+
+| 버그/문제 | 원인 | 해결 방향 |
+|---|---|---|
+| Hero 배경 이미지 위에 글씨 겹쳐 가독성 저하 | overlay형 레이아웃 | 좌측 이미지 + 우측 텍스트 2분할 grid |
+| 서브 카드 폰트 작음 | 0.95rem/0.8rem | 1.15rem/0.93rem으로 확대 |
+| 3개 카드 모두 동일한 우주 이미지 | subSrc = briefing.thumb_url 단일 소스 | 세그먼트별 빌드타임 이미지 독립 매칭 |
+
+---
+
+## A. CSS 교체 — Hero 2분할 그리드 + 서브 폰트 확대
+
+### A-1. .portal-hero 관련 규칙 전면 교체
+
+**교체 전 (찾을 코드 블록):**
+```css
+.portal-hero {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    min-height: 380px;
+    overflow: hidden;
+    transition: filter 0.2s ease;
+}
+.portal-hero:hover { filter: brightness(1.05); }
+.portal-hero-img,
+.portal-hero-no-img {
+    position: absolute;
+    inset: 0;
+    background: var(--bg-secondary);
+}
+.portal-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
+}
+.portal-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,10,15,0.1) 0%, rgba(10,10,15,0.85) 100%);
+}
+.portal-hero-body {
+    position: relative;
+    padding: 2rem;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 0;
+}
+```
+
+**교체 후 (붙여넣을 코드 블록):**
+```css
+.portal-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    min-height: 340px;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.25s ease;
+    overflow: hidden;
+}
+.portal-hero:hover {
+    box-shadow: inset 0 0 0 2px rgba(255, 59, 59, 0.5);
+}
+.portal-hero-img {
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-secondary);
+    min-height: 280px;
+}
+.portal-hero-no-img {
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
+    min-height: 280px;
+}
+.portal-hero-img img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+.portal-hero:hover .portal-hero-img img {
+    transform: scale(1.04);
+}
+.portal-hero-overlay { display: none; }
+.portal-hero-body {
+    padding: 2rem 1.75rem;
+    background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    min-width: 0;
+    border-left: 1px solid var(--border-color);
+}
+```
+
+### A-2. .portal-date / .portal-stats 색상 교체
+
+```css
+/* 교체 후 */
+.portal-date,
+.portal-stats {
+    font-size: 0.78rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-muted);
+}
+```
+
+### A-3. .portal-hero-title 교체
+
+```css
+/* 교체 후 */
+.portal-hero-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--text-primary);
+    text-shadow: none;
+    margin-bottom: 0.75rem;
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+}
+```
+
+### A-4. .portal-hero-summary 교체
+
+```css
+/* 교체 후 */
+.portal-hero-summary {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+```
+
+### A-5. .portal-sub-title / .portal-sub-summary 폰트 확대 교체
+
+```css
+/* 교체 후 */
+.portal-sub-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-primary);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.portal-sub-summary {
+    font-size: 0.93rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-top: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+```
+
+### A-6. 모바일 반응형 교체 (@media max-width: 768px 내부)
+
+```css
+/* 교체 후 */
+    .portal-hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px auto;
+        min-height: unset;
+    }
+    .portal-hero-body {
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+        padding: 1.25rem;
+        justify-content: flex-start;
+    }
+    .portal-hero-title { font-size: 1.15rem; }
+```
+
+### A-7. 라이트 모드 hero 색상 override 삭제
+
+아래 2개 규칙을 삭제한다 (CSS vars 자동 대응으로 불필요):
+```css
+body.light-mode .portal-hero-title { color: #ffffff; }
+body.light-mode .portal-date,
+body.light-mode .portal-stats { color: rgba(255,255,255,0.8); }
+```
+
+---
+
+## B. renderLatest() JS 전체 교체 (index.html)
+
+```javascript
+function renderLatest(briefing) {
+    const baseLink = briefing._link || `archive/${briefing.date}.html`;
+
+    // 세그먼트 소스: JSON 우선, 클라이언트 파싱 폴백
+    let segments;
+    if (briefing.segments && briefing.segments.length > 0) {
+        segments = briefing.segments;
+    } else {
+        const titles    = parseTitles(briefing.title);
+        const sentences = parseSentences(briefing.summary);
+        const baseSegs  = buildSegments(titles, sentences);
+        const fallbackThumb = briefing.thumb_url || '';
+        const fallbackAlt   = briefing.thumb_alt  || '';
+        segments = baseSegs.map(seg => ({
+            ...seg,
+            thumb_url:  fallbackThumb,
+            thumb_alt:  fallbackAlt,
+        }));
+    }
+
+    if (segments.length === 0) {
+        document.getElementById('latest-container').innerHTML =
+            '<div class="empty-state">표시할 브리핑이 없습니다.</div>';
+        return;
+    }
+
+    const hero    = segments[0];
+    const heroSrc = hero.thumb_url
+        ? hero.thumb_url.replace('w=480', 'w=700').replace('h=270', 'h=525')
+        : '';
+    const heroAlt = hero.thumb_alt || '';
+
+    const heroHTML = `
+        <a href="${baseLink}" class="portal-hero">
+            ${heroSrc
+                ? `<div class="portal-hero-img">
+                       <img src="${heroSrc}" alt="${heroAlt}" loading="lazy" decoding="async">
+                   </div>`
+                : '<div class="portal-hero-no-img"></div>'}
+            <div class="portal-hero-body">
+                <div class="portal-meta">
+                    <span class="portal-live-dot"></span>
+                    <span class="portal-date">${briefing.date} KST</span>
+                    <span class="portal-stats">${briefing.stats?.articles || briefing.stats?.clusters || 0} 건</span>
+                </div>
+                <h2 class="portal-hero-title">${hero.title}</h2>
+                ${hero.summary ? `<p class="portal-hero-summary">${hero.summary}</p>` : ''}
+                <a href="${baseLink}" class="read-btn" style="margin-top:1.25rem;display:inline-block;">브리핑 읽기 →</a>
+            </div>
+        </a>`;
+
+    const subs = segments.slice(1, 3);
+    const subGridHTML = subs.length ? `
+        <div class="portal-sub-grid">
+            ${subs.map((seg, i) => `
+            <a href="${baseLink}" class="portal-sub">
+                ${seg.thumb_url ? `
+                <div class="portal-sub-img">
+                    <img src="${seg.thumb_url}" alt="${seg.thumb_alt || ''}" loading="lazy" decoding="async">
+                </div>` : ''}
+                <div class="portal-sub-body">
+                    <span class="portal-sub-index">${i + 2}</span>
+                    <h3 class="portal-sub-title">${seg.title}</h3>
+                    ${seg.summary ? `<p class="portal-sub-summary">${seg.summary}</p>` : ''}
+                </div>
+            </a>`).join('')}
+        </div>` : '';
+
+    const moreItems = segments.slice(3);
+    const moreHTML = moreItems.length ? `
+        <ul class="portal-more-list">
+            ${moreItems.map((seg, i) => `
+            <li class="portal-more-item">
+                <a href="${baseLink}">
+                    <span class="portal-more-index">${i + 4}</span>
+                    <span class="portal-more-title">${seg.title}</span>
+                </a>
+            </li>`).join('')}
+        </ul>` : '';
+
+    const footerHTML = `
+        <div class="portal-footer">
+            <div class="portal-footer-stats">
+                <span><strong>${briefing.stats?.articles || briefing.stats?.clusters || 0}</strong> 건</span>
+                <span><strong>${briefing.stats?.sections || briefing.stats?.clusters || 0}</strong> 섹션</span>
+                ${briefing.stats?.picks ? `<span><strong>${briefing.stats.picks}</strong> Claude's Pick</span>` : ''}
+            </div>
+            <a href="${baseLink}" class="read-btn">전체 읽기 →</a>
+        </div>`;
+
+    document.getElementById('latest-container').innerHTML = `
+        <div class="portal-wrap">
+            ${heroHTML}${subGridHTML}${moreHTML}${footerHTML}
+        </div>`;
+}
+```
+
+---
+
+## C. post_process.py 확장 — 세그먼트별 빌드타임 이미지 주입
+
+### C-1. 파싱 헬퍼 2개 추가 (detect_category 바로 위에 추가)
+
+```python
+def parse_title_segments(raw_title: str) -> list:
+    """파이프(|) 분할 -> 개별 기사 제목 리스트."""
+    return [t.strip() for t in raw_title.split('|') if t.strip()]
+
+
+def parse_summary_sentences(raw_summary: str) -> list:
+    """마침표+공백 분할 -> 문장 리스트."""
+    return [s.strip() for s in re.split(r'\.\s+', raw_summary) if s.strip()]
+```
+
+### C-2. build_segments_with_images() 추가 (_process_list 바로 위에 추가)
+
+```python
+def build_segments_with_images(raw_title: str, raw_summary: str, date_str: str) -> list:
+    """
+    타이틀 파이프 분할 + 요약 비례 배분 + 세그먼트별 독립 이미지 매칭.
+    반환: [{title, summary, thumb_url, thumb_url_xs, thumb_alt, thumb_category}, ...]
+    """
+    titles    = parse_title_segments(raw_title)
+    sentences = parse_summary_sentences(raw_summary)
+
+    if not titles:
+        return []
+
+    n        = len(titles)
+    per_slot = len(sentences) // n if sentences else 0
+    remain   = len(sentences) % n  if sentences else 0
+    segments = []
+    cursor   = 0
+
+    for i, title in enumerate(titles):
+        count   = per_slot + (remain if i == n - 1 else 0)
+        chunk   = sentences[cursor:cursor + count]
+        summary = '. '.join(chunk) + ('.' if chunk else '')
+        cursor += count
+
+        cat = detect_category(title, summary)
+
+        if cat and cat in CATEGORY_IMAGE_MAP:
+            pool     = CATEGORY_IMAGE_MAP[cat]
+            smart    = smart_pick_image(pool, title + " " + summary)
+            img_meta = smart if smart else select_from_pool(pool, title, date_str)
+        else:
+            img_meta = select_from_pool(DEFAULT_IMAGE_POOL, title, date_str)
+            cat = "default"
+
+        urls = make_urls(img_meta)
+        segments.append({
+            "title":          title,
+            "summary":        summary,
+            "thumb_url":      urls["thumb_url"],
+            "thumb_url_xs":   urls["thumb_url_xs"],
+            "thumb_alt":      img_meta.get("alt", ""),
+            "thumb_category": cat or "default",
+        })
+
+    return segments
+```
+
+### C-3. _process_list() 수정 — item.update(meta) 줄 바로 다음에 추가
+
+```python
+        # 기존 코드
+        meta = process_article(html_path, item)
+        item.update(meta)
+
+        # 아래 추가
+        item.pop("segments", None)
+        raw_title   = item.get("title",   "")
+        raw_summary = item.get("summary", "")
+        segs = build_segments_with_images(raw_title, raw_summary, date)
+        if segs:
+            item["segments"] = segs
+        print(f"  -> {len(segs)} segments: {[s['thumb_category'] for s in segs]}")
+```
+
+---
+
+## D. 구현 체크리스트 (v3.5)
+
+### Phase 1 — CSS 교체 (index.html)
+- [ ] A-1: .portal-hero 블록 -> 2분할 grid 버전 교체
+- [ ] A-2: .portal-date/.portal-stats -> var(--text-muted) 교체
+- [ ] A-3: .portal-hero-title -> var(--text-primary); text-shadow: none 교체
+- [ ] A-4: .portal-hero-summary -> var(--text-secondary); -webkit-line-clamp: 4 교체
+- [ ] A-5: .portal-sub-title 1.15rem / .portal-sub-summary 0.93rem 교체
+- [ ] A-6: @media 768px hero 반응형 세로 스택 교체
+- [ ] A-7: body.light-mode .portal-hero-title { color: #ffffff; } 등 2줄 삭제
+
+### Phase 2 — JS 교체 (index.html)
+- [ ] renderLatest() 함수 전체를 B 코드로 교체
+- [ ] parseTitles, parseSentences, buildSegments 헬퍼 함수는 폴백으로 유지
+
+### Phase 3 — post_process.py 확장
+- [ ] parse_title_segments() 추가
+- [ ] parse_summary_sentences() 추가
+- [ ] build_segments_with_images() 추가
+- [ ] _process_list() 내 세그먼트 빌드 코드 추가
+- [ ] python briefing/scripts/post_process.py 실행
+- [ ] 로그에서 -> N segments: ['space', 'chip', 'economy'] 확인
+- [ ] briefings.json 최신 항목에 segments 배열 존재 확인
+
+---
+
+## E. 검수 명령어
+
+```bash
+grep -n "grid-template-columns: 1.2fr" briefing/index.html
+grep -n "font-size: 1.15rem" briefing/index.html
+grep -n "build_segments_with_images\|parse_title_segments" briefing/scripts/post_process.py
+```
+
+시각적 검증:
+- Hero 좌측 이미지 | 우측 텍스트 명확 분할
+- Sub 카드 1, 2: 서로 다른 이미지 (동일 이미지 없음)
+- Hero + Sub 1 + Sub 2: 3개 모두 다른 이미지
+- 모바일 375px: 상단 이미지 + 하단 텍스트 세로 스택
+- 라이트 모드: Hero 우측 텍스트 밝은 배경 자연스럽게 전환
+
+---
+
+*v3.5 설계 완료 (2026-05-31). 핵심: Hero 2분할 그리드 + 세그먼트별 빌드타임 고유 이미지 주입 아키텍처.*

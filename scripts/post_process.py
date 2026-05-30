@@ -685,6 +685,16 @@ def select_from_pool(pool: list, title: str, date_str: str = "") -> dict:
     return fallback
 
 
+def parse_title_segments(raw_title: str) -> list:
+    """파이프(|) 분할 -> 개별 기사 제목 리스트."""
+    return [t.strip() for t in raw_title.split('|') if t.strip()]
+
+
+def parse_summary_sentences(raw_summary: str) -> list:
+    """마침표+공백 분할 -> 문장 리스트."""
+    return [s.strip() for s in re.split(r'\.\s+', raw_summary) if s.strip()]
+
+
 def detect_category(title: str, summary: str) -> str | None:
     """
     스코어링 기반 카테고리 탐지.
@@ -867,6 +877,52 @@ def get_log_source(meta: dict) -> str:
     return "handpick_category"
 
 
+def build_segments_with_images(raw_title: str, raw_summary: str, date_str: str) -> list:
+    """
+    타이틀 파이프 분할 + 요약 비례 배분 + 세그먼트별 독립 이미지 매칭.
+    반환: [{title, summary, thumb_url, thumb_url_xs, thumb_alt, thumb_category}, ...]
+    """
+    titles    = parse_title_segments(raw_title)
+    sentences = parse_summary_sentences(raw_summary)
+
+    if not titles:
+        return []
+
+    n        = len(titles)
+    per_slot = len(sentences) // n if sentences else 0
+    remain   = len(sentences) % n if sentences else 0
+    segments = []
+    cursor   = 0
+
+    for i, title in enumerate(titles):
+        count   = per_slot + (remain if i == n - 1 else 0)
+        chunk   = sentences[cursor:cursor + count]
+        summary = '. '.join(chunk) + ('.' if chunk else '')
+        cursor += count
+
+        cat = detect_category(title, summary)
+
+        if cat and cat in CATEGORY_IMAGE_MAP:
+            pool     = CATEGORY_IMAGE_MAP[cat]
+            smart    = smart_pick_image(pool, title + " " + summary)
+            img_meta = smart if smart else select_from_pool(pool, title, date_str)
+        else:
+            img_meta = select_from_pool(DEFAULT_IMAGE_POOL, title, date_str)
+            cat = "default"
+
+        urls = make_urls(img_meta)
+        segments.append({
+            "title":          title,
+            "summary":        summary,
+            "thumb_url":      urls["thumb_url"],
+            "thumb_url_xs":   urls["thumb_url_xs"],
+            "thumb_alt":      img_meta.get("alt", ""),
+            "thumb_category": cat or "default",
+        })
+
+    return segments
+
+
 def _process_list(items: list, label: str) -> None:
     """briefings / weekly / specials 공통 후처리 루프."""
     for item in items:
@@ -881,6 +937,13 @@ def _process_list(items: list, label: str) -> None:
 
         meta = process_article(html_path, item)
         item.update(meta)
+        item.pop("segments", None)
+        raw_title   = item.get("title", "")
+        raw_summary = item.get("summary", "")
+        segs = build_segments_with_images(raw_title, raw_summary, date)
+        if segs:
+            item["segments"] = segs
+        print(f"  -> {len(segs)} segments: {[s['thumb_category'] for s in segs]}")
         print(f"[OK-{label}] {date} cat={meta['thumb_category']} src={get_log_source(meta)}")
 
 
