@@ -1,6 +1,7 @@
 import re
 import json
 import hashlib
+from collections import deque
 from pathlib import Path
 from bs4 import BeautifulSoup
 
@@ -23,6 +24,9 @@ HERO_META_KEYS = (
     "hero_credit_url",
     "hero_source",
 )
+
+# 빌드 세션 전역 중복 차단 큐 (직전 5개 이미지 ID 기억)
+_dedup_window: deque = deque(maxlen=5)
 
 CATEGORY_PATTERNS = [
     # 순서가 우선순위. 앞 카테고리가 먼저 매칭되면 이후 검사 안 함.
@@ -64,6 +68,30 @@ CATEGORY_IMAGE_MAP = {
         _img("1526374965328-7f61d4dc18c5",
              "Matrix green binary code wall on black screen",
              "Markus Spiske"),
+        _img("1507146426996-ef05306b995a",
+             "Neon glowing line tech art abstract dark",
+             "Alina Grubnyak"),
+        _img("1555066931-4365d14bab8c",
+             "Green matrix code rain on dark screen",
+             "Markus Spiske"),
+        _img("1485827404703-89b55fcc595e",
+             "Robot hand touching glowing digital interface",
+             "Alex Knight"),
+        _img("1526378722484-bd91ca387e72",
+             "Glowing robotic hand reaching through screen",
+             "Franck V."),
+        _img("1607604276583-eef5d076aa5f",
+             "Blue neon illuminated circuit motherboard",
+             "Olivier Collet"),
+        _img("1488590528505-98d2b5aba04b",
+             "Neon data stream transmission visual",
+             "Umberto"),
+        _img("1618005182384-a83a8bd57fbe",
+             "Abstract dark silk web browser art visual",
+             "Growtika"),
+        _img("1562577309-4932fdd64cd1",
+             "Data marketing multi-screen dashboard display",
+             "Luke Chesser"),
     ],
 
     # ── 2. 반도체 / 칩 ──────────────────────────────────────────
@@ -80,6 +108,30 @@ CATEGORY_IMAGE_MAP = {
         _img("1591453089816-0fbb971b454c",
              "Abstract semiconductor lattice grid graphic",
              "Laura Ockel"),
+        _img("1591696331111-ef9586a5b17a",
+             "CPU processor chip macro photograph",
+             "Slejven Djurakovic"),
+        _img("1601004890684-d8cbf643f5f2",
+             "Intel processor on motherboard close-up",
+             "Olivier Collet"),
+        _img("1587202372634-32705e3bf49c",
+             "Silicon wafer manufacturing clean room",
+             "Laura Ockel"),
+        _img("1640158615573-cd28feb1bf4e",
+             "Semiconductor chip magnified surface texture",
+             "Vishnu Mohanan"),
+        _img("1544197150-b99a580bb7a8",
+             "Server rack fiber optic cables blue glow",
+             "Alina Grubnyak"),
+        _img("1488590528505-98d2b5aba04b",
+             "Neon data stream transmission visual",
+             "Umberto"),
+        _img("1677442135703-1787eea5ce01",
+             "Blue neural network data visualization on dark background",
+             "Growtika"),
+        _img("1507146426996-ef05306b995a",
+             "Neon glowing line tech art abstract dark",
+             "Alina Grubnyak"),
     ],
 
     # ── 3. 주식 / 금융 ──────────────────────────────────────────
@@ -96,6 +148,30 @@ CATEGORY_IMAGE_MAP = {
         _img("1526304640581-d334cdbbf45e",
              "Digital currency and capital liquidity visual",
              "André François McKenzie"),
+        _img("1579621970563-ebec7560ff3e",
+             "Financial graph upward trend dark background",
+             "Tech Daily"),
+        _img("1559526324-593bc073d938",
+             "Bitcoin gold coin dark background macro",
+             "Dmitry Demidko"),
+        _img("1486406146926-c627a92ad1ab",
+             "Glass skyscrapers financial district twilight",
+             "Sean Pollock"),
+        _img("1454165804606-c3d57bc86b40",
+             "Global trade chart analysis dark screen",
+             "Cytonn Photography"),
+        _img("1504711434969-e33886168f5c",
+             "Aerial city lights skyline night view",
+             "Maximalfocus"),
+        _img("1601597111158-2fceff292cdc",
+             "Dark harbor container crane silhouette",
+             "Channey"),
+        _img("1494412574643-ff11b0a5c1c3",
+             "Aerial container port terminal shipping",
+             "Tom Fisk"),
+        _img("1586528116311-ad8dd3c8310d",
+             "World map shipping route light graphic",
+             "Thomas Lefebvre"),
     ],
 
     # ── 4. 로봇 / 휴머노이드 ────────────────────────────────────
@@ -112,6 +188,30 @@ CATEGORY_IMAGE_MAP = {
         _img("1563770660941-20978e870e26",
              "Precise mechanical robot joint actuator close-up",
              "Ant Rozetsky"),
+        _img("1508614589041-895b88991e3e",
+             "Futuristic robot head glowing blue eyes",
+             "Possessed Photography"),
+        _img("1561144257-e32e8efc6c4f",
+             "Robotic welding arm bright sparks dark",
+             "Ant Rozetsky"),
+        _img("1525338078858-d762b5e32f2c",
+             "Industrial robot arm precision factory dark",
+             "Lenny Kuhne"),
+        _img("1547153760-18fc86324498",
+             "Autonomous robot exploring terrain outdoor",
+             "Lenny Kuhne"),
+        _img("1526378722484-bd91ca387e72",
+             "Glowing robotic hand reaching through screen",
+             "Franck V."),
+        _img("1544716278-ca5e3f4abd8c",
+             "LiDAR sensor autonomous driving line graphic",
+             "Possessed Photography"),
+        _img("1620712943543-bcc4688e7485",
+             "Cybernetic virtual brain with glowing circuits",
+             "Possessed Photography"),
+        _img("1677442135703-1787eea5ce01",
+             "Blue neural network data visualization on dark background",
+             "Growtika"),
     ],
 
     # ── 5. 우주 / SpaceX ────────────────────────────────────────
@@ -128,6 +228,30 @@ CATEGORY_IMAGE_MAP = {
         _img("1541185933-ef5d8ed016c2",
              "Rocket launch trajectory arc into night sky",
              "SpaceX"),
+        _img("1614730321146-b6fa6a46bcb4",
+             "Deep space nebula colorful gas clouds",
+             "Jeremy Thomas"),
+        _img("1516849841032-87cbac4d88f7",
+             "Rocket launching bright exhaust flame night",
+             "SpaceX"),
+        _img("1419242902214-272b3f66ee7a",
+             "Satellite view Earth city lights night",
+             "NASA"),
+        _img("1586348943529-beaae6c28db9",
+             "Space rocket interior launch control room",
+             "SpaceX"),
+        _img("1506084868230-bb9d95c24759",
+             "Aircraft vapor trails contrails in night sky",
+             "Amir Kabirov"),
+        _img("1517976487492-5750f3195933",
+             "Fighter jet cockpit interior control panel",
+             "Lasseter Wen"),
+        _img("1451187580459-43490279c0fa",
+             "Planet Earth viewed from space with city lights",
+             "NASA"),
+        _img("1506703719100-a0f3a48c0f86",
+             "Majestic aurora borealis with deep space nebula",
+             "Greg Rakozy"),
     ],
 
     # ── 6. 헬스케어 / 웨어러블 ──────────────────────────────────
@@ -135,15 +259,39 @@ CATEGORY_IMAGE_MAP = {
         _img("1576091160399-112ba8d25d1d",
              "Glowing DNA helix structure graphic in dark lab",
              "National Cancer Institute"),
-        _img("1530026405186-ed1ea0ac7a63",
-             "Digital heartbeat ECG waveform sensor display",
-             "National Cancer Institute"),
+        _img("1559757148-5c350d0d3c56",
+             "DNA helix biotech visualization blue light",
+             "Warren Umoh"),
         _img("1505751172876-fa1923c5c528",
              "Smart wearable health monitoring loop screen",
              "Online Marketing"),
-        _img("1579684389782-64d84b5e905d",
-             "Bio cells under microscope biotech visualization",
-             "National Cancer Institute"),
+        _img("1571019613454-1cb2f99b2d8b",
+             "Pharmaceutical drug vials medical dark",
+             "Nguyen Dang Hoang Nhu"),
+        _img("1516549655169-df83a0774514",
+             "Genome sequencing data visualization screen",
+             "Shahadat Rahman"),
+        _img("1620712943543-bcc4688e7485",
+             "Cybernetic virtual brain with glowing circuits",
+             "Possessed Photography"),
+        _img("1677442135703-1787eea5ce01",
+             "Blue neural network data visualization on dark background",
+             "Growtika"),
+        _img("1562577309-4932fdd64cd1",
+             "Data marketing multi-screen dashboard display",
+             "Luke Chesser"),
+        _img("1498050108023-c5249f4df085",
+             "Laptop displaying code in dark environment",
+             "Christopher Gower"),
+        _img("1526374965328-7f61d4dc18c5",
+             "Matrix green binary code wall on black screen",
+             "Markus Spiske"),
+        _img("1507146426996-ef05306b995a",
+             "Neon glowing line tech art abstract dark",
+             "Alina Grubnyak"),
+        _img("1555066931-4365d14bab8c",
+             "Green matrix code rain on dark screen",
+             "Markus Spiske"),
     ],
 
     # ── 7. 전기차 / EV ──────────────────────────────────────────
@@ -151,15 +299,39 @@ CATEGORY_IMAGE_MAP = {
         _img("1563720223185-11003d516935",
              "Autonomous vehicle headlight light trails tech art",
              "Jp Valery"),
-        _img("1558441719-ff34b0524a24",
-             "Futuristic electric vehicle charging port close-up",
-             "Chuttersnap"),
+        _img("1593941707882-a5bba14938c7",
+             "Electric vehicle charging port glowing blue",
+             "dcbel"),
         _img("1617788138017-80ad40651399",
              "Sleek EV body curves in dark studio lighting",
              "Juice Flair"),
         _img("1544716278-ca5e3f4abd8c",
              "LiDAR sensor autonomous driving line graphic",
              "Possessed Photography"),
+        _img("1558618666-fcd25c85cd64",
+             "Tesla electric car scenic mountain road",
+             "Charlie Deets"),
+        _img("1603584173870-7f23fdae1b7a",
+             "Modern EV interior dashboard illuminated",
+             "Jp Valery"),
+        _img("1502877338535-766e1452684a",
+             "Electric car charger plug closeup night",
+             "Chuttersnap"),
+        _img("1563720223185-11003d516935",
+             "Autonomous vehicle headlight trails tech art",
+             "Jp Valery"),
+        _img("1593941707882-a5bba14938c7",
+             "EV charging connector glowing close-up",
+             "dcbel"),
+        _img("1617788138017-80ad40651399",
+             "Electric car studio curves and reflections",
+             "Juice Flair"),
+        _img("1544716278-ca5e3f4abd8c",
+             "Autonomous driving sensor line graphic",
+             "Possessed Photography"),
+        _img("1494412574643-ff11b0a5c1c3",
+             "Aerial transport terminal infrastructure",
+             "Tom Fisk"),
     ],
 
     # ── 8. 거시경제 / 글로벌 무역 ───────────────────────────────
@@ -176,6 +348,30 @@ CATEGORY_IMAGE_MAP = {
         _img("1586528116311-ad8dd3c8310d",
              "World map shipping route light graphic",
              "Thomas Lefebvre"),
+        _img("1553729459-efe14ef6055d",
+             "Large container cargo ship ocean port",
+             "Channey"),
+        _img("1486406146926-c627a92ad1ab",
+             "Glass skyscrapers financial district twilight",
+             "Sean Pollock"),
+        _img("1611974789855-9c2a0a7236a3",
+             "Global stock indices digital display dark",
+             "Maxim Hopman"),
+        _img("1494412574643-ff11b0a5c1c3",
+             "Aerial container port terminal shipping",
+             "Tom Fisk"),
+        _img("1504711434969-e33886168f5c",
+             "Aerial city lights skyline night view",
+             "Maximalfocus"),
+        _img("1579621970563-ebec7560ff3e",
+             "Financial graph upward trend dark background",
+             "Tech Daily"),
+        _img("1590283603385-17ffb3a7f29f",
+             "Blue tone stock trading dashboard interface",
+             "Konstantin Evdokimov"),
+        _img("1642543492481-44e81e3914a7",
+             "Financial data abstract 3D volume visualization",
+             "Adam Nowakowski"),
     ],
 
     # ── 9. 통신 / 5G / 네트워크 ─────────────────────────────────
@@ -192,6 +388,30 @@ CATEGORY_IMAGE_MAP = {
         _img("1488590528505-98d2b5aba04b",
              "Neon data transmission flow visual dark background",
              "Umberto"),
+        _img("1497366216548-37526070297c",
+             "Blue fiber optic light strands glowing dark",
+             "Umberto"),
+        _img("1606765962248-7ff407b51667",
+             "Data center server racks blue illuminated",
+             "Taylor Vick"),
+        _img("1558494949-ef010cbdcc31",
+             "5G signal wave abstract visualization",
+             "Umberto"),
+        _img("1617791160536-598cf32026fb",
+             "Satellite dish antenna array night",
+             "NASA"),
+        _img("1504711434969-e33886168f5c",
+             "Global internet cable undersea network",
+             "Maximalfocus"),
+        _img("1516321318423-f06f85e504b3",
+             "Digital node hub connection network abstract art",
+             "Alina Grubnyak"),
+        _img("1544197150-b99a580bb7a8",
+             "Dark blue fiber optic server rack cables",
+             "Alina Grubnyak"),
+        _img("1600132806370-bf17e65e942f",
+             "Tall cell tower antenna night sky",
+             "Thomas Kelley"),
     ],
 
     # ── 10. 빅테크 / 플랫폼 ─────────────────────────────────────
@@ -208,6 +428,30 @@ CATEGORY_IMAGE_MAP = {
         _img("1498050108023-c5249f4df085",
              "MacBook and smart devices overlay in dark room",
              "Christopher Gower"),
+        _img("1573804633927-bfcbcd909acd",
+             "Modern tech company open office natural light",
+             "Marvin Meyer"),
+        _img("1580927752452-89d86da3fa0a",
+             "Developer coding laptop dark room",
+             "Christopher Gower"),
+        _img("1460925895917-afdab827c52f",
+             "Startup open office bright modern furniture",
+             "Alex Kotliarskyi"),
+        _img("1517245386807-bb43f82c33c4",
+             "Devices laptop tablet phone clean desk",
+             "Thomas Lefebvre"),
+        _img("1496181133206-80ce9b88a853",
+             "MacBook Pro keyboard backlit close-up",
+             "Ales Nesetril"),
+        _img("1504868584819-f8e8b4b6d7e3",
+             "Social media apps smartphone screen dark",
+             "Adem AY"),
+        _img("1606765962248-7ff407b51667",
+             "Data center server racks blue illuminated",
+             "Taylor Vick"),
+        _img("1544197150-b99a580bb7a8",
+             "Server rack fiber optic cables blue glow",
+             "Alina Grubnyak"),
     ],
 
     # ── 11. 정책 / 규제 / AI 안전 ───────────────────────────────
@@ -221,9 +465,33 @@ CATEGORY_IMAGE_MAP = {
         _img("1505664194779-8beaceb93744",
              "Old classic law books with leather cover close-up",
              "Tingey Injury Law Firm"),
-        _img("1521791136364-7286472b6b5c",
-             "Document signing with premium pen dark overlay",
+        _img("1507679799987-c73779587ccf",
+             "Wooden gavel courtroom justice symbol",
+             "Tingey Injury Law Firm"),
+        _img("1450101499163-c8848c66ca85",
+             "Legal books wooden gavel close-up court",
+             "Sora Shimazaki"),
+        _img("1541872705-1f73c6400ec9",
+             "Parliament government building dusk exterior",
+             "Louis Velazquez"),
+        _img("1589829545856-d10d557cf95f",
+             "Government building classical columns",
+             "René DeAnda"),
+        _img("1486406146926-c627a92ad1ab",
+             "Glass skyscrapers financial district twilight",
+             "Sean Pollock"),
+        _img("1454165804606-c3d57bc86b40",
+             "Regulatory compliance dashboard dark screen",
              "Cytonn Photography"),
+        _img("1504711434969-e33886168f5c",
+             "Aerial city lights civic infrastructure",
+             "Maximalfocus"),
+        _img("1505664194779-8beaceb93744",
+             "Classic law books leather cover detail",
+             "Tingey Injury Law Firm"),
+        _img("1450133064473-71024230f91b",
+             "Solemn government columns silhouette",
+             "Louis Velazquez"),
     ],
 
     # ── 12. 방산 / 군사 기술 ────────────────────────────────────
@@ -240,6 +508,30 @@ CATEGORY_IMAGE_MAP = {
         _img("1569003339405-ea396a5a8a90",
              "Dark security zone restricted area fence",
              "Ehud Neuhaus"),
+        _img("1517976487492-5750f3195933",
+             "Fighter jet cockpit interior control panel",
+             "Lasseter Wen"),
+        _img("1451187580459-43490279c0fa",
+             "Earth viewed from orbit military satellite context",
+             "NASA"),
+        _img("1446776811953-b23d57bd21aa",
+             "Space station solar panels orbiting Earth",
+             "NASA"),
+        _img("1541185933-ef5d8ed016c2",
+             "Rocket launch trajectory arc into night sky",
+             "SpaceX"),
+        _img("1516849841032-87cbac4d88f7",
+             "Rocket launching bright exhaust flame night",
+             "SpaceX"),
+        _img("1419242902214-272b3f66ee7a",
+             "Satellite view Earth city lights night",
+             "NASA"),
+        _img("1586348943529-beaae6c28db9",
+             "Space rocket interior launch control room",
+             "SpaceX"),
+        _img("1600132806370-bf17e65e942f",
+             "Tall antenna mast defense communications",
+             "Thomas Kelley"),
     ],
 }
 
@@ -261,19 +553,49 @@ DEFAULT_IMAGE_POOL = [
 
 
 def select_from_pool(pool: list, title: str, date_str: str = "") -> dict:
-    """제목+날짜 해시 → 결정론적 이미지 선택 (§6-5)."""
-    seed   = f"{title}_{date_str}".encode("utf-8")
-    digest = hashlib.md5(seed).hexdigest()
-    return pool[int(digest, 16) % len(pool)]
+    """
+    제목+날짜 해시 → 결정론적 기본 인덱스 산출.
+    중복 차단: _dedup_window에 있는 ID면 index +1 shift 우회.
+    """
+    seed     = f"{title}_{date_str}".encode("utf-8")
+    base_idx = int(hashlib.md5(seed).hexdigest(), 16) % len(pool)
+
+    for shift in range(len(pool)):
+        idx       = (base_idx + shift) % len(pool)
+        candidate = pool[idx]
+        if candidate["id"] not in _dedup_window:
+            _dedup_window.append(candidate["id"])
+            return candidate
+
+    # 풀 전체가 윈도우 안에 있을 때 → 강제 반환
+    fallback = pool[base_idx]
+    _dedup_window.append(fallback["id"])
+    return fallback
 
 
 def detect_category(title: str, summary: str) -> str | None:
-    """CATEGORY_PATTERNS 순서대로 첫 매칭 카테고리 반환."""
+    """
+    스코어링 기반 카테고리 탐지.
+    텍스트 초반 매칭일수록 높은 가중치(1.0→0.1),
+    전체 매칭 횟수×가중치 합산 후 최고점 카테고리 반환.
+    """
     text = title + " " + summary
+    text_len = max(len(text), 1)
+
+    best_cat   = None
+    best_score = 0.0
+
     for category_key, pattern in CATEGORY_PATTERNS:
-        if re.search(pattern, text, re.IGNORECASE):
-            return category_key
-    return None
+        score = 0.0
+        for m in re.finditer(pattern, text, re.IGNORECASE):
+            pos_weight = 1.0 - (m.start() / text_len) * 0.9
+            score += pos_weight
+
+        if score > best_score:
+            best_score = score
+            best_cat   = category_key
+
+    return best_cat if best_score > 0.0 else None
 
 
 def parse_dimension(value) -> int | None:
