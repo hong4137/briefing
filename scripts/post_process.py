@@ -583,17 +583,17 @@ ENTITY_IMAGE_MAP = {
 
     # ── 1. 트럼프 (Trump) - [총 10장] ──────────────────────────
     "trump": [
-        _img("jPN_oglAjOU",               "Official portrait of President Donald J. Trump",       "Library of Congress",
+        _img("1580128660010-fd027e1e587a", "Official portrait of President Donald J. Trump",       "Library of Congress",
              tags=["portrait", "president", "trump", "politics", "government", "official"]),
-        _img("cTz5-T7voqQ",               "President Donald Trump speaking in front of US Flag",  "History in HD",
+        _img("1550531996-ff3dcede9477",    "President Donald Trump speaking in front of US Flag",  "History in HD",
              tags=["speech", "rally", "flag", "politics", "trump", "government"]),
-        _img("05QvOWAzN3I",               "Donald Trump signing declaration in Oval Office",      "History in HD",
+        _img("1612278920639-cfbae3835fee", "Donald Trump signing declaration in Oval Office",      "History in HD",
              tags=["oval office", "signing", "executive", "policy", "trump", "president"]),
-        _img("RX-BevgxSXs",               "Donald Trump front page news on The New York Times",   "Markus Spiske",
+        _img("1604595704321-f24afaa2fa6e", "Donald Trump front page news on The New York Times",   "Markus Spiske",
              tags=["news", "media", "newspaper", "politics", "trump", "report"]),
-        _img("gtOXLwM248A",               "Donald Trump descending steps of Air Force One",       "History in HD",
+        _img("1612278920597-4d397a111e10", "Donald Trump descending steps of Air Force One",       "History in HD",
              tags=["air force one", "travel", "president", "politics", "trump"]),
-        _img("1501594907352-04cda38ebc29", "Majestic US Capitol dome and blue sky",                "Caleb Fisher",
+        _img("1623526065270-286ed9821f64", "US Capitol dome exterior blue sky iconic",             "Andra C Taylor Jr",
              tags=["capitol", "dome", "washington", "government", "trump"]),
         _img("1505664194779-8beaceb93744", "Classic law books leather cover close-up",            "Tingey Injury Law Firm",
              tags=["document", "signing", "executive", "policy", "trump"]),
@@ -607,11 +607,11 @@ ENTITY_IMAGE_MAP = {
 
     # ── 2. 바이든 (Biden) - [총 8장] ───────────────────────────
     "biden": [
-        _img("jV1-8M80Wsk",               "Official Portrait of President Joe Biden",             "Library of Congress",
-             tags=["portrait", "president", "biden", "politics", "government", "official"]),
-        _img("cTz5-T7voqQ",               "US Capitol and political events overview",             "History in HD",
+        _img("1604900881351-4e34a16f31f4", "Sleek BIDEN 2020 and US flags waved by enthusiastic crowd", "Gayatri Malhotra",
+             tags=["portrait", "president", "biden", "politics", "government", "official", "flag", "crowd"]),
+        _img("1520525003249-2b9cdda513bc", "US Capitol building front view daytime",               "Louis Velazquez",
              tags=["capitol", "washington", "government", "biden", "politics"]),
-        _img("1501594907352-04cda38ebc29", "Majestic US Capitol dome and blue sky",                "Caleb Fisher",
+        _img("1623526065270-286ed9821f64", "US Capitol dome exterior blue sky iconic",             "Andra C Taylor Jr",
              tags=["capitol", "dome", "washington", "government", "biden"]),
         _img("1507679799987-c73779587ccf", "Courtroom wooden gavel authority symbol",             "Tingey Injury Law Firm",
              tags=["executive", "policy", "government", "biden", "regulation"]),
