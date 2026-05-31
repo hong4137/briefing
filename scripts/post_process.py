@@ -28,6 +28,10 @@ HERO_META_KEYS = (
 # 빌드 세션 전역 중복 차단 큐 (직전 5개 이미지 ID 기억)
 _dedup_window: deque = deque(maxlen=5)
 
+# 영구 히스토리 중복 방지 집합 (최근 10일 실물 적용 ID — 빌드간 지속)
+_persistent_dedup_set: set = set()
+_run_dedup_set: set = set()
+
 CATEGORY_PATTERNS = [
     # 순서가 우선순위. 앞 카테고리가 먼저 매칭되면 이후 검사 안 함.
     ("ai",       r'AI|인공지능|LLM|ChatGPT|Gemini|Claude|Grok|딥러닝|머신러닝|GPT|오픈AI|OpenAI|Anthropic'),
@@ -558,10 +562,10 @@ DEFAULT_IMAGE_POOL = [
 # ── 엔티티 탐지 패턴 (순서 = 우선순위) ────────────────────────────
 # (entity_key, regex_pattern)
 ENTITY_PATTERNS = [
-    # 기업 우선
-    ("openai",       r'OpenAI|오픈\s*AI|오픈AI|ChatGPT|챗GPT|GPT-?\d*|Sora|소라'),
-    ("spacex",       r'SpaceX|스페이스\s*X|스페이스X|Starlink|스타링크|Starship|스타십'),
-    ("blueorigin",   r'Blue\s*Origin|블루\s*오리진|블루오리진|New\s*Glenn|뉴\s*글렌'),
+    # ── 메가 테크 기업 (최우선 — 동점 타이브레이커 우위) ─────────
+    ("spacex",       r'SpaceX|스페이스엑스|스타십|Starship|팔콘\s*9|Falcon\s*9|크루\s*드래곤'),
+    ("blueorigin",   r'블루오리진|Blue\s*Origin|뉴글렌|New\s*Glenn|베조스\s*우주'),
+    ("openai",       r'OpenAI|오픈AI|ChatGPT|GPT-[0-9o]|o[134][\s\-]모델|o[134]\b'),
     ("nvidia",       r'Nvidia|NVIDIA|엔비디아'),
     ("apple",        r'\bApple\b|애플'),
     ("microsoft",    r'Microsoft|마이크로소프트'),
@@ -571,13 +575,14 @@ ENTITY_PATTERNS = [
     ("amazon",       r'\bAmazon\b|아마존'),
     ("tsmc",         r'TSMC|티에스엠씨'),
     ("samsung",      r'삼성|Samsung'),
-    # 인물 후순위
-    ("trump",        r'트럼프|Trump'),
-    ("biden",        r'바이든|Biden'),
-    ("musk",         r'머스크|Musk|일론\s*머스크'),
-    ("powell",       r'파월|Powell|제롬\s*파월'),
+    ("dell",         r'\bDell\b'),
+    # ── 인물 (하위 우선순위) ──────────────────────────────────────
     ("jensen_huang", r'젠슨\s*황|Jensen\s*Huang'),
     ("altman",       r'올트먼|Altman|샘\s*올트먼'),
+    ("musk",         r'머스크|Musk|일론\s*머스크'),
+    ("powell",       r'파월|Powell|제롬\s*파월'),
+    ("trump",        r'트럼프|Trump'),
+    ("biden",        r'바이든|Biden'),
 ]
 
 ENTITY_IMAGE_MAP = {
@@ -686,8 +691,8 @@ ENTITY_IMAGE_MAP = {
              tags=["openai", "altman", "ai", "neural", "gpt", "llm"]),
         _img("1620712943543-bcc4688e7485", "Cybernetic virtual brain with circuits",       "Possessed Photography",
              tags=["ai", "openai", "altman", "brain", "gpt", "model"]),
-        _img("1544197150-b99a580bb7a8",    "Server rack fiber optic cables blue glow",     "Alina Grubnyak",
-             tags=["ai", "openai", "altman", "server", "compute", "gpt"]),
+        _img("1544197150-b99a580bb7a8",    "Server rack fiber optic cables blue glow",    "Alina Grubnyak",
+             tags=["openai", "altman", "data center", "compute", "llm", "training"]),
         _img("1607604276583-eef5d076aa5f", "Blue neon illuminated circuit motherboard",    "Olivier Collet",
              tags=["openai", "altman", "ai chip", "compute", "llm"]),
         _img("1526374965328-7f61d4dc18c5", "Matrix binary code wall dark screen",          "Markus Spiske",
@@ -695,6 +700,52 @@ ENTITY_IMAGE_MAP = {
     ],
 
     # ── 기업 ─────────────────────────────────────────────────────
+
+    # ── SpaceX ──────────────────────────────────────────────────
+    "spacex": [
+        _img("1541185933-ef5d8ed016c2",    "Rocket launch trajectory arc into night sky",   "SpaceX",
+             tags=["spacex", "rocket", "launch", "starship", "flame", "liftoff", "night"]),
+        _img("1516849841032-87cbac4d88f7", "Rocket launching bright exhaust flame",          "SpaceX",
+             tags=["spacex", "falcon", "rocket", "exhaust", "fire", "launch"]),
+        _img("1614730321146-b6fa6a46bcb4", "Deep space nebula colorful gas clouds",          "Jeremy Thomas",
+             tags=["spacex", "space", "nebula", "cosmos", "mars", "starship"]),
+        _img("1451187580459-43490279c0fa", "Blue Earth viewed from dark outer space orbit",  "NASA",
+             tags=["spacex", "orbit", "earth", "satellite", "starlink", "space"]),
+        _img("1446776811953-b23d57bd21aa", "Space station solar panels orbiting Earth",      "NASA",
+             tags=["spacex", "iss", "dragon", "orbit", "docking", "crew"]),
+        _img("1454789548928-701522940945", "Milky Way galaxy stars over dark landscape",     "Greg Rakozy",
+             tags=["spacex", "galaxy", "stars", "night sky", "cosmos", "starship"]),
+    ],
+
+    # ── Blue Origin ──────────────────────────────────────────────
+    "blueorigin": [
+        _img("1541185933-ef5d8ed016c2",    "Rocket launch trajectory arc into night sky",   "SpaceX",
+             tags=["blueorigin", "rocket", "new glenn", "launch", "bezos", "space"]),
+        _img("1614730321146-b6fa6a46bcb4", "Deep space nebula colorful gas clouds",          "Jeremy Thomas",
+             tags=["blueorigin", "space", "cosmos", "new shepard", "orbit"]),
+        _img("1506703719100-a0f3a48c0f86", "Majestic aurora borealis deep space nebula",    "Greg Rakozy",
+             tags=["blueorigin", "space", "aurora", "cosmos", "bezos"]),
+        _img("1419242902214-272b3f66ee7a", "Satellite view Earth city lights night",         "NASA",
+             tags=["blueorigin", "satellite", "orbit", "earth", "new glenn"]),
+        _img("1446776811953-b23d57bd21aa", "Space station solar panels orbiting Earth",      "NASA",
+             tags=["blueorigin", "orbit", "station", "space", "bezos"]),
+    ],
+
+    # ── OpenAI ───────────────────────────────────────────────────
+    "openai": [
+        _img("1677442135703-1787eea5ce01", "Blue neural network data visualization",         "Growtika",
+             tags=["openai", "chatgpt", "gpt", "neural", "ai", "llm", "model"]),
+        _img("1620712943543-bcc4688e7485", "Cybernetic virtual brain glowing circuits",      "Possessed Photography",
+             tags=["openai", "ai brain", "gpt", "model", "language model", "o1"]),
+        _img("1544197150-b99a580bb7a8",    "Server rack fiber optic cables blue glow",       "Alina Grubnyak",
+             tags=["openai", "data center", "training", "compute", "gpu", "gpt-5"]),
+        _img("1606765962248-7ff407b51667", "Data center server racks blue illuminated",      "Taylor Vick",
+             tags=["openai", "supercomputer", "training", "chatgpt", "inference"]),
+        _img("1526374965328-7f61d4dc18c5", "Matrix binary code wall dark screen",            "Markus Spiske",
+             tags=["openai", "code", "gpt", "training data", "llm", "rlhf"]),
+        _img("1675557009483-b2f86c2cb790", "AI circuit board glowing blue light",            "Growtika",
+             tags=["openai", "chip", "compute", "ai model", "o3", "o4"]),
+    ],
 
     # ── 7. 애플 (Apple) - [총 8장] ──────────────────────────────
     "apple": [
@@ -846,51 +897,6 @@ ENTITY_IMAGE_MAP = {
              tags=["samsung", "package", "packaging", "advanced", "chip", "node"]),
     ],
 
-    # ── 16. SpaceX - [총 6장] ───────────────────────────────────
-    "spacex": [
-        _img("1541185933-ef5d8ed016c2",    "Rocket launch trajectory arc into night sky",  "SpaceX",
-             tags=["spacex", "rocket", "launch", "starship", "night", "flame"]),
-        _img("1516849841032-87cbac4d88f7", "Rocket launching bright exhaust flame night",  "SpaceX",
-             tags=["spacex", "rocket", "liftoff", "flame", "starship", "launch"]),
-        _img("1586348943529-beaae6c28db9", "Space rocket launch control room",             "SpaceX",
-             tags=["spacex", "control room", "mission", "rocket", "launch", "starlink"]),
-        _img("1614064641938-2959af8dc0a6", "Starlink satellite constellation orbit",       "SpaceX",
-             tags=["spacex", "starlink", "satellite", "constellation", "orbit", "network"]),
-        _img("1451187580459-43490279c0fa", "Blue Earth viewed from dark outer space",      "NASA",
-             tags=["spacex", "space", "orbit", "earth", "satellite", "mission"]),
-        _img("1606765962248-7ff407b51667", "Data center server racks blue illuminated",    "Taylor Vick",
-             tags=["spacex", "compute", "data center", "server", "starlink", "ai"]),
-    ],
-
-    # ── 17. Blue Origin - [총 5장] ───────────────────────────────
-    "blueorigin": [
-        _img("1541185933-ef5d8ed016c2",    "Rocket launch trajectory arc into night sky",  "SpaceX",
-             tags=["blueorigin", "blue origin", "rocket", "launch", "new glenn", "flame"]),
-        _img("1516849841032-87cbac4d88f7", "Rocket launching bright exhaust flame night",  "SpaceX",
-             tags=["blueorigin", "blue origin", "rocket", "liftoff", "booster", "launch"]),
-        _img("1586348943529-beaae6c28db9", "Aerospace launch control room",                "SpaceX",
-             tags=["blueorigin", "blue origin", "control room", "mission", "rocket", "aerospace"]),
-        _img("1506084868230-bb9d95c24759", "Aircraft vapor trails in night sky",           "Amir Kabirov",
-             tags=["blueorigin", "blue origin", "aerospace", "flight", "sky", "mission"]),
-        _img("1451187580459-43490279c0fa", "Blue Earth viewed from dark outer space",      "NASA",
-             tags=["blueorigin", "blue origin", "space", "orbit", "earth", "mission"]),
-    ],
-
-    # ── 18. OpenAI - [총 6장] ───────────────────────────────────
-    "openai": [
-        _img("1677442135703-1787eea5ce01", "Blue neural network data visualization",       "Growtika",
-             tags=["openai", "ai", "neural", "gpt", "llm", "model"]),
-        _img("1620712943543-bcc4688e7485", "Cybernetic virtual brain with circuits",       "Possessed Photography",
-             tags=["openai", "ai", "brain", "gpt", "model", "research"]),
-        _img("1544197150-b99a580bb7a8",    "Server rack fiber optic cables blue glow",     "Alina Grubnyak",
-             tags=["openai", "ai", "compute", "server", "data center", "training"]),
-        _img("1607604276583-eef5d076aa5f", "Blue neon illuminated circuit motherboard",    "Olivier Collet",
-             tags=["openai", "ai chip", "compute", "hardware", "llm", "inference"]),
-        _img("1526374965328-7f61d4dc18c5", "Matrix binary code wall dark screen",          "Markus Spiske",
-             tags=["openai", "code", "ai", "gpt", "training", "software"]),
-        _img("1580927752452-89d86da3fa0a", "Developer coding laptop dark room",            "Christopher Gower",
-             tags=["openai", "developer", "coding", "api", "software", "chatgpt"]),
-    ],
 }
 
 
@@ -956,6 +962,53 @@ _SHARED_EXTRAS = [
 ]
 
 
+def _extract_id(url: str) -> str | None:
+    """Unsplash CDN URL에서 photo ID 추출."""
+    if not url:
+        return None
+    m = re.search(r'/photo-([^?]+)', url)
+    return m.group(1) if m else None
+
+
+def load_persistent_dedup() -> None:
+    """
+    기존 briefings.json에서 최근 10일치 실물 썸네일 ID를 읽어
+    _persistent_dedup_set에 로드. 증분 빌드 시 중복 차단에 사용.
+    """
+    global _persistent_dedup_set
+    if not BRIEFINGS_JSON.exists():
+        return
+    try:
+        data = json.loads(BRIEFINGS_JSON.read_text("utf-8"))
+    except Exception:
+        return
+
+    import datetime
+    cutoff = (datetime.date.today() - datetime.timedelta(days=10)).isoformat()
+
+    for briefing in data.get("briefings", []):
+        if briefing.get("date", "") < cutoff:
+            continue
+        tid = _extract_id(briefing.get("thumb_url", ""))
+        if tid:
+            _persistent_dedup_set.add(tid)
+        for seg in briefing.get("segments", []):
+            sid = _extract_id(seg.get("thumb_url", ""))
+            if sid:
+                _persistent_dedup_set.add(sid)
+
+    print(f"[DEDUP] {len(_persistent_dedup_set)}개 히스토리 ID 로드 완료 (최근 10일)")
+
+
+def _hash_noise(title: str, date_str: str) -> float:
+    """
+    'date_title' MD5 해시 → 결정론적 실수 0.0~0.99.
+    동일 태그 점수 이미지 간 분산 순환을 유도.
+    """
+    seed = f"{date_str}_{title}".encode("utf-8")
+    return (int(hashlib.md5(seed).hexdigest(), 16) % 100) / 100.0
+
+
 def _augment_category_image_map() -> None:
     for category, pool in CATEGORY_IMAGE_MAP.items():
         base_tags = CATEGORY_SMART_TAGS.get(category, [])
@@ -978,6 +1031,87 @@ def _augment_category_image_map() -> None:
 
 
 _augment_category_image_map()
+
+
+def _global_image_candidates() -> list:
+    """현재 스크립트에 등록된 모든 handpicked 이미지 후보를 중복 없이 반환."""
+    candidates = []
+    seen = set()
+    for pools in (ENTITY_IMAGE_MAP, CATEGORY_IMAGE_MAP):
+        for pool in pools.values():
+            for img in pool:
+                img_id = img.get("id", "")
+                if img_id and img_id not in seen:
+                    candidates.append(img)
+                    seen.add(img_id)
+    for img in DEFAULT_IMAGE_POOL:
+        img_id = img.get("id", "")
+        if img_id and img_id not in seen:
+            candidates.append(img)
+            seen.add(img_id)
+    return candidates
+
+
+def resolve_image_from_pool(
+    pool:         list,
+    title:        str,
+    date_str:     str,
+    article_text: str = "",
+) -> dict:
+    """
+    통합 이미지 선발 함수. smart_pick_image + select_from_pool 완전 대체.
+
+    최종 score = 태그 매칭 점수
+               + (기사 노이즈 + 이미지 고유 노이즈) / 2   # 0.0~0.99 범위
+               - 100.0  (영구 히스토리 중복 페널티)
+               - 50.0   (세션 윈도우 중복 페널티)
+
+    모든 이미지가 페널티 상태여도 최고점 이미지를 반환(폴백 보장).
+    선택된 이미지는 _dedup_window와 _persistent_dedup_set 양쪽에 등록.
+    """
+    text_lower  = article_text.lower()
+    base_noise  = _hash_noise(title, date_str)
+    candidates  = pool
+
+    best_img    = None
+    best_score  = float("-inf")
+
+    if pool and all(img.get("id", "") in _run_dedup_set for img in pool):
+        candidates = pool + [
+            img for img in _global_image_candidates()
+            if img.get("id", "") not in _run_dedup_set
+        ]
+
+    for img in candidates:
+        img_id = img.get("id", "")
+
+        # 태그 매칭 점수 (정수)
+        tag_score = sum(1.0 for tag in img.get("tags", []) if tag and tag in text_lower)
+
+        # 이미지 고유 결정론적 노이즈 (이미지마다 다른 값으로 분산)
+        img_noise = (int(hashlib.md5(img_id.encode()).hexdigest(), 16) % 100) / 100.0
+        score = tag_score + (base_noise + img_noise) / 2.0
+
+        # 페널티 적용
+        if img_id in _persistent_dedup_set:
+            score -= 100.0
+        if img_id in _dedup_window:
+            score -= 50.0
+        if img_id in _run_dedup_set:
+            score -= 10000.0
+
+        if score > best_score:
+            best_score = score
+            best_img   = img
+
+    if best_img is None:
+        best_img = pool[0]
+
+    img_id = best_img.get("id", "")
+    _dedup_window.append(img_id)
+    _persistent_dedup_set.add(img_id)
+    _run_dedup_set.add(img_id)
+    return best_img
 
 
 def smart_pick_image(pool: list, article_text: str) -> dict | None:
@@ -1134,23 +1268,17 @@ def resolve_image(soup: BeautifulSoup, title: str,
     # Priority 2: 엔티티 우선 매칭
     entity = detect_entity(title, summary)
     if entity and entity in ENTITY_IMAGE_MAP:
-        pool  = ENTITY_IMAGE_MAP[entity]
-        smart = smart_pick_image(pool, article_text)
-        img   = smart if smart else select_from_pool(pool, title, date_str)
+        img = resolve_image_from_pool(ENTITY_IMAGE_MAP[entity], title, date_str, article_text)
         return img, f"entity:{entity}"
 
     # Priority 3: 카테고리 스코어링
     cat = detect_category(title, summary)
     if cat and cat in CATEGORY_IMAGE_MAP:
-        pool = CATEGORY_IMAGE_MAP[cat]
-        img  = smart_pick_image(pool, article_text)
-        if img:
-            return img, "smart_pick"
-        img = select_from_pool(pool, title, date_str)
-        return img, "handpick_category"
+        img = resolve_image_from_pool(CATEGORY_IMAGE_MAP[cat], title, date_str, article_text)
+        return img, "smart_pick"
 
     # Priority 4: Default
-    img = select_from_pool(DEFAULT_IMAGE_POOL, title, date_str)
+    img = resolve_image_from_pool(DEFAULT_IMAGE_POOL, title, date_str, article_text)
     return img, "handpick_default"
 
 
@@ -1274,20 +1402,16 @@ def build_segments_with_images(raw_title: str, raw_summary: str, date_str: str) 
         # Priority A: 엔티티 우선 매칭
         entity = detect_entity(title, summary)
         if entity and entity in ENTITY_IMAGE_MAP:
-            pool     = ENTITY_IMAGE_MAP[entity]
-            smart    = smart_pick_image(pool, seg_text)
-            img_meta = smart if smart else select_from_pool(pool, title, date_str)
+            img_meta = resolve_image_from_pool(ENTITY_IMAGE_MAP[entity], title, date_str, seg_text)
             cat      = f"entity:{entity}"
 
         else:
             # Priority B: 카테고리 스코어링 (기존 로직)
             cat = detect_category(title, summary)
             if cat and cat in CATEGORY_IMAGE_MAP:
-                pool     = CATEGORY_IMAGE_MAP[cat]
-                smart    = smart_pick_image(pool, seg_text)
-                img_meta = smart if smart else select_from_pool(pool, title, date_str)
+                img_meta = resolve_image_from_pool(CATEGORY_IMAGE_MAP[cat], title, date_str, seg_text)
             else:
-                img_meta = select_from_pool(DEFAULT_IMAGE_POOL, title, date_str)
+                img_meta = resolve_image_from_pool(DEFAULT_IMAGE_POOL, title, date_str, seg_text)
                 cat = "default"
 
         urls = make_urls(img_meta)
@@ -1328,6 +1452,7 @@ def _process_list(items: list, label: str) -> None:
 
 
 def main():
+    load_persistent_dedup()
     data = json.loads(BRIEFINGS_JSON.read_text("utf-8"))
 
     _process_list(data.get("briefings", []), "briefing")
