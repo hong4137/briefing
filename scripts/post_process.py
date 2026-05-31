@@ -26,7 +26,7 @@ HERO_META_KEYS = (
 )
 
 # 빌드 세션 전역 중복 차단 큐 (직전 5개 이미지 ID 기억)
-_dedup_window: deque = deque(maxlen=5)
+_dedup_window: deque = deque(maxlen=15)
 
 # 영구 히스토리 중복 방지 집합 (최근 10일 실물 적용 ID — 빌드간 지속)
 _persistent_dedup_set: set = set()
@@ -690,7 +690,7 @@ ENTITY_IMAGE_MAP = {
         _img("1677442135703-1787eea5ce01", "Blue neural network data visualization",       "Growtika",
              tags=["openai", "altman", "ai", "neural", "gpt", "llm"]),
         _img("1620712943543-bcc4688e7485", "Cybernetic virtual brain with circuits",       "Possessed Photography",
-             tags=["ai", "openai", "altman", "brain", "gpt", "model"]),
+             tags=["cybernetic", "brain", "openai", "altman", "gpt", "model"]),
         _img("1544197150-b99a580bb7a8",    "Server rack fiber optic cables blue glow",    "Alina Grubnyak",
              tags=["openai", "altman", "data center", "compute", "llm", "training"]),
         _img("1607604276583-eef5d076aa5f", "Blue neon illuminated circuit motherboard",    "Olivier Collet",
@@ -713,8 +713,8 @@ ENTITY_IMAGE_MAP = {
              tags=["spacex", "orbit", "earth", "satellite", "starlink", "space"]),
         _img("1446776811953-b23d57bd21aa", "Space station solar panels orbiting Earth",      "NASA",
              tags=["spacex", "iss", "dragon", "orbit", "docking", "crew"]),
-        _img("1454789548928-701522940945", "Milky Way galaxy stars over dark landscape",     "Greg Rakozy",
-             tags=["spacex", "galaxy", "stars", "night sky", "cosmos", "starship"]),
+        _img("1506703719100-a0f3a48c0f86", "Majestic aurora borealis with deep space nebula","Greg Rakozy",
+             tags=["spacex", "galaxy", "aurora", "night sky", "cosmos", "starship"]),
     ],
 
     # ── Blue Origin ──────────────────────────────────────────────
@@ -736,7 +736,7 @@ ENTITY_IMAGE_MAP = {
         _img("1677442135703-1787eea5ce01", "Blue neural network data visualization",         "Growtika",
              tags=["openai", "chatgpt", "gpt", "neural", "ai", "llm", "model"]),
         _img("1620712943543-bcc4688e7485", "Cybernetic virtual brain glowing circuits",      "Possessed Photography",
-             tags=["openai", "ai brain", "gpt", "model", "language model", "o1"]),
+             tags=["openai", "cybernetic brain", "gpt", "model", "language model", "o1"]),
         _img("1544197150-b99a580bb7a8",    "Server rack fiber optic cables blue glow",       "Alina Grubnyak",
              tags=["openai", "data center", "training", "compute", "gpu", "gpt-5"]),
         _img("1606765962248-7ff407b51667", "Data center server racks blue illuminated",      "Taylor Vick",
@@ -815,7 +815,7 @@ ENTITY_IMAGE_MAP = {
         _img("1498050108023-c5249f4df085", "Laptop showing code in dark environment",      "Christopher Gower",
              tags=["google", "developer", "coding", "flutter", "go", "chrome"]),
         _img("1620712943543-bcc4688e7485", "Cybernetic virtual brain glowing circuits",    "Possessed Photography",
-             tags=["google", "deepmind", "ai", "brain", "research", "alphafold"]),
+             tags=["google", "deepmind", "cybernetic", "brain", "research", "alphafold"]),
         _img("1507146426996-ef05306b995a", "Neon glowing abstract tech lines dark",        "Alina Grubnyak",
              tags=["google", "gemini", "search", "algorithm", "innovation"]),
     ],
@@ -1437,6 +1437,14 @@ def _process_list(items: list, label: str) -> None:
         html_path = ARCHIVE_DIR / f"{date}.html"
         if not html_path.exists():
             print(f"[SKIP-{label}] {date}.html not found")
+            if not item.get("thumb_url"):
+                _fb = make_urls(resolve_image_from_pool(
+                    DEFAULT_IMAGE_POOL, item.get("title", ""), date, ""))
+                item.setdefault("thumb_url",      _fb["thumb_url"])
+                item.setdefault("thumb_url_xs",   _fb["thumb_url_xs"])
+                item.setdefault("thumb_alt",      "")
+                item.setdefault("thumb_category", "default_safeguard")
+                print(f"[SAFEGUARD] {date} thumb_url 누락 → 기본 이미지 주입")
             continue
 
         meta = process_article(html_path, item)
