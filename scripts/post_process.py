@@ -558,14 +558,10 @@ DEFAULT_IMAGE_POOL = [
 # ── 엔티티 탐지 패턴 (순서 = 우선순위) ────────────────────────────
 # (entity_key, regex_pattern)
 ENTITY_PATTERNS = [
-    # 인물
-    ("trump",        r'트럼프|Trump'),
-    ("biden",        r'바이든|Biden'),
-    ("musk",         r'머스크|Musk|일론\s*머스크'),
-    ("powell",       r'파월|Powell|제롬\s*파월'),
-    ("jensen_huang", r'젠슨\s*황|Jensen\s*Huang'),
-    ("altman",       r'올트먼|Altman|샘\s*올트먼'),
-    # 기업
+    # 기업 우선
+    ("openai",       r'OpenAI|오픈\s*AI|오픈AI|ChatGPT|챗GPT|GPT-?\d*|Sora|소라'),
+    ("spacex",       r'SpaceX|스페이스\s*X|스페이스X|Starlink|스타링크|Starship|스타십'),
+    ("blueorigin",   r'Blue\s*Origin|블루\s*오리진|블루오리진|New\s*Glenn|뉴\s*글렌'),
     ("nvidia",       r'Nvidia|NVIDIA|엔비디아'),
     ("apple",        r'\bApple\b|애플'),
     ("microsoft",    r'Microsoft|마이크로소프트'),
@@ -575,6 +571,13 @@ ENTITY_PATTERNS = [
     ("amazon",       r'\bAmazon\b|아마존'),
     ("tsmc",         r'TSMC|티에스엠씨'),
     ("samsung",      r'삼성|Samsung'),
+    # 인물 후순위
+    ("trump",        r'트럼프|Trump'),
+    ("biden",        r'바이든|Biden'),
+    ("musk",         r'머스크|Musk|일론\s*머스크'),
+    ("powell",       r'파월|Powell|제롬\s*파월'),
+    ("jensen_huang", r'젠슨\s*황|Jensen\s*Huang'),
+    ("altman",       r'올트먼|Altman|샘\s*올트먼'),
 ]
 
 ENTITY_IMAGE_MAP = {
@@ -683,8 +686,8 @@ ENTITY_IMAGE_MAP = {
              tags=["openai", "altman", "ai", "neural", "gpt", "llm"]),
         _img("1620712943543-bcc4688e7485", "Cybernetic virtual brain with circuits",       "Possessed Photography",
              tags=["ai", "openai", "altman", "brain", "gpt", "model"]),
-        _img("1507146426996-ef05306b995a", "Neon glowing abstract tech lines",             "Alina Grubnyak",
-             tags=["ai", "openai", "altman", "neural", "abstract", "gpt"]),
+        _img("1544197150-b99a580bb7a8",    "Server rack fiber optic cables blue glow",     "Alina Grubnyak",
+             tags=["ai", "openai", "altman", "server", "compute", "gpt"]),
         _img("1607604276583-eef5d076aa5f", "Blue neon illuminated circuit motherboard",    "Olivier Collet",
              tags=["openai", "altman", "ai chip", "compute", "llm"]),
         _img("1526374965328-7f61d4dc18c5", "Matrix binary code wall dark screen",          "Markus Spiske",
@@ -841,6 +844,52 @@ ENTITY_IMAGE_MAP = {
              tags=["samsung", "wafer", "silicon", "cleanroom", "process", "nanometer"]),
         _img("1640158615573-cd28feb1bf4e", "Semiconductor chip magnified surface texture",  "Vishnu Mohanan",
              tags=["samsung", "package", "packaging", "advanced", "chip", "node"]),
+    ],
+
+    # ── 16. SpaceX - [총 6장] ───────────────────────────────────
+    "spacex": [
+        _img("1541185933-ef5d8ed016c2",    "Rocket launch trajectory arc into night sky",  "SpaceX",
+             tags=["spacex", "rocket", "launch", "starship", "night", "flame"]),
+        _img("1516849841032-87cbac4d88f7", "Rocket launching bright exhaust flame night",  "SpaceX",
+             tags=["spacex", "rocket", "liftoff", "flame", "starship", "launch"]),
+        _img("1586348943529-beaae6c28db9", "Space rocket launch control room",             "SpaceX",
+             tags=["spacex", "control room", "mission", "rocket", "launch", "starlink"]),
+        _img("1614064641938-2959af8dc0a6", "Starlink satellite constellation orbit",       "SpaceX",
+             tags=["spacex", "starlink", "satellite", "constellation", "orbit", "network"]),
+        _img("1451187580459-43490279c0fa", "Blue Earth viewed from dark outer space",      "NASA",
+             tags=["spacex", "space", "orbit", "earth", "satellite", "mission"]),
+        _img("1606765962248-7ff407b51667", "Data center server racks blue illuminated",    "Taylor Vick",
+             tags=["spacex", "compute", "data center", "server", "starlink", "ai"]),
+    ],
+
+    # ── 17. Blue Origin - [총 5장] ───────────────────────────────
+    "blueorigin": [
+        _img("1541185933-ef5d8ed016c2",    "Rocket launch trajectory arc into night sky",  "SpaceX",
+             tags=["blueorigin", "blue origin", "rocket", "launch", "new glenn", "flame"]),
+        _img("1516849841032-87cbac4d88f7", "Rocket launching bright exhaust flame night",  "SpaceX",
+             tags=["blueorigin", "blue origin", "rocket", "liftoff", "booster", "launch"]),
+        _img("1586348943529-beaae6c28db9", "Aerospace launch control room",                "SpaceX",
+             tags=["blueorigin", "blue origin", "control room", "mission", "rocket", "aerospace"]),
+        _img("1506084868230-bb9d95c24759", "Aircraft vapor trails in night sky",           "Amir Kabirov",
+             tags=["blueorigin", "blue origin", "aerospace", "flight", "sky", "mission"]),
+        _img("1451187580459-43490279c0fa", "Blue Earth viewed from dark outer space",      "NASA",
+             tags=["blueorigin", "blue origin", "space", "orbit", "earth", "mission"]),
+    ],
+
+    # ── 18. OpenAI - [총 6장] ───────────────────────────────────
+    "openai": [
+        _img("1677442135703-1787eea5ce01", "Blue neural network data visualization",       "Growtika",
+             tags=["openai", "ai", "neural", "gpt", "llm", "model"]),
+        _img("1620712943543-bcc4688e7485", "Cybernetic virtual brain with circuits",       "Possessed Photography",
+             tags=["openai", "ai", "brain", "gpt", "model", "research"]),
+        _img("1544197150-b99a580bb7a8",    "Server rack fiber optic cables blue glow",     "Alina Grubnyak",
+             tags=["openai", "ai", "compute", "server", "data center", "training"]),
+        _img("1607604276583-eef5d076aa5f", "Blue neon illuminated circuit motherboard",    "Olivier Collet",
+             tags=["openai", "ai chip", "compute", "hardware", "llm", "inference"]),
+        _img("1526374965328-7f61d4dc18c5", "Matrix binary code wall dark screen",          "Markus Spiske",
+             tags=["openai", "code", "ai", "gpt", "training", "software"]),
+        _img("1580927752452-89d86da3fa0a", "Developer coding laptop dark room",            "Christopher Gower",
+             tags=["openai", "developer", "coding", "api", "software", "chatgpt"]),
     ],
 }
 
