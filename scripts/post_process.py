@@ -743,7 +743,7 @@ ENTITY_IMAGE_MAP = {
              tags=["openai", "supercomputer", "training", "chatgpt", "inference"]),
         _img("1526374965328-7f61d4dc18c5", "Matrix binary code wall dark screen",            "Markus Spiske",
              tags=["openai", "code", "gpt", "training data", "llm", "rlhf"]),
-        _img("1675557009483-b2f86c2cb790", "AI circuit board glowing blue light",            "Growtika",
+        _img("1607604276583-eef5d076aa5f", "Blue neon illuminated circuit motherboard",      "Olivier Collet",
              tags=["openai", "chip", "compute", "ai model", "o3", "o4"]),
     ],
 
