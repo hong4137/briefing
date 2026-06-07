@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 버블 경고 속 브로드컴 쇼크發 반도체 매도세 — 고용 서프라이즈에 연준 인상 우려 | 주간 외신 브리핑</title>
+<style>
+  :root{
+    --bg:#0a0e14; --panel:#131a24; --panel2:#0f151d; --border:#1f2a37;
+    --text:#e6edf3; --muted:#8b98a5; --accent:#4da3ff; --accent2:#7c5cff;
+    --hot:#ff5d5d; --cool:#5a6b7a; --new:#ffb84d; --up:#33d17a; --down:#ff5d5d; --warn:#ffb84d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.65;padding:0 16px}
+  .wrap{max-width:860px;margin:0 auto;padding:40px 0 60px}
+  header{text-align:center;padding:36px 24px;background:linear-gradient(135deg,#131a24,#0f151d);border:1px solid var(--border);border-radius:18px;margin-bottom:28px}
+  header .kicker{color:var(--accent);font-weight:700;letter-spacing:.12em;font-size:.78rem}
+  header h1{font-size:1.55rem;margin:12px 0 10px;line-height:1.4}
+  header .period{color:var(--muted);font-size:.95rem}
+  header .sub{color:var(--muted);font-size:.82rem;margin-top:6px}
+  .section-title{display:flex;align-items:center;gap:10px;font-size:1.15rem;margin:34px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+  .story{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+  .story-head{display:flex;align-items:flex-start;gap:12px}
+  .rank{flex-shrink:0;width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.95rem}
+  .story-head h3{font-size:1.06rem;font-weight:700;line-height:1.45}
+  .meta{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 4px;padding-left:42px}
+  .chip{font-size:.76rem;padding:4px 10px;border-radius:20px;background:var(--panel2);border:1px solid var(--border);color:var(--muted);white-space:nowrap}
+  .chip.count{color:var(--accent);border-color:#1d3a52}
+  .chip.hot{color:var(--hot);border-color:#4a2230}
+  .chip.cool{color:var(--cool)}
+  .chip.new{color:var(--new);border-color:#4a3a1d}
+  .chip.mini{font-size:.7rem;padding:2px 8px}
+  .timeline{margin-top:14px;padding-left:42px}
+  .timeline ul{list-style:none}
+  .timeline li{display:flex;gap:12px;padding:7px 0;border-top:1px dashed var(--border);font-size:.92rem}
+  .timeline li:first-child{border-top:none}
+  .tl-date{flex-shrink:0;color:var(--accent);font-weight:700;font-size:.84rem;min-width:34px}
+  .tl-text{color:#cdd9e5}
+  .solo-item{display:flex;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:13px 16px;margin-bottom:9px}
+  .solo-date{flex-shrink:0;color:var(--accent);font-weight:700;font-size:.82rem;min-width:34px}
+  .solo-body{display:flex;align-items:center;justify-content:space-between;gap:10px;flex:1;flex-wrap:wrap}
+  .solo-topic{font-size:.94rem;color:#cdd9e5}
+  .pick{background:linear-gradient(135deg,#16202c,#0f151d);border:1px solid #243447;border-left:3px solid var(--accent2);border-radius:12px;padding:18px 20px;margin-bottom:14px}
+  .pick h4{font-size:1.02rem;margin-bottom:8px;color:#fff}
+  .pick p{font-size:.92rem;color:var(--muted);line-height:1.7}
+  .market-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+  .m-item{background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:14px 16px;display:flex;flex-direction:column;gap:3px}
+  .m-label{font-size:.78rem;color:var(--muted)}
+  .m-val{font-size:1.15rem;font-weight:800}
+  .m-note{font-size:.72rem;color:var(--muted)}
+  .m-item.up .m-val{color:var(--up)} .m-item.down .m-val{color:var(--down)} .m-item.warn .m-val{color:var(--warn)}
+  .market-disclaimer,.event-note{font-size:.74rem;color:var(--cool);margin-top:12px;font-style:italic}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-top:4px}
+  .stat{background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:16px;text-align:center}
+  .stat .num{font-size:1.5rem;font-weight:800;color:var(--accent)}
+  .stat .lbl{font-size:.78rem;color:var(--muted);margin-top:3px}
+  .events-list .event-item{display:flex;gap:14px;background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:13px 16px;margin-bottom:9px}
+  .event-date{flex-shrink:0;color:var(--accent2);font-weight:700;font-size:.82rem;min-width:54px}
+  .event-text{font-size:.9rem;color:#cdd9e5}
+  footer{text-align:center;color:var(--cool);font-size:.78rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">WEEKLY BRIEFING · 2026년 6월 1주차</div>
+    <h1>AI 버블 경고 속 브로드컴 쇼크發 반도체 매도세 — 고용 서프라이즈에 연준 인상 우려</h1>
+    <div class="period">📅 6/1 ~ 6/6 · 누적 기사 수 기반 TOP 스토리</div>
+    <div class="sub">총 18건 · 12개 클러스터 분석</div>
+  </header>
+
+  <h2 class="section-title">📈 이번 주 TOP 스토리</h2>
+  
+      <article class="story">
+        <div class="story-head">
+          <span class="rank">1</span>
+          <h3>브로드컴 실적 쇼크發 반도체·테크 매도세, 고용 서프라이즈로 연준 인상 우려 가세</h3>
+        </div>
+        <div class="meta">
+          <span class="chip count">📰 3건</span>
+          <span class="chip">📅 6/4~6/6</span>
+          <span class="chip neutral">📈 관심</span>
+          <span class="chip neutral">→ 유지</span>
+        </div>
+        <div class="timeline">
+          <ul><li><span class="tl-date">6/4</span><span class="tl-text">Broadcom·CrowdStrike 실적 실망 AI칩 둔화</span></li>
+<li><span class="tl-date">6/5</span><span class="tl-text">브로드컴 쇼크發 반도체·테크 매도세 (소프트뱅크 -11%)</span></li>
+<li><span class="tl-date">6/6</span><span class="tl-text">고용 서프라이즈 +17.2만 연준 '인상' 베팅 52% 반도체 매도세 심화 Kospi -5.3% vs 다우 사상 최고 디커플링</span></li>
+</ul>
+        </div>
+      </article>
+      <article class="story">
+        <div class="story-head">
+          <span class="rank">2</span>
+          <h3>AI 버블·시장 과열 경고 확산 (Goldman·Ray Dalio·신용시장)</h3>
+        </div>
+        <div class="meta">
+          <span class="chip count">📰 2건</span>
+          <span class="chip">📅 6/3~6/4</span>
+          <span class="chip neutral">📈 관심</span>
+          <span class="chip neutral">→ 유지</span>
+        </div>
+        <div class="timeline">
+          <ul><li><span class="tl-date">6/3</span><span class="tl-text">Goldman '시장 탐욕 국면'·비트코인 $70K 붕괴</span></li>
+<li><span class="tl-date">6/4</span><span class="tl-text">Ray Dalio·신용시장 'AI 버블' 경고</span></li>
+</ul>
+        </div>
+      </article>
+      <article class="story">
+        <div class="story-head">
+          <span class="rank">3</span>
+          <h3>SpaceX 사상 최대 IPO 가격 확정과 밸류에이션 회의론</h3>
+        </div>
+        <div class="meta">
+          <span class="chip count">📰 2건</span>
+          <span class="chip">📅 6/4~6/5</span>
+          <span class="chip neutral">📈 관심</span>
+          <span class="chip neutral">→ 유지</span>
+        </div>
+        <div class="timeline">
+          <ul><li><span class="tl-date">6/4</span><span class="tl-text">SpaceX 사상 최대 $75B IPO 가격 확정</span></li>
+<li><span class="tl-date">6/5</span><span class="tl-text">SpaceX IPO 밸류에이션 회의론 — 모닝스타 '목표의 절반'</span></li>
+</ul>
+        </div>
+      </article>
+      <article class="story">
+        <div class="story-head">
+          <span class="rank">4</span>
+          <h3>AI 규제·안전 논의 확산 (Trump 행정명령, Anthropic '일시정지 버튼', 데이터센터 백래시)</h3>
+        </div>
+        <div class="meta">
+          <span class="chip count">📰 2건</span>
+          <span class="chip">📅 6/3~6/6</span>
+          <span class="chip neutral">📈 관심</span>
+          <span class="chip neutral">→ 유지</span>
+        </div>
+        <div class="timeline">
+          <ul><li><span class="tl-date">6/3</span><span class="tl-text">Trump AI 출시 전 정부 검토 행정명령 서명</span></li>
+<li><span class="tl-date">6/6</span><span class="tl-text">Anthropic 'AI 일시정지 버튼'·Clark '브레이크 페달' 촉구 + 데이터센터 백래시 뉴욕주·시애틀 1년 금지</span></li>
+</ul>
+        </div>
+      </article>
+      <article class="story">
+        <div class="story-head">
+          <span class="rank">5</span>
+          <h3>빅테크 AI 인프라 자금조달 러시 (Alphabet $80B 발행, Anthropic 최대 IPO 신청)</h3>
+        </div>
+        <div class="meta">
+          <span class="chip count">📰 2건</span>
+          <span class="chip">📅 6/2~6/2</span>
+          <span class="chip cool">📉 단발</span>
+          <span class="chip neutral">→ 유지</span>
+        </div>
+        <div class="timeline">
+          <ul><li><span class="tl-date">6/2</span><span class="tl-text">Alphabet 버크셔 투자 포함 $80B 주식발행 AI 인프라 조달</span></li>
+<li><span class="tl-date">6/2</span><span class="tl-text">Anthropic 비공개 IPO 신청 역대 최대 기술 상장 전망</span></li>
+</ul>
+        </div>
+      </article>
+
+  <h2 class="section-title">💡 Claude's Pick</h2>
+  
+      <div class="pick">
+        <h4>브로드컴 쇼크가 불붙인 'AI 버블' 자기실현적 매도세</h4>
+        <p>Goldman의 '탐욕 국면' 경고(6/3)와 Ray Dalio·신용시장의 버블 경고(6/4)가 누적된 직후 터진 Broadcom·CrowdStrike 실적 실망(6/4)은 단순 개별 이슈를 넘어 시장 전체의 심리 전환점이 됐다. 소프트뱅크 -11%(6/5), 그리고 토요일 고용 서프라이즈(+17.2만)로 연준 인상 베팅이 52%까지 치솟으며 매도세가 증폭됐다. 특히 Kospi -5.3% vs 다우 사상 최고의 디커플링은 이번 조정이 'AI 밸류체인 집중 종목'에 선별적으로 가해지고 있음을 시사한다.</p>
+      </div>
+      <div class="pick">
+        <h4>자금조달 러시 vs 버블 경고 — 같은 주, 정반대 신호</h4>
+        <p>Alphabet의 버크셔 참여 $80B 주식발행(6/2)과 Anthropic 사상 최대 IPO 신청(6/2), SpaceX $75B IPO 가격 확정(6/4)이 한 주에 몰리며 'AI 인프라 자금조달 러시'가 정점을 찍었다. 그러나 같은 주 모닝스타는 SpaceX 밸류에이션이 '목표의 절반'이라 경고(6/5)했고, TSMC는 '칩 공급이 수년간 수요를 못 따라간다'(6/5)며 공급 병목을 지적했다. 사상 최대 규모로 돈을 끌어모으는 한편에서 밸류에이션 회의론이 동시에 터진 것이 이번 주의 본질이다.</p>
+      </div>
+
+  <h2 class="section-title">📊 시장 메모</h2>
+  
+      <div class="market-grid">
+        <div class="m-item down"><span class="m-label">KOSPI</span><span class="m-val">-5.3%</span><span class="m-note">주간, AI주 집중 타격</span></div>
+        <div class="m-item up"><span class="m-label">다우</span><span class="m-val">사상 최고</span><span class="m-note">美 대형주 디커플링</span></div>
+        <div class="m-item down"><span class="m-label">소프트뱅크</span><span class="m-val">-11%</span><span class="m-note">6/5 단일 급락</span></div>
+        <div class="m-item down"><span class="m-label">비트코인</span><span class="m-val">$70K 붕괴</span><span class="m-note">6/3 위험회피</span></div>
+        <div class="m-item warn"><span class="m-label">연준 인상 베팅</span><span class="m-val">52%</span><span class="m-note">고용 +17.2만 서프라이즈</span></div>
+      </div>
+      <p class="market-disclaimer">※ 지수 수치는 주간 수집 기사에서 추출. 실시간 시장 데이터 연동(market-data)은 이번 발행 시 미가동.</p>
+
+  <h2 class="section-title">🎯 단독 하이라이트</h2>
+  
+      <div class="solo-item">
+        <span class="solo-date">6/6</span>
+        <div class="solo-body">
+          <div class="solo-topic">Google, 라이벌 SpaceX에 $30B 컴퓨트 임대 '적과의 동침'</div>
+          <span class="chip mini new">🆕 신규</span>
+        </div>
+      </div>
+      <div class="solo-item">
+        <span class="solo-date">6/5</span>
+        <div class="solo-body">
+          <div class="solo-topic">TSMC '칩 공급 수년간 AI 수요 못 따라간다' 경고</div>
+          <span class="chip mini new">🆕 신규</span>
+        </div>
+      </div>
+      <div class="solo-item">
+        <span class="solo-date">6/1</span>
+        <div class="solo-body">
+          <div class="solo-topic">공룡 테크주 $1.7조 부활 — Dell·Nokia·Lenovo AI 랠리</div>
+          <span class="chip mini cool">📉 단발</span>
+        </div>
+      </div>
+      <div class="solo-item">
+        <span class="solo-date">6/1</span>
+        <div class="solo-body">
+          <div class="solo-topic">中 AI IPO 행렬 — MiniMax 본토 상장 준비 (CXMT·YMTC 이어)</div>
+          <span class="chip mini cool">📉 단발</span>
+        </div>
+      </div>
+      <div class="solo-item">
+        <span class="solo-date">6/2</span>
+        <div class="solo-body">
+          <div class="solo-topic">Nvidia, RTX Spark로 소비자 PC 칩 진출 — 인텔·애플과 정면승부</div>
+          <span class="chip mini cool">📉 단발</span>
+        </div>
+      </div>
+      <div class="solo-item">
+        <span class="solo-date">6/3</span>
+        <div class="solo-body">
+          <div class="solo-topic">Microsoft Build 2026 — Scout·Project Solara 공개</div>
+          <span class="chip mini cool">📉 단발</span>
+        </div>
+      </div>
+      <div class="solo-item">
+        <span class="solo-date">6/1</span>
+        <div class="solo-body">
+          <div class="solo-topic">Meta, AI 하드웨어 승부수 — AI 펜던트·웨어러블 확장</div>
+          <span class="chip mini cool">📉 단발</span>
+        </div>
+      </div>
+
+  <h2 class="section-title">📅 다음 주 관전 포인트</h2>
+  <div class="events-list">
+      <div class="event-item"><div class="event-date">주중</div><div class="event-text">연준 인사 발언·물가지표 주목 — 고용 서프라이즈 후 '인상' 베팅(52%) 향방의 분기점</div></div>
+      <div class="event-item"><div class="event-date">진행중</div><div class="event-text">SpaceX·Anthropic IPO 후속 — 밸류에이션 논쟁과 상장 일정 구체화 여부</div></div>
+      <div class="event-item"><div class="event-date">모니터링</div><div class="event-text">반도체 매도세 지속 여부 — TSMC 공급 경고 vs AI칩 둔화 우려의 줄다리기</div></div>
+      <p class="event-note">※ 구체적 일정(FOMC·실적 등) 미확인. 다음 주 주요 일정을 알려주시면 다음 발행에 반영합니다.</p></div>
+
+  <h2 class="section-title">🧮 주간 통계</h2>
+  <div class="stats">
+    <div class="stat"><div class="num">18</div><div class="lbl">총 하이라이트 기사</div></div>
+    <div class="stat"><div class="num">12</div><div class="lbl">클러스터</div></div>
+    <div class="stat"><div class="num">5</div><div class="lbl">멀티 기사 스토리</div></div>
+    <div class="stat"><div class="num">7</div><div class="lbl">단독 스토리</div></div>
+  </div>
+
+  <footer>Generated by Claude · Weekly Briefing v1.6 · 2026-06-07</footer>
+</div>
+</body>
+</html>
