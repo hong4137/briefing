@@ -8897,6 +8897,36 @@
           "thumb_category": "entity:openai"
         }
       ]
+    },
+    {
+      "date": "weekly-2026-06-07",
+      "week": "2026-W23",
+      "title": "AI 버블 경고 속 브로드컴 쇼크發 반도체 매도세 — 고용 서프라이즈에 연준 인상 우려",
+      "summary": "브로드컴·Crow드스트라이크 실적 실망과 Goldman·Ray Dalio의 AI 버블 경고가 겹치며 반도체·테크 매도세가 확산됐고, 토요일 고용 서프라이즈(+17.2만)로 연준 인상 베팅이 52%까지 상승. Kospi -5.3% vs 다우 사상 최고의 디커플링이 두드러진 한 주. 동시에 Alphabet $80B 발행·Anthropic 최대 IPO 신청·SpaceX $75B IPO 등 AI 자금조달 러시도 정점.",
+      "period": "2026-06-01 ~ 2026-06-06",
+      "stats": {
+        "clusters": 12
+      },
+      "hero_url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "World map shipping route light graphic",
+      "hero_credit_name": "Thomas Lefebvre",
+      "hero_credit_url": "https://unsplash.com/photos/1586528116311-ad8dd3c8310d",
+      "hero_source": "smart_pick",
+      "thumb_url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "World map shipping route light graphic",
+      "thumb_category": "finance",
+      "segments": [
+        {
+          "title": "AI 버블 경고 속 브로드컴 쇼크發 반도체 매도세 — 고용 서프라이즈에 연준 인상 우려",
+          "summary": "브로드컴·Crow드스트라이크 실적 실망과 Goldman·Ray Dalio의 AI 버블 경고가 겹치며 반도체·테크 매도세가 확산됐고, 토요일 고용 서프라이즈(+17.2만)로 연준 인상 베팅이 52%까지 상승. Kospi -5.3% vs 다우 사상 최고의 디커플링이 두드러진 한 주. 동시에 Alphabet $80B 발행·Anthropic 최대 IPO 신청·SpaceX $75B IPO 등 AI 자금조달 러시도 정점..",
+          "thumb_url": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Digital currency and capital liquidity visual",
+          "thumb_category": "finance"
+        }
+      ]
     }
   ],
   "specials": [
@@ -8939,23 +8969,23 @@
         "articles": 13,
         "sections": 4
       },
-      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Matrix green binary code wall on black screen",
-      "hero_credit_name": "Markus Spiske",
-      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
+      "hero_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Data marketing multi-screen dashboard display",
+      "hero_credit_name": "Luke Chesser",
+      "hero_credit_url": "https://unsplash.com/photos/1562577309-4932fdd64cd1",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Matrix green binary code wall on black screen",
+      "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Data marketing multi-screen dashboard display",
       "thumb_category": "ai",
       "segments": [
         {
           "title": "다보스 2026: AI 인프라 대전환과 미중 기술패권 경쟁",
           "summary": "트럼프 3주 원전 승인, 젠슨 황 AI 5층 케이크. 다보스 포럼 AI 핵심 발언 총정리..",
-          "thumb_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Laptop displaying code in dark environment",
+          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Abstract dark silk web browser art visual",
           "thumb_category": "ai"
         }
       ]
@@ -8969,31 +8999,31 @@
         "articles": 25,
         "sections": 6
       },
-      "hero_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Aerial view of city lights glowing at night",
-      "hero_credit_name": "Maximalfocus",
-      "hero_credit_url": "https://unsplash.com/photos/1504711434969-e33886168f5c",
+      "hero_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Laptop displaying code in dark environment",
+      "hero_credit_name": "Christopher Gower",
+      "hero_credit_url": "https://unsplash.com/photos/1498050108023-c5249f4df085",
       "hero_source": "handpick_default",
-      "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Aerial view of city lights glowing at night",
+      "thumb_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Laptop displaying code in dark environment",
       "thumb_category": "default",
       "segments": [
         {
           "title": "이란전쟁 33일 — 종전 임박인가, 장기전인가",
           "summary": "Operation Epic Fury 개전 33일. 호르무즈 봉쇄로 글로벌 원유 공급 20% 차단.",
-          "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Tech team collaborating on laptops in office",
+          "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Aerial view of city lights glowing at night",
           "thumb_category": "default"
         },
         {
           "title": "세계 경제 충격파 분석",
           "summary": "트럼프 2~3주 내 철수 시사 vs 이란 6개월 전쟁 준비. 5대 경제 충격파와 테크 산업 영향, 한국 경제 분석..",
-          "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Planet Earth viewed from space with city lights",
+          "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Tech team collaborating on laptops in office",
           "thumb_category": "default"
         }
       ]
