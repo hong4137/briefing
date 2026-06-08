@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWDC 2026 새 Siri 공개 D-day | 中 그린 컴퓨팅 허브 | AI 자금조달 과열·버블 경고 | Jae's Briefing</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 8px 20px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px;
+        }
+        .title { font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 15px; line-height: 1.4; }
+        .summary { color: #a0a0a0; font-size: 1rem; max-width: 720px; margin: 0 auto; }
+        .section { margin-bottom: 50px; }
+        .section-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 25px; padding-bottom: 12px; border-bottom: 2px solid #667eea; color: #fff; }
+        .article-card {
+            background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px; padding: 25px; margin-bottom: 20px; transition: all 0.3s ease;
+        }
+        .article-card:hover { background: rgba(255,255,255,0.06); border-color: rgba(102, 126, 234, 0.3); }
+        .article-title { font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
+        .article-title-kr { font-size: 1rem; color: #a0a0a0; margin-bottom: 12px; }
+        .article-summary { color: #b0b0b0; font-size: 0.95rem; line-height: 1.7; margin-bottom: 15px; }
+        .article-meta { display: flex; align-items: center; gap: 15px; font-size: 0.85rem; flex-wrap: wrap; }
+        .source { color: #667eea; font-weight: 600; }
+        .article-meta a { color: #4a9eff; text-decoration: none; }
+        .article-meta a:hover { text-decoration: underline; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; margin-bottom: 12px; margin-right: 6px; }
+        .badge-hot { background: linear-gradient(135deg, #ff3b3b, #ff8c42); color: #fff; }
+        .badge-breaking { background: #ff3b3b; color: #fff; animation: pulse 2s infinite; }
+        .badge-update { background: #22c55e; color: #fff; }
+        .badge-new { background: #4a9eff; color: #fff; }
+        .badge-pick { background: linear-gradient(135deg, #a855f7, #ec4899); color: #fff; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+        .top-section .article-card { background: rgba(255, 59, 59, 0.05); border-color: rgba(255, 59, 59, 0.2); }
+        .picks-section .article-card { background: rgba(168, 85, 247, 0.05); border-color: rgba(168, 85, 247, 0.2); }
+        .pick-reason { font-size: 0.85rem; color: #a855f7; margin-bottom: 10px; font-style: italic; }
+        footer { text-align: center; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); color: #666; font-size: 0.9rem; }
+        footer p { margin-bottom: 10px; }
+        footer a { color: #667eea; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .title { font-size: 1.4rem; }
+            .article-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 6월 8일 월요일</div>
+            <h1 class="title">WWDC 2026 '새 Siri' D-day | 中, 그린 컴퓨팅 파워허브 가동 | AI 자금조달 과열·버블 경고</h1>
+            <p class="summary">애플이 오늘 WWDC에서 Gemini를 등에 업은 새 Siri를 재공개하며 'AI 뒷걸음' 만회에 나선다. 중국은 데이터센터 전력 병목을 겨냥한 세계 첫 조립식 그린 컴퓨팅 허브를 가동했고, 금요일 칩 매도 반전·비트코인 붕괴 후폭풍 속에 'AI 주식 공급 과잉'과 버블 경고가 동시에 분출했다. Nvidia-SK하이닉스 차세대 칩 협약과 Naver-Nvidia 딜로 한국 반도체 축도 다시 부각됐다.</p>
+        </header>
+
+        <!-- TOP HEADLINES -->
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Apple's new Siri returns at WWDC 2026, this time backed by Gemini</h3>
+                <p class="article-title-kr">애플, WWDC 2026서 '새 Siri' 재공개 — 이번엔 Gemini 제휴로 승부</p>
+                <p class="article-summary">애플이 한국시간 오늘 밤 WWDC 2026 키노트에서 수차례 연기됐던 'AI 강화 Siri'를 다시 선보인다. 핵심은 구글 Gemini와의 제휴로, 검색·요약 등 백엔드 지능을 외부 모델로 보강해 OpenAI·구글에 뒤처졌던 격차를 좁히려는 시도다. 블룸버그는 애플이 내부 비공개 회의를 거쳐서야 'AI를 진지하게' 받아들이게 된 전환점을 보도했고, The Verge는 "뒤늦게 따라가는 위치가 오히려 약이 될 수 있다"고 평가했다. iOS 27, 헬스 중심 Apple Watch용 Siri, 스마트글라스 떡밥도 관전 포인트. 애플의 프라이버시 우선 기조와 외부 모델 의존 사이의 균형이 시험대에 오른다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, TechCrunch, Bloomberg, ZDNet, Wired 다매체 보도</span>
+                    <a href="https://www.theverge.com/tech/944245/apple-wwdc-2026-ai-siri-gemini" target="_blank">원문 보기 →</a>
+                    <a href="https://www.bloomberg.com/news/newsletters/2026-06-07/wwdc-2026-apple-s-secret-meeting-that-led-it-to-take-ai-seriously-ios-27" target="_blank">Bloomberg →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">China powers up green computing hub to break the AI energy bottleneck</h3>
+                <p class="article-title-kr">中, 세계 첫 조립식 '그린 컴퓨팅 파워허브' 가동 — AI 전력 병목 정조준</p>
+                <p class="article-summary">중국이 데이터센터에 전력을 더 빠르고 저렴하게 공급하는 세계 첫 조립식(prefabricated) 컴퓨팅 파워허브를 가동했다고 관영 CCTV가 보도했다. SCMP는 이를 Hero로 올리며 "AI 사용 급증에 따른 에너지·배출 부담을 줄이는 스마트팩토리 인프라"로 규정했다. 같은 흐름에서 중국은 '우주 컴퓨팅 허브'까지 추진하며 미·중 기술 경쟁을 지구 밖으로 확장하고 있다. 영국에서도 BOE 베일리 총재가 "전력 용량 한계로 AI를 배급(rationing)해야 할 수 있다"고 경고하는 등, AI 시대의 진짜 병목이 칩이 아니라 '전기'라는 인식이 글로벌 정책권으로 번지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Hero, Bloomberg 다매체 보도</span>
+                    <a href="https://scmp.com/tech/policy/article/3356263/china-powers-green-computing-hub-smart-factories-amid-ai-push" target="_blank">원문 보기 →</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-06-07/china-starts-prefabricated-power-hub-for-data-centers-cctv-says" target="_blank">Bloomberg →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">AI's mega stock deals raise specter of 'more shares than buyers' as chip rally reverses</h3>
+                <p class="article-title-kr">'주식 공급 과잉' 공포 — 칩 매도 반전 확인·비트코인 붕괴 속 AI 자금조달 경고등</p>
+                <p class="article-summary">금요일 반도체 '크래시 업'이 마침내 반전되며 VIX가 다른 변동성 지표를 따라잡았고, 비트코인은 2024년 이후 최저로 무너졌다. 후폭풍 속에 시장의 새 화두는 'AI 자금조달 과열'이다. 블룸버그는 AI 야망을 좇는 기업들의 대규모 신주 발행이 쏟아지며 "이를 다 받아낼 매수자가 충분한가"라는 의문이 월가에 번지고 있다고 전했고, Meta가 AI 투자를 위해 수백억 달러 조달을 검토한다는 보도에 주가가 하락했다. 가디언은 'AI 붐을 6개 차트로' 해부하며 천문학적 지출 대비 수익이 여전히 가설 단계임을 짚었고, 블룸버그는 'AI 죽음의 나선'이 검색 기반 인터넷 경제를 위협한다고 진단했다. Cramer는 금리·유가·신주 러시가 다음 주 시장을 계속 압박할 것으로 봤다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC, Guardian 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-06-07/ai-s-mega-stock-deals-raise-specter-of-more-shares-than-buyers" target="_blank">원문 보기 →</a>
+                    <a href="https://www.cnbc.com/2026/06/06/here-are-3-forces-that-drove-a-whirlwind-week-for-the-stock-market.html" target="_blank">CNBC →</a>
+                    <a href="https://www.theguardian.com/technology/2026/jun/07/billions-spent-hypothetical-returns-the-ai-boom-explained-with-six-charts" target="_blank">Guardian →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- AI / 기술 -->
+        <section class="section">
+            <h2 class="section-title">🤖 AI / 빅테크</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Trump weighs US equity stakes in top AI labs as Krishnan exits</h3>
+                <p class="article-title-kr">Trump, 美 정부의 AI 랩 지분 보유 검토 (OpenAI 포함) — Krishnan AI 보좌관 사임</p>
+                <p class="article-summary">트럼프 대통령이 주요 AI 개발사에 대해 미국 정부가 지분을 보유하는 방안에 관심을 표하며 "AI의 성공으로 미국 국민이 혜택을 보는 딜"을 다음 주 경영진과 논의하겠다고 밝혔다. TechCrunch는 그 대상에 OpenAI가 포함될 수 있다고 전했다. 인텔 지분 모델의 AI 확장판으로, 워싱턴-실리콘밸리 관계가 'partnership'에서 'equity'로 재편되는 흐름이다. 한편 백악관 AI 정책을 이끌던 Sriram Krishnan이 보좌관직에서 물러나 트럼프 AI 정책을 계속 다듬을 새 기관을 세운다고 보도됐다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/" target="_blank">원문 보기 →</a>
+                    <a href="https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/" target="_blank">Krishnan 사임 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">'Chat is dead': OpenAI still building its super app, unveils Lockdown Mode</h3>
+                <p class="article-title-kr">OpenAI '슈퍼앱' 개발 지속 — "채팅은 죽었다", 프롬프트 인젝션 막는 Lockdown Mode 공개</p>
+                <p class="article-summary">OpenAI 고위 임원이 "채팅은 죽었다"고 언급하며, ChatGPT를 단순 챗봇을 넘어선 '슈퍼앱'으로 키우는 작업이 계속되고 있음을 시사했다. 동시에 OpenAI는 민감 데이터가 프롬프트 인젝션 공격으로 새어나가는 것을 줄이는 'Lockdown Mode'를 공개했다. 다만 회사 스스로 완벽한 차단은 아니며 유출 가능성을 낮추는 것이 목표라고 인정했다. AI 에이전트가 외부 도구·데이터를 다루기 시작하면서 보안이 제품 경쟁의 새 축으로 떠올랐다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured</span>
+                    <a href="https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/" target="_blank">원문 보기 →</a>
+                    <a href="https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/" target="_blank">Lockdown Mode →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Huawei chips refine DeepSeek model in leap for China's AI self-reliance</h3>
+                <p class="article-title-kr">Huawei 칩으로 DeepSeek 모델 훈련 정제 — 中 AI 자립의 도약</p>
+                <p class="article-summary">SCMP에 따르면 화웨이 칩이 DeepSeek 모델 정제(refine)에 활용되며 중국 AI 자립에 한 걸음 다가섰다. 다만 중국 칩들은 추론(inference) 지원에서는 성과를 냈지만, 훨씬 복잡한 학습(training) 단계에서는 여전히 고전 중이라고 짚었다. 같은 SCMP 지면에서 중국 메모리 진영(CXMT·YMTC)의 상장 임박과 워싱턴의 최신 AI 칩 가이던스 해석도 동시에 부각돼, 미·중 반도체 디커플링의 균열과 자립 가속이 한 화면에 펼쳐졌다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Featured</span>
+                    <a href="https://scmp.com/tech/article/3356117/huawei-chips-refine-deepseek-model-major-leap-chinas-ai-self-reliance" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Hacked, leaked, and held for ransom: the worst breaches of 2026 so far</h3>
+                <p class="article-title-kr">2026 최악의 해킹·유출 총정리 — DOGE 대규모 유출부터 FBI 감시 시스템 해킹까지</p>
+                <p class="article-summary">TechCrunch가 올해 상반기 가장 피해가 컸던 보안 사고를 Hero로 정리했다. 대규모 DOGE 데이터 유출, 핵심 에너지·수도 시스템 해킹, FBI 감시 시스템 침해 등이 망라됐다. AI가 공격·방어 양쪽에서 위력을 키우는 가운데, Wired는 별도로 메타의 AI 봇이 인스타그램 계정 해킹에 악용되고 Anthropic 기술이 NSA 해커를 돕는 사례까지 보도해 'AI 보안의 양면성'을 부각했다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero, Wired</span>
+                    <a href="https://techcrunch.com/2026/06/07/the-worst-hacks-and-breaches-of-2026-so-far/" target="_blank">원문 보기 →</a>
+                    <a href="https://www.wired.com/story/security-news-this-week-crypto-funded-chinese-peptide-labs-are-booming/" target="_blank">Wired →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 시장 / 경제 -->
+        <section class="section">
+            <h2 class="section-title">💰 시장 / 경제</h2>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Datacenter backlash spreads nationwide as anti-AI extremism rises</h3>
+                <p class="article-title-kr">데이터센터 백래시 전국 확산 + 반-AI 극단주의 부상</p>
+                <p class="article-summary">AI 데이터센터를 둘러싼 지역 반발이 미 전역으로 번지고 있다. 인디애나 셸비빌 시장이 "반대 푯말은 '허름한 집(shitty houses)'에 사는 사람들이나 단다"고 카메라에 잡혀 논란이 됐고, 유타에서는 케빈 오리어리가 후원한 Stratos 프로젝트에 주민 소송이 제기됐다. 캐나다 앨버타의 오리어리 발 대형 데이터센터도 주민·원주민 반대에 직면했다. 뉴욕주는 20MW 초과 '하이퍼스케일' 데이터센터에 대한 1년 모라토리엄을 통과시켜 첫 주 단위 규제 사례를 예고했다. 가디언은 한발 더 나아가 "AI 붐 반발이 극단주의로 번지며 정치적 폭력의 동인이 되고 있다"는 심층 기사를 실었다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, Guardian, Bloomberg 다매체 보도</span>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/944984/shelbyville-indiana-mayor-shitty-houses-data-center" target="_blank">원문 보기 →</a>
+                    <a href="https://www.theguardian.com/technology/2026/jun/07/anti-ai-tech-extremism-violence" target="_blank">Guardian 극단주의 →</a>
+                    <a href="https://www.theguardian.com/us-news/2026/jun/06/new-york-datacenter-temporary-ban" target="_blank">뉴욕 모라토리엄 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Marvell Technology, Flex to join the S&P 500</h3>
+                <p class="article-title-kr">Marvell·Flex, 6월 S&P 500 편입 — 풀·캠벨 대체</p>
+                <p class="article-summary">AI 커스텀 칩 설계사 Marvell Technology와 EMS 기업 Flex가 이달 말 S&P 500 분기 리밸런싱에서 지수에 편입된다. Pool Corp과 Campbell's를 대체하며, 기술 섹터가 미 증시에서 차지하는 비중이 커지고 있음을 보여준다. Marvell은 구글 커스텀 AI 칩 파트너로도 거론돼 온 종목으로, 패시브 자금 유입이 추가 모멘텀이 될 전망이다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/06/05/marvell-technology-flex-sp-500-campbells-pool.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 반도체 / 한국 -->
+        <section class="section">
+            <h2 class="section-title">🔌 반도체 / 한국</h2>
+
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Nvidia and SK Hynix sign multi-year pact; new Vera CPU to use SK Hynix memory</h3>
+                <p class="article-title-kr">Nvidia-SK하이닉스 차세대 칩 다년 협약 — 신형 Vera CPU에 SK하이닉스 메모리 탑재, Naver도 Nvidia 합류</p>
+                <p class="article-summary">엔비디아와 SK하이닉스가 차세대 AI 메모리 칩을 함께 설계하는 다년 협약을 맺었다. 황젠슨 CEO는 신형 'Vera' CPU에 SK하이닉스 메모리를 쓸 것이라며 양사 협력 확대를 예고해, 최상위 메모리 리더인 한국 기업에 직접적 호재가 됐다. 같은 날 네이버는 엔비디아 모델 기반 데이터센터를 구축해 한국 AI 시장 주도권을 굳히기로 했다. 황 CEO는 방한 중 서울 홍대 일대를 '거리 공연 무대'로 만드는 등 한국 시장 공략에 공을 들이는 모습도 보였다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg (4건)</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-06-07/nvidia-sk-hynix-sign-multi-year-pact-to-develop-next-gen-chips" target="_blank">원문 보기 →</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-06-07/naver-to-use-nvidia-s-ai-models-in-bid-to-cement-lead-in-korea" target="_blank">Naver-Nvidia →</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-06-06/jensen-huang-commands-seoul-stage-with-night-of-street-theatre" target="_blank">황젠슨 서울 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Chinese memory makers step up challenge to Korea's chip champions</h3>
+                <p class="article-title-kr">中 메모리 CXMT·YMTC 상장 임박 — 삼성·SK하이닉스 추격 화력 강화</p>
+                <p class="article-summary">SCMP에 따르면 중국 메모리 업체 CXMT와 YMTC가 잇따라 기업공개(IPO)에 다가서며, 삼성·SK하이닉스를 추격할 새 실탄을 확보하고 있다. AI 메모리 슈퍼사이클의 수혜를 한국 양강이 누리는 사이, 중국의 자국 메모리 굴기가 자본시장 자금까지 등에 업고 본격화되는 구도다. 위의 Nvidia-SK하이닉스 협약과 함께, 한국 반도체가 직면한 '협력(엔비디아)과 추격(중국)'의 양면을 동시에 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Featured</span>
+                    <a href="https://scmp.com/tech/article/3356130/chinese-memory-makers-step-challenge-koreas-chip-champions" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 글로벌 -->
+        <section class="section">
+            <h2 class="section-title">🌏 글로벌 / 정책</h2>
+
+            <article class="article-card">
+                <h3 class="article-title">Chinese EVs may reach the US 'one way or another'; Beijing puts EVs on a diet</h3>
+                <p class="article-title-kr">中 EV, 결국 美 진입 전망 — 한편 베이징은 'EV 다이어트' 규제</p>
+                <p class="article-summary">CNBC는 관세·규제·업계 반대에도 중국 전기차가 수년 내 어떤 식으로든 미국 시장에 진입할 가능성이 높다고 전했다. 동시에 중국 정부는 배터리 대형화로 차체가 무거워지자 '더 가벼운 EV'를 주문하며 안전·효율 규제에 나섰다고 CCTV가 보도했다. 글로벌 EV 가격이 대부분 지역에서 낮아지는데 미국만 예외(RoW 분석)라는 흐름과 맞물려, 한국 배터리·완성차의 美·中 시장 전략에 시사점이 크다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/06/06/chinese-evs-auto-sales-manufacturing-us.html" target="_blank">원문 보기 →</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-06-07/china-puts-evs-on-a-diet-as-battery-boom-adds-bulk-cctv-reports" target="_blank">EV 다이어트 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">Rest of World: AI innovation, sovereignty push beyond Silicon Valley</h3>
+                <p class="article-title-kr">실리콘밸리 밖 AI 혁신 — 印-UAE AI 주권 동맹이 美 클라우드 패권에 도전</p>
+                <p class="article-summary">Rest of World가 '결핍(scarcity)이 실리콘밸리 밖 AI 혁신을 추동한다'는 분석과 함께, 인도-UAE의 AI 협력(G42·Cerebras 연계)이 미국 클라우드 지배에 도전하는 'AI 주권' 흐름을 짚었다. 미국 기업의 AI 난제를 인도 IT가 해결사로 자처하고, 중국은 '셔츠 한 장 개기'부터 로봇에 훈련 데이터를 먹이는 등, AI 패권 경쟁이 글로벌 사우스로 확산되고 있다. 한국 입장에선 AI 인프라·인재·수출 시장에서 새 경쟁·협력 축이 열리는 신호다.</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World Featured (4건)</span>
+                    <a href="https://restofworld.org/2026/india-uae-g42-cerebras-ai-sovereignty/" target="_blank">원문 보기 →</a>
+                    <a href="https://restofworld.org/2026/scarcity-is-driving-ai-innovation-outside-silicon-valley/" target="_blank">실밸 밖 AI →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">UK to buy AI chips from British firms; Starmer rolls out AI job tools</h3>
+                <p class="article-title-kr">英, 자국 AI 칩 구매 추진 + Starmer 일자리센터 AI 도구 — 'AI를 노동자 편으로'</p>
+                <p class="article-summary">텔레그래프 보도에 따르면 영국은 자국 기술기업이 떠나지 않도록 이들이 만든 AI 칩을 정부가 사주는 방안을 추진한다. 동시에 스타머 총리는 AI로 일자리를 잃는 사람을 돕는 일자리센터 AI 도구를 도입하겠다고 약속했고, 기술장관 리즈 켄들은 "노동당은 AI가 노동자를 위해 작동하게 만들겠다"고 밝혔다. AI 산업 육성과 일자리 충격 완화를 동시에 잡으려는 국가 차원의 정책 패키지로, 각국 'AI 산업정책' 경쟁이 가시화되고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, Guardian 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-06-07/uk-to-buy-ai-chips-from-british-tech-firms-telegraph-reports" target="_blank">원문 보기 →</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-06-07/starmer-to-roll-out-uk-job-center-tools-to-beat-ai-work-threat" target="_blank">Starmer 일자리 도구 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">100 days of the Iran war: fragile ceasefire in jeopardy</h3>
+                <p class="article-title-kr">이란 전쟁 100일 — 미사일 발사 보도에 휴전 균열</p>
+                <p class="article-summary">이란 전쟁이 100일째에 접어드는 가운데, CNBC는 이 분쟁이 증시·채권·유가 등 글로벌 시장과 경제에 미친 영향을 차트로 정리했다. 그러나 4월 초부터 유지돼 온 미·이란 휴전은 이란이 이스라엘을 향해 미사일을 발사했다는 보도가 나오며 다시 위태로워졌다. 평화 협상이 진전된다는 트럼프 측 신호와 달리 핵 문제·종전 협정은 여전히 미해결로, 유가·인플레이션 변수가 재점화될 위험이 남아 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC (2건)</span>
+                    <a href="https://www.cnbc.com/2026/06/07/iran-war-100-days-trump-stocks-sp500-bonds-oil.html" target="_blank">원문 보기 →</a>
+                    <a href="https://www.cnbc.com/2026/06/07/iran-fires-missiles-israel-ceasefire-strains.html" target="_blank">휴전 균열 →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- CLAUDE'S PICK -->
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">SKorea's Lee nominates tech guru Han as PM to lead AI growth</h3>
+                <p class="article-title-kr">이재명, 테크 전문가 한성숙 총리 지명 — 'AI 성장' 견인 베팅</p>
+                <p class="pick-reason">선정 이유: 규제/정책 변화 초기 신호 + 한국 시장 직접 연관성. 외신은 작게 다뤘지만 한국 산업·테크 정책 방향을 가늠할 핵심 시그널.</p>
+                <p class="article-summary">이재명 대통령이 중소벤처기업부 장관 한성숙을 국무총리로 지명했다. 블룸버그는 "테크 업계 베테랑이 한국의 AI 야망 실현을 도울 것이란 베팅"으로 해석했다. 정부가 AI를 성장 동력의 최상단에 두겠다는 의지를 인사로 보여준 셈으로, 반도체·데이터센터·AI 산업정책 전반의 추진 강도에 직접 영향을 줄 변수다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-06-07/lee-nominates-tech-guru-han-as-prime-minister-to-lead-ai-growth" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Abel goes his own way with new Berkshire investments, including billions for AI</h3>
+                <p class="article-title-kr">버크셔 신임 CEO 아벨, 첫 행보로 AI에 수십억 베팅</p>
+                <p class="pick-reason">선정 이유: 대기업의 의미 있는 방향 전환 + 투자 관점 시그널. '가치투자의 성지'가 AI에 직접 베팅한다는 상징성.</p>
+                <p class="article-summary">버핏의 후계자 그레그 아벨 신임 버크셔 해서웨이 CEO가 첫 대형 딜로 AI 관련 투자에 수십억 달러를 집행하며 독자 노선을 시작했다고 버핏이 CNBC에 밝혔다. 그동안 기술주에 신중했던 버크셔가 AI를 정면으로 받아들이는 전환점으로, '워런 이후' 버크셔의 자본 배분 철학 변화를 가늠하게 하는 첫 신호다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC</span>
+                    <a href="https://www.cnbc.com/2026/06/06/abel-goes-his-own-way-with-new-berkshire-investments-including-billions-for-ai.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Summer Game Fest 2026: Persona 6, Halo remake, Fable, and a 25th-anniversary Xbox</h3>
+                <p class="article-title-kr">Summer Game Fest·Xbox 쇼케이스 — Persona 6 공개, Halo 리메이크 7월, Fable 2027</p>
+                <p class="pick-reason">선정 이유: 콘솔 산업 변곡점 + 콘텐츠 IP 동향. The Verge가 Hero로 다룬 게임업계 최대 분수령으로, 마이크로소프트의 'Xbox 귀환' 전략을 압축적으로 보여줌.</p>
+                <p class="article-summary">올해 Summer Game Fest와 Xbox 쇼케이스에서 Persona 6 티저, Halo: Campaign Evolved(7월 28일), Fable(2027년 2월) 등이 쏟아졌다. 마이크로소프트는 반투명 그린 디자인의 'Xbox 25주년 한정판' 콘솔도 공개했으나, Gears of War: E-Day의 PS5 제외 등 '플랫폼 독점' 회귀 신호도 함께 드러났다. 콘솔 산업이 어려운 시기에 양대 진영이 IP 화력으로 서사를 바꾸려는 모습이다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Hero</span>
+                    <a href="https://www.theverge.com/entertainment/945445/summer-game-fest-2026-biggest-stories" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 18건 | 섹션 5개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
