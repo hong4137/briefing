@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpaceX 상장 첫날 +28% Musk 조만장자 · Anthropic Fable 5 정부 셧다운 | 주간 외신 브리핑</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#141923; --panel2:#1b2230; --line:#2a3344;
+    --txt:#e6ebf2; --sub:#9aa7bd; --dim:#6b7686;
+    --accent:#5b9dff; --accent2:#8b7dff; --green:#3ecf8e; --red:#ff6b6b;
+    --gold:#ffcf5c; --orange:#ff9f43;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg);color:var(--txt);
+    font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI','Apple SD Gothic Neo',sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px 80px}
+  header{
+    text-align:center;padding:56px 20px 40px;
+    background:radial-gradient(circle at 50% 0%,rgba(91,157,255,.16),transparent 60%);
+    border-bottom:1px solid var(--line);
+  }
+  header .kicker{color:var(--accent);font-weight:700;letter-spacing:.08em;font-size:13px}
+  header h1{font-size:30px;margin:12px 0 8px;font-weight:800;letter-spacing:-.02em}
+  header .period{color:var(--sub);font-size:15px}
+  header .sub{color:var(--dim);font-size:13px;margin-top:6px}
+
+  section{margin-top:44px}
+  .sec-head{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+  .sec-head .icon{font-size:22px}
+  .sec-head h2{font-size:20px;font-weight:800;letter-spacing:-.01em}
+
+  /* 시장 요약 */
+  .mkt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .mkt{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .mkt .name{font-size:12px;color:var(--sub);font-weight:600}
+  .mkt .val{font-size:18px;font-weight:800;margin-top:4px}
+  .mkt .chg{font-size:13px;font-weight:700;margin-top:2px}
+  .up{color:var(--green)} .down{color:var(--red)} .flat{color:var(--dim)}
+  .mkt-note{margin-top:14px;background:var(--panel2);border:1px solid var(--line);
+    border-radius:12px;padding:16px 18px;font-size:14px;color:var(--sub)}
+  .mkt-note b{color:var(--txt)}
+
+  /* TOP 스토리 */
+  .story{background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    padding:22px 24px;margin-bottom:16px}
+  .story .rank{color:var(--accent);font-weight:800;font-size:13px}
+  .story h3{font-size:18px;margin:6px 0 12px;font-weight:800;letter-spacing:-.01em;line-height:1.4}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  .badge{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;
+    background:var(--panel2);border:1px solid var(--line);color:var(--sub)}
+  .badge.hot{color:var(--orange);border-color:rgba(255,159,67,.4)}
+  .badge.done{color:var(--green);border-color:rgba(62,207,142,.4)}
+  .badge.live{color:var(--gold);border-color:rgba(255,207,92,.4)}
+  .tl h4,.cs h4{font-size:13px;color:var(--dim);font-weight:700;margin-bottom:8px;letter-spacing:.02em}
+  .tl ul{list-style:none;margin:0 0 14px}
+  .tl li{position:relative;padding:5px 0 5px 78px;font-size:14px;color:var(--txt);border-left:2px solid var(--line);margin-left:6px}
+  .tl li .d{position:absolute;left:14px;color:var(--accent);font-weight:700;font-size:13px}
+  .cs{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .cs p{font-size:14px;color:var(--sub)}
+  .cs p b{color:var(--txt)}
+
+  /* Pick */
+  .pick{background:linear-gradient(135deg,rgba(139,125,255,.12),rgba(91,157,255,.08));
+    border:1px solid rgba(139,125,255,.35);border-radius:16px;padding:22px 24px;margin-bottom:14px}
+  .pick .tag{display:inline-block;font-size:12px;font-weight:800;color:var(--accent2);
+    background:rgba(139,125,255,.15);padding:3px 10px;border-radius:999px;margin-bottom:10px}
+  .pick h3{font-size:17px;font-weight:800;margin-bottom:8px}
+  .pick p{font-size:14.5px;color:var(--sub)}
+  .pick p b{color:var(--txt)}
+
+  /* 단독 하이라이트 */
+  .hl{display:flex;gap:12px;align-items:flex-start;background:var(--panel);
+    border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+  .hl .hd{flex-shrink:0;color:var(--accent);font-weight:700;font-size:13px;min-width:42px}
+  .hl .ht{font-size:14px}
+  .hl .hb{font-size:11px;color:var(--dim);margin-top:3px}
+
+  /* 통계 */
+  .stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+  .stat .num{font-size:24px;font-weight:800;color:var(--accent)}
+  .stat .lbl{font-size:12px;color:var(--sub);margin-top:4px}
+
+  /* 일정 */
+  .ev{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}
+  .ev:last-child{border-bottom:none}
+  .ev .ed{flex-shrink:0;color:var(--gold);font-weight:700;font-size:13px;min-width:70px}
+  .ev .et{font-size:14px;color:var(--txt)}
+  .events-wrap{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px 20px}
+  .events-note{font-size:12px;color:var(--dim);margin-top:10px}
+
+  footer{text-align:center;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);
+    color:var(--dim);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">📰 주간 외신 브리핑</div>
+    <h1>AI 상장 슈퍼사이클의 정점, 안전의 역습</h1>
+    <div class="period">2026년 6월 2주차 · 6/8(월) ~ 6/13(토)</div>
+    <div class="sub">누적 기사 수 기반 TOP 스토리 · 총 110건 / 12개 클러스터</div>
+  </header>
+
+  <!-- 시장 요약 -->
+  <section>
+    <div class="sec-head"><span class="icon">📊</span><h2>주간 시장 요약</h2></div>
+    <div class="mkt-grid">
+      <div class="mkt"><div class="name">S&amp;P 500</div><div class="val">7,431</div><div class="chg up">📈 +0.35%</div></div>
+      <div class="mkt"><div class="name">NASDAQ</div><div class="val">25,889</div><div class="chg down">📉 -0.16%</div></div>
+      <div class="mkt"><div class="name">SOX 반도체</div><div class="val">13,371</div><div class="chg up">🔥 +3.60%</div></div>
+      <div class="mkt"><div class="name">VIX 변동성</div><div class="val">19.44</div><div class="chg down">🔥 +2.75%</div></div>
+      <div class="mkt"><div class="name">미 10년물</div><div class="val">4.45%</div><div class="chg up">📉 -0.11%p</div></div>
+      <div class="mkt"><div class="name">미 2년물</div><div class="val">4.05%</div><div class="chg up">📉 -0.10%p</div></div>
+      <div class="mkt"><div class="name">DXY 달러</div><div class="val">120.08</div><div class="chg flat">→ 보합</div></div>
+      <div class="mkt"><div class="name">WTI 원유</div><div class="val">$95.0</div><div class="chg flat">→ 보합</div></div>
+    </div>
+    <div class="mkt-note">
+      지난주 가장 두드러진 움직임은 <b>SOX 반도체 +3.60%</b> 반등입니다. 직전 주 'AI 주식 공급 과잉·버블' 공포로 무너졌던 칩 매도세가 진정되고, Nvidia-SK하이닉스 차세대 칩 협약 등 한국 반도체 축 호재가 받쳐주며 반등했습니다. 반면 <b>VIX(+2.75%)</b>가 오르고 지수는 혼조(S&amp;P 강보합, 나스닥 약보합)를 보여, 표면적 안정 아래 경계 심리가 남아 있음을 시사합니다. 국채금리는 10·2년물 동반 하락하며 완화적 기대가 소폭 강화됐습니다.
+    </div>
+  </section>
+
+  <!-- TOP 스토리 -->
+  <section>
+    <div class="sec-head"><span class="icon">📈</span><h2>이번 주 TOP 스토리</h2></div>
+
+    <!-- 1 -->
+    <article class="story">
+      <div class="rank">TOP 1 · 스코어 4.0</div>
+      <h3>SpaceX, 사상 최대 $75B IPO 완주 — 상장 첫날 +28%·Musk 세계 첫 조만장자</h3>
+      <div class="badges">
+        <span class="badge">📰 4건</span>
+        <span class="badge">📅 6/10~6/13</span>
+        <span class="badge hot">🔥 상승세</span>
+        <span class="badge done">✅ 해결/진행됨</span>
+      </div>
+      <div class="tl">
+        <h4>📅 스토리 타임라인</h4>
+        <ul>
+          <li><span class="d">6/10</span>IPO 공모물량의 수 배에 달하는 기관 수요 폭주</li>
+          <li><span class="d">6/11</span>막판 진통 — Warren 상원의원 연기 요구 vs perp 시장 19% 프리미엄</li>
+          <li><span class="d">6/12</span>주당 $135 확정, 사상 최대 $75B 조달 완료 · 나스닥 데뷔 임박</li>
+          <li><span class="d">6/13</span>데뷔 첫날 +28% 폭등, 시총 $2조로 Tesla 추월 · Musk 세계 첫 조만장자</li>
+        </ul>
+      </div>
+      <div class="cs">
+        <h4>📍 현재 상태 (6/13 기준)</h4>
+        <p>역대 최대 규모 IPO가 첫날 급등으로 마무리됐으나, <b>S&amp;P500 편입은 제외</b>됐고 중국이 라이벌 위성망 구축과 $295B 컴퓨트 베팅으로 맞불을 놓으며 '우주·AI 인프라' 경쟁 구도가 본격화됐습니다. 상장 후 첫 정규 거래 주간의 변동성과 락업·밸류에이션 논쟁이 다음 관전 포인트입니다.</p>
+      </div>
+    </article>
+
+    <!-- 2 -->
+    <article class="story">
+      <div class="rank">TOP 2 · 스코어 3.0</div>
+      <h3>Anthropic 'Claude Fable 5' 전면 공개 → 가드레일 논란 → 美 정부 셧다운 명령</h3>
+      <div class="badges">
+        <span class="badge">📰 3건</span>
+        <span class="badge">📅 6/10~6/13</span>
+        <span class="badge hot">🔥 상승세</span>
+        <span class="badge live">⏳ 진행중</span>
+      </div>
+      <div class="tl">
+        <h4>📅 스토리 타임라인</h4>
+        <ul>
+          <li><span class="d">6/10</span>"너무 강력해 공개 불가"라던 Mythos의 일반판 Fable 5 전격 출시</li>
+          <li><span class="d">6/11</span>과도한 안전 가드레일 후폭풍 — 기초 생물학 질문까지 거부 논란</li>
+          <li><span class="d">6/13</span>美 정부, 'jailbreak' 빌미로 Fable 5·Mythos 5 셧다운 명령 — Anthropic 정면 반박</li>
+        </ul>
+      </div>
+      <div class="cs">
+        <h4>📍 현재 상태 (6/13 기준)</h4>
+        <p>스스로 내건 '안전 경고'가 규제 리스크로 <b>부메랑</b>이 된 구도입니다. 정부의 셧다운 명령에 Anthropic이 정면 반박하며 대치 중이어서, 'AI 안전 vs 가용성·표현 자유'를 둘러싼 규제·법적 공방으로 번질 가능성이 큽니다. 후속 대응과 다른 프런티어 랩으로의 파급이 핵심 변수입니다.</p>
+      </div>
+    </article>
+
+    <!-- 3 -->
+    <article class="story">
+      <div class="rank">TOP 3 · 스코어 2.0</div>
+      <h3>Apple WWDC 2026 — Gemini 제휴 '새 Siri'·iOS 27 정식 공개</h3>
+      <div class="badges">
+        <span class="badge">📰 2건</span>
+        <span class="badge">📅 6/8~6/9</span>
+        <span class="badge">→ 유지</span>
+        <span class="badge done">✅ 해결/진행됨</span>
+      </div>
+      <div class="tl">
+        <h4>📅 스토리 타임라인</h4>
+        <ul>
+          <li><span class="d">6/8</span>WWDC 개막, Gemini를 등에 업은 새 Siri 재공개 — AI 뒷걸음 만회 시도</li>
+          <li><span class="d">6/9</span>수년간 지연됐던 새 Siri·iOS 27 정식 공개</li>
+        </ul>
+      </div>
+      <div class="cs">
+        <h4>📍 현재 상태 (6/9 기준)</h4>
+        <p>자체 모델 대신 <b>Google Gemini와의 제휴</b>로 Siri를 재정비한 점이 핵심입니다. Apple의 AI 자립 전략 후퇴이자, 빅테크 간 AI 파트너십 재편의 신호로 읽힙니다.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Claude's Pick -->
+  <section>
+    <div class="sec-head"><span class="icon">🎯</span><h2>Claude's Pick</h2></div>
+
+    <div class="pick">
+      <span class="tag">PICK 1 · 시장 함의</span>
+      <h3>AI·우주 IPO 슈퍼사이클의 정점 — 그리고 반도체의 조용한 반등</h3>
+      <p>Anthropic·SpaceX·OpenAI가 한 주 사이 줄줄이 상장·신청에 나서며 'AI 상장 레이스'가 정점에 도달했습니다. SpaceX 첫날 +28%는 위험자산 선호가 살아있다는 신호지만, <b>S&amp;P500 편입 제외·중국의 $295B 맞불</b>은 과열 경계도 함께 깔려 있음을 보여줍니다. 무엇보다 같은 주 <b>SOX +3.60% 반등</b>이 의미심장합니다 — 직전 주 버블 공포로 무너졌던 칩이 IPO 열기·한국 반도체 호재와 맞물려 되돌려진 것으로, 'AI 인프라 수요는 여전하다'는 베팅이 자금 흐름으로 확인된 셈입니다.</p>
+    </div>
+
+    <div class="pick">
+      <span class="tag">PICK 2 · 규제 분기점</span>
+      <h3>안전의 역습 — Fable 5 셧다운 명령이 던지는 질문</h3>
+      <p>"너무 강력하다"던 모델을 출시했다가 과도한 가드레일 논란을 거쳐 <b>정부 셧다운 명령</b>까지 받은 Anthropic의 한 주는, AI 안전 담론이 곧바로 규제 권력의 명분이 될 수 있음을 드러냈습니다. 안전 경고를 강하게 내건 기업일수록 규제의 표적이 되는 역설 속에서, '안전 vs 가용성·표현 자유'의 선이 어디서 그어지느냐가 프런티어 랩 전체의 출시 전략과 밸류에이션을 좌우할 분기점이 될 전망입니다.</p>
+    </div>
+  </section>
+
+  <!-- 단독 하이라이트 -->
+  <section>
+    <div class="sec-head"><span class="icon">⭐</span><h2>단독 하이라이트</h2></div>
+
+    <div class="hl"><div class="hd">6/12</div><div><div class="ht">OpenAI, 'Anthropic 겨냥' 대폭 가격 인하 검토 — AI 가격 전쟁 조짐</div><div class="hb">🆕 신규</div></div></div>
+    <div class="hl"><div class="hd">6/13</div><div><div class="ht">Meta 6,500명 신생 AI 유닛 'soul-crushing gulag' 내부 반란 — Zuckerberg 해커톤 공개 거부</div><div class="hb">🆕 신규</div></div></div>
+    <div class="hl"><div class="hd">6/12</div><div><div class="ht">쿠팡, 데이터 유출에 사상 최대 6,247억원($4.09억) 과징금</div><div class="hb">🆕 신규</div></div></div>
+    <div class="hl"><div class="hd">6/9</div><div><div class="ht">OpenAI, Anthropic 이어 IPO 비밀 신청 — AI 상장 레이스 본격화</div><div class="hb">📉 단발</div></div></div>
+    <div class="hl"><div class="hd">6/8</div><div><div class="ht">'AI 주식 공급 과잉' 공포 — 칩 매도 반전·비트코인 붕괴·버블 경고 분출</div><div class="hb">📉 단발</div></div></div>
+    <div class="hl"><div class="hd">6/8</div><div><div class="ht">中, 세계 첫 조립식 그린 컴퓨팅 파워허브 가동 — AI 전력 병목 정조준</div><div class="hb">📉 단발</div></div></div>
+    <div class="hl"><div class="hd">6/11</div><div><div class="ht">Amazon 화물 트럭킹 확장에 美 운송주 급락, Einride는 나스닥 데뷔 급등</div><div class="hb">📉 단발</div></div></div>
+    <div class="hl"><div class="hd">6/10</div><div><div class="ht">EU, Meta에 WhatsApp의 AI 라이벌 차단 중단 명령</div><div class="hb">📉 단발</div></div></div>
+    <div class="hl"><div class="hd">6/9</div><div><div class="ht">SBF, Trump 대통령에게 공식 사면 신청</div><div class="hb">📉 단발</div></div></div>
+  </section>
+
+  <!-- 주간 통계 -->
+  <section>
+    <div class="sec-head"><span class="icon">🧮</span><h2>주간 통계</h2></div>
+    <div class="stat-grid">
+      <div class="stat"><div class="num">110</div><div class="lbl">총 기사 수</div></div>
+      <div class="stat"><div class="num">18</div><div class="lbl">핵심 하이라이트</div></div>
+      <div class="stat"><div class="num">12</div><div class="lbl">클러스터 (멀티 3·단독 9)</div></div>
+      <div class="stat"><div class="num">2</div><div class="lbl">🔥 상승세</div></div>
+      <div class="stat"><div class="num">3</div><div class="lbl">🆕 신규</div></div>
+      <div class="stat"><div class="num">1</div><div class="lbl">⏳ 진행중</div></div>
+    </div>
+  </section>
+
+  <!-- 다음 주 일정 -->
+  <section>
+    <div class="sec-head"><span class="icon">📅</span><h2>다음 주 주목 후속 이슈</h2></div>
+    <div class="events-wrap">
+      <div class="ev"><div class="ed">SpaceX</div><div class="et">상장 후 첫 정규 거래 주간 — S&amp;P500 편입 제외 영향·락업·밸류에이션 논쟁</div></div>
+      <div class="ev"><div class="ed">Anthropic</div><div class="et">Fable 5·Mythos 5 정부 셧다운 명령 후속 — 법적 대응 및 타 프런티어 랩 파급</div></div>
+      <div class="ev"><div class="ed">OpenAI</div><div class="et">IPO 비밀 신청 후속 진행 + 'Anthropic 겨냥' 가격 인하 실제 발표 여부 (AI 가격 전쟁)</div></div>
+      <div class="ev"><div class="ed">반도체</div><div class="et">SOX 반등 지속성 점검 — Nvidia-SK하이닉스·Naver-Nvidia 딜 후속 모멘텀</div></div>
+      <div class="ev"><div class="ed">규제</div><div class="et">EU-Meta WhatsApp 개방 명령 이행·쿠팡 과징금 등 빅테크 규제 흐름</div></div>
+    </div>
+    <div class="events-note">※ 일정은 수집된 외신 데이터에서 추출한 후속 관전 포인트입니다. FOMC·경제지표 등 구체 일정을 알려주시면 다음 발행 시 보강합니다.</div>
+  </section>
+
+  <footer>
+    Generated by Claude · Weekly Briefing v1.6 · 2026-06-14
+  </footer>
+
+</div>
+</body>
+</html>
