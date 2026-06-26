@@ -534,7 +534,45 @@
             }
             .briefing-date { text-align: left; }
             .briefing-meta { text-align: left; }
-            .special-grid { grid-template-columns: 1fr; }
+
+            /* 특별판 & 주간 브리핑 모바일 반응형 가로 스크롤 */
+            .special-grid {
+                display: flex !important;
+                overflow-x: auto !important;
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+                gap: 1.25rem;
+                padding: 0.5rem 2rem 1.5rem 2rem;
+                margin: 0 -2rem;
+            }
+
+            .special-grid::-webkit-scrollbar {
+                height: 4px;
+            }
+            .special-grid::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            .special-grid::-webkit-scrollbar-thumb {
+                background: var(--border-color);
+                border-radius: 10px;
+            }
+
+            .special-card {
+                flex: 0 0 85% !important;
+                scroll-snap-align: center;
+                margin-bottom: 0;
+            }
+
+            /* 모바일에서 접힌 카드 강제 노출 및 더 보기 버튼 숨김 */
+            .special-card.hidden-special-card {
+                display: block !important;
+                opacity: 1 !important;
+            }
+
+            #special-toggle-container {
+                display: none !important;
+            }
         }
 
 /* ?? Classic Paper Mode (Light Theme) ????????????????????? */
