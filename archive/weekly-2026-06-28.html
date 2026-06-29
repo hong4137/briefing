@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>메모리 가격발 글로벌 테크 셀오프·Apple 직격 — 美 정부, 프런티어 AI 출시 직접 통제 | 주간 외신 브리핑</title>
+<style>
+  :root{
+    --bg:#0a0e14; --panel:#131a24; --panel2:#0f151d; --border:#1f2a37;
+    --text:#e6edf3; --muted:#8b98a5; --accent:#4da3ff; --accent2:#7c5cff;
+    --hot:#ff5d5d; --cool:#5a6b7a; --new:#ffb84d; --up:#33d17a; --down:#ff5d5d; --warn:#ffb84d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.65;padding:0 16px}
+  .wrap{max-width:860px;margin:0 auto;padding:40px 0 60px}
+  header{text-align:center;padding:36px 24px;background:linear-gradient(135deg,#131a24,#0f151d);border:1px solid var(--border);border-radius:18px;margin-bottom:28px}
+  header .kicker{color:var(--accent);font-weight:700;letter-spacing:.12em;font-size:.78rem}
+  header h1{font-size:1.55rem;margin:12px 0 10px;line-height:1.4}
+  header .period{color:var(--muted);font-size:.95rem}
+  header .sub{color:var(--muted);font-size:.82rem;margin-top:6px}
+  .section-title{display:flex;align-items:center;gap:10px;font-size:1.15rem;margin:34px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+  .story{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+  .story-head{display:flex;align-items:flex-start;gap:12px}
+  .rank{flex-shrink:0;width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.95rem}
+  .story-head h3{font-size:1.06rem;font-weight:700;line-height:1.45}
+  .meta{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 4px;padding-left:42px}
+  .chip{font-size:.76rem;padding:4px 10px;border-radius:20px;background:var(--panel2);border:1px solid var(--border);color:var(--muted);white-space:nowrap}
+  .chip.count{color:var(--accent);border-color:#1d3a52}
+  .chip.hot{color:var(--hot);border-color:#4a2230}
+  .chip.cool{color:var(--cool)}
+  .chip.new{color:var(--new);border-color:#4a3a1d}
+  .chip.mini{font-size:.7rem;padding:2px 8px}
+  .timeline{margin-top:14px;padding-left:42px}
+  .timeline ul{list-style:none}
+  .timeline li{display:flex;gap:12px;padding:7px 0;border-top:1px dashed var(--border);font-size:.92rem}
+  .timeline li:first-child{border-top:none}
+  .tl-date{flex-shrink:0;color:var(--accent);font-weight:700;font-size:.84rem;min-width:34px}
+  .tl-text{color:#cdd9e5}
+  .solo-item{display:flex;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:13px 16px;margin-bottom:9px}
+  .solo-date{flex-shrink:0;color:var(--accent);font-weight:700;font-size:.82rem;min-width:34px}
+  .solo-body{display:flex;align-items:center;justify-content:space-between;gap:10px;flex:1;flex-wrap:wrap}
+  .solo-topic{font-size:.94rem;color:#cdd9e5}
+  .pick{background:linear-gradient(135deg,#16202c,#0f151d);border:1px solid #243447;border-left:3px solid var(--accent2);border-radius:12px;padding:18px 20px;margin-bottom:14px}
+  .pick h4{font-size:1.02rem;margin-bottom:8px;color:#fff}
+  .pick p{font-size:.92rem;color:var(--muted);line-height:1.7}
+  .market-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+  .m-item{background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:14px 16px;display:flex;flex-direction:column;gap:3px}
+  .m-label{font-size:.78rem;color:var(--muted)}
+  .m-val{font-size:1.15rem;font-weight:800}
+  .m-note{font-size:.72rem;color:var(--muted)}
+  .m-item.up .m-val{color:var(--up)} .m-item.down .m-val{color:var(--down)} .m-item.warn .m-val{color:var(--warn)}
+  .market-disclaimer,.event-note{font-size:.74rem;color:var(--cool);margin-top:12px;font-style:italic}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-top:4px}
+  .stat{background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:16px;text-align:center}
+  .stat .num{font-size:1.5rem;font-weight:800;color:var(--accent)}
+  .stat .lbl{font-size:.78rem;color:var(--muted);margin-top:3px}
+  .events-list .event-item{display:flex;gap:14px;background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:13px 16px;margin-bottom:9px}
+  .event-date{flex-shrink:0;color:var(--accent2);font-weight:700;font-size:.82rem;min-width:54px}
+  .event-text{font-size:.9rem;color:#cdd9e5}
+  footer{text-align:center;color:var(--cool);font-size:.78rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--border)}
+</style>
+<link href="../theme-modern.css" rel="stylesheet"/></head>
+<body class="reader-mode"><nav class="reader-nav">
+<div class="reader-nav-inner">
+<a class="reader-nav-logo" href="../index.html">JFNB</a>
+<div class="reader-nav-links">
+<a href="../index.html">홈</a>
+<a href="../archive.html">아카이브</a>
+<a href="../about.html">소개</a>
+</div>
+</div>
+</nav>
+<div class="wrap">
+<header>
+<div class="kicker">WEEKLY BRIEFING · 2026년 6월 4주차</div>
+<h1>메모리 가격발 글로벌 테크 셀오프·Apple 직격 — 美 정부, 프런티어 AI 출시 직접 통제</h1>
+<div class="period">📅 6/22 ~ 6/27 · 누적 기사 수 기반 TOP 스토리</div>
+<div class="sub">총 18건 · 13개 클러스터 분석</div>
+</header>
+
+<h2 class="section-title">📈 이번 주 TOP 스토리</h2>
+
+<article class="story">
+<div class="story-head">
+<span class="rank">1</span>
+<h3>반도체·메모리 가격 급등이 촉발한 글로벌 테크 셀오프 — Apple 직격·아시아 확산</h3>
+</div>
+<div class="meta">
+<span class="chip count">📰 4건</span>
+<span class="chip">📅 6/24~6/27</span>
+<span class="chip neutral">📈 관심</span>
+<span class="chip hot">🔥 상승세</span>
+<span class="chip">⏳ 진행중</span>
+</div>
+<div class="timeline">
+<ul><li><span class="tl-date">6/24</span><span class="tl-text">Cerebras IPO 후 첫 실적 마진 축소 전망 -8% 급락 (반도체 밸류 첫 균열)</span></li>
+<li><span class="tl-date">6/25</span><span class="tl-text">美 AI 반도체株 급락·아시아 확산</span></li>
+<li><span class="tl-date">6/26</span><span class="tl-text">메모리發 가격인상 도미노 — Apple 주가 6%↓·MS Xbox 3번째 인상</span></li>
+<li><span class="tl-date">6/27</span><span class="tl-text">Apple 가격인상이 부른 아시아 테크 셀오프 — 'iPhone 다음 차례' 경고</span></li>
+</ul>
+</div>
+</article>
+
+<article class="story">
+<div class="story-head">
+<span class="rank">2</span>
+<h3>美 정부의 프런티어 AI 출시 직접 통제와 Anthropic Mythos 수출규제</h3>
+</div>
+<div class="meta">
+<span class="chip count">📰 2건</span>
+<span class="chip">📅 6/26~6/27</span>
+<span class="chip new">🆕 신규</span>
+<span class="chip">⏳ 진행중</span>
+</div>
+<div class="timeline">
+<ul><li><span class="tl-date">6/26</span><span class="tl-text">Anthropic Mythos 수출통제에 EU 개입·中 자체 억지력 추진</span></li>
+<li><span class="tl-date">6/27</span><span class="tl-text">美 정부, Mythos 100여 기업·기관 한정 허용 / OpenAI GPT-5.6 단계 공개 압박</span></li>
+</ul>
+</div>
+</article>
+
+<article class="story">
+<div class="story-head">
+<span class="rank">3</span>
+<h3>알리바바의 공격적 AI 확장과 Anthropic의 'IP 불법 추출' 논란</h3>
+</div>
+<div class="meta">
+<span class="chip count">📰 2건</span>
+<span class="chip">📅 6/22, 6/25</span>
+<span class="chip neutral">📈 관심</span>
+<span class="chip neutral">→ 유지</span>
+<span class="chip">⏳ 진행중</span>
+</div>
+<div class="timeline">
+<ul><li><span class="tl-date">6/22</span><span class="tl-text">알리바바 'AI 올인' $50조 시장 선언 (VivaTech)</span></li>
+<li><span class="tl-date">6/25</span><span class="tl-text">Anthropic, 알리바바 AI 모델 불법 추출 정면 비판</span></li>
+</ul>
+</div>
+</article>
+
+<h2 class="section-title">💡 Claude's Pick</h2>
+
+<div class="pick">
+<h4>이번 셀오프의 방아쇠는 '실적'이 아니라 '가격'이었다</h4>
+<p>6월 첫 주 매도세가 브로드컴 실적 쇼크 등 펀더멘털發이었다면, 이번 주 조정의 트리거는 메모리·반도체 <strong>가격 급등</strong>이었다. 한국 반도체 보너스發 인플레를 두고 한은이 경고(6/22)한 데 이어, 메모리 가격인상이 Apple 원가로 전이되며 주가 6%↓·MS Xbox 3번째 가격인상(6/26)으로 번졌고, 끝내 'Apple 가격인상이 부른 아시아 테크 셀오프'(6/27)로 귀결됐다. 공급 부족이 호재(가격↑)인 동시에 수요처(디바이스 제조사) 마진을 누르는 양날의 칼이라는 점이 이번 주의 본질이다. Apple이 'iPhone 다음 차례'로 지목된 만큼 가격 전가가 어디까지 번지는지가 다음 주 관전 포인트다.</p>
+</div>
+
+<div class="pick">
+<h4>AI 통제권이 기업에서 정부로 — 그리고 전선은 국가 단위로 쪼개진다</h4>
+<p>이번 주의 구조적 전환은 <strong>美 정부가 프런티어 AI 출시의 게이트키퍼로 직접 등판</strong>한 것이다. Anthropic Mythos는 100여 美 기업·기관에 한정 허용되고 OpenAI GPT-5.6은 단계 공개로 압박받았다(6/27). 동시에 Mythos 수출통제엔 EU가 개입하고 中은 자체 억지력 추진(6/26), 中 Zhipu GLM-5.2는 글로벌 톱3에 진입하며 '제2의 DeepSeek 모먼트'(6/27)를 만들었다. 여기에 Anthropic의 알리바바 'IP 불법 추출' 비판(6/25)까지 겹치며, AI 경쟁이 기술·기업 차원을 넘어 <strong>규제·수출통제·국가 진영</strong>으로 재편되는 신호가 한 주에 응축됐다.</p>
+</div>
+
+<h2 class="section-title">📊 시장 메모</h2>
+<div class="market-grid">
+<div class="m-item down"><span class="m-label">Apple</span><span class="m-val">-6%</span><span class="m-note">6/26 메모리 원가발</span></div>
+<div class="m-item down"><span class="m-label">美 AI 반도체株</span><span class="m-val">급락</span><span class="m-note">6/25 아시아 확산</span></div>
+<div class="m-item down"><span class="m-label">아시아 테크</span><span class="m-val">셀오프</span><span class="m-note">6/27 Apple發</span></div>
+<div class="m-item down"><span class="m-label">Cerebras</span><span class="m-val">-8%</span><span class="m-note">6/24 첫 실적</span></div>
+<div class="m-item warn"><span class="m-label">메모리 가격</span><span class="m-val">인상 도미노</span><span class="m-note">디바이스 원가 전이</span></div>
+</div>
+<p class="market-disclaimer">※ 지수·등락 수치는 주간 수집 기사에서 추출. 실시간 시장 데이터 연동(market-data)은 이번 발행 시 미가동.</p>
+
+<h2 class="section-title">🎯 단독 하이라이트</h2>
+<div class="solo-item">
+<span class="solo-date">6/23</span>
+<div class="solo-body">
+<div class="solo-topic">SpaceX–Reflection, 최대 $6.3B 규모 컴퓨팅 딜 체결</div>
+<span class="chip mini cool">📉 단발</span>
+</div>
+</div>
+<div class="solo-item">
+<span class="solo-date">6/25</span>
+<div class="solo-body">
+<div class="solo-topic">OpenAI 첫 자체 칩 'Jalapeño' — Broadcom이 제작</div>
+<span class="chip mini cool">📉 단발</span>
+</div>
+</div>
+<div class="solo-item">
+<span class="solo-date">6/24</span>
+<div class="solo-body">
+<div class="solo-topic">Anthropic 'Claude Tag' — Slack 상주 에이전트 AI 동료</div>
+<span class="chip mini cool">📉 단발</span>
+</div>
+</div>
+<div class="solo-item">
+<span class="solo-date">6/27</span>
+<div class="solo-body">
+<div class="solo-topic">中 Zhipu GLM-5.2 글로벌 톱3 진입 — '제2의 DeepSeek 모먼트'</div>
+<span class="chip mini new">🆕 신규</span>
+</div>
+</div>
+<div class="solo-item">
+<span class="solo-date">6/26</span>
+<div class="solo-body">
+<div class="solo-topic">온세미, 시냅틱스 $70억 피지컬AI 인수 / IBM 1000억 트랜지스터 적층칩</div>
+<span class="chip mini new">🆕 신규</span>
+</div>
+</div>
+<div class="solo-item">
+<span class="solo-date">6/24</span>
+<div class="solo-body">
+<div class="solo-topic">Meta 자체 브랜드 스마트글라스 $299 공개 — Ray-Ban과 결별</div>
+<span class="chip mini cool">📉 단발</span>
+</div>
+</div>
+<div class="solo-item">
+<span class="solo-date">6/23</span>
+<div class="solo-body">
+<div class="solo-topic">Alphabet, AI 인재 이탈에 1년래 최악 급락</div>
+<span class="chip mini cool">📉 단발</span>
+</div>
+</div>
+<div class="solo-item">
+<span class="solo-date">6/22</span>
+<div class="solo-body">
+<div class="solo-topic">Apple 새 Siri·iOS 27 AI 출시 임박</div>
+<span class="chip mini cool">📉 단발</span>
+</div>
+</div>
+<div class="solo-item">
+<span class="solo-date">6/23</span>
+<div class="solo-body">
+<div class="solo-topic">WhatsApp 새 수장에 印 Kunal Shah·Meta $900M 투자</div>
+<span class="chip mini cool">📉 단발</span>
+</div>
+</div>
+<div class="solo-item">
+<span class="solo-date">6/22</span>
+<div class="solo-body">
+<div class="solo-topic">한국 반도체 보너스發 인플레 — 한은 경고</div>
+<span class="chip mini cool">📉 단발</span>
+</div>
+</div>
+
+<h2 class="section-title">📅 다음 주 관전 포인트</h2>
+<div class="events-list">
+<div class="event-item"><div class="event-date">모니터링</div><div class="event-text">반도체·메모리 가격發 셀오프 지속 여부 — Apple '다음 차례' 경고의 현실화와 가격 전가 범위</div></div>
+<div class="event-item"><div class="event-date">진행중</div><div class="event-text">美 정부의 프런티어 AI 출시 통제 구체화 — Mythos 허용 기업 범위·OpenAI GPT-5.6 공개 일정</div></div>
+<div class="event-item"><div class="event-date">진행중</div><div class="event-text">中 AI 굴기(Zhipu GLM-5.2)와 Anthropic–알리바바 IP 논란의 후속 전개</div></div>
+<p class="event-note">※ 구체적 일정(FOMC·실적 등) 미확인. 다음 주 주요 일정을 알려주시면 다음 발행에 반영합니다.</p></div>
+
+<h2 class="section-title">🧮 주간 통계</h2>
+<div class="stats">
+<div class="stat"><div class="num">18</div><div class="lbl">총 하이라이트 기사</div></div>
+<div class="stat"><div class="num">13</div><div class="lbl">클러스터</div></div>
+<div class="stat"><div class="num">3</div><div class="lbl">멀티 기사 스토리</div></div>
+<div class="stat"><div class="num">10</div><div class="lbl">단독 스토리</div></div>
+</div>
+<footer>Generated by Claude · Weekly Briefing v1.6 · 2026-06-28</footer>
+</div>
+<footer class="reader-footer">
+<a href="../archive.html">← 아카이브로 돌아가기</a>
+</footer></body>
+</html>
