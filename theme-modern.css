@@ -623,3 +623,23 @@ body.shell-page .tl-item:not(:has(.tl-thumbnail)) {
     grid-template-columns: 1fr;
   }
 }
+
+/* -- Visitor Counter -- */
+.footer-counter {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  margin-top: 0.6rem;
+}
+
+.footer-counter .counter-number {
+  font-weight: 500;
+}
+
+body.reader-mode .footer-counter {
+  color: var(--color-text-muted);
+}
+
+body.shell-page .footer-counter {
+  color: var(--text-muted);
+}

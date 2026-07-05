@@ -1083,6 +1083,9 @@ body.light-mode .theme-toggle-btn {
             <a href="about.html">소개</a>
             <a href="archive.html">아카이브</a>
         </div>
+        <div class="footer-counter" id="visitor-counter-wrap" style="display:none;">
+          Total Visits:&nbsp;<span id="visitor-count" class="counter-number">0</span>
+        </div>
     </footer>
 
     <script>
@@ -1441,6 +1444,23 @@ window.toggleSpecialCards = function() {
         // Load on page ready
         loadBriefings();
     </script>
+    <script>
+(function () {
+  var COUNTER_API = 'https://api.counterapi.dev/v1/hong4137-briefing/global/up';
+  fetch(COUNTER_API)
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+    .then(function (data) {
+      var n = data.count ?? data.value;
+      if (typeof n !== 'number') return;
+      var wrap  = document.getElementById('visitor-counter-wrap');
+      var span  = document.getElementById('visitor-count');
+      if (!wrap || !span) return;
+      span.textContent = n.toLocaleString();
+      wrap.style.display = '';
+    })
+    .catch(function () {});
+})();
+</script>
 </body>
 </html>
 
