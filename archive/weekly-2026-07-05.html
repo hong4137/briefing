@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>메모리 슈퍼사이클 롤러코스터·OpenAI 정부 지분 제안 | 주간 외신 브리핑</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#141a24; --panel2:#1b2331; --line:#26303f;
+    --txt:#e7ecf3; --muted:#9aa7b8; --accent:#6ea8ff;
+    --hot:#ff6b6b; --warn:#ffb454; --ok:#4dd08a; --chip:#212b3a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:8px}
+  h1{font-size:26px;margin:0 0 8px;letter-spacing:-.3px}
+  .sub{color:var(--muted);font-size:15px}
+  .sub b{color:var(--txt)}
+  section{margin-top:34px}
+  .sec-head{display:flex;align-items:center;gap:9px;margin-bottom:14px}
+  .sec-head h2{font-size:18px;margin:0;letter-spacing:-.2px}
+  .sec-icon{font-size:19px}
+  /* market */
+  .mkt{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
+  .mkt .cell{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+  .mkt .k{font-size:12px;color:var(--muted)}
+  .mkt .v{font-size:16px;font-weight:600;margin-top:2px}
+  .mkt .c{font-size:12.5px;margin-top:1px}
+  .up{color:var(--ok)} .down{color:var(--hot)} .flat{color:var(--muted)}
+  .mkt-note{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:8px;padding:12px 14px;margin-top:12px;font-size:14px;color:var(--muted)}
+  .mkt-note b{color:var(--txt)}
+  /* story */
+  .story{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:16px}
+  .story h3{margin:0 0 10px;font-size:17px;letter-spacing:-.2px}
+  .badges{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+  .badge{font-size:12px;background:var(--chip);border:1px solid var(--line);
+    border-radius:999px;padding:3px 10px;color:var(--muted)}
+  .b-hot{color:var(--hot);border-color:#5a2a2a}
+  .b-ok{color:var(--ok);border-color:#245140}
+  .b-run{color:var(--warn);border-color:#5a4326}
+  .tl{margin:10px 0 4px;padding:0;list-style:none;border-left:2px solid var(--line);padding-left:16px}
+  .tl li{position:relative;margin-bottom:9px;font-size:14.5px}
+  .tl li::before{content:"";position:absolute;left:-21px;top:8px;width:8px;height:8px;
+    border-radius:50%;background:var(--accent)}
+  .tl .d{color:var(--accent);font-weight:600;margin-right:6px}
+  .status{margin-top:12px;background:var(--panel2);border-radius:8px;padding:11px 13px;font-size:14px}
+  .status .lab{color:var(--muted);font-weight:600;font-size:12.5px;display:block;margin-bottom:3px}
+  /* standalone */
+  .stand{display:grid;gap:10px}
+  .grp{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .grp .t{font-size:14px;font-weight:600;color:var(--muted);margin-bottom:8px}
+  .grp ul{margin:0;padding-left:2px;list-style:none}
+  .grp li{font-size:14.5px;margin-bottom:6px;padding-left:16px;position:relative}
+  .grp li::before{content:"›";position:absolute;left:0;color:var(--accent)}
+  .grp li .d{color:var(--muted);font-size:12.5px}
+  /* pick */
+  .pick{background:linear-gradient(180deg,#16202e,#131a25);border:1px solid #2b3a52;
+    border-radius:14px;padding:18px 20px;margin-bottom:14px}
+  .pick h3{margin:0 0 6px;font-size:16px;color:#bcd4ff}
+  .pick p{margin:6px 0 0;font-size:14.5px}
+  .pick .why{color:var(--muted);font-size:13.5px;margin-top:8px}
+  .pick .why b{color:var(--txt)}
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+  .stats .cell{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .stats .n{font-size:22px;font-weight:700}
+  .stats .l{font-size:12.5px;color:var(--muted);margin-top:2px}
+  /* events */
+  .ev{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:6px 16px}
+  .ev .row{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+  .ev .row:last-child{border-bottom:none}
+  .ev .dot{color:var(--accent);flex:0 0 auto}
+  .disc{font-size:12.5px;color:var(--muted);margin-top:8px;font-style:italic}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📰 주간 외신 브리핑</h1>
+    <div class="sub"><b>2026년 7월 1주차</b> · 6/29(월) ~ 7/4(토) · 누적 기사 수 기반 TOP 스토리</div>
+  </header>
+
+  <!-- 시장 요약 -->
+  <section>
+    <div class="sec-head"><span class="sec-icon">📊</span><h2>주간 시장 요약</h2></div>
+    <div class="mkt">
+      <div class="cell"><div class="k">S&amp;P 500</div><div class="v">7,483</div><div class="c up">▲ +0.58%</div></div>
+      <div class="cell"><div class="k">NASDAQ</div><div class="v">25,833</div><div class="c up">▲ +0.05%</div></div>
+      <div class="cell"><div class="k">SOX 반도체</div><div class="v">12,626</div><div class="c down">▼ −7.90%</div></div>
+      <div class="cell"><div class="k">10Y 국채</div><div class="v">4.48%</div><div class="c down">▲ +0.10%p</div></div>
+      <div class="cell"><div class="k">2Y 국채</div><div class="v">4.17%</div><div class="c down">▲ +0.07%p</div></div>
+      <div class="cell"><div class="k">DXY 달러</div><div class="v">120.9</div><div class="c flat">– 보합</div></div>
+      <div class="cell"><div class="k">WTI 유가</div><div class="v">$71.9</div><div class="c flat">– 보합</div></div>
+      <div class="cell"><div class="k">VIX 변동성</div><div class="v">16.6</div><div class="c up">▼ −6.01%</div></div>
+    </div>
+    <div class="mkt-note">
+      지수는 소폭 상승 마감하고 <b>VIX가 −6% 하락</b>하며 표면적으로는 안도 국면이었지만,
+      <b>SOX 반도체 지수가 −7.90%</b> 급락하며 지수 아래에서 격변이 진행됐습니다.
+      Q3 첫날 <b>Micron −11%</b>(7/2), 주말 <b>Meta 클라우드 루머發 AI 하드웨어 패닉</b>으로
+      삼성·SK하이닉스가 −7% 급락한 뒤 <b>Kospi가 +5% 반등</b>하는 롤러코스터 장세가 한 주를 지배했습니다.
+      <br><span style="font-size:12.5px">※ USD/KRW·Gold·Bitcoin은 이번 주 데이터 확보 실패</span>
+    </div>
+  </section>
+
+  <!-- TOP 스토리 -->
+  <section>
+    <div class="sec-head"><span class="sec-icon">📈</span><h2>이번 주 TOP 스토리</h2></div>
+
+    <!-- 1 -->
+    <article class="story">
+      <h3>1. AI 메모리 슈퍼사이클 — 한국 반도체 투자·랠리·급변동 (RAMageddon)</h3>
+      <div class="badges">
+        <span class="badge">📰 5건</span>
+        <span class="badge">📅 6/29~7/4</span>
+        <span class="badge b-hot">🔥 최대 관심</span>
+        <span class="badge b-run">⏳ 진행중</span>
+      </div>
+      <ul class="tl">
+        <li><span class="d">6/29</span>Apple 12년 만의 가격 인상 도미노, 월가 Micron '제2의 Nvidia'론 부상</li>
+        <li><span class="d">6/30</span>한국 정부 ~$880B AI 인프라 플랜·삼성SK $1.3조 투자로 'RAMageddon' 반격</li>
+        <li><span class="d">7/1</span>상반기 반도체 랠리 $2조 시총 추가, 삼성·SK 추가 $550B 투자 확정</li>
+        <li><span class="d">7/2</span>Q3 첫날 Micron −11% 급락으로 변동성 국면 진입</li>
+        <li><span class="d">7/4</span>Meta 클라우드 루머發 AI 칩 패닉('오류'로 판명), 삼성·SK −7% 후 Kospi +5% 반등</li>
+      </ul>
+      <div class="status">
+        <span class="lab">📍 현재 상태 (7/4 기준)</span>
+        AI 메모리 수요의 실체(대규모 투자·연쇄 가격 인상)는 견고하나, 밸류에이션 부담과 루머성 재료에
+        극심한 일중 변동성이 노출됐습니다. 삼성·SK하이닉스는 이번 사이클 <b>최대 수혜주이자 최대 변동성 노출주</b>로
+        동시에 부상하며, '사이클 정점' 논쟁이 본격화되고 있습니다.
+      </div>
+    </article>
+
+    <!-- 2 -->
+    <article class="story">
+      <h3>2. Anthropic 수출통제 해제 &amp; 삼성 커스텀 칩 협력</h3>
+      <div class="badges">
+        <span class="badge">📰 2건</span>
+        <span class="badge">📅 7/1~7/3</span>
+        <span class="badge b-ok">✅ 수출통제 해제</span>
+        <span class="badge b-run">⏳ 칩 협력 진행중</span>
+      </div>
+      <ul class="tl">
+        <li><span class="d">7/1</span>美 정부, Anthropic Mythos·Fable 5 수출통제 해제 (6월 중순 강제 차단 → 해제)</li>
+        <li><span class="d">7/3</span>Anthropic, 삼성과 커스텀 AI 칩 개발 논의 착수</li>
+      </ul>
+      <div class="status">
+        <span class="lab">📍 현재 상태</span>
+        6월 내내 시장을 짓눌렀던 'Anthropic 수출통제' 사가가 해제로 일단락됐습니다. 규제 리스크가 완화되는 국면에서
+        Anthropic이 삼성과 하드웨어 자립(커스텀 칩) 논의로 무게중심을 옮기며, 한국 반도체 밸류체인에 새로운 접점이 열렸습니다.
+      </div>
+    </article>
+
+    <!-- 3 -->
+    <article class="story">
+      <h3>3. AI·빅테크와 美 정부의 유착 논란 (테마)</h3>
+      <div class="badges">
+        <span class="badge">📰 2건</span>
+        <span class="badge">📅 7/3~7/4</span>
+        <span class="badge b-run">⏳ 진행중</span>
+        <span class="badge">🏛️ 거버넌스</span>
+      </div>
+      <ul class="tl">
+        <li><span class="d">7/3</span>Trump 대통령, 관세 번복 직전 Apple·Nvidia 대량 매수 공시로 이해충돌 논란</li>
+        <li><span class="d">7/4</span>OpenAI, 美 국부펀드에 지분 5% 제공 제안 — 규제 압박 완화 포석 관측</li>
+      </ul>
+      <div class="status">
+        <span class="lab">📍 현재 상태 (7/4 기준)</span>
+        서로 다른 두 사건이지만 <b>'AI·테크와 국가 권력의 밀착'</b>이라는 같은 결의 흐름으로 같은 주에 표면화됐습니다.
+        기업이 규제 대상에서 '지분 파트너'로, 정책이 개인 포트폴리오와 얽히는 정황이 함께 드러나며
+        AI 거버넌스가 곧 정치·국가안보 이슈임을 재확인시켰습니다.
+      </div>
+    </article>
+  </section>
+
+  <!-- 단독 하이라이트 -->
+  <section>
+    <div class="sec-head"><span class="sec-icon">🎯</span><h2>단독 하이라이트</h2></div>
+    <div class="stand">
+      <div class="grp">
+        <div class="t">🛰️ 우주 · 위성 인터넷</div>
+        <ul>
+          <li>SpaceX, 나스닥-100 초고속 편입·대규모 ETF 매수 수요 예고 <span class="d">6/29</span></li>
+          <li>Amazon, 'Leo' 위성 396기 배치 완료·연내 Starlink 대항 서비스 개시 선언 <span class="d">7/3</span></li>
+        </ul>
+      </div>
+      <div class="grp">
+        <div class="t">☁️ AI 인프라 · 자본</div>
+        <ul>
+          <li>Meta, 잉여 AI 컴퓨트 클라우드 판매 진출·주가 10%↑ <span class="d">7/2</span></li>
+          <li>UAE MGX, $49B 역대급 AI 펀드 클로징 <span class="d">7/2</span></li>
+        </ul>
+      </div>
+      <div class="grp">
+        <div class="t">⚠️ AI 트레이드 경고 · 中 기술</div>
+        <ul>
+          <li>AI 트레이드 급랭·BIS 'AI 버스트' 신용 파급 경고 <span class="d">6/29</span></li>
+          <li>中 'LineShine', GPU 없이 세계 최고속 슈퍼컴 등극·美 제재 무력화 <span class="d">6/30</span></li>
+        </ul>
+      </div>
+      <div class="grp">
+        <div class="t">📱 소비자 테크 · 보안</div>
+        <ul>
+          <li>WhatsApp, 전화번호 없는 유저네임 글로벌 출시 <span class="d">6/30</span></li>
+          <li>Sony, 2028년부터 PlayStation 물리 디스크 생산 전면 종료 <span class="d">7/2</span></li>
+          <li>스파이웨어를 조사하던 EU 정치인 폰이 되레 Pegasus에 해킹된 사실 폭로 <span class="d">7/4</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Claude's Pick -->
+  <section>
+    <div class="sec-head"><span class="sec-icon">💡</span><h2>Claude's Pick</h2></div>
+
+    <div class="pick">
+      <h3>① 메모리 슈퍼사이클의 '롤러코스터' — 실체와 변동성의 공존</h3>
+      <p>대규모 투자와 연쇄 가격 인상이라는 <b>실체</b>가 확인되는 동시에, 루머 한 건에 삼성·SK가 −7%를 오가는
+      <b>변동성</b>이 함께 커졌습니다. 사이클의 방향은 위지만, 그 안의 진폭이 위험 관리의 핵심이 됐습니다.</p>
+      <p class="why"><b>왜 중요한가</b> · 한국 산업·투자자에게 가장 직접적인 스토리이며, '사이클 정점' 논쟁이
+      이제 막 본격화되는 분기점입니다.</p>
+    </div>
+
+    <div class="pick">
+      <h3>② OpenAI의 정부 지분 제안 — AI·국가 관계의 새 국면</h3>
+      <p>AI 기업이 국가를 '규제 주체'가 아니라 <b>'지분 파트너'</b>로 끌어들이려는 시도입니다.
+      Anthropic 수출통제 해제, Trump의 관세-매수 논란과 맞물려, AI 거버넌스가 국가안보·정치의 영역으로
+      완전히 넘어왔음을 보여줍니다.</p>
+      <p class="why"><b>왜 중요한가</b> · 앞으로 AI 규제·투자 지형을 가를 선례가 될 수 있는 사건입니다.</p>
+    </div>
+  </section>
+
+  <!-- 주간 통계 -->
+  <section>
+    <div class="sec-head"><span class="sec-icon">📋</span><h2>주간 통계</h2></div>
+    <div class="stats">
+      <div class="cell"><div class="n">119</div><div class="l">총 수집 기사 (6일)</div></div>
+      <div class="cell"><div class="n">18</div><div class="l">하이라이트 기사</div></div>
+      <div class="cell"><div class="n">3</div><div class="l">멀티 기사 클러스터</div></div>
+      <div class="cell"><div class="n">9</div><div class="l">단독 하이라이트</div></div>
+      <div class="cell"><div class="n">−7.90%</div><div class="l">SOX 주간 (최대 변동)</div></div>
+      <div class="cell"><div class="n">1</div><div class="l">해결/일단락 (수출통제)</div></div>
+    </div>
+  </section>
+
+  <!-- 다음 주 모니터링 -->
+  <section>
+    <div class="sec-head"><span class="sec-icon">📅</span><h2>다음 주 모니터링 포인트</h2></div>
+    <div class="ev">
+      <div class="row"><span class="dot">›</span><span>반도체 변동성 지속 여부 — 삼성·SK 주가·HBM 수급, Micron 흐름</span></div>
+      <div class="row"><span class="dot">›</span><span>Anthropic–삼성 커스텀 AI 칩 논의의 구체화 진전</span></div>
+      <div class="row"><span class="dot">›</span><span>OpenAI 정부 지분 제안에 대한 규제·정치권 후속 반응</span></div>
+      <div class="row"><span class="dot">›</span><span>AI 트레이드 조정 vs 재랠리 — BIS 'AI 버스트' 경고 실현 여부</span></div>
+      <div class="row"><span class="dot">›</span><span>Amazon 'Leo' 위성 인터넷 연내 개시 로드맵</span></div>
+    </div>
+    <div class="disc">※ 수집된 스토리 기반 관찰 포인트입니다. 확정된 실시간 일정(FOMC·실적 등)은 별도 확인이 필요합니다.</div>
+  </section>
+
+  <footer>
+    Generated by Claude · Weekly Briefing v1.6 · 대상 기간 2026-06-29 ~ 2026-07-04
+  </footer>
+</div>
+</body>
+</html>
