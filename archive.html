@@ -695,7 +695,9 @@ body.light-mode .theme-toggle-btn {
     <footer class="footer">
         <p>Curated by Claude with <span class="heart">♥</span></p>
         <div class="footer-counter" id="visitor-counter-wrap" style="display:none;">
-          Total Visits:&nbsp;<span id="visitor-count" class="counter-number">0</span>
+          Today:&nbsp;<span id="visitor-count-daily" class="counter-number">0</span>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          Total:&nbsp;<span id="visitor-count" class="counter-number">0</span>
         </div>
     </footer>
 
@@ -905,19 +907,35 @@ body.light-mode .theme-toggle-btn {
     </script>
     <script>
 (function () {
-  var COUNTER_API = 'https://api.counterapi.dev/v1/hong4137-briefing/global/up';
-  fetch(COUNTER_API)
-    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
-    .then(function (data) {
-      var n = data.count ?? data.value;
-      if (typeof n !== 'number') return;
-      var wrap  = document.getElementById('visitor-counter-wrap');
-      var span  = document.getElementById('visitor-count');
-      if (!wrap || !span) return;
-      span.textContent = n.toLocaleString();
-      wrap.style.display = '';
-    })
-    .catch(function () {});
+  var BASE = 'https://api.counterapi.dev/v1/hong4137-briefing/';
+
+  function getKstDateKey() {
+    var kst = new Date(Date.now() + 9 * 3600 * 1000);
+    return 'daily-' + kst.toISOString().slice(0, 10);
+  }
+
+  var globalUrl = BASE + 'global/up';
+  var dailyUrl  = BASE + getKstDateKey() + '/up';
+
+  Promise.all([
+    fetch(globalUrl).then(function (r) { return r.ok ? r.json() : Promise.reject('global'); }),
+    fetch(dailyUrl).then(function (r)  { return r.ok ? r.json() : Promise.reject('daily'); })
+  ])
+  .then(function (results) {
+    var totalVal = results[0].count ?? results[0].value;
+    var dailyVal = results[1].count ?? results[1].value;
+    if (typeof totalVal !== 'number' || typeof dailyVal !== 'number') return;
+
+    var wrap   = document.getElementById('visitor-counter-wrap');
+    var sDaily = document.getElementById('visitor-count-daily');
+    var sTotal = document.getElementById('visitor-count');
+    if (!wrap || !sDaily || !sTotal) return;
+
+    sDaily.textContent = dailyVal.toLocaleString();
+    sTotal.textContent = totalVal.toLocaleString();
+    wrap.style.display = '';
+  })
+  .catch(function () {});
 })();
 </script>
 </body>

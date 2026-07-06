@@ -1296,22 +1296,33 @@ GNB_HTML = """<nav class="reader-nav">
 FOOTER_HTML = """<footer class="reader-footer">
   <a href="../archive.html">← 아카이브로 돌아가기</a>
   <div class="footer-counter" id="visitor-counter-wrap" style="display:none;">
-    Total Visits:&nbsp;<span id="visitor-count" class="counter-number">0</span>
+    Today:&nbsp;<span id="visitor-count-daily" class="counter-number">0</span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    Total:&nbsp;<span id="visitor-count" class="counter-number">0</span>
   </div>
 </footer>
 <script>
 (function(){
-  fetch('https://api.counterapi.dev/v1/hong4137-briefing/global/up')
-    .then(function(r){return r.ok?r.json():Promise.reject();})
-    .then(function(d){
-      var n=d.count??d.value;
-      if(typeof n!=='number')return;
-      var w=document.getElementById('visitor-counter-wrap');
-      var s=document.getElementById('visitor-count');
-      if(!w||!s)return;
-      s.textContent=n.toLocaleString();
-      w.style.display='';
-    }).catch(function(){});
+  var BASE='https://api.counterapi.dev/v1/hong4137-briefing/';
+  function getKstDateKey(){
+    var kst=new Date(Date.now()+9*3600*1000);
+    return 'daily-'+kst.toISOString().slice(0,10);
+  }
+  Promise.all([
+    fetch(BASE+'global/up').then(function(r){return r.ok?r.json():Promise.reject();}),
+    fetch(BASE+getKstDateKey()+'/up').then(function(r){return r.ok?r.json():Promise.reject();})
+  ]).then(function(res){
+    var t=res[0].count??res[0].value;
+    var d=res[1].count??res[1].value;
+    if(typeof t!=='number'||typeof d!=='number')return;
+    var w=document.getElementById('visitor-counter-wrap');
+    var sd=document.getElementById('visitor-count-daily');
+    var st=document.getElementById('visitor-count');
+    if(!w||!sd||!st)return;
+    sd.textContent=d.toLocaleString();
+    st.textContent=t.toLocaleString();
+    w.style.display='';
+  }).catch(function(){});
 })();
 </script>"""
 
@@ -1321,7 +1332,7 @@ def remove_previous_reader_chrome(soup: BeautifulSoup) -> None:
         for tag in soup.select(selector):
             tag.decompose()
     for script in soup.find_all("script"):
-        if script.string and "api.counterapi.dev/v1/hong4137-briefing/global/up" in script.string:
+        if script.string and "hong4137-briefing" in script.string:
             script.decompose()
 
 
