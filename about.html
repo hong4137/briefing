@@ -542,31 +542,44 @@ body.light-mode .theme-toggle-btn {
     <script>
 (function () {
   var BASE = 'https://api.counterapi.dev/v1/hong4137-briefing/';
+  var LS_KEY = 'jfnb-visited-date';
 
-  function getKstDateKey() {
+  function getKstDate() {
     var kst = new Date(Date.now() + 9 * 3600 * 1000);
-    return 'daily-' + kst.toISOString().slice(0, 10);
+    return kst.toISOString().slice(0, 10);
   }
+  function getKstDailyKey() { return 'daily-' + getKstDate(); }
 
-  var globalUrl = BASE + 'global/up';
-  var dailyUrl  = BASE + getKstDateKey() + '/up';
+  var todayStr = getKstDate();
+  var hasVisitedToday = false;
+  try {
+    hasVisitedToday = (localStorage.getItem(LS_KEY) === todayStr);
+  } catch (e) {}
+
+  var dailyKey  = getKstDailyKey();
+  var globalUrl = BASE + (hasVisitedToday ? 'global' : 'global/up');
+  var dailyUrl  = BASE + (hasVisitedToday ? dailyKey : dailyKey + '/up');
 
   Promise.all([
-    fetch(globalUrl).then(function (r) { return r.ok ? r.json() : Promise.reject('global'); }),
-    fetch(dailyUrl).then(function (r)  { return r.ok ? r.json() : Promise.reject('daily'); })
+    fetch(globalUrl).then(function (r) { return r.ok ? r.json() : Promise.reject(); }),
+    fetch(dailyUrl).then(function (r)  { return r.ok ? r.json() : Promise.reject(); })
   ])
   .then(function (results) {
-    var totalVal = results[0].count ?? results[0].value;
-    var dailyVal = results[1].count ?? results[1].value;
-    if (typeof totalVal !== 'number' || typeof dailyVal !== 'number') return;
+    var t = results[0].count != null ? results[0].count : results[0].value;
+    var d = results[1].count != null ? results[1].count : results[1].value;
+    if (typeof t !== 'number' || typeof d !== 'number') return;
 
-    var wrap   = document.getElementById('visitor-counter-wrap');
-    var sDaily = document.getElementById('visitor-count-daily');
-    var sTotal = document.getElementById('visitor-count');
-    if (!wrap || !sDaily || !sTotal) return;
+    if (!hasVisitedToday) {
+      try { localStorage.setItem(LS_KEY, todayStr); } catch (e) {}
+    }
 
-    sDaily.textContent = dailyVal.toLocaleString();
-    sTotal.textContent = totalVal.toLocaleString();
+    var wrap = document.getElementById('visitor-counter-wrap');
+    var sDly = document.getElementById('visitor-count-daily');
+    var sTot = document.getElementById('visitor-count');
+    if (!wrap || !sDly || !sTot) return;
+
+    sDly.textContent = d.toLocaleString();
+    sTot.textContent = t.toLocaleString();
     wrap.style.display = '';
   })
   .catch(function () {});

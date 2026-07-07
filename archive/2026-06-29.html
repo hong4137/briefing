@@ -485,17 +485,25 @@ footer a:hover {
 <script>
 (function(){
   var BASE='https://api.counterapi.dev/v1/hong4137-briefing/';
-  function getKstDateKey(){
-    var kst=new Date(Date.now()+9*3600*1000);
-    return 'daily-'+kst.toISOString().slice(0,10);
+  var LS_KEY='jfnb-visited-date';
+  function getKstDate(){
+    return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);
   }
+  function getKstDailyKey(){ return 'daily-'+getKstDate(); }
+  var todayStr=getKstDate();
+  var visited=false;
+  try{ visited=(localStorage.getItem(LS_KEY)===todayStr); }catch(e){}
+  var dk=getKstDailyKey();
+  var gu=BASE+(visited?'global':'global/up');
+  var du=BASE+(visited?dk:dk+'/up');
   Promise.all([
-    fetch(BASE+'global/up').then(function(r){return r.ok?r.json():Promise.reject();}),
-    fetch(BASE+getKstDateKey()+'/up').then(function(r){return r.ok?r.json():Promise.reject();})
+    fetch(gu).then(function(r){return r.ok?r.json():Promise.reject();}),
+    fetch(du).then(function(r){return r.ok?r.json():Promise.reject();})
   ]).then(function(res){
-    var t=res[0].count??res[0].value;
-    var d=res[1].count??res[1].value;
+    var t=res[0].count!=null?res[0].count:res[0].value;
+    var d=res[1].count!=null?res[1].count:res[1].value;
     if(typeof t!=='number'||typeof d!=='number')return;
+    if(!visited){try{localStorage.setItem(LS_KEY,todayStr);}catch(e){}}
     var w=document.getElementById('visitor-counter-wrap');
     var sd=document.getElementById('visitor-count-daily');
     var st=document.getElementById('visitor-count');
