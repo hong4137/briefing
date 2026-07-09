@@ -266,27 +266,38 @@
   }
   function getKstDailyKey(){ return 'daily-'+getKstDate(); }
   var todayStr=getKstDate();
-  var visited=false;
-  try{ visited=(localStorage.getItem(LS_KEY)===todayStr); }catch(e){}
-  var dk=getKstDailyKey();
-  var gu=BASE+(visited?'global':'global/up');
-  var du=BASE+(visited?dk:dk+'/up');
-  Promise.all([
-    fetch(gu).then(function(r){return r.ok?r.json():Promise.reject();}),
-    fetch(du).then(function(r){return r.ok?r.json():Promise.reject();})
-  ]).then(function(res){
-    var t=res[0].count!=null?res[0].count:res[0].value;
-    var d=res[1].count!=null?res[1].count:res[1].value;
-    if(typeof t!=='number'||typeof d!=='number')return;
-    if(!visited){try{localStorage.setItem(LS_KEY,todayStr);}catch(e){}}
-    var w=document.getElementById('visitor-counter-wrap');
-    var sd=document.getElementById('visitor-count-daily');
-    var st=document.getElementById('visitor-count');
-    if(!w||!sd||!st)return;
-    sd.textContent=d.toLocaleString();
-    st.textContent=t.toLocaleString();
-    w.style.display='';
-  }).catch(function(){});
+  var hasVisited=false;
+  try{ hasVisited=(localStorage.getItem(LS_KEY)===todayStr); }catch(e){}
+  var sfx=hasVisited?'':'/up';
+  var wrap=document.getElementById('visitor-counter-wrap');
+  var sDly=document.getElementById('visitor-count-daily');
+  var sTot=document.getElementById('visitor-count');
+  function showTotal(v){
+    if(!wrap||!sTot||typeof v!=='number')return;
+    sTot.textContent=v.toLocaleString();
+    wrap.style.display='';
+  }
+  function showDaily(v){
+    if(!sDly)return;
+    sDly.textContent=(typeof v==='number')?v.toLocaleString():'-';
+  }
+  fetch(BASE+'global'+sfx)
+    .then(function(r){return r.ok?r.json():Promise.reject('g');})
+    .then(function(d){
+      var t=d.count!=null?d.count:d.value;
+      showTotal(t);
+      if(!hasVisited){try{localStorage.setItem(LS_KEY,todayStr);}catch(e){}}
+      return fetch(BASE+getKstDailyKey()+sfx);
+    })
+    .then(function(r){return r.ok?r.json():Promise.reject('d');})
+    .then(function(d){
+      var v=d.count!=null?d.count:d.value;
+      showDaily(v);
+    })
+    .catch(function(reason){
+      if(reason==='g')return;
+      showDaily(null);
+    });
 })();
 </script></body>
 </html>
