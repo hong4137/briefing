@@ -919,7 +919,7 @@ body.light-mode .theme-toggle-btn {
   var hasVisited = false;
   try { hasVisited = (localStorage.getItem(LS_KEY) === todayStr); } catch (e) {}
 
-  var sfx = hasVisited ? '' : '/up';
+  var sfx = hasVisited ? '/' : '/up';
 
   var totalVal = null;   /* null = 아직 미수신 */
   var dailyVal = null;
