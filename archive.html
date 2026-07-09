@@ -919,46 +919,51 @@ body.light-mode .theme-toggle-btn {
   var hasVisited = false;
   try { hasVisited = (localStorage.getItem(LS_KEY) === todayStr); } catch (e) {}
 
-  var suffix = hasVisited ? '' : '/up';   /* 첫 방문: 증가 / 재방문: 조회 */
+  var sfx = hasVisited ? '' : '/up';
+
+  var totalVal = null;   /* null = 아직 미수신 */
+  var dailyVal = null;
 
   var wrap = document.getElementById('visitor-counter-wrap');
   var sDly = document.getElementById('visitor-count-daily');
   var sTot = document.getElementById('visitor-count');
 
-  function showTotal(val) {
-    if (!wrap || !sTot || typeof val !== 'number') return;
-    sTot.textContent = val.toLocaleString();
-    wrap.style.display = '';          /* total 하나만 와도 즉시 박스 노출 */
+  function renderUI() {
+    if (!wrap) return;
+    if (totalVal === null) return;   /* global 실패 시 박스 숨김 유지 */
+    wrap.style.display = '';
+    if (sTot) sTot.textContent = totalVal.toLocaleString();
+    if (sDly) sDly.textContent = dailyVal !== null ? dailyVal.toLocaleString() : '...';
   }
 
-  function showDaily(val) {
-    if (!sDly) return;
-    sDly.textContent = (typeof val === 'number') ? val.toLocaleString() : '-';
-  }
-
-  /* 1차: 누적 수치 (global) */
-  fetch(BASE + 'global' + suffix)
-    .then(function (r) { return r.ok ? r.json() : Promise.reject('global-fail'); })
+  /* -- global (독립 fetch) -- */
+  fetch(BASE + 'global' + sfx)
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
     .then(function (data) {
       var t = data.count != null ? data.count : data.value;
-      showTotal(t);
-
-      /* global 성공 시점에 localStorage 기록 (daily 결과 무관) */
+      if (typeof t !== 'number') return;
+      totalVal = t;
       if (!hasVisited) {
         try { localStorage.setItem(LS_KEY, todayStr); } catch (e) {}
       }
-
-      /* 2차: 일일 수치 (daily) — 순차 체이닝 */
-      return fetch(BASE + getKstDailyKey() + suffix);
+      renderUI();
     })
-    .then(function (r) { return r.ok ? r.json() : Promise.reject('daily-fail'); })
+    .catch(function () { /* global 실패: 박스 계속 숨김 */ });
+
+  /* -- daily (독립 fetch - global과 완전 분리) -- */
+  fetch(BASE + getKstDailyKey() + sfx)
+    .then(function (r) {
+      /* 400(키 미생성) 포함 모든 !ok -> 0명 폴백 반환, reject 안 함 */
+      return r.ok ? r.json() : { count: 0, value: 0 };
+    })
     .then(function (data) {
       var d = data.count != null ? data.count : data.value;
-      showDaily(d);
+      dailyVal = typeof d === 'number' ? d : 0;
+      renderUI();
     })
-    .catch(function (reason) {
-      if (reason === 'global-fail') return;   /* global 실패: 아무것도 표시 안 함 */
-      showDaily(null);                         /* daily 실패: '-' 표시, total 유지 */
+    .catch(function () {
+      dailyVal = 0;   /* 네트워크 완전 실패 시도 0으로 폴백 */
+      renderUI();
     });
 })();
 </script>
