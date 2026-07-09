@@ -907,48 +907,59 @@ body.light-mode .theme-toggle-btn {
     </script>
     <script>
 (function () {
-  var BASE = 'https://api.counterapi.dev/v1/hong4137-briefing/';
+  var BASE   = 'https://api.counterapi.dev/v1/hong4137-briefing/';
   var LS_KEY = 'jfnb-visited-date';
 
   function getKstDate() {
-    var kst = new Date(Date.now() + 9 * 3600 * 1000);
-    return kst.toISOString().slice(0, 10);
+    return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
   }
   function getKstDailyKey() { return 'daily-' + getKstDate(); }
 
-  var todayStr = getKstDate();
-  var hasVisitedToday = false;
-  try {
-    hasVisitedToday = (localStorage.getItem(LS_KEY) === todayStr);
-  } catch (e) {}
+  var todayStr   = getKstDate();
+  var hasVisited = false;
+  try { hasVisited = (localStorage.getItem(LS_KEY) === todayStr); } catch (e) {}
 
-  var dailyKey  = getKstDailyKey();
-  var globalUrl = BASE + (hasVisitedToday ? 'global' : 'global/up');
-  var dailyUrl  = BASE + (hasVisitedToday ? dailyKey : dailyKey + '/up');
+  var suffix = hasVisited ? '' : '/up';   /* 첫 방문: 증가 / 재방문: 조회 */
 
-  Promise.all([
-    fetch(globalUrl).then(function (r) { return r.ok ? r.json() : Promise.reject(); }),
-    fetch(dailyUrl).then(function (r)  { return r.ok ? r.json() : Promise.reject(); })
-  ])
-  .then(function (results) {
-    var t = results[0].count != null ? results[0].count : results[0].value;
-    var d = results[1].count != null ? results[1].count : results[1].value;
-    if (typeof t !== 'number' || typeof d !== 'number') return;
+  var wrap = document.getElementById('visitor-counter-wrap');
+  var sDly = document.getElementById('visitor-count-daily');
+  var sTot = document.getElementById('visitor-count');
 
-    if (!hasVisitedToday) {
-      try { localStorage.setItem(LS_KEY, todayStr); } catch (e) {}
-    }
+  function showTotal(val) {
+    if (!wrap || !sTot || typeof val !== 'number') return;
+    sTot.textContent = val.toLocaleString();
+    wrap.style.display = '';          /* total 하나만 와도 즉시 박스 노출 */
+  }
 
-    var wrap = document.getElementById('visitor-counter-wrap');
-    var sDly = document.getElementById('visitor-count-daily');
-    var sTot = document.getElementById('visitor-count');
-    if (!wrap || !sDly || !sTot) return;
+  function showDaily(val) {
+    if (!sDly) return;
+    sDly.textContent = (typeof val === 'number') ? val.toLocaleString() : '-';
+  }
 
-    sDly.textContent = d.toLocaleString();
-    sTot.textContent = t.toLocaleString();
-    wrap.style.display = '';
-  })
-  .catch(function () {});
+  /* 1차: 누적 수치 (global) */
+  fetch(BASE + 'global' + suffix)
+    .then(function (r) { return r.ok ? r.json() : Promise.reject('global-fail'); })
+    .then(function (data) {
+      var t = data.count != null ? data.count : data.value;
+      showTotal(t);
+
+      /* global 성공 시점에 localStorage 기록 (daily 결과 무관) */
+      if (!hasVisited) {
+        try { localStorage.setItem(LS_KEY, todayStr); } catch (e) {}
+      }
+
+      /* 2차: 일일 수치 (daily) — 순차 체이닝 */
+      return fetch(BASE + getKstDailyKey() + suffix);
+    })
+    .then(function (r) { return r.ok ? r.json() : Promise.reject('daily-fail'); })
+    .then(function (data) {
+      var d = data.count != null ? data.count : data.value;
+      showDaily(d);
+    })
+    .catch(function (reason) {
+      if (reason === 'global-fail') return;   /* global 실패: 아무것도 표시 안 함 */
+      showDaily(null);                         /* daily 실패: '-' 표시, total 유지 */
+    });
 })();
 </script>
 </body>
