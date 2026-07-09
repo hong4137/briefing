@@ -325,35 +325,34 @@
   var hasVisited=false;
   try{ hasVisited=(localStorage.getItem(LS_KEY)===todayStr); }catch(e){}
   var sfx=hasVisited?'':'/up';
+  var totalVal=null,dailyVal=null;
   var wrap=document.getElementById('visitor-counter-wrap');
   var sDly=document.getElementById('visitor-count-daily');
   var sTot=document.getElementById('visitor-count');
-  function showTotal(v){
-    if(!wrap||!sTot||typeof v!=='number')return;
-    sTot.textContent=v.toLocaleString();
+  function renderUI(){
+    if(!wrap||totalVal===null)return;
     wrap.style.display='';
-  }
-  function showDaily(v){
-    if(!sDly)return;
-    sDly.textContent=(typeof v==='number')?v.toLocaleString():'-';
+    if(sTot)sTot.textContent=totalVal.toLocaleString();
+    if(sDly)sDly.textContent=dailyVal!==null?dailyVal.toLocaleString():'...';
   }
   fetch(BASE+'global'+sfx)
-    .then(function(r){return r.ok?r.json():Promise.reject('g');})
+    .then(function(r){return r.ok?r.json():Promise.reject();})
     .then(function(d){
       var t=d.count!=null?d.count:d.value;
-      showTotal(t);
+      if(typeof t!=='number')return;
+      totalVal=t;
       if(!hasVisited){try{localStorage.setItem(LS_KEY,todayStr);}catch(e){}}
-      return fetch(BASE+getKstDailyKey()+sfx);
+      renderUI();
     })
-    .then(function(r){return r.ok?r.json():Promise.reject('d');})
+    .catch(function(){});
+  fetch(BASE+getKstDailyKey()+sfx)
+    .then(function(r){return r.ok?r.json():{count:0,value:0};})
     .then(function(d){
       var v=d.count!=null?d.count:d.value;
-      showDaily(v);
+      dailyVal=typeof v==='number'?v:0;
+      renderUI();
     })
-    .catch(function(reason){
-      if(reason==='g')return;
-      showDaily(null);
-    });
+    .catch(function(){dailyVal=0;renderUI();});
 })();
 </script></body>
 </html>
