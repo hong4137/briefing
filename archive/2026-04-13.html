@@ -276,7 +276,7 @@
   var todayStr=getKstDate();
   var hasVisited=false;
   try{ hasVisited=(localStorage.getItem(LS_KEY)===todayStr); }catch(e){}
-  var sfx=hasVisited?'':'/up';
+  var sfx=hasVisited?'/':'/up';
   var totalVal=null,dailyVal=null;
   var wrap=document.getElementById('visitor-counter-wrap');
   var sDly=document.getElementById('visitor-count-daily');
