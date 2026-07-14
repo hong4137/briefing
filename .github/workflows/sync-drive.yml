@@ -180,42 +180,39 @@ jobs:
                   except Exception as e:
                       print(f"  Error reading briefings sheet: {e}")
                   
-                  # ========== 2. Read weekly sheet ==========
+                  # ========== 2. Read weekly from repo (data/weekly/*.json) ==========
+                  # 시트 대신 리포지토리를 단일 진실 소스로 사용한다.
+                  # 커밋 = 발행. 파일이 있으면 목록에서 절대 누락되지 않는다.
                   try:
-                      result = sheets_service.spreadsheets().values().get(
-                          spreadsheetId=SHEET_ID,
-                          range='weekly!A:F'
-                      ).execute()
-                      
-                      rows = result.get('values', [])
-                      if len(rows) >= 2:
-                          data_rows = rows[1:]
-                          
-                          for row in data_rows:
-                              while len(row) < 6:
-                                  row.append('')
-                              
-                              date, week, title, summary, period, clusters = row[:6]
-                              
-                              if not date or not title:
-                                  continue
-                              
-                              weekly_item = {
-                                  "date": date,
-                                  "week": week,
-                                  "title": title,
-                                  "summary": summary,
-                                  "period": period,
-                                  "stats": {
-                                      "clusters": int(clusters) if clusters else 0
-                                  }
-                              }
-                              output["weekly"].append(weekly_item)
-                          
-                          print(f"  Read {len(output['weekly'])} weekly briefings")
+                      import glob
+                      weekly_files = sorted(glob.glob('data/weekly/*.json'))
+                      for path in weekly_files:
+                          with open(path, encoding='utf-8') as wf:
+                              item = json.load(wf)
+                          if not item.get('date') or not item.get('title'):
+                              print(f"  Skipping malformed weekly file: {path}")
+                              continue
+                          item.setdefault('stats', {}).setdefault('clusters', 0)
+                          output["weekly"].append(item)
+
+                      print(f"  Read {len(output['weekly'])} weekly briefings from data/weekly/")
+
+                      # 무결성 가드: HTML은 있는데 메타데이터가 없는 주를 실패로 처리
+                      html_weeks = {
+                          os.path.splitext(os.path.basename(p))[0]
+                          for p in glob.glob('archive/weekly-*.html')
+                      }
+                      json_weeks = {w['date'] for w in output['weekly']}
+                      orphans = sorted(html_weeks - json_weeks)
+                      if orphans:
+                          raise RuntimeError(
+                              "Weekly HTML without metadata (site would silently drop these): "
+                              + ", ".join(orphans)
+                          )
                   except Exception as e:
-                      print(f"  Error reading weekly sheet: {e}")
-                  
+                      print(f"  Error reading weekly from repo: {e}")
+                      raise
+
                   # ========== 3. Read specials sheet ==========
                   try:
                       result = sheets_service.spreadsheets().values().get(
