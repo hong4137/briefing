@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>메모리 슈퍼사이클·美中 AI 디커플링 격화 | 주간 외신 브리핑 (6/15~6/20)</title>
+<style>
+  :root{
+    --bg:#0b0e14; --card:#141925; --card2:#1a2030; --line:#252c3d;
+    --text:#e6e9f0; --muted:#9aa3b8; --dim:#6b7488;
+    --accent:#5b8cff; --accent2:#7c5cff; --green:#34d399; --red:#f87171;
+    --amber:#fbbf24; --pink:#f472b6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg);color:var(--text);
+    font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+    line-height:1.7;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px 80px}
+  header{
+    text-align:center;padding:56px 20px 40px;
+    background:radial-gradient(ellipse at top,rgba(91,140,255,.14),transparent 60%);
+    border-bottom:1px solid var(--line);margin-bottom:36px;
+  }
+  header .badge-top{
+    display:inline-block;font-size:12px;letter-spacing:2px;color:var(--accent);
+    border:1px solid rgba(91,140,255,.4);border-radius:20px;padding:5px 14px;margin-bottom:18px;text-transform:uppercase;
+  }
+  header h1{font-size:30px;line-height:1.35;font-weight:800;letter-spacing:-.5px;margin-bottom:14px}
+  header h1 .hl{color:var(--accent)}
+  header .period{color:var(--muted);font-size:15px}
+  header .sub{color:var(--dim);font-size:13px;margin-top:6px}
+
+  section{margin-bottom:40px}
+  .sec-head{display:flex;align-items:center;gap:10px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .sec-head .ico{font-size:22px}
+  .sec-head h2{font-size:20px;font-weight:700;letter-spacing:-.3px}
+
+  /* 시장 요약 */
+  .market-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .m-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .m-card .name{font-size:12px;color:var(--muted);margin-bottom:4px}
+  .m-card .val{font-size:18px;font-weight:700}
+  .m-card .chg{font-size:13px;font-weight:600;margin-top:2px}
+  .up{color:var(--green)} .down{color:var(--red)} .hot{color:var(--amber)}
+  .market-note{margin-top:14px;font-size:14px;color:var(--muted);background:var(--card);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:12px 16px}
+
+  /* Pick */
+  .pick{background:linear-gradient(135deg,rgba(124,92,255,.12),rgba(91,140,255,.06));border:1px solid rgba(124,92,255,.35);border-radius:14px;padding:20px 22px;margin-bottom:14px}
+  .pick .ptag{display:inline-block;font-size:11px;font-weight:700;color:var(--accent2);letter-spacing:1px;margin-bottom:8px}
+  .pick h3{font-size:17px;font-weight:700;margin-bottom:8px;line-height:1.45}
+  .pick p{font-size:14.5px;color:var(--muted)}
+
+  /* 클러스터 */
+  .cluster{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:16px}
+  .cluster h3{font-size:18px;font-weight:700;line-height:1.45;margin-bottom:12px}
+  .cluster h3 .num{color:var(--accent);margin-right:6px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+  .chip{font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;background:var(--card2);border:1px solid var(--line);color:var(--muted)}
+  .chip.fire{color:var(--amber);border-color:rgba(251,191,36,.3)}
+  .chip.new{color:var(--accent);border-color:rgba(91,140,255,.3)}
+  .chip.ongoing{color:var(--pink);border-color:rgba(244,114,182,.3)}
+  .chip.done{color:var(--green);border-color:rgba(52,211,153,.3)}
+  .timeline{border-left:2px solid var(--line);padding-left:16px;margin:4px 0 8px}
+  .tl-item{position:relative;padding:5px 0;font-size:14.5px}
+  .tl-item::before{content:'';position:absolute;left:-21px;top:13px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+  .tl-item .date{display:inline-block;min-width:42px;font-weight:700;color:var(--accent);font-size:13px}
+  .status-box{background:var(--card2);border-radius:10px;padding:12px 14px;margin-top:12px;font-size:14px;color:var(--muted)}
+  .status-box .lbl{font-weight:700;color:var(--text);margin-right:6px}
+
+  /* 단독 */
+  .solo{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px;display:flex;gap:14px;align-items:flex-start}
+  .solo .d{font-size:12px;font-weight:700;color:var(--accent);min-width:38px;padding-top:2px}
+  .solo .t{font-size:14.5px;flex:1}
+  .solo .cat{font-size:11px;color:var(--dim);display:block;margin-top:3px}
+
+  /* 통계 */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
+  .stat .big{font-size:28px;font-weight:800;color:var(--accent)}
+  .stat .lab{font-size:12px;color:var(--muted);margin-top:4px}
+
+  footer{text-align:center;color:var(--dim);font-size:12px;padding-top:30px;border-top:1px solid var(--line);margin-top:40px}
+  @media(max-width:520px){header h1{font-size:23px}.cluster,.pick{padding:18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge-top">Weekly Briefing · 2026-W25</span>
+    <h1><span class="hl">메모리 슈퍼사이클</span>이 Apple마저 흔들고,<br><span class="hl">美中 AI 디커플링</span>이 G7로 번진 한 주</h1>
+    <p class="period">2026년 6월 4주차 · 6/15(월) ~ 6/20(토)</p>
+    <p class="sub">누적 기사 101건 · 13개 스토리 클러스터 · 일간 브리핑 데이터 기반</p>
+  </header>
+
+  <!-- 시장 요약 -->
+  <section>
+    <div class="sec-head"><span class="ico">📊</span><h2>주간 시장 요약</h2></div>
+    <div class="market-grid">
+      <div class="m-card"><div class="name">S&amp;P 500</div><div class="val">7,500.58</div><div class="chg down">−0.71% 📉</div></div>
+      <div class="m-card"><div class="name">NASDAQ</div><div class="val">26,517.93</div><div class="chg down">−0.62% 📉</div></div>
+      <div class="m-card"><div class="name">SOX 반도체</div><div class="val">14,341.78</div><div class="chg up">+1.72% 📈</div></div>
+      <div class="m-card"><div class="name">VIX 변동성</div><div class="val">18.44</div><div class="chg hot">+13.83% 🔥</div></div>
+      <div class="m-card"><div class="name">2Y 국채금리</div><div class="val">4.20%</div><div class="chg down">+0.13%p 📈</div></div>
+      <div class="m-card"><div class="name">10Y 국채금리</div><div class="val">4.49%</div><div class="chg down">+0.02%p 📈</div></div>
+      <div class="m-card"><div class="name">DXY 달러인덱스</div><div class="val">119.51</div><div class="chg">±0.00%</div></div>
+      <div class="m-card"><div class="name">WTI 유가</div><div class="val">$84.65</div><div class="chg">변동성 큼*</div></div>
+    </div>
+    <div class="market-note">
+      <strong>리스크오프 속 반도체 디커플링.</strong> 광범위 지수(S&amp;P −0.71%, NASDAQ −0.62%)는 약세였지만 <strong>SOX는 +1.72%</strong>로 나홀로 강세 — 메모리 슈퍼사이클·Intel-Apple 칩 제휴가 동력. 반면 <strong>VIX가 +13.8% 급등(18.44)</strong>하고 2년물 금리가 +0.13%p 뛰며, Warsh 신임 연준의장의 매파적 첫 메시지에 대한 경계 심리가 단기 구간을 끌어올렸다. *유가는 이란 평화딜 발효 뉴스로 주중 급락 보도가 있었으나 주간 종가 기준 데이터는 제한적.
+    </div>
+  </section>
+
+  <!-- Claude's Pick -->
+  <section>
+    <div class="sec-head"><span class="ico">⭐</span><h2>Claude's Pick</h2></div>
+    <div class="pick">
+      <span class="ptag">PICK 1 · 한국 반도체 직결</span>
+      <h3>메모리 슈퍼사이클이 'Apple조차 못 버티는' 국면 — 삼성·SK하이닉스 사이클 정점 신호</h3>
+      <p>AI발 메모리 품귀가 Cook이 "지속 불가능"이라 토로할 만큼 심화돼 Apple이 12년 만에 제품 가격 인상을 예고했다. 완제품 원가 풍선효과가 가시화되며 공급 측인 삼성·SK하이닉스로 수혜가 집중되는 구간. 주간 SOX +1.72% 강세가 이를 뒷받침한다. 다만 '사이클 정점' 논쟁이 동시에 붙은 만큼, BOM 원가 전가 속도와 AP 칩 다운그레이드 여부가 분기점이다.</p>
+    </div>
+    <div class="pick">
+      <span class="ptag">PICK 2 · AI 거버넌스 분기점</span>
+      <h3>Anthropic 수출통제 사태가 SK텔레콤까지 정조준 — 'AI 주권' 전쟁의 도화선</h3>
+      <p>美 정부의 Fable 5·Mythos 5 강제 차단이 Trump 행정부와의 회동, Lutnick의 '전례 없는 권한' 주장으로 확전됐고, 통제 대상에 SK텔레콤이 거론되며 한국과의 직접 접점이 생겼다. G7 정상회의가 'American AI 의존 리스크'를 핵심 의제로 끌어올리면서, 단일 사건이 글로벌 AI 주권·디커플링 의제로 비화한 한 주였다.</p>
+    </div>
+  </section>
+
+  <!-- TOP 스토리 -->
+  <section>
+    <div class="sec-head"><span class="ico">📈</span><h2>이번 주 TOP 스토리</h2></div>
+
+    <div class="cluster">
+      <h3><span class="num">1.</span>美中 AI 디커플링·주권 경쟁이 위성·모델·G7로 전방위 확산</h3>
+      <div class="meta">
+        <span class="chip">📰 4건</span><span class="chip">📅 6/15~6/20</span>
+        <span class="chip new">📈 관심</span><span class="chip ongoing">⏳ 진행중</span>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><span class="date">6/15</span>中, SpaceX 상장에 위성군 구축으로 맞불 + Meta가 베이징 압박에 $2B Manus 딜 해체</div>
+        <div class="tl-item"><span class="date">6/17</span>설문: 中 AI, 성능은 美 추월했으나 신뢰는 뒤처져</div>
+        <div class="tl-item"><span class="date">6/18</span>G7 'AI 주권' 전쟁 — American AI 차단 공포 + 中 AI 안전 푸시 + Anthropic·DeepMind 美주도 연합 촉구</div>
+        <div class="tl-item"><span class="date">6/20</span>中 Zhipu·DeepSeek, '1조 파라미터' 모델로 美 AI 정조준</div>
+      </div>
+      <div class="status-box"><span class="lbl">📍 현재 상태</span>美 수출통제→中 자체 컴퓨트·모델 가속→G7 진영화로 이어지는 디커플링이 한 주 내내 가속. 진영 분리가 구조화되는 국면.</div>
+    </div>
+
+    <div class="cluster">
+      <h3><span class="num">2.</span>Anthropic 수출통제·美 정부 셧다운 사태 (Fable 5·Mythos 5)</h3>
+      <div class="meta">
+        <span class="chip">📰 3건</span><span class="chip">📅 6/15~6/19</span>
+        <span class="chip new">📈 관심</span><span class="chip ongoing">⏳ 진행중</span>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><span class="date">6/15</span>美 정부 명령에 Anthropic Fable 5·Mythos 5 강제 차단 (中 접근 우려가 도화선)</div>
+        <div class="tl-item"><span class="date">6/16</span>Anthropic, 수출통제 두고 Trump 행정부와 회동 — 보안 전문가들은 반발</div>
+        <div class="tl-item"><span class="date">6/19</span>Lutnick '전례 없는 권한' 주장, 통제 대상에 SK텔레콤 정조준</div>
+      </div>
+      <div class="status-box"><span class="lbl">📍 현재 상태</span>전주(6/13) 셧다운 명령에서 시작된 사태가 행정부 협상·권한 논쟁으로 장기화. 한국 통신사로 불똥이 튀며 국내 파급 주시 필요.</div>
+    </div>
+
+    <div class="cluster">
+      <h3><span class="num">3.</span>SpaceX IPO 후폭풍 — 사상 최대 상장의 첫 균열</h3>
+      <div class="meta">
+        <span class="chip">📰 3건</span><span class="chip">📅 6/17~6/20</span>
+        <span class="chip fire">🔥 상승세</span><span class="chip ongoing">⏳ 진행중</span>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><span class="date">6/17</span>나스닥 데뷔 사흘 만에 SpaceX, AI 코딩 스타트업 Cursor를 $60B에 인수</div>
+        <div class="tl-item"><span class="date">6/19</span>상장 첫 주 첫 하락 — 평단 손실·中 비밀지분 의혹 부상</div>
+        <div class="tl-item"><span class="date">6/20</span>사흘 만에 첫 하락, 은퇴연금 노출 '사기' 논란으로 확산</div>
+      </div>
+      <div class="status-box"><span class="lbl">📍 현재 상태</span>+28% 데뷔(6/13)의 흥분이 가라앉고 밸류에이션·지배구조 리스크가 표면화. 모멘텀은 부정적 뉴스 쪽으로 상승세 전환.</div>
+    </div>
+
+    <div class="cluster">
+      <h3><span class="num">4.</span>메모리 슈퍼사이클이 완제품 가격으로 — Apple 12년 만의 인상</h3>
+      <div class="meta">
+        <span class="chip">📰 2건</span><span class="chip">📅 6/19~6/20</span>
+        <span class="chip new">🆕 신규</span><span class="chip ongoing">⏳ 진행중</span>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><span class="date">6/19</span>Apple, 메모리 위기에 12년 만의 가격 인상 예고 — Cook "지속 불가능"</div>
+        <div class="tl-item"><span class="date">6/20</span>메모리 대란에 'Apple조차' 인상…삼성·SK하이닉스 사이클 정점 신호</div>
+      </div>
+      <div class="status-box"><span class="lbl">📍 현재 상태</span>주 후반 급부상한 신규 스토리. SOX +1.72% 강세의 핵심 동력이자, 한국 메모리 양사의 실적·밸류에이션 재평가 트리거.</div>
+    </div>
+  </section>
+
+  <!-- 단독 하이라이트 -->
+  <section>
+    <div class="sec-head"><span class="ico">🎯</span><h2>단독 하이라이트</h2></div>
+    <div class="solo"><span class="d">6/19</span><div class="t">이란 평화딜 발효 — 호르무즈 재개통·美 해군 봉쇄 해제로 유가 급락, 휘발유 갤런당 $4 붕괴 <span class="cat">매크로 · 지정학 · ✅ 해결/진행됨</span></div></div>
+    <div class="solo"><span class="d">6/19</span><div class="t">Intel-Apple, 美 칩 설계·생산 제휴를 Trump가 직접 발표 — Intel +9% 반도체 랠리 <span class="cat">반도체 · 산업</span></div></div>
+    <div class="solo"><span class="d">6/19</span><div class="t">OpenAI, IPO 앞두고 구글 Gemini 공동총괄 Noam Shazeer 영입 <span class="cat">AI · 상장 레이스</span></div></div>
+    <div class="solo"><span class="d">6/18</span><div class="t">Snap, 12년 개발한 AR 글라스 'Specs'를 $2,195에 출시 — 주가는 하락 <span class="cat">하드웨어 · 신제품</span></div></div>
+    <div class="solo"><span class="d">6/18</span><div class="t">Warsh 신임 연준의장 첫 메시지에 시장 실망 — S&amp;P −1.2%, 채권금리 상승 <span class="cat">매크로 · 통화정책</span></div></div>
+    <div class="solo"><span class="d">6/17</span><div class="t">Meta, 페이스북에 공개 게시물 학습 기반 'AI Mode' 도입 <span class="cat">빅테크 · 제품</span></div></div>
+    <div class="solo"><span class="d">6/16</span><div class="t">Salesforce, AI 고객서비스 'Fin'을 $3.6B에 인수 — 에이전틱 전환 가속 <span class="cat">M&amp;A · 에이전틱</span></div></div>
+    <div class="solo"><span class="d">6/16</span><div class="t">Nvidia, AI붐 이후 첫 회사채 발행으로 최소 $200억 조달 <span class="cat">반도체 · 자본조달</span></div></div>
+    <div class="solo"><span class="d">6/15</span><div class="t">OpenAI, 美 주(州)검찰 연합 조사 착수 <span class="cat">AI · 규제/소송</span></div></div>
+  </section>
+
+  <!-- 주간 통계 -->
+  <section>
+    <div class="sec-head"><span class="ico">📋</span><h2>주간 통계</h2></div>
+    <div class="stats">
+      <div class="stat"><div class="big">101</div><div class="lab">총 수집 기사</div></div>
+      <div class="stat"><div class="big">13</div><div class="lab">스토리 클러스터</div></div>
+      <div class="stat"><div class="big">4</div><div class="lab">멀티 기사 스토리</div></div>
+      <div class="stat"><div class="big">9</div><div class="lab">단독 하이라이트</div></div>
+      <div class="stat"><div class="big">6</div><div class="lab">발행일 (월~토)</div></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>📰 주간 외신 브리핑 · 2026년 6월 4주차 (6/15~6/20)</p>
+    <p>Generated by Claude · Weekly Briefing v1.6 · 일간 브리핑 누적 데이터 기반</p>
+  </footer>
+</div>
+</body>
+</html>
