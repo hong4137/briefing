@@ -17,6 +17,7 @@ on:
   push:
     paths:
       - 'archive/**'
+      - 'data/**'
   workflow_dispatch:
 
 permissions:
