@@ -11011,6 +11011,36 @@
           "thumb_category": "entity:openai"
         }
       ]
+    },
+    {
+      "date": "weekly-2026-07-19",
+      "week": "2026-W29",
+      "title": "中 Kimi K3 쇼크로 반도체 재매도 + AI 데이터센터 규제 첫 제동 + SpaceX 이중 악재",
+      "summary": "주초 SK하이닉스 11% 반등·ASML 전망 상향으로 강세 출발한 반도체주가 TSMC 실망과 中 Moonshot 'Kimi K3' 쇼크로 주말 글로벌 AI·반도체 매도로 반전되며 'DeepSeek 순간'을 재연했다. Meta 데이터센터 누적 투자액이 $250B를 넘어선 가운데 뉴욕주는 美 최초로 신규 AI 데이터센터 건설을 전면 금지했고, Anthropic은 Meta와 컴퓨트 임대를 협의했다. SpaceX는 공모가 $135 붕괴 위협과 Starship V3 발사 중단으로 이중 악재를 맞았다.",
+      "period": "2026-07-13 ~ 2026-07-18",
+      "stats": {
+        "clusters": 13
+      },
+      "hero_url": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Majestic aurora borealis with deep space nebula",
+      "hero_credit_name": "Greg Rakozy",
+      "hero_credit_url": "https://unsplash.com/photos/1506703719100-a0f3a48c0f86",
+      "hero_source": "entity:spacex",
+      "thumb_url": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Majestic aurora borealis with deep space nebula",
+      "thumb_category": "entity:spacex",
+      "segments": [
+        {
+          "title": "中 Kimi K3 쇼크로 반도체 재매도 + AI 데이터센터 규제 첫 제동 + SpaceX 이중 악재",
+          "summary": "주초 SK하이닉스 11% 반등·ASML 전망 상향으로 강세 출발한 반도체주가 TSMC 실망과 中 Moonshot 'Kimi K3' 쇼크로 주말 글로벌 AI·반도체 매도로 반전되며 'DeepSeek 순간'을 재연했다. Meta 데이터센터 누적 투자액이 $250B를 넘어선 가운데 뉴욕주는 美 최초로 신규 AI 데이터센터 건설을 전면 금지했고, Anthropic은 Meta와 컴퓨트 임대를 협의했다. SpaceX는 공모가 $135 붕괴 위협과 Starship V3 발사 중단으로 이중 악재를 맞았다..",
+          "thumb_url": "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Deep space nebula colorful gas clouds",
+          "thumb_category": "entity:spacex"
+        }
+      ]
     }
   ],
   "specials": [
@@ -11097,17 +11127,17 @@
         {
           "title": "이란전쟁 33일 — 종전 임박인가, 장기전인가",
           "summary": "Operation Epic Fury 개전 33일. 호르무즈 봉쇄로 글로벌 원유 공급 20% 차단.",
-          "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Aerial view of city lights glowing at night",
+          "thumb_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Laptop displaying code in dark environment",
           "thumb_category": "default"
         },
         {
           "title": "세계 경제 충격파 분석",
           "summary": "트럼프 2~3주 내 철수 시사 vs 이란 6개월 전쟁 준비. 5대 경제 충격파와 테크 산업 영향, 한국 경제 분석..",
-          "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Tech team collaborating on laptops in office",
+          "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Aerial view of city lights glowing at night",
           "thumb_category": "default"
         }
       ]
