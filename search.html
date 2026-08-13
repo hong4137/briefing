@@ -718,8 +718,9 @@ body.light-mode .theme-toggle-btn {
     </script>
     <script>
 (function () {
-  var BASE   = 'https://api.counterapi.dev/v1/hong4137-briefing/';
-  var LS_KEY = 'jfnb-visited-date';
+  var API_BASE  = 'https://abacus.jasoncameron.dev';
+  var NAMESPACE = 'hong4137-briefing';
+  var LS_KEY    = 'jfnb-visited-date';
 
   function getKstDate() {
     return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
@@ -730,9 +731,9 @@ body.light-mode .theme-toggle-btn {
   var hasVisited = false;
   try { hasVisited = (localStorage.getItem(LS_KEY) === todayStr); } catch (e) {}
 
-  var sfx = hasVisited ? '/' : '/up';
+  var mode = hasVisited ? 'get' : 'hit';
 
-  var totalVal = null;   /* null = 아직 미수신 */
+  var totalVal = null;
   var dailyVal = null;
 
   var wrap = document.getElementById('visitor-counter-wrap');
@@ -741,17 +742,16 @@ body.light-mode .theme-toggle-btn {
 
   function renderUI() {
     if (!wrap) return;
-    if (totalVal === null) return;   /* global 실패 시 박스 숨김 유지 */
+    if (totalVal === null) return;
     wrap.style.display = '';
     if (sTot) sTot.textContent = totalVal.toLocaleString();
     if (sDly) sDly.textContent = dailyVal !== null ? dailyVal.toLocaleString() : '...';
   }
 
-  /* -- global (독립 fetch) -- */
-  fetch(BASE + 'global' + sfx)
+  fetch(API_BASE + '/' + mode + '/' + NAMESPACE + '/global')
     .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
     .then(function (data) {
-      var t = data.count != null ? data.count : data.value;
+      var t = data.value != null ? data.value : data.count;
       if (typeof t !== 'number') return;
       totalVal = t;
       if (!hasVisited) {
@@ -759,21 +759,17 @@ body.light-mode .theme-toggle-btn {
       }
       renderUI();
     })
-    .catch(function () { /* global 실패: 박스 계속 숨김 */ });
+    .catch(function () { /* global failure: keep counter hidden */ });
 
-  /* -- daily (독립 fetch - global과 완전 분리) -- */
-  fetch(BASE + getKstDailyKey() + sfx)
-    .then(function (r) {
-      /* 400(키 미생성) 포함 모든 !ok -> 0명 폴백 반환, reject 안 함 */
-      return r.ok ? r.json() : { count: 0, value: 0 };
-    })
+  fetch(API_BASE + '/' + mode + '/' + NAMESPACE + '/' + getKstDailyKey())
+    .then(function (r) { return r.ok ? r.json() : { value: 0 }; })
     .then(function (data) {
-      var d = data.count != null ? data.count : data.value;
+      var d = data.value != null ? data.value : data.count;
       dailyVal = typeof d === 'number' ? d : 0;
       renderUI();
     })
     .catch(function () {
-      dailyVal = 0;   /* 네트워크 완전 실패 시도 0으로 폴백 */
+      dailyVal = 0;
       renderUI();
     });
 })();
