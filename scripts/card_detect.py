@@ -32,11 +32,18 @@ SELECTORS = [
     "article.article-card",
     # 일간 초기판 (2025-12 ~ 2026-01)
     "article.hero-card", "article.card", "article.pick-card",
-    # 주간 — article 사용 세대
-    "article.cluster-card", "article.cluster", "article.story-cluster", "article.story",
-    # 주간 — div 사용 세대
-    "div.story-card", "div.cluster-card", "div.story-cluster", "div.cluster", "div.story",
-    "div.standalone-item", "div.pick-item", "div.hl", "div.sa", "div.pick",
+    # 주간 마크업 계약 (weekly-briefing SKILL v1.8) — 태그를 가리지 않는다.
+    #   계약은 article/div를 지정하지만, 태그 하나 어긋났다고 그 주 브리핑이
+    #   통째로 빠지면 안 된다. 클래스 이름만 지켜지면 잡는다.
+    ".cluster-card", ".standalone-item", ".pick-item",
+    # 주간 — 계약 이전 세대들
+    "article.cluster", "article.story-cluster", "article.story",
+    "div.story-card", "div.story-cluster", "div.cluster", "div.story",
+    "div.hl", "div.sa", "div.pick",
+    # 최후의 이름 규칙 — 위 어느 이름에도 안 걸린 <article>.
+    #   일간 초기판이 <article class="article">·"article top"·"article pick"을 썼다(코퍼스 323건).
+    #   반드시 체인의 맨 끝에 둔다. 앞에 두면 구체적인 이름들을 덮어버린다.
+    "article",
 ]
 
 TITLE_CLS = re.compile(r"(^|[-_ ])(title|ttl|headline)", re.I)
