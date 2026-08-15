@@ -473,6 +473,7 @@ body.light-mode .theme-toggle-btn {
 }
 
 </style>
+    <script src="app.js?v=1" defer></script>
 </head>
 <body class="shell-page">
     <!-- Navigation -->
@@ -494,6 +495,7 @@ body.light-mode .theme-toggle-btn {
                     <li><a href="index.html">홈</a></li>
                     <li><a href="archive.html">아카이브</a></li>
                     <li><a href="about.html">소개</a></li>
+                    <li><a href="saved.html">⭐ 보관함 <span data-jfnb-count></span></a></li>
                 </ul>
             </div>
         </div>
@@ -657,7 +659,7 @@ body.light-mode .theme-toggle-btn {
             statsEl.innerHTML = `<span class="query">"${escapeHtml(query)}"</span> 검색 결과: <strong>${results.length}</strong>개 기사`;
 
             container.innerHTML = results.map(article => `
-                <a href="archive/${article.file}.html" class="result-card">
+                <a href="archive/${article.file}.html${query ? '?q=' + encodeURIComponent(query) : ''}${article.anchor ? '#' + article.anchor : ''}" class="result-card">
                     <div class="result-header">
                         <span class="result-date">${article.date || '날짜 없음'}</span>
                     </div>

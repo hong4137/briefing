@@ -5,11 +5,41 @@ from collections import deque
 from pathlib import Path
 from bs4 import BeautifulSoup
 
+from card_detect import normalize_cards
+
 ROOT_DIR       = Path(__file__).resolve().parent.parent
 ARCHIVE_DIR    = ROOT_DIR / "archive"
 BRIEFINGS_JSON = ROOT_DIR / "briefings.json"
 
 BASE = "https://images.unsplash.com/photo-"
+
+# app.js 캐시 무효화용. app.js를 고칠 때마다 올린다.
+APP_JS_VERSION = 1
+
+# 카드 정규화 집계 — main()에서 리포트로 출력한다 (조용한 실패 방지)
+CARD_STATS = {"daily": [0, 0, []], "weekly": [0, 0, []], "special": [0, 0, []]}
+
+
+def card_kind(date: str) -> str:
+    if date.startswith("weekly"):
+        return "weekly"
+    if re.match(r"^\d{4}-\d{2}-\d{2}$", date):
+        return "daily"
+    return "special"
+
+
+def ensure_app_script(soup: BeautifulSoup) -> None:
+    """공통 스크립트 참조를 head에 1개만 유지한다. ensure_theme_link와 같은 멱등 패턴."""
+    head = soup.find("head")
+    if head is None:
+        return
+    for tag in head.find_all("script", src=True):
+        if tag["src"].split("?", 1)[0] == "../app.js":
+            tag["src"] = f"../app.js?v={APP_JS_VERSION}"
+            return
+    tag = soup.new_tag("script", src=f"../app.js?v={APP_JS_VERSION}")
+    tag["defer"] = ""
+    head.append(tag)
 
 PARAMS_HERO     = "?w=1200&h=630&fit=crop&auto=format&q=80"
 PARAMS_HERO_SM  = "?w=640&h=360&fit=crop&auto=format&q=80"
@@ -1289,6 +1319,7 @@ GNB_HTML = """<nav class="reader-nav">
       <a href="../index.html">홈</a>
       <a href="../archive.html">아카이브</a>
       <a href="../about.html">소개</a>
+      <a href="../saved.html">⭐ 보관함 <span data-jfnb-count></span></a>
     </div>
   </div>
 </nav>"""
@@ -1392,7 +1423,16 @@ def process_article(html_path: Path, briefing_meta: dict) -> dict:
 
     remove_previous_reader_chrome(soup)
     ensure_theme_link(soup)
+    ensure_app_script(soup)
     ensure_reader_mode(body)
+
+    kind = card_kind(date)
+    card_count = normalize_cards(soup, kind)
+    st = CARD_STATS[kind]
+    st[0] += 1
+    st[1] += card_count
+    if card_count == 0:
+        st[2].append(date)
 
     body.insert(0, BeautifulSoup(GNB_HTML, "html.parser"))
     body.append(BeautifulSoup(FOOTER_HTML, "html.parser"))
@@ -1412,6 +1452,7 @@ def process_article(html_path: Path, briefing_meta: dict) -> dict:
         "thumb_url_xs":     urls["thumb_url_xs"],
         "thumb_alt":        img_meta["alt"],
         "thumb_category":   cat,
+        "card_count":       card_count,
     }
 
 
@@ -1521,7 +1562,23 @@ def main():
     BRIEFINGS_JSON.write_text(
         json.dumps(data, ensure_ascii=False, indent=2), "utf-8"
     )
+    report_cards()
     print("[DONE] briefings.json updated.")
+
+
+def report_cards() -> None:
+    """카드 정규화 결과 리포트. 실패해도 예외를 던지지 않는다 —
+    이 기능은 부가 기능이므로 일간 발행을 중단시켜서는 안 된다."""
+    total_files = total_cards = 0
+    for kind in ("daily", "weekly", "special"):
+        files, cards, zeros = CARD_STATS[kind]
+        total_files += files
+        total_cards += cards
+        note = f"  0-card files: {len(zeros)}"
+        if zeros:
+            note += "  (" + ", ".join(zeros[:10]) + (" …" if len(zeros) > 10 else "") + ")"
+        print(f"[CARDS] {kind:<8}{files:>4} files / {cards:>5} cards /{note}")
+    print(f"[CARDS] {'TOTAL':<8}{total_files:>4} files / {total_cards:>5} cards")
 
 if __name__ == "__main__":
     main()

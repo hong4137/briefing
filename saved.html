@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>보관함 | JFNB</title>
+<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-96x96.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #0a0a0f;
+    --bg-card:   rgba(255,255,255,.03);
+    --border:    rgba(255,255,255,.08);
+    --text:      #e6e9f5;
+    --text-dim:  #9aa3bd;
+    --accent:    #667eea;
+    --accent-2:  #a855f7;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,sans-serif;
+    background:linear-gradient(180deg,#0a0a0f 0%,#12121a 100%);
+    color:var(--text); min-height:100vh; line-height:1.7;
+  }
+  .nav { border-bottom:1px solid var(--border); position:sticky; top:0;
+         background:rgba(10,10,15,.88); backdrop-filter:blur(10px); z-index:50; }
+  .nav-inner { max-width:900px; margin:0 auto; padding:14px 20px;
+               display:flex; align-items:center; justify-content:space-between; }
+  .logo { font-family:'Outfit',sans-serif; font-weight:800; letter-spacing:.06em;
+          color:#fff; text-decoration:none; font-size:1.05rem; }
+  .nav-links { display:flex; gap:1.4rem; list-style:none; }
+  .nav-links a { color:var(--text-dim); text-decoration:none; font-size:.9rem; font-weight:500; }
+  .nav-links a:hover { color:#fff; }
+  .nav-links a.active { color:var(--accent); }
+
+  .wrap { max-width:900px; margin:0 auto; padding:38px 20px 70px; }
+  h1 { font-size:1.5rem; color:#fff; margin-bottom:6px; }
+  .sub { color:var(--text-dim); font-size:.9rem; margin-bottom:26px; }
+
+  .toolbar { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:20px; }
+  .chip {
+    border:1px solid var(--border); background:var(--bg-card); color:var(--text-dim);
+    border-radius:999px; padding:6px 14px; font-size:.82rem; cursor:pointer;
+    font-family:inherit; transition:background .18s,color .18s,border-color .18s;
+  }
+  .chip:hover { background:rgba(102,126,234,.18); color:#fff; }
+  .chip.on { background:rgba(102,126,234,.28); border-color:rgba(102,126,234,.5); color:#fff; }
+  .chip.danger:hover { background:rgba(255,59,59,.2); border-color:rgba(255,59,59,.45); color:#fff; }
+  .spacer { flex:1; }
+
+  .item {
+    display:flex; gap:14px; align-items:flex-start;
+    background:var(--bg-card); border:1px solid var(--border);
+    border-radius:12px; padding:16px 18px; margin-bottom:12px;
+    transition:background .2s,border-color .2s;
+  }
+  .item:hover { background:rgba(255,255,255,.06); border-color:rgba(102,126,234,.32); }
+  .item.cluster { border-left:3px solid var(--accent-2); }
+  .body { flex:1; min-width:0; }
+  .t { display:block; color:#fff; font-weight:600; font-size:1rem; text-decoration:none; }
+  .t:hover { color:#8fa6ff; text-decoration:underline; }
+  .meta { margin-top:7px; font-size:.78rem; color:var(--text-dim);
+          display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .tag { border-radius:4px; padding:1px 8px; font-weight:600; font-size:.72rem; }
+  .tag.article { background:rgba(102,126,234,.16); color:#a5b4fc; }
+  .tag.cluster { background:rgba(168,85,247,.16); color:#d8b4fe; }
+  .rm { border:1px solid var(--border); background:transparent; color:var(--text-dim);
+        border-radius:8px; width:32px; height:32px; cursor:pointer; font-size:.9rem; flex-shrink:0; }
+  .rm:hover { background:rgba(255,59,59,.18); border-color:rgba(255,59,59,.4); color:#fff; }
+
+  .empty { text-align:center; padding:70px 20px; color:var(--text-dim); }
+  .empty .ico { font-size:2.6rem; margin-bottom:14px; }
+  .empty a { color:var(--accent); }
+
+  footer { text-align:center; color:#5f6478; font-size:.84rem; padding:30px 20px 50px; }
+  footer a { color:var(--accent); text-decoration:none; }
+
+  @media (max-width:480px) {
+    .nav-links { gap:.9rem; }
+    .nav-links a { font-size:.82rem; }
+    .item { padding:14px; gap:10px; }
+  }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">JFNB</a>
+    <ul class="nav-links">
+      <li><a href="index.html">홈</a></li>
+      <li><a href="archive.html">아카이브</a></li>
+      <li><a href="about.html">소개</a></li>
+      <li><a href="saved.html" class="active">⭐ 보관함 <span data-jfnb-count></span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrap">
+  <h1>⭐ 보관함</h1>
+  <p class="sub">이 브라우저에만 저장됩니다. 로그인도 서버도 없습니다.</p>
+
+  <div class="toolbar" id="toolbar" hidden>
+    <button type="button" class="chip on" data-filter="all">전체 <span id="c-all"></span></button>
+    <button type="button" class="chip" data-filter="article">기사 <span id="c-article"></span></button>
+    <button type="button" class="chip" data-filter="cluster">주간 스토리 <span id="c-cluster"></span></button>
+    <span class="spacer"></span>
+    <button type="button" class="chip" id="export">내보내기</button>
+    <button type="button" class="chip danger" id="clear">전체 비우기</button>
+  </div>
+
+  <main id="list"></main>
+</div>
+
+<footer>
+  <p>JFNB · AI·기술·반도체 외신 브리핑</p>
+  <p style="margin-top:6px"><a href="index.html">홈으로</a> · <a href="archive.html">아카이브</a></p>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var KEY = 'jfnb-saved-articles';
+  var filter = 'all';
+
+  function load() {
+    try { var v = JSON.parse(localStorage.getItem(KEY) || '[]'); return Array.isArray(v) ? v : []; }
+    catch (e) { return []; }
+  }
+  function save(l) { localStorage.setItem(KEY, JSON.stringify(l)); }
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c];
+    });
+  }
+  function when(ts) {
+    if (!ts) return '';
+    var d = new Date(ts);
+    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  }
+  // 저장 시점의 브리핑 페이지 + 앵커. 원문 URL이 있어도 브리핑 카드로 되돌아가게 한다.
+  function href(it) { return 'archive/' + encodeURIComponent(it.d) + '.html#' + (it.a || ''); }
+
+  function render() {
+    var all = load();
+    var list = filter === 'all' ? all : all.filter(function (x) { return (x.ty || 'article') === filter; });
+    var box = document.getElementById('list');
+    var bar = document.getElementById('toolbar');
+
+    document.querySelectorAll('[data-jfnb-count]').forEach(function (el) {
+      el.textContent = all.length ? '(' + all.length + ')' : '';
+    });
+
+    if (!all.length) {
+      bar.hidden = true;
+      box.innerHTML = '<div class="empty"><div class="ico">🔖</div>'
+        + '<p>아직 보관한 기사가 없습니다.</p>'
+        + '<p style="margin-top:8px">브리핑에서 기사 카드 오른쪽 위의 🏷️ 버튼을 눌러 담아보세요.</p>'
+        + '<p style="margin-top:14px"><a href="archive.html">아카이브 보러 가기 →</a></p></div>';
+      return;
+    }
+
+    bar.hidden = false;
+    document.getElementById('c-all').textContent = all.length;
+    document.getElementById('c-article').textContent = all.filter(function(x){return (x.ty||'article')==='article';}).length;
+    document.getElementById('c-cluster').textContent = all.filter(function(x){return x.ty==='cluster';}).length;
+
+    if (!list.length) {
+      box.innerHTML = '<div class="empty"><p>이 분류에 담긴 항목이 없습니다.</p></div>';
+      return;
+    }
+
+    box.innerHTML = list.map(function (it) {
+      var ty = it.ty || 'article';
+      return '<div class="item ' + ty + '">'
+        + '<div class="body">'
+        +   '<a class="t" href="' + esc(href(it)) + '">' + esc(it.t || '(제목 없음)') + '</a>'
+        +   '<div class="meta">'
+        +     '<span class="tag ' + ty + '">' + (ty === 'cluster' ? '주간 스토리' : '기사') + '</span>'
+        +     '<span>' + esc(it.d || '') + '</span>'
+        +     (it.ts ? '<span>담은 날 ' + esc(when(it.ts)) + '</span>' : '')
+        +     (it.k && it.k.indexOf('http') === 0
+                ? '<a href="' + esc(it.k) + '" target="_blank" rel="noopener" style="color:#4a9eff;text-decoration:none">원문 →</a>' : '')
+        +   '</div>'
+        + '</div>'
+        + '<button type="button" class="rm" data-k="' + esc(it.k) + '" aria-label="보관 해제">✕</button>'
+        + '</div>';
+    }).join('');
+  }
+
+  document.addEventListener('click', function (ev) {
+    var chip = ev.target.closest && ev.target.closest('.chip[data-filter]');
+    if (chip) {
+      filter = chip.dataset.filter;
+      document.querySelectorAll('.chip[data-filter]').forEach(function (c) { c.classList.toggle('on', c === chip); });
+      render();
+      return;
+    }
+    var rm = ev.target.closest && ev.target.closest('.rm');
+    if (rm) {
+      var l = load().filter(function (x) { return x.k !== rm.dataset.k; });
+      save(l); render();
+    }
+  });
+
+  document.getElementById('clear').addEventListener('click', function () {
+    if (!load().length) return;
+    if (confirm('보관함을 전부 비울까요? 되돌릴 수 없습니다.')) { save([]); render(); }
+  });
+
+  document.getElementById('export').addEventListener('click', function () {
+    var l = load();
+    if (!l.length) return;
+    var txt = l.map(function (it) {
+      var base = location.origin + location.pathname.replace(/saved\.html$/, '');
+      return '- ' + (it.t || '') + '\n  ' + (it.k && it.k.indexOf('http') === 0 ? it.k : base + href(it));
+    }).join('\n');
+    var blob = new Blob([txt], { type: 'text/plain;charset=utf-8' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'jfnb-saved.txt';
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
