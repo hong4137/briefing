@@ -39,6 +39,9 @@ class BriefingParser(HTMLParser):
         
         # Track if we're inside an article tag
         self.in_article_tag = False
+
+        # post_process.py가 구워둔 카드 앵커(id="art-N"). 순번을 추정하지 않는다.
+        self.current_anchor = None
         
     def _save_pending_article(self):
         """Save the pending article if it has required fields."""
@@ -50,7 +53,8 @@ class BriefingParser(HTMLParser):
                 'title': title.strip(),
                 'summary': summary.strip()[:300],
                 'section': self.current_section,
-                'is_pick': self.is_claudes_pick
+                'is_pick': self.is_claudes_pick,
+                'anchor': self.current_anchor
             })
         
         # Reset pending
@@ -61,7 +65,14 @@ class BriefingParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         attrs_dict = dict(attrs)
         self.current_class = attrs_dict.get('class', '')
-        
+
+        # 카드 경계는 태그 이름이 아니라 정규화된 id로 잡는다.
+        # 주간·초기판은 <article>이 아니라 <div>를 쓰므로 이쪽이 모든 세대에 통한다.
+        el_id = attrs_dict.get('id', '')
+        if el_id.startswith('art-'):
+            self._save_pending_article()
+            self.current_anchor = el_id
+
         if tag == 'article':
             self.in_article_tag = True
             # Save any pending article before starting new one
@@ -247,7 +258,8 @@ def parse_briefing_file(filepath):
             'summary': summary,
             'keywords': extract_keywords(title, summary),
             'section': article.get('section', ''),
-            'is_pick': article.get('is_pick', False)
+            'is_pick': article.get('is_pick', False),
+            'anchor': article.get('anchor')
         })
     
     return result
@@ -273,6 +285,12 @@ def build_search_index(archive_dir='archive'):
             all_articles.extend(articles)
             print(f"Parsed {filename}: {len(articles)} articles ({picks} picks)")
     
+    with_anchor = sum(1 for a in all_articles if a.get('anchor'))
+    rate = (with_anchor * 100 // len(all_articles)) if all_articles else 0
+    print(f"[ANCHOR] {with_anchor}/{len(all_articles)} ({rate}%) 항목에 앵커 부여")
+    if rate < 90:
+        print("[ANCHOR][WARN] 앵커 매칭률 90% 미만 — post_process.py 백필이 선행됐는지 확인할 것")
+
     index = {
         'articles': all_articles,
         'total': len(all_articles),
