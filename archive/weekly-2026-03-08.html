@@ -215,7 +215,7 @@
             .market-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style><link href="../theme-modern.css" rel="stylesheet"/>
-</head>
+<script defer="" src="../app.js?v=1"></script></head>
 <body class="reader-mode"><nav class="reader-nav">
 <div class="reader-nav-inner">
 <a class="reader-nav-logo" href="../index.html">JFNB</a>
@@ -223,6 +223,7 @@
 <a href="../index.html">홈</a>
 <a href="../archive.html">아카이브</a>
 <a href="../about.html">소개</a>
+<a href="../saved.html">⭐ 보관함 <span data-jfnb-count=""></span></a>
 </div>
 </div>
 </nav>
@@ -277,7 +278,7 @@
 <span class="section-count">6 CLUSTERS</span>
 </div>
 <!-- #1: 이란전쟁 -->
-<div class="story-card">
+<div class="story-card jfnb-card" data-card-index="0" data-card-title="미·이스라엘 이란 전면전: 하메네이 사망 → 걸프 AI 인프라 피격 → 유가 $89 돌파" data-card-type="cluster" id="art-0">
 <div class="story-rank">TOP 1</div>
 <h3>미·이스라엘 이란 전면전: 하메네이 사망 → 걸프 AI 인프라 피격 → 유가 $89 돌파</h3>
 <div class="story-badges">
@@ -306,7 +307,7 @@
             </div>
 </div>
 <!-- #2: Apple 신제품 -->
-<div class="story-card">
+<div class="story-card jfnb-card" data-card-index="1" data-card-title="Apple 신제품 러시: iPhone 17e → MacBook Air M5 → $599 MacBook Neo 출시" data-card-type="cluster" id="art-1">
 <div class="story-rank">TOP 2</div>
 <h3>Apple 신제품 러시: iPhone 17e → MacBook Air M5 → $599 MacBook Neo 출시</h3>
 <div class="story-badges">
@@ -331,7 +332,7 @@
             </div>
 </div>
 <!-- #3: Nvidia 칩 수출 규제 -->
-<div class="story-card">
+<div class="story-card jfnb-card" data-card-index="2" data-card-title="Nvidia 칩 수출 규제 전면 확대와 $40B AI 투자 선언" data-card-type="cluster" id="art-2">
 <div class="story-rank">TOP 3</div>
 <h3>Nvidia 칩 수출 규제 전면 확대와 $40B AI 투자 선언</h3>
 <div class="story-badges">
@@ -357,7 +358,7 @@
             </div>
 </div>
 <!-- #4: Anthropic 펜타곤 -->
-<div class="story-card">
+<div class="story-card jfnb-card" data-card-index="3" data-card-title="Anthropic, 펜타곤 블랙리스트에서 '공급망 리스크' 지정까지 — 화웨이급 제재 수순" data-card-type="cluster" id="art-3">
 <div class="story-rank">TOP 4</div>
 <h3>Anthropic, 펜타곤 블랙리스트에서 '공급망 리스크' 지정까지 — 화웨이급 제재 수순</h3>
 <div class="story-badges">
@@ -379,7 +380,7 @@
             </div>
 </div>
 <!-- #5: ChatGPT 대탈출 -->
-<div class="story-card">
+<div class="story-card jfnb-card" data-card-index="4" data-card-title="ChatGPT 대탈출: 삭제 295% 급증, Claude 앱스토어 1위 등극" data-card-type="cluster" id="art-4">
 <div class="story-rank">TOP 5</div>
 <h3>ChatGPT 대탈출: 삭제 295% 급증, Claude 앱스토어 1위 등극</h3>
 <div class="story-badges">
@@ -401,7 +402,7 @@
             </div>
 </div>
 <!-- #6: Nvidia 투자 + GPT-5.4 통합 -->
-<div class="story-card">
+<div class="story-card jfnb-card" data-card-index="5" data-card-title="OpenAI GPT-5.4 자율 에이전트 출시 — 네이티브 컴퓨터 사용 시대 개막" data-card-type="cluster" id="art-5">
 <div class="story-rank">TOP 6</div>
 <h3>OpenAI GPT-5.4 자율 에이전트 출시 — 네이티브 컴퓨터 사용 시대 개막</h3>
 <div class="story-badges">
@@ -425,7 +426,7 @@
 <span class="section-count">4건</span>
 </div>
 <div class="standalone-grid">
-<div class="standalone-item">
+<div class="standalone-item jfnb-card" data-card-index="6" data-card-title="Google-Epic 합의: Play Store 30% 수수료 시대 종료" data-card-type="cluster" id="art-6">
 <div class="standalone-icon">⚖️</div>
 <div class="standalone-content">
 <h4>Google-Epic 합의: Play Store 30% 수수료 시대 종료</h4>
@@ -433,7 +434,7 @@
 <div class="standalone-date">3/6 · 🆕 신규 · ✅ 합의 완료</div>
 </div>
 </div>
-<div class="standalone-item">
+<div class="standalone-item jfnb-card" data-card-index="7" data-card-title="Google Gemini 자살 유도 첫 소송 — AI 챗봇 안전성 시험대" data-card-type="cluster" id="art-7">
 <div class="standalone-icon">⚠️</div>
 <div class="standalone-content">
 <h4>Google Gemini 자살 유도 첫 소송 — AI 챗봇 안전성 시험대</h4>
@@ -441,7 +442,7 @@
 <div class="standalone-date">3/5 · ⏳ 소송 진행중</div>
 </div>
 </div>
-<div class="standalone-item">
+<div class="standalone-item jfnb-card" data-card-index="8" data-card-title="백악관 빅테크 7사 AI 전력 자체 조달 서약 (Rate Payer Pledge)" data-card-type="cluster" id="art-8">
 <div class="standalone-icon">⚡</div>
 <div class="standalone-content">
 <h4>백악관 빅테크 7사 AI 전력 자체 조달 서약 (Rate Payer Pledge)</h4>
@@ -449,7 +450,7 @@
 <div class="standalone-date">3/4 · ✅ 서명 완료</div>
 </div>
 </div>
-<div class="standalone-item">
+<div class="standalone-item jfnb-card" data-card-index="9" data-card-title="MWC 2026: Honor 로봇폰 + Xiaomi 17 글로벌 출시" data-card-type="cluster" id="art-9">
 <div class="standalone-icon">📱</div>
 <div class="standalone-content">
 <h4>MWC 2026: Honor 로봇폰 + Xiaomi 17 글로벌 출시</h4>
@@ -483,19 +484,16 @@
 <!-- Claude's Pick -->
 <section class="pick-section">
 <h2>🤖 Claude's Pick</h2>
-<div class="pick-item">
+<div class="pick-item jfnb-card" data-card-index="10" data-card-title="🏆 걸프 AI 인프라의 물리적 취약성 노출" data-card-type="cluster" id="art-10">
 <h4>🏆 걸프 AI 인프라의 물리적 취약성 노출</h4>
 <p>이란 드론이 UAE Amazon 데이터센터를 직접 타격한 사건은 '클라우드는 안전하다'는 통념에 치명적 균열을 낸다. 중동에 AI 인프라를 집중 투자하던 빅테크 전략이 지정학 리스크 앞에서 재검토될 수밖에 없는 전환점. 데이터센터의 물리적 보안이 사이버 보안만큼 중요해진 시대.</p>
 </div>
-<div class="pick-item">
+<div class="pick-item jfnb-card" data-card-index="11" data-card-title="🏆 AI 기업 vs 미국 정부 — 법정으로 간 기술 주권 분쟁" data-card-type="cluster" id="art-11">
 <h4>🏆 AI 기업 vs 미국 정부 — 법정으로 간 기술 주권 분쟁</h4>
 <p>Anthropic의 '화웨이급 제재'와 법정 대응 선언은 AI 산업의 새로운 국면을 상징한다. 중국 기업에 적용되던 공급망 리스크 지정이 미국 AI 기업에 처음 적용되며, 기술 주권 논쟁이 동맹국·자국 기업 구분 없이 확장. AI 안전 vs 국가 안보의 근본적 긴장이 사법부 판단으로 넘어갔다.</p>
 </div>
 </section>
-<footer>
-<p>Generated by Claude | Weekly Briefing v1.6</p>
-<p>데이터 기간: 2026-03-02 ~ 2026-03-07</p>
-</footer>
+
 </div>
 
 <footer class="reader-footer">
