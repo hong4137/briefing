@@ -93,9 +93,63 @@
     return titleOf(card);
   }
 
-  function summaryOf(card) {
-    var el = card.querySelector('.article-summary, .summary, p.status, p');
+  /* 요약 추출 —— 셀렉터 목록(`a, b, c`)은 우선순위가 아니라 문서 순으로 매칭된다.
+   * 예전 코드 `querySelector('.article-summary, .summary, p.status, p')`는
+   * 바로 이 이유로 p.article-title-kr(한글 제목)을 먼저 집어 요약을 통째로 잃었다.
+   * 코퍼스 4,420장 실측으로 뽑은 순서다. 반드시 한 개씩 순서대로 시도할 것. */
+  var SUM_SELS = [
+    '.article-summary',                                  // 일간 현행 (3,965장)
+    '.cluster-story', '.cluster-summary', '.story-summary',
+    '.standalone-desc', '.pick-body', '.pick-rationale',  // 주간
+    '.article-content', '.article-desc', '.article-subtitle',
+    '.summary', '.desc', '.why',
+    '.status', '.current-status', '.story-context', '.insight',
+    '.pick-reason'                                       // PICK 카드는 이게 본문이다
+  ];
+  // 폴백에서 건너뛸 클래스 — 제목·메타·배지·타임라인 부속
+  var SUM_DENY = /(^|[-_ ])(title|ttl|headline|meta|badge|badges|source|date|time|score|rank|chip|tag|tags|timeline|tl|num|lab|day|momentum|vs|header|head|footer|jfnb|actions|key-point)([-_ ]|$)/i;
+  var BLOCK_SEL = 'p, div, ul, ol, li, h1, h2, h3, h4, table, section, article';
+
+  function clean(el) {
     return el ? el.textContent.replace(/\s+/g, ' ').trim() : '';
+  }
+
+  function summaryOf(card) {
+    var i, j, els, t;
+
+    for (i = 0; i < SUM_SELS.length; i++) {
+      els = card.querySelectorAll(SUM_SELS[i]);
+      for (j = 0; j < els.length; j++) {
+        t = clean(els[j]);
+        if (t) return t;
+      }
+    }
+
+    // 폴백 1 — 이름 없는 본문 단락 (2025-12 초기판 141장)
+    var title = card.getAttribute('data-card-title') || '';
+    var cand = card.querySelectorAll('p, div');
+    for (i = 0; i < cand.length; i++) {
+      var el = cand[i];
+      var cls = el.className;
+      if (typeof cls !== 'string') cls = '';        // SVG 등은 className이 객체다
+      if (cls && SUM_DENY.test(cls)) continue;
+      if (el.querySelector(BLOCK_SEL)) continue;    // 컨테이너는 건너뛴다
+      t = clean(el);
+      if (t.length >= 25 && t !== title) return t;
+    }
+
+    // 폴백 2 — 요약이 아예 없는 초기 주간 클러스터(24장). 타임라인이 본문 역할을 한다.
+    var tl = card.querySelectorAll('.timeline-item, .tl-item, .timeline li');
+    if (tl.length) {
+      var parts = [];
+      for (i = 0; i < tl.length; i++) {
+        t = clean(tl[i]);
+        if (t) parts.push(t);
+      }
+      if (parts.length) return parts.join(' · ');
+    }
+
+    return '';
   }
 
   function toast(msg) {
@@ -137,6 +191,8 @@
   var fb = null;            // { app, auth, db, A(auth모듈), F(firestore모듈) }
   var fbPromise = null;
   var user = null;          // 현재 로그인 사용자
+  var authReady = false;    // onAuthStateChanged가 한 번이라도 돌았는가
+  var pendingSave = null;   // 로그인 유도로 보류된 보관 요청 { id }
   var visits = null;        // { since, seen:{} } — 서버가 유일 진실
   var retryQueue = [];      // 열람 기록 전송 실패분. 재시도 1회면 충분하다
 
@@ -175,11 +231,16 @@
 
   function onAuthChanged(u) {
     user = u || null;
+    authReady = true;
     if (user) {
       try { localStorage.setItem(AUTH_MARK, '1'); } catch (e) {}
+      closeLoginAsk();
+      flushPendingSave();      // pullCloud보다 먼저 — 병합에 함께 실려 올라간다
       upsertProfile();
       pullCloud();
     } else {
+      // 보류된 담기가 있는데 세션 복원에 실패했다면 그때 로그인 창을 띄운다
+      if (pendingSave) askLogin();
       // 로그아웃 시 로컬 캐시를 비운다 — 서버에 있으므로 잃는 게 없고,
       // 공용 PC에서 남의 보관함이 남는 쪽이 더 나쁘다 (결정 #9)
       try {
@@ -395,7 +456,8 @@
 
     var box = document.createElement('div');
     box.className = 'jfnb-hint';
-    box.innerHTML = '<span>로그인하면 아직 <strong>안 본 브리핑</strong>을 표시해드립니다.</span>';
+    box.innerHTML = '<span>로그인하면 아직 <strong>안 본 브리핑</strong>이 표시되고, '
+                  + '<strong>보관함</strong>이 기기 간에 동기화됩니다.</span>';
     var go = document.createElement('button');
     go.type = 'button'; go.className = 'jfnb-hint-go'; go.textContent = '로그인';
     go.addEventListener('click', doLogin);
@@ -441,6 +503,148 @@
     btn.title = on ? '보관함에서 빼기' : '보관함에 담기';
   }
 
+  /* ══════════════ 로그인 요구 (보관 버튼) ══════════════
+   * 보관함은 기기 간 동기화가 본질이라 로그인이 전제다.
+   * 비로그인 상태에서 담으면 로컬에만 쌓였다가 로그인 시점에 사라진 것처럼 보인다
+   * (로그아웃/최초 로그인 때 로컬 캐시를 비우기 때문 — 결정 #9).
+   * 그래서 담기 전에 막고 로그인을 먼저 요구한다. */
+
+  var askBox = null;
+
+  /* 스타일은 theme-modern.css가 아니라 여기서 주입한다.
+   * saved.html·search.html·about.html과 아카이브 2개 파일이 그 CSS를 안 물고 있어,
+   * 시트에 넣으면 그 페이지들에서 다이얼로그가 무스타일로 뜬다. */
+  var ASK_CSS = [
+    '.jfnb-ask{position:fixed;inset:0;background:rgba(8,8,14,.68);',
+    '-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);',
+    'display:flex;align-items:center;justify-content:center;padding:20px;z-index:10000}',
+    '.jfnb-ask-box{width:100%;max-width:380px;background:#15151f;',
+    'border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px 22px 18px;',
+    'box-shadow:0 24px 60px rgba(0,0,0,.55);',
+    'font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.7}',
+    '.jfnb-ask-t{margin:0 0 10px;font-size:1.02rem;font-weight:700;color:#fff;line-height:1.4}',
+    '.jfnb-ask-d{margin:0 0 20px;font-size:.86rem;line-height:1.6;color:#a9b1c9}',
+    '.jfnb-ask-row{display:flex;gap:8px;justify-content:flex-end}',
+    '.jfnb-ask-go,.jfnb-ask-no{border:0;border-radius:9px;padding:9px 18px;',
+    'font:inherit;font-size:.87rem;cursor:pointer}',
+    '.jfnb-ask-go{background:linear-gradient(135deg,#667eea,#a855f7);color:#fff;font-weight:600}',
+    '.jfnb-ask-go:hover{filter:brightness(1.12)}',
+    '.jfnb-ask-no{background:rgba(255,255,255,.06);color:#9aa2ba;',
+    'border:1px solid rgba(255,255,255,.1)}',
+    '.jfnb-ask-no:hover{color:#fff;background:rgba(255,255,255,.1)}',
+    '.jfnb-ask-go:focus-visible,.jfnb-ask-no:focus-visible{outline:2px solid #8fa6ff;outline-offset:2px}',
+    '@media(max-width:480px){.jfnb-ask-box{padding:20px 18px 16px}',
+    '.jfnb-ask-row{flex-direction:column-reverse}',
+    '.jfnb-ask-go,.jfnb-ask-no{width:100%;padding:12px}}'
+  ].join('');
+
+  function ensureAskCss() {
+    if (document.getElementById('jfnb-ask-css')) return;
+    var s = document.createElement('style');
+    s.id = 'jfnb-ask-css';
+    s.textContent = ASK_CSS;
+    document.head.appendChild(s);
+  }
+
+  function closeLoginAsk() {
+    if (!askBox) return;
+    askBox.remove();
+    askBox = null;
+    document.removeEventListener('keydown', onAskKey);
+  }
+
+  function onAskKey(ev) {
+    if (ev.key === 'Escape') { pendingSave = null; closeLoginAsk(); }
+  }
+
+  function askLogin() {
+    closeLoginAsk();
+    ensureAskCss();
+
+    var ov = document.createElement('div');
+    ov.className = 'jfnb-ask';
+    ov.setAttribute('role', 'dialog');
+    ov.setAttribute('aria-modal', 'true');
+    ov.setAttribute('aria-label', '로그인 필요');
+
+    var box = document.createElement('div');
+    box.className = 'jfnb-ask-box';
+
+    var h = document.createElement('p');
+    h.className = 'jfnb-ask-t';
+    h.textContent = '🔖 보관하려면 로그인이 필요합니다';
+
+    var p = document.createElement('p');
+    p.className = 'jfnb-ask-d';
+    p.textContent = '보관함은 구글 계정에 저장돼 휴대폰·PC 어디서든 같은 목록을 봅니다. 가입 절차는 없습니다.';
+
+    var row = document.createElement('div');
+    row.className = 'jfnb-ask-row';
+
+    var go = document.createElement('button');
+    go.type = 'button';
+    go.className = 'jfnb-ask-go';
+    go.textContent = '구글로 로그인';
+    go.addEventListener('click', function () { doLogin(); });
+
+    var no = document.createElement('button');
+    no.type = 'button';
+    no.className = 'jfnb-ask-no';
+    no.textContent = '나중에';
+    no.addEventListener('click', function () { pendingSave = null; closeLoginAsk(); });
+
+    row.appendChild(no);
+    row.appendChild(go);
+    box.appendChild(h); box.appendChild(p); box.appendChild(row);
+    ov.appendChild(box);
+
+    ov.addEventListener('click', function (ev) {
+      if (ev.target === ov) { pendingSave = null; closeLoginAsk(); }
+    });
+
+    document.body.appendChild(ov);
+    askBox = ov;
+    document.addEventListener('keydown', onAskKey);
+    setTimeout(function () { go.focus(); }, 20);
+  }
+
+  // 로그인 직후, 보류돼 있던 카드를 그대로 담아준다 (한 번 더 누르게 하지 않는다)
+  function flushPendingSave() {
+    if (!pendingSave) return;
+    var card = document.getElementById(pendingSave.id);
+    pendingSave = null;
+    if (!card) return;
+    var btn = card.querySelector('.jfnb-bm');
+    if (!btn) return;
+    if (indexOfKey(load(), keyOf(card)) !== -1) { setBmState(btn, true); return; }
+    toggleBookmark(card, btn);
+  }
+
+  function toggleBookmark(card, btn) {
+    var list = load();
+    var k = keyOf(card);
+    var at = indexOfKey(list, k);
+    if (at !== -1) {
+      list.splice(at, 1);
+      setBmState(btn, false);
+      toast('보관함에서 뺐습니다');
+    } else {
+      list.unshift({
+        k:  k,
+        d:  stem(),
+        a:  card.id,
+        t:  displayTitle(card).slice(0, 200),
+        ty: card.getAttribute('data-card-type') || 'article',
+        ts: Date.now()
+      });
+      setBmState(btn, true);
+      toast(save(list) === false ? '저장 공간이 가득 찼습니다' : '보관함에 담았습니다');
+    }
+    save(list);
+    paintCount(list.length);
+    pushBookmarks();                 // 로그인 상태면 디바운스 후 서버 반영
+  }
+
   // 클라우드 병합 후 버튼 상태를 다시 칠한다
   function refreshBookmarkButtons() {
     var list = load();
@@ -453,7 +657,10 @@
   function copyPayload(card) {
     var isCluster = card.getAttribute('data-card-type') === 'cluster';
     var label = isCluster ? '주간 브리핑' : '외신 브리핑';
-    var date = (document.querySelector('.date-badge') || {}).textContent || stem();
+    var badge = document.querySelector('.date-badge');
+    var date = (badge && badge.textContent.trim())
+      ? badge.textContent.replace(/\s+/g, ' ').trim()
+      : (stem().match(/\d{4}-\d{2}-\d{2}$/) || [stem()])[0];   // weekly- 접두사를 떼어낸다
     var url = card.getAttribute('data-card-url');
     var perma = location.origin + location.pathname + '#' + card.id;
     var body = summaryOf(card);
@@ -546,28 +753,23 @@
         return;
       }
 
-      var list = load();
-      var k = keyOf(card);
-      var at = indexOfKey(list, k);
-      if (at !== -1) {
-        list.splice(at, 1);
-        setBmState(btn, false);
-        toast('보관함에서 뺐습니다');
-      } else {
-        list.unshift({
-          k:  k,
-          d:  stem(),
-          a:  card.id,
-          t:  displayTitle(card).slice(0, 200),
-          ty: card.getAttribute('data-card-type') || 'article',
-          ts: Date.now()
-        });
-        setBmState(btn, true);
-        toast(save(list) === false ? '저장 공간이 가득 찼습니다' : '보관함에 담았습니다');
+      /* 보관 — 로그인 게이트 */
+      if (!user) {
+        var mark = null;
+        try { mark = localStorage.getItem(AUTH_MARK); } catch (e) {}
+        if (mark === '1' && !authReady) {
+          // 로그인한 적 있는 기기. SDK가 아직 세션을 복원하는 중이다
+          pendingSave = { id: card.id };
+          initFirebase().catch(function () { pendingSave = null; askLogin(); });
+          toast('로그인 확인 중입니다…');
+          return;
+        }
+        pendingSave = { id: card.id };
+        askLogin();
+        return;
       }
-      save(list);
-      paintCount(list.length);
-      pushBookmarks();                 // 로그인 상태면 디바운스 후 서버 반영
+
+      toggleBookmark(card, btn);
     });
 
     paintCount(load().length);
@@ -598,6 +800,14 @@
     try { mark = localStorage.getItem(AUTH_MARK); } catch (e) {}
     if (mark === '1') initFirebase().catch(function () {});
   }
+
+  // saved.html 등 개별 페이지에서 로그인 버튼을 붙일 수 있게 최소한만 노출한다
+  window.JFNB = {
+    login: doLogin,
+    logout: doLogout,
+    isAuthed: function () { return !!user; },
+    askCss: ensureAskCss           // .jfnb-ask-go 버튼을 직접 쓰는 페이지용
+  };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

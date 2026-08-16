@@ -40,6 +40,7 @@
   .sub { color:var(--text-dim); font-size:.9rem; margin-bottom:26px; }
 
   .toolbar { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:20px; }
+  .toolbar[hidden] { display:none; }   /* display:flex가 기본 [hidden] 규칙을 덮어쓴다 */
   .chip {
     border:1px solid var(--border); background:var(--bg-card); color:var(--text-dim);
     border-radius:999px; padding:6px 14px; font-size:.82rem; cursor:pointer;
@@ -73,6 +74,15 @@
   .empty { text-align:center; padding:70px 20px; color:var(--text-dim); }
   .empty .ico { font-size:2.6rem; margin-bottom:14px; }
   .empty a { color:var(--accent); }
+  /* app.js는 defer라 이 인라인 스크립트보다 늦게 실행된다.
+     주입 CSS에 기대지 않고 여기서 직접 정의한다. */
+  .login-btn {
+    border:0; border-radius:9px; padding:10px 22px; font:inherit; font-size:.9rem;
+    font-weight:600; color:#fff; cursor:pointer;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  }
+  .login-btn:hover { filter:brightness(1.12); }
+  .login-btn:focus-visible { outline:2px solid #8fa6ff; outline-offset:2px; }
 
   footer { text-align:center; color:#5f6478; font-size:.84rem; padding:30px 20px 50px; }
   footer a { color:var(--accent); text-decoration:none; }
@@ -83,7 +93,7 @@
     .item { padding:14px; gap:10px; }
   }
 </style>
-    <script src="app.js?v=2" defer></script>
+    <script src="app.js?v=3" defer></script>
 </head>
 <body>
 <nav class="nav">
@@ -102,7 +112,7 @@
 
 <div class="wrap">
   <h1>⭐ 보관함</h1>
-  <p class="sub">이 브라우저에만 저장됩니다. 로그인도 서버도 없습니다.</p>
+  <p class="sub">구글 계정에 저장됩니다. 휴대폰·PC 어디서 담아도 같은 목록입니다.</p>
 
   <div class="toolbar" id="toolbar" hidden>
     <button type="button" class="chip on" data-filter="all">전체 <span id="c-all"></span></button>
@@ -157,6 +167,20 @@
 
     if (!all.length) {
       bar.hidden = true;
+      var authed = false;
+      try { authed = localStorage.getItem('jfnb-auth') === '1'; } catch (e) {}
+      if (!authed) {
+        box.innerHTML = '<div class="empty"><div class="ico">🔖</div>'
+          + '<p>보관함은 로그인한 뒤에 쓸 수 있습니다.</p>'
+          + '<p style="margin-top:8px">구글 계정에 저장돼 휴대폰·PC 어디서든 같은 목록을 봅니다. 가입 절차는 없습니다.</p>'
+          + '<p style="margin-top:16px"><button type="button" id="saved-login" class="login-btn">구글로 로그인</button></p></div>';
+        var lb = document.getElementById('saved-login');
+        if (lb) lb.addEventListener('click', function () {
+          if (window.JFNB) window.JFNB.login();
+          else location.href = 'index.html';
+        });
+        return;
+      }
       box.innerHTML = '<div class="empty"><div class="ico">🔖</div>'
         + '<p>아직 보관한 기사가 없습니다.</p>'
         + '<p style="margin-top:8px">브리핑에서 기사 카드 오른쪽 위의 🏷️ 버튼을 눌러 담아보세요.</p>'
