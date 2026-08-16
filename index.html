@@ -1004,7 +1004,7 @@ body.light-mode .theme-toggle-btn {
 
 </style>
     <link rel="stylesheet" href="theme-modern.css?v=20260118">
-    <script src="app.js?v=1" defer></script>
+    <script src="app.js?v=2" defer></script>
 </head>
 <body class="shell-page">
     <!-- Navigation -->
@@ -1027,6 +1027,8 @@ body.light-mode .theme-toggle-btn {
                     <li><a href="archive.html">아카이브</a></li>
                     <li><a href="about.html">소개</a></li>
                     <li><a href="saved.html">⭐ 보관함 <span data-jfnb-count></span></a></li>
+                <li><span data-jfnb-unread class="nav-unread"></span></li>
+                <li><span data-jfnb-auth></span></li>
                 </ul>
               </div>
             </div>
@@ -1287,7 +1289,7 @@ body.light-mode .theme-toggle-btn {
             }
 
             document.getElementById('archive-container').innerHTML = briefings.map(b => `
-                <a href="archive/${b.date}.html" class="highlight">
+                <a href="archive/${b.date}.html" class="highlight" data-briefing="${b.date}">
                     ${b.thumb_url ? `<div class="card-thumbnail">
                         <img src="${b.thumb_url}" alt="${b.thumb_alt || ''}" loading="lazy" decoding="async">
                     </div>` : ''}

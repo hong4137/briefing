@@ -627,7 +627,7 @@ body.light-mode .theme-toggle-btn {
 
 </style>
     <link rel="stylesheet" href="theme-modern.css?v=20260527">
-    <script src="app.js?v=1" defer></script>
+    <script src="app.js?v=2" defer></script>
 </head>
 <body class="shell-page archive-page">
     <!-- Navigation -->
@@ -650,6 +650,8 @@ body.light-mode .theme-toggle-btn {
                     <li><a href="archive.html" class="active">아카이브</a></li>
                     <li><a href="about.html">소개</a></li>
                     <li><a href="saved.html">⭐ 보관함 <span data-jfnb-count></span></a></li>
+                <li><span data-jfnb-unread class="nav-unread"></span></li>
+                <li><span data-jfnb-auth></span></li>
                 </ul>
             </div>
         </div>
@@ -789,7 +791,7 @@ body.light-mode .theme-toggle-btn {
             document.getElementById('special-section').style.display = 'block';
 
             document.getElementById('special-container').innerHTML = allItems.map(item => `
-                <a href="${item.link}" class="special-card ${item.type}">
+                <a href="${item.link}" class="special-card ${item.type}" data-briefing="${item.date}">
                     <div class="special-badge ${item.type}">${item.badge}</div>
                     <h3>${item.title}</h3>
                     <p class="summary">${item.summary}</p>
@@ -852,7 +854,7 @@ body.light-mode .theme-toggle-btn {
                         </div>
                         <div class="timeline-list">
                             ${monthBriefings.map(b => `
-                                <a href="archive/${encodeURIComponent(b.date)}.html" class="tl-item">
+                                <a href="archive/${encodeURIComponent(b.date)}.html" class="tl-item" data-briefing="${b.date}">
                                     <div class="tl-date">
                                         <div class="day">${escapeHTML(b.date.substring(5))}</div>
                                         <div class="weekday">(${escapeHTML(b.day || '')})</div>

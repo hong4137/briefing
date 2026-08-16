@@ -731,3 +731,99 @@ body.shell-page .footer-counter {
   .jfnb-focus { animation: none; }
   .jfnb-toast { transition: none; }
 }
+
+/* ══════════════════════════════════════════════════════════
+   JFNB 로그인 · '안 본 브리핑' (app.js v2)
+   ══════════════════════════════════════════════════════════ */
+
+.jfnb-auth-btn {
+  border: 1px solid rgba(255, 255, 255, .16);
+  background: rgba(255, 255, 255, .04);
+  color: #b9c2e0;
+  border-radius: 999px;
+  padding: 4px 14px;
+  font: inherit;
+  font-size: .82rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .18s, border-color .18s, color .18s;
+}
+
+.jfnb-auth-btn:hover {
+  background: rgba(102, 126, 234, .22);
+  border-color: rgba(102, 126, 234, .5);
+  color: #fff;
+}
+
+.jfnb-auth-btn:focus-visible { outline: 2px solid #8fa6ff; outline-offset: 2px; }
+
+[data-jfnb-unread]:not(:empty) {
+  display: inline-block;
+  background: rgba(255, 140, 66, .18);
+  color: #ffb27d;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: .76rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* 안 읽은 항목에만 점을 찍는다. 읽은 것을 흐리게 하지 않는다 —
+   245개 중 대부분이 흐려지면 목록이 죽는다. */
+.jfnb-unread { position: relative; }
+
+.jfnb-unread::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff8c42;
+  box-shadow: 0 0 0 3px rgba(255, 140, 66, .18);
+  pointer-events: none;
+}
+
+/* 로그인 유도 배너 — 벽이 아니라 한 줄 안내 */
+.jfnb-hint {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: rgba(102, 126, 234, .10);
+  border: 1px solid rgba(102, 126, 234, .28);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 0 0 20px;
+  font-size: .9rem;
+  color: #c7cfe8;
+}
+
+.jfnb-hint strong { color: #fff; }
+.jfnb-hint-go {
+  border: 0;
+  background: rgba(102, 126, 234, .45);
+  color: #fff;
+  border-radius: 8px;
+  padding: 5px 14px;
+  font: inherit;
+  font-size: .84rem;
+  cursor: pointer;
+}
+.jfnb-hint-go:hover { background: rgba(102, 126, 234, .7); }
+.jfnb-hint-x {
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  color: #8b93ad;
+  font-size: .9rem;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+.jfnb-hint-x:hover { color: #fff; }
+
+@media (max-width: 480px) {
+  .jfnb-unread::after { top: 10px; right: 10px; }
+  .jfnb-hint { font-size: .84rem; padding: 10px 12px; }
+}
