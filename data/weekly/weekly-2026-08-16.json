@@ -4,12 +4,70 @@
   "title": "8월 3주차 | AI 상장 러시와 반도체 쏠림",
   "summary": "OpenAI·Anthropic·Databricks가 6일 안에 나란히 자금조달·상장 준비 소식을 냈고, Intel 증자와 Nvidia 대형 파이낸싱이 겹쳤다. 시장은 지수가 아니라 반도체만 골라 반응해 SOX +3.53% vs S&P 500 +0.42%. 앱스토어 개방 압박과 AI 사이버 공방도 진도를 냈다.",
   "period": "2026-08-10 ~ 2026-08-15",
-  "stats": { "clusters": 10, "total_articles": 133, "headline_articles": 18, "top_stories": 5, "standalone": 5, "picks": 2 },
+  "stats": {
+    "clusters": 10,
+    "total_articles": 133,
+    "headline_articles": 18,
+    "top_stories": 5,
+    "standalone": 5,
+    "picks": 2
+  },
   "top_stories": [
-    {"rank":1,"title":"AI 기업들의 동시다발 자금조달·상장 준비 러시","article_count":5,"days_reported":4,"multiplier":1.0,"weekly_score":5.0,"badge":"📈 관심","momentum":"🔥 상승세","status":"⏳ 진행중"},
-    {"rank":2,"title":"앱스토어 개방 압박 — Epic 판결의 실제 청구서","article_count":2,"days_reported":2,"multiplier":1.0,"weekly_score":2.0,"badge":"📈 관심","momentum":"→ 유지","status":"⏳ 진행중"},
-    {"rank":3,"title":"AI 사이버 공방 — 배후 규명에서 국가 차원 반격 허용까지","article_count":2,"days_reported":2,"multiplier":1.0,"weekly_score":2.0,"badge":"📈 관심","momentum":"→ 유지","status":"⏳ 진행중"},
-    {"rank":4,"title":"모델 역량 경쟁 — 오픈웨이트 공개와 수학 난제 진전","article_count":2,"days_reported":2,"multiplier":1.0,"weekly_score":2.0,"badge":"📈 관심","momentum":"→ 유지","status":"📋 모니터링"},
-    {"rank":5,"title":"구글 Pixel 11 공세 — 애플 Siri 출시 직전 선제타격","article_count":2,"days_reported":1,"multiplier":0.6,"weekly_score":1.2,"badge":"📉 단발","momentum":"→ 유지","status":"✅ 해결/진행됨"}
-  ]
+    {
+      "rank": 1,
+      "title": "AI 기업들의 동시다발 자금조달·상장 준비 러시",
+      "article_count": 5,
+      "days_reported": 4,
+      "multiplier": 1.0,
+      "weekly_score": 5.0,
+      "badge": "📈 관심",
+      "momentum": "🔥 상승세",
+      "status": "⏳ 진행중"
+    },
+    {
+      "rank": 2,
+      "title": "앱스토어 개방 압박 — Epic 판결의 실제 청구서",
+      "article_count": 2,
+      "days_reported": 2,
+      "multiplier": 1.0,
+      "weekly_score": 2.0,
+      "badge": "📈 관심",
+      "momentum": "→ 유지",
+      "status": "⏳ 진행중"
+    },
+    {
+      "rank": 3,
+      "title": "AI 사이버 공방 — 배후 규명에서 국가 차원 반격 허용까지",
+      "article_count": 2,
+      "days_reported": 2,
+      "multiplier": 1.0,
+      "weekly_score": 2.0,
+      "badge": "📈 관심",
+      "momentum": "→ 유지",
+      "status": "⏳ 진행중"
+    },
+    {
+      "rank": 4,
+      "title": "모델 역량 경쟁 — 오픈웨이트 공개와 수학 난제 진전",
+      "article_count": 2,
+      "days_reported": 2,
+      "multiplier": 1.0,
+      "weekly_score": 2.0,
+      "badge": "📈 관심",
+      "momentum": "→ 유지",
+      "status": "📋 모니터링"
+    },
+    {
+      "rank": 5,
+      "title": "구글 Pixel 11 공세 — 애플 Siri 출시 직전 선제타격",
+      "article_count": 2,
+      "days_reported": 1,
+      "multiplier": 0.6,
+      "weekly_score": 1.2,
+      "badge": "📉 단발",
+      "momentum": "→ 유지",
+      "status": "✅ 해결/진행됨"
+    }
+  ],
+  "generated_at": "2026-08-16T11:55:00+09:00"
 }
