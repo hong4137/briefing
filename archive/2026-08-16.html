@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anthropic 2Q 매출 115억달러, SpaceX·Cursor 인수 완료 | Jae's Briefing</title>
+<meta name="description" content="Anthropic 2분기 매출이 115억달러로 전년 대비 14배 넘게 뛰며 IPO 기대를 키웠고, SpaceX는 AI 코딩 스타트업 Cursor 인수를 600억달러 규모로 최종 마무리했다. Nvidia는 13F 공시로 SpaceX 지분 210억달러·Intel 지분 300억달러 보유 사실을 드러냈다.">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="date-badge">2026년 8월 16일 일요일</div>
+        <h1 class="title">Anthropic 2Q 매출 115억달러 | SpaceX, Cursor 인수 완료 | Nvidia, SpaceX 지분 210억달러 공시</h1>
+        <p class="summary">Anthropic 2분기 매출이 115억달러로 전년 대비 14배 넘게 뛰며 IPO 기대를 키웠고, SpaceX는 AI 코딩 스타트업 Cursor 인수를 600억달러 규모로 최종 마무리했다. Nvidia는 13F 공시로 SpaceX 지분 210억달러·Intel 지분 300억달러 보유 사실을 드러냈다.</p>
+    </header>
+
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+        <article class="article-card">
+            <span class="badge badge-hot">HOT</span>
+            <h3 class="article-title">Anthropic revenue reportedly jumps to more than $11.5 billion in second quarter</h3>
+            <p class="article-title-kr">Anthropic 2분기 매출 115억달러 — 전년 대비 14배 넘게 급증</p>
+            <p class="article-summary">Claude 개발사 Anthropic의 2분기 매출이 115억달러를 넘어선 것으로 보도됐다. Bloomberg는 전년 동기 대비 14배 이상 늘어난 수치라고 전했다. IPO를 앞두고 성장 속도를 입증해야 하는 시점에 나온 숫자로, 기업용 수요가 매출을 끌어올린 구조라는 해석이 붙는다. 8월 14일 CFO가 투자자들과 IPO 사전 미팅을 시작했다는 보도의 후속으로, 상장 밸류에이션 논의의 출발점이 될 전망이다.</p>
+            <div class="article-meta">
+                <span class="source">CNBC Tech Hero, Bloomberg</span>
+                <a href="https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <span class="badge badge-breaking">BREAKING</span>
+            <h3 class="article-title">SpaceX officially closes its Cursor acquisition</h3>
+            <p class="article-title-kr">SpaceX, AI 코딩 스타트업 Cursor 인수 최종 완료 — 600억달러 규모</p>
+            <p class="article-summary">SpaceX가 AI 코딩 스타트업 Cursor 인수 절차를 공식적으로 마무리했다. Bloomberg는 거래 규모를 600억달러로 전했다. 로켓·위성 기업이 개발 도구 회사를 사들인 이례적 조합으로, xAI를 축으로 한 머스크 진영의 AI 자산 재편이 한 단계 더 진행된 셈이다. 개발자 도구 시장에서 Cursor의 독립성이 어떻게 유지될지가 다음 관전 포인트다.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch Featured, Bloomberg</span>
+                <a href="https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Nvidia discloses $21 billion stake in SpaceX at end of second quarter</h3>
+            <p class="article-title-kr">Nvidia, SpaceX 지분 210억달러 보유 공시 — Intel 지분도 300억달러</p>
+            <p class="article-summary">Nvidia가 2분기 말 기준 SpaceX 지분 약 210억달러를 보유하고 있다고 공시했다. xAI 투자를 거쳐 확보한 지분이다. 같은 공시에서 Intel 지분 300억달러어치도 드러났다. AI 반도체 공급자가 고객·경쟁사 자본구조에 동시에 걸쳐 있는 구도가 숫자로 확인된 것으로, 앞서 보도된 Intel 150억달러 증자 건과 맞물려 읽을 필요가 있다.</p>
+            <div class="article-meta">
+                <span class="source">CNBC Tech Featured, Bloomberg</span>
+                <a href="https://www.cnbc.com/2026/08/14/nvidia-discloses-21-billion-stake-in-spacex-at-end-of-second-quarter.html" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        </section>
+        <section class="section">
+            <h2 class="section-title">🤖 AI/기술</h2>
+        <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Zhipu launches GLM-5.3 model as China seeks Mythos-level edge in cyber defence</h3>
+            <p class="article-title-kr">Zhipu, GLM-5.3 공개 — 중국의 &#x27;사이버 방어용 최상위 모델&#x27; 겨냥</p>
+            <p class="article-summary">중국 Zhipu가 플래그십 모델 GLM-5.3을 공개했다. 회사는 사이버 방어 관련 과제에서 선도 모델들을 앞섰다고 주장한다. 미국 최상위 티어 모델에 대응할 국산 모델을 확보하려는 중국의 흐름을 보여주는 사례로, 보안 영역에 초점을 맞춘 마케팅이 특징이다.</p>
+            <div class="article-meta">
+                <span class="source">SCMP Tech Featured</span>
+                <a href="https://scmp.com/tech/big-tech/article/3364077/zhipu-launches-flagship-model-glm-53-china-seeks-mythos-level-edge-cyber-defence" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Back in the Harness: DeepSeek continues its pivot towards agentic AI</h3>
+            <p class="article-title-kr">DeepSeek, &#x27;Harness&#x27; 출시로 에이전틱 AI 전환 가속</p>
+            <p class="article-summary">DeepSeek이 Harness를 내놓으며 자율 에이전트 방향으로의 전략 전환을 이어가고 있다. 저비용 추론 모델로 이름을 알린 회사가 실행형 에이전트로 무게중심을 옮기는 흐름으로, 앞서 보도된 중국 모델들의 코딩·에이전트 경쟁과 같은 맥락에 있다.</p>
+            <div class="article-meta">
+                <span class="source">SCMP Tech Featured</span>
+                <a href="https://scmp.com/tech/big-tech/article/3364082/launch-deepseeks-harness-marks-its-strategic-pivot-towards-autonomous-agentic-ai" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Open-weight Chinese AI models gain foothold in Europe despite Brussels&#x27; trepidation</h3>
+            <p class="article-title-kr">중국 오픈웨이트 모델, EU의 경계에도 유럽에서 입지 확대</p>
+            <p class="article-summary">중국산 오픈웨이트 AI 모델이 유럽 기업들 사이에서 채택을 늘려가고 있다. 브뤼셀의 규제·안보 우려에도 비용과 자체 호스팅 가능성이 채택 유인으로 작용한다는 분석이다. 데이터 주권을 이유로 클라우드 API 대신 가중치를 직접 받아 돌리려는 수요가 배경에 있다.</p>
+            <div class="article-meta">
+                <span class="source">SCMP Tech Featured</span>
+                <a href="https://scmp.com/tech/tech-trends/article/3364085/open-weight-chinese-ai-models-gain-foothold-europe-despite-brussels-trepidation" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Secondhand booksellers in UK and Ireland suspect AI firms behind &#x27;strange&#x27; bulk orders</h3>
+            <p class="article-title-kr">영국·아일랜드 중고서점 대량 주문 배후에 AI 기업 의혹</p>
+            <p class="article-summary">영국과 아일랜드 중고서점들이 정체불명 구매자의 대량 주문이 몰리고 있다고 전했다. 학습 데이터 확보를 위해 AI 기업이 실물 책을 쓸어 담는 것 아니냐는 의심이 나온다. Anthropic이 &#x27;데이터 확보&#x27; 명목으로 책 구입에 수백만 달러를 쓴 사실이 확인된 뒤 나온 흐름이라, 스캔용 물리 도서 매집이 업계 관행이 되고 있는지가 쟁점이다.</p>
+            <div class="article-meta">
+                <span class="source">Guardian Tech Hero</span>
+                <a href="https://www.theguardian.com/technology/2026/aug/15/uk-ireland-booksellers-suspect-ai-companies-bulk-orders-data-acquisition" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">ChatGPT&#x27;s new Computer History tracks your Mac activity to create a timeline</h3>
+            <p class="article-title-kr">ChatGPT &#x27;컴퓨터 기록&#x27; 기능 — Mac 활동을 타임라인으로 저장</p>
+            <p class="article-summary">ChatGPT 맥 앱에 Computer History 기능이 배포되기 시작했다. 사용자가 오간 앱과 웹사이트를 모아 활동 타임라인을 만든다. 개인 비서 성능은 올라가지만 로컬 활동 로그가 모델 쪽으로 흐른다는 점에서 프라이버시 논쟁이 예상된다.</p>
+            <div class="article-meta">
+                <span class="source">ZDNet Featured</span>
+                <a href="https://www.zdnet.com/article/chatgpt-computer-history/" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Why Japanese firms are being so slow to use AI</h3>
+            <p class="article-title-kr">일본 기업들의 AI 도입이 유독 느린 이유</p>
+            <p class="article-summary">일본 기업의 AI 도입 속도가 주요국 대비 뒤처지는 배경으로 위험 회피 성향과 보수적 의사결정 구조가 지목된다. 도구가 없어서가 아니라 도입 결정을 내리는 방식이 병목이라는 진단이다. 같은 조직 문화를 공유하는 한국 기업에도 시사점이 있다.</p>
+            <div class="article-meta">
+                <span class="source">BBC Tech Featured</span>
+                <a href="https://bbc.com/news/articles/cwymw4434v7o" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        </section>
+        <section class="section">
+            <h2 class="section-title">💰 경제/금융</h2>
+        <article class="article-card">
+            <h3 class="article-title">China&#x27;s richest province taps Alibaba to power its AI and chip push</h3>
+            <p class="article-title-kr">중국 최대 부자 성(省) 광둥, 알리바바와 AI·반도체 협력 강화</p>
+            <p class="article-summary">광둥성이 알리바바와의 협력을 심화해 AI·반도체 육성에 나선다. 지방정부 재정과 빅테크 인프라를 묶는 방식으로, 중앙정부 주도가 아닌 성(省) 단위 산업정책이 본격화하는 신호다. 국내 반도체 공급망에도 수요 측면 변수로 작용할 수 있다.</p>
+            <div class="article-meta">
+                <span class="source">SCMP Tech Featured</span>
+                <a href="https://scmp.com/tech/policy/article/3364053/chinas-richest-province-taps-alibaba-power-its-ai-and-chip-push" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Hyperscalers might regret embracing natural gas if new forecast proves correct</h3>
+            <p class="article-title-kr">천연가스에 베팅한 하이퍼스케일러, 가격 3배 전망에 역풍 가능성</p>
+            <p class="article-summary">미국 일부 지역 천연가스 가격이 3배까지 오를 수 있다는 전망이 나왔다. 전력망 대기 시간을 피하려 가스 발전을 택한 데이터센터 사업자들이 장기적으로 큰 연료비를 떠안을 수 있다는 지적이다. AI 인프라 원가 구조에서 전력 조달 방식이 핵심 변수임을 다시 보여준다.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch Featured</span>
+                <a href="https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Nintendo shares pop 7% after &#x27;Pokemon Pokopia&#x27; sales top 5 million</h3>
+            <p class="article-title-kr">닌텐도 주가 7% 급등 — &#x27;포켓몬 포코피아&#x27; 500만장 돌파</p>
+            <p class="article-summary">포켓몬 신작 포코피아 판매가 500만장을 넘기며 닌텐도 주가가 7% 뛰었다. 닌텐도는 메모리 가격 상승 탓에 출시 1년여 된 Switch 2 가격을 올려야 했던 상황이다. 메모리 슈퍼사이클이 콘솔 제조 원가로 전이되는 사례로 볼 만하다.</p>
+            <div class="article-meta">
+                <span class="source">CNBC Tech, Bloomberg</span>
+                <a href="https://www.cnbc.com/2026/08/14/nintendo-shares-pokemon-pokopia-switch-2.html" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Inflation moderated as Intel and Nvidia fueled the AI trade in last week&#x27;s market</h3>
+            <p class="article-title-kr">물가 둔화 속 Intel·Nvidia가 이끈 지난주 AI 트레이드</p>
+            <p class="article-summary">물가 지표에 서프라이즈가 없었고, AI 관련 신규 파이낸싱 소식이 이어지며 지난주 미 증시가 기록적 강세를 보였다. Intel 증자와 Nvidia 관련 자금 조달이 랠리의 축이었다는 정리다. 다만 같은 주 미국 소매판매가 2025년 5월 이후 최대폭 감소했다는 지표도 함께 나왔다.</p>
+            <div class="article-meta">
+                <span class="source">CNBC Tech Featured</span>
+                <a href="https://www.cnbc.com/2026/08/15/inflation-moderated-as-intel-and-nvidia-fueled-the-ai-trade-in-last-week-market.html" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Every fusion startup that has raised over $100M</h3>
+            <p class="article-title-kr">1억달러 이상 조달한 핵융합 스타트업 총정리 — 누적 71억달러</p>
+            <p class="article-summary">핵융합 스타트업들이 지금까지 조달한 금액이 총 71억달러에 이르며, 그중 대부분이 소수 기업에 집중된 것으로 집계됐다. AI 데이터센터 전력 수요가 커지면서 장기 무탄소 기저전력에 대한 자본 유입이 이어지는 구조다.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch Featured</span>
+                <a href="https://techcrunch.com/2026/08/15/every-fusion-startup-that-has-raised-over-100m/" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        </section>
+        <section class="section">
+            <h2 class="section-title">📱 플랫폼/소셜</h2>
+        <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Beijing is forcing a mass breakup with AI lovers</h3>
+            <p class="article-title-kr">베이징, &#x27;AI 연인&#x27; 서비스 대규모 정리 착수</p>
+            <p class="article-summary">중국 당국이 AI 반려·연애 챗봇 서비스에 제동을 걸면서 이용자들이 강제로 관계를 끊게 됐다. 바이트댄스 더우바오 등 주요 서비스가 대상에 포함됐다. 감정적 의존을 겨냥한 규제라는 점에서, 서구권 AI 컴패니언 규제 논의에도 참고 사례가 된다.</p>
+            <div class="article-meta">
+                <span class="source">Rest of World Featured</span>
+                <a href="https://restofworld.org/2026/china-ai-boyfriend-ban-bytedance-doubao" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Why we should all be worried about AI in elections</h3>
+            <p class="article-title-kr">선거에 들어온 AI, 무엇이 문제인가</p>
+            <p class="article-summary">딥페이크와 유권자 대응 챗봇이 결합하면서 선거 국면의 정보 환경이 달라지고 있다는 분석이다. 개별 콘텐츠 단속만으로는 대응이 어렵고, 유권자 접점 자체가 자동화되는 지점이 핵심 위험으로 지목된다.</p>
+            <div class="article-meta">
+                <span class="source">Rest of World Featured</span>
+                <a href="https://restofworld.org/2026/ai-elections-deepfake-voter-chatbot" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">The offline messaging apps challenging internet shutdowns</h3>
+            <p class="article-title-kr">인터넷 차단에 맞서는 오프라인 메시징 앱들</p>
+            <p class="article-summary">인도의 GitHub 지역 차단 등 접속 차단이 이어지면서, 인터넷 없이 근거리 통신으로 메시지를 주고받는 앱들이 주목받고 있다. 잭 도시가 관여한 Bitchat 등이 사례로 거론된다. 인프라 의존을 끊는 방향의 앱 설계가 정치적 도구가 되는 흐름이다.</p>
+            <div class="article-meta">
+                <span class="source">Rest of World Featured</span>
+                <a href="https://restofworld.org/2026/india-github-geoblock-jack-dorsey-bitchat" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Bumble divides users by ditching its signature &#x27;women-first&#x27; chat rule</h3>
+            <p class="article-title-kr">범블, 간판이던 &#x27;여성 우선 메시지&#x27; 규칙 폐지에 이용자 분열</p>
+            <p class="article-summary">범블이 창업 초기부터 정체성으로 삼아온 &#x27;여성이 먼저 말을 건다&#x27; 규칙을 없애면서 이용자 반응이 갈리고 있다. 성장 정체를 돌파하려는 제품 결정이지만, 브랜드를 지탱하던 차별점을 스스로 지운다는 비판이 나온다.</p>
+            <div class="article-meta">
+                <span class="source">BBC Tech Featured</span>
+                <a href="https://bbc.com/news/articles/cvglzlj81x2o" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        </section>
+        <section class="section">
+            <h2 class="section-title">🔧 하드웨어/모빌리티</h2>
+        <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Self-driving trucks are officially testing on California highways</h3>
+            <p class="article-title-kr">자율주행 트럭, 캘리포니아 고속도로 공식 시험주행 시작</p>
+            <p class="article-summary">Aurora Innovation과 Kodiak AI가 캘리포니아 차량국(DMV)에서 허가를 받아 고속도로 시험주행에 들어갔다. 그동안 텍사스 중심으로 진행되던 자율주행 트럭 상용화가 규제 문턱이 높은 캘리포니아로 확장된 것이다.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch Featured</span>
+                <a href="https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">How long will software-defined cars last? The auto industry doesn&#x27;t know yet</h3>
+            <p class="article-title-kr">소프트웨어 정의 차량은 얼마나 오래 갈까 — 업계도 아직 모른다</p>
+            <p class="article-summary">소프트웨어 중심 차량이 주는 이점은 분명하지만, 소프트웨어 지원이 끊긴 뒤 차량 수명이 어떻게 되는지에 대해서는 업계에도 답이 없다는 지적이다. 중고차 잔존가치와 부품 공급 정책까지 파급될 수 있는 문제다.</p>
+            <div class="article-meta">
+                <span class="source">CNBC Tech Featured</span>
+                <a href="https://www.cnbc.com/2026/08/15/software-defined-vehicles-rivian-tesla.html" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Apple is warning users of new spyware attacks</h3>
+            <p class="article-title-kr">애플, 새로운 스파이웨어 표적 공격 경고</p>
+            <p class="article-summary">애플이 언론인·활동가·정치인·외교관 등을 겨냥한 새로운 스파이웨어 공격에 대해 대상자들에게 통지를 보내고 있다. 통지를 받은 이용자는 잠금 모드(Lockdown Mode) 활성화가 우선 대응으로 권고된다.</p>
+            <div class="article-meta">
+                <span class="source">ZDNet Featured</span>
+                <a href="https://www.zdnet.com/article/apple-warns-targetted-spyware-attacks-what-to-do/" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">US courts will start publishing how often the government uses spyware</h3>
+            <p class="article-title-kr">미 법원, 정부 스파이웨어 사용 건수 공개하기로</p>
+            <p class="article-summary">미 연방법원 행정처가 판사들이 스파이웨어를 이용한 감청을 몇 건이나 승인했는지 공개하겠다고 밝혔다. 그동안 전통적 감청 통계에는 잡히지 않던 영역으로, 상용 스파이웨어의 실제 사용 규모가 처음으로 수치화된다.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch Featured</span>
+                <a href="https://techcrunch.com/2026/08/14/us-courts-will-start-publishing-how-often-the-government-uses-spyware/" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">The Next Big Influencer Is This 4-Foot-Tall Robot From China</h3>
+            <p class="article-title-kr">중국산 1.2미터 로봇, 다음 대형 인플루언서가 되다</p>
+            <p class="article-summary">유니트리 G1이 상대적으로 저렴한 가격과 사람을 끄는 동작으로 온라인에서 인기를 얻고 있다. 다만 콘텐츠용 화제성을 넘어 실제 노동을 대체할 수 있느냐는 질문에는 아직 답이 없다는 평가다.</p>
+            <div class="article-meta">
+                <span class="source">Wired Featured</span>
+                <a href="https://www.wired.com/story/unitree-influencer-4-foot-robot-from-china/" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        </section>
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+        <article class="article-card">
+            <span class="badge badge-pick">PICK</span>
+            <h3 class="article-title">The online shopping trend where you buy nothing</h3>
+            <p class="article-title-kr">아무것도 사지 않는 쇼핑 — 한국의 &#x27;도파민 사이트&#x27;</p>
+            <p class="article-summary">한국의 이른바 &#x27;도파민 사이트&#x27;에서는 구매가 아니라 둘러보기·큐레이팅·배송 추적 같은 의식(ritual) 자체가 만족을 준다. 커머스 지표의 전환율이 아니라 체류와 반복 방문이 제품 목표가 되는 형태다.</p>
+            <p class="pick-reason">선정 이유: 신흥 소비 패턴 첫 등장 + 커머스 KPI 재정의 신호 / 한국 시장 연관성</p>
+            <div class="article-meta">
+                <span class="source">Rest of World Hero</span>
+                <a href="https://restofworld.org/2026/south-korea-shopping-trend/" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <span class="badge badge-pick">PICK</span>
+            <h3 class="article-title">Mozilla&#x27;s CTO thinks AI should be built like the internet</h3>
+            <p class="article-title-kr">모질라 CTO: AI는 인터넷처럼 만들어져야 한다</p>
+            <p class="article-summary">모질라 CTO가 AI를 소수 기업의 폐쇄 서비스가 아니라 개방형 프로토콜 위에 쌓인 인터넷처럼 설계해야 한다고 주장한다. 오픈웨이트 모델의 유럽 확산과 맞물려 읽으면, 모델 계층이 아니라 인프라 계층에서 표준 경쟁이 벌어질 가능성을 시사한다.</p>
+            <p class="pick-reason">선정 이유: 규제·표준 변화 초기 신호 + 업계 반향 / AI 기술 인프라</p>
+            <div class="article-meta">
+                <span class="source">Rest of World Featured</span>
+                <a href="https://restofworld.org/2026/open-source-ai-infrastructure-mozilla" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <span class="badge badge-pick">PICK</span>
+            <h3 class="article-title">How one VC burns through hundreds of millions of tokens a day to find the next unicorn</h3>
+            <p class="article-title-kr">하루 수억 토큰을 태워 다음 유니콘을 찾는 VC</p>
+            <p class="article-summary">한 벤처캐피털이 하루 수억 토큰 규모의 추론을 돌려 투자 후보를 발굴하고 있다. 사람 애널리스트의 리서치를 에이전트 파이프라인으로 대체하는 실제 운영 사례로, 토큰 비용을 리서치 예산으로 환산해 쓰는 방식이 눈에 띈다.</p>
+            <p class="pick-reason">선정 이유: 대규모 자동화 운영 사례 첫 공개 + 비용 구조 재정의 / 데이터·자동화, 투자 관점</p>
+            <div class="article-meta">
+                <span class="source">Rest of World Featured</span>
+                <a href="https://restofworld.org/2026/activate-interview-vc-sovereign-ai" target="_blank" rel="noopener">원문 보기 →</a>
+            </div>
+        </article>
+        </section>
+
+    <footer>
+        <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+        <p>기사 26건 | 섹션 5개 | Pick 3건</p>
+        <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+    </footer>
+</div>
+</body>
+</html>
