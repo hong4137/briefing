@@ -1,0 +1,53 @@
+name: Deep Extract (본문 추출 전용)
+
+# 🔒 수동 실행 전용 · Gemini를 호출하지 않는다 (API 한도와 무관)
+#    permissions: contents: read — 저장소에 쓸 수 없다
+#    결과는 out/ 에만 쓰고 아티팩트로 나간다
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '최근 며칠치 일간 브리핑을 대상으로 할지'
+        required: false
+        default: '30'
+      min_body:
+        description: '환각 게이트 — 본문 최소 길이(자)'
+        required: false
+        default: '1200'
+      workers:
+        description: '동시 요청 수 (매체 부담을 생각해 4 권장)'
+        required: false
+        default: '4'
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install --quiet requests beautifulsoup4 trafilatura lxml
+
+      - name: Extract article bodies
+        env:
+          EXTRACT_DAYS:     ${{ github.event.inputs.days }}
+          EXTRACT_MIN_BODY: ${{ github.event.inputs.min_body }}
+          EXTRACT_WORKERS:  ${{ github.event.inputs.workers }}
+        run: python scripts/deep_extract.py
+
+      - name: Upload bodies
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deep-bodies
+          path: out/
+          retention-days: 14
