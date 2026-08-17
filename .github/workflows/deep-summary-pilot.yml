@@ -1,0 +1,54 @@
+name: Deep Summary Pilot
+
+# 🔒 수동 실행 전용. 스케줄도, push 트리거도 없다.
+#    저장소에 아무것도 커밋하지 않는다 — 결과는 아티팩트로만 나간다.
+#    따라서 발행 파이프라인(sync-drive.yml)과 완전히 무관하다.
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: '대상 기사 수'
+        required: false
+        default: '30'
+      batch:
+        description: '한 요청에 묶을 기사 수'
+        required: false
+        default: '4'
+      min_body:
+        description: '환각 게이트 — 본문 최소 길이(자). 미달이면 생성하지 않음'
+        required: false
+        default: '1200'
+
+permissions:
+  contents: read          # 쓰기 권한을 아예 주지 않는다
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install --quiet requests beautifulsoup4 trafilatura lxml
+
+      - name: Run pilot
+        env:
+          GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
+          PILOT_COUNT:     ${{ github.event.inputs.count }}
+          PILOT_BATCH:     ${{ github.event.inputs.batch }}
+          PILOT_MIN_BODY:  ${{ github.event.inputs.min_body }}
+        run: python scripts/deep_pilot.py
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deep-summary-pilot
+          path: out/
+          retention-days: 14
