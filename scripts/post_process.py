@@ -14,7 +14,7 @@ BRIEFINGS_JSON = ROOT_DIR / "briefings.json"
 BASE = "https://images.unsplash.com/photo-"
 
 # app.js 캐시 무효화용. app.js를 고칠 때마다 올린다.
-APP_JS_VERSION = 3
+APP_JS_VERSION = 4
 
 # 카드 정규화 집계 — main()에서 리포트로 출력한다 (조용한 실패 방지)
 CARD_STATS = {"daily": [0, 0, []], "weekly": [0, 0, []], "special": [0, 0, []]}

@@ -493,7 +493,121 @@
 
     bar.appendChild(bm);
     bar.appendChild(cp);
+
+    // 📖 상세 해설 — 해설 파일이 있는 카드에서만 나중에 드러난다 (revealDeep)
+    if (card.getAttribute('data-card-url')) {
+      var dp = document.createElement('button');
+      dp.type = 'button';
+      dp.className = 'jfnb-btn jfnb-dp';
+      dp.setAttribute('aria-label', '상세 해설 보기');
+      dp.setAttribute('aria-expanded', 'false');
+      dp.title = '상세 해설';
+      dp.textContent = '📖';
+      dp.hidden = true;
+      bar.appendChild(dp);
+    }
     return bar;
+  }
+
+  /* ══════════════ 상세 해설 (deep/{날짜}.json) ══════════════
+   * 발행 직후 별도 워크플로가 만들어 둔 해설을 펼친다.
+   * 파일이 없는 날짜에서는 버튼 자체를 그리지 않는다 — 눌러도 안 되는 버튼은
+   * 기능이 고장 난 것처럼 보인다. 그래서 로드 시 한 번만 확인하고 드러낸다. */
+
+  var DEEP_CSS = [
+    '.jfnb-deep{margin:14px 0 2px;padding:16px 18px;border-radius:12px;',
+    'background:rgba(102,126,234,.07);border:1px solid rgba(102,126,234,.22);',
+    'font-size:.92rem;line-height:1.85;color:#c8cee2}',
+    '.jfnb-deep p{margin:0 0 13px}',
+    '.jfnb-deep p:last-child{margin-bottom:0}',
+    '.jfnb-deep strong{color:#fff;font-weight:600}',
+    '.jfnb-deep-h{display:flex;align-items:center;gap:8px;margin:0 0 12px;',
+    'font-size:.74rem;letter-spacing:.04em;color:#8fa6ff;font-weight:600}',
+    '.jfnb-deep-h::after{content:"";flex:1;height:1px;background:rgba(102,126,234,.22)}',
+    '@media(max-width:480px){.jfnb-deep{padding:14px;font-size:.88rem}}'
+  ].join('');
+
+  var deepMap = null;          // { url: {deep, by, n} } — 없으면 null
+  var deepTried = false;
+
+  function deepUrl() {
+    return '../deep/' + encodeURIComponent(stem()) + '.json';
+  }
+
+  function loadDeep() {
+    if (deepTried) return Promise.resolve(deepMap);
+    deepTried = true;
+    return fetch(deepUrl(), { cache: 'default' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        deepMap = (j && j.items) || null;
+        return deepMap;
+      })
+      .catch(function () { return null; });
+  }
+
+  // 해설이 있는 카드의 📖만 드러낸다
+  function revealDeep() {
+    if (!deepMap) return;
+    var btns = document.querySelectorAll('.jfnb-dp');
+    Array.prototype.forEach.call(btns, function (b) {
+      var card = b.closest('.jfnb-card');
+      var u = card && card.getAttribute('data-card-url');
+      if (u && deepMap[u]) b.hidden = false;
+    });
+  }
+
+  // **굵게** 만 처리한다. innerHTML에 원문을 그대로 넣지 않기 위해 직접 조립한다.
+  function renderDeep(text) {
+    var wrap = document.createElement('div');
+    wrap.className = 'jfnb-deep';
+
+    var h = document.createElement('div');
+    h.className = 'jfnb-deep-h';
+    h.textContent = '📖 상세 해설';
+    wrap.appendChild(h);
+
+    text.split(/\n{2,}/).forEach(function (para) {
+      if (!para.trim()) return;
+      var p = document.createElement('p');
+      para.split(/\*\*/).forEach(function (chunk, i) {
+        if (!chunk) return;
+        if (i % 2 === 1) {
+          var s = document.createElement('strong');
+          s.textContent = chunk;
+          p.appendChild(s);
+        } else {
+          p.appendChild(document.createTextNode(chunk));
+        }
+      });
+      wrap.appendChild(p);
+    });
+    return wrap;
+  }
+
+  function toggleDeep(card, btn) {
+    var open = card.querySelector(':scope > .jfnb-deep');
+    if (open) {
+      open.remove();
+      btn.setAttribute('aria-expanded', 'false');
+      btn.classList.remove('on');
+      return;
+    }
+    var url = card.getAttribute('data-card-url');
+    var it = deepMap && url && deepMap[url];
+    if (!it || !it.deep) {
+      toast('이 기사는 상세 해설이 없습니다');
+      return;
+    }
+    if (!document.getElementById('jfnb-deep-css')) {
+      var st = document.createElement('style');
+      st.id = 'jfnb-deep-css';
+      st.textContent = DEEP_CSS;
+      document.head.appendChild(st);
+    }
+    card.appendChild(renderDeep(it.deep));
+    btn.setAttribute('aria-expanded', 'true');
+    btn.classList.add('on');
   }
 
   function setBmState(btn, on) {
@@ -753,6 +867,11 @@
         return;
       }
 
+      if (btn.classList.contains('jfnb-dp')) {
+        toggleDeep(card, btn);           // 로그인 불필요 — 읽기 기능이다
+        return;
+      }
+
       /* 보관 — 로그인 게이트 */
       if (!user) {
         var mark = null;
@@ -789,6 +908,9 @@
         var t = h && document.getElementById(h);
         if (t && t.classList.contains('jfnb-card')) focusCard(t);
       });
+
+      // 상세 해설 — 파일이 있는 날짜에서만 📖가 드러난다
+      loadDeep().then(revealDeep);
     }
 
     /* 로그인 층 — 비로그인 사용자는 여기서 아무 요청도 하지 않는다 */
