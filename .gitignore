@@ -4,3 +4,11 @@ __pycache__/
 
 # 파일럿 산출물 — 커밋하지 않는다
 out/
+
+# 파일럿·추출 산출물 — 저장소에 커밋하지 않는다
+bodies-*.json
+bodies-all.json
+manifest.md
+coverage.md
+quality.md
+raw.json

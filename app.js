@@ -214,14 +214,55 @@
     return fbPromise;
   }
 
+  /* 로그인 실패 원인을 삼키지 말 것.
+   * 이전 버전은 popup-closed-by-user를 조용히 무시했는데, 모바일에서 팝업 결과가
+   * 돌아오지 못할 때 SDK가 던지는 코드가 바로 그것이다. 사용자 눈에는
+   * "눌렀는데 아무 일도 안 일어남"으로 보이고, 우리는 원인을 알 수 없게 된다. */
+  var LOGIN_MSG = {
+    'auth/popup-closed-by-user':
+      '로그인 창이 결과를 전달하지 못했습니다. 모바일에서 자주 발생합니다',
+    'auth/popup-blocked':
+      '브라우저가 로그인 창을 차단했습니다. 팝업 허용 후 다시 시도해주세요',
+    'auth/cancelled-popup-request': null,          // 사용자가 연속 클릭한 경우 — 무시
+    'auth/unauthorized-domain':
+      '이 도메인이 Firebase 승인 목록에 없습니다',
+    'auth/operation-not-supported-in-this-environment':
+      '이 브라우저(앱 내 브라우저 등)에서는 로그인할 수 없습니다',
+    'auth/network-request-failed':
+      '네트워크 오류로 로그인하지 못했습니다'
+  };
+
+  function loginFailed(e) {
+    var code = (e && e.code) || 'unknown';
+    console.warn('[jfnb] 로그인 실패', code, e);
+    if (LOGIN_MSG[code] === null) return;                 // 조용히 넘길 것만 명시적으로
+    var msg = LOGIN_MSG[code] || '로그인에 실패했습니다';
+    toast(msg + ' (' + code + ')');                       // 코드를 노출해야 원인을 좁힐 수 있다
+  }
+
+  /* 사용자 제스처 만료 대비 — 버튼을 '누르기 전에' SDK를 미리 받아둔다.
+   * click 핸들러에서 SDK를 받고 나서 signInWithPopup을 부르면, 그 사이 수백 ms 동안
+   * 브라우저가 부여한 사용자 제스처 자격이 만료된다. 데스크톱은 관대하지만
+   * 모바일은 엄격해서 팝업이 opener를 잃은 채 열릴 수 있다.
+   * pointerdown은 click보다 먼저 발생하므로 그만큼 시간을 번다. */
+  function warmAuth() {
+    initFirebase().catch(function () {});
+  }
+
+  function armWarmup(el) {
+    if (!el) return el;
+    el.addEventListener('pointerdown', warmAuth, { once: true, passive: true });
+    el.addEventListener('touchstart', warmAuth, { once: true, passive: true });
+    el.addEventListener('mouseenter', warmAuth, { once: true, passive: true });
+    return el;
+  }
+
   function doLogin() {
     initFirebase().then(function (f) {
-      // 🔴 signInWithPopup — signInWithRedirect로 바꾸지 말 것 (파일 상단 주석 참조)
+      // 🔴 signInWithPopup 고정. signInWithRedirect는 authDomain이 앱 도메인과 달라
+      //    서드파티 저장소 차단에 걸린다 (파일 상단 주석 참조).
       return f.A.signInWithPopup(f.auth, new f.A.GoogleAuthProvider());
-    }).catch(function (e) {
-      if (e && (e.code === 'auth/popup-closed-by-user' || e.code === 'auth/cancelled-popup-request')) return;
-      toast('로그인에 실패했습니다');
-    });
+    }).catch(loginFailed);
   }
 
   function doLogout() {
@@ -438,6 +479,7 @@
         b.textContent = '로그인';
         b.title = 'Google 계정으로 로그인';
         b.addEventListener('click', doLogin);
+        armWarmup(b);
       }
       el.appendChild(b);
     });
@@ -461,6 +503,7 @@
     var go = document.createElement('button');
     go.type = 'button'; go.className = 'jfnb-hint-go'; go.textContent = '로그인';
     go.addEventListener('click', doLogin);
+    armWarmup(go);
     var x = document.createElement('button');
     x.type = 'button'; x.className = 'jfnb-hint-x'; x.textContent = '✕';
     x.setAttribute('aria-label', '닫기');
@@ -700,6 +743,7 @@
     go.className = 'jfnb-ask-go';
     go.textContent = '구글로 로그인';
     go.addEventListener('click', function () { doLogin(); });
+    armWarmup(go);
 
     var no = document.createElement('button');
     no.type = 'button';
