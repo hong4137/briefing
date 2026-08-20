@@ -9,10 +9,19 @@
  *  · 로그인   = 북마크 기기 간 동기화 + '안 본 브리핑' 표시
  *  · 열람 기록(visits)은 서버가 유일한 진실. 병합 로직이 없다.
  *
- * 🔴 signInWithPopup 고정. signInWithRedirect는 이 사이트에서 동작하지 않는다.
- *    앱 도메인(hong4137.github.io)과 authDomain이 달라 교차 출처 iframe에 의존하는데,
- *    Chrome 115+ / Firefox 109+ / Safari 16.1+ 가 서드파티 저장소를 차단한다.
- *    튜토리얼·생성 코드가 거의 항상 틀리는 지점이므로 절대 바꾸지 말 것.
+ * 🔴 로그인 경로가 기기에 따라 둘로 나뉜다. 하나로 합치려 하지 말 것.
+ *
+ *    데스크톱 = signInWithPopup.
+ *      signInWithRedirect로 바꾸지 말 것. authDomain이 앱 도메인과 달라
+ *      교차 출처 iframe에 의존하는데 Chrome 115+ / Firefox 109+ / Safari 16.1+ 가
+ *      서드파티 저장소를 차단한다. Firebase 공식 문서도 그 문제의 해법으로 popup을 든다.
+ *
+ *    모바일 = Google Identity Services + signInWithCredential.
+ *      모바일 크롬은 OAuth 창을 별도 탭으로 열고, 그 사이 원래 탭을 폐기할 수 있다.
+ *      돌아오면 페이지가 다시 로드돼 signInWithPopup의 프로미스가 사라진다.
+ *      성공도 실패도 전달될 곳이 없어 '에러조차 안 뜨는' 무한 루프가 된다(2026-08-18 실측).
+ *      GIS는 같은 페이지 안에서 ID 토큰을 콜백으로 돌려주므로 이 문제가 없다.
+ *      GIS_CLIENT_ID가 비어 있으면 모바일도 팝업으로 폴백한다.
  */
 (function () {
   'use strict';
@@ -37,6 +46,15 @@
     appId: "1:1044512119500:web:c5d783c3e68770e5d34069"
   };
   var FB_VER = '12.17.1';
+
+  /* 🟡 OAuth 웹 클라이언트 ID — 모바일 로그인에 필요하다. 비워두면 모바일도
+   *    기존 팝업 방식을 그대로 쓴다(=지금과 동일, 회귀 없음).
+   *    Firebase 콘솔 → Authentication → Sign-in method → Google
+   *      → '웹 SDK 구성' 펼치기 → 웹 클라이언트 ID
+   *    형식: 1044512119500-xxxxxxxx.apps.googleusercontent.com
+   *    공개돼도 되는 값이다. 페이지 소스에 그대로 실린다. */
+  var GIS_CLIENT_ID = '1044512119500-m0sodv559tcho75csl8atavo23kmpfd4.apps.googleusercontent.com';
+
   function cdn(mod) {
     return 'https://www.gstatic.com/firebasejs/' + FB_VER + '/firebase-' + mod + '.js';
   }
@@ -257,12 +275,18 @@
     return el;
   }
 
-  function doLogin() {
+  function popupLogin() {
     initFirebase().then(function (f) {
       // 🔴 signInWithPopup 고정. signInWithRedirect는 authDomain이 앱 도메인과 달라
       //    서드파티 저장소 차단에 걸린다 (파일 상단 주석 참조).
       return f.A.signInWithPopup(f.auth, new f.A.GoogleAuthProvider());
     }).catch(loginFailed);
+  }
+
+  // 데스크톱은 검증된 팝업 경로를 유지한다. 모바일만 GIS로 우회한다.
+  function doLogin() {
+    if (useGis()) gisLogin();
+    else popupLogin();
   }
 
   function doLogout() {
@@ -701,6 +725,142 @@
     s.id = 'jfnb-ask-css';
     s.textContent = ASK_CSS;
     document.head.appendChild(s);
+  }
+
+  /* ══════════════ 모바일 로그인 — Google Identity Services ══════════════
+   *
+   * 왜 팝업으로는 안 되는가 (2026-08-18 실측)
+   *   모바일 크롬은 OAuth 창을 별도 탭으로 연다. 그동안 원래 탭이 백그라운드로
+   *   밀리고 메모리 압박을 받으면 폐기된다. 돌아오면 페이지가 처음부터 다시 로드된다.
+   *   → signInWithPopup이 반환한 프로미스가 페이지와 함께 사라진다.
+   *     성공도 실패도 전달될 곳이 없어 '에러조차 안 뜨는' 상태가 된다.
+   *     새로고침해도 로그인되지 않는 것으로 결과 전달 자체가 끊겼음을 확인했다.
+   *   → 타이밍 조정으로는 못 넘는다. 창을 넘나들지 않는 방식이 필요하다.
+   *
+   * GIS는 같은 페이지 안에서 ID 토큰을 콜백으로 돌려준다. 창 간 결과 전달이
+   * 없으므로 탭이 폐기될 여지도 없다. 받은 토큰을 signInWithCredential로 넘긴다.
+   * (Firebase 공식 문서가 정적 호스팅 환경에 제시하는 경로)
+   */
+
+  var gisPromise = null;
+
+  function isTouchDevice() {
+    try {
+      if (window.matchMedia && window.matchMedia('(pointer: coarse)').matches) return true;
+    } catch (e) {}
+    return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || '');
+  }
+
+  function useGis() {
+    return !!GIS_CLIENT_ID && isTouchDevice();
+  }
+
+  function loadGis() {
+    if (gisPromise) return gisPromise;
+    gisPromise = new Promise(function (res, rej) {
+      if (window.google && window.google.accounts && window.google.accounts.id) return res();
+      var sc = document.createElement('script');
+      sc.src = 'https://accounts.google.com/gsi/client';
+      sc.async = true;
+      sc.defer = true;
+      sc.onload = function () {
+        if (window.google && window.google.accounts && window.google.accounts.id) res();
+        else rej(new Error('gis-missing'));
+      };
+      sc.onerror = function () { rej(new Error('gis-load-failed')); };
+      document.head.appendChild(sc);
+    }).catch(function (e) {
+      gisPromise = null;                 // 다음 시도를 막지 않는다
+      throw e;
+    });
+    return gisPromise;
+  }
+
+  // 구글이 돌려준 ID 토큰 → Firebase 세션
+  function onGisCredential(resp) {
+    var idToken = resp && resp.credential;
+    if (!idToken) { toast('로그인 정보를 받지 못했습니다'); return; }
+    initFirebase().then(function (f) {
+      var cred = f.A.GoogleAuthProvider.credential(idToken);
+      return f.A.signInWithCredential(f.auth, cred);
+    }).then(function () {
+      closeLoginAsk();                   // onAuthChanged가 먼저 닫지만 이중 안전
+    }).catch(loginFailed);
+  }
+
+  function gisLogin() {
+    loadGis().then(function () {
+      window.google.accounts.id.initialize({
+        client_id: GIS_CLIENT_ID,
+        callback: onGisCredential,
+        auto_select: false,
+        cancel_on_tap_outside: true,
+        use_fedcm_for_prompt: true,
+        itp_support: true
+      });
+      openGisDialog();
+    }).catch(function (e) {
+      console.warn('[jfnb] GIS 로드 실패 — 팝업으로 대체', e);
+      popupLogin();                      // GIS를 못 받으면 기존 경로라도 시도한다
+    });
+  }
+
+  /* 구글이 그려주는 버튼을 우리 다이얼로그 안에 넣는다.
+   * One Tap(prompt)은 사용자가 이전에 닫았거나 쿨다운 중이면 조용히 안 뜬다.
+   * 눌러서 확실히 뜨는 renderButton 쪽이 진입점으로 안전하다. */
+  function openGisDialog() {
+    closeLoginAsk();
+    ensureAskCss();
+
+    var ov = document.createElement('div');
+    ov.className = 'jfnb-ask';
+    ov.setAttribute('role', 'dialog');
+    ov.setAttribute('aria-modal', 'true');
+    ov.setAttribute('aria-label', '구글 로그인');
+
+    var box = document.createElement('div');
+    box.className = 'jfnb-ask-box';
+
+    var h = document.createElement('p');
+    h.className = 'jfnb-ask-t';
+    h.textContent = '구글 계정으로 로그인';
+
+    var d = document.createElement('p');
+    d.className = 'jfnb-ask-d';
+    d.textContent = '아래 버튼을 눌러주세요. 가입 절차는 없습니다.';
+
+    var host = document.createElement('div');
+    host.style.cssText = 'display:flex;justify-content:center;margin:4px 0 16px;min-height:44px';
+
+    var row = document.createElement('div');
+    row.className = 'jfnb-ask-row';
+    var no = document.createElement('button');
+    no.type = 'button';
+    no.className = 'jfnb-ask-no';
+    no.textContent = '닫기';
+    no.addEventListener('click', function () { pendingSave = null; closeLoginAsk(); });
+    row.appendChild(no);
+
+    box.appendChild(h); box.appendChild(d); box.appendChild(host); box.appendChild(row);
+    ov.appendChild(box);
+    ov.addEventListener('click', function (ev) {
+      if (ev.target === ov) { pendingSave = null; closeLoginAsk(); }
+    });
+    document.body.appendChild(ov);
+    askBox = ov;
+    document.addEventListener('keydown', onAskKey);
+
+    try {
+      window.google.accounts.id.renderButton(host, {
+        theme: 'filled_blue', size: 'large', shape: 'pill',
+        text: 'signin_with', locale: 'ko', width: 240
+      });
+    } catch (e) {
+      console.warn('[jfnb] GIS 버튼 렌더 실패', e);
+      host.remove();
+      closeLoginAsk();
+      popupLogin();
+    }
   }
 
   function closeLoginAsk() {
