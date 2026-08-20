@@ -277,9 +277,15 @@
 
   function popupLogin() {
     initFirebase().then(function (f) {
+      var provider = new f.A.GoogleAuthProvider();
+      // 기기에 계정이 하나뿐이고 이미 동의한 상태면 구글이 선택 화면을 건너뛴다.
+      // 공용 기기에서 남의 계정으로 조용히 들어가는 상황을 막는다(결정 #9와 같은 취지).
+      provider.setCustomParameters({ prompt: 'select_account' });
+      try { f.A.useDeviceLanguage(f.auth); } catch (e) {}   // 동의 화면 한국어
+
       // 🔴 signInWithPopup 고정. signInWithRedirect는 authDomain이 앱 도메인과 달라
       //    서드파티 저장소 차단에 걸린다 (파일 상단 주석 참조).
-      return f.A.signInWithPopup(f.auth, new f.A.GoogleAuthProvider());
+      return f.A.signInWithPopup(f.auth, provider);
     }).catch(loginFailed);
   }
 
@@ -290,6 +296,14 @@
   }
 
   function doLogout() {
+    /* GIS는 한 번 고른 계정을 기억해 다음 로그인에서 선택 단계를 건너뛴다.
+     * 로그아웃했다는 건 다른 사람이 쓸 수도 있다는 뜻이므로 그 기억을 지운다.
+     * (prompt:'select_account'는 팝업 경로에만 먹는다 — GIS 쪽은 이 호출이 담당) */
+    try {
+      if (window.google && window.google.accounts && window.google.accounts.id) {
+        window.google.accounts.id.disableAutoSelect();
+      }
+    } catch (e) {}
     if (!fb) return;
     fb.A.signOut(fb.auth).catch(function () {});
   }
