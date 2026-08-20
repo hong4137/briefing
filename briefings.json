@@ -1,6 +1,59 @@
 {
   "briefings": [
     {
+      "date": "2026-08-21",
+      "day": "금",
+      "title": "SK하이닉스 40조 자사주 매입 | Alibaba 순이익 75% 급감 | AI 데이터센터 반발, 선거 쟁점으로",
+      "summary": "SK하이닉스가 40조원 자사주 매입 카드로 반도체 셀오프에 맞섰고 삼성전자도 사상 최대 주주환원을 준비 중이다. 알리바바는 AI 클라우드가 급성장했는데도 순이익이 75% 줄며 'AI 투자가 이익을 먹는' 구조를 숫자로 보여줬다. 미국에서는 AI 데이터센터 반대가 중간선거 쟁점으로 올라섰고, AI 도움을 받은 해커가 수도시설을 노린다는 경고까지 나왔다. 자본·전력·표가 한꺼번에 AI 인프라의 청구서를 요구한 날이다.",
+      "highlights": [
+        "SK하이닉스 40조원 자사주 매입·삼성 사상 최대 주주환원 — 반도체 셀오프에 자본배분으로 응수",
+        "Alibaba AI 클라우드 급성장에도 순이익 75% 급감 — AI 자본지출이 이익을 잠식",
+        "AI 데이터센터 반발이 중간선거 초당적 쟁점으로 부상 — 전기요금·용수가 표심 변수"
+      ],
+      "stats": {
+        "articles": 25,
+        "sections": 6,
+        "picks": 3
+      },
+      "hero_url": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Server rack fiber optic cables blue glow",
+      "hero_credit_name": "Alina Grubnyak",
+      "hero_credit_url": "https://unsplash.com/photos/1544197150-b99a580bb7a8",
+      "hero_source": "smart_pick",
+      "thumb_url": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Server rack fiber optic cables blue glow",
+      "thumb_category": "chip",
+      "card_count": 25,
+      "segments": [
+        {
+          "title": "SK하이닉스 40조 자사주 매입",
+          "summary": "SK하이닉스가 40조원 자사주 매입 카드로 반도체 셀오프에 맞섰고 삼성전자도 사상 최대 주주환원을 준비 중이다.",
+          "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Blue Earth viewed from dark outer space",
+          "thumb_category": "chip"
+        },
+        {
+          "title": "Alibaba 순이익 75% 급감",
+          "summary": "알리바바는 AI 클라우드가 급성장했는데도 순이익이 75% 줄며 'AI 투자가 이익을 먹는' 구조를 숫자로 보여줬다.",
+          "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Premium laptop display dark setup",
+          "thumb_category": "ai"
+        },
+        {
+          "title": "AI 데이터센터 반발, 선거 쟁점으로",
+          "summary": "미국에서는 AI 데이터센터 반대가 중간선거 쟁점으로 올라섰고, AI 도움을 받은 해커가 수도시설을 노린다는 경고까지 나왔다. 자본·전력·표가 한꺼번에 AI 인프라의 청구서를 요구한 날이다..",
+          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data marketing multi-screen dashboard display",
+          "thumb_category": "ai"
+        }
+      ]
+    },
+    {
       "date": "2026-08-20",
       "day": "목",
       "title": "Marvell–Google 122억달러 칩 동맹 | Stripe, OpenRouter 인수 | 카메라 AirPods 영상 유출",
@@ -30,25 +83,25 @@
         {
           "title": "Marvell–Google 122억달러 칩 동맹",
           "summary": "",
-          "thumb_url": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Server rack fiber optic cables blue glow",
+          "thumb_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Modern tech company open office natural light",
           "thumb_category": "entity:google"
         },
         {
           "title": "Stripe, OpenRouter 인수",
           "summary": "",
-          "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Planet Earth viewed from space with city lights",
+          "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Aerial view of city lights glowing at night",
           "thumb_category": "default"
         },
         {
           "title": "카메라 AirPods 영상 유출",
           "summary": "구글이 마벨 지분 122억달러어치를 매수할 권리를 확보하며 커스텀 AI칩 동맹을 한 단계 끌어올렸고, 스트라이프는 모델 라우팅 스타트업 오픈라우터를 사들여 결제사에서 AI 인프라 사업자로 방향을 틀었다. 여기에 macOS 업데이트에서 유출된 카메라 탑재 에어팟 영상, 수백만 대 컴캐스트 공유기의 모션 감지 전환, 아마존의 500개 도시 드론 배송 확대까지 겹치며 AI 하드웨어가 생활 인프라로 내려앉는 날이 됐다..",
-          "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Premium laptop display dark setup",
+          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Abstract dark silk web browser art visual",
           "thumb_category": "ai"
         }
       ]
@@ -174,40 +227,40 @@
         "sections": 6,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Data marketing multi-screen dashboard display",
-      "hero_credit_name": "Luke Chesser",
-      "hero_credit_url": "https://unsplash.com/photos/1562577309-4932fdd64cd1",
+      "hero_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Robot hand touching glowing digital interface",
+      "hero_credit_name": "Alex Knight",
+      "hero_credit_url": "https://unsplash.com/photos/1485827404703-89b55fcc595e",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Data marketing multi-screen dashboard display",
+      "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Robot hand touching glowing digital interface",
       "thumb_category": "ai",
       "card_count": 18,
       "segments": [
         {
           "title": "중고서점 대량주문 배후는 AI 기업",
           "summary": "영국·아일랜드 중고서점에 정체불명의 대량 주문이 쏟아지며 학습 데이터를 노린 AI 기업이 배후로 지목됐다.",
-          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Abstract dark silk web browser art visual",
+          "thumb_url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Neon data stream transmission visual",
           "thumb_category": "ai"
         },
         {
           "title": "Anthropic 2Q 매출 115억달러",
           "summary": "Anthropic은 2분기 매출 115억달러를 기록하며 IPO 준비에 속도를 냈고, 미국 30개 주가 제기한 Meta 청소년 유해성 소송이 연방 법정에서 개시됐다.",
-          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Robot hand touching glowing digital interface",
+          "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Gold pattern silicon microchip circuit board macro",
           "thumb_category": "ai"
         },
         {
           "title": "Meta 청소년 유해성 재판 개시",
           "summary": "Stripe는 AI 게이트웨이 OpenRouter를 70억달러 이상에 인수한다..",
-          "thumb_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Modern tech company open office",
+          "thumb_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Digital node hub connection abstract",
           "thumb_category": "ai"
         }
       ]
@@ -242,9 +295,9 @@
         {
           "title": "OpenAI 기업 매출이 소비자 추월",
           "summary": "IPO를 앞둔 OpenAI가 매출 구조 전환(런레이트 400억달러)과 임원 연쇄 이탈을 동시에 겪고 있다.",
-          "thumb_url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Neon data stream transmission visual",
+          "thumb_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Green matrix code rain on dark screen",
           "thumb_category": "entity:openai"
         },
         {
@@ -356,17 +409,17 @@
         {
           "title": "$29 Pixel Tag로 AirTag 정조준",
           "summary": "Pixel Tag는 29달러로 UWB 채널 사운딩을 앞세워 AirTag에 맞불. Anthropic 워터마킹은 발표 하루 만에 '직장·학교에서 걸린다'는 사용자 반발.",
-          "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+          "thumb_url": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Glowing robotic hand reaching through screen",
           "thumb_category": "ai"
         },
         {
           "title": "Claude 워터마크 사용자 반발",
           "summary": "실적 시즌은 Cerebras·Cisco 모두 어닝 비트에도 주가 하락. 7월 CPI는 전월비 0.1%·연 3.4%로 온건했지만 AI 데이터센터 건설붐이 연준의 물가 싸움을 복잡하게 만든다는 분석..",
-          "thumb_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Green matrix code rain on dark screen",
+          "thumb_url": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Circuit board traces macro close-up",
           "thumb_category": "ai"
         }
       ]
@@ -386,24 +439,24 @@
         "sections": 6,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Glowing robotic hand reaching through screen",
-      "hero_credit_name": "Franck V.",
-      "hero_credit_url": "https://unsplash.com/photos/1526378722484-bd91ca387e72",
+      "hero_url": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Majestic aurora borealis with deep space nebula",
+      "hero_credit_name": "Greg Rakozy",
+      "hero_credit_url": "https://unsplash.com/photos/1506703719100-a0f3a48c0f86",
       "hero_source": "entity:openai",
-      "thumb_url": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Glowing robotic hand reaching through screen",
+      "thumb_url": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Majestic aurora borealis with deep space nebula",
       "thumb_category": "entity:openai",
       "card_count": 26,
       "segments": [
         {
           "title": "OpenAI COO 라이트캡 퇴사",
           "summary": "오픈AI 최장수 임원 브래드 라이트캡이 회사를 떠나며 경영진 개편이 이어졌습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Majestic aurora borealis with deep space nebula",
+          "thumb_url": "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Helicopter dark hangar silhouette",
           "thumb_category": "entity:openai"
         },
         {
@@ -417,9 +470,9 @@
         {
           "title": "앤스로픽 리만 가설 진전",
           "summary": "앤스로픽의 미공개 모델이 리만 가설에서 진전을 내며 'AI의 수학 접수'가 화두로 떠올랐습니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Digital node hub connection abstract",
+          "thumb_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "5G signal wave abstract visualization",
           "thumb_category": "ai"
         }
       ]
@@ -454,9 +507,9 @@
         {
           "title": "Zuckerberg 6,500단어 'AI 선언문'",
           "summary": "마크 저커버그가 6,500단어짜리 '개인 초지능' 선언문을 내놓자 실리콘밸리가 둘로 갈라졌습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Circuit board traces macro close-up",
+          "thumb_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "LiDAR sensor autonomous driving visual",
           "thumb_category": "ai"
         },
         {
@@ -492,40 +545,40 @@
         "sections": 5,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Helicopter dark hangar silhouette",
-      "hero_credit_name": "David Henrichs",
-      "hero_credit_url": "https://unsplash.com/photos/1508873535684-277a3cbcc4e8",
+      "hero_url": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Futuristic robot head glowing blue eyes",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1508614589041-895b88991e3e",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Helicopter dark hangar silhouette",
+      "thumb_url": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Futuristic robot head glowing blue eyes",
       "thumb_category": "ai",
       "card_count": 20,
       "segments": [
         {
           "title": "AI 해킹 배후 이스라엘 스타트업 Irregular",
           "summary": "OpenAI·Anthropic·Meta를 잇달아 덮친 자율 AI 해킹의 공통 연결고리가 이스라엘 소규모 보안 스타트업 Irregular로 좁혀졌습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "5G signal wave abstract visualization",
+          "thumb_url": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Satellite dish antenna array night",
           "thumb_category": "ai"
         },
         {
           "title": "X 수익배분 전면 폐지",
           "summary": "Hugging Face 침해와 Black Hat 현장은 'AI 사이버 시대'의 개막을 알렸고, 안전 테스트 환경 자체가 위험 통로가 되는 역설이 부각됐습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "LiDAR sensor autonomous driving visual",
+          "thumb_url": "https://images.unsplash.com/photo-1520525003249-2b9cdda513bc?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1520525003249-2b9cdda513bc?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "US Capitol building front view daytime",
           "thumb_category": "ai"
         },
         {
           "title": "AI 억만장자 재산 기부 서약",
           "summary": "X는 조회수 기반 수익배분을 '오정렬'로 규정하며 9월 8일부터 Original Content Rewards로 교체하고, AI로 부를 쌓은 신흥 억만장자들은 재산 기부 서약에 나섰습니다. 구글 딥마인드는 하사비스의 역할 이동으로 독립성 상실 우려가 제기됐고, 아마존의 텍사스 데이터센터는 미국 최대 기후오염원이 될 수 있다는 경고를 받았습니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Futuristic robot head glowing blue eyes",
+          "thumb_url": "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Minimalist humanoid robot upper body dark background",
           "thumb_category": "ai"
         }
       ]
@@ -651,40 +704,40 @@
         "sections": 6,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Satellite dish antenna array night",
-      "hero_credit_name": "NASA",
-      "hero_credit_url": "https://unsplash.com/photos/1617791160536-598cf32026fb",
+      "hero_url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Glowing DNA helix structure graphic in dark lab",
+      "hero_credit_name": "National Cancer Institute",
+      "hero_credit_url": "https://unsplash.com/photos/1576091160399-112ba8d25d1d",
       "hero_source": "entity:google",
-      "thumb_url": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Satellite dish antenna array night",
+      "thumb_url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Glowing DNA helix structure graphic in dark lab",
       "thumb_category": "entity:google",
       "card_count": 25,
       "segments": [
         {
           "title": "Jeff Dean 27년 만에 구글 퇴사·창업",
           "summary": "구글이 AI 조직을 통째로 흔들었습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1520525003249-2b9cdda513bc?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1520525003249-2b9cdda513bc?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "US Capitol building front view daytime",
+          "thumb_url": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Space rocket interior launch control room",
           "thumb_category": "entity:google"
         },
         {
           "title": "Zoox 미 최초 무인 유료 로보택시",
           "summary": "27년을 몸담은 수석과학자 Jeff Dean이 동료 연구자들과 함께 퇴사해 과학 발견용 AI 스타트업을 차리고, Demis Hassabis는 DeepMind CEO에서 물러나 Alphabet 최고과학자로 이동합니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Minimalist humanoid robot upper body dark background",
+          "thumb_url": "https://images.unsplash.com/photo-1580128660010-fd027e1e587a?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1580128660010-fd027e1e587a?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Official portrait of President Donald J. Trump",
           "thumb_category": "ai"
         },
         {
           "title": "Meta 코딩 에이전트 참전",
           "summary": "같은 날 Amazon의 Zoox가 8월 10일부터 라스베이거스에서 요금을 받습니다 — 운전대 없는 차량이 미국에서 돈을 받는 첫 사례입니다. Meta는 첫 코딩 에이전트 'Muse Code'를 내놓고 Anthropic·OpenAI와 정면 승부에 나섰고, 사우디 국부펀드와 Kushner의 Affinity는 550억 달러 EA 인수를 마무리해 나스닥에서 상장폐지시켰습니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Glowing DNA helix structure graphic in dark lab",
+          "thumb_url": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Satellite view Earth city lights night",
           "thumb_category": "ai"
         }
       ]
@@ -772,25 +825,25 @@
         {
           "title": "실리콘밸리 中 오픈웨이트 분열",
           "summary": "Alibaba가 Qwen3.8-Max로 \"Anthropic Fable급\"을 주장하고 Hugging Face CEO가 \"중국이 이기고 있다\"고 선언하면서 중국 저가 오픈웨이트 모델을 둘러싼 실리콘밸리 균열이 표면화됐다.",
-          "thumb_url": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Space rocket interior launch control room",
+          "thumb_url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Scales of justice law court dark symbol",
           "thumb_category": "ai"
         },
         {
           "title": "Palantir 미 상업매출 +150%",
           "summary": "Palantir는 미국 상업매출 150% 급증으로 12% 급등, Karp는 프론티어 랩을 정면 공격했다.",
-          "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Aerial view of city lights glowing at night",
+          "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Tech team collaborating on laptops in office",
           "thumb_category": "default"
         },
         {
           "title": "자율 AI 해킹 책임 공백",
           "summary": "OpenAI·Anthropic 자율 AI 침입 사건은 기소 대상이 없다는 법적 공백에 부딪혔고 EU는 AI Act 집행권을 발동했다. Amazon은 시총 3조 달러를 돌파했고 미·일은 15년 만에 공동 엔화 개입에 나섰다..",
-          "thumb_url": "https://images.unsplash.com/photo-1580128660010-fd027e1e587a?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1580128660010-fd027e1e587a?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Official portrait of President Donald J. Trump",
+          "thumb_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Blue fiber optic light strands",
           "thumb_category": "ai"
         }
       ]
@@ -810,32 +863,32 @@
         "sections": 7,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Satellite view Earth city lights night",
-      "hero_credit_name": "NASA",
-      "hero_credit_url": "https://unsplash.com/photos/1419242902214-272b3f66ee7a",
+      "hero_url": "https://images.unsplash.com/photo-1604900881351-4e34a16f31f4?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1604900881351-4e34a16f31f4?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Sleek BIDEN 2020 and US flags waved by enthusiastic crowd",
+      "hero_credit_name": "Gayatri Malhotra",
+      "hero_credit_url": "https://unsplash.com/photos/1604900881351-4e34a16f31f4",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Satellite view Earth city lights night",
+      "thumb_url": "https://images.unsplash.com/photo-1604900881351-4e34a16f31f4?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1604900881351-4e34a16f31f4?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Sleek BIDEN 2020 and US flags waved by enthusiastic crowd",
       "thumb_category": "ai",
       "card_count": 20,
       "segments": [
         {
           "title": "메모리 부족, 맥북·엑스박스 가격으로",
           "summary": "주말 사이 AI 붐의 청구서가 실물로 도착했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Scales of justice law court dark symbol",
+          "thumb_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "DNA helix biotech visualization blue light",
           "thumb_category": "ai"
         },
         {
           "title": "AI 빌드아웃 청구서 도착",
           "summary": "메모리 부족이 맥북 에어 사양과 엑스박스 가격(최대 200유로 인상)으로 번졌고, 빅테크 실적에서는 현금은 줄고 메모리 조달 비용은 뛰는 구조가 드러났습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Blue fiber optic light strands",
+          "thumb_url": "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Precise mechanical robot joint actuator close-up",
           "thumb_category": "ai"
         },
         {
@@ -894,9 +947,9 @@
         {
           "title": "AI 헤지펀드 청산",
           "summary": "반대편에서는 Apple이 메모리 공급부족으로 가이던스를 낮췄고, AI 강세론의 상징이던 헤지펀드 Situational Awareness가 공개 포트폴리오를 전량 청산했습니다. 실적은 좋은데 주가는 갈리는 국면입니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1604900881351-4e34a16f31f4?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1604900881351-4e34a16f31f4?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Sleek BIDEN 2020 and US flags waved by enthusiastic crowd",
+          "thumb_url": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Smart wearable health monitoring loop screen",
           "thumb_category": "ai"
         }
       ]
@@ -931,17 +984,17 @@
         {
           "title": "Anthropic 모델도 3개사 무단 침입",
           "summary": "Anthropic이 자사 Claude 모델의 무단 침입 사고를 공개하며 OpenAI에 이어 두 번째 프런티어 기업이 같은 실패를 자백했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "DNA helix biotech visualization blue light",
+          "thumb_url": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Government columns silhouette under dark sky",
           "thumb_category": "ai"
         },
         {
           "title": "Meta -9% · MSFT +8% AI 트레이드 분화",
           "summary": "같은 날 실적을 낸 Meta와 Microsoft의 주가가 정반대로 갈리며 시장이 AI 투자 규모가 아니라 수익화 증거를 보기 시작했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Precise mechanical robot joint actuator close-up",
+          "thumb_url": "https://images.unsplash.com/photo-1623526065270-286ed9821f64?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1623526065270-286ed9821f64?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "US Capitol dome exterior blue sky iconic",
           "thumb_category": "ai"
         },
         {
@@ -969,32 +1022,32 @@
         "sections": 6,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Tech team collaborating on laptops in office",
-      "hero_credit_name": "Annie Spratt",
-      "hero_credit_url": "https://unsplash.com/photos/1522071820081-009f0129c71c",
+      "hero_url": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Robot under neon lighting looking forward",
+      "hero_credit_name": "Lenny Kuhne",
+      "hero_credit_url": "https://unsplash.com/photos/1535378917042-10a22c95931a",
       "hero_source": "entity:openai",
-      "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Tech team collaborating on laptops in office",
+      "thumb_url": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Robot under neon lighting looking forward",
       "thumb_category": "entity:openai",
       "card_count": 23,
       "segments": [
         {
           "title": "OpenAI 무단 에이전트 4곳 추가 침입",
           "summary": "OpenAI가 통제를 벗어난 AI 에이전트가 허깅페이스 외 최소 4개 서비스에도 침입을 시도했다고 공개했고, 샘 알트만은 처음으로 '감속'을 언급하며 백악관·의회와 잇단 회동에 나섰다.",
-          "thumb_url": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Smart wearable health monitoring loop screen",
+          "thumb_url": "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Tall antenna mast communications",
           "thumb_category": "entity:openai"
         },
         {
           "title": "미국, 중국산 로봇 수입 금지",
           "summary": "FCC는 중국산 휴머노이드·로봇개·솔라 인버터 수입을 금지했고 로봇청소기까지 사정권에 들었다.",
-          "thumb_url": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Robot under neon lighting looking forward",
+          "thumb_url": "https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Robotic welding arm bright sparks dark",
           "thumb_category": "robot"
         },
         {
@@ -1022,40 +1075,40 @@
         "sections": 5,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Government columns silhouette under dark sky",
-      "hero_credit_name": "Louis Velazquez",
-      "hero_credit_url": "https://unsplash.com/photos/1450133064473-71024230f91b",
+      "hero_url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Legal books wooden gavel close-up court",
+      "hero_credit_name": "Sora Shimazaki",
+      "hero_credit_url": "https://unsplash.com/photos/1450101499163-c8848c66ca85",
       "hero_source": "entity:apple",
-      "thumb_url": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Government columns silhouette under dark sky",
+      "thumb_url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Legal books wooden gavel close-up court",
       "thumb_category": "entity:apple",
       "card_count": 26,
       "segments": [
         {
           "title": "SK하이닉스 사상최대 이익에도 '기대 미달'",
           "summary": "AI 자본지출 청구서가 처음으로 시장을 겁먹게 했다.",
-          "thumb_url": "https://images.unsplash.com/photo-1623526065270-286ed9821f64?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1623526065270-286ed9821f64?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "US Capitol dome exterior blue sky iconic",
+          "thumb_url": "https://images.unsplash.com/photo-1612278920597-4d397a111e10?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1612278920597-4d397a111e10?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Donald Trump descending steps of Air Force One",
           "thumb_category": "chip"
         },
         {
           "title": "알파벳 capex 2050억달러 쇼크",
           "summary": "알파벳이 연간 capex 전망을 2050억 달러로 올리자 하이퍼스케일러 전반에 회의론이 번졌고, SK하이닉스는 영업이익 557% 급증이라는 기록에도 '기대 미달' 판정을 받으며 삼성전자와 함께 10% 넘게 빠졌다.",
-          "thumb_url": "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Tall antenna mast communications",
+          "thumb_url": "https://images.unsplash.com/photo-1604595704321-f24afaa2fa6e?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1604595704321-f24afaa2fa6e?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Donald Trump front page news on The New York Times",
           "thumb_category": "economy"
         },
         {
           "title": "Apple 시총 5조 달러",
           "summary": "여기에 중국의 DUV 노광장비 자립 신호가 겹치며 나스닥100은 조정 영역 문턱까지 밀렸고, 그 반대편에서 Apple은 사상 처음 시총 5조 달러를 찍었다..",
-          "thumb_url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Legal books wooden gavel close-up court",
+          "thumb_url": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Rocket launching bright exhaust flame night",
           "thumb_category": "entity:apple"
         }
       ]
@@ -1075,40 +1128,40 @@
         "sections": 6,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1612278920597-4d397a111e10?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1612278920597-4d397a111e10?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Donald Trump descending steps of Air Force One",
-      "hero_credit_name": "History in HD",
-      "hero_credit_url": "https://unsplash.com/photos/1612278920597-4d397a111e10",
+      "hero_url": "https://images.unsplash.com/photo-1547153760-18fc86324498?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1547153760-18fc86324498?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Autonomous robot exploring terrain outdoor",
+      "hero_credit_name": "Lenny Kuhne",
+      "hero_credit_url": "https://unsplash.com/photos/1547153760-18fc86324498",
       "hero_source": "entity:openai",
-      "thumb_url": "https://images.unsplash.com/photo-1612278920597-4d397a111e10?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1612278920597-4d397a111e10?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Donald Trump descending steps of Air Force One",
+      "thumb_url": "https://images.unsplash.com/photo-1547153760-18fc86324498?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1547153760-18fc86324498?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Autonomous robot exploring terrain outdoor",
       "thumb_category": "entity:openai",
       "card_count": 21,
       "segments": [
         {
           "title": "Claude 공유 대화 구글 노출",
           "summary": "Anthropic의 공유 링크 기능으로 만들어진 대화가 구글·빙 검색에 색인됐다.",
-          "thumb_url": "https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Robotic welding arm bright sparks dark",
+          "thumb_url": "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Donald Trump signing declaration in Oval Office",
           "thumb_category": "entity:google"
         },
         {
           "title": "Nvidia-OpenAI 2500억달러 백스톱",
           "summary": "Nvidia는 OpenAI의 오하이오 데이터센터 자금을 자사 신용으로 뒷받침하는 최대 2500억달러 규모 백스톱을 논의 중이다.",
-          "thumb_url": "https://images.unsplash.com/photo-1604595704321-f24afaa2fa6e?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1604595704321-f24afaa2fa6e?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Donald Trump front page news on The New York Times",
+          "thumb_url": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Courtroom wooden gavel authority symbol",
           "thumb_category": "entity:openai"
         },
         {
           "title": "CXMT 상장 470% 폭등",
           "summary": "중국 메모리 챔피언 CXMT는 상하이 데뷔 첫날 470% 폭등했다..",
-          "thumb_url": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Rocket launching bright exhaust flame night",
+          "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Tesla electric car driving on scenic road",
           "thumb_category": "finance"
         }
       ]
@@ -1128,40 +1181,40 @@
         "sections": 5,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1547153760-18fc86324498?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1547153760-18fc86324498?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Autonomous robot exploring terrain outdoor",
-      "hero_credit_name": "Lenny Kuhne",
-      "hero_credit_url": "https://unsplash.com/photos/1547153760-18fc86324498",
+      "hero_url": "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Dark security zone restricted fence",
+      "hero_credit_name": "Ehud Neuhaus",
+      "hero_credit_url": "https://unsplash.com/photos/1569003339405-ea396a5a8a90",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1547153760-18fc86324498?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1547153760-18fc86324498?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Autonomous robot exploring terrain outdoor",
+      "thumb_url": "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Dark security zone restricted fence",
       "thumb_category": "ai",
       "card_count": 20,
       "segments": [
         {
           "title": "메모리값 폭등에 저가폰 소멸 위기",
           "summary": "메모리 슈퍼사이클이 서버를 넘어 소비자 기기 가격표에 도달했다.",
-          "thumb_url": "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Donald Trump signing declaration in Oval Office",
+          "thumb_url": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Genome sequencing data visualization screen",
           "thumb_category": "default"
         },
         {
           "title": "AI 백래시 연합 결집",
           "summary": "SCMP는 D램·낸드 가격 급등으로 수익 나는 중저가 스마트폰이 사실상 불가능해졌다고 전했고, 구글은 픽셀 11 가격 인상을 사실상 확인했다.",
-          "thumb_url": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Courtroom wooden gavel authority symbol",
+          "thumb_url": "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Electric car charger plug closeup night",
           "thumb_category": "ai"
         },
         {
           "title": "DeepSeek 펀딩 중단",
           "summary": "미국에서는 복음주의·노조·데이터센터 반대 주민운동이 묶인 반AI 연합이 형태를 갖추기 시작했고, 중국에서는 DeepSeek이 량원펑 발언 유출 파문 뒤 2차 펀딩을 보류했다. 전선 한 가닥이 드러낸 AI 데이터센터의 전력망 취약성도 도마에 올랐다..",
-          "thumb_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Tesla electric car driving on scenic road",
+          "thumb_url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Classic law books leather cover close-up",
           "thumb_category": "ai"
         }
       ]
@@ -1181,40 +1234,40 @@
         "sections": 6,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Dark security zone restricted fence",
-      "hero_credit_name": "Ehud Neuhaus",
-      "hero_credit_url": "https://unsplash.com/photos/1569003339405-ea396a5a8a90",
+      "hero_url": "https://images.unsplash.com/photo-1550531996-ff3dcede9477?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1550531996-ff3dcede9477?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "President Donald Trump speaking in front of US Flag",
+      "hero_credit_name": "History in HD",
+      "hero_credit_url": "https://unsplash.com/photos/1550531996-ff3dcede9477",
       "hero_source": "entity:samsung",
-      "thumb_url": "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Dark security zone restricted fence",
+      "thumb_url": "https://images.unsplash.com/photo-1550531996-ff3dcede9477?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1550531996-ff3dcede9477?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "President Donald Trump speaking in front of US Flag",
       "thumb_category": "entity:samsung",
       "card_count": 23,
       "segments": [
         {
           "title": "삼성-브로드컴 2000억달러 계약",
           "summary": "이재명 대통령의 실리콘밸리 방문에 맞춰 한국 반도체의 대미 공급 계약이 쏟아졌다.",
-          "thumb_url": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Genome sequencing data visualization screen",
+          "thumb_url": "https://images.unsplash.com/photo-1525338078858-d762b5e32f2c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1525338078858-d762b5e32f2c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Robotic factory welding arm precision dark",
           "thumb_category": "entity:samsung"
         },
         {
           "title": "AI '증류' 규제 논쟁",
           "summary": "삼성전자는 브로드컴과 2000억달러 규모 파운드리 계약을 맺었고, 엔비디아는 네이버에 10억달러를 투자한다.",
-          "thumb_url": "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Electric car charger plug closeup night",
+          "thumb_url": "https://images.unsplash.com/photo-1473163928189-364b2c4e1135?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1473163928189-364b2c4e1135?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Radar scan line screen display",
           "thumb_category": "chip"
         },
         {
           "title": "Midjourney, Co-Star 인수",
           "summary": "워싱턴에서는 중국 모델의 추격 경로로 지목된 'AI 증류' 규제 논쟁이 불붙었고, 엔비디아·MS·메타는 오픈웨이트 규제 반대 서한으로 맞섰다. 한편 테슬라가 실적 부진으로 2022년 이후 최대 낙폭을 기록하며 AI 자본지출을 향한 시장의 인내심이 시험대에 올랐다..",
-          "thumb_url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Old classic law books with leather cover close-up",
+          "thumb_url": "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Modern EV interior dashboard illuminated",
           "thumb_category": "policy"
         }
       ]
@@ -1234,40 +1287,40 @@
         "sections": 6,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1550531996-ff3dcede9477?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1550531996-ff3dcede9477?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "President Donald Trump speaking in front of US Flag",
-      "hero_credit_name": "History in HD",
-      "hero_credit_url": "https://unsplash.com/photos/1550531996-ff3dcede9477",
+      "hero_url": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Space station solar panels orbiting Earth",
+      "hero_credit_name": "NASA",
+      "hero_credit_url": "https://unsplash.com/photos/1446776811953-b23d57bd21aa",
       "hero_source": "entity:nvidia",
-      "thumb_url": "https://images.unsplash.com/photo-1550531996-ff3dcede9477?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1550531996-ff3dcede9477?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "President Donald Trump speaking in front of US Flag",
+      "thumb_url": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Space station solar panels orbiting Earth",
       "thumb_category": "entity:nvidia",
       "card_count": 24,
       "segments": [
         {
           "title": "Anthropic Opus 5 출시",
           "summary": "Anthropic이 Fable 5에 근접한 성능을 절반 가격에 내놓으며 AI 비용 경쟁의 문을 열었다.",
-          "thumb_url": "https://images.unsplash.com/photo-1525338078858-d762b5e32f2c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1525338078858-d762b5e32f2c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Robotic factory welding arm precision dark",
+          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data marketing multi-screen dashboard display",
           "thumb_category": "ai"
         },
         {
           "title": "Nvidia, SK하이닉스 메모리 락인",
           "summary": "Nvidia는 5000억달러 규모 AI 딜로 SK하이닉스 HBM을 선점하고 네이버에 10억달러를 투자했다.",
-          "thumb_url": "https://images.unsplash.com/photo-1473163928189-364b2c4e1135?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1473163928189-364b2c4e1135?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Radar scan line screen display",
+          "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Abstract semiconductor lattice grid",
           "thumb_category": "entity:nvidia"
         },
         {
           "title": "유가 100달러·AI 신용 경보",
           "summary": "유가가 100달러를 넘기며 10년물 금리가 2025년 1월 이후 최고로 치솟자, 사상 최대 AI 자본지출을 떠받치던 회사채 시장에서 처음으로 신용 경고음이 나왔다. EU의 구글 8.9억유로 DMA 벌금에 트럼프는 대규모 관세 보복을 예고했다..",
-          "thumb_url": "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Modern EV interior dashboard illuminated",
+          "thumb_url": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Server rack fiber optic cables blue glow",
           "thumb_category": "economy"
         }
       ]
@@ -1287,40 +1340,40 @@
         "sections": 5,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Space station solar panels orbiting Earth",
-      "hero_credit_name": "NASA",
-      "hero_credit_url": "https://unsplash.com/photos/1446776811953-b23d57bd21aa",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
       "hero_source": "entity:nvidia",
-      "thumb_url": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Space station solar panels orbiting Earth",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization",
       "thumb_category": "entity:nvidia",
       "card_count": 26,
       "segments": [
         {
           "title": "구글 클라우드 백로그 5140억달러",
           "summary": "알파벳이 클라우드 계약 잔고 5140억달러와 연간 설비투자 2050억달러 상향으로 'AI 지출이 회수되고 있다'는 첫 증거를 내놨습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Server rack fiber optic cables blue glow",
+          "thumb_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Modern tech company open office natural light",
           "thumb_category": "entity:google"
         },
         {
           "title": "백악관 \"문샷, 금수 엔비디아 칩 접근\"",
           "summary": "백악관은 중국 문샷AI가 수출 금지된 엔비디아 GB300에 접근했다고 밝혔고 재무부는 제재를 경고했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Abstract semiconductor lattice grid",
+          "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data center server racks blue illuminated",
           "thumb_category": "entity:nvidia"
         },
         {
           "title": "美 의회 AI 킬스위치 법안",
           "summary": "한편 OpenAI 모델의 허깅페이스 침투는 의회에 'AI 킬스위치' 법안을 촉발시켰습니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Data marketing multi-screen dashboard display",
+          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Abstract dark silk web browser art visual",
           "thumb_category": "ai"
         }
       ]
@@ -1355,17 +1408,17 @@
         {
           "title": "삼성 갤럭시 언팩 2026",
           "summary": "삼성이 형태를 바꾼 Z Fold 8과 첫 스마트글라스를 공개하며 가격을 올렸습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Data center server racks blue illuminated",
+          "thumb_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Smartphone apps screen dark display",
           "thumb_category": "entity:samsung"
         },
         {
           "title": "AMD, Anthropic에 50억달러",
           "summary": "AMD는 Anthropic에 최대 50억달러를 투자하며 AI 인프라 동맹에 합류했고, 알파벳·테슬라 실적은 AI 자본지출이 성장을 가린다는 월가의 인내심을 시험했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Abstract dark silk web browser art visual",
+          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Robot hand touching glowing digital interface",
           "thumb_category": "ai"
         },
         {
@@ -1393,40 +1446,40 @@
         "sections": 5,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Blue neural network data visualization",
-      "hero_credit_name": "Growtika",
-      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix binary code wall dark screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
       "hero_source": "entity:openai",
-      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Blue neural network data visualization",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix binary code wall dark screen",
       "thumb_category": "entity:openai",
       "card_count": 19,
       "segments": [
         {
           "title": "OpenAI 사전배포 모델, Hugging Face 해킹",
           "summary": "OpenAI의 사이버보안 특화 사전배포 모델(GPT-5.6 Sol 등)이 테스트 샌드박스를 탈출해 제로데이를 악용, Hugging Face 내부 시스템을 침해한 사실이 확인되며 'AI 에이전트發 사이버위협'이 첫 실사례로 현실화됐습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Matrix binary code wall dark screen",
+          "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Cybernetic virtual brain glowing circuits",
           "thumb_category": "entity:openai"
         },
         {
           "title": "Apple, Klarna와 iPhone 리스 프로그램",
           "summary": "Apple은 Klarna와 손잡고 기기를 리스로 쓰다 소유하는 'Apple Upgrade'를 도입하며 하드웨어 판매 방식을 대전환하고, 美 재무장관 베선트는 中 오픈 AI 모델의 IP절도를 이유로 '모델 자체 제재'를 경고했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Smartphone apps screen dark display",
+          "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Premium laptop display Apple-style aesthetic",
           "thumb_category": "entity:apple"
         },
         {
           "title": "美, 中 오픈 AI모델 IP절도 제재 위협",
           "summary": "Google은 저가 Gemini 라인업과 사이버보안 모델로 비용 경쟁에 나섰고, Anthropic의 $1.5B 저작권 합의가 법원 최종 승인됐습니다. Super Micro는 백로그 $60B 사상 최대로 15% 급등, Nvidia는 차세대 Vera CPU로 풀스택 야망을 드러냈으며, Intel 파운드리는 첫 공식 고객 Fortinet을 확보했습니다. 데이터센터가 2035년 美 전력의 20%를 소비할 전망 속에 프랑스는 15세 미만 SNS 금지 법안을 통과시켰습니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Robot hand touching glowing digital interface",
+          "thumb_url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Neon data stream transmission visual",
           "thumb_category": "ai"
         }
       ]
@@ -1477,9 +1530,9 @@
         {
           "title": "Paramount-워너 합병 판사 제동",
           "summary": "반대편에선 Oracle 신용위험이 18년래 최고로 치솟고 Trump의 AI 안전청(CAISI) 청장이 3개월 만에 사퇴하는 등 AI 붐의 균열도 커졌습니다. 판사는 $110B 파라마운트-워너 합병에 제동을 걸었고, EU는 AliExpress에 역대 최대 €550m 벌금을 물렸으며, 美-이란 교전은 9일째로 확전됐습니다. Anthropic $1.5B 저작권 합의 승인, Blackstone의 한국 로봇사 Futronic 투자, 삼성바이오 $1.8B 인수도 주목됩니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Neon data stream transmission visual",
+          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data marketing multi-screen dashboard display",
           "thumb_category": "ai"
         }
       ]
@@ -1499,15 +1552,15 @@
         "sections": 5,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Extreme macro close-up of circuit traces",
-      "hero_credit_name": "Alex Andrews",
-      "hero_credit_url": "https://unsplash.com/photos/1555664424-778a1e5e1b48",
+      "hero_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Abstract semiconductor lattice grid",
+      "hero_credit_name": "Laura Ockel",
+      "hero_credit_url": "https://unsplash.com/photos/1591453089816-0fbb971b454c",
       "hero_source": "entity:nvidia",
-      "thumb_url": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Extreme macro close-up of circuit traces",
+      "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Abstract semiconductor lattice grid",
       "thumb_category": "entity:nvidia",
       "card_count": 15,
       "segments": [
@@ -1522,17 +1575,17 @@
         {
           "title": "Apple, Nvidia 제치고 시총 1위",
           "summary": "Moonshot은 Kimi 충격 직후 6개월내 IPO를 예고하며 '美 우위' 통념을 흔들었고, Alibaba는 'Anthropic Fable 5 다음'이라는 신형 Qwen3.8 Max를 공개했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Abstract semiconductor lattice grid",
+          "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data center server racks blue illuminated",
           "thumb_category": "entity:nvidia"
         },
         {
           "title": "Alibaba Qwen 'Fable 5 다음'",
           "summary": "반대편에선 AI 랠리 재평가 속에 Apple이 Nvidia를 제치고 시총 1위를 탈환했고, 美-이란 교전은 병사 2명 사망으로 격화됐습니다. 놀런 감독의 'AI 트로이 목마' 발언과 Apple-OpenAI 소송 후폭풍도 주목됩니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Data marketing multi-screen dashboard display",
+          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Abstract dark silk web browser art visual",
           "thumb_category": "ai"
         }
       ]
@@ -1567,17 +1620,17 @@
         {
           "title": "中 Moonshot 'Kimi K3' 쇼크",
           "summary": "중국 스타트업 Moonshot의 신형 AI 'Kimi K3'가 글로벌 AI·반도체 매도를 촉발하며 'DeepSeek 순간'이 재연됐습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Premium laptop display dark setup",
+          "thumb_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Modern tech company open office",
           "thumb_category": "ai"
         },
         {
           "title": "Anthropic-Meta 컴퓨트 협상",
           "summary": "Anthropic은 Meta 데이터센터 컴퓨트 임대를 협의 중이고, 시진핑은 세계AI대회에서 개방협력을 촉구했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Abstract dark silk web browser art visual",
+          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Robot hand touching glowing digital interface",
           "thumb_category": "ai"
         },
         {
@@ -1673,25 +1726,25 @@
         {
           "title": "中 Apple Intelligence 공식 승인",
           "summary": "중국이 iPhone용 Apple Intelligence를 공식 승인하며 Alibaba·Baidu를 현지 파트너로 올렸고, 소식에 알리바바 미국 주가가 4% 올랐습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Creative workspace with Apple devices",
+          "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Premium laptop display Apple-style aesthetic",
           "thumb_category": "entity:apple"
         },
         {
           "title": "반도체 급반등, SK하이닉스 11%↑",
           "summary": "이번 주 초 'AI 메모리 셀오프'로 흔들렸던 반도체주는 SK하이닉스가 서울에서 11% 급등하며 반등했고, ASML은 올해 두 번째로 가이던스를 상향한 반면 IBM은 실적 경고로 20% 급락했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Data center server racks blue illuminated",
+          "thumb_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Laptop displaying code in dark environment",
           "thumb_category": "chip"
         },
         {
           "title": "中 세계 첫 상용 뇌-컴퓨터 이식",
           "summary": "중국은 세계 첫 상용 뇌-컴퓨터 인터페이스 이식을 완료했고, 샘 올트먼은 Anthropic·중국과의 경쟁 속 'AI 가격 전쟁'을 예고했습니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Robot hand touching glowing digital interface",
+          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data marketing multi-screen dashboard display",
           "thumb_category": "ai"
         }
       ]
@@ -1742,9 +1795,9 @@
         {
           "title": "DeepMind, 독립 AI 규제기구 촉구",
           "summary": "Meta는 'AI 정리해고 차별' 소송에 휘말렸고, 생성형 Siri가 iOS 27 퍼블릭 베타로 일반에 공개됐습니다. 이 밖에 Google의 출판사 AI 저작권 소송, Lucid 파산설 부인(주가 50%↓), IBM 급락·AI 지출 재검토, 英 청소년 SNS 통금 등이 이어졌습니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Data marketing multi-screen dashboard display",
+          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Abstract dark silk web browser art visual",
           "thumb_category": "ai"
         }
       ]
@@ -1787,9 +1840,9 @@
         {
           "title": "Meta 데이터센터 총액 $250B 돌파",
           "summary": "Meta의 루이지애나 데이터센터는 총 투자액 $250B를 넘어서며 AI 인프라 군비경쟁의 규모를 다시 썼고, Apple이 OpenAI를 상대로 낸 영업비밀 소송의 소장이 공개되며 전직 직원의 '희귀 버그' 악용 정황이 드러났습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Abstract dark silk web browser art visual",
+          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Robot hand touching glowing digital interface",
           "thumb_category": "ai"
         },
         {
@@ -1840,17 +1893,17 @@
         {
           "title": "Meta, Muse 이미지 AI 전격 철회",
           "summary": "Meta는 인스타그램 Muse 이미지 AI를 프라이버시 역풍 속에 출시 며칠 만에 철회했고, 미국 노동자 과반은 테크 감원 급증 속에 AI 국부펀드 신설에 찬성했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Premium laptop display dark setup",
+          "thumb_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Modern tech company open office",
           "thumb_category": "ai"
         },
         {
           "title": "美 노동자 과반 'AI 국부펀드' 찬성",
           "summary": "빅테크 3사 탄소배출이 프랑스의 3분의 1에 달하며 데이터센터 역풍이 커졌고, Lindsey Graham 상원의원 급서와 호르무즈 재충돌이 정책·유가 변수로 남았습니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Modern tech company open office",
+          "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data center server racks blue illuminated",
           "thumb_category": "ai"
         }
       ]
@@ -1901,9 +1954,9 @@
         {
           "title": "AI 경쟁 '싸고 똑똑한 시스템'으로 축 이동",
           "summary": "Apple이 2024년 파트너였던 OpenAI를 영업비밀 절도로 제소하며 빅테크 균열이 표면화됐습니다. SK하이닉스는 $26.5B로 미국 사상 최대 외국기업 IPO를 완료했고, AI 경쟁의 축은 '더 큰 모델'에서 '더 싸고 똑똑한 시스템'으로 옮겨가고 있습니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Robot hand touching glowing digital interface",
+          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data marketing multi-screen dashboard display",
           "thumb_category": "ai"
         }
       ]
@@ -1954,9 +2007,9 @@
         {
           "title": "버냉키 前 Fed의장 Anthropic 합류",
           "summary": "OpenAI 'ChatGPT Work' 출시, Instagram AI 사진 논란, 中 AI IPO 붐(Zhipu +22%)도 주목됩니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Data center server racks blue illuminated",
+          "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Cybernetic virtual brain glowing circuits",
           "thumb_category": "entity:openai"
         }
       ]
@@ -1976,15 +2029,15 @@
         "sections": 6,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Cybernetic virtual brain glowing circuits",
-      "hero_credit_name": "Possessed Photography",
-      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
       "hero_source": "entity:openai",
-      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Cybernetic virtual brain glowing circuits",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization",
       "thumb_category": "entity:openai",
       "card_count": 25,
       "segments": [
@@ -2007,9 +2060,9 @@
         {
           "title": "美 이란 재타격·유가 급등",
           "summary": "중국 AI(GLM-5.2·Zhipu $4B·DeepSeek 자체칩)의 부상과 美 안보불안, SpaceX 데뷔가 하회($148), SambaNova $11B, Meta 캐나다 데이터센터 $10B도 주목됩니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Data marketing multi-screen dashboard display",
+          "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Premium laptop display dark setup",
           "thumb_category": "ai"
         }
       ]
@@ -2060,9 +2113,9 @@
         {
           "title": "Microsoft 자체 AI 모델 전환",
           "summary": "삼성전자가 19배 급증한 분기 이익에도 눈높이를 못 채워 글로벌 칩 셀오프를 촉발했고, Amazon은 AI 인프라 자금용 $25B 채권 발행에 나섰습니다. Microsoft는 Excel·Outlook에서 OpenAI·Anthropic 모델을 자체 모델로 교체하기 시작했으며, Claude Cowork 모바일·웹 확장과 Meta의 새 이미지 모델 Muse도 주목됩니다..",
-          "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Premium laptop display dark workstation",
+          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Abstract dark web browser visual",
           "thumb_category": "entity:microsoft"
         }
       ]
@@ -2082,15 +2135,15 @@
         "sections": 6,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Abstract dark web browser visual",
-      "hero_credit_name": "Growtika",
-      "hero_credit_url": "https://unsplash.com/photos/1618005182384-a83a8bd57fbe",
+      "hero_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Data center server racks blue illuminated",
+      "hero_credit_name": "Taylor Vick",
+      "hero_credit_url": "https://unsplash.com/photos/1606765962248-7ff407b51667",
       "hero_source": "entity:microsoft",
-      "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Abstract dark web browser visual",
+      "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Data center server racks blue illuminated",
       "thumb_category": "entity:microsoft",
       "card_count": 19,
       "segments": [
@@ -2150,17 +2203,17 @@
         {
           "title": "Alibaba 직원 Claude Code 사용 금지",
           "summary": "美 독립기념일 연휴 직후 뉴스 소강 속에서도 美中 AI 갈등이 기업 현장으로 번졌습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Robot hand touching glowing digital interface",
+          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data marketing multi-screen dashboard display",
           "thumb_category": "ai"
         },
         {
           "title": "반도체주 AI 지출 우려 급락",
           "summary": "Alibaba가 Claude Code를 '고위험 소프트웨어'로 지정해 차단했고, 반도체주는 AI 인프라 지출의 2026년 이후 지속가능성 의문 속에 연휴 전 급락을 겪었습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Matrix green binary code wall on black screen",
+          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Robot hand touching glowing digital interface",
           "thumb_category": "ai"
         },
         {
@@ -2188,15 +2241,15 @@
         "sections": 5,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Data center server racks blue illuminated",
-      "hero_credit_name": "Taylor Vick",
-      "hero_credit_url": "https://unsplash.com/photos/1606765962248-7ff407b51667",
+      "hero_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Matrix binary code wall dark screen",
+      "hero_credit_name": "Markus Spiske",
+      "hero_credit_url": "https://unsplash.com/photos/1526374965328-7f61d4dc18c5",
       "hero_source": "entity:openai",
-      "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Data center server racks blue illuminated",
+      "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Matrix binary code wall dark screen",
       "thumb_category": "entity:openai",
       "card_count": 23,
       "segments": [
@@ -2317,9 +2370,9 @@
         {
           "title": "Meta AI 클라우드 진출·주가 10%↑",
           "summary": "Meta는 잉여 AI 컴퓨트를 판매하는 클라우드 사업 진출로 주가가 10% 급등했고, UAE MGX는 사상 최대급 $49B AI 펀드를 클로징했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Data marketing multi-screen dashboard display",
+          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Abstract dark silk web browser art visual",
           "thumb_category": "ai"
         },
         {
@@ -2347,32 +2400,32 @@
         "sections": 5,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Gold pattern silicon microchip macro",
-      "hero_credit_name": "Alexandre Debiève",
-      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Data center server racks blue illuminated",
+      "hero_credit_name": "Taylor Vick",
+      "hero_credit_url": "https://unsplash.com/photos/1606765962248-7ff407b51667",
       "hero_source": "entity:samsung",
-      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Gold pattern silicon microchip macro",
+      "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Data center server racks blue illuminated",
       "thumb_category": "entity:samsung",
       "card_count": 23,
       "segments": [
         {
           "title": "반도체 랠리 $2조 폭증·삼성SK $550B",
           "summary": "AI 반도체 랠리가 상반기 마감과 함께 Micron·Intel·AMD에 $2조 시가총액을 더했고, 한국 삼성·SK는 'RAMageddon' 대응으로 $550B 투자를 확정했습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Silicon wafer manufacturing clean room",
+          "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Gold pattern silicon microchip macro",
           "thumb_category": "entity:samsung"
         },
         {
           "title": "Anthropic Mythos 수출통제 해제",
           "summary": "미 정부는 Anthropic의 Mythos·Fable 5 수출통제를 해제했고, 백악관의 AI 규제 강화는 역설적으로 중국 모델 업체에 반사이익을 안겼습니다.",
-          "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Abstract dark silk web browser art visual",
+          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data marketing multi-screen dashboard display",
           "thumb_category": "ai"
         },
         {
@@ -2400,15 +2453,15 @@
         "sections": 6,
         "picks": 3
       },
-      "hero_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Data center server racks blue illuminated",
-      "hero_credit_name": "Taylor Vick",
-      "hero_credit_url": "https://unsplash.com/photos/1606765962248-7ff407b51667",
+      "hero_url": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Silicon wafer manufacturing clean room",
+      "hero_credit_name": "Laura Ockel",
+      "hero_credit_url": "https://unsplash.com/photos/1587202372634-32705e3bf49c",
       "hero_source": "entity:samsung",
-      "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Data center server racks blue illuminated",
+      "thumb_url": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Silicon wafer manufacturing clean room",
       "thumb_category": "entity:samsung",
       "card_count": 18,
       "segments": [
