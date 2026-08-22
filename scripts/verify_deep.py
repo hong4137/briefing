@@ -17,7 +17,10 @@ MEDIA_WHITELIST = {
     'businesswire','prnewswire','staff','com','co','uk','www','http','https',
 }
 SCALE = {'thousand':1e3,'million':1e6,'m':1e6,'bn':1e9,'billion':1e9,'trillion':1e12,'b':1e9,
-         'k':1e3,'crore':1e7,'lakh':1e5}
+         'k':1e3,'crore':1e7,'lakh':1e5,
+         'gigawatts':1e9,'gigawatt':1e9,'megawatts':1e6,'megawatt':1e6,
+         'terawatts':1e12,'terawatt':1e12,'kilowatts':1e3,'kilowatt':1e3,
+         'gigawatt-hours':1e9,'gigawatt-hour':1e9,'megawatt-hours':1e6,'megawatt-hour':1e6}
 KSCALE = {'천':1e3,'만':1e4,'억':1e8,'조':1e12,'백만':1e6,'십억':1e9}
 WORDNUM = {'zero':0,'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,'eight':8,
     'nine':9,'ten':10,'eleven':11,'twelve':12,'dozen':12,'thirteen':13,'fourteen':14,
@@ -63,7 +66,7 @@ def body_values(body):
         vals.add(f(v))
         tail = low[m.end():m.end()+16]
         for w, s in SCALE.items():
-            if re.match(r'\s*%s\b' % w, tail):
+            if re.match(r'\s*[-\u2010\u2011\[\(]?\s*%s\b' % w, tail):
                 vals.add(f(v * s)); break
         # 퍼센트/기타는 값 그대로
         # 소수점 뒤 0 제거형(4.0 -> 4)
@@ -80,6 +83,13 @@ def body_values(body):
     for w2, s in SCALE.items():
         if re.search(r'\bhalf a %s\b' % w2, low):
             vals.add(f(0.5 * s))
+    # "300 and 500 million" / "3 to 5 billion" : 앞 숫자에도 뒤쪽 단위를 적용
+    for m in re.finditer(r'(\d[\d,]*(?:\.\d+)?)\s*(?:and|to|-|–|~)\s*(\d[\d,]*(?:\.\d+)?)\s*(thousand|million|billion|trillion)\b', low):
+        try:
+            a = float(m.group(1).replace(',', ''))
+        except ValueError:
+            continue
+        vals.add(f(a * SCALE[m.group(3)]))
     # 영어 복합 수사 (two-hundred, twenty-five, three hundred thousand ...)
     WU = {'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,'eight':8,'nine':9,
           'ten':10,'eleven':11,'twelve':12,'thirteen':13,'fourteen':14,'fifteen':15,
