@@ -164,7 +164,8 @@ SYSTEM = """너는 한국 경제·기술 매체의 외신 데스크다. 영문 �
 · 소제목·불릿·번호 목록을 쓰지 마라. 문단만 쓴다.
 
 ■ 분량
-· 기사마다 목표 글자수가 주어진다. 그 안에서 끝내라. 목표를 넘기면 폐기된다.
+· 기사마다 목표 글자수 **범위**가 주어진다. 하한 미만도 상한 초과도 둘 다 폐기 사유다.
+  범위 한가운데를 겨냥해 써라.
 · 문단은 4~6개. 문단 수를 먼저 정하고 각 문단을 목표 글자수 나눈 만큼만 써라.
 · 줄여야 하면 문장을 다듬지 말고 문단이나 사례를 통째로 빼라.
 · 단, 반론·회사 측 해명·전문가 반박은 마지막까지 남긴다.
@@ -184,7 +185,7 @@ ART_TMPL = """───────── 기사 {i} ─────────
 [매체] {domain}
 [제목] {title_en}
 [한글 제목] {title_kr}
-[목표 분량] {target}자 (초과 금지)
+[목표 분량] {tlo}~{thi}자 — 이 범위를 벗어나면 폐기된다
 [기존 요약 — 반복 금지] {summary_now}
 [원문 본문]
 {body}
@@ -200,15 +201,21 @@ SCHEMA = {
 }
 
 
-def target_len(body_len):
-    return max(LEN_MIN, min(LEN_MAX, int(body_len * TARGET_RATIO)))
+def target_range(body_len):
+    """목표를 숫자 하나가 아니라 범위로 준다.
+    단일값 + '초과 금지'로 주면 모델이 그 값 아래를 겨냥해, 하한(700자)과 목표가
+    같아지는 짧은 기사에서 687자·658자처럼 미달이 계속 났다(첫 실전 실행에서 2건).
+    아래·위 양쪽을 명시하고 최소 250자 폭을 보장한다."""
+    lo = max(LEN_MIN, min(LEN_MAX - 250, int(body_len * (TARGET_RATIO - 0.04))))
+    hi = min(LEN_MAX, max(lo + 250, int(body_len * (TARGET_RATIO + 0.04))))
+    return lo, hi
 
 
 def build_prompt(batch):
     arts = "\n".join(
         ART_TMPL.format(i=a["i"], domain=a["domain"], title_en=a["title_en"],
                         title_kr=a["title_kr"] or "(없음)",
-                        target=a["target"],
+                        tlo=a["tlo"], thi=a["thi"],
                         summary_now=a["summary_now"] or "(없음)",
                         body=a["body"][:BODY_CAP])
         for a in batch)
@@ -336,7 +343,9 @@ REPAIR_TMPL = """아래 해설 초고가 검증에서 걸렸다. 지적된 것�
 [고치는 방법]
 · '수치 미대조' / '고유명사 미대조' — 그 표현은 원문 본문에 없다. 해당 대목을 통째로 빼거나
   원문에 실제로 있는 표기로 바꿔라. 새로운 사실을 채워 넣지 마라.
-· '분량 초과' — 문장을 다듬지 말고 문단이나 사례를 통째로 빼라. 목표는 {target}자다.
+· '분량 초과' — 문장을 다듬지 말고 문단이나 사례를 통째로 빼라.
+· '분량 미달' — 원문에 있는데 아직 안 쓴 수치·발언·반론을 문단 하나로 더 넣어라.
+  지어내지는 마라. 목표 범위는 {tlo}~{thi}자다.
   단, 반론·회사 측 해명·전문가 반박은 남겨라.
 · '직접인용' — 간접화법으로 바꿔라.
 · '한국 관점' — 그 문단을 통째로 삭제하라.
@@ -355,7 +364,7 @@ def repair(a, deep, reasons):
     """검증에 걸린 초고를 한 번만 고쳐 본다. 실패하면 호출한 쪽에서 버린다."""
     prompt = REPAIR_TMPL.format(
         problems="\n".join("· " + r for r in reasons[:12]),
-        target=a["target"], body=a["body"][:BODY_CAP], deep=deep, i=a["i"])
+        tlo=a["tlo"], thi=a["thi"], body=a["body"][:BODY_CAP], deep=deep, i=a["i"])
     data, why = call_gemini(prompt, tries=2)
     if not data:
         return None, why
@@ -415,7 +424,7 @@ def run_date(date, path, reuse):
 
     for i, c in enumerate(ready):
         c["i"] = i + 1
-        c["target"] = target_len(len(c["body"]))
+        c["tlo"], c["thi"] = target_range(len(c["body"]))
 
     batches = [ready[i:i + BATCH] for i in range(0, len(ready), BATCH)]
     print(f"  생성 — {len(ready)}건 / {len(batches)}요청 (배치 {BATCH})", flush=True)
@@ -481,6 +490,10 @@ def main():
         items, passed, dropped = res
         if not items:
             print(f"  {date} — 저장할 항목이 없어 파일을 만들지 않는다.", flush=True)
+            continue
+        if DRY_RUN:
+            print(f"  (드라이런 — deep/{date}.json 을 쓰지 않는다. {len(items)}건 예상)",
+                  flush=True)
             continue
         out = {"date": date, "v": 1, "items": items}
         (DEEP_DIR / f"{date}.json").write_text(
