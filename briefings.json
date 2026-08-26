@@ -13081,6 +13081,37 @@
           "thumb_category": "chip"
         }
       ]
+    },
+    {
+      "date": "weekly-2026-08-23",
+      "week": "2026-W34",
+      "title": "AI 백래시가 청구서를 내밀다",
+      "summary": "Anthropic이 사상 최대 IPO 신청서에 'AI 백래시'를 리스크로 적었고, 데이터센터 반발은 중간선거 쟁점이 됐다. 같은 주 엔비디아는 오하이오 OpenAI 데이터센터에 최대 1,050억달러를 대며 순환 금융을 키웠고 브로드컴은 800억달러 AI 부채 조달에 나섰다. 나스닥은 2.05% 빠졌다. 한국에서는 SK하이닉스 40조원 자사주 매입과 삼성전자 110조원 주주환원이 같은 주에 나왔다.",
+      "period": "2026-08-17 ~ 2026-08-22",
+      "stats": {
+        "clusters": 10
+      },
+      "hero_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Cybernetic virtual brain with glowing circuits",
+      "hero_credit_name": "Possessed Photography",
+      "hero_credit_url": "https://unsplash.com/photos/1620712943543-bcc4688e7485",
+      "hero_source": "smart_pick",
+      "thumb_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Cybernetic virtual brain with glowing circuits",
+      "thumb_category": "ai",
+      "card_count": 16,
+      "segments": [
+        {
+          "title": "AI 백래시가 청구서를 내밀다",
+          "summary": "Anthropic이 사상 최대 IPO 신청서에 'AI 백래시'를 리스크로 적었고, 데이터센터 반발은 중간선거 쟁점이 됐다. 같은 주 엔비디아는 오하이오 OpenAI 데이터센터에 최대 1,050억달러를 대며 순환 금융을 키웠고 브로드컴은 800억달러 AI 부채 조달에 나섰다. 나스닥은 2.05% 빠졌다. 한국에서는 SK하이닉스 40조원 자사주 매입과 삼성전자 110조원 주주환원이 같은 주에 나왔다..",
+          "thumb_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Green matrix code rain on dark screen",
+          "thumb_category": "ai"
+        }
+      ]
     }
   ],
   "specials": [
@@ -13093,24 +13124,24 @@
         "articles": 20,
         "sections": 6
       },
-      "hero_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Modern tech company open office",
-      "hero_credit_name": "Marvin Meyer",
-      "hero_credit_url": "https://unsplash.com/photos/1573804633927-bfcbcd909acd",
+      "hero_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Premium laptop display dark setup",
+      "hero_credit_name": "Ales Nesetril",
+      "hero_credit_url": "https://unsplash.com/photos/1531297484001-80022131f5a1",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Modern tech company open office",
+      "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Premium laptop display dark setup",
       "thumb_category": "ai",
       "card_count": 18,
       "segments": [
         {
           "title": "CES 2026 특별판: AI·로봇·모빌리티 혁신 총정리",
           "summary": "CES 2026에서 공개된 AI, 로봇, 자율주행, 스마트홈 혁신 기술 총정리..",
-          "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Abstract semiconductor lattice grid",
+          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Robot hand touching glowing digital interface",
           "thumb_category": "ai"
         }
       ]
@@ -13124,24 +13155,24 @@
         "articles": 13,
         "sections": 4
       },
-      "hero_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Premium laptop display dark setup",
-      "hero_credit_name": "Ales Nesetril",
-      "hero_credit_url": "https://unsplash.com/photos/1531297484001-80022131f5a1",
+      "hero_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Modern tech company open office",
+      "hero_credit_name": "Marvin Meyer",
+      "hero_credit_url": "https://unsplash.com/photos/1573804633927-bfcbcd909acd",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Premium laptop display dark setup",
+      "thumb_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Modern tech company open office",
       "thumb_category": "ai",
       "card_count": 12,
       "segments": [
         {
           "title": "다보스 2026: AI 인프라 대전환과 미중 기술패권 경쟁",
           "summary": "트럼프 3주 원전 승인, 젠슨 황 AI 5층 케이크. 다보스 포럼 AI 핵심 발언 총정리..",
-          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Robot hand touching glowing digital interface",
+          "thumb_url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Neon data stream transmission visual",
           "thumb_category": "ai"
         }
       ]
@@ -13170,17 +13201,17 @@
         {
           "title": "이란전쟁 33일 — 종전 임박인가, 장기전인가",
           "summary": "Operation Epic Fury 개전 33일. 호르무즈 봉쇄로 글로벌 원유 공급 20% 차단.",
-          "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Tech team collaborating on laptops in office",
+          "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Planet Earth viewed from space with city lights",
           "thumb_category": "default"
         },
         {
           "title": "세계 경제 충격파 분석",
           "summary": "트럼프 2~3주 내 철수 시사 vs 이란 6개월 전쟁 준비. 5대 경제 충격파와 테크 산업 영향, 한국 경제 분석..",
-          "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Planet Earth viewed from space with city lights",
+          "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Tech team collaborating on laptops in office",
           "thumb_category": "default"
         }
       ]
