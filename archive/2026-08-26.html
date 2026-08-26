@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SpaceX 1,000억달러 우주공항 | Apple M6 맥미니·M5 Ultra 맥스튜디오 | 대만 AI 서버 밀수 9명 기소 | Jae's Briefing</title>
+<meta content="SpaceX가 루이지애나에 1,000억달러를 들여 연간 수천 회 발사를 소화할 스타베이스 LA를 짓는다. 우주 인프라가 국가 예산이 아니라 민간 자본지출 항목으로 옮겨간 규모다. 애플은 M6 맥미니와 M5 Ultra 맥스튜디오를 내놓으며 성능은 올리고 가격도 함께 올렸다 — 메모리 가격 상승분이 완제품 가격표에 반영된 또 하나의 사례다. 대만은 엔비디아·슈퍼마이크로 직원을 포함한 9명을 AI 서버 밀수 혐의로 기소해, 칩 통제가 수출 규정에서 " name="description"/>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
+<link href="../theme-modern.css" rel="stylesheet"/><script defer="" src="../app.js?v=7"></script></head>
+<body class="reader-mode"><nav class="reader-nav">
+<div class="reader-nav-inner">
+<a class="reader-nav-logo" href="../index.html">JFNB</a>
+<div class="reader-nav-links">
+<a href="../index.html">홈</a>
+<a href="../archive.html">아카이브</a>
+<a href="../about.html">소개</a>
+<a href="../saved.html">⭐ 보관함 <span data-jfnb-count=""></span></a>
+<span class="reader-nav-unread" data-jfnb-unread=""></span>
+<span class="reader-nav-auth" data-jfnb-auth=""></span>
+</div>
+</div>
+</nav>
+<div class="container">
+<header class="header">
+<div class="date-badge">2026년 8월 26일 수요일</div>
+<h1 class="title">SpaceX 1,000억달러 우주공항 | Apple M6 맥미니·M5 Ultra 맥스튜디오 | 대만 AI 서버 밀수 9명 기소</h1>
+<p class="summary">SpaceX가 루이지애나에 1,000억달러를 들여 연간 수천 회 발사를 소화할 스타베이스 LA를 짓는다. 우주 인프라가 국가 예산이 아니라 민간 자본지출 항목으로 옮겨간 규모다. 애플은 M6 맥미니와 M5 Ultra 맥스튜디오를 내놓으며 성능은 올리고 가격도 함께 올렸다 — 메모리 가격 상승분이 완제품 가격표에 반영된 또 하나의 사례다. 대만은 엔비디아·슈퍼마이크로 직원을 포함한 9명을 AI 서버 밀수 혐의로 기소해, 칩 통제가 수출 규정에서 형사 사건으로 넘어갔음을 보여줬다. 그리고 오늘 밤 엔비디아 실적이 나온다. 하이퍼스케일러 몇 곳에 매출이 몰린 구조가 어디까지 버티는지가 시험대에 오른다.</p>
+</header>
+<section class="section top-section">
+<h2 class="section-title">🔥 TOP Headlines</h2>
+<article class="article-card jfnb-card" data-card-index="0" data-card-title="SpaceX plans to build a $100 billion spaceport in Louisiana" data-card-type="article" data-card-url="https://www.cnbc.com/2026/08/25/spacex-louisiana-spaceport.html" id="art-0">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">SpaceX plans to build a $100 billion spaceport in Louisiana</h3>
+<p class="article-title-kr">SpaceX, 루이지애나에 1,000억달러 우주공항 — &quot;연간 수천 회 발사&quot;</p>
+<p class="article-summary">SpaceX가 루이지애나 버밀리언 패리시에 &#x27;스타베이스 LA&#x27;를 세운다. 회사가 밝힌 목표는 연간 수천 회 발사를 감당하는 시설이며, 투자 규모는 1,000억달러다. 단일 민간 기업이 발표한 인프라 투자로는 이례적인 액수로, 텍사스 보카치카·플로리다 케이프커내버럴에 이어 발사 병목을 물리적으로 풀겠다는 계산이다. 스타링크 위성 보충과 스타십 상용 운항이 늘어날수록 발사대 자체가 제약이 되기 때문이다. 우주 인프라가 정부 예산 항목에서 빅테크급 자본지출 항목으로 넘어왔다는 점이 이번 발표의 진짜 의미다.</p>
+<div class="article-meta">
+<span class="source">CNBC, TechCrunch, Ars Technica 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/08/25/spacex-louisiana-spaceport.html" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="1" data-card-title="Apple&#x27;s new Mac Mini has fresh M6 and M5 Pro chip offerings — and higher prices" data-card-type="article" data-card-url="https://www.theverge.com/tech/984190/apple-mac-mini-m6-m5-pro-price-specs" id="art-1">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Apple&#x27;s new Mac Mini has fresh M6 and M5 Pro chip offerings — and higher prices</h3>
+<p class="article-title-kr">애플, M6 맥미니·M5 Ultra 맥스튜디오 공개 — 성능도 가격도 올랐다</p>
+<p class="article-summary">애플이 맥미니를 새 M6와 M5 Pro 두 구성으로 갈아 끼웠다. 기본형은 899달러부터 시작하고, 외형과 크기는 2024년 M4 모델을 그대로 유지했다. 같은 날 공개된 맥스튜디오에는 애플이 &quot;역대 가장 강력한 칩&quot;이라 부른 M5 Ultra가 들어갔는데, M3 Ultra 대비 AI 연산 성능이 4배라는 게 회사 설명이다. 두 제품 모두 9월 22일 매장에 깔린다. 주목할 대목은 가격이다. 성능 향상과 함께 가격도 올랐고, 업계는 그 배경으로 메모리 가격 급등을 지목한다. 아마존이 에코·킨들 가격을 최대 60% 올린 것과 같은 압력이 이제 애플 데스크톱 라인까지 닿았다.</p>
+<div class="article-meta">
+<span class="source">The Verge, TechCrunch, Wired, ZDNet, CNBC, Bloomberg 다매체 보도</span>
+<a href="https://www.theverge.com/tech/984190/apple-mac-mini-m6-m5-pro-price-specs" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="2" data-card-title="Taiwan charges nine people for smuggling &#x27;high-end&#x27; AI servers to China" data-card-type="article" data-card-url="https://www.theguardian.com/technology/2026/aug/25/taiwan-china-ai-smugglers" id="art-2">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Taiwan charges nine people for smuggling &#x27;high-end&#x27; AI servers to China</h3>
+<p class="article-title-kr">대만, AI 서버 밀수 9명 기소 — 엔비디아·슈퍼마이크로 직원 포함</p>
+<p class="article-summary">대만 검찰이 고성능 AI 서버를 중국 본토로 불법 수출한 혐의로 9명을 기소했다. 명단에는 엔비디아 직원 1명과 슈퍼마이크로 직원 2명이 포함됐다. 어제 보도된 엔비디아 매니저 기소가 훨씬 넓은 조직적 유통망의 일부였다는 뜻이다. 지금까지 미·중 칩 통제는 주로 수출 허가와 행정 제재의 영역이었지만, 이번 건은 개인에 대한 형사 기소로 넘어갔다. 완제품 서버 단위 우회로가 실제로 작동해 왔다는 점도 확인됐다 — 통제 대상이 칩 다이에서 랙 단위 시스템으로 넓어질 근거가 된다. 대만이 자국 공급망 관리에서 미국 쪽으로 확실히 정렬하고 있다는 신호이기도 하다.</p>
+<div class="article-meta">
+<span class="source">Guardian, Bloomberg, Ars Technica 다매체 보도</span>
+<a href="https://www.theguardian.com/technology/2026/aug/25/taiwan-china-ai-smugglers" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="3" data-card-title="Jack Ma buys HK$600 million of Alibaba shares, signalling AI confidence" data-card-type="article" data-card-url="https://scmp.com/tech/big-tech/article/3365217/jack-ma-buys-hk600-million-alibaba-shares-signalling-ai-confidence-sources" id="art-3">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Jack Ma buys HK$600 million of Alibaba shares, signalling AI confidence</h3>
+<p class="article-title-kr">마윈, 알리바바 주식 6억 홍콩달러 매입 — 증자 직후 창업자가 직접 받았다</p>
+<p class="article-summary">알리바바가 홍콩 사상 최대 2차 공모로 102억달러를 조달하고 주가가 밀린 직후, 마윈이 6억 홍콩달러(약 7,700만달러)어치 자사주를 사들였다는 보도가 나왔다. 앞서 경영진 2인이 1,530만달러를 매수한 데 이은 두 번째 방어 신호이고, 규모는 한 자릿수가 다르다. 증자로 조달한 자금은 클라우드·자체 모델·반도체로 이어지는 &#x27;풀스택&#x27; AI 전환에 투입된다. 희석을 우려한 시장과 확신을 표시한 창업자·경영진 사이의 간극이 이번 매수의 관전 포인트다. 중국 빅테크의 AI 자본조달 경쟁이 자금 조달 단계를 넘어 주주 설득 단계로 넘어왔다.</p>
+<div class="article-meta">
+<span class="source">SCMP, Bloomberg 다매체 보도</span>
+<a href="https://scmp.com/tech/big-tech/article/3365217/jack-ma-buys-hk600-million-alibaba-shares-signalling-ai-confidence-sources" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="4" data-card-title="Nvidia&#x27;s dependence on hyperscalers faces big test in earnings report" data-card-type="article" data-card-url="https://www.cnbc.com/2026/08/25/nvidias-dependence-on-hyperscalers-faces-big-test-in-earnings-report.html" id="art-4">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Nvidia&#x27;s dependence on hyperscalers faces big test in earnings report</h3>
+<p class="article-title-kr">엔비디아 실적 발표 — 하이퍼스케일러 쏠림 구조가 시험대에 오른다</p>
+<p class="article-summary">엔비디아 실적 발표를 앞두고 시장의 초점이 매출 규모가 아니라 매출의 &#x27;출처&#x27;로 옮겨갔다. 매출 상당 부분이 소수 하이퍼스케일러에 집중돼 있어, 이들의 자본지출 속도가 꺾이는 순간 전체 그림이 흔들리는 구조이기 때문이다. 회사는 이 쏠림을 완화하려 고가 시스템을 살 수 있는 고객군을 넓히는 금융 옵션을 만들고 있다. 웨드부시 댄 아이브스는 이번 실적을 AI 주식 전체의 다음 촉매로 지목했다. 최근 엔비디아가 AI 서버 가격 인상을 통보하고 그록 랙 20억달러어치를 사들인 흐름까지 겹쳐, 오늘 숫자보다 가이던스의 문장 하나가 더 큰 파장을 낼 국면이다.</p>
+<div class="article-meta">
+<span class="source">CNBC, Bloomberg 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/08/25/nvidias-dependence-on-hyperscalers-faces-big-test-in-earnings-report.html" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🤖 AI/기술</h2>
+<article class="article-card jfnb-card" data-card-index="5" data-card-title="Waymo to launch driverless rides in Germany in 2027, entering third market outside U.S." data-card-type="article" data-card-url="https://www.cnbc.com/2026/08/25/waymo-robotaxi-germany-2027.html" id="art-5">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Waymo to launch driverless rides in Germany in 2027, entering third market outside U.S.</h3>
+<p class="article-title-kr">웨이모, 2027년 독일 무인주행 개시 — 해외 세 번째 시장</p>
+<p class="article-summary">웨이모가 2027년 독일에서 완전 무인 로보택시 운행을 시작한다고 밝혔다. 영국·일본에 이은 세 번째 해외 시장이고, 뮌헨이 첫 거점으로 거론된다. 미국 밖 확장의 진짜 관문은 기술이 아니라 승인 체계다. 독일은 자율주행 관련 법제를 유럽에서 가장 먼저 정비한 나라라 웨이모 입장에서는 EU 전체로 가는 교두보에 가깝다. 자국 완성차 진영이 자율주행 상용화에서 뚜렷한 성과를 못 낸 사이 미국 사업자가 먼저 도로에 오르는 구도라, 유럽 내 산업정책 논쟁을 자극할 소지가 있다.</p>
+<div class="article-meta">
+<span class="source">CNBC, Bloomberg 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/08/25/waymo-robotaxi-germany-2027.html" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="6" data-card-title="OpenAI data center chief Chris Malone is out, the latest in a string of executive exits" data-card-type="article" data-card-url="https://www.cnbc.com/2026/08/25/openais-head-of-data-centers-chris-malone-is-out-in-latest-exec-exit.html" id="art-6">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">OpenAI data center chief Chris Malone is out, the latest in a string of executive exits</h3>
+<p class="article-title-kr">오픈AI 데이터센터 총괄 크리스 말론 퇴사 — 임원 이탈 행렬의 연장선</p>
+<p class="article-summary">오픈AI의 데이터센터 총괄 크리스 말론이 회사를 떠났다. 회사 측은 &quot;작업의 규모와 속도를 감당하기 위해 인프라 조직을 최근 개편했다&quot;고 설명했다. 다만 이번 건은 단발이 아니라 최근 이어진 임원 이탈의 한 갈래로 읽힌다. 오픈AI가 지금 가장 많은 자본을 쏟는 영역이 데이터센터라는 점에서 자리의 무게가 다르다. 자체 추론 칩(할라피뇨) 벤치마크 공개, 대형 컴퓨트 계약 등 인프라 전략이 한창 확장되는 시점에 그 책임자가 바뀌었다는 사실 자체가 실행 리스크다.</p>
+<div class="article-meta">
+<span class="source">CNBC, Bloomberg 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/08/25/openais-head-of-data-centers-chris-malone-is-out-in-latest-exec-exit.html" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="7" data-card-title="OpenAI bans Russian ChatGPT accounts used in covert misinformation campaign" data-card-type="article" data-card-url="https://www.cnbc.com/2026/08/25/openai-russia-chatgpt-influence-campaign.html" id="art-7">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">OpenAI bans Russian ChatGPT accounts used in covert misinformation campaign</h3>
+<p class="article-title-kr">오픈AI, 러시아 여론조작에 쓰인 챗GPT 계정 차단</p>
+<p class="article-summary">오픈AI가 은밀한 허위정보 캠페인에 동원된 러시아 연계 챗GPT 계정들을 차단했다고 밝혔다. 회사는 이 사건이 &quot;영향력 행위자가 AI를 권위를 조작해 내는 더 큰 작전의 보조 도구로 쓰는 방식&quot;을 보여준다고 설명했다. 표현이 중요하다 — AI가 허위정보를 처음부터 끝까지 만들어낸 게 아니라, 기존 공작의 생산성을 올리는 부품으로 쓰였다는 진단이다. 플랫폼 차원의 탐지가 계정 단위 차단에 머무는 한 같은 패턴은 반복될 수밖에 없고, 선거 시즌마다 이 문제가 되돌아오는 이유이기도 하다.</p>
+<div class="article-meta">
+<span class="source">CNBC</span>
+<a href="https://www.cnbc.com/2026/08/25/openai-russia-chatgpt-influence-campaign.html" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="8" data-card-title="Portable Computer is Perplexity&#x27;s new local AI agent" data-card-type="article" data-card-url="https://www.zdnet.com/article/portable-computer-perplexity-local-ai-agent/" id="art-8">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Portable Computer is Perplexity&#x27;s new local AI agent</h3>
+<p class="article-title-kr">퍼플렉시티, 로컬에서 도는 AI 에이전트 &#x27;포터블 컴퓨터&#x27; 공개</p>
+<p class="article-summary">퍼플렉시티가 모델을 사용자 기기에서 직접 구동하는 AI 에이전트 &#x27;포터블 컴퓨터&#x27;를 내놨다. 클라우드 왕복이 없으니 응답이 빠르고, 데이터가 기기 밖으로 나가지 않아 보안 측면의 이점이 있으며, 추론 비용도 사업자가 아니라 사용자 하드웨어가 부담한다. 대신 요구 사양이 상당히 빡빡해 아무 노트북에서나 돌아가지 않는다. 추론 비용이 AI 서비스의 최대 원가 항목으로 굳어진 상황에서, 그 부담을 단말로 밀어내려는 시도가 검색 사업자 쪽에서 먼저 나왔다는 점이 눈에 띈다.</p>
+<div class="article-meta">
+<span class="source">ZDNet Hero</span>
+<a href="https://www.zdnet.com/article/portable-computer-perplexity-local-ai-agent/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="9" data-card-title="Data Centers Are Driving an Alarming Gas Power Expansion in the US" data-card-type="article" data-card-url="https://www.wired.com/story/us-data-centers-drive-gas-power-expansion/" id="art-9">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Data Centers Are Driving an Alarming Gas Power Expansion in the US</h3>
+<p class="article-title-kr">미국 가스발전이 데이터센터를 따라 확장되고 있다</p>
+<p class="article-summary">미국에서 신규 제안되거나 이미 착공된 가스발전 프로젝트가 눈에 띄게 늘었고, 그 수요처의 상당수가 데이터센터다. AI 전력 수요가 재생에너지 증설 속도를 앞지르자, 즉시 확보 가능한 발전원으로 가스가 선택되고 있다는 것이다. 빅테크가 내건 탄소중립 목표와 실제 전력 조달 사이의 간극이 인프라 통계로 드러나는 국면이다. 데이터센터 신설이 지역 선거 쟁점이 되고 있다는 최근 흐름과 맞물리면, AI 인프라의 병목이 칩에서 전력·부지 승인으로 옮겨가고 있다는 그림이 더 뚜렷해진다.</p>
+<div class="article-meta">
+<span class="source">Wired Featured</span>
+<a href="https://www.wired.com/story/us-data-centers-drive-gas-power-expansion/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">💰 경제/금융</h2>
+<article class="article-card jfnb-card" data-card-index="10" data-card-title="Zillow and Redfin settle FTC antitrust case" data-card-type="article" data-card-url="https://techcrunch.com/2026/08/24/zillow-and-redfin-settle-ftc-antitrust-case/" id="art-10">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Zillow and Redfin settle FTC antitrust case</h3>
+<p class="article-title-kr">질로우·레드핀, FTC 반독점 소송 합의 — 레드핀 임대광고 사업 복귀</p>
+<p class="article-summary">질로우와 레드핀이 미 연방거래위원회와 합의했다. 핵심 조건은 레드핀이 임대 광고 시장에 다시 들어가는 것이다. FTC는 두 회사의 협업 구조가 임대 광고 부문의 경쟁을 실질적으로 없앴다고 봤다. 합의가 금전 배상이 아니라 &#x27;경쟁자 복원&#x27;이라는 구조적 처방으로 정리된 게 특징이다. 온라인 플랫폼 반독점 집행이 검색·앱스토어 같은 상징적 전선 밖에서도 실무적으로 작동하고 있음을 보여주는 사례다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, The Verge 다매체 보도</span>
+<a href="https://techcrunch.com/2026/08/24/zillow-and-redfin-settle-ftc-antitrust-case/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="11" data-card-title="Self-driving truck startup Gatik raises $200M following PepsiCo deal" data-card-type="article" data-card-url="https://techcrunch.com/2026/08/25/self-driving-truck-startup-gatik-raises-200m-following-pepsico-deal/" id="art-11">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Self-driving truck startup Gatik raises $200M following PepsiCo deal</h3>
+<p class="article-title-kr">자율주행 트럭 개틱, 펩시코 계약 후 2억달러 조달</p>
+<p class="article-summary">중단거리 자율주행 트럭 기업 개틱이 카타르투자청과 코크 디스럽티브 테크놀로지스 주도로 2억달러를 조달했다. 회사 역사상 최대 라운드이며, 펩시코와의 상용 계약 체결 직후에 성사됐다. 개틱은 장거리 간선 대신 물류창고와 매장을 잇는 &#x27;미들마일&#x27;에 집중해 왔는데, 경로가 고정돼 있어 기술 난도와 규제 부담이 모두 낮다는 게 강점이다. 자율주행 투자금이 로보택시에서 화물 쪽으로 이동하는 흐름을 보여주는 라운드다 — 매출이 실제로 발생하는 구간부터 자본이 붙고 있다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, Bloomberg 다매체 보도</span>
+<a href="https://techcrunch.com/2026/08/25/self-driving-truck-startup-gatik-raises-200m-following-pepsico-deal/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="12" data-card-title="Situational Awareness, star AI hedge fund that nearly imploded, now being probed by the SEC" data-card-type="article" data-card-url="https://techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec/" id="art-12">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Situational Awareness, star AI hedge fund that nearly imploded, now being probed by the SEC</h3>
+<p class="article-title-kr">붕괴 직전 갔던 AI 헤지펀드 &#x27;시추에이셔널 어웨어니스&#x27;, SEC 조사 착수</p>
+<p class="article-summary">AI 테마로 월가의 주목을 받았던 헤지펀드 시추에이셔널 어웨어니스가 청산 위기를 넘긴 직후 미 증권거래위원회의 조사를 받고 있다. 연방 소환장이 발부된 상태다. 조사 범위는 아직 공개되지 않았다. AI 내러티브에 집중 베팅한 레버리지 전략이 실제 손익으로 검증되는 첫 사례군에 속하며, 감독 당국이 &#x27;AI 익스포저&#x27;라는 상품 설명이 얼마나 실체가 있었는지를 들여다보기 시작했다는 신호로 읽힌다. AI 밸류에이션 논쟁이 주식시장을 넘어 자산운용 규제 영역으로 번지는 지점이다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, CNBC 다매체 보도</span>
+<a href="https://techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="13" data-card-title="Apple&#x27;s next chapter: 3 pressing challenges facing Tim Cook&#x27;s successor as CEO" data-card-type="article" data-card-url="https://www.cnbc.com/2026/08/25/apples-next-chapter-3-pressing-challenges-facing-tim-cooks-successor-as-ceo.html" id="art-13">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Apple&#x27;s next chapter: 3 pressing challenges facing Tim Cook&#x27;s successor as CEO</h3>
+<p class="article-title-kr">9월 1일 취임하는 애플 신임 CEO 존 터너스 앞의 세 가지 숙제</p>
+<p class="article-summary">존 터너스가 9월 1일 애플 CEO로 취임한다. CNBC는 그가 물려받는 과제를 세 갈래로 정리했다 — AI에서의 뒤처짐, 아이폰 이후의 성장 축, 그리고 규제·공급망 리스크다. 하드웨어 엔지니어링 출신이 최고 자리에 오른다는 점에서 이번 인선은 애플이 당분간 실리콘과 기기로 승부를 보겠다는 선언에 가깝다. 같은 날 발표된 M6·M5 Ultra 라인업, 그리고 메모리 가격 압박이 공급망을 흔드는 국면이 그 첫 시험대가 된다.</p>
+<div class="article-meta">
+<span class="source">CNBC Featured</span>
+<a href="https://www.cnbc.com/2026/08/25/apples-next-chapter-3-pressing-challenges-facing-tim-cooks-successor-as-ceo.html" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">📱 플랫폼/소셜</h2>
+<article class="article-card jfnb-card" data-card-index="14" data-card-title="Teens Return to TikTok After World&#x27;s First Usage Ban, Data Show" data-card-type="article" data-card-url="https://www.bloomberg.com/news/articles/2026-08-25/teens-return-to-tiktok-after-world-s-first-usage-ban-data-show" id="art-14">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Teens Return to TikTok After World&#x27;s First Usage Ban, Data Show</h3>
+<p class="article-title-kr">세계 첫 청소년 SNS 금지 8개월 — 호주 10대들이 틱톡으로 돌아왔다</p>
+<p class="article-summary">호주가 16세 미만의 소셜미디어 이용을 금지한 지 8개월, 이용 통제 앱 큐스토디오 데이터는 어린 이용자들이 틱톡으로 대거 복귀했음을 보여준다. 세계 최초의 국가 단위 실험이 연령 확인이라는 실행 단계에서 힘을 잃고 있다는 뜻이다. 영국·EU를 비롯해 다수 국가가 호주 모델을 참고해 유사 규제를 검토해 온 만큼 이 수치의 파급력이 크다. 금지 자체보다 &#x27;어떻게 나이를 확인할 것인가&#x27;가 규제의 실질적 성패를 가른다는 사실이 데이터로 확인된 셈이다.</p>
+<div class="article-meta">
+<span class="source">Bloomberg, Guardian, Ars Technica 다매체 보도</span>
+<a href="https://www.bloomberg.com/news/articles/2026-08-25/teens-return-to-tiktok-after-world-s-first-usage-ban-data-show" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="15" data-card-title="Uber launches live video streaming for teen accounts" data-card-type="article" data-card-url="https://techcrunch.com/2026/08/25/uber-launches-live-video-streaming-for-teen-accounts/" id="art-15">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Uber launches live video streaming for teen accounts</h3>
+<p class="article-title-kr">우버, 청소년 계정에 실시간 영상 스트리밍 도입</p>
+<p class="article-summary">우버가 10대 전용 계정에 탑승 중 실시간 영상 스트리밍 기능을 넣었다. 보호자가 이동 중 상황을 볼 수 있게 하되, 주행이 끝나면 아무도 영상에 접근할 수 없다는 게 회사 설명이다. 청소년 안전 기능이 플랫폼 업계 전반의 기본 사양으로 굳어지는 흐름의 일부다 — 오픈AI의 청소년 전용 챗GPT, 메타 아동안전 재판과 같은 압력선에 놓여 있다. 다만 미성년자 이동 중 영상을 상시 수집하는 구조 자체가 새로운 프라이버시 쟁점을 만든다는 지적도 함께 나온다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, The Verge, Bloomberg 다매체 보도</span>
+<a href="https://techcrunch.com/2026/08/25/uber-launches-live-video-streaming-for-teen-accounts/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="16" data-card-title="Songs created by AI banned from Australia&#x27;s music charts" data-card-type="article" data-card-url="https://bbc.com/news/articles/c20vl4vm2pno" id="art-16">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Songs created by AI banned from Australia&#x27;s music charts</h3>
+<p class="article-title-kr">호주 음악차트, AI로 만든 곡 집계 제외</p>
+<p class="article-summary">호주가 공식 음악 차트에서 AI로 생성된 곡을 제외하기로 했다. 스트리밍 수치만 놓고 보면 AI 생성곡이 이미 차트권에 진입할 만큼 재생되고 있다는 뜻이기도 하다. 차트는 단순 집계표가 아니라 라디오 편성·투어 섭외·저작권 정산이 걸린 산업 인프라라, 이번 조치는 실질적인 수익 배분 규칙 변경에 가깝다. 다만 &#x27;무엇을 AI 생성으로 볼 것인가&#x27;라는 판정 기준이 여전히 모호하다는 점이 남는 문제다.</p>
+<div class="article-meta">
+<span class="source">BBC</span>
+<a href="https://bbc.com/news/articles/c20vl4vm2pno" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🔧 하드웨어/모빌리티</h2>
+<article class="article-card jfnb-card" data-card-index="17" data-card-title="Key Apple suppliers pin hopes on new iPhone amid memory price squeeze" data-card-type="article" data-card-url="https://scmp.com/tech/big-tech/article/3365236/divergent-results-apple-suppliers-highlight-memory-price-squeeze-ahead-new-iphone" id="art-17">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Key Apple suppliers pin hopes on new iPhone amid memory price squeeze</h3>
+<p class="article-title-kr">애플 부품사 실적 엇갈려 — 메모리 가격 압박에 신형 아이폰만 바라본다</p>
+<p class="article-summary">애플 핵심 공급업체들의 최근 실적이 갈렸다. 공통 원인은 메모리 가격 상승이다. 카운터포인트는 올해 몇 안 되는 밝은 구간으로 폴더블 시장을 꼽으며, 올가을 애플의 첫 폴더블 진입이 그 동력이 될 것으로 봤다. 메모리 가격이 완제품 가격표로 전가되는 흐름은 이미 아마존 기기 가격 인상, 엔비디아 서버 가격 인상, 오늘 발표된 맥미니 가격 인상으로 확인됐다. 한국 메모리 3사의 공급 정책과 애플의 조달 협상이 하반기 스마트폰 원가 구조를 결정하는 국면이다.</p>
+<div class="article-meta">
+<span class="source">SCMP Hero</span>
+<a href="https://scmp.com/tech/big-tech/article/3365236/divergent-results-apple-suppliers-highlight-memory-price-squeeze-ahead-new-iphone" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="18" data-card-title="This quantum battery upends the rules of charging" data-card-type="article" data-card-url="https://bbc.com/future/article/20260824-this-quantum-battery-charges-faster-the-larger-it-gets" id="art-18">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">This quantum battery upends the rules of charging</h3>
+<p class="article-title-kr">세계 첫 양자 배터리 시제품 — 크기가 클수록 빨리 충전된다</p>
+<p class="article-summary">세계 첫 양자 배터리 프로토타입이 나왔다. 통상의 배터리와 정반대로, 용량이 커질수록 충전이 빨라지는 성질을 보인다는 게 핵심이다. 양자 얽힘을 이용해 셀들이 순차가 아니라 집단으로 에너지를 받아들이기 때문이다. 아직 실험실 수준이고 상온 동작·수명 같은 실용 조건은 전혀 해결되지 않았다. 다만 양자컴퓨팅 하드웨어의 전력 공급처럼 극저온·소형 환경에서 먼저 쓰임새가 생길 가능성이 거론된다. AI 전력 수요가 발전소 증설 논쟁까지 번진 국면이라 에너지 저장 쪽의 근본적 접근이 주목받는 시점이다.</p>
+<div class="article-meta">
+<span class="source">BBC Hero</span>
+<a href="https://bbc.com/future/article/20260824-this-quantum-battery-charges-faster-the-larger-it-gets" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🌏 중국·신흥시장</h2>
+<article class="article-card jfnb-card" data-card-index="19" data-card-title="DeepSeek leads surge in low-cost Chinese open-weight models on US platform" data-card-type="article" data-card-url="https://scmp.com/tech/tech-trends/article/3365204/deepseek-leads-surge-low-cost-chinese-open-weight-models-us-platform" id="art-19">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">DeepSeek leads surge in low-cost Chinese open-weight models on US platform</h3>
+<p class="article-title-kr">미국 개발 플랫폼서 오픈웨이트 모델 점유율 62% — 딥시크가 주도</p>
+<p class="article-summary">미국의 한 웹 개발 플랫폼에서 오픈웨이트 모델 사용 비중이 62%까지 올라 사상 최고를 기록했다. 6월 수치를 뒤집은 반전이며, 상승분의 상당 부분을 딥시크를 비롯한 중국산 저비용 모델이 차지했다. 미국 개발자들이 비용 때문에 중국산 오픈 모델을 실무에 쓰고 있다는 뜻이다. 규제로 막을 수 있는 대상이 하드웨어와 API지, 다운로드 가능한 가중치가 아니라는 구조적 한계가 수치로 드러난 셈이다. 추론 단가 경쟁이 프런티어 모델 성능 경쟁과는 별개의 전선으로 굳어지고 있다.</p>
+<div class="article-meta">
+<span class="source">SCMP Featured</span>
+<a href="https://scmp.com/tech/tech-trends/article/3365204/deepseek-leads-surge-low-cost-chinese-open-weight-models-us-platform" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="20" data-card-title="Why is Xiaomi doubling down on in-house chips amid a profit slump?" data-card-type="article" data-card-url="https://scmp.com/tech/tech-trends/article/3365179/why-xiaomi-doubling-down-house-chips-despite-profit-slump" id="art-20">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Why is Xiaomi doubling down on in-house chips amid a profit slump?</h3>
+<p class="article-title-kr">이익 감소에도 샤오미가 자체 칩에 더 붓는 이유 — 3nm 링O3 9월 데뷔</p>
+<p class="article-summary">샤오미가 이익이 줄어드는 국면에서도 자체 반도체 투자를 오히려 늘리고 있다. 3nm 공정의 AI 프로세서 &#x27;링 O3&#x27;는 9월 폴더블 스마트폰에 처음 탑재된다. 퀄컴 의존을 줄이려는 시도이면서, 동시에 스마트폰·전기차·가전을 하나의 실리콘 위에 올리려는 수직계열화 전략이다. 화웨이가 제재 속에서 자체 칩으로 버틴 경로를 중국 2위 제조사가 이익을 깎아가며 따라가는 모습이다. 단기 수익성보다 공급망 통제권을 우선하는 판단이 중국 제조업 전반에서 반복되고 있다.</p>
+<div class="article-meta">
+<span class="source">SCMP Featured</span>
+<a href="https://scmp.com/tech/tech-trends/article/3365179/why-xiaomi-doubling-down-house-chips-despite-profit-slump" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="21" data-card-title="Xpeng Robot Unit to Raise $900 Million From Likes of Alibaba" data-card-type="article" data-card-url="https://www.bloomberg.com/news/articles/2026-08-24/xpeng-robot-unit-to-raise-900-million-from-likes-of-alibaba" id="art-21">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Xpeng Robot Unit to Raise $900 Million From Likes of Alibaba</h3>
+<p class="article-title-kr">샤오펑 로봇 부문, 알리바바·텐센트 등에서 9억달러 조달</p>
+<p class="article-summary">샤오펑의 로봇 자회사가 알리바바와 텐센트를 포함한 투자자들로부터 9억달러를 조달한다. 자동차 회사가 휴머노이드로 사업 축을 넓히는 흐름이고, 자율주행에서 축적한 인식·제어 스택을 그대로 이식하겠다는 논리다. 주목할 부분은 투자자 구성이다. 알리바바는 방금 100억달러 증자로 AI 실탄을 확보한 참인데, 그 자금이 곧바로 로봇 기업 지분으로 이동했다. 중국 빅테크의 AI 자본이 모델과 데이터센터를 넘어 물리적 로봇까지 한 묶음으로 배분되고 있음을 보여준다.</p>
+<div class="article-meta">
+<span class="source">Bloomberg, CNBC 다매체 보도</span>
+<a href="https://www.bloomberg.com/news/articles/2026-08-24/xpeng-robot-unit-to-raise-900-million-from-likes-of-alibaba" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="22" data-card-title="Ban on Chinese robots leaves U.S. startups stranded" data-card-type="article" data-card-url="https://restofworld.org/2026/china-robot-ban-silicon-valley/" id="art-22">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Ban on Chinese robots leaves U.S. startups stranded</h3>
+<p class="article-title-kr">중국산 로봇 수입 금지에 미국 스타트업들이 발이 묶였다</p>
+<p class="article-summary">중국산 로봇에 대한 미국의 수입 제한으로 정작 미국 로보틱스 스타트업들이 어려움을 겪고 있다. 상당수가 중국제 로봇 팔이나 휴머노이드 플랫폼을 하드웨어 기반으로 쓰고 그 위에 소프트웨어를 얹는 방식으로 사업을 세웠기 때문이다. 대체 공급처는 가격이 몇 배 비싸거나 아예 존재하지 않는다. 칩 수출 통제가 중국을 겨눴듯, 로봇 수입 통제는 미국 스타트업의 원가 구조를 먼저 때리고 있다. 하드웨어 제조 기반 없이 소프트웨어 레이어만 갖고 경쟁하던 모델의 취약점이 드러난 사례다.</p>
+<div class="article-meta">
+<span class="source">Rest of World Featured</span>
+<a href="https://restofworld.org/2026/china-robot-ban-silicon-valley/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section picks-section">
+<h2 class="section-title">💎 Claude's Pick</h2>
+<article class="article-card jfnb-card" data-card-index="23" data-card-title="America&#x27;s immigration policy is driving away future AI leaders" data-card-type="article" data-card-url="https://restofworld.org/2026/us-immigration-rules-ai-talent-china/" id="art-23">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">America&#x27;s immigration policy is driving away future AI leaders</h3>
+<p class="article-title-kr">미국 이민 정책이 미래의 AI 리더들을 밀어내고 있다</p>
+<p class="article-summary">비자 규제 강화로 해외 AI 인재들이 미국에서 회사를 세우는 선택을 접고 있다. 리포트는 이 공백이 중국을 비롯한 다른 나라에 따라잡을 기회를 준다고 짚는다. 지금까지 미국 AI 우위의 실질적 토대는 칩도 자본도 아닌 &#x27;전 세계 인재가 미국에서 창업한다&#x27;는 기본값이었다. 그 기본값이 정책으로 흔들리는 중이다. 통제는 칩 수출에 걸었는데 실제로 빠져나가는 건 사람이라는, 산업정책의 비대칭이 드러나는 지점이다.</p>
+<p class="pick-reason">선정 이유: 규제·정책 변화의 초기 신호 + 시장 정의 재평가 / AI 인프라·인재 흐름</p>
+<div class="article-meta">
+<span class="source">Rest of World Hero</span>
+<a href="https://restofworld.org/2026/us-immigration-rules-ai-talent-china/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="24" data-card-title="Korean AI Startup Wrtn Raises Funds at $870 Million Value to Fund Global Growth" data-card-type="article" data-card-url="https://www.bloomberg.com/news/articles/2026-08-25/korean-ai-startup-wrtn-raises-funds-at-870-million-value-to-fund-global-growth" id="art-24">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Korean AI Startup Wrtn Raises Funds at $870 Million Value to Fund Global Growth</h3>
+<p class="article-title-kr">한국 AI 스타트업 뤼튼, 1.2조원 밸류로 투자 유치 — 글로벌 확장 자금</p>
+<p class="article-summary">한국의 AI 서비스 플랫폼 뤼튼테크놀로지스가 기업가치 1조2,000억원(8억7,000만달러)에 투자를 유치했다. 자금 용도는 해외 확장이다. 모델을 직접 만드는 회사가 아니라 소비자 대상 AI 서비스 레이어로 이 규모의 밸류에이션을 받았다는 점이 특징이다. 국내 AI 투자의 무게중심이 파운데이션 모델에서 실사용 서비스·유통 채널로 이동하고 있다는 신호로 읽힌다. 한국 AI 기업의 밸류에이션 벤치마크가 새로 그어졌다는 점에서도 참고할 만하다.</p>
+<p class="pick-reason">선정 이유: 신생 기업의 밸류에이션 재평가 + 시장 정의 변화 / 한국 시장 연관성</p>
+<div class="article-meta">
+<span class="source">Bloomberg, TechCrunch 다매체 보도</span>
+<a href="https://www.bloomberg.com/news/articles/2026-08-25/korean-ai-startup-wrtn-raises-funds-at-870-million-value-to-fund-global-growth" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="25" data-card-title="SK Hynix Union Rejects Preliminary Wage Hike Deal" data-card-type="article" data-card-url="https://www.bloomberg.com/news/articles/2026-08-25/sk-hynix-union-rejects-preliminary-wage-hike-deal-yonhap-says" id="art-25">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">SK Hynix Union Rejects Preliminary Wage Hike Deal</h3>
+<p class="article-title-kr">SK하이닉스 노조, 임금 잠정합의 부결 — 성과급 일부 자사주 지급안 거부</p>
+<p class="article-summary">SK하이닉스 노조가 임금 인상과 성과급 일부를 자사주로 지급하는 내용의 잠정 합의안을 부결시켰다고 연합뉴스가 보도했다. 메모리 가격 급등으로 회사 실적과 주가가 동시에 좋은 국면에서 나온 부결이라 의미가 다르다. 현금 대신 주식으로 보상하려는 시도가 현장에서 거부됐다는 뜻이기 때문이다. 메모리 슈퍼사이클의 이익 배분을 둘러싼 협상이 이제 시작 단계에 있고, 그 결과는 원가를 통해 아마존·애플·엔비디아의 가격표로 연결된다. 오늘 브리핑에 실린 여러 가격 인상 뉴스의 뿌리에 있는 사안이다.</p>
+<p class="pick-reason">선정 이유: 대기업의 조용한 움직임 + 공급망 원가 구조의 선행 지표 / 한국·반도체</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/articles/2026-08-25/sk-hynix-union-rejects-preliminary-wage-hike-deal-yonhap-says" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+</div>
+
+<footer class="reader-footer">
+<a href="../archive.html">← 아카이브로 돌아가기</a>
+<div class="footer-counter" id="visitor-counter-wrap" style="display:none;">
+    Today: <span class="counter-number" id="visitor-count-daily">0</span>
+      |  
+    Total: <span class="counter-number" id="visitor-count">0</span>
+</div>
+</footer>
+<script>
+(function(){
+  var API_BASE='https://abacus.jasoncameron.dev';
+  var NAMESPACE='hong4137-briefing';
+  var LS_KEY='jfnb-visited-date';
+  function getKstDate(){
+    return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);
+  }
+  function getKstDailyKey(){ return 'daily-'+getKstDate(); }
+  var todayStr=getKstDate();
+  var hasVisited=false;
+  try{ hasVisited=(localStorage.getItem(LS_KEY)===todayStr); }catch(e){}
+  var mode=hasVisited?'get':'hit';
+  var totalVal=null,dailyVal=null;
+  var wrap=document.getElementById('visitor-counter-wrap');
+  var sDly=document.getElementById('visitor-count-daily');
+  var sTot=document.getElementById('visitor-count');
+  function renderUI(){
+    if(!wrap||totalVal===null)return;
+    wrap.style.display='';
+    if(sTot)sTot.textContent=totalVal.toLocaleString();
+    if(sDly)sDly.textContent=dailyVal!==null?dailyVal.toLocaleString():'...';
+  }
+  fetch(API_BASE+'/'+mode+'/'+NAMESPACE+'/global')
+    .then(function(r){return r.ok?r.json():Promise.reject();})
+    .then(function(d){
+      var t=d.value!=null?d.value:d.count;
+      if(typeof t!=='number')return;
+      totalVal=t;
+      if(!hasVisited){try{localStorage.setItem(LS_KEY,todayStr);}catch(e){}}
+      renderUI();
+    })
+    .catch(function(){});
+  fetch(API_BASE+'/'+mode+'/'+NAMESPACE+'/'+getKstDailyKey())
+    .then(function(r){return r.ok?r.json():{value:0};})
+    .then(function(d){
+      var v=d.value!=null?d.value:d.count;
+      dailyVal=typeof v==='number'?v:0;
+      renderUI();
+    })
+    .catch(function(){dailyVal=0;renderUI();});
+})();
+</script></body>
+</html>
