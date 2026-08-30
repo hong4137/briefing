@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>피지컬 AI 자본 러시와 메모리 인플레이션의 소비자 전가 | 주간 외신 브리핑</title>
+<style>
+:root {
+  --bg: #0d1117; --bg-2: #161b22; --bg-3: #1c2333;
+  --bd: #2d3646; --tx: #e6edf3; --tx-2: #9aa7b8; --tx-3: #6e7c8f;
+  --ac: #58a6ff; --ac-2: #7ee787; --wn: #f0883e; --dn: #ff7b72;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--tx); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; line-height: 1.7; padding: 24px 16px 60px; }
+.wrap { max-width: 860px; margin: 0 auto; }
+header { border-bottom: 1px solid var(--bd); padding-bottom: 22px; margin-bottom: 30px; }
+header h1 { font-size: 1.6rem; letter-spacing: -0.5px; margin-bottom: 10px; }
+.hd-period { color: var(--ac); font-weight: 600; font-size: 0.95rem; }
+.hd-sub { color: var(--tx-3); font-size: 0.85rem; margin-top: 4px; }
+section { margin-bottom: 38px; }
+.sec-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--bd); }
+.sec-head h2 { font-size: 1.15rem; }
+.sec-head .note { color: var(--tx-3); font-size: 0.8rem; }
+.market-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.market-item { background: var(--bg-2); border: 1px solid var(--bd); border-radius: 10px; padding: 12px 14px; }
+.mi-name { color: var(--tx-2); font-size: 0.78rem; }
+.mi-val { font-size: 1.05rem; font-weight: 700; margin: 3px 0; }
+.mi-chg { font-size: 0.85rem; font-weight: 600; }
+.mi-chg.up { color: var(--ac-2); }
+.mi-chg.down { color: var(--dn); }
+.mi-chg.flat { color: var(--tx-3); }
+.cluster-card { background: var(--bg-2); border: 1px solid var(--bd); border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+.cluster-card h3 { font-size: 1.05rem; line-height: 1.5; margin-bottom: 12px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.badge { background: var(--bg-3); border: 1px solid var(--bd); color: var(--tx-2); font-size: 0.75rem; padding: 3px 9px; border-radius: 999px; }
+.badge.score { color: var(--ac); border-color: #294a75; }
+.timeline { border-left: 2px solid var(--bd); padding-left: 14px; }
+.timeline-item { display: flex; gap: 10px; padding: 5px 0; font-size: 0.87rem; align-items: baseline; }
+.tl-date { color: var(--ac); font-weight: 600; min-width: 42px; flex-shrink: 0; font-size: 0.8rem; }
+.tl-text { color: var(--tx-2); }
+.standalone-item { background: var(--bg-2); border: 1px solid var(--bd); border-left: 3px solid var(--wn); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.standalone-item h3 { font-size: 0.97rem; margin-bottom: 5px; }
+.standalone-item p { color: var(--tx-2); font-size: 0.85rem; }
+.pick-item { background: linear-gradient(180deg, var(--bg-3), var(--bg-2)); border: 1px solid #294a75; border-radius: 14px; padding: 20px; margin-bottom: 14px; }
+.pick-item h3 { font-size: 1.05rem; margin-bottom: 10px; color: var(--ac); }
+.pick-item p { color: var(--tx-2); font-size: 0.9rem; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+.stat-item { background: var(--bg-2); border: 1px solid var(--bd); border-radius: 10px; padding: 14px; text-align: center; }
+.st-num { font-size: 1.25rem; font-weight: 700; color: var(--ac); }
+.st-lab { color: var(--tx-3); font-size: 0.75rem; margin-top: 3px; }
+.events-list { display: grid; gap: 8px; }
+.event-item { display: flex; gap: 14px; background: var(--bg-2); border: 1px solid var(--bd); border-radius: 10px; padding: 12px 14px; align-items: baseline; }
+.event-date { color: var(--ac); font-weight: 600; font-size: 0.82rem; min-width: 52px; flex-shrink: 0; }
+.event-text { font-size: 0.87rem; color: var(--tx-2); }
+footer { border-top: 1px solid var(--bd); padding-top: 18px; color: var(--tx-3); font-size: 0.8rem; text-align: center; }
+@media (max-width: 600px) {
+  body { padding: 18px 12px 44px; }
+  header h1 { font-size: 1.3rem; }
+  .timeline-item { flex-direction: column; gap: 2px; }
+  .event-item { flex-direction: column; gap: 3px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>📰 주간 외신 브리핑</h1>
+  <div class="hd-period">2026년 8월 5주차 · 8/24(월) ~ 8/29(토)</div>
+  <div class="hd-sub">누적 기사 수 × 보도 지속성 기준 TOP 스토리 · 총 154건 분석</div>
+</header>
+<main>
+
+<section class="market">
+  <div class="sec-head"><h2>📊 주간 시장</h2><span class="note">8/24 ~ 8/29 · USD/KRW·금·비트코인은 데이터 없음</span></div>
+  <div class="market-grid"><div class="market-item"><div class="mi-name">S&amp;P 500</div><div class="mi-val">7,711.76</div><div class="mi-chg up">+0.77%</div></div><div class="market-item"><div class="mi-name">NASDAQ</div><div class="mi-val">26,402.42</div><div class="mi-chg up">+1.63%</div></div><div class="market-item"><div class="mi-name">SOX 반도체</div><div class="mi-val">11,469.66</div><div class="mi-chg up">+0.41%</div></div><div class="market-item"><div class="mi-name">VIX</div><div class="mi-val">14.51</div><div class="mi-chg down">-8.45%</div></div><div class="market-item"><div class="mi-name">10년물 국채</div><div class="mi-val">4.67%</div><div class="mi-chg down">-0.03%p</div></div><div class="market-item"><div class="mi-name">2년물 국채</div><div class="mi-val">4.20%</div><div class="mi-chg down">-0.04%p</div></div><div class="market-item"><div class="mi-name">WTI 유가</div><div class="mi-val">$83.90</div><div class="mi-chg down">-2.83%</div></div><div class="market-item"><div class="mi-name">DXY 달러지수</div><div class="mi-val">118.06</div><div class="mi-chg flat">0.00%</div></div></div>
+</section>
+
+<section class="top-stories">
+  <div class="sec-head"><h2>📈 이번 주 TOP 스토리</h2><span class="note">주간점수 = 기사 수 × 지속성 배수</span></div>
+            <article class="cluster-card">
+                <h3>1. 로봇·피지컬 AI로 자본이 몰린 한 주</h3>
+                <div class="meta">
+                    <span class="badge">📰 11건</span>
+                    <span class="badge">📅 6일 보도 (08/24~08/29)</span>
+                    <span class="badge">🔥 지속</span>
+                    <span class="badge">🔥 상승세</span>
+                    <span class="badge score">주간점수 19.8</span>
+                </div>
+                <div class="timeline">
+<div class="timeline-item"><span class="tl-date">08/24</span><span class="tl-text">Humanoid Robot Beats Usain Bolt's 100m World Record in Beijing</span></div><div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">Xpeng robot unit to raise $900 million from likes of Alibaba</span></div><div class="timeline-item"><span class="tl-date">08/26</span><span class="tl-text">Xpeng Robot Unit to Raise $900 Million From Likes of Alibaba</span></div><div class="timeline-item"><span class="tl-date">08/26</span><span class="tl-text">Ban on Chinese robots leaves U.S. startups stranded</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">Robot brain builders are pushing out of their GPT-2 era</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">Robotics startup Generalist reaches $3B valuation, sources say</span></div><div class="timeline-item"><span class="tl-date">08/28</span><span class="tl-text">Anthropic pushes into physical world with new standard to help AI agents operate machines</span></div><div class="timeline-item"><span class="tl-date">08/28</span><span class="tl-text">Hugging Face is selling a cute $399 open-source duck robot, Microduck</span></div><div class="timeline-item"><span class="tl-date">08/29</span><span class="tl-text">Inside Meta's Push to Put Robots to Work in Data Centers</span></div><div class="timeline-item"><span class="tl-date">08/29</span><span class="tl-text">Hugging Face's new robot is an adorable rollerskating duck</span></div><div class="timeline-item"><span class="tl-date">08/29</span><span class="tl-text">a16z creates a $1.1B 'Machine Age' fund to 'accelerate the physical buildout of AI'</span></div>
+                </div>
+            </article>
+            <article class="cluster-card">
+                <h3>2. AI가 촉발한 사이버 위협의 현실화와 업계 공동 방어 전선 구축</h3>
+                <div class="meta">
+                    <span class="badge">📰 7건</span>
+                    <span class="badge">📅 5일 보도 (08/24~08/29)</span>
+                    <span class="badge">🔥 지속</span>
+                    <span class="badge">🔥 상승세</span>
+                    <span class="badge score">주간점수 12.6</span>
+                </div>
+                <div class="timeline">
+<div class="timeline-item"><span class="tl-date">08/24</span><span class="tl-text">'We are hitting a different chapter': OpenAI leader warns of threat of 'persistent' AI cyber-attacks</span></div><div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">The UAE is fighting AI hackers with AI of its own</span></div><div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">Cyber security experts are turning to older tech - to protect from hackers</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">CrowdStrike pops 11% on record second quarter as 'Mythos moment' drives AI cyber wave</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">Okta pops 19% after topping estimates as AI threat spikes demand for identity security</span></div><div class="timeline-item"><span class="tl-date">08/28</span><span class="tl-text">'We have a limited window': 116 companies, entities sign on to major AI cyber defense push</span></div><div class="timeline-item"><span class="tl-date">08/29</span><span class="tl-text">OpenAI, Anthropic, Google, and 100 other companies call for action to defend against rogue AI</span></div>
+                </div>
+            </article>
+            <article class="cluster-card">
+                <h3>3. Meta 아동안전 재판이 180억 달러 합의로 마무리되며 업계 기준이 된 과정</h3>
+                <div class="meta">
+                    <span class="badge">📰 6건</span>
+                    <span class="badge">📅 5일 보도 (08/24~08/29)</span>
+                    <span class="badge">🔥 지속</span>
+                    <span class="badge">→ 유지</span>
+                    <span class="badge score">주간점수 10.8</span>
+                </div>
+                <div class="timeline">
+<div class="timeline-item"><span class="tl-date">08/24</span><span class="tl-text">Hook, hold, harvest and hide: Meta's alleged strategy laid out in first week of landmark trial</span></div><div class="timeline-item"><span class="tl-date">08/24</span><span class="tl-text">Meta is the latest tech giant to land in her courtroom. Meet Judge Yvonne Gonzalez Rogers</span></div><div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">Meta's Big Reckoning Is Here</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">The Meta Settlement Will Put Limits on Instagram for Teens. They're Still Vulnerable</span></div><div class="timeline-item"><span class="tl-date">08/28</span><span class="tl-text">Meta Settlement Sets Blueprint for TikTok, YouTube</span></div><div class="timeline-item"><span class="tl-date">08/29</span><span class="tl-text">Buried in Meta's $18B settlement is a legal pass on kids' data / UK expects Meta to match US child safety measures</span></div>
+                </div>
+            </article>
+            <article class="cluster-card">
+                <h3>4. 메모리 품귀가 AI 서버를 넘어 소비자 제품 가격으로 전가된 흐름</h3>
+                <div class="meta">
+                    <span class="badge">📰 6건</span>
+                    <span class="badge">📅 5일 보도 (08/24~08/28)</span>
+                    <span class="badge">🔥 지속</span>
+                    <span class="badge">🔥 상승세</span>
+                    <span class="badge score">주간점수 10.8</span>
+                </div>
+                <div class="timeline">
+<div class="timeline-item"><span class="tl-date">08/24</span><span class="tl-text">Nvidia customers notified of AI-related price rises above 15%</span></div><div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">Amazon hikes hardware prices by 60%, blaming memory shortage</span></div><div class="timeline-item"><span class="tl-date">08/26</span><span class="tl-text">Apple's new Mac Mini has fresh M6 and M5 Pro chip offerings — and higher prices</span></div><div class="timeline-item"><span class="tl-date">08/26</span><span class="tl-text">Key Apple suppliers pin hopes on new iPhone amid memory price squeeze</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">AI server boom fuels record supply crunch for the 'rice of electronics'</span></div><div class="timeline-item"><span class="tl-date">08/28</span><span class="tl-text">AI's memory crunch is coming for Android apps</span></div>
+                </div>
+            </article>
+            <article class="cluster-card">
+                <h3>5. 중국의 반도체·오픈웨이트 모델 자립 가속</h3>
+                <div class="meta">
+                    <span class="badge">📰 8건</span>
+                    <span class="badge">📅 4일 보도 (08/25~08/28)</span>
+                    <span class="badge">📈 관심</span>
+                    <span class="badge">🔥 상승세</span>
+                    <span class="badge score">주간점수 8.0</span>
+                </div>
+                <div class="timeline">
+<div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">China's advanced chip deficit to shrink from 92% to 34% by 2035, Goldman says</span></div><div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">China's next mega chip listing could break CXMT's market records</span></div><div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">Cut off from Europe, Nexperia China eyes self-reliance through domestic wafers</span></div><div class="timeline-item"><span class="tl-date">08/26</span><span class="tl-text">DeepSeek leads surge in low-cost Chinese open-weight models on US platform</span></div><div class="timeline-item"><span class="tl-date">08/26</span><span class="tl-text">Why is Xiaomi doubling down on in-house chips amid a profit slump?</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">DeepSeek targets 2027 listing as pre-IPO funding nears close</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">AI boom, profit surge fuel China's ambitious chip assembly buildout</span></div><div class="timeline-item"><span class="tl-date">08/28</span><span class="tl-text">Nvidia is bolstering support for Chinese open AI models as it warns of White House crackdown</span></div>
+                </div>
+            </article>
+            <article class="cluster-card">
+                <h3>6. AI가 인간의 직업을 잠식한다는 불안이 개발자·창작자·의사로 확산</h3>
+                <div class="meta">
+                    <span class="badge">📰 7건</span>
+                    <span class="badge">📅 4일 보도 (08/24~08/29)</span>
+                    <span class="badge">📈 관심</span>
+                    <span class="badge">🔥 상승세</span>
+                    <span class="badge score">주간점수 7.0</span>
+                </div>
+                <div class="timeline">
+<div class="timeline-item"><span class="tl-date">08/24</span><span class="tl-text">America's AI backlash: How the effort to keep worker trust is evolving inside companies</span></div><div class="timeline-item"><span class="tl-date">08/24</span><span class="tl-text">'I can't stop': 80% of developers find AI coding more addictive than helpful</span></div><div class="timeline-item"><span class="tl-date">08/24</span><span class="tl-text">'Digging the grave of my profession': the Hollywood creatives training AI to do their jobs</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">Bill Gates is deeply worried about AI, and he's no longer staying quiet</span></div><div class="timeline-item"><span class="tl-date">08/28</span><span class="tl-text">Bill Gates calls for 'human reserved' jobs in face of AI takeover</span></div><div class="timeline-item"><span class="tl-date">08/29</span><span class="tl-text">AI Has Human Doctors Asking: What's Left for Us?</span></div><div class="timeline-item"><span class="tl-date">08/29</span><span class="tl-text">Nicola Coughlan and Matt Lucas among stars backing campaign against AI voice cloning</span></div>
+                </div>
+            </article>
+            <article class="cluster-card">
+                <h3>7. OpenAI의 허깅페이스 해킹이 엔비디아의 129억 달러 인수로 귀결</h3>
+                <div class="meta">
+                    <span class="badge">📰 6건</span>
+                    <span class="badge">📅 4일 보도 (08/25~08/29)</span>
+                    <span class="badge">📈 관심</span>
+                    <span class="badge">🔥 상승세</span>
+                    <span class="badge score">주간점수 6.0</span>
+                </div>
+                <div class="timeline">
+<div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">Hugging Face reportedly in talks to be acquired for $13B</span></div><div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">Alabama launches investigation into OpenAI's hack of Hugging Face</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">What We Still Don't Know About OpenAI's Hugging Face Hack</span></div><div class="timeline-item"><span class="tl-date">08/28</span><span class="tl-text">Nvidia agrees to buy Hugging Face for $12.9 billion, report says</span></div><div class="timeline-item"><span class="tl-date">08/28</span><span class="tl-text">OpenAI releases sweeping report on Hugging Face AI agent hack</span></div><div class="timeline-item"><span class="tl-date">08/29</span><span class="tl-text">Open-weight AI companies are the Valley's hottest acquisition targets</span></div>
+                </div>
+            </article>
+            <article class="cluster-card">
+                <h3>8. 엔비디아가 실적 발표와 함께 사방에서 경쟁 압박을 받는 국면</h3>
+                <div class="meta">
+                    <span class="badge">📰 5건</span>
+                    <span class="badge">📅 3일 보도 (08/25~08/27)</span>
+                    <span class="badge">📈 관심</span>
+                    <span class="badge">→ 유지</span>
+                    <span class="badge score">주간점수 5.0</span>
+                </div>
+                <div class="timeline">
+<div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">Nvidia says Groq racks will be online this year following $20 billion purchase</span></div><div class="timeline-item"><span class="tl-date">08/25</span><span class="tl-text">Nvidia's Trillion-Dollar Chip Market Has Friends and Foes Closing In</span></div><div class="timeline-item"><span class="tl-date">08/26</span><span class="tl-text">Nvidia's dependence on hyperscalers faces big test in earnings report</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">OpenAI's Jalapeño AI chip brings new 'threat' to Nvidia margins as custom silicon gains ground</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">Nvidia's Sales Forecast Fails to Meet Loftiest Estimates</span></div>
+                </div>
+            </article>
+            <article class="cluster-card">
+                <h3>9. 앤스로픽이 클라우드·SaaS 제휴와 법적 승리로 사업 반경을 넓힌 주</h3>
+                <div class="meta">
+                    <span class="badge">📰 5건</span>
+                    <span class="badge">📅 2일 보도 (08/27~08/29)</span>
+                    <span class="badge">📈 관심</span>
+                    <span class="badge">→ 유지</span>
+                    <span class="badge score">주간점수 5.0</span>
+                </div>
+                <div class="timeline">
+<div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">Anthropic and Nscale strike $45 billion cloud deal, sources say</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">Salesforce, Anthropic expand partnership as Benioff responds to 'SaaSpocalypse' concerns</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">Anthropic's Claude and Cowork will share memories about you now - unless you opt out</span></div><div class="timeline-item"><span class="tl-date">08/29</span><span class="tl-text">A Judge Has Blocked the Pentagon's Attempt to Blacklist Anthropic</span></div><div class="timeline-item"><span class="tl-date">08/29</span><span class="tl-text">Marc Benioff is getting his mojo back as Salesforce's AI strength quiets skeptics</span></div>
+                </div>
+            </article>
+            <article class="cluster-card">
+                <h3>10. 국가 배후 해킹이 미국·영국 기반시설을 겨냥한 정황 연쇄 노출</h3>
+                <div class="meta">
+                    <span class="badge">📰 5건</span>
+                    <span class="badge">📅 2일 보도 (08/24~08/27)</span>
+                    <span class="badge">📈 관심</span>
+                    <span class="badge">🔥 상승세</span>
+                    <span class="badge score">주간점수 5.0</span>
+                </div>
+                <div class="timeline">
+<div class="timeline-item"><span class="tl-date">08/24</span><span class="tl-text">Small UK power plant shut down after cyberattack linked to Iran</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">Medical device maker Boston Scientific says a cyberattack is causing a 'global disruption' to its operations</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">FBI Disrupts Chinese Proxy Tools Used in Mass Hacking of US Agencies and Infrastructure</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">China Is Strapping 'Digital Bombs' to Civilian Infrastructure—Is the US Ready?</span></div><div class="timeline-item"><span class="tl-date">08/27</span><span class="tl-text">Mass arrests in global crackdown on West African cyber-crime networks</span></div>
+                </div>
+            </article>
+</section>
+
+<section class="standalone">
+  <div class="sec-head"><h2>🎯 단독 하이라이트</h2><span class="note">클러스터 없이 단독으로 주목받은 기사</span></div>
+  <div class="standalone-item"><h3>SpaceX, 루이지애나에 1,000억 달러 우주공항 건설 계획</h3><p>단일 민간 우주 인프라 투자로는 최대 규모다. 8/26 보도.</p></div><div class="standalone-item"><h3>우버, 자동 운전자 정지 알고리즘으로 약 10억 달러 과징금</h3><p>EU가 알고리즘 결정의 설명 책임을 물은 첫 대형 제재다. 8/24 보도.</p></div><div class="standalone-item"><h3>애플, 미국 Apple TV·Apple One 구독료 최대 25% 인상</h3><p>하드웨어 원가 압박과 별개로 서비스 매출 방어에 나섰다. 8/29 보도.</p></div><div class="standalone-item"><h3>쉬인, 270억 달러 기업가치로 홍콩 IPO 추진</h3><p>2022년 평가액의 일부에 그치는 눈높이 조정이다. 8/25 보도.</p></div><div class="standalone-item"><h3>테슬라, 도어 핸들 결함으로 사상 최대 규모 리콜</h3><p>8/25 보도.</p></div><div class="standalone-item"><h3>런던 신경외과팀, AI 보조 뇌종양 제거 수술 첫 성공</h3><p>8/28 보도.</p></div><div class="standalone-item"><h3>마벨, 매출 37% 성장에도 가이던스 실망에 주가 8% 급락</h3><p>AI 반도체 내에서도 종목 간 차별화가 뚜렷해졌다. 8/29 보도.</p></div><div class="standalone-item"><h3>한국 AI 스타트업 뤼튼, 8억 7천만 달러 밸류로 자금 조달</h3><p>8/26 보도.</p></div><div class="standalone-item"><h3>미국, 반도체 신규 관세 부과 검토</h3><p>8/28 보도.</p></div><div class="standalone-item"><h3>a16z, 11억 달러 규모 'Machine Age' 펀드 조성</h3><p>AI의 물리 세계 구축을 가속하겠다는 목적을 내걸었다. 8/29 보도.</p></div>
+</section>
+
+<section class="picks">
+  <div class="sec-head"><h2>💡 Claude's Pick</h2></div>
+  <div class="pick-item"><h3>🔮 메모리 인플레이션이 마침내 소비자 청구서에 도착했다</h3><p>이번 주는 AI 자본지출의 비용이 처음으로 일반 소비자 가격표에 찍힌 주로 기록될 만하다. 월요일 엔비디아가 고객사에 15% 이상 인상을 통보했고, 화요일 아마존이 메모리 부족을 이유로 자사 하드웨어 가격을 60% 올렸다. 수요일에는 애플 맥 미니가 신형 칩과 함께 인상된 가격표를 달고 나왔고, 애플 협력사들은 메모리 가격 압박 속에 신형 아이폰에 기대를 걸고 있다는 보도가 이어졌다. 목요일에는 메모리가 '전자산업의 쌀'로 불리며 기록적 공급난에 들어갔다는 진단이, 금요일에는 안드로이드 앱 개발까지 메모리 제약을 받게 됐다는 분석이 나왔다. 데이터센터 투자 경쟁이 서버 랙에서 멈추지 않고 소비자 지갑까지 내려온 경로가 5일 만에 한 줄로 이어진 셈이다. 다음 분기 실적에서 소비자 하드웨어 기업들의 마진이 어떻게 반응하는지가 이 흐름의 진위를 가릴 지점이다.</p></div><div class="pick-item"><h3>⚖️ 180억 달러 합의가 규제를 대신하게 됐다</h3><p>메타의 아동안전 재판은 첫 주 내부 전략 폭로로 시작해 180억 달러 합의로 끝났다. 표면적으로는 인스타그램의 청소년 이용에 제한이 걸린 결과지만, 금요일 보도는 합의문에 아동 데이터 활용에 대한 법적 면죄부가 포함돼 있다는 점을 짚었다. 같은 주 다른 기사는 이 합의가 틱톡과 유튜브를 상대할 때 그대로 쓰일 청사진이 됐다고 봤다. 입법이나 규제 기관의 판단이 아니라 민사 합의가 업계 표준을 만드는 구조로 굳어지고 있다는 뜻이다. 합의는 금액이 크더라도 선례로서의 구속력이 판결보다 약하고, 협상 테이블에 앉지 못한 이용자의 이익이 반영될 통로도 좁다. 영국이 메타에 미국 수준의 아동 보호를 요구하고 나선 것도 같은 공백을 겨냥한 움직임으로 읽힌다.</p></div>
+</section>
+
+<section class="weekly-stats">
+  <div class="sec-head"><h2>📊 주간 통계</h2></div>
+  <div class="stat-grid"><div class="stat-item"><div class="st-num">154건</div><div class="st-lab">총 기사 수</div></div><div class="stat-item"><div class="st-num">78개</div><div class="st-lab">클러스터</div></div><div class="stat-item"><div class="st-num">22개</div><div class="st-lab">멀티 기사 클러스터</div></div><div class="stat-item"><div class="st-num">56건</div><div class="st-lab">단독 기사</div></div><div class="stat-item"><div class="st-num">4개</div><div class="st-lab">🔥 지속 스토리</div></div><div class="stat-item"><div class="st-num">11개</div><div class="st-lab">🔥 상승세</div></div><div class="stat-item"><div class="st-num">0개</div><div class="st-lab">📉 하락세</div></div><div class="stat-item"><div class="st-num">6일</div><div class="st-lab">발행일수</div></div></div>
+</section>
+
+<section class="events-section">
+  <div class="sec-head"><h2>📅 다음 주 주요 일정</h2><span class="note">수집 기사에서 추출 · 날짜 미확정 항목 포함</span></div>
+  <div class="events-list"><div class="event-item"><div class="event-date">9월</div><div class="event-text">애플 iPhone 18 이벤트 — 폴더블 공개 및 CEO 승계 이슈 (8/27 기사에서 일정 확정 보도)</div></div><div class="event-item"><div class="event-date">미정</div><div class="event-text">쉬인 홍콩 IPO 절차 진행 — 270억 달러 목표 (8/25 보도)</div></div><div class="event-item"><div class="event-date">미정</div><div class="event-text">미국 반도체 신규 관세 라운드 발표 여부 (8/28 보도)</div></div><div class="event-item"><div class="event-date">미정</div><div class="event-text">CXMT 상장 절차 — 중국 반도체 사상 최대 공모 전망 (8/25 보도)</div></div><div class="event-item"><div class="event-date">후속</div><div class="event-text">Meta 합의안 세부 이행 및 틱톡·유튜브 대상 유사 소송 여부 (8/28 보도)</div></div></div>
+</section>
+
+</main>
+<footer>Generated by Claude | Weekly Briefing v1.8 | 2026-08-30</footer>
+</div>
+</body>
+</html>
