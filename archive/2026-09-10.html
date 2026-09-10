@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애플 첫 폴더블 iPhone Duo 공개, OpenAI 나비에-스토크스 주장 | Jae's Briefing</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 9월 10일 목요일</div>
+            <h1 class="title">애플 첫 폴더블 'iPhone Duo' 공개 | OpenAI 나비에-스토크스 88시간 주장 | 앤스로픽 연구원 사임</h1>
+            <p class="summary">애플이 예고대로 첫 폴더블 아이폰 'iPhone Duo'를 실물 공개했다. 존 터너스 신임 CEO의 첫 키노트에서 iPhone 18 Pro·워치 시리즈 12·에어팟 5가 함께 나왔고, 애플은 "최고의 AI 기기는 여전히 아이폰"이라며 온디바이스 전략을 못 박았다. 같은 날 OpenAI는 에이전트 1만 개로 90년 난제 나비에-스토크스를 88시간 만에 풀었다고 주장했지만 수학계가 즉각 반박했고, 앤스로픽 연구원이 '자기개선 AI'를 경고하며 사임해 실존위험 논쟁이 정치권으로 번졌다.</p>
+        </header>
+
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+            <article class="article-card">
+            <span class="badge badge-update">UPDATE</span>
+            <h3 class="article-title">Everything Apple Announced: iPhone Duo, iPhone 18 Pro, Apple Watch, AirPods 5</h3>
+            <p class="article-title-kr">애플 가을 이벤트 총정리 — 첫 폴더블 'iPhone Duo' 실물 공개</p>
+            <p class="article-summary">애플이 9월 이벤트에서 사상 첫 폴더블 아이폰 'iPhone Duo'를 공개했다. 외부 5.4인치·내부 7.6인치 화면에 후면 카메라 2개, 터치 ID, IP68 방수를 갖췄다. 삼성 갤럭시 폴드보다 7년 늦은 진입이지만, 발표 직전 샤오미가 와이드 폴더블 18 Fold를 앞당겨 공개하는 등 폼팩터 경쟁을 다시 촉발했다. 같은 무대에서 iPhone 18 Pro 라인업, 애플워치 시리즈 12·울트라 4, 에어팟 5, 그리고 강화된 시리 AI가 함께 발표됐다. 어제 예고 브리핑의 후속으로, 오늘은 실제 스펙·가격이 확정된 시점이다.</p>
+            <div class="article-meta"><span class="source">Wired, The Verge, TechCrunch, CNBC, Bloomberg, Ars Technica 다매체 보도</span><a href="https://www.wired.com/story/everything-apple-announced-september-2026/" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <span class="badge badge-hot">HOT</span>
+            <h3 class="article-title">OpenAI claims to have solved the 90-year-old Navier-Stokes math problem in 88 hours</h3>
+            <p class="article-title-kr">OpenAI "에이전트 1만 개로 90년 난제 88시간 만에 해결"</p>
+            <p class="article-summary">OpenAI가 자사 AI 에이전트 1만 개를 투입해 90년간 미해결이던 나비에-스토크스 존재성·매끄러움 문제를 88시간 만에 풀었다고 발표했다. 클레이 수학연구소가 100만 달러 상금을 건 밀레니엄 문제 중 하나다. 그러나 한 수학자가 즉각 주장의 타당성에 이의를 제기했고, 검증 절차가 끝나지 않은 단계에서 회사가 성과를 선점 발표했다는 비판이 나온다. AI가 '인간이 못 푼 문제'를 푸는 단계에 진입했는지, 아니면 발표 방식이 앞서간 것인지가 논쟁의 핵심이다.</p>
+            <div class="article-meta"><span class="source">CNBC, BBC, Guardian 다매체 보도</span><a href="https://www.cnbc.com/2026/09/09/openai-navier-stokes-math-problem-solved.html" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <span class="badge badge-hot">HOT</span>
+            <h3 class="article-title">AI could kill all humans in next decade, warn experts — and an Anthropic researcher quits</h3>
+            <p class="article-title-kr">"10년 내 AI가 인류를 절멸시킬 수 있다" — 앤스로픽 연구원 사임으로 번진 실존위험 논쟁</p>
+            <p class="article-summary">앤스로픽 연구원 제이콥 콕슨이 '자기개선 AI'에 대한 우려로 사임하며 "업계가 우리 생명을 걸고 도박하고 있다"고 밝혔다. 남은 동료 안전연구원은 AI가 인류를 절멸시킬 확률이 10%를 넘는다고 공개 발언했다. 가디언은 이 경고들을 두고 초지능 위험이 정말 핵무기보다 큰지, 업계 내부자 발언을 어디까지 진지하게 받아야 하는지 검증 기사를 냈다. 연구소 간 '속도 조절 협약(pacing agreement)' 요구가 처음으로 구체적 형태로 제기됐고, 규제 압력도 커지고 있다.</p>
+            <div class="article-meta"><span class="source">Guardian, TechCrunch, Bloomberg, Ars Technica 다매체 보도</span><a href="https://www.theguardian.com/technology/2026/sep/09/ai-superintelligence-risks-warnings-scientists-politicians" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <span class="badge badge-hot">HOT</span>
+            <h3 class="article-title">The White House pulls its racist Tetris clone</h3>
+            <p class="article-title-kr">백악관, '장벽 쌓기' 테트리스 클론 게임 철회 — 저작권·인종차별 논란</p>
+            <p class="article-summary">백악관이 '아케이드 게임' 사이트를 연 지 며칠 만에 테트리스 모방작 'Build the Wall'을 내렸다. 크기가 다른 블록을 쌓아 장벽을 만드는 방식으로, 인종차별적 연출이라는 비판과 함께 테트리스 컴퍼니가 저작권 문제를 제기한 것이 직접 계기가 됐다. 정부 기관이 IP 침해 소지가 있는 콘텐츠를 공식 채널로 배포했다는 점에서 이례적이며, 저작권 관리 주체가 정부를 상대로 직접 제동을 건 드문 사례로 남았다.</p>
+            <div class="article-meta"><span class="source">The Verge, TechCrunch, BBC, Ars Technica 다매체 보도</span><a href="https://www.theverge.com/games/991451/white-house-pulls-racist-tetris-clone" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+        </section>
+
+        <section class="section ">
+            <h2 class="section-title">🤖 AI/기술</h2>
+            <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Apple CEO John Ternus says the best AI device is still the iPhone</h3>
+            <p class="article-title-kr">터너스 애플 CEO "최고의 AI 기기는 여전히 아이폰"</p>
+            <p class="article-summary">존 터너스 신임 CEO가 첫 키노트에서 별도 AI 전용 기기 대신 아이폰을 AI의 중심에 두겠다는 입장을 분명히 했다. 애플은 온디바이스 모델이 클라우드 기반 경쟁 제품보다 프라이버시에서 유리하다고 주장했다. OpenAI·메타가 전용 하드웨어를 준비하는 흐름과 정면으로 갈리는 선언이다.</p>
+            <div class="article-meta"><span class="source">TechCrunch, The Verge</span><a href="https://techcrunch.com/2026/09/09/apple-ceo-john-ternus-says-the-best-ai-device-is-still-the-iphone/" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <h3 class="article-title">OpenAI fought dirty on career-making math problem, says NYU mathematician</h3>
+            <p class="article-title-kr">NYU 수학자 "OpenAI가 경력을 건 문제에서 비신사적으로 행동했다"</p>
+            <p class="article-summary">나비에-스토크스 해결 주장에 대해 뉴욕대 수학자가 OpenAI의 접근 방식을 정면 비판했다. 같은 문제를 오래 연구해 온 인간 연구자들과의 공개·발표 경쟁에서 절차적 문제가 있었다는 지적이다. 100만 달러 상금이 걸린 난제인 만큼, AI 연구소가 학계 검증 관행을 우회할 때 생기는 마찰이 표면화됐다.</p>
+            <div class="article-meta"><span class="source">TechCrunch</span><a href="https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <h3 class="article-title">School Students Who Use AI Get Worse Test Scores, OECD Warns</h3>
+            <p class="article-title-kr">OECD "AI 챗봇 쓰는 학생이 안 쓰는 학생보다 성적 낮다"</p>
+            <p class="article-summary">OECD 대표 교육 보고서에서 숙제에 AI 챗봇을 쓰지 않는 학생이 쓰는 학생보다 시험 성적이 높게 나왔다. 기술이 아동 학습에 해가 될 수 있다는 가장 광범위한 증거로 평가된다. 각국 교육 당국의 교실 AI 도입 속도에 직접 영향을 줄 수 있는 수치다.</p>
+            <div class="article-meta"><span class="source">Bloomberg, The Verge</span><a href="https://www.bloomberg.com/news/articles/2026-09-08/school-students-who-use-ai-get-worse-test-scores-oecd-warns" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <h3 class="article-title">CoreWeave CEO chalks up public AI pushback to the speed of change</h3>
+            <p class="article-title-kr">코어위브 CEO "대중의 AI 반발은 변화 속도 탓 — 무서운 게 당연하다"</p>
+            <p class="article-summary">마이크 인트레이터 코어위브 CEO가 골드만삭스 커뮤나코피아 콘퍼런스에서 AI에 대한 대중 반감을 변화 속도 문제로 설명했다. 데이터센터 임대 사업자 입장에서 지역사회 반발과 일자리 논쟁이 실제 사업 리스크로 떠올랐음을 시인한 발언이다.</p>
+            <div class="article-meta"><span class="source">CNBC</span><a href="https://www.cnbc.com/2026/09/09/goldman-sachs-communcacopia-technology-conference-ai.html" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Viral AI assistant Instinct now has its own email address</h3>
+            <p class="article-title-kr">화제의 AI 비서 '인스팅트', 자체 이메일 주소를 갖다</p>
+            <p class="article-summary">인스팅트가 에이전트 명의의 이메일 계정을 발급받아 계정 생성·고객지원 문의·업체 연락을 사용자 대신 처리한다. 에이전트가 사람의 계정을 빌려 쓰는 단계를 넘어 독자적 신원을 갖는 방향으로, 인증·책임 소재 문제를 새로 만든다.</p>
+            <div class="article-meta"><span class="source">TechCrunch</span><a href="https://techcrunch.com/2026/09/09/viral-ai-assistant-instinct-now-has-its-own-email-address/" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+        </section>
+
+        <section class="section ">
+            <h2 class="section-title">💰 경제/금융</h2>
+            <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Google to invest record $15 billion in AI infrastructure in the 'Texas of Europe'</h3>
+            <p class="article-title-kr">구글, 핀란드에 151억 달러 AI 인프라 투자 — 유럽 최대 규모</p>
+            <p class="article-summary">구글이 핀란드에 151억 달러를 투자한다고 밝혔다. 유럽 내 단일 투자로는 최대 규모다. 값싼 전력과 냉각 조건을 갖춘 북유럽이 'AI 데이터센터의 텍사스'로 불리며 하이퍼스케일러 투자를 흡수하는 흐름이 굳어지고 있다.</p>
+            <div class="article-meta"><span class="source">CNBC, Bloomberg</span><a href="https://www.cnbc.com/2026/09/09/google-finland-ai-infrastructure-investment.html" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <span class="badge badge-update">UPDATE</span>
+            <h3 class="article-title">AI data centers won't create as many UK jobs as the tech sector projects, think tank warns</h3>
+            <p class="article-title-kr">영국 데이터센터 일자리, 업계 예측의 25%에 그칠 것 — 싱크탱크 분석</p>
+            <p class="article-summary">영국에 수십억 파운드가 몰리는 AI 데이터센터가 실제로 만들 상시 일자리는 업계 전망치의 4분의 1 수준이라는 분석이 나왔다. 건설 기간 고용은 크지만 운영 인력은 소수라는 구조적 특성 때문이다. 데이터센터 유치를 일자리 정책으로 내세워 온 각국 정부의 근거가 흔들린다.</p>
+            <div class="article-meta"><span class="source">CNBC, Guardian</span><a href="https://www.cnbc.com/2026/09/09/ai-data-centers-jobs-tech-buildout.html" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <h3 class="article-title">Andreessen- and Thiel-backed defense startup opens U.S. missile factory as it exits stealth</h3>
+            <p class="article-title-kr">a16z·틸 투자 방산 스타트업 '코버넌트', 스텔스 해제하며 미사일 공장 가동</p>
+            <p class="article-summary">2024년 설립된 코버넌트가 스텔스 모드를 벗고 미군용 저비용 미사일 양산 공장을 열었다. 앤드리슨 호로위츠와 피터 틸이 투자했다. 앤듀릴 이후 방산 스타트업이 소프트웨어를 넘어 실제 제조 설비로 진입하는 흐름을 보여준다.</p>
+            <div class="article-meta"><span class="source">CNBC, Bloomberg</span><a href="https://www.cnbc.com/2026/09/09/defense-tech-covenant-anthem-missile.html" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <h3 class="article-title">Robinhood CEO says companies can't control how their stock is tokenized as AMC clash escalates</h3>
+            <p class="article-title-kr">로빈후드 CEO "기업은 자사 주식의 토큰화를 통제할 수 없다" — AMC와 충돌 격화</p>
+            <p class="article-summary">블라드 테네브 로빈후드 CEO가 상장사는 자사 주식을 기초로 만들어진 금융상품을 통제할 수 없다고 못 박았다. 다만 토큰 보유자에게 의결권이 없다는 점은 인정했다. AMC가 반발하면서, 토큰화 주식의 법적 지위를 둘러싼 첫 정면 분쟁이 됐다.</p>
+            <div class="article-meta"><span class="source">CNBC</span><a href="https://www.cnbc.com/2026/09/09/robinhood-ceo-says-companies-cant-control-how-their-stock-is-tokenized-as-amc-clash-escalates.html" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <h3 class="article-title">Silver Lake merges Cegid and Silae in 10 billion euro bet on AI-era software</h3>
+            <p class="article-title-kr">실버레이크, 세지드·실래 합병 — AI 시대 소프트웨어에 100억 유로 베팅</p>
+            <p class="article-summary">실버레이크가 프랑스 기업용 관리 소프트웨어 세지드와 급여·인사 플랫폼 실래를 합친다. 거래 규모는 100억 유로다. AI가 업무 소프트웨어 시장을 재편하는 국면에서 사모펀드가 유럽 SaaS 자산을 대형화해 대응하는 사례다.</p>
+            <div class="article-meta"><span class="source">CNBC</span><a href="https://www.cnbc.com/2026/09/09/silver-lake-merges-cegid-silae-ai-software-deal.html" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+        </section>
+
+        <section class="section ">
+            <h2 class="section-title">📱 플랫폼/소셜</h2>
+            <article class="article-card">
+            <h3 class="article-title">UK to Force Apple, Google to Block Nude Images on Kids' Devices</h3>
+            <p class="article-title-kr">영국, 애플·구글에 아동 기기 누드 이미지 차단 의무화</p>
+            <p class="article-summary">리사 낸디 문화부 장관이 하원에서 애플·구글 등 기술기업에 아동이 누드 이미지를 촬영·공유·열람하지 못하도록 막을 의무를 부과하겠다고 밝혔다. 플랫폼이 아니라 단말·OS 단에서 막으라는 요구라는 점에서 기존 온라인안전법보다 한 단계 더 들어간 규제다.</p>
+            <div class="article-meta"><span class="source">Bloomberg, Guardian</span><a href="https://www.bloomberg.com/news/articles/2026-09-08/uk-to-force-apple-google-to-block-nude-images-on-kids-devices" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <span class="badge badge-breaking">BREAKING</span>
+            <h3 class="article-title">Automattic's board forces CEO Matt Mullenweg into leave of absence</h3>
+            <p class="article-title-kr">오토매틱 이사회, 매트 뮬렌웨그 CEO 강제 휴직 조치</p>
+            <p class="article-summary">워드프레스 모회사 오토매틱 이사회가 창업자 매트 뮬렌웨그를 휴직 처리했다. 뮬렌웨그는 사내 슬랙에 자신의 의사에 반한 조치라고 적었다. WP Engine 분쟁 이후 이어진 리더십 리스크가 이사회 개입으로 이어진 것으로, 워드프레스 생태계 전반에 영향이 불가피하다.</p>
+            <div class="article-meta"><span class="source">TechCrunch, The Verge</span><a href="https://techcrunch.com/2026/09/09/automattics-board-forces-ceo-matt-mullenweg-into-leave-of-absence/" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <h3 class="article-title">US police fear Meta smart glasses could be used to secretly record them</h3>
+            <p class="article-title-kr">미 경찰, 메타 스마트글라스 몰래 촬영 우려 — 내부 문건 단독 입수</p>
+            <p class="article-summary">가디언이 입수한 문건에 따르면 메인주부터 캘리포니아까지 경찰들이 카메라 내장 메타 안경이 자신들을 몰래 촬영하거나 테러에 악용될 수 있다고 우려하고 있다. 뉴욕경찰 대테러 부서도 검토에 착수했다. 촬영 주체가 뒤바뀐 감시 논쟁이 공권력 쪽에서 먼저 터져 나왔다.</p>
+            <div class="article-meta"><span class="source">Guardian</span><a href="https://www.theguardian.com/technology/2026/sep/08/us-law-enforcement-meta-smart-glasses" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+        </section>
+
+        <section class="section ">
+            <h2 class="section-title">🔧 하드웨어/기타</h2>
+            <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Apple's iPhone 18 Pro has a dynamic-aperture main camera</h3>
+            <p class="article-title-kr">아이폰 18 프로, 가변 조리개 메인 카메라 탑재</p>
+            <p class="article-summary">아이폰 18 프로·프로 맥스가 가변 조리개 메인 카메라와 A20 프로 칩을 달고 나왔다. 색상은 딥 블랙·실버·글레이셔·버건디이며 후면 유리가 색상에 맞춰진다. 스마트폰에서 조리개를 물리적으로 조절하는 방식은 삼성이 먼저 시도했다가 접었던 영역으로, 애플이 다시 꺼내 든 셈이다.</p>
+            <div class="article-meta"><span class="source">The Verge, TechCrunch, Ars Technica 다매체 보도</span><a href="https://www.theverge.com/tech/986331/apple-iphone-18-pro-max-september-2026-event" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Apple Watch Series 12 and Apple Watch Ultra 4: Ceramic, Specs, Release Date</h3>
+            <p class="article-title-kr">애플워치 시리즈 12·울트라 4 — 세라믹 복귀, 건강 센서 확장</p>
+            <p class="article-summary">시리즈 12와 울트라 4가 더 빠른 칩, 확장된 건강 추적, 새 시리 기능을 갖췄고 세라믹 마감이 부활했다. 다만 새로 들어간 '지능형 청취' 기능은 프라이버시 보호 설계에도 불구하고 상시 소리 분석이라는 성격 자체가 남는다는 지적이 함께 나왔다.</p>
+            <div class="article-meta"><span class="source">Wired, TechCrunch</span><a href="https://www.wired.com/story/apple-watch-series-12-apple-watch-ultra-4/" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Apple shows off AirPods 5 with improved active noise cancellation</h3>
+            <p class="article-title-kr">에어팟 5, 129달러에 노이즈 캔슬링 강화</p>
+            <p class="article-summary">에어팟 5는 개선된 액티브 노이즈 캔슬링과 시리 AI 연동, 스템 볼륨 조절을 지원한다. 가격은 129달러로 책정됐다. 오픈이어 구조에서 최고 수준의 차음을 구현했다는 것이 애플의 주장이다.</p>
+            <div class="article-meta"><span class="source">TechCrunch, The Verge, Ars Technica 다매체 보도</span><a href="https://techcrunch.com/2026/09/09/apple-shows-off-airpods-5-with-improved-active-noise-cancellation/" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <span class="badge badge-update">UPDATE</span>
+            <h3 class="article-title">I spent an hour riding inside Tesla's steering-wheel-free Cybercab</h3>
+            <p class="article-title-kr">핸들 없는 테슬라 사이버캡 1시간 탑승기 — 오스틴 현장</p>
+            <p class="article-summary">더 버지 기자가 오스틴에서 핸들·페달 없는 사이버캡을 1시간 탔다. 좁은 도로에서 하차할 때 차량이 길을 반쯤 막는 등 도심 주행의 현실적 한계가 드러났다. 출시 직후 시작된 NHTSA 조사와 맞물려, 2인승 전용 로보택시가 실제 도로에서 어떻게 작동하는지 보여주는 첫 장시간 리포트다.</p>
+            <div class="article-meta"><span class="source">The Verge</span><a href="https://www.theverge.com/transportation/992014/tesla-cybercab-hands-on-test-robotaxi-austin" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <h3 class="article-title">Think your EV holds its value? China has some bad news for you</h3>
+            <p class="article-title-kr">중국 중고차 시장, 5년 된 전기차를 아예 안 받는다</p>
+            <p class="article-summary">세계 최대 전기차 시장인 중국에서 중고차 딜러들이 5년 지난 전기차 매입을 거부하고 있다. 배터리 보증이 끝나는 시점과 겹치면서 잔존가치가 급락한 결과다. 같은 문제가 시차를 두고 서구·한국 시장으로 넘어올 수 있다는 경고다.</p>
+            <div class="article-meta"><span class="source">Rest of World Hero</span><a href="https://restofworld.org/2026/china-used-ev-depreciation-five-year-battery-warranty-dealers/" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+        </section>
+
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+            <article class="article-card">
+            <span class="badge badge-pick">PICK</span>
+            <h3 class="article-title">A Stealth Startup Thinks It Just Hacked the Memory Shortage</h3>
+            <p class="article-title-kr">스텔스 스타트업 케플러 컴퓨팅, "메모리 병목을 풀었다" 주장</p>
+            <p class="article-summary">케플러 컴퓨팅이 독자 소재와 새로운 칩 설계 방식으로 AI 메모리 공급 병목을 해소할 수 있다고 주장한다. 조달 규모는 4억 달러 수준이다. 최근 브리핑에서 다룬 '칩플레이션'—메모리 가격 급등이 아이폰 가격까지 밀어올린 흐름—의 반대편에서 나온 첫 구조적 해법 주장이다.</p>
+            <p class="pick-reason">선정 이유: Signal: 신생 기업 첫 등장 + 시장 재정의 / 관심사: 반도체·메모리 공급망, 한국 시장 직결(삼성·하이닉스 가격 결정력)</p>
+            <div class="article-meta"><span class="source">Wired</span><a href="https://www.wired.com/story/a-new-dollar400-million-startup-wants-to-fix-the-ai-memory-bottleneck/" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <span class="badge badge-pick">PICK</span>
+            <h3 class="article-title">Besxar is building an orbital semiconductor factory, one SpaceX rocket at a time</h3>
+            <p class="article-title-kr">베스자, 팰컨 9에 첨단 반도체 팹을 실어 궤도 공장을 짓는다</p>
+            <p class="article-summary">베스자는 스페이스X 팰컨 9에 반도체 제조 장비를 실어 궤도에서 생산하고 회수하는 모델을 추진 중이다. 무중력·초진공이라는 조건이 지상 팹에서 불가능한 결정 성장에 유리하다는 판단이다. 우주 제조가 실험 단계를 넘어 공급망 논의로 들어오는 초기 신호다.</p>
+            <p class="pick-reason">선정 이유: Signal: 신생 기업 첫 등장 + 새로운 시장 정의 / 관심사: 반도체·하드웨어 공급망, 투자 관점의 구조 변화</p>
+            <div class="article-meta"><span class="source">TechCrunch Hero</span><a href="https://techcrunch.com/2026/09/09/besxar-is-strapping-advanced-chip-fabs-onto-spacexs-falcon-9-rockets/" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+            <article class="article-card">
+            <span class="badge badge-pick">PICK</span>
+            <h3 class="article-title">Bluecore Energy Raises $50 Million for Maritime Nuclear System</h3>
+            <p class="article-title-kr">블루코어 에너지, 해상 부유식 원자로에 5천만 달러 조달</p>
+            <p class="article-summary">남캘리포니아 스타트업 블루코어가 부유식 원자력 발전소로 미국 최대 항만 복합단지에 전력을 공급하는 계획으로 시드 5천만 달러를 모았다. 창업 두 달 만이다. AI 데이터센터 전력난이 SMR을 넘어 '해상 원전'까지 자본을 끌어들이는 단계로 넘어갔음을 보여준다.</p>
+            <p class="pick-reason">선정 이유: Signal: 신생 기업 첫 등장 + 규제·인프라 초기 신호 / 관심사: AI 인프라 전력 병목, 조선·해양 연계로 한국 산업과 접점</p>
+            <div class="article-meta"><span class="source">Bloomberg, TechCrunch</span><a href="https://www.bloomberg.com/news/articles/2026-09-08/bluecore-energy-raises-50-million-for-maritime-nuclear-system" target="_blank" rel="noopener">원문 보기 →</a></div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 25건 | 섹션 6개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
