@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>앤스로픽 중국 AI 랩 증류 폭로, 알트먼 AI 감속 시사 | Jae's Briefing</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+    </style>
+<link href="../theme-modern.css" rel="stylesheet"/><script defer="" src="../app.js?v=7"></script></head>
+<body class="reader-mode"><nav class="reader-nav">
+<div class="reader-nav-inner">
+<a class="reader-nav-logo" href="../index.html">JFNB</a>
+<div class="reader-nav-links">
+<a href="../index.html">홈</a>
+<a href="../archive.html">아카이브</a>
+<a href="../about.html">소개</a>
+<a href="../saved.html">⭐ 보관함 <span data-jfnb-count=""></span></a>
+<span class="reader-nav-unread" data-jfnb-unread=""></span>
+<span class="reader-nav-auth" data-jfnb-auth=""></span>
+</div>
+</div>
+</nav>
+<div class="container">
+<header class="header">
+<div class="date-badge">2026년 9월 12일 토요일</div>
+<h1 class="title">앤스로픽, 중국 AI 랩 Claude 증류 폭로 | 알트먼 &quot;AI 감속 용의&quot; | AI 인재전쟁 아시아 확산</h1>
+<p class="summary">앤스로픽이 위협 인텔리전스 보고서에서 알리바바·문샷·딥시크의 Claude 무단 증류와 예멘 무장세력의 미사일 개발 활용을 동시에 공개했다. 같은 날 샘 알트먼은 직원들에게 최전선 AI 개발 감속 용의를 밝혔지만, 경쟁사 간 속도 조율이 반독점 담합이 될 수 있다는 법률 문제가 걸림돌로 떠올랐다. OpenAI·앤스로픽 내부자 12명 이상이 감속을 요구하는 사이 트럼프는 절멸 위험을 일축했고, 인재 전쟁은 빅테크 아시아 임원진으로 번졌다.</p>
+</header>
+<section class="section top-section">
+<h2 class="section-title">🔥 TOP Headlines</h2>
+<article class="article-card jfnb-card" data-card-index="0" data-card-title="Chinese AI labs secretly used millions of Claude exchanges to train their models, Anthropic says" data-card-type="article" data-card-url="https://www.cnbc.com/2026/09/11/chinese-ai-labs-moonshot-deepseek-alibaba-anthropic.html" id="art-0">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Chinese AI labs secretly used millions of Claude exchanges to train their models, Anthropic says</h3>
+<p class="article-title-kr">앤스로픽 &quot;중국 AI 랩들이 Claude 대화 수백만 건으로 자사 모델 훈련&quot; — 문샷은 요청 우회 라우팅</p>
+<p class="article-summary">앤스로픽이 위협 인텔리전스 보고서를 통해 알리바바·문샷AI·딥시크 등 중국 기반 AI 기업들의 조직적인 &#x27;증류(distillation)&#x27; 시도를 적발했다고 밝혔다. 수백만 건의 Claude 대화를 무단 수집해 자사 모델 성능을 끌어올리는 데 썼다는 것이다. 특히 문샷AI는 자사 사용자 요청 수천 건을 몰래 Claude로 우회 라우팅한 뒤 그 응답을 자기 모델 출력인 것처럼 내보낸 정황이 지목됐다. 경쟁이 격화되면서 이런 시도가 최근 몇 달 사이 빠르게 늘었다는 게 앤스로픽 설명이다. 반면 Y컴비네이터 게리 탄 CEO는 데모데이에서 &quot;증류에 대해서는 아무것도 하지 말라&quot;며 프런티어 모델 복제 우려를 일축해, 업계 내부에서도 대응 온도차가 드러났다.</p>
+<div class="article-meta">
+<span class="source">CNBC Featured, TechCrunch, Bloomberg, Ars Technica 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/09/11/chinese-ai-labs-moonshot-deepseek-alibaba-anthropic.html" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="1" data-card-title="The AI talent war is coming for Big Tech&#x27;s Asia executives" data-card-type="article" data-card-url="https://restofworld.org/2026/openai-anthropic-big-tech-executives-asia/" id="art-1">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">The AI talent war is coming for Big Tech&#x27;s Asia executives</h3>
+<p class="article-title-kr">AI 인재 전쟁, 빅테크 아시아 임원진으로 번지다</p>
+<p class="article-summary">OpenAI와 앤스로픽이 인도·동남아 시장 공략을 위해 메타·구글·마이크로소프트 등 미국 빅테크의 아시아 리더급을 잇달아 데려가고 있다. 지금까지 인재 쟁탈전이 실리콘밸리 연구인력에 집중됐다면, 이번에는 현지 규제·통신사 제휴·과금 체계를 아는 &#x27;시장 개척형 임원&#x27;으로 무게중심이 옮겨간 것이 특징이다. 프런티어 모델 성능 격차가 좁혀지면서 승부처가 모델에서 유통·현지화로 이동하고 있음을 보여주는 신호로 읽힌다.</p>
+<div class="article-meta">
+<span class="source">Rest of World Hero, The Verge, Bloomberg 다매체 보도</span>
+<a href="https://restofworld.org/2026/openai-anthropic-big-tech-executives-asia/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="2" data-card-title="New Mexico lawyer fined for using AI-generated brief containing fabricated police testimony" data-card-type="article" data-card-url="https://www.theguardian.com/technology/2026/sep/11/new-mexico-lawyer-ai-chatgpt-testimony" id="art-2">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">New Mexico lawyer fined for using AI-generated brief containing fabricated police testimony</h3>
+<p class="article-title-kr">AI가 만든 가짜 경찰 증언 인용한 변호사, 5천 달러 벌금 — 살인사건 항소심</p>
+<p class="article-summary">뉴멕시코주 대법원이 살인 유죄판결 항소심에서 ChatGPT가 지어낸 경찰 증언과 존재하지 않는 증인을 그대로 인용한 준비서면을 제출한 변호사 스티븐 애런스에게 5천 달러 벌금을 부과했다. 애런스는 &quot;빈틈없는 요약본&quot;을 만들려고 ChatGPT를 썼다고 해명했다. 법정에서의 AI 환각 제재가 민사 영역을 넘어 형사 중범죄 사건으로 번진 사례로, 사법 시스템이 생성형 AI 사용에 대한 검증 의무를 어디까지 물을지를 가르는 기준점이 될 전망이다.</p>
+<div class="article-meta">
+<span class="source">Guardian Featured, The Verge, Ars Technica 다매체 보도</span>
+<a href="https://www.theguardian.com/technology/2026/sep/11/new-mexico-lawyer-ai-chatgpt-testimony" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="3" data-card-title="Roblox is making it easier to build games with AI — and play them outside Roblox" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/11/roblox-is-making-it-easier-to-build-games-with-ai-and-play-them-outside-roblox/" id="art-3">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Roblox is making it easier to build games with AI — and play them outside Roblox</h3>
+<p class="article-title-kr">로블록스, AI 게임 제작 도구 확대 — 만든 게임을 로블록스 밖에서도 플레이</p>
+<p class="article-summary">로블록스가 연례 개발자 콘퍼런스(RDC)에서 AI 기반 게임 제작 도구, 확장된 NPC 기능, 그리고 웹을 포함한 외부 플랫폼으로의 게임 배포를 발표했다. 지금까지 로블록스의 핵심 자산은 &#x27;앱 안에 갇힌 UGC 생태계&#x27;였는데, 제작 진입장벽을 AI로 낮추는 동시에 결과물을 플랫폼 밖으로 내보내겠다는 것은 스스로의 폐쇄성을 여는 선택이다. 콘텐츠 공급을 폭발적으로 늘려 유통 채널로 진화하려는 포석으로 보인다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Featured, Ars Technica 다매체 보도</span>
+<a href="https://techcrunch.com/2026/09/11/roblox-is-making-it-easier-to-build-games-with-ai-and-play-them-outside-roblox/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="4" data-card-title="Matt Mullenweg tells (trolls?) Automattic staff, saying he&#x27;s back in control after CEO ouster" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/11/matt-mullenweg-tells-automattic-staff-in-slack-hes-back-in-control-after-ceo-ouster/" id="art-4">
+<span class="badge badge-breaking">BREAKING</span>
+<h3 class="article-title">Matt Mullenweg tells (trolls?) Automattic staff, saying he&#x27;s back in control after CEO ouster</h3>
+<p class="article-title-kr">뮬렌웨그, 이사회 직무정지 며칠 만에 &quot;내가 다시 오토매틱을 통제한다&quot;</p>
+<p class="article-summary">워드프레스 창업자 맷 뮬렌웨그가 이사회로부터 직무정지를 당한 지 며칠 만에 사내 슬랙에 &quot;내가 다시 회사를 통제하고 있다&quot;는 메시지를 올렸다고 테크크런치가 전했다. 오토매틱은 이 번복을 아직 공식 확인하지 않았다. 웹의 상당 부분을 떠받치는 워드프레스 생태계의 거버넌스가 창업자 1인에게 얼마나 묶여 있는지를 다시 드러낸 사건으로, 오픈소스 프로젝트와 영리 법인이 한 인물을 통해 결합돼 있을 때의 구조적 위험을 보여준다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Hero</span>
+<a href="https://techcrunch.com/2026/09/11/matt-mullenweg-tells-automattic-staff-in-slack-hes-back-in-control-after-ceo-ouster/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section ">
+<h2 class="section-title">🤖 AI/기술</h2>
+<article class="article-card jfnb-card" data-card-index="5" data-card-title="OpenAI Is Open to Slowing Cutting-Edge AI, Altman Tells Staff" data-card-type="article" data-card-url="https://www.bloomberg.com/news/videos/2026-09-11/openai-is-open-to-slowing-cutting-edge-ai-video" id="art-5">
+<span class="badge badge-breaking">BREAKING</span>
+<h3 class="article-title">OpenAI Is Open to Slowing Cutting-Edge AI, Altman Tells Staff</h3>
+<p class="article-title-kr">알트먼, 직원들에게 &quot;최전선 AI 개발 속도를 늦출 용의 있다&quot;</p>
+<p class="article-summary">샘 알트먼이 사내에서 최전선 AI 개발 감속을 검토하고 있으며 다른 AI 기업들도 동참하기를 바란다고 밝혔다. 이번 주 앤스로픽 연구원의 공개 사임과 절멸 위험 경고가 확산된 직후 나온 발언이다. 흥미로운 건 걸림돌이 기술이 아니라 법이라는 점으로, 와이어드에 따르면 AI 업계 지도부는 경쟁사끼리 개발 속도를 맞추는 행위가 반독점법 담합에 해당할 수 있는지를 실제로 법률 검토 중이다. 안전을 위한 조율이 카르텔로 규정될 수 있다는 역설이 감속 논의의 실질적 장벽으로 떠올랐다.</p>
+<div class="article-meta">
+<span class="source">Bloomberg, Wired 다매체 보도</span>
+<a href="https://www.bloomberg.com/news/videos/2026-09-11/openai-is-open-to-slowing-cutting-edge-ai-video" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="6" data-card-title="Anthropic details bad actors&#x27; efforts to misuse its AI for bioweapons" data-card-type="article" data-card-url="https://www.bbc.co.uk/news/articles/cx2zrrpkx20o" id="art-6">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Anthropic details bad actors&#x27; efforts to misuse its AI for bioweapons</h3>
+<p class="article-title-kr">앤스로픽 &quot;예멘 무장세력이 미사일 개발에 Claude 사용&quot; — 생물무기 우회 시도도 차단</p>
+<p class="article-summary">같은 위협 인텔리전스 보고서의 또 다른 축은 국가·비국가 행위자의 오용이다. 앤스로픽은 이란 지원 후티 반군이 활동하는 예멘 북부의 한 조직이 미사일·로켓 시스템 개발에 Claude를 활용한 정황을 적발했다고 밝혔다. 범죄조직, 국가 지원 해킹그룹, 스파이웨어 업체, 선전 조직이 미사일·폭발물 설계에 모델을 동원하려 한 사례도 함께 공개됐다. 생물학 분야는 특히 까다로운데, 위험한 연구와 정당한 연구의 문헌적 외형이 거의 같아 안전장치가 우회당하기 쉬웠다는 것이 아스테크니카의 분석이다.</p>
+<div class="article-meta">
+<span class="source">BBC Hero, Guardian, Bloomberg, Ars Technica 다매체 보도</span>
+<a href="https://www.bbc.co.uk/news/articles/cx2zrrpkx20o" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="7" data-card-title="Trump dismisses AI extinction risks as more than a dozen OpenAI, Anthropic insiders call for a slowdown" data-card-type="article" data-card-url="https://www.cnbc.com/2026/09/11/trump-ai-extinction-risks.html" id="art-7">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Trump dismisses AI extinction risks as more than a dozen OpenAI, Anthropic insiders call for a slowdown</h3>
+<p class="article-title-kr">OpenAI·앤스로픽 내부자 12명 이상 감속 요구 — 트럼프는 &quot;절멸 걱정 안 한다&quot; 일축</p>
+<p class="article-summary">이번 주 앤스로픽 연구원의 사임 경고가 도화선이 되면서, OpenAI와 앤스로픽 소속 연구자 12명 이상이 공개적으로 개발 속도 조절을 요구하는 상황으로 번졌다. 워싱턴에서는 안전장치 입법 논의가 다시 불붙었지만 트럼프 대통령은 AI가 인류 절멸을 초래할 가능성에 대해 우려하지 않는다고 선을 그었다. 투자업계에서도 알티미터의 브래드 거스트너가 절멸 경고를 내는 연구자들을 향해 정치적 동기를 문제 삼는 등, 기술계·정치권·자본시장이 서로 다른 방향으로 갈라지는 국면이다.</p>
+<div class="article-meta">
+<span class="source">CNBC Featured, Bloomberg 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/09/11/trump-ai-extinction-risks.html" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="8" data-card-title="Microsoft Plans Data Center Push to Triple Its Computing Power" data-card-type="article" data-card-url="https://www.bloomberg.com/news/newsletters/2026-09-11/inside-microsoft-s-plans-to-massively-expand-computing-power" id="art-8">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Microsoft Plans Data Center Push to Triple Its Computing Power</h3>
+<p class="article-title-kr">마이크로소프트, 2032년까지 데이터센터 3배 확대 — 26GW 규모 증설</p>
+<p class="article-summary">마이크로소프트가 컴퓨팅 부족으로 일부 AI·클라우드 수주를 거절해야 했던 상황을 타개하기 위해 2032년까지 데이터센터 규모를 3배 이상으로 늘리는 계획을 내놨다. 추가되는 용량은 약 26기가와트에 이른다. 수요가 없어서가 아니라 물리적 용량이 없어서 매출을 포기하고 있었다는 뜻이며, 이는 AI 인프라 병목이 GPU 조달을 넘어 전력·부지 단계로 완전히 이동했음을 보여준다. 다만 대규모 선투자에 따른 비용 부담은 부담 요인으로 지적된다.</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/newsletters/2026-09-11/inside-microsoft-s-plans-to-massively-expand-computing-power" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="9" data-card-title="Meta&#x27;s AI agent Muse is now the No. 2 app in the US" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/" id="art-9">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Meta&#x27;s AI agent Muse is now the No. 2 app in the US</h3>
+<p class="article-title-kr">메타 AI 에이전트 &#x27;Muse&#x27; 미국 앱 2위 — JP모건은 메타 투자의견 상향</p>
+<p class="article-summary">메타가 내놓은 AI 에이전트 앱 Muse가 미국 앱 순위 2위에 올랐다. 다만 테크크런치는 메타 AI나 스레드 같은 이전 자사 앱들의 초기 확산 속도에는 못 미친다고 평가했다. 자본시장 반응은 더 우호적이어서, JP모건은 Muse가 메타의 AI 포지션 개선을 보여준다며 투자의견을 &#x27;비중확대&#x27;로 올렸다. 반면 더버지 리뷰는 기능은 작동하지만 사용자를 대신해 움직이는 방식이 상당히 섬뜩하다는 반응을 내놨다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, Bloomberg, The Verge 다매체 보도</span>
+<a href="https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="10" data-card-title="OpenAI puts Pro subscriptions on hold due to Astra demand" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/" id="art-10">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">OpenAI puts Pro subscriptions on hold due to Astra demand</h3>
+<p class="article-title-kr">OpenAI, Astra 수요 폭주에 Pro 구독 신규 가입 중단</p>
+<p class="article-summary">OpenAI가 GPT-6 아스트라 수요를 감당하지 못해 Pro 구독 신규 가입을 일시 중단했다. Pro 등급이 시스템에 가장 큰 부하를 주기 때문에 용량을 늘리는 동안 판매를 멈춘다는 설명이다. 지난주 아스트라 정식 출시 이후 일주일 만에 나온 조치로, 최상위 요금제를 팔지 못할 만큼 추론 용량이 빠듯하다는 것은 마이크로소프트의 26GW 증설 계획과 정확히 같은 병목을 가리킨다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch</span>
+<a href="https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section ">
+<h2 class="section-title">💰 경제/금융</h2>
+<article class="article-card jfnb-card" data-card-index="11" data-card-title="The Boring Company raises $3B in round led by UAE" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/10/the-boring-company-raises-3b-in-round-led-by-uae/" id="art-11">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">The Boring Company raises $3B in round led by UAE</h3>
+<p class="article-title-kr">보링컴퍼니, UAE 주도로 30억 달러 조달 — 기업가치 230억 달러</p>
+<p class="article-summary">일론 머스크의 보링컴퍼니가 UAE가 주도한 라운드에서 30억 달러를 조달하며 기업가치 230억 달러를 인정받았다. 조달 자금은 UAE 내 150km 이상 터널 굴착에 투입될 예정이다. 미국 내 프로젝트가 좀처럼 속도를 내지 못하는 사이, 규제 협의가 빠르고 국부펀드 자본이 두터운 중동으로 사업 무게중심을 옮기는 구도다. 머스크 계열사에 대한 걸프 자본의 노출이 또 한 단계 커졌다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, CNBC, Bloomberg 다매체 보도</span>
+<a href="https://techcrunch.com/2026/09/10/the-boring-company-raises-3b-in-round-led-by-uae/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="12" data-card-title="Chinese Nvidia rival Enflame soars 206% on stock market debut as AI demand stays hot" data-card-type="article" data-card-url="https://www.cnbc.com/2026/09/11/chinese-nvidia-rival-enflame-stock-market-debut-ai.html" id="art-12">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Chinese Nvidia rival Enflame soars 206% on stock market debut as AI demand stays hot</h3>
+<p class="article-title-kr">텐센트 지원 엔플레임, 상하이 상장 첫날 최대 206% 폭등</p>
+<p class="article-summary">중국 AI 칩 설계사 엔플레임(Enflame)이 상하이 증시 데뷔 첫날 최대 206% 급등했다. IPO로 약 61억 2천만 위안(9억 1,100만 달러)을 조달했고, 텐센트가 주요 투자자다. 중국 AI 반도체 &#x27;네 마리 작은 용&#x27; 중 하나로 꼽히는 곳으로, 엔비디아 대체 수요와 자국 조달 정책이 겹치며 밸류에이션이 단숨에 뛰었다. 딥시크·문샷의 상장 추진과 맞물려 중국 AI 밸류체인 전반이 공개시장으로 빠르게 이동하고 있다.</p>
+<div class="article-meta">
+<span class="source">CNBC, Bloomberg 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/09/11/chinese-nvidia-rival-enflame-stock-market-debut-ai.html" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="13" data-card-title="Bending Spoons to buy collaboration tools maker Miro for $1.36B, 90% less than its 2022 valuation" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/10/bending-spoons-to-buy-collaboration-tools-maker-miro-for-1-36b-90-less-than-its-2022-valuation/" id="art-13">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Bending Spoons to buy collaboration tools maker Miro for $1.36B, 90% less than its 2022 valuation</h3>
+<p class="article-title-kr">벤딩스푼스, 협업툴 Miro를 13.6억 달러에 인수 — 2021년 밸류 대비 92% 할인</p>
+<p class="article-summary">이탈리아의 벤딩스푼스가 화이트보드 협업툴 Miro를 13억 6천만 달러에 인수하기로 했다. 2021년 말 기업가치 175억 달러를 인정받았던 것과 비교하면 92% 낮은 가격이다. 제로금리 시기에 부풀었던 SaaS 밸류에이션이 실제 매각 단계에서 어디로 수렴하는지를 보여주는 사례이며, AI 기능이 협업 도구의 차별화를 빠르게 상품화한 여파도 반영돼 있다. 벤딩스푼스는 부진한 소비자·업무용 앱을 사들여 수익화하는 전략을 이어가고 있다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, Bloomberg 다매체 보도</span>
+<a href="https://techcrunch.com/2026/09/10/bending-spoons-to-buy-collaboration-tools-maker-miro-for-1-36b-90-less-than-its-2022-valuation/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="14" data-card-title="Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/" id="art-14">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO</h3>
+<p class="article-title-kr">Nscale, 前 OpenAI 넘버2 피지 시모 이사 선임 — IPO 사전 포석</p>
+<p class="article-summary">AI 데이터센터 기업 Nscale이 OpenAI의 사실상 넘버2였던 피지 시모를 이사회에 합류시켰다. 시모는 2023년 인스타카트 IPO를 이끈 경험이 있어, 상장 준비를 위한 인선이라는 해석이 지배적이다. AI 인프라 사업자가 사모 자금에서 공개시장으로 넘어가려는 흐름이 뚜렷해지는 대목으로, 데이터센터 증설 경쟁의 자금 조달 창구가 바뀌고 있음을 보여준다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, Bloomberg 다매체 보도</span>
+<a href="https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="15" data-card-title="Jensen Huang explains why Nvidia will grow an astounding 70% next year" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/" id="art-15">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Jensen Huang explains why Nvidia will grow an astounding 70% next year</h3>
+<p class="article-title-kr">젠슨 황 &quot;엔비디아 내년 70% 성장&quot; — 다음 시장은 사이버보안</p>
+<p class="article-summary">젠슨 황이 엔비디아의 내년 성장률을 70%로 제시하며 근거를 설명했다. 자사 거래 구조가 &#x27;순환출자식&#x27;이라는 비판에 대해서는 정면으로 부인했다. 동시에 사이버보안을 AI의 다음 대형 시장으로 지목했는데, 공교롭게도 같은 주 앤스로픽이 자사 모델의 해킹 관여 사례를 담은 보고서를 내놓으며 AI 보안 문제가 실제 위협으로 떠오른 상황이다. 방어 수요가 곧 컴퓨팅 수요로 이어진다는 논리다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Featured, Bloomberg 다매체 보도</span>
+<a href="https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section ">
+<h2 class="section-title">📱 플랫폼/소셜</h2>
+<article class="article-card jfnb-card" data-card-index="16" data-card-title="Amazon makes it easier to buy what you see on Prime Video" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/10/amazon-makes-it-easier-to-buy-what-you-see-on-prime-video/" id="art-16">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Amazon makes it easier to buy what you see on Prime Video</h3>
+<p class="article-title-kr">아마존, Prime Video 화면 속 상품을 바로 구매 — &#x27;Shop the Scene&#x27; 도입</p>
+<p class="article-summary">아마존이 Prime Video 전반에 쇼핑 기능을 확대했다. 기존 X-Ray와 쇼핑 앱에 더해, Lens 기술을 적용한 &#x27;Shop the Scene&#x27; 기능으로 수천 편의 드라마·영화·라이브 스포츠 화면에 등장하는 제품을 곧바로 찾아 살 수 있게 했다. 스트리밍을 광고 매체이자 커머스 진입점으로 동시에 쓰는 구조로, 콘텐츠 시청 시간을 직접 매출로 환산하려는 시도다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Featured, Bloomberg, The Verge 다매체 보도</span>
+<a href="https://techcrunch.com/2026/09/10/amazon-makes-it-easier-to-buy-what-you-see-on-prime-video/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="17" data-card-title="Schools are catching on to Big Tech&#x27;s playbook" data-card-type="article" data-card-url="https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids" id="art-17">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Schools are catching on to Big Tech&#x27;s playbook</h3>
+<p class="article-title-kr">학교들이 빅테크의 수법을 간파하기 시작했다 — NYC·LA는 AI 제한으로 선회</p>
+<p class="article-summary">더버지는 AI 기업들이 학교에 들이미는 서사가 과거 코딩 교육 붐 때와 판박이라고 지적한다. &#x27;지금 뜨는 기술이고, 일자리가 여기 있고, 못 배우면 뒤처지며, 그래서 우리가 커리큘럼과 도구를 무상으로 제공하겠다&#x27;는 구조다. 실제 현장 반응은 반대로 움직이고 있어, 블룸버그에 따르면 뉴욕·LA와 몬테소리 계열 학교들이 학부모 우려 속에 기술 사용을 오히려 줄이고 있고 저기술 교실을 찾는 수요가 늘고 있다.</p>
+<div class="article-meta">
+<span class="source">The Verge Hero, Bloomberg 다매체 보도</span>
+<a href="https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="18" data-card-title="Meta Sued Over Training Data for Its AI and Face-Recognition Systems" data-card-type="article" data-card-url="https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/" id="art-18">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Meta Sued Over Training Data for Its AI and Face-Recognition Systems</h3>
+<p class="article-title-kr">메타, AI·얼굴인식 학습 데이터로 집단소송 피소 — 미공개 &#x27;NameTag&#x27; 지목</p>
+<p class="article-summary">메타가 페이스북·인스타그램 이용자 사진을 불법적으로 수집해 AI 이미지 생성 모델을 학습시키고, 공개되지 않은 얼굴인식 기능 &#x27;NameTag&#x27; 구축에 활용했다는 집단소송에 직면했다. 소장은 이용자 동의 범위를 벗어난 생체정보 활용을 문제 삼는다. 학습 데이터 출처를 둘러싼 분쟁이 저작권을 넘어 생체정보 영역으로 확장되는 흐름으로, 규제 리스크의 성격 자체가 달라지는 지점이다.</p>
+<div class="article-meta">
+<span class="source">Wired Featured</span>
+<a href="https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section ">
+<h2 class="section-title">🔧 하드웨어/반도체</h2>
+<article class="article-card jfnb-card" data-card-index="19" data-card-title="Arizona&#x27;s lifeline for chip manufacturing is drying up" data-card-type="article" data-card-url="https://www.theverge.com/science/993522/water-chip-semiconductor-manufacturing-colorado-river" id="art-19">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Arizona&#x27;s lifeline for chip manufacturing is drying up</h3>
+<p class="article-title-kr">애리조나 반도체 제조의 생명줄이 마르고 있다 — 콜로라도강 취수량 25% 감축</p>
+<p class="article-summary">미국 반도체 리쇼어링의 중심지인 애리조나가 콜로라도강에서 끌어오던 연간 취수량의 4분의 1 이상을 잃게 됐다. 최근 연방 결정에 따른 것으로, TSMC와 인텔의 대형 팹이 몰려 있는 지역이다. 첨단 팹은 초순수를 대량으로 소비하기 때문에 물 배분은 곧 증설 가능 여부의 문제가 된다. 보조금과 부지가 아니라 수자원이 미국 반도체 확장의 실질적 상한선으로 부상하고 있다.</p>
+<div class="article-meta">
+<span class="source">The Verge Hero</span>
+<a href="https://www.theverge.com/science/993522/water-chip-semiconductor-manufacturing-colorado-river" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="20" data-card-title="China&#x27;s Huawei branded a criminal enterprise as tech firm&#x27;s US trial opens" data-card-type="article" data-card-url="https://www.theguardian.com/technology/2026/sep/10/china-huawei-trial-us" id="art-20">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">China&#x27;s Huawei branded a criminal enterprise as tech firm&#x27;s US trial opens</h3>
+<p class="article-title-kr">화웨이 미국 형사재판 개시 — 검찰 &quot;범죄 조직&quot;, 변호인 &quot;경쟁이지 공모 아니다&quot;</p>
+<p class="article-summary">브루클린 연방법원에서 화웨이에 대한 형사재판이 시작됐다. 검찰은 화웨이가 미국 기업의 기술을 훔쳐 통신 제국을 세운 범죄 조직이라고 규정했고, 변호인은 &quot;이것은 경쟁의 문제이지 공모가 아니다&quot;라고 반박했다. 수년간 이어진 미·중 기술 갈등이 제재·수출통제를 넘어 법정 판결이라는 형태로 결론에 다가서는 국면으로, 결과는 중국 통신·반도체 기업 전반에 대한 미국의 대응 기조를 좌우할 전망이다.</p>
+<div class="article-meta">
+<span class="source">Guardian Tech</span>
+<a href="https://www.theguardian.com/technology/2026/sep/10/china-huawei-trial-us" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="21" data-card-title="The iPhone Duo enters China&#x27;s crowded foldable market — and faces a price test" data-card-type="article" data-card-url="https://www.cnbc.com/2026/09/11/the-iphone-duo-enters-chinas-crowded-foldable-market.html" id="art-21">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">The iPhone Duo enters China&#x27;s crowded foldable market — and faces a price test</h3>
+<p class="article-title-kr">iPhone Duo, 중국 폴더블 시장 진입 — 가격이 첫 시험대</p>
+<p class="article-summary">애플의 첫 폴더블 iPhone Duo가 이미 포화 상태인 중국 폴더블 시장에 진입했다. 중국 네티즌의 반응은 기능보다 가격에 집중됐는데, 샤오미와 화웨이의 더 저렴한 폴더블이 즉각적인 가성비 비교 대상이 되면서 초기 여론이 엇갈리고 있다. 한편 삼성은 애플 발표 시점에 맞춰 &#x27;팀 쿡&#x27;이라는 동명이인이 갤럭시 Z 폴드 8을 사는 광고를 내보내며 애플 제품 영상 문법을 그대로 패러디했다.</p>
+<div class="article-meta">
+<span class="source">CNBC Featured, The Verge, Bloomberg 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/09/11/the-iphone-duo-enters-chinas-crowded-foldable-market.html" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section picks-section">
+<h2 class="section-title">💎 Claude's Pick</h2>
+<article class="article-card jfnb-card" data-card-index="22" data-card-title="Google Earth&#x27;s AI experiment lasted 24 hours. The damage to trust will linger" data-card-type="article" data-card-url="https://restofworld.org/2026/google-earth-ai-deepfake-iran-war/" id="art-22">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Google Earth&#x27;s AI experiment lasted 24 hours. The damage to trust will linger</h3>
+<p class="article-title-kr">구글 어스의 AI 실험은 24시간 만에 끝났지만, 신뢰의 손상은 남는다</p>
+<p class="article-summary">구글 어스에 잠깐 도입됐던 생성형 AI 기능은 사용자가 가짜 위성사진을 만들 수 있게 했고, 하루 만에 철회됐다. 문제는 하필 이란 전쟁이 진행 중인 시점이었다는 점이다. 위성 이미지는 분쟁 보도에서 사실관계를 확정하는 마지막 증거로 쓰여왔는데, 그 기반이 24시간이나마 흔들린 사건이다. 기능은 사라져도 &#x27;위성사진도 조작 가능하다&#x27;는 인식은 남아, 이후의 모든 검증 비용을 끌어올린다.</p>
+<p class="pick-reason">선정 이유: Signal: 규제/신뢰 이슈의 초기 신호 + 대기업의 조용한 철회 / 관심사: AI 인프라, 데이터 신뢰성</p>
+<div class="article-meta">
+<span class="source">Rest of World Featured</span>
+<a href="https://restofworld.org/2026/google-earth-ai-deepfake-iran-war/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="23" data-card-title="AI agents are flooding public services with new requests" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/" id="art-23">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">AI agents are flooding public services with new requests</h3>
+<p class="article-title-kr">AI 에이전트가 공공 서비스에 신청을 쏟아붓고 있다</p>
+<p class="article-summary">복지·행정 서비스 창구에 AI 에이전트가 대신 작성·제출한 신청이 급증하고 있다. 흥미로운 대목은 성격이다. 연구자는 &quot;우리가 찾아낸 사례의 절대다수는 원래 받을 자격이 있는 사람이 그것을 신청한 것&quot;이라고 말한다. 즉 부정 청구가 아니라, 복잡한 절차 때문에 그동안 잠겨 있던 정당한 수급권이 에이전트를 통해 한꺼번에 풀려나오는 현상이다. 행정 시스템이 &#x27;신청 난이도&#x27;를 사실상 예산 통제 수단으로 써왔다는 사실이 드러나는 셈이다.</p>
+<p class="pick-reason">선정 이유: Signal: 규제/정책 변화의 초기 신호 + 아직 헤드라인 안 된 파급력 / 관심사: 데이터·자동화, AI 에이전트 실사용</p>
+<div class="article-meta">
+<span class="source">TechCrunch</span>
+<a href="https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card jfnb-card" data-card-index="24" data-card-title="India&#x27;s Pocket FM doubles revenue run rate to $500M as AI powers 93% of audio content" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/" id="art-24">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">India&#x27;s Pocket FM doubles revenue run rate to $500M as AI powers 93% of audio content</h3>
+<p class="article-title-kr">인도 포켓FM, 오디오 콘텐츠 93%를 AI로 만들며 연매출 런레이트 5억 달러</p>
+<p class="article-summary">인도의 오디오 시리즈 플랫폼 포켓FM이 연매출 런레이트를 5억 달러로 두 배 늘렸다. 신규 콘텐츠의 99%를 AI로 제작하며 제작비를 약 80분의 1로 낮춘 것이 동력이다. 생성형 AI가 &#x27;보조 도구&#x27;가 아니라 콘텐츠 산업의 원가 구조 자체를 바꾼 첫 대규모 흑자 사례에 가깝고, 그 무대가 실리콘밸리가 아니라 인도라는 점이 특히 눈에 띈다. 콘텐츠 제작 비용이 사실상 0에 수렴할 때 무엇이 경쟁력이 되는지를 보여주는 실험장이다.</p>
+<p class="pick-reason">선정 이유: Signal: 시장 규모 재정의 + 신생 사업모델의 수익성 증명 / 관심사: AI 자동화 경제성, 콘텐츠 제작 비용 구조</p>
+<div class="article-meta">
+<span class="source">TechCrunch</span>
+<a href="https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/" rel="noopener" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+</div>
+
+<footer class="reader-footer">
+<a href="../archive.html">← 아카이브로 돌아가기</a>
+<div class="footer-counter" id="visitor-counter-wrap" style="display:none;">
+    Today: <span class="counter-number" id="visitor-count-daily">0</span>
+      |  
+    Total: <span class="counter-number" id="visitor-count">0</span>
+</div>
+</footer>
+<script>
+(function(){
+  var API_BASE='https://abacus.jasoncameron.dev';
+  var NAMESPACE='hong4137-briefing';
+  var LS_KEY='jfnb-visited-date';
+  function getKstDate(){
+    return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);
+  }
+  function getKstDailyKey(){ return 'daily-'+getKstDate(); }
+  var todayStr=getKstDate();
+  var hasVisited=false;
+  try{ hasVisited=(localStorage.getItem(LS_KEY)===todayStr); }catch(e){}
+  var mode=hasVisited?'get':'hit';
+  var totalVal=null,dailyVal=null;
+  var wrap=document.getElementById('visitor-counter-wrap');
+  var sDly=document.getElementById('visitor-count-daily');
+  var sTot=document.getElementById('visitor-count');
+  function renderUI(){
+    if(!wrap||totalVal===null)return;
+    wrap.style.display='';
+    if(sTot)sTot.textContent=totalVal.toLocaleString();
+    if(sDly)sDly.textContent=dailyVal!==null?dailyVal.toLocaleString():'...';
+  }
+  fetch(API_BASE+'/'+mode+'/'+NAMESPACE+'/global')
+    .then(function(r){return r.ok?r.json():Promise.reject();})
+    .then(function(d){
+      var t=d.value!=null?d.value:d.count;
+      if(typeof t!=='number')return;
+      totalVal=t;
+      if(!hasVisited){try{localStorage.setItem(LS_KEY,todayStr);}catch(e){}}
+      renderUI();
+    })
+    .catch(function(){});
+  fetch(API_BASE+'/'+mode+'/'+NAMESPACE+'/'+getKstDailyKey())
+    .then(function(r){return r.ok?r.json():{value:0};})
+    .then(function(d){
+      var v=d.value!=null?d.value:d.count;
+      dailyVal=typeof v==='number'?v:0;
+      renderUI();
+    })
+    .catch(function(){dailyVal=0;renderUI();});
+})();
+</script></body>
+</html>
