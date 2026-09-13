@@ -1327,6 +1327,9 @@ GNB_HTML = """<nav class="reader-nav">
 </nav>"""
 
 FOOTER_HTML = """<footer class="reader-footer">
+  <div class="scroll-to-top-wrap">
+    <button type="button" class="scroll-to-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593; 맨 위로</button>
+  </div>
   <a href="../archive.html">&#8592; 아카이브로 돌아가기</a>
   <div class="footer-counter" id="visitor-counter-wrap" style="display:none;">
     Today:&nbsp;<span id="visitor-count-daily" class="counter-number">0</span>
