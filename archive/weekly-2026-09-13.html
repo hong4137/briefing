@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>애플 첫 폴더블 공개와 AI 업계 내부의 '감속' 요구 | 주간 외신 브리핑</title>
+<style>
+:root {
+  --bg: #0d1117; --bg-2: #161b22; --bg-3: #1c2333;
+  --bd: #2d3646; --tx: #e6edf3; --tx-2: #9aa7b8; --tx-3: #6e7c8f;
+  --ac: #58a6ff; --ac-2: #7ee787; --wn: #f0883e; --dn: #ff7b72;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--tx); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; line-height: 1.7; padding: 24px 16px 60px; }
+.wrap { max-width: 860px; margin: 0 auto; }
+header { border-bottom: 1px solid var(--bd); padding-bottom: 22px; margin-bottom: 30px; }
+header h1 { font-size: 1.6rem; letter-spacing: -0.5px; margin-bottom: 10px; }
+.hd-period { color: var(--ac); font-weight: 600; font-size: 0.95rem; }
+.hd-sub { color: var(--tx-3); font-size: 0.85rem; margin-top: 4px; }
+section { margin-bottom: 38px; }
+.sec-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--bd); flex-wrap: wrap; }
+.sec-head h2 { font-size: 1.15rem; }
+.sec-head .note { color: var(--tx-3); font-size: 0.8rem; }
+.market-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.market-item { background: var(--bg-2); border: 1px solid var(--bd); border-radius: 10px; padding: 12px 14px; }
+.mi-name { color: var(--tx-2); font-size: 0.78rem; }
+.mi-val { font-size: 1.05rem; font-weight: 700; margin: 3px 0; }
+.mi-chg { font-size: 0.85rem; font-weight: 600; }
+.mi-chg.up { color: var(--ac-2); }
+.mi-chg.down { color: var(--dn); }
+.mi-chg.flat { color: var(--tx-3); }
+.mi-asof { color: var(--tx-3); font-size: 0.72rem; margin-top: 2px; }
+.market-note { color: var(--tx-3); font-size: 0.8rem; margin-top: 12px; line-height: 1.6; }
+.market-read { background: var(--bg-2); border: 1px solid var(--bd); border-radius: 10px; padding: 14px 16px; margin-top: 14px; color: var(--tx-2); font-size: 0.88rem; }
+.cluster-card { background: var(--bg-2); border: 1px solid var(--bd); border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+.cluster-card h3 { font-size: 1.05rem; line-height: 1.5; margin-bottom: 12px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.badge { background: var(--bg-3); border: 1px solid var(--bd); color: var(--tx-2); font-size: 0.75rem; padding: 3px 9px; border-radius: 999px; }
+.badge.score { color: var(--ac); border-color: #294a75; }
+.timeline { border-left: 2px solid var(--bd); padding-left: 14px; }
+.timeline-item { display: flex; gap: 10px; padding: 5px 0; font-size: 0.87rem; align-items: baseline; }
+.tl-date { color: var(--ac); font-weight: 600; min-width: 42px; flex-shrink: 0; font-size: 0.8rem; }
+.tl-text { color: var(--tx-2); }
+.cur-status { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--bd); font-size: 0.87rem; color: var(--tx-2); }
+.cur-status strong { color: var(--tx); font-weight: 600; }
+.standalone-item { background: var(--bg-2); border: 1px solid var(--bd); border-left: 3px solid var(--wn); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.standalone-item h3 { font-size: 0.97rem; margin-bottom: 5px; }
+.standalone-item p { color: var(--tx-2); font-size: 0.85rem; }
+.pick-item { background: linear-gradient(180deg, var(--bg-3), var(--bg-2)); border: 1px solid #294a75; border-radius: 14px; padding: 20px; margin-bottom: 14px; }
+.pick-item h3 { font-size: 1.05rem; margin-bottom: 10px; color: var(--ac); }
+.pick-item p { color: var(--tx-2); font-size: 0.9rem; margin-bottom: 8px; }
+.pick-item p:last-child { margin-bottom: 0; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+.stat-item { background: var(--bg-2); border: 1px solid var(--bd); border-radius: 10px; padding: 14px; text-align: center; }
+.st-num { font-size: 1.25rem; font-weight: 700; color: var(--ac); }
+.st-lab { color: var(--tx-3); font-size: 0.75rem; margin-top: 3px; }
+.events-list { display: grid; gap: 8px; }
+.event-item { display: flex; gap: 14px; background: var(--bg-2); border: 1px solid var(--bd); border-radius: 10px; padding: 12px 14px; align-items: baseline; }
+.event-date { color: var(--ac); font-weight: 600; font-size: 0.82rem; min-width: 52px; flex-shrink: 0; }
+.event-text { font-size: 0.87rem; color: var(--tx-2); }
+footer { border-top: 1px solid var(--bd); padding-top: 18px; color: var(--tx-3); font-size: 0.8rem; text-align: center; }
+@media (max-width: 600px) {
+  body { padding: 18px 12px 44px; }
+  header h1 { font-size: 1.3rem; }
+  .timeline-item { flex-direction: column; gap: 2px; }
+  .event-item { flex-direction: column; gap: 3px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>📰 주간 외신 브리핑</h1>
+<div class="hd-period">2026년 9월 2주차 · 9/7(월) ~ 9/12(토)</div>
+<div class="hd-sub">누적 기사 수 × 보도 지속성 기준 TOP 스토리 · 총 148건 분석</div>
+</header>
+<main>
+
+<section class="market">
+<div class="sec-head"><h2>📊 주간 시장</h2><span class="note">직전 거래일 9/4 종가 대비 · 지표별 기준일 상이</span></div>
+<div class="market-grid">
+<div class="market-item"><div class="mi-name">S&amp;P 500</div><div class="mi-val">7,656.98</div><div class="mi-chg down">−0.80%</div><div class="mi-asof">9/4 → 9/11</div></div>
+<div class="market-item"><div class="mi-name">NASDAQ</div><div class="mi-val">26,333.04</div><div class="mi-chg down">−0.66%</div><div class="mi-asof">9/4 → 9/11</div></div>
+<div class="market-item"><div class="mi-name">SOX (반도체)</div><div class="mi-val">11,824.00</div><div class="mi-chg up">+0.76%</div><div class="mi-asof">9/4 → 9/11</div></div>
+<div class="market-item"><div class="mi-name">VIX</div><div class="mi-val">17.84</div><div class="mi-chg down">+16.60%</div><div class="mi-asof">9/4 → 9/10</div></div>
+<div class="market-item"><div class="mi-name">10년물 국채</div><div class="mi-val">4.95%</div><div class="mi-chg up">+0.17%p</div><div class="mi-asof">9/4 → 9/10</div></div>
+<div class="market-item"><div class="mi-name">2년물 국채</div><div class="mi-val">4.56%</div><div class="mi-chg up">+0.19%p</div><div class="mi-asof">9/4 → 9/10</div></div>
+<div class="market-item"><div class="mi-name">WTI 원유</div><div class="mi-val">$97.26</div><div class="mi-chg up">+4.93%</div><div class="mi-asof">9/4 → 9/9</div></div>
+</div>
+<div class="market-read">
+지수는 소폭 밀렸지만 필라델피아 반도체 지수만 홀로 올랐다. TSMC 8월 매출 사상 최대(+53%), 오라클 클라우드 인프라 매출 2배 이상, 혼하이 8월 매출 +52%가 한 주에 몰린 결과다. 반면 VIX가 16.6% 뛰고 2년물·10년물이 함께 오른 것은 위험 선호가 살아난 신호로 보기 어렵다. 국채 금리는 도매물가 지표 발표를 앞두고 다년 최고치를 찍었다. WTI는 5% 가까이 올라 97달러대에 진입했다.
+</div>
+<div class="market-note">
+※ 9/7은 미국 노동절 휴장이라 주간 시작 기준은 9/4 종가다. 지표별로 소스의 최종 데이터 날짜가 달라 각 항목에 기준일을 표기했다. USD/KRW·금·비트코인은 데이터 공백으로 제외했고, 달러인덱스(DXY)는 9/4 이후 갱신이 없어 이번 주 표에서 뺐다.
+</div>
+</section>
+
+<section class="top-stories">
+<div class="sec-head"><h2>📈 이번 주 TOP 스토리</h2><span class="note">기사 수 × 지속성 배수</span></div>
+
+<article class="cluster-card">
+<h3>1. 애플, 첫 폴더블 'iPhone Duo' 공개와 7년 만의 출시 주기 개편</h3>
+<div class="meta">
+<span class="badge">📰 13건</span><span class="badge">📅 6일간</span><span class="badge">🔥 지속</span><span class="badge">→ 유지</span><span class="badge">⏳ 진행중</span><span class="badge score">주간 점수 23.4</span>
+</div>
+<div class="timeline">
+<div class="timeline-item"><span class="tl-date">9/7</span><span class="tl-text">9/9 이벤트 프리뷰 — 폴더블·iPhone 18 Pro 예고. 필 실러 앱스토어 총괄 퇴임 배경 보도</span></div>
+<div class="timeline-item"><span class="tl-date">9/8</span><span class="tl-text">메모리 가격 급등이 아이폰 가격표로 전이 — '칩플레이션' 소비자 단계 진입</span></div>
+<div class="timeline-item"><span class="tl-date">9/9</span><span class="tl-text">샤오미·화웨이, 애플 폴더블을 앞질러 신제품 조기 공개</span></div>
+<div class="timeline-item"><span class="tl-date">9/10</span><span class="tl-text">iPhone Duo·iPhone 18 Pro·워치 시리즈 12·에어팟 5 공개. 터너스 "최고의 AI 기기는 여전히 아이폰"</span></div>
+<div class="timeline-item"><span class="tl-date">9/11</span><span class="tl-text">7년 만의 출시 주기 개편 — 터너스 CEO 첫 쇼케이스에서 확정</span></div>
+<div class="timeline-item"><span class="tl-date">9/12</span><span class="tl-text">iPhone Duo, 이미 붐비는 중국 폴더블 시장에서 가격 시험대에</span></div>
+</div>
+<div class="cur-status"><strong>📍 현재 상태 (9/13 기준)</strong> — 존 터너스 체제의 첫 제품 사이클이 공개까지 마무리됐고, 남은 변수는 가격과 중국 수요다. 메모리 원가 상승이 소비자 가격에 반영된 첫 세대라 초기 판매 데이터가 관건이다.</div>
+</article>
+
+<article class="cluster-card">
+<h3>2. AI 안전 경고와 '개발 감속' 요구가 개발사 내부에서 확산</h3>
+<div class="meta">
+<span class="badge">📰 7건</span><span class="badge">📅 5일간</span><span class="badge">🔥 지속</span><span class="badge">🔥 상승세</span><span class="badge">⏳ 진행중</span><span class="badge score">주간 점수 12.6</span>
+</div>
+<div class="timeline">
+<div class="timeline-item"><span class="tl-date">9/7</span><span class="tl-text">"통제 불능 AI 경고가 현실이 되고 있나" — 임계선 근접 주장 확산</span></div>
+<div class="timeline-item"><span class="tl-date">9/8</span><span class="tl-text">OpenAI 수석과학자 "그 결과에 아무도 준비돼 있지 않다"</span></div>
+<div class="timeline-item"><span class="tl-date">9/10</span><span class="tl-text">앤스로픽 연구원 사임, 10년 내 인류 절멸 가능성 경고. 코어위브 CEO는 반발을 "변화 속도 탓"으로</span></div>
+<div class="timeline-item"><span class="tl-date">9/11</span><span class="tl-text">OpenAI 이사회 멤버 "통제 상실 리스크 감축 궤도에서 벗어나 있다"</span></div>
+<div class="timeline-item"><span class="tl-date">9/12</span><span class="tl-text">알트먼, 내부에 "최전선 AI 감속 용의". 트럼프는 절멸 리스크 일축, 내부자 12명 이상은 감속 요구</span></div>
+</div>
+<div class="cur-status"><strong>📍 현재 상태 (9/13 기준)</strong> — 경고의 진원지가 외부 비평가에서 개발사 내부(수석과학자·이사회·현직 연구원)로 옮겨왔다. 알트먼의 '감속 용의' 발언이 실제 출시 일정에 반영될지가 다음 확인 지점이다.</div>
+</article>
+
+<article class="cluster-card">
+<h3>3. AI 생성 콘텐츠의 신뢰 붕괴가 공공·사법 영역으로 번짐</h3>
+<div class="meta">
+<span class="badge">📰 7건</span><span class="badge">📅 5일간</span><span class="badge">🔥 지속</span><span class="badge">🔥 상승세</span><span class="badge">⏳ 진행중</span><span class="badge score">주간 점수 12.6</span>
+</div>
+<div class="timeline">
+<div class="timeline-item"><span class="tl-date">9/7</span><span class="tl-text">조악한 AI 음식 사진은 시작에 불과하다는 진단</span></div>
+<div class="timeline-item"><span class="tl-date">9/9</span><span class="tl-text">생성형 AI로 제작된 '슬롭 지하드' 선전물 확산. 백악관, 인종차별 논란 테트리스 클론 게임 철회</span></div>
+<div class="timeline-item"><span class="tl-date">9/10</span><span class="tl-text">백악관 게임 철회 후속 (재보도)</span></div>
+<div class="timeline-item"><span class="tl-date">9/11</span><span class="tl-text">구글어스 AI 실험 24시간 만에 종료 — 신뢰 손상은 남는다</span></div>
+<div class="timeline-item"><span class="tl-date">9/12</span><span class="tl-text">뉴멕시코 변호사, 허위 경찰 증언이 담긴 AI 작성 서면으로 벌금. 구글어스 후속 (재보도)</span></div>
+</div>
+<div class="cur-status"><strong>📍 현재 상태 (9/13 기준)</strong> — 오류가 소비재(사진·게임)에서 공공 서비스(지도)와 사법 절차(법정 서면)로 옮겨붙었다. 구글어스 사례는 롤백은 하루면 가능해도 신뢰는 그렇지 않다는 점을 보여준다.</div>
+</article>
+
+<article class="cluster-card">
+<h3>4. 화웨이의 AI 칩 약진과 미국 형사재판 개시</h3>
+<div class="meta">
+<span class="badge">📰 6건</span><span class="badge">📅 4일간</span><span class="badge">📈 관심</span><span class="badge">🔥 상승세</span><span class="badge">⏳ 진행중</span><span class="badge score">주간 점수 6.0</span>
+</div>
+<div class="timeline">
+<div class="timeline-item"><span class="tl-date">9/7</span><span class="tl-text">화웨이 '타우 스케일링 법칙' 칩, 발열 장벽 극복 논문 공개</span></div>
+<div class="timeline-item"><span class="tl-date">9/8</span><span class="tl-text">말레이시아, 미국 경고에도 국가 AI 프로젝트에 화웨이 칩 검토</span></div>
+<div class="timeline-item"><span class="tl-date">9/11</span><span class="tl-text">미국, 화웨이를 '범죄 집단'으로 규정하며 재판 개시. 고속 광모듈로 AI 병목 돌파 주장. 최상급 AI 칩 가격을 여름 동안 60% 인상</span></div>
+<div class="timeline-item"><span class="tl-date">9/12</span><span class="tl-text">화웨이 형사재판 후속 (재보도)</span></div>
+</div>
+<div class="cur-status"><strong>📍 현재 상태 (9/13 기준)</strong> — 제품 경쟁력과 법적 압박이 같은 주에 동시에 커졌다. 60% 가격 인상을 관철했다는 사실 자체가 중국 내 대체재 부족을 보여주는 신호다.</div>
+</article>
+
+<article class="cluster-card">
+<h3>5. 빅테크 AI 인프라 투자 재가속 — 오라클 실적이 방아쇠</h3>
+<div class="meta">
+<span class="badge">📰 5건</span><span class="badge">📅 4일간</span><span class="badge">📈 관심</span><span class="badge">🔥 상승세</span><span class="badge">⏳ 진행중</span><span class="badge score">주간 점수 5.0</span>
+</div>
+<div class="timeline">
+<div class="timeline-item"><span class="tl-date">9/9</span><span class="tl-text">퀄컴, AI 인프라 계약의 일부로 아마존에 40억달러 규모 주식 워런트 발행</span></div>
+<div class="timeline-item"><span class="tl-date">9/10</span><span class="tl-text">구글, '유럽의 텍사스'에 150억달러 사상 최대 AI 인프라 투자</span></div>
+<div class="timeline-item"><span class="tl-date">9/11</span><span class="tl-text">오라클, 클라우드 인프라 매출 2배 이상 — 주가 7% 급등. 마이크로소프트는 연산 능력 3배 확대 계획</span></div>
+<div class="timeline-item"><span class="tl-date">9/12</span><span class="tl-text">마이크로소프트 데이터센터 계획 후속 (재보도)</span></div>
+</div>
+<div class="cur-status"><strong>📍 현재 상태 (9/13 기준)</strong> — 오라클 실적이 "AI 수요는 실재한다"는 증거로 소비되며 투자 발표가 연쇄됐다. 워런트·부채를 동원한 자금 조달 구조가 다음 검증 대상이다.</div>
+</article>
+
+<article class="cluster-card">
+<h3>6. AI 데이터센터 확장이 남기는 사회적 청구서</h3>
+<div class="meta">
+<span class="badge">📰 4건</span><span class="badge">📅 4일간</span><span class="badge">📈 관심</span><span class="badge">📉 하락세</span><span class="badge">⏳ 진행중</span><span class="badge score">주간 점수 4.0</span>
+</div>
+<div class="timeline">
+<div class="timeline-item"><span class="tl-date">9/7</span><span class="tl-text">인도 데이터센터 붐, 밀려난 주민들에게 남은 것은 없다</span></div>
+<div class="timeline-item"><span class="tl-date">9/8</span><span class="tl-text">데이터센터 옹호론이 끝내 놓지 못하는 '중국 위협론'</span></div>
+<div class="timeline-item"><span class="tl-date">9/9</span><span class="tl-text">32억달러 규모 AI 데이터센터 뒤에 얽힌 복잡한 기업 지배구조</span></div>
+<div class="timeline-item"><span class="tl-date">9/10</span><span class="tl-text">영국 싱크탱크 "데이터센터 고용 창출, 업계 전망에 못 미친다"</span></div>
+</div>
+<div class="cur-status"><strong>📍 현재 상태 (9/13 기준)</strong> — 투자 규모 발표는 빠르게 늘고 있지만 지역 편익 검증은 아직 초기 단계다. 5번 클러스터의 이면이다.</div>
+</article>
+
+<article class="cluster-card">
+<h3>7. AI 수요가 만든 반도체 실적 신기록</h3>
+<div class="meta">
+<span class="badge">📰 4건</span><span class="badge">📅 4일간</span><span class="badge">📈 관심</span><span class="badge">→ 유지</span><span class="badge">📋 모니터링</span><span class="badge score">주간 점수 4.0</span>
+</div>
+<div class="timeline">
+<div class="timeline-item"><span class="tl-date">9/7</span><span class="tl-text">엔비디아 파트너 혼하이, AI 서버 힘입어 8월 매출 52% 증가</span></div>
+<div class="timeline-item"><span class="tl-date">9/9</span><span class="tl-text">TSMC·삼성, ASML 최신 노광 장비 도입 확정</span></div>
+<div class="timeline-item"><span class="tl-date">9/11</span><span class="tl-text">TSMC 8월 매출 53% 증가 사상 최대</span></div>
+<div class="timeline-item"><span class="tl-date">9/12</span><span class="tl-text">젠슨 황, 내년 70% 성장 전망의 근거 설명</span></div>
+</div>
+<div class="cur-status"><strong>📍 현재 상태 (9/13 기준)</strong> — 분기 실적보다 월별 매출이 먼저 수요를 확인시켜주는 구조가 이어지고 있다. SOX가 지수 하락장에서 홀로 오른 배경이다.</div>
+</article>
+
+<article class="cluster-card">
+<h3>8. 테슬라 사이버캡 출시와 로보택시 여론 역풍</h3>
+<div class="meta">
+<span class="badge">📰 4건</span><span class="badge">📅 2일간</span><span class="badge">📈 관심</span><span class="badge">📉 하락세</span><span class="badge">📋 모니터링</span><span class="badge score">주간 점수 4.0</span>
+</div>
+<div class="timeline">
+<div class="timeline-item"><span class="tl-date">9/7</span><span class="tl-text">사이버캡 업데이트가 월가를 실망시키며 테슬라 주가 6% 하락. "로보택시가 악당이 되는 시기" 진단. 캘러닉의 Atoms도 로보택시 진출 검토</span></div>
+<div class="timeline-item"><span class="tl-date">9/10</span><span class="tl-text">핸들 없는 사이버캡 1시간 탑승기</span></div>
+</div>
+<div class="cur-status"><strong>📍 현재 상태 (9/13 기준)</strong> — 지난주 NHTSA 조사 착수 이후 시장 반응과 여론이 함께 식었다. 보도는 주 후반 급감했다.</div>
+</article>
+
+<article class="cluster-card">
+<h3>9. 메타, 규제·소송 리스크가 세 갈래로 동시에</h3>
+<div class="meta">
+<span class="badge">📰 4건</span><span class="badge">📅 3일간</span><span class="badge">📈 관심</span><span class="badge">→ 유지</span><span class="badge">⏳ 진행중</span><span class="badge score">주간 점수 4.0</span>
+</div>
+<div class="timeline">
+<div class="timeline-item"><span class="tl-date">9/9</span><span class="tl-text">AI 아동 학대 광고 수백 건 차단 실패 — 실제 아동 이미지 포함. 미 경찰은 메타 스마트글래스의 몰래 촬영 우려 제기</span></div>
+<div class="timeline-item"><span class="tl-date">9/10</span><span class="tl-text">스마트글래스 촬영 우려 후속 (재보도)</span></div>
+<div class="timeline-item"><span class="tl-date">9/12</span><span class="tl-text">AI·얼굴인식 시스템 학습 데이터를 두고 피소</span></div>
+</div>
+<div class="cur-status"><strong>📍 현재 상태 (9/13 기준)</strong> — 콘텐츠 심사, 하드웨어 프라이버시, 학습데이터 세 전선이 동시에 열렸다. 같은 주에 개인 AI 에이전트 'Muse'가 미국 앱 2위에 오른 것과 대비된다.</div>
+</article>
+
+<article class="cluster-card">
+<h3>10. 앤스로픽을 둘러싼 합의금 배분·집단소송·이해충돌 논란</h3>
+<div class="meta">
+<span class="badge">📰 4건</span><span class="badge">📅 3일간</span><span class="badge">📈 관심</span><span class="badge">📉 하락세</span><span class="badge">⏳ 진행중</span><span class="badge score">주간 점수 4.0</span>
+</div>
+<div class="timeline">
+<div class="timeline-item"><span class="tl-date">9/7</span><span class="tl-text">저작권 합의금 배분을 두고 저자들이 출판사·에이전트의 권리 주장에 반발</span></div>
+<div class="timeline-item"><span class="tl-date">9/8</span><span class="tl-text">합의금 분쟁 후속 (재보도)</span></div>
+<div class="timeline-item"><span class="tl-date">9/9</span><span class="tl-text">헤비 유저를 오도했는지 다투는 집단소송 제기. 영국 AI 정책 설계자는 이해충돌 논란으로 사임</span></div>
+</div>
+<div class="cur-status"><strong>📍 현재 상태 (9/13 기준)</strong> — 합의금 배분 분쟁과 신규 집단소송이 병행 중이다. 주 후반에는 중국 AI 랩 증류 폭로가 이 회사 관련 보도의 중심을 옮겼다.</div>
+</article>
+
+</section>
+
+<section class="standalone">
+<div class="sec-head"><h2>🎯 단독 하이라이트</h2><span class="note">클러스터를 이루지 않았지만 주목할 기사</span></div>
+
+<div class="standalone-item">
+<h3>미로(Miro), 2022년 밸류에이션 대비 90% 낮은 13.6억달러에 매각</h3>
+<p>벤딩스푼스가 협업 툴 미로를 인수한다. 2022년 정점 대비 90% 낮은 가격으로, SaaS 밸류에이션 조정의 규모를 보여주는 거래다. (9/12)</p>
+</div>
+
+<div class="standalone-item">
+<h3>보링컴퍼니, UAE 주도로 30억달러 조달 — 밸류에이션 230억달러</h3>
+<p>일론 머스크의 터널 회사가 중동으로 확장 축을 옮겼다. 미국 밖 국부펀드가 인프라 스타트업 자금줄이 되는 흐름의 사례다. (9/11~9/12)</p>
+</div>
+
+<div class="standalone-item">
+<h3>오토매틱 이사회, 맷 뮬렌웨그 CEO 강제 휴직 — 이틀 뒤 "내가 다시 통제권을 쥐었다"</h3>
+<p>워드프레스 모회사의 지배구조 충돌이 공개적으로 번졌다. 창업자 통제권과 이사회 권한이 정면으로 부딪친 사례다. (9/10, 9/12)</p>
+</div>
+
+<div class="standalone-item">
+<h3>유럽, 첫 완전 상업용 궤도 로켓 발사 성공</h3>
+<p>독일 기업이 유럽 최초로 완전 상업 궤도 발사를 해냈다. 유럽 발사체 자립 논의의 전환점이다. (9/7~9/8)</p>
+</div>
+
+<div class="standalone-item">
+<h3>수노(Suno), 라이선스 음원으로 학습한 새 모델로 전면 교체</h3>
+<p>저작권 소송이 쌓이는 가운데 기존 모델을 통째로 갈아치웠다. 생성 AI 업계에서 학습 데이터 소급 정리가 실제로 실행된 첫 사례급이다. (9/12)</p>
+</div>
+
+<div class="standalone-item">
+<h3>OpenAI, 아스트라 수요 폭주로 Pro 구독 신규 가입 중단</h3>
+<p>GPT-6 아스트라 수요가 공급을 넘어섰다. 5번 클러스터의 인프라 투자 경쟁이 왜 벌어지는지 보여주는 수요 측 증거다. (9/12)</p>
+</div>
+
+<div class="standalone-item">
+<h3>나스닥, 크라켄 모회사에 1억달러 투자 — 2027년 토큰화 주식 거래 목표</h3>
+<p>같은 주 로빈후드 CEO는 "기업이 자사 주식의 토큰화 방식을 통제할 수 없다"며 AMC와 충돌했다. 제도권 거래소가 토큰화에 직접 들어왔다. (9/11)</p>
+</div>
+
+<div class="standalone-item">
+<h3>OECD "AI를 쓰는 학생일수록 시험 점수가 낮다"</h3>
+<p>학교 현장의 AI 도입 효과에 대한 첫 대규모 반증 데이터다. 같은 주 "학교가 빅테크의 각본을 눈치채기 시작했다"는 보도도 나왔다. (9/10)</p>
+</div>
+
+</section>
+
+<section class="picks">
+<div class="sec-head"><h2>💡 Claude's Pick</h2><span class="note">기사 수와 무관하게 함의가 큰 두 건</span></div>
+
+<div class="pick-item">
+<h3>🔮 유출된 것은 가중치가 아니라 '대화'였다</h3>
+<p>앤스로픽은 위협 인텔리전스 보고서에서 알리바바·문샷·딥시크가 수백만 건의 Claude 대화를 몰래 수집해 자사 모델 학습에 썼다고 밝혔다. 같은 보고서에는 예멘 무장세력의 미사일 개발 시도와 생물무기 관련 오남용 시도도 담겼다. 보도 이틀차라 TOP 스토리에는 들지 않았지만 함의는 이번 주 가장 크다.</p>
+<p>모델 보안 논의는 그동안 가중치 탈취를 전제로 설계돼 왔다. 그런데 실제 유출 경로는 공개 API를 통한 정상 대화였다. 방어선이 '접근 차단'에서 '약관과 탐지'로 옮겨간다는 뜻이고, 이는 미·중 AI 격차를 계산해온 전제 자체를 흔든다. 격차가 칩과 데이터센터로만 벌어지는 것이 아니라면, 4번 클러스터(화웨이)의 수출 통제 논쟁도 다시 짜야 한다.</p>
+</div>
+
+<div class="pick-item">
+<h3>🔮 AI의 과학적 성과를 누가 검증하는가 — 나비에-스토크스 88시간</h3>
+<p>OpenAI는 90년 묵은 나비에-스토크스 문제를 88시간 만에 풀었다고 주장했고, 곧바로 학계 반박이 나왔다. NYU 수학자는 경력을 좌우할 문제를 두고 부당하게 굴었다고 공개 비판했다.</p>
+<p>쟁점은 정답 여부가 아니라 절차다. 논문 심사·재현·우선권 확인이라는 학계의 검증 장치는 몇 달 단위로 움직이는데, 기업 발표는 하루 단위로 나간다. 검증되기 전에 서사가 굳는다. 3번 클러스터(AI 생성물 신뢰 붕괴)와 뿌리가 같은 문제이고, 과학 영역에서 벌어진다는 점에서 더 무겁다.</p>
+</div>
+
+</section>
+
+<section class="weekly-stats">
+<div class="sec-head"><h2>📊 주간 통계</h2></div>
+<div class="stat-grid">
+<div class="stat-item"><div class="st-num">148</div><div class="st-lab">분석 기사</div></div>
+<div class="stat-item"><div class="st-num">18</div><div class="st-lab">스토리 블록</div></div>
+<div class="stat-item"><div class="st-num">3</div><div class="st-lab">🔥 지속 스토리</div></div>
+<div class="stat-item"><div class="st-num">4</div><div class="st-lab">🔥 상승세</div></div>
+<div class="stat-item"><div class="st-num">3</div><div class="st-lab">📉 하락세</div></div>
+<div class="stat-item"><div class="st-num">8</div><div class="st-lab">⏳ 진행중</div></div>
+</div>
+</section>
+
+<section class="events-section">
+<div class="sec-head"><h2>📅 다음 주 관전 포인트</h2><span class="note">확정 일정 정보 미확인 — 수집 기사 기반</span></div>
+<div class="events-list">
+<div class="event-item"><div class="event-date">주중</div><div class="event-text">iPhone Duo 실판매 개시와 중국 시장 초기 반응 — 메모리 원가가 반영된 가격이 첫 시험대</div></div>
+<div class="event-item"><div class="event-date">진행</div><div class="event-text">화웨이 미국 형사재판 — '범죄 집단' 규정에 대한 공판 진행</div></div>
+<div class="event-item"><div class="event-date">진행</div><div class="event-text">딥시크 상하이 과창판 IPO — CITIC 등 주관사 선정 이후 절차</div></div>
+<div class="event-item"><div class="event-date">진행</div><div class="event-text">앤스로픽 저작권 합의금 배분 분쟁과 신규 집단소송</div></div>
+<div class="event-item"><div class="event-date">진행</div><div class="event-text">영국의 애플·구글 아동 나체 이미지 차단 의무화 — 기한 도과 이후 조치</div></div>
+<div class="event-item"><div class="event-date">주시</div><div class="event-text">알트먼의 '감속 용의' 발언이 아스트라 배포·Pro 구독 재개 일정에 반영되는지</div></div>
+</div>
+<div class="market-note">※ FOMC·경제지표·실적 발표 등 확정 일정은 이번 호에서 확인하지 못했습니다. 일정이 공유되면 다음 호에 반영합니다.</div>
+</section>
+
+</main>
+<footer>
+<p>Generated by Claude | Weekly Briefing v1.8 | 2026-09-13</p>
+</footer>
+</div>
+</body>
+</html>
