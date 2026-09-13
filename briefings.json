@@ -13969,6 +13969,37 @@
           "thumb_category": "chip"
         }
       ]
+    },
+    {
+      "date": "weekly-2026-09-13",
+      "week": "2026-W37",
+      "title": "애플 첫 폴더블 공개와 AI 업계 내부의 '감속' 요구",
+      "summary": "애플이 첫 폴더블 iPhone Duo를 공개하고 7년 만에 출시 주기를 바꿨다. 같은 주 OpenAI 수석과학자·이사회 멤버·앤스로픽 연구원이 잇달아 AI 개발 감속을 요구했고, 알트먼도 내부에 감속 용의를 밝혔다. 구글어스 AI 실험 철회와 AI 작성 법정 서면 벌금 등 생성물 신뢰 문제도 공공·사법 영역으로 번졌다.",
+      "period": "2026-09-07 ~ 2026-09-12",
+      "stats": {
+        "clusters": 18
+      },
+      "hero_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Smartphone apps screen dark display",
+      "hero_credit_name": "Adem AY",
+      "hero_credit_url": "https://unsplash.com/photos/1504868584819-f8e8b4b6d7e3",
+      "hero_source": "entity:apple",
+      "thumb_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Smartphone apps screen dark display",
+      "thumb_category": "entity:apple",
+      "card_count": 20,
+      "segments": [
+        {
+          "title": "애플 첫 폴더블 공개와 AI 업계 내부의 '감속' 요구",
+          "summary": "애플이 첫 폴더블 iPhone Duo를 공개하고 7년 만에 출시 주기를 바꿨다. 같은 주 OpenAI 수석과학자·이사회 멤버·앤스로픽 연구원이 잇달아 AI 개발 감속을 요구했고, 알트먼도 내부에 감속 용의를 밝혔다. 구글어스 AI 실험 철회와 AI 작성 법정 서면 벌금 등 생성물 신뢰 문제도 공공·사법 영역으로 번졌다..",
+          "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Premium laptop display Apple-style aesthetic",
+          "thumb_category": "entity:apple"
+        }
+      ]
     }
   ],
   "specials": [
@@ -13981,15 +14012,15 @@
         "articles": 20,
         "sections": 6
       },
-      "hero_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Premium laptop display dark setup",
-      "hero_credit_name": "Ales Nesetril",
-      "hero_credit_url": "https://unsplash.com/photos/1531297484001-80022131f5a1",
+      "hero_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Data marketing multi-screen dashboard display",
+      "hero_credit_name": "Luke Chesser",
+      "hero_credit_url": "https://unsplash.com/photos/1562577309-4932fdd64cd1",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Premium laptop display dark setup",
+      "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Data marketing multi-screen dashboard display",
       "thumb_category": "ai",
       "card_count": 18,
       "segments": [
@@ -14012,24 +14043,24 @@
         "articles": 13,
         "sections": 4
       },
-      "hero_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Data marketing multi-screen dashboard display",
-      "hero_credit_name": "Luke Chesser",
-      "hero_credit_url": "https://unsplash.com/photos/1562577309-4932fdd64cd1",
+      "hero_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Abstract semiconductor lattice grid",
+      "hero_credit_name": "Laura Ockel",
+      "hero_credit_url": "https://unsplash.com/photos/1591453089816-0fbb971b454c",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Data marketing multi-screen dashboard display",
+      "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Abstract semiconductor lattice grid",
       "thumb_category": "ai",
       "card_count": 12,
       "segments": [
         {
           "title": "다보스 2026: AI 인프라 대전환과 미중 기술패권 경쟁",
           "summary": "트럼프 3주 원전 승인, 젠슨 황 AI 5층 케이크. 다보스 포럼 AI 핵심 발언 총정리..",
-          "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Abstract semiconductor lattice grid",
+          "thumb_url": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Fiber optic cables in server rack",
           "thumb_category": "ai"
         }
       ]
@@ -14058,17 +14089,17 @@
         {
           "title": "이란전쟁 33일 — 종전 임박인가, 장기전인가",
           "summary": "Operation Epic Fury 개전 33일. 호르무즈 봉쇄로 글로벌 원유 공급 20% 차단.",
-          "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Aerial view of city lights glowing at night",
+          "thumb_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Laptop displaying code in dark environment",
           "thumb_category": "default"
         },
         {
           "title": "세계 경제 충격파 분석",
           "summary": "트럼프 2~3주 내 철수 시사 vs 이란 6개월 전쟁 준비. 5대 경제 충격파와 테크 산업 영향, 한국 경제 분석..",
-          "thumb_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Laptop displaying code in dark environment",
+          "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Aerial view of city lights glowing at night",
           "thumb_category": "default"
         }
       ]
