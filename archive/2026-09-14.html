@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>앤스로픽 CEO 'AI 감속' 3단계 계획, 올트먼·머스크 동조 | 앤스로픽 나스닥 상장 낙점 | Jae's Briefing</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 9월 14일 월요일</div>
+            <h1 class="title">앤스로픽 CEO &#x27;AI 감속&#x27; 3단계 계획 | 엘리슨 75억달러 매도 철회 | 앤스로픽 나스닥 상장 낙점</h1>
+            <p class="summary">주말 사이 AI 업계의 무게중심이 &#x27;속도 경쟁&#x27;에서 &#x27;속도 조절&#x27;로 흔들렸습니다. 다리오 아모데이가 3단계 감속안을 내놓자 샘 올트먼과 일론 머스크가 이례적으로 동조했고, 워싱턴은 중간선거 전 마지막 입법 창구를 놓고 분주합니다. 동시에 앤스로픽은 10월 나스닥 상장을 낙점하고 OpenAI는 연내 IPO를 접었습니다.</p>
+        </header>
+
+    <section class="section top-section">
+        <h2 class="section-title">🔥 TOP Headlines</h2>
+        <article class="article-card">
+            <span class="badge badge-update">UPDATE</span>
+            <h3 class="article-title">‘We must slow the pace’: CEO of Anthropic calls for an AI slowdown</h3>
+            <p class="article-title-kr">아모데이 &quot;프런티어의 속도를 조절해야&quot; — 3단계 감속안에 올트먼·머스크도 동조</p>
+            <p class="article-summary">다리오 아모데이 앤스로픽 CEO가 토요일 소셜미디어 게시글을 통해 AI 개발 속도를 늦추자는 3단계 계획을 내놨습니다. 제3자 외부 평가 도입이 핵심이며, 앤스로픽은 업계 합의가 없더라도 &#x27;일방적으로&#x27; 이를 지키겠다고 밝혔습니다. 다음 날 샘 올트먼과 일론 머스크가 &#x27;무모한(reckless) 개발&#x27;에 제동을 걸자는 데 공개 동조하면서, 경쟁 관계인 개발사 수장들이 한목소리를 낸 이례적 장면이 연출됐습니다. 다만 가디언의 후속 분석에서는 &#x27;너무 늦었고 너무 적다&#x27;는 비판과 함께, 이미 선두를 잡은 기업이 사다리를 걷어차려는 것 아니냐는 의심도 함께 제기됐습니다. 지난주 내부자 서한·올트먼의 사내 발언에서 이어진 흐름이 CEO 본인의 구체적 계획으로 확정된 국면입니다.</p>
+            <div class="article-meta">
+                <span class="source">Guardian Hero, BBC, CNBC, TechCrunch, Bloomberg, The Verge 다매체 보도</span>
+                <a href="https://www.theguardian.com/technology/2026/sep/12/we-must-slow-the-pace-ceo-of-anthropic-calls-for-an-ai-slowdown" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <span class="badge badge-hot">HOT</span>
+            <h3 class="article-title">Larry Ellison nixes plan to offload up to $7.5 billion worth of Oracle stock</h3>
+            <p class="article-title-kr">래리 엘리슨, 75억달러 규모 오라클 주식 매각 계획 전격 철회</p>
+            <p class="article-summary">오라클 창업자 래리 엘리슨이 최대 75억달러(약 5,000만주) 규모의 자사주 매각 계획을 취소했습니다. 해당 10b5-1 거래계획은 불과 하루 전인 9월 11일 공시됐던 것으로, 오라클이 클라우드 인프라 매출 급증에 힘입어 실적 서프라이즈를 낸 직후여서 &#x27;고점 매도&#x27; 신호로 읽히며 시장의 경계심을 자극했습니다. 창업자 지분 매각은 AI 인프라 랠리의 지속성을 가늠하는 대표적 수급 신호인 만큼, 계획 자체를 하루 만에 접은 배경에 관심이 쏠립니다.</p>
+            <div class="article-meta">
+                <span class="source">CNBC Featured, TechCrunch, Bloomberg 다매체 보도</span>
+                <a href="https://www.cnbc.com/2026/09/12/larry-ellison-nixes-plan-to-offload-up-to-7point5-billion-worth-of-oracle-stock-.html" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <span class="badge badge-hot">HOT</span>
+            <h3 class="article-title">OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026</h3>
+            <p class="article-title-kr">올트먼 &quot;2026년 상장은 부적절&quot; — OpenAI, 연내 IPO 접었다</p>
+            <p class="article-summary">샘 올트먼이 포춘과의 45분 인터뷰에서 OpenAI의 연내 기업공개는 &#x27;현명하지 못한 선택&#x27;이라고 밝혔습니다. OpenAI는 이미 비공개로 IPO를 신청해 둔 상태지만, 안전 문제를 이유로 시점을 미루겠다는 것입니다. 인터뷰에서는 허깅페이스 해킹 사건, 재귀적 자기개선, 인간 통제를 벗어난 AI의 가능성까지 폭넓게 다뤄졌습니다. 같은 주말 앤스로픽이 10월 나스닥 상장을 준비 중이라는 보도가 나오면서, 양대 AI 랩의 자본시장 전략이 정반대로 갈리는 모습입니다.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch Featured, Bloomberg, The Verge, Guardian 다매체 보도</span>
+                <a href="https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <span class="badge badge-breaking">BREAKING</span>
+            <h3 class="article-title">Anthropic Said to Choose Nasdaq for Much-Anticipated IPO</h3>
+            <p class="article-title-kr">앤스로픽, 나스닥 낙점 — 10월 상장 추진에 분기 영업흑자 전망까지</p>
+            <p class="article-summary">앤스로픽이 상장 거래소로 나스닥을 택했다고 비즈니스인사이더가 먼저 보도하고 로이터·블룸버그가 뒤이어 확인했습니다. 이르면 10월 상장을 목표로 하며, 조달 규모는 올해 상장한 스페이스X에 필적하거나 그 이상이 거론됩니다. 앤스로픽이 공식 확인한 것은 6월 1일 SEC에 비공개 S-1 초안을 제출했다는 사실뿐이고, 밸류에이션·주식 수·티커는 모두 관계자 발언 단계입니다. 여기에 FT는 앤스로픽이 소수 주주들에게 이번 분기 조정 영업이익 흑자를 예고했다고 전했습니다. 흑자가 확정되면 2개 분기 연속입니다. 나스닥 상장은 나스닥100 편입의 전제 조건이라는 점에서 패시브 자금 유입까지 염두에 둔 선택으로 해석됩니다.</p>
+            <div class="article-meta">
+                <span class="source">Bloomberg, Business Insider, Reuters, TNW 다매체 보도</span>
+                <a href="https://www.bloomberg.com/news/articles/2026-09-13/anthropic-said-to-choose-nasdaq-for-much-anticipated-ipo-listing" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section ">
+        <h2 class="section-title">🤖 AI/기술</h2>
+        <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Washington scrambles to meet calls for AI guardrails while the window to act closes</h3>
+            <p class="article-title-kr">중간선거 전 마지막 입법 창구 — 워싱턴, AI 규제 놓고 시간에 쫓기다</p>
+            <p class="article-summary">업계 내부에서 감속 요구가 터져 나오자 의회가 급하게 움직이고 있지만, 하원은 며칠 안에 11월 중간선거 휴회에 들어갑니다. 어떤 형태로든 AI 규제법을 통과시킬 물리적 시간이 사실상 몇 일뿐이라는 뜻입니다. 민주당 원내대표 제프리스는 화요일 AI 대응 회의를 소집했고, 공화당 존슨 하원의장은 입법에 앞서 AI 기업 수장들과 먼저 만나겠다는 입장입니다. 업계의 자율 규제 선언이 실제 법제화로 이어질지 가르는 분수령입니다.</p>
+            <div class="article-meta">
+                <span class="source">CNBC Hero</span>
+                <a href="https://www.cnbc.com/2026/09/13/ai-congress-anthropic-openai-crisis.html" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Trump downplays AI development checks, says unwilling to cede edge to China</h3>
+            <p class="article-title-kr">트럼프 &quot;중국에 우위를 내줄 수 없다&quot; — 감속론에 선 긋기</p>
+            <p class="article-summary">업계 수장들이 감속을 외치는 사이 트럼프 대통령은 AI 개발에 제동을 걸 필요성을 일축했습니다. 미국이 중국을 앞서고 있는 상황에서 그 우위를 포기할 생각이 없다는 것이 핵심 논리입니다. 블룸버그도 같은 취지의 발언을 별도로 전했습니다. 아모데이 스스로 &quot;중국이 가장 어려운 딜레마&quot;라고 인정한 만큼, 감속 논의는 곧바로 미중 경쟁 프레임에 부딪히는 모양새입니다. 규제 논의가 안전 담론에서 지정학 담론으로 넘어가는 지점입니다.</p>
+            <div class="article-meta">
+                <span class="source">SCMP Hero, Bloomberg 다매체 보도</span>
+                <a href="https://scmp.com/news/world/united-states-canada/article/3367374/trump-downplays-need-check-ai-development-says-he-unwilling-cede-edge-china" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Xi says China will take lead to foster AI, tech cooperation among BRICS countries</h3>
+            <p class="article-title-kr">시진핑, BRICS 정상회의서 &quot;AI 협력은 중국이 주도하겠다&quot;</p>
+            <p class="article-summary">시진핑 주석이 BRICS 정상회의에서 개발도상국 간 AI 협력과 개발을 중국이 앞장서 이끌겠다고 밝혔습니다. 미국이 수출통제로 진영을 좁히는 사이, 중국은 신흥국을 상대로 AI 인프라와 표준을 공급하는 대안 축을 자처하는 구도입니다. 블룸버그는 이를 미국과의 정면 대결 성격으로 해석했습니다. 개도국 시장에서 미국식 스택과 중국식 스택이 갈라지는 흐름이 가시화되고 있습니다.</p>
+            <div class="article-meta">
+                <span class="source">CNBC Featured, Bloomberg 다매체 보도</span>
+                <a href="https://www.cnbc.com/2026/09/13/china-xi-ai-tech-brics.html" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <span class="badge badge-update">UPDATE</span>
+            <h3 class="article-title">‘I’m Really Terrified’: A Mathematician Grapples With AI’s Recent Breakthroughs</h3>
+            <p class="article-title-kr">&quot;솔직히 두렵다&quot; — 수학자 스티븐 스트로가츠가 본 AI의 최근 돌파</p>
+            <p class="article-summary">저명 수학자 스티븐 스트로가츠가 와이어드와의 인터뷰에서 최근 AI의 수학 성과가 자신의 평생 연구에 미친 충격을 털어놨습니다. 그는 수학이 인간의 이해 범위를 넘어가는 과정을 다룬 책을 공동 집필했는데, 그 시나리오가 예상보다 훨씬 빨리 현실이 됐다는 것입니다. 지난주 OpenAI의 나비에-스토크스 관련 주장 이후 학계에서 이어지는 반응의 연장선입니다. 증명의 검증 가능성과 저자 표기를 둘러싼 학계의 규범이 함께 흔들리고 있습니다.</p>
+            <div class="article-meta">
+                <span class="source">Wired Featured</span>
+                <a href="https://www.wired.com/story/mathematician-steven-strogatz-grapples-with-ai-recent-breakthroughs/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">AI Agents Are Thirsty for Power</h3>
+            <p class="article-title-kr">챗봇에서 에이전트로 — 전력 수요 곡선이 다시 가팔라진다</p>
+            <p class="article-summary">실리콘밸리의 무게중심이 단발성 챗봇 질의에서 자원 집약적인 에이전트 워크로드로 옮겨가고 있습니다. 에이전트는 한 번의 요청에 수십~수백 번의 추론과 도구 호출을 연쇄로 실행하기 때문에 질의당 전력·냉각 부하가 기존 대비 크게 뜁니다. 와이어드는 이것이 최근 데이터센터 증설 경쟁의 실질적 동인이라고 짚었습니다. 전력·부지·냉각이 반도체 못지않은 병목으로 올라서는 흐름입니다.</p>
+            <div class="article-meta">
+                <span class="source">Wired Featured</span>
+                <a href="https://www.wired.com/story/ai-agents-are-thirsty-for-power/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section ">
+        <h2 class="section-title">💰 경제/금융</h2>
+        <article class="article-card">
+            <span class="badge badge-new">NEW</span>
+            <h3 class="article-title">Revolut confirms customer data breach through fake government requests</h3>
+            <p class="article-title-kr">레볼루트, 위조 정부기관 요청에 속아 고객 데이터 유출</p>
+            <p class="article-summary">핀테크 기업 레볼루트가 공격자들이 정부기관을 사칭한 데이터 요청서를 보내 일부 고객 정보를 빼낸 사실을 확인했습니다. 회사는 피해 고객에게 개별 통지했고 관계 당국·수사기관·금융감독기관에 신고했다고 밝혔습니다. 블룸버그는 이메일 기반 사기 수법이었다고 전했습니다. 이른바 EDR(긴급 데이터 요청) 위조는 기술적 침해 없이 절차의 신뢰만으로 뚫는 방식이라 금융·플랫폼 업계 전반의 구조적 취약점으로 지적돼 왔습니다.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch Featured, Bloomberg 다매체 보도</span>
+                <a href="https://techcrunch.com/2026/09/12/revolut-confirms-customer-data-breach-through-fake-government-requests/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Z.ai eyes new US$5b fundraising push after July share sale</h3>
+            <p class="article-title-kr">중국 Z.ai, 두 달 만에 50억달러 추가 조달 추진</p>
+            <p class="article-summary">중국 AI 개발사 Z.ai가 7월 자금 조달을 마친 지 두 달 만에 50억달러 규모의 신규 조달에 나섰습니다. 모델 학습과 추론 인프라 확보에 들어가는 현금 소진 속도가 그만큼 빠르다는 뜻이며, 중국 내 AI 기업들의 자본 조달 경쟁이 재점화되는 신호이기도 합니다. 딥시크의 상하이 과창판 상장 추진과 엔플레임의 데뷔 급등에 이어, 중국 AI 섹터의 자금 흡수력이 계속 확인되고 있습니다.</p>
+            <div class="article-meta">
+                <span class="source">SCMP Hero</span>
+                <a href="https://scmp.com/tech/article/3367364/seeking-cash-ai-chinas-zai-eyes-new-us5b-fundraising-push-after-july-share-sale" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">The wages of American workers are under pressure. AI&#x27;s potential role is drawing more attention</h3>
+            <p class="article-title-kr">미국 임금 상승률, 물가에 밀렸다 — 원인으로 지목되는 AI</p>
+            <p class="article-summary">미국 노동자 임금 상승세가 둔화되며 다시 인플레이션을 따라잡지 못하고 있습니다. AI가 그 원인 중 하나로 지목되지만 증거는 아직 불완전하다는 것이 CNBC의 진단입니다. 채용 축소가 AI 자동화 때문인지, 금리와 경기 사이클 때문인지 분리하기 어렵기 때문입니다. 다만 이 논쟁 자체가 중간선거를 앞둔 AI 규제 논의의 정치적 연료가 되고 있다는 점은 분명합니다.</p>
+            <div class="article-meta">
+                <span class="source">CNBC Hero</span>
+                <a href="https://www.cnbc.com/2026/09/13/ai-jobs-pay-inflation.html" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">The 9 buzziest startups from Y Combinator’s latest Demo Day, according to VCs</h3>
+            <p class="article-title-kr">YC 여름 배치 데모데이 — VC가 꼽은 9개 스타트업은 부유식 원자로부터 브레인칩까지</p>
+            <p class="article-summary">와이콤비네이터 여름 배치 데모데이에서 VC들이 가장 주목한 스타트업 9곳이 공개됐습니다. 부유식 원자로, 브레인칩 등 소프트웨어 바깥의 하드테크가 눈에 띄게 늘었다는 것이 이번 배치의 특징입니다. AI 애플리케이션 레이어의 경쟁이 포화되면서 초기 자본이 전력·제조·바이오 인터페이스 같은 물리적 병목 쪽으로 이동하는 흐름을 보여줍니다.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch Featured</span>
+                <a href="https://techcrunch.com/2026/09/13/the-9-buzziest-startups-from-y-combinators-latest-demo-day-according-to-vcs/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section ">
+        <h2 class="section-title">📱 플랫폼/소셜</h2>
+        <article class="article-card">
+            <h3 class="article-title">Your car is selling your data</h3>
+            <p class="article-title-kr">당신의 자동차가 데이터를 팔고 있다</p>
+            <p class="article-summary">더 버지가 커넥티드카의 데이터 판매 구조를 정리했습니다. 올해 초 FTC 조치를 계기로 드러난 것은, 완성차 업체가 주행 데이터를 브로커에 넘기고 이것이 보험료 산정에까지 흘러가는 경로였습니다. 차량은 사용자가 앱을 지울 수도, 권한을 끌 수도 없는 형태로 상시 수집을 수행한다는 점에서 스마트폰보다 통제권이 약합니다. 규제 논의가 AI에 쏠린 사이 조용히 커진 프라이버시 사각지대입니다.</p>
+            <div class="article-meta">
+                <span class="source">The Verge Hero</span>
+                <a href="https://www.theverge.com/column/994172/your-car-is-selling-your-data" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">The Meta glasses revolution - is it okay to film people in public?</h3>
+            <p class="article-title-kr">메타 글래스가 던진 질문 — 공공장소에서 타인을 찍어도 되는가</p>
+            <p class="article-summary">스마트글래스 보급이 임계점을 넘으면서 촬영 동의를 둘러싼 사회적 규범 공백이 드러나고 있습니다. 지난주에는 미국 경찰이 메타 스마트글래스로 몰래 촬영당할 것을 우려한다는 보도가 나왔고, 이번에는 일반 시민 간의 촬영 문제로 논의가 번졌습니다. 기기의 녹화 표시등이 있더라도 상대가 인지하기 어렵다는 점이 핵심 쟁점입니다.</p>
+            <div class="article-meta">
+                <span class="source">BBC Hero</span>
+                <a href="https://bbc.com/news/articles/cz05jxx08kyo" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Switzerland takes a Swiss Army knife to Microsoft 365</h3>
+            <p class="article-title-kr">스위스, 마이크로소프트 365를 오픈소스 &#x27;오픈데스크&#x27;로 교체</p>
+            <p class="article-summary">스위스가 공공 부문의 마이크로소프트 365 의존을 끊고 오픈소스 협업 스위트 오픈데스크로 갈아타는 작업에 착수했습니다. 독일 슐레스비히홀슈타인 등 유럽 공공기관에서 이어져 온 디지털 주권 전환의 연장선입니다. 라이선스 비용보다 데이터 관할권과 미국 클라우드법 리스크가 실질적 동기로 꼽힙니다. 유럽 공공 조달이 흔들리면 SaaS 업계의 지역별 매출 구조에도 영향이 불가피합니다.</p>
+            <div class="article-meta">
+                <span class="source">ZDNet Featured</span>
+                <a href="https://www.zdnet.com/business/switzerland-replaces-microsoft-365-open-source-opendesk/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">StarCraft returns in 2030 as an open-world shooter</h3>
+            <p class="article-title-kr">블리자드, 스타크래프트를 오픈월드 슈터로 부활 — 디아블로 V도 발표</p>
+            <p class="article-summary">블리자드가 스타크래프트 세계관을 3D 슈터로 되살립니다. 2002년 &#x27;스타크래프트: 고스트&#x27;로 시도했다가 2014년 공식 취소됐던 기획을 16년 만에 다시 꺼낸 것으로, 출시 목표는 2030년입니다. 같은 발표에서 디아블로 V도 공개됐습니다. 한국 e스포츠 생태계의 원점이었던 IP인 만큼 국내 반응도 주목됩니다.</p>
+            <div class="article-meta">
+                <span class="source">The Verge, Bloomberg 다매체 보도</span>
+                <a href="https://www.theverge.com/games/994371/starcraft-returns-in-2030-as-an-open-world-shooter" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section ">
+        <h2 class="section-title">🔧 하드웨어/반도체</h2>
+        <article class="article-card">
+            <h3 class="article-title">Tesla says it will finally unveil the second generation Roadster on October 1</h3>
+            <p class="article-title-kr">테슬라, 2세대 로드스터 10월 1일 공개 확정</p>
+            <p class="article-summary">2017년 11월 처음 발표된 뒤 9년 가까이 미뤄져 온 테슬라의 헤일로 스포츠카 2세대 로드스터가 10월 1일 마침내 공개됩니다. 사이버캡 출시 직후 NHTSA 조사가 시작된 상황에서 나온 발표라, 자율주행 이슈에서 시선을 돌리려는 타이밍이라는 해석도 함께 나옵니다.</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch Featured, Bloomberg 다매체 보도</span>
+                <a href="https://techcrunch.com/2026/09/12/tesla-says-it-will-finally-unveil-the-second-generation-roadster-on-october-1/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">iPhone Duo is more proof that Microsoft’s brilliant ideas make great Apple products</h3>
+            <p class="article-title-kr">아이폰 듀오, 폴더블을 표준으로 — 마이크로소프트가 먼저 했던 아이디어</p>
+            <p class="article-summary">지난주 공개된 애플의 첫 폴더블 아이폰 듀오를 두고, 마이크로소프트 서피스 듀오가 먼저 제시했던 폼팩터를 애플이 완성형으로 가져왔다는 평가가 나옵니다. 블룸버그 역시 아이폰 듀오가 폴더블을 &#x27;새로운 표준&#x27;으로 만들 것으로 전망했습니다. 폴더블 수요가 본격화되면 힌지·폴더블 디스플레이·초박형 유리 등 한국 부품 공급망의 물량 전망도 함께 상향될 여지가 있습니다.</p>
+            <div class="article-meta">
+                <span class="source">ZDNet Featured, Bloomberg 다매체 보도</span>
+                <a href="https://www.zdnet.com/business/iphone-duo-surface-microsoft-apple/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Chinese breakthrough in chip material aims to clear hurdle for next-gen memory</h3>
+            <p class="article-title-kr">중국 연구진, 차세대 메모리 내구성 100배 개선 주장</p>
+            <p class="article-summary">중국 연구진이 차세대 메모리의 내구 수명을 기존 대비 100배 늘리는 소재 기술을 발표했습니다. 쓰기 반복에 따른 열화는 차세대 비휘발성 메모리 상용화의 오랜 병목이었습니다. 논문 단계의 성과라 양산 이전까지 거리가 있지만, 미국의 장비 규제로 미세공정 경쟁이 막힌 중국이 소재·구조 혁신 쪽으로 우회하고 있다는 신호로 읽힙니다.</p>
+            <div class="article-meta">
+                <span class="source">SCMP Hero</span>
+                <a href="https://scmp.com/tech/article/3367354/chinese-researchers-extend-future-memory-endurance-100-fold-semiconductor-advance" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Beijing pushes AI chip design as part of self-sufficiency drive</h3>
+            <p class="article-title-kr">베이징, AI 보조 칩 설계로 자립 속도전</p>
+            <p class="article-summary">중국 정부가 반도체 자립 전략의 일환으로 AI 기반 칩 설계(EDA 영역) 확산을 밀고 있습니다. 미국의 EDA 툴 수출 통제로 설계 단계부터 병목이 생긴 상황에서, AI로 설계 생산성과 인력 부족을 동시에 메우겠다는 접근입니다. 제조 공정은 여전히 막혀 있지만 설계 자립도가 올라가면 화웨이 어센드 계열의 반복 개발 속도가 빨라질 수 있습니다.</p>
+            <div class="article-meta">
+                <span class="source">SCMP Hero</span>
+                <a href="https://scmp.com/tech/tech-trends/article/3367245/beijing-pushes-ai-assisted-chip-design-part-self-sufficiency-drive" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <h3 class="article-title">Chinese optical transceiver makers dodge US ban, for now</h3>
+            <p class="article-title-kr">중국 광트랜시버, 미국 블랙리스트 제외 — 공급망 한숨 돌려</p>
+            <p class="article-summary">미국이 규제 대상 목록을 갱신하면서 광트랜시버를 제외해 중국 광통신 공급망이 일단 위기를 넘겼습니다. 광트랜시버는 AI 데이터센터 내부 대역폭을 좌우하는 핵심 부품으로, GPU 클러스터 규모가 커질수록 수요가 급증하는 품목입니다. 규제에서 빠졌다는 것은 미국 하이퍼스케일러들도 중국산 물량 없이는 증설 속도를 맞추기 어렵다는 현실을 보여줍니다.</p>
+            <div class="article-meta">
+                <span class="source">SCMP Hero</span>
+                <a href="https://scmp.com/tech/big-tech/article/3367219/chinese-optical-transceiver-makers-dodge-us-ban-now-fcc-updates-rules" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="section picks-section">
+        <h2 class="section-title">💎 Claude's Pick</h2>
+        <article class="article-card">
+            <span class="badge badge-pick">PICK</span>
+            <h3 class="article-title">Chinese businesses are giving away AI tokens with coffee, credit cards, and dumplings</h3>
+            <p class="article-title-kr">커피에도, 신용카드에도, 만두에도 — 중국에서 AI 토큰이 사은품이 됐다</p>
+            <p class="article-summary">중국에서 통신사·카드사·프랜차이즈가 AI 추론 토큰을 마일리지처럼 얹어주는 마케팅이 확산되고 있습니다. 딥시크 등 저가 모델 덕분에 토큰 단가가 사은품으로 뿌릴 수 있는 수준까지 떨어졌다는 뜻입니다. 추론 비용이 마케팅 예산 항목으로 내려앉는 순간 AI는 기능이 아니라 유틸리티가 됩니다.</p>
+            <p class="pick-reason">선정 이유: 새로운 시장 정의(추론 토큰의 사은품화) + 대기업의 조용한 움직임 / 관심사: AI 인프라 원가 구조</p>
+            <div class="article-meta">
+                <span class="source">Rest of World Featured</span>
+                <a href="https://restofworld.org/2026/china-ai-tokens-consumer-rewards-credit-cards-telcos-deepseek/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <span class="badge badge-pick">PICK</span>
+            <h3 class="article-title">Fusion power startups find new partners in the defense world</h3>
+            <p class="article-title-kr">핵융합 스타트업, 국방 쪽에서 새 파트너를 찾다</p>
+            <p class="article-summary">핵융합 스타트업들이 잇따라 국방 관련 계약을 체결하고 있습니다. 냉전기 이후 잠잠했던 핵융합과 안보의 연결고리가 다시 살아나는 흐름으로, 상용 발전보다 먼저 군용 전력·추진 수요가 자금줄이 되는 구조입니다. AI 데이터센터 전력난과 맞물려 차세대 발전 기술의 자금 조달 경로가 재편되는 초기 신호로 볼 만합니다.</p>
+            <p class="pick-reason">선정 이유: 신생 기술의 첫 상업 계약 + 규제·정책 초기 신호 / 관심사: AI 전력 인프라, 투자 관점 변화</p>
+            <div class="article-meta">
+                <span class="source">TechCrunch Featured</span>
+                <a href="https://techcrunch.com/2026/09/13/fusion-power-startups-find-new-partners-in-the-defense-world/" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <span class="badge badge-pick">PICK</span>
+            <h3 class="article-title">LG responds to TV spying allegations</h3>
+            <p class="article-title-kr">LG, &#x27;TV 도청&#x27; 의혹에 반박 — &quot;일부 보도가 오해를 키웠다&quot;</p>
+            <p class="article-summary">게이머스 넥서스와 Level1Techs, 독립 보안 연구자들이 LG TV가 사용자 데이터를 광범위하게 기록·업로드한다는 분석을 내놓자 LG가 공식 반박에 나섰습니다. LG는 최근 일부 보도가 오해를 불렀다는 입장입니다. 스마트TV의 ACR(콘텐츠 인식) 데이터 수집은 업계 관행이지만, 국내 제조사가 해외 보안 커뮤니티의 표적이 된 사례라는 점에서 눈여겨볼 만합니다.</p>
+            <p class="pick-reason">선정 이유: 규제·여론 변화 초기 신호 + 대기업의 방어적 대응 / 관심사: 한국 시장 연관성, 데이터 프라이버시</p>
+            <div class="article-meta">
+                <span class="source">The Verge</span>
+                <a href="https://www.theverge.com/tech/994333/lg-responds-to-tv-spying-allegations" target="_blank">원문 보기 →</a>
+            </div>
+        </article>
+    </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 25건 | 섹션 6개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
