@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>오라클 스타게이트 '불가항력' 통보 | 美 중국기술 블랙리스트 법안 | 앤스로픽·아카마이 116억 달러 | Jae's Briefing</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.vs{color:#666;font-size:.8rem}
+</style>
+<link href="../theme-modern.css" rel="stylesheet"/><script defer="" src="../app.js?v=7"></script></head>
+<body class="reader-mode"><nav class="reader-nav">
+<div class="reader-nav-inner">
+<a class="reader-nav-logo" href="../index.html">JFNB</a>
+<div class="reader-nav-links">
+<a href="../index.html">홈</a>
+<a href="../archive.html">아카이브</a>
+<a href="../about.html">소개</a>
+<a href="../saved.html">⭐ 보관함 <span data-jfnb-count=""></span></a>
+<span class="reader-nav-unread" data-jfnb-unread=""></span>
+<span class="reader-nav-auth" data-jfnb-auth=""></span>
+</div>
+</div>
+</nav>
+<div class="container">
+<header class="header">
+<div class="date-badge">2026년 9월 25일 금요일</div>
+<h1 class="title">오라클 스타게이트 '불가항력' 통보 | 美 중국기술 블랙리스트 법안 | 앤스로픽·아카마이 116억 달러</h1>
+<p class="summary">오라클이 뉴멕시코 스타게이트 데이터센터에 '불가항력(force majeure)'을 통보하며 AI 인프라 붐의 물리적 한계가 드러났다. 트럼프-시진핑 정상회담을 앞두고 미 의회는 중국 기술 블랙리스트 확대 법안을 발의했고 레노버 특허 조사가 시작됐다. 앤스로픽은 아카마이와 116억 달러 7년 컴퓨팅 계약을 맺었고, 블랙록 컨소시엄은 250억 달러 규모 아시아 데이터센터 인수 협상에 들어갔다.</p>
+</header>
+<section class="section top-section">
+<h2 class="section-title">🔥 TOP Headlines</h2>
+<article class="article-card jfnb-card" data-card-index="0" data-card-title="Oracle sends 'force majeure' notice about data center project — stock sinks 5%" data-card-type="article" data-card-url="https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html" id="art-0">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Oracle sends 'force majeure' notice about data center project — stock sinks 5%</h3>
+<p class="article-title-kr">오라클, 뉴멕시코 '스타게이트' 데이터센터에 불가항력 통보…주가 5% 급락</p>
+<p class="article-summary">오라클이 뉴멕시코주 도냐아나 카운티에 짓고 있는 스타게이트 데이터센터(프로젝트 주피터)에 대해 '불가항력' 통보를 보낸 사실이 알려지며 주가가 5% 하락했다. 이 통보가 인정되면 시설이 2028년 가동 목표를 놓칠 경우 오라클은 임대료 지급을 미룰 수 있다. 블룸버그는 오라클이 데이터센터 지연 리스크에서 스스로를 방어하려는 조치라고 전했고, 테크크런치는 전력·부지·장비 병목이 AI 데이터센터 일정 전반을 흔들고 있다고 짚었다. OpenAI와 소프트뱅크가 참여한 스타게이트 프로젝트의 자금 구조가 실제 공사 속도에 얼마나 취약한지 보여주는 첫 균열이다.</p>
+<div class="article-meta"><span class="source">CNBC Tech Hero, Bloomberg Tech, TechCrunch 다매체 보도</span><span class="vs">VS 8.4</span><a href="https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="1" data-card-title="US widens pressure on China tech with blacklist proposal, Lenovo patent probe" data-card-type="article" data-card-url="https://www.scmp.com/tech/tech-war/article/3368633/china-tech-faces-fresh-scrutiny-us-blacklist-bill-introduced-lenovo-case-emerges" id="art-1">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">US widens pressure on China tech with blacklist proposal, Lenovo patent probe</h3>
+<p class="article-title-kr">미 의회, 중국 기술 블랙리스트 확대 법안 발의…레노버 특허 조사도 착수</p>
+<p class="article-summary">미국 의원들이 중국산 기술 제품에 대한 수입·판매 제한 권한을 대폭 넓히는 법안을 발의했다. 기존 통신장비 중심 제재를 넘어 광범위한 소비자·기업용 기술 제품까지 블랙리스트 대상에 넣을 수 있게 하는 내용이다. 동시에 레노버는 특허 침해 조사를 받게 됐다. 정상회담 테이블에서 무역 휴전을 논의하는 한편 기술 통제는 오히려 촘촘해지는 미국의 '투트랙'이 선명해졌다.</p>
+<div class="article-meta"><span class="source">SCMP Tech Hero, CNBC Tech</span><span class="vs">VS 6.6</span><a href="https://www.scmp.com/tech/tech-war/article/3368633/china-tech-faces-fresh-scrutiny-us-blacklist-bill-introduced-lenovo-case-emerges" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="2" data-card-title="Tencent launches payment app for foreign visitors ahead of Apec summit" data-card-type="article" data-card-url="https://www.scmp.com/tech/tech-trends/article/3368544/tencent-rolls-out-payment-app-foreign-travellers-ahead-apec-summit" id="art-2">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Tencent launches payment app for foreign visitors ahead of Apec summit</h3>
+<p class="article-title-kr">텐센트, APEC 앞두고 외국인 전용 결제앱 출시…알리페이와 정면 대결</p>
+<p class="article-summary">텐센트가 중국을 찾는 외국인이 해외 카드와 디지털 지갑으로 위챗페이 가맹점망에서 결제할 수 있는 전용 앱을 내놨다. APEC 정상회의를 앞두고 '현금 없는 중국'에서 외국인이 겪던 결제 장벽을 없애려는 조치다. 블룸버그는 앤트그룹의 알리페이 투어패스와 직접 경쟁하는 구도라고 분석했다. 중국이 관광·비즈니스 방문객 유치를 국가 과제로 삼으면서 결제 인프라가 외교 도구가 되고 있다.</p>
+<div class="article-meta"><span class="source">SCMP Tech Hero, Bloomberg Tech</span><span class="vs">VS 6.6</span><a href="https://www.scmp.com/tech/tech-trends/article/3368544/tencent-rolls-out-payment-app-foreign-travellers-ahead-apec-summit" target="_blank">원문 보기 →</a></div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🤖 AI · 인프라</h2>
+<article class="article-card jfnb-card" data-card-index="3" data-card-title="Anthropic Strikes $12 Billion AI Computing Deal With Akamai" data-card-type="article" data-card-url="https://www.bloomberg.com/news/articles/2026-09-24/anthropic-strikes-12-billion-deal-with-akamai-for-ai-computing" id="art-3">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Anthropic Strikes $12 Billion AI Computing Deal With Akamai</h3>
+<p class="article-title-kr">앤스로픽, 아카마이와 116억 달러·7년 컴퓨팅 계약</p>
+<p class="article-summary">앤스로픽이 아카마이와 7년간 116억 달러 규모의 컴퓨팅 공급 계약을 체결했다. 아카마이 발표에 따르면 CPU 기반 워크로드 중심 계약으로, 지분 워런트가 함께 붙었다. 아카마이 주가는 발표 직후 급등했다. GPU 확보 경쟁에 가려져 있던 추론·서빙용 CPU와 엣지 인프라가 AI 기업의 새로운 병목이자 계약 대상으로 떠올랐음을 보여준다. 앤스로픽의 데이터센터 계약 목록이 계속 길어지고 있다.</p>
+<div class="article-meta"><span class="source">Bloomberg Tech, Akamai, Investing.com 다매체 보도</span><span class="vs">VS 5.0</span><a href="https://www.bloomberg.com/news/articles/2026-09-24/anthropic-strikes-12-billion-deal-with-akamai-for-ai-computing" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="4" data-card-title="Alibaba Cloud set to open new data centres in Europe as overseas push gains pace" data-card-type="article" data-card-url="https://www.scmp.com/tech/big-tech/article/3368454/alibaba-cloud-set-open-new-data-centres-europe-next-year-overseas-push-speeds" id="art-4">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Alibaba Cloud set to open new data centres in Europe as overseas push gains pace</h3>
+<p class="article-title-kr">알리바바 클라우드, 유럽·중동에 데이터센터 증설…'실용주의' AI 로드맵도 공개</p>
+<p class="article-summary">알리바바 클라우드가 내년 유럽에 신규 데이터센터를 열고 중동 지역 용량도 늘린다. 해외 고객이 실제 업무에 AI를 배치할 수 있도록 현지 인프라를 깔겠다는 전략이다. 같은 날 알리바바는 자본지출이 급증하는 국면에서 수익화를 앞당기겠다는 '실용주의' AI 로드맵을 발표했다. 미국 클라우드에 대한 중국 기업 접근이 좁아지는 가운데, 알리바바는 반대로 서방 시장에 물리적 거점을 심는 쪽을 택했다.</p>
+<div class="article-meta"><span class="source">SCMP Tech Hero, Bloomberg Tech</span><span class="vs">VS 5.5</span><a href="https://www.scmp.com/tech/big-tech/article/3368454/alibaba-cloud-set-open-new-data-centres-europe-next-year-overseas-push-speeds" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="5" data-card-title="BlackRock, IFM Close In on $25 Billion Asia Data Center Deal" data-card-type="article" data-card-url="https://www.bloomberg.com/news/articles/2026-09-24/blackrock-ifm-close-in-on-25-billion-stack-data-center-deal" id="art-5">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">BlackRock, IFM Close In on $25 Billion Asia Data Center Deal</h3>
+<p class="article-title-kr">블랙록·IFM 컨소시엄, 250억 달러 규모 스택 아시아 데이터센터 인수 협상</p>
+<p class="article-summary">블랙록과 호주 IFM 인베스터스가 후원하는 컨소시엄이 스택 인프라스트럭처의 아시아태평양 데이터센터 자산 인수를 놓고 배타적 협상에 들어갔다. 거래 규모는 약 250억 달러로 거론된다. AI 수요가 미국을 넘어 아시아로 번지면서, 연기금·인프라 펀드가 데이터센터를 도로·공항 같은 '규제 인프라' 자산으로 취급하기 시작했다는 신호다. 성사되면 아태 지역 데이터센터 소유 구조가 크게 재편된다.</p>
+<div class="article-meta"><span class="source">Bloomberg Tech, The Star, IREI 다매체 보도</span><span class="vs">VS 5.0</span><a href="https://www.bloomberg.com/news/articles/2026-09-24/blackrock-ifm-close-in-on-25-billion-stack-data-center-deal" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="6" data-card-title="Launch of UK's 'largest AI supercomputer' delayed by power supply problems" data-card-type="article" data-card-url="https://www.theguardian.com/technology/2026/sep/24/construction-largest-supercomputer-delayed" id="art-6">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Launch of UK's 'largest AI supercomputer' delayed by power supply problems</h3>
+<p class="article-title-kr">영국 '최대 AI 슈퍼컴퓨터' 가동, 전력 문제로 2030년대 중반까지 밀릴 수도</p>
+<p class="article-summary">영국 정부가 국가 AI 역량의 상징으로 내세운 에식스주 러프턴 데이터센터가 내년 가동 목표를 놓치고, 최악의 경우 2030년대 중반까지 지연될 수 있다고 가디언이 보도했다. 원인은 계산 능력이 아니라 계통 전력 확보다. 오라클의 불가항력 통보와 나란히 놓고 보면, 지금 AI 인프라의 실질적 제약은 칩이 아니라 전기와 부지라는 사실이 선진국 전반에서 동시에 확인되고 있다.</p>
+<div class="article-meta"><span class="source">Guardian Tech Hero</span><span class="vs">VS 4.0</span><a href="https://www.theguardian.com/technology/2026/sep/24/construction-largest-supercomputer-delayed" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="7" data-card-title="20 minutes with the CEO of ElevenLabs, now reportedly valued at $22B" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/" id="art-7">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">20 minutes with the CEO of ElevenLabs, now reportedly valued at $22B</h3>
+<p class="article-title-kr">일레븐랩스 CEO 인터뷰…기업가치 220억 달러, "AI 음성임을 밝혀야 한다"</p>
+<p class="article-summary">고객센터 통화 상대가 사람이 아닐 때 그 사실을 알려야 하는가. 220억 달러 가치로 평가받는 AI 음성기업 일레븐랩스의 CEO는 테크크런치 인터뷰에서 "기계를 만나는 것이 당연해지기 전까지는 기업이 밝히는 편이 낫다"고 말했다. 음성 합성이 콜센터·미디어·게임으로 빠르게 퍼지는 가운데, 규제보다 앞서 업계가 스스로 고지 규범을 만들지에 대한 시험대다.</p>
+<div class="article-meta"><span class="source">TechCrunch Hero</span><span class="vs">VS 4.0</span><a href="https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/" target="_blank">원문 보기 →</a></div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">💰 경제 · 시장</h2>
+<article class="article-card jfnb-card" data-card-index="8" data-card-title="Qualcomm Renews Licensing Pact With Apple Starting in 2027" data-card-type="article" data-card-url="https://www.bloomberg.com/news/articles/2026-09-24/qualcomm-renews-global-licensing-pact-with-apple-starting-2027" id="art-8">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Qualcomm Renews Licensing Pact With Apple Starting in 2027</h3>
+<p class="article-title-kr">퀄컴, 애플과 글로벌 특허 라이선스 계약 갱신…2027년 4월 발효</p>
+<p class="article-summary">퀄컴이 애플과의 글로벌 특허 라이선스 계약을 2027년 4월부터 적용되는 조건으로 갱신했다고 발표했다. 애플이 자체 모뎀칩으로 전환을 진행하는 와중에도 퀄컴의 특허 로열티 수익원은 당분간 유지된다는 뜻이다. 두 회사의 분쟁과 화해가 반복돼 온 만큼, 이번 갱신은 애플의 자체 칩 전환 속도가 시장 기대만큼 빠르지 않다는 신호로도 읽힌다.</p>
+<div class="article-meta"><span class="source">Bloomberg Tech, MacRumors, AppleInsider 다매체 보도</span><span class="vs">VS 5.0</span><a href="https://www.bloomberg.com/news/articles/2026-09-24/qualcomm-renews-global-licensing-pact-with-apple-starting-2027" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="9" data-card-title="Cyber startup Island hits $6.4 billion valuation in new round as AI attacks fuel spending wave" data-card-type="article" data-card-url="https://www.cnbc.com/2026/09/24/island-ai-cybersecurity-funding.html" id="art-9">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Cyber startup Island hits $6.4 billion valuation in new round as AI attacks fuel spending wave</h3>
+<p class="article-title-kr">보안 스타트업 아일랜드, 64억 달러 가치…AI 공격이 촉발한 보안 지출 파도</p>
+<p class="article-summary">엔터프라이즈 브라우저 기업 아일랜드가 신규 투자에서 64억 달러 기업가치를 인정받았다. AI를 이용한 공격이 늘면서 '에이전틱 방어'에 대한 수요가 보안 예산을 끌어올리고 있다는 것이 투자 배경이다. 다만 CNBC는 같은 이유로 경쟁도 격화되고 있다고 짚었다. 공격과 방어 양쪽 모두 AI가 표준 도구가 되면서 보안 시장의 성장 곡선이 다시 가팔라지는 구간이다.</p>
+<div class="article-meta"><span class="source">CNBC Tech Hero</span><span class="vs">VS 3.3</span><a href="https://www.cnbc.com/2026/09/24/island-ai-cybersecurity-funding.html" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="10" data-card-title="Lowe's is launching a drone delivery service in partnership with DoorDash, Alphabet" data-card-type="article" data-card-url="https://www.cnbc.com/2026/09/24/lowes-drones-delivery-doordash-alphabet.html" id="art-10">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Lowe's is launching a drone delivery service in partnership with DoorDash, Alphabet</h3>
+<p class="article-title-kr">로우스, 도어대시·알파벳 윙과 드론 배송 시작</p>
+<p class="article-summary">미국 홈임프루브먼트 체인 로우스가 도어대시, 알파벳 산하 윙과 손잡고 드론 배송 서비스를 시작한다고 CNBC가 단독 보도했다. 공구·자재처럼 급하게 필요한 품목을 수십 분 내 배달하는 모델이다. 드론 배송이 시범사업 단계를 지나 대형 오프라인 리테일의 정규 물류 옵션으로 편입되기 시작했다는 점에서, 라스트마일 자동화의 상업화 전환점으로 볼 만하다.</p>
+<div class="article-meta"><span class="source">CNBC Tech Hero</span><span class="vs">VS 3.3</span><a href="https://www.cnbc.com/2026/09/24/lowes-drones-delivery-doordash-alphabet.html" target="_blank">원문 보기 →</a></div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🌏 국제 · 정책</h2>
+<article class="article-card jfnb-card" data-card-index="11" data-card-title="Soybeans, planes and rare earths: What they say about fragile U.S.-China trade truce" data-card-type="article" data-card-url="https://www.cnbc.com/2026/09/23/trump-xi-summit-us-china-trade-rare-earth-soybean-plane.html" id="art-11">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Soybeans, planes and rare earths: What they say about fragile U.S.-China trade truce</h3>
+<p class="article-title-kr">대두·항공기·희토류…미중 무역휴전이 여전히 불안한 이유</p>
+<p class="article-summary">미중이 합의한 대두 구매, 항공기 인도, 희토류 수출 완화의 실제 이행률이 항목마다 크게 엇갈린다고 CNBC가 분석했다. 양측 모두 휴전을 깨지 않으려 조심하고 있지만, 어느 한 축의 이행이 멈추면 연쇄적으로 무너질 수 있는 구조다. 희토류는 특히 전기모터·반도체 공급망과 직결돼 기술 업계의 체감 리스크가 가장 큰 항목이다.</p>
+<div class="article-meta"><span class="source">CNBC Tech Hero, Bloomberg Tech</span><span class="vs">VS 5.3</span><a href="https://www.cnbc.com/2026/09/23/trump-xi-summit-us-china-trade-rare-earth-soybean-plane.html" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="12" data-card-title="Chinese authorities reportedly in possession of F-35 components in Hong Kong" data-card-type="article" data-card-url="https://www.cnbc.com/2026/09/24/chinaf-f35-components-hong-kong.html" id="art-12">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Chinese authorities reportedly in possession of F-35 components in Hong Kong</h3>
+<p class="article-title-kr">중국 당국, 홍콩서 F-35 부품 확보…UPS 화물이 경유지에서 전용</p>
+<p class="article-summary">UPS가 지난 5월 호주에서 미국으로 보내던 F-35 조종석 캐노피와 무장창 도어가 홍콩으로 방향이 바뀌어 중국 당국 손에 들어간 것으로 보도됐다. 군수 부품이 민간 특송망의 경유지 한 번으로 상대국에 넘어갈 수 있다는 점에서, 방산 공급망의 물류 취약성을 드러낸 사건이다. 정상회담 직전이라는 시점도 미묘하다.</p>
+<div class="article-meta"><span class="source">CNBC Tech Hero</span><span class="vs">VS 4.4</span><a href="https://www.cnbc.com/2026/09/24/chinaf-f35-components-hong-kong.html" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="13" data-card-title="China's AI chip blitz arms Xi with a message for Trump: 'You can't choke us off'" data-card-type="article" data-card-url="https://www.cnbc.com/2026/09/24/trump-xi-china-summit-ai-export-control-nvidia-huawei-alibaba-.html" id="art-13">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">China's AI chip blitz arms Xi with a message for Trump: 'You can't choke us off'</h3>
+<p class="article-title-kr">중국의 AI 칩 총공세…시진핑이 트럼프에게 보내는 메시지 "목 조르기 안 통한다"</p>
+<p class="article-summary">화웨이·알리바바 등 중국 국가대표 기업들이 연달아 신형 AI 칩과 모델을 내놓으면서, 정상회담에 임하는 시진핑 주석의 협상력이 올라갔다고 CNBC가 분석했다. 미국의 수출 통제가 중국의 자체 개발을 오히려 가속시켰다는 평가가 중국 내부에서 굳어지는 흐름이다. 엔비디아 대체가 성능 면에서 아직 충분치 않더라도, '통제가 통하지 않는다'는 정치적 메시지 자체가 협상 카드가 되고 있다.</p>
+<div class="article-meta"><span class="source">CNBC Tech Hero</span><span class="vs">VS 3.3</span><a href="https://www.cnbc.com/2026/09/24/trump-xi-china-summit-ai-export-control-nvidia-huawei-alibaba-.html" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="14" data-card-title="New UK agency will tackle 'information warfare' from likes of Russia, Burnham says" data-card-type="article" data-card-url="https://www.theguardian.com/technology/2026/sep/23/andy-burnham-national-centre-russian-disinformation-deepfakes" id="art-14">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">New UK agency will tackle 'information warfare' from likes of Russia, Burnham says</h3>
+<p class="article-title-kr">영국, 러시아발 딥페이크·허위정보 대응 '국가정보방어센터' 신설</p>
+<p class="article-summary">영국 정부가 러시아 등 적대국의 허위정보와 딥페이크에 대응하는 국가정보방어센터(National Centre for Information Defence)를 세운다고 앤디 번햄이 발표했다. 정부는 "유해한 조류를 막을 책무가 있다"며 정보전을 안보 영역으로 공식 편입했다. 생성형 AI로 위조 콘텐츠 제작 비용이 사실상 0에 수렴하면서, 각국이 플랫폼 규제를 넘어 전담 기관 설립으로 넘어가는 단계에 들어섰다.</p>
+<div class="article-meta"><span class="source">Guardian Tech Hero</span><span class="vs">VS 4.0</span><a href="https://www.theguardian.com/technology/2026/sep/23/andy-burnham-national-centre-russian-disinformation-deepfakes" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="15" data-card-title="Harness AI to propel manufacturing, Chinese Premier Li Qiang says" data-card-type="article" data-card-url="https://www.scmp.com/tech/tech-trends/article/3368455/chinas-premier-li-qiang-calls-harnessing-ai-propel-manufacturing-advances" id="art-15">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Harness AI to propel manufacturing, Chinese Premier Li Qiang says</h3>
+<p class="article-title-kr">리창 총리 "AI로 제조업을 끌어올려라"…중소기업 지원 플랫폼 주문</p>
+<p class="article-summary">리창 중국 총리가 산업 설계, 시제품 테스트, 설비 유지보수 같은 기능을 중소기업에 제공하는 AI 서비스 플랫폼 구축을 주문했다. 거대 모델 경쟁보다 제조 현장 적용을 우선하는 중국식 'AI 실용주의'가 총리 발언으로 다시 확인됐다. 알리바바의 '실용주의 로드맵'과 같은 방향으로, 중국의 AI 투자 회수 경로가 소비자 앱이 아니라 공장에 있다는 점을 시사한다.</p>
+<div class="article-meta"><span class="source">SCMP Tech Hero</span><span class="vs">VS 3.5</span><a href="https://www.scmp.com/tech/tech-trends/article/3368455/chinas-premier-li-qiang-calls-harnessing-ai-propel-manufacturing-advances" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="16" data-card-title="Pornhub investigated over its age checks" data-card-type="article" data-card-url="https://www.bbc.co.uk/news/articles/c6eq8dw3dlyqo" id="art-16">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Pornhub investigated over its age checks</h3>
+<p class="article-title-kr">영국 규제당국, 폰허브 연령확인 조사 착수</p>
+<p class="article-summary">영국 규제당국이 폰허브 모회사 에일로(Aylo)가 이용자 연령 확인에 "충분한 실사를 수행하지 않았을 수 있다"며 조사에 들어갔다. 온라인안전법 시행 이후 연령확인 의무가 실제 집행 단계로 넘어간 사례다. 디스코드 등 주요 플랫폼이 잇따라 연령확인을 도입하는 가운데, 신원 확인과 프라이버시를 어떻게 양립시킬지가 다음 쟁점으로 남는다.</p>
+<div class="article-meta"><span class="source">BBC Tech Hero</span><span class="vs">VS 3.0</span><a href="https://www.bbc.co.uk/news/articles/c6eq8dw3dlyqo" target="_blank">원문 보기 →</a></div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🔧 기술 · 사회</h2>
+<article class="article-card jfnb-card" data-card-index="17" data-card-title="China is excelling in health tech. That's good news for the world" data-card-type="article" data-card-url="https://restofworld.org/2026/china-ai-healthcare-biotech-drugs/" id="art-17">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">China is excelling in health tech. That's good news for the world</h3>
+<p class="article-title-kr">중국은 헬스테크에서 앞서가고 있다…그리고 그건 세계에 좋은 일이다</p>
+<p class="article-summary">영국에서 활동하는 의사이자 바이오텍 컨설턴트 루비 왕이 중국의 글로벌 보건 강국 부상을 다룬 저서를 앞두고 레스트오브월드와 인터뷰했다. AI 진단, 신약 개발, 의료기기에서 중국의 속도가 서구를 앞지르는 영역이 늘고 있으며, 이것이 저소득 국가의 의료 접근성을 실질적으로 높이고 있다는 주장이다. 기술 패권 경쟁 프레임 바깥에서 중국 기술 굴기를 보는 드문 시각이다.</p>
+<div class="article-meta"><span class="source">Rest of World Hero</span><span class="vs">VS 4.6</span><a href="https://restofworld.org/2026/china-ai-healthcare-biotech-drugs/" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="18" data-card-title="Everything is spying on you and there's no opting out" data-card-type="article" data-card-url="https://www.theverge.com/tech/999889/spy-creep-tech-meta-glasses-apple-watches-surveillance" id="art-18">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Everything is spying on you and there's no opting out</h3>
+<p class="article-title-kr">모든 것이 당신을 엿듣고 있고, 빠져나갈 방법은 없다</p>
+<p class="article-summary">애플워치가 주변 대화를 상시 청취해 요약하는 기능을 예고하고, 메타의 스마트글래스가 얼굴을 담는 카메라를 달거나 빼면서, 개인이 동의하지 않은 채 기록되는 범위가 급격히 넓어졌다. 더버지는 프라이버시 논쟁이 이제 '설정에서 끄기'로 해결되지 않는 단계에 들어섰다고 지적한다. 기록 주체가 내가 아니라 주변 사람일 때 옵트아웃이라는 개념 자체가 성립하지 않는다는 것이다.</p>
+<div class="article-meta"><span class="source">The Verge Hero</span><span class="vs">VS 4.0</span><a href="https://www.theverge.com/tech/999889/spy-creep-tech-meta-glasses-apple-watches-surveillance" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="19" data-card-title="AT&amp;T Is Automating Away Jobs—and Its Old Telecom Empire" data-card-type="article" data-card-url="https://www.wired.com/story/atandt-is-automating-away-its-old-telecom-empire/" id="art-19">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">AT&amp;T Is Automating Away Jobs—and Its Old Telecom Empire</h3>
+<p class="article-title-kr">AT&amp;T, 일자리와 함께 옛 통신 제국을 자동화로 지우다</p>
+<p class="article-summary">AT&amp;T가 월가에 "더 적은 인력으로 더 많이"를 증명하기 위해 인력, 전력 사용, 구형 설비를 동시에 줄이고 있다고 와이어드가 보도했다. 구리망 철거와 자동화가 맞물리며 사라지는 것은 일자리만이 아니라 20세기형 통신 인프라 자체다. AI 도입 효과를 비용 절감으로 먼저 입증하려는 대기업 패턴이 통신에서 가장 선명하게 나타나는 사례다.</p>
+<div class="article-meta"><span class="source">Wired Hero</span><span class="vs">VS 3.3</span><a href="https://www.wired.com/story/atandt-is-automating-away-its-old-telecom-empire/" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="20" data-card-title="Texas turning blue may hinge on Democrats harnessing data center opposition" data-card-type="article" data-card-url="https://www.cnbc.com/2026/09/23/texas-data-centers-election.html" id="art-20">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Texas turning blue may hinge on Democrats harnessing data center opposition</h3>
+<p class="article-title-kr">텍사스 선거의 변수는 데이터센터 반대 여론</p>
+<p class="article-summary">전기요금, 물 사용, 송전망 부담을 둘러싼 데이터센터 반대 정서가 2026년 텍사스 주지사·상원 선거의 쟁점으로 떠올랐다고 CNBC가 전했다. 데이터센터 유치가 지역 경제에 무조건 호재라는 전제가 유권자 수준에서 깨지기 시작한 것이다. AI 인프라 확장의 다음 병목이 자본이나 칩이 아니라 지역 정치라는 점을 보여준다.</p>
+<div class="article-meta"><span class="source">CNBC Tech Hero</span><span class="vs">VS 3.3</span><a href="https://www.cnbc.com/2026/09/23/texas-data-centers-election.html" target="_blank">원문 보기 →</a></div>
+</article>
+</section>
+<section class="section picks-section">
+<h2 class="section-title">💎 Claude's Pick</h2>
+<article class="article-card jfnb-card" data-card-index="21" data-card-title="Google's first Suncatcher orbital data center test launches October 1" data-card-type="article" data-card-url="https://arstechnica.com/google/2026/09/googles-first-suncatcher-orbital-data-center-test-launches-october-1/" id="art-21">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Google's first Suncatcher orbital data center test launches October 1</h3>
+<p class="article-title-kr">구글 첫 궤도 데이터센터 '선캐처', 10월 1일 시험 발사</p>
+<p class="article-summary">구글이 TPU 4개를 실은 실험용 궤도 데이터센터 '선캐처'를 10월 1일 발사한다. 한 번에 15분씩만 가동하는 극초기 실험이지만, 태양광을 직접 받고 우주 공간으로 열을 버리는 구조는 지상 데이터센터의 전력·냉각 제약을 근본적으로 우회하려는 시도다. 오늘 오라클과 영국 슈퍼컴퓨터가 동시에 전력 벽에 부딪힌 것과 나란히 읽어야 할 기사다.</p>
+<p class="pick-reason">선정 이유: Signal: 대기업의 조용한 움직임 + 새로운 시장 정의 / 관심사: AI 인프라·전력 제약</p>
+<div class="article-meta"><span class="source">Ars Technica</span><span class="vs">VS 2.0</span><a href="https://arstechnica.com/google/2026/09/googles-first-suncatcher-orbital-data-center-test-launches-october-1/" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="22" data-card-title="Owners mourn spoiled food after firmware update bricks Samsung smart fridges" data-card-type="article" data-card-url="https://arstechnica.com/gadgets/2026/09/owners-mourn-spoiled-food-after-firmware-update-bricks-samsung-smart-fridges/" id="art-22">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Owners mourn spoiled food after firmware update bricks Samsung smart fridges</h3>
+<p class="article-title-kr">삼성 스마트냉장고, 펌웨어 업데이트로 먹통…"음식이 다 상했다"</p>
+<p class="article-summary">삼성 스마트 냉장고 일부가 펌웨어 업데이트 후 작동을 멈춰 내용물이 상했다는 사용자 불만이 이어지고 있다. "터무니없고 창피한 일"이라는 반응이 나온다. 가전이 소프트웨어 제품이 되면서, 업데이트 한 번의 실패가 곧바로 물리적 손해로 이어지는 구조적 리스크가 드러났다. 삼성·LG가 AI 가전을 전면에 내세우는 국내 시장에도 그대로 적용되는 문제다.</p>
+<p class="pick-reason">선정 이유: Signal: 규제·품질 이슈 초기 신호 + 기존 관심 분야 연장선 / 관심사: 한국 시장 연관성·소프트웨어화된 하드웨어</p>
+<div class="article-meta"><span class="source">Ars Technica</span><span class="vs">VS 2.0</span><a href="https://arstechnica.com/gadgets/2026/09/owners-mourn-spoiled-food-after-firmware-update-bricks-samsung-smart-fridges/" target="_blank">원문 보기 →</a></div>
+</article>
+<article class="article-card jfnb-card" data-card-index="23" data-card-title="Modal Motors is trying to cut China out of electric motors entirely" data-card-type="article" data-card-url="https://techcrunch.com/2026/09/23/modal-motors-is-trying-to-cut-china-out-of-electric-motors-entirely/" id="art-23">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Modal Motors is trying to cut China out of electric motors entirely</h3>
+<p class="article-title-kr">모달모터스, 희토류 자석 없는 전기모터로 중국 의존 끊기</p>
+<p class="article-summary">스타트업 모달모터스가 희토류 영구자석을 쓰지 않는 소형·경량 전기모터를 개발 중이다. 드론, 팬, 로봇처럼 모터 수요가 폭증하는 분야를 겨냥한다. 오늘 미중 무역휴전 기사에서 희토류가 가장 불안한 항목으로 꼽힌 것과 정확히 맞물린다. 공급망 리스크를 '조달 다변화'가 아니라 '설계 단계에서 제거'로 푸는 접근이라 주목할 만하다.</p>
+<p class="pick-reason">선정 이유: Signal: 신생 기업 첫 등장 + 규제·공급망 변화 초기 신호 / 관심사: 반도체·하드웨어 공급망·한국 제조업 연관성</p>
+<div class="article-meta"><span class="source">TechCrunch</span><span class="vs">VS 2.0</span><a href="https://techcrunch.com/2026/09/23/modal-motors-is-trying-to-cut-china-out-of-electric-motors-entirely/" target="_blank">원문 보기 →</a></div>
+</article>
+</section>
+
+</div>
+<footer class="reader-footer">
+<div class="scroll-to-top-wrap">
+<button class="scroll-to-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" type="button">↑ 맨 위로</button>
+</div>
+<a href="../archive.html">← 아카이브로 돌아가기</a>
+<div class="footer-counter" id="visitor-counter-wrap" style="display:none;">
+    Today: <span class="counter-number" id="visitor-count-daily">0</span>
+      |  
+    Total: <span class="counter-number" id="visitor-count">0</span>
+</div>
+</footer>
+<script>
+(function(){
+  var API_BASE='https://abacus.jasoncameron.dev';
+  var NAMESPACE='hong4137-briefing';
+  var LS_KEY='jfnb-visited-date';
+  function getKstDate(){
+    return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);
+  }
+  function getKstDailyKey(){ return 'daily-'+getKstDate(); }
+  var todayStr=getKstDate();
+  var hasVisited=false;
+  try{ hasVisited=(localStorage.getItem(LS_KEY)===todayStr); }catch(e){}
+  var mode=hasVisited?'get':'hit';
+  var totalVal=null,dailyVal=null;
+  var wrap=document.getElementById('visitor-counter-wrap');
+  var sDly=document.getElementById('visitor-count-daily');
+  var sTot=document.getElementById('visitor-count');
+  function renderUI(){
+    if(!wrap||totalVal===null)return;
+    wrap.style.display='';
+    if(sTot)sTot.textContent=totalVal.toLocaleString();
+    if(sDly)sDly.textContent=dailyVal!==null?dailyVal.toLocaleString():'...';
+  }
+  fetch(API_BASE+'/'+mode+'/'+NAMESPACE+'/global')
+    .then(function(r){return r.ok?r.json():Promise.reject();})
+    .then(function(d){
+      var t=d.value!=null?d.value:d.count;
+      if(typeof t!=='number')return;
+      totalVal=t;
+      if(!hasVisited){try{localStorage.setItem(LS_KEY,todayStr);}catch(e){}}
+      renderUI();
+    })
+    .catch(function(){});
+  fetch(API_BASE+'/'+mode+'/'+NAMESPACE+'/'+getKstDailyKey())
+    .then(function(r){return r.ok?r.json():{value:0};})
+    .then(function(d){
+      var v=d.value!=null?d.value:d.count;
+      dailyVal=typeof v==='number'?v:0;
+      renderUI();
+    })
+    .catch(function(){dailyVal=0;renderUI();});
+})();
+</script></body>
+</html>
