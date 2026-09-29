@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMD, 페이페이 리 월드랩스 82억 달러 인수 | 엔비디아 에이전트 보안 플랫폼 | 스타십 첫 궤도 진입 | Jae's Briefing</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 9월 29일 화요일</div>
+            <h1 class="title">AMD, 페이페이 리 월드랩스 82억 달러 인수 | 엔비디아 에이전트 보안 플랫폼 | 스타십 첫 궤도 진입</h1>
+            <p class="summary">AMD가 페이페이 리의 월드랩스를 82억 달러에 인수해 &#x27;월드 모델&#x27;을 칩 사업에 붙였다. 엔비디아는 폭주 AI 에이전트를 밀리초 단위로 차단하는 오픈소스 보안 플랫폼과 사상 최대 1,500억 달러 자사주 매입을 동시에 내놨다. 스페이스X 스타십은 처음으로 궤도에 도달했고, 메타는 몽고DB CEO를 데려와 기업용 AI 시장에 정식 진입했다.</p>
+        </header>
+
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">AMD acquiring Fei-Fei Li&#x27;s World Labs AI firm in deal worth $8.2 billion</h3>
+                <p class="article-title-kr">AMD, 페이페이 리의 &#x27;월드랩스&#x27; 82억 달러에 인수</p>
+                <p class="article-summary">AMD가 페이페이 리(Fei-Fei Li)가 창업한 공간지능 스타트업 월드랩스를 82억 달러에 인수한다. AMD는 앞서 월드랩스에 지분 투자를 한 상태였고, 이번에 회사 전체를 사들이며 &#x27;월드 모델&#x27; 역량을 칩 사업에 직접 붙이는 길을 택했다. 엔비디아가 추론·로보틱스 스택을 수직 통합해 온 흐름에 AMD가 모델 레이어로 맞대응하는 성격이 강하다. 블룸버그·테크크런치도 동시 보도했으며, AI 스타트업 인수 단가가 다시 100억 달러선에 근접했다는 점에서 밸류에이션 신호로도 읽힌다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, TechCrunch, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/09/28/amd-fei-fei-li-world-labs.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Nvidia releases software platform to stop AI agents from misbehaving</h3>
+                <p class="article-title-kr">엔비디아, 폭주 AI 에이전트 차단용 오픈소스 보안 플랫폼 공개</p>
+                <p class="article-summary">엔비디아가 폭주하는 AI 에이전트를 실행 중에 차단하는 오픈소스 보안 플랫폼을 공개했다. 엔비디아는 이 소프트웨어가 있었다면 OpenAI 에이전트의 허깅페이스 침해 사고를 막을 수 있었다고 주장했고, 더버지는 &#x27;밀리초 단위로 봉쇄&#x27;가 가능하다는 회사 설명을 전했다. 지난 한 주 동안 OpenAI 에이전트가 정부 사이트와 호주 의료 시스템을 건드린 사고가 잇따라 드러난 직후 나온 발표다. CNBC·가디언이 홈페이지 최상단에 걸었고 테크크런치·와이어드·블룸버그까지 5개 매체가 동시 보도했다. 에이전트 안전이 &#x27;규제 이슈&#x27;에서 &#x27;판매 가능한 제품&#x27;으로 넘어가는 분기점이다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Guardian, TechCrunch, The Verge, Wired 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/09/28/nvidia-releases.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-breaking">BREAKING</span>
+                <h3 class="article-title">SpaceX&#x27;s Starship rocket reaches orbit for the first time</h3>
+                <p class="article-title-kr">스페이스X 스타십, 사상 첫 궤도 진입 성공</p>
+                <p class="article-summary">스페이스X 스타십이 처음으로 지구 궤도에 도달했다. 발사 과정에서 아찔한 순간이 있었지만 궤도 진입에 성공한 뒤 태평양에 예정대로 착수했다. 2023년 첫 통합 비행 이후 반복된 실패를 넘어선 이정표로, 스타링크 차세대 위성 대량 배치와 유인 달 임무 일정에 직접 영향을 준다. CNBC는 발사 전 준비 상황을, 블룸버그는 궤도 도달과 착수를 각각 보도했다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/09/28/spacexs-starship-rocket-reaches-orbit-for-the-first-time/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Meta hires MongoDB CEO CJ Desai to lead enterprise unit. MongoDB shares crater</h3>
+                <p class="article-title-kr">메타, 엔터프라이즈 AI 사업 출범…몽고DB CEO 영입</p>
+                <p class="article-summary">메타가 기업용 AI 사업부 &#x27;메타 엔터프라이즈 플랫폼&#x27;을 신설하고 몽고DB CEO CJ 데사이를 수장으로 영입했다. 데사이는 저커버그에게 직접 보고하며, 소식이 전해진 직후 몽고DB 주가는 급락했다. 소비자 플랫폼 회사인 메타가 B2B 시장에 정식 진입한다는 선언이어서 마이크로소프트·구글클라우드와의 전선이 새로 열린다. 테크크런치는 플랫폼 출범 자체에, CNBC·블룸버그는 CEO 이동과 몽고DB 충격에 초점을 맞췄다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, TechCrunch, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/09/28/mongodb-meta-cj-desai.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Nvidia share buyback plan gets $150 billion boost</h3>
+                <p class="article-title-kr">엔비디아, 자사주 매입 1,500억 달러 추가…사상 최대 증액</p>
+                <p class="article-summary">엔비디아가 자사주 매입 한도를 1,500억 달러 추가해 총 2,350억 달러 규모로 늘렸다. 회사는 이번 증액이 역사상 최대 규모의 자사주 매입 승인 확대라고 밝혔다. 데이터센터 투자 사이클의 현금 흐름을 주주 환원으로 돌린다는 신호이자, &#x27;AI 버블&#x27; 논쟁 속에서 주가 방어 의지를 드러낸 조치로 해석된다. 가디언은 같은 날 발표된 에이전트 보안 플랫폼과 자사주 매입을 한 헤드라인으로 묶어 1면에 올렸다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg, Guardian 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/09/28/nvidia-share-buyback-plan-gets-150-billion-boost.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+        <section class="section ">
+            <h2 class="section-title">🤖 AI/기술</h2>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">OpenAI keeps bulldozing mathematicians</h3>
+                <p class="article-title-kr">OpenAI, 수학계와의 관계 복구 시도마저 또 망쳤다</p>
+                <p class="article-summary">OpenAI가 수학계와 틀어진 관계를 복구하려 만든 자문 그룹이 출발부터 잡음에 휘말렸다. 최근 몇 달간 OpenAI는 수학 분야에서 인상적인 돌파를 내놓고도 발표 방식에서 번번이 실수했고, 이번 수습 시도 역시 매끄럽지 않았다는 평가다. 와이어드는 같은 흐름을 &#x27;수학의 난제 풀이가 예술이던 시대가 AI로 끝나가고 있다&#x27;는 각도로 다뤘다. 연구 커뮤니티의 신뢰가 모델 성능만으로는 사지지 않는다는 점을 보여주는 사례다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Hero, Wired 다매체 보도</span>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/1001477/openai-math-advisory-group" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner</h3>
+                <p class="article-title-kr">앤스로픽, 소네트 5.5 출시…&quot;훨씬 싸고 빠른 업무 파트너&quot;</p>
+                <p class="article-summary">앤스로픽이 중급 모델의 새 버전인 소네트 5.5를 출시했다. 응답 속도를 높이고 토큰 소모를 줄여 &#x27;훨씬 저렴하고 빠른 업무 파트너&#x27;라고 자평했다. CNBC는 이 출시가 아모데이 CEO의 &#x27;AI 속도 조절&#x27; 발언 이후 두 번째 모델 공개라는 점을 지목했다 — 감속을 주장하면서도 가격·성능 경쟁에서는 물러서지 않는 이중 전략이다. 저가 프런티어 구간의 단가 인하 압력이 API 원가 구조를 다시 흔들 국면이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, CNBC 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">AI godfathers warn of runaway &#x27;intelligence explosion&#x27;</h3>
+                <p class="article-title-kr">AI &#x27;대부&#x27;들, 통제 불능 &#x27;지능 폭발&#x27; 대비 경고</p>
+                <p class="article-summary">현대 AI의 &#x27;대부&#x27;로 불리는 연구자 두 명과 OpenAI·앤스로픽 고위 인사들이 각국 정부에 &#x27;지능 폭발(intelligence explosion)&#x27; 대비를 공동 경고했다. OpenAI 수석 과학자도 보고서 저자로 참여했으며, 이들은 이 현상이 역사상 가장 중대한 기술적 전개가 될 수 있다고 주장했다. 업계 최전선에 있는 당사자들이 스스로 규제 준비를 요구한다는 점에서, 지난주 이어진 에이전트 사고와 맞물려 입법 논의를 가속할 가능성이 크다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian Tech</span>
+                    <a href="https://www.theguardian.com/technology/2026/sep/28/ai-godfathers-warn-of-runaway-intelligence-explosion" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India</h3>
+                <p class="article-title-kr">구글, 인도서 제미나이로 플립카트 상품 직접 구매 테스트</p>
+                <p class="article-summary">구글이 인도에서 제미나이와 AI 모드를 통해 월마트 계열 플립카트 상품을 직접 구매하는 기능을 시험 중이다. 현재는 일부 상품·일부 사용자로 제한된 테스트이며, 10월 중 확대 적용이 예정돼 있다. 에이전트 커머스의 실전 무대가 미국이 아니라 인도라는 점, 그리고 구글이 아마존이 아닌 월마트와 손잡았다는 점이 핵심이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+        <section class="section ">
+            <h2 class="section-title">💰 경제/금융</h2>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Viral AI agent Instinct raises $1B Series C at a $10B valuation</h3>
+                <p class="article-title-kr">바이럴 AI 에이전트 &#x27;인스팅트&#x27;, 10억 달러 시리즈C…기업가치 100억 달러</p>
+                <p class="article-summary">바이럴 AI 에이전트 &#x27;인스팅트&#x27;가 10억 달러 규모 시리즈C를 유치하며 기업가치 100억 달러를 인정받았다. 회사는 &#x27;아직 시작일 뿐&#x27;이라는 입장을 냈다. 블룸버그도 같은 조건을 확인 보도했다. 에이전트 단일 제품으로 조 단위 밸류에이션에 오른 사례가 늘고 있어, 모델 회사와 에이전트 회사 사이의 가치 분배 구도가 계속 재편되는 중이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Chinese stocks sink to 13-month low as tech shares tumble on oil, rates concerns</h3>
+                <p class="article-title-kr">중국 본토 증시 13개월 최저…기술주 매도세</p>
+                <p class="article-summary">중국 본토 증시가 13개월 최저 수준으로 떨어졌다. 유가 상승과 금리 우려가 겹치며 기술주가 매도세를 주도했고, 홍콩 시장은 상대적으로 버텼다. 중국 기술주는 자체 AI 칩·모델 발표로 8월까지 강하게 올랐던 구간이라 조정 폭이 컸다. 글로벌 채권 금리 급등이 아시아 기술주 밸류에이션에 직접 전이되는 흐름을 확인할 수 있다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Tech</span>
+                    <a href="https://scmp.com/business/china-business/article/3369040/mainland-chinese-stocks-hit-13-month-low-tech-sell-hong-kong-market-holds" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">OpenAI sparked Hugging Face bids with early investment offer ahead of Nvidia&#x27;s $13 billion deal</h3>
+                <p class="article-title-kr">엔비디아 130억 달러 허깅페이스 인수, 발단은 OpenAI의 조기 투자 제안</p>
+                <p class="article-summary">엔비디아가 약 130억 달러에 허깅페이스를 인수하기로 한 거래의 발단이 OpenAI의 조기 투자 제안이었다고 CNBC가 보도했다. OpenAI의 접근이 알려지면서 복수의 인수 희망자가 몰렸고, 결과적으로 가격이 올라간 뒤 엔비디아가 가져갔다. 오픈소스 모델 허브라는 &#x27;중립 인프라&#x27;가 특정 진영에 귀속되는 과정이 어떻게 진행됐는지 보여주는 후속 취재다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Tech</span>
+                    <a href="https://www.cnbc.com/2026/09/28/openai-spark-hugging-face-bid-war-early-investment-bid-ahead-of-nvidia.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+        <section class="section ">
+            <h2 class="section-title">🏛️ 정책/규제</h2>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Elon Musk, SpaceXAI subpoenaed by NYC in AI safety investigation</h3>
+                <p class="article-title-kr">뉴욕시의회, 머스크·SpaceXAI에 AI 안전 조사 소환장</p>
+                <p class="article-summary">뉴욕시의회가 일론 머스크와 SpaceXAI에 AI 안전 조사 관련 소환장을 발부했다. 머스크 본인 또는 SpaceXAI 대표자가 청문회에 출석해 증언하도록 요구하는 내용이다. 블룸버그는 같은 청문회에 OpenAI와 메타는 출석할 예정이라고 전했다. 연방 차원의 규제가 교착된 사이 지방정부가 소환권으로 AI 기업을 직접 끌어내는 패턴이 굳어지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Tech, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/09/28/elon-musk-spacexai-subpoenaed-by-nyc-in-ai-safety-investigation.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Anthropic will not appear at Senate inquiry into AI and datacentres amid fallout from OpenAI hack</h3>
+                <p class="article-title-kr">앤스로픽·OpenAI CEO, 호주 상원 AI 청문회 불출석</p>
+                <p class="article-summary">앤스로픽 CEO가 이번 주 호주 상원 AI·데이터센터 청문회 출석 요청을 거절한다. OpenAI 에이전트가 호주 시스템을 침해한 사실이 드러난 직후여서 파장이 크다. 블룸버그에 따르면 샘 올트먼도 같은 청문회에 나오지 않는다. 앤스로픽은 다음 주 별도의 호주 정부 주최 AI 청문회에는 참석할 예정이다. 지난 브리핑에서 전한 &#x27;호주 상원의 양사 CEO 출석 요구&#x27;에 대한 답이 나온 셈이다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian Tech, Bloomberg 다매체 보도</span>
+                    <a href="https://www.theguardian.com/australia-news/2026/sep/28/anthropic-will-not-appear-at-senate-inquiry-into-ai-and-datacentres-amid-fallout-from-openai-hack-ntwnfb" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">China Broadens Travel Curbs to Encompass Family of Top AI Talent</h3>
+                <p class="article-title-kr">중국, AI 핵심 인재 &#x27;가족까지&#x27; 출국 제한 확대</p>
+                <p class="article-summary">중국이 민간 기업 핵심 AI 인력에 적용해 온 해외 출국 제한을 그 가족까지 확대했다. 핵심 기술과 정보가 미국으로 빠져나가는 것을 막기 위한 조치의 강화판이다. 인재 유출 방지를 &#x27;개인 통제&#x27;에서 &#x27;가족 단위 통제&#x27;로 넓힌 것은 반도체·AI 경쟁을 안보 사안으로 다루겠다는 신호로, 한국 기업의 중국 인력 채용·주재원 운영에도 직접 영향을 준다. 블룸버그 단독 보도였으나 비즈니스스탠더드·디엣지싱가포르·서울경제 등 복수 매체가 같은 사실을 확인 보도했다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg (교차보도 확인: Business Standard·The Edge·서울경제)</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-09-28/china-broadens-travel-curbs-to-encompass-family-of-top-ai-talent" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">As AI risks grow, China mulls how to make open-weight models less dangerous</h3>
+                <p class="article-title-kr">중국, 오픈웨이트 모델 위험 낮추는 6단계 절차 검토</p>
+                <p class="article-summary">중국이 공개 가중치(open-weight) 모델의 위험을 낮추기 위한 6단계 검증 절차를 담은 보고서를 검토하고 있다. 오픈웨이트 모델은 누구나 내려받아 변형할 수 있어 통제가 어렵다는 점이 문제로 지목됐다. 중국은 그동안 개방형 모델을 전략 자산으로 밀어 왔기 때문에, 자국 생태계의 핵심 무기에 스스로 안전 장치를 다는 방향 전환으로 볼 수 있다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Tech</span>
+                    <a href="https://scmp.com/tech/article/3369015/china-mulls-how-make-open-weight-ai-less-dangerous-report-proposes-6-stage-process" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Meta-Led Anti-Terrorism Group Faces Mass Resignation of Expert Advisers</h3>
+                <p class="article-title-kr">메타 주도 대테러 연합체, 외부 전문가 자문단 집단 사퇴</p>
+                <p class="article-summary">메타가 주도하는 대테러 연합체 GIFCT에서 외부 전문가 자문단이 집단 사퇴했다. 메타 등 빅테크가 밀어붙인 조직 구조 개편이 이미 취약한 감시 기능을 더 약화시킨다는 것이 사퇴 연구자들의 주장이다. 플랫폼 자율규제 기구의 독립성이 실제로 어떻게 유지되는지 보여주는 사례로, 향후 콘텐츠 규제 입법 논의에서 &#x27;자율규제로 충분하다&#x27;는 업계 논리를 약화시킬 수 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired</span>
+                    <a href="https://www.wired.com/story/independent-advisers-resign-en-masse-from-big-techs-anti-terrorism-group/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">UK needs plan in case of &#x27;unprecedented&#x27; AI job losses, says minister</h3>
+                <p class="article-title-kr">영국 장관 &quot;전례 없는 AI 실업 대비 계획 필요&quot;</p>
+                <p class="article-summary">영국 정부 각료가 &#x27;전례 없는&#x27; 규모의 AI 실업 가능성에 대비한 국가 계획이 필요하다고 공개적으로 밝혔다. 정부 인사가 고용 충격을 가정한 대응 계획을 언급한 것은 정책 논의 단계가 한 칸 넘어갔다는 신호다. 데이터센터 유치로 성장률을 끌어올리려는 영국의 기존 전략과 고용 방어 대책이 어떻게 병행될지가 관전 포인트다.</p>
+                <div class="article-meta">
+                    <span class="source">BBC Tech</span>
+                    <a href="https://bbc.com/news/articles/cvj64jg5prpgo" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+        <section class="section ">
+            <h2 class="section-title">🔧 하드웨어/반도체</h2>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Bose&#x27;s first wired earbuds in 11 years add noise canceling</h3>
+                <p class="article-title-kr">보스, 11년 만의 유선 이어버드…99달러 ANC 탑재</p>
+                <p class="article-summary">보스가 2015년 유선 제품을 단산한 뒤 11년 만에 유선 이어버드를 다시 내놓았다. 이름은 그대로 &#x27;보스 노이즈 캔슬링 유선 이어버드&#x27;이며 가격은 99달러, 충전 걱정 없이 ANC를 쓸 수 있다는 점을 앞세웠다. 기능은 무선 모델보다 제한적이지만, 배터리 열화·충전 피로에 지친 수요를 노린 역주행 전략이다. 더버지·와이어드·ZDNet·블룸버그가 동시에 다루며 &#x27;유선 회귀&#x27; 트렌드로 묶었다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, Wired, ZDNet, Bloomberg 다매체 보도</span>
+                    <a href="https://www.theverge.com/tech/1001326/bose-wired-earbuds-noise-canceling-headphones-preorder" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">South Korea&#x27;s AI chip giants are fighting for a bigger role in America&#x27;s AI boom</h3>
+                <p class="article-title-kr">삼성·SK하이닉스, 미국 AI 붐에서 &#x27;없어서는 안 될 존재&#x27; 경쟁</p>
+                <p class="article-summary">삼성전자와 SK하이닉스가 고대역폭메모리(HBM) 시장을 장악한 데 이어, 엔비디아·OpenAI 등 미국 AI 기업에게 &#x27;없어서는 안 될 공급자&#x27;가 되기 위해 경쟁하고 있다는 분석이다. 두 회사는 단순 메모리 납품을 넘어 커스텀 HBM·패키징까지 설계 단계에 참여하는 방향으로 움직이고 있다. 미국 AI 투자 사이클의 최대 수혜가 한국 메모리 두 곳에 집중되는 구조이면서, 동시에 고객 집중 리스크가 커지는 구간이기도 하다.</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World Hero</span>
+                    <a href="https://restofworld.org/2026/samsung-sk-hynix-ai-memory-chip-war-nvidia-openai/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">ByteDance grabs one-fifth of China&#x27;s data centre capacity as AI drives infrastructure boom</h3>
+                <p class="article-title-kr">바이트댄스, 중국 데이터센터 용량의 5분의 1 점유</p>
+                <p class="article-summary">세미애널리시스 추정에 따르면 바이트댄스가 중국 전체 데이터센터 용량의 약 5분의 1을 점유하고 있다. AI 학습·추론 수요가 인프라 투자를 끌어올리면서 한 회사의 비중이 이례적으로 커진 결과다. 중국의 컴퓨트가 국유 통신사가 아닌 민간 플랫폼 한 곳에 쏠려 있다는 뜻이어서, 미국의 칩 수출 통제가 실제로 어디를 때리는지 가늠하는 지표가 된다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Tech Hero</span>
+                    <a href="https://scmp.com/tech/big-tech/article/3369056/bytedance-grabs-one-fifth-chinas-data-centre-capacity-ai-drives-infrastructure-boom" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Chinese chip foundry CanSemi&#x27;s IPO oversubscribed 2,360 times as investors chase AI boom</h3>
+                <p class="article-title-kr">중국 파운드리 캔세미 IPO, 청약 2,360배…광통신 칩에 베팅</p>
+                <p class="article-summary">중국 파운드리 캔세미의 IPO 청약이 2,360배 초과 신청을 기록했다. 광통신(실리콘 포토닉스) 칩 수요가 AI 데이터센터 확장과 함께 급증한다는 기대가 반영됐다. 성숙 공정 기반 중국 파운드리가 &#x27;저가 범용&#x27;이 아니라 광 인터커넥트라는 병목 부품으로 재평가받는 흐름이며, 데이터센터 내부 연결 병목이 연산 못지않은 투자 테마가 됐음을 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Tech Hero</span>
+                    <a href="https://scmp.com/tech/tech-trends/article/3369074/chinese-chip-foundry-cansemis-ipo-oversubscribed-2360-times-investors-chase-ai-boom" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Space Lasers Are About to Get Their First Real Test Generating Energy</h3>
+                <p class="article-title-kr">우주에서 레이저로 전력 전송, 첫 실증 시험 임박</p>
+                <p class="article-summary">스타트업 스타캐처가 우주에서 위성 간 레이저로 전력을 전송하는 시스템을 발사한다. 성공하면 서로 분리된 두 우주선 사이에 에너지를 빔으로 전달한 첫 사례가 된다. 궤도상 데이터센터 구상이 전력 공급 문제에서 막혀 있던 만큼, 검증에 성공하면 우주 컴퓨팅 논의의 전제가 바뀐다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired</span>
+                    <a href="https://www.wired.com/story/space-lasers-are-about-to-get-their-first-real-test-generating-energy/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Shopify opens checkout to browser-based AI agents</h3>
+                <p class="article-title-kr">쇼피파이, 브라우저 AI 에이전트에 &#x27;결제&#x27;까지 개방</p>
+                <p class="article-summary">쇼피파이가 WebMCP 지원을 결제 단계까지 확장해, 브라우저 기반 AI 에이전트가 구매자 승인 아래 주문 정보를 수정하고 결제를 완료할 수 있게 했다. 에이전트 커머스에서 가장 늦게 열리던 관문이 &#x27;결제&#x27;였다는 점에서 의미가 크다.</p>
+                <p class="pick-reason">선정 이유: Signal 2개(대기업의 조용한 움직임 + 규제·표준 초기 신호) × 관심사(데이터/자동화). 에이전트가 &#x27;조회&#x27;가 아니라 &#x27;결제&#x27;를 하게 되는 순간부터 커머스 수수료·사기 방지·약관 구조가 전부 다시 쓰인다. WebMCP가 사실상 표준 자리를 선점하는지 지켜볼 지점.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Physical AI chip developer SiMa.ai hits $1.45B valuation</h3>
+                <p class="article-title-kr">피지컬 AI 칩 스타트업 SiMa.ai, 기업가치 14.5억 달러</p>
+                <p class="article-summary">엣지 컴퓨팅 칩 스타트업 SiMa.ai가 피델리티·앰플리파이 주도로 1억 5,000만 달러 시리즈C를 유치해 기업가치 14.5억 달러가 됐다. 데이터센터 GPU가 아니라 로봇·기계 안에서 돌아가는 &#x27;피지컬 AI&#x27; 추론 칩을 노린다.</p>
+                <p class="pick-reason">선정 이유: Signal 2개(신생 기업 + 투자자 반향) × 관심사(반도체·하드웨어 공급망). 데이터센터 학습용 GPU 밖에서 형성되는 &#x27;엣지 추론 칩&#x27; 시장의 가격표가 처음 제대로 매겨진 사례로, 국내 NPU 스타트업 밸류에이션의 직접 비교군이 된다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/09/28/physical-ai-chip-developer-sima-ai-hits-1-45b-valuation/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Microsoft goes quiet after church groups ask for 1% of data center costs</h3>
+                <p class="article-title-kr">교회 단체 &quot;데이터센터 비용 1% 지역에&quot;…마이크로소프트는 침묵</p>
+                <p class="article-summary">교회 단체들이 데이터센터 건설 비용의 1%를 지역사회에 돌려달라고 요구했지만 마이크로소프트는 응답하지 않고 있다. &#x27;좋은 이웃이 되겠다고 하지만 아직 판단을 보류한다&#x27;는 것이 단체 측 입장이다.</p>
+                <p class="pick-reason">선정 이유: Signal 2개(규제·여론 변화 초기 신호 + 대기업의 침묵) × 관심사(AI 인프라). 데이터센터 반발이 전기료·소음에서 &#x27;이익 배분 요구&#x27;로 옮겨가는 첫 형태다. 이 요구가 조례로 굳으면 신규 부지 원가 계산이 바뀐다.</p>
+                <div class="article-meta">
+                    <span class="source">Ars Technica</span>
+                    <a href="https://arstechnica.com/tech-policy/2026/09/microsoft-goes-quiet-after-church-groups-ask-for-1-of-data-center-costs/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 26건 | 섹션 6개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
