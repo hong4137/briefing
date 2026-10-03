@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
 <meta charset="utf-8"/>
@@ -39,18 +40,29 @@ footer a{color:#667eea;text-decoration:none}
 footer a:hover{text-decoration:underline}
 @media (max-width:768px){.title{font-size:1.4rem}.article-card{padding:20px}}
 </style>
-</head>
-<body>
+<link href="../theme-modern.css" rel="stylesheet"/><script defer="" src="../app.js?v=7"></script></head>
+<body class="reader-mode"><nav class="reader-nav">
+<div class="reader-nav-inner">
+<a class="reader-nav-logo" href="../index.html">JFNB</a>
+<div class="reader-nav-links">
+<a href="../index.html">홈</a>
+<a href="../archive.html">아카이브</a>
+<a href="../about.html">소개</a>
+<a href="../saved.html">⭐ 보관함 <span data-jfnb-count=""></span></a>
+<span class="reader-nav-unread" data-jfnb-unread=""></span>
+<span class="reader-nav-auth" data-jfnb-auth=""></span>
+</div>
+</div>
+</nav>
 <div class="container">
 <header class="header">
 <div class="date-badge">2026년 10월 3일 토요일</div>
 <h1 class="title">리비안 사상 최대·테슬라 예상 상회 | 아마존 데이터센터 NDA 폐지 | 애플, AI 에이전트 겨냥 맥 보안 강화</h1>
 <p class="summary">미국 EV 3분기 성적표가 엇갈렸다 — 리비안은 보급형 R2로 사상 최대 인도를, 테슬라는 예상은 넘었지만 전년보다 줄었다. 거센 지역 반발에 아마존은 데이터센터 비밀유지계약을 폐지하고 10억 달러를 내놨다. 애플은 AI 에이전트를 공식 위협으로 지목하며 맥 권한을 조이고, 美 10년물 금리는 2002년 이후 최고를 찍었다.</p>
 </header>
-
 <section class="section top-section">
 <h2 class="section-title">🔥 TOP Headlines</h2>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="0" data-card-title="Rivian’s R2 just helped it set a new sales record" data-card-type="article" data-card-url="https://techcrunch.com/2026/10/02/rivians-r2-just-helped-it-set-a-new-sales-record/" id="art-0">
 <span class="badge badge-hot">HOT</span>
 <h3 class="article-title">Rivian’s R2 just helped it set a new sales record</h3>
 <p class="article-title-kr">리비안, 보급형 R2 효과로 분기 인도량 사상 최대 — 전년 대비 46% 증가</p>
@@ -60,7 +72,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://techcrunch.com/2026/10/02/rivians-r2-just-helped-it-set-a-new-sales-record/" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="1" data-card-title="Tesla reports 486,532 vehicle deliveries for third quarter, topping expectation" data-card-type="article" data-card-url="https://www.cnbc.com/2026/10/02/tesla-tsla-q3-2026-vehicle-delivery-production.html" id="art-1">
 <span class="badge badge-hot">HOT</span>
 <h3 class="article-title">Tesla reports 486,532 vehicle deliveries for third quarter, topping expectation</h3>
 <p class="article-title-kr">테슬라 3분기 48만6,532대 인도 — 예상치는 넘었지만 전년보다는 감소</p>
@@ -70,7 +82,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://www.cnbc.com/2026/10/02/tesla-tsla-q3-2026-vehicle-delivery-production.html" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="2" data-card-title="Amazon Says It's No Longer Using NDAs for Data Centers" data-card-type="article" data-card-url="https://www.wired.com/story/amazon-says-it-is-going-to-stop-using-ndas-for-data-centers/" id="art-2">
 <span class="badge badge-hot">HOT</span>
 <h3 class="article-title">Amazon Says It's No Longer Using NDAs for Data Centers</h3>
 <p class="article-title-kr">아마존, 데이터센터 '비밀유지계약' 폐지·지역사회에 10억 달러 — 반발 진화 나서</p>
@@ -81,10 +93,9 @@ footer a:hover{text-decoration:underline}
 </div>
 </article>
 </section>
-
 <section class="section">
 <h2 class="section-title">🤖 AI/기술</h2>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="3" data-card-title="Trump’s Crazy AI Rebrand Was a Loyalty Test for Tech Execs—and It Worked" data-card-type="article" data-card-url="https://www.wired.com/story/trumps-crazy-ai-rebrand-was-a-loyalty-test-for-tech-execs-and-it-worked/" id="art-3">
 <span class="badge badge-update">UPDATE</span>
 <h3 class="article-title">Trump’s Crazy AI Rebrand Was a Loyalty Test for Tech Execs—and It Worked</h3>
 <p class="article-title-kr">🔁 트럼프의 'AI→슈퍼 인텔리전스' 개명은 빅테크 충성도 시험이었다</p>
@@ -94,7 +105,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://www.wired.com/story/trumps-crazy-ai-rebrand-was-a-loyalty-test-for-tech-execs-and-it-worked/" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="4" data-card-title="OpenAI’s Dot agent is enterprise software that can also order your dinner" data-card-type="article" data-card-url="https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent" id="art-4">
 <span class="badge badge-update">UPDATE</span>
 <h3 class="article-title">OpenAI’s Dot agent is enterprise software that can also order your dinner</h3>
 <p class="article-title-kr">🔁 오픈AI 'Dots' 써보니 — 메타 뮤즈 겨냥했지만 본질은 기업용 소프트웨어</p>
@@ -104,7 +115,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="5" data-card-title="Anthropic to invest $100 million to train AI engineer talent" data-card-type="article" data-card-url="https://www.cnbc.com/2026/10/02/anthropic-to-invest-100-million-to-train-ai-engineer-talent.html" id="art-5">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Anthropic to invest $100 million to train AI engineer talent</h3>
 <p class="article-title-kr">앤스로픽, 1억 달러 투입해 AI 엔지니어 1만 명 양성</p>
@@ -114,7 +125,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://www.cnbc.com/2026/10/02/anthropic-to-invest-100-million-to-train-ai-engineer-talent.html" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="6" data-card-title="Facebook whistleblower Frances Haugen questions whether AI companies can police themselves" data-card-type="article" data-card-url="https://www.cnbc.com/2026/10/02/frances-haugen-ai-self-regulation.html" id="art-6">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Facebook whistleblower Frances Haugen questions whether AI companies can police themselves</h3>
 <p class="article-title-kr">페이스북 내부고발자 하우겐 "AI 기업, 스스로 감시할 수 있나"</p>
@@ -124,7 +135,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://www.cnbc.com/2026/10/02/frances-haugen-ai-self-regulation.html" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="7" data-card-title="Who gets to decide if AI is safe? Africa wants a say" data-card-type="article" data-card-url="https://restofworld.org/2026/african-leaders-un-security-council-ai-safety/" id="art-7">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Who gets to decide if AI is safe? Africa wants a say</h3>
 <p class="article-title-kr">AI 안전은 누가 정하나 — 아프리카도 발언권 요구</p>
@@ -134,7 +145,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://restofworld.org/2026/african-leaders-un-security-council-ai-safety/" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="8" data-card-title="Health Care Workers Are Tired of Cleaning Up Palantir’s Mess" data-card-type="article" data-card-url="https://www.wired.com/story/healthcare-workers-are-tired-of-cleaning-up-palantirs-mess/" id="art-8">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Health Care Workers Are Tired of Cleaning Up Palantir’s Mess</h3>
 <p class="article-title-kr">"팔란티어 뒷수습 지쳤다" — 병원 스케줄링 도입 후 오류·번아웃</p>
@@ -145,10 +156,9 @@ footer a:hover{text-decoration:underline}
 </div>
 </article>
 </section>
-
 <section class="section">
 <h2 class="section-title">💰 경제/금융</h2>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="9" data-card-title="10-year Treasury yield hits highest level since 2002 as global bond rout gathers pace" data-card-type="article" data-card-url="https://www.cnbc.com/2026/10/01/us-treasury-bond-yield.html" id="art-9">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">10-year Treasury yield hits highest level since 2002 as global bond rout gathers pace</h3>
 <p class="article-title-kr">美 10년물 금리 2002년 이후 최고 — 9월 고용은 2만9,000명 '쇼크'</p>
@@ -158,7 +168,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://www.cnbc.com/2026/10/01/us-treasury-bond-yield.html" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="10" data-card-title="Accenture’s Tech Clients Helped Quarterly Revenue Beat Estimates" data-card-type="article" data-card-url="https://www.bloomberg.com/news/articles/2026-10-01/accenture-tops-quarterly-bookings-and-revenue-estimates" id="art-10">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Accenture’s Tech Clients Helped Quarterly Revenue Beat Estimates</h3>
 <p class="article-title-kr">액센츄어, AI 전환 의구심 딛고 실적 서프라이즈 — 주가 20% 넘게 급등</p>
@@ -168,7 +178,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://www.bloomberg.com/news/articles/2026-10-01/accenture-tops-quarterly-bookings-and-revenue-estimates" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="11" data-card-title="Lyft is paying $272.5M to settle lawsuit over how it classified drivers" data-card-type="article" data-card-url="https://techcrunch.com/2026/10/01/lyft-is-paying-272-5m-to-settle-lawsuit-over-how-it-classified-drivers/" id="art-11">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Lyft is paying $272.5M to settle lawsuit over how it classified drivers</h3>
 <p class="article-title-kr">리프트, 운전기사 분류 소송 2억7,250만 달러에 합의</p>
@@ -179,10 +189,9 @@ footer a:hover{text-decoration:underline}
 </div>
 </article>
 </section>
-
 <section class="section">
 <h2 class="section-title">📱 플랫폼/소셜</h2>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="12" data-card-title="Paramount and Warner Bros. Discovery to become Skydance" data-card-type="article" data-card-url="https://techcrunch.com/2026/10/02/paramount-and-warner-bros-discovery-to-become-skydance/" id="art-12">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Paramount and Warner Bros. Discovery to become Skydance</h3>
 <p class="article-title-kr">파라마운트+워너브러더스디스커버리, 합병 후 사명 'Skydance'</p>
@@ -192,7 +201,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://techcrunch.com/2026/10/02/paramount-and-warner-bros-discovery-to-become-skydance/" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="13" data-card-title="Inside Microsoft’s big Copilot rethink" data-card-type="article" data-card-url="https://www.theverge.com/tech/1003365/microsoft-copilot-os-for-work-notepad" id="art-13">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Inside Microsoft’s big Copilot rethink</h3>
 <p class="article-title-kr">마이크로소프트의 코파일럿 대수술 — 그리고 이어지는 임원 이탈</p>
@@ -202,7 +211,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://www.theverge.com/tech/1003365/microsoft-copilot-os-for-work-notepad" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="14" data-card-title="Netflix is pivoting away from prestige" data-card-type="article" data-card-url="https://www.theverge.com/streaming/1004323/netflix-david-fincher-shawn-levy-mike-flanagan-duffer-brothers-greta-gerwig" id="art-14">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Netflix is pivoting away from prestige</h3>
 <p class="article-title-kr">넷플릭스, '명작 감독' 노선에서 방향 튼다</p>
@@ -212,7 +221,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://www.theverge.com/streaming/1004323/netflix-david-fincher-shawn-levy-mike-flanagan-duffer-brothers-greta-gerwig" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="15" data-card-title="NYC is now the first city in America that bans sketchy subscriptions" data-card-type="article" data-card-url="https://www.theverge.com/policy/1003426/nyc-click-to-cancel-subscriptions-rule" id="art-15">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">NYC is now the first city in America that bans sketchy subscriptions</h3>
 <p class="article-title-kr">뉴욕시, 미국 도시 최초 '클릭 한 번 해지' 의무화</p>
@@ -223,10 +232,9 @@ footer a:hover{text-decoration:underline}
 </div>
 </article>
 </section>
-
 <section class="section">
 <h2 class="section-title">🔧 하드웨어/보안</h2>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="16" data-card-title="Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents" data-card-type="article" data-card-url="https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/" id="art-16">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents</h3>
 <p class="article-title-kr">애플, AI 에이전트 위험 이유로 맥 '전체 디스크 접근' 권한 강화</p>
@@ -236,7 +244,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="17" data-card-title="A Flaw in ChatGPT’s Mac App Could Have Let Hackers Grab Sensitive Data" data-card-type="article" data-card-url="https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/" id="art-17">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">A Flaw in ChatGPT’s Mac App Could Have Let Hackers Grab Sensitive Data</h3>
 <p class="article-title-kr">챗GPT 맥 앱 취약점, 해커의 민감 정보 탈취 가능성 있었다</p>
@@ -246,7 +254,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="18" data-card-title="US arrests tech CEO accused of smuggling $300M in Nvidia chips into China" data-card-type="article" data-card-url="https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/" id="art-18">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">US arrests tech CEO accused of smuggling $300M in Nvidia chips into China</h3>
 <p class="article-title-kr">엔비디아 AI 칩 3억 달러어치 中 밀수 혐의 기업인 체포</p>
@@ -256,7 +264,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="19" data-card-title="Memory executives expect RAM shortage to continue through 2028" data-card-type="article" data-card-url="https://arstechnica.com/information-technology/2026/10/memory-supplies-are-only-getting-tighter-micron-ceo-says/" id="art-19">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Memory executives expect RAM shortage to continue through 2028</h3>
 <p class="article-title-kr">메모리 부족 2028년까지 — 구글·화웨이 스마트폰 가격 줄인상</p>
@@ -266,17 +274,17 @@ footer a:hover{text-decoration:underline}
 <a href="https://arstechnica.com/information-technology/2026/10/memory-supplies-are-only-getting-tighter-micron-ceo-says/" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="20" data-card-title="iPhone 18 Pro Max stuck in SOS mode? Try AT&amp;T’s urgent fix ASAP" data-card-type="article" data-card-url="https://www.zdnet.com/tech/iphone-18-pro-max-att-call-text-sos-issue-update-fix/" id="art-20">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">iPhone 18 Pro Max stuck in SOS mode? Try AT&amp;T’s urgent fix ASAP</h3>
-<p class="article-title-kr">아이폰 18 프로맥스 AT&T 먹통 버그 — 일부는 기기 교체</p>
-<p class="article-summary">최근 아이폰 18 프로맥스로 바꾼 일부 AT&T 고객이 셀룰러 서비스가 끊겨 통화·문자를 할 수 없는 'SOS 모드' 문제를 겪고 있다. AT&T는 즉시 업데이트를 권고했고, 애플은 '소수' 고객은 기기를 교체해야 한다고 밝혔다.</p>
+<p class="article-title-kr">아이폰 18 프로맥스 AT&amp;T 먹통 버그 — 일부는 기기 교체</p>
+<p class="article-summary">최근 아이폰 18 프로맥스로 바꾼 일부 AT&amp;T 고객이 셀룰러 서비스가 끊겨 통화·문자를 할 수 없는 'SOS 모드' 문제를 겪고 있다. AT&amp;T는 즉시 업데이트를 권고했고, 애플은 '소수' 고객은 기기를 교체해야 한다고 밝혔다.</p>
 <div class="article-meta">
 <span class="source">ZDNet Featured, Bloomberg</span>
 <a href="https://www.zdnet.com/tech/iphone-18-pro-max-att-call-text-sos-issue-update-fix/" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="21" data-card-title="Robotaxi operators will face fines for blocking first responders" data-card-type="article" data-card-url="https://techcrunch.com/2026/10/01/robotaxi-operators-will-face-fines-for-blocking-first-responders/" id="art-21">
 <span class="badge badge-new">NEW</span>
 <h3 class="article-title">Robotaxi operators will face fines for blocking first responders</h3>
 <p class="article-title-kr">로보택시가 긴급차량 막으면 벌금 — 캘리포니아 새 법</p>
@@ -287,10 +295,9 @@ footer a:hover{text-decoration:underline}
 </div>
 </article>
 </section>
-
 <section class="section picks-section">
 <h2 class="section-title">💎 Claude's Pick</h2>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="22" data-card-title="Kevin Mandia’s new ‘agent swarm’ security startup Armadin raises $255.5M at $2.5B valuation" data-card-type="article" data-card-url="https://techcrunch.com/2026/10/01/kevin-mandias-new-agent-swarm-security-startup-armadin-raises-255-5m-at-2-5b-valuation/" id="art-22">
 <span class="badge badge-pick">PICK</span>
 <h3 class="article-title">Kevin Mandia’s new ‘agent swarm’ security startup Armadin raises $255.5M at $2.5B valuation</h3>
 <p class="article-summary">맨디언트 창업자 케빈 맨디아의 새 스타트업 아르마딘이 기업 보안 테스트·방어에 'AI 에이전트 군집'을 쓰는 방식으로 2억5,550만 달러를 유치하며 기업가치 25억 달러를 인정받았다. 에이전트가 공격 도구가 되는 시대에 방어도 에이전트로 한다는 접근이다.</p>
@@ -300,7 +307,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://techcrunch.com/2026/10/01/kevin-mandias-new-agent-swarm-security-startup-armadin-raises-255-5m-at-2-5b-valuation/" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="23" data-card-title="TSMC Mulls Multibillion-Dollar Texas Campus for More AI Chips" data-card-type="article" data-card-url="https://www.bloomberg.com/news/articles/2026-10-01/tsmc-mulls-multibillion-dollar-texas-campus-for-more-ai-chips" id="art-23">
 <span class="badge badge-pick">PICK</span>
 <h3 class="article-title">TSMC Mulls Multibillion-Dollar Texas Campus for More AI Chips</h3>
 <p class="article-summary">TSMC가 텍사스에 새 캠퍼스를 짓는 방안을 검토 중이다. 성사되면 미국 내 반도체 생산 확장에 수백억 달러의 신규 투자가 더해진다. 애리조나에 이은 두 번째 거점으로, AI 칩 공급망 지도가 다시 그려질 수 있다.</p>
@@ -310,7 +317,7 @@ footer a:hover{text-decoration:underline}
 <a href="https://www.bloomberg.com/news/articles/2026-10-01/tsmc-mulls-multibillion-dollar-texas-campus-for-more-ai-chips" target="_blank">원문 보기 →</a>
 </div>
 </article>
-<article class="article-card">
+<article class="article-card jfnb-card" data-card-index="24" data-card-title="Amazon to Move $8 Billion of Chips Off Its Books, FT Says" data-card-type="article" data-card-url="https://www.bloomberg.com/news/articles/2026-10-02/amazon-seeks-to-move-8-billion-of-chips-off-its-books-ft-says" id="art-24">
 <span class="badge badge-pick">PICK</span>
 <h3 class="article-title">Amazon to Move $8 Billion of Chips Off Its Books, FT Says</h3>
 <p class="article-summary">파이낸셜타임스에 따르면 아마존이 약 80억 달러 규모의 엔비디아 최상위 칩을 대차대조표에서 떼어내는 거래를 모색하고 있다. 천문학적 AI 설비투자를 장부 밖 구조로 옮기려는 시도로, 빅테크 AI 투자의 재무 구조 변화를 보여주는 초기 신호다.</p>
@@ -321,7 +328,6 @@ footer a:hover{text-decoration:underline}
 </div>
 </article>
 </section>
-
 <section class="section">
 <h2 class="section-title">📊 주요 시장 동향</h2>
 <div class="market-grid">
@@ -333,11 +339,59 @@ footer a:hover{text-decoration:underline}
 <p class="article-summary">채권 금리 급등이 AI 외 종목을 짓누르는 가운데 AI 대형주는 버티는 '양극화 장세'. 약한 고용 지표로 10월 금리 인상 가능성은 크게 낮아졌다.</p>
 </section>
 
-<footer>
-<p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
-<p>기사 25건 | 섹션 6개 | Pick 3건</p>
-<p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
-</footer>
 </div>
-</body>
+<footer class="reader-footer">
+<div class="scroll-to-top-wrap">
+<button class="scroll-to-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" type="button">↑ 맨 위로</button>
+</div>
+<a href="../archive.html">← 아카이브로 돌아가기</a>
+<div class="footer-counter" id="visitor-counter-wrap" style="display:none;">
+    Today: <span class="counter-number" id="visitor-count-daily">0</span>
+      |  
+    Total: <span class="counter-number" id="visitor-count">0</span>
+</div>
+</footer>
+<script>
+(function(){
+  var API_BASE='https://abacus.jasoncameron.dev';
+  var NAMESPACE='hong4137-briefing';
+  var LS_KEY='jfnb-visited-date';
+  function getKstDate(){
+    return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);
+  }
+  function getKstDailyKey(){ return 'daily-'+getKstDate(); }
+  var todayStr=getKstDate();
+  var hasVisited=false;
+  try{ hasVisited=(localStorage.getItem(LS_KEY)===todayStr); }catch(e){}
+  var mode=hasVisited?'get':'hit';
+  var totalVal=null,dailyVal=null;
+  var wrap=document.getElementById('visitor-counter-wrap');
+  var sDly=document.getElementById('visitor-count-daily');
+  var sTot=document.getElementById('visitor-count');
+  function renderUI(){
+    if(!wrap||totalVal===null)return;
+    wrap.style.display='';
+    if(sTot)sTot.textContent=totalVal.toLocaleString();
+    if(sDly)sDly.textContent=dailyVal!==null?dailyVal.toLocaleString():'...';
+  }
+  fetch(API_BASE+'/'+mode+'/'+NAMESPACE+'/global')
+    .then(function(r){return r.ok?r.json():Promise.reject();})
+    .then(function(d){
+      var t=d.value!=null?d.value:d.count;
+      if(typeof t!=='number')return;
+      totalVal=t;
+      if(!hasVisited){try{localStorage.setItem(LS_KEY,todayStr);}catch(e){}}
+      renderUI();
+    })
+    .catch(function(){});
+  fetch(API_BASE+'/'+mode+'/'+NAMESPACE+'/'+getKstDailyKey())
+    .then(function(r){return r.ok?r.json():{value:0};})
+    .then(function(d){
+      var v=d.value!=null?d.value:d.count;
+      dailyVal=typeof v==='number'?v:0;
+      renderUI();
+    })
+    .catch(function(){dailyVal=0;renderUI();});
+})();
+</script></body>
 </html>
