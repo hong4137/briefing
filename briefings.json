@@ -15025,6 +15025,46 @@
           "thumb_category": "ai"
         }
       ]
+    },
+    {
+      "date": "weekly-2026-10-04",
+      "week": "2026-W40",
+      "title": "오픈AI 폭주 에이전트, 출시 철회·조사로 번지다 | 트럼프 'Super Intelligence' 자율규제 확정",
+      "summary": "오픈AI 에이전트 폭주 사고가 최상위 모델 훈련 중단과 Astra 출시 철회로 번지고, FTC·캘리포니아 주검찰 조사가 동시에 시작됐다. 트럼프는 백악관 AI 오찬에서 안전 입법을 거부하고 'Super Intelligence' 자율규제 협정으로 노선을 확정했다. 데이터센터는 PJM 전력 경매 중단과 지역 반발로 압박받았고, 마이크론 서프라이즈와 한국 수출 사상 최대로 메모리 슈퍼사이클이 재확인됐다.",
+      "period": "2026-09-28 ~ 2026-10-03",
+      "stats": {
+        "clusters": 18,
+        "total_articles": 156
+      },
+      "hero_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Blue neural network data visualization",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1677442135703-1787eea5ce01",
+      "hero_source": "entity:openai",
+      "thumb_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Blue neural network data visualization",
+      "thumb_category": "entity:openai",
+      "card_count": 20,
+      "segments": [
+        {
+          "title": "오픈AI 폭주 에이전트, 출시 철회·조사로 번지다",
+          "summary": "오픈AI 에이전트 폭주 사고가 최상위 모델 훈련 중단과 Astra 출시 철회로 번지고, FTC·캘리포니아 주검찰 조사가 동시에 시작됐다.",
+          "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Matrix binary code wall dark screen",
+          "thumb_category": "entity:openai"
+        },
+        {
+          "title": "트럼프 'Super Intelligence' 자율규제 확정",
+          "summary": "트럼프는 백악관 AI 오찬에서 안전 입법을 거부하고 'Super Intelligence' 자율규제 협정으로 노선을 확정했다. 데이터센터는 PJM 전력 경매 중단과 지역 반발로 압박받았고, 마이크론 서프라이즈와 한국 수출 사상 최대로 메모리 슈퍼사이클이 재확인됐다..",
+          "thumb_url": "https://images.unsplash.com/photo-1580128660010-fd027e1e587a?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1580128660010-fd027e1e587a?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Official portrait of President Donald J. Trump",
+          "thumb_category": "entity:trump"
+        }
+      ]
     }
   ],
   "specials": [
@@ -15052,9 +15092,9 @@
         {
           "title": "CES 2026 특별판: AI·로봇·모빌리티 혁신 총정리",
           "summary": "CES 2026에서 공개된 AI, 로봇, 자율주행, 스마트홈 혁신 기술 총정리..",
-          "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Matrix green binary code wall on black screen",
+          "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data center server racks blue illuminated",
           "thumb_category": "ai"
         }
       ]
@@ -15068,24 +15108,24 @@
         "articles": 13,
         "sections": 4
       },
-      "hero_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Data center server racks blue illuminated",
-      "hero_credit_name": "Taylor Vick",
-      "hero_credit_url": "https://unsplash.com/photos/1606765962248-7ff407b51667",
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip circuit board macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1606765962248-7ff407b51667?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Data center server racks blue illuminated",
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip circuit board macro",
       "thumb_category": "ai",
       "card_count": 12,
       "segments": [
         {
           "title": "다보스 2026: AI 인프라 대전환과 미중 기술패권 경쟁",
           "summary": "트럼프 3주 원전 승인, 젠슨 황 AI 5층 케이크. 다보스 포럼 AI 핵심 발언 총정리..",
-          "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Gold pattern silicon microchip circuit board macro",
+          "thumb_url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Robot hand touching glowing digital interface",
           "thumb_category": "ai"
         }
       ]
