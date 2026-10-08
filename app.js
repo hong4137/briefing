@@ -41,7 +41,9 @@
       'padding:12px 16px;background:#ffe45c;color:#111;font:600 15px/1.45 system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;' +
       'text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.25)';
     bar.innerHTML = '<span>📢 외신 브리핑 주소가 바뀌었습니다. 지금 이 주소는 <b>' + CLOSE + '</b>에 닫힙니다.</span>' +
-      '<a href="' + to + '" style="background:#111;color:#ffe45c;padding:6px 14px;border-radius:6px;text-decoration:none;white-space:nowrap">news.sharktalk.co.kr 로 가기 →</a>';
+      '<a href="' + to + '" style="background:#111;color:#ffe45c;padding:6px 14px;border-radius:6px;text-decoration:none;white-space:nowrap">news.sharktalk.co.kr 로 가기 →</a>' +
+      // 북마크·읽은 글은 계정(Firebase)에 저장되므로 새 주소에서 같은 구글 계정으로 다시 로그인하면 이어진다
+      '<span style="flex-basis:100%;font-weight:400;font-size:13px;opacity:.8">로그인해서 쓰셨다면 새 주소에서 같은 구글 계정으로 한 번만 다시 로그인하세요. 북마크와 읽은 글 기록이 그대로 이어집니다.</span>';
     document.body.insertBefore(bar, document.body.firstChild);
   }
   if (document.body) show(); else document.addEventListener('DOMContentLoaded', show);
