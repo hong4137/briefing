@@ -44,7 +44,10 @@
     bar.innerHTML = '<span>📢 외신 브리핑 주소가 바뀌었습니다. 지금 이 주소는 <b style="color:#c40000">' + CLOSE + '</b>에 닫힙니다.</span>' +
       '<a href="' + to + '" style="background:#111;color:#ffe45c;padding:12px 24px;border-radius:10px;text-decoration:none;white-space:nowrap;font-size:clamp(18px,2.1vw,23px)">news.sharktalk.co.kr 로 가기 →</a>' +
       // 북마크·읽은 글은 계정(Firebase)에 저장되므로 새 주소에서 같은 구글 계정으로 다시 로그인하면 이어진다
-      '<span style="flex-basis:100%;font-weight:600;font-size:clamp(15px,1.6vw,18px);color:#222">로그인해서 쓰셨다면 새 주소에서 같은 구글 계정으로 한 번만 다시 로그인하세요. 북마크와 읽은 글 기록이 그대로 이어집니다.</span>';
+      '<span style="flex-basis:100%;font-weight:600;font-size:clamp(15px,1.6vw,18px);color:#222">로그인해서 쓰셨다면 새 주소에서 같은 구글 계정으로 한 번만 다시 로그인하세요. 북마크와 읽은 글 기록이 그대로 이어집니다.</span>' +
+      // 새로 연 Daily UptoDate(매일 아침 1면) 알리기
+      '<span style="flex-basis:100%;font-weight:700;font-size:clamp(15px,1.6vw,18px)">📰 새로 나왔어요 — 매일 아침 한 장으로 보는 1면, ' +
+      '<a href="https://signal.sharktalk.co.kr/front.html" style="color:#111;text-decoration:underline;text-underline-offset:3px">Daily UptoDate</a> 도 써 보세요 →</span>';
     document.body.insertBefore(bar, document.body.firstChild);
   }
   if (document.body) show(); else document.addEventListener('DOMContentLoaded', show);
