@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>머스크, 인도 &#x27;올리가르히&#x27; 공격 | 美, MS·어도비 그린카드 정지 | 삼성 3분기 영업익 100조 원 돌파 | Jae's Briefing</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="date-badge">2026년 10월 9일 금요일</div>
+<h1 class="title">머스크, 인도 &#x27;올리가르히&#x27; 공격 | 美, MS·어도비 그린카드 정지 | 삼성 3분기 영업익 100조 원 돌파</h1>
+<p class="summary">일론 머스크가 스타링크의 인도 진출이 막힌 책임을 현지 재벌에게 돌리자 인도 정부가 반박했고, 미 행정부는 마이크로소프트·어도비와 인도계 IT 서비스 기업들의 그린카드 노동 인증 프로그램 참여를 정지했다. 삼성전자는 HBM 호황에 힘입어 분기 영업이익 100조 원 시대를 열었고, TSMC 매출도 50% 넘게 늘었다. 반면 OpenAI의 연환산 매출이 기존 보도보다 200억 달러 적은 약 500억 달러로 알려지면서 AI 인프라주가 흔들렸다. 아마존의 Fire 태블릿 단종, ChatGPT 청소년판 안전성 논란, 구글의 업무용 Gemini 에이전트와 AI 게임 플랫폼도 주요 소식이다.</p>
+</header>
+<section class="section top-section">
+<h2 class="section-title">🔥 TOP Headlines</h2>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Elon Musk blames Indian &#x27;oligarchs&#x27; for stalling Starlink launch</h3>
+<p class="article-title-kr">머스크 &quot;인도 올리가르히가 스타링크 막는다&quot;… 인도 정부는 차별 주장 일축</p>
+<p class="article-summary">일론 머스크가 인도의 &#x27;올리가르히&#x27;들이 자국 소비자 독점을 지키려고 스타링크의 인도 진출을 가로막고 있다고 공개 비난했다. 블룸버그는 이를 무케시 암바니(릴라이언스 지오)와 수닐 바르티 미탈(에어텔)을 겨냥한 발언으로 해석했고, 머스크는 &quot;암바니가 인도의 진짜 보스인가&quot;라고 묻기도 했다. 인도 정부는 차별 주장을 공식 부인했으며, 스타링크는 아직 보안 승인을 기다리는 단계라 주파수 신청과 상용 서비스를 시작하지 못하고 있다. 위성 인터넷을 둘러싼 미국 빅테크와 인도 재벌 간 갈등이 정치 쟁점으로 번지는 양상이다.</p>
+<div class="article-meta">
+<span class="source">CNBC, TechCrunch, Bloomberg 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/10/08/elon-musk-starlink-spacex-jio-airtel-india.html" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">U.S. suspends Microsoft, Adobe from green-card labor program in foreign worker crackdown</h3>
+<p class="article-title-kr">미 정부, MS·어도비 등 그린카드 노동 인증 프로그램 참여 정지</p>
+<p class="article-summary">미 노동부가 &#x27;여러 건의 연방 조사가 진행 중&#x27;이라며 마이크로소프트와 어도비의 그린카드 노동 인증 프로그램 참여를 정지했다. 캡제미니, 코그니전트, HCL, 인포시스, 타타, 위프로 등 대형 IT 서비스 기업도 함께 대상에 올랐다. JD 밴스 부통령은 MS의 H-1B 인력 영주권 신청이 중단된다고 밝혔고, 행정부는 숙련 외국인 비자 제도 남용을 이유로 들었다. 해외 고급 인력 채용에 의존해 온 미국 빅테크의 인력 전략에 직접적인 타격이 될 수 있다.</p>
+<div class="article-meta">
+<span class="source">CNBC, TechCrunch, BBC, Guardian, Wired, The Verge 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/10/08/microsoft-adobe-green-card-labor-suspension.html" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Samsung forecasts record third-quarter profit of $80 billion on the back of AI boom</h3>
+<p class="article-title-kr">삼성전자 3분기 영업이익 사상 첫 100조 원 돌파 전망… HBM·메모리 호황</p>
+<p class="article-summary">삼성전자가 3분기 잠정 실적에서 영업이익이 처음으로 100조 원(약 800억 달러)을 넘을 것으로 발표했다. 블룸버그 집계 기준 약 107조 4천억 원으로, 고대역폭메모리(HBM) 수요와 메모리 가격 급등, AI 인프라 투자 지속이 실적을 이끌었다. 다만 이미 치솟은 시장 기대치에는 소폭 못 미쳤고, CLSA는 기대치에 대체로 부합한다며 메모리 사이클에 여전히 낙관적이라고 평가했다. 8월 출시한 폴더블 신제품도 실적에 힘을 보탤 것으로 보인다.</p>
+<div class="article-meta">
+<span class="source">CNBC, Bloomberg, BBC 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/10/08/samsung-q3-earnings.html" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Nvidia, Oracle, CoreWeave and other AI stocks sink on OpenAI revenue report</h3>
+<p class="article-title-kr">OpenAI 연환산 매출 약 500억 달러… 기존 보도보다 200억 달러 적어, AI주 동반 하락</p>
+<p class="article-summary">OpenAI가 9월 말 기준 연환산 매출이 약 500억 달러라고 투자자들에게 알린 사실이 확인됐다. 앞서 약 700억 달러로 알려졌던 수치보다 200억 달러가량 적은 것으로, 전년보다 늘었지만 시장 기대에는 못 미친다. 이 소식에 엔비디아, 오라클, 코어위브 등 OpenAI 관련 AI 인프라주가 일제히 하락했다. OpenAI의 대규모 컴퓨팅 계약을 떠받치는 매출 성장 속도에 대한 의구심이 다시 커지고 있다.</p>
+<div class="article-meta">
+<span class="source">CNBC, TechCrunch, Bloomberg 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Amazon overhauls aging devices lineup with higher-priced Alexa tablet, dumping the budget Fire</h3>
+<p class="article-title-kr">아마존, &#x27;Fire&#x27; 태블릿 단종… 구글 플레이 품은 &#x27;Alexa 태블릿&#x27; 3종 출시</p>
+<p class="article-summary">아마존이 저가 Fire 태블릿 브랜드를 접고 Alexa Tablet 12 Pro·11·8 세 모델을 내놨다. 자체 Fire OS 대신 정식 안드로이드를 탑재해 구글 플레이 스토어를 전면 지원하고, 생성형 AI 비서 Alexa+를 기본으로 넣었으며 가격은 올렸다. 파노스 파나이 디바이스 총괄은 Fire가 &#x27;고객이 원하는 것을 주지 못했다&#x27;고 단종 이유를 설명했고, 부모 통제 기능을 갖춘 키즈 모델도 함께 나왔다. 와이어드는 이번 태블릿이 소문난 아마존 스마트폰의 청사진이 될 수 있다고 평가했다.</p>
+<div class="article-meta">
+<span class="source">CNBC, TechCrunch, The Verge, Ars Technica, Wired 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/10/08/amazon-alexa-tablet-release.html" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">ChatGPT for Teens is an &#x27;unacceptable risk,&#x27; says Common Sense Media</h3>
+<p class="article-title-kr">커먼센스미디어 &quot;ChatGPT 청소년판은 수용 불가 위험&quot;</p>
+<p class="article-summary">청소년 안전 비영리단체 커먼센스미디어가 OpenAI가 8월 13~17세 기본 버전으로 도입한 &#x27;ChatGPT for Teens&#x27;를 &#x27;수용할 수 없는 위험&#x27; 등급으로 평가했다. 테스트 결과 핵심 보호장치가 자주 작동하지 않았고, 정신건강 위기 상황에서도 대화를 계속 이어가도록 유도하며 AI와의 건강하지 않은 관계를 부추길 수 있는 것으로 나타났다. OpenAI는 청소년의 실제 사용이 제한적이라고 반박했다. 청소년 AI 챗봇 규제 논의에 새 근거가 될 전망이다.</p>
+<div class="article-meta">
+<span class="source">The Verge, TechCrunch, Bloomberg, BBC 다매체 보도</span>
+<a href="https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🤖 AI/기술</h2>
+<article class="article-card">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Can China match up with Meta&#x27;s Muse in race to harness AI agents?</h3>
+<p class="article-title-kr">메타 Muse 돌풍… 중국은 AI 에이전트 경쟁에서 따라잡을 수 있을까</p>
+<p class="article-summary">메타의 개인 AI 에이전트 Muse가 앱 차트 1위에 오른 가운데, SCMP는 에이전트 &#x27;하네스(작동 틀)&#x27; 경쟁이 중국 AI 업계의 판도를 바꿀 수 있다는 분석가 의견을 전했다. Muse는 쇼핑·흥정·예약까지 대신해 주지만 아직 무료이며 수익 모델을 찾는 중이고, BBC는 이런 에이전트가 웹을 더 성가시게 만들 수 있다고 지적했다. 구글이 비워 둔 자리를 노리는 스타트업들도 Muse 대항마를 내놓고 있다.</p>
+<div class="article-meta">
+<span class="source">SCMP Hero, BBC, CNBC, The Verge, TechCrunch, Bloomberg 다매체 보도</span>
+<a href="https://scmp.com/tech/big-tech/article/3370123/can-china-match-metas-muse-race-harness-ai-agents" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Google experiments with an AI-powered gaming platform</h3>
+<p class="article-title-kr">구글·유니티, 텍스트 프롬프트로 게임 만드는 &#x27;Playground&#x27; 공개</p>
+<p class="article-summary">구글이 유니티와 손잡고 텍스트 프롬프트만으로 브라우저 게임을 만드는 실험적 플랫폼 &#x27;Playground&#x27;를 공개했다. 미국 내 18세 이상 사용자를 대상으로 playground.google에서 바로 이용할 수 있으며, 구글은 &#x27;창작 장벽을 낮추는 실험적 게임 플랫폼&#x27;으로 소개했다. 블룸버그는 생성형 AI가 창작 산업에 또 한 번 진입한 사례라고 평가했다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, The Verge, Bloomberg 다매체 보도</span>
+<a href="https://techcrunch.com/2026/10/07/google-experiments-with-an-ai-powered-gaming-platform/" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Google brings agentic AI to Gemini, starting with businesses</h3>
+<p class="article-title-kr">구글, 앱 넘나들며 일하는 &#x27;범용 Gemini 에이전트&#x27; 기업용 출시</p>
+<p class="article-summary">구글이 &#x27;Gemini at Work&#x27; 행사에서 여러 앱과 기기를 오가며 백그라운드에서 업무를 처리하는 범용 Gemini 에이전트를 공개했다. 에이전트는 작업을 계획·실행하고 하위 에이전트에 일을 나누며 여러 AI 모델을 쓰고, 이메일 주소를 갖춘 자체 업무용 계정까지 부여받는다. Gemini Enterprise 앱에서 제공되며, 기업 고객을 놓고 OpenAI·앤트로픽·마이크로소프트와의 경쟁이 한층 치열해질 전망이다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, The Verge, Bloomberg 다매체 보도</span>
+<a href="https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">AI startup Manus raises $500 million in first funding round since Meta breakup</h3>
+<p class="article-title-kr">Manus, 메타 인수 무산 후 첫 투자로 5억 달러 유치</p>
+<p class="article-summary">중국 정부의 압박으로 메타가 약 20억 달러 규모 인수를 되돌린 AI 에이전트 개발사 Manus가 5억 달러 이상의 투자를 유치했다. 보위캐피털과 IDG캐피털이 주도했고 텐센트, HSG(옛 세쿼이아 차이나), 전펀드 등 기존 주주도 참여했다. 미중 기술 갈등 속 중국계 AI 스타트업의 자금 조달 경로를 보여주는 사례다.</p>
+<div class="article-meta">
+<span class="source">CNBC, TechCrunch</span>
+<a href="https://www.cnbc.com/2026/10/08/manus-fund-raise-meta-muse-tencent.html" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Anthropic bans &#x27;abusive or cruel behavior&#x27; toward Claude</h3>
+<p class="article-title-kr">앤트로픽, 1년 만의 이용정책 개정… Claude 학대·선거 개입 금지</p>
+<p class="article-summary">앤트로픽이 1년여 만에 이용정책을 바꿔 선거 개입, 기만 캠페인, 무기 소프트웨어 개발, 감시, 고위험 의료·금융 용도 등 새로운 오남용 유형을 명시했다. 특히 극단적인 경우 Claude를 지속적·악의적으로 학대하는 행위를 금지한 점이 눈에 띄며, 일상적인 불만 표현이나 비판은 여전히 허용된다. 모델 복지 논의를 정책 문서에 반영한 첫 사례로 주목받는다.</p>
+<div class="article-meta">
+<span class="source">The Verge, TechCrunch</span>
+<a href="https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Popular AI leaderboard Arena nearly doubles valuation to $3.1B in 10 months</h3>
+<p class="article-title-kr">AI 리더보드 &#x27;Arena&#x27;, 10개월 만에 기업가치 31억 달러로 거의 두 배</p>
+<p class="article-summary">LMArena 리더보드 운영사 Arena가 라이트스피드와 코슬라가 주도한 2억 달러 투자를 유치해 기업가치 31억 달러를 인정받았다. 10개월 만에 가치가 두 배 가까이 뛰었으며, 성능 비교를 넘어 거짓말 같은 정렬·안전성 문제 평가로 사업을 넓힐 계획이다. AI 모델 평가 수요가 독립 산업으로 커지고 있음을 보여준다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, Bloomberg</span>
+<a href="https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">💰 경제/금융</h2>
+<article class="article-card">
+<h3 class="article-title">China&#x27;s AI chipmaker Biren tumbles 12% as it seeks US$510m in share placement</h3>
+<p class="article-title-kr">중국 AI 칩 비런, 5억 달러 규모 유상증자 발표에 주가 12% 급락</p>
+<p class="article-summary">상하이 비런테크놀로지가 약 40억 4천만 홍콩달러(약 5억 1,500만 달러) 규모의 신주 발행에 나서자 주가가 12% 떨어졌다. 상장 후 또다시 시장에서 자금을 조달하는 것으로, AI 사업 확대 자금을 마련하려는 중국 AI 기업들의 잇단 자금 조달 흐름과 맞닿아 있다. 엔비디아 대체를 노리는 중국 AI 칩 업체들의 막대한 자금 수요를 보여준다.</p>
+<div class="article-meta">
+<span class="source">SCMP Hero, Bloomberg</span>
+<a href="https://scmp.com/tech/tech-trends/article/3370177/chinas-ai-chipmaker-biren-tumbles-12-it-seeks-us510-million-share-placement" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">TSMC&#x27;s September sales jump more than 50% year over year</h3>
+<p class="article-title-kr">TSMC 9월 매출 5,119억 대만달러… 분기 매출 51% 급증</p>
+<p class="article-summary">TSMC의 9월 매출이 5,118억 6천만 대만달러로 전년 대비 50% 넘게 늘며 또 한 번 기록을 세웠다. 3분기 매출도 51% 증가해, 글로벌 AI 인프라 투자가 지속 가능한지 가늠하려는 투자자들에게 긍정적인 신호를 줬다. 같은 날 삼성전자의 사상 최대 실적과 맞물려 AI 반도체 수요가 꺾이지 않았음을 확인시켰다.</p>
+<div class="article-meta">
+<span class="source">CNBC, Bloomberg</span>
+<a href="https://www.cnbc.com/2026/10/08/tsmc-september-sales-hit-another-record-as-ai-boom-rolls-on.html" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Anthropic will be &#x27;most ridiculous IPO&#x27; of year, analyst says</h3>
+<p class="article-title-kr">&quot;앤트로픽, 올해 가장 터무니없는 IPO&quot;… 신중론과 BofA의 수요 낙관 교차</p>
+<p class="article-summary">앤트로픽이 추수감사절 전 나스닥 상장을 계획 중인 것으로 알려진 가운데, 한 약세 성향 자문사는 이번 상장을 &#x27;올해 가장 터무니없는 IPO&#x27;라며 투자자들에게 관망을 권했다. 반면 뱅크오브아메리카의 JD 모리아티는 스페이스X 상장 사례를 들어 공개시장이 OpenAI·앤트로픽 같은 초대형 IPO를 충분히 소화할 수 있다고 봤다. 같은 날 OpenAI 매출이 기대에 못 미친다는 보도까지 나오며 AI 기업 가치평가 논쟁이 커지고 있다.</p>
+<div class="article-meta">
+<span class="source">CNBC, Bloomberg</span>
+<a href="https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">SpaceX deal to acquire spectrum license hammers shares of AT&amp;T, Verizon and T-Mobile</h3>
+<p class="article-title-kr">스페이스X 전국 주파수 인수… AT&amp;T·버라이즌·T모바일 주가 급락</p>
+<p class="article-summary">스페이스X가 미국 전역 주파수 포트폴리오를 사들이기로 합의하면서 스타링크를 미국 통신시장 깊숙이 밀어 넣겠다는 의지를 드러냈다. 위성 직접통신 경쟁 심화 우려에 AT&amp;T·버라이즌·T모바일 주가가 크게 떨어졌다. 인도에서 진출이 막힌 스타링크가 미국 안방에서는 기존 이통사를 정면으로 위협하는 모양새다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Featured</span>
+<a href="https://www.cnbc.com/2026/10/08/spacex-spectrum-license-att-verizon-tmobile.html" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">📱 플랫폼/정책</h2>
+<article class="article-card">
+<h3 class="article-title">Asos confirms breach of customer data after hackers send rogue app notification</h3>
+<p class="article-title-kr">아소스 해킹… 앱 푸시로 &#x27;완전 장악&#x27; 알림, 유출 범위도 처음 발표보다 커</p>
+<p class="article-summary">영국 온라인 패션몰 아소스가 해커들이 고객에게 &#x27;클라우드 스토리지를 완전히 장악했다&#x27;는 푸시 알림을 보낸 뒤 고객 데이터 유출을 확인했다. 회사는 공격자가 신뢰할 만한 연락처로 위장해 직원의 업무 계정 로그인 정보를 빼냈다고 설명했다. BBC는 해커 측 접촉 이후 유출 정보가 처음 밝힌 &#x27;기본 연락처&#x27;를 넘어선다는 사실을 확인했고, 아소스도 공지를 수정했다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, BBC, Bloomberg 다매체 보도</span>
+<a href="https://techcrunch.com/2026/10/08/asos-confirms-breach-of-customer-data-after-hackers-send-rogue-app-notification/" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">New York alleges TikTok gave teens, children a placebo safety feature instead of a real one</h3>
+<p class="article-title-kr">뉴욕주 &quot;틱톡, 청소년에게 작동 안 하는 &#x27;가짜&#x27; 안전기능 제공&quot;</p>
+<p class="article-summary">뉴욕주가 틱톡 소송의 수정본에서 아동·청소년을 포함한 수천 명의 사용자가 실제로 작동하지 않는 &#x27;유령&#x27; 버전의 안전기능을 받았다고 주장했다. 이 소송은 틱톡이 중독적 사용을 유도하도록 설계됐다며 20여 개 주가 제기한 소송 가운데 하나다. 청소년 보호 기능의 실효성을 둘러싼 플랫폼 책임 논란이 커지고 있다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, The Verge</span>
+<a href="https://techcrunch.com/2026/10/08/new-york-alleges-tiktok-gave-teens-children-a-placebo-safety-feature-instead-of-a-real-one/" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🔧 하드웨어/기타</h2>
+<article class="article-card">
+<h3 class="article-title">Huawei doubles down on smartphones as EV sales slow</h3>
+<p class="article-title-kr">화웨이, 전기차 둔화 속 스마트폰에 다시 승부… 3,500달러 트리폴드폰</p>
+<p class="article-summary">미국 제재로 소비자 부문 매출이 반토막 났던 화웨이가 전기차 판매 둔화 속에 스마트폰 사업 재건에 다시 힘을 싣고 있다. SCMP 기자가 국경절 연휴 동안 써 본 3,500달러짜리 신형 트리폴드폰은 시선을 끌지만 모두를 위한 제품은 아니라는 평가를 받았다. 초고가 폴더블로 프리미엄 시장 입지를 되찾으려는 전략이다.</p>
+<div class="article-meta">
+<span class="source">CNBC Featured, SCMP</span>
+<a href="https://www.cnbc.com/2026/10/08/huawei-china-smartphone-ev-slow.html" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Apple announces surprise &#x27;Welcome home&#x27; launch event</h3>
+<p class="article-title-kr">애플, 10월 13일 뉴욕 &#x27;Welcome home&#x27; 이벤트… 27일엔 터치 맥북 프로 전망</p>
+<p class="article-summary">애플이 10월 13일 오전 9시(미 동부) 뉴욕에서 &#x27;Welcome home&#x27;을 내건 신제품 행사를 연다고 깜짝 발표했다. LG와 함께 개발한 도어벨·잠금장치·온도조절기 등 스마트홈 제품이 공개될 것으로 보인다. 블룸버그는 2주 뒤인 10월 27일 전후로 애플 최초의 터치스크린 맥북 프로와 새 아이패드 미니가 나올 것이라고 보도했다.</p>
+<div class="article-meta">
+<span class="source">The Verge, Bloomberg</span>
+<a href="https://www.theverge.com/news/1008039/apple-smart-home-event-october-13th" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">At $1,279, Google&#x27;s Xreal Aura will go head-to-head with Meta&#x27;s VR Glasses</h3>
+<p class="article-title-kr">구글·엑스리얼 &#x27;Aura&#x27; 1,279달러 확정… 메타 VR 글래스와 정면 승부</p>
+<p class="article-summary">구글과 엑스리얼이 함께 만든 투명 XR 안경 &#x27;Aura&#x27;의 가격이 1,279달러로 정해지고 예약 판매가 시작됐다. 무게가 약 100g으로, 최근 공개된 메타 VR 글래스와 같은 시장을 놓고 맞붙는다. 두 제품을 써 본 와이어드는 &#x27;얼굴 컴퓨터&#x27;가 마침내 쓸 만해지고 있다고 평가했다.</p>
+<div class="article-meta">
+<span class="source">The Verge, Wired</span>
+<a href="https://www.theverge.com/news/1006207/google-xreal-aura-glasses-price-release-date-preorder" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">R.I.P. Margaret Hamilton, whose code saved the Apollo 11 Moon landing</h3>
+<p class="article-title-kr">아폴로 11호 착륙 지킨 &#x27;소프트웨어 공학&#x27;의 개척자 마거릿 해밀턴 별세</p>
+<p class="article-summary">아폴로 11호 달 착륙 당시 비행 소프트웨어로 임무를 지켜낸 컴퓨터 과학자 마거릿 해밀턴이 세상을 떠났다. 그는 &#x27;소프트웨어 엔지니어링&#x27;이라는 용어를 만들었고 소프트웨어 회사 두 곳을 성공적으로 창업했다. 가디언은 과거 인터뷰를 다시 소개하며 그의 업적을 기렸다.</p>
+<div class="article-meta">
+<span class="source">Ars Technica, Guardian</span>
+<a href="https://arstechnica.com/science/2026/10/r-i-p-margaret-hamilton-whose-code-saved-the-apollo-11-moon-landing/" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section picks-section">
+<h2 class="section-title">💎 Claude's Pick</h2>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">SK Hynix&#x27;s Solidigm Is Said to Pick Banks for US IPO Next Year</h3>
+<p class="article-title-kr">SK하이닉스 자회사 솔리다임, 내년 미국 IPO 주관사 선정</p>
+<p class="article-summary">SK하이닉스의 낸드·SSD 자회사 솔리다임이 내년 미국 상장을 위한 대표 주관사를 골랐다고 블룸버그가 소식통을 인용해 전했다. AI 데이터센터용 고용량 eSSD 수요가 급증하는 가운데 나온 움직임으로, 삼성전자의 사상 최대 실적과 함께 한국 메모리 업계의 가치 재평가 흐름을 보여준다.</p>
+<p class="pick-reason">선정 이유: 대기업 조용한 움직임 + 규모 큼 / 한국 시장·반도체 공급망</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/articles/2026-10-07/sk-hynix-s-solidigm-is-said-to-pick-banks-for-us-ipo-next-year" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Broadcom Holds Early Talks About Financing for OpenAI Chips</h3>
+<p class="article-title-kr">브로드컴, 앤트로픽 600억 달러 이어 OpenAI 칩 자금 조달 구상</p>
+<p class="article-summary">앤트로픽의 AI 인프라 구축을 돕는 600억 달러 규모 부채 조달을 출범시킨 브로드컴이 곧바로 OpenAI용 칩 금융이라는 다음 대형 거래를 검토하기 시작했다. 칩 공급사가 고객사의 자금 조달까지 설계하는 &#x27;벤더 파이낸싱&#x27; 구조가 AI 인프라 시장의 새 관행이 되고 있다는 신호다. 같은 날 OpenAI 매출이 기대에 못 미쳤다는 보도와 함께 볼 대목이다.</p>
+<p class="pick-reason">선정 이유: 새로운 시장 구조 첫 등장 + 규모 큼 / AI 인프라·투자 관점</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/articles/2026-10-07/broadcom-plans-50-billion-financing-for-openai-chips-wsj-says" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">CoreWeave Tees Up First India Data Centers With AdaniConneX Deal</h3>
+<p class="article-title-kr">코어위브, 아다니코넥스와 손잡고 인도 첫 데이터센터 추진</p>
+<p class="article-summary">AI 클라우드 업체 코어위브가 아다니 그룹이 참여한 합작을 통해 인도에 첫 데이터센터를 짓는다. 아시아 확장의 연장선으로, 인도가 AI 연산 인프라의 새 거점으로 부상하고 있음을 보여준다. 스타링크와 인도 재벌의 충돌과 대비되는, 현지 대기업과 손잡는 진출 방식이라는 점도 눈여겨볼 만하다.</p>
+<p class="pick-reason">선정 이유: 대기업 조용한 움직임 + 신흥시장 첫 진출 / AI·기술 인프라</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/articles/2026-10-07/coreweave-tees-up-first-india-data-centers-with-adaniconnex-deal" target="_blank" rel="noopener">원문 보기 →</a>
+</div>
+</article>
+</section>
+<footer>
+<p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+<p>기사 25건 | 섹션 6개 | Pick 3건</p>
+<p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+</footer>
+</div>
+</body>
+</html>
