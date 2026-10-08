@@ -37,13 +37,14 @@
     var bar = document.createElement('div');
     bar.id = 'jfnb-move-notice';
     bar.setAttribute('role', 'status');
-    bar.style.cssText = 'position:sticky;top:0;z-index:9999;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:center;' +
-      'padding:12px 16px;background:#ffe45c;color:#111;font:600 15px/1.45 system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;' +
-      'text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.25)';
-    bar.innerHTML = '<span>📢 외신 브리핑 주소가 바뀌었습니다. 지금 이 주소는 <b>' + CLOSE + '</b>에 닫힙니다.</span>' +
-      '<a href="' + to + '" style="background:#111;color:#ffe45c;padding:6px 14px;border-radius:6px;text-decoration:none;white-space:nowrap">news.sharktalk.co.kr 로 가기 →</a>' +
+    // 눈에 잘 띄게 크게 (휴대폰에서는 글자가 줄어든다)
+    bar.style.cssText = 'position:sticky;top:0;z-index:9999;display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;justify-content:center;' +
+      'padding:26px 20px;background:#ffe45c;color:#111;font:800 clamp(18px,2.2vw,24px)/1.45 system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;' +
+      'text-align:center;box-shadow:0 3px 12px rgba(0,0,0,.35);border-bottom:3px solid #111';
+    bar.innerHTML = '<span>📢 외신 브리핑 주소가 바뀌었습니다. 지금 이 주소는 <b style="color:#c40000">' + CLOSE + '</b>에 닫힙니다.</span>' +
+      '<a href="' + to + '" style="background:#111;color:#ffe45c;padding:12px 24px;border-radius:10px;text-decoration:none;white-space:nowrap;font-size:clamp(18px,2.1vw,23px)">news.sharktalk.co.kr 로 가기 →</a>' +
       // 북마크·읽은 글은 계정(Firebase)에 저장되므로 새 주소에서 같은 구글 계정으로 다시 로그인하면 이어진다
-      '<span style="flex-basis:100%;font-weight:400;font-size:13px;opacity:.8">로그인해서 쓰셨다면 새 주소에서 같은 구글 계정으로 한 번만 다시 로그인하세요. 북마크와 읽은 글 기록이 그대로 이어집니다.</span>';
+      '<span style="flex-basis:100%;font-weight:600;font-size:clamp(15px,1.6vw,18px);color:#222">로그인해서 쓰셨다면 새 주소에서 같은 구글 계정으로 한 번만 다시 로그인하세요. 북마크와 읽은 글 기록이 그대로 이어집니다.</span>';
     document.body.insertBefore(bar, document.body.firstChild);
   }
   if (document.body) show(); else document.addEventListener('DOMContentLoaded', show);
