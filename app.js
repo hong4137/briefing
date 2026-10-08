@@ -23,6 +23,30 @@
  *      GIS는 같은 페이지 안에서 ID 토큰을 콜백으로 돌려주므로 이 문제가 없다.
  *      GIS_CLIENT_ID가 비어 있으면 모바일도 팝업으로 폴백한다.
  */
+
+// ── 주소 이전 안내 (2026-10-09~) ─────────────────────────────────────
+// 옛 github.io 주소로 들어온 사람에게만 새 주소를 알린다. news.sharktalk.co.kr 은 같은 파일을
+// 내보내지만 주소가 달라 띠가 뜨지 않는다. (미러가 옛 주소 문자열을 새 주소로 바꿔 쓰므로
+// 여기서는 전체 주소가 아니라 호스트 이름 끝만 본다.) Pages 를 닫으면 이 블록은 지워도 된다.
+(function () {
+  if (!/github\.io$/.test(location.hostname)) return;
+  var CLOSE = '10월 23일';
+  var to = 'https://news.sharktalk.co.kr' + location.pathname.replace(/^\/briefing/, '') + location.search + location.hash;
+  function show() {
+    if (document.getElementById('jfnb-move-notice')) return;
+    var bar = document.createElement('div');
+    bar.id = 'jfnb-move-notice';
+    bar.setAttribute('role', 'status');
+    bar.style.cssText = 'position:sticky;top:0;z-index:9999;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:center;' +
+      'padding:12px 16px;background:#ffe45c;color:#111;font:600 15px/1.45 system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;' +
+      'text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.25)';
+    bar.innerHTML = '<span>📢 외신 브리핑 주소가 바뀌었습니다. 지금 이 주소는 <b>' + CLOSE + '</b>에 닫힙니다.</span>' +
+      '<a href="' + to + '" style="background:#111;color:#ffe45c;padding:6px 14px;border-radius:6px;text-decoration:none;white-space:nowrap">news.sharktalk.co.kr 로 가기 →</a>';
+    document.body.insertBefore(bar, document.body.firstChild);
+  }
+  if (document.body) show(); else document.addEventListener('DOMContentLoaded', show);
+})();
+
 (function () {
   'use strict';
 
