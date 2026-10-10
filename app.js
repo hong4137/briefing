@@ -53,6 +53,25 @@
   if (document.body) show(); else document.addEventListener('DOMContentLoaded', show);
 })();
 
+// ── 위 메뉴의 '아카이브' 옆에 '카드뉴스' (2026-10-10) ─────────────────────
+// 페이지마다 메뉴가 구워져 있어 하나하나 고치지 않고 여기서 끼운다. 꼬리말의 '아카이브로' 링크는 건드리지 않는다.
+(function () {
+  function add() {
+    document.querySelectorAll('nav a[href$="archive.html"], .nav-links a[href$="archive.html"], .reader-nav-links a[href$="archive.html"]').forEach(function (a) {
+      var box = a.parentNode.tagName === 'LI' ? a.parentNode.parentNode : a.parentNode;
+      if (box.querySelector('[data-jfnb-cards]')) return;
+      var link = document.createElement('a');
+      link.href = a.getAttribute('href').replace(/archive\.html$/, 'cards/');
+      link.textContent = '카드뉴스';
+      link.setAttribute('data-jfnb-cards', '');
+      link.className = a.className.replace(/\bactive\b/, '').trim();
+      if (a.parentNode.tagName === 'LI') { var li = document.createElement('li'); li.appendChild(link); a.parentNode.after(li); }
+      else a.after(link);
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', add); else add();
+})();
+
 (function () {
   'use strict';
 
