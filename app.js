@@ -61,7 +61,7 @@
       var box = a.parentNode.tagName === 'LI' ? a.parentNode.parentNode : a.parentNode;
       if (box.querySelector('[data-jfnb-cards]')) return;
       var link = document.createElement('a');
-      link.href = a.getAttribute('href').replace(/archive\.html$/, 'cards/');
+      link.href = 'https://news.sharktalk.co.kr/cards/';  // 카드뉴스 목록·앱은 sharktalk-mirror 워커가 만든다
       link.textContent = '카드뉴스';
       link.setAttribute('data-jfnb-cards', '');
       link.className = a.className.replace(/\bactive\b/, '').trim();
