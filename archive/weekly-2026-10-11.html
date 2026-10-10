@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
 <meta charset="utf-8"/>
@@ -54,8 +55,20 @@ div.standalone-item p,div.pick-item p{margin:0;font-size:14px;color:#cbd5e1}
 footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
   color:var(--muted);font-size:12px;text-align:center}
 </style>
-</head>
-<body>
+<link href="../theme-modern.css" rel="stylesheet"/><script defer="" src="../app.js?v=7"></script></head>
+<body class="reader-mode"><nav class="reader-nav">
+<div class="reader-nav-inner">
+<a class="reader-nav-logo" href="../index.html">JFNB</a>
+<div class="reader-nav-links">
+<a href="../index.html">홈</a>
+<a href="../archive.html">아카이브</a>
+<a href="../about.html">소개</a>
+<a href="../saved.html">⭐ 보관함 <span data-jfnb-count=""></span></a>
+<span class="reader-nav-unread" data-jfnb-unread=""></span>
+<span class="reader-nav-auth" data-jfnb-auth=""></span>
+</div>
+</div>
+</nav>
 <div class="wrap">
 <header>
 <h1>📰 주간 외신 브리핑</h1>
@@ -111,8 +124,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 <section>
 <div class="sec-head"><span>🔥</span><h2>이번 주 TOP 스토리</h2></div>
 <p class="sec-desc">10/5~10/10 일간 브리핑 수록 기사를 10개 스토리 클러스터로 묶어 주간 점수 순으로 정렬 (동점은 모멘텀 순)</p>
-
-<article class="cluster-card">
+<article class="cluster-card jfnb-card" data-card-index="0" data-card-title="1. OpenAI 매출 쇼크와 Firmus IPO 철회 — AI 거품 경고가 숫자로 확인되기 시작함" data-card-type="cluster" id="art-0">
 <h3>1. OpenAI 매출 쇼크와 Firmus IPO 철회 — AI 거품 경고가 숫자로 확인되기 시작함</h3>
 <div class="meta">
 <span>📰 10건</span><span>📅 5일 보도</span><span>🔥 지속 (×1.8)</span>
@@ -136,8 +148,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 <p>Firmus는 상장 대신 최대 30억 달러 사모 라운드를 검토 중이다. 앤트로픽은 추수감사절 전 나스닥 상장을 계획하고 있어, OpenAI 매출 눈높이 하향이 대형 AI IPO 수요에 어떤 영향을 줄지가 다음 관전 포인트다. 지수는 주간 상승으로 마감해 아직 '경고' 단계에 머물러 있다.</p>
 </div>
 </article>
-
-<article class="cluster-card">
+<article class="cluster-card jfnb-card" data-card-index="1" data-card-title="2. 삼성 영업익 100조 원·TSMC 매출 51%↑ — AI 반도체 호황이 이어지고, 메모리 대란은 소비자 기기를 압박함" data-card-type="cluster" id="art-1">
 <h3>2. 삼성 영업익 100조 원·TSMC 매출 51%↑ — AI 반도체 호황이 이어지고, 메모리 대란은 소비자 기기를 압박함</h3>
 <div class="meta">
 <span>📰 10건</span><span>📅 5일 보도</span><span>🔥 지속 (×1.8)</span>
@@ -161,8 +172,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 <p>공급 측 실적은 강하다. 삼성 잠정 영업익은 약 107조 원(블룸버그 집계)으로 높아진 기대치를 소폭 밑돌았지만 CLSA는 메모리 사이클을 여전히 낙관했다. 병목은 GPU·메모리에서 광부품으로 번지고 있고, 반대편에서는 PC 출하 20.1% 감소와 저가폰 단종처럼 소비자 기기가 비용을 떠안는 구조가 뚜렷해졌다.</p>
 </div>
 </article>
-
-<article class="cluster-card">
+<article class="cluster-card jfnb-card" data-card-index="2" data-card-title="3. OpenAI 300억·딥시크 150억·소프트뱅크 1,000억 달러 — 상장 전 AI 자금 조달이 부채·벤더 금융까지 번짐" data-card-type="cluster" id="art-2">
 <h3>3. OpenAI 300억·딥시크 150억·소프트뱅크 1,000억 달러 — 상장 전 AI 자금 조달이 부채·벤더 금융까지 번짐</h3>
 <div class="meta">
 <span>📰 10건</span><span>📅 5일 보도</span><span>🔥 지속 (×1.8)</span>
@@ -186,8 +196,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 <p>공개시장 IPO가 흔들리는 사이(Firmus 철회) 사모·중동 국부 자본·부채가 빈자리를 메우고 있다. 칩 공급사가 고객 자금까지 설계하는 브로드컴식 벤더 파이낸싱, GPU를 담보로 한 스페이스X 차입이 새 관행으로 자리 잡는 중이며, AI 관련 채권 금리도 함께 오르고 있다.</p>
 </div>
 </article>
-
-<article class="cluster-card">
+<article class="cluster-card jfnb-card" data-card-index="3" data-card-title="4. OpenAI 안전 논란 확산 — 안전 책임자 사임·올트먼 '나쁜 일' 발언·호주 해킹 사과·연구원 해고 공방" data-card-type="cluster" id="art-3">
 <h3>4. OpenAI 안전 논란 확산 — 안전 책임자 사임·올트먼 '나쁜 일' 발언·호주 해킹 사과·연구원 해고 공방</h3>
 <div class="meta">
 <span>📰 9건</span><span>📅 6일 보도</span><span>🔥 지속 (×1.8)</span>
@@ -210,8 +219,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 <p>지난주 폭주 에이전트 사고에서 시작된 논란이 경영진 발언과 내부 인사 문제로 옮겨붙었다. 호주에서는 임원이 의회에서 "AI를 쓰지 않았다"고 답한 통지 이메일이 AI 도움을 받아 작성됐다는 보도가 나와 파장이 커지고 있다. 해고된 연구원들의 공개서한에 회사가 물러서지 않으면서 안전 조직 문제는 장기화될 조짐이다.</p>
 </div>
 </article>
-
-<article class="cluster-card">
+<article class="cluster-card jfnb-card" data-card-index="4" data-card-title="5. 트럼프 '슈퍼인텔리전스' 노선 — SIF 출범·'AI→SI' 개명 이후 빅테크 밀착과 외국인 인력 압박이 함께 진행됨" data-card-type="cluster" id="art-4">
 <h3>5. 트럼프 '슈퍼인텔리전스' 노선 — SIF 출범·'AI→SI' 개명 이후 빅테크 밀착과 외국인 인력 압박이 함께 진행됨</h3>
 <div class="meta">
 <span>📰 6건</span><span>📅 5일 보도</span><span>🔥 지속 (×1.8)</span>
@@ -231,8 +239,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 <p>SIF는 120일 안에 AI의 위험·편익과 연방정부 역할을 담은 보고서를 내야 한다. 중간선거를 한 달 앞두고 빅테크 시상식과 이해충돌 의혹이 정치 쟁점이 되는 한편, 그린카드 정지는 H-1B 인력에 기대 온 빅테크 채용 전략에 직접 부담이 된다.</p>
 </div>
 </article>
-
-<article class="cluster-card">
+<article class="cluster-card jfnb-card" data-card-index="5" data-card-title="6. 가을 하드웨어 대전 — MS 서피스 랩톱 울트라·애플 10/13 스마트홈 이벤트·터치 맥북 예고" data-card-type="cluster" id="art-5">
 <h3>6. 가을 하드웨어 대전 — MS 서피스 랩톱 울트라·애플 10/13 스마트홈 이벤트·터치 맥북 예고</h3>
 <div class="meta">
 <span>📰 8건</span><span>📅 4일 보도</span><span>📈 관심 (×1.0)</span>
@@ -254,8 +261,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 <p>애플은 10/13 스마트홈(LG 브랜드 기기 + 애플 허브), 10/27 전후 터치 맥북 프로로 한 달에 두 번 신제품을 낸다. 엔비디아가 RTX 스파크로 PC 칩 시장에 들어오면서 맥북 대 윈도 고가 노트북 구도가 다시 짜이고 있다.</p>
 </div>
 </article>
-
-<article class="cluster-card">
+<article class="cluster-card jfnb-card" data-card-index="6" data-card-title="7. 개인 AI 에이전트 경쟁 — 메타 Muse 확장과 프라이버시 논란, 구글 기업용 Gemini 에이전트 가세" data-card-type="cluster" id="art-6">
 <h3>7. 개인 AI 에이전트 경쟁 — 메타 Muse 확장과 프라이버시 논란, 구글 기업용 Gemini 에이전트 가세</h3>
 <div class="meta">
 <span>📰 7건</span><span>📅 4일 보도</span><span>📈 관심 (×1.0)</span>
@@ -276,8 +282,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 <p>Muse는 아직 무료로 수익 모델을 찾는 중이고, 웹사이트의 봇 차단이 에이전트 확산의 실질적 장벽으로 떠올랐다. 메타는 거래 표준 선점에, 구글은 기업 업무 시장에 먼저 들어가는 방식으로 길을 나누고 있다.</p>
 </div>
 </article>
-
-<article class="cluster-card">
+<article class="cluster-card jfnb-card" data-card-index="7" data-card-title="8. 데이터센터 반발이 실제 행정 조치로 — 핀란드 공사 중단·샌프란시스코 모라토리엄, 빅테크는 원전 확보" data-card-type="cluster" id="art-7">
 <h3>8. 데이터센터 반발이 실제 행정 조치로 — 핀란드 공사 중단·샌프란시스코 모라토리엄, 빅테크는 원전 확보</h3>
 <div class="meta">
 <span>📰 6건</span><span>📅 3일 보도</span><span>📈 관심 (×1.0)</span>
@@ -297,8 +302,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 <p>반대 여론이 인허가 거부·공사 중단·모라토리엄 같은 행정 조치로 옮겨 가면서, 전력·부지를 확보한 사업자와 그렇지 못한 사업자의 격차가 커지고 있다. 세제 혜택(미국 농촌)과 규제 강화(유럽·도시)가 동시에 진행되는 엇갈린 흐름이다.</p>
 </div>
 </article>
-
-<article class="cluster-card">
+<article class="cluster-card jfnb-card" data-card-index="8" data-card-title="9. 서구 오픈모델 반격과 중국 오픈모델의 수익화 과제 — 미스트랄 'Le Chonk'·Reflection 'Beam'" data-card-type="cluster" id="art-8">
 <h3>9. 서구 오픈모델 반격과 중국 오픈모델의 수익화 과제 — 미스트랄 'Le Chonk'·Reflection 'Beam'</h3>
 <div class="meta">
 <span>📰 6건</span><span>📅 4일 보도</span><span>📈 관심 (×1.0)</span>
@@ -318,8 +322,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 <p>오픈모델 성능 경쟁은 서구와 중국이 비슷해졌고, 이제 무게중심은 유통·호스팅에서 누가 돈을 버느냐로 옮겨 가고 있다. 중국에서는 모델 연구소보다 알리바바 같은 클라우드·플랫폼 사업자가 먼저 매출을 확인하는 국면이다.</p>
 </div>
 </article>
-
-<article class="cluster-card">
+<article class="cluster-card jfnb-card" data-card-index="9" data-card-title="10. 미·중 칩 공급망 줄다리기 — DUV 전면 금수 요구, 광통신 칩 규제 우려, 레거시 공정 국가 투자" data-card-type="cluster" id="art-9">
 <h3>10. 미·중 칩 공급망 줄다리기 — DUV 전면 금수 요구, 광통신 칩 규제 우려, 레거시 공정 국가 투자</h3>
 <div class="meta">
 <span>📰 5건</span><span>📅 3일 보도</span><span>📈 관심 (×1.0)</span>
@@ -339,52 +342,49 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 </div>
 </article>
 </section>
-
 <section class="standalone">
 <div class="sec-head"><span>🎯</span><h2>단독 하이라이트</h2></div>
 <p class="sec-desc">TOP 클러스터 밖에서 주목받은 기사·소규모 스토리</p>
-<div class="standalone-item">
+<div class="standalone-item jfnb-card" data-card-index="10" data-card-title="파라마운트, WBD 인수 완료 — 'Skydance' 출범, HBO Max·파라마운트+ 통합 (10/7)" data-card-type="cluster" id="art-10">
 <h3>파라마운트, WBD 인수 완료 — 'Skydance' 출범, HBO Max·파라마운트+ 통합 (10/7)</h3>
 <p>1,100억 달러 거래가 마무리되며 워너브러더스·파라마운트 스튜디오와 HBO·CBS·CNN이 한 지붕 아래 모였다. 두 스트리밍 서비스는 '시간을 두고' 단일 서비스로 합친다. 막대한 부채 상환과 스트리밍 투자를 동시에 해내야 한다.</p>
 </div>
-<div class="standalone-item">
+<div class="standalone-item jfnb-card" data-card-index="11" data-card-title="미 국방부, 앤스로픽 사용 중단 · '킬체인' AI 조달 가속 · 안두릴 29억 달러 수주 (10/6~10/8)" data-card-type="cluster" id="art-11">
 <h3>미 국방부, 앤스로픽 사용 중단 · '킬체인' AI 조달 가속 · 안두릴 29억 달러 수주 (10/6~10/8)</h3>
 <p>'공급망 위험' 지정 7개월 만에 Claude를 구글·OpenAI·xAI 모델로 교체했다. 5분짜리 영상 피치로 비전통 업체에 조달을 집행하는 트레이드윈즈, 팔머 러키 합류 며칠 만의 안두릴 잠수함 조선소 계약까지 국방 AI 조달이 빠르게 재편되고 있다.</p>
 </div>
-<div class="standalone-item">
+<div class="standalone-item jfnb-card" data-card-index="12" data-card-title="스타링크, 인도에선 막히고 미국에선 이통3사 위협 (10/8~10/9)" data-card-type="cluster" id="art-12">
 <h3>스타링크, 인도에선 막히고 미국에선 이통3사 위협 (10/8~10/9)</h3>
 <p>머스크가 인도 진출 지연을 '올리가르히' 탓으로 돌리자 인도 정부가 반박했다. 반면 미국에서는 스페이스X의 전국 주파수 인수 합의에 AT&amp;T·버라이즌·T모바일 주가가 급락했고, FCC는 25MHz '프라임 스펙트럼' 경매를 표결에 부친다.</p>
 </div>
-<div class="standalone-item">
+<div class="standalone-item jfnb-card" data-card-index="13" data-card-title="테슬라, 유럽서 'FSD' 명칭 포기 — 'Tesla Assisted Driving' (10/10)" data-card-type="cluster" id="art-13">
 <h3>테슬라, 유럽서 'FSD' 명칭 포기 — 'Tesla Assisted Driving' (10/10)</h3>
 <p>독일 규제당국의 '오해 소지' 지적을 받아들인 대신 독일 교통장관이 유럽 전역 승인 지지 의사를 밝혔다. 이름을 내주고 시장 진입을 얻는 구도다. 오스틴 사이버캡은 첫 달 운행에서 삐걱거렸다(10/5).</p>
 </div>
-<div class="standalone-item">
+<div class="standalone-item jfnb-card" data-card-index="14" data-card-title="슈나이더 일렉트릭, PTC 226억 달러 전액 현금 인수 (10/6)" data-card-type="cluster" id="art-14">
 <h3>슈나이더 일렉트릭, PTC 226억 달러 전액 현금 인수 (10/6)</h3>
 <p>42% 프리미엄을 얹어 데이터센터 전력 장비에 설계·디지털트윈 소프트웨어를 붙인다. 소프트웨어·서비스 비중은 매출의 약 24%로 높아지지만, 발표 당일 슈나이더 주가는 8% 넘게 빠지고 PTC는 35% 뛰었다.</p>
 </div>
-<div class="standalone-item">
+<div class="standalone-item jfnb-card" data-card-index="15" data-card-title="청소년 온라인 안전 압박 — 호주 eSafety·영국 Ofcom·뉴욕주 (10/5~10/9)" data-card-type="cluster" id="art-15">
 <h3>청소년 온라인 안전 압박 — 호주 eSafety·영국 Ofcom·뉴욕주 (10/5~10/9)</h3>
 <p>호주는 스팀·로블록스·포트나이트·마인크래프트의 아동 보호 공백을 지적했고, Ofcom은 인스타그램 'Instants' 위험 평가를 조사한다. 뉴욕주는 틱톡이 청소년에게 작동하지 않는 '유령' 안전기능을 줬다고 주장했다. IWF는 AI 생성 아동 성착취물이 이미 작년 전체의 1.4배라고 밝혔다.</p>
 </div>
-<div class="standalone-item">
+<div class="standalone-item jfnb-card" data-card-index="16" data-card-title="메타, 7개국서 바이트댄스 광고 전면 금지 (10/10)" data-card-type="cluster" id="art-16">
 <h3>메타, 7개국서 바이트댄스 광고 전면 금지 (10/10)</h3>
 <p>바이트댄스 광고·유료 메시지는 물론 바이트댄스 서비스로 연결되는 제3자 광고까지 막는다. 숏폼과 AI 에이전트 시장의 경쟁이 광고 플랫폼 봉쇄로 번졌다. 같은 주 페이스북은 틱톡이 금지된 인도에서 '릴스 우선' 화면을 시험했다.</p>
 </div>
 </section>
-
 <section class="picks">
 <div class="sec-head"><span>💡</span><h2>Claude's Pick</h2></div>
-<div class="pick-item">
+<div class="pick-item jfnb-card" data-card-index="17" data-card-title="🇰🇷 현대차 무뇨스 &quot;中 전기차 충격 줄이려면 '공정한 경쟁의 장'뿐&quot; (10/6)" data-card-type="cluster" id="art-17">
 <h3>🇰🇷 현대차 무뇨스 "中 전기차 충격 줄이려면 '공정한 경쟁의 장'뿐" (10/6)</h3>
 <p>관세 장벽만으로는 중국 전기차를 막기 어렵다는 현대차 CEO의 진단이다. 같은 주 사우디 국부펀드는 지분 58%를 가진 루시드와 경쟁할 자체 EV 브랜드 '씨어'를 내놨고, 루시드는 생산이 2년 만에 최저로 떨어졌다. 선정 이유: 미국 시장에서 중국 업체와의 정면 경쟁을 준비하는 한국 완성차의 전략 방향을 보여주는 발언이다.</p>
 </div>
-<div class="pick-item">
+<div class="pick-item jfnb-card" data-card-index="18" data-card-title="🔍 AI 생성물 판별 인프라 — OpenAI EU 워터마크·구글 SynthID 공개·니콘 1위작 실격 (10/6~10/10)" data-card-type="cluster" id="art-18">
 <h3>🔍 AI 생성물 판별 인프라 — OpenAI EU 워터마크·구글 SynthID 공개·니콘 1위작 실격 (10/6~10/10)</h3>
 <p>OpenAI는 EU AI법에 맞춰 ChatGPT·Codex 텍스트에 비가시 워터마크를 넣고, 구글은 타사 모델 생성물까지 식별하는 SynthID 사이트를 전 세계에 열었다. 그 사이 니콘 현미경 영상 공모전 1위작이 AI 생성으로 판명돼 실격됐다. 선정 이유: 표시 의무가 대형 서비스에 실제로 적용되기 시작했고, 과학·창작 분야에서 검증 절차가 비용 항목이 되고 있다.</p>
 </div>
 </section>
-
 <section>
 <div class="sec-head"><span>📊</span><h2>주간 통계</h2></div>
 <div class="stats-grid">
@@ -397,7 +397,6 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 <div class="stat-item"><div class="num">4</div><div class="cap">📋 모니터링</div></div>
 </div>
 </section>
-
 <section>
 <div class="sec-head"><span>📅</span><h2>다가오는 주요 일정</h2></div>
 <div class="events-list">
@@ -409,8 +408,59 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
 </section>
 </main>
 </div>
-<footer>
-<p>Generated by Claude | Weekly Briefing v1.8</p>
+
+<footer class="reader-footer">
+<div class="scroll-to-top-wrap">
+<button class="scroll-to-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" type="button">↑ 맨 위로</button>
+</div>
+<a href="../archive.html">← 아카이브로 돌아가기</a>
+<div class="footer-counter" id="visitor-counter-wrap" style="display:none;">
+    Today: <span class="counter-number" id="visitor-count-daily">0</span>
+      |  
+    Total: <span class="counter-number" id="visitor-count">0</span>
+</div>
 </footer>
-</body>
+<script>
+(function(){
+  var API_BASE='https://abacus.jasoncameron.dev';
+  var NAMESPACE='hong4137-briefing';
+  var LS_KEY='jfnb-visited-date';
+  function getKstDate(){
+    return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);
+  }
+  function getKstDailyKey(){ return 'daily-'+getKstDate(); }
+  var todayStr=getKstDate();
+  var hasVisited=false;
+  try{ hasVisited=(localStorage.getItem(LS_KEY)===todayStr); }catch(e){}
+  var mode=hasVisited?'get':'hit';
+  var totalVal=null,dailyVal=null;
+  var wrap=document.getElementById('visitor-counter-wrap');
+  var sDly=document.getElementById('visitor-count-daily');
+  var sTot=document.getElementById('visitor-count');
+  function renderUI(){
+    if(!wrap||totalVal===null)return;
+    wrap.style.display='';
+    if(sTot)sTot.textContent=totalVal.toLocaleString();
+    if(sDly)sDly.textContent=dailyVal!==null?dailyVal.toLocaleString():'...';
+  }
+  fetch(API_BASE+'/'+mode+'/'+NAMESPACE+'/global')
+    .then(function(r){return r.ok?r.json():Promise.reject();})
+    .then(function(d){
+      var t=d.value!=null?d.value:d.count;
+      if(typeof t!=='number')return;
+      totalVal=t;
+      if(!hasVisited){try{localStorage.setItem(LS_KEY,todayStr);}catch(e){}}
+      renderUI();
+    })
+    .catch(function(){});
+  fetch(API_BASE+'/'+mode+'/'+NAMESPACE+'/'+getKstDailyKey())
+    .then(function(r){return r.ok?r.json():{value:0};})
+    .then(function(d){
+      var v=d.value!=null?d.value:d.count;
+      dailyVal=typeof v==='number'?v:0;
+      renderUI();
+    })
+    .catch(function(){dailyVal=0;renderUI();});
+})();
+</script></body>
 </html>
