@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MS, 자체 AI칩 'Maia 300'으로 엔비디아 의존 축소 | 메타 첫 프런티어 모델 'Muse Wonder' | 佛 슈퍼마켓 냉장고 해킹 | Jae's Briefing</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="date-badge">2026년 10월 13일 화요일</div>
+<h1 class="title">MS, 자체 AI칩 'Maia 300'으로 엔비디아 의존 축소 | 메타 첫 프런티어 모델 'Muse Wonder' | 佛 슈퍼마켓 냉장고 해킹</h1>
+<p class="summary">마이크로소프트가 3세대 자체 AI 칩 Maia 300을 공개하고 수 기가와트 규모로 데이터센터에 깔아 AI 추론을 주로 자체 칩으로 돌리겠다고 밝혔다. 메타 초지능연구소는 첫 프런티어 모델 Muse Wonder를 내놓으며 오픈AI·앤트로픽과 정면 승부에 나섰다. 프랑스에서는 해커가 슈퍼마켓 수백 곳의 냉장 설비 제어기를 장악해 온도를 50도까지 올린 전례 없는 공격이 벌어졌고, 영국에서는 AI 장관과 브래드 스미스 MS 사장이 AI 안전 규제 강화를 한목소리로 요구했다.</p>
+</header>
+<section class="section top-section">
+<h2 class="section-title">🔥 TOP Headlines</h2>
+<article class="article-card">
+    <span class="badge badge-hot">HOT</span>
+    <h3 class="article-title">Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia</h3>
+    <p class="article-title-kr">MS, 3세대 자체 AI칩 'Maia 300' 공개… "AI 추론은 주로 자체 칩으로" 엔비디아 의존 축소</p>
+    <p class="article-summary">마이크로소프트가 3세대 자체 AI 칩 Maia 300을 공개하고, 이를 자사 제품·서비스의 '주력 AI 추론 시스템'으로 삼겠다고 밝혔다. 블룸버그에 따르면 MS는 수 기가와트 규모의 Maia 칩을 데이터센터에 설치해 AI 소프트웨어를 대부분 자체 하드웨어로 돌릴 계획이며, Maia 300은 내년부터 본격 배치된다. 더버지는 새 칩이 클라우드 AI 작업의 비용·효율을 개선하고 최신 추론 모델과 에이전트 작업 처리 능력도 높였다고 전했다. CNBC는 자체 칩 비중을 늘리면 MS가 마진을 키우고 AI 스택 전반의 통제력을 강화할 수 있다고 분석했다. 블룸버그 테크는 같은 날 머스크가 연간 최대 10종의 칩 설계를 시험하겠다고 한 것과 묶어 'AI 칩 재발명 경쟁'으로 조명했다.</p>
+    <div class="article-meta">
+        <span class="source">CNBC Hero, The Verge, Bloomberg 다매체 보도</span>
+        <a href="https://www.cnbc.com/2026/10/12/microsoft-will-mainly-use-its-maia-chips-for-ai-inference.html" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-hot">HOT</span>
+    <h3 class="article-title">Meta releases its first frontier model, Muse Wonder</h3>
+    <p class="article-title-kr">메타, 첫 프런티어 모델 'Muse Wonder' 출시… 14개월 총력전 끝에 AI 최전선 복귀</p>
+    <p class="article-summary">메타 초지능연구소(MSL)가 월요일 최신 모델 Muse Wonder와 상위판 Muse Wonder Full을 공개했다. 메타가 처음으로 내놓은 프런티어급 모델로, 회사는 업계 최고 모델들과 견줄 수 있다고 주장한다. 와이어드는 에이전트가 통제를 벗어나지 않도록 하는 새 기능이 함께 들어갔다고 전했고, 블룸버그는 공격적인 인재 영입으로 재건한 초지능팀의 성과를 가늠할 핵심 시험대라고 평가했다. CNBC에 따르면 새 모델은 Muse 앱 유료 구독자만 쓸 수 있어, 이용자가 메타 AI에 돈을 낼지가 관건이다. 메타 주가는 발표 후 올랐다. 한편 와이어드는 Muse 에이전트가 음란 대화를 생성하는데도 메타가 '합법적 성인 행위'라며 옹호한다고 지적했다.</p>
+    <div class="article-meta">
+        <span class="source">TechCrunch Hero, Wired, CNBC, Bloomberg, The Verge 다매체 보도</span>
+        <a href="https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-hot">HOT</span>
+    <h3 class="article-title">Hackers force French supermarket fridges to heat up to 50C in 'unprecedented' cyber-attack</h3>
+    <p class="article-title-kr">佛 슈퍼마켓 수백 곳 냉장고 해킹… 제어기 장악해 50도로 가열, 화재·식품 폐기</p>
+    <p class="article-summary">일요일 밤부터 월요일 새벽 사이 프랑스 슈퍼마켓 수백 곳의 냉장·냉동 설비가 사이버 공격을 받아 멈췄다. 공격자는 냉장 설비 제어기를 장악해 자동 제상 기능을 작동시키는 방식으로 내부 온도를 최대 50도까지 끌어올렸다. 앵테르마르셰·넷토 300여 곳과 쿠페라티브 U 100여 곳, 일부 르클레르 매장이 피해를 입었고, 점포들은 신선·냉동식품을 폐기해야 했다. 파리 검찰은 공격 사실과 함께 화재도 발생했다고 확인했다. 외신들은 지원이 끊긴 구형 Danfoss 제어 소프트웨어가 뚫린 것으로 보고 있으며, 쿠페라티브 U 대표는 '전례 없는' 공격이라고 했다. 아직 범행 주체는 밝혀지지 않았다.</p>
+    <div class="article-meta">
+        <span class="source">Guardian Hero, Bloomberg 외 다매체 보도</span>
+        <a href="https://theguardian.com/world/2026/oct/12/cyber-attack-defrosts-refrigerators-france-supermarket-chains-intermarche-cooperative-u" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-hot">HOT</span>
+    <h3 class="article-title">UK to strengthen cyber defences as minister calls for AI firms to increase safety efforts</h3>
+    <p class="article-title-kr">英 AI 장관 "오픈AI식 의료망 해킹, 영국서도 피할 수 없다"… 사이버 방어 강화·출시 전 모델 평가 부활</p>
+    <p class="article-summary">영국 카니시카 나라얀 AI 장관이 첨단 AI를 활용해 국가 사이버 방어를 강화하겠다고 발표하면서, 프런티어 AI 기업들에 안전 노력을 더 하라고 요구했다. 그는 호주 의료 시스템이 오픈AI 에이전트에 뚫린 사건을 거론하며 영국에서도 비슷한 AI 기반 공격이 '불가피하지는 않더라도 가능성이 높다'고 했고, 정부 자체 방어망도 AI 에이전트에 우회될 수 있다고 인정했다. 블룸버그에 따르면 영국은 앞으로 주요 AI 모델을 출시 전에 평가할 수 있게 된다. 사전 평가 전에 백악관 승인을 받도록 한 미국 정책을 뒤집는 조치다. 영국 정부가 빅테크 자율 규제에만 기대지 않겠다는 신호로 읽힌다.</p>
+    <div class="article-meta">
+        <span class="source">Guardian Hero, BBC, Bloomberg 다매체 보도</span>
+        <a href="https://www.theguardian.com/technology/2026/oct/12/uk-strengthen-cyber-defences-minister-ai-firms-safety" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-hot">HOT</span>
+    <h3 class="article-title">AI less regulated than milk, Microsoft president says in warning over safety</h3>
+    <p class="article-title-kr">브래드 스미스 MS 사장 "AI 규제는 우유보다 허술"… 킬 스위치·피해자 배상 의무화 촉구</p>
+    <p class="article-summary">브래드 스미스 마이크로소프트 사장이 AI는 우유나 세탁기보다도 규제가 덜하다며 더 강한 안전 규칙이 필요하다고 경고했다. 그는 '킬 스위치' 의무화와 함께, 통제를 벗어난 에이전트로 피해를 본 사람에 대한 법적 배상 책임도 도입해야 한다고 주장했다. 스미스는 국제 공통 규칙이 필요하며 그 논의를 이끌기에 영국이 '가장 좋은 위치'에 있다고 말했다. 같은 회사 나델라 CEO가 주말에 '사람이 쥔 비상 브레이크'를 요구한 데 이어, MS 수뇌부가 연일 규제 강화를 외치는 모양새다.</p>
+    <div class="article-meta">
+        <span class="source">Guardian, BBC, TechCrunch 다매체 보도</span>
+        <a href="https://www.theguardian.com/technology/2026/oct/12/ai-less-regulated-than-milk-microsoft-president-calls-for-tougher-rules" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-hot">HOT</span>
+    <h3 class="article-title">Ukraine strikes Yandex data centre in third attack on Russian tech giant</h3>
+    <p class="article-title-kr">우크라이나, 나흘 새 얀덱스 데이터센터 3곳 타격… 러시아 택시·지도·결제 마비</p>
+    <p class="article-summary">우크라이나 드론이 10월 8일 사소보, 9일 칼루가에 이어 11일 블라디미르의 얀덱스 데이터센터까지 타격했다. 블룸버그에 따르면 러시아 전역에서 얀덱스 택시 호출, 내비게이션, 결제 서비스가 광범위하게 끊겼고, 얀덱스 클라우드는 월요일에도 제한 모드로 운영됐다. 피해 시설에는 AI 모델 학습에 쓰는 슈퍼컴퓨터도 들어 있었다. 아르스테크니카는 극도로 중앙집중화된 러시아 디지털 경제가 이런 공격에 취약하다는 러시아 블로거들의 경고를 전했다. 더버지는 클라우드플레어 데이터상 '러시아 봇 트래픽 급감' 차트가 돌고 있지만, 실제로 줄어든 것은 흔히 생각하는 선전용 봇이 아닐 가능성이 크다고 짚었다.</p>
+    <div class="article-meta">
+        <span class="source">BBC, Bloomberg, The Verge, Ars Technica 다매체 보도</span>
+        <a href="https://bbc.com/news/articles/cw0k0g57mk3zo" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🤖 AI/기술</h2>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI 'tsunami'</h3>
+    <p class="article-title-kr">IMF 총재 "AI는 고용·세수 덮치는 '느린 쓰나미'"… 세계은행, 위기급 고용 지원 촉구</p>
+    <p class="article-summary">크리스탈리나 게오르기에바 IMF 총재가 AI가 '느리게 밀려오는 쓰나미'처럼 세계 노동시장을 덮치고 있으며, 갓 취업 시장에 들어서는 청년층이 가장 크게 노출돼 있다고 경고했다. 그는 AI가 일자리뿐 아니라 세수 기반까지 흔들 수 있다며, 지금 당장 교육 체계를 다시 짜고 사회가 적응할 수 있도록 정책을 마련하라고 촉구했다. 세계은행 고용위원회도 금융위기 때 수준의 고용 지원책이 필요하다고 권고했다.</p>
+    <div class="article-meta">
+        <span class="source">CNBC, Bloomberg</span>
+        <a href="https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">TikTok CEO sees major scientific breakthroughs from AI within three years</h3>
+    <p class="article-title-kr">틱톡 추 CEO "3년 안에 AI發 과학 대도약"… MS 알트호프와 함께 "과열·미성숙도 경계해야"</p>
+    <p class="article-summary">추서우즈 틱톡 CEO가 AI가 3년 안에 중대한 과학적 돌파구를 만들어낼 것이라고 전망하면서도, 자율 시스템이 확산되는 만큼 더 강한 안전장치가 필요하다고 말했다. 블룸버그에 따르면 추 CEO와 저드슨 알트호프 MS 상업부문 CEO는 같은 자리에서 세계가 AI의 잠재력에 지나치게 흥분해 그 미성숙함을 놓치고 있다고 지적했다. 두 사람은 AI가 너무 빨리 발전하는 것보다 당장은 사이버보안이 더 큰 문제라고 입을 모았다.</p>
+    <div class="article-meta">
+        <span class="source">CNBC, Bloomberg</span>
+        <a href="https://www.cnbc.com/2026/10/12/tiktok-ceo-bytedance-ai-scientific-breakthroughs.html" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">OpenAI's GPT-6 may lead to earlier robotics breakthrough: Unitree founder</h3>
+    <p class="article-title-kr">유니트리 창업자 "GPT-6로 로봇의 'ChatGPT 모먼트' 앞당겨질 것"</p>
+    <p class="article-summary">중국 휴머노이드 로봇 기업 유니트리의 왕싱싱 창업자가 오픈AI의 최신 성과(GPT-6) 덕분에 체화 지능(embodied intelligence)의 'ChatGPT 모먼트'가 더 빨리 올 수 있다고 말했다. 그는 지난 8월 세계로봇대회에서 그 시점을 빠르면 2~3년, 늦으면 5~10년으로 내다봤는데, 범용 AI 모델의 발전 속도가 이 전망을 당기고 있다는 취지다. 로봇 상용화의 최대 걸림돌인 '일반화' 문제를 대형 모델이 풀어줄지 주목된다.</p>
+    <div class="article-meta">
+        <span class="source">SCMP Tech Hero</span>
+        <a href="https://scmp.com/tech/big-tech/article/3370603/openais-gpt-6-may-lead-robotics-breakthrough-soon-next-year-unitree-founder" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">Learning to use local AI is exciting, overwhelming, and frustrating</h3>
+    <p class="article-title-kr">클라우드 대신 내 PC에서 AI 돌리기… 더버지 기자의 '로컬 AI' 체험기</p>
+    <p class="article-summary">개인 데이터를 클라우드 AI에 맡기기 꺼렸던 더버지 기자가 맥 스튜디오에서 Hermes·Qwen 같은 오픈 모델을 직접 돌려본 체험기다. 이제는 상당히 강력한 모델도 로컬에서 돌릴 수 있게 됐지만, 모델 선택부터 설정까지 진입 장벽이 높아 흥미로우면서도 벅차고 답답한 경험이었다고 전한다. 프라이버시를 지키면서 AI를 일상적으로 쓸 수 있을지 가늠해보는 연재다.</p>
+    <div class="article-meta">
+        <span class="source">The Verge Hero</span>
+        <a href="https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">Former Plaud exec raises $26M for AI app that listens to you in the background</h3>
+    <p class="article-title-kr">플라우드 前 임원, '늘 듣는 AI' 앱 Ambi로 2600만 달러 유치</p>
+    <p class="article-summary">AI 녹음기업체 플라우드 출신 임원이 창업한 Ambi가 2600만 달러를 투자받았다. Ambi는 아이폰·맥·애플워치용 앱을 내놓는데, 사용자의 대화와 일상을 백그라운드에서 계속 기록하는 '앰비언트 캡처' 방식이다. 별도 하드웨어 없이 이미 가진 기기로 AI 기록 비서 시장을 노린다.</p>
+    <div class="article-meta">
+        <span class="source">TechCrunch</span>
+        <a href="https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">💰 경제/금융</h2>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck</h3>
+    <p class="article-title-kr">인텔·브로드컴 CEO "AI 최대 병목은 자금 경색"… 혹 탄 "투자자 상당수는 도박꾼"</p>
+    <p class="article-summary">인텔과 브로드컴 CEO가 자본 조달이 AI 붐의 가장 큰 제약이 될 수 있다고 경고했다. 혹 탄 브로드컴 CEO는 AI 투자자 상당수가 무엇에 베팅하는지 모른 채 극단적 기대를 거는 도박꾼과 비슷하다고까지 말했다. 블룸버그는 구글·메타 등 빅테크가 매출과 주가 상승 대신 대규모 차입으로 AI 투자를 메우는 쪽으로 자금 조달 방식을 크게 바꿨다고 짚었다. DBS의 탄수산 CEO도 시장이 AI 투자 위험을 다시 매기고 있으며 그만큼 자금 조달이 더 깐깐해질 것이라고 했다.</p>
+    <div class="article-meta">
+        <span class="source">CNBC Hero, Bloomberg</span>
+        <a href="https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">IonQ to acquire cybersecurity firm Elisity in an all-stock deal for up to $1.3 billion</h3>
+    <p class="article-title-kr">아이온큐, 사이버보안 기업 엘리시티 최대 13억 달러에 인수… '큐데이' 대비</p>
+    <p class="article-summary">양자컴퓨팅 기업 아이온큐가 사이버보안 업체 엘리시티를 최대 13억 달러에 전액 주식으로 인수한다. AI를 활용한 공격과 양자컴퓨터가 현행 암호를 깨는 '큐데이(Q-Day)' 위협까지 막을 수 있도록 보안 플랫폼을 넓히려는 것이다. 니콜로 데 마시 CEO는 블룸버그 인터뷰에서 이번 인수가 서방을 큐데이로부터 지키는 데 핵심이라고 말했다. 아이온큐 사상 최대 규모의 인수다.</p>
+    <div class="article-meta">
+        <span class="source">CNBC Hero, Bloomberg</span>
+        <a href="https://www.cnbc.com/2026/10/12/ionq-elisity-acquisition-cybersecurity.html" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">Beijing moves to steady A-share market after sharp tech sell-off</h3>
+    <p class="article-title-kr">中 증감회, 기술주 급락에 A주 안정화 착수… 우칭 주석, 상장사·금융기관 소집</p>
+    <p class="article-summary">중국 증권감독관리위원회(CSRC)의 우칭 주석이 3분기 증시 급락 뒤 상장사와 금융기관 대표들을 불러 회의를 열고 시장 안정에 나섰다. 이번 하락은 기술주 매도세가 이끌었다. 당국은 시장 신뢰를 되살리려고 상장사의 투명성과 투자자 보호 강화를 강조한 것으로 전해졌다. AI·반도체 랠리를 이끌던 중국 기술주가 조정을 받는 가운데 나온 정책 대응이다.</p>
+    <div class="article-meta">
+        <span class="source">SCMP Tech Hero</span>
+        <a href="https://scmp.com/business/banking-finance/article/3370506/beijing-moves-steady-share-market-after-sharp-tech-sell" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">Former HSBC executive launches wealth platform powered by team of AI agents</h3>
+    <p class="article-title-kr">HSBC 출신 베테랑, 'AI 에이전트 팀'이 굴리는 자산관리 플랫폼 창업</p>
+    <p class="article-summary">HSBC 임원 출신 은행가가 여러 AI 에이전트가 협업하는 자산관리 플랫폼을 홍콩에서 선보였다. '대중 부유층(mass affluent)' 투자자를 겨냥해 포트폴리오 관리, 위험 모니터링, 투자 기회 포착을 에이전트들이 먼저 나서서 처리하는 것이 목표다. 그동안 프라이빗뱅킹 고객만 받던 맞춤형 자산관리를 AI로 대중화하려는 시도다.</p>
+    <div class="article-meta">
+        <span class="source">SCMP Tech Hero</span>
+        <a href="https://scmp.com/business/money/wealth/article/3370565/former-hsbc-executive-launches-wealth-platform-powered-team-ai-agents" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🔧 하드웨어/기타</h2>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">Google Fitbit Edge: Specs, Features, Price, Release Date</h3>
+    <p class="article-title-kr">구글 'Fitbit Edge' 공개… 179달러, OLED 화면·일주일 배터리로 Charge 6 대체</p>
+    <p class="article-summary">구글이 179.99달러짜리 새 웨어러블 Fitbit Edge를 공개했다. 화면이 없는 Fitbit Air와 본격 스마트워치인 Pixel Watch 5 사이를 메우는 제품으로, OLED 화면과 일주일 가는 배터리, Pixel Watch 수준의 기능을 갖췄다. 블룸버그에 따르면 Fitbit Charge 6의 후속작이며, 새로 개편한 Google Health 앱을 써보게 하는 통로 역할도 한다. 리뷰어들은 Pixel Watch가 두껍다는 불만을 풀어준 제품이라고 평가하면서도, 본격 스마트워치는 아니라고 선을 그었다.</p>
+    <div class="article-meta">
+        <span class="source">Wired, TechCrunch, The Verge, ZDNet, Ars Technica, Bloomberg 다매체 보도</span>
+        <a href="https://www.wired.com/story/googles-fitbit-edge-debuts-a-replaceable-battery-and-brings-back-the-screen/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-update">UPDATE</span>
+    <h3 class="article-title">How Apple can win the smart home</h3>
+    <p class="article-title-kr">🔁 애플 첫 스마트홈 행사 D-day… HomeView는 11월 중순 출시, Apple TV·HomePod mini도 새로</p>
+    <p class="article-summary">애플이 현지 시각 10월 13일 뉴욕에서 처음으로 스마트홈만 다루는 'Welcome Home' 행사를 연다. 블룸버그 마크 거먼에 따르면 새 스마트홈 허브 HomeView는 11월 중순에 출시되며, HomePod mini와 Apple TV 신제품도 함께 나온다. 새 Apple TV에는 마이크가 내장되고, 리모컨에는 스피커가 들어갈 것이라는 관측이다. 더버지와 테크크런치는 그간 번번이 실패한 애플 스마트홈 전략이 이번에는 성공할 수 있을지에 주목했다.</p>
+    <div class="article-meta">
+        <span class="source">The Verge, TechCrunch, Bloomberg 다매체 보도</span>
+        <a href="https://www.theverge.com/tech/1009324/how-apple-can-win-the-smart-home" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">They War-Gamed Dimming the Sun. It Went Even Worse Than You Think</h3>
+    <p class="article-title-kr">'태양 가리기' 워게임 해봤더니… 기후 공학이 지정학 군비경쟁으로 번졌다</p>
+    <p class="article-summary">성층권에 입자를 뿌려 햇빛을 줄이는 태양 지구공학은 기후 위기에 시간을 벌어줄 수단으로 거론되지만, 이를 둘러싼 국가 간 갈등을 처음으로 시뮬레이션한 결과는 예상보다 나빴다. 와이어드는 지정학이 운전대를 잡으면 기술이 새로운 군비경쟁의 불씨가 될 수 있다는 점을 이 워게임이 보여줬다고 전했다.</p>
+    <div class="article-meta">
+        <span class="source">Wired Hero</span>
+        <a href="https://www.wired.com/story/they-war-gamed-dimming-the-sun-it-went-even-worse-than-you-think/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">Inside the mini factory where GM builds its EV future</h3>
+    <p class="article-title-kr">GM, 미시간에 '미니 공장' 짓는다… 중국·테슬라 맞설 차세대 배터리 거점</p>
+    <p class="article-summary">더버지가 GM 미시간 워런 캠퍼스 한쪽에 들어서고 있는 연면적 약 4만6000㎡(50만 제곱피트) 규모의 건물 두 동 내부를 취재했다. 차세대 EV 배터리 개발·생산 공정을 검증하는 '미니 공장'으로, 가격 경쟁력이 높은 중국 업체와 테슬라에 맞설 GM 전기차 전략의 핵심 거점이다.</p>
+    <div class="article-meta">
+        <span class="source">The Verge</span>
+        <a href="https://www.theverge.com/transportation/1008023/gm-bcdc-ev-battery-factory-china-tesla" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-new">NEW</span>
+    <h3 class="article-title">Feds Got Warrants to Use Fake Cell Towers to Hunt Down Don Lemon's Producer</h3>
+    <p class="article-title-kr">美 연방수사관, '가짜 기지국' 영장 받아 언론인 추적… 돈 레몬 PD·지역 기자 겨냥</p>
+    <p class="article-summary">와이어드에 따르면 미국 연방 수사관들이 휴대폰 신호를 가로채는 감시 장비인 '셀 사이트 시뮬레이터(가짜 기지국)'를 써서 방송인 돈 레몬의 PD를 추적할 수 있도록 영장을 받아냈다. 수사관들은 언론인 조지아 포트와 미네소타주 상원의원 후보에게도 같은 도구를 쓰겠다고 허가를 신청했다. 침해성이 큰 감시 기술이 언론인에게까지 쓰이고 있다는 우려가 커지고 있다.</p>
+    <div class="article-meta">
+        <span class="source">Wired</span>
+        <a href="https://www.wired.com/story/feds-got-warrants-to-use-fake-cell-towers-to-hunt-down-don-lemons-producer/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+</section>
+<section class="section picks-section">
+<h2 class="section-title">💎 Claude's Pick</h2>
+<article class="article-card">
+    <span class="badge badge-pick">PICK</span>
+    <h3 class="article-title">DeepSeek Backs Ex-Tencent AI Scientist's $400 Million Robot Lab</h3>
+    <p class="article-title-kr">딥시크, 텐센트 출신 과학자의 4억 달러 로봇 AI 랩에 첫 투자 주도</p>
+    <p class="article-summary">딥시크가 텐센트 출신 AI 과학자가 세운 지 몇 달 안 된 로봇 AI 스타트업(기업가치 4억 달러)의 첫 투자 라운드를 주도한다. 자금은 딥시크가 확보한 120억 달러 이상의 자금에서 나온다. 모델 개발사이던 딥시크가 이제 체화 지능 생태계에 직접 돈을 대는 투자자로 나섰다는 점이 눈에 띈다.</p>
+    <p class="pick-reason">선정 이유: 신생 기업 첫 등장 + 대기업 조용한 움직임 / AI 인프라·로보틱스</p>
+    <div class="article-meta">
+        <span class="source">Bloomberg</span>
+        <a href="https://www.bloomberg.com/news/articles/2026-10-12/deepseek-backs-ex-tencent-ai-scientist-s-400-million-robot-lab" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-pick">PICK</span>
+    <h3 class="article-title">Tencent Tells Investors Its $5 Billion Bond Mainly for AI Capex</h3>
+    <p class="article-title-kr">텐센트, 50억 달러 회사채 발행… "자금 대부분 AI 설비투자에"</p>
+    <p class="article-summary">텐센트가 채권 투자자들에게 약 50억 달러 규모로 계획한 회사채 자금을 주로 AI 관련 설비투자에 쓰겠다고 밝혔다. 미국 빅테크에 이어 중국 빅테크까지 차입으로 AI 투자를 메우기 시작했다는 신호로, 오늘 경제 섹션에서 다룬 'AI 자금 경색' 논의와 맞닿아 있다.</p>
+    <p class="pick-reason">선정 이유: 대기업 조용한 움직임 + 시장 재평가 신호 / 투자 관점·AI 인프라</p>
+    <div class="article-meta">
+        <span class="source">Bloomberg</span>
+        <a href="https://www.bloomberg.com/news/articles/2026-10-12/tencent-tells-investors-its-5-billion-bond-mainly-for-ai-capex" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-pick">PICK</span>
+    <h3 class="article-title">Applied Materials Will Double Sales, Not Headcount, Thanks to AI</h3>
+    <p class="article-title-kr">어플라이드 머티리얼즈 "매출은 두 배로, 인력은 그대로"… AI로 R&amp;D·품질관리 자동화</p>
+    <p class="article-summary">세계 최대 반도체 장비업체 어플라이드 머티리얼즈가 앞으로 몇 년 안에 매출을 두 배로 늘리되 채용은 그만큼 늘리지 않겠다고 밝혔다. 제품 개발과 품질관리 등에 AI 도구를 적극 쓰겠다는 것이다. 반도체 공급망 핵심 기업이 AI로 생산성을 끌어올리는 구체적 목표를 처음 내놨다는 점에서, 장비·소재 업계 전반의 비용 구조 변화를 예고한다.</p>
+    <p class="pick-reason">선정 이유: 시장 재평가 첫 등장 + 대기업 조용한 움직임 / 반도체 공급망·자동화</p>
+    <div class="article-meta">
+        <span class="source">Bloomberg</span>
+        <a href="https://www.bloomberg.com/news/articles/2026-10-12/applied-materials-will-double-sales-not-headcount-thanks-to-ai" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+</section>
+<footer>
+<p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+<p>기사 23건 | 섹션 5개 | Pick 3건</p>
+<p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+</footer>
+</div>
+</body>
+</html>
