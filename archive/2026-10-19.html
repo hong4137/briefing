@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디즈니 캐릭터AI 인력 흡수, 메타 스크래핑 약관 철회, AI 매도세 아시아 확산 | Jae&#x27;s Briefing</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 10월 19일 월요일</div>
+            <h1 class="title">디즈니, 캐릭터AI 인력 흡수 | 메타, AI 스크래핑 약관 철회 | AI 매도세 아시아 공급망 강타</h1>
+            <p class="summary">파산한 캐릭터AI의 인력 대부분이 디즈니로 옮긴다. 메타는 뉴스사이트 AI 학습 스크래핑 논란을 부른 약관 문구를 하루 만에 삭제했다. 미국발 AI 매도세는 자금조달 비용 우려와 함께 아시아 AI 공급망 종목으로 번지고 있다.</p>
+        </header>
+
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span> <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Disney agrees to hire the majority of Character.AI’s workforce</h3>
+                <p class="article-title-kr">디즈니, 파산한 캐릭터AI 인력 대부분 흡수</p>
+                <p class="article-summary">챗봇 스타트업 캐릭터AI가 이번 주 초 파산(챕터11)을 신청한 데 이어, 디즈니가 직원 대다수를 채용하기로 했다. 법원 제출 서류 등에 따르면 디즈니는 정규직 약 86명 중 66명가량에게 일자리를 제안했으며, 앞서 2,000만달러에 일부 기술 자산의 비독점 라이선스를 인수하는 &#x27;스토킹호스&#x27; 입찰자로도 나섰다. 캐릭터AI의 전 CEO 카란딥 아난드는 지난달 디즈니 최초의 CTO로 영입됐다. 1년 전 캐릭터AI에 저작권 경고장을 보냈던 디즈니가 결국 인재와 기술을 통째로 흡수하는 모양새다. 10/14 캐릭터AI 파산 보도의 후속이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured 외 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span> <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Meta removes language that raised scraping and AI training concerns</h3>
+                <p class="article-title-kr">메타, 뉴스사이트 &#x27;AI 학습 스크래핑&#x27; 허용 논란 약관 문구 삭제</p>
+                <p class="article-summary">메타가 10월 30일 시행 예정이던 새 상업 약관에서 &#x27;비즈니스 고객과 연결된 도메인·웹페이지의 모든 콘텐츠를 AI 개발·개선에 쓸 수 있다&#x27;는 취지의 문구를 삭제했다. 니먼랩이 인용한 법률 전문가들은 이 조항이 뉴스사이트를 크롤링해 AI를 학습시키는 근거가 될 수 있다고 지적했고, 메타 비즈니스 계정만 있어도 스크래핑에 동의하는 셈이라는 비판(ZDNet)이 이어졌다. 메타 대변인은 약관 변경이 실제 크롤링 방식의 변화를 뜻하지 않는다고 해명했다. 10/17 &#x27;AI 라이선스료 회피&#x27; 보도 하루 만의 후퇴다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge, TechCrunch, ZDNet Featured 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span> <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">AI Trade Reversal Pierces Asia’s Star Picks-and-Shovels Stocks</h3>
+                <p class="article-title-kr">AI 매도세, 아시아 &#x27;곡괭이·삽&#x27; 공급망 종목까지 관통</p>
+                <p class="article-summary">미국 기술주 매도세가 깊어지면서 아시아 AI 공급망 랠리의 약점이 드러나고 있다. 블룸버그는 자금조달 비용 상승이 AI 설비투자를 위축시켜 지역 증시를 끌어올린 공급망 전반의 이익을 위협할 수 있다고 분석했다. CNBC는 AI 주식 급락과 인플레이션 재가열 속에서도 견조한 은행 실적과 기술주 밖으로의 순환매를 기회로 꼽았고, 리톨츠의 배리 리톨츠는 코어위브 급락을 거론하며 AI 승자·패자 가리기가 어려워졌다고 말했다. JP모건자산운용은 3분기 이익 증가율을 27~28%로 전망하면서도 이익 성장이 정점에 근접했을 가능성을 제기했다. 10/17 반도체주 최장 하락 보도의 후속이다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC Hero 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-10-18/ai-trade-reversal-pierces-asia-s-star-picks-and-shovels-stocks" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section ">
+            <h2 class="section-title">🤖 AI/기술</h2>
+            <article class="article-card">
+                
+                <h3 class="article-title">Anthropic says its workforce has become less junior and is spending more time in meetings</h3>
+                <p class="article-title-kr">앤트로픽 &quot;신입 비중 줄고, 직원은 에이전트 관리에 시간 쓴다&quot;</p>
+                <p class="article-summary">앤트로픽이 자사 고용 변화 보고서를 통해 지난 1년간 인력 구성과 업무 방식이 크게 바뀌었다고 밝혔다. 주니어 기술직 채용 비중이 줄었고, 8월 기준 대화형 AI 에이전트의 작업 시간이 직원 근무 시간의 6배에 달했다. 사람의 주의력이 에이전트 산출물의 병목이 되면서 직원들은 에이전트 결과를 검토·조율하는 &#x27;메타 업무&#x27;와 회의에 더 많은 시간을 쓰고 있으며, 채용에서도 기술 구현력보다 자율성과 판단력을 중시하게 됐다고 설명했다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero</span>
+                    <a href="https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">OpenAI bugging case shows threat to U.S. leadership in AI, DNI Clayton says</h3>
+                <p class="article-title-kr">오픈AI 사무실 도청 사건, &#x27;AI 산업스파이&#x27; 경고로 번져</p>
+                <p class="article-summary">오픈AI 회의실에 은닉 녹음장치를 설치한 혐의로 체포된 엔지니어 사건이 국가안보 이슈로 커지고 있다. 제이 클레이턴 국가정보장(DNI)은 이번 사건이 미국의 AI 주도권에 대한 위협을 보여준다고 말했다. 체포된 엔지니어는 보석을 신청하며 모국 사우디아라비아행 편도 항공권 구매가 도주 계획은 아니었다고 주장했다. 블룸버그는 민감한 AI 기술 보호에 대한 업계 우려가 커지고 있다고 전했다. 10/14 체포 보도의 후속이다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured, Bloomberg</span>
+                    <a href="https://www.cnbc.com/2026/10/16/ai-espionage-openai-jay-clayton.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">What will China’s proposed AI tech export bans mean for open-weight technologies?</h3>
+                <p class="article-title-kr">中 AI 수출통제안, 오픈웨이트 모델엔 어떤 영향?</p>
+                <p class="article-summary">중국이 AI 모델·칩·에이전트를 수출통제 목록에 올리는 방안을 제안한 가운데, 최대 변수는 딥시크·큐원 등 중국이 주도해온 오픈웨이트 AI가 통제 대상에 포함되느냐다. SCMP가 인용한 분석가들은 이번 조치가 단기적으로 비용을 키우지만 장기적으로는 자국 기술 보호라는 이득을 가져올 수 있다고 평가했다. 10/17 수출통제 제안 보도의 후속 분석이다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Hero</span>
+                    <a href="https://scmp.com/tech/big-tech/article/3371247/chinas-proposed-ai-tech-export-bans-may-create-short-term-costs-long-term-gains-analysts" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                
+                <h3 class="article-title">The AI promise was automation. The reality? Managing digital workers</h3>
+                <p class="article-title-kr">AI가 약속한 건 자동화…현실은 &#x27;디지털 직원&#x27; 관리</p>
+                <p class="article-summary">기업들이 앞다퉈 AI 에이전트 인력을 구축하면서, 이를 감독하고 관리하는 일이 다음 과제로 떠오르고 있다는 SCMP 기획이다. 사람을 대체할 것이라던 자동화가 오히려 에이전트를 배치·점검·조율하는 새로운 관리 업무를 만들어내고 있다는 진단으로, 앤트로픽 고용 보고서가 보여준 &#x27;메타 업무&#x27; 증가와 맥을 같이한다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Hero</span>
+                    <a href="https://scmp.com/tech/big-tech/article/3371246/ai-promise-was-automation-reality-managing-digital-workers" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                
+                <h3 class="article-title">Kimi’s AI credit card turns spending into computing quotas – with limits</h3>
+                <p class="article-title-kr">카드 결제하면 AI 연산 쿼터로…&#x27;키미 신용카드&#x27; 써보니</p>
+                <p class="article-summary">중국 문샷AI가 중국농업은행·아메리칸익스프레스와 내놓은 &#x27;키미&#x27; 신용카드를 SCMP 기자가 직접 써본 체험기다. 일상 결제를 키미 에이전트 사용 쿼터나 코딩 도구 등 AI 서비스 이용권으로 바꿔주는 구조지만, 적립 한도 등 제약이 적지 않다고 평가했다. 연산 자원을 &#x27;포인트&#x27;처럼 유통하는 중국식 AI 수익화 실험이다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Hero</span>
+                    <a href="https://scmp.com/tech/tech-trends/article/3371226/reporters-notebook-kimis-ai-credit-card-turns-spending-computing-quotas-limits" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                
+                <h3 class="article-title">Replit makes OpenAI its default over Anthropic, CEO says</h3>
+                <p class="article-title-kr">리플릿, 기본 AI 모델을 앤트로픽→오픈AI로 교체</p>
+                <p class="article-summary">코딩 플랫폼 리플릿의 암자드 마사드 CEO가 오픈AI를 앤트로픽 대신 기본 모델 공급자로 삼겠다고 밝혔다. 당초 &#x27;앤트로픽과 더 이상 협업하지 않는다&#x27;는 보도가 나왔으나, 마사드는 주말 사이 클로드는 고객이 계속 선택해 쓸 수 있다고 정정했다. 대표적 AI 코딩 서비스의 공급자 교체로, 코딩 모델 시장의 경쟁 구도 변화를 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured</span>
+                    <a href="https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section ">
+            <h2 class="section-title">💰 경제/비즈니스</h2>
+            <article class="article-card">
+                
+                <h3 class="article-title">Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’</h3>
+                <p class="article-title-kr">앤트로픽, 지분 5% &#x27;공익 기금&#x27;에 출연…AI 일자리 충격 대응</p>
+                <p class="article-summary">앤트로픽이 지분 5%를 새 &#x27;앤트로픽 공익 기금&#x27;에 출연하겠다고 발표했다(주주 승인 필요). 기금은 100% 자회사 LLC 형태로, 기업가치가 기준치보다 50% 오를 때마다 이사회 재량으로 2%를 추가 출연받는다. AI가 고용시장에 미치는 영향 완화 등 공익 목적 기부에 쓰이며 로비·정치자금에는 쓰지 않는다. 공동창업자 지분 80% 기부 약정 등과 합치면 약 20%의 지분이 공익 목적에 배정되며, IPO를 앞두고 공익법인(PBC) 정체성을 강조한 행보로 풀이된다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg, Investing.com 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                
+                <h3 class="article-title">Some companies give AI to everyone. This CEO is doing the opposite</h3>
+                <p class="article-title-kr">전 직원 AI 지급 대신 &#x27;성과자만&#x27;…역행하는 핀테크 CEO</p>
+                <p class="article-summary">영국 기업들이 AI 도구를 전사적으로 배포하는 흐름 속에서, 송금 핀테크 페이센드의 벤 치셀 CEO는 AI 도구 사용권을 고성과자에게만 부여하고 있다. 토큰 사용량 경쟁(&#x27;토큰맥싱&#x27;)으로 비용만 늘고 생산성은 담보되지 않는다는 문제의식에서 나온 전략으로, AI 도입 효과를 둘러싼 기업들의 고민을 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Tech Hero</span>
+                    <a href="https://www.cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section ">
+            <h2 class="section-title">🏛️ 플랫폼/정책</h2>
+            <article class="article-card">
+                
+                <h3 class="article-title">TikTok permanently bans ‘Musk’ documentary advertising account</h3>
+                <p class="article-title-kr">틱톡, 알렉스 기브니 &#x27;Musk&#x27; 다큐 홍보 계정 영구 정지</p>
+                <p class="article-summary">틱톡이 알렉스 기브니 감독의 4시간짜리 일론 머스크 다큐멘터리 정식 개봉을 앞두고 영화 공식 계정을 영구 정지했다. 배급사 블리커스트리트는 금요일 오후 &#x27;영구 정지&#x27;가 임박했다는 통보를 받았으며, 틱톡은 이유를 밝히지 않았다. 이 다큐는 다른 소셜미디어 플랫폼에서도 잇따라 홍보에 제동이 걸리고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured, The Verge</span>
+                    <a href="https://techcrunch.com/2026/10/17/tiktok-permanently-bans-musk-documentary-advertising-account/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Bessent warns Zelenskyy to &#x27;be very careful&#x27; about claims U.S. is throttling Starlink</h3>
+                <p class="article-title-kr">베선트, 젤렌스키에 &quot;스타링크 제한 주장 신중하라&quot; 경고</p>
+                <p class="article-summary">젤렌스키 우크라이나 대통령이 우크라이나군의 스타링크 사용 제한이 기술 문제가 아닌 &#x27;의도적&#x27; 조치로 보인다고 밝히자, 스콧 베선트 미 재무장관이 &quot;매우 신중해야 한다&quot;고 경고했다. 스페이스X의 스타링크는 우크라이나 방어에 핵심적인 통신망으로, 위성 인프라가 미·우크라이나 외교 갈등의 쟁점으로 번지고 있다. 10/17 &#x27;백악관 지시 없었다&#x27; 보도의 후속이다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/10/18/bessent-zelenskyy-starlink-ukarine-war.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                
+                <h3 class="article-title">Encryption Is Getting Squeezed From All Sides</h3>
+                <p class="article-title-kr">캐나다까지…사방에서 조여오는 암호화</p>
+                <p class="article-summary">캐나다가 추진하는 감시법이 전 세계로 번지는 종단간 암호화 위협의 최신 사례라고 와이어드가 짚었다. 각국 정부가 수사·안보를 이유로 암호화 우회 수단을 요구하는 흐름이 이어지면서 메신저·클라우드 서비스의 보안 설계가 압박받고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired Hero</span>
+                    <a href="https://www.wired.com/story/kernel-panic-encryption-is-getting-squeezed-from-all-sides/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                
+                <h3 class="article-title">Cities want to put the boot on robotaxis</h3>
+                <p class="article-title-kr">美 도시들, 로보택시에 &#x27;족쇄&#x27; 채우기 나서</p>
+                <p class="article-summary">로보택시 운행이 확대되면서 미국 도시들이 자율주행차 단속 권한을 요구하고 있다. 자율주행 규제가 주 정부 차원에서 정해져 온 탓에 시 당국은 교통 위반이나 응급현장 방해에도 손쓸 수단이 마땅치 않았는데, 이를 바꾸려는 움직임을 더버지가 정리했다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Hero</span>
+                    <a href="https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                
+                <h3 class="article-title">Palantir patient data tech rejected by many NHS trusts in England</h3>
+                <p class="article-title-kr">英 NHS 다수 기관, 팔란티어 환자데이터 플랫폼 &#x27;퇴짜&#x27;</p>
+                <p class="article-summary">가디언이 정보공개청구로 확인한 결과, 잉글랜드의 상당수 NHS 기관이 팔란티어가 운영하는 3억3천만파운드 규모 연합데이터플랫폼(FDP)이 기존 시스템보다 낫지 않다며 도입을 거부하고 있다. 일부 기관은 관리 편의가 개선됐다고 평가했지만, 다수는 동등하거나 더 나은 대안을 찾을 수 있다고 답했다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian Featured</span>
+                    <a href="https://www.theguardian.com/technology/2026/oct/17/palantir-patient-data-tech-rejected-by-many-nhs-trusts-in-england" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                
+                <h3 class="article-title">Apple’s updated App Store rules go after ‘nudify’ AI apps</h3>
+                <p class="article-title-kr">애플, 앱스토어 규정에 &#x27;AI 누드화 앱&#x27; 금지 명시</p>
+                <p class="article-summary">애플이 당사자 동의 없이 AI로 성적 이미지를 생성하는 이른바 &#x27;누디파이&#x27; 앱을 더 명시적으로 금지하도록 앱스토어 규정을 개정했다. 올해 초 X 이용자들이 그록으로 미성년자를 포함한 비동의 딥페이크를 만든 사태 이후 애플이 비판받은 데 따른 조치지만, 애플은 X나 그록 앱을 내리지는 않았다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Featured</span>
+                    <a href="https://www.theverge.com/tech/1013314/apple-app-store-nudify-ai-apps-harassment" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section ">
+            <h2 class="section-title">🔧 하드웨어/기타</h2>
+            <article class="article-card">
+                
+                <h3 class="article-title">Always on, always listening: New AI devices are pushing legal limits and could put users in jeopardy</h3>
+                <p class="article-title-kr">&#x27;항상 듣는&#x27; AI 웨어러블, 도청법 경계선 넘나든다</p>
+                <p class="article-summary">애플·아마존·메타와 스타트업들이 내놓는 상시 청취형 AI 웨어러블이 개인정보 규정을 교묘히 피해 가며 몰래 녹음 우려를 키우고 있다. CNBC는 상대방 동의 없는 녹음을 금지하는 주별 도청법에 따라 사용자 본인이 법적 책임을 질 수 있다고 경고했다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Tech Hero</span>
+                    <a href="https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                
+                <h3 class="article-title">Data Centers Have a New PR Plan: Your Kid’s Field Trip</h3>
+                <p class="article-title-kr">데이터센터 업계의 새 홍보전략: 아이들 현장학습</p>
+                <p class="article-summary">전력·용수 문제로 지역 반발이 거세지자 데이터센터 업계 친화 단체들이 학생 견학, 교육 프로그램 등 오래된 홍보 전략으로 청소년 마음 잡기에 나섰다고 와이어드가 보도했다. AI 인프라 확장의 &#x27;사회적 수용성&#x27;이 새로운 병목으로 떠오르고 있음을 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired Hero</span>
+                    <a href="https://www.wired.com/story/data-center-industry-is-trying-to-woo-kids/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                
+                <h3 class="article-title">As U.S. blocks DJI, Insta360 races to win American creators</h3>
+                <p class="article-title-kr">美 DJI 차단 틈타 인스타360, 미국 크리에이터 공략</p>
+                <p class="article-summary">미국이 중국 드론업체 DJI를 사실상 차단하자 같은 중국 기업 인스타360이 미국 콘텐츠 크리에이터 시장 공략을 서두르고 있다. 액션캠·360도 카메라 강자인 인스타360이 DJI의 공백을 파고들지만, 중국 기업이라는 같은 규제 리스크를 안고 있다는 점이 변수다.</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World Featured</span>
+                    <a href="https://restofworld.org/2026/insta360-us-dji-sanctions-drones-cameras/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                
+                <h3 class="article-title">HTC Made Smart Glasses That Are Way More Private</h3>
+                <p class="article-title-kr">HTC, 메타 대항마 &#x27;프라이버시형&#x27; 스마트글라스</p>
+                <p class="article-summary">HTC의 바이브 이글 스마트글라스는 메타 레이밴 글라스가 하는 기능을 대부분 제공하면서도 특정 소셜미디어 플랫폼에 묶이지 않는다는 점을 내세운다. 상시 녹음·촬영 기기에 대한 프라이버시 우려가 커지는 가운데 &#x27;안티 메타&#x27; 포지셔닝을 택했다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired Featured</span>
+                    <a href="https://www.wired.com/story/htc-wants-its-vive-eagle-smart-glasses-to-be-the-anti-meta/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Semiconductor market to remain solid ‘at least through next year,’ South Korea finance minister says</h3>
+                <p class="article-title-kr">한국 재무장관 &quot;반도체 시장, 최소 내년까지 견조&quot;</p>
+                <p class="article-summary">한국 재무장관이 글로벌 반도체 매도세에도 공급이 여전히 빠듯해 반도체 성장세가 적어도 2027년까지 이어질 것이라고 말했다. SK하이닉스·삼성전자 급락과 AI 투자 회의론이 겹친 시점에 나온 정부 차원의 낙관론이다.</p>
+                <p class="pick-reason">선정 이유: 정책 신호 + 시장 재평가 / 한국 시장·반도체 공급망</p>
+                <div class="article-meta">
+                    <span class="source">CNBC</span>
+                    <a href="https://www.cnbc.com/2026/10/17/south-korea-semiconductor-outlook-lee-hyoung-il.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Websites are closing their doors to AI agents</h3>
+                <p class="article-title-kr">웹사이트들, AI 에이전트에 문 닫기 시작</p>
+                <p class="article-summary">오픈AI·메타·구글 등이 &#x27;대신 예약하고 쇼핑해주는&#x27; 자율 에이전트를 앞다퉈 내놓고 있지만, 최근 몇 주 사이 웹사이트들이 에이전트 접속을 차단하는 사례가 늘고 있다. 메타 스크래핑 약관 논란과 맞물려, 에이전트 경제의 성패가 &#x27;웹의 협조&#x27;에 달려 있음을 보여준다.</p>
+                <p class="pick-reason">선정 이유: 규제/관행 변화 초기 신호 / AI·데이터 자동화</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">SpaceX’s ambitious, expensive gamble to replace AT&amp;T, T-Mobile, and Verizon</h3>
+                <p class="article-title-kr">스페이스X, 통신 3사 대체 노리는 &#x27;값비싼 도박&#x27;</p>
+                <p class="article-summary">스페이스X가 지난주 대규모 저대역 주파수를 사들이며 스타링크를 기반으로 한 이동통신 사업자 진출을 선언했다. 라이트셰드 파트너스의 월터 피에치크는 이 계획이 막대한 비용이 드는 도박이라고 분석했다. 위성-지상 통신 융합이 기존 통신 시장 구도를 흔들 수 있는 신호다.</p>
+                <p class="pick-reason">선정 이유: 대기업 조용한 움직임 + 시장 재정의 / 인프라·투자 관점</p>
+                <div class="article-meta">
+                    <span class="source">The Verge</span>
+                    <a href="https://www.theverge.com/podcast/1012416/spacex-starlink-elon-musk-cell-carrier-wireless-mobile-att-verizon-t-mobile" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 24건 | 섹션 6개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
