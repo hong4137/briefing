@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>애플, 첫 터치스크린 맥북프로 | 아마존, 에코쇼16 등 알렉사 기기 대거 공개 | 지오, 인도 최대 IPO 21% 급등 | Jae's Briefing</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="date-badge">2026년 10월 29일 목요일</div>
+<h1 class="title">애플, 첫 터치스크린 맥북프로 | 아마존, 에코쇼16 등 알렉사 기기 대거 공개 | 지오, 인도 최대 IPO 21% 급등</h1>
+<p class="summary">애플이 스티브 잡스 이래 고수해 온 &#x27;노트북 터치 불가&#x27; 원칙을 깨고 OLED 터치스크린 맥북프로를 공개했고, 아마존은 같은 날 에코쇼16·에코타임·카메라 달린 에코스튜디오로 알렉사+ 기기 라인업을 갈아엎었다. 인도 최대 IPO였던 릴라이언스 지오는 상장 첫날 21% 넘게 뛰었고, 오라클은 2030 회계연도 매출 2250억달러 전망으로 부채 우려를 누그러뜨리며 11% 급등했다. SK하이닉스는 AI 메모리 수요로 분기 이익이 7배 늘었고, 마이크로소프트는 클라우드 호조를 보인 반면 알파벳은 실망스러운 실적으로 시간외 하락했다. 미 국토안보부 직원 4만여 명의 신상 유출, 전 세계 서버 UEFI 펌웨어 취약점 등 보안 경보도 잇따랐다.</p>
+</header>
+<section class="section top-section">
+<h2 class="section-title">🔥 TOP Headlines</h2>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-new">NEW</span>
+<h3 class="article-title">Hands-on with Apple’s touchscreen MacBook Pro</h3>
+<p class="article-title-kr">애플, 첫 터치스크린 맥북프로 공개…&#x27;노트북 터치는 인체공학적 재앙&#x27;이라던 잡스 원칙 폐기</p>
+<p class="article-summary">애플이 &#x27;Pro and tell&#x27; 행사에서 OLED 터치스크린을 단 새 맥북프로를 공개했다. 스티브 잡스가 &#x27;인체공학적으로 끔찍하다&#x27;고 했던 터치 노트북을 10여 년 만에 받아들인 것이다(The Verge, Bloomberg). 가격은 14인치 2899달러, 16인치 3399달러부터로 오늘 사전주문을 받고 11월 출시되며, 최고 사양은 1만4549달러에 이른다(The Verge). 아스테크니카는 OLED 화면은 훌륭하지만 기존 모델과 생각만큼 다르지 않고 가격 부담이 크다고 평가했고, 와이어드와 CNBC는 애플이 오랜 입장을 뒤집은 배경을 짚었다. 이틀 전 M6 엔트리 맥북프로·아이맥에 이은 맥 라인업 개편의 정점이다.</p>
+<div class="article-meta">
+<span class="source">The Verge Hero, TechCrunch, Ars Technica, Bloomberg, ZDNet, Wired, CNBC 다매체 보도</span>
+<a href="https://www.theverge.com/tech/1020549/macbook-studio-touchscreen-hands-on" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-new">NEW</span>
+<h3 class="article-title">Our first look at Amazon’s big new Echo Show 16</h3>
+<p class="article-title-kr">아마존, 499달러 &#x27;에코쇼16&#x27;·스마트 시계 &#x27;에코타임&#x27;·카메라 달린 &#x27;에코스튜디오&#x27; 공개</p>
+<p class="article-summary">아마존이 하드웨어 행사에서 알렉사+ 기기를 대거 내놨다. 대표 제품인 16인치 스마트 디스플레이 에코쇼16은 벽걸이 포함 499.99달러로 오늘부터 사전주문을 받는다(The Verge). 잠든 상태를 감지하는 침대 맡 스마트 시계 &#x27;에코타임&#x27;과 알렉사 포토프레임도 새로 나왔다(TechCrunch, Wired). 프리미엄 스피커 에코스튜디오에는 카메라가 달려 알렉사+가 집 안을 &#x27;보는&#x27; 비주얼 인텔리전스 기능을 지원하며, 물리적 차단 스위치도 갖췄다(ZDNet, Ars Technica). 블룸버그는 애플의 홈 기기 공세에 맞서 모든 방에 알렉사를 심으려는 포석으로 해석했다.</p>
+<div class="article-meta">
+<span class="source">The Verge Hero, Bloomberg, TechCrunch, Wired, ZDNet, Ars Technica 다매체 보도</span>
+<a href="https://www.theverge.com/tech/1020286/amazon-echo-show-16-hands-on-price-screen-styles" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-new">NEW</span>
+<h3 class="article-title">Jio shares surge 21% in market debut after blockbuster India IPO</h3>
+<p class="article-title-kr">릴라이언스 지오, 인도 사상 최대 IPO 후 상장 첫날 21% 급등…인도 시총 2위로</p>
+<p class="article-summary">무케시 암바니의 지오 플랫폼스가 인도 증시 데뷔 첫날 21% 넘게 올라 장중 최대 23%까지 치솟았다(TechCrunch, Bloomberg). 공모가 1119루피에 2억7000만 주를 팔아 3020억 루피(약 32억달러)를 조달한 인도 역대 최대 IPO다(CNBC). 메타와 구글이 투자한 지오는 모회사 릴라이언스 인더스트리즈에 이어 인도에서 두 번째로 가치 있는 상장사가 됐다. 인도 디지털·통신 인프라에 대한 글로벌 자본의 관심을 확인한 이벤트다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Hero, CNBC, Bloomberg 다매체 보도</span>
+<a href="https://techcrunch.com/2026/10/27/jio-shares-surge-21-in-market-debut-after-blockbuster-india-ipo/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-new">NEW</span>
+<h3 class="article-title">Oracle stock pops 11% as long-term revenue forecast and clarity on financing ease debt concerns</h3>
+<p class="article-title-kr">오라클, 2030 회계연도 매출 2250억달러 전망…추가 차입 200억달러 상한에 주가 11% 급등</p>
+<p class="article-summary">오라클이 2030 회계연도 매출 전망을 2250억달러로 제시하고 그 기간 추가 자금 조달을 200억달러로 제한하겠다고 밝히자 주가가 11% 뛰었다(CNBC). 블룸버그는 오라클이 2029 회계연도 잉여현금흐름 300억달러로 플러스 전환을 예고해 AI 투자 회수에 대한 불안을 덜었다고 전했다. 오라클은 하이퍼스케일러 가운데 부채 의존도가 높아 신용시장의 감시를 받아 왔다(CNBC). 전날에는 ChatGPT·Codex를 자사 앱에 통합하고 OCI에 구글 TPU와 오픈AI 칩을 추가하겠다고 발표했다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero, CNBC, Bloomberg 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/10/28/oracle-forecast-growth-2030.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-new">NEW</span>
+<h3 class="article-title">SK Hynix third-quarter profit sharply beats estimates on AI memory boost</h3>
+<p class="article-title-kr">SK하이닉스, 3분기 이익 7배 급증…100조원 규모 추가 주주환원 발표</p>
+<p class="article-summary">SK하이닉스가 AI 메모리 수요에 힘입어 시장 예상을 크게 웃도는 3분기 실적을 냈다(CNBC). 블룸버그에 따르면 분기 이익은 1년 새 7배로 늘었고, 회사는 2026년 100조원(약 750억달러) 규모의 추가 주주환원 프로그램도 내놨다. AI 인프라 투자 과열 논란 속에서 HBM 등 AI 하드웨어 수요가 여전히 견조하다는 신호로 받아들여졌다. 앞서 솔리다임 상장 철회, 키옥시아 지분 차익 배당 계획 등이 잇따른 데 이은 실적 확인이다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero, Bloomberg</span>
+<a href="https://www.cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-new">NEW</span>
+<h3 class="article-title">Massive Leak Exposes 41,000 Homeland Security Workers—Including Undercover ICE Agents</h3>
+<p class="article-title-kr">美 국토안보부 직원 4만1000명 신상 유출…ICE 위장요원·도청 프로그램 관련자까지</p>
+<p class="article-summary">해커가 미 국토안보부(DHS) 직원 4만 명 이상의 개인정보를 빼내 온라인에 공개했다(TechCrunch). 유출 자료에는 ICE·CBP 시설 위치, 직원 휴대전화 번호, 도청 프로그램·팔란티어 소프트웨어·xAI 그록 챗봇 관련 그룹 구성원까지 포함됐다(Wired). 와이어드는 신분을 숨겨 활동하는 ICE 요원들도 노출됐다고 보도했다. 이민 단속을 둘러싼 갈등이 커진 상황에서 요원 신변 위협과 정부 보안 체계에 대한 비판이 커질 전망이다.</p>
+<div class="article-meta">
+<span class="source">Wired Hero, TechCrunch Hero</span>
+<a href="https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🤖 AI/기술</h2>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Google alters its cloud playbook, enlisting partners to sell more AI chips</h3>
+<p class="article-title-kr">구글, TPU를 자사 클라우드 밖으로…파트너 통해 AI 칩 판매 확대, 오픈AI도 구매 추진</p>
+<p class="article-summary">구글이 자체 AI 칩 TPU 사업을 구글 클라우드 바깥으로 넓히며 파트너를 통한 판매에 나섰다(CNBC). 맞춤형 칩이 클라우드 성장의 주요 엔진이 되면서 전략을 바꾼 것이다. 블룸버그는 오픈AI가 AI 인프라 확충의 일환으로 구글 칩을 사들일 계획이라고 소식통을 인용해 보도했다. 오라클도 OCI에 구글 TPU를 들이기로 하는 등 엔비디아 GPU 일변도였던 AI 칩 시장에 구글이 본격적인 외부 공급자로 부상하고 있다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech, Bloomberg</span>
+<a href="https://www.cnbc.com/2026/10/28/google-alters-cloud-playbook-turning-to-partners-to-sell-more-ai-chips.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity</h3>
+<p class="article-title-kr">구글, 최상위 모델 &#x27;제미나이 4 카본&#x27; 발표…코딩·에이전트·사이버보안 성능 대폭 향상</p>
+<p class="article-summary">구글이 새 프런티어 모델 제미나이 4 카본을 발표했다. 코딩, 에이전트 작업, 사이버보안에서 &#x27;상당한 향상&#x27;을 이뤘고 Artificial Analysis 지능 지수(v5.0) 1위에 올랐다고 밝혔다(The Verge). 다만 아스테크니카는 일반 사용자가 쓸 수 없는 모델이며 기존 &#x27;아르곤&#x27;을 조금 개선한 수준이라고 꼬집었다. PHP 사태 등 AI 기반 해킹이 잇따르는 가운데 프런티어 모델의 사이버보안 역량이 경쟁의 핵심 지표로 떠오르고 있다.</p>
+<div class="article-meta">
+<span class="source">The Verge, Ars Technica</span>
+<a href="https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says</h3>
+<p class="article-title-kr">美 법무부, 엔비디아의 129억달러 허깅페이스 인수 조사 착수</p>
+<p class="article-summary">미 법무부가 엔비디아의 AI 모델 플랫폼 허깅페이스 인수(약 129억달러)에 대해 문의에 나섰다고 로이터를 인용해 블룸버그와 CNBC가 보도했다. 엔비디아에 대한 광범위한 규제 감시의 일환이다. 법무부는 앞서 엔비디아의 그록(Groq) 라이선스 거래도 들여다보고 있어 허깅페이스 심사가 더 길고 넓어질 수 있다는 관측이 나온다. 오픈소스 AI 생태계의 허브가 칩 최강자에 넘어가는 거래인 만큼 경쟁 당국의 판단이 주목된다.</p>
+<div class="article-meta">
+<span class="source">Bloomberg, CNBC</span>
+<a href="https://www.bloomberg.com/news/articles/2026-10-28/doj-inquires-about-nvidia-s-hugging-face-deal-reuters-says" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+
+<h3 class="article-title">Walmart says AI training is boosting confidence with the technology among its 2.1 million associates</h3>
+<p class="article-title-kr">월마트, 직원 210만 명 AI 교육 성과 공개…오픈AI·구글 교육으로 활용 자신감 상승</p>
+<p class="article-summary">월마트가 오픈AI·구글과 함께 진행한 AI 교육 덕분에 210만 명 직원들의 AI·디지털 도구 활용 자신감이 높아졌다고 밝혔다(CNBC). 미국 최대 민간 고용주가 일선 직원 단위로 AI 역량 교육을 확대하는 사례다. 앞서 월마트는 아마존과 달리 외부 AI 쇼핑 에이전트에 문을 여는 전략으로도 주목받았다. AI 도입이 감원보다 &#x27;재교육&#x27;으로 이어질 수 있는지 보여주는 시험대다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero</span>
+<a href="https://www.cnbc.com/2026/10/27/walmart-ai-training-workers.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">💰 경제/금융</h2>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Microsoft reveals strong cloud growth amid financial reporting overhaul</h3>
+<p class="article-title-kr">마이크로소프트, 1분기 매출 923억달러·순익 32%↑…클라우드 예상 상회</p>
+<p class="article-summary">마이크로소프트가 2027 회계연도 1분기 매출 923억달러, 순이익 336억달러를 기록했다. 매출은 19%, 순이익은 32% 늘었고 이번 분기부터 새 재무 보고 체계를 적용했다(The Verge). 블룸버그는 클라우드 매출이 시장 예상을 웃돌아 대규모 AI 투자의 효과가 이어지고 있다고 평가했다. 실적 발표 전 CNBC는 AI 투자 대비 현금흐름 소진이 핵심 관전 포인트라고 짚었다. 최근 직원 6만 명 대상 희망퇴직 제안과 맞물려 비용 효율화 흐름도 주목된다.</p>
+<div class="article-meta">
+<span class="source">The Verge, Bloomberg, CNBC Tech 다매체 보도</span>
+<a href="https://www.theverge.com/tech/1020785/microsoft-earnings-revenue-q1-2027" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Alphabet Posts Disappointing Revenue, Income; Shares Fall</h3>
+<p class="article-title-kr">알파벳, 3분기 매출·이익 기대 하회…시간외 주가 하락</p>
+<p class="article-summary">알파벳이 시장 기대에 못 미치는 3분기 매출과 이익을 발표해 시간외 거래에서 주가가 떨어졌다(Bloomberg). 블룸버그는 막대한 AI 투자를 정당화할 만큼의 수익을 내지 못하고 있다는 신호로 해석했다. 실적 발표 전 CNBC는 흔들리는 AI 트레이드가 알파벳 실적에서 반등의 근거를 찾을 수 있을지 주목했었다. 같은 날 클라우드 호조를 보인 마이크로소프트와 대조되며, 빅테크 AI 투자 회수 논쟁이 다시 불붙을 전망이다.</p>
+<div class="article-meta">
+<span class="source">Bloomberg, CNBC Tech, CNBC 다매체 보도</span>
+<a href="https://www.bloomberg.com/news/articles/2026-10-28/alphabet-reports-disappointing-revenue-income-shares-drop" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+
+<h3 class="article-title">Disruptive raises $10B fund to make big bets on at least 10 companies</h3>
+<p class="article-title-kr">디스럽티브, 100억달러 메가펀드 조성…AI·방산 후기 스타트업 10곳에 10억달러씩</p>
+<p class="article-summary">그록(Groq)과 일레븐랩스 투자로 이름을 알린 댈러스 기반 VC 디스럽티브가 100억달러 규모 펀드를 마감했다(TechCrunch). 블룸버그에 따르면 AI·방산 분야의 후기 단계 기업 10곳에 각각 10억달러씩 집중 투자하는 구조다. 소수 승자에 거액을 몰아주는 AI 시대 벤처투자의 집중화 흐름을 보여준다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, Bloomberg</span>
+<a href="https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">📱 플랫폼/소셜</h2>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Chrome’s AI-powered Autofill can now dig through your Gmail to fill out forms</h3>
+<p class="article-title-kr">크롬 AI 자동완성, 지메일까지 뒤져 양식 채운다…항공권·배송·주문 정보 자동 입력</p>
+<p class="article-summary">구글 크롬의 AI 기반 강화 자동완성이 사용자 허락을 받아 지메일에서 항공권 확인, 배송 추적, 주문 내역 등을 끌어와 웹 양식을 채워준다(TechCrunch). 지난해 구글 계정·구글 월렛에서 이름·여권번호·주소를 가져오도록 확장한 데 이은 업데이트다(The Verge). 제미나이 &#x27;개인 지능&#x27; 기능을 브라우저 전반에 녹여 에이전트형 웹 경험을 강화하려는 행보지만, 개인정보 활용 범위를 둘러싼 논란도 예상된다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, The Verge</span>
+<a href="https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Meta has a new AI pet app called Waddle World</h3>
+<p class="article-title-kr">메타, AI 다마고치 앱 &#x27;와들 월드&#x27; 조용히 출시</p>
+<p class="article-summary">메타가 AI를 입힌 다마고치 같은 가상 반려동물 앱 &#x27;와들 월드&#x27;를 내놨다(TechCrunch). 더버지는 메타가 별도 발표 없이 &#x27;AI 반려동물 일기&#x27; 앱을 조용히 출시했다고 전했다. 쇼핑·예약까지 대신하는 AI 에이전트 &#x27;뮤즈&#x27;에 이어 소비자 접점을 넓히려는 실험으로, 메타의 대규모 AI 투자를 수익화할 새 서비스 모색의 일환이다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, The Verge</span>
+<a href="https://techcrunch.com/2026/10/28/meta-has-a-new-ai-pet-app-called-waddle-world/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">TikTok expands into restaurant guides with ‘Must Eat’ feature</h3>
+<p class="article-title-kr">틱톡, 맛집 가이드 &#x27;Must Eat&#x27; 출시…옐프·구글과 정면 경쟁</p>
+<p class="article-summary">틱톡이 맛집 가이드 기능 &#x27;Must Eat&#x27;을 선보이며 레스토랑 추천 시장에 진출했다(TechCrunch). 앱 안에 레스토랑 가이드를 넣어 옐프·구글 지도와 직접 경쟁하겠다는 구상이다(The Verge). 검색 플랫폼으로 영역을 넓혀 온 틱톡이 로컬 커머스로까지 확장하는 행보다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, The Verge</span>
+<a href="https://techcrunch.com/2026/10/28/tiktok-expands-into-restaurant-guides-with-must-eat-feature/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🔧 하드웨어/기타</h2>
+<article class="article-card">
+
+<h3 class="article-title">ByteDance goes on a hiring spree to move its robots from lab to factory floor</h3>
+<p class="article-title-kr">바이트댄스, 로봇 상용화 위해 대규모 채용…데이터 수집·모델 학습 전 공정</p>
+<p class="article-summary">틱톡 모회사 바이트댄스가 로봇을 연구실에서 공장 현장으로 옮기기 위해 대대적인 채용에 나섰다(SCMP). 공고 대부분은 베이징 기반으로, 데이터 수집과 모델 학습 시스템 등 로봇 개발 파이프라인 전반에 걸쳐 있다. 중국 빅테크가 체화형 AI(embodied AI) 상용화 경쟁에 속도를 내고 있음을 보여준다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech Hero</span>
+<a href="https://scmp.com/tech/big-tech/article/3372295/bytedance-accelerates-robotics-commercialisation-new-recruitment-drive" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">‘Elonville’: Mississippi residents say Musk’s xAI is buying up homes if they don’t sue over noise</h3>
+<p class="article-title-kr">xAI, 미시시피 데이터센터 인근 주택 매입…&#x27;소음 소송 불참&#x27; 조건 논란</p>
+<p class="article-summary">머스크의 xAI 자회사가 미시시피 데이터센터·발전소 인근 주민들에게 소송에 참여하지 않는 조건으로 집을 사들이겠다고 제안하고 있다고 가디언이 보도했다. 이미 여러 채를 매입했고, 한 주민은 부동산 중개인이 400채 이상 매입 목표를 언급했다고 전했다(The Guardian, The Verge). AI 데이터센터를 둘러싼 지역 반발이 커지는 가운데, 빅테크가 분쟁을 돈으로 해결하려 한다는 비판이 나온다.</p>
+<div class="article-meta">
+<span class="source">Guardian Tech Ranking, The Verge</span>
+<a href="https://www.theguardian.com/us-news/2026/oct/28/datacenter-noise-lawsuit-elon-musk-mississippi" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Most Servers on the Planet Are Vulnerable to This Firmware Code-Execution Flaw</h3>
+<p class="article-title-kr">전 세계 서버 대부분에 UEFI 펌웨어 원격 코드 실행 취약점</p>
+<p class="article-summary">대부분의 서버 제조사와 데이터센터가 쓰는 UEFI 펌웨어에서 치명적 취약점이 발견됐다(Wired). 공격자가 부팅 과정 초기 단계에서 코드를 실행할 수 있어 운영체제가 뜨기 전에 시스템을 장악할 수 있다(Wired, Ars Technica). 펌웨어 패치는 배포가 느린 만큼, PHP 사태에 이어 인프라 계층의 대규모 보안 공백이 장기화될 우려가 있다.</p>
+<div class="article-meta">
+<span class="source">Wired, Ars Technica</span>
+<a href="https://www.wired.com/story/most-servers-on-the-planet-are-vulnerable-to-a-code-execution-flaw-in-uefi-firmware/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section picks-section">
+<h2 class="section-title">💎 Claude's Pick</h2>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Robotics Lab Physical Intelligence in Talks for a $20 Billion Valuation</h3>
+<p class="article-title-kr">로봇 AI 연구소 피지컬 인텔리전스, 기업가치 200억달러 투자 협상</p>
+<p class="article-summary">실제 작업을 수행하는 로봇용 AI 소프트웨어를 개발하는 피지컬 인텔리전스가 기업가치를 약 2배인 200억달러로 끌어올리는 투자 유치를 협상 중이다(Bloomberg, 소식통 인용). 바이트댄스의 로봇 인력 확충과 맞물려 &#x27;로봇 파운데이션 모델&#x27;에 자본이 몰리는 흐름을 보여준다.</p>
+<p class="pick-reason">선정 이유: 신생 기업 + 투자자 반향 / 시장 재평가 신호 / AI·데이터·자동화</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/articles/2026-10-27/robotics-lab-physical-intelligence-in-talks-for-a-20-billion-valuation" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Nvidia-Backed Firm Launches $3.1 Billion GPU Loan into Market</h3>
+<p class="article-title-kr">엔비디아 투자 인니 AI 인프라 기업 잔코어, 31억달러 GPU 담보대출 신디케이션</p>
+<p class="article-summary">엔비디아가 투자한 인도네시아 AI 인프라 플랫폼 잔코어(Zankore)가 31억달러 규모 대출을 시장에 신디케이션하고 있다(Bloomberg, 소식통 인용). 아시아 AI 인프라 구축을 위한 금융이 잇따르는 가운데 나온 대형 거래로, 네오클라우드 부채 우려가 커지는 시점에 GPU 금융의 동남아 확산을 보여준다.</p>
+<p class="pick-reason">선정 이유: 대기업 조용한 움직임 + 신흥 시장 AI 금융 / AI 인프라·투자 관점</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/articles/2026-10-28/nvidia-backed-firm-launches-3-1-billion-gpu-loan-into-market" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">South Korea’s AI Fund Offers ‘Fiscal Dam’ Against Higher Yields</h3>
+<p class="article-title-kr">한국, 반도체 세수로 만든 AI 펀드를 &#x27;재정 댐&#x27;으로…국채 발행 줄여 금리 방어</p>
+<p class="article-summary">전 세계가 차입비용 급등에 시달리는 가운데 한국은 반도체 호황에 따른 세수로 조성한 AI 펀드를 활용해 국채 발행을 줄이는 방안을 검토하고 있다(Bloomberg). 박홍근 기획예산처 장관은 블룸버그 인터뷰에서 이 펀드가 금리 상승을 막는 &#x27;재정 댐&#x27; 역할을 할 것이라고 밝혔다. SK하이닉스의 기록적 실적이 국가 재정 운용에까지 영향을 미치는 셈이다.</p>
+<p class="pick-reason">선정 이유: 정책 변화 초기 신호 + 시장 재정의 / 한국 시장·반도체·투자 관점</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/articles/2026-10-27/south-korea-s-ai-fund-offers-fiscal-dam-against-higher-yields" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<footer>
+<p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+<p>기사 22건 | 섹션 6개 | Pick 3건</p>
+<p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+</footer>
+</div>
+</body>
+</html>
