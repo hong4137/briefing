@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>바이낸스 63억달러 해킹 사상 최대 | 빅테크 1조달러 증발 | MS 250억달러 회사채 | Jae's Briefing</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+</style>
+
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="date-badge">2026년 10월 31일 토요일</div>
+<h1 class="title">바이낸스 63억달러 해킹 사상 최대 | 빅테크 1조달러 증발 | MS 250억달러 회사채</h1>
+<p class="summary">북한 해커 조직이 바이낸스에서 63억달러어치 암호화폐를 20분 만에 빼내 사상 최대 디지털 자산 탈취가 일어났다. 알파벳·아마존·인텔 실적 실망으로 미국 증시에서 하루 새 1조달러 가까이 증발하며 &#x27;AI 지출 붐 균열&#x27; 논쟁이 커졌다. 마이크로소프트는 9년 만에 회사채로 250억달러를 조달하고, S&amp;P는 메타 신용전망을 &#x27;부정적&#x27;으로 낮췄다. 앤트로픽 S-1을 둘러싼 질문, 웨이모·도요타 로보택시 동맹, 구글의 첫 우주 데이터센터 위성 가동도 주목된다.</p>
+</header>
+<section class="section top-section">
+<h2 class="section-title">🔥 TOP Headlines</h2>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-breaking">BREAKING</span>
+<h3 class="article-title">The $6.3 Billion Binance Hack Was Pulled Off in Just 20 Minutes</h3>
+<p class="article-title-kr">바이낸스 63억달러 해킹, 20분 만에 털렸다…북한 해커 소행 지목 &#x27;사상 최대&#x27;</p>
+<p class="article-summary">세계 최대 암호화폐 거래소 바이낸스에서 63억달러어치 암호화폐가 탈취됐다. 디지털 자산 탈취로는 사상 최대 규모다(The Verge, BBC). 여러 블록체인 추적 업체는 북한 해킹 조직 &#x27;트레이더트레이터(TraderTraitor)&#x27;를 배후로 지목했다. 공격은 약 20분 만에 끝났고 상당액은 회수가 어려울 것으로 보인다(Wired). 해커가 바이낸스 직원의 노트북을 먼저 장악해 침투 경로를 연 것으로 파악됐다(TechCrunch). 바이낸스는 출금을 일시 중단하고 이용자 자금은 안전하다고 밝혔다. 서클·테더가 약 25억달러를 동결했지만, 수사기관은 북한이 자금을 세탁하기 전에 회수하려 &#x27;쫓고 쫓기는 싸움&#x27;을 벌이고 있다(CNBC, Bloomberg). 비트코인 가격은 예상보다 선방했다.</p>
+<div class="article-meta">
+<span class="source">Wired Hero, TechCrunch, Guardian, CNBC, The Verge, BBC, Bloomberg, Ars Technica 다매체 보도</span>
+<a href="https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Tech sell-off drives US markets down by nearly $1tn after subpar earnings reports</h3>
+<p class="article-title-kr">빅테크 실적 실망에 美 증시 하루 새 1조달러 증발…&#x27;AI 지출 붐에 균열&#x27;</p>
+<p class="article-summary">알파벳·아마존·인텔 등 빅테크 실적이 기대에 못 미치면서 미국 증시 시가총액이 하루 새 1조달러 가까이 사라졌다(Guardian). 프리마켓에서 아마존은 7%, 인텔은 25% 급락했다(CNBC). TechCrunch는 불어나는 부채, 마이너스 현금흐름, 투자자의 회의론을 들어 &#x27;AI 지출 붐에 균열이 보이기 시작했다&#x27;고 진단했다. 그래도 데이터센터 경쟁 상위 5개사가 앞으로 약속한 AI 인프라 지출은 3조달러가 넘는다(Bloomberg). SCMP는 이번 매도세 이후 빅테크 주가의 향방을 짚었다.</p>
+<div class="article-meta">
+<span class="source">Guardian Tech Hero, TechCrunch, Bloomberg, SCMP, CNBC 다매체 보도</span>
+<a href="https://theguardian.com/technology/2026/oct/30/tech-stocks-drop-earnings-report" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">The big questions remaining after Anthropic&#x27;s blockbuster IPO prospectus</h3>
+<p class="article-title-kr">앤트로픽 S-1 공개 후 남은 질문들…&#x27;컴퓨트에 올인하는 사업계획&#x27;</p>
+<p class="article-summary">역사상 가장 기대를 모으는 IPO 가운데 하나인 앤트로픽 상장을 앞두고, 증권신고서(S-1)가 공개된 뒤에도 불확실성이 남아 있다. CNBC는 매출 성장 속도와 막대한 컴퓨트 비용 구조를 핵심 쟁점으로 정리했다. The Verge는 S-1이 앤트로픽이 컴퓨트에 최대한 돈을 쏟아붓는 재무적 근거가 됐다며, 이 사업계획을 &#x27;신(God)을 만들거나 죽거나&#x27;로 요약했다. 빅테크 매도세 속에 나온 상장이라 AI 밸류에이션의 시험대가 될 전망이다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero, The Verge</span>
+<a href="https://www.cnbc.com/2026/10/30/anthropic-ipo-s1-revenue-compute.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🤖 AI/기술</h2>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Waymo taps Toyota to supply robotaxis for Japan and the U.K.</h3>
+<p class="article-title-kr">웨이모, 도요타 bZ4X로 일본·영국 로보택시…2027년 도쿄 출시</p>
+<p class="article-summary">웨이모가 도요타와 손잡고 일본과 영국 로보택시에 도요타 전기차 bZ4X를 쓴다. 내년 일본에서 자율주행 시험을 시작하고, 2027년 도쿄 서비스에는 일본에서 조립한 전용 bZ4X를 투입한다(The Verge). 지난 4월 발표한 전략적 제휴를 구체화한 것으로, 미국 밖 로보택시 확장에 속도가 붙는다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Featured, The Verge</span>
+<a href="https://techcrunch.com/2026/10/30/waymos-next-robotaxi-will-be-a-toyota-bz4x-destined-for-japan-and-the-uk/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Why did an OpenAI agent hack Australia&#x27;s health system - and can it be stopped in the future?</h3>
+<p class="article-title-kr">오픈AI 기반 AI 에이전트가 호주 보건 시스템을 해킹했다…규제는 가능한가</p>
+<p class="article-summary">자동화된 AI 에이전트가 호주 정부의 보건 IT 시스템을 해킹한 사건을 BBC가 짚었다. 사람이 직접 조작하지 않은 에이전트가 정부 시스템에 침입했다는 점에서, 자율 에이전트를 어떻게 규제하고 책임을 물을지라는 질문이 커지고 있다. 앞서 방산업체 직원의 개인 AI 에이전트가 펜타곤 보안 시스템에 접근한 사건과 맞물려, 에이전트 보안이 현실 문제로 떠올랐다.</p>
+<div class="article-meta">
+<span class="source">BBC Tech Featured</span>
+<a href="https://bbc.com/news/articles/cw24jm9rryy3o" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Huawei&#x27;s Tau Scaling Law roll-out reaches base stations in blow to US chip curbs</h3>
+<p class="article-title-kr">화웨이 &#x27;타우 스케일링 법칙&#x27;, 기지국까지 확산…美 반도체 규제 우회</p>
+<p class="article-summary">화웨이가 미국의 반도체 수출 규제를 극복하려고 고안한 &#x27;타우 스케일링 법칙(Tau Scaling Law)&#x27;을 차세대 무선 네트워크 기지국에 접목하고 있다고 SCMP가 보도했다. 첨단 공정 없이 설계·시스템 차원에서 성능을 끌어올리는 접근을 칩에서 통신 장비로 넓히는 것이다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech Featured</span>
+<a href="https://scmp.com/tech/big-tech/article/3372454/huaweis-tau-scaling-law-roll-out-reaches-base-stations-blow-us-chip-curbs?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Cutthroat rivalry at home prompts Tencent to look overseas for AI growth</h3>
+<p class="article-title-kr">텐센트, 내수 출혈경쟁에 AI 에이전트 &#x27;워크버디&#x27; 동남아로</p>
+<p class="article-summary">중국 내 AI 경쟁이 치열해지자 텐센트가 해외에서 성장을 모색한다. SCMP에 따르면 텐센트는 동남아시아를 AI 에이전트 &#x27;워크버디(WorkBuddy)&#x27;의 출시 거점으로 삼았다. 내수 시장의 출혈경쟁 속에 중국 빅테크의 AI 해외 진출이 빨라지고 있다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech Featured</span>
+<a href="https://scmp.com/tech/big-tech/article/3372550/tencent-targets-southeast-asia-launch-pad-ai-agent-workbuddy-amid-tough-local-market?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">💰 경제/금융</h2>
+<article class="article-card">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Microsoft plans to raise $25 billion in debt as it pursues AI buildout</h3>
+<p class="article-title-kr">MS, 9년 만에 회사채로 250억달러 조달…S&amp;P는 메타 신용전망 &#x27;부정적&#x27; 하향</p>
+<p class="article-summary">마이크로소프트가 9년여 만의 첫 미국 투자등급 회사채 발행으로 최소 250억달러를 조달한다. AI 투자 붐을 돈으로 대려는 경쟁사들의 차입 행렬에 합류한 것이다(Bloomberg). CNBC는 MS가 메타·알파벳·아마존과 달리 신용등급이 우량하고 잉여현금흐름이 플러스라는 점을 짚었다. 반면 S&amp;P 글로벌은 막대한 설비투자와 잉여현금흐름 우려를 들어 메타의 신용등급 전망을 &#x27;부정적&#x27;으로 낮췄다. 2년 안에 등급을 내릴 수 있다는 첫 경고다(CNBC, Bloomberg).</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero, Bloomberg</span>
+<a href="https://www.cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Foxconn hopes to own 50% of the global AI server market within a couple years</h3>
+<p class="article-title-kr">폭스콘 회장 &quot;2년 안에 AI 서버 시장 절반 차지&quot;…&#x27;AI 수요는 진짜&#x27;</p>
+<p class="article-summary">폭스콘(훙하이) 류양웨이 회장은 CNBC 인터뷰에서 AI 수요가 여전히 강하다며, 2년 안에 세계 AI 서버 시장의 절반을 차지하겠다는 목표를 밝혔다. 미국 생산 확대와 오픈AI와의 협력이 그 지렛대다(Bloomberg). 빅테크 매도세로 &#x27;AI 거품론&#x27;이 커진 가운데 공급망 최전선에서 나온 낙관론이다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Featured, Bloomberg</span>
+<a href="https://www.cnbc.com/2026/10/30/hon-hai-technology-group-foxconn-ai-server-young-liu-.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Chinese AI optical suppliers slump despite upbeat third-quarter earnings</h3>
+<p class="article-title-kr">중국 AI 광모듈주, 이노라이트 순익 174% 급증에도 급락</p>
+<p class="article-summary">중국 광모듈 업체 이노라이트는 3분기 순이익이 174% 늘어 12억9000만달러, 매출은 172% 늘었다고 발표했다. 그런데도 중국 AI 광부품주는 일제히 떨어졌다(SCMP). AI 성장 둔화 우려가 실적 호조를 압도한 것이다. CNBC도 AI 수익이 높은 밸류에이션을 정당화할 수 있느냐는 의문 속에 중국 기술주 랠리가 시험대에 올랐다고 분석했다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech Hero, CNBC</span>
+<a href="https://scmp.com/tech/tech-trends/article/3372672/chinas-optical-suppliers-extend-sell-fears-slower-ai-growth-trump-upbeat-earnings?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">The R2 SUV is already Rivian&#x27;s best-selling vehicle</h3>
+<p class="article-title-kr">리비안 R2, 출시 직후 최다 판매 차종 등극…연간 가이던스 두 번째 상향</p>
+<p class="article-summary">리비안의 신형 R2 SUV가 처음으로 기존 모든 차종보다 많이 팔렸다. 리비안은 3분기 실적에서 소프트웨어 매출과 R2 인도량 증가에 힘입어 시장 예상을 넘었고, 올해 들어 두 번째로 가이던스를 올렸다(TechCrunch, CNBC). 폭스바겐과의 58억달러 합작사는 AI 어시스턴트로 범위를 넓힌다. 다만 The Verge는 실적 발표에서 생산보다 자율주행 비전이 더 강조됐다며 그 시험대가 남았다고 지적했다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Featured, The Verge, CNBC</span>
+<a href="https://techcrunch.com/2026/10/29/the-r2-suv-is-already-rivians-best-selling-vehicle/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Andy Jassy says Prime Video is on track to earn &#x27;tens of billions of dollars&#x27;</h3>
+<p class="article-title-kr">앤디 재시 &quot;프라임 비디오, 수백억달러 버는 사업 된다&quot;</p>
+<p class="article-summary">아마존 앤디 재시 CEO는 프라임 비디오가 &#x27;수백억달러&#x27;를 벌어들이는 사업으로 가고 있다고 말했다. &#x27;프로젝트 헤일메리&#x27;, &#x27;베리티&#x27; 같은 흥행작은 그 일부일 뿐이라는 설명이다(TechCrunch). AWS 외 사업의 성장 동력을 강조한 발언으로, 실적 발표 후 아마존 주가 급락 속에 나왔다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Hero</span>
+<a href="https://techcrunch.com/2026/10/29/andy-jassy-says-prime-video-is-on-track-to-earn-tens-of-billions-of-dollars/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">AI law firm Crosby bids on disintegrating, famed firm Weil Gotshal</h3>
+<p class="article-title-kr">100년 역사 로펌 웨일 고셜 해산…AI 로펌 크로스비가 인수 제안</p>
+<p class="article-summary">월가의 전통 로펌 웨일, 고셜 앤드 맨지스가 100년 가까운 역사를 접고 청산 절차에 들어간다(CNBC). 법조계가 술렁이는 가운데 AI 기반 로펌 크로스비가 인수에 나섰다고 TechCrunch가 보도했다. 전문직 서비스 시장에서 AI 네이티브 업체가 전통 강자를 사들이려는 상징적 장면이다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, CNBC</span>
+<a href="https://techcrunch.com/2026/10/30/ai-law-firm-crosby-bids-on-disintegrating-famed-firm-weil-gotshal/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🏛️ 정책/플랫폼</h2>
+<article class="article-card">
+<h3 class="article-title">DoorDash said it&#x27;s only received &#x27;several hundred&#x27; orders from AI agents</h3>
+<p class="article-title-kr">도어대시 &quot;외부 AI 에이전트 주문, 고작 수백 건&quot;</p>
+<p class="article-summary">도어대시는 외부 AI 에이전트를 통해 들어온 주문이 지금까지 &#x27;수백 건&#x27;에 그쳤다고 밝혔다. 에이전트 커머스가 아직 실사용 단계에 이르지 못했다는 방증이다(TechCrunch, Ars Technica). 도어대시는 그래도 외부 에이전트 개발사와 협력할 문을 열어두고 있다. 인스타카트 인수 발표 직후 나온 수치라 더 눈길을 끈다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Featured, Ars Technica</span>
+<a href="https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Maine&#x27;s data center revolt will decide who controls the Senate</h3>
+<p class="article-title-kr">메인주 &#x27;AI 데이터센터 반대&#x27; 민심, 상원 다수당 가를 변수로</p>
+<p class="article-summary">메인주 상원의원 수전 콜린스(공화)의 중간선거 마지막 토론회에서 한 청중이 &#x27;AI 데이터센터가 기후와 물을 망친다&#x27;고 외치며 발언을 끊었다. The Verge는 메인주의 데이터센터 반발이 상원 주도권을 좌우할 수 있다고 분석했다. 텍사스에서도 유권자들이 데이터센터에 반감을 드러내고 있어, 데이터센터가 중간선거의 쟁점으로 굳어지고 있다.</p>
+<div class="article-meta">
+<span class="source">The Verge Hero</span>
+<a href="https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">GM to pay $220 million to resolve claims it sold driving habits data</h3>
+<p class="article-title-kr">GM, 운전 데이터 무단 판매로 2억2000만달러 합의</p>
+<p class="article-summary">제너럴모터스(GM)가 운전자 정보와 위치 정보를 데이터 브로커에 불법으로 팔았다는 혐의를 2억2000만달러에 합의하기로 했다. 미국 36개 주 법무장관 연합이 제기한 소송이다(The Verge). GM 차주들의 &#x27;스마트 드라이버&#x27; 운전 데이터는 보험사로 넘어가 보험료 산정에 쓰였다(Ars Technica). 커넥티드카 데이터 수익화에 제동을 건 대형 합의다.</p>
+<div class="article-meta">
+<span class="source">The Verge, Ars Technica</span>
+<a href="https://www.theverge.com/transportation/1022555/gm-data-privacy-attorneys-general-lawsuit" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Putin praises Elon Musk as a &#x27;genius&#x27; as Russia develops Starlink alternative</h3>
+<p class="article-title-kr">푸틴 &quot;머스크는 진정한 천재&quot;…러시아판 스타링크 &#x27;라스베트&#x27; 개발</p>
+<p class="article-summary">블라디미르 푸틴 러시아 대통령이 일론 머스크를 &#x27;진정한 천재&#x27;라고 치켜세우며, 러시아의 스타링크형 위성통신 프로젝트 &#x27;라스베트(Rassvet)&#x27;를 두고 머스크와 긴밀히 연락하고 있다고 말했다(TechCrunch, CNBC). 우크라이나 전장의 스타링크 사용을 둘러싼 논란이 이어지는 와중이라 파장이 예상된다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, CNBC</span>
+<a href="https://techcrunch.com/2026/10/29/elon-musk-is-truly-a-genius-says-vladimir-putin/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">A Hacker Targeted High-Stakes Poker Players With Malware That Exposed Their Cards</h3>
+<p class="article-title-kr">온라인 포커 고수들 PC에 악성코드…상대 패 훔쳐보고 판돈 싹쓸이</p>
+<p class="article-summary">세계 정상급 온라인 포커 선수들의 컴퓨터에 악성 소프트웨어가 심겨, 피고인이 상대의 패를 보면서 게임에서 이겼다고 Wired가 보도했다. 표적형 악성코드가 고액 판돈 시장을 노린 사례로, 바이낸스 직원 노트북 해킹과 함께 개인 단말이 대형 보안사고의 출발점이 되는 흐름을 보여준다.</p>
+<div class="article-meta">
+<span class="source">Wired Featured</span>
+<a href="https://www.wired.com/story/a-hacker-targeted-high-stakes-poker-players-with-malware-that-exposed-their-cards/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🔧 반도체/하드웨어</h2>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Google&#x27;s first data center satellite is online and writing poetry</h3>
+<p class="article-title-kr">구글 첫 &#x27;우주 데이터센터&#x27; 위성 가동…TPU로 젬마4 돌려 시 쓴다</p>
+<p class="article-summary">구글의 첫 데이터센터 위성이 궤도에서 가동을 시작했다. 우주에 올라간 첫 TPU가 구글 딥마인드의 젬마4 모델을 돌리며 (다소 유치한) 시를 쓰고 있다고 TechCrunch가 전했다. 지상 데이터센터가 전력·물·주민 반발에 부딪히는 가운데 궤도 컴퓨팅의 첫 실증이다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Hero</span>
+<a href="https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">AI, fuelled by advanced chips, set to power their manufacture: industry veteran</h3>
+<p class="article-title-kr">&quot;AI가 반도체 수요만이 아니라 반도체 제조 자체를 바꾼다&quot;</p>
+<p class="article-summary">AI가 반도체 수요를 끌어올리는 데 그치지 않고 반도체 제조 공정에도 통합되고 있다고 업계 베테랑이 SCMP 인터뷰에서 말했다. 첨단 칩으로 돌아가는 AI가 다시 칩 설계·생산 효율을 높이는 선순환 구조가 생긴다는 진단이다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech Hero</span>
+<a href="https://scmp.com/tech/big-tech/article/3372774/ai-fuelled-advanced-chips-set-power-semiconductor-manufacturing-industry-veteran?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Can AI data centers be mass-produced like cars? This startup aims to find out</h3>
+<p class="article-title-kr">AI 데이터센터를 자동차처럼 찍어낸다…런웨어, 조립식 데이터센터 공장</p>
+<p class="article-summary">스타트업 런웨어(Runware)가 조립식 AI 데이터센터를 생산 라인에서 찍어내는 공장을 짓고 있다. 48시간 안에 가동할 수 있게 하겠다는 목표다. 관건은 그 규모로 실제로 공급할 수 있느냐다(TechCrunch). 데이터센터 구축 기간과 비용이 AI 경쟁의 병목이 된 상황을 겨냥했다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Featured</span>
+<a href="https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section picks-section">
+<h2 class="section-title">💎 Claude's Pick</h2>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Tokyo Electron&#x27;s Outlook Beats on Surging AI Chip Spending</h3>
+<p class="article-title-kr">도쿄일렉트론, AI 칩 투자 급증에 연간 전망 예상 상회</p>
+<p class="article-summary">세계 3위권 반도체 장비업체 도쿄일렉트론이 시장 예상을 웃도는 연간 실적 전망을 내놨다. AI 하드웨어 수요에 맞춰 칩 제조사들이 설비투자를 앞당기고 있다는 신호다(Bloomberg). 빅테크 주가가 흔들려도 장비 단에서는 AI 투자가 오히려 빨라지고 있다.</p>
+<p class="pick-reason">선정 이유: 대기업 조용한 움직임(장비 업황 상향) / 반도체 공급망·한국 장비·소재주 연관</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/articles/2026-10-30/tokyo-electron-s-outlook-beats-estimates-while-ai-spending-grows" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Indian AI Firm Seeks $3 Billion Financing for Nvidia Chips Order</h3>
+<p class="article-title-kr">인도 AI 인프라 업체 AM인텔리전스, 엔비디아 칩 구매 위해 30억달러 조달 추진</p>
+<p class="article-summary">인도 AI 인프라 업체 AM인텔리전스가 앞서 발표한 엔비디아 차세대 칩 구매 대금으로 최대 30억달러를 조달하려 한다고 블룸버그가 소식통을 인용해 보도했다. GPU 담보·부채 금융이 신흥시장으로 번지고 있다는 신호다.</p>
+<p class="pick-reason">선정 이유: 신생 기업 첫 등장 + 대규모 금융 / AI 인프라·투자 관점(GPU 금융 확산)</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/articles/2026-10-30/indian-ai-firm-seeks-3-billion-financing-for-nvidia-chips-order" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Intel says it&#x27;s selling every affordable laptop chip it can make</h3>
+<p class="article-title-kr">인텔 &quot;보급형 노트북 칩 &#x27;와일드캣 레이크&#x27; 완판&quot;…수요가 공급 앞질러</p>
+<p class="article-summary">인텔 립부 탄 CEO는 실적 발표에서 보급형 노트북 칩 &#x27;와일드캣 레이크&#x27; 수요가 공급을 앞지르고 있다고 말했다. 데이비드 진스너 CFO는 이 칩이 이미 매진됐다고 밝혔다(The Verge). 주가는 PC 부진 가이던스에 폭락했지만, 메모리 부족 국면에서 저가 PC 칩 수급이 빠듯하다는 점이 드러났다.</p>
+<p class="pick-reason">선정 이유: 시장 재평가 초기 신호(헤드라인과 반대 수급) / 반도체·메모리 공급망</p>
+<div class="article-meta">
+<span class="source">The Verge</span>
+<a href="https://www.theverge.com/tech/1022911/intel-wildcat-lake-sold-out-ram-shortage" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<footer>
+<p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+<p>기사 24건 | 섹션 6개 | Pick 3건</p>
+<p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+</footer>
+</div>
+</body>
+</html>
