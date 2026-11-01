@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenAI, 투자 목표 200억달러로 축소 | 아마존·JP모건 vs 메타 뮤즈 | 애플 AI, 12월 중국 상륙 | Jae's Briefing</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+</style>
+
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="date-badge">2026년 11월 2일 월요일</div>
+<h1 class="title">OpenAI, 투자 목표 200억달러로 축소 | 아마존·JP모건 vs 메타 뮤즈 | 애플 AI, 12월 중국 상륙</h1>
+<p class="summary">AI 주가 급락과 앤트로픽 상장 여파로 OpenAI가 새 투자 라운드 목표를 최대 200억달러로 낮췄다. 아마존·JP모건 등이 메타의 AI 개인 에이전트 &#x27;뮤즈&#x27;를 차단하고 나섰지만, 마찰을 없애는 기술은 결국 이긴다는 경고도 나온다. 애플은 알리바바 큐원을 얹은 애플 인텔리전스를 12월 iOS 27.3으로 중국에 내놓는다. xAI 멤피스 데이터센터 대기오염 소송 본안 진행, 바이낸스 출금 재개, 딥시크 코딩 &#x27;슈퍼 에이전트&#x27;, 클로드 확장 프로그램 공급망 공격도 주목된다.</p>
+</header>
+<section class="section top-section">
+<h2 class="section-title">🔥 TOP Headlines</h2>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-new">NEW</span>
+<h3 class="article-title">OpenAI pares fundraising goal, now seeking up to $20 billion in latest round</h3>
+<p class="article-title-kr">OpenAI, 새 투자 라운드 목표 최대 200억달러로 축소…AI 주가 급락·앤트로픽 상장이 발목</p>
+<p class="article-summary">OpenAI가 진행 중인 신규 투자 라운드 목표를 최대 200억달러로 낮췄다. 파이낸셜타임스는 목표액이 100억달러 줄었다고 보도했다(Bloomberg). AI 관련주 매도세와 경쟁사 앤트로픽의 임박한 나스닥 상장이 투자자 약정 확보를 어렵게 만든 것으로 풀이된다. OpenAI는 앞서 이번 라운드의 목표 기업가치도 1조4000억달러에서 1조2500억달러로 낮춘 바 있다. 라운드는 아직 마감되지 않아 수치는 바뀔 수 있다고 관계자는 CNBC에 말했다. TechCrunch는 이번 라운드가 기대에 못 미치고 있다고 평가했다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero, TechCrunch, Bloomberg 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">For JPMorgan, Amazon, fighting AI bots like Meta Muse may not be a winning long-term strategy</h3>
+<p class="article-title-kr">아마존·JP모건, 메타 &#x27;뮤즈&#x27; AI 에이전트 차단…&quot;마찰 없애는 기술은 결국 이긴다&quot;</p>
+<p class="article-summary">아마존부터 JP모건까지 대기업들이 쇼핑·흥정·예약을 대신하는 메타의 AI 개인 에이전트 &#x27;뮤즈&#x27;의 접근을 막고 있다. 그러나 소매 전문가들은 고객 불편을 없애는 기술이 대체로 승리해 왔다며 차단은 장기적으로 이기는 전략이 아닐 수 있다고 경고했다(CNBC). Wired는 기업들이 지난 몇 주간 뮤즈가 위협보다 기회라고 투자자를 안심시키느라 바빴지만, 아직 업계를 뒤흔들 만한 변화는 나타나지 않았다고 짚었다. BBC는 수백만 개의 에이전트가 동시에 같은 일을 하면 인터넷이 더 번잡해질 수 있다고 봤고, Rest of World는 개발도상국 인프라가 대규모 AI 에이전트 트래픽을 감당할 수 있을지 물었다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero, Wired, BBC, Rest of World 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/11/01/jpmorgan-amazon-ai-agents-meta-muse.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Apple to launch iPhone AI features in China in December via Alibaba partnership</h3>
+<p class="article-title-kr">애플 인텔리전스, 12월 iOS 27.3으로 중국 출시…알리바바 &#x27;큐원&#x27; 탑재</p>
+<p class="article-summary">애플이 수년간의 추측과 규제 불확실성 끝에 알리바바의 대표 AI 모델 큐원(Qwen)을 애플 인텔리전스에 통합해 중국에 출시한다(SCMP). 애플은 중국 뉴스룸을 통해 iOS 27.3에서 애플 인텔리전스를 중국에 내놓겠다고 발표했으며, 기능은 먼저 iOS 27.3 베타에서 제공된다(The Verge). 출시 범위는 글쓰기 도구·알림 요약·사진 편집 등 기본 기능 위주이고, 최신 시리(Siri) AI 등 일부 기능은 빠질 것으로 알려졌다. 아이폰 판매 회복이 절실한 중국 시장에서 애플의 AI 공백을 메울 카드다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech Hero, The Verge</span>
+<a href="https://scmp.com/tech/big-tech/article/3372831/apple-intelligence-roll-out-iphones-china-december-alibaba-backing?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span>
+<h3 class="article-title">Judge allows NAACP lawsuit over xAI data center pollution to move forward</h3>
+<p class="article-title-kr">xAI 멤피스 데이터센터 대기오염 소송, 법원 기각 신청 불허…본안 진행</p>
+<p class="article-summary">미국 연방법원이 스페이스X 소유 AI 기업 xAI의 기각 신청을 받아들이지 않아, 전미유색인지위향상협회(NAACP)가 제기한 대기오염 소송이 본안으로 넘어가게 됐다(TechCrunch). NAACP는 xAI가 멤피스 &#x27;콜로서스&#x27; 데이터센터의 가스터빈 가동으로 청정대기법(Clean Air Act)을 위반했다고 주장한다. 콜로서스와 xAI가 미시시피 사우스헤이븐에 짓는 발전소는 수년째 지역사회 반발에 부딪혀 왔다(CNBC). AI 데이터센터의 전력·환경 비용이 법정 다툼으로 번진 대표 사례다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Hero, CNBC Tech</span>
+<a href="https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Binance resumes withdrawals following $6.3 billion breach</h3>
+<p class="article-title-kr">바이낸스, 63억달러 해킹 뒤 출금 재개…FBI &quot;북한 소행&quot; 공식 지목</p>
+<p class="article-summary">사상 최대 암호화폐 해킹을 당한 바이낸스가 출금을 재개했다. 회사는 도난 자산의 95%를 메웠다고 밝혔다(TechCrunch). 앞서 바이낸스 CEO는 피해액의 90%를 보전했고 나머지 10%도 메우겠다고 말했다(The Verge, CNBC, BBC). FBI는 이번 공격의 배후로 북한 해킹 조직 &#x27;트레이더트레이터(TraderTraitor)&#x27;를 공식 지목했고, 탈취된 토큰이 이더리움으로 바뀌는 정황을 포착했다고 밝혔다(Bloomberg). Guardian은 암호화폐 해킹이 고립된 북한의 핵 개발 자금줄이 되고 있다고 분석했다. 바이낸스는 이와 별개로 5년 만에 말레이시아 사업 인가를 추진하고 있다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Hero, CNBC, The Verge, BBC, Bloomberg, Guardian 다매체 보도</span>
+<a href="https://techcrunch.com/2026/11/01/binance-resumes-withdrawals-following-6-3-billion-breach/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🤖 AI/기술</h2>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">DeepSeek unveils AI &#x27;super agent&#x27; in coding race with OpenAI, Anthropic</h3>
+<p class="article-title-kr">딥시크, 코딩 &#x27;슈퍼 에이전트&#x27; 시제품 공개…앤트로픽 &#x27;클로드 코드&#x27; 정조준</p>
+<p class="article-summary">중국 딥시크가 더 자율적으로 움직이는 코딩 에이전트 시제품을 공개했다. 앤트로픽의 인기 제품 &#x27;클로드 코드&#x27;에 도전하려는 행보다(Bloomberg). SCMP는 OpenAI·앤트로픽이 주도하는 AI 코딩 시장에 딥시크가 &#x27;슈퍼 에이전트&#x27;로 뛰어들었다고 전했다. 중국 AI 업계의 경쟁이 모델 성능에서 에이전트 제품으로 옮겨가고 있다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech, Bloomberg</span>
+<a href="https://scmp.com/tech/article/3372884/deepseek-unveils-ai-super-agent-coding-race-openai-anthropic?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">A Supply Chain Attack Put Malicious Anthropic Claude Extensions on Thousands of Devices</h3>
+<p class="article-title-kr">공급망 공격으로 악성 &#x27;클로드&#x27; 확장 프로그램이 개발자 기기 수천 대에 설치</p>
+<p class="article-summary">앤트로픽 클로드를 쓰는 개발자를 노린 공급망 공격으로 악성 확장 프로그램이 수천 대의 기기에 퍼졌다고 Wired가 보도했다. 트로이목마 형태의 악성코드가 정상 도구로 위장해 개발 환경에 침투한 사례다. AI 코딩 도구가 빠르게 확산하면서 도구 자체가 새로운 공격 표면이 되고 있다.</p>
+<div class="article-meta">
+<span class="source">Wired</span>
+<a href="https://wired.com/story/trojan-malware-targets-thousands-of-anthropic-claude-developer-systems/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Spooky New Infostealer Malware Uses AI to &#x27;Autodox&#x27; Victims</h3>
+<p class="article-title-kr">AI로 피해자 신상을 자동으로 털어내는 정보탈취 악성코드 &#x27;볼타-오토독서&#x27; 등장</p>
+<p class="article-summary">새로 발견된 정보탈취 악성코드 &#x27;볼타-오토독서(Volta-Autodoxer)&#x27;는 AI 도구를 이용해 피해자에 관한 방대한 데이터를 모은다. 로그인 정보와 신용카드 번호부터 디스코드 세션, 우버이츠 영수증까지 긁어모아 신상을 자동으로 정리한다(Wired). 공격자 쪽에서도 AI가 정찰·분석 비용을 크게 낮추고 있다.</p>
+<div class="article-meta">
+<span class="source">Wired Hero</span>
+<a href="https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Self-improving AI the key step towards AGI but safety is key: Z.ai founder</h3>
+<p class="article-title-kr">즈푸 Z.ai 창업자 &quot;자기개선 AI가 AGI로 가는 핵심…안전이 관건&quot;</p>
+<p class="article-summary">중국 AI 기업 Z.ai(즈푸)의 창업자 탕제(Tang Jie)는 재귀적 자기개선(RSI)을 연구개발의 &#x27;새 패러다임&#x27;으로 규정했다. 그는 RSI가 지금보다 AI 발전 속도를 더 끌어올릴 것이라며, 그만큼 안전장치가 핵심이라고 강조했다(SCMP). 중국 선두 AI 기업도 AGI 경로와 안전 문제를 공개적으로 거론하기 시작했다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech Hero</span>
+<a href="https://scmp.com/tech/tech-trends/article/3372834/self-improving-ai-key-step-towards-agi-safety-key-zai-founder?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">An AI Agent Injected Drugs Into a Live Mouse&#x27;s Brain</h3>
+<p class="article-title-kr">AI 에이전트가 살아있는 쥐 뇌에 유전자치료제 직접 주입…&#x27;자율 연구실&#x27; 예고편</p>
+<p class="article-summary">한 바이오 스타트업이 AI 에이전트에게 유전자치료제 선택과 주입까지 맡겼고, 에이전트는 살아있는 쥐의 뇌에 치료제를 성공적으로 주입했다(Wired). 실험 설계부터 실행까지 AI가 맡는 미래 연구실의 모습을 보여준 사례로, 안전성과 감독 문제에 대한 논의도 함께 불러왔다.</p>
+<div class="article-meta">
+<span class="source">Wired</span>
+<a href="https://wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">💰 경제/금융</h2>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Companies promised AI gains— here&#x27;s how the payoff showed up in earnings</h3>
+<p class="article-title-kr">&#x27;AI 효과&#x27; 실적에 찍히기 시작…산탄데르·노바티스 &quot;매출 늘고 비용 줄어&quot;</p>
+<p class="article-summary">산탄데르, 노바티스 등 기업들이 3분기 실적에서 AI가 매출을 늘리거나 비용을 줄여 수익성을 높이기 시작했다고 밝혔다(CNBC). AI 투자 회수를 요구하는 투자자 압박이 커지는 가운데, 빅테크 밖 기업들에서 구체적인 숫자가 나오기 시작했다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero</span>
+<a href="https://www.cnbc.com/2026/11/01/ai-investments-company-earnings.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">These firms you&#x27;ve never heard of are feeding fears the AI bubble could burst</h3>
+<p class="article-title-kr">이름 모를 데이터센터 업체들의 수백억 파운드 부채…&#x27;AI 버블&#x27; 공포 키운다</p>
+<p class="article-summary">BBC는 일반에 잘 알려지지 않은 데이터센터 업체들이 쌓은 부채가 수백억 파운드에 이른다며, 이들이 AI 버블 붕괴 우려를 키우고 있다고 보도했다. TechCrunch도 불어나는 부채와 마이너스 현금흐름, 투자자 회의론을 들어 AI 지출 붐에 균열이 생기고 있다고 진단했다. 빅테크 매도세 이후 시선이 AI 인프라의 신용 위험으로 옮겨가고 있다.</p>
+<div class="article-meta">
+<span class="source">BBC Tech Hero, TechCrunch</span>
+<a href="https://bbc.com/news/articles/cje36degrgv5o" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Nvidia weighs playing the cosigner for Nscale&#x27;s AI data center in West Virginia</h3>
+<p class="article-title-kr">엔비디아, 엔스케일 웨스트버지니아 AI 데이터센터 대출 &#x27;보증인&#x27; 검토</p>
+<p class="article-summary">엔비디아가 영국 AI 인프라 기업 엔스케일의 웨스트버지니아 데이터센터 대출에 공동 보증을 서는 방안을 검토하고 있다(TechCrunch). AI 지출에 대한 투자자 불안이 커지자 칩을 파는 쪽이 직접 신용을 보강하는 구조다. 공급업체가 고객의 자금 조달을 떠받치는 순환 구조에 대한 우려도 함께 커진다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch</span>
+<a href="https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Pile-ins, payouts, and pacing pressure: the investors behind the VCs open up</h3>
+<p class="article-title-kr">VC 뒤의 &#x27;돈줄&#x27; LP들이 말하는 AI 투자 쏠림·회수·속도 압박</p>
+<p class="article-summary">벤처캐피털에 자금을 대는 출자자(LP)들은 대체로 만족하고 있지만, AI 딜로의 쏠림과 회수 시점, 투자 속도에 대한 부담을 털어놨다(TechCrunch). 앤트로픽 상장 등 대형 회수 기대가 커지는 가운데 LP 시장의 온도를 보여준다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Hero</span>
+<a href="https://techcrunch.com/2026/10/30/pile-ins-payouts-and-pacing-pressure-the-investors-behind-the-vcs-open-up/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">As battery wars intensify, China&#x27;s CATL seeks growth beyond its core business</h3>
+<p class="article-title-kr">배터리 전쟁 격화 속 CATL, 배터리 교환·에너지저장으로 성장 동력 확대</p>
+<p class="article-summary">세계 최대 배터리 업체 중국 CATL이 경쟁 격화 속에 본업인 전기차 배터리를 넘어 배터리 교환 서비스와 에너지저장장치(ESS)에서 다음 성장 동력을 찾고 있다(SCMP). K-배터리 3사와 ESS 시장에서 정면으로 맞붙는 영역이다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech</span>
+<a href="https://scmp.com/business/climate-and-energy/article/3372711/can-battery-swapping-and-energy-storage-power-catls-next-phase-growth?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🏛️ 정책/플랫폼</h2>
+<article class="article-card">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">What Democrats Can Learn From New York&#x27;s Data Center Moratorium</h3>
+<p class="article-title-kr">美 중간선거 앞두고 &#x27;데이터센터 반대&#x27; 표심…뉴욕 모라토리엄·캘리포니아 &#x27;발의안 45&#x27; 논란</p>
+<p class="article-summary">화요일 중간선거를 앞두고 데이터센터 반대를 내건 후보들이 다수 당선을 앞두고 있다. Wired는 뉴욕의 데이터센터 모라토리엄 사례를 통해 실제로 규제를 실행할 때의 긴장을 짚었다. The Verge는 &#x27;필수&#x27; 인프라 인허가를 단축하는 캘리포니아 주민발의안 45가 데이터센터 개발업체에 공공 검증을 피할 구멍을 줄 수 있다는 환경단체의 경고를 전했다. TechCrunch는 브루클린에서조차 데이터센터가 선거 쟁점이 됐다고 보도했다.</p>
+<div class="article-meta">
+<span class="source">Wired Hero, The Verge Hero, TechCrunch 다매체 보도</span>
+<a href="https://www.wired.com/story/what-democrats-can-learn-new-york-data-center-moratorium/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Humans are still doing the work behind some AI agents</h3>
+<p class="article-title-kr">&#x27;AI 에이전트&#x27;의 속사정…전화·현장 업무는 여전히 사람이 처리</p>
+<p class="article-summary">데즐(Dazzle), 덕빌(Duckbill), 와조(Wajo) 등 스타트업의 AI 에이전트는 소프트웨어가 한계에 부딪히면 여전히 사람 직원이 전화를 걸고 현장 업무를 처리한다(CNBC). 메타 뮤즈 등 에이전트 경쟁이 뜨거운 가운데, &#x27;완전 자동화&#x27; 마케팅과 실제 운영 사이의 간극을 드러냈다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero</span>
+<a href="https://www.cnbc.com/2026/10/31/ai-agents-humans-dazzle-duckbill-meta.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Sadiq Khan calls for cap on numbers of robotaxis on London streets</h3>
+<p class="article-title-kr">사디크 칸 런던시장 &quot;로보택시 대수 상한 필요&quot;…자율주행 붐에 규제 신호</p>
+<p class="article-summary">사디크 칸 런던시장이 런던 도로를 달리는 로보택시 수에 상한을 둬야 한다고 요구했다(Guardian). 웨이모·도요타 동맹 등 영국 진출이 잇따르는 가운데 나온 첫 도시 차원의 견제다. TechCrunch Mobility는 &#x27;더 크고 새로운 자율주행 붐&#x27;이 시작됐다고 진단했다.</p>
+<div class="article-meta">
+<span class="source">Guardian Tech, TechCrunch</span>
+<a href="https://theguardian.com/technology/2026/nov/01/sadiq-khan-calls-cap-numbers-robotaxis-london-streets" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">US or China? Why Kazakhstan refuses to pick sides as it eyes AI revolution</h3>
+<p class="article-title-kr">카자흐스탄, 美·中 줄서기 거부…&#x27;중견국 AI 경제&#x27; 실험</p>
+<p class="article-summary">다른 중견국들처럼 카자흐스탄도 미·중 기술 패권 경쟁 사이에서 어느 한쪽을 택하지 않고 독자적인 AI 경제를 구축하려 하고 있다(SCMP). 미국의 칩 수출 통제와 중국의 AI 인프라 공세가 겹치는 중앙아시아에서 &#x27;양다리&#x27; 전략이 통할지 주목된다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech Hero</span>
+<a href="https://scmp.com/tech/big-tech/article/3372785/us-or-china-why-kazakhstan-refuses-pick-sides-it-eyes-ai-revolution?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🔧 하드웨어/기타</h2>
+<article class="article-card">
+<h3 class="article-title">Automakers like Rivian and Ford are &#x27;democratizing 3D printing&#x27; to reduce costs and increase speed</h3>
+<p class="article-title-kr">포드·리비안·GM, 3D 프린팅 확대로 시제품·공구·소량 부품 원가 절감</p>
+<p class="article-summary">포드, 리비안, GM 등 자동차 업체들이 시제품과 공장 공구, 소량 부품 생산에 3D 프린팅을 넓히며 비용과 시간을 줄이고 있다(CNBC). 관세와 공급망 불안 속에 제조 유연성을 높이려는 움직임이다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech</span>
+<a href="https://www.cnbc.com/2026/10/31/automakers-3d-printing-ford-rivian-gm.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">China joins global race to reawaken brain-injury patients through ultrasound therapy</h3>
+<p class="article-title-kr">중국, 초음파로 뇌손상 환자 의식 깨우는 치료 경쟁 합류</p>
+<p class="article-summary">중국 연구진이 초음파로 뇌를 자극해 의식장애 환자를 깨우는 치료법 개발 경쟁에 뛰어들었다(SCMP). 비침습 뇌 자극은 뇌-컴퓨터 인터페이스와 함께 중국이 육성하는 차세대 의료기기 분야다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech</span>
+<a href="https://scmp.com/tech/tech-trends/article/3372779/china-joins-global-race-reawaken-brain-injury-patients-through-ultrasound-therapy?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">NASA hopes the commercial space industry can help save Hubble</h3>
+<p class="article-title-kr">NASA, 허블 망원경 구출 아이디어 민간에 재공모</p>
+<p class="article-summary">허블 우주망원경은 당장 위험하진 않지만 고도가 계속 낮아져 2030년대 초중반이면 수명이 다할 수 있다. NASA가 궤도를 끌어올릴 방안을 민간 우주업계에 다시 묻고 나섰다(The Verge). 4년 전에도 같은 공모를 했지만 실행으로 이어지지 못했다(Ars Technica).</p>
+<div class="article-meta">
+<span class="source">The Verge, Ars Technica</span>
+<a href="https://www.theverge.com/science/1024239/nasa-commercial-space-save-hubble" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section picks-section">
+<h2 class="section-title">💎 Claude's Pick</h2>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">OpenAI&#x27;s Altman Meets Samsung Executives as Chip Crunch Deepens</h3>
+<p class="article-title-kr">샘 올트먼, 방한해 삼성 수뇌부와 회동…메모리·AI 인프라 협력 확대</p>
+<p class="article-summary">샘 올트먼 OpenAI CEO가 토요일 한국에서 삼성그룹 최고경영진을 만나 메모리 칩과 AI 인프라 협력을 논의했다. 전 세계 메모리 부족이 심해지는 가운데 나온 행보다(Bloomberg). 투자 라운드 축소 보도와 같은 날 나온 공급망 확보 움직임이다.</p>
+<p class="pick-reason">선정 이유: 대기업 조용한 움직임(공급망 선점) / 한국 시장·반도체 메모리 공급망</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/articles/2026-10-31/openai-sam-altman-samsung-executives-memory-crunch-deepens" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Salesforce&#x27;s M&amp;A spree continues with a reported $375M deal for defense tech startup Rune</h3>
+<p class="article-title-kr">세일즈포스, 방산 AI 물류 스타트업 룬 3억7500만달러 인수 추진</p>
+<p class="article-summary">세일즈포스가 AI 물류 스타트업 룬(Rune)을 약 3억7500만달러에 인수한다고 TechCrunch가 보도했다. 룬은 세일즈포스의 방산 플랫폼 &#x27;미션포스&#x27;를 강화하는 데 쓰인다. CRM 기업의 방산 진출이라는 조용한 사업 확장이다.</p>
+<p class="pick-reason">선정 이유: 대기업 조용한 움직임(방산 시장 진입) / 데이터·자동화, 투자 관점</p>
+<div class="article-meta">
+<span class="source">TechCrunch</span>
+<a href="https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">NYSE Owner Plans Hyperliquid Perpetuals Market in US</h3>
+<p class="article-title-kr">NYSE 모회사 ICE, 하이퍼리퀴드 진영과 손잡고 美 규제권 무기한 선물시장 추진</p>
+<p class="article-summary">뉴욕증권거래소 모회사 ICE가 해외 암호화폐 거래 플랫폼 하이퍼리퀴드의 운영사 가운데 하나인 Trade.xyz와 손잡고 무기한 선물(perpetual futures)을 미국 규제 시장에 들여오려 한다(Bloomberg). 역외 크립토 파생상품이 제도권으로 들어오는 초기 신호다.</p>
+<p class="pick-reason">선정 이유: 규제/정책 변화 초기 신호 / 투자 관점 의미 있는 변화</p>
+<div class="article-meta">
+<span class="source">Bloomberg</span>
+<a href="https://www.bloomberg.com/news/videos/2026-10-30/nyse-owner-plans-hyperliquid-perpetuals-market-in-us-video" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<footer>
+<p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+<p>기사 25건 | 섹션 6개 | Pick 3건</p>
+<p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+</footer>
+</div>
+</body>
+</html>
