@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>마벨, 루멘텀 1150억달러 인수 | 올트먼, 아부다비 4대 계약 | 유럽 슈퍼마켓 냉동고 2차 해킹 | Jae's Briefing</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+</style>
+
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="date-badge">2026년 11월 3일 화요일</div>
+<h1 class="title">마벨, 루멘텀 1150억달러 인수 | 올트먼, 아부다비 4대 계약 | 유럽 슈퍼마켓 냉동고 2차 해킹</h1>
+<p class="summary">마벨이 데이터센터 광부품 업체 루멘텀을 1150억달러에 인수하며 테크 역사상 최대급 M&amp;A로 AI 연결 기술에 승부를 걸었다. 샘 올트먼은 한국을 깜짝 방문한 데 이어 아부다비에서 에너지·정부·투자 4대 협약을 맺으며 중동 자금 확보에 나섰다. 유럽 슈퍼마켓 냉장고와 우크라이나 재난 알림 앱이 잇따라 해킹당해 생활 인프라 사이버보안 우려가 커졌다. 앤트로픽 3분기 매출 170억달러, 오라클·메타·알파벳의 AI 차입 러시, 한국 소버린 AI 예산, 중간선거 쟁점이 된 데이터센터도 주목된다.</p>
+</header>
+<section class="section top-section">
+<h2 class="section-title">🔥 TOP Headlines</h2>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">OpenAI deepens Abu Dhabi foothold as Sam Altman inks deals spanning energy, government and investment</h3>
+<p class="article-title-kr">올트먼, 아부다비서 에너지·정부·투자 4건 계약…한국 깜짝 방문 이어 &#x27;자금줄&#x27; 중동 공략</p>
+<p class="article-summary">샘 올트먼 OpenAI CEO가 아부다비 왕세자를 만나 에너지·정부·투자 분야를 아우르는 4건의 협약에 서명했다(CNBC). 블룸버그에 따르면 OpenAI는 UAE의 에너지 기업·투자회사·정부기관 전반에 자사 기술을 배포하기로 했으며, 이는 국부펀드 등 UAE 국가 투자자들로부터 수십억 달러를 끌어오려는 행보와 맞물려 있다. 올트먼은 아디펙(ADIPEC) 무대에서 &quot;AI가 에너지 산업의 경제학을 바꿀 것&quot;이라고 말했다. 그는 주말 동안 예고 없이 한국을 찾아 삼성 경영진과, 보도에 따르면 SK그룹 경영진과도 만나 메모리 칩 협력을 다졌다. 신규 투자 라운드 목표를 200억달러로 낮춘 직후라는 점에서 자금·칩·전력을 한꺼번에 확보하려는 순방으로 읽힌다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero, Bloomberg, CNBC 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/11/02/openai-abu-dhabi-ai-deals.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Marvell to buy Lumentum in all-stock deal, a massive bet on AI connectivity</h3>
+<p class="article-title-kr">마벨, 루멘텀 1150억달러에 전액 주식 인수…테크 역사상 최대급 M&amp;A로 AI 광연결 &#x27;올인&#x27;</p>
+<p class="article-summary">마벨 테크놀로지가 데이터센터 광부품 업체 루멘텀을 기업가치 1150억달러에 인수하기로 합의했다. 전액 주식 교환 방식이며 거래 종결은 2028년 상반기로 예상된다(CNBC). TechCrunch는 이번 거래를 테크 역사상 최대 인수 가운데 하나로 꼽으며, 두 회사 모두 엔비디아를 전략적 투자자로 두고 있다고 짚었다. 블룸버그는 2015년 JDSU에서 10억달러 규모로 분사한 루멘텀이 AI 데이터센터의 광 인터커넥트 수요를 타고 10년 만에 1150억달러 인수 대상이 됐다고 정리했다. 지난주 &#x27;협상 임박&#x27; 보도가 공식 발표로 확정된 것으로, GPU 사이의 데이터 전송 병목을 해결하는 연결 기술이 AI 인프라의 새로운 핵심 격전지가 됐음을 보여준다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech, Bloomberg, TechCrunch 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/11/02/marvell-lumentum-ai-deal.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-breaking">BREAKING</span>
+<h3 class="article-title">A fresh wave of cyberattacks has hit Europe’s supermarket refrigerators, destroying food across countries</h3>
+<p class="article-title-kr">유럽 슈퍼마켓 냉장고 2차 해킹…벨기에·스웨덴·룩셈부르크 등 수십 개 매장 식품 폐기</p>
+<p class="article-summary">유럽 각국 슈퍼마켓의 냉장·냉동고가 한 달 새 두 번째 사이버공격을 받았다. 스웨덴·벨기에·룩셈부르크·에스토니아 등의 대형 체인 수십 개 매장에서 밤사이 냉장고 온도가 갑자기 올라 식품이 상했고, 블룸버그는 아일랜드·핀란드 매장도 피해를 신고했다고 전했다. 몇 주 전 프랑스에서 더 큰 규모로 벌어진 공격과 같은 수법으로 추정된다. 가디언은 공격 주체와 동기를 추적했고, BBC는 &quot;해커가 냉동고를 장악할 수 있다면 다른 기기는 얼마나 취약한가&quot;라며 인터넷에 연결된 산업용 IoT 설비 전반의 보안 공백을 지적했다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch, BBC, Guardian, Bloomberg 다매체 보도</span>
+<a href="https://techcrunch.com/2026/11/02/a-fresh-wave-of-cyberattacks-has-hit-europes-supermarket-refrigerators-destroying-food-across-countries/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-hot">HOT</span> <span class="badge badge-breaking">BREAKING</span>
+<h3 class="article-title">Hackers send fake nuclear threat alert to Ukraine emergency app</h3>
+<p class="article-title-kr">우크라이나 재난 알림 앱에 가짜 &#x27;핵 위협&#x27; 경보…러시아도 경보 시스템 해킹 피해 주장</p>
+<p class="article-summary">해커들이 우크라이나 정부의 비상 알림 앱을 통해 키이우 시민들에게 가짜 핵·화학 위협 경보를 보냈다(Guardian). 블룸버그와 CNBC에 따르면 우크라이나와 러시아는 같은 날 각자의 재난 경보 시스템이 사이버공격을 당했다고 밝혔다. 양국 간 공습이 이어지는 가운데 시민 대피와 직결되는 경보 인프라가 공격 대상이 되면서, 사이버전이 물리적 공포를 직접 유발하는 단계로 들어섰다는 우려가 나온다.</p>
+<div class="article-meta">
+<span class="source">Guardian Tech Hero, Bloomberg, CNBC 다매체 보도</span>
+<a href="https://theguardian.com/world/2026/nov/02/hackers-fake-nuclear-chemical-threat-alert-kyiv-ukraine-emergency-app" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🤖 AI/기술</h2>
+<article class="article-card">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Anthropic reports $17 billion in Q3 revenue, purchase commitments of $895.4 billion in revised S-1</h3>
+<p class="article-title-kr">앤트로픽, 3분기 매출 약 170억달러…수정 S-1에 8954억달러 구매 약정 공개</p>
+<p class="article-summary">앤트로픽이 수정 증권신고서(S-1)를 통해 9월 30일 기준 3분기 매출이 약 170억달러로 전년 동기 대비 12배 늘었다고 공개했다(Bloomberg). 지난주 처음 낸 신고서에는 상반기 실적만 담겼었다. 함께 공개된 향후 구매 약정은 8954억달러에 달해 컴퓨팅·데이터센터 확보에 천문학적 자금을 쏟아붓겠다는 계획을 드러냈다. 사상 최대 규모가 될 수 있는 기업공개를 앞두고 성장세와 지출 부담이 동시에 부각됐고, 블룸버그는 뉴욕시 감사관이 상장 신청 이후 앤트로픽에 대한 비판 수위를 높이고 있다고도 전했다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech, Bloomberg 다매체 보도</span>
+<a href="https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">OpenAI is finally merging ChatGPT’s chat and Work tabs</h3>
+<p class="article-title-kr">OpenAI, 챗GPT &#x27;채팅&#x27;·&#x27;워크&#x27; 탭 통합…코덱스와 사용량 한도도 공유</p>
+<p class="article-summary">OpenAI가 챗GPT의 일반 채팅 탭과 업무용 &#x27;워크&#x27; 탭을 하나로 합친다. 통합 후에는 챗GPT와 코딩 에이전트 코덱스가 같은 사용량 한도 풀에서 차감된다(TechCrunch). ZDNet은 이번 변경이 앤트로픽의 비슷한 조치 직후 나온 것으로, 일부 사용자 대상 테스트를 거쳐 순차 적용된다고 전했다. 대화형 AI와 에이전트형 업무 도구의 경계를 지우는 흐름이 경쟁사 간에 동시에 진행되는 모습이다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch Featured, ZDNet</span>
+<a href="https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Anthropic clamps down on Claude’s AI video game clones</h3>
+<p class="article-title-kr">앤트로픽, 클로드 코드로 기존 비디오게임 &#x27;복제&#x27; 금지…시스템 프롬프트 수정</p>
+<p class="article-summary">앤트로픽이 클로드 코드의 시스템 프롬프트를 수정해 기존 비디오게임을 재현하는 데 쓰이지 못하도록 막았다(Tom&#x27;s Hardware 보도 인용, The Verge). 레트로 게임계는 AI로 만든 디컴파일·리컴파일·이식판이 쏟아지는 상황이다. 생성형 코딩 도구가 저작권 분쟁의 새 경로가 되자 모델 개발사가 직접 사용 범위를 좁히기 시작했다는 점에서 의미가 있다.</p>
+<div class="article-meta">
+<span class="source">The Verge</span>
+<a href="https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Hundreds of Mundane AI Apps Are Hiding Sexually Abusive Deepfake Features</h3>
+<p class="article-title-kr">평범한 AI 앱 400여 개에 숨겨진 성착취 딥페이크 기능…중국어권 개발사 연계</p>
+<p class="article-summary">WIRED가 겉보기엔 일반적인 AI 이미지·영상 도구지만 숨겨진 기능으로 폭력적·성적 딥페이크를 만들 수 있게 한 앱과 웹사이트 약 400개를 찾아냈다. 이들은 중국어권 개발사와 연결돼 있었다. 앱 마켓 심사를 우회하는 &#x27;이중 얼굴&#x27; 앱이 대규모로 유통되고 있다는 점에서 플랫폼 사업자의 관리 책임 문제가 다시 불거질 전망이다.</p>
+<div class="article-meta">
+<span class="source">Wired</span>
+<a href="https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">💰 경제/금융</h2>
+<article class="article-card">
+<h3 class="article-title">Oracle files to sell $20 billion in new stock, bonds to finance AI buildout</h3>
+<p class="article-title-kr">오라클, AI 인프라 위해 200억달러 주식·채권 발행…메타·알파벳도 줄줄이 &#x27;AI 빚&#x27;</p>
+<p class="article-summary">오라클이 AI 데이터센터 구축 자금을 대기 위해 신주와 회사채로 200억달러를 조달하는 서류를 제출했다(CNBC). 같은 날 블룸버그는 메타가 최소 200억달러 규모의 다국적 투자등급 채권 발행을 타진 중이며, 알파벳도 실망스러운 3분기 실적 발표 일주일도 안 돼 올해 두 번째 유로화 채권(7개 만기) 발행에 나섰다고 전했다. 싱가포르 데이터센터 업체 STT GDC도 24억달러 신디케이트론을 협의 중이다. AI 투자 회의론으로 나스닥100 지수가 조정 국면에 진입한 가운데 빅테크의 차입 의존이 커지고 있다.</p>
+<div class="article-meta">
+<span class="source">CNBC, Bloomberg</span>
+<a href="https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Palantir reports booming U.S. commercial revenue growth, topping government for first time</h3>
+<p class="article-title-kr">팔란티어, 미국 상업 매출 148% 급증…처음으로 정부 매출 추월</p>
+<p class="article-summary">팔란티어의 3분기 상업 부문 매출이 148% 늘어난 9억8400만달러로 정부 매출(9억5300만달러)을 처음으로 넘어섰다(CNBC). 국방·정보기관 의존 기업이라는 이미지를 벗고 민간 AI 플랫폼 수요로 성장 축이 옮겨가고 있음을 보여준다. 반면 가디언은 영국 NHS가 팔란티어 데이터 플랫폼의 수혜 기관으로 꼽은 29개 병원 트러스트가 실제로는 기능 대부분을 쓰지 않고 있다고 보도해, 공공 부문 성과 주장에는 의문이 제기됐다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero, Guardian</span>
+<a href="https://www.cnbc.com/2026/11/02/palantir-pltr-earnings-q3-2026.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">South Korea targets &#x27;world&#x27;s highest performance&#x27; sovereign AI model in record new budget</h3>
+<p class="article-title-kr">한국, 역대 최대 2027년 예산에 &#x27;세계 최고 성능&#x27; 소버린 AI 목표…반도체·피지컬 AI에 21.3조원</p>
+<p class="article-summary">한국 정부가 2027년 예산을 12.8% 늘린 820조9000억원으로 편성하고, 이 중 21조3000억원을 반도체·피지컬 AI·AI 데이터센터에 투입한다(CNBC). 정부는 &#x27;세계 최고 성능&#x27;의 소버린 AI 모델 개발을 목표로 내걸었다. 같은 주말 올트먼 OpenAI CEO가 삼성·SK 경영진을 만난 것과 맞물려, 한국이 메모리 공급망과 국가 AI 역량을 동시에 지렛대로 삼으려는 전략이 뚜렷해지고 있다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech Hero</span>
+<a href="https://www.cnbc.com/2026/11/02/south-korea-ai-spending-budget.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Intel foundry push faces critical test after stock&#x27;s 45% plunge in October</h3>
+<p class="article-title-kr">10월 주가 45% 폭락한 인텔, 파운드리 전략 &#x27;결정적 시험대&#x27;</p>
+<p class="article-summary">인텔 주가가 10월 한 달간 45% 급락하면서 회생 전략의 성패가 파운드리 사업에 달리게 됐다(CNBC). 고객사들은 인텔이 생산능력을 늘리고 TSMC를 따라잡을 수 있다는 신호를 기다리고 있다. 지난주 PC 수요 둔화를 이유로 약한 가이던스를 내며 주가가 하루 16% 빠진 데 이은 후속 분석으로, 외부 고객 수주 여부가 향후 방향을 가를 전망이다.</p>
+<div class="article-meta">
+<span class="source">CNBC Tech</span>
+<a href="https://www.cnbc.com/2026/11/02/intel-foundry-faces-critical-test-after-stocks-45percent-plunge-in-october.html" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Squarespace is laying off 19 percent of employees</h3>
+<p class="article-title-kr">스퀘어스페이스, 직원 19% 감원…1800명 중 약 300명</p>
+<p class="article-summary">웹사이트 빌더 스퀘어스페이스가 조직 &#x27;단순화&#x27;를 이유로 전체 직원의 19%, 약 300명을 감원한다(The Verge). TechCrunch는 이번 감원이 광범위한 구조조정의 일부라고 전했다. AI 웹사이트 생성 도구가 확산되며 노코드 웹 빌더 시장의 경쟁 구도가 흔들리는 가운데 나온 조치다.</p>
+<div class="article-meta">
+<span class="source">The Verge, TechCrunch</span>
+<a href="https://www.theverge.com/tech/1024447/squarespace-layoffs-19-percent" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🏛️ 정책/플랫폼</h2>
+<article class="article-card">
+<span class="badge badge-update">UPDATE</span>
+<h3 class="article-title">Could data center backlash flip Florida?</h3>
+<p class="article-title-kr">중간선거 당일, &#x27;데이터센터 반발&#x27;이 표심 변수로…플로리다·캘리포니아·브루클린까지</p>
+<p class="article-summary">미국 중간선거를 앞두고 데이터센터가 핵심 쟁점으로 떠올랐다. The Verge는 트럼프에게 세 번 투표한 플로리다 공화당원조차 데이터센터 문제로 이번엔 표를 갈라 찍는다며 주지사 선거 판세를 흔들 수 있다고 보도했다. 캘리포니아에서는 &#x27;필수 인프라&#x27; 인허가를 앞당기는 주민발의안 45호가 데이터센터의 환경 심사 회피 통로가 될 수 있다는 경고가 나왔다. TechCrunch는 뉴욕 브루클린의 선거 파티에서도 대화가 AI와 데이터센터로 모였다고 전했다. 전력요금·물 사용 부담이 지역 정치를 바꾸고 있다.</p>
+<div class="article-meta">
+<span class="source">The Verge Hero, TechCrunch</span>
+<a href="https://www.theverge.com/policy/1024357/florida-governors-race-donalds-jolly-data-centers" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">The New York Times sues Brave web browser for AI scraping and bypassing paywalls</h3>
+<p class="article-title-kr">뉴욕타임스 등 언론사들, 브레이브 브라우저 제소…&quot;AI 학습용 스크래핑·페이월 우회&quot;</p>
+<p class="article-summary">뉴욕타임스와 여러 언론사가 브레이브 브라우저 운영사를 상대로 소송을 냈다. 기사를 무단으로 긁어 AI 학습에 쓰고 사용자가 유료 구독벽을 우회하도록 했다는 혐의다(The Verge, 로이터 인용). TechCrunch에 따르면 원고 측은 브레이브가 수집한 콘텐츠를 앤트로픽·퍼플렉시티 같은 자사 고객에게 불법 배포했다고 주장한다. AI 학습 데이터 저작권 분쟁이 모델 개발사를 넘어 검색·브라우저 데이터 공급자로 번지고 있다.</p>
+<div class="article-meta">
+<span class="source">The Verge, TechCrunch</span>
+<a href="https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">SpaceX could buy Boost Mobile as part of its big mobile carrier plans</h3>
+<p class="article-title-kr">스페이스X, 부스트 모바일 인수 추진설…스타링크로 &#x27;통신 4강&#x27; 노린다</p>
+<p class="article-summary">스페이스X가 저가 통신사 부스트 모바일을 통해 자체 이동통신 서비스를 내놓는 거래를 논의했다고 워싱턴포스트가 보도했다(The Verge). 스타링크를 &#x27;주요&#x27; 이동통신사로 키우려는 구상의 일환이다. TechCrunch는 부스트와의 결합이 스페이스X에 지상망 접근권을 줘 AT&amp;T·T모바일·버라이즌과 경쟁할 발판이 될 수 있다고 분석했다.</p>
+<div class="article-meta">
+<span class="source">The Verge, TechCrunch</span>
+<a href="https://www.theverge.com/science/1024330/spacex-boost-mobile-deal-report" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs</h3>
+<p class="article-title-kr">머스크, &#x27;감당 불가한 비용&#x27;에 그록 봇 사용 한도 축소</p>
+<p class="article-summary">일론 머스크가 그록 봇의 사용 한도를 줄였다. 운영 비용이 &quot;지속 불가능할 정도로 높다&quot;는 이유다(TechCrunch). 머스크는 최근 그록 봇을 두고 &quot;내 인생에서 본 가장 빠른 제품 성장&quot;이라고 자랑한 바 있다. 폭발적 이용 증가가 곧바로 추론 비용 부담으로 이어지는 AI 서비스의 수익 구조 문제를 드러낸 사례다.</p>
+<div class="article-meta">
+<span class="source">TechCrunch</span>
+<a href="https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🔧 하드웨어/기타</h2>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">Why the 16GB Raspberry Pi 5 costs $385 now – and your best alternative options</h3>
+<p class="article-title-kr">16GB 라즈베리파이5, 또 80달러 인상해 385달러…출시가 3배 넘어 &#x27;RAM 대란&#x27; 체감</p>
+<p class="article-summary">라즈베리파이5 16GB 모델 가격이 80달러 올라 385달러가 됐다. 출시가 120달러의 3배가 넘는다(The Verge). 라즈베리파이 재단은 계속되는 RAM 부족 때문에 &quot;피할 수 없는&quot; 인상이라고 설명했다. ZDNet은 대안 보드들을 소개했다. AI 데이터센터로 메모리 물량이 쏠리면서 취미용 싱글보드 컴퓨터까지 가격 충격이 번지고 있다.</p>
+<div class="article-meta">
+<span class="source">ZDNet Featured, The Verge Ranking</span>
+<a href="https://www.zdnet.com/tech/16gb-raspberry-pi-5-price-increase/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-new">NEW</span>
+<h3 class="article-title">China&#x27;s top EDA firm buys start-up to boost tools, back Huawei&#x27;s Tau Scaling Law</h3>
+<p class="article-title-kr">중국 1위 EDA 업체 엠피리언, 스타트업 인수…화웨이 &#x27;타우 스케일링 법칙&#x27; 지원</p>
+<p class="article-summary">중국 최대 반도체 설계 자동화(EDA) 업체 엠피리언이 스타트업을 인수해 취약 고리로 꼽혀온 설계 도구를 보강한다(SCMP). 이번 인수는 첨단 공정 없이 칩 성능을 끌어올리려는 화웨이의 &#x27;타우 스케일링 법칙&#x27; 전략을 뒷받침하는 성격이다. 미국 EDA 3사(시놉시스·케이던스·지멘스)에 대한 의존을 줄이려는 중국의 반도체 자립 행보가 설계 소프트웨어 영역으로 넓어지고 있다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech Hero</span>
+<a href="https://scmp.com/tech/big-tech/article/3373005/chinas-eda-champion-buys-start-address-weak-link-support-huaweis-tau-scaling-law?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">China&#x27;s CXMT defends push into new DRAM architecture as US chip curbs bite</h3>
+<p class="article-title-kr">중국 CXMT, 미국 제재 속 &#x27;신형 D램 구조&#x27; 승부수 옹호</p>
+<p class="article-summary">중국 D램 업체 창신메모리(CXMT)가 미국의 장비 수출 규제를 우회하기 위해 위험 부담이 큰 새로운 D램 아키텍처에 베팅한 전략을 공개적으로 옹호했다(SCMP). 첨단 노광장비 없이 집적도를 높이려는 시도로, 성공하면 삼성전자·SK하이닉스와의 기술 격차를 좁히는 변수가 될 수 있다.</p>
+<div class="article-meta">
+<span class="source">SCMP Tech Featured</span>
+<a href="https://scmp.com/tech/tech-war/article/3372997/chinas-cxmt-defends-bet-risky-new-dram-architecture-circumvent-us-chip-curbs?module=top_story&amp;pgtype=section" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<h3 class="article-title">Apple’s HomeView could add security camera features</h3>
+<p class="article-title-kr">애플 홈뷰, 보안 카메라 기능 추가 정황…홈 로봇은 2028년까지 밀릴 수도</p>
+<p class="article-summary">애플 스마트홈 허브 &#x27;홈뷰&#x27; 27.2 코드에서 동작 감지·실시간 스트리밍·녹화 등 보안 카메라 모드 문자열이 발견됐다(The Verge). ZDNet은 링·네스트·와이즈와 직접 경쟁할 수 있다고 평가했다. 한편 디인포메이션에 따르면 애플의 가정용 로봇은 하드웨어가 2년 전 완성됐지만 소프트웨어 준비가 늦어 출시가 2027년 이후, 길게는 2028년으로 밀릴 수 있다.</p>
+<div class="article-meta">
+<span class="source">The Verge, ZDNet</span>
+<a href="https://www.theverge.com/tech/1024219/apples-homeview-could-add-security-camera-features" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<section class="section picks-section">
+<h2 class="section-title">💎 Claude's Pick</h2>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Kioxia Shares Sink After Outlook Shows Demand Leveling Off</h3>
+<p class="article-title-kr">키옥시아, 신중한 전망에 장중 15% 급락…&#x27;AI 메모리 수요 정점&#x27; 우려</p>
+<p class="article-summary">일본 낸드 메모리 업체 키옥시아의 주가가 장중 최대 15% 떨어졌다. 보수적인 실적 전망이 AI발 폭발적 수요가 둔화하기 시작했다는 우려를 키웠다(Bloomberg). 키옥시아 지분으로 큰 평가이익을 거둔 SK하이닉스, 그리고 삼성전자의 메모리 업황 판단에도 영향을 줄 수 있는 신호다.</p>
+<p class="pick-reason">선정 이유: 대기업 조용한 움직임 + 시장 재평가 신호 / 반도체 공급망·한국 시장 연관</p>
+<div class="article-meta">
+<span class="source">Bloomberg Tech</span>
+<a href="https://www.bloomberg.com/news/articles/2026-11-02/kioxia-shares-tumble-after-outlook-suggests-demand-leveling-off" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’</h3>
+<p class="article-title-kr">42AI, 6250만달러 들고 스텔스 탈출…&quot;인간 행동을 예측하는 월드 모델&quot;</p>
+<p class="article-summary">스타트업 42AI가 6250만달러를 조달하며 베일을 벗었다. 처음 보는 상황에서도 사람이 결정을 내리기 전에 그 행동을 예측할 수 있는 &#x27;월드 모델&#x27;을 내세운다(TechCrunch). 물리 세계 시뮬레이션 중심이던 월드 모델 경쟁이 인간 행동 예측으로 넓어지는 첫 신호로, 로보틱스·광고·자율주행 응용 가능성이 크다.</p>
+<p class="pick-reason">선정 이유: 신생 기업 첫 등장 + 대형 시드 투자 / AI·데이터 자동화</p>
+<div class="article-meta">
+<span class="source">TechCrunch</span>
+<a href="https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/" target="_blank">원문 보기 →</a>
+</div>
+</article>
+<article class="article-card">
+<span class="badge badge-pick">PICK</span>
+<h3 class="article-title">Russia Allows Use of Foreign Data Centers in Wake of Attacks</h3>
+<p class="article-title-kr">러시아, 얀덱스 데이터센터 피격 후 &#x27;해외 데이터센터 사용&#x27; 한시 허용</p>
+<p class="article-summary">러시아가 자국 IT 대기업 얀덱스의 시설을 겨냥한 우크라이나의 연이은 공격 이후 국외 데이터센터 사용을 일시적으로 허용하기로 했다(Bloomberg). 데이터 현지화를 강하게 밀어온 러시아가 물리적 안보 위협 앞에서 원칙을 접은 것이다. 전쟁 중 데이터센터가 군사 표적이 되는 현실을 드러낸다.</p>
+<p class="pick-reason">선정 이유: 규제·정책 변화 초기 신호 + 기존 관심 분야 연장선 / AI·기술 인프라</p>
+<div class="article-meta">
+<span class="source">Bloomberg Tech</span>
+<a href="https://www.bloomberg.com/news/articles/2026-11-02/russia-allows-use-of-foreign-data-centers-in-wake-of-attacks" target="_blank">원문 보기 →</a>
+</div>
+</article>
+</section>
+<footer>
+<p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+<p>기사 24건 | 섹션 6개 | Pick 3건</p>
+<p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+</footer>
+</div>
+</body>
+</html>
