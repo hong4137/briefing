@@ -16815,6 +16815,46 @@
           "thumb_category": "finance"
         }
       ]
+    },
+    {
+      "date": "weekly-2026-11-08",
+      "week": "2026-W45",
+      "title": "메모리 쇼크·민주당 압승발 AI 셀오프 | 데이터센터 반발 유럽으로",
+      "summary": "AI 데이터센터로 메모리가 쏠리며 애플 마진 경고, 퀄컴 전망 실망, 닌텐도 스위치2 판매 41% 급감까지 '메모리 쇼크'가 IT 하드웨어 전반으로 번졌고, 마이크론은 대만 파업에 45억달러 공장을 멈췄다. 미국 중간선거에서 민주당이 상·하원을 휩쓸고 데이터센터 주민투표가 거의 전패하자 나스닥이 하루 5.5% 급락해 조정 국면에 들어섰고, 셀오프는 코스피 서킷브레이커로 번지며 앤트로픽 상장 몸값 기대도 1.1~1.3조달러로 내려앉았다. 데이터센터 반대 운동은 암스테르담 MS 공사장 점거로 유럽까지 확산됐다. 나스닥은 주간 3.37% 내렸다.",
+      "period": "2026-11-02 ~ 2026-11-07",
+      "stats": {
+        "clusters": 10,
+        "total_articles": 143
+      },
+      "hero_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Premium laptop display dark setup",
+      "hero_credit_name": "Ales Nesetril",
+      "hero_credit_url": "https://unsplash.com/photos/1531297484001-80022131f5a1",
+      "hero_source": "smart_pick",
+      "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Premium laptop display dark setup",
+      "thumb_category": "ai",
+      "card_count": 21,
+      "segments": [
+        {
+          "title": "메모리 쇼크·민주당 압승발 AI 셀오프",
+          "summary": "AI 데이터센터로 메모리가 쏠리며 애플 마진 경고, 퀄컴 전망 실망, 닌텐도 스위치2 판매 41% 급감까지 '메모리 쇼크'가 IT 하드웨어 전반으로 번졌고, 마이크론은 대만 파업에 45억달러 공장을 멈췄다. 미국 중간선거에서 민주당이 상·하원을 휩쓸고 데이터센터 주민투표가 거의 전패하자 나스닥이 하루 5.5% 급락해 조정 국면에 들어섰고, 셀오프는 코스피 서킷브레이커로 번지며 앤트로픽 상장 몸값 기대도 1.1~1.3조달러로 내려앉았다.",
+          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Data marketing multi-screen dashboard display",
+          "thumb_category": "ai"
+        },
+        {
+          "title": "데이터센터 반발 유럽으로",
+          "summary": "데이터센터 반대 운동은 암스테르담 MS 공사장 점거로 유럽까지 확산됐다. 나스닥은 주간 3.37% 내렸다..",
+          "thumb_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Laptop displaying code in dark environment",
+          "thumb_category": "finance"
+        }
+      ]
     }
   ],
   "specials": [
@@ -16827,24 +16867,24 @@
         "articles": 20,
         "sections": 6
       },
-      "hero_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Premium laptop display dark setup",
-      "hero_credit_name": "Ales Nesetril",
-      "hero_credit_url": "https://unsplash.com/photos/1531297484001-80022131f5a1",
+      "hero_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Modern tech company open office",
+      "hero_credit_name": "Marvin Meyer",
+      "hero_credit_url": "https://unsplash.com/photos/1573804633927-bfcbcd909acd",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Premium laptop display dark setup",
+      "thumb_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Modern tech company open office",
       "thumb_category": "ai",
       "card_count": 18,
       "segments": [
         {
           "title": "CES 2026 특별판: AI·로봇·모빌리티 혁신 총정리",
           "summary": "CES 2026에서 공개된 AI, 로봇, 자율주행, 스마트홈 혁신 기술 총정리..",
-          "thumb_url": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Data marketing multi-screen dashboard display",
+          "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Matrix green binary code wall on black screen",
           "thumb_category": "ai"
         }
       ]
@@ -16858,24 +16898,24 @@
         "articles": 13,
         "sections": 4
       },
-      "hero_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Modern tech company open office",
-      "hero_credit_name": "Marvin Meyer",
-      "hero_credit_url": "https://unsplash.com/photos/1573804633927-bfcbcd909acd",
+      "hero_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Abstract dark silk web browser art visual",
+      "hero_credit_name": "Growtika",
+      "hero_credit_url": "https://unsplash.com/photos/1618005182384-a83a8bd57fbe",
       "hero_source": "smart_pick",
-      "thumb_url": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Modern tech company open office",
+      "thumb_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Abstract dark silk web browser art visual",
       "thumb_category": "ai",
       "card_count": 12,
       "segments": [
         {
           "title": "다보스 2026: AI 인프라 대전환과 미중 기술패권 경쟁",
           "summary": "트럼프 3주 원전 승인, 젠슨 황 AI 5층 케이크. 다보스 포럼 AI 핵심 발언 총정리..",
-          "thumb_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Matrix green binary code wall on black screen",
+          "thumb_url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Neon data stream transmission visual",
           "thumb_category": "ai"
         }
       ]
@@ -16889,32 +16929,32 @@
         "articles": 25,
         "sections": 6
       },
-      "hero_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Laptop displaying code in dark environment",
-      "hero_credit_name": "Christopher Gower",
-      "hero_credit_url": "https://unsplash.com/photos/1498050108023-c5249f4df085",
+      "hero_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Aerial view of city lights glowing at night",
+      "hero_credit_name": "Maximalfocus",
+      "hero_credit_url": "https://unsplash.com/photos/1504711434969-e33886168f5c",
       "hero_source": "handpick_default",
-      "thumb_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Laptop displaying code in dark environment",
+      "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Aerial view of city lights glowing at night",
       "thumb_category": "default",
       "card_count": 8,
       "segments": [
         {
           "title": "이란전쟁 33일 — 종전 임박인가, 장기전인가",
           "summary": "Operation Epic Fury 개전 33일. 호르무즈 봉쇄로 글로벌 원유 공급 20% 차단.",
-          "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Aerial view of city lights glowing at night",
+          "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Tech team collaborating on laptops in office",
           "thumb_category": "default"
         },
         {
           "title": "세계 경제 충격파 분석",
           "summary": "트럼프 2~3주 내 철수 시사 vs 이란 6개월 전쟁 준비. 5대 경제 충격파와 테크 산업 영향, 한국 경제 분석..",
-          "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Tech team collaborating on laptops in office",
+          "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Planet Earth viewed from space with city lights",
           "thumb_category": "default"
         }
       ]
