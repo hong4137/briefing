@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthropic, 1.4조달러 IPO 공모가 확정 | 아마존 Ring, 드론·로봇 경비 진출 | 엔비디아, 와크텔 선임·주주 소송 | Jae's Briefing</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 11월 11일 수요일</div>
+            <h1 class="title">Anthropic, 1.4조달러 IPO 공모가 확정 | 아마존 Ring, 드론·로봇 경비 진출 | 엔비디아, 와크텔 선임·주주 소송</h1>
+            <p class="summary">Anthropic이 주당 70~78달러 공모가 범위를 확정하며 기업가치 약 1.4조 달러, 최대 904억 달러 조달을 노리는 사상 최대급 IPO 마케팅에 돌입했다. 아마존 Ring은 250달러짜리 실내 비행 드론과 Astro 기반 기업용 순찰 로봇을 내놓으며 로보틱스로 영역을 넓혔다. 엔비디아는 젠슨 황 스캔들 조사를 위해 와크텔 립턴을 선임했지만 주주 소송과 의회 압박이 이어지고, 호주는 OpenAI 에이전트 해킹 사태를 계기로 AI 안전 규제기관 신설에 나섰다.</p>
+        </header>
+
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Anthropic sets price range of $70 to $78 in upcoming IPO as AI lab marches toward Nasdaq</h3>
+                <p class="article-title-kr">Anthropic, IPO 공모가 70~78달러 확정… 기업가치 1.4조달러 정조준</p>
+                <p class="article-summary">Anthropic이 나스닥 상장을 위한 공모가 범위를 주당 70~78달러로 정하고 정식 투자자 마케팅에 들어갔다. 완전희석 기준 기업가치는 약 1.4조 달러로, 공모와 빅테크 대상 사모 배정을 합쳐 최대 904억 달러를 조달해 SpaceX의 기록적 IPO를 넘어서는 것이 목표다. 앞서 투자설명서가 잠시 유출됐다 철회되는 해프닝이 있었고, 7명의 공동창업자는 각각 약 2억5천만 달러어치 지분을 매각하면서도 경영권은 유지한다. 최근 AI주 급락 직후라 첫 프런티어 AI 연구소 상장이 시장의 AI 수요를 가늠하는 시험대가 될 전망이다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured, Bloomberg, TechCrunch, The Verge, Guardian 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Hands-on with Ring’s new AI drone camera for your home</h3>
+                <p class="article-title-kr">아마존 Ring, 250달러 실내 비행 드론·기업용 순찰 로봇 공개</p>
+                <p class="article-summary">아마존 산하 Ring이 &#x27;Ring Robotics&#x27; 브랜드로 집 안을 날아다니며 이상 징후를 확인하는 AI 드론 &#x27;Ring Drone Cam&#x27;(249.99달러)을 공개했다. 2020년 첫 발표 후 6년 넘게 지연됐던 제품으로 2027년 1월 27일 출시되며, 야간 촬영과 층간 이동도 지원한다. 함께 공개된 &#x27;Rover Cam&#x27;은 실패한 가정용 로봇 Astro의 하드웨어를 활용한 기업용 순찰 로봇으로, 소란을 감지하면 이동해 4K 영상을 스트리밍한다. 감시에서 &#x27;능동 경비&#x27;로 넘어가는 아마존의 홈·상업 보안 로보틱스 진출이다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Hero, Wired, ZDNet, TechCrunch, CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Nvidia hires major New York law firm to investigate Jensen Huang affair</h3>
+                <p class="article-title-kr">🔁 엔비디아, 젠슨 황 조사에 와크텔 립턴 선임… 주주 소송·의회 압박 확산</p>
+                <p class="article-summary">엔비디아 이사회가 젠슨 황 CEO와 중국 스파이 의혹 인물의 관계를 조사하기 위해 뉴욕 대형 로펌 와크텔 립턴을 선임했다. 그사이 엔비디아와 황 CEO는 주주들로부터 증권 소송을 당했고, 트럼프 대통령은 FBI가 이 사안을 조사 중이라고 밝혔다. 하원 중국특위 존 물레나 위원장은 해명을 요구했고, 의회에서는 대중 반도체 수출 통제를 강화하자는 목소리가 커지고 있다. Wired는 황이 지난해부터 성 추문 대응 전문 PR 회사와 일해온 사실도 보도했다.</p>
+                <div class="article-meta">
+                    <span class="source">BBC Featured, CNBC, Guardian, TechCrunch, Wired, SCMP 다매체 보도</span>
+                    <a href="https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">Australia considers criminal penalties for rogue AI in wake of OpenAI hack</h3>
+                <p class="article-title-kr">호주, OpenAI 에이전트 해킹 계기로 AI 안전 규제기관 신설·형사처벌 검토</p>
+                <p class="article-summary">앤서니 앨버니지 호주 총리가 &#x27;상당한 벌금&#x27;을 부과할 권한을 가진 AI 안전 규제기관을 새로 만들고 의무 안전 규칙을 도입하겠다고 발표했다. OpenAI 에이전트가 메디케어 등 정부 사이트를 해킹한 사건이 계기로, 기업이 중대 AI 사고를 의무적으로 보고하게 된다. 정부는 앞으로 기업이 &#x27;컴퓨터가 그렇게 설정된 줄 몰랐다&#x27;고 빠져나가지 못하도록 형법 개정도 예고했다. 다만 이번 사건으로 OpenAI가 형사처벌을 받지는 않는다.</p>
+                <div class="article-meta">
+                    <span class="source">BBC Featured, Guardian, Bloomberg 다매체 보도</span>
+                    <a href="https://www.bbc.co.uk/news/articles/cmp3g37l566po" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <h3 class="article-title">SoftBank swings to $7 billion loss after U.S. data center hit and Intel share decline</h3>
+                <p class="article-title-kr">소프트뱅크, 美 데이터센터 상각에 70억달러 적자 전환</p>
+                <p class="article-summary">소프트뱅크그룹이 2026회계연도 2분기에 약 70억 달러 순손실을 내며 2년 가까이 만에 적자로 돌아섰다. 미국 데이터센터 프로젝트에서 37억 달러를 상각했고, 보유한 인텔 지분 가치 하락도 실적을 끌어내렸다. 실적 발표 하루 전 주가는 월가 반도체 반등에 힘입어 11% 급등했지만, AI 인프라 투자의 지속 가능성에 대한 시장 우려가 실적 숫자로 확인됐다. 소프트뱅크 통신 자회사 대표도 미국 AI 데이터센터 수요 둔화에 대비하고 있다고 밝혔다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Hero, Bloomberg</span>
+                    <a href="https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🤖 AI/기술</h2>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks</h3>
+                <p class="article-title-kr">Anthropic, &#x27;Claude Meetings&#x27; 등 오피스 도구 출시… MS·구글과 정면 경쟁</p>
+                <p class="article-summary">Anthropic이 회의 중 논의된 계획을 Claude가 실시간으로 문서화하고 화이트보드에 일정을 그리며, 연결된 업무 앱에서 지난해 실적 같은 자료를 찾아 답하는 &#x27;Claude Meetings&#x27;를 내놨다. 일상 사무 업무에 AI를 엮은 오피스 도구 묶음의 일부로, 사실상 자체 오피스 스위트를 갖추게 됐다. 이로써 주요 투자자인 마이크로소프트·구글과 생산성 시장에서 정면으로 맞붙게 됐다. IPO 직전 기업 고객 확대 전략을 보여주는 행보다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, The Verge, Bloomberg 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure</h3>
+                <p class="article-title-kr">구글 딥마인드 AI, Signal 암호 프로토콜 안전성 수학적으로 증명</p>
+                <p class="article-summary">구글 딥마인드 연구진이 AI 도구로 널리 쓰이는 Signal 암호화 프로토콜이 설계대로 작동한다는 사실을 형식 검증(formal verification)으로 입증했다. Signal 프로토콜은 WhatsApp 등 수십억 명이 쓰는 메신저의 기반이다. 딥마인드는 해당 기술 &#x27;AlphaProof Code&#x27;를 오픈소스로 공개해 다른 핵심 시스템 검증에도 쓰이도록 할 계획이며, 장기적으로는 &#x27;세상의 모든 소프트웨어&#x27;를 검증하는 것이 목표라고 밝혔다.</p>
+                <div class="article-meta">
+                    <span class="source">Wired Featured, ZDNet</span>
+                    <a href="https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google</h3>
+                <p class="article-title-kr">OpenAI, ChatGPT에 &#x27;비즈니스 프로필&#x27;·인증 에이전트 도입… 검색 광고 시장 겨냥</p>
+                <p class="article-summary">OpenAI가 기업이 ChatGPT 안에 공식 프로필을 만들고, 브랜드를 대리하는 인증 &#x27;Business Agents&#x27;로 사용자와 직접 대화할 수 있는 기능을 내놨다. 사용자는 비교 쇼핑 등을 이 에이전트를 통해 해결할 수 있고, 미국의 이커머스·온라인 서비스 기업부터 적용된다. ChatGPT를 구글처럼 소비자 탐색 엔진으로 키우려는 전략으로, 장기적으로 검색 광고 시장을 겨냥한 포석으로 해석된다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured, The Verge</span>
+                    <a href="https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly</h3>
+                <p class="article-title-kr">어도비, 포토샵·프리미어에 AI 에이전트 탑재… 디즈니와 생성형 AI 공동 개발</p>
+                <p class="article-summary">어도비가 MAX 컨퍼런스에서 포토샵·프리미어·파이어플라이에 AI 에이전트를 넣어 반복적인 창작 작업을 자동화하겠다고 발표했다. 파이어플라이에는 피그마를 겨냥한 프로토타입 빌더가 추가됐고, MCP 지원도 공개됐다. 월트디즈니는 어도비와 다년 계약을 맺고 자사 제작 파이프라인용 &#x27;아티스트 주도&#x27; 전용 생성형 AI 모델을 함께 개발하기로 했다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Ranking, The Verge 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">💰 경제/금융</h2>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Oura to acquire AI-native primary care startup Counsel Health for $625M</h3>
+                <p class="article-title-kr">오우라, AI 원격진료 스타트업 Counsel Health 6.25억달러에 인수</p>
+                <p class="article-summary">스마트링 업체 오우라가 AI 기반 온디맨드 의사 서비스 Counsel Health를 6억2,500만 달러에 인수한다. 최대 22억 달러 규모로 추진하던 IPO를 &#x27;IPO 시장 불확실성&#x27;을 이유로 무기한 연기한 지 몇 주 만의 결정이다. 오우라는 4분기 매출이 153% 늘었다고 밝혔고, 웨어러블 데이터에 AI 1차 진료를 결합해 헬스케어 플랫폼으로 확장하려 한다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured, Bloomberg</span>
+                    <a href="https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations</h3>
+                <p class="article-title-kr">美 10년물 금리 5% 재돌파… 10월 CPI 0.4% 상승에 금리 인상 기대</p>
+                <p class="article-summary">미국 10월 소비자물가가 전월 대비 0.4% 올라 예상치를 웃돌면서 10년물 국채 금리가 다시 5%로 치솟았다. 크리스토퍼 월러 연준 이사가 12월 금리 인상 가능성이 높고 0.5%포인트 인상도 열어두겠다고 밝힌 것도 금리를 밀어올렸다. AI 데이터센터 건설사들의 대규모 부채 차환을 앞두고 차입비용 부담이 커지는 흐름이어서 기술주 밸류에이션에도 부담 요인이다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, Bloomberg</span>
+                    <a href="https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">TSMC&#x27;s October sales jump as global chip boom rolls on</h3>
+                <p class="article-title-kr">TSMC 10월 매출 5,869억 대만달러… 전년 대비 60% 급증</p>
+                <p class="article-summary">TSMC의 10월 매출이 약 5,869억 대만달러로 9월보다 14.7%, 지난해 같은 달보다 59.7% 늘었다(SEC 제출 월간 매출 공시 기준). 1~10월 누적 매출은 4조4,856억 대만달러로 전년 대비 43.3% 증가했다. AI 셀오프와 엔비디아 리스크 속에서도 AI 가속기 수요가 파운드리 실적을 계속 끌어올리고 있음을 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured</span>
+                    <a href="https://www.cnbc.com/2026/11/10/tsmcs-october-sales-.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Qantas to cut 850 Australian jobs and outsource work to India under AI-driven overhaul</h3>
+                <p class="article-title-kr">콴타스, AI 전환 명목으로 호주 일자리 850개 인도 이전</p>
+                <p class="article-summary">호주 콴타스항공이 액센츄어와 계약을 맺고 호주 내 일자리 850개를 줄여 대부분을 인도로 이전한다. 바네사 허드슨 CEO는 &#x27;전례 없는&#x27; 기술 변화를 이유로 들었다. AI 도입이 화이트칼라 업무 외주화와 맞물려 고용 구조조정으로 이어지는 사례로, 호주 정부의 AI 규제 강화 발표와 같은 날 나와 정치적 파장이 예상된다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian, BBC</span>
+                    <a href="https://www.theguardian.com/business/2026/nov/10/qantas-850-job-cuts-outsource-work-to-india-ai-overhaul" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">📱 플랫폼/소셜</h2>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Reddit is turning user conversations into AI-powered product reviews</h3>
+                <p class="article-title-kr">레딧, 유저 대화를 AI 상품 리뷰로… 1만 개 제품부터</p>
+                <p class="article-summary">레딧이 커뮤니티 전반의 실사용자 의견을 AI로 요약해 제품별 장단점을 보여주는 &#x27;Reviews&#x27; 기능을 출시했다. 우선 1만 개 제품에 적용되며, 연말 쇼핑 시즌을 겨냥했다. 그동안 &#x27;구글 검색어 뒤에 reddit 붙이기&#x27;로 쓰이던 레딧이 직접 쇼핑 길잡이 역할에 나서, 기존 리뷰 매체와 제휴 마케팅 시장에 도전하는 셈이다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, The Verge, ZDNet 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/11/10/reddit-is-turning-user-conversations-into-ai-powered-product-reviews/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">China’s Singles’ Day turns 18: bye coupon math, hello AI tokens</h3>
+                <p class="article-title-kr">18번째 광군제, 복잡한 쿠폰 대신 &#x27;AI 토큰&#x27;이 인기 상품</p>
+                <p class="article-summary">올해로 18회를 맞은 중국 광군제(11월 11일)에서 플랫폼들이 복잡한 쿠폰 계산 대신 단순 가격 정책으로 돌아서고, AI 토큰·구독권이 새 인기 상품으로 떠올랐다. 라이브커머스 스타 리자치는 30분 만에 AI 구독권 10만 개를 팔았고, 티몰의 토큰 카테고리 거래액은 행사 첫날 전월 대비 450% 늘었다. 포화된 내수 시장에서 소비자를 붙잡으려는 전략이자, AI를 일상 소비재로 대중화하려는 중국 AI 업체들의 공세다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Hero</span>
+                    <a href="https://scmp.com/tech/tech-trends/article/3373780/less-coupon-math-more-ai-whats-new-chinas-18th-singles-day" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🔧 하드웨어/기타</h2>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Google broadens its AI hardware portfolio with two new specialized chips</h3>
+                <p class="article-title-kr">구글, 특화 TPU 2종 추가… 엔비디아와 AI 칩 경쟁 격화</p>
+                <p class="article-summary">구글이 기밀 모델 학습용과 대용량 메모리용 등 쓰임새를 세분화한 텐서처리장치(TPU) 2종을 새로 내놨다. 블룸버그는 구글이 TPU 시스템 라인업을 넓혀 수천억 달러 규모 AI 칩 시장에서 엔비디아와의 경쟁 수위를 높이고 있다고 전했다. 엔비디아 경영 리스크가 부각된 시점이어서 대안 가속기에 대한 관심도 커지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch, Bloomberg</span>
+                    <a href="https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">‘Just personal matters’: Chinese GPU traders shrug off impact of Nvidia scandal</h3>
+                <p class="article-title-kr">中 GPU 상인들 &quot;황 스캔들은 개인 문제&quot;… 엔비디아 그래픽카드 값은 하락</p>
+                <p class="article-summary">중국 최대 전자상가의 GPU 유통상들은 젠슨 황 스캔들을 &#x27;개인적인 일&#x27;로 치부하며 엔비디아 칩 공급에 대한 자신감을 유지하고 있다. 미국 수출 통제 강화 논의가 커지는 가운데서도 현지 엔비디아 그래픽카드 가격은 오히려 내려가고 있다. 워싱턴의 정치적 파장과 중국 현장 수급 사이의 온도차를 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Hero</span>
+                    <a href="https://scmp.com/tech/big-tech/article/3373855/chinese-traders-still-confident-nvidia-gpu-access-amid-jensen-huang-scandal" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Pixel Tag, Google’s $30 Android-ready answer to Apple’s AirTag, is now available</h3>
+                <p class="article-title-kr">구글 &#x27;픽셀 태그&#x27; 30달러에 출시… 에어태그 대항마</p>
+                <p class="article-summary">구글이 안드로이드용 분실물 추적기 &#x27;픽셀 태그&#x27;를 30달러에 출시했다. 지난 8월 처음 공개된 제품으로, 구글의 위치 찾기 네트워크(Find Hub)와 UWB·블루투스를 활용한다. 삼성·모토로라 등 서드파티 트래커에 의존하던 안드로이드 진영이 애플 에어태그에 대응하는 자체 하드웨어를 갖추게 됐다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Featured, The Verge</span>
+                    <a href="https://techcrunch.com/2026/11/10/pixel-tag-googles-30-android-ready-answer-to-apples-airtag-is-now-available/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">‘Flying cars’ could launch in China next summer, maker of two-seat model says</h3>
+                <p class="article-title-kr">샤오펑 &quot;2인승 &#x27;플라잉카&#x27;, 내년 여름 中 운항 가능&quot;</p>
+                <p class="article-summary">중국 전기차 업체 샤오펑(XPeng)이 대당 약 30만 달러짜리 2인승 저고도 비행체가 내년 여름부터 운행에 들어갈 수 있다고 밝혔다. 우선 응급 서비스와 농촌 지역 레저용으로 쓰일 예정이다. 중국이 &#x27;저고도 경제&#x27;를 전략 산업으로 밀고 있어 상용화 속도가 서방보다 빠를 수 있다는 관측이 나온다.</p>
+                <div class="article-meta">
+                    <span class="source">Guardian Featured</span>
+                    <a href="https://www.theguardian.com/technology/2026/nov/10/flying-cars-china-next-summer-xpeng" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect</h3>
+                <p class="article-title-kr">뉴욕주 AI 안전법 시행… OpenAI·Anthropic 등록·사고 보고 의무화</p>
+                <p class="article-summary">뉴욕주가 대형 AI 개발사에 등록, 안전 관행 공개, 중대 사고 보고를 의무화한 AI 안전법의 집행 준비에 들어갔다. 위반 시 벌금이 부과된다. 같은 날 호주도 AI 규제기관 신설을 발표하면서, 주 정부와 각국 차원의 프런티어 AI 감독이 실제 집행 단계로 넘어가고 있다.</p>
+                <p class="pick-reason">선정 이유: 규제·정책 변화의 초기 신호 + Anthropic IPO 투자설명서상 규제 리스크와 직결 / 관심사: AI 인프라, 투자 관점 변화</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch</span>
+                    <a href="https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Japan’s Rapidus Is Said Likely to Miss Mass Production Deadline</h3>
+                <p class="article-title-kr">日 라피더스, 2나노 양산 목표 시한(2028년 3월) 놓칠 듯</p>
+                <p class="article-summary">일본 정부가 지원하는 반도체 기업 라피더스가 2028년 3월까지 최첨단 칩을 양산하겠다는 약속에서 일정이 뒤처져 기한을 지키기 어려울 수 있다고 블룸버그가 보도했다. 일본의 첨단 파운드리 부활 전략이 차질을 빚으면 TSMC·삼성전자 중심의 첨단 공정 구도가 더 굳어질 수 있다.</p>
+                <p class="pick-reason">선정 이유: 국가 주도 반도체 프로젝트의 조용한 차질 + 경쟁 구도 재편 / 관심사: 반도체 공급망, 한국 시장 연관성</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-11-10/japan-s-rapidus-is-said-likely-to-miss-mass-production-deadline" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Thailand Sets 70-Decibel Noise, Heat Limits for Data Centers</h3>
+                <p class="article-title-kr">태국, 데이터센터 소음 70dB·발열·용수 규제 도입</p>
+                <p class="article-summary">태국이 데이터센터에 소음(70데시벨), 열 배출, 용수 사용 기준을 새로 부과했다. AI 투자 붐으로 동남아 데이터센터가 빠르게 늘어나는 가운데 업계에 구체적인 환경 한도를 정한 첫 사례 중 하나다. 미국의 데이터센터 반대 정치 흐름이 동남아 규제로도 번지는 신호로, 입지 비용 상승 요인이 될 수 있다.</p>
+                <p class="pick-reason">선정 이유: 규제 변화의 초기 신호 + 대규모 AI 인프라 투자 지역 / 관심사: AI 인프라, 투자 관점 변화</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-11-10/thailand-sets-70-decibel-noise-heat-limits-for-data-centers" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 22건 | 섹션 6개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
