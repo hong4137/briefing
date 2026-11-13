@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엔비디아 스캔들, 러트닉 상무장관으로 번져 | 中 최강 AI, 금지 칩으로 학습 | ChatGPT 월렛 출시 | Jae's Briefing</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="date-badge">2026년 11월 14일 토요일</div>
+            <h1 class="title">엔비디아 스캔들, 러트닉 상무장관으로 번져 | 中 최강 AI, 금지 칩으로 학습 | ChatGPT 월렛 출시</h1>
+            <p class="summary">젠슨 황 사임 후폭풍이 행정부로 번졌다. 러트닉 상무장관은 아들들 회사의 엔비디아 이해관계와 메가스피드 수출통제 실패 책임론으로 상원 증언대에 서게 됐다. 중국 최첨단 AI 모델이 수출 금지된 엔비디아 칩으로 학습됐고, 앨리스 황이 세운 회사가 밀수 칩을 조달했다는 보도도 나왔다. 오픈AI는 AI 에이전트가 대신 결제하는 &#x27;ChatGPT 월렛&#x27;을 내놨고, 마이크로소프트는 24시간 이어진 글로벌 장애에 대해 사과했다.</p>
+        </header>
+
+        <section class="section top-section">
+            <h2 class="section-title">🔥 TOP Headlines</h2>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Lutnick faces questions over Nvidia spy scandal. His sons’ firm has deep ties to the chipmaker</h3>
+                <p class="article-title-kr">엔비디아 스캔들 불똥, 러트닉 상무장관으로… 베선트 &quot;상무부가 메가스피드 못 막았다&quot;</p>
+                <p class="article-summary">젠슨 황 사임 이후 의회와 행정부의 시선이 하워드 러트닉 상무장관에게 쏠렸다. 러트닉 아들들이 이끄는 캔터 피츠제럴드가 엔비디아와 깊은 금융 관계를 맺고 있다는 점이 다시 도마에 올랐고, 러트닉은 대중 칩 판매 문제로 상원 은행위원회에서 증언하기로 했다. 스콧 베선트 재무장관은 CNBC 인터뷰에서 &quot;여러 부처가 몇 달 전부터 메가스피드를 수출통제 명단(Entity List)에 올리자고 했다&quot;며 상무부 책임론을 제기했고, 크리스 쿤스 상원의원은 러트닉이 &quot;미국을 실망시켰다&quot;고 비판했다. 말레이시아도 메가스피드 현지 법인이 들여온 AI 칩이 해외로 재수출됐는지 조사를 강화했다. 트럼프 대통령은 러트닉에 대한 신임을 재확인했다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Tech Hero, Bloomberg, BBC, SCMP 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Export-banned Nvidia chips are behind China’s most powerful AI models — uh oh, Jensen!</h3>
+                <p class="article-title-kr">중국 최강 AI 모델, 수출 금지된 엔비디아 칩으로 학습… 앨리스 황 회사도 밀수 칩 조달</p>
+                <p class="article-summary">새 연구에 따르면 중국의 최첨단 AI 모델들이 수출이 금지된 엔비디아 칩으로 학습된 것으로 나타났다. 블룸버그는 입수 문서를 근거로, 스캔들 중심 인물 앨리스 황이 세운 중국 회사가 밀수된 AI 칩을 조달했고 이 칩이 싱가포르 메가스피드와 연결된 상하이 데이터센터에 설치됐다고 보도했다. CNBC는 앨리스 황이 엔비디아의 최대 중국 경쟁사 화웨이에 컴퓨팅 파워를 공급한 회사들의 지분도 보유했다고 전했다. 미 법무부는 그와 연관된 기업이 슈퍼마이크로 제품을 중국으로 빼돌렸는지도 들여다보고 있어, 수출통제 실효성 논란이 커지고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Hero, Bloomberg, CNBC Tech, Guardian 다매체 보도</span>
+                    <a href="https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">OpenAI launches ChatGPT Wallet, allowing its &#x27;dots&#x27; AI agents to make purchases for users</h3>
+                <p class="article-title-kr">오픈AI &#x27;ChatGPT 월렛&#x27; 출시… AI 에이전트가 대신 쇼핑하고 결제까지</p>
+                <p class="article-summary">오픈AI가 올해 내놓은 AI 에이전트 플랫폼 &#x27;닷츠(Dots)&#x27;에 결제 기능을 붙인 &#x27;ChatGPT 월렛&#x27;을 공개했다. 아메리칸익스프레스·체이스·마스터카드·비자 카드를 등록하면 에이전트가 사용자를 대신해 상품을 고르고 결제까지 끝낸다. 카드 보유자는 기존 카드 리워드를 그대로 받는다. 우선 미국의 18세 이상 ChatGPT Pro 구독자에게 제한적으로 배포한다. 에이전트 커머스를 둘러싼 결제망·빅테크 경쟁에 본격 불이 붙었다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Featured, TechCrunch Featured, The Verge, Bloomberg 다매체 보도</span>
+                    <a href="https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-hot">HOT</span>
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Microsoft &#x27;deeply sorry&#x27; for global outage after almost 24 hours of disruption</h3>
+                <p class="article-title-kr">MS, 24시간 글로벌 장애 끝에 &quot;깊이 사과&quot;… 원인은 해킹 아닌 잘못된 업데이트</p>
+                <p class="article-summary">거의 24시간 이어진 마이크로소프트 365 전 세계 장애가 복구 국면에 들어서자 MS가 공식 사과했다. 회사는 사이버공격이나 AI가 아니라 잘못된 업데이트와 서버 상태 점검 실패가 전 세계 서버를 다운시켰다고 설명했다. 영국에서는 병원·GP·학교·경찰이, 다른 나라에서는 법원과 정부 기관이 아웃룩·팀즈를 쓰지 못했다. 전문가들은 이번 사태가 아마존이나 크라우드스트라이크 장애보다 심각할 수 있다며, 소수 빅테크 의존 위험을 보여준 &#x27;경고&#x27;라고 평가했다.</p>
+                <div class="article-meta">
+                    <span class="source">BBC Hero, Wired, Guardian, Ars Technica, TechCrunch, Bloomberg 다매체 보도</span>
+                    <a href="https://bbc.com/news/articles/c6rrg51rkz09o" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🤖 AI/기술</h2>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Claude’s Duet agent is a little neurotic and surprisingly helpful</h3>
+                <p class="article-title-kr">Anthropic 소비자용 AI 에이전트 &#x27;Claude Duet&#x27; 사용기… &quot;조금 신경질적이지만 꽤 쓸모 있다&quot;</p>
+                <p class="article-summary">The Verge가 Anthropic의 소비자용 AI 에이전트 &#x27;Claude Duet&#x27;을 직접 써봤다. 코드를 쓰지 않는 일반 사용자에게도 에이전트가 쓸모 있다는 점을 보여주려는 제품으로, 리뷰 작성까지 돕겠다고 나설 만큼 적극적이다. 기자는 다소 과하게 확인을 구하는 &#x27;신경질적인&#x27; 면이 있지만 실제 업무에서는 의외로 도움이 됐다고 평가했다. IPO를 앞둔 Anthropic이 기업용을 넘어 소비자 시장까지 넓히고 있다는 신호다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Hero</span>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <h3 class="article-title">AI models cost more when you don’t use English</h3>
+                <p class="article-title-kr">영어가 아니면 AI 비용이 더 든다… 토크나이저가 만든 &#x27;비영어권 세금&#x27;</p>
+                <p class="article-summary">Rest of World는 같은 내용이라도 영어가 아닌 언어로 AI 모델을 쓰면 더 많은 토큰이 소모돼 비용이 올라간다고 짚었다. 토크나이저가 영어 중심으로 설계된 탓에 비영어권 사용자와 기업이 사실상 추가 요금을 내는 구조다. 한국어처럼 토큰 효율이 낮은 언어권의 AI 도입 비용과 형평성 문제를 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World Featured</span>
+                    <a href="https://restofworld.org/2026/ai-tokenizer-tax-non-english-languages-cost-inequity/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <h3 class="article-title">Disney Pivots to Embrace AI From Film to Parks</h3>
+                <p class="article-title-kr">디즈니, 영화부터 테마파크까지 AI 전면 도입으로 선회</p>
+                <p class="article-summary">디즈니가 핵심 자산인 지식재산(IP)은 지키면서 영화 제작부터 테마파크 운영까지 회사 전반에 AI를 넣고 있다. 그동안 생성형 AI 기업과 저작권 문제로 대립하던 할리우드 대표 기업이 활용 쪽으로 방향을 튼 것이다. 콘텐츠 업계의 AI 도입이 &#x27;방어&#x27;에서 &#x27;활용&#x27;으로 바뀌는 흐름을 보여준다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-11-13/disney-pivots-to-embrace-ai-from-film-to-parks" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">💰 경제/금융</h2>
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">Anthropic CEO Calls Computing Power Deepest Business Dilemma</h3>
+                <p class="article-title-kr">Anthropic IPO 6배 초과 청약… 아모데이 &quot;컴퓨팅 확보가 가장 큰 딜레마&quot;</p>
+                <p class="article-summary">다리오 아모데이 Anthropic CEO가 IPO를 앞둔 설명회에서 컴퓨팅 파워 확보를 회사의 가장 큰 사업적 고민으로 꼽았다. 블룸버그에 따르면 공모 주문이 배정 물량의 약 6배에 달해 사상 최대 규모 IPO가 될 가능성이 커졌다. 공동 주관사 골드만삭스는 공모 수수료에 더해 상장으로 생길 막대한 신규 자산의 관리까지 노리고 있다. 아모데이는 AI 에이전트가 &#x27;제멋대로 움직이게&#x27; 두지 않겠다는 원칙도 강조했다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC, CNBC Tech 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-11-13/anthropic-ceo-calls-computing-power-deepest-business-dilemma" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <h3 class="article-title">Cerebras surges 17% after beating on quarterly revenue and announcing Microsoft deal</h3>
+                <p class="article-title-kr">세레브라스, 실적 서프라이즈·MS 계약에 주가 17% 급등</p>
+                <p class="article-summary">AI 칩 업체 세레브라스가 시장 예상을 웃도는 분기 매출과 가이던스를 내놓으며 주가가 17% 뛰었다. 3분기 매출은 55% 늘었고 클라우드·서비스 매출은 세 배 이상 증가했다. 아마존·오라클에 이어 마이크로소프트와도 새 계약을 맺었다. 앤드루 펠드먼 CEO는 빠른 AI 추론 수요와 가격 결정력이 커지고 있다고 말했다. 엔비디아 경영 공백 속에 대안 가속기 진영이 힘을 받는 모습이다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Tech Featured, Bloomberg</span>
+                    <a href="https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <h3 class="article-title">Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year</h3>
+                <p class="article-title-kr">시스코, 실적·가이던스 상향… &quot;올해 AI 인프라 매출 두 배&quot;에도 주가는 하락</p>
+                <p class="article-summary">시스코가 시장 예상을 웃도는 분기 실적과 매출 전망을 내놓고 연간 가이던스를 올렸다. 이번 회계연도 AI 인프라 매출이 두 배로 늘 것이라고 밝혀 AI 붐이 네트워크 장비 수요로 이어지고 있음을 보여줬다. 다만 높아진 기대치를 넘지 못했다는 평가에 다음 날 주가는 하락했다. AI 초기 붐을 놓쳤던 시스코가 따라잡기에 속도를 내고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Tech Featured, Bloomberg</span>
+                    <a href="https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <h3 class="article-title">Nscale updates IPO prospectus that shows widening loss</h3>
+                <p class="article-title-kr">엔비디아 투자 네오클라우드 엔스케일, 상장 서류 수정… 적자 확대·부채 55억달러</p>
+                <p class="article-summary">엔비디아가 투자한 영국 네오클라우드 엔스케일이 미국 IPO를 위한 수정 증권신고서를 내며 적자가 커졌다고 공개했다. 블룸버그에 따르면 부채는 55억 달러로 크게 늘었고, 엔비디아 의존도도 기존 공시보다 높으며, 추가 자금이 필요한 상황이다. 전날 네비우스의 주가 급락에 이어 네오클라우드 업종의 재무 부담이 다시 부각됐다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC Tech Featured, Bloomberg</span>
+                    <a href="https://www.cnbc.com/2026/11/12/nscale-updates-ipo-prospectus-that-shows-widening-loss.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">Fed Sees Risks Tied to Elevated Asset Prices Partly Driven by AI</h3>
+                <p class="article-title-kr">연준 &quot;AI가 끌어올린 자산가격이 금융 취약점&quot;… 생산자물가 연 6.5%로 4년 만에 최고</p>
+                <p class="article-summary">미 연준이 반기 금융안정보고서에서 AI와 높은 자산 밸류에이션에서 비롯된 잠재적 취약점을 경고했다. 같은 날 발표된 10월 생산자물가지수(PPI)는 전월 대비 0.3% 올라 연간 상승률이 6.5%로 4년 만에 최고를 기록했다. 굴스비 시카고 연은 총재는 연준이 인플레이션 대응에서 &quot;분명히 할 일이 남았다&quot;고 말했고, 국채 금리는 금리 인상 베팅이 커지며 올랐다. AI 투자 사이클에 금리 부담이 겹치고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, CNBC</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-11-13/fed-sees-risks-tied-to-elevated-asset-prices-partly-driven-by-ai" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">U.S. seizes $1.2 billion in cryptocurrency stolen from Binance</h3>
+                <p class="article-title-kr">美 법무부, 바이낸스 해킹 탈취 암호화폐 12억달러 압수… &quot;북한 정권 자금줄 차단&quot;</p>
+                <p class="article-summary">미 법무부가 63억 달러 규모 바이낸스 해킹으로 도난당한 암호화폐 중 12억 달러를 압수했다. 법무부는 이번 조치가 대규모 암호화폐 탈취로 정권 자금을 대려는 북한의 시도를 겨냥한 것이라고 밝혔다. 브라이언 암스트롱 코인베이스 CEO는 해킹 이후 첫 방송 인터뷰에서 보안과 &#x27;에이전트 금융&#x27;의 미래를 언급했다.</p>
+                <div class="article-meta">
+                    <span class="source">CNBC, CNBC Tech</span>
+                    <a href="https://www.cnbc.com/2026/11/13/us-seizes-binance-hack-crypto.html" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">📱 플랫폼/정책</h2>
+            <article class="article-card">
+                <h3 class="article-title">Kalshi ditches Trump Jr. as advisor; CEO admitted &quot;optics&quot; weren&#x27;t good</h3>
+                <p class="article-title-kr">예측시장 칼시, 트럼프 주니어 고문직 정리… 몸값 650억달러 추가 투자 협상</p>
+                <p class="article-summary">예측시장 플랫폼 칼시가 도널드 트럼프 주니어를 고문직에서 내보냈다. 트럼프 주니어는 지분을 받고 칼시에 자문했는데, 그사이 트럼프 행정부가 칼시 관련 소송에서 칼시 편을 들어 이해충돌 논란이 일었다. CEO는 &#x27;모양새가 좋지 않았다&#x27;고 인정했다. 한편 블룸버그에 따르면 칼시는 기업가치 400억 달러 투자를 마친 지 몇 주 만에 650억 달러 가치로 추가 투자를 협상 중이다.</p>
+                <div class="article-meta">
+                    <span class="source">Ars Technica, CNBC, Bloomberg 다매체 보도</span>
+                    <a href="https://arstechnica.com/tech-policy/2026/11/trump-jr-out-as-kalshi-advisor-after-his-firms-big-investment-in-polymarket/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <h3 class="article-title">Meta discussed attacking Jonathan Haidt — now even his haters are annoyed</h3>
+                <p class="article-title-kr">메타, 비판자 조너선 하이트 공격 계획 논의 드러나… 반대 진영까지 등 돌려</p>
+                <p class="article-summary">메타가 3년 전 &#x27;불안 세대&#x27; 저자 조너선 하이트에 대한 여론을 뒤집으려는 계획을 검토했다는 사실이 지난달 법원 문서로 드러났다. 이 일은 역효과를 냈다. 하이트의 청소년 SNS 규제론을 비판하던 연구자들까지 메타에 분노하고 있다. 청소년 보호 소송과 규제 국면에서 메타의 신뢰도에 또 하나의 부담이 생겼다.</p>
+                <div class="article-meta">
+                    <span class="source">The Verge Featured</span>
+                    <a href="https://www.theverge.com/policy/1032645/jonathan-haidt-critics-response-meta" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🔧 반도체/하드웨어</h2>
+            <article class="article-card">
+                <span class="badge badge-update">UPDATE</span>
+                <h3 class="article-title">How Jensen Huang’s exit from Nvidia impacts China’s AI supply chain</h3>
+                <p class="article-title-kr">젠슨 황 퇴진이 중국·아시아 AI 공급망에 미칠 영향… 엔비디아 &#x27;공급망 장악력&#x27; 시험대</p>
+                <p class="article-summary">Rest of World와 SCMP는 황의 퇴진이 중국 AI 칩 공급망과 엔비디아의 협력사 장악력을 흔들 수 있다고 분석했다. 황은 개인 관계를 바탕으로 대만·아시아 공급망을 조율하고 AI 인프라 투자 자금줄 역할을 해왔기 때문이다. CNBC는 애널리스트 대부분이 아시아 칩 업체들에 단기 충격은 제한적일 것으로 본다고 전했다. 반면 대중 수출통제의 최대 반대자였던 황이 빠지면서 규제가 강화되고 중국의 반도체 자립이 빨라질 수 있다는 관측도 나온다.</p>
+                <div class="article-meta">
+                    <span class="source">Rest of World Hero, SCMP, CNBC Tech, Bloomberg 다매체 보도</span>
+                    <a href="https://restofworld.org/2026/jensen-huang-nvidia-exit-china-ai-chip-impact/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <h3 class="article-title">SMIC sees AI computing crunch until 2028 as Nvidia heat risks tighter chip curbs</h3>
+                <p class="article-title-kr">중국 SMIC &quot;AI 연산 부족 2028년까지&quot;… 엔비디아 사태로 수출통제 강화 우려</p>
+                <p class="article-summary">중국 최대 파운드리 SMIC는 중국 내 AI 연산 능력 부족이 2028년까지 이어질 것으로 내다봤다. 기업 수요가 급증하는데 엔비디아 스캔들로 미국의 칩 수출통제가 더 조여질 수 있어서다. 이는 중국 자국산 AI 칩과 파운드리 수요를 더 밀어 올리는 요인이다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Featured</span>
+                    <a href="https://scmp.com/tech/big-tech/article/3374305/chinas-smic-sees-ai-computing-crunch-until-2028-nvidia-heat-risks-tighter-chip-curbs" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-new">NEW</span>
+                <h3 class="article-title">China could cap rare earths sales if US expands chip curbs over Nvidia: analysts</h3>
+                <p class="article-title-kr">&quot;美가 엔비디아 사태로 칩 규제 넓히면 中은 희토류로 맞불&quot;… 애널리스트 경고</p>
+                <p class="article-summary">애널리스트들은 미국이 엔비디아 스캔들을 계기로 대중 칩 수출통제를 넓히면 중국이 희토류 수출 제한으로 맞설 수 있다고 내다봤다. 트럼프-시진핑 정상회담을 앞두고 반도체와 핵심 광물이 다시 협상 카드로 떠오르는 모양새다. 희토류 공급에 기대는 한국 반도체·배터리 업계에도 변수가 될 수 있다.</p>
+                <div class="article-meta">
+                    <span class="source">SCMP Featured</span>
+                    <a href="https://scmp.com/economy/global-economy/article/3374328/china-could-tighten-rare-earths-exports-if-us-escalates-chip-curbs-over-nvidia-analysts" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <h3 class="article-title">Nvidia Partner Hon Hai Beats Profit Estimates on AI, iPhone Duo</h3>
+                <p class="article-title-kr">폭스콘, AI 서버·아이폰 듀오 호조로 분기 이익 예상치 상회</p>
+                <p class="article-summary">엔비디아와 애플의 핵심 협력사 훙하이정밀(폭스콘)이 시장 예상을 웃도는 분기 이익을 냈다. AI 서버 붐과 2000달러짜리 폴더블 &#x27;아이폰 듀오&#x27;의 탄탄한 소비자 수요가 실적을 끌어올렸다. The Verge 리뷰에서는 아이폰 듀오에 대한 평가가 엇갈렸지만, 공급망 실적에는 이미 효과가 나타나고 있다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, The Verge</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-11-12/nvidia-partner-hon-hai-beats-profit-estimates-on-ai-iphone-duo" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <h3 class="article-title">Ahead of ‘Grand Theft Auto VI,’ Rockstar Votes on Unions</h3>
+                <p class="article-title-kr">&#x27;GTA 6&#x27; 출시 앞두고 락스타 영국 직원 1600여명 노조 결성 투표</p>
+                <p class="article-summary">&#x27;GTA 6&#x27; 출시를 앞두고 락스타게임즈 영국 사무소 직원 1600여 명이 노조 결성 여부를 투표하고 있다. 개발에 13년, 10억 달러가 들어간 대작을 앞두고 게임 업계의 고강도 노동 문제가 드러난 것이다. 트위치 CEO는 GTA 6 출시가 플랫폼 최대의 순간이 될 수 있다고 말했다.</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg, BBC, The Verge 다매체 보도</span>
+                    <a href="https://www.bloomberg.com/news/newsletters/2026-11-13/ahead-of-grand-theft-auto-vi-rockstar-votes-on-unions" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section picks-section">
+            <h2 class="section-title">💎 Claude's Pick</h2>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">Samsung Is in Talks to Acquire Data Center Cooling Firm Modine</h3>
+                <p class="article-title-kr">삼성전자, 美 데이터센터 냉각 업체 모딘 인수 협상</p>
+                <p class="article-summary">블룸버그에 따르면 삼성전자가 데이터센터 냉각 시스템 업체 모딘 매뉴팩처링 인수를 협상하고 있다. 삼성은 지난해 유럽 최대 공조 업체 플랙트그룹을 인수하며 데이터센터 냉각 사업을 키워왔다. 성사되면 AI 데이터센터 열관리 시장에서 입지가 크게 넓어진다. (현재까지 블룸버그 단독 보도)</p>
+                <p class="pick-reason">선정 이유: 대기업의 조용한 움직임 + AI 인프라 주변부(냉각) 시장 재평가 / 관심사: 한국 시장 연관성, AI/기술 인프라</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-11-12/samsung-is-in-talks-to-acquire-data-center-cooling-firm-modine" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">DeepX Bets $100 Million on New AI Chip Using Samsung Technology</h3>
+                <p class="article-title-kr">韓 딥엑스, 삼성 2나노로 차세대 AI 칩 개발에 1억달러 이상 투입</p>
+                <p class="article-summary">한국 AI 반도체 스타트업 딥엑스가 삼성전자 파운드리의 2나노 공정으로 차세대 AI 칩을 개발하는 데 1억 달러 넘게 쓰기로 했다. 엔비디아 경영 공백 속에 온디바이스·엣지 AI 가속기 진영이 투자를 늘리고 있고, 삼성 파운드리 2나노에는 의미 있는 국내 고객 확보 사례다.</p>
+                <p class="pick-reason">선정 이유: 신생 기업 대형 투자 + 삼성 파운드리 2나노 고객 확보 신호 / 관심사: 반도체 공급망, 한국 시장 연관성</p>
+                <div class="article-meta">
+                    <span class="source">Bloomberg</span>
+                    <a href="https://www.bloomberg.com/news/articles/2026-11-13/deepx-bets-100-million-on-new-ai-chip-using-samsung-technology" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+            <article class="article-card">
+                <span class="badge badge-pick">PICK</span>
+                <h3 class="article-title">AI agent startup LangChain hits $3B valuation</h3>
+                <p class="article-title-kr">AI 에이전트 인프라 랭체인, 기업가치 30억달러 돌파… 고객사 7000곳</p>
+                <p class="article-summary">AI 에이전트 개발 프레임워크로 출발한 랭체인이 기업가치 30억 달러를 인정받았다. 모델과 플랫폼을 가리지 않는 에이전트 관리 도구 &#x27;랭스미스&#x27; 고객은 7000곳에 이른다. ChatGPT 월렛, Claude Duet처럼 에이전트가 소비자 영역까지 넓어지면서 에이전트 운영·관측 인프라가 하나의 시장으로 자리 잡고 있다.</p>
+                <p class="pick-reason">선정 이유: 에이전트 운영 인프라라는 새 시장 재평가 + 투자자 반향 / 관심사: AI/기술 인프라, 데이터/자동화</p>
+                <div class="article-meta">
+                    <span class="source">TechCrunch Ranking</span>
+                    <a href="https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/" target="_blank">원문 보기 →</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+            <p>기사 23건 | 섹션 6개 | Pick 3건</p>
+            <p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+        </footer>
+    </div>
+</body>
+</html>
