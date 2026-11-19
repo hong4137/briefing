@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anthropic 나스닥 데뷔 첫날 34% 상승, 나델라 6만 명 희망퇴직 이유, 메타 Muse 개인정보 노출 | Jae's Briefing</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.date-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.summary {
+    color: #a0a0a0;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #667eea;
+    color: #fff;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.article-title-kr {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.source {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.article-meta a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.article-meta a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.badge-hot {
+    background: linear-gradient(135deg, #ff3b3b, #ff8c42);
+    color: #fff;
+}
+
+.badge-breaking {
+    background: #ff3b3b;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.badge-update {
+    background: #22c55e;
+    color: #fff;
+}
+
+.badge-new {
+    background: #4a9eff;
+    color: #fff;
+}
+
+.badge-pick {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.top-section .article-card {
+    background: rgba(255, 59, 59, 0.05);
+    border-color: rgba(255, 59, 59, 0.2);
+}
+
+.picks-section .article-card {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.pick-reason {
+    font-size: 0.85rem;
+    color: #a855f7;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.market-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.market-label {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.market-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.market-change {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.market-change.positive {
+    color: #22c55e;
+}
+
+.market-change.negative {
+    color: #ff3b3b;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .article-card {
+        padding: 20px;
+    }
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+</style>
+
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="date-badge">2026년 11월 20일 금요일</div>
+<h1 class="title">Anthropic 나스닥 데뷔, 첫 거래 111.5달러 | 나델라 &quot;6만 명 희망퇴직은 AI 때문&quot; | 메타 AI 에이전트 Muse 개인정보 노출</h1>
+<p class="summary">Anthropic이 사상 최대인 1,073억 달러를 조달하며 나스닥에 상장해 공모가보다 34% 높은 111.5달러에 첫 거래를 시작했다. 사티아 나델라 MS CEO는 직원 6만 명에게 희망퇴직을 제안한 배경으로 AI를 꼽았고, 메타의 AI 에이전트 Muse는 남의 개인정보를 노출한다는 내부 보고로 도마에 올랐다. 팔로알토의 45억 달러 AI 인수, 구글 Gemini의 맥 제어 기능, IEA의 데이터센터 전력 2배 전망도 나왔다.</p>
+</header>
+<section class="section top-section">
+<h2 class="section-title">🔥 TOP Headlines</h2>
+<article class="article-card">
+    <span class="badge badge-update">UPDATE</span>
+    <h3 class="article-title">Biggest-ever IPO gives Anthropic war chest to undercut Chinese AI rivals</h3>
+    <p class="article-title-kr">🔁 Anthropic, 사상 최대 IPO로 나스닥 데뷔… 첫 거래가 111.5달러</p>
+    <p class="article-summary">Anthropic이 19일(현지) 나스닥에 티커 &#x27;ANT&#x27;로 상장해 공모가 83달러보다 약 34% 높은 111.5달러에 첫 거래를 시작했다. 공모와 사모 배정을 합쳐 1,073억 달러를 조달해 스페이스X를 넘어선 사상 최대 기업공개가 됐다. 장 초반 급등한 뒤 상승폭을 상당 부분 반납하는 등 첫날 변동성이 컸고, 개인 투자자들이 매수와 매도 양쪽으로 몰렸다. SCMP는 확보한 자금이 중국 경쟁사와의 가격 경쟁에서 실탄이 될 것이라고 분석했다. 다리오 아모데이 CEO는 개장 연설에서 사업·정치적 압력과 관계없이 AI 개발 속도를 조절하겠다는 원칙을 다시 강조했다.</p>
+    <div class="article-meta">
+        <span class="source">SCMP Hero, TechCrunch, The Verge, Bloomberg, CNBC, Guardian, BBC, Wired 다매체 보도</span>
+        <a href="https://scmp.com/tech/big-tech/article/3375005/anthropics-record-us813-billion-ipo-arms-us-ai-giant-price-war-chinese-rivals" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-hot">HOT</span>
+    <h3 class="article-title">Musk says Jensen Huang is irreplaceable, regrets midterm spending</h3>
+    <p class="article-title-kr">머스크 &quot;젠슨 황은 대체 불가… 중간선거 지출은 바보짓&quot;</p>
+    <p class="article-summary">일론 머스크가 뉴욕타임스 딜북 서밋에서 젠슨 황의 퇴진을 &#x27;마이클 조던을 팀에서 쫓아내는 것&#x27;에 비유하며, 황이 미국에 불충하다고 생각하지 않는다고 말했다. 공화당을 밀어준 기록적인 중간선거 지출에 대해서는 &quot;꽤 바보 같았다&quot;고 후회했고, 자신은 &#x27;MAGA&#x27;가 아니라며 트럼프 진영과 거리를 뒀다. 우크라이나의 스타실드 속도 제한 논란을 두고는 젤렌스키 대통령이 &quot;항상 진실하지는 않다&quot;고 반박했다. SpaceX와 테슬라의 사업이 겹치는 문제도 언급했다.</p>
+    <div class="article-meta">
+        <span class="source">CNBC Hero, TechCrunch, Guardian, BBC, Bloomberg, The Verge 다매체 보도</span>
+        <a href="https://www.cnbc.com/2026/11/19/elon-musk-jensen-huang-midterms.html" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-hot">HOT</span>
+    <h3 class="article-title">Microsoft CEO Satya Nadella explains why he asked 60K employees to quit</h3>
+    <p class="article-title-kr">나델라 &quot;6만 명에 희망퇴직 제안한 이유는 AI&quot;… &quot;나는 AGI 신봉자&quot;</p>
+    <p class="article-summary">사티아 나델라 마이크로소프트 CEO가 지난 10월 대규모 해고 대신 직원 6만 명에게 희망퇴직을 제안한 이유를 설명했다. 핵심은 AI지만, 단순히 사람을 AI로 대체하는 것과는 다른 맥락이라는 설명이다. 그는 AI가 경제와 정치 구조를 크게 바꿀 수 있다는 점에서 &#x27;AGI-pilled(AGI 신봉자)&#x27;가 됐다고 했고, AI 에이전트가 광고 기반 웹 경제를 뒤흔들 것으로 내다봤다. 최근 아웃룩 장애는 &#x27;퍼펙트 스톰&#x27;이었다고 해명하면서도 상당수 핵심 인프라가 &#x27;패치할 수 없는&#x27; 상태라고 경고했다. MS 주가는 11월 4일 사상 최고가 이후 9% 가까이 떨어졌다.</p>
+    <div class="article-meta">
+        <span class="source">TechCrunch Hero, The Verge, CNBC 다매체 보도</span>
+        <a href="https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-hot">HOT</span>
+    <h3 class="article-title">Palo Alto inks $4.5 billion deal for AI startup Applied Compute, shares pop 7% on earnings</h3>
+    <p class="article-title-kr">팔로알토, AI 스타트업 Applied Compute 45억 달러에 인수… 실적 호조로 7% 상승</p>
+    <p class="article-summary">팔로알토네트웍스가 AI 모델 플랫폼 Applied Compute를 전액 주식 교환 방식으로 45억 달러에 인수한다. 오픈웨이트 AI 모델의 보안 수요를 겨냥한 베팅이다. 함께 발표한 1분기 실적도 시장 예상을 웃돌아 주가가 7% 올랐다. AI를 이용한 공격에 맞서는 보안 도구 수요를 잡으려고 인수를 이어 온 전략의 연장선이다.</p>
+    <div class="article-meta">
+        <span class="source">CNBC Tech Featured, Bloomberg, CNBC Top 다매체 보도</span>
+        <a href="https://www.cnbc.com/2026/11/18/palo-alto-networks-panw-q1-2027-earnings-.html" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-hot">HOT</span>
+    <h3 class="article-title">Meta&#x27;s AI agent Muse is mixing up conversations and exposing private data, report says</h3>
+    <p class="article-title-kr">메타 AI 에이전트 &#x27;Muse&#x27;, 대화 뒤섞고 남의 개인정보 노출</p>
+    <p class="article-summary">메타의 AI 에이전트 Muse가 대화를 뒤섞고 다른 사람의 개인정보를 보여 준다는 내부 보고가 나왔다. 직원들은 Muse가 요청한 적 없는 육아 문의·커리어 조언·주문 내역, 본인 것이 아닌 은행 잔액까지 띄웠다고 전했다. ZDNet에 따르면 허락 없이 에어비앤비를 예약하고 비공개 메시지에 접근한 사례도 있었다. 메타는 화면에 나온 은행·비트코인 잔액은 실제 데이터가 아니라고 해명했지만, 사내 채팅에서는 불안이 커지고 있다.</p>
+    <div class="article-meta">
+        <span class="source">TechCrunch Featured, ZDNet Featured, Ars Technica 다매체 보도</span>
+        <a href="https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-hot">HOT</span>
+    <h3 class="article-title">Google gives Gemini the ability to use your Mac for you</h3>
+    <p class="article-title-kr">구글 Gemini, 맥을 직접 조작하는 &#x27;컴퓨터 사용&#x27; 기능 탑재</p>
+    <p class="article-summary">구글이 macOS용 Gemini 앱에 컴퓨터 사용 기능을 넣었다. 로컬 파일 정리, 양식 작성처럼 데스크톱 앱과 웹을 오가는 여러 단계의 작업을 대신 처리한다. 블룸버그는 다른 AI 비서들이 이미 제공하던 기능을 따라잡은 것으로, 시리 고도화가 늦은 애플에 대한 압박이 커졌다고 평가했다.</p>
+    <div class="article-meta">
+        <span class="source">TechCrunch Featured, The Verge, Bloomberg 다매체 보도</span>
+        <a href="https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🤖 AI/기술</h2>
+<article class="article-card">
+    <h3 class="article-title">Google&#x27;s AI feature in Search gets its own incognito mode</h3>
+    <p class="article-title-kr">구글 AI 모드에 &#x27;시크릿 모드&#x27;… 홈페이지에는 AI 대화 사이드바</p>
+    <p class="article-summary">구글이 검색의 AI 모드에 &#x27;임시 스레드&#x27; 기능을 도입했다. 이 기능으로 나눈 대화는 검색 기록에 남지 않고 계정과 연결되지 않으며 이후 추천에도 반영되지 않는다. 구글은 동시에 홈페이지에 AI 대화를 이어갈 수 있는 접이식 사이드바를 넣어 AI 검색을 전면에 내세웠다.</p>
+    <div class="article-meta">
+        <span class="source">TechCrunch, ZDNet, The Verge 다매체 보도</span>
+        <a href="https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <h3 class="article-title">Four Maryland high school students sue after AI mistakes Doritos bag for gun</h3>
+    <p class="article-title-kr">AI 총기 감지가 과자 봉지를 총으로 오인… 美 고교생 4명 소송</p>
+    <p class="article-summary">미국 메릴랜드주 고교생 4명이 AI 총기 감지 시스템이 도리토스 과자 봉지를 총으로 잘못 인식하는 바람에 무장 경찰에 수갑이 채워진 채 구금됐다며 학교와 경찰을 상대로 소송을 냈다. 사건은 약 1년 전, 미식축구 선수인 학생들이 귀가 차량을 기다리던 중 벌어졌다. 소장에 따르면 이 학군의 AI 총기 경보 가운데 99% 이상이 오탐이었다.</p>
+    <div class="article-meta">
+        <span class="source">Guardian Ranking, Ars Technica</span>
+        <a href="https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">💰 경제/금융</h2>
+<article class="article-card">
+    <h3 class="article-title">Simon Jack: Can Anthropic&#x27;s record-breaking IPO stop the AI bubble bursting?</h3>
+    <p class="article-title-kr">Anthropic의 기록적 IPO, AI 거품 붕괴를 막을 수 있을까</p>
+    <p class="article-summary">BBC 비즈니스 에디터 사이먼 잭은 Anthropic이 상장과 함께 미국 시가총액 상위 10위권에 들 것으로 보이지만 앞날은 불확실하다고 짚었다. 가디언 칼럼니스트 닐스 프래틀리도 2조 달러 가치가 정당한지 물으며 1990년대 말 닷컴 버블을 떠올렸다. 와이어드는 안전 우선 전략과 데이터센터에 대한 대중의 반감을 성장의 변수로 꼽았고, TechCrunch는 막대한 컴퓨팅 약정이 AI &#x27;순환 금융&#x27; 구조를 시험대에 올린다고 분석했다.</p>
+    <div class="article-meta">
+        <span class="source">BBC Hero, Guardian, Wired, TechCrunch 다매체 보도</span>
+        <a href="https://www.bbc.com/news/articles/cj4gnpzll020o" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <h3 class="article-title">Alibaba accelerates pivot to in-house chips after reporting jump in sales</h3>
+    <p class="article-title-kr">알리바바 매출 10% 증가… 자체 AI 칩 전환 가속</p>
+    <p class="article-summary">알리바바 매출이 시장 예상을 조금 웃도는 10% 증가를 기록했다. 중국 AI 개발 붐에 컴퓨팅을 공급하는 클라우드 사업이 성장을 이끌었다. SCMP는 알리바바가 자체 칩으로의 전환에 속도를 내고 있다고 전했다. 다만 블룸버그는 미국이 데이터센터 칩 접근을 더 조이면서 알리바바가 AI 사업 계획을 실현할 수 있을지 압박이 커지고 있다고 지적했다.</p>
+    <div class="article-meta">
+        <span class="source">SCMP Featured, Bloomberg</span>
+        <a href="https://scmp.com/tech/big-tech/article/3375093/alibabas-ai-bet-paying-cloud-services-drive-10-revenue-jump" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <h3 class="article-title">AI demand will push up interest rates around the world, IMF head warns</h3>
+    <p class="article-title-kr">IMF 총재 &quot;AI 수요가 세계 금리 끌어올릴 것&quot;</p>
+    <p class="article-summary">크리스탈리나 게오르기에바 IMF 총재가 APEC 회의에서 폭발적인 AI 수요 때문에 주요 중앙은행들이 금리를 올리게 될 것이라고 경고했다. 각국이 기술 확산에 대비해야 한다며 &quot;머뭇거리면 진다&quot;고도 했다. 블룸버그 인터뷰에서는 AI 관련 시장이 &quot;조금 더&quot; 조정받을 수 있고 부채 위험이 커졌다고 말했다.</p>
+    <div class="article-meta">
+        <span class="source">Guardian Featured, Bloomberg</span>
+        <a href="https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🏛️ 정책/보안</h2>
+<article class="article-card">
+    <h3 class="article-title">Russian national charged with spying on Silicon Valley tech and defense firm</h3>
+    <p class="article-title-kr">러시아 요원, 팔란티어 직원 몰래 추적… 美 검찰 기소</p>
+    <p class="article-summary">미국 검찰이 팔란티어 직원 정보를 은밀히 수집하려 한 혐의로 25세 러시아 국적자를 외국 대리인 혐의로 기소했다. 그는 실리콘밸리 기술·방산 기업 직원들을 커피숍에서 미행하고 &#x27;공격적인&#x27; 차량 추격까지 벌인 것으로 알려졌다.</p>
+    <div class="article-meta">
+        <span class="source">Guardian Featured, Ars Technica, Bloomberg 다매체 보도</span>
+        <a href="https://www.theguardian.com/technology/2026/nov/18/russian-national-spying-silicon-valley" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-update">UPDATE</span>
+    <h3 class="article-title">Hacks, AI or just overdue updates - why have there been so many outages?</h3>
+    <p class="article-title-kr">🔁 잇단 IT 장애, 해킹이 아니라 &#x27;AI발 패치 압박&#x27; 탓?</p>
+    <p class="article-summary">미국 정부가 연쇄 장애는 서로 관련이 없다고 밝힌 뒤에도 원인을 둘러싼 분석이 이어지고 있다. BBC는 해킹, AI, 밀린 업데이트 가운데 무엇이 원인인지 짚었다. 블룸버그는 보안 전문가들을 인용해, AI로 취약점을 빠르게 찾아 서둘러 고치는 과정이 오히려 장애를 늘리고 있으며 앞으로도 이어질 것이라고 전했다. 초당적 상원의원 2명은 국가정보국장이자 AI 총괄인 제이 클레이턴에게 인프라 취약점을 찾아 고치라고 촉구했다.</p>
+    <div class="article-meta">
+        <span class="source">BBC Featured, Bloomberg, Guardian, Ars Technica 다매체 보도</span>
+        <a href="https://www.bbc.com/news/articles/c6z0kly2lll7o" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <h3 class="article-title">Amazon launches in-app push against Mamdani-backed delivery bill in New York City</h3>
+    <p class="article-title-kr">아마존, 앱 알림으로 뉴욕시 &#x27;배달보호법&#x27; 반대 여론전</p>
+    <p class="article-summary">아마존이 뉴욕시 일부 이용자에게 푸시 알림과 홈 배너를 띄워 &#x27;배달보호법(Delivery Protection Act)&#x27;이 통과되면 주문당 최대 5달러가 더 붙을 수 있다고 경고하고 있다. 조란 맘다니 뉴욕시장과 팀스터스 등 노동단체가 지지하는 법안이다. 아마존은 이 법안을 막으려고 대대적인 로비를 벌여 왔다.</p>
+    <div class="article-meta">
+        <span class="source">CNBC Tech Featured, The Verge</span>
+        <a href="https://www.cnbc.com/2026/11/19/amazon-nyc-delivery-protection-act.html" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <h3 class="article-title">Even His Own Officials Don&#x27;t Think Trump&#x27;s China Trip Will Lead to Progress on AI</h3>
+    <p class="article-title-kr">트럼프 &quot;강한 AI 규제는 산업 질식&quot;… 美 관리들도 中 순방 AI 성과엔 회의적</p>
+    <p class="article-summary">트럼프 대통령이 AI, 그의 표현으로는 &#x27;초지능&#x27;을 &#x27;강하게&#x27; 규제하면 발전을 질식시킬 것이라며 AI 규제에 반대했다. 그러면서도 미국은 첨단 AI 기술 접근을 막는 새 규제를 내놓고 있다. 와이어드에 따르면 행정부 관리들조차 이번 중국 방문에서 AI 분야 진전은 기대하지 않는다. 엔비디아 스캔들의 여파로 AI 협상 자체가 어려워졌다는 것이다.</p>
+    <div class="article-meta">
+        <span class="source">Wired Featured, Bloomberg</span>
+        <a href="https://www.wired.com/story/administration-officials-dont-think-much-ai-progress-will-come-of-trumps-china-visit/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+</section>
+<section class="section">
+<h2 class="section-title">🔧 하드웨어/인프라</h2>
+<article class="article-card">
+    <h3 class="article-title">Data center electricity use could double by 2030, IEA says</h3>
+    <p class="article-title-kr">IEA &quot;데이터센터 전력 2030년까지 2배… 탄소 배출 70% 증가&quot;</p>
+    <p class="article-summary">국제에너지기구(IEA)에 따르면 AI 붐으로 전 세계 데이터센터의 전력 사용량이 2030년까지 두 배로 늘 수 있다. 미국과 중국이 AI 성장을 위해 화석연료에 기대면서 같은 기간 데이터센터의 탄소 배출은 70% 늘어날 전망이다. 각국 전력망에 걸리는 부담도 커지고 있다.</p>
+    <div class="article-meta">
+        <span class="source">CNBC Tech Featured, Guardian</span>
+        <a href="https://www.cnbc.com/2026/11/19/data-center-electricity-demand-iea.html" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <h3 class="article-title">More China ties? Nvidia faces questions on former No 3 after short seller report</h3>
+    <p class="article-title-kr">공매도 업체, 엔비디아 전 3인자의 중국 관계 의혹 제기… AMD도 공매도 리포트에 하락</p>
+    <p class="article-summary">SCMP에 따르면 공매도 업체 머디워터스가 엔비디아 전 3인자 임원의 중국 관계에 의문을 제기했다. 젠슨 황 스캔들로 중국 연계 의혹이 이어지는 가운데 나온 리포트다. 같은 날 AMD 주가도 자사 펌웨어가 블랙리스트에 오른 중국 기업에서 발견됐다는 한 공매도 업체의 주장에 하락했다.</p>
+    <div class="article-meta">
+        <span class="source">SCMP Hero, CNBC Tech</span>
+        <a href="https://scmp.com/tech/big-tech/article/3374920/nvidia-faces-questions-over-former-no-3s-china-ties-after-short-seller-report" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <h3 class="article-title">Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says</h3>
+    <p class="article-title-kr">美 상무부, 中 기업에 AI 칩 87만9천 개 판매 승인… 의회는 수출 통제 강화 압박</p>
+    <p class="article-summary">브라이언 마스트 하원의원은 상무부가 중국 기업에 AI 칩 87만9천 개 이상의 판매를 승인했다고 밝혔다. 젠슨 황 스캔들 이후 의회는 대중 칩 수출 통제를 강화하는 입법을 밀어붙이고 있다. 의회 자문위원회는 중국군이 AI 역량 강화를 위해 엔비디아 첨단 칩을 확보하려 한다는 보고서를 냈다.</p>
+    <div class="article-meta">
+        <span class="source">CNBC Tech Hero</span>
+        <a href="https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <h3 class="article-title">Intel signs first external customer for advanced 18A chips</h3>
+    <p class="article-title-kr">인텔, 18A 공정 첫 외부 고객 확보</p>
+    <p class="article-summary">립부 탄 인텔 CEO가 최첨단 18A 공정의 첫 외부 고객과 계약했다고 밝혔다. 18A는 인텔이 TSMC·삼성전자와 파운드리 경쟁을 하려고 내세운 공정이다. 외부 고객 확보는 인텔 파운드리 회생의 핵심 과제로 꼽혀 왔다.</p>
+    <div class="article-meta">
+        <span class="source">CNBC Tech Featured</span>
+        <a href="https://www.cnbc.com/2026/11/18/intel-first-18a-foundry-customer.html" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <h3 class="article-title">Blue Origin will launch Google&#x27;s AI server satellites in 2029</h3>
+    <p class="article-title-kr">구글, 우주 AI 서버 위성 2029년 블루오리진 로켓으로 발사</p>
+    <p class="article-summary">구글이 TPU를 실은 AI 서버 위성을 2029년 1분기 블루오리진의 뉴글렌 로켓으로 쏘아 올린다. 우주에 AI 컴퓨팅을 띄우는 &#x27;프로젝트 선캐처&#x27;의 일환이다. 아르스테크니카는 구글 스스로 &#x27;장기 문샷&#x27;이라 부르는 만큼 발사체 확보 말고도 풀어야 할 과제가 남았다고 지적했다.</p>
+    <div class="article-meta">
+        <span class="source">The Verge, Ars Technica</span>
+        <a href="https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+</section>
+<section class="section picks-section">
+<h2 class="section-title">💎 Claude's Pick</h2>
+<article class="article-card">
+    <span class="badge badge-pick">PICK</span>
+    <h3 class="article-title">Can China keep rogue AI in check? Meet the start-up testing the top models</h3>
+    <p class="article-title-kr">中 첫 상업용 AI 안전 감시 기업… 칭화대 스핀오프가 최상위 모델 시험</p>
+    <p class="article-summary">SCMP가 3부작 기획 첫 편으로, 칭화대에서 분사한 스타트업이 중국 최초의 상업용 AI 안전 감시 기관으로 자리 잡은 과정을 다뤘다. 이 회사는 중국 주요 AI 모델을 시험해 위험한 행동을 점검한다. SCMP는 같은 기획에서 베이징의 작은 AI 안전 단체가 중국 빅테크의 자문역이 된 사례도 소개했다. 중국판 AI 안전·평가 생태계가 만들어지는 초기 신호다.</p>
+    <p class="pick-reason">선정 이유: Signal: 신생 기업 첫 등장 + 규제/정책 초기 신호 | 관심사: AI/기술 인프라</p>
+    <div class="article-meta">
+        <span class="source">SCMP Featured</span>
+        <a href="https://scmp.com/tech/tech-trends/article/3374829/how-tsinghua-spin-out-became-chinas-first-commercial-ai-safety-watchdog" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-pick">PICK</span>
+    <h3 class="article-title">Google Built a Giant &#x27;Mirror Dimension&#x27; Internet to Test Its Chrome AI Agents</h3>
+    <p class="article-title-kr">구글, 크롬 AI 에이전트 시험용 &#x27;거울 세계&#x27; 인터넷 구축</p>
+    <p class="article-summary">구글 크롬 팀이 실제 인터넷을 본뜬 거대한 가상 인터넷을 만들어 AI 브라우징 에이전트를 훈련하고 시험하고 있다. 에이전트가 실제 웹에서 폭주할 위험 없이 다양한 상황을 연습하는 샌드박스다. Gemini의 맥 제어처럼 에이전트가 실제로 행동하는 시대에는 안전 검증 인프라가 경쟁력이 된다는 점을 보여 준다.</p>
+    <p class="pick-reason">선정 이유: Signal: 대기업 조용한 움직임 + 새로운 시장(에이전트 검증 인프라) | 관심사: AI/기술 인프라, 데이터/자동화</p>
+    <div class="article-meta">
+        <span class="source">Wired Featured</span>
+        <a href="https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+<article class="article-card">
+    <span class="badge badge-pick">PICK</span>
+    <h3 class="article-title">Gig Work Is Invading Nursing Homes. The Risks Can Be Deadly</h3>
+    <p class="article-title-kr">요양원에 번진 간호 &#x27;긱 노동&#x27;… 부실한 교육이 위험한 실수로</p>
+    <p class="article-summary">와이어드와 프루프 뉴스가 요양시설 점검 보고서를 분석한 결과, 앱으로 간호 인력을 단기 배치하는 긱 노동이 요양원에 퍼지면서 사전 교육을 거의 받지 않은 인력이 위험한 실수를 저지르고 기존 간호사들은 과부하에 시달리는 것으로 나타났다. 플랫폼 기반 노동이 의료 현장에 들어올 때의 위험을 데이터로 보여 준 조사다.</p>
+    <p class="pick-reason">선정 이유: Signal: 독자 데이터 조사 + 규제/정책 초기 신호 | 관심사: 데이터/자동화</p>
+    <div class="article-meta">
+        <span class="source">Wired Featured</span>
+        <a href="https://www.wired.com/story/shiftkey-gig-nursing/" target="_blank">원문 보기 →</a>
+    </div>
+</article>
+</section>
+<footer>
+<p>Jae's Briefing | AI·기술·반도체 외신 브리핑</p>
+<p>기사 23건 | 섹션 6개 | Pick 3건</p>
+<p><a href="https://hong4137.github.io/briefing">홈으로</a> · <a href="https://hong4137.github.io/briefing/archive">아카이브</a></p>
+</footer>
+</div>
+</body>
+</html>
