@@ -17539,6 +17539,54 @@
           "thumb_category": "ai"
         }
       ]
+    },
+    {
+      "date": "weekly-2026-11-22",
+      "week": "2026-W47",
+      "title": "대중 AI 칩 통제 강화·엔비디아 7주 연속 하락 | Anthropic 사상 최대 IPO | 나스닥 주간 −10%",
+      "summary": "미국이 중국 기업의 해외 데이터센터 경유 AI 칩 '원격 접근'을 막고 메가스피드 형사수사를 공개하자 엔비디아는 중국 판매를 스스로 접었고, 캘리포니아는 엔비디아에 소환장을 보냈다. 엔비디아 이사회는 젠슨 황 복귀를 공식 거부했고 주가는 호실적에도 2008년 이후 최장인 7주 연속 하락했다. Anthropic은 1,073억달러 사상 최대 IPO로 상장해 111.5달러에 첫 거래를 했지만 이틀 만에 공모가 83달러 근처로 밀렸다. 구글·애플은 운영체제 단 AI 에이전트 경쟁에 나섰다. 나스닥은 주간 10.02% 떨어졌고 VIX는 35.89로 뛰었다.",
+      "period": "2026-11-16 ~ 2026-11-21",
+      "stats": {
+        "clusters": 10,
+        "total_articles": 142
+      },
+      "hero_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Gold pattern silicon microchip macro",
+      "hero_credit_name": "Alexandre Debiève",
+      "hero_credit_url": "https://unsplash.com/photos/1518770660439-4636190af475",
+      "hero_source": "entity:nvidia",
+      "thumb_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Gold pattern silicon microchip macro",
+      "thumb_category": "entity:nvidia",
+      "card_count": 19,
+      "segments": [
+        {
+          "title": "대중 AI 칩 통제 강화·엔비디아 7주 연속 하락",
+          "summary": "미국이 중국 기업의 해외 데이터센터 경유 AI 칩 '원격 접근'을 막고 메가스피드 형사수사를 공개하자 엔비디아는 중국 판매를 스스로 접었고, 캘리포니아는 엔비디아에 소환장을 보냈다.",
+          "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Abstract semiconductor lattice grid",
+          "thumb_category": "entity:nvidia"
+        },
+        {
+          "title": "Anthropic 사상 최대 IPO",
+          "summary": "엔비디아 이사회는 젠슨 황 복귀를 공식 거부했고 주가는 호실적에도 2008년 이후 최장인 7주 연속 하락했다.",
+          "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Blue Earth viewed from dark outer space",
+          "thumb_category": "finance"
+        },
+        {
+          "title": "나스닥 주간 −10%",
+          "summary": "Anthropic은 1,073억달러 사상 최대 IPO로 상장해 111.5달러에 첫 거래를 했지만 이틀 만에 공모가 83달러 근처로 밀렸다. 구글·애플은 운영체제 단 AI 에이전트 경쟁에 나섰다. 나스닥은 주간 10.02% 떨어졌고 VIX는 35.89로 뛰었다..",
+          "thumb_url": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Aerial container port terminal shipping",
+          "thumb_category": "finance"
+        }
+      ]
     }
   ],
   "specials": [
@@ -17597,9 +17645,9 @@
         {
           "title": "다보스 2026: AI 인프라 대전환과 미중 기술패권 경쟁",
           "summary": "트럼프 3주 원전 승인, 젠슨 황 AI 5층 케이크. 다보스 포럼 AI 핵심 발언 총정리..",
-          "thumb_url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Abstract semiconductor lattice grid",
+          "thumb_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Digital node hub connection abstract",
           "thumb_category": "ai"
         }
       ]
@@ -17613,32 +17661,32 @@
         "articles": 25,
         "sections": 6
       },
-      "hero_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop&auto=format&q=80",
-      "hero_url_sm": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop&auto=format&q=80",
-      "hero_alt": "Planet Earth viewed from space with city lights",
-      "hero_credit_name": "NASA",
-      "hero_credit_url": "https://unsplash.com/photos/1451187580459-43490279c0fa",
+      "hero_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&h=630&fit=crop&auto=format&q=80",
+      "hero_url_sm": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=640&h=360&fit=crop&auto=format&q=80",
+      "hero_alt": "Aerial view of city lights glowing at night",
+      "hero_credit_name": "Maximalfocus",
+      "hero_credit_url": "https://unsplash.com/photos/1504711434969-e33886168f5c",
       "hero_source": "handpick_default",
-      "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
-      "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
-      "thumb_alt": "Planet Earth viewed from space with city lights",
+      "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
+      "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
+      "thumb_alt": "Aerial view of city lights glowing at night",
       "thumb_category": "default",
       "card_count": 8,
       "segments": [
         {
           "title": "이란전쟁 33일 — 종전 임박인가, 장기전인가",
           "summary": "Operation Epic Fury 개전 33일. 호르무즈 봉쇄로 글로벌 원유 공급 20% 차단.",
-          "thumb_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Aerial view of city lights glowing at night",
+          "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Tech team collaborating on laptops in office",
           "thumb_category": "default"
         },
         {
           "title": "세계 경제 충격파 분석",
           "summary": "트럼프 2~3주 내 철수 시사 vs 이란 6개월 전쟁 준비. 5대 경제 충격파와 테크 산업 영향, 한국 경제 분석..",
-          "thumb_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&h=270&fit=crop&auto=format&q=75",
-          "thumb_url_xs": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=112&h=112&fit=crop&auto=format&q=70",
-          "thumb_alt": "Tech team collaborating on laptops in office",
+          "thumb_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=480&h=270&fit=crop&auto=format&q=75",
+          "thumb_url_xs": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=112&h=112&fit=crop&auto=format&q=70",
+          "thumb_alt": "Planet Earth viewed from space with city lights",
           "thumb_category": "default"
         }
       ]
